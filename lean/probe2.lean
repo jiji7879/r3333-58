@@ -1,0 +1,10 @@
+import Mathlib
+#check Finset.exists_three_of_card_eq_three
+#check Finset.card_le_two
+#check Finset.card_lt_iff
+#check Finset.two_lt_card
+#check Finset.exists_pair_of_two_le_card
+#check Finset.card_le_one
+#check Finset.one_lt_card
+#check Finset.exists_ne_map_eq_of_card_lt_of_maps_to
+#check Finset.card_eq_three

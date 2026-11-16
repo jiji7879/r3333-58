@@ -12,6 +12,9 @@ replayed by drat-trim. The bundle's ledger currently has 111,035 cases OPEN.
 * [review/K58_CAMPAIGN_REVIEW.md](review/K58_CAMPAIGN_REVIEW.md) — what the
   bundle claims, what is checked here, the reduction read back in precise form,
   measured cost, and what is missing.
+* [lean/README.md](lean/README.md) — the kernel-checked formal core of the
+  reduction: the degree cap, `R(3,3) ≤ 6` and `R(3,3,3) ≤ 17`, the ticket
+  double counting, and the threshold step.  Build with `lean/build.sh`.
 * [runs/2026-11-16-batch1/](runs/2026-11-16-batch1/) — the first batch run
   here: 96 requested cases, **81 certified and replayed**, 15 cut off at the
   12 s budget, with the release manifest and the compressed certificates.
