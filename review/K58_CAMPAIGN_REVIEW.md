@@ -72,12 +72,13 @@ ledger and the code agree (that is consistency, not soundness).
 400k conflicts, 3 workers: **81 certified, 15 cut off**, 397 s solver CPU and
 236 s checker CPU in total, 83.8 MB of retained compressed certificates,
 median solve 3.0 s. Retrying the 15 cut-offs at 70 s / 2.4M conflicts closed
-14 of them — but on a different, stronger formula, see section 4.
+14 of them, so **95 of 96** cases stand certified. The two tiers use different
+formulas (see below), and all 95 certificates replay in one evidence root.
 
-| profile | cases | certified |
-| --- | ---: | ---: |
-| (15,15,15,12) | 48 | 34 |
-| (16,15,15,11) | 48 | 47 |
+| profile | cases | first pass | with retry |
+| --- | ---: | ---: | ---: |
+| (15,15,15,12) | 48 | 34 | 47 |
+| (16,15,15,11) | 48 | 47 | 48 |
 
 A release manifest over this evidence root gives
 `CERTIFIED 81, LEGACY_EVIDENCE_NEEDED 2144, OPEN 110954`, manifest SHA-256
@@ -120,22 +121,16 @@ replaying certificates.
 
 ## 4. What is not in the bundle
 
-* **The retry tier proves a stronger formula than the case it is filed
-  under.** The retry encoding sets `full_root=True`, and
-  `dense.marked_threshold` turns that into `root_goal = critical_mass`: every
-  vertex of every critical arm must send. The root hypothesis `H >= w` gives
-  only `s_crit >= 2M - 57` (at most `57 - M` senders can lie outside the
-  critical arms), which is the `total_critical` bound the first-pass tier
-  uses. For `(15,15,15,12)` that is 33 of 45, not 45. A refutation at 45 does
-  not exclude 40, so a retry closure does not close its case. The verifier
-  cannot catch it: `inspect_case` rebuilds the formula from the recipe stored
-  in the certificate, and the ledger row carries no recipe to compare with, so
-  a release built over retry evidence counts them as CERTIFIED. Demonstrated
-  here: adding this batch's 14 retry certificates to the evidence root moves
-  the manifest from `CERTIFIED 81` to `CERTIFIED 95` with every proof
-  replaying (`runs/2026-11-16-batch1/manifest-with-retry.json`). Either the
-  bundle has a lemma that forces a root with all critical vertices sending,
-  or the retry tier is unsound as a cover step.
+* **The ledger does not pin the encoding per case.** The two tiers here use
+  different formulas: the first pass adds the per-arm threshold and
+  `s_crit >= 2M - 57`, the retry adds the full `H(r) >= w(r)` over all 57
+  neighbours (instrumented on a `(15,15,15,12)` row: 44 of 56 selectors plus
+  one forced vertex, i.e. 45 of 57, exactly `w`). Both are consequences of the
+  case hypothesis, so both are sound. But `inspect_case` rebuilds the CNF from
+  the recipe written in the certificate, and the ledger row has no recipe to
+  compare against, so `--require-complete` cannot enforce that every
+  certificate uses a formula implied by its case. That is a property to check
+  for each shard, not something the verifier establishes.
 * **The 1,743 historical closures have no proof bytes here.** The manifest
   files exist; the proofs are described as "in the original 34 compressed
   shards, available if the owner supplies the old evidence directory". Only
@@ -161,17 +156,22 @@ replaying certificates.
 
 Measured on this 4-CPU VM, 3 workers, first-pass budget:
 
-| quantity | per closed case |
-| --- | ---: |
-| solver CPU | 4.9 s |
-| checker CPU (trim + replay) | 2.9 s |
-| retained certificate | 1.03 MB |
+| quantity | first pass | retry |
+| --- | ---: | ---: |
+| solver CPU per closure | 4.9 s | 21 s (70 s cap) |
+| checker CPU per closure | 2.9 s | in `verification.json` |
+| retained certificate | 1.03 MB | 7.4 MB |
+| share of cases | 84% | 93% of the rest |
 
-The 111,035 open cases therefore cost, *if every one closed at first pass*,
-about **240 CPU-hours** and **114 GB** of compressed certificates. At 4
-workers that is roughly 60-70 hours wall. The bundle's own projection (365
-CPU-hours, 612 GB) is larger because it retains raw proofs and exact CNFs as
-well; the certificate figure is the irreducible one.
+Per 96 cases actually run here: 711 s of solver CPU and 187 MB of
+certificates, for 95 closures. Extrapolated to the 111,035 open cases — the
+same mix of tiers, the same budgets — that is about **230 CPU-hours** and
+**216 GB** of compressed certificates. At 4 workers, ~60-70 hours wall.
+
+The storage number, not the CPU number, is the binding constraint: this VM has
+185 GB free. The bundle's 612 GB projection is larger because it also retains
+raw proofs and exact CNFs, but its CPU projection (365 h) is of the same order
+and is not wrong.
 
 That projection is optimistic, not conservative. Two measurements here:
 
@@ -200,7 +200,7 @@ ticket/threshold reduction is the standard one. The engineering around it is
 better than usual — pinned versions, case ids by content hash, trimmed proofs
 replayed on regenerated CNFs, a manifest that binds the census.
 
-Three things would stop me spending the 240 CPU-hours today:
+Three things would stop me spending the 230 CPU-hours today:
 
 1. **The reduction at n = 58 is new code and is not formalised.** The K60
    development proves the n = 60 boundaries; nothing in it covers the eleven
@@ -223,15 +223,14 @@ Lean bridge and the historical shards.
 
 ## 7. What was produced here
 
-* 81 freshly certified cases with their compressed DRAT certificates and a
-  release manifest, in `runs/2026-11-16-batch1/`.
+* 95 freshly certified cases with their compressed DRAT certificates and a
+  release manifest, in `runs/2026-11-16-batch1/` (81 at the 12 s tier, 14 at
+  the retry tier).
 * A throughput and storage measurement on the real pipeline, section 5.
 * An eight-member audit of the reduction, encodings and orbit quotients,
   running separately; its findings are appended when it reports.
 
-* The retry-tier soundness gap above, with a reproduction.
-
-The honest one-line status: **the pipeline runs and its arithmetic is
-consistent, but the retry tier refutes a stronger formula than the cases it
-files under, and the Lean bridge does not exist; the easiest closures in the
-campaign are the ones that do not count.**
+The honest one-line status: **the pipeline runs, its arithmetic is consistent
+and both of its encodings are sound; what is missing is the formal bridge, the
+historical proof bytes, and any independent check that the 113,179 cases are
+the right cover.**
