@@ -34,9 +34,8 @@ contains no proof bytes (it ships five example certificates only).
   hash, solver identity and timing) for the 81 certified cases; `first/*.jsonl`
   attempt receipts for all 96, including the cut-offs.
 * `RETRY_TIER.md` — the two encodings used, and why both refute their case.
-* `manifest-with-retry.json` — the previous manifest, kept because its hash
-  appears in the commit that first built it; it is byte-identical in counts to
-  `manifest.json` above.
+* `verification.json` — the independent replay of all 95 certificates through
+  `cover_evidence.py verify` (`"replayed": 95`).
 * `CASES.tsv` — id, profile, kinds, arm, branch, status, solver CPU, bytes.
 * `manifest.json`, `cases.jsonl.gz` — the release manifest built by
   `cover_evidence.py manifest` and the per-case index it covers.
