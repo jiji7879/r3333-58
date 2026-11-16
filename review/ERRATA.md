@@ -62,3 +62,16 @@ by its case. Both recipes in use (first pass: arm threshold plus
 property is unchecked in general.
 
 Fix: put the intended recipe in the ledger row and compare.
+
+## 6. `support_tables` is called "optional redundant" and is not
+
+The docstring says the constraints are redundant; they are not a local fact. The
+family accepts 4,344 of 5,688 locally consistent four- and five-point supports
+and rejects the 1,344 whose two-colouring is `C4 + 2K2`. That is justified only
+by the K15/K16 classification (in U15/T15 every colour class of every vertex is
+`C5` or `P4`), which the bundle does not mention here.
+
+Fix: either say "implied by the classification", or run with `tables=False` —
+which costs nothing measurable: five example certificates rebuild to identical
+input hashes and stay UNSAT in under a second, 22 of 23 sampled cases are
+unchanged, and one case is faster without the tables.

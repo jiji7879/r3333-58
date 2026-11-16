@@ -248,6 +248,16 @@ from "plausible" to "sound everywhere we can test it":
   statement than the id census. No row is vacuous (0/113,179), no row's own
   support is killed by the support tables (0/113,179), and the five historical
   manifests index exactly the 1,743 CERTIFIED rows.
+* **Support tables (m3).** The family is narrower than local consistency: it
+  accepts 4,344 of 5,688 locally consistent four- and five-point supports and
+  omits exactly the 1,344 whose two-colouring is `C4 + 2K2`. That is sound only
+  because of the classification — in U15/T15 every colour class is `C5` or
+  `P4` — and the bundle's docstring calls the clauses "optional redundant",
+  which is the wrong justification. Practically it does not matter: with
+  `tables` off, all five example certificates rebuild to the identical input
+  hash and are UNSAT in under a second, 22 of 23 sampled cases are unchanged,
+  and one case is UNSAT without the tables where it is UNKNOWN with them. A
+  continuation should run `tables=False` and drop the dependency.
 * **Evidence pipeline (m1).** The positive half first: all 1,743 historical
   receipts regenerate the `formula_sha256` they recorded from the frozen row
   and the recorded recipe, and 973 also match the recorded `formula_bytes`, so
@@ -265,8 +275,8 @@ from "plausible" to "sound everywhere we can test it":
   The n = 17 calibration I had suggested is impossible for this encoder (no
   critical arm can satisfy `H >= w` there), a useful negative.
 
-Two defects came out of it, both repairable and neither a hole in the
-mathematics:
+Defects came out of it, all repairable and none a hole in the mathematics.
+The two that matter:
 
 1. The bundle points at `CriticalTemplates.lean` for the classification, and
    that file explicitly disclaims completeness. The completeness theorem is
@@ -276,6 +286,10 @@ mathematics:
 2. The ledger does not pin the encoding per case, so `--require-complete`
    cannot enforce that every certificate proves a formula implied by its case.
    Both encodings used are implied, but that is a property to check per shard.
+3. `support_tables` is described as redundant when it rests on the
+   classification, and `manifest` does no checking while `verify` without
+   `--checker` accepts self-attested artefacts — see `ERRATA.md` for all five
+   and the minimal fixes.
 
 ## 7. Judgement
 
