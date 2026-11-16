@@ -170,8 +170,10 @@ same mix of tiers, the same budgets — that is about **230 CPU-hours** and
 
 The storage number, not the CPU number, is the binding constraint: this VM has
 185 GB free. The bundle's 612 GB projection is larger because it also retains
-raw proofs and exact CNFs, but its CPU projection (365 h) is of the same order
-and is not wrong.
+raw proofs and exact CNFs. Its 365 CPU-hours is not a completion cost at all:
+365 h over 110,714 rows is 11.9 CPU-s per case, i.e. exactly one 12-second
+capped pass — the audit's point, and the reason the number should not be read
+as the price of finishing.
 
 That projection is optimistic, not conservative. Two measurements here:
 
@@ -224,6 +226,16 @@ from "plausible" to "sound everywhere we can test it":
 * **Kind dimension (m4).** A separate exhaustive enumeration gets exactly two
   colour-named classes at each of 15 and 16, with automorphism orders 2/10 and
   32/160, matching U and T.
+* **Shape and cost (m8).** All 41 `(profile, kinds)` groups of the ledger are
+  exactly `joint_plan.cases()` output (0 mismatching, branch numbers included).
+  The charge budget `sum copies*(t-1) <= M-1` holds in 41/41 strata with slack
+  0 in 36 of them, and every emitted group has the marked-position breadth its
+  threshold needs (0 failures). At the geometry level, 105 family groups that
+  have orbit representatives are absent from the ledger, and all of them are
+  palette images of emitted cases (`uncovered = 0`) — a stronger completeness
+  statement than the id census. No row is vacuous (0/113,179), no row's own
+  support is killed by the support tables (0/113,179), and the five historical
+  manifests index exactly the 1,743 CERTIFIED rows.
 * **Encoder calibration (m2).** At n=31 and n=41 — the smallest orders where
   the bundle's geometry runs with a critical block and a positive threshold —
   genuine colourings satisfy the production clause set, including at threshold
