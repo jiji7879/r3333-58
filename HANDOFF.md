@@ -25,7 +25,7 @@ Lean core of the reduction.
 | full-cover projection | ~230 CPU-hours, ~216 GB; this VM has 185 GB free |
 | reduction audit | 8 directions, 8 accepted, no unsoundness found |
 | defects found | 6 (section 9) |
-| Lean core | 10 theorems, kernel-checked, axioms `[propext, Classical.choice, Quot.sound]` |
+| Lean core | 18 theorems, kernel-checked, no `sorry`, axioms `[propext, Classical.choice, Quot.sound]` |
 | **what is missing for a theorem** | **the marking lemma**, the profile enumeration, and the 113,179-UNSAT premise |
 
 ## 2. What is verified (with the reproducing artefact)
