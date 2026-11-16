@@ -1,0 +1,7 @@
+.scratch/
+.ultramath/
+attachments/
+__pycache__/
+*.pyc
+*.cnf
+*.drat
