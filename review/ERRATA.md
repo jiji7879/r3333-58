@@ -28,6 +28,11 @@ case `5e6290f4b19c20722fb0c300c7aa8ff0b2969e2c2ba3191efb56275732742278`.
 Fix: `row.get(name, False)` (which is what `audit_campaign.audit_receipt` already
 does), or drop `full_root` from `RECIPE` and pass `False`.
 
+**Confirmed against real evidence:** a proof restored from the owner's 11.4 GB
+archive, with `full_root: false` supplied, replays successfully through this
+path. The 569 rows are importable once the default is in place; what remains
+missing is only the proof bytes.
+
 ## 3. `--require-cadical` counts producer-written receipts
 
 `inspect_secondary` never runs CaDiCaL and never hashes a binary: it checks

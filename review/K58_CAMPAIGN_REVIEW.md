@@ -176,9 +176,14 @@ Measured on this 4-CPU VM, 3 workers, first-pass budget:
 | share of cases | 84% | 93% of the rest |
 
 Per 96 cases actually run here: 711 s of solver CPU and 187 MB of
-certificates, for 95 closures. Extrapolated to the 111,035 open cases — the
-same mix of tiers, the same budgets — that is about **230 CPU-hours** and
-**216 GB** of compressed certificates. At 4 workers, ~60-70 hours wall.
+certificates, for 95 closures. Extrapolated at the same mix of tiers and the
+same budgets to the **99,450 cases of the two large profiles**, that is about
+**206 CPU-hours** and **194 GB** of compressed certificates.
+
+It does **not** extrapolate to the 11,585 cases of the seven small profiles:
+they closed 0 of 98 here and 0 of 306 in the pilot, and their retry cost is
+measured for none of them except `(15,15,15,12)`. So 206 CPU-h / 194 GB is a
+large-profile figure and the tail is an open cost, not a scaled one.
 
 The storage number, not the CPU number, is the binding constraint: this VM has
 185 GB free. The bundle's 612 GB projection is larger because it also retains

@@ -35,6 +35,11 @@ verification recorded here was produced with a supplied drat-trim and reports
 
 ## Contents
 
+> **The certificates are distributed as `dist/runs-2026-11-16-batch1.part{1,2,3}of3.zip`**
+> (three parts only because GitHub refuses files over 100 MB).  Unzip all three
+> into this directory to recreate `evidence/`.  The parts reconstruct the tree
+> byte-for-byte, and the replay below was run against the unzipped copies.
+
 * `evidence/<xx>/<case_id>/` — one directory per requested case:
   `certificate.drat.gz` (trimmed proof), `verified.json` (formula hash, proof
   hash, solver identity and timing) for the 81 certified cases; `first/*.jsonl`
