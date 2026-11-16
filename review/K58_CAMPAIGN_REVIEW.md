@@ -106,8 +106,11 @@ pattern into the other arms. Summing `H = sum_c s_c < M = w` contradicts the
 choice of `r`.
 
 That is the scheme `joint_plan.choose_plan` / `cases` and `dense.marked_threshold`
-implement, and the arithmetic above checks out against the thresholds in the
-ledger. The scheme is coherent. Whether it is *complete* depends on the orbit
+implement. **Checked against the ledger**: for all 41 `(profile, kinds)` plans,
+summing `copies x (t_c - 1)` over the arm groups, with an unconstrained group
+counted at `t_c = d_c + 1`, gives a total strictly below `M`, so no plan is
+missing the inequality it needs (0 failures). That is the arithmetic; it is not
+yet the statement that the code's thresholds are the ones the plan intends. The scheme is coherent. Whether it is *complete* depends on the orbit
 quotients (`palette_quotient.py`, `gluing.orbit_data`) being genuine orbit
 decompositions, and whether it is *sound* depends on every clause family added
 by `marked_threshold` and `support_tables` being implied by the root
