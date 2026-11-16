@@ -121,6 +121,18 @@ replaying certificates.
 
 ## 4. What is not in the bundle
 
+* **The release machinery is not a proof of itself.** Three defects, each
+  reproduced: `manifest` performs no proof checking and `verify` without
+  `--checker` accepts a two-byte "certificate" with a hand-written
+  "s VERIFIED" log (rejected as soon as a real checker is supplied); the
+  documented `--require-cadical` counts a hand-written `cadical.json` naming a
+  nonexistent binary with an all-zero hash, through a real drat-trim replay;
+  and `import-legacy` dies with `KeyError: 'full_root'` on the 569 of 752
+  campaign rows that predate the flag, i.e. exactly the rows the missing
+  historical proofs would be restored through. So a manifest SHA-256 certifies
+  nothing on its own, and any release must carry the output of
+  `verify --checker` (as this repository's `runs/` do) or be replayed by the
+  reviewer with their own drat-trim.
 * **The ledger does not pin the encoding per case.** The two tiers here use
   different formulas: the first pass adds the per-arm threshold and
   `s_crit >= 2M - 57`, the retry adds the full `H(r) >= w(r)` over all 57
@@ -236,6 +248,14 @@ from "plausible" to "sound everywhere we can test it":
   statement than the id census. No row is vacuous (0/113,179), no row's own
   support is killed by the support tables (0/113,179), and the five historical
   manifests index exactly the 1,743 CERTIFIED rows.
+* **Evidence pipeline (m1).** The positive half first: all 1,743 historical
+  receipts regenerate the `formula_sha256` they recorded from the frozen row
+  and the recorded recipe, and 973 also match the recorded `formula_bytes`, so
+  the historical closures are bound to formulas today's generator reproduces —
+  only the proof bytes are missing. None of the 2,144 closures is vacuous
+  through the encoder's empty-clause return under any of the eight recipes, and
+  the five manifests' 2,064 ids sit in the ledger with their UNSAT subset
+  exactly the 1,743 CERTIFIED rows. The three defects are in section 4.
 * **Encoder calibration (m2).** At n=31 and n=41 — the smallest orders where
   the bundle's geometry runs with a critical block and a positive threshold —
   genuine colourings satisfy the production clause set, including at threshold

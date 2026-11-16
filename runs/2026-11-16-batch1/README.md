@@ -27,6 +27,12 @@ Release manifest over this evidence root:
 profile/template exclusions of the handoff ledger, for which the bundle
 contains no proof bytes (it ships five example certificates only).
 
+The manifest hash is only meaningful together with `verification.json`: the
+bundle's `manifest` command does no proof checking, and `verify` without
+`--checker` accepts self-attested artefacts (see the review, section 4). The
+verification recorded here was produced with a supplied drat-trim and reports
+`"replayed": 95`.
+
 ## Contents
 
 * `evidence/<xx>/<case_id>/` — one directory per requested case:
