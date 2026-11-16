@@ -71,7 +71,8 @@ ledger and the code agree (that is consistency, not soundness).
 **First batch, run here.** The 96 ids in `FIRST_BATCH_IDS.txt`, 12 s /
 400k conflicts, 3 workers: **81 certified, 15 cut off**, 397 s solver CPU and
 236 s checker CPU in total, 83.8 MB of retained compressed certificates,
-median solve 3.0 s.
+median solve 3.0 s. Retrying the 15 cut-offs at 70 s / 2.4M conflicts closed
+14 of them — but on a different, stronger formula, see section 4.
 
 | profile | cases | certified |
 | --- | ---: | ---: |
@@ -119,6 +120,22 @@ replaying certificates.
 
 ## 4. What is not in the bundle
 
+* **The retry tier proves a stronger formula than the case it is filed
+  under.** The retry encoding sets `full_root=True`, and
+  `dense.marked_threshold` turns that into `root_goal = critical_mass`: every
+  vertex of every critical arm must send. The root hypothesis `H >= w` gives
+  only `s_crit >= 2M - 57` (at most `57 - M` senders can lie outside the
+  critical arms), which is the `total_critical` bound the first-pass tier
+  uses. For `(15,15,15,12)` that is 33 of 45, not 45. A refutation at 45 does
+  not exclude 40, so a retry closure does not close its case. The verifier
+  cannot catch it: `inspect_case` rebuilds the formula from the recipe stored
+  in the certificate, and the ledger row carries no recipe to compare with, so
+  a release built over retry evidence counts them as CERTIFIED. Demonstrated
+  here: adding this batch's 14 retry certificates to the evidence root moves
+  the manifest from `CERTIFIED 81` to `CERTIFIED 95` with every proof
+  replaying (`runs/2026-11-16-batch1/manifest-with-retry.json`). Either the
+  bundle has a lemma that forces a root with all critical vertices sending,
+  or the retry tier is unsound as a cover step.
 * **The 1,743 historical closures have no proof bytes here.** The manifest
   files exist; the proofs are described as "in the original 34 compressed
   shards, available if the owner supplies the old evidence directory". Only
@@ -212,6 +229,9 @@ Lean bridge and the historical shards.
 * An eight-member audit of the reduction, encodings and orbit quotients,
   running separately; its findings are appended when it reports.
 
+* The retry-tier soundness gap above, with a reproduction.
+
 The honest one-line status: **the pipeline runs and its arithmetic is
-consistent; the proof it is part of does not yet exist, and the part that
-would make it a proof is the part nobody has checked.**
+consistent, but the retry tier refutes a stronger formula than the cases it
+files under, and the Lean bridge does not exist; the easiest closures in the
+campaign are the ones that do not count.**

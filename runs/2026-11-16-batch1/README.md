@@ -8,7 +8,8 @@ toolchain.
 | --- | --- |
 | requested | 96 (`48 x (15,15,15,12)`, `48 x (16,15,15,11)`) |
 | certified UNSAT and replayed | **81** (34 / 47) |
-| cut off at budget, left OPEN | 15 |
+| cut off at budget | 15 |
+| of those, closed by the retry tier | 14 — but on a **stronger formula**, see `RETRY.md` |
 | budget | 12 s, 400,000 conflicts, Kissat 4.0.4 |
 | solver CPU, all attempts | 397.3 s |
 | checker CPU (trim + replay) | 236.5 s |
@@ -32,6 +33,12 @@ contains no proof bytes (it ships five example certificates only).
   `certificate.drat.gz` (trimmed proof), `verified.json` (formula hash, proof
   hash, solver identity and timing) for the 81 certified cases; `first/*.jsonl`
   attempt receipts for all 96, including the cut-offs.
+* `retry-stronger-formula/<xx>/<case_id>/` — the 14 retry-tier certificates,
+  which refute a formula with the extra `full_root` assumption. `RETRY.md`
+  explains why they are not closures of their cases.
+* `manifest-with-retry.json` — the manifest that counts those 14 as CERTIFIED
+  (95 in total). It is kept as the demonstration that the pipeline cannot
+  distinguish them.
 * `CASES.tsv` — id, profile, kinds, arm, branch, status, solver CPU, bytes.
 * `manifest.json`, `cases.jsonl.gz` — the release manifest built by
   `cover_evidence.py manifest` and the per-case index it covers.

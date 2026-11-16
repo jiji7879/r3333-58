@@ -17,8 +17,9 @@ replayed by drat-trim. The bundle's ledger currently has 111,035 cases OPEN.
   12 s budget, with the release manifest and the compressed certificates.
 
 Status in one line: the pipeline works and its arithmetic is consistent, but
-the reduction at n = 58 is unformalised and 2,144 rows of the frozen ledger
-have no proof bytes in the handoff, so no bound moves yet.
+the retry tier refutes a stronger formula than the cases it files under, the
+reduction at n = 58 is unformalised, and 2,144 rows of the frozen ledger have
+no proof bytes in the handoff. No bound moves yet.
 
 ## 2. Lower bound: previous work
 
