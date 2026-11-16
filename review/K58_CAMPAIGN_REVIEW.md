@@ -46,6 +46,19 @@ Five bundled certificates replay against their regenerated formulas; the
 1,743 historical closures minus the 5 shown are reported as
 `LEGACY_EVIDENCE_NEEDED`, exactly as `HANDOFF.md` says.
 
+**Classification, checked independently.** The cover pins every 15- and
+16-vertex critical neighbourhood to one of two literal templates, U or T, so a
+third isomorphism class would let colourings escape every case. An independent
+enumeration (swarm member m4; `run_all.sh`, 3.3 s, reproduced here) re-derives
+the classification from scratch rather than quoting it: in a triangle-free
+3-colouring the colour classes of a vertex are 2-coloured and hence of size at
+most 5, which fixes the class sizes (5,5,5) at 16 and (5,5,4) at 15; pinning
+those and blocking the residual symmetry yields exactly **two** colour-named
+classes at each size, with colour-named automorphism orders 2 and 10 at 15,
+32 and 160 at 16 — the bundle's U and T. Every palette relabelling of U and T
+is isomorphic to U or T, so fixing colour names costs no coverage. This closes
+the one input the bundle imports from the unrefereed preprint.
+
 **Census, checked.** The ledger has 113,179 unique ids and 11 degree profiles,
 which are exactly the partitions of 57 into four parts of size <= 16:
 (15,15,15,12) 83,440; (16,15,15,11) 16,173; (15,15,14,13) 7,732;
@@ -109,11 +122,13 @@ replaying certificates.
   five example certificates are included. A verifier therefore reports 2,144
   rows as `LEGACY_EVIDENCE_NEEDED`, and the campaign as shipped rests on
   author's word for 21% of the cover.
-* **No Lean bridge for n = 58.** The pinned K60 repository has a real Lean
-  development (296,081 formulas, classification checked, axioms
-  `propext, Classical.choice, Quot.sound`), but it proves the n = 60 statement.
-  `PROOF_PLAN.md` lists the n = 58 bridge as step 5 and as unfinished. Without
-  it the campaign, even completed, yields "no colouring found", not a theorem.
+* **No Lean bridge for n = 58.** The pinned repository has `UniformK60` and
+  `UniformK61` — one development per order, each with its own catalogues,
+  pricing data and finite boundary — and no n = 58 development, no `ramsey58`
+  theorem, no K58 constant anywhere in `formal/src`. `PROOF_PLAN.md` lists the
+  n = 58 bridge as step 5 and as unfinished. The gap is therefore not a
+  connective lemma: it is a development of the same scale as the K60 one,
+  which took that project months and 296,081 formulas.
 * **The profile and template exclusions (401 rows) are arguments, not
   certificates**, and their arguments are not in the bundle either.
 * **Referenced files that are absent**: `ledger.py`, `retry_open.py`,
@@ -171,7 +186,10 @@ Three things would stop me spending the 240 CPU-hours today:
    development proves the n = 60 boundaries; nothing in it covers the eleven
    n = 58 profiles, the per-arm thresholds, or the n = 58 marked cover. A
    completeness bug in `palette_quotient`/`orbit_data` would silently drop
-   cases and every closure would still verify.
+   cases and every closure would still verify. The kind dimension (U/T at 15
+   and 16) is now independently re-derived and checks out; the position,
+   palette and embedding orbits that turn a root into the 113,179 cases are
+   still on the audit.
 2. **The case split is not independently reproduced.** `audit_cover` compares
    the ledger with the same generators that produced it.
 3. **21% of the claimed closed cases have no evidence in the bundle**, so even
