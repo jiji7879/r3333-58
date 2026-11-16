@@ -5,7 +5,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 export LEAN_PATH="$PWD:$LEAN_PATH"
-for f in Basic TwoColour ThreeColour DegreeCap Reduction Main Check; do
+for f in Basic TwoColour ThreeColour DegreeCap Reduction Main Plans Check; do
   echo "== K58/$f.lean"
   lean -o "K58/$f.olean" "K58/$f.lean"
 done

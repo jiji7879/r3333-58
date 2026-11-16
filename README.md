@@ -12,6 +12,9 @@ replayed by drat-trim. The bundle's ledger currently has 111,035 cases OPEN.
 * [review/K58_CAMPAIGN_REVIEW.md](review/K58_CAMPAIGN_REVIEW.md) — what the
   bundle claims, what is checked here, the reduction read back in precise form,
   measured cost, and what is missing.
+* [HANDOFF.md](HANDOFF.md) — the state of the campaign written for a cold
+  reader (LLM session or person): what is verified, what is blocked, and the
+  next three obligations in order.
 * [lean/README.md](lean/README.md) — the kernel-checked formal core of the
   reduction: the degree cap, `R(3,3) ≤ 6` and `R(3,3,3) ≤ 17`, the ticket
   double counting, and the threshold step.  Build with `lean/build.sh`.
