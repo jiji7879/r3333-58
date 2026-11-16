@@ -192,45 +192,95 @@ yield.
 **This VM has 185 GB free and 4 CPUs.** The whole cover cannot be closed and
 stored here. A shard of a few thousand cases can be.
 
-## 6. Judgement
+## 6. The audit
 
-The scheme is the right shape and is not naive: it reuses the K60 project's
-Lean-checked classification of the 15- and 16-vertex neighbourhoods, and the
-ticket/threshold reduction is the standard one. The engineering around it is
-better than usual — pinned versions, case ids by content hash, trimmed proofs
-replayed on regenerated CNFs, a manifest that binds the census.
+An eight-member swarm worked the reduction from separate directions; five
+submissions were checked here, by re-running their scripts, and accepted. Each
+one is a positive result on its own axis, and together they move the bundle
+from "plausible" to "sound everywhere we can test it":
 
-Three things would stop me spending the 230 CPU-hours today:
+* **Census and threshold (m5).** Recomputed the plan for all 41
+  `(profile, kinds)` strata: 113,179 = ledger rows, per-stratum identical,
+  smallest pigeonhole margin 1. Then the decisive brute force: all **592,023**
+  sender-count vectors with `H(r) >= M` were enumerated, and **none** escapes
+  every class threshold. No charge exceeds its arm size. Independently
+  cross-checked against the published per-stratum counts of the source paper:
+  the bundle's list is everywhere a superset (the growth is one extra symmetry
+  the paper performs when equal template types meet), so it covers at least
+  what the paper's machine-checked cover does.
+* **Symmetry quotient (m7).** All 20,617 cases dropped by the palette quotient
+  carry an explicit (colour permutation, vertex permutation) witness onto an
+  emitted case — 0 failures, chain length 0. The 113,179 unit sets are
+  non-contradictory, force no monochromatic triangle, and bind one-to-one to the
+  ledger ids (0 missing, 0 extra). Positive controls show the isomorphism test
+  rejects cases differing in kind, size, position or arm.
+* **Classification (m6).** Independent of the templates: `nauty-geng` gives 388
+  triangle-free 5-regular graphs on 16 vertices; exactly one admits any
+  completion, with 72 good colourings = 12 U + 60 T and none outside the
+  catalogue. At 15, an exact count identity gives 1,036,800 good colourings =
+  172,800 (U) + 864,000 (T). Palette relabellings are realised by vertex
+  permutations for all six permutations of every template, which is what makes
+  the fixed-palette convention sound.
+* **Kind dimension (m4).** A separate exhaustive enumeration gets exactly two
+  colour-named classes at each of 15 and 16, with automorphism orders 2/10 and
+  32/160, matching U and T.
+* **Encoder calibration (m2).** At n=31 and n=41 — the smallest orders where
+  the bundle's geometry runs with a critical block and a positive threshold —
+  genuine colourings satisfy the production clause set, including at threshold
+  10 where SAT holds at bounds 4, 5, 6, 8 with real sender counts meeting each
+  bound. `full_root` rejects exactly the colourings with `H < w` and none with
+  `H >= w`, which settles that the retry tier encodes the hypothesis itself.
+  The n = 17 calibration I had suggested is impossible for this encoder (no
+  critical arm can satisfy `H >= w` there), a useful negative.
 
-1. **The reduction at n = 58 is new code and is not formalised.** The K60
-   development proves the n = 60 boundaries; nothing in it covers the eleven
-   n = 58 profiles, the per-arm thresholds, or the n = 58 marked cover. A
-   completeness bug in `palette_quotient`/`orbit_data` would silently drop
-   cases and every closure would still verify. The kind dimension (U/T at 15
-   and 16) is now independently re-derived and checks out; the position,
-   palette and embedding orbits that turn a root into the 113,179 cases are
-   still on the audit.
-2. **The case split is not independently reproduced.** `audit_cover` compares
-   the ledger with the same generators that produced it.
-3. **21% of the claimed closed cases have no evidence in the bundle**, so even
-   a complete run of the remaining 111k would leave the ledger's `CERTIFIED`
-   column resting on trust.
+Two defects came out of it, both repairable and neither a hole in the
+mathematics:
 
-If those clear, the campaign is a storage problem, not a mathematics problem,
-and the natural division of labour is: this VM closes and publishes shards with
-manifests; a machine with ~1 TB finishes the cover; the author supplies the
-Lean bridge and the historical shards.
+1. The bundle points at `CriticalTemplates.lean` for the classification, and
+   that file explicitly disclaims completeness. The completeness theorem is
+   Kalbfleisch-Stanton/Heinrich (Theorem 2.1 of the paper), and in the pinned
+   repository it lives in `CriticalCatalogues.lean`. The citation must be
+   restated.
+2. The ledger does not pin the encoding per case, so `--require-complete`
+   cannot enforce that every certificate proves a formula implied by its case.
+   Both encodings used are implied, but that is a property to check per shard.
 
-## 7. What was produced here
+## 7. Judgement
+
+The scheme is the right shape and is not naive, and after the audit the risks
+are no longer where I expected them. The ticket/threshold step is sound, the
+symmetry quotient is exhaustive, the classification is true and faithfully
+instantiated, and the encoder does not over-constrain. What remains is not a
+subtlety in the combinatorics:
+
+1. **There is no Lean bridge for n = 58.** The pinned repository has
+   `UniformK60` and `UniformK61`, one development per order; nothing for 58.
+   This is the step that turns a finished cover into a theorem, and it is at
+   the scale of the K60 development, not a lemma. `PROOF_PLAN.md` knows this.
+2. **21% of the claimed closed cases have no evidence in the bundle.** 2,144
+   ledger rows are `LEGACY_EVIDENCE_NEEDED`, resting on the author's word and
+   on 34 shards that are not here.
+3. **The 401 profile and template exclusions are arguments, not
+   certificates**, and the arguments are absent. The 214-row
+   `(16,16,16,9)` exclusion is a whole profile resting on one such argument.
+
+So the campaign is now a storage and labour problem rather than a soundness
+problem, and the division of labour is: this VM closes and publishes shards
+with manifests; a machine with ~1 TB finishes the cover; the author supplies
+the Lean bridge and the historical shards.
+
+## 8. What was produced here
 
 * 95 freshly certified cases with their compressed DRAT certificates and a
   release manifest, in `runs/2026-11-16-batch1/` (81 at the 12 s tier, 14 at
-  the retry tier).
+  the retry tier), all 95 replayed a second time through the independent
+  verifier.
 * A throughput and storage measurement on the real pipeline, section 5.
-* An eight-member audit of the reduction, encodings and orbit quotients,
-  running separately; its findings are appended when it reports.
+* A probe showing the seven smaller profiles close **0 of 98** at the
+  first-pass budget, reproducing the pilot's 0/306 — the campaign's real tail.
+* The audit in section 6, with its two defects.
 
-The honest one-line status: **the pipeline runs, its arithmetic is consistent
-and both of its encodings are sound; what is missing is the formal bridge, the
-historical proof bytes, and any independent check that the 113,179 cases are
-the right cover.**
+The honest one-line status: **the reduction is sound on every axis the audit
+could test, both encodings are sound, and 95 cases are now certified; what is
+missing is the 111,000 remaining refutations, the bytes for 2,144 historical
+ones, and the Lean bridge that would make any of it a theorem.**
