@@ -138,10 +138,21 @@ workers that is roughly 60-70 hours wall. The bundle's own projection (365
 CPU-hours, 612 GB) is larger because it retains raw proofs and exact CNFs as
 well; the certificate figure is the irreducible one.
 
-That projection is optimistic, not conservative: 15 of 96 cases hit the 12 s
-cap, and the pilot reported 0 closures in 306 sampled cases from the seven
-smaller profiles. Retries run at 70 s / 2.4M conflicts on a changed encoding.
-A realistic full campaign is several hundred CPU-hours and 150-250 GB.
+That projection is optimistic, not conservative. Two measurements here:
+
+* In batch 1, 15 of 96 cases hit the 12 s cap.
+* A probe of 14 fresh OPEN ids from each of the seven smaller profiles closed
+  **0 of 98** at the same budget (573 s of solver CPU), reproducing the pilot's
+  0/306. See `runs/2026-11-16-small-probe/`.
+
+Those 11,585 cases therefore need the retry encoding (70 s / 2.4M conflicts),
+and six of the seven profiles have no measured closure rate under it at all.
+Counting the big profiles at the measured 84% first-pass rate and the small
+ones at a 70 s attempt each with a generous 30% success, the cover costs
+roughly 600-900 CPU-hours and 150-250 GB of certificates. The bundle's 365
+CPU-hours / 612 GB is the same order but its distribution is wrong: the tail
+of 11,585 small-profile cases is most of the risk and none of the measured
+yield.
 
 **This VM has 185 GB free and 4 CPUs.** The whole cover cannot be closed and
 stored here. A shard of a few thousand cases can be.
