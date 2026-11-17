@@ -1,0 +1,11 @@
+--- a/cover_evidence.py	2026-11-16 10:11:14.000000000 +0000
++++ b/cover_evidence.py	2026-11-17 01:25:45.963382344 +0000
+@@ -86,7 +86,7 @@
+ 
+ 
+ def recipe_from(row):
+-    recipe = {name: row[name] for name in RECIPE}
++    recipe = {name: row.get(name, False) for name in RECIPE}
+     require(all(type(value) is bool for value in recipe.values()), "Invalid encoding flags")
+     return recipe
+ 
