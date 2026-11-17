@@ -8,7 +8,7 @@ WORK=$(mktemp -d); PKG=$WORK/k58-solver
 mkdir -p "$PKG"/{bin,wheels,tools}
 unzip -q "$HANDOFF" -d "$PKG/k58"
 cp "$KISSAT" "$PKG/bin/kissat"; cp "$DRAT" "$PKG/bin/drat-trim"; chmod +x "$PKG/bin"/*
-cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,cover_evidence_full_root.patch} "$PKG/tools/"
+cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,verify_parallel.py,cover_evidence_full_root.patch} "$PKG/tools/"
 cp "$HERE/k58.sh" "$HERE/k58-batch.sh" "$HERE/README.md" "$PKG/"
 for v in 3.10 3.11 3.12 3.13; do
   python3 -m pip download python-sat==1.9.dev22 -d "$PKG/wheels" --no-deps -q \

@@ -94,17 +94,26 @@ cmd_run() {
 
 cmd_finalise() {
   need_venv
-  local rel="$ROOT/release"
-  [ $# -ge 2 ] && [ "$1" = --release ] && rel=$2
+  local rel="$ROOT/release" workers=${WORKERS:-$(nproc 2>/dev/null || echo 4)}
+  while [ $# -gt 0 ]; do case "$1" in
+    --release) rel=$2; shift 2;; --workers) workers=$2; shift 2;;
+    *) die "unknown option $1";;
+  esac; done
   [ -d "$EV" ] || die "no evidence at $EV; run ./k58.sh run first"
+  echo "1/2 building the manifest"
   $PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
      --root "$EV" manifest "$rel" | tee "$rel.manifest.json"
   local sha
   sha=$($PY -c "import json;print(json.load(open('$rel.manifest.json'))['manifest_sha256'])")
   echo "manifest $sha"
+  echo "checking coverage and manifest consistency (no replay, fast)"
   $PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
-     --root "$EV" verify "$rel" --manifest-sha256 "$sha" --checker "$ROOT/bin/drat-trim" \
-     | tee "$rel.verify.json"
+     --root "$EV" verify "$rel" --manifest-sha256 "$sha" > "$rel.coverage.json" \
+     || die "manifest/coverage check failed: see $rel.coverage.json"
+  echo "2/2 replaying certificates with $workers workers"
+  $PY "$ROOT/tools/verify_parallel.py" --bundle "$BUNDLE" --evidence "$EV" \
+     --checker "$ROOT/bin/drat-trim" --workers "$workers" | tee "$rel.verify.json"
+  echo
   echo "quote the manifest hash together with this line:"
   cat "$rel.verify.json"
 }
