@@ -102,3 +102,29 @@ patch -p0 -d k58 < tools/cover_evidence_full_root.patch
   proof bytes both depend on the pins, and the verifier refuses other versions.
 * Never edit `verified.json` or a certificate. If one is wrong, delete the case
   directory and rerun it.
+
+## Unattended: run the rest of the cover
+
+`./k58-batch.sh` drives the remaining work in order and survives interruption —
+rerun it and it picks up where it stopped.
+
+```sh
+./k58-batch.sh plan                       # list the jobs, no work
+./k58-batch.sh run    --shards 4          # first pass, both large profiles
+./k58-batch.sh retry  --shards 4          # retry tier over whatever stayed OPEN
+./k58-batch.sh finish                     # manifest, replay, RUN_SUMMARY.md
+# or all three in sequence:
+./k58-batch.sh all --shards 4
+```
+
+Options: `--workers W` (default 4), `--min-free-gb G` (default 20; the batch
+stops cleanly when the disk drops below it), `--include-small` (adds the seven
+small profiles), `--limit N` (testing), `--dry-run`.
+
+The retry pass needs no case list: the runner retries exactly the cases whose
+first attempt is recorded OPEN and skips everything already verified, so it is
+safe to run repeatedly.
+
+Progress lands in `batch-state/batch.log`; the final summary in `RUN_SUMMARY.md`.
+Upload `release/manifest.json`, `release/cases.jsonl.gz` and the summary; the
+certificates in `evidence/` stay on disk.
