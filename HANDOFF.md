@@ -25,7 +25,7 @@ Lean core of the reduction.
 | cost projection | ~206 CPU-h / ~194 GB for the 99,450 large-profile cases; the 11,585 small-profile cases are **unmeasured** (0/98 here, 0/306 pilot) |
 | reduction audit | 8 directions, 8 accepted, no unsoundness found |
 | defects found | 6 (section 9) |
-| Lean core | 27 theorems, kernel-checked, no `sorry`, axioms `[propext, Classical.choice, Quot.sound]` |
+| Lean core | 31 theorems, kernel-checked, no `sorry`, axioms `[propext, Classical.choice, Quot.sound]` |
 | **what is missing for a theorem** | **the marking lemma**, the profile enumeration, and the 113,179-UNSAT premise |
 
 ## 2. What is verified (with the reproducing artefact)
@@ -94,6 +94,8 @@ axioms of every theorem. There is no `sorry`, no `native_decide`, no new axiom.
 | `planned_degree_profiles` | the 41 plans mention exactly those eleven profiles (axiom-free) |
 | `balanced_root_arm_reaches` | a valid plan at a specified balanced root forces one of its arms to its threshold |
 | `normalized_plan_arm_reaches` | a listed plan matching the root's permuted degrees forces a reached threshold no larger than the arm degree |
+| `template_triangleFree_15/16` | the U and T templates are Lean objects and are triangle-free at both sizes |
+| `exists_plan_matching`, `exists_plan_arm_reaches`, `root_plan_arm` | the plan selection is unconditional: at every balanced root some plan forces an arm to its threshold |
 
 A structural fact worth keeping: the threshold step does **not** use
 triangle-freeness. It is pure double counting; triangle-freeness enters only
