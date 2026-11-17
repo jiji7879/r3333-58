@@ -17,6 +17,7 @@ unzip k58-solver.zip
 cd k58-solver
 
 ./k58.sh setup      # creates .venv, installs python-sat 1.9.dev22
+./k58.sh smoke      # end-to-end self test, ~1-2 min; must end "SMOKE TEST PASSED"
 ./k58.sh doctor     # checks versions and replays the 5 bundled certificates
 ./k58.sh test       # closes 5 real cases and verifies them (~2 min)
 ```
@@ -44,6 +45,19 @@ CNF, and prints the `"replayed": N` line to quote alongside the manifest hash.
 ```sh
 ./k58.sh status     # how many closed, how much disk used, disk free
 ```
+
+## What the smoke test checks
+
+`./k58.sh smoke` runs five checks and fails loudly if any is wrong:
+
+1. the toolchain is pinned and the five bundled certificates replay;
+2. three real cases close end to end;
+3. the manifest builds and every certificate replays in parallel;
+4. a deliberately truncated certificate is **rejected** — a build that accepts
+   it is not trustworthy, so this is the check that matters;
+5. the batch driver builds its plan.
+
+`./k58.sh smoke --keep` leaves the worked example in `smoke/` to inspect.
 
 ## What to run, in order
 
