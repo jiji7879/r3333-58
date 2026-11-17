@@ -164,6 +164,7 @@ shape of `UniformK60.ExactInputs.AllUnsat`. This needs the full evidence run
 
 ```
 review/K58_CAMPAIGN_REVIEW.md   the review: claims, checks, cost, judgement
+review/LEAN_END_TO_END.md       what a kernel-checkable certificate costs (~1.9 TB)
 review/ERRATA.md                six defects in the bundle, with minimal fixes
 PLAN.md                         options (shard / tail / Lean) with commands
 lean/                           the kernel-checked reduction core
