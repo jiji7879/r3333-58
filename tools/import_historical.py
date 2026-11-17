@@ -43,9 +43,46 @@ def rows(path):
                 yield json.loads(line)
 
 
+def _read_index_stream(fh):
+    return {json.loads(line)["path"] for line in fh if line.strip()}
+
+
 def index_paths(kit):
+    """The archived proof paths, from the recovery kit's index."""
     with gzip.open(kit / "index.jsonl.gz", "rt") as fh:
-        return {json.loads(line)["path"] for line in fh}
+        return _read_index_stream(fh)
+
+
+def index_from_zip(path):
+    """Read an index shipped inside a ZIP of reconstructed parts.
+
+    Accepts `index.jsonl`, `index.jsonl.gz` or `INDEX.jsonl` at the archive root,
+    with one JSON object per line carrying at least a `path` key (the original
+    proof path) and, when present, `sha256` / `proof_sha256` of the proof bytes.
+    Returns (paths, hashes) where hashes maps path -> recorded digest.
+    """
+    import zipfile
+    paths, hashes = set(), {}
+    with zipfile.ZipFile(path) as zf:
+        names = [n for n in zf.namelist() if n.lower().rsplit("/", 1)[-1].startswith("index")]
+        if not names:
+            raise SystemExit(f"{path}: no index.jsonl[.gz] inside")
+        name = sorted(names)[0]
+        data = zf.read(name)
+        if name.endswith(".gz"):
+            data = gzip.decompress(data)
+        for line in data.decode().splitlines():
+            if not line.strip():
+                continue
+            entry = json.loads(line)
+            p = entry.get("path") or entry.get("proof")
+            if not p:
+                continue
+            paths.add(p)
+            digest = entry.get("sha256") or entry.get("proof_sha256")
+            if digest:
+                hashes[p] = digest
+    return paths, hashes
 
 
 def proof_path(name, prefix, row, paths):
@@ -69,9 +106,12 @@ def case_id(bundle, row):
 
 def cmd_check(args):
     bundle, kit = Path(args.bundle), Path(args.bundle) / "recovery"
-    if not (kit / "index.jsonl.gz").exists():
-        sys.exit(f"recovery index not found under {kit}")
-    paths = index_paths(kit)
+    if not args.index and not (kit / "index.jsonl.gz").exists():
+        sys.exit(f"recovery index not found under {kit}; pass --index for a ZIP index")
+    if args.index:
+        paths, hashes = index_from_zip(Path(args.index))
+    else:
+        paths, hashes = index_paths(kit), {}
     total = found = 0
     for name, (prefix, rel) in MANIFESTS.items():
         if args.only and name != args.only:
@@ -89,13 +129,18 @@ def cmd_check(args):
                 print(f"  missing: {name} {row.get('id', row.get('proof'))}")
         print(f"{name}: {rows_here} certified rows")
     print(f"total certified {total}, proofs present in the index {found}")
+    if hashes:
+        print(f"recorded proof digests in the index: {len(hashes)}")
     return 0 if found == total else 1
 
 
 def cmd_run(args):
     bundle = Path(args.bundle).resolve()
     kit = bundle / "recovery"
-    paths = index_paths(kit)
+    if args.index:
+        paths, hashes = index_from_zip(Path(args.index))
+    else:
+        paths, hashes = index_paths(kit), {}
     out = Path(args.out).resolve()
     work = Path(args.work).resolve()
     work.mkdir(parents=True, exist_ok=True)
@@ -169,6 +214,7 @@ def main():
     p.add_argument("--only", choices=tuple(MANIFESTS), help="one manifest")
     p.add_argument("--limit", type=int, help="stop after N successful imports")
     p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--index", help="ZIP of reconstructed parts holding an index.jsonl")
     p.add_argument("--verbose", action="store_true")
     args = p.parse_args()
     if args.mode == "check":

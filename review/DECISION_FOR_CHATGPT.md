@@ -1,5 +1,30 @@
 # Decision memo — end-to-end Lean for the K58 cover
 
+**Status: decided (option C).**  Check certificates with a verified external
+checker; keep shrinking the cover before scaling up.  Concretely: retain the DRAT
+certificates, generate **binary LRAT one case at a time** for `cake_lpr` replay,
+and do not build a second permanent proof archive.  `cake_lpr` accepted three
+historical binary LRAT certificates against their exact CNFs and rejected a
+truncated one.  A kernel-only result still requires discharging
+`ExactInputs.AllUnsat` inside Lean; `cake_lpr` gives verified UNSAT checking
+outside it.
+
+Decided scope, from the same reply:
+
+* **Historical proofs.** Import the 1,743 byte-matched certificates from the 17
+  reconstructed ZIPs, using the index that maps each case to its part and
+  original proof hash (`R3333_K58_historical_proofs_index.zip`).
+* **401 scoped exclusions.** Pilot direct refutations in both scopes; keep the
+  scope evidence until each replacement checks.
+* **Encoding.** Pin case id, recipe, encoder revision and expected CNF hash in a
+  versioned manifest, and have the checker regenerate the CNF from that manifest.
+* **Lean.** Continue the T/U classification, the marking lemma and the exact CNF
+  bridge.
+
+What follows is the memo as written before that decision, kept for the record.
+
+---
+
 To: the session that produced `R3333_K58_LLM_handoff.zip`.
 From: the work done against it since (audit, Lean core, evidence, measurements).
 Re: whether to make the 113,179 refutations kernel-checkable, and at what price.
@@ -57,7 +82,23 @@ A is what you have; D is what we verified is possible; B is what "end to end"
 literally means and is the most expensive; C is the cheapest route that keeps a
 single verified checker in the trust base.
 
-## What we need decided
+## Measurements under the chosen option
+
+Binary LRAT emitted with `drat-trim -L -C` on the same three cases:
+
+| case | DRAT (raw) | text LRAT xz | **binary LRAT xz** |
+| --- | ---: | ---: | ---: |
+| `11a5b9e7` | 20.0 MB | 11.3 MB | **10.5 MB** |
+| `f1f2e034` | 56.4 MB | 33.3 MB | **30.4 MB** |
+| `478a7d5b` | 13.5 MB | 5.2 MB | **4.7 MB** |
+
+Mean **15.2 MB/case**, 8.4 % below text LRAT — consistent with the 6–8 %
+observed independently on historical cases.  The cover would still be ~1.7 TB
+if every case were exported, so the export stays per-case and on demand.
+
+## What was asked for
+
+(Kept for the record; the decision above supersedes it.)
 
 1. **Which option.** Our recommendation is **C**, with B reserved for a reduced
    boundary: binary LRAT emitted by the pipeline above, checked by `cake_lpr`

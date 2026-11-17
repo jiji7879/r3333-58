@@ -21,6 +21,17 @@ RAT steps is not.
 | `f1f2e034` | 3.8 MB | 56.4 MB | 169.4 MB | **33.3 MB** | 7.4 MB |
 | `478a7d5b` | 3.8 MB | 13.5 MB | 27.2 MB | **5.2 MB** | ~1 MB |
 
+Binary LRAT (`drat-trim -L -C`, the format `cake_lpr` consumes) on the same
+three cases:
+
+| case | text LRAT xz | **binary LRAT xz** | saving |
+| --- | ---: | ---: | ---: |
+| `11a5b9e7` | 11.3 MB | **10.5 MB** | 6.9 % |
+| `f1f2e034` | 33.3 MB | **30.4 MB** | 8.8 % |
+| `478a7d5b` | 5.2 MB | **4.7 MB** | 8.6 % |
+
+Mean 15.2 MB/case. Binary is the format to use; text is only a fallback.
+
 Mean LRAT-xz: **16.6 MB per case**.  The Lean-consumable artifact is therefore
 **4–5× larger than the DRAT certificate we keep today**, and 7–18× larger before
 compression.  Purging the CNF (3.8 MB) and the DRAT (13–56 MB) does not offset
