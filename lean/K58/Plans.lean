@@ -76,8 +76,8 @@ theorem plans_ok_bool : plans.all (fun x => decide (planOk x)) = true := by deci
 theorem plans_ok {x : Plan} (hx : x ∈ plans) : planOk x :=
   of_decide_eq_true ((List.all_eq_true.mp plans_ok_bool) x hx)
 
-/-- No threshold exceeds its arm, so no case is vacuous by asking for more
-senders than the arm has. -/
+/-- Each threshold is at most one more than the arm degree. A threshold equal
+to the degree plus one disables that arm. -/
 def planFeasible (x : Plan) : Prop :=
   (x.t.zip x.prof).all (fun p => decide (p.1 ≤ p.2 + 1)) = true
 
@@ -85,7 +85,7 @@ instance (x : Plan) : Decidable (planFeasible x) := by unfold planFeasible; infe
 
 theorem plans_feasible_bool : plans.all (fun x => decide (planFeasible x)) = true := by decide
 
-/-- No threshold in the frozen list exceeds its arm. -/
+/-- Each member of the frozen table satisfies the threshold bound. -/
 theorem plans_feasible {x : Plan} (hx : x ∈ plans) : planFeasible x :=
   of_decide_eq_true ((List.all_eq_true.mp plans_feasible_bool) x hx)
 

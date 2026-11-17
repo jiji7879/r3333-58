@@ -37,9 +37,14 @@ theorem profile_sum (G : EdgeCol (Fin 58) 4) (h : TriangleFree G) (r : Fin 58) :
   have hsum := sum_deg G r
   simpa using hsum
 
-/-- The cover's pigeonhole step, at the level of a colouring: for any threshold
-assignment obeying the plan's inequality at every profile, some arm of some
-root reaches its threshold. -/
+/-- The cover's pigeonhole step, at the level of a colouring.
+
+**Superseded.**  The hypothesis `∀ p, Σ (t p a - 1) < Σ critical (p)` is
+unsatisfiable at the zero degree vector (see
+`Frontier.original_threshold_hypothesis_impossible`), so this statement is
+vacuous.  The non-vacuous form is `Frontier.balanced_root_arm_reaches`, which
+assumes the inequality only at the root's actual profile.  Kept as the record
+of the mistake. -/
 theorem exists_arm_reaches (G : EdgeCol (Fin 58) 4)
     (t : (Fin 4 → ℕ) → Fin 4 → ℕ)
     (ht : ∀ p : Fin 4 → ℕ, (∑ a : Fin 4, (t p a - 1))

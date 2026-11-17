@@ -5,7 +5,12 @@ Edge colourings of a complete graph on an arbitrary finite vertex type, colour
 degrees, the campaign's "ticket" bookkeeping, and the double-counting identity
 that gives a root with at least as many tickets received as sent.
 -/
-import Mathlib
+import Mathlib.Algebra.BigOperators.Fin
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
+import Mathlib.Data.Fintype.EquivFin
+import Mathlib.Tactic.FinCases
+import Mathlib.Tactic.Set
+import Mathlib.Tactic.Tauto
 
 namespace K58
 

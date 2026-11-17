@@ -25,7 +25,7 @@ Lean core of the reduction.
 | cost projection | ~206 CPU-h / ~194 GB for the 99,450 large-profile cases; the 11,585 small-profile cases are **unmeasured** (0/98 here, 0/306 pilot) |
 | reduction audit | 8 directions, 8 accepted, no unsoundness found |
 | defects found | 6 (section 9) |
-| Lean core | 18 theorems, kernel-checked, no `sorry`, axioms `[propext, Classical.choice, Quot.sound]` |
+| Lean core | 27 theorems, kernel-checked, no `sorry`, axioms `[propext, Classical.choice, Quot.sound]` |
 | **what is missing for a theorem** | **the marking lemma**, the profile enumeration, and the 113,179-UNSAT premise |
 
 ## 2. What is verified (with the reproducing artefact)
@@ -90,11 +90,21 @@ axioms of every theorem. There is no `sorry`, no `native_decide`, no new axiom.
 | `profile_sum` | at any vertex of a triangle-free `K_58`: `Σ deg = 57`, each `≤ 16` |
 | `exists_arm_reaches` | any threshold plan with `Σ (t a − 1) < Σ critical degrees` at every profile has some arm reaching its threshold |
 | `plans_ok`, `plans_feasible` | the 41 frozen plans satisfy that inequality, and no threshold exceeds its arm |
+| `sorted_degree_profile_mem`, `root_degree_profile` | the eleven sorted profiles, and every vertex has one after a colour permutation |
+| `planned_degree_profiles` | the 41 plans mention exactly those eleven profiles (axiom-free) |
+| `balanced_root_arm_reaches` | a valid plan at a specified balanced root forces one of its arms to its threshold |
+| `normalized_plan_arm_reaches` | a listed plan matching the root's permuted degrees forces a reached threshold no larger than the arm degree |
 
-A structural fact worth keeping: `exists_arm_reaches` does **not** use
-triangle-freeness. The threshold step is pure double counting; triangle-freeness
-enters only through the degree cap and the classification. The per-arm
-thresholds therefore cannot be where the cover fails.
+A structural fact worth keeping: the threshold step does **not** use
+triangle-freeness. It is pure double counting; triangle-freeness enters only
+through the degree cap and the classification.
+
+**A correction to the first version.** `exists_arm_reaches` was stated with the
+inequality assumed at *every* profile, which is unsatisfiable at the zero degree
+vector — so the theorem was vacuous.  `Frontier.original_threshold_hypothesis_impossible`
+proves exactly that, and `balanced_root_arm_reaches` replaces it with the
+inequality assumed only at the root's actual profile, together with
+`w G r ≤ H G r`.  The old statement is kept, marked, as the record.
 
 ## 5. What to do next, in order
 
@@ -125,15 +135,20 @@ Decomposition, in dependency order:
 4. **Assembly.** Combine with `exists_arm_reaches` to get: a counterexample
    realises the units of an emitted case.
 
-### 5.2 The profile enumeration (small, self-contained)
+### 5.2 The plan-selection glue (small, next)
 
-`profile_sum` gives `Σ deg = 57`, each `≤ 16`; the eleven profiles follow. A
-naive `decide` over `Fin 17 × Fin 17 × Fin 17 × Fin 17` exceeds Lean's recursion
-depth (`set_option maxRecDepth` does not rescue it). The route that will work:
-state the lemma over sorted tuples `a ≤ b ≤ c ≤ d`, derive `9 ≤ a ≤ 14` and
-`b, c ≤ 16` by `omega`, then `interval_cases` on `a, b, c` (a few hundred cases,
-each closed by `decide`), with `d` determined. Then transport along
-`List.mergeSort` sortedness.
+The profile enumeration is done (`root_degree_profile`, `planned_degree_profiles`).
+What is missing is one composition: from those two, derive
+
+```
+∃ x ∈ plans, ∃ σ : Equiv.Perm (Fin 4), ∀ a, deg G r (σ a) = plannedDegree x a
+```
+
+for any triangle-free `G` and any `r`, and feed it to `normalized_plan_arm_reaches`.
+The result is unconditional at the threshold level: **at every balanced root some
+planned arm reaches its threshold**.  Expect ~50 lines; it is the last piece
+before the marking lemma and it removes the only remaining hypothesis of the
+threshold argument.
 
 ### 5.3 The computation premise
 
