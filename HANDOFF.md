@@ -22,7 +22,7 @@ Lean core of the reduction.
 | proof bytes for the 1,743 | **absent** from the bundle (5 example certificates only) |
 | cases closed in this session | **95** (81 at 12 s, 14 at retry), all replayed twice |
 | measured cost per 96 cases | 711 s solver CPU, 187 MB certificates |
-| cost projection | ~206 CPU-h / ~194 GB for the 99,450 large-profile cases; the 11,585 small-profile cases are **unmeasured** (0/98 here, 0/306 pilot) |
+| cost projection | ~206 CPU-h for the 99,450 large-profile cases; the 11,585 small-profile cases are **unmeasured** (0/98 here, 0/306 pilot). The ~194 GB of certificates is optional: they are bit-reproducible (10/10 sampled) |
 | reduction audit | 8 directions, 8 accepted, no unsoundness found |
 | defects found | 6 (section 9) |
 | Lean core | 31 theorems, kernel-checked, no `sorry`, axioms `[propext, Classical.choice, Quot.sound]` |
@@ -66,9 +66,11 @@ Lean core of the reduction.
 2. **2,144 rows have no proof bytes.** The formulas regenerate, so restoring the
    proofs is mechanical — but the bytes live in 34 shards that are not here.
 3. **111,035 open cases.** The 99,450 large-profile cases project to ~206
-   CPU-hours and ~194 GB against 185 GB free, so storage binds. The 11,585
-   small-profile cases have no measured closure rate at the retry budget, so
-   the cover-wide cost is unknown and probably larger, not smaller.
+   CPU-hours. Storage does **not** bind: the certificates are bit-reproducible
+   (10 of 10 sampled cases regenerate identically), so a release can ship the
+   code and a hash manifest and let the reviewer re-solve, instead of shipping
+   ~194 GB. The 11,585 small-profile cases have no measured closure rate at the
+   retry budget, so the cover-wide cost is unknown and probably larger.
 4. **The tail.** 11,585 cases in seven profiles close at essentially zero rate at
    the first-pass budget; their retry cost is unmeasured for six of the seven.
 5. **The release machinery is not self-certifying** (section 9, items 3–4).

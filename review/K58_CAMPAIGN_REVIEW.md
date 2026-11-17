@@ -185,12 +185,22 @@ they closed 0 of 98 here and 0 of 306 in the pilot, and their retry cost is
 measured for none of them except `(15,15,15,12)`. So 206 CPU-h / 194 GB is a
 large-profile figure and the tail is an open cost, not a scaled one.
 
-The storage number, not the CPU number, is the binding constraint: this VM has
-185 GB free. The bundle's 612 GB projection is larger because it also retains
-raw proofs and exact CNFs. Its 365 CPU-hours is not a completion cost at all:
-365 h over 110,714 rows is 11.9 CPU-s per case, i.e. exactly one 12-second
-capped pass — the audit's point, and the reason the number should not be read
-as the price of finishing.
+The storage number is **not** a binding constraint, because the certificates
+turn out to be reproducible. Re-running the pinned Kissat on the regenerated
+CNF, with no time limit, and trimming with the same drat-trim reproduces the
+stored certificate **byte for byte**: 10 of 10 sampled cases across both tiers,
+identical SHA-256 and identical length (the first check, on
+`1bd293ef…`, gave 1,152,154 bytes both times). A verifier can therefore
+regenerate every proof from the code and compare hashes instead of receiving
+216 GB, at the cost of the solver time again (~230 CPU-hours) plus the replay.
+Storing the certificates is a convenience — it lets a reviewer check without
+solving — not a requirement of soundness. Recompressing with `xz -9e` would
+take the stored figure to ~166 GB if one does want to keep them.
+
+The bundle's 365 CPU-hours is not a completion cost at all: 365 h over 110,714
+rows is 11.9 CPU-s per case, i.e. exactly one 12-second capped pass — the
+audit's point, and the reason the number should not be read as the price of
+finishing.
 
 That projection is optimistic, not conservative. Two measurements here:
 
