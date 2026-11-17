@@ -47,6 +47,18 @@ Builds the manifest and replays **every** certificate against its regenerated
 CNF. Quote the manifest hash together with the `"replayed": N` line — the hash
 alone certifies nothing, because `manifest` performs no checking.
 
+## 3b. Pin the encoding (before any release)
+
+```sh
+python3 pin_manifest.py make   --bundle /path/to/K58 --out encodings-v1.json
+python3 pin_manifest.py verify --bundle /path/to/K58 --manifest encodings-v1.json
+```
+
+Records case id, recipe, encoder revision and expected CNF hash for every case.
+`verify` regenerates each CNF from the manifest's own recipe, so a recipe the
+generator does not reproduce fails here. The encoder revision is a hash of the
+generator sources, so a changed encoder invalidates old manifests.
+
 ## 4. Optional: Lean-consumable certificates
 
 ```sh
@@ -57,9 +69,12 @@ For each case: regenerate the CNF, solve, convert DRAT → LRAT with
 `drat-trim -L`, compress, and delete the CNF, the DRAT and the raw LRAT. What
 remains is what an LRAT checker (in principle the Lean kernel) can consume.
 
-Measured: **16.6 MB per case** compressed, 4–5× the DRAT certificate. The full
-cover would be ~1.9 TB and ~1,900 CPU-hours to emit. See
-`review/LEAN_END_TO_END.md` in the repository for the trade-offs.
+Binary LRAT by default (`drat-trim -L -C`), the format `cake_lpr` consumes.
+Measured: **15.2 MB per case** compressed, 8.4 % below text LRAT and still 4-5x
+the DRAT certificate. The full cover would be ~1.7 TB, so export per case on
+demand; the decision is to retain DRAT and not build a second permanent archive.
+Add `--lpr-check /path/to/cake_lpr` to replay each certificate with a verified
+checker as it is produced, and `--resume` to skip cases already recorded.
 
 ## 5. Optional: the 1,743 historical closures
 
@@ -69,8 +84,10 @@ python3 import_historical.py run --bundle /path/to/K58 --store /path/to/r58_evid
         --out evidence --checker bin/drat-trim
 ```
 
-`check` needs only the bundle and confirms that a proof is archived for every
-certified row (1,743 of 1,743). `run` restores each proof from the `.tar.zst`
+`check` needs only the bundle, or a ZIP of reconstructed parts passed as
+`--index` (the ZIP must contain an `index.jsonl` with `path` and `sha256` per
+line). It confirms that a proof is archived for every certified row
+(1,743 of 1,743). `run` restores each proof from the `.tar.zst`
 store and imports it. Apply `cover_evidence_full_root.patch` to the bundle's
 `cover_evidence.py` first — otherwise `import-legacy` dies on the 569 campaign
 rows that predate the `full_root` flag.
