@@ -7,9 +7,11 @@
 #   ./k58.sh finalise   build a manifest and replay every certificate
 #   ./k58.sh status     how far along, how much disk
 #   ./k58.sh smoke      end-to-end self test incl. rejecting a bad certificate
+#   ./k58.sh version    print the package version
 #   ./k58.sh pin        pin the encoding (recipe + encoder revision + CNF hashes)
 set -uo pipefail
 cd "$(dirname "$0")"
+K58_VERSION="2026-11-17"
 ROOT=$PWD
 BUNDLE=$ROOT/k58
 export PATH="$ROOT/bin:$PATH"
@@ -18,6 +20,11 @@ PYTHON_SAT=1.9.dev22
 EV=${EV:-$ROOT/evidence}
 
 die() { echo "error: $*" >&2; exit 1; }
+usage() {
+  awk 'NR>1 && /^#/ { sub(/^# ?/, ""); print; next } NR>1 { exit }' "$0"
+  echo
+  echo "version $K58_VERSION"
+}
 need_venv() { [ -x "$PY" ] || die "run ./k58.sh setup first"; }
 
 cmd_setup() {
@@ -201,6 +208,7 @@ case "${1:-}" in
   finalise) shift; cmd_finalise "$@" ;;
   status) cmd_status ;;
   smoke) shift; cmd_smoke "$@" ;;
+  version) echo "$K58_VERSION" ;;
   pin) cmd_pin ;;
-  *) sed -n '2,11p' "$0" | sed 's/^# //'; exit 2 ;;
+  *) usage; exit 2 ;;
 esac
