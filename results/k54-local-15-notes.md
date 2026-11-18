@@ -157,3 +157,33 @@ the outer model when the census finishes.
 `local-15`'s count model had at least 58,975 vectors at the time of writing and was still
 enumerating. With the measured 0.43 s per vector (lift build plus CaDiCaL plus write), exhaustive
 refutation of that board is roughly 7 CPU-hours, about 40 minutes on twelve cores.
+
+## 11. Forty-four cuts, independently rechecked
+
+A second member ran the core-to-cut loop for 25 iterations per board, deriving 44 cuts
+(`.ultramath/smwmq7hji/m3/cut/CUTS.tsv`). Its three primary cuts are the same three described
+in sections 3 and 8, reached by a third route. I rebuilt **all 44** from their column and
+multiplicity lists with my own builder, on the full 54-vertex graph and with every
+monochromatic-triangle clause — a strictly stronger instance than the truncated 31-vertex one
+they certify on — and all 44 are UNSAT with `drat-trim` `s VERIFIED`:
+
+```
+UNSAT verified 44 / 44
+```
+
+The unit cuts are genuine strengthenings, not restatements of the class capacities: live-07
+column 89 has chain length 3 and the cut drives it to 1; column 269 has length 12 and its cut
+drives it to 3; column 85 has length 26 and the loop-it03 cut drives it to 2. That is the
+failure mode that killed the naive loop in section 5, and it is avoided here.
+
+What remains open is minimality: "weaker sub-instances SAT, so the cuts cannot be shortened"
+holds inside the truncated encoding only, and the corresponding two-witness instances on the
+full graph are undecided at 200,000 conflicts. No minimality claim is made for the full graph.
+
+## 12. Exhaustive pass on local-15, restarted
+
+With the swarm winding down, `ours/exhaust.py local-15 3` is running again: three workers
+enumerate the count model and refute each lift, one ledger row and one DRAT file per vector.
+The census passed 66,600 vectors and was still growing, so the pass is projected at roughly
+2.5 to 3 hours on three cores. Its completion is what would turn local-15 from "58 closed,
+14 open" into a board exclusion backed by an exhaustive, replayable case split.
