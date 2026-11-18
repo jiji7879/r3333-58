@@ -127,3 +127,33 @@ No uniqueness-of-the-other-side argument is required, unlike the two-sided insta
 None of this closes a board: the outer count CNF plus each cut remains SAT. The cuts kill
 >=22, >=8 and >=26 distinct count vectors per 30 s of enumeration, against exactly 1 for blocking
 a single vector.
+
+## 9. Coverage keystone for the count abstraction (13 boards)
+
+The implication that any board exclusion silently uses — *every* triangle-free 4-colouring of K54
+realizing the pins induces counts satisfying every clause of the outer CNF — is now discharged for
+the 13 zero-pole-price boards (the three pilots among them). Ingredients I checked directly:
+
+* `RectLocal15/07/14.lean` compile under Lean 4.33.1; `support_covered` depends on
+  `[propext, Quot.sound]` only, and says: if `N0 x N1` lies in free cells then some listed
+  rectangle has `N0` inside its left support and `N1` inside its right support. Non-vacuous.
+* The Lean `rights` tables equal Python's `maximal_rectangles` exactly, as sets, for all three
+  boards (141/80/120, zero difference either way) — so the Lean theorem is about the same
+  rectangle family the count model uses.
+* L1 (K6, 2 colours), L2 (K17, 3 colours, with sound symmetry breaking) and L3 (H42 plus one
+  all-ordinary vertex) replay under the archive's drat-trim with `s VERIFIED`; the controls are
+  SAT. These give `LIMIT = 16, 5, 2, 1` and the nonempty c-support on each side.
+* Price arithmetic agrees with the archive: local-15 cost 280000 / scale 10000 / slack 20000;
+  live-07 and live-14 270000 / 10000 / 10000; exactly 13 of the 15 price files have zero
+  pole-pair prices.
+
+Steps 4 to 6 of the argument (column retention, the charging identity, and the price lower bound
+`C_j >= cap_j - slack/price_j`, which the generator encodes as `slack//w`) are prose bookkeeping
+over those finite facts, not Lean. Nothing here closes a board; it is what licenses reading one off
+the outer model when the census finishes.
+
+## 10. Census
+
+`local-15`'s count model had at least 58,975 vectors at the time of writing and was still
+enumerating. With the measured 0.43 s per vector (lift build plus CaDiCaL plus write), exhaustive
+refutation of that board is roughly 7 CPU-hours, about 40 minutes on twelve cores.
