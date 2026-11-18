@@ -99,3 +99,31 @@ them is refuted), reported as an exhaustive case split rather than a single refu
 * The two-outsider lemma of section 4 is verified as a clause-core fact for the specific
   boards; its exact scope (which rectangles, which signature classes) is stated only for
   the instances that were replayed.
+
+## 8. Update: certified cuts on live-07 and live-14
+
+The bounds-conditioned lift generator (`liftb.py`, swarm member m5) produced one cut per open
+board. Each is a clause over the outer unary variables; each certificate is the board graph plus
+one-side witness pins on distinct outsiders, with everything else free. I rebuilt all three
+independently (`work/k54/ours/check_oneside.py`, different code, no shared machinery) and got
+byte-identical CNFs and replayed proofs:
+
+| board | cut | witnesses | CNF sha256 | vars / clauses | core |
+| --- | --- | --- | --- | ---: | ---: |
+| local-15 | `-u[70,1] -u[323,1] -u[354,1]` | 1,1,1 | `945c876c6937dda9e9464237203ea4e18e0518f1414df25a8858ed958b3e8cd8` | 4608 / 73165 | 64 |
+| live-07 | `-u[52,2] -u[83,1]` | 2,1 | `7f42587394364b52aaf82fa744da749c2551d656d7b9f700c64e10fbcbff5c38` | 4600 / 73004 | 80 |
+| live-14 | `-u[1,1] -u[8,2]` | 1,2 | `921d3d1f97927a8b3fc5d5f50cf57325ccd3e3b2b057e3c129ec1e277d6228d0` | 4624 / 73601 | 71 |
+
+All three `s VERIFIED` under the bundled drat-trim. The local-15 cut is the same column triple
+(70/323/354) that section 3 derived from the archive core by a different route. The live-07 and
+live-14 cuts are new: their two literals are a joint obstruction, not capacity bounds, and each
+single literal alone is SAT.
+
+The one-side encoding is the cleaner form of the argument: `count[k] >= m` is a booking count, so
+it hands you `m` distinct outsiders satisfying the pins of column `k`; leaving the untested side
+free makes the reduced instance a relaxation, so the refutation is stronger than the cut needs.
+No uniqueness-of-the-other-side argument is required, unlike the two-sided instances in section 3.
+
+None of this closes a board: the outer count CNF plus each cut remains SAT. The cuts kill
+>=22, >=8 and >=26 distinct count vectors per 30 s of enumeration, against exactly 1 for blocking
+a single vector.
