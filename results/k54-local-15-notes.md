@@ -187,3 +187,71 @@ enumerate the count model and refute each lift, one ledger row and one DRAT file
 The census passed 66,600 vectors and was still growing, so the pass is projected at roughly
 2.5 to 3 hours on three cores. Its completion is what would turn local-15 from "58 closed,
 14 open" into a board exclusion backed by an exhaustive, replayable case split.
+
+## 13. The 72 boards are a sample, not a cover - and what that means for the bound
+
+This is the most consequential finding of the session and it is a negative one about the shape of
+the whole exercise, not about any individual proof.
+
+The archive's seed-12 split decomposes into 24 rooted H42/H42 placements, then marked 2x2 crossing
+blocks (59,925 block orbits), then colourings of those blocks' four cells (2,809,638 colour orbits).
+A leaf of that split forces **four named cells to ordinary colours**. A board pins **66 to 96 named
+non-pole cells to c** (recomputed here: 196 cells minus free cells minus 27 pole-star cells;
+local-15 70, live-14 66, fresh-07 77, the range 66-96 over the 72).
+
+So a board refutation excludes colourings whose c-set contains the board's pins, while a leaf lives
+where four named cells are guaranteed *not* c. Neither implies the other, and a colouring with c
+only on the pole stars lies in no board's up-set at all. Consequences:
+
+* closing the 14 open boards moves the sample ledger from 58/72 to 72/72 and discharges **zero** of
+  the 2,809,638 leaves, i.e. zero claim-(c) steps;
+* the honest seed-12 ledger is "0 of 24 placements refuted, 0 of 2,809,638 leaves discharged";
+* the count machinery has no leverage on a leaf either: a leaf's instance has 2 maximal rectangles
+  and 4 count columns against a population of 26, versus 68-167 rectangles and 236-717 columns for
+  a board.
+
+`START_HERE.md` says as much ("the 72 reference crossing patterns are a sample"; "the 14 open
+sampled boards cannot substitute for this coverage argument"), but nowhere quantifies it. The
+session's board work therefore has to be described as *development on the densest-pinned instances*
+- the cheapest place to build and validate an argument - and not as progress toward R(3,3,3,3) <= 54.
+The pin-density frontier is worth recording: 11 of 11 boards with at most 72 non-pole c-pins are
+open, 51 of 51 with at least 78 are closed, and the band 73-77 holds 7 closed and 3 open.
+
+Because of this, the exhaustive per-vector pass on local-15 was stopped at 2,641 refuted vectors
+rather than run for days: it would close one dense board and buy nothing at seed level.
+
+## 14. Pin-free cell capacities: a real strengthening, and a measured dead end
+
+The archive's per-cell capacities are the two-anchor Ramsey numbers 16/5/2/1. On a placement where
+only the pole stars are pinned these are not tight. Exact values, each certified:
+
+| cells | archive bound | exact pin-free | total saved |
+| --- | --- | --- | --- |
+| 936 two-spoke | 5 each (4680 total) | 1,2,3,4,5 for 88/24/488/280/56 cells (3000) | 36% |
+| 3432 three-spoke | 2 each (6864) | 160 hold none, 1920 hold one, 1352 hold two (4624) | 33% |
+| 78 one-spoke | 16 | 10 hold only 6, the rest 7 | - |
+
+These are valid for every board of that placement and for every leaf, so they are worth far more
+than a pinned cut. But they are not enough: applied to local-15's outer CNF they sharpen 87 classes
+(9452 capacities down to 9406, a 2.4% reduction) and leave the model **SAT**. So per-cell capacity
+tightening, even at its exact value, is not the missing constraint. That closes a direction that
+looked promising from the outside.
+
+## 15. The capacity table is now kernel-checked
+
+The 16/5/2/1 table itself no longer rests on three SAT runs and prose. `K54Cap.anchor_capacity`
+(Lean 4.33.1, compiled here) states: in a triangle-free 4-colouring, a set W of vertices sharing
+`m >= 1` distinct anchor vertices with `m` distinct anchor colours, none of them in W, has
+`|W| <= 16/5/2/1` for `m = 1,2,3,4`. Proof: a pair in W cannot take an anchor colour or it forms a
+monochromatic triangle with that anchor, so W is a triangle-free `(4-m)`-colouring and the repo's
+kernel-checked `R(3,3) <= 6` and `R(3,3,3) <= 17` apply. All six theorems depend on
+`[propext, Classical.choice, Quot.sound]` only; no `sorry`, no `native_decide`. Board-independent.
+
+## 16. No symmetry quotient exists
+
+The census cannot be reduced by symmetry. Colour-preserving `Aut(H42)` has order **4** (a Klein
+four-group), not 2 as an earlier note claimed; but for all 14 open boards the only pair in
+`Aut(H42)^2` preserving the 14x14 pin mask is the identity, and the side-swap coset is empty
+(checked over all 16 pairs per board). A global colour permutation fixing c would be a symmetry of
+realizability, but none of the six preserves the priced class structure of local-15, live-07 or
+live-14 - only the identity does. So the case count is genuinely in the 10^5 range.
