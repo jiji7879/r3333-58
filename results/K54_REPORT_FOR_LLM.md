@@ -682,3 +682,33 @@ over 15M+ moves.
 So fresh-07 remains undecided, and the convergence of five independent methods on "hard" is the
 strongest evidence available that its count model is infeasible - evidence, not proof, and it closes
 no board.
+
+## 23. Five of the nine boards are feasible, all independently verified
+
+The standing after the sweeps:
+
+| board | columns | status | violations on re-check |
+| --- | ---: | --- | --- |
+| live-16 | 12216 | **feasible**, HiGHS incumbent under a time limit | 0 |
+| local-20 | 8539 | **feasible**, HiGHS OPTIMAL | 0 |
+| local-22 | 10800 | **feasible**, HiGHS OPTIMAL | 0 |
+| local-24 | 12911 | **feasible**, HiGHS incumbent under a time limit | 0 |
+| live-13 | 12110 | **feasible**, HiGHS incumbent under a time limit, 2501 s | 0 |
+| fresh-07 | 8619 | OPEN after five independent methods | - |
+| live-02 | 10917 | OPEN, 1001 s, no incumbent | - |
+| local-09 | 18475 | running | - |
+| local-17 | 14050 | pending | - |
+
+Each feasible witness was re-verified here against C0-C4 from the archive's own `instance()` and
+`LIMIT`: 0 bound violations, 0 unbalanced rectangles, population exactly 26/26, 0 anchor-class
+violations, 0 price violations, mass 52. Witnesses kept in `work/k54/witnesses/`.
+
+live-13 is the notable one: its row-sum relaxation could not even be decided in 300 s in the
+previous session, and the integer model still had a solution that a MIP found within 2,501 s. A
+relaxation timing out says nothing about the integer model in either direction.
+
+**What this means.** Of the nine boards that were undecided at the start of this stretch, five now
+have integral count witnesses. The count-model route can still close at most four of them:
+fresh-07, live-02, local-09 and local-17. That is a substantial narrowing of the only route this
+session found that could produce a new board exclusion - and it is a narrowing, not a result. No
+board has been excluded and the bound is untouched.
