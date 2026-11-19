@@ -455,3 +455,32 @@ board.
 What remains for the nine boards is either a long CDCL run on the strengthened CNF, a smarter
 decomposition of the integer model, or a heuristic hunt for an integral witness. A swarm is running
 on exactly those three routes.
+
+## 15. live-16 is off the undecided list: its count model is feasible
+
+Of the nine boards whose integer count model was undecided, the first is now settled - negatively.
+
+**live-16 has an integral solution of its count model.** The witness is 52 columns, each with count
+1, giving mass 52 (26 left, 26 right). Verified here independently, rebuilding C0-C4 from the
+archive's own `instance()`/`LIMIT` and evaluating the vector:
+
+| constraint | rows | violations |
+| --- | ---: | ---: |
+| C0 per-column bounds | 12216 | 0 |
+| C1 per-rectangle balance | 90 | 0 |
+| C2 population | left 26 / right 26 | 0 |
+| C3 anchor-class capacities | 3782 distinct | 0 |
+| C4 price lower bounds | 0 (none active) | 0 |
+
+A third, strongest check fixes the 13015 unary chain variables in the archive's regenerated
+count CNF (3,816,422 vars / 8,237,447 clauses, matching the handoff's figures exactly) and lets
+CaDiCaL decide the residual, which returns SAT. Negative controls behave: bumping one left column
+breaks C1, and adding a column of a saturated class breaks C3.
+
+**Consequence.** live-16 cannot be excluded by the count-model route and is removed from the
+undecided list. The undecided set is now eight: fresh-07, live-02, local-20, local-22, live-13,
+local-24, local-09, local-17.
+
+**Method note worth keeping.** HiGHS returned status *time limit*, not optimal or infeasible, but it
+had an integral incumbent with the correct left mass by 280 s. On these models the incumbent, not the
+status, is the answer - which is exactly why my own local-20 run looked like a failure at 600 s.
