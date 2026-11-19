@@ -252,7 +252,10 @@ python3 tools/verify_pilot.py
 python3 tools/run_native.py lift-local-15-two cadical 12000 runs/l15-two
 ```
 
-The new work lives beside the archive in the project repository:
+The new work lives beside the archive. Two layouts are referenced below: the archive unpacks to
+`work/k54/` inside the project repository, and the session's own scripts are in `work/k54/ours/`;
+the swarm members' directories `.ultramath/<swarm>/m<n>/` sit at the repository root, one level
+*above* the archive, which is what the `../.ultramath/...` paths below mean.
 
 ```sh
 # certified cut instances, rebuilt from a cut description alone
