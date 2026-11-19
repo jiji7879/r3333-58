@@ -484,3 +484,37 @@ local-24, local-09, local-17.
 **Method note worth keeping.** HiGHS returned status *time limit*, not optimal or infeasible, but it
 had an integral incumbent with the correct left mass by 280 s. On these models the incumbent, not the
 status, is the answer - which is exactly why my own local-20 run looked like a failure at 600 s.
+
+## 16. The 4/4/3 packing bound is verified, and it strengthens the crossing-cut theorem
+
+The crossing-cut theorem proves 56 > 55 ordinary edges. The handoff claims a sharper bound
+(4, 4, 3 outsiders with exactly four c-neighbours at poles 0, 2, 4), lifting 56 to 61, 61, 62.
+Verified here from scratch:
+
+* **Capacity table, sizes 1-4.** 14 one-sets all tight; 91 two-sets all tight; 364 three-sets all
+  tight; of the 1001 four-sets, 989 have capacity 4 and 12 have capacity 5, the twelve being
+  277, 550, 1162, 2121, 4388, 4417, 5154, 5192, 8724, 8834, 10257, 10376. Two independent
+  computations agree on this, mine and the swarm member's, from separate encoders.
+* **Packing bound.** With all 13 singleton slots occupied on H42 and k extra outsiders whose
+  c-support is exactly a chosen four-set: pole 0 gives **0 SAT of 56** at k = 5 and **1 SAT of 70**
+  at k = 4, so the bound is 4 and is attained; pole 4 gives **0 SAT of 126** at k = 4, so the bound
+  is 3.
+* **Arithmetic.** |M| = 13, every |S(w)| >= 4 by the three-point capacities, at most 4 (or 3) have
+  |S(w)| = 4, hence sum |S(w)| >= 4*4 + 9*5 = 61 for poles 0 and 2 and 3*4 + 10*5 = 62 for pole 4,
+  against the upper bound 13 + 6*7 = 55.
+* The implicit multiplicity step ("each exceptional four-set occurs at most once") is a real gap in
+  the handoff's prose and is closed by 25 duplicate-support refutations.
+
+**What this changes and does not.** It makes the theorem stronger, not the reduction smaller: the
+cover was already sound at 56 > 55. The case count stays 1,662,749.
+
+## 17. Two more measured dead ends on fresh-07
+
+* **Branch and bound on the rectangle totals**: OPEN after 2,100 s and 219 nodes (103 infeasible
+  leaves). The live-17 precedent (41 nodes) does not repeat here.
+* **Full MIP on fresh-07 / local-20**: local-20 reached the 600 s limit with no integral incumbent,
+  in contrast to live-16 where an incumbent with the correct mass appeared at 280 s.
+
+So of the eight remaining undecided boards, the cheap routes have been tried on two and neither
+decided them. That is why live-16's feasible witness matters: it was found by inspecting a
+time-limited MIP's incumbent rather than by any solver reaching a terminal status.
