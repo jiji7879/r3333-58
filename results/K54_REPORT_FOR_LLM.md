@@ -4,8 +4,9 @@
 **Date:** 19 November 2026. **Author of this report:** the agent that audited the bundle.
 **Bottom line up front:** the bundle's arithmetic is sound and its certificates replay, but its
 central claim cannot be completed from this bundle as it stands. The 72 "boards" inside seed 12 are
-a *sample*, not a cover, so closing them cannot close the seed; and the count-decomposition method
-provably cannot close 8 of the 12 open covered boards. No route to `R(3,3,3,3) <= 54` survives.
+a *sample*, not a cover, so closing them cannot close the seed. Counting is provably out of reach
+for only three of the twelve open covered boards; the other nine have never had a serious solver run
+and remain the live frontier.
 
 ---
 
@@ -141,31 +142,51 @@ a board exclusion as a step toward `R(3,3,3,3) <= 54` is wrong.
 
 ---
 
-## 5. Finding B: counting provably cannot close 8 of the 12 open covered boards
+## 5. Finding B: counting is only ruled out for the three pilots — the other nine are open
 
-The count model can be strengthened into an integer program: `x_k >= 0` integer per column, per-class
-caps, per-rectangle balance, population 26, price bounds. Relaxing `x` to continuous while keeping
-the per-rectangle totals integral gives a system whose **infeasibility implies the board is
-excluded** (integer solutions are a subset of the relaxation).
+The count model can be strengthened into an integer program: `x_k >= 0` **integer** per column,
+per-class caps, per-rectangle balance, population 26, price bounds. Relaxing `x` to continuous while
+keeping the per-rectangle totals integral gives a system whose **infeasibility implies the board is
+excluded**, since integer points are a subset of the relaxation.
 
-Measured, by HiGHS and independently by branch and bound:
+What that relaxation did, by HiGHS and by branch and bound:
 
 * `live-17` is **INFEASIBLE**: 41 nodes, 21 infeasible leaves, 59 rectangles. This reproduces the
   archive's only integrality exclusion without DRAT and without its 124,959-variable CNF.
-* The relaxation is **FEASIBLE** for eight boards: live-07, live-14, local-15 (trivially, since
-  their count models are already known satisfiable - the LP optimum even comes out integral) and
-  **live-13, live-16, local-20, local-22, local-24**, where satisfiability was *not* known.
-* fresh-07, live-02, local-09, local-17 remain OPEN at 150-280 s. Not refuted.
+* The relaxation is **FEASIBLE** for live-07, live-14, local-15, live-13, live-16, local-20,
+  local-22, local-24; fresh-07, live-02, local-09, local-17 remain OPEN at 150-280 s.
 * The LP maximum with population removed is 27.0 / 27.0 / 28.0 (pilots) and 26.10 (live-17), so the
-  LP is never the obstruction - only integrality can be, which is why live-17 was the one board this
-  mechanism ever closed and why it does not fire again.
+  LP is never the obstruction by itself.
 
-**Therefore:** for those five boards, no argument using only caps, per-rectangle balance,
-population and prices - even with integral rectangle totals - can exclude them. The counting
-programme is closed there.
+**A feasible relaxation does not mean the integer model is infeasible, and the converse reading is
+the single most tempting error here.** Integer solutions are a subset of the relaxation, so
+feasibility of the relaxation tells you nothing about them. The decisive test is integrality of the
+solution found. Checked per board:
 
-Caveat: for the large boards the feasible point is fractional, so "relaxation feasible" is strictly
-weaker than "count model satisfiable". Only the three pilots have integral witnesses.
+| board | relaxation | count vars fractional | status of the **integer** model |
+| --- | --- | --- | --- |
+| live-07, live-14, local-15 | feasible | **0** | count model SAT — integral witnesses exist, so counting provably cannot close these three |
+| live-16 | feasible | 287 of 289 | **undecided** — integer infeasibility would close the board |
+| local-20 | feasible | 171 of 181 | **undecided** |
+| local-22 | feasible | 236 of 238 | **undecided** |
+| live-13, local-24 | timed out even as a relaxation | — | **undecided** |
+| fresh-07, live-02, local-09, local-17 | OPEN | — | **undecided** |
+
+So **nine of the twelve open covered boards are not known to be out of reach of counting at all**,
+and any one of them that proves integer-infeasible is a new board exclusion. Only the three pilots
+are settled negatively, and that rests on actual integral count vectors, not on a relaxation.
+
+An earlier version of this report claimed "counting provably cannot close 8 of the 12 open covered
+boards" on the strength of the feasible relaxation alone. That claim was wrong: it confused
+feasibility of the relaxation with feasibility of the integer model. The corrected statement is the
+table above. Anyone continuing this work should treat the nine undecided boards as the live
+frontier — and note that none of them has had a serious solver run: the best previous effort was
+600 s / 10^6 conflicts on fresh-07 and live-02, and 170 s / 2·10^5 on the pure encodings of live-02,
+local-17 and local-24.
+
+One prior signal is worth acting on: fresh-07's strengthened count CNF ran to **10^6 conflicts
+without producing a model**, which is what an unsatisfiable instance looks like, whereas the pilots'
+count CNFs are answered in seconds. fresh-07 is the best single candidate in the set.
 
 ---
 
@@ -219,17 +240,22 @@ sample that cannot close the seed.
 
 ## 8. What a next step would have to do
 
-Nothing in this bundle, completed, closes the bound. The honest options:
+Nothing in this bundle, completed, closes the bound — but one line of work is still live and cheap.
 
-1. **Attack the seed-12 leaf structure directly.** The real object is the ordinary-rectangle split:
+1. **Decide the integer count model for the nine undecided boards (live section).** This is a pure
+   SAT problem on an existing encoding, it needs no new mathematics, and either answer is a result:
+   infeasible ⇒ a new board exclusion with a DRAT certificate; feasible ⇒ an integral count vector
+   proving counting cannot close that board. fresh-07 is the best candidate (10^6 conflicts with no
+   model found). The nine have never had a serious run.
+2. **Attack the seed-12 leaf structure directly.** The real object is the ordinary-rectangle split:
    2,809,638 colour orbits, each forcing four cells to ordinary colours. Board refutations do not
    touch it. This needs the archive's structural reduction (seeds 5-12: "an ordinary crossing
    rectangle is necessary") to be made explicit and formalised, and it is a different computation
    from anything in the bundle.
-2. **Request the missing pieces from the bundle's author**: the actual seed formulas and the
+3. **Request the missing pieces from the bundle's author**: the actual seed formulas and the
    coverage argument for the 12 seeds, not just the seed-12 sample. Without them nothing can be
    completed.
-3. **Publish the method rather than the bound.** What is genuinely new and defensible here: the
+4. **Publish the method rather than the bound.** What is genuinely new and defensible here: the
    kernel-checked capacity table, the LRAT kernel-checking of cut cores, the coverage keystone
    (Lean rectangle covers + validated general indexing), the complete marginal cut frontier, and
    Findings A and B as structural results about this reduction. None of it moves `R_4(3)`.
