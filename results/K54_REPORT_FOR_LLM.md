@@ -165,16 +165,21 @@ solution found. Checked per board:
 
 | board | relaxation | count vars fractional | status of the **integer** model |
 | --- | --- | --- | --- |
-| live-07, live-14, local-15 | feasible | **0** | count model SAT — integral witnesses exist, so counting provably cannot close these three |
+| live-07, live-14, local-15 | feasible | **0** | count model SAT — verified integral witnesses, so the board cannot be excluded by refuting its strengthened count model |
 | live-16 | feasible | 287 of 289 | **undecided** — integer infeasibility would close the board |
 | local-20 | feasible | 171 of 181 | **undecided** |
 | local-22 | feasible | 236 of 238 | **undecided** |
 | live-13, local-24 | timed out even as a relaxation | — | **undecided** |
 | fresh-07, live-02, local-09, local-17 | OPEN | — | **undecided** |
 
-So **nine of the twelve open covered boards are not known to be out of reach of counting at all**,
-and any one of them that proves integer-infeasible is a new board exclusion. Only the three pilots
-are settled negatively, and that rests on actual integral count vectors, not on a relaxation.
+So **nine of the twelve open covered boards are not known to be out of reach at all**, and any one
+of them that proves integer-infeasible is a new board exclusion. Only the three pilots are settled
+negatively, and that rests on actual integral count vectors, not on a relaxation: the archive's own
+CaDiCaL model for each pilot was re-verified here clause by clause (0 violations out of 407,864 /
+247,648 / 312,587 clauses, u[k,m] chains all genuine prefixes, mass 26 + 26), so each of those three
+count CNFs is SAT. Note the precise scope of that: it rules out excluding a pilot board by refuting
+*its strengthened count model*; it does not rule out the census route, which adds sound per-vector
+cuts until the model becomes UNSAT and is merely expensive (section 6).
 
 An earlier version of this report claimed "counting provably cannot close 8 of the 12 open covered
 boards" on the strength of the feasible relaxation alone. That claim was wrong: it confused
