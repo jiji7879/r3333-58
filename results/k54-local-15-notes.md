@@ -327,3 +327,42 @@ archive's - truncated DRAT files from runs I killed on a timer, and 85 stale pro
 had been deleted. They are now removed (1.8 GB), which also disposes of the one unsound artifact
 among them: `core/l15-cut3.cnf`, the early left-side cut that never corresponded to a count
 variable.
+
+## 22. Which open board is cheapest, and why the cut programme stalls
+
+A survey of all 14 open boards by the size of the count model, plus three measured negatives:
+
+| board | types (columns) | note |
+| --- | ---: | --- |
+| live-07 | 495 | price cover prunes nothing; the pin pattern is what makes it small |
+| live-14 | 675 | full universe (the archive's 672 drops 3 by its cost filter) |
+| local-15 | 717 | price cover prunes nothing |
+| the other 11 | 8 540 - 18 475 | 12-25x larger; nothing else is cheap |
+
+So there is no cheaper open board than the three pilots, and the reason is structural, not the
+price certificate: for the pilots the number of retained columns equals the full type universe.
+
+Three negatives, each measured rather than asserted:
+
+* **Census rate does not decay.** live-07 3 189 vectors in 150 s (21.3/s), live-14 2 344 (15.6/s),
+  local-15 90 775 in 65 min (23/s). A per-vector closure costs (census size) x ~0.4 s and the
+  census is not in the thousands.
+* **live-17's route does not transfer.** Its count model was UNSAT in 10 982 conflicts; fresh-07
+  and live-02 are UNKNOWN at 1e6 conflicts / 600 s, and the pure encodings of live-02, local-17 and
+  local-24 are UNKNOWN at 2e5 conflicts. OPEN, not refuted.
+* **Same-rectangle same-side pair cuts are nearly vacuous.** 74 new cuts were certified on live-07
+  (all DRAT-replayed, all 74 rebuilding cleanly) and they kill 2 of 800 sampled census vectors,
+  0.3%. The undecided pair tests cost 3.3 CPU-s each - 484 of 558 were undecided at 30 000
+  conflicts - because the non-pinned spokes are entirely free, so the two-witness instance is far
+  harder than the per-vector lift (0.05 s). Any systematic pair scan must spend its budget on
+  cross-rectangle pairs.
+
+The soundness of the pair family is clean: one vertex carries at most one type per side, so two
+same-side columns always have distinct witnesses and no case split is needed. Opposite-side pairs
+are excluded for exactly that reason.
+
+One reproducibility defect: the 74-cut ledger records only the indices `i`, `j` and the rectangle,
+not the generator call, and an independent rebuild gives 72 982 clauses against the recorded 73 008,
+with none of the first five hashes matching. The indices do resolve to real columns of
+`columns_for('live-07')`, so the cuts are presumably what they claim, but the ledger must record the
+full `(rect, side, sig)` triples and the exact generator parameters to be checkable by anyone else.
