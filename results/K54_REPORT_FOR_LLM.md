@@ -410,3 +410,26 @@ argument. It does not close a case: 1,662,749 coloured orbits remain, all 12 see
 sample ledger is still 58/72. The handoff says this itself ("it does not measure wall-clock
 speedup"). Beyond the size-four table, the tightness certificates for subsets of sizes 1, 2, 3 and
 5-13 come from its own data files and were **not** audited here.
+
+## 13. How far the crossing-cut verification was pushed
+
+The load-bearing finite input of the crossing-cut theorem is tightness: a position set `P` is tight
+when at most `|P|` outsiders can have their whole c-support inside `P`, and every certified partition
+must have all its parts, and all their subsets, tight. Verified here with an independent CNF (H42 plus
+k outsiders, c-spokes confined to `P`, every triangle clause including outsider-outsider):
+
+| subsets | count | result |
+| --- | ---: | --- |
+| size 1 | 14 | all tight |
+| size 2 | 91 | all tight |
+| size 3 | 364 | all tight |
+| size 4 | 1001 | 989 tight, 12 with capacity 5 (the exceptional list, matching theirs exactly) |
+| whole parts of 8 sampled certified partitions (sizes 5-8) | 8 | all tight |
+
+So every subset of size <= 4 on H42 is tight, which is what the counting half of the proof uses
+(`k`-point capacities for `k <= 3`, and the size-four table for the 56-edge bound). Eight of the
+partitions' actual parts were spot-checked at their true sizes and all are tight.
+
+**Not verified:** the weighted certificates covering subset sizes 5-13 in general. Partitions whose
+parts have size 6 or 7 lean on those, and only sampled instances were re-derived here. Any consumer
+of the cover should treat that family of certificates as the remaining unaudited input.
