@@ -589,3 +589,33 @@ way to OPTIMAL at 521 s. local-22, which was the third such board, is running no
 "the relaxation is feasible but fractional", which says nothing about the integer model - it does not
 show the model is satisfiable, and it does not show it is not. Actually solving the integer model
 takes minutes, not hours, and should have been the first thing tried rather than the last.
+
+## 20. Eligibility: complete, not just the six load-bearing partitions (supersedes §18)
+
+An exhaustive independent run closes the eligibility question for **all 161 stored partitions**, not
+only the six the cover uses:
+
+* 161/161 partitions fully eligible, 0 non-tight subsets.
+* Every set the certificate table calls tight at size 4-8, for all three poles (5980 masks), is
+  tight; 18,595 UNSAT instances over 7,087 distinct position sets, each with a DRAT accepted by
+  drat-trim **and** Kissat agreeing, 93.7M conflicts total, median 0.031 s.
+* **Sharpness**: capacity(P) = |P| exactly for all 8,872 masks, so the certificates are exact bounds
+  and no eligibility was lost by using them.
+* The domain restriction is sound, not a gap: all 161 stored partitions have both parts of size 5-8,
+  so subsets of size <= 8 are the only ones that can matter (a part of size k has bound ~35 > k).
+* Calibration against the archived `cap.cpp`: capacity 0/1/2/3 for empty/single/2/3-sets, and
+  exactly 8 of the 715 pole-0 four-sets admit five outsiders - the two orbits of the twelve
+  saturated exceptions.
+* The pole exclusion is load-bearing: allowing c-spokes to the pole makes every instance SAT, so
+  forgetting it would have made the whole table vacuous.
+
+Checked here independently and consistently: all 161 partitions have part sizes in {5,6,7,8}; my
+own 390-subset run over the six load-bearing partitions found 0 failures; and a fresh sample of
+twelve size-6 and size-7 part-subset instances gave capacity exactly |P| (SAT) with tightness at
+|P|+1 (UNSAT), 12 of 12.
+
+**The crossing-cut reduction now has all three links independently verified, none using the
+handoff's own code**: the cuts are valid (crossing-cut theorem, counting half in Lean, finite inputs
+checked), the certified partitions are eligible (this section), and the case accounting is exact
+(two independent implementations, 0 discrepancies). The reduction is therefore sound as a
+reduction. It still refutes none of its 1,662,749 surviving cases.
