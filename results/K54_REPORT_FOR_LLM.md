@@ -518,3 +518,45 @@ cover was already sound at 56 > 55. The case count stays 1,662,749.
 So of the eight remaining undecided boards, the cheap routes have been tried on two and neither
 decided them. That is why live-16's feasible witness matters: it was found by inspecting a
 time-limited MIP's incumbent rather than by any solver reaching a terminal status.
+
+## 18. Eligibility of the certified partitions: fully verified
+
+The 40.8% reduction rests on six partitions actually being *eligible*, meaning every subset of each
+part is tight (at most |P| outsiders have their whole c-support inside P). This was the last
+unaudited input. It is now closed for the partitions the cover actually uses.
+
+First, only six matter. Keying each placement by the pole of the side the cut is taken on and the
+partition mask, the 24 placements use exactly six distinct certified partitions:
+
+| pole | mask | part size | complement size |
+| ---: | ---: | ---: | ---: |
+| 0 | 1776 | 6 | 7 |
+| 2 | 2032 | 7 | 6 |
+| 2 | 5521 | 6 | 7 |
+| 4 | 3813 | 8 | 5 |
+| 4 | 5761 | 5 | 8 |
+| 4 | 6158 | 5 | 8 |
+
+Then, checked here with an independent CNF (H42 plus |P|+1 outsiders, c-spokes confined to P, every
+triangle clause):
+
+| subsets | count | result |
+| --- | ---: | --- |
+| all sizes 1-4, everywhere on the template | 1470 | tight (with the 12 four-set exceptions) |
+| size >= 5 within the twelve parts | **390** | **all tight, 0 failures** |
+| four-subsets of the twelve parts that are exceptional | 375 checked | **0 exceptional** |
+
+So every subset of every part of every partition the cover uses is tight, and no part contains one of
+the twelve capacity-5 four-sets. Combined with the previous section this leaves the reduction's
+chain verified end to end except for the hand counting argument (checked by hand and by hand again,
+not machine-checked) and the exhaustiveness of the 115-row K14 catalogue, which is taken from the
+archive.
+
+**The reduction's three separate claims, kept apart:**
+
+1. the cuts are *valid* - crossing-cut theorem, counting half in Lean, finite inputs verified here;
+2. the stored partitions are *eligible* - now verified (this section);
+3. the case accounting from cuts to 1,662,749 is *exact* - re-derived by two independent
+   implementations, 0 discrepancies.
+
+All three hold. What still does not exist is a refutation of any of the 1,662,749 cases.
