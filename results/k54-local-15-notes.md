@@ -255,3 +255,46 @@ four-group), not 2 as an earlier note claimed; but for all 14 open boards the on
 (checked over all 16 pairs per board). A global colour permutation fixing c would be a symmetry of
 realizability, but none of the six preserves the priced class structure of local-15, live-07 or
 live-14 - only the identity does. So the case count is genuinely in the 10^5 range.
+
+## 17. Coverage is complete for all 15 boards with a price file
+
+The keystone of §9 covered the 13 zero-pole-pair-price boards. The general indexing now covers
+`live-06` and `live-20` as well, so for **every** board that has a price file: any triangle-free
+4-colouring of K54 realizing the board's pins induces counts satisfying every clause of its outer
+count CNF. An UNSAT outer model is therefore a board exclusion, and cuts certified on
+distinct-witness instances can be added soundly.
+
+What I checked: the general indexing reproduces `columns_for` **identically, element for element**,
+on all 13 zero-mux boards (8619, 10917, 495, 12110, 672, 12216, 2473, 18475, 717, 14050, 8539,
+10800, 12911 columns) and returns 11610 / 8661 for live-06 / live-20; the two new Lean rectangle
+covers compile with `support_covered` depending on `[propext, Quot.sound]` only. The pole-pair
+class is a real two-anchor class - members share colour x at the side-0 pole and y at the side-1
+pole, so their mutual edges avoid both, giving capacity 5 for x != y and 16 for x = y - and it is
+charged with no forced occupants (`forced_left = forced_right = 0`), which over-counts capacity and
+is therefore the safe direction. Retention does not depend on the mux arithmetic: even with the
+pole terms deleted from the cutoff, the most expensive kept column (29994 and 21372) stays below it
+(30359 and 21652).
+
+## 18. The audit found two things worth carrying back to the archive's author
+
+* **live-14 has 675 columns, not 672.** The archive's cost cutoff `total - 25*scale` discards three
+  columns that exist. That filter is only valid at population 26, so live-14's column indices must
+  not be reused at any other population. local-15 (717) and live-07 (495) are unaffected.
+* **live-07's stored cut certificate is not the instance its stated cut regenerates.** It differs by
+  two clauses (one rectangle clause, one class clause) - the stored file encodes a cell that differs
+  by one anchor vertex. Both are UNSAT with an 80-clause core, so nothing is unsound, but the
+  stored certificate is unreproducible from the stated cut.
+
+Also confirmed: the two-sided cell test that yields `count_k <= 1` from a two-witness refutation is
+only valid when the rectangle has a **unique column on the far side**, since only then does booking
+into column k force the outsider's other-side signature. All four published unit cuts pass that
+test, so `count_269 <= 1` (live-07, chain length 12) and `count_89 <= 1` are sound and strictly
+stronger than the archived `count_269 <= 3`.
+
+## 19. Where the truncation route actually stands
+
+Pinned instances of the open boards are SAT up to order 40 and undecided at 41, 42 and 54. Orders
+43-53 were untested in the audit; a single UNSAT there would close a board with a strictly smaller
+certificate than K54. Sweep in progress at 45 s per instance over the three densest-pinned open
+boards. First results: fresh-07 OPEN at orders 43, 44, 45, 46, 47. The frontier is where the
+satisfiability threshold sits, not where the problem gets easier.
