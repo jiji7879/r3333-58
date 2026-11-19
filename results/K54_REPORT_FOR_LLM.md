@@ -13,8 +13,12 @@ and remain the live frontier.
 ## 1. The object and the bundle
 
 `R(3,3,3,3)` is the least n such that every 4-colouring of the edges of `K_n` contains a
-monochromatic triangle. Known bounds at the time of writing: `51 <= R_4(3) <= 62`. The bundle
-attacked the upper bound at 54.
+monochromatic triangle. Bounds, stated with their standing: the dynamic survey (Radziszowski,
+DS1.18 rev. 18, Apr 2026) lists **51 <= R_4(3) <= 62**, the upper bound due to Fettes-Kramer-
+Radziszowski (Ars Combin. 72, 2004). Tatarevic's preprint arXiv:2610.36648 improves it to **60**
+("we improve the upper bound ... from 62 to 60") and is what this bundle is built on; it is a
+preprint, checked by two solvers and not independently DRAT-verified. Cite both rather than one:
+62 is the survey figure, 60 is the operative figure for the K60 campaign this bundle belongs to.
 
 Bundle: `R3333_K54_CAS_SAT_LLM_handoff.zip`, 139.0 MiB, 4,170 entries, 152.1 MiB uncompressed,
 zip sha256 `d55ddd0b1186829774203d6d7202c1f669a05df7c0d6c80da6aa7274e3d0406e`. Its own
@@ -257,9 +261,13 @@ Nothing in this bundle, completed, closes the bound — but one line of work is 
    touch it. This needs the archive's structural reduction (seeds 5-12: "an ordinary crossing
    rectangle is necessary") to be made explicit and formalised, and it is a different computation
    from anything in the bundle.
-3. **Request the missing pieces from the bundle's author**: the actual seed formulas and the
-   coverage argument for the 12 seeds, not just the seed-12 sample. Without them nothing can be
-   completed.
+3. **Request the missing pieces from the bundle's author** — *corrected: there are none.* The
+   bundle does contain all twelve seed formulas (`seeds/`, hashes verified here, all OPEN) and a
+   written coverage argument (`checkpoints/structural/README.md`). An earlier version of this report
+   said otherwise and was wrong. What the coverage argument does *not* do is finish: it covers
+   1,881,012 of 2,136,206 rooted template-pair orbits by its matching/twins dichotomy, with seeds 2
+   and 4 contributing zero, and the README says plainly that it "counts no completed seed
+   refutations".
 4. **Publish the method rather than the bound.** What is genuinely new and defensible here: the
    kernel-checked capacity table, the LRAT kernel-checking of cut cores, the coverage keystone
    (Lean rectangle covers + validated general indexing), the complete marginal cut frontier, and
@@ -336,3 +344,69 @@ checks (`LEAN_PATH` must include the project's `lean/` directory for the K58 Ram
 **Not verified by anyone:** that the bundle's 12-seed reduction itself is sound. Every result above
 is conditional on it. The bundle asserts the reduction; this session did not audit it, and Finding A
 suggests the seed-12 side of it is a sample rather than a cover.
+
+## 12. Independent audit of the crossing-cut handoff (added after review)
+
+A second handoff, `R3333_K54_crossing_cut_handoff.zip` (4.0 MiB, 132 files, `sha256sum -c` clean),
+reduces seed 12's dispatch by 40.8%: marked rectangles 59,925 -> **35,031**, marked rectangles with
+all four crossing colours 2,809,638 -> **1,662,749**. It also supplies two mathematical results.
+Both were checked here, and both hold.
+
+### 12.1 The K5 lemma is correct
+
+*Claim.* In a 3-colouring with no monochromatic triangle, take a K5 that uses only two colours, and
+any three of its vertices S. At most two outside vertices can avoid the third colour on all three
+edges to S; there are exactly five ways for such a vertex to meet the K5, and their compatibility
+graph is a 4-cycle plus an isolated vertex.
+
+*Check.* The only 2-colouring of K5 without a monochromatic triangle is a 5-cycle in one colour and
+its complement 5-cycle in the other, unique up to relabelling. Enumerating all types and all
+coexisting triples (searching over the mutual edge colours, since coexistence is not a pairwise
+condition) gives, for **every** choice of S: exactly **5** legal types, and **no** three that can
+coexist. The pairwise compatibility graph has degree sequence 2,2,2,2,0 with four edges - a 4-cycle
+plus an isolated vertex, exactly as stated. Max clique 2. The lemma and its proof sketch are right.
+
+### 12.2 The size-four capacity table is correct, and it is the crux
+
+The theorem's engine is: for a 4-set P of template positions, at most four outsiders can have their
+entire c-support inside P - except for 12 exceptional 4-sets where five can. Then 56 > 55 closes the
+argument.
+
+*Check.* Rebuilt independently in this session with my own CNF (H42 plus k outsiders, c-spokes
+confined to P, all monochromatic-triangle clauses, including outsider-outsider triangles) and
+Cadical: of the 1001 four-sets, **989 have capacity 4 and 12 have capacity 5**, and the twelve sets
+are exactly `results/saturated4.json` in the handoff. Each pole position lies in 3 or 4 of them, so
+at most 9 exceptional sets avoid a given pole - the step that yields 9*4 + 4*5 = 56.
+
+*The arithmetic.* If no rectangle crosses the partition, the singleton sets L and the part-confined
+sets M cover 26 outsiders with |L| <= 13 and |M| <= 13, so both are 13 and disjoint; Hall gives 13
+distinct representative columns; hence |E(D)| >= sum over M of |S(w)| >= 9*4 + 4*5 = **56**. From the
+other side each of the 13 rows meets both parts with degrees d1,d2, contributing d1*d2 >= d1+d2-1
+cross-part column pairs, and each pair has at most one common row (two would be the forbidden
+rectangle), so |E(D)| <= 13 + |B1||B2| <= 13 + 6*7 = **55**. Contradiction. The inequality chain is
+correct as written.
+
+### 12.3 The Lean core and the cover arithmetic
+
+`formal/CrossCut.lean` compiles here and `forcedRectangle` depends on
+`[propext, Classical.choice, Quot.sound]` only. It states the counting step: 13 rows, each meeting
+both parts, with >= 56 ordinary edges, cannot be pairwise disjoint in their cross-part pairs. The
+premises (that the edge count is >= 56) are *not* derived in Lean - the handoff says so, and that is
+the honest boundary.
+
+`src/cut_cover.py` re-derives the whole orbit cover from the placement data and the certified
+partitions, rebuilding the group action per placement, checking that the 6,084 raw rectangles are
+partitioned, recomputing the number of inequivalent colourings per representative, and asserting
+equality with the saved `results/cover.json` and the omitted-orbit list. It reproduces
+`{'old_marks': 59925, 'kept_marks': 35031, 'old_colored': 2809638, 'kept_colored': 1662749}`.
+Dropping an orbit requires **every** image (including side-interchanged images) to miss the cut, so
+coverage survives - and since a colouring may carry several marks, an omitted branch can still be
+satisfiable in isolation, which the handoff states.
+
+### 12.4 What this does and does not do
+
+It reduces the *number of cases a search must dispatch* in seed 12 by 40.8%, with a sound covering
+argument. It does not close a case: 1,662,749 coloured orbits remain, all 12 seeds are open, and the
+sample ledger is still 58/72. The handoff says this itself ("it does not measure wall-clock
+speedup"). Beyond the size-four table, the tightness certificates for subsets of sizes 1, 2, 3 and
+5-13 come from its own data files and were **not** audited here.
