@@ -417,3 +417,51 @@ Also measured in the same submission, and confirmed as a direction-closer: two-o
 instances are nearly as hard as the open whole-board CNF (54 of 61 sampled stop at 20 000
 conflicts), and minimising 40 left-side 26-multisets always collapsed to a single column. So neither
 pair cuts nor multi-column minimisation is the missing constraint.
+
+## 25. The counting programme is provably closed for most of the open boards
+
+The last direction mined the one closed board that was not closed by capacity counting: live-17,
+which the archive excluded by *integrality* (a 29-node arithmetic tree plus two DRAT refutations of
+a 124,959-variable CNF). Re-encoding the integer core of the count model (x_k >= 0 per column,
+class caps, per-rectangle balance, population 26, price bounds) and relaxing x to continuous while
+keeping the per-rectangle totals integral gives a system whose infeasibility does imply the board is
+excluded.
+
+Results, with the load-bearing pieces checked by running them:
+
+* **live-17 is INFEASIBLE by an independent branch and bound**: 41 nodes, 21 infeasible leaves, 59
+  rectangles, no DRAT and no 124,959-variable CNF. The corpus's only integrality proof now has a
+  second, much cheaper derivation.
+* **The relaxation is FEASIBLE for eight of the twelve open covered boards**: live-07, live-14,
+  local-15 (all three trivially, since their count models are already known satisfiable - the LP
+  optimum even comes out integral), and live-13, live-16, local-20, local-22, local-24, where the
+  count model's satisfiability was *not* known. For those five this is the strongest available
+  statement that **no argument using only caps, per-rectangle balance, population and prices, even
+  with integral rectangle totals, can exclude them.** The counting programme is closed there.
+* fresh-07, live-02, local-09 and local-17 remain OPEN at 150-280 s. Not refuted.
+* The LP maximum with the population constraint removed is 27.0 / 27.0 / 28.0 for the pilots and
+  26.10 for live-17, so the LP is never the obstruction: only integrality can be, which is exactly
+  why live-17 was the one board this mechanism ever closed and why it does not fire again.
+
+Caveat carried in the report: for the large boards the feasible point is fractional, so
+"relaxation feasible" is strictly weaker than "count model satisfiable". Only the three pilots have
+integral witnesses.
+
+## Where this leaves the whole exercise
+
+Put together, the session's answers are:
+
+1. The archive is sound as far as it can be checked, and its trust base is now stronger: the
+   capacity table 16/5/2/1 is kernel-checked, the coverage keystone covers all 15 boards, and 94 cut
+   cores are kernel-checked through LRAT.
+2. The board work produces genuine certificates - certified cuts on all three pilots, a 533-cut
+   marginal frontier, a kernel-backed trust base - but **it cannot move the bound**: the 72 boards
+   are a sample, not a cover of seed 12 (zero of 2,809,638 leaves discharged by closing all of
+   them), and counting provably cannot close 8 of the 12 open covered boards.
+3. Every cheap route is now measured and closed: truncation above order 40 (OPEN 43-53 on three
+   boards), symmetry quotient (group is trivial), pairwise cuts (0.3% census yield), capacity
+   tightening (2.4% and still SAT), count-model transfer from live-17 (UNKNOWN at 1e6 conflicts).
+4. What remains is the census: local-15 has at least 90,775 count vectors and each per-vector lift
+   refutation costs ~0.4 s, so an exhaustive board closure for one pilot is roughly 10 CPU-hours
+   even with the marginal cuts in place - a guaranteed route to one board of a sample that cannot
+   close the seed.
