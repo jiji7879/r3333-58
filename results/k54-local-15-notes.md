@@ -387,3 +387,33 @@ hope that a board could be closed below K54.
 
 The frontier is exactly as the audit described: easy below order 41, hard from 41 up, and K54 is not
 the difficult end of the range.
+
+## 24. The complete marginal cut frontier, and why its headline number is wrong
+
+One member computed the full single-column frontier for all three pilots: for every count column and
+every multiplicity m, decide whether m distinct outsiders can all carry that column, and cut at the
+first refutable m. That is 235 cuts on local-15, 124 on live-07, 174 on live-14, every one a
+DRAT-verified UNSAT with the CNF regenerated and its sha256 matched (533 verified, 0 bad on replay).
+
+The encoding is the faithful one and mine was the weak one: their witnesses confine the c-spokes to
+the rectangle on **both** sides, which is what "assigned to rectangle R" means, whereas my one-sided
+rebuild leaves the far side free. That is why my rebuild of columns 3 and 15 at m = 2 stayed OPEN at
+120 s where theirs decided; my rebuild of column 16 at m = 3 came out UNSAT and verified, 4608/73156.
+
+The reported effect is a sampling artefact. They report the frontier killing 97.27% of local-15's
+census and the exhaustive route becoming ~37x cheaper. Measured directly: I added their 235
+local-15 clauses as units to the archive's count CNF and enumerated the census. It reached **44 000
+distinct count vectors in 969 s (45/s) and was still going** when I stopped it, against 90 775 in
+3 879 s (23/s) without the cuts. So the true residual is at least 44 000, the reduction is a factor
+of about two, and the route is still ~5 CPU-hours for local-15 alone at 0.4 s per vector refutation.
+The 2 054-vector sample was the first 2 054 vectors their solver emitted, biased toward high
+multiplicities - precisely the vectors the cuts kill. Their own caveat "percentages from biased
+samples" was the honest part; the headline contradicted it.
+
+The frontier is still worth keeping as an asset. It is not the closure step, and nothing should be
+planned around 2.7%.
+
+Also measured in the same submission, and confirmed as a direction-closer: two-outsider pair
+instances are nearly as hard as the open whole-board CNF (54 of 61 sampled stop at 20 000
+conflicts), and minimising 40 left-side 26-multisets always collapsed to a single column. So neither
+pair cuts nor multi-column minimisation is the missing constraint.
