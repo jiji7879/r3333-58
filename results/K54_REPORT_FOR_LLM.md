@@ -645,3 +645,40 @@ That is a signal, not a proof: no board has been excluded, and a limiter stop is
 **What this changes.** The list of boards that the count-model route could still close has shrunk
 from nine to five. It does not change the bound - the boards are a sample of seed 12 - but it means
 that any further counting effort should be spent on those five and nowhere else.
+
+## 22. fresh-07: certified rectangle bounds, and still OPEN
+
+The last undecided board with a serious attempt records an OPEN, but with a genuine reduction
+attached that applies to all of them.
+
+**Certified rectangle bounds.** For each maximal rectangle r, let n_r be the number of outsiders
+booked into it on one side. The LP maximum of that total over C1-C4 and the column bounds is a valid
+upper bound on n_r in any integer solution, since integer solutions are LP-feasible. Recomputed here
+independently for fresh-07: every rectangle has **n_r <= 3**, and since sum of n_r = 26 at least
+**nine** rectangles are used. Capping each unary chain at 3 shrinks the instance from 2,396,462 vars
+/ 5,239,842 clauses to **1,208,606 / 3,151,262** - about 40% fewer clauses, and it is a sound
+restriction, not a relaxation.
+
+A caveat recorded because it matters for reproducibility: the exact distribution of U_r across
+rectangles differs between my computation (55 rectangles at U=1, 35 at U=2, 4 at U=3, 1 at U=0) and
+the member's (58 / 33 / 4 / 0). Both agree on the bound of 3, so the reduction is safe, but the
+per-rectangle values sit on an LP boundary and a documented floor tolerance is needed before the
+table itself can be treated as a certificate.
+
+**Three negatives that close cheap hopes for fresh-07:**
+
+* with the population equality relaxed the LP reaches only 26.65, with 319 of 320 support columns
+  fractional - the LP sees nothing;
+* the tight-rows-only relaxation (cap <= 2) is SATISFIABLE, its model violating 47 class rows
+  (39 cap-3, 7 cap-4, 1 cap-12) - so no tight-class argument can exclude fresh-07;
+* with the per-rectangle balance rows dropped, the two sides pack 26 + 26 at zero violation - so the
+  per-rectangle coupling is the entire difficulty.
+
+**Open record.** Full-model CNF: CaDiCaL 600 s / 2.36M conflicts / 843 MB peak, CaDiCaL seed 17
+980 s, Kissat 980 s, all UNKNOWN. Tight+47-rows CNF: CaDiCaL 1200 s, Kissat 1100 s, UNKNOWN. Elastic
+MIP: bound 0 with 2911 violation. Local search on the 26-unit form: best 10 violated rows of 7203
+over 15M+ moves.
+
+So fresh-07 remains undecided, and the convergence of five independent methods on "hard" is the
+strongest evidence available that its count model is infeasible - evidence, not proof, and it closes
+no board.
