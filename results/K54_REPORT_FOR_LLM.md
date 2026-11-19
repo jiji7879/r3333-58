@@ -560,3 +560,32 @@ archive.
    implementations, 0 discrepancies.
 
 All three hold. What still does not exist is a refutation of any of the 1,662,749 cases.
+
+## 19. local-20 is off the undecided list as well
+
+The integer MIP on local-20 (8539 integer columns, 847 rows) returned **OPTIMAL** at 521 s with an
+integral solution, and my independent checker confirms it:
+
+| constraint | rows | violations |
+| --- | ---: | ---: |
+| C0 per-column bounds | 8539 | 0 |
+| C1 per-rectangle balance | 68 | 0 |
+| C2 population | 26 / 26 | 0 |
+| C3 anchor-class capacities | 2800 distinct | 0 |
+| C4 price lower bounds | none active | 0 |
+
+mass 52, support 51, maximum count 2. Witness kept at `work/k54/witnesses/w-local-20.json`.
+
+So **local-20's count model is feasible** and the undecided list is down to seven: fresh-07, live-02,
+local-22, live-13, local-24, local-09, local-17.
+
+Two of the three boards whose relaxation was feasible-but-fractional have now been settled in the
+negative, by the same method: a MIP that was never asked for an optimal objective, only for integral
+feasibility, and whose answer had to be read off the incumbent or the terminal status depending on
+how the solver behaved. live-16 gave an incumbent under a time limit at 280 s; local-20 went all the
+way to OPTIMAL at 521 s. local-22, which was the third such board, is running now.
+
+**Methodological point.** For three of these boards the previous session had concluded only that
+"the relaxation is feasible but fractional", which says nothing about the integer model - it does not
+show the model is satisfiable, and it does not show it is not. Actually solving the integer model
+takes minutes, not hours, and should have been the first thing tried rather than the last.
