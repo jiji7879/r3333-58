@@ -366,3 +366,24 @@ not the generator call, and an independent rebuild gives 72 982 clauses against 
 with none of the first five hashes matching. The indices do resolve to real columns of
 `columns_for('live-07')`, so the cuts are presumably what they claim, but the ledger must record the
 full `(rect, side, sig)` triples and the exact generator parameters to be checkable by anyone else.
+
+## 23. The truncation sweep is finished: no smaller certificate
+
+Orders 43-53 were the untested gap left by the audit, and a single UNSAT there would have closed a
+board with a strictly smaller instance than K54. Completed at a 45 s wall limit per instance on the
+three densest-pinned open boards (fresh-07, live-17, local-15):
+
+```
+fresh-07  n = 43 .. 53   OPEN at every order
+live-17   n = 43 .. 53   OPEN at every order
+local-15  n = 43 .. 53   OPEN at every order
+```
+
+33 instances, none decided. Together with the audit's SAT results at orders 30-40 and OPEN at 41,
+42, the truncation route is now closed as a practical shortcut: the satisfiability threshold sits
+where the instances are already at the wall, and the easy orders are all satisfiable. This is a
+budget statement, not a theorem - 45 s is not a proof of hardness - but it removes the last cheap
+hope that a board could be closed below K54.
+
+The frontier is exactly as the audit described: easy below order 41, hard from 41 up, and K54 is not
+the difficult end of the range.
