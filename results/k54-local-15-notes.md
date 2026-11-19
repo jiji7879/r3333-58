@@ -298,3 +298,32 @@ Pinned instances of the open boards are SAT up to order 40 and undecided at 41, 
 certificate than K54. Sweep in progress at 45 s per instance over the three densest-pinned open
 boards. First results: fresh-07 OPEN at orders 43, 44, 45, 46, 47. The frontier is where the
 satisfiability threshold sits, not where the problem gets easier.
+
+## 20. The cuts now rest on the Lean kernel, not on drat-trim
+
+`Mathlib`'s `lrat_proof` command checks an LRAT refutation at elaboration time, so a cut can be
+verified by the kernel instead of by an external checker. The pipeline is: drat-trim on the instance
+to get the UNSAT core and the core lemmas, drat-trim again on core + lemmas with `-L` so the LRAT
+ids are numbered against the core, a check that **every core clause occurs verbatim in the
+instance**, then `lrat_proof (include_str "core.cnf") (include_str "core.lrat")`. The subset check is
+the load-bearing step - kernel-proving the core UNSAT proves the instance UNSAT only because the
+core is a subformula - and it is done mechanically (`clauses_outside_instance = 0`).
+
+94 instances are kernel-checked this way (50 from the fixed-vector loops, 44 from the cut loop),
+cores 11-480 clauses, LRAT at most 37 KB, zero RAT lemmas, every one depending on
+`[propext, Classical.choice, Quot.sound]` only. I compiled one myself to confirm, and I added the
+`-u[354,1] -u[323,1] -u[69,1]` cut to the set: `cert-local-15-b`, 64-clause core, 348-byte LRAT,
+kernel-checked in 37 s. So all four published cuts (local-15 70-triple, local-15 69-triple, live-07,
+live-14) are kernel-backed, not merely drat-trim-backed.
+
+The wall is measured and worth recording: the full counted CNF of live-17 yields a 53 MB,
+7.5M-step LRAT that is OOM-killed by Lean at 617 s. The kernel route is viable exactly where it is
+needed - for cut-sized cores - and not for whole counted instances.
+
+## 21. Housekeeping
+
+The audit also flagged eight unusable traces in `work/k54/ours/`; all eight were mine, not the
+archive's - truncated DRAT files from runs I killed on a timer, and 85 stale proof files whose CNFs
+had been deleted. They are now removed (1.8 GB), which also disposes of the one unsound artifact
+among them: `core/l15-cut3.cnf`, the early left-side cut that never corresponded to a count
+variable.
