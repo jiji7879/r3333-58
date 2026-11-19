@@ -433,3 +433,25 @@ partitions' actual parts were spot-checked at their true sizes and all are tight
 **Not verified:** the weighted certificates covering subset sizes 5-13 in general. Partitions whose
 parts have size 6 or 7 lean on those, and only sampled instances were re-derived here. Any consumer
 of the cover should treat that family of certificates as the remaining unaudited input.
+
+## 14. Two measured dead ends on the undecided boards
+
+**Exact static aggregation is vacuous by construction.** The obvious way to shrink the count model is
+to merge columns that have identical incidence in every row. Implemented exactly (a merged variable
+z = sum of a group with added bounds is a faithful encoding, since any integer in range splits within
+the individual bounds), it produces **8539 groups from 8539 columns** on local-20 - no merging at
+all. The reason is structural, not an accident of implementation: a column is a triple
+(rectangle, side, signature), its rectangle/side membership fixes a unique balance row and a unique
+population row, and two distinct signatures differ in at least one class row. So no two columns ever
+share a row support, and no aggregation can help. Anyone who proposes column merging for this model
+can be told this once.
+
+**The full MIP is slow.** HiGHS on the complete integer model of local-20 (8539 integer variables,
+847 rows) reaches the 600 s time limit without status: OPEN, not infeasible. That is a legitimate
+outcome, not a refutation - but it removes "just hand it to a MIP solver" as a shortcut for the nine
+undecided boards, and it is consistent with the row-sum relaxation timing out at 300 s on the same
+board.
+
+What remains for the nine boards is either a long CDCL run on the strengthened CNF, a smarter
+decomposition of the integer model, or a heuristic hunt for an integral witness. A swarm is running
+on exactly those three routes.
