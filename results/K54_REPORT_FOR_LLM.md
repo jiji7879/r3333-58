@@ -619,3 +619,29 @@ handoff's own code**: the cuts are valid (crossing-cut theorem, counting half in
 checked), the certified partitions are eligible (this section), and the case accounting is exact
 (two independent implementations, 0 discrepancies). The reduction is therefore sound as a
 reduction. It still refutes none of its 1,662,749 surviving cases.
+
+## 21. Four of the nine undecided boards are feasible; five remain
+
+Integral count vectors have now been found and independently verified for **four** of the nine
+boards that were undecided:
+
+| board | columns | how it was decided | violations on re-check |
+| --- | ---: | --- | --- |
+| live-16 | 12216 | HiGHS incumbent under a time limit, 280 s | 0 |
+| local-20 | 8539 | HiGHS OPTIMAL, 521 s | 0 |
+| local-22 | 10800 | HiGHS OPTIMAL, 990 s | 0 |
+| local-24 | 12911 | HiGHS incumbent under a time limit, 1001 s | 0 |
+
+Each was re-verified here against C0-C4 from the archive's own `instance()`/`LIMIT`: 0 bound
+violations, 0 unbalanced rectangles, population exactly 26/26, 0 class-cap violations, 0 price
+violations, mass 52.
+
+**Five remain undecided**: fresh-07, live-02, live-13, local-09, local-17. What distinguishes them
+is that the MIP returns *no incumbent at all* within 1,000-2,500 s (as opposed to returning a
+fractional or infeasible one), which is the behaviour one expects when the model is infeasible or
+nearly so - fresh-07 additionally ran 10^6 conflicts in its CNF encoding without producing a model.
+That is a signal, not a proof: no board has been excluded, and a limiter stop is not evidence.
+
+**What this changes.** The list of boards that the count-model route could still close has shrunk
+from nine to five. It does not change the bound - the boards are a sample of seed 12 - but it means
+that any further counting effort should be spent on those five and nowhere else.
