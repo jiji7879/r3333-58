@@ -220,11 +220,36 @@ record the cross-colouring as one of 600 words.
    C4+2C2). The 5-case follows from `R(3,3) ≤ 6`; the 4-case needs the
    classification. This is the lemma the audit flagged as unstated in the
    original bundle.
-4. **Palette and orbit reduction.** Every palette relabelling of U and T is
-   realised by a vertex permutation fixing a specified reference position
-   (verified computationally; needs a Lean proof), which is what makes the
-   fixed-palette convention sound. Then the 20,617 palette-dropped cases of the
-   cover are covered by explicit symmetry witnesses.
+4. **Palette and orbit reduction.** *Corrected — the earlier wording of this
+   section was wrong.* The palette fact is size-dependent:
+
+   * **16-vertex templates.** `|Aut(U16)| = 160`, `|Aut(T16)| = 32`, both act
+     **transitively**. So every permutation of the three template colours is
+     realised by a vertex permutation, and it can be chosen to fix any
+     specified vertex.
+   * **15-vertex templates.** Not transitive: the vertex orbits number **3**
+     for U-minus and **9** for T-minus (`gluing.positions(15,·)` returns 3 and
+     9 elements). Every colour permutation is still realised by *some* vertex
+     permutation, but **not one fixing an arbitrary vertex**. Concretely, at
+     vertex 0 both 15-vertex templates have colour degrees `(4,5,5)`, so no
+     automorphism fixing vertex 0 can exchange colours 0 and 1 — they have
+     different degrees there.
+
+   The consequence, confirmed against the code: the cover does **not** assume a
+   fixed reference vertex in a 15-arm. `joint_plan.mark_classes` partitions the
+   arm into palette-augmented classes, and for 15-vertex arms there is more than
+   one:
+   `(15,15,15,12)/TTT- arm 0` gives classes of weights `(4,4,4,2,1)` of 15, and
+   `(15,15,15,12)/UUU- arm 0` gives `(10,5)`; in both the palette map *moves*
+   position 0. For 16-vertex arms the class is a single `(0,16)` and the palette
+   map fixes position 0, as transitivity predicts.
+
+   So the Lean statement to prove is: for every palette permutation and every
+   16-vertex template there is a realising vertex permutation fixing a chosen
+   vertex; for 15-vertex templates a realising vertex permutation exists, and
+   the marked-position cover must range over palette-augmented orbits, not a
+   single representative. Reproducing `mark_classes` is part of the obligation —
+   do not assume the fixed-vertex form.
 5. **Assembly.** Compose 1–4 with `Selection.root_plan_arm` to conclude that a
    counterexample satisfies some emitted case's units.
 
