@@ -10,36 +10,71 @@ against the first-pass cut-offs.
 """
 import argparse
 import json
+import os
 import sys
 import time
 from collections import Counter
 from pathlib import Path
 
 
-def scan(evidence):
+def scan(evidence, progress=False):
+    """One walk over the evidence tree; no per-case globbing."""
     first = Counter()       # first-pass statuses
     retry = Counter()       # retry attempt statuses
     retry_dirs = Counter()  # which (secs,budget) settings were used
     verified = 0
-    for marker in evidence.glob("[0-9a-f][0-9a-f]/*/verified.json"):
-        verified += 1
-    for case in evidence.glob("[0-9a-f][0-9a-f]/*"):
-        for r in case.glob("first/*.jsonl"):
-            try:
-                first[json.loads(r.read_text())["status"]] += 1
-            except Exception:
-                first["unreadable"] += 1
-        for r in case.glob("retry/*/*.jsonl"):
-            try:
-                retry[json.loads(r.read_text())["status"]] += 1
-                retry_dirs[r.parent.name] += 1
-            except Exception:
-                retry["unreadable"] += 1
+    seen = 0
+    for case in os.scandir(evidence):
+        if not case.is_dir() or len(case.name) != 2:
+            continue
+        for ent in os.scandir(case.path):
+            if not ent.is_dir():
+                continue
+            seen += 1
+            if progress and seen % 20000 == 0:
+                print(f"  ... {seen:,} cases scanned", file=sys.stderr, flush=True)
+            sub = case.path + "/" + ent.name
+            if os.path.exists(sub + "/verified.json"):
+                verified += 1
+            for kind, bucket in (("first", first), ("retry", retry)):
+                d = sub + "/" + kind
+                if not os.path.isdir(d):
+                    continue
+                for entry in os.scandir(d):
+                    if early := (entry.name.endswith(".jsonl") and kind == "first"):
+                        bucket[_status(entry.path)] += 1
+                    elif kind == "retry" and entry.is_dir():
+                        retry_dirs[entry.name] += 1
+                        for f in os.scandir(entry.path):
+                            if f.name.endswith(".jsonl"):
+                                retry[_status(f.path)] += 1
     return first, retry, retry_dirs, verified
 
 
-def report(evidence):
-    first, retry, retry_dirs, verified = scan(evidence)
+def _status(path):
+    try:
+        with open(path) as fh:
+            return json.load(fh).get("status", "unknown")
+    except Exception:
+        return "unreadable"
+
+
+def batch_says(batch_log):
+    """Has a retry job been started according to the batch log?"""
+    started = finished = False
+    try:
+        for line in Path(batch_log).read_text().splitlines():
+            if "tier=retry" in line and "START" in line:
+                started = True
+            if "tier=retry" in line and "END" in line:
+                finished = True
+    except Exception:
+        return None, None
+    return started, finished
+
+
+def report(evidence, batch_log=None):
+    first, retry, retry_dirs, verified = scan(evidence, progress=True)
     open_first = first.get("OPEN", 0)
     done = sum(retry.values())
     unsat = retry.get("UNSAT", 0)
@@ -60,11 +95,17 @@ def report(evidence):
     if done == 0 and open_first == 0:
         print("\nNothing to retry: every attempted case closed on the first pass.")
     elif done == 0:
-        print("\nNo retry receipts yet.")
-        print("If a retry job has been running for more than a few minutes, that is wrong:")
-        print("  - check batch-state/batch.log for 'tier=retry' START/END pairs")
-        print("  - an END only minutes after START, with this counter still 0,")
-        print("    means the shard selected no OPEN cases (wrong --shards, or wrong --out)")
+        started, finished = batch_says(batch_log) if batch_log else (None, None)
+        if started is False or started is None:
+            print("\nNo retry receipts yet, and the batch log shows no retry job started.")
+            print("That is expected while the first pass is still running: the batch")
+            print("does every first-pass shard before it begins retrying.")
+        else:
+            print("\nA retry job started but has produced no receipts yet.")
+            print("Recent lines to look at:")
+            print(f"  tail -5 {batch_log}")
+            print("An END only minutes after START with 0 receipts means the shard")
+            print("selected no OPEN cases (wrong --shards, or wrong --out).")
     return 0
 
 
@@ -73,13 +114,14 @@ def main():
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--evidence", required=True)
     p.add_argument("--watch", type=int, default=0, help="repeat every N seconds")
+    p.add_argument("--batch-log", default=None, help="batch-state/batch.log")
     a = p.parse_args()
     ev = Path(a.evidence)
     if not ev.is_dir():
         sys.exit(f"no such directory: {ev}")
     while True:
-        print(time.strftime("%H:%M:%S"))
-        report(ev)
+        print(time.strftime("%H:%M:%S"), flush=True)
+        report(ev, a.batch_log)
         if not a.watch:
             return 0
         print("-" * 60, flush=True)

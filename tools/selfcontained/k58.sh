@@ -197,7 +197,7 @@ PYEOF
 
 cmd_retrystatus() {
   need_venv
-  local args=(--evidence "$EV")
+  local args=(--evidence "$EV" --batch-log "$ROOT/batch-state/batch.log")
   [ $# -gt 0 ] && args+=("$@")
   $PY "$ROOT/tools/retry_status.py" "${args[@]}"
 }
