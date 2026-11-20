@@ -110,11 +110,13 @@ cmd_finalise() {
     *) die "unknown option $1";;
   esac; done
   [ -d "$EV" ] || die "no evidence at $EV; run ./k58.sh run first"
-  echo "1/2 building the manifest"
-  $PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
-     --root "$EV" manifest "$rel" | tee "$rel.manifest.json"
+  echo "1/2 building the manifest with $workers processes (this re-derives every CNF)"
+  $PY "$ROOT/tools/manifest_parallel.py" --bundle "$BUNDLE" --root "$EV" \
+     --out "$rel" --workers "$workers" | tee "$rel.manifest.log" | tail -1
   local sha
-  sha=$($PY -c "import json;print(json.load(open('$rel.manifest.json'))['manifest_sha256'])")
+  # manifest_parallel prints its hash as the last line of its log
+  sha=$(tail -1 "$rel.manifest.log" | $PY -c "import json,sys;print(json.load(sys.stdin)['manifest_sha256'])")
+  [ -n "$sha" ] || die "could not read the manifest hash from $rel.manifest.log"
   echo "manifest $sha"
   echo "checking coverage and manifest consistency (no replay, fast)"
   $PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
