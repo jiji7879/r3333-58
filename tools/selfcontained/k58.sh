@@ -8,6 +8,7 @@
 #   ./k58.sh status     how far along, how much disk
 #   ./k58.sh smoke      end-to-end self test incl. rejecting a bad certificate
 #   ./k58.sh retrystatus  is the retry pass actually closing cases?
+#   ./k58.sh unpublished  closed-but-unpublished vs still-open cases
 #   ./k58.sh version    print the package version
 #   ./k58.sh pin        pin the encoding (recipe + encoder revision + CNF hashes)
 set -uo pipefail
@@ -195,6 +196,13 @@ PYEOF
   fi
 }
 
+cmd_unpublished() {
+  need_venv
+  local args=(--evidence "$EV")
+  [ $# -gt 0 ] && args+=("$@")
+  $PY "$ROOT/tools/find_unpublished.py" "${args[@]}"
+}
+
 cmd_retrystatus() {
   need_venv
   local args=(--evidence "$EV" --batch-log "$ROOT/batch-state/batch.log")
@@ -218,6 +226,7 @@ case "${1:-}" in
   smoke) shift; cmd_smoke "$@" ;;
   version) echo "$K58_VERSION" ;;
   retrystatus) shift; cmd_retrystatus "$@" ;;
+  unpublished) shift; cmd_unpublished "$@" ;;
   pin) cmd_pin ;;
   *) usage; exit 2 ;;
 esac
