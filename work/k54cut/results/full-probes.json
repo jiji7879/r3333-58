@@ -1,0 +1,382 @@
+[
+ {
+  "case": "placement-01",
+  "sha256": "82cc910f12d11eaefa3472f4a092a679074d7c536c033e29552a374bf7b411a7",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24618,
+  "number_of_cuts": 126,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-02",
+  "sha256": "f34730cb98f77bfba47e2cca41cab62fa49e35330d3983bd61d34be88e1f059f",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24618,
+  "number_of_cuts": 126,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-03",
+  "sha256": "1d24f77474a98fdeef2c66009c077711e5c09f90b1b2d97a6800217bbb2bcf3d",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24618,
+  "number_of_cuts": 126,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-04",
+  "sha256": "7ab85a0197485f7c3551c86f33c4d30dc698a5c20db136b3493a05491e58c9f5",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24618,
+  "number_of_cuts": 126,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-05",
+  "sha256": "67cb1d9f7c53ef624ce23fffd7351a457fa583bd93b84fd7e65c160a2a001320",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24618,
+  "number_of_cuts": 126,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-06",
+  "sha256": "4e2bfdb2baaa901648e0bce275f6e3fe0c3ae9b5cd4606d6f5c9d4b88692ef08",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24603,
+  "number_of_cuts": 111,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-07",
+  "sha256": "42f22e8e05423d1b899e2999373de968ee962877f81dc6556d66990e2181c053",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24603,
+  "number_of_cuts": 111,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-08",
+  "sha256": "5ddf49a8a3a6ba57c9d5b9b4b3c0227a0fc4d63fe22351cb30b1399478be3a11",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24603,
+  "number_of_cuts": 111,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-09",
+  "sha256": "409701cdcc98da95101c8f1abc7fcdf4924313917bc40617f23e87e9dea7eedf",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24605,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-10",
+  "sha256": "006aefaeda8fbdc256d4f9762cff55657281dedaea6d9f38d56d7dfbb848b1cd",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24605,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-11",
+  "sha256": "d1492b71e5bb669f4962694940abdc306f85972daa8803f7ba25b164eb0ca5f5",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24605,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-12",
+  "sha256": "25928a82db40d75cfae4b699ef7d5940fe55365ea3e0bfb595ef70a87004c7fa",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24605,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-13",
+  "sha256": "0ce3d1bf0fbf8d68d368a856cabf22251f84cca1713d3edbaa07d88dda6c0a56",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24605,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-14",
+  "sha256": "6de10a7667d133e6be01d73d3873605616b65644fba944ea5a43535998d8c598",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24605,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-15",
+  "sha256": "c1318b67fa726c744152ff2c01376f0f1bd9d8bd3272c6f79d1bc206ec8c0c1d",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24588,
+  "number_of_cuts": 96,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-16",
+  "sha256": "fb37bab5589088376add9bf9441b665d32aed417b31f55127ea48320070e0564",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24588,
+  "number_of_cuts": 96,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-17",
+  "sha256": "0d7e244fa01223962f106612de5a50164aa1134edbba051ff9603f5f4eb0f51c",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24590,
+  "number_of_cuts": 98,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-18",
+  "sha256": "74a4b21135e52208b8c5206bcfcde5fc2694a435ff1b72d97fab9b10fd27340e",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24590,
+  "number_of_cuts": 98,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-19",
+  "sha256": "055d6da21f0be0e03df3175a991ac4cb408fb0a841c94f2d535f2148f55722d7",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24590,
+  "number_of_cuts": 98,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-20",
+  "sha256": "27ee2b63a656f471c0c4990af4ecf45ffeb65185a1208927921c2b84dc918e73",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24592,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-21",
+  "sha256": "1fbdd9832e350690d4ea7ea373e59b5b276245cf40da9332d00fcfd25a2f25f2",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24592,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-22",
+  "sha256": "4a3fbadfd41678a92860177b57f247c56867cb6dd72c8993fcfeaf51dab1cad7",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24592,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-23",
+  "sha256": "3bac3bc71aaff927efe3858e378c96f5e0171289302e56fd16271418c2df7f3e",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24592,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "placement-24",
+  "sha256": "5fce91da13ade2723dfd53ec0e7c9cb5d9a9c819702a5bf6e4cd260d69d92a36",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 6240,
+  "clauses_added": 24592,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 3120
+ },
+ {
+  "case": "fresh-07",
+  "sha256": "c986dae254ee54a2ccc0c3ab55457d5fad66039340fa11bb081de72701e2fbb0",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 662,
+  "clauses_added": 2330,
+  "number_of_cuts": 111,
+  "fewest_rectangles_on_a_cut": 220
+ },
+ {
+  "case": "live-02",
+  "sha256": "02714e7618d796cd093d5b249658247f9f93b0e49c9fece2041ea65f88edf162",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 1033,
+  "clauses_added": 3838,
+  "number_of_cuts": 126,
+  "fewest_rectangles_on_a_cut": 338
+ },
+ {
+  "case": "live-06",
+  "sha256": "1b03d0b34f5fed8ca4bf5b3050341ce3116679939b8aae4b1cc4ee73df2d3171",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 855,
+  "clauses_added": 3105,
+  "number_of_cuts": 111,
+  "fewest_rectangles_on_a_cut": 275
+ },
+ {
+  "case": "live-07",
+  "sha256": "2197a50d6271a25aad3308ad59d7925e57c157728f46dada78cb69d49adfa3fb",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 1005,
+  "clauses_added": 3729,
+  "number_of_cuts": 111,
+  "fewest_rectangles_on_a_cut": 408
+ },
+ {
+  "case": "live-13",
+  "sha256": "f1e72412a6cf523e6c2893d8313aefcec00bb29bb07e35775929d09babb26eeb",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 944,
+  "clauses_added": 3460,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 312
+ },
+ {
+  "case": "live-14",
+  "sha256": "476dc8e1c77bd75fef5a94b31245112ab4d1573afd274dd484e3208e42e0668b",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 1119,
+  "clauses_added": 4139,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 417
+ },
+ {
+  "case": "live-16",
+  "sha256": "8a2b4b2b5a7d218081542b9c982d97b491c0812374d98b3836426dcf5488480d",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 1049,
+  "clauses_added": 3851,
+  "number_of_cuts": 96,
+  "fewest_rectangles_on_a_cut": 391
+ },
+ {
+  "case": "live-20",
+  "sha256": "4e236a5981bb663fb5b7e3012db35fb0caa5e78f2797229a2e59064b1b3c0894",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 888,
+  "clauses_added": 3265,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 322
+ },
+ {
+  "case": "local-09",
+  "sha256": "7b712dcc8663bb242ac3c7b370d45a77dca34424075f11bc6988cba59db19665",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 888,
+  "clauses_added": 3209,
+  "number_of_cuts": 113,
+  "fewest_rectangles_on_a_cut": 351
+ },
+ {
+  "case": "local-15",
+  "sha256": "85fb5b01cc36c1e3d09575f26722e30d718c4c87c633442eca76403ee5aad3a6",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 876,
+  "clauses_added": 3159,
+  "number_of_cuts": 96,
+  "fewest_rectangles_on_a_cut": 326
+ },
+ {
+  "case": "local-17",
+  "sha256": "5bda31e9614a7f2be55e9d0690e9bdc680b97f563d57e28d37bb591a5b10974a",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 748,
+  "clauses_added": 2646,
+  "number_of_cuts": 98,
+  "fewest_rectangles_on_a_cut": 278
+ },
+ {
+  "case": "local-20",
+  "sha256": "3a5979135038308397a2684c822fe9533dd8961289660d0775605ef2f92eb65e",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 1096,
+  "clauses_added": 4043,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 472
+ },
+ {
+  "case": "local-22",
+  "sha256": "0a65e4ad9cecbf67ce1c6f3633594e065c466cdd2bd5552bc72361981f719915",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 1086,
+  "clauses_added": 3994,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 431
+ },
+ {
+  "case": "local-24",
+  "sha256": "bfdbed78616cf364ac0cf3d57be865f0013b270caa514d8d6f5d60cd6f05fac6",
+  "budget": 5000,
+  "status": "OPEN",
+  "variables_added": 975,
+  "clauses_added": 3550,
+  "number_of_cuts": 100,
+  "fewest_rectangles_on_a_cut": 359
+ }
+]

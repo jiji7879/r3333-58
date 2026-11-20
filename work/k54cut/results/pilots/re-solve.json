@@ -1,0 +1,180 @@
+[
+ {
+  "board": "local-15",
+  "solver": "cadical",
+  "input_sha256": "89ca2f6b65c30fd3e8d09c3ef6a8c95b39df187babc0db4b8c8eb80119a656e8",
+  "cuts": [
+   [
+    -2612,
+    -1933,
+    -1636
+   ],
+   [
+    -2205,
+    -451,
+    -117
+   ],
+   [
+    -1746,
+    -1706
+   ],
+   [
+    -1365,
+    -1335,
+    -1209
+   ]
+  ],
+  "strengthened_sha256": "d0ddfe69122ae9ae1cf39c7d8f309ecb287171ff24808a46f171c6a9123380c4",
+  "status": "SAT; model checked"
+ },
+ {
+  "board": "local-15",
+  "solver": "kissat",
+  "input_sha256": "89ca2f6b65c30fd3e8d09c3ef6a8c95b39df187babc0db4b8c8eb80119a656e8",
+  "cuts": [
+   [
+    -2612,
+    -1933,
+    -1636
+   ],
+   [
+    -2205,
+    -451,
+    -117
+   ],
+   [
+    -1746,
+    -1706
+   ],
+   [
+    -1365,
+    -1335,
+    -1209
+   ]
+  ],
+  "strengthened_sha256": "d0ddfe69122ae9ae1cf39c7d8f309ecb287171ff24808a46f171c6a9123380c4",
+  "status": "SAT; model checked"
+ },
+ {
+  "board": "live-07",
+  "solver": "cadical",
+  "input_sha256": "ed3df6ba72ca94ba96eaae5aae6423601ef72a074de331d023414383b0efcafc",
+  "cuts": [
+   [
+    -2301,
+    -2172
+   ],
+   [
+    -2214,
+    -2171,
+    -1983,
+    -1952
+   ],
+   [
+    -2212,
+    -2206,
+    -2200,
+    -2133,
+    -2086,
+    -1808,
+    -1258,
+    -993
+   ],
+   [
+    -2076
+   ]
+  ],
+  "strengthened_sha256": "94d71ce197ae4f38340e3fce57bb02bfe7b4c9aa3a8e11421c894cce8137eae2",
+  "status": "SAT; model checked"
+ },
+ {
+  "board": "live-07",
+  "solver": "kissat",
+  "input_sha256": "ed3df6ba72ca94ba96eaae5aae6423601ef72a074de331d023414383b0efcafc",
+  "cuts": [
+   [
+    -2301,
+    -2172
+   ],
+   [
+    -2214,
+    -2171,
+    -1983,
+    -1952
+   ],
+   [
+    -2212,
+    -2206,
+    -2200,
+    -2133,
+    -2086,
+    -1808,
+    -1258,
+    -993
+   ],
+   [
+    -2076
+   ]
+  ],
+  "strengthened_sha256": "94d71ce197ae4f38340e3fce57bb02bfe7b4c9aa3a8e11421c894cce8137eae2",
+  "status": "SAT; model checked"
+ },
+ {
+  "board": "live-14",
+  "solver": "cadical",
+  "input_sha256": "92ed67d6c86bfc432cec322ca2d20834621326af8ab050ff6f8dfab4d5891e9c",
+  "cuts": [
+   [
+    -3234,
+    -3207,
+    -2983,
+    -2967
+   ],
+   [
+    -2986,
+    -2979
+   ],
+   [
+    -614,
+    -171,
+    -54
+   ],
+   [
+    -611,
+    -609,
+    -585
+   ]
+  ],
+  "strengthened_sha256": "720f9257b29b063469a61f1f4b0b8a9ec04805ddd424df54a40c5a81fbda90a7",
+  "status": "SAT; model checked"
+ },
+ {
+  "board": "live-14",
+  "solver": "kissat",
+  "input_sha256": "92ed67d6c86bfc432cec322ca2d20834621326af8ab050ff6f8dfab4d5891e9c",
+  "cuts": [
+   [
+    -3234,
+    -3207,
+    -2983,
+    -2967
+   ],
+   [
+    -2986,
+    -2979
+   ],
+   [
+    -614,
+    -171,
+    -54
+   ],
+   [
+    -611,
+    -609,
+    -585
+   ]
+  ],
+  "strengthened_sha256": "720f9257b29b063469a61f1f4b0b8a9ec04805ddd424df54a40c5a81fbda90a7",
+  "status": "SAT; model checked"
+ }
+]
