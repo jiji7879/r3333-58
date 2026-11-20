@@ -66,6 +66,45 @@ computational routes (see *Evidence* below); what is missing is a Lean proof.
 
 ### Route A — port the K60 development (recommended first)
 
+**Tested here, and it works.** The whole `R4333Lean` closure compiles on this
+machine at its own pins: 33 modules, **32 compiled and 0 failed** (the 33rd is
+`CriticalTemplatePaletteSymmetry`, not in `CriticalCatalogues`'s closure). Time:
+about 20 minutes, after `lake exe cache get` pulled the 8,639-file Mathlib cache
+(7.4 GB, ~10 min). The two theorems then report
+
+```
+'R4333.k16CriticalCatalogue_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R4333.k15CriticalCatalogue_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+```
+
+So the *content* is available and kernel-clean. What remains is bridging their
+definitions to ours:
+
+* theirs: `ThreeColor`, `ThreeColorCatalogue`, `ThreeColorCatalogueComplete 16 k16CriticalCatalogue`,
+  a `WeakColorEquiv` allowing simultaneous vertex and colour relabelling;
+* ours: `EdgeCol (Fin n) 3`, `template n t`, `IsoUpToColour`, `Classified n`.
+
+The bridge is: define a map `EdgeCol (Fin n) 3 → their colouring type`, prove it
+preserves triangle-freeness, apply their theorem, then read off
+`IsoUpToColour` from `WeakColorEquiv` and check that their `k16CriticalCatalogue`
+entries are our `template n t` (they are — the audit confirmed the matrices are
+bit-identical to `gluing.template`). That is adapter work, not new mathematics.
+
+**Exact steps used to reproduce the build:**
+
+```sh
+git clone https://github.com/milostatarevic/r3333-upper-bound
+cd r3333-upper-bound/formal
+lake exe cache get                     # 8,639 files, ~7.4 GB, ~10 min
+T=~/.elan/toolchains/leanprover--lean4---v4.32.1/bin/lean
+LP="$PWD/src"; for p in .lake/packages/*/.lake/build/lib/lean; do LP="$LP:$PWD/$p"; done
+env LEAN_PATH="$LP" $T -o src/R4333Lean/CriticalCatalogues.olean src/R4333Lean/CriticalCatalogues.lean
+```
+
+(`lake build` does not work here — the package declares no `lean_lib` and ships
+its own `build.py` driver. Compile in topological order of the `import` graph
+with `lean -o`, as above.)
+
 `https://github.com/milostatarevic/r3333-upper-bound` at commit
 `6c3f2fd0386335321801fa4079397d4a4c1962f3` proves exactly this, in Lean, with no
 catalogue-completeness hypothesis:
@@ -77,7 +116,7 @@ catalogue-completeness hypothesis:
   `CheckedLRAT.lean` at kernel level (the LRAT importer checks definitional
   equality against the Lean-side formula before submitting the proof term).
 
-The problem is version skew: that project pins **Lean 4.32.1** and Mathlib rev
+Version skew remains: that project pins **Lean 4.32.1** and Mathlib rev
 `520045ab14e26149ee970e2e617ca04b09bde5d6`; this repository is on **4.33.1**
 with a different Mathlib. Two sub-routes:
 
