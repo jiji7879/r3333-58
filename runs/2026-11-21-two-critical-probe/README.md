@@ -37,7 +37,8 @@ the checker capped at 300 s by `tools/patch_run_cover_timeout.py`.
 The failure is not a fast tail that a better sample would miss: all 68 cases
 consumed their entire budget. Retry-tier solver CPU is 70.0 s on all 68 (mean,
 median and maximum are the same number), peak RSS 233 MiB; the tier spent
-4,759 CPU-s and 2.5 h of wall time without producing one certificate.
+4,759 CPU-s — 32 minutes of wall time on 3 workers — without producing one
+certificate.
 
 With 0 successes in 68 the rule of three puts a 95 % upper bound of 3/68 = 4.4 %
 on the closure rate, i.e. **at most ~490 of the 11,116** would close at this
