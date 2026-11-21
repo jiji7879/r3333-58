@@ -195,9 +195,15 @@ smaller `s`, so the natural target (swarm direction d7) was to refute all four
 `(t1,t2)` at some `s <= 11`. `P(U,T,7)` is **satisfiable**: Kissat found a model
 and it is `artifacts/k40_two_16arms_UT_s7.col`, 40 vertices, `v`-degrees
 `(16,16,7,0)`, checked by `tools/verify_coloring.py`. The four `s <= 6` pieces
-were already known satisfiable, so this pushes the smallest possible refutation
-to `s = 8` for the `(U,T)` pair, and a model at `s = 11` would kill the route
-outright, since it would restrict to every smaller `s`.
+were already known satisfiable, so any refutation in this family starts at
+`s = 8` for the `(U,T)` pair.
+
+Measured here with Kissat 4.0.4 (one core each, quiet): `P(U,T,8)` no answer in
+1,100 s, `P(U,T,10)` no answer in 1,100 s, `P(U,T,11)` no answer in 1,700 s,
+against `s = 7` solved in about four minutes. So the crossover, if there is
+one, sits at `s >= 8` and is beyond a half-hour budget per instance; a model at
+`s = 11` would settle the route negatively, since it would restrict to every
+smaller `s`, and no such model was found.
 
 ## 7. Consequence for the open decision
 
