@@ -158,8 +158,46 @@ argument may assume "colour 0 is still the 15-arm at `r`" after normalisation.
   --out <dir> --kissat .scratch/satcheck/bin/kissat --workers 1 --seconds 15
   --limit 1 --shuffle 3`.
 
-## 5. Honest status
+## 5. A void closure, caught
+
+One member (m1, direction d7 — canonical forms) produced
+`.ultramath/smwqx1yfw/m1/work/sweep/`: 381 DRAT files, a log with every case
+`UNSAT, verified: true`, ~500 KB per proof, against cases that resist 300 s at
+the pinned solver. Its construction adds lex-leader symmetry breaking for the
+twin classes of the pinned units (classes of size 10, 9, 9 in the first case).
+**The closures are void: the lex clause set is unsatisfiable whenever two twins
+of one class share the colour of an edge to the first witness, so a class of 9
+or 10 twins over 4 colours is refuted by pigeonhole before the case is looked
+at.**
+
+The symmetry claim itself is sound — I checked all 117 transpositions of the
+three classes of case `5da5b4ca…` against the 309 pinned units: every one is an
+automorphism. The bug is in `lex_case.lex_clauses`. For the first witness the
+prefix is empty (`head = []`), and the clause `[-eq] + head` becomes the unit
+`[-eq]`; the surrounding clauses force `eq` true exactly when the two vertices
+have the same colour at that witness. So the encoding forces *strictly
+increasing* codes, not non-decreasing ones. Measured directly on the clause set
+(all code assignments to a class of `k` twins over `m` witnesses, SAT check per
+orbit): for `k = 2` every assignment whose codes agree at the first witness has
+no representative (4 of 16 at `m = 1`, 64 of 256 at `m = 2`), and for `k = 3`
+the representatives require all `k` colours at the first witness to be
+distinct — 2560 of 4096 assignments have none. A class of `k >= 5` twins
+therefore makes the broken formula unsatisfiable outright, and I measured it:
+with one witness, the clause set admits **0 of 1024** code assignments at
+`k = 5` and **0 of 1,048,576** at `k = 10`. The swept cases have classes of
+size 10, 9, 9, so every one of them is unsatisfiable by pigeonhole alone.
+
+Consequence: no case was closed. The correct form of the constraint sorts by a
+*non-decreasing* code, and the encoder needs `[-eq]` replaced by a clause that
+is vacuous when the prefix is empty. This is the failure mode the handoff warns
+about — an over-constrained CNF invalidates every closure it produces — and it
+is why a closure built on an added constraint needs the constraint's soundness
+certified separately from the DRAT replay.
+
+## 6. Honest status
 
 No family refuted, no case closed, no DRAT certificate produced, `R_4(3)` not
 moved. The three closed routes and the `n = 48` calibration object are the parts
-that should survive; the rest is bookkeeping.
+that should survive; the rest is bookkeeping. The one apparent full closure this
+session produced (§5) is void, and it is recorded here because it is the exact
+kind of result this campaign must not bank.
