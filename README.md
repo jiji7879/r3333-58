@@ -38,10 +38,11 @@ Where the 31,771 open rows are, and what each needs:
   tier closed 14/15 and 8/10 in samples. One retry-only pass is 20,166 × 70 s =
   ~390 CPU-h (≈33 h wall on 12 cores) and 15–35 GB of certificates, depending
   on the closure rate; not yet run in bulk.
-* **20** in `(16,15,15,11)` — the hard tail, refuted from the 458 MB LFS
+* **20** in `(16,15,15,11)` — the hard tail of a profile whose other 16,070
+  rows are certified (the bulk run). The 20 are refuted from the 458 MB LFS
   archive (`runs/2026-11-21-hard-tail-16-15-15-11/`) as *split* certificates
-  that the one-DRAT-per-case pipeline cannot carry. These finish the profile
-  apart from its 83 historical rows.
+  that the one-DRAT-per-case pipeline cannot carry, so they sit OPEN in the
+  index; 83 further rows are historical evidence.
 * **11,585** in the seven small profiles — **the wall**. All seven have now
   been measured at or above the retry budget and closed nothing: 0/98 at 12 s
   ([runs/2026-11-16-small-probe/](runs/2026-11-16-small-probe/)), 0/68 at 70 s
