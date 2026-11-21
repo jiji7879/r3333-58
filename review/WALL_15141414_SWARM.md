@@ -320,3 +320,33 @@ One member (m4) has reported; its items are checked here.
   2 and 3 occur, which is what m2's counterexamples show; the statement needs
   the colour-0 adjacency, and with it the constraint is available as the
   S-side-to-T-internal coupling that m8's still-feasible model lacked.
+
+## 8. Accepted: the classification premise is proved (round two, m1)
+
+`K58.Classified 15` and `K58.Classified 16` — "every triangle-free 3-colouring
+of `K_n` (`n = 15, 16`) is isomorphic to one of the two templates, up to
+relabelling the vertices and the colours" — were **stated and not proved** in
+`lean/K58/Templates.lean`, and the whole `n = 58` cover rests on them. They are
+now proved, in `lean/port/`, from the pinned `R_4(3) <= 60` development's own
+kernel-checked theorems. Build and axioms:
+
+```
+bash lean/port/build_port.sh      # 53-54 s, Lean 4.32.1 + the pinned Mathlib
+'K58.classified_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.classified_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+```
+
+No `sorry`, no `native_decide`, no new axiom. The bridge was checked by hand as
+well as by the compiler: `K58.IsoUpToColour` and the upstream `WeakColorEquiv`
+are the same relation (a vertex bijection together with a global colour
+bijection), `R4333.ThreeColorCatalogueComplete` is the same completeness
+statement, both upstream endpoints are unconditional, and the four catalogue
+identifications are kernel `decide`s over the edge pairs.
+
+Caveats that travel with it: it is proved under **4.32.1** against the pinned
+Mathlib, not under the repository's 4.33.1, so it lives beside `lean/build.sh`
+rather than inside it (rebuilding the upstream modules at 4.33.1 is measured at
+three patches plus a failure at `CatalogueBaseCNFSemantics`, 26 modules
+untried); and `Classified` is used nowhere yet — the marking lemma remains the
+critical path. What changes is that the campaign no longer rests on an
+unproved premise.
