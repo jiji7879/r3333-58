@@ -114,16 +114,26 @@ neighbours in the 42; every 14-arm vertex non-sending; `d_c <= 16`.
 *(Triangle-type analysis checked here.)* The whole difficulty is the internal
 colouring of the 42 plus the joint effect of the pair conditions.
 
-### 2.4 The extremal 6-blocks — and a correction (m5, corrected here)
+### 2.4 The extremal 6-blocks, settled (m5 and m4; corrected twice here)
 In the extremal configuration (`t = 0`, all `m_0 = 5`) the types with an empty
-part come in exactly **6** configurations per (empty part, ordered colour pair)
-in both templates. They do **not** form a `2-(15,5,2)` design: 6 blocks is
-impossible for any `lambda` (`b = 105 lambda/10`), the point degrees are 1, 2
-and 3 (five points each), and the pair multiplicities are 1 for 40 pairs and 2
-for 10. For `T^-`, empty part 0, `g = 1`, `h = 2` the blocks are
+part come in exactly **6** configurations per (empty part, ordered colour pair),
+in both templates; each configuration splits the arm into `M_0, M_g, M_h` of
+size 5 with `M_f` empty. The three block families behave differently
+*(recomputed here)*:
+
+* the **`M_0` parts** form a 1-`(15,5,2)` design: each of the 15 arm vertices
+  lies in exactly 2 of the 6 blocks, and the 60 pair incidences cover 60 of the
+  105 pairs exactly once. m5's "2-(15,5,2)" was the *replication* number 2, not
+  `lambda`;
+* the **`M_g` and `M_h` parts** are not regular: point degrees 1, 2 and 3 (five
+  points of each), pair multiplicities 1 for 40 pairs and 2 for 10.
+
+For `T^-`, empty part 0, `g = 1`, `h = 2` the six `M_g` blocks are
 `(0,6,7,10,11) (1,5,6,9,10) (2,3,7,11,14) (2,3,8,12,13) (2,5,6,11,13) (4,5,8,9,13)`.
-m5's §12.4 infeasibility for the natural extremal schemes must be recomputed
-from these lists, not from a uniformity assumption.
+An earlier version of this note called the family "not a design" — that was
+computed on the `M_g` parts and, as m4 pointed out, answered a different
+question from the one m5 asked. Both descriptions are now above, with the
+objects named.
 
 ### 2.5 The guard / read-off lemma (m3, m7; general in `n`)
 If `x in N_c(v)` and `d_c(x) >= 15`, then `N_c(x)` meets each of the three
@@ -244,3 +254,29 @@ moved. The three closed routes and the `n = 48` calibration object are the parts
 that should survive; the rest is bookkeeping. The one apparent full closure this
 session produced (§5) is void, and it is recorded here because it is the exact
 kind of result this campaign must not bank.
+
+## 7. Round two: first results (swarm `smwr0lr3q`)
+
+One member (m4) has reported; its items are checked here.
+
+* **The interface identity is now kernel-checked.** `.ultramath/smwr0lr3q/m4/lean/Interface.lean`
+  proves `interface_sum`, `interface` (the
+  `sum_{x outside} m_x = sum_{a in A}(d_c(a) - 1)` double count), the degree cap
+  `indep_le_sixteen`/`deg_le_sixteen` and all three arm-saturation bounds
+  (`armFar_le_two`, `armFar_eq_empty`, `armFar_le_five`). It builds against the
+  repository's development and is axiom-clean, so the two lemmas of §2.2 and
+  the identity of §1.2 are no longer hand arguments.
+* **A new constraint, and the only one nobody in this campaign had used.** If
+  the 42 vertices outside the root's arm carried no edge of colour `f`, they
+  would be 3-coloured with no monochromatic triangle and so have at most 16
+  vertices; `42 > 16` forces a colour-`f` edge inside the 42, and any such edge
+  `{x,y}` gives `M_f(x) cap M_f(y) = empty` by triangle-freeness through the
+  arm (for `f = 0`, also `|M_0(x)| + |M_0(y)| <= 15`). Kernel-checked as
+  `exists_disjoint_arm_parts` (`Colours.lean`). It is a constraint on the pair
+  distribution of §3 and its natural home is the finite system named there.
+* **A dead end for the core route.** The 44-vertex arm core `C(15,14,14,0)` is
+  satisfiable: `m4/core_C15_14_14_0.col` passes `tools/verify_coloring.py` (44
+  vertices, vertex 0 at degrees `(15,14,14,0)`). Together with the concurrent
+  session's 43-vertex `C(15,15,12,0)`, no arm core decides a wall profile.
+* **The §2.4 block question is settled** and this note was wrong on it; see §2.4
+  now.
