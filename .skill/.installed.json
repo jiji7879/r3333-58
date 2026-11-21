@@ -2,5 +2,6 @@
   "lean-elaboration": "sha256:fff40aca9c477c1f555c9f9f33558dcdc8f014ecfd3fea6e9af5dd5ec636a600",
   "lean-project-architecture": "sha256:29d148baff20cafe744bae0e6e5be816d07b29508b5dab1119f1b57030157907",
   "lean-statement-audit": "sha256:67e60f4e9580ac3e56ca37e53492d69c07ce5e56d3dfc0daad1469a654d263e7",
-  "lean-workflow": "sha256:cb85c6ac9f357076f572addace5da2e0cae71dc1f54c1878d5b3067b0b2feef4"
+  "lean-workflow": "sha256:3e8c48908208af56662820435b9bde26237c5bcf6ffa2f6566093adeb42b5ae0",
+  "siege-workflow": "sha256:29a024ebf92211649590aa1e714657e4c11a831b0232d832ef4a3459b11fe80f"
 }

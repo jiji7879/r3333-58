@@ -3,7 +3,7 @@ name: lean-workflow
 metadata:
   display_name: "Lean Proof Development"
   category: "Lean"
-  logo: "https://lean-lang.org/static/png/lean-logo-official-TM-white-2400x900.png"
+  logo: "logos/lean.png"
   author: "Scott Armstrong"
   long_description: |-
     Develop Lean 4 proofs in an existing project: translate mathematical steps,
