@@ -188,6 +188,17 @@ Two measurements say it is not a way in.
 So the wall is not a matter of vertex count: an instance with a known model,
 two vertices below the smallest core needed, already resists the pinned solver.
 
+The one reduction that tried to cut the *double-16* profiles is falsified at its
+smallest size. If `v` has two 16-arms pinned to literal templates `t1, t2` and a
+third arm of `s` free vertices, a model at `s` restricts to a model at any
+smaller `s`, so the natural target (swarm direction d7) was to refute all four
+`(t1,t2)` at some `s <= 11`. `P(U,T,7)` is **satisfiable**: Kissat found a model
+and it is `artifacts/k40_two_16arms_UT_s7.col`, 40 vertices, `v`-degrees
+`(16,16,7,0)`, checked by `tools/verify_coloring.py`. The four `s <= 6` pieces
+were already known satisfiable, so this pushes the smallest possible refutation
+to `s = 8` for the `(U,T)` pair, and a model at `s = 11` would kill the route
+outright, since it would restrict to every smaller `s`.
+
 ## 7. Consequence for the open decision
 
 The throughput pass (20,166 cases of `(15,15,15,12)`, ~390 CPU-h, about 33 h
