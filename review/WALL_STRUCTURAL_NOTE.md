@@ -72,13 +72,19 @@ close: 0 of 42 at 60 s, 0 of 9 at 300 s.
 
 Two facts rule out the obvious local approaches.
 
-* **Pair bound.** For colours `i, j` and a vertex `v`, the colouring induced on
-  `N_i(v) union N_j(v)` with `i` and `j` merged is a 3-colouring with no
-  monochromatic triangle in the other two colours and no monochromatic `K_5`
-  in the merged colour (a `K_5` there plus `v` is a 2-coloured `K_6`). So
-  `d_i(v) + d_j(v) <= R(3,3,5) - 1`. But `45 <= R(3,3,5) <= 57` (DS1.18,
-  claim (d)), so the bound is 44 or more and says nothing about 25..28.
-  Iterating the same idea with more colours is what gives the known
+* **The pair bound is vacuous, and structurally so.** For colours `i, j` and a
+  vertex `v`, the colouring induced on `N_i(v) union N_j(v)` with `i` and `j`
+  merged is a 3-colouring with no monochromatic triangle in the other two
+  colours and no monochromatic `K_5` in the merged colour (a `K_5` there plus
+  `v` is a 2-coloured `K_6`), so `d_i(v) + d_j(v) <= R(3,3,5) - 1`; and
+  `45 <= R(3,3,5) <= 57` (DS1.18, claim (d)), so that bound is 44 or more and
+  says nothing about 25..28. The stronger reason is that the `K_5` constraint
+  can never bind: inside `N_i(v)` there is no colour-`i` edge, so a clique of
+  the merged graph meets `N_i(v)` in a clique of colour `j`, of size at most 2;
+  symmetrically at most 2 in `N_j(v)`; so a merged clique has at most 4
+  vertices, or 5 if it contains `v` (swarm finding f3, checked here). Merging
+  two colours at a vertex is therefore vacuous at every `n`, not just at 58.
+  Iterating the idea with more colours is what gives the known
   `R_4(3) <= 62`-style bounds, and it is why no grouping argument separates 58
   from the open range.
 * **The verified `K_50` colourings already do this.** `artifacts/k50_z4z4_m6.col`
