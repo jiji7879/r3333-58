@@ -350,3 +350,17 @@ three patches plus a failure at `CatalogueBaseCNFSemantics`, 26 modules
 untried); and `Classified` is used nowhere yet — the marking lemma remains the
 critical path. What changes is that the campaign no longer rests on an
 unproved premise.
+* **The type-level route is closed, and the reason locates the gap (m4).** The
+  system on 42 slots — (T) f-part independence, (V) coverage 14 per arm vertex,
+  (P) every pair admits a colour with disjoint parts (arm colour excluded inside
+  an arm), (Q) every colour occurs on an edge of the 42, (N) non-sending — is
+  **feasible** in both templates, with a hand-checkable witness: 14 slots of
+  type `(A; empty, empty, empty)` in arm 1 and 14 of `(empty; 5,5,5)` in each of
+  arms 2 and 3. So no accounting argument at the type level proves Family A.
+  The witness is degenerate and dies as soon as the arms themselves are required
+  to be good 3-colourings: in arm 1 every slot has `M_0 = A`, so a colour-0 edge
+  there needs `A cap A = empty`, and colour 1 is the arm colour, leaving only
+  two colours for the internal edges of a 14-vertex arm — `R(3,3) = 6 <= 14`
+  forces a monochromatic triangle. **What a proof must use is the internal
+  colouring of the three 14-arms.** Note that the now-proved K15/K16
+  classification does not help there: a 14-vertex arm lies outside it.
