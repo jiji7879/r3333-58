@@ -152,7 +152,37 @@ without closing); any substitution, Cayley or group-partition construction
 (Anabanti; primitivity at `n >= 51`); and any argument that ignores the
 global degree sum.
 
-## 6. Consequence for the open decision
+## 6. A datum on search hardness: the arm-core at 43 vertices
+
+One compression of L is worth recording because of what it measures (it came
+out of the swarm of 2026-11-21, direction d3). If a good colouring of K_58 has
+a vertex `v` of profile `(p0 >= p1 >= p2 >= p3)`, then `{v}` and its three
+largest colour classes induce a good colouring of `K_{1+p0+p1+p2}` in which `v`
+has colour-degrees exactly `(p0,p1,p2,0)`. So L follows from the
+unsatisfiability of seven *arm cores* of 44 to 47 vertices
+(`tools/core_sat.py` builds them); the core of the largest profile,
+`C(15,15,14,0)` at 45 vertices, alone kills 7,732 cases. The converse fails --
+a core model need not extend to `K_58` -- so this is a necessary condition, not
+an equivalent problem.
+
+Two measurements say it is not a way in.
+
+* **It is strictly weaker than the campaign's cases.** A model of any wall
+  case, restricted to the root's three largest arms, is a model of the core;
+  the case carries the extra hypotheses (two arms pinned to literal templates,
+  a marked sender, a threshold). So UNSAT(core) is a *stronger* statement than
+  UNSAT(case), and the cases already close 0 of 68 at 70 s and 0 of 9 at 300 s.
+* **The cores are search-hard long before they are large.** The 43-vertex core
+  `C(15,15,12,0)` is satisfiable, and there is a witness in the repository:
+  `artifacts/k50_z4z4_m6.col` vertex 49 (profile `15,15,12,7`) with its three
+  largest arms kept gives `v`-degrees `15,15,12,0` and satisfies all 55,727
+  edge clauses of `tools/core_sat.py`. Kissat 4.0.4 does **not** solve that
+  known-satisfiable instance in 122 s. The smallest core L needs is 44.
+
+So the wall is not a matter of vertex count: an instance with a known model,
+two vertices below the smallest core needed, already resists the pinned solver.
+
+## 7. Consequence for the open decision
 
 The throughput pass (20,166 cases of `(15,15,15,12)`, ~390 CPU-h, about 33 h
 wall on 12 cores, ~480 GB of DRAT deleted as it goes) takes the cover from
