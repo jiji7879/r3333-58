@@ -14,6 +14,18 @@ bytes, and 111,035 cases are open. What is new here: 95 certified cases, a
 measured cost model, six reproduced defects in the bundle, and a kernel-checked
 Lean core of the reduction.
 
+> **Later status (21 November 2026), which supersedes the tables below.** The
+> campaign has since certified and replayed **79,264** of the 113,179 cases
+> ([release/2026-11-21-checkpoint/](release/2026-11-21-checkpoint/), manifest
+> `ce90ee33…`). The 31,771 still open split three ways: **20,166** in
+> `(15,15,15,12)` (throughput — ~390 CPU-h at the 70 s retry budget),
+> **20** in `(16,15,15,11)` (refuted from the LFS archive as *split*
+> certificates, `runs/2026-11-21-hard-tail-16-15-15-11/`), and **11,585** in
+> seven profiles that close at no budget tried — 0/98 at 12 s, 0/68 at 70 s,
+> 0/9 at 300 s. Section 3's "111,035 open" and section 5's ordering are the
+> position before that work; the wall is now the binding constraint, not the
+> missing Lean bridge alone. See [README.md](README.md) for the current split.
+
 ## 1. Status
 
 | item | state |
