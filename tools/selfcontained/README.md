@@ -85,11 +85,34 @@ bit-reproducible, so they can be regenerated exactly.
 
 ```
 ./k58.sh run [--profile p,q,r,s] [--shards N --shard i] [--workers W]
-             [--tier first|retry] [--limit N] [--seconds S] [--conflicts C] [--out DIR]
+             [--tier first|retry] [--limit N] [--seconds S] [--conflicts C]
+             [--check-seconds N] [--out DIR]
 ```
 
 Defaults: 4 workers, tier `first`, 12 s / 400,000 conflicts, evidence in
 `./evidence`. One worker per core is right; more workers does not go faster.
+
+`--check-seconds` (default 300, or the `K58_CHECK_SECONDS` environment
+variable) is the certificate-checker cap. Every drat-trim call gets `-t N`,
+because drat-trim's own default is 40,000 seconds: before this cap existed, one
+hard certificate kept a worker busy for nine hours and looked exactly like a
+stalled run. A certificate that does not check inside the cap writes
+`CHECK_FAILED.json` in its case directory, keeps its formula and proof sizes in
+that record, and leaves the case **OPEN** — the shard carries on instead of
+dying on the exception.
+
+## Is my run alive?
+
+```sh
+./k58.sh watch            # or: ./k58.sh watch path/to/evidence
+```
+
+Prints the per-case counters (attempt receipts, verified cases, checker
+failures), the free disk, every running `kissat` and `drat-trim` with its
+elapsed seconds, and how many files have been written in the last ten minutes.
+A `drat-trim` older than the cap means that worker was started before the cap
+existed; a `kissat` older than fifteen minutes means one hard instance, not a
+stalled run; nothing written and nothing running means the run is stopped.
 
 ## Other commands
 
@@ -116,6 +139,11 @@ patch -p0 -d k58 < tools/cover_evidence_full_root.patch
   proof bytes both depend on the pins, and the verifier refuses other versions.
 * Never edit `verified.json` or a certificate. If one is wrong, delete the case
   directory and rerun it.
+* A run can look stalled while one worker sits inside drat-trim on a large
+  certificate, and one shard prints progress only every hundred cases. Before
+  concluding anything, `./k58.sh watch`: it shows each solver and checker
+  process with its elapsed seconds, plus how many files were written in the
+  last ten minutes.
 
 ## Unattended: run the rest of the cover
 

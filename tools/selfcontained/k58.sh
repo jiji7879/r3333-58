@@ -6,6 +6,7 @@
 #   ./k58.sh run ...    run shards
 #   ./k58.sh finalise   build a manifest and replay every certificate
 #   ./k58.sh status     how far along, how much disk
+#   ./k58.sh watch      is the run alive? per-worker elapsed times and counters
 #   ./k58.sh smoke      end-to-end self test incl. rejecting a bad certificate
 #   ./k58.sh retrystatus  is the retry pass actually closing cases?
 #   ./k58.sh unpublished  closed-but-unpublished vs still-open cases
@@ -58,12 +59,18 @@ cmd_doctor() {
   if bin/kissat --version 2>/dev/null | grep -q '^4\.0\.4$'; then say kissat "ok 4.0.4"; else say kissat "BAD"; fail=1; fi
   bin/drat-trim >/dev/null 2>&1 || { say drat-trim BAD; fail=1; }
   [ -x bin/drat-trim ] && say drat-trim "ok"
+  say checker-cap "${K58_CHECK_SECONDS:-300}s per certificate (K58_CHECK_SECONDS); a certificate that does not check in that time leaves its case OPEN"
   local gb; gb=$(df -Pk "$ROOT" | awk 'NR==2{print int($4/1048576)}')
   say disk "$gb GB free here (plan on 150-350 GB for the whole cover)"
   echo "replaying the bundled example (5 certificates, ~25 s)..."
+  # The build re-pins the example manifest to the patched runner and records its
+  # hash next to it; fall back to the handoff's own manifest if that file is gone.
+  local example_manifest_sha
+  example_manifest_sha=$(cat "$BUNDLE/example/release/MANIFEST.sha256" 2>/dev/null \
+    || echo ea32a0abc368677b74ee12118dbeacfd2ded817dc3a90e0e1c4ea2a8e3320150)
   if out=$($PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
         --root "$BUNDLE/example/evidence" verify "$BUNDLE/example/release" \
-        --manifest-sha256 ea32a0abc368677b74ee12118dbeacfd2ded817dc3a90e0e1c4ea2a8e3320150 \
+        --manifest-sha256 "$example_manifest_sha" \
         --checker "$ROOT/bin/drat-trim" 2>&1 | tail -1); then
     echo "$out" | grep -q '"replayed": 5' && say example "ok $out" || { say example "UNEXPECTED $out"; fail=1; }
   else say example "FAILED"; fail=1; fi
@@ -81,12 +88,13 @@ cmd_test() {
 cmd_run() {
   need_venv
   local profile="" shards=1 shard=0 workers=4 tier=first seconds=12 conflicts=400000 limit=""
+  local check_seconds=${K58_CHECK_SECONDS:-300}
   while [ $# -gt 0 ]; do case "$1" in
     --profile) profile=$2; shift 2;; --shards) shards=$2; shift 2;;
     --shard) shard=$2; shift 2;; --workers) workers=$2; shift 2;;
     --tier) tier=$2; shift 2;; --limit) limit=$2; shift 2;;
     --seconds) seconds=$2; shift 2;; --conflicts) conflicts=$2; shift 2;;
-    --out) EV=$2; shift 2;;
+    --out) EV=$2; shift 2;; --check-seconds) check_seconds=$2; shift 2;;
     *) die "unknown option $1";;
   esac; done
   mkdir -p "$EV"
@@ -96,7 +104,8 @@ cmd_run() {
   [ "$tier" = first ] && args+=(--seconds "$seconds" --conflicts "$conflicts")
   [ -n "$profile" ] && args+=(--profile "$profile")
   [ -n "$limit" ] && args+=(--limit "$limit")
-  echo "shard $shard/$shards ${profile:-all profiles}, tier $tier, $workers workers"
+  export K58_CHECK_SECONDS=$check_seconds
+  echo "shard $shard/$shards ${profile:-all profiles}, tier $tier, $workers workers, checker cap ${check_seconds}s"
   echo "rerun the identical command to resume."
   $PY "$BUNDLE/run_cover.py" "${args[@]}" | tee -a "$EV/run.log"
   $PY "$BUNDLE/summarize_queue.py" "$EV" | tee -a "$EV/summary.txt"
@@ -128,6 +137,38 @@ cmd_finalise() {
   echo
   echo "quote the manifest hash together with this line:"
   cat "$rel.verify.json"
+}
+
+cmd_watch() {
+  local ev=${1:-$EV}
+  local receipts verified failed
+  receipts=$(find "$ev" -name "*.jsonl" -type f 2>/dev/null | wc -l)
+  verified=$(find "$ev" -name verified.json -type f 2>/dev/null | wc -l)
+  failed=$(find "$ev" -name CHECK_FAILED.json -type f 2>/dev/null | wc -l)
+  echo "evidence: $ev"
+  printf '%-22s %s\n' "attempt receipts" "$receipts"
+  printf '%-22s %s\n' "verified cases" "$verified"
+  printf '%-22s %s\n' "checker failures" "$failed"
+  printf '%-22s %s\n' "disk free" "$(df -Pk "$ROOT" | awk 'NR==2{print int($4/1048576)" GB"}')"
+  echo "processes (elapsed seconds):"
+  local seen=0 line etime name
+  while read -r etime name; do
+    [ -z "$name" ] && continue
+    seen=1
+    printf '  %-46s %6ss\n' "$name" "$etime"
+    if [ "$name" = "drat-trim" ] && [ "$etime" -gt $(( ${K58_CHECK_SECONDS:-300} + 30 )) ]; then
+      echo "    ^ older than the checker cap: started without the cap, or the cap is above ${K58_CHECK_SECONDS:-300}s"
+    fi
+    if [ "$name" = "kissat" ] && [ "$etime" -gt 900 ]; then
+      echo "    ^ one case older than 15 min: the instance is hard, not the run"
+    fi
+  done < <(ps -eo etimes=,comm= 2>/dev/null | awk '$2=="drat-trim" || $2=="kissat"')
+  [ "$seen" = 0 ] && echo "  none running"
+  local newest
+  newest=$(find "$ev" -type f -newermt "-10 minutes" 2>/dev/null | wc -l)
+  printf '%-22s %s\n' "files written in 10 min" "$newest"
+  if [ "$newest" = 0 ] && [ "$seen" = 0 ]; then echo "nothing has moved in ten minutes: the run is stopped, not slow."; fi
+  return 0
 }
 
 cmd_status() {
@@ -225,6 +266,7 @@ case "${1:-}" in
   run) shift; cmd_run "$@" ;;
   finalise) shift; cmd_finalise "$@" ;;
   status) cmd_status ;;
+  watch) shift; cmd_watch "$@" ;;
   smoke) shift; cmd_smoke "$@" ;;
   version) echo "$K58_VERSION" ;;
   retrystatus) shift; cmd_retrystatus "$@" ;;
