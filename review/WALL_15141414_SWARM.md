@@ -67,6 +67,28 @@ encoders, and the frozen base carries no *explicit* degree cap (harmless:
 close at 140 s. This is at the easiest thresholds available: the plan needs
 `sum(t-1) <= 14`, and with `t_0 = 3` that forces `t_i <= 5`.
 
+### 1.6 Per-vertex correlation does not close Family A either (m8, d1, second round)
+The instruction after m8's first report was to put its three-vertex correlation
+inequality (Theorem B) into the MILP. It did, in three strengths: aggregates plus
+the theorem in aggregate form (feasible, and the aggregate form is *provably
+vacuous*: LHS `>= 9 E_0(S,T) >= 1890` against RHS `<= 825`); per-vertex form with
+`T`-internal incidence booleans, row sums and products (MIP **Optimal in 25 s**,
+and the witness point re-verified row by row without the solver: 0 of 1438 and
+0 of 11781 rows violated, all entries integral); and with `T`-internal
+triangle-freeness added (LP feasible, MIP unresolved at 600 s — open, not a
+result). So per-vertex Theorem B with the incidence structure is still feasible:
+the correlation this swarm could actually state is not enough. What m8 names as
+the remaining gap is the per-`(u,y)` rigidity `|N_f(y) cap N_0(u)| in {4,5}`,
+which is strictly stronger than its sum — that is the form to try next.
+
+### 1.7 Adding implied constraints does not close a case (m3, d9)
+Case `baa4e014` with four implied clause families added (302,954 clauses: the
+degree cap, the sender read-off, L1 at the root, `alpha = 5` visibility): Kissat
+returns UNKNOWN at 240/240/300 s, no certificate. With m7's family-B result
+(§1.5) and the earlier 0/42-at-60 s and 0/9-at-300 s measurements, the machine
+route at this profile is dead at every budget tried, with or without the
+sound additions.
+
 ## 2. What is proved and can be used
 
 ### 2.1 The calibration object (m5) — filters proposed Family-A proofs
@@ -129,6 +151,27 @@ A Kempe swap on a component of the `(c,c')`-subgraph keeps triangle-freeness
 and the **multiset** of `(d_a(v), s_a(v))` at every vertex *(checked here on
 five artefacts via m3's script)*. It does not keep the labelled degrees, so no
 argument may assume "colour 0 is still the 15-arm at `r`" after normalisation.
+
+### 2.8 L1 is now kernel-checked in the repository's own development (m5, d11)
+The lemma every other member's argument uses is formalised against the
+repository's definitions and landed in `lean/`:
+
+| file | contents |
+| --- | --- |
+| `lean/K58/Mixture.lean` | `nbr`, `nbr_card`, `nbr_indep`, `card_ne_ne`, **`mixture`** (= L1: `#(nbr G x f ∩ nbr G u g) ≤ 5` for `f ≠ g`, any `x u`, no adjacency hypothesis) |
+| `lean/K58/Corollaries.lean` | **`mixture_subset`** (the bound on a sub-arm — the encoder-ready form) and **`arm_part_le_five`** (the 4/5 split inside an arm) |
+| `lean/K58/Check.lean` | the four `#print axioms` lines, alongside the existing 31 |
+
+`mixture` is proved by taking a 6-subset of the intersection, observing that
+every edge inside it avoids both colours, and contradicting the repository's
+`two_colour_six` (R(3,3) ≤ 6). Located by the coordinator: the member's files
+were built independently in its own directory, then copied in, `build.sh`
+extended (order `... DegreeCap Mixture Corollaries Templates ...`), and the full
+build re-run: **green in 25 s, all four theorems axiom-clean**
+(`[propext, Classical.choice, Quot.sound]`, no `sorry`). Not formalised: the
+interface identity I1 (its `deg - 1` partition step did not get through the
+elaborator) and J1/J3. So the swarm's most-used lemma, and only that, is now a
+kernel-checked fact of the repository.
 
 ## 3. What is still open
 

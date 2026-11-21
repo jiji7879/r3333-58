@@ -1,3 +1,4 @@
+import K58.Corollaries
 import K58.Selection
 import K58.Templates
 
@@ -32,3 +33,7 @@ import K58.Templates
 #print axioms K58.exists_plan_matching
 #print axioms K58.exists_plan_arm_reaches
 #print axioms K58.root_plan_arm
+#print axioms K58.mixture
+#print axioms K58.mixture_subset
+#print axioms K58.arm_part_le_five
+#print axioms K58.nbr_indep
