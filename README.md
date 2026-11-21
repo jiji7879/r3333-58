@@ -36,8 +36,11 @@ Where the 31,771 open rows are, and what each needs:
 
 * **20,166** in `(15,15,15,12)` — throughput, not thought: that profile's retry
   tier closed 14/15 and 8/10 in samples. One retry-only pass is 20,166 × 70 s =
-  ~390 CPU-h (≈33 h wall on 12 cores) and 15–35 GB of certificates, depending
-  on the closure rate; not yet run in bulk.
+  ~390 CPU-h (≈33 h wall on 12 cores). Its certificates are large — the 2,297
+  retry-tier certificates in the index average 28.6 MB, against 5.6 MB for the
+  76,967 first-tier ones — so the pass emits ~480 GB of DRAT. `--publication`
+  deletes each certificate after hashing it, so peak disk is a few hundred MB;
+  keeping them needs a disk that size.
 * **20** in `(16,15,15,11)` — the hard tail of a profile whose other 16,070
   rows are certified (the bulk run). The 20 are refuted from the 458 MB LFS
   archive (`runs/2026-11-21-hard-tail-16-15-15-11/`) as *split* certificates
