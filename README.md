@@ -49,7 +49,11 @@ Where the 31,771 open rows are, and what each needs:
   archive (`runs/2026-11-21-hard-tail-16-15-15-11/`) as *split* certificates
   that the one-DRAT-per-case pipeline cannot carry, so they sit OPEN in the
   index; 83 further rows are historical evidence.
-* **11,585** in the seven small profiles — **the wall**. All seven have now
+* **11,585** in the seven small profiles — **the wall**
+  ([review/WALL_STRUCTURAL_NOTE.md](review/WALL_STRUCTURAL_NOTE.md) puts it in
+  structural terms: these are exactly the profiles whose vertices have two or
+  one colour-degrees `<= 14`, and the ticket argument's budget there is 15 to
+  32 against 45 to 48 on the four reachable profiles). All seven have now
   been measured at or above the retry budget and closed nothing: 0/98 at 12 s
   ([runs/2026-11-16-small-probe/](runs/2026-11-16-small-probe/)), 0/68 at 70 s
   over the five two-critical profiles
