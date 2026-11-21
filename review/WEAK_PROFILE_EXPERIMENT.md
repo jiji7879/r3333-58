@@ -59,7 +59,8 @@ The campaign's remaining 31,771 open cases split into two kinds:
   most.
 
 For those, the prediction is that more compute does not help — 5× the budget
-here moved nothing. What the K60 proof did in this situation was to stop using
+here moved nothing. (Five of the seven profiles were measured afterwards at the
+retry budget: 0 of 68. See the follow-up at the end.) What the K60 proof did in this situation was to stop using
 local ticket bounds and adopt a *structural* dichotomy (its C1/C2 entrance and
 perfect-balance analysis). The analogous question here is what a root with only
 one critical colour forces globally, and that is a research question rather than
@@ -71,3 +72,36 @@ a scheduling one.
 python3 tools/solve_weak.py --bundle K58 --out work --kissat bin/kissat \
     --workers 3 --seconds 60 --limit 42 --shuffle 7 --full-root
 ```
+
+## Follow-up — the five two-critical profiles (`(15,15,14,13)`, `(16,15,14,12)`, `(16,15,13,13)`, `(16,16,14,11)`, `(16,16,13,12)`)
+
+The experiment above is on the two *one-critical* profiles, 469 cases. The
+conclusion drawn from it covers 12,054 cases, but 11,116 of them sit in five
+profiles that had never been run above the 12 s budget — and those five carry
+two rigid blocks, the feature that makes the big profiles tractable. So the
+prediction was untested exactly where it carried the most weight.
+
+Measurement: two cases from each of the 34 `(profile, kinds, marked_size)`
+groups those five profiles split into, drawn with a fixed seed — 68 cases,
+`run_cover.py --tier both` (12 s / 400k, then 70 s / 2.4M with `full_root`),
+Kissat 4.0.4, drat-trim capped at 300 s.
+
+| tier | budget | closed |
+| --- | --- | ---: |
+| first | 12 s / 400,000 conflicts | 0 / 68 |
+| retry | 70 s / 2,400,000 conflicts, `full_root` | **0 / 68** |
+
+No fast tail: retry-tier solver CPU is 70.0 s on all 68 (mean = median = max),
+peak RSS 233 MiB, 4,759 CPU-s in total, no certificate. Zero in 68 puts a 95 %
+upper bound of 4.4 % on the closure rate (rule of three), so at most ~490 of the
+11,116 would close at this budget under that bound.
+
+Record: `runs/2026-11-21-two-critical-probe/` (CASES.tsv, 136 receipts, ids,
+reproducing command).
+
+**Consequence for the campaign.** The wall is twelve thousand cases, not four
+hundred and seventy. Of the 31,771 open rows, ~20,166 in `(15,15,15,12)` are a
+throughput problem (that profile's retry tier closed 14/15 and 8/10 in earlier
+samples), and the remaining ~11,585 — every one of the seven small profiles,
+now all measured at or above the retry budget — are the research problem. No
+budget tried on them, from 12 s to 300 s, has closed a single case.

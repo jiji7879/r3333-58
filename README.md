@@ -7,24 +7,53 @@ number for triangles. Two efforts live here.
 
 A handoff bundle proposes a computer-assisted proof of `R(3,3,3,3) <= 58` by a
 frozen cover of 113,179 SAT cases, each refuted by Kissat with a DRAT proof
-replayed by drat-trim. The bundle's ledger currently has 111,035 cases OPEN.
+replayed by drat-trim. The bundle's ledger is frozen at 111,035 OPEN; the
+campaign's own state is the release checkpoint below.
 
+| status | rows |
+| --- | ---: |
+| `CERTIFIED` (replayed against regenerated CNFs) | 79,264 |
+| `LEGACY_EVIDENCE_NEEDED` (1,743 historical + 401 scoped exclusions) | 2,144 |
+| `OPEN` | 31,771 |
+
+* [release/2026-11-21-checkpoint/](release/2026-11-21-checkpoint/) — the
+  checkpoint: 113,179-row case index, manifest
+  `ce90ee33d7df566fe69f32405d693d7fe06942a4c6108e18d630b8f62226fc1d`, and a
+  replay transcript of `{"checked": 79264, "replayed": 79264, "failed": 0}`.
 * [review/K58_CAMPAIGN_REVIEW.md](review/K58_CAMPAIGN_REVIEW.md) — what the
   bundle claims, what is checked here, the reduction read back in precise form,
   measured cost, and what is missing.
-* [HANDOFF.md](HANDOFF.md) — the state of the campaign written for a cold
-  reader (LLM session or person): what is verified, what is blocked, and the
-  next three obligations in order.
+* [HANDOFF.md](HANDOFF.md) — the campaign written for a cold reader (LLM
+  session or person): what is verified, what is blocked, the obligations in
+  order. Its status table predates the checkpoint.
+* [review/WEAK_PROFILE_EXPERIMENT.md](review/WEAK_PROFILE_EXPERIMENT.md) — why
+  the remaining small profiles are not a compute problem.
 * [lean/README.md](lean/README.md) — the kernel-checked formal core of the
   reduction: the degree cap, `R(3,3) ≤ 6` and `R(3,3,3) ≤ 17`, the ticket
   double counting, and the threshold step.  Build with `lean/build.sh`.
-* [runs/2026-11-16-batch1/](runs/2026-11-16-batch1/) — the first batch run
-  here: 96 requested cases, **81 certified and replayed**, 15 cut off at the
-  12 s budget, with the release manifest and the compressed certificates.
 
-Status in one line: the pipeline works and its arithmetic is consistent, but
-the reduction at n = 58 is unformalised and 2,144 rows of the frozen ledger
-have no proof bytes in the handoff. No bound moves yet.
+Where the 31,771 open rows are, and what each needs:
+
+* **20,166** in `(15,15,15,12)` — throughput, not thought: that profile's retry
+  tier closed 14/15 and 8/10 in samples. One retry-only pass is 20,166 × 70 s =
+  ~390 CPU-h (≈33 h wall on 12 cores) and 15–35 GB of certificates, depending
+  on the closure rate; not yet run in bulk.
+* **20** in `(16,15,15,11)` — the hard tail, refuted from the 458 MB LFS
+  archive (`runs/2026-11-21-hard-tail-16-15-15-11/`) as *split* certificates
+  that the one-DRAT-per-case pipeline cannot carry. These finish the profile
+  apart from its 83 historical rows.
+* **11,585** in the seven small profiles — **the wall**. All seven have now
+  been measured at or above the retry budget and closed nothing: 0/98 at 12 s
+  ([runs/2026-11-16-small-probe/](runs/2026-11-16-small-probe/)), 0/68 at 70 s
+  over the five two-critical profiles
+  ([runs/2026-11-21-two-critical-probe/](runs/2026-11-21-two-critical-probe/)),
+  0/51 at 60 s and 0/9 at 300 s on the one-critical pair. A case here pins one
+  or two rigid blocks and leaves 42 or 27 of 57 vertices free; refuting one is
+  close to the original problem.
+
+Status in one line: 70 % of the cover is certified and replayed, but the
+reduction at n = 58 is unformalised, 2,144 rows have no proof bytes here, and
+a tenth of the cover does not fall to any budget tried. No bound moves yet.
 
 ## 2. Lower bound: previous work
 
