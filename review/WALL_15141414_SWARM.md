@@ -280,3 +280,43 @@ One member (m4) has reported; its items are checked here.
   session's 43-vertex `C(15,15,12,0)`, no arm core decides a wall profile.
 * **The §2.4 block question is settled** and this note was wrong on it; see §2.4
   now.
+* **Why the `n = 60` engine does not port (m1).** The published engine's opening
+  step fires only when `w(v) > (n-1) - L(v)` with `L(v) = max_i d_i(v)`. At
+  `n = 58` the right side is at least 41 while a vertex with at most two
+  critical colours has `w <= 32`, so it fails at all seven wall profiles; with
+  three critical colours `w = 57 - d_min` and the condition is `d_min < L`,
+  which holds. The same criterion reproduces the published `n = 60` split
+  (profiles A, B, D, E versus C1, C2), so it is the engine's own applicability
+  condition. *(m1's second bullet, that the `31+31 > 60` step becomes
+  `|N_a| + |N_b| > 58`, is wrong: the 31 is `w(v)`, so the analogue is
+  `w(u) + w(v) > 58`, which holds at the two-critical wall profiles.)*
+* **The classification premise: not citable, but portable (m1, corrected here).**
+  The K15/K16 template classification — every good 3-colouring of `K_16` is
+  weakly isomorphic to U or T, every good `K_15` a deletion — is *not* imported
+  from Kalbfleisch–Stanton/Heinrich by the project that proves `R_4(3) <= 60`.
+  Its `publication/CLASSIFICATION_PROVENANCE.md` says so in terms: "Published
+  accounts provide historical context; their theorem statements or reported
+  computations are not imported as axioms", the classical authors being the
+  historical origin only. What does establish it there is a kernel-checked
+  derivation: `R4333.k16CriticalCatalogue_complete` and
+  `R4333.k15CriticalCatalogue_complete`, with no completeness hypothesis, over
+  32 modules and 55 CNF/LRAT pairs (5,081,743 bytes of payload), axioms
+  `[propext, Classical.choice, Quot.sound]`. So this campaign's
+  `K58.Templates.Classified` cannot be discharged by citing the literature; it
+  can be discharged by porting those two theorems, and the port turns on a
+  definitional match with `K58.EdgeCol`/`TriangleFree`. That is the concrete
+  form of what the campaign's notes call its best route to the marking lemma.
+* **The one-vertex layer is settled (m2).** The join type of an outside vertex
+  into the pinned 15-arm is exactly L1 plus bookkeeping: all 216 profiles occur
+  in both templates, and at `m_0 = 0` the three L1 bounds are simultaneously
+  tight, so no single-vertex argument can give W2. The only pair consequence at
+  that level is `m_0(x) = m_0(y) = 0 => colour(xy) = 0` (a 0-independent 17-set
+  otherwise).
+* **The per-`(u,y)` rigidity, stated correctly (m8's gap, m2's correction,
+  verified here).** For a 0-sender `u` in the 15-arm and `y in N_0(u)`, the
+  vector `(|N_f(y) cap N_0(u)|)_{f != 0}` is a permutation of `(5,5,4)` or
+  `(5,5,5)` — L3 at `u`, and measured on 41,300 such pairs across five
+  artefacts with 0 violations. Without the hypothesis `y in N_0(u)` the values
+  2 and 3 occur, which is what m2's counterexamples show; the statement needs
+  the colour-0 adjacency, and with it the constraint is available as the
+  S-side-to-T-internal coupling that m8's still-feasible model lacked.
