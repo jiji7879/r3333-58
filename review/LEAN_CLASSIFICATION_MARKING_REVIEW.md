@@ -100,3 +100,32 @@ Two things remain, in order of tractability:
 
 Neither is a research problem any more; both are engineering with a known
 target statement.
+
+## The hard tail (20,185 cases) and what Lean needs from it
+
+`hard.txt` contains 20,185 ids, all OPEN in the frozen ledger:
+
+| profile | cases |
+| --- | ---: |
+| `(15,15,15,12)` | 20,165 |
+| `(16,15,15,11)` | 20 |
+
+All 20,185 are real ledger rows and none is duplicated.
+
+**What the Lean binding needs from a certificate archive is a small table, not
+the archive.** The Lean case list `frozenKeys` carries case identities; the CNF
+for a case is generated from `(ledger row, recipe)`, and the ledger does not
+record the recipe — that is a known defect. The recipe therefore exists only in
+the certificates' `verified.json`. So the irreducible artifact is, per case:
+`id`, `recipe`, `cnf_sha256`. Measured: **2,594 bytes for 19 cases**, so about
+**2.8 MB for 20,185** — against tens of GB of certificates.
+
+`tools/hard_tail.py` does that extraction: it regenerates each CNF from the
+ledger row and the recorded recipe, checks it against the recorded hash,
+decompresses the certificate and replays it with drat-trim, and writes only the
+binding row. Measured 1.2 s per case at 4 workers (18 verified, 1 correctly
+reported as having no certificate). At 12 workers the 20,185 cases project to
+~35 minutes, plus the cost of unpacking the archive.
+
+After that the archive can be deleted: the certificates are reproducible from
+`(ledger row, recipe)`, which is exactly what the table preserves.
