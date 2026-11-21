@@ -16,6 +16,9 @@ campaign's own state is the release checkpoint below.
 | `LEGACY_EVIDENCE_NEEDED` (1,743 historical + 401 scoped exclusions) | 2,144 |
 | `OPEN` | 31,771 |
 
+* [HANDOFF_NEXT_CHAT.md](HANDOFF_NEXT_CHAT.md) — **start here**: the state at
+  the end of the last session, what is open in priority order, the traps that
+  cost time, and how to work in this repository.
 * [release/2026-11-21-checkpoint/](release/2026-11-21-checkpoint/) — the
   checkpoint: 113,179-row case index, manifest
   `ce90ee33d7df566fe69f32405d693d7fe06942a4c6108e18d630b8f62226fc1d`, and a
