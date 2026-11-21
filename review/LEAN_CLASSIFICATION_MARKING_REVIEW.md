@@ -129,3 +129,56 @@ reported as having no certificate). At 12 workers the 20,185 cases project to
 
 After that the archive can be deleted: the certificates are reproducible from
 `(ledger row, recipe)`, which is exactly what the table preserves.
+
+## The gluing-and-transport checkpoint
+
+Artifact: `R3333_K58_Lean_gluing_and_transport.zip` (6.7 MiB), cumulative patch
+`k58-lean.patch` (5,751 lines) against `e62d8ab`.
+
+**Reproduced here.** Patch applies; the K60 catalogue is reused from the earlier
+build; `./build.sh` compiles **45 K58 modules with 0 errors and no `sorry`**,
+and the 30 axiom lines in the log are all within
+`[propext, Classical.choice, Quot.sound]`. The two marking obligations are no
+longer premises:
+
+| theorem | was | now |
+| --- | --- | --- |
+| `K58.familyPlacementCover` | geometric premise | **proved** |
+| `K58.rawCover` | — | **proved** |
+| `K58.rawTransportCover_of_plans` | finite premise | **proved** |
+| `K58.frozenCover_of_transports` | conditional | **proved** |
+
+The declared counts match the independent ones: 41 plans summing to 190,736 raw
+placements and 77,557 omitted transports, against 113,179 retained.
+
+**Replay.** `run_replay.py --plan 0` checked 28 families, 852 raw placements and
+544 omitted transports in 77 s, matching the plan-0 row of their
+`kernel-status.json` exactly. The full replay (1,764 families, 1,588 generated
+modules) was started here; it is the step that closes `K58.Replay.frozenCover`.
+
+## The gap this exposes
+
+The 45 Lean modules contain **no clause, CNF, DIMACS or cardinality notion at
+all** (checked by search). `RealizesCase` asserts that a colouring satisfies the
+case's signed **unit** clauses under a vertex and colour permutation:
+
+```lean
+def RealizesCase (G : EdgeCol (Fin 58) 4) (C : ExpandedCase) : Prop :=
+  ∃ (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)), ∀ u ∈ caseUnits C, ...
+```
+
+The SAT campaign refutes the **CNF**, which is base + units + extra clauses
+(per-arm thresholds, `s_crit ≥ 2M − 57`, support tables). Applying `AllUnsat`
+therefore needs one more lemma:
+
+> a genuine colouring realising a case's units satisfies that case's extra
+> clauses.
+
+That is the over-constraint question from the original review. The audit settled
+it computationally — 592,023 sender-count vectors, support tables derived from
+the classification — but nothing formalises it. It is the analogue of the K60
+development's `Core.coloring_satisfies_formula`, and until it exists the Lean
+theorem is "a counterexample satisfies some case's units", not "a counterexample
+satisfies some case's CNF".
+
+This is now the shortest statement of what remains on the formal side.
