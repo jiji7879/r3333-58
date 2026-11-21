@@ -147,5 +147,5 @@ and the two places that has bitten are overclaiming and padding. Concretely:
 2. Supply the 34 historical shards, or their path, so `import_historical.py run`
    can execute.
 3. The scope of the 401 exclusions.
-4. Whether to rewrite history to drop the ~378 MB of evidence blobs in `.git`.
+4. Whether to rewrite history to drop the evidence blobs that make `.git` 405 MB.
 5. Certificate format for a public release: DRAT only, LRAT, or regenerate.
