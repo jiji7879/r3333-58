@@ -364,3 +364,18 @@ unproved premise.
   forces a monochromatic triangle. **What a proof must use is the internal
   colouring of the three 14-arms.** Note that the now-proved K15/K16
   classification does not help there: a 14-vertex arm lies outside it.
+* **The 16-armed wall profiles force an outside vertex with six (m4, kernel-checked).**
+  `K58.forced_six` and `K58.forced_six_two` (`.ultramath/smwr0lr3q/m4/lean/Sixteen.lean`,
+  axioms `[propext, Classical.choice, Quot.sound]`): if a colour-0 class of a
+  vertex of a triangle-free 4-colouring of `K_58` has 16 points and all of them
+  are 0-critical, then one — and in fact two — vertices outside the class have
+  at least six colour-0 neighbours in it. The arithmetic is the interface
+  identity: `sum_X m_x >= 16*14 = 224` against `5*41 = 205` and
+  `16 + 5*40 = 216`. **Profile-level, this is the sharp statement about why
+  `(15,14,14,14)` is the boundary case**: `14p <= 5(57-p)` holds iff `p <= 15`,
+  so five-per-outside-vertex is exactly saturable at arm size 15 and never at
+  16. It applies to the five 16-armed wall profiles (3,472 open cases) and not
+  to this one. It is a lower bound with slack: the two vertices it produces are
+  unconstrained against each other (`6+6 <= 16` if they are 0-adjacent), so
+  unless something bounds `m_x` from above it is inert — which is the negative
+  another member is now asked to settle.
