@@ -1000,3 +1000,35 @@ senders' classes satisfy
 per pair over 105 pairs. The rigidity constrains only a *cluster* — three or more
 senders pairwise overlapping in 13 or 14 points, which forces all of them to one
 type and pins them against each other through the two-completion structure.
+
+## 21. A proven codegree bound for the branch: `M >= 7`
+
+*(Paper proof, six elementary lemmas; not yet kernel-checked.)* In the uniform
+fully-sending branch **under all-tickets-returned `(R)`**, where colour 0 is
+critical everywhere, let `M = max_{u != v} |N_0(u) ∩ N_0(v)|`. Then **`M >= 7`**.
+K59's `M >= 8` does **not** transfer; the honest transfer is one unit lower.
+
+The chain: for every `x in X` the pair `(r,x)` has codegree `m(x) = 5` with all
+five common 0-neighbours in `A`; each `p in P = N_0(x) ∩ A` has `d_0(p) - 2 = 13`
+0-neighbours outside `{r,x}`, so `sum_z d(z) = 65`, and `C(d,2) >= 2d-3` for every
+integer `d >= 0` gives `C_x >= 3 d_0(x) - 8`, while double counting triples gives
+`C_x <= 10(M-2)`. Under `(R)`, `d_0(x) >= 15`, so `37 <= 10(M-2)` and `M >= 6`.
+The `M = 6` rigidity closes it: an arm pair of codegree 6 would force
+`codegree(r,t) = 6` at five points `t` where it is `m(t) = 5`. Hence `M >= 7`,
+and `7 <= M <= 16` is not pinned.
+
+**The companion count is the usable part.** With `n_{aa'} = |N_0(a) ∩ N_0(a') ∩ X|`
+for arm points `a != a'` (so `mu(a,a') = 1 + n_{aa'}`),
+`sum_{a<a'} n_{aa'} = 42 * C(5,2) = 420` over 105 pairs, so the mean of `mu` on the
+arm is **exactly 5**. If every arm pair were at most 4 the total would be at most
+105 and the sum would force all equal to 4, contradicted by the moment bound
+`sum (n_{aa'} - 4)^2 >= 294` — hence **some pair of arm senders shares at least 6
+points**, and the 42 blocks `N_0(x) ∩ A` are **not** the blocks of a
+`2-(15,5,4)` design.
+
+**Transfer ledger (what survives from K59 and what does not).** The `5+5+5` split
+of a critical neighbourhood across the three low arms weakens to `5+5+4` at arm 15;
+K59's **diameter-two** step fails here, for the same reason the interface is
+saturable — `5+5+5 = 15` exactly; the **signature refinement does transfer** at
+orders 16 and 15 (SIG minus one cell, 8 types per colour, identical for both
+templates).
