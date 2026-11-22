@@ -80,3 +80,32 @@ Fix: either say "implied by the classification", or run with `tables=False` —
 which costs nothing measurable: five example certificates rebuild to identical
 input hashes and stay UNSAT in under a second, 22 of 23 sampled cases are
 unchanged, and one case is faster without the tables.
+
+## The empty-clause trap in `dense.marked_threshold`
+
+`marked_threshold` ends with
+
+```python
+for limits, minimum in ((selectors, bound), (all_selectors, total), (root_selectors, root_goal)):
+    if minimum > len(limits):
+        return [[]]
+```
+
+so a requested charge larger than the number of available guards returns a
+**single empty clause** — a formula that is UNSAT for no reason at all. A runner
+that trusted the exit status would record a closure in milliseconds.
+
+*Reproduced:* for `Family((15,14,14,14), ('T','-','-','-'), arm 0, mark 5,
+size 15, '_T_', position 0)` with placement `(0,0,0)`, `bound = 15` gives 10,794
+extra clauses and no empty clause (the correct case), while `bound = 16` and
+`bound = 20` each give exactly `[[]]`.
+
+It does not fire for any of the 113,179 frozen rows — the plan's charge never
+exceeds the guard count there, and that has been swept under all four recipes.
+The hazard is a hand-made row, a new profile, or an edited plan.
+
+**Fix:** in `run_cover.py`, refuse to emit a case whose extra clauses contain an
+empty clause (or whose charge exceeds the guard count), and treat that as an
+error rather than an UNSAT. It is the same class of failure as the twin-lex
+order that produced 381 void refutations: an over-constrained formula whose
+refutation proves nothing.
