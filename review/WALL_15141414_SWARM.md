@@ -1689,3 +1689,40 @@ and `k15_template_Uminus_aut10_m4.col` to `template 15 false` — which is what 
 §35's labelling hazard possible and why a witness must be quoted with its template.
 And the 254,628-word census is reproduced here for the third time, with the same
 part-size split.
+
+## 38. The word layer carries the sixth arm lemma at its bound; the pair level is spared pair-by-pair only
+
+Member m2, direction d17; verdict **accepted**, seventh of `smwrmwgf7`. Artefacts
+at `results/word-layer-sixth-lemma/`. I re-ran its two checkers and computed the
+per-arm cap separately.
+
+**`(M)` and `(S)` are genuine strengthenings, measured.** On the three recorded
+pair-level witnesses: all three are valid, and all three violate the part-family
+bound — worst values **13, 9, 11** against 5 — and the per-arm cap, maxima
+**8, 8, 8** (at `(6,1)`, `(13,3)`, `(12,3)`) against 5. *(Correction to the
+member's §2: `pair58_Tminus` violates `(S)` at seven of the nine `(a,b)` pairs,
+not nine; `(2,1)` and `(2,3)` sit exactly at the bound.)*
+
+**Decided: the word layer survives both.** `blocks_armcap.json` is a 42-block
+object with coverage 14 at every arm point, ten 5s and five 4s in every arm — the
+same law m8 proved from mixture and m3 from the other end, third independent
+appearance — and intersection-graph clique number **exactly 5 in all three arms**,
+which is the sixth arm lemma at its bound. So `PROFILE` §5's "the colour-0 layer is
+closed" strengthens to: **no word-level argument closes the branch, even with the
+sixth arm lemma and the per-arm cap at once.**
+
+**Decided: the pair level with the lemma at one or two pairs.** Three witnesses
+with 0 definition-level violations, 861 pair colours, one of them holding the
+per-arm cap at exactly 5. What this establishes is narrow and must be quoted
+narrowly: the lemma at 1, 2 or 3 of the nine `(a,b)` pairs does not kill the pair
+level. The nine-family version is **UNKNOWN** at 280 s (kissat, 4.13 M conflicts)
+and 400 s (cadical, 3.69 M). The member's one-line summary — "the sixth arm lemma
+does not kill the pair level" — is therefore not established, and the record says
+the narrow thing.
+
+**Method note worth keeping.** Two of the member's own bugs (a polarity and an
+arm-index error) each produced a **fake SAT** and were caught only by decoding the
+model at the definition level, not by the solver status. That is now the third
+member this round whose over-constraint or encoding slip was caught by a
+definition-level check rather than by the solver; `ERRATA.md`'s lesson has taken
+hold in the swarm's practice, which is worth more than any single object here.

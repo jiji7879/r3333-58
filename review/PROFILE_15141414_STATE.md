@@ -201,7 +201,14 @@ and 395 across. `results/truncation-depth/`.
    UNKNOWN at 400 s / 4.4 M conflicts. Its reach is counted in item 5 below:
    at most 7 of the 381 cases, one child each.
 2. **Pair level + arm saturation** — the one kernel-checked constraint every
-   known witness violates, never yet put in front of a solver with the pair level.
+   known witness violates (measured: part-family cliques 13/9/11 against the bound
+   5; per-arm cap max 8 against 5). Now tried, and **it does not close the pair
+   level**: the word layer carries the sixth lemma *at its exact bound* and the
+   per-arm cap on all three arms (`blocks_armcap.json`: coverage 14, ten 5s and
+   five 4s per arm, clique number exactly 5 in every arm), and the pair level with
+   the lemma at one or two `(a,b)` pairs is SAT (witnesses with 0 definition-level
+   violations). The lemma at **all nine** pairs is UNKNOWN at 280 s / 400 s and is
+   a frontier, not a result. `results/word-layer-sixth-lemma/`.
 3. ~~**The `(6,4,4,4)` plan** — a uniform, kind-free statement set at 386 rows.~~
    **Dead**: audited clean (no errata defect) and probed one case per stratum —
    16 of 16 OPEN at 1.21-1.49 M conflicts, so plan choice is not the bottleneck and
