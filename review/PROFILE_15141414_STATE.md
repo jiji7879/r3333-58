@@ -239,8 +239,20 @@ with every pair in 4 blocks — and it is exactly the case in which all 105 arm
 codegrees equal 5.)*
 
 **Improved lemma.** The independent-14 bound is **`|armFar| <= 4`**, not the 5 that
-is kernel-checked — the K59 argument transfers because its only size input is the
-exchange rule on 16-sets with a 15-core. So `armFar_le_five` is not tight.
+is kernel-checked. *(The reason given here in an earlier revision — "the K59
+argument transfers because its only size input is the exchange rule on 16-sets
+with a 15-core" — does not survive: `rg -n exchange lean/` is **empty**; those
+lemmas are not in the tree. The bound is established instead by m6's certificate,
+which I have run: 240 UNSAT instances, one per `X = U` or `T` minus two points,
+each with a DRAT replayed against its regenerated CNF, `verified 240, failures 0`
+(`.ultramath/smwrmwgf7/m6/cert/manifest.txt`), the SAT side checked at `|Z| = 4`
+for all 240 (`far_sanity.py`), the sharpness witness `far18.col` an independently
+valid 18-vertex 4-colouring with `|armFar| = 4` (`python3 tools/verify_coloring.py`),
+and `K58.armFar_four_attained`, `armFar_five_zero_degree`,
+`armFar_five_nonzero_degree` axiom-clean in `ArmFarFour.lean`/`ArmFarRigid.lean`.
+The reduction from an arbitrary 14-set to those 240 cases is a paper argument in
+m6's `PROOF.md` §2, not kernel-checked and not audited by me; the bound itself is
+`decide`-free only in its sharpness half.)*
 
 **Correction (2026-11-22, audited by m6 and re-derived here): `M >= 7` is not
 proved; `M >= 6` is.** The `C_x` chain is: for `x in X`, `P = N_0(x) ∩ A` has five
