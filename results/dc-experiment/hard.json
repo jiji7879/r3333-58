@@ -1,0 +1,42 @@
+[
+ {
+  "case": 0,
+  "arm": "base",
+  "status": "UNKNOWN",
+  "wall": 60.0,
+  "conflicts": 2620855,
+  "drat": 0,
+  "vars": 6612,
+  "clauses": 135319
+ },
+ {
+  "case": 0,
+  "arm": "dc",
+  "status": "UNKNOWN",
+  "wall": 60.0,
+  "conflicts": 1111083,
+  "drat": 0,
+  "vars": 158804,
+  "clauses": 445503
+ },
+ {
+  "case": 1,
+  "arm": "base",
+  "status": "UNKNOWN",
+  "wall": 60.0,
+  "conflicts": 2782633,
+  "drat": 0,
+  "vars": 6612,
+  "clauses": 135319
+ },
+ {
+  "case": 1,
+  "arm": "dc",
+  "status": "UNKNOWN",
+  "wall": 60.0,
+  "conflicts": 1258257,
+  "drat": 0,
+  "vars": 158804,
+  "clauses": 445503
+ }
+]

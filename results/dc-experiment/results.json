@@ -1,0 +1,110 @@
+[
+ {
+  "case": 0,
+  "arm": "base",
+  "status": "UNSAT",
+  "wall": 1.5,
+  "drat": 5076517,
+  "vars": 6612,
+  "clauses": 135513
+ },
+ {
+  "case": 0,
+  "arm": "dc",
+  "status": "UNSAT",
+  "wall": 5.4,
+  "drat": 16088377,
+  "vars": 158804,
+  "clauses": 445697
+ },
+ {
+  "case": 1,
+  "arm": "base",
+  "status": "UNSAT",
+  "wall": 1.0,
+  "drat": 3645803,
+  "vars": 6612,
+  "clauses": 135513
+ },
+ {
+  "case": 1,
+  "arm": "dc",
+  "status": "UNSAT",
+  "wall": 4.4,
+  "drat": 15494944,
+  "vars": 158804,
+  "clauses": 445697
+ },
+ {
+  "case": 2,
+  "arm": "base",
+  "status": "UNSAT",
+  "wall": 1.8,
+  "drat": 5630177,
+  "vars": 6612,
+  "clauses": 135513
+ },
+ {
+  "case": 2,
+  "arm": "dc",
+  "status": "UNSAT",
+  "wall": 4.6,
+  "drat": 14358687,
+  "vars": 158804,
+  "clauses": 445697
+ },
+ {
+  "case": 3,
+  "arm": "base",
+  "status": "UNSAT",
+  "wall": 3.0,
+  "drat": 9295743,
+  "vars": 6612,
+  "clauses": 135513
+ },
+ {
+  "case": 3,
+  "arm": "dc",
+  "status": "UNSAT",
+  "wall": 7.6,
+  "drat": 24405564,
+  "vars": 158804,
+  "clauses": 445697
+ },
+ {
+  "case": 4,
+  "arm": "base",
+  "status": "UNSAT",
+  "wall": 3.7,
+  "drat": 19142271,
+  "vars": 6612,
+  "clauses": 135513
+ },
+ {
+  "case": 4,
+  "arm": "dc",
+  "status": "UNSAT",
+  "wall": 10.3,
+  "drat": 37626776,
+  "vars": 158804,
+  "clauses": 445697
+ },
+ {
+  "case": 5,
+  "arm": "base",
+  "status": "UNSAT",
+  "wall": 0.8,
+  "drat": 3140537,
+  "vars": 6612,
+  "clauses": 135513
+ },
+ {
+  "case": 5,
+  "arm": "dc",
+  "status": "UNSAT",
+  "wall": 2.7,
+  "drat": 14578405,
+  "vars": 158804,
+  "clauses": 445697
+ }
+]
