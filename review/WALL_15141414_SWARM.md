@@ -1066,3 +1066,34 @@ part is a pentagon; and **an explicit `2-(15,5,4)` design with the arm split
 exists**, so incidence counting alone can never exclude the all-codegree-5 family —
 a clean statement of where counting stops and the collision and saturation
 arguments must take over.
+
+## 23. The high-overlap cluster: fully described, not excluded
+
+Two senders' classes are either the same template type or meet in at most twelve
+of fifteen points (certified MCIS, all six colour correspondences). Inside the
+high-overlap regime everything else is now pinned:
+
+* **C2.** At most **7** senders can pairwise share at least 14 class points
+  (`|union| <= k+13` against `14k <= 5|union|`).
+* **C3.** At a common 14-core each class's spoke vector is one of exactly **two**
+  (the clone and the deficiency, each using all three colours), and at most two
+  classes carry the same vector — three twins would give a colour-0 triangle. So
+  **at most four classes, split 2+2**, and twin pairs are joined in colour 0 with
+  **disjoint arm supports**.
+* **C4. Not excluded.** Valid 20- and 22-vertex triangle-free colourings realise
+  the 2+1 and the maximal 2+2 cluster (`cluster3_model_k20.col` has three 15-point
+  colour-0 classes pairwise overlapping in 14 — checked here — and
+  `cluster4_model_k22.col` the 2+2), and a 15-block/42-point incidence structure
+  with the branch's numbers carries the cluster with disjoint twin supports.
+
+So the regime is a small rigid object that no known constraint contradicts, and
+the two-way freedom at a 14-core is precisely why no K59-style chaining exists
+here. Closing it needs the internal colouring of the remaining outside vertices
+and the three 14-arms' own 3-colourings — the gap the record already names.
+
+**The K59 transfer programme is now fully accounted for:** (1) gives `M >= 7`
+(§21); (2) fails as a transfer — mixed overlap is exactly 12, the K59 bound of 7
+being host-level (§22); (3) **succeeds and improves a kernel-checked lemma**,
+`|armFar| <= 4` rather than 5; (4) gives the root-axis table only, margins
+`(15,13,14,14)`; (5) succeeds verbatim, `(3,5,5)/(4,4,5)` on all 115 rows;
+(6) fails — the 14-core exchange is deficiency-conditional.
