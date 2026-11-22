@@ -65,6 +65,16 @@ profile and for two random ones (`profile42.py`).
 | random (ten 5s, five 4s) | UNKNOWN | 90 s |
 | random (ten 5s, five 4s) | UNKNOWN | 90 s |
 
+**More time does not help either.** The witness profile was re-run at **1800 s**
+and is still UNKNOWN, while the all-words-pinned instance decides in 10.5 s. A
+20-fold budget increase leaves the profile undecided, so this is not a "slower
+route" — the profile is not the constraint that decides the instance. (The
+external package in `results/hailmary-3/` says why: with all fourteen words fixed,
+five extra colour-2 vertices are SAT and six are UNSAT, but pinning only the *zero
+positions* admits a K36 witness with the same 70 zero cells and 51 changed
+ordinary letters. The zeros cannot imply the contradiction; the ordinary letters
+carry it, and the profile is a coarsening of the zeros.)
+
 So a cover of the arm layer cannot be organised by counts: the words carry
 information the profile does not, which is the same thing the 8-versus-14 pinning
 gradient said. Combined with m4's reach of 7-of-14 words pinned, that closes the
