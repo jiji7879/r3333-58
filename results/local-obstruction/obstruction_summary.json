@@ -1,0 +1,212 @@
+[
+ {
+  "witness": "W1 pair58_Tminus",
+  "path": ".ultramath/smwr8io45/m6/wit/pair58_Tminus.wit",
+  "arms": [
+   {
+    "arm_root_colour": 1,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 48,
+    "triples_if_colour0_banned": 58,
+    "dead_pairs_if_colour0_banned": 4,
+    "triples_by_colour": {
+     "2": 7,
+     "3": 41
+    }
+   },
+   {
+    "arm_root_colour": 2,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 37,
+    "triples_if_colour0_banned": 56,
+    "dead_pairs_if_colour0_banned": 1,
+    "triples_by_colour": {
+     "3": 34,
+     "1": 3
+    }
+   },
+   {
+    "arm_root_colour": 3,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 34,
+    "triples_if_colour0_banned": 42,
+    "dead_pairs_if_colour0_banned": 1,
+    "triples_by_colour": {
+     "1": 18,
+     "2": 16
+    }
+   }
+  ]
+ },
+ {
+  "witness": "W2 pair58_Tminus_recoloured",
+  "path": ".ultramath/smwr8io45/m4/pair58_Tminus_recoloured.wit",
+  "arms": [
+   {
+    "arm_root_colour": 1,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 56,
+    "triples_if_colour0_banned": 63,
+    "dead_pairs_if_colour0_banned": 2,
+    "triples_by_colour": {
+     "2": 44,
+     "3": 12
+    }
+   },
+   {
+    "arm_root_colour": 2,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 47,
+    "triples_if_colour0_banned": 47,
+    "dead_pairs_if_colour0_banned": 1,
+    "triples_by_colour": {
+     "3": 29,
+     "1": 18
+    }
+   },
+   {
+    "arm_root_colour": 3,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 57,
+    "triples_if_colour0_banned": 60,
+    "dead_pairs_if_colour0_banned": 0,
+    "triples_by_colour": {
+     "1": 55,
+     "2": 2
+    }
+   }
+  ]
+ },
+ {
+  "witness": "W3 wit_big",
+  "path": ".ultramath/smwr8io45/m4/wit_big.wit",
+  "arms": [
+   {
+    "arm_root_colour": 1,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 41,
+    "triples_if_colour0_banned": 46,
+    "dead_pairs_if_colour0_banned": 2,
+    "triples_by_colour": {
+     "3": 27,
+     "2": 14
+    }
+   },
+   {
+    "arm_root_colour": 2,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 51,
+    "triples_if_colour0_banned": 54,
+    "dead_pairs_if_colour0_banned": 1,
+    "triples_by_colour": {
+     "1": 47,
+     "3": 4
+    }
+   },
+   {
+    "arm_root_colour": 3,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 39,
+    "triples_if_colour0_banned": 47,
+    "dead_pairs_if_colour0_banned": 1,
+    "triples_by_colour": {
+     "1": 26,
+     "2": 13
+    }
+   }
+  ]
+ },
+ {
+  "witness": "W4 p58",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58.wit",
+  "arms": [
+   {
+    "arm_root_colour": 1,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 44,
+    "triples_if_colour0_banned": 46,
+    "dead_pairs_if_colour0_banned": 1,
+    "triples_by_colour": {
+     "3": 29,
+     "2": 15
+    }
+   },
+   {
+    "arm_root_colour": 2,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 60,
+    "triples_if_colour0_banned": 69,
+    "dead_pairs_if_colour0_banned": 2,
+    "triples_by_colour": {
+     "1": 43,
+     "3": 17
+    }
+   },
+   {
+    "arm_root_colour": 3,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 45,
+    "triples_if_colour0_banned": 58,
+    "dead_pairs_if_colour0_banned": 2,
+    "triples_by_colour": {
+     "1": 27,
+     "2": 18
+    }
+   }
+  ]
+ },
+ {
+  "witness": "W5 p58_cc",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58_cc.wit",
+  "arms": [
+   {
+    "arm_root_colour": 1,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 37,
+    "triples_if_colour0_banned": 52,
+    "dead_pairs_if_colour0_banned": 1,
+    "triples_by_colour": {
+     "3": 9,
+     "2": 28
+    }
+   },
+   {
+    "arm_root_colour": 2,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 35,
+    "triples_if_colour0_banned": 50,
+    "dead_pairs_if_colour0_banned": 3,
+    "triples_by_colour": {
+     "1": 13,
+     "3": 22
+    }
+   },
+   {
+    "arm_root_colour": 3,
+    "n_words": 14,
+    "dead_pairs": 0,
+    "mono_forced_triples": 30,
+    "triples_if_colour0_banned": 46,
+    "dead_pairs_if_colour0_banned": 2,
+    "triples_by_colour": {
+     "1": 23,
+     "2": 7
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "witness": "W1 pair58_Tminus",
+  "max_over_T<=13(c(T)-|T|-1)": 9,
+  "max_over_all_T_nocap": 26,
+  "argmax_T": 31615,
+  "argmax_T_size": 13,
+  "c(argmax)": 23,
+  "I=A_ever_violated": true,
+  "support_multiplicities": null,
+  "distinct_supports": 42,
+  "max_support_multiplicity": 1
+ },
+ {
+  "witness": "W2 pair58_Tminus_recoloured",
+  "max_over_T<=13(c(T)-|T|-1)": 9,
+  "max_over_all_T_nocap": 26,
+  "argmax_T": 32638,
+  "argmax_T_size": 13,
+  "c(argmax)": 23,
+  "I=A_ever_violated": true,
+  "support_multiplicities": null,
+  "distinct_supports": 42,
+  "max_support_multiplicity": 1
+ },
+ {
+  "witness": "W3 wit_big",
+  "max_over_T<=13(c(T)-|T|-1)": 7,
+  "max_over_all_T_nocap": 26,
+  "argmax_T": 31679,
+  "argmax_T_size": 13,
+  "c(argmax)": 21,
+  "I=A_ever_violated": true,
+  "support_multiplicities": null,
+  "distinct_supports": 41,
+  "max_support_multiplicity": 2
+ },
+ {
+  "witness": "W4 p58",
+  "max_over_T<=13(c(T)-|T|-1)": 7,
+  "max_over_all_T_nocap": 26,
+  "argmax_T": 16319,
+  "argmax_T_size": 13,
+  "c(argmax)": 21,
+  "I=A_ever_violated": true,
+  "support_multiplicities": null,
+  "distinct_supports": 42,
+  "max_support_multiplicity": 1
+ },
+ {
+  "witness": "W5 p58_cc",
+  "max_over_T<=13(c(T)-|T|-1)": 10,
+  "max_over_all_T_nocap": 26,
+  "argmax_T": 32727,
+  "argmax_T_size": 13,
+  "c(argmax)": 24,
+  "I=A_ever_violated": true,
+  "support_multiplicities": null,
+  "distinct_supports": 42,
+  "max_support_multiplicity": 1
+ }
+]

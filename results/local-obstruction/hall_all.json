@@ -1,0 +1,354 @@
+[
+ {
+  "file": ".ultramath/smwr8io45/m4/pair58_Tminus_recoloured.wit",
+  "kind": "pair-level witness",
+  "n": 58,
+  "alpha0": 41,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m4/wit_big.wit",
+  "kind": "pair-level witness",
+  "n": 58,
+  "alpha0": 36,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/L_44.wit",
+  "kind": "pair-level witness",
+  "n": 44,
+  "alpha0": 23,
+  "hall_max_margin": 7,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/L_50.wit",
+  "kind": "pair-level witness",
+  "n": 50,
+  "alpha0": 23,
+  "hall_max_margin": 7,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/L_54.wit",
+  "kind": "pair-level witness",
+  "n": 54,
+  "alpha0": 32,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/L_55.wit",
+  "kind": "pair-level witness",
+  "n": 55,
+  "alpha0": 32,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/L_56.wit",
+  "kind": "pair-level witness",
+  "n": 56,
+  "alpha0": 37,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/L_57.wit",
+  "kind": "pair-level witness",
+  "n": 57,
+  "alpha0": 28,
+  "hall_max_margin": 12,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/L_58.wit",
+  "kind": "pair-level witness",
+  "n": 58,
+  "alpha0": 34,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwr8io45/m6/wit/pair58_Tminus.wit",
+  "kind": "pair-level witness",
+  "n": 58,
+  "alpha0": 34,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwrfgma5/m4/wit/a_14_12.wit",
+  "kind": "pair-level witness",
+  "n": 42,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": ".ultramath/smwrfgma5/m4/wit/a_14_12_cap.wit",
+  "kind": "pair-level witness",
+  "n": 42,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": ".ultramath/smwrfgma5/m4/wit/a_14_13.wit",
+  "kind": "pair-level witness",
+  "n": 43,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": ".ultramath/smwrfgma5/m4/wit/a_14_13_cap.wit",
+  "kind": "pair-level witness",
+  "n": 43,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": ".ultramath/smwrfgma5/m4/wit/a_14_14.wit",
+  "kind": "pair-level witness",
+  "n": 44,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": ".ultramath/smwrfgma5/m4/wit/p58.wit",
+  "kind": "pair-level witness",
+  "n": 58,
+  "alpha0": 30,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwrfgma5/m4/wit/p58_cc.wit",
+  "kind": "pair-level witness",
+  "n": 58,
+  "alpha0": 30,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwrmwgf7/m10/wit/plain.solver.wit",
+  "kind": "pair-level witness",
+  "n": 58,
+  "alpha0": 31,
+  "hall_max_margin": 14,
+  "hall_violated": true
+ },
+ {
+  "file": ".ultramath/smwrmwgf7/m8/wit/a_14_14_lean.wit",
+  "kind": "pair-level witness",
+  "n": 44,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": ".ultramath/smwrmwgf7/m8/wit/one_arm.wit",
+  "kind": "pair-level witness",
+  "n": 30,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": ".ultramath/smwrmwgf7/m8/wit/rung3.wit",
+  "kind": "pair-level witness",
+  "n": 44,
+  "alpha0": 15,
+  "hall_max_margin": -1,
+  "hall_violated": false
+ },
+ {
+  "file": "artifacts/k15_link_Tminus_m5.col",
+  "kind": "real colouring",
+  "n": 15,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k15_link_Uminus_m5.col",
+  "kind": "real colouring",
+  "n": 15,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k15_template_Tminus_aut2_m4.col",
+  "kind": "real colouring",
+  "n": 15,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k15_template_Uminus_aut10_m4.col",
+  "kind": "real colouring",
+  "n": 15,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k16_link_T_m5.col",
+  "kind": "real colouring",
+  "n": 16,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k16_link_U_m5.col",
+  "kind": "real colouring",
+  "n": 16,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k16_template_T_aut32_m4.col",
+  "kind": "real colouring",
+  "n": 16,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k16_template_U_aut160_m4.col",
+  "kind": "real colouring",
+  "n": 16,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k32_module_2x16_m1.col",
+  "kind": "real colouring",
+  "n": 32,
+  "alphas": [
+   10,
+   10,
+   10,
+   16
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k40_two_16arms_UT_s7.col",
+  "kind": "real colouring",
+  "n": 40,
+  "alphas": [
+   16,
+   16,
+   12,
+   12
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k49_from_n48_m5.col",
+  "kind": "real colouring",
+  "n": 49,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k50_blockcayley_Z4xZ4_m4.col",
+  "kind": "real colouring",
+  "n": 50,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k50_sanity_f2.col",
+  "kind": "real colouring",
+  "n": 50,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k50_z4z4_m6.col",
+  "kind": "real colouring",
+  "n": 50,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/k51_relax_m3_1defect_NOT_a_valid_colouring.col",
+  "kind": "real colouring",
+  "n": 51,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "hall_violated": null
+ },
+ {
+  "file": "artifacts/n48_z4z4_f0.col",
+  "kind": "real colouring",
+  "n": 48,
+  "alphas": [
+   15,
+   16,
+   16,
+   16
+  ],
+  "hall_violated": null
+ }
+]

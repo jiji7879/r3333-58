@@ -1,0 +1,1142 @@
+[
+ {
+  "witness": "W1 pair58_Tminus",
+  "path": ".ultramath/smwr8io45/m6/wit/pair58_Tminus.wit",
+  "arm_root_colour": 1,
+  "vertices": [
+   0,
+   1,
+   8
+  ],
+  "words": [
+   [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    3,
+    1,
+    2,
+    2,
+    3,
+    0,
+    0,
+    3
+   ],
+   [
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    3,
+    2,
+    3
+   ],
+   [
+    0,
+    1,
+    1,
+    1,
+    3,
+    0,
+    0,
+    2,
+    2,
+    0,
+    1,
+    3,
+    2,
+    0,
+    3
+   ]
+  ],
+  "colour": 2,
+  "pair_lists": [
+   [
+    2
+   ],
+   [
+    2
+   ],
+   [
+    2
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W1 pair58_Tminus",
+  "path": ".ultramath/smwr8io45/m6/wit/pair58_Tminus.wit",
+  "arm_root_colour": 2,
+  "vertices": [
+   14,
+   17,
+   19
+  ],
+  "words": [
+   [
+    0,
+    2,
+    2,
+    0,
+    1,
+    2,
+    1,
+    3,
+    2,
+    0,
+    3,
+    3,
+    0,
+    0,
+    2
+   ],
+   [
+    2,
+    1,
+    1,
+    1,
+    1,
+    0,
+    2,
+    2,
+    0,
+    0,
+    1,
+    2,
+    2,
+    0,
+    0
+   ],
+   [
+    1,
+    3,
+    2,
+    1,
+    2,
+    1,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    2
+   ]
+  ],
+  "colour": 3,
+  "pair_lists": [
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W1 pair58_Tminus",
+  "path": ".ultramath/smwr8io45/m6/wit/pair58_Tminus.wit",
+  "arm_root_colour": 3,
+  "vertices": [
+   28,
+   29,
+   39
+  ],
+  "words": [
+   [
+    3,
+    2,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    3,
+    2,
+    0,
+    0,
+    0,
+    3,
+    2
+   ],
+   [
+    0,
+    3,
+    2,
+    3,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    1,
+    0,
+    0,
+    3,
+    2
+   ],
+   [
+    1,
+    2,
+    1,
+    3,
+    0,
+    2,
+    3,
+    0,
+    2,
+    3,
+    0,
+    1,
+    3,
+    0,
+    0
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W2 pair58_Tminus_recoloured",
+  "path": ".ultramath/smwr8io45/m4/pair58_Tminus_recoloured.wit",
+  "arm_root_colour": 1,
+  "vertices": [
+   0,
+   1,
+   3
+  ],
+  "words": [
+   [
+    3,
+    0,
+    2,
+    0,
+    3,
+    2,
+    0,
+    1,
+    0,
+    0,
+    3,
+    2,
+    1,
+    2,
+    3
+   ],
+   [
+    3,
+    2,
+    0,
+    0,
+    3,
+    3,
+    2,
+    1,
+    3,
+    2,
+    3,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    1,
+    0,
+    0,
+    3,
+    0,
+    3,
+    0,
+    1,
+    1,
+    1,
+    1,
+    3,
+    0
+   ]
+  ],
+  "colour": 2,
+  "pair_lists": [
+   [
+    2
+   ],
+   [
+    2
+   ],
+   [
+    2
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W2 pair58_Tminus_recoloured",
+  "path": ".ultramath/smwr8io45/m4/pair58_Tminus_recoloured.wit",
+  "arm_root_colour": 2,
+  "vertices": [
+   14,
+   15,
+   17
+  ],
+  "words": [
+   [
+    1,
+    3,
+    0,
+    3,
+    2,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    2,
+    3,
+    0,
+    3
+   ],
+   [
+    3,
+    2,
+    0,
+    1,
+    0,
+    2,
+    2,
+    3,
+    1,
+    1,
+    2,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    2,
+    1,
+    1,
+    1,
+    2,
+    0,
+    2,
+    3,
+    1
+   ]
+  ],
+  "colour": 3,
+  "pair_lists": [
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W2 pair58_Tminus_recoloured",
+  "path": ".ultramath/smwr8io45/m4/pair58_Tminus_recoloured.wit",
+  "arm_root_colour": 3,
+  "vertices": [
+   28,
+   29,
+   36
+  ],
+  "words": [
+   [
+    0,
+    2,
+    2,
+    1,
+    3,
+    2,
+    3,
+    0,
+    2,
+    3,
+    0,
+    0,
+    3,
+    0,
+    2
+   ],
+   [
+    1,
+    2,
+    0,
+    0,
+    3,
+    3,
+    0,
+    2,
+    1,
+    0,
+    3,
+    1,
+    2,
+    0,
+    1
+   ],
+   [
+    3,
+    2,
+    2,
+    0,
+    1,
+    3,
+    0,
+    3,
+    0,
+    2,
+    3,
+    0,
+    0,
+    1,
+    2
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W3 wit_big",
+  "path": ".ultramath/smwr8io45/m4/wit_big.wit",
+  "arm_root_colour": 1,
+  "vertices": [
+   0,
+   1,
+   3
+  ],
+  "words": [
+   [
+    0,
+    3,
+    0,
+    0,
+    3,
+    2,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1,
+    3,
+    1,
+    3
+   ],
+   [
+    0,
+    2,
+    2,
+    3,
+    1,
+    2,
+    0,
+    1,
+    2,
+    3,
+    0,
+    0,
+    1,
+    0,
+    2
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
+    1,
+    0,
+    1,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2
+   ]
+  ],
+  "colour": 3,
+  "pair_lists": [
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W3 wit_big",
+  "path": ".ultramath/smwr8io45/m4/wit_big.wit",
+  "arm_root_colour": 2,
+  "vertices": [
+   14,
+   15,
+   22
+  ],
+  "words": [
+   [
+    2,
+    0,
+    3,
+    2,
+    3,
+    0,
+    3,
+    2,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    3
+   ],
+   [
+    1,
+    0,
+    3,
+    2,
+    2,
+    1,
+    0,
+    3,
+    0,
+    3,
+    0,
+    2,
+    0,
+    3,
+    1
+   ],
+   [
+    2,
+    0,
+    3,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1,
+    3,
+    0,
+    0,
+    0,
+    3,
+    3
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W3 wit_big",
+  "path": ".ultramath/smwr8io45/m4/wit_big.wit",
+  "arm_root_colour": 3,
+  "vertices": [
+   28,
+   29,
+   33
+  ],
+  "words": [
+   [
+    0,
+    2,
+    3,
+    1,
+    3,
+    1,
+    1,
+    3,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    1,
+    1,
+    1,
+    0,
+    0,
+    2,
+    3,
+    0,
+    2,
+    2,
+    3,
+    1,
+    0,
+    2,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    3,
+    2,
+    2,
+    3,
+    0,
+    2,
+    2,
+    3,
+    0,
+    3,
+    2,
+    3
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W4 p58",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58.wit",
+  "arm_root_colour": 1,
+  "vertices": [
+   0,
+   5,
+   6
+  ],
+  "words": [
+   [
+    0,
+    2,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    1,
+    1,
+    2
+   ],
+   [
+    0,
+    2,
+    1,
+    3,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    1,
+    0,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    2,
+    1,
+    0,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    2,
+    0
+   ]
+  ],
+  "colour": 3,
+  "pair_lists": [
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W4 p58",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58.wit",
+  "arm_root_colour": 2,
+  "vertices": [
+   14,
+   16,
+   18
+  ],
+  "words": [
+   [
+    3,
+    3,
+    2,
+    0,
+    3,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    2,
+    3
+   ],
+   [
+    3,
+    3,
+    2,
+    1,
+    0,
+    0,
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
+    2,
+    3,
+    0
+   ],
+   [
+    3,
+    1,
+    2,
+    0,
+    1,
+    3,
+    2,
+    3,
+    0,
+    0,
+    1,
+    0,
+    2,
+    3,
+    0
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W4 p58",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58.wit",
+  "arm_root_colour": 3,
+  "vertices": [
+   28,
+   29,
+   41
+  ],
+  "words": [
+   [
+    0,
+    3,
+    0,
+    2,
+    3,
+    1,
+    1,
+    3,
+    2,
+    3,
+    0,
+    3,
+    0,
+    0,
+    1
+   ],
+   [
+    1,
+    0,
+    0,
+    3,
+    0,
+    2,
+    3,
+    0,
+    2,
+    2,
+    3,
+    0,
+    3,
+    2,
+    3
+   ],
+   [
+    3,
+    2,
+    3,
+    0,
+    0,
+    2,
+    0,
+    1,
+    2,
+    2,
+    3,
+    0,
+    0,
+    3,
+    3
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W5 p58_cc",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58_cc.wit",
+  "arm_root_colour": 1,
+  "vertices": [
+   0,
+   2,
+   12
+  ],
+  "words": [
+   [
+    3,
+    0,
+    3,
+    0,
+    2,
+    2,
+    0,
+    3,
+    2,
+    0,
+    1,
+    1,
+    1,
+    3,
+    0
+   ],
+   [
+    2,
+    0,
+    0,
+    2,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    1,
+    2,
+    1
+   ],
+   [
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
+    1,
+    0,
+    1,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2
+   ]
+  ],
+  "colour": 3,
+  "pair_lists": [
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W5 p58_cc",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58_cc.wit",
+  "arm_root_colour": 2,
+  "vertices": [
+   14,
+   16,
+   18
+  ],
+  "words": [
+   [
+    3,
+    0,
+    2,
+    2,
+    1,
+    3,
+    0,
+    2,
+    3,
+    0,
+    3,
+    2,
+    0,
+    1,
+    0
+   ],
+   [
+    3,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    3,
+    1,
+    2,
+    0,
+    3,
+    0,
+    2
+   ],
+   [
+    3,
+    2,
+    2,
+    0,
+    3,
+    0,
+    2,
+    2,
+    3,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ },
+ {
+  "witness": "W5 p58_cc",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58_cc.wit",
+  "arm_root_colour": 3,
+  "vertices": [
+   28,
+   31,
+   34
+  ],
+  "words": [
+   [
+    0,
+    0,
+    2,
+    3,
+    0,
+    2,
+    3,
+    0,
+    1,
+    0,
+    3,
+    2,
+    3,
+    2,
+    3
+   ],
+   [
+    3,
+    0,
+    2,
+    2,
+    0,
+    3,
+    1,
+    0,
+    3,
+    0,
+    3,
+    2,
+    3,
+    0,
+    2
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    3,
+    1,
+    3,
+    1,
+    3,
+    2,
+    1,
+    2,
+    1
+   ]
+  ],
+  "colour": 1,
+  "pair_lists": [
+   [
+    1
+   ],
+   [
+    1
+   ],
+   [
+    1
+   ]
+  ],
+  "obstruction": "mono-forced triple"
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "witness": "W1 pair58_Tminus",
+  "path": ".ultramath/smwr8io45/m6/wit/pair58_Tminus.wit",
+  "parse_errors": 0,
+  "alpha0": 34,
+  "alpha0_witness_mask": 288186355505135616,
+  "A_is_0_independent": true,
+  "alpha1": 20,
+  "alpha2": 19,
+  "alpha3": 18
+ },
+ {
+  "witness": "W2 L_58 (byte-identical to W1)",
+  "path": ".ultramath/smwr8io45/m6/wit/L_58.wit",
+  "parse_errors": 0,
+  "alpha0": 34,
+  "alpha0_witness_mask": 288186355505135616,
+  "A_is_0_independent": true,
+  "alpha1": 20,
+  "alpha2": 19,
+  "alpha3": 18
+ },
+ {
+  "witness": "W3 pair58_Tminus_recoloured",
+  "path": ".ultramath/smwr8io45/m4/pair58_Tminus_recoloured.wit",
+  "parse_errors": 0,
+  "alpha0": 41,
+  "alpha0_witness_mask": 288230375075840000,
+  "A_is_0_independent": true,
+  "alpha1": 18,
+  "alpha2": 19,
+  "alpha3": 18
+ },
+ {
+  "witness": "W4 p58",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58.wit",
+  "parse_errors": 0,
+  "alpha0": 30,
+  "alpha0_witness_mask": 282386110984650752,
+  "A_is_0_independent": true,
+  "alpha1": 18,
+  "alpha2": 18,
+  "alpha3": 19
+ },
+ {
+  "witness": "W5 p58_cc",
+  "path": ".ultramath/smwrfgma5/m4/wit/p58_cc.wit",
+  "parse_errors": 0,
+  "alpha0": 30,
+  "alpha0_witness_mask": 287587941647351808,
+  "A_is_0_independent": true,
+  "alpha1": 18,
+  "alpha2": 17,
+  "alpha3": 18
+ }
+]

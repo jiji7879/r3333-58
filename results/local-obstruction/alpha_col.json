@@ -1,0 +1,202 @@
+[
+ {
+  "file": "k15_link_Tminus_m5.col",
+  "n": 15,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k15_link_Uminus_m5.col",
+  "n": 15,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k15_template_Tminus_aut2_m4.col",
+  "n": 15,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k15_template_Uminus_aut10_m4.col",
+  "n": 15,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k16_link_T_m5.col",
+  "n": 16,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k16_link_U_m5.col",
+  "n": 16,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k16_template_T_aut32_m4.col",
+  "n": 16,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k16_template_U_aut160_m4.col",
+  "n": 16,
+  "k": 3,
+  "mono_triangles": 0,
+  "alphas": [
+   5,
+   5,
+   5
+  ],
+  "max_alpha": 5
+ },
+ {
+  "file": "k32_module_2x16_m1.col",
+  "n": 32,
+  "k": 4,
+  "mono_triangles": 0,
+  "alphas": [
+   10,
+   10,
+   10,
+   16
+  ],
+  "max_alpha": 16
+ },
+ {
+  "file": "k40_two_16arms_UT_s7.col",
+  "n": 40,
+  "k": 4,
+  "mono_triangles": 0,
+  "alphas": [
+   16,
+   16,
+   12,
+   12
+  ],
+  "max_alpha": 16
+ },
+ {
+  "file": "k49_from_n48_m5.col",
+  "n": 49,
+  "k": 4,
+  "mono_triangles": 0,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "max_alpha": 16
+ },
+ {
+  "file": "k50_blockcayley_Z4xZ4_m4.col",
+  "n": 50,
+  "k": 4,
+  "mono_triangles": 0,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "max_alpha": 16
+ },
+ {
+  "file": "k50_sanity_f2.col",
+  "n": 50,
+  "k": 4,
+  "mono_triangles": 0,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "max_alpha": 16
+ },
+ {
+  "file": "k50_z4z4_m6.col",
+  "n": 50,
+  "k": 4,
+  "mono_triangles": 0,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "max_alpha": 16
+ },
+ {
+  "file": "k51_relax_m3_1defect_NOT_a_valid_colouring.col",
+  "n": 51,
+  "k": 4,
+  "mono_triangles": 1,
+  "alphas": [
+   16,
+   16,
+   16,
+   16
+  ],
+  "max_alpha": 16
+ },
+ {
+  "file": "n48_z4z4_f0.col",
+  "n": 48,
+  "k": 4,
+  "mono_triangles": 0,
+  "alphas": [
+   15,
+   16,
+   16,
+   16
+  ],
+  "max_alpha": 16
+ }
+]
