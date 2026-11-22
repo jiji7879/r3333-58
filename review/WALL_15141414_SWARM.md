@@ -586,3 +586,14 @@ not: running the bundle's own `start.py` reproduces both child hashes
 (`8e0b49a9…` at-most-five, `f5324082…` some-six) and the some-six CNF contains
 exactly one clause built from all 42 flags — "at least one `m(x) >= 6`". The
 children are disjoint and exhaustive; the pilots are a valid split.
+
+**A structured family excluded by DRAT (existence side).** There is no
+`Z_58`-circulant triangle-free 4-colouring of `K_58`: the instance is exact for
+the family (116 variables = 29 difference classes × 4 colours, one colour per
+class, one clause per triangle and colour over all 30,856 triangles), CaDiCaL
+refutes it in 16.5 s and `drat-trim` returns `s VERIFIED` (14 s, 1177 of 123,627
+clauses in the core, 0 RAT lemmas). *Checked here.* This is existence-side work:
+it removes a family of candidate colourings and does not advance the cover.
+`2 × Z_29` and `3 × Z_19 + 1` were UNKNOWN at 400 s and 540 s; the latter is the
+shape of the known good `K_50` and the only structured family at this order
+where a positive answer is plausible.
