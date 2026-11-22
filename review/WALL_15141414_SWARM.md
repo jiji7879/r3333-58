@@ -1245,3 +1245,28 @@ roughly two orders of magnitude more.
 and 0 of 42 at 60 s, every admissible threshold vector at this profile is out of
 CDCL's reach at these budgets. The `(6,4,4,4)` hope — a uniform, kind-free statement
 set — is measured and dead, and the record should stop listing it as a live option.
+
+## 29. Object 2 closed with its mechanism, and the obstruction localised
+
+**The "gluing core" is void, and now it is explained rather than merely refuted.**
+The round-5 CNF contains a cardinality cluster over **all 42 slots at a single arm
+position** accepting only counts 0 to 5 — it asserts "at most five of the 42 outside
+vertices are colour-0 adjacent to arm vertex `a`", which contradicts `d_0(a) = 15`.
+It refutes by **unit propagation with a 256-clause core containing no pair or module
+clause**, so there was never a gluing obstruction to read. The companion files
+`arm2.cnf` and `arm3.cnf` carry the same defect and are unsatisfiable with no pins
+(140 > 75, 210 > 75), which reclassifies their "UNKNOWN at 900 s" as CDCL failing on
+a counting contradiction.
+
+**The correct counting layer with the pins is SAT** (model verified at object
+level), so no column-sum argument can carry this object. The correct two-arm
+instance with arm 1 pinned is UNKNOWN at 8.46 M conflicts, symmetry break included.
+
+**And the obstruction is localised.** Dropping only the arm module gives **SAT in
+0.9 s**, while no module-free model among 250 and no state among 610,000 passes the
+module; 12,130 of the 254,628 words fit the fourteen pinned words; there is no
+arm built only from extremal words (0 of 588 feasible multisets); and **the smallest
+local obstruction is three words with one singleton pair colour** (thirty
+infeasible subsets at size 3, example `(0,1,3)`). That three-word certificate is
+the gluing obstruction at the smallest scale that exists, and it is what the round
+asked for — a small refutation instead of a timeout.
