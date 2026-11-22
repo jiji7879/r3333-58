@@ -1131,3 +1131,32 @@ every time, read as evidence that most of the 115 arm classes are unrealisable. 
 true, class-branching collapses from 300 branches to a handful; the test is to
 canonicalise the one-arm witness's arm against the 115-row catalogue and then try
 a handful of other classes.
+
+## 25. The two-arm instance is SAT: that route is dead
+
+**`14+14` is satisfiable**, and so are `14+13` and `14+12`. The witness
+(`wit/a_14_14.wit`, 28 words and 378 pair colours, found by CaDiCaL in 145 s
+without symmetry breaking or added constraints) passes an independent checker
+that shares no code with the encoder: template triangle-free, five zeros per word,
+`M_f` independent, coverage between 8 and 10 per column, pair colour never the
+shared arm colour, `M_f` parts disjoint, no monochromatic triangle inside an arm.
+*Checked here.* The CNFs match the previous round's clause for clause (49,284 at
+`14+12`, 52,116 at `14+13`, 55,033 at `14+14`), so this is the instance everyone
+was running — decided, not timed out.
+
+**So Object 1's route — "UNSAT at `14+14` proves the uniform fully-sending branch"
+— is impossible, and the ladder never turns.** The reason is structural and worth
+keeping: with only two arms the columns reach 8 to 10, not 14, because the branch's
+coverage needs all three arms. The two-arm model is a *weak* relaxation, and its
+satisfiability says nothing about the branch.
+
+**The sixth arm lemma is now kernel-checked** (`Blocked.lean`:
+`blocked_set_le_five`, `blocked_in_set_le_five`, `part_family_le_five`), sharp on
+4,572 triples across fifteen artefacts with maximum exactly 5, and every known
+pair-level witness violates its word form (cliques of 9, 9, 10 against a bound of
+5). Only its cross-arm half is new.
+
+**The only object left that means anything is the three-arm instance at order 58**
+— the pair level plus triangle-freeness inside each arm and across arms, where the
+columns do reach 14. Measured cost: 480 s with the full cap bundle against 12 s
+plain. Anything smaller is now known to be too weak.
