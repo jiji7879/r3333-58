@@ -1980,3 +1980,44 @@ design case is empty": §42 reaches it through `M >= 7` plus the 525 identity,
 this one through a single vertex and a per-pair bound of 5. They agree, and the
 kernel now carries both. Neither closes a case, and the report says so: nothing
 here touches the `some-six` child, and no extremum is attained.
+
+## 44. The exchange residue, kernelised: exact, and inert at this profile
+
+Member m2, direction d3 of `smwrzh71x`; verdict **accepted**. Artefacts:
+`lean/K58/ExchangeResidue.lean` (namespace `K58.Residue`, seven declarations,
+axiom-clean), `.ultramath/smwrzh71x/m2/{REPORT.md,verify_residue.py,verify_residue.log}`.
+
+**What is kernel-checked.** `residue_pattern`: a 13-count core with all parts ≤ 5
+is a permutation of `(5,5,3)` or `(5,4,4)` — there is no third shape.
+`residue_two_way`: two colours that can each take one more point are then exactly
+4 and 4. `exists_complement`: every core of size `mu <= 13` has a complement with
+all three ordinary counts in `[4,5]`. `residue_arms`: a 14-set containing `r`
+whose two externally 0-free vertices see *different* colours from `r` splits
+`(4,4,5)` on the shared 13-set, with the two 4-arms exchanged. With the two
+exchange forms (`exchange_sixteen`, `exchange_fifteen`) that completes transfer 6's
+residue.
+
+**What is computed, with two algorithms and a definition-level check.** Through a
+core of size `mu` in either 15-point template the number of class-completions is
+`(16-mu)!`: 1, 15, 105, 455 cores at `mu = 15,14,13,12` with 1, 2, 6, 24
+completions — except that at `mu = 12` six of the 910 cores across both templates
+have 48 (1 for `T^-`, 5 for `U^-`), which is exactly where the `W(Q)`
+parametrisation fails. At 16 points the spectrum is 1, 16, 120, 560 cores with 1,
+1, 2, 6. I re-ran the verifier from the repo root: parts B, C, D reproduce, part D
+checking 32 completions with `tools/verify_coloring.py` and no failures, and part G
+confirming that the two artefacts at each size are the two classes (so the counts
+are complete given `K58.Classified`).
+
+**The negative, which is the result.** Nothing is forbidden at codegree `<= 13`.
+At a 14-overlap only the clone/deficiency choice remains, and clone is forbidden
+exactly for **cross-arm** pairs — the witness from `smwridmzp/m6` is a cross-arm
+deficiency overlap with 4 agreements at `perm(5,5,3)` and 10 disagreements at
+`perm(4,4,5)`. And the reach is empty: the 105 arm pairs satisfy
+`sum |S_a ∩ S_a'| = 420`, so at most 32 pairs can be 14-overlaps and none is
+forced. Since the arm pairs are at codegree 5 (Lemma 5 of §42), **the exchange
+rule constrains nothing on them at all.**
+
+So the exchange lemma — one of the six K59 transfers the campaign hoped would
+bite — is now kernelised in both forms and shown to be inert where the branch
+lives. A route closed, not a step taken, and it is worth having: the next round
+should not spend a direction on it.
