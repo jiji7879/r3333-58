@@ -388,3 +388,42 @@ unproved premise.
   is fully critical with all 15 outside vertices at `m_x = 16`, sum 240. And
   "at least two" is guaranteed but attained nowhere: the only saturated 16-arms
   in the record are those K32 ones.
+
+## 9. The position after two rounds
+
+What changed since §1–§3 were written, in the order it matters:
+
+1. **The classification premise is no longer a premise.** `K58.Classified 15`
+   and `K58.Classified 16` are kernel-checked in `lean/port/` (built from the
+   pinned `R_4(3) <= 60` development, 53 s, axioms
+   `[propext, Classical.choice, Quot.sound]`). Nothing in the `n = 58` cover
+   rests on an unproved structural assumption any more. `Classified` is still
+   *used nowhere*: the marking lemma is the critical path and is unstarted.
+2. **The interface language is exhausted in both directions.** At arm size 15
+   the export count is `210 + u`, `u <= 15`, and five-per-outside-vertex is
+   exactly saturable; at 16 it lies in `[224, 240]` with the top attained
+   (`k32_module_2x16_m1.col`), so the forced-six theorem is inert. The boundary
+   fact: `14p <= 5(57 - p)` holds iff `p <= 15` — the three 15-armed wall
+   profiles are exactly those where the interface has no slack, and
+   `(15,14,14,14)` is the one of them with the smallest budget (`w = 15`).
+3. **The type-level route is closed, and the gap is located.** The system of
+   join types, coverage, the pair-disjointness rule and non-sending is feasible
+   in both templates; the witness dies only when the three 14-arms must be good
+   3-colourings. So **a proof must use the internal colouring of the 14-arms** —
+   and the classification does not help there, since a 14-vertex arm is outside
+   `K_15`/`K_16`.
+4. **The model's hypothesis list is kernel-checked** and integrated:
+   `lean/K58/Arm.lean`, `Link14.lean`, `Model.lean` (pair disjointness for any
+   colour, the per-`(u,y)` rigidity in its correctly paired form with the `= 5`
+   case at a 16-arm, the parity invariant, the evenness step, the interface
+   identity), registered in `Check.lean`, build green in 42 s.
+   `e_i = 35` per colour class of a 15-arm is now unconditional (a corollary of
+   the classification, with an independent parity-plus-enumeration check).
+5. **Unchanged:** W2 is open, no case of the 381 is closed, no bound has moved,
+   and the frozen machine route is dead at every budget tried.
+
+The shortest description of the wall that anyone has produced: every quantity
+the ticket argument can see is slack enough to be attained by a real object two
+vertices away, and what remains is the interaction of three 14-vertex
+3-colourings, each of which is far less rigid than the templates the campaign
+has just finished classifying.
