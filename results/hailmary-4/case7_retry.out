@@ -1,0 +1,153 @@
+c RoundingSat 2
+c branch master
+c commit d4edbf7
+c #variables 26971 #constraints 166722
+c #Conflicts:       1000 | #Constraints:     167721
+c #Conflicts:       2000 | #Constraints:     168721
+c INPROCESSING
+c GARBAGE COLLECT
+c #Conflicts:       3000 | #Constraints:     117533
+c #Conflicts:       4000 | #Constraints:     118533
+c INPROCESSING
+c #Conflicts:       5000 | #Constraints:     117957
+c #Conflicts:       6000 | #Constraints:     118957
+c INPROCESSING
+c #Conflicts:       7000 | #Constraints:     117964
+c #Conflicts:       8000 | #Constraints:     118964
+c #Conflicts:       9000 | #Constraints:     119964
+c INPROCESSING
+c GARBAGE COLLECT
+c #Conflicts:      10000 | #Constraints:     118670
+c #Conflicts:      11000 | #Constraints:     119670
+c #Conflicts:      12000 | #Constraints:     120670
+c INPROCESSING
+c #Conflicts:      13000 | #Constraints:     119122
+c #Conflicts:      14000 | #Constraints:     120122
+c #Conflicts:      15000 | #Constraints:     121122
+c INPROCESSING
+c GARBAGE COLLECT
+c #Conflicts:      16000 | #Constraints:     119382
+c #Conflicts:      17000 | #Constraints:     120382
+c #Conflicts:      18000 | #Constraints:     121382
+c INPROCESSING
+c GARBAGE COLLECT
+c #Conflicts:      19000 | #Constraints:     119428
+c #Conflicts:      20000 | #Constraints:     120428
+c #Conflicts:      21000 | #Constraints:     121428
+c INPROCESSING
+c #Conflicts:      22000 | #Constraints:     119223
+c #Conflicts:      23000 | #Constraints:     120223
+c #Conflicts:      24000 | #Constraints:     121223
+c #Conflicts:      25000 | #Constraints:     122223
+c INPROCESSING
+c GARBAGE COLLECT
+c #Conflicts:      26000 | #Constraints:     119833
+c #Conflicts:      27000 | #Constraints:     120833
+c #Conflicts:      28000 | #Constraints:     121833
+c #Conflicts:      29000 | #Constraints:     122833
+c INPROCESSING
+c #Conflicts:      30000 | #Constraints:     120237
+c #Conflicts:      31000 | #Constraints:     121237
+c #Conflicts:      32000 | #Constraints:     122237
+c #Conflicts:      33000 | #Constraints:     123237
+c INPROCESSING
+c GARBAGE COLLECT
+c #Conflicts:      34000 | #Constraints:     120436
+c #Conflicts:      35000 | #Constraints:     121436
+c #Conflicts:      36000 | #Constraints:     122436
+c #Conflicts:      37000 | #Constraints:     123436
+c INPROCESSING
+c #Conflicts:      38000 | #Constraints:     120453
+c #Conflicts:      39000 | #Constraints:     121453
+c #Conflicts:      40000 | #Constraints:     122453
+c #Conflicts:      41000 | #Constraints:     123453
+c INPROCESSING
+c GARBAGE COLLECT
+c Disabling crashed LP
+c cpu time 299.514 s
+c deterministic time 54405389 5.44e+07
+c optimization time 4.6e-05 s
+c total solve time 299.238 s
+c core-guided solve time 0 s
+c propagation time 141.072 s
+c conflict analysis time 0.697419 s
+c propagations 4749526
+c resolve steps 999480
+c decisions 106066
+c conflicts 41601
+c restarts 126
+c inprocessing phases 13
+c input clauses 165069
+c input cardinalities 1653
+c input general constraints 0
+c input average constraint length 3.13
+c input average constraint degree 1.02
+c learned clauses 41593
+c learned cardinalities 8
+c learned general constraints 0
+c learned average constraint length 57.11
+c learned average constraint degree 1.00
+c watched constraints 0
+c counting constraints 0
+c gcd simplifications 0
+c detected cardinalities 0
+c weakened non-implied lits 3090
+c weakened non-implying lits 0
+c original variables 26971
+c clausal propagations 4558311
+c cardinality propagations 149422
+c watched propagations 0
+c counting propagations 0
+c watch lookups 9915391
+c watch backjump lookups 0
+c watch checks 19478537
+c propagation checks 8626962
+c constraint additions 6506157
+c trail pops 4895749
+c formula constraints 166722
+c learned constraints 41601
+c bound constraints 0
+c core-guided constraints 0
+c encountered formula constraints 890089
+c encountered learned constraints 150992
+c encountered bound constraints 0
+c encountered core-guided constraints 0
+c LP total time 271.977 s
+c LP solve time 271.95 s
+c LP constraints added 166722
+c LP constraints removed 0
+c LP pivots internal 86000
+c LP pivots root 41000
+c LP calls 7
+c LP optimalities 0
+c LP no pivot count 0
+c LP infeasibilities 0
+c LP valid Farkas constraints 0
+c LP learned Farkas constraints 0
+c LP basis resets 0
+c LP cycling count 0
+c LP singular count 0
+c LP no primal count 0
+c LP no farkas count 0
+c LP other issue count 0
+c LP Gomory cuts 0
+c LP learned cuts 0
+c LP deleted cuts 0
+c LP encountered Gomory constraints 0
+c LP encountered Farkas constraints 0
+c LP encountered learned Farkas constraints 0
+c CG auxiliary variables introduced 0
+c CG solutions found 0
+c CG cores constructed 0
+c CG core cardinality constraints returned 0
+c CG unit cores 0
+c CG single cores 0
+c CG blocks removed during cardinality reduction 0
+c CG first core best 0
+c CG decision core best 0
+c CG core reduction tie 0
+c CG core degree average 0.00
+c CG core slack average 0.00
+c CG core upper bound improvements 0
+s UNKNOWN
+c Program interrupted by user.
