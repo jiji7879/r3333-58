@@ -93,8 +93,9 @@ for 16-armed profiles is inert. `14p <= 5(57-p)` holds iff `p <= 15`: the three
 In the **uniform child** (`m(x) <= 5` everywhere) all of this is tight:
 `d_0(a) = 15` for every arm point and `m(x) = 5` for every outside vertex;
 coverage is 14 per arm point and 5 supports per outside vertex (210 both ways);
-each `N_0(a)` is a classified template with 35 edges per ordinary colour; ten
-senders are deficient per arm; every sender's support sizes are `(5,5,4)`.
+each `N_0(a)` is a classified template with 35 edges per ordinary colour; **five** senders are deficient per arm (the deficient colour is unique at each
+sender, the three counts are odd and sum to 15, and both templates give 5,5,5);
+every sender's support sizes are `(5,5,4)`.
 
 The colour-split overlap identity
 `sum_{colour-f pairs} |M_0(y) ∩ M_0(z)| = sum_a e_f(N_0(a)) - sum_{z in N_f(r)} m_0(z)`

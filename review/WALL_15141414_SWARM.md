@@ -1043,3 +1043,26 @@ templates).
 | (4) two-root `4x4` table | partial: margins `(15,13,14,14)` on the root axis only, entry `(0,0) = M >= 6`, `(1,1) = 0` trivial; no maximising-pair analogue. |
 | (5) K14 degree profiles | **succeeds verbatim**: `(3,5,5)`/`(4,4,5)` is elementary (each colour degree at most 5, summing to 13), verified on all 115 archived rows, `16400 + 198120 = 214520` matching the upstream census. |
 | (6) exchange lemma | **fails as a transfer**: at a 14-core the exchange is deficiency-conditional `(5,5,4)`, and all 612 template-level common 14-cores have a disagreeing point. |
+
+**The mixed-overlap refutation, certified, and a correction to the state file.**
+Exact maximum common induced subgraphs (two independent algorithms plus
+DRAT-replayed certificates) for all six colour correspondences give **mixed
+`T^-`/`U^-` agreement 12 of 15** — pinned at `r`, 11 or 12; identity
+correspondence, still 12. The decisive calibration: **the same computation at K16
+also gives 12**, while K59's physical bound is 7 — so "mixed codegree at most 7"
+is not a template fact at all, it depends on Clebsch/pentagon/rooted-K14 structure
+the 15-arm branch does not have. Established now from three directions (MCIS, the
+exchange analysis, the K59-text audit). The implication `kappa >= 13 => matching
+types` transfers but is inert: it needs `M >= 13`, and the branch supplies 7.
+
+*Correction to `review/PROFILE_15141414_STATE.md`: it said "ten senders are
+deficient per arm". The truth is **five** — the deficient colour is unique at each
+sender, the three counts are odd and sum to 15, and both templates give 5,5,5 —
+which is what the wall note said and what the state file contradicted.*
+
+Byproducts, all re-checked: `sum_{u<v in A} kappa = C(15,2) + sum_X C(m(x),2) =
+525` on 147 artefact roots, so the mean is 5 and `M >= 5` bare; every size-5 arm
+part is a pentagon; and **an explicit `2-(15,5,4)` design with the arm split
+exists**, so incidence counting alone can never exclude the all-codegree-5 family —
+a clean statement of where counting stops and the collision and saturation
+arguments must take over.
