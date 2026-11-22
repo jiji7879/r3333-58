@@ -144,7 +144,10 @@ three arms' internal 3-colourings — and the classification does not reach a
    UNKNOWN at 400 s / 4.4 M conflicts.
 2. **Pair level + arm saturation** — the one kernel-checked constraint every
    known witness violates, never yet put in front of a solver with the pair level.
-3. **The `(6,4,4,4)` plan** — a uniform, kind-free statement set at 386 rows.
+3. ~~**The `(6,4,4,4)` plan** — a uniform, kind-free statement set at 386 rows.~~
+   **Dead**: audited clean (no errata defect) and probed one case per stratum —
+   16 of 16 OPEN at 1.21-1.49 M conflicts, so plan choice is not the bottleneck and
+   every admissible threshold vector is out of CDCL's reach at these budgets.
 4. **Family B (73 cases)**: `s_0 <= 2` and `s_i <= 4`. The external bundle's
    items do not port (no `U---` row has charge 15); thresholds are already
    maximal.
