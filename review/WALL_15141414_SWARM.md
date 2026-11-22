@@ -679,3 +679,35 @@ That is the state of the uniform child: every constraint anyone has proved is in
 it, and it does not close. A new hazard is recorded in `review/ERRATA.md`:
 `dense.marked_threshold` returns a single empty clause when the charge exceeds
 the guards, which would manufacture a closure in milliseconds.
+
+## 13. The pair level at order 58 is satisfiable — the ladder's hope is dead
+
+An external session proposed attacking the uniform fully-sending `T^-` root at the
+**pair level**: 42 outside vertices each carrying a word (a map `A -> 4` colours
+with five 0s, each ordinary part independent in its colour), each pair given a
+colour whose two parts are disjoint, fifteen column sums of 14, and *nothing*
+required of triangles inside `X`. Its ladder reported SAT up to order 55 and
+timeouts from 56, and read the timeout as a possible proof: infeasibility at
+order 58 would kill the uniform branch with no mark.
+
+**It is satisfiable, by a five-line construction** *(verified here from scratch)*.
+Take the partition `A = Q_1 | Q_2 | Q_3` with
+`Q_1 = {0,1,4,12,14}`, `Q_2 = {3,7,8,9,10}`, `Q_3 = {2,5,6,11,13}` — each `Q_j`
+independent in exactly one campaign colour, `sigma = (3,1,2)`. Word `j` puts
+`M_0 = Q_j`, `M_{sigma(i)} = Q_i` for `i != j`, and is empty in `sigma(j)`; place
+seven copies of word `j` in each arm whose root colour is not `sigma(j)`. Then:
+42 slots, 14 per arm, every `m(x) = 5`, coverage exactly 14 at every arm point,
+and **0 of 861 pairs without an admissible colour**. So the pair level cannot
+prove the branch and the 280 s timeout is a search artefact, not a wall.
+
+*Caution for re-checkers:* the template files label the arm's internal colours
+`0,1,2`, so the campaign's `1,2,3` are shifted by one; the partition above is
+stated in campaign colours and a naive check against the file's labels fails.
+
+**The next rung, which is where the work now is.** Add the *sound* caps —
+at most two copies of a word (two vertices of one extremal type can only carry
+that type's empty colour; a four-part type occurs at most once), hence at most 16
+extremal slots, and `d_c <= 16`. No known witness survives them; the exact joint
+CNF is UNKNOWN at 460 s. The copy bound alone is the next thing to decide,
+because it is proved and it is small: a 42-slot assignment over the 254,628 words
+with per-word multiplicity bounds and fifteen column sums.
