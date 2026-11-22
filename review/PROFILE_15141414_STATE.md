@@ -158,8 +158,14 @@ Everything above the colouring is satisfiable, and the witnesses are far from
 colourings: overlap masses **319/314/732** where a real colouring needs 455 each,
 and **2,562** monochromatic triangles inside the 42. So the obstruction is the
 internal colouring of the 42 vertices under the pair rule, together with the
-three arms' internal 3-colourings — and the classification does not reach a
-14-vertex arm.
+three arms' internal 3-colourings. **The 14-arm alphabet is now decided**
+(2026-11-22): triangle-free 3-edge-colourings of `K_14` number 651 up to vertex
+permutation with colours labelled, **332 up to the branch's colour-2/3 swap** (the
+arm alphabet), 115 up to all colour permutations — the last agreeing with the
+literature. Only **7 of the 332** are restrictions of the two `K_15`/`K_16`
+templates, so **325 arm types are new**: the classification does not extend to
+arms, and an arm-type case split is a 332-way split with no template structure
+behind it. `results/arm-alphabet-14/`.
 
 The arm half is now located exactly. With `M_f(x)` the `f`-part of a word,
 `L(x,y) = {f != k : M_f(x) ∩ M_f(y) = empty}` is the set of colours the edge `xy`

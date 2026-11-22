@@ -1814,3 +1814,47 @@ groups in the window and run with the W2 profile — **not new mathematics, and 
 does not move the lower bound.** Its worth is that the exclusion is now
 machine-checked instance by instance with replayed proofs, in a campaign that has
 twice this round found a cited theorem absent from the tree.
+
+## 41. The arm alphabet is decided: 332 types, 325 of them new
+
+Member m12, direction d13; verdict **accepted**, tenth of `smwrmwgf7`. Artefacts
+at `results/arm-alphabet-14/`. This closes `PROFILE` §6's named gap — "the
+classification does not reach a 14-vertex arm" — and it is the best-verified
+artefact the swarm has produced.
+
+**The numbers.** Triangle-free 3-edge-colourings of `K_14`: **651** up to vertex
+permutation with colours labelled, **332** up to the branch's colour-2/3 swap (the
+arm alphabet), **115** up to all colour permutations. At `K_15`/`K_16` the same
+pipeline returns exactly the two kernel templates.
+
+**What I verified, in both directions.** `nauty-geng -t -d3 -D5 14` reproduced
+independently: **12,346,891** graphs in 27.9 s, and all **178,902** of the
+member's candidates occur in that list (I streamed the full 12.3 M and matched one
+for one). The `alpha <= 5` filter is exact on a 300/300 random sample in both
+directions: kept graphs have `alpha <= 5`, dropped graphs `alpha >= 6` — so no
+valid graph is silently lost, which is the only failure mode that would make the
+classification wrong in a way that matters. All **332** witnesses are valid
+triangle-free 3-edge-colourings of `K_14` with the stated edge counts and all are
+distinct; all **651** reps verify. And the three counts are mutually consistent by
+Burnside: a transposition fixes `2*332 - 651 = 13`, and `651 + 3*13 = 690 = 6*115`,
+with **115** the literature's count for this classification — an external pin on
+the whole pipeline, on top of the member's `n = 6` brute-force agreement (1917
+colourings) and the two kernel templates at 15 and 16.
+
+**Why it matters, and it is a negative.** Only **7 of the 332** arm types are
+restrictions of the two templates, so **325 are new**. The `K_15`/`K_16`
+classification — the campaign's one formerly-unproved structural premise — says
+nothing about a 14-arm, and case-splitting on arm type is a 332-way split with no
+template structure behind it. That is the classification answer the programme
+asked for, and it closes a route rather than opening one, which is consistent with
+§35's measured leverage criterion.
+
+**Not verified:** completeness of the quotient at `n = 14` (relied on the `n = 6`
+agreement and the 115 match), the "12 of 651 / 7 of 332 are template
+restrictions" count, the 2,244 cospectral pairs, and `K_13`, which was in the
+brief and is not done.
+
+**Encoder safety worth copying.** The CNF is two clauses per complement triangle —
+no cardinality encoding, no auxiliary variables — so the `ERRATA` failure modes
+are structurally impossible here rather than argued away. That is the strongest
+form of encoder-safety any member produced this round.
