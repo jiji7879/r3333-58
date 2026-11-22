@@ -887,3 +887,29 @@ written compact CNF (97,404 clauses) that a solver extends in 0.28 s.
   `m(x) = 5` everywhere and `d_0(a) = 15`, the interface identity forces
   `|X| = 42`; so the orders 44–56 rungs, which have fewer outside vertices, are
   not the uniform branch and their SAT/UNKNOWN status says nothing about it.
+
+## 17. The two-arm restriction is a theorem, and two scope fixes that would void a closure
+
+**Kernel-checked (`lean` supplement, namespace `K58.TwoArm`, axioms
+`[propext, Classical.choice, Quot.sound]`).** A triangle-free 4-colouring of
+`K_58` with `r` of profile `(15,14,14,14)`, all of `A` 0-critical and every
+outside vertex at `m(x) = 5`, restricts on **any two arms** to a model of the
+28-vertex two-arm instance. The step that makes it work: the interface identity
+plus uniformity gives fifteen terms each at least 14 summing to 210, hence each is
+exactly 14, hence `d_0(a) = 15` and every arm point has exactly fourteen colour-0
+partners outside its arm. So **UNSAT at `14+14`, for both `T^-` and `U^-`, would
+close the uniform fully-sending branch** — and both templates are needed, which is
+what the ported classification is for.
+
+**Two scope fixes, either of which would have produced a void result.**
+1. Two-arm columns must be **`<= 14`, never `= 14`**: twenty-eight vertices carry
+   `28 * 5 = 140` incidences while fifteen arm points at fourteen each demand
+   210. The `= 14` reading is unsatisfiable for the wrong reason, and the correct
+   (`<= 14`) instance is strictly weaker, hence harder.
+2. **Colour 0 does occur inside arms** — measured at 2,640, 3,704 and 2,784 such
+   edges over the three artefacts — so a two-colour reading of an arm
+   over-constrains. Only the arm's *root* colour is forbidden inside it.
+
+An encoder audit rounds this out: every clause and variable of the other member's
+regenerated CNF reconciled across four variants, the Sinz gadgets brute-forced,
+and the R1, R3-R6 clause families shown to be literally present, zero failures.
