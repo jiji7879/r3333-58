@@ -74,7 +74,7 @@ distinction has already caused one wrong claim in this campaign (`WALL` §33).
 ## Read first
 
 `review/PROFILE_15141414_STATE.md`, `review/WALL_15141414_SWARM.md` §§27, 33–42,
-`review/ERRATA.md`, and `.ultramath/smwrjwf2f/`, `.ultramath/smwridmzp/` for what
+`review/ERRATA.md`, and `.ultramath/smwjjvf2f/`, `.ultramath/smwridmzp/` for what
 the pentagon and transfer programmes already settled.
 
 ## Rules
