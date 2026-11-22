@@ -777,3 +777,32 @@ designs admit no cap-satisfying completion (one by hand certificate, twelve by
 MIP/Kissat), and the design-free instance is UNKNOWN at 460 s. Thirteen out of
 55,022 is the honest size of that constraint, and the hand certificate
 (`e_0 >= 462` against `<= 231`) is about a single design, not the class.
+
+## 15. A six-point arm lemma, and the fact that arms do not glue
+
+**Lemma (new, and checkable).** For a triangle-free 4-colouring, any vertex `r`
+and colours `a != b`: at most five vertices of `N_b(r)` are pairwise `a`-blocked
+(each pair sharing an `a`-neighbour in `N_a(r)`). Six would have every mutual
+edge avoiding both `a` (else a monochromatic triangle with the common
+`a`-neighbour) and `b` (they lie in `N_b(r)`), i.e. a triangle-free 2-colouring
+of `K_6`, contradicted by `R(3,3) = 6` — so at most five. This bounds a **set**
+rather than a common witness and is strictly stronger than the kernel-checked
+mixture lemma. Sharp: 3,537 (root, arm, colour) triples over all seven artefacts,
+zero violations, maximum blocked clique exactly 5 in six of them.
+
+**The arm module.** One arm's assignment is a list-colouring of `K_14` with lists
+`D(x,y)` = colour classes with disjoint `f`-parts, the root colour removed, no
+monochromatic triangle. It is strictly stronger than the pair level: fourteen
+copies of a single extremal word pass all 91 pair conditions and are *not*
+arm-colourable. Measured ladder over the number of arms at order 58: **one arm
+SAT** (verified witness, 18 s), two arms UNKNOWN at 900 s, three arms UNKNOWN at
+900 s, and two arms *without* the module UNKNOWN at 300 s — so the module is not
+where the hardness enters.
+
+**The finding worth keeping: a found arm does not glue.** Pinning the fourteen
+words of the one-arm witness makes the three-arm instance **UNSAT in 0.01 s**. The
+arms are not independently choosable, and the obstruction to extending a single
+arm is *tiny* — it refutes in a hundredth of a second, so it has a short core.
+Extracting that core (which constraints kill the extension: a column sum, a
+cross-arm pair condition, or one of the new blocked sets) is the sharpest open
+question this round produced.
