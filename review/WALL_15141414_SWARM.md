@@ -2278,3 +2278,62 @@ has `Arm`, `TwoArm`, `Ticket`, `M7`, `ExchangeResidue` and `Design`.
 
 Built artefacts stay at `.scratch/glue/wt` (worktree at `e62d8ab` + patch,
 built) and `.scratch/glue/replay` (recompiled).
+
+## 51. The ladder turns at `(14,7)`, and two more kernel files were outside the build
+
+Member m4, direction d4 of `smwrmwgf7`; verdict **accepted as a partial**, and
+with it that swarm's twelfth and last acceptance.
+
+**The advance.** `(14,k)+XT` is SAT for every `k <= 6` on both `K_15` templates
+(12 witnesses re-checked from the definition, over-constraint control 12/12 SAT).
+So the decisive rung is **`(14,7)` at 21 slots** — `p cnf 8993 33597` — not
+`(14,12)` at 26. That is the cheapest decisive instance in the programme, and it
+agrees with §47's independent count that word cubes are 3.2·10^10 at depth two.
+
+**The method.** Pin the 14-arm's words and restrict each short-arm slot to the
+*exact* pair-compatible domain, then lex-sort the short arm. Instances that were
+UNKNOWN at 600-1500 s become UNSAT in 18-71 s: all 19 distinct 14-arm word sets
+tried, on both templates, four with replayed DRAT, one with all seven short-arm
+slots free. Pushing further, UNSAT survives down to **7 of the 14 arm words
+pinned** (13, 12, 11, 10, 9, 8, 7 pinned: 106 s … 2,318 s). UNSAT with fewer
+pinned words is stronger than with all fourteen, so the method's reach is real.
+
+**What is not decided.** `(14,7)+XT` itself: "all 19 word sets tried" is a sample
+of the arm's possibilities, not a cover, and the statement is complete-in-arm only
+at 0 pinned. No frozen case closes. The report says so in its first three lines.
+
+**Referee work, and two kernel gaps closed.** `K58.part_family_le_five` /
+`blocked_set_le_five` existed only in `.ultramath/smwrfgma5/m4/lean/K58/Blocked.lean`,
+and `K58.armFar_le_five` / `armFar_le_two` / `armFar_eq_empty` /
+`indep_le_sixteen` / `interface` only in `lean/supplement/m4/Interface.lean`,
+which `build.sh` did not compile — while both were cited as kernel-checked this
+round. Both files are now `lean/K58/{Blocked,Interface}.lean`, in the build and in
+`Check.lean`: **80 declarations**, all axiom-clean, build green in 34 s. Fourth and
+fifth instances of the same slip after `TwoArm`, `Ticket` and the `armFar`
+citation. The member also caught that `79264 + 31751 ≠ 113179` (the other 2,164
+rows are 20 SPLIT, 1,743 LEGACY_HISTORICAL, 401 LEGACY_EXCLUSION) and withdrew its
+own E5/E6 claim on finding it implied by (T).
+
+## The `smwrmwgf7` board, as it closed
+
+Twelve members, twelve accepted:
+
+| member | outcome |
+| --- | --- |
+| m11 | the branch's reach is 7 of 381 (+2 empty), and it is not forced (§33) |
+| m6 | `\|armFar\| <= 4` certified, 240 DRAT + a sharp witness (§§34, and `results/armfar14/`) |
+| m7 | Hall is inert; the three-word obstruction, 661 triples (§34) |
+| m10 | truncation depth 3 for the recorded witnesses; every obstruction one shape (§35) |
+| m3 | the `(14,12)` arm level SAT for both templates; `XT` is the whole difficulty (§36) |
+| m8 | the two-arm law `s_B+s_C in {9,10}`; the record's `14+14` witness is not a model of the XT rung (§37) |
+| m2 | the word layer carries the sixth lemma at its bound (§38) |
+| m5 | the ticket rung decouples; `k=4` SAT, `k=5` UNKNOWN (§39) |
+| m9 | the abelian Cayley family is empty on 50..58 (§40) |
+| m12 | the 14-arm alphabet: 651 / 332 / 115 types, 325 new (§41) |
+| m1 | the 42-slot instance is **exact**; the extremal corner certified UNSAT; the word cube is 3.2·10^10 (§47) |
+| m4 | the ladder turns at `(14,7)`; the domain restriction decides the pinned cases (§51) |
+
+Net: no case closed, no bound moved, nine routes closed with reasons, three
+objects reduced to their decisive size (the 42-slot instance, `(14,7)` at 21 slots,
+the 630-boolean word layer), and the kernel base went from 48 to 80 declarations
+with five member-written files integrated.
