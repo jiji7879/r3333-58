@@ -7,6 +7,8 @@ import K58.Design
 import K58.Model
 import K58.Selection
 import K58.Ticket
+import K58.Interface
+import K58.Blocked
 import K58.Templates
 import K58.TwoArm
 
@@ -58,6 +60,13 @@ import K58.TwoArm
 #print axioms K58.ten_outside
 #print axioms K58.crit_card_ge_thirty
 #print axioms K58.crit_eq_univ
+#print axioms K58.armFar_le_five
+#print axioms K58.armFar_le_two
+#print axioms K58.armFar_eq_empty
+#print axioms K58.indep_le_sixteen
+#print axioms K58.interface
+#print axioms K58.blocked_set_le_five
+#print axioms K58.part_family_le_five
 #print axioms K58.M_ge_seven
 #print axioms K58.M_ge_six
 #print axioms K58.rigid_six
