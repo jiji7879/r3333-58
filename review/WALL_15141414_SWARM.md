@@ -866,3 +866,24 @@ triangle-freeness UNKNOWN at 380 s; the exact compact encoding of the uniform ch
 UNKNOWN at 600 s *even with* L1, the degree cap, the six-point arm lemma at all
 fifteen arm vertices, the root class sizes and a validated lex symmetry break;
 Family B's `(B2)` relaxation UNKNOWN at 600 s.
+
+**A fifth witness, and three deflations that matter more than it does.** One
+extremal word per arm — `002102211112020` (missing 3), `332032200002323` (missing
+1), `330130011110303` (missing 2) — with the pair colour taken as the smaller
+endpoint's missing colour: every `m(x) = 5`, every `d_0(a) = 15`, all 861 pair
+constraints hold, no arm uses its root colour, and 0 of the 19,376 triangles
+meeting `r` or `A` are monochromatic (4,914 of the 11,480 inside `X` are).
+Verified three ways: an exhaustive triangle census, a decoded solver model
+re-verified from its words alone, and the witness fixed into an independently
+written compact CNF (97,404 clauses) that a solver extends in 0.28 s.
+
+* **No pair-level infeasibility DRAT can exist.** The conditional "pair level
+  infeasible implies the uniform branch impossible" has a false premise.
+* **"At most 16 extremal" is not a pair-level constraint.** This witness has 42
+  extremal words, so the bound is compatible with the pair level (another member
+  found a pair-level witness that satisfies it) but is not implied by it — it
+  needs the `X`-internal structure.
+* **Every ladder rung with a shorter third arm is a different model.** With
+  `m(x) = 5` everywhere and `d_0(a) = 15`, the interface identity forces
+  `|X| = 42`; so the orders 44–56 rungs, which have fewer outside vertices, are
+  not the uniform branch and their SAT/UNKNOWN status says nothing about it.
