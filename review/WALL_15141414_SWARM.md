@@ -572,8 +572,13 @@ A new identity decomposes the pairwise overlap of the colour-0 parts by
 it evaluates to `15*35 - 14*5 = 455` for each ordinary colour, `1365` in all —
 which also equals `15 * C(14,2)`, so the total is forced by the coverage and the
 colour split is the new content. It gives `>= 91` colour-`f` pairs with
-overlapping colour-0 parts; whether the design structure caps the overlap below
-1365 is open.
+overlapping colour-0 parts — **and no more than that.** The total 1365 is
+`sum_a C(14,2)` once every arm vertex is covered fourteen times, i.e. forced by
+coverage alone for any label multiset, and the 455-per-colour split is forced by
+the templates (`15*35 - 14*5`, every ordinary colour alike). So the identity is
+a **check** — a candidate assignment must reproduce 455/455/455 — and not a
+constraint; the design structure cannot cap the overlap below it. Recorded so
+that nobody re-derives it hoping for a contradiction.
 
 **A claimed flaw in the split is itself wrong (checked).** A member reported
 that the bundle's some-six child forces `m(x) >= 6` for all 42 vertices. It does
