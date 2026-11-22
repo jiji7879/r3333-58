@@ -2235,3 +2235,46 @@ Net effect on the profile: **no case closed, no bound moved**, and four routes
 closed with reasons (`M` by counting, the exchange lemma, the ticket ladder, the
 truncation lemma as a universal statement), plus one new tool (the 630-boolean
 instance) and four kernel theorems.
+
+## 50. The gluing/transport bundle verified end to end: `FrozenCover` is a kernel theorem
+
+The external bundle `R3333_K58_Lean_gluing_and_transport.zip` claims that every
+triangle-free 4-colouring of `K_58` realises one of the 113,179 frozen rows. I
+rebuilt it from source here, on the pinned base, and the claim holds.
+
+* `git apply` of `k58-lean.patch` to `e62d8ab` — 42 files — applies cleanly.
+* `lean/build-catalogue.sh` fetched the pinned K60 development at `6c3f2fd`,
+  patched it for Lean 4.33.1 and built it: **exit 0** (50 min including the K58
+  build). Its closure theorems are axiom-clean.
+* `lean/build.sh` then built **78 modules** with no errors; `K58.rawCover` — every
+  triangle-free 4-colouring of `K_58` realises one of the 190,736 raw placements in
+  1,764 families — axiom-clean.
+* The 1,588 generated transport modules (`replay/ReplayGen`, 1.3 GB) were first
+  accepted from the shipped cache; I deleted every `.stamp` and recompiled all of
+  them from source: **1,588 of 1,588 compiled, 0 cached, exit 0, 1 h 3 min**, ending
+  with "Checked 1764 complete families, 190736 raw placements, 77557 omitted
+  transports".
+* The final statement, checked directly with `#print axioms` after importing the
+  replay: **`K58.Replay.frozenCover : K58.FrozenCover`**, axioms
+  `[propext, Classical.choice, Quot.sound]` only. `K58.Replay.rawTransportCover`
+  and `K58.rawCover` likewise.
+
+So `FrozenCover` — for every `G : EdgeCol (Fin 58) 4`, triangle-free, there is a
+frozen key `k ∈ frozenKeys` with `RealizesKey G k`, and `frozenKeys.length =
+113179` by `decide +kernel` — is a kernel theorem, verified on this machine. That
+is the marking lemma's geometric and transport content: the root pinning, the
+palette, the three support embeddings with the sender's own arm fixed and the
+marked vertex stationary, and the 77,557 transports into the frozen ledger.
+
+**What it does not give, and the bundle says so itself.** `FrozenCover` says every
+good colouring lands in a row; it does not say any row is contradictory. For
+`R_4(3) <= 58` one still needs (i) the 31,751 OPEN rows refuted, (ii) the
+encoder-adequacy bridge from a row's hypothesis to its CNF
+(`review/LEAN_ENCODING_ADEQUACY.md`), and (iii) a Lean-side consumer for the DRAT
+certificates (`review/LEAN_END_TO_END.md`; the K60 repo has
+`R4333Lean.CheckedLRAT`, this one does not). The patch is also against `e62d8ab`,
+24 commits behind HEAD, so landing it means rebasing 42 files onto a tree that now
+has `Arm`, `TwoArm`, `Ticket`, `M7`, `ExchangeResidue` and `Design`.
+
+Built artefacts stay at `.scratch/glue/wt` (worktree at `e62d8ab` + patch,
+built) and `.scratch/glue/replay` (recompiled).
