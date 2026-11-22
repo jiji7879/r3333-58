@@ -377,5 +377,14 @@ unproved premise.
   16. It applies to the five 16-armed wall profiles (3,472 open cases) and not
   to this one. It is a lower bound with slack: the two vertices it produces are
   unconstrained against each other (`6+6 <= 16` if they are 0-adjacent), so
-  unless something bounds `m_x` from above it is inert — which is the negative
-  another member is now asked to settle.
+  unless something bounds `m_x` from above it is inert. **That is now settled:
+  inert.** The range at a fully critical 16-arm is `224 <= sum_X m_x <= 240`
+  (each arm point sends 14 or 15), the only upper bounds available are 240 from
+  the cap and `205 + 11k` with `k >= 2` forced, i.e. 227 or more, and both sit
+  above 224; so a contradiction would need `sum_X m_x <= 223`, i.e. a proof that
+  17 units of interface are unavailable — a structural fact about the colour-0
+  graph on the 42 that the interface language cannot express. The top of the
+  range is attained: in `artifacts/k32_module_2x16_m1.col` every vertex's 16-arm
+  is fully critical with all 15 outside vertices at `m_x = 16`, sum 240. And
+  "at least two" is guaranteed but attained nowhere: the only saturated 16-arms
+  in the record are those K32 ones.
