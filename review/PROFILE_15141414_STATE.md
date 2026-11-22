@@ -161,6 +161,19 @@ every pair-level witness dies in the arm module at size 3. The spectrum of minim
 local obstructions is `{3, 5, 6}`, not `{3}`: `design_1` arm 1 needs 6.
 `results/local-obstruction/`.
 
+The depth is exactly 3, and the shape is unique. A *local object* on a set `S` of
+slots is the words on `S` plus a colouring of the pairs inside `S` under (P1) the
+arm colour banned inside its own arm, (P2) `colour(x,y) = f` needs
+`M_f(x) ∩ M_f(y) = empty`, (X) no monochromatic triangle; every genuine object
+restricts to one on every subset. Exhaustively over all subsets: **0 dead pairs
+for every witness**, and dead triples 514 / 524 / 459 / 456 for the four 42-slot
+witnesses and 50 / 44 / 55 / 40 / 52 for the five two-arm ones. And every one of
+them has the same shape: a triple is infeasible **iff** its three
+admissible-colour lists are the same singleton (so a mono triangle is forced).
+That also reconciles the two counts in the record: m7's 119 for `pair58_Tminus`
+are the within-arm triples, m10's 514 are all `C(42,3)`; the split is 119 within
+and 395 across. `results/truncation-depth/`.
+
 ## 7. What is live
 
 1. **`(14,12) + XT` at 26 vertices.** Restrict the branch to `r`, `A` and two
