@@ -488,3 +488,48 @@ the 18-extremal and 17-vertex statements.
 with `arm 0, charge 3` and 64 with `arm 1, charge 5`), so all three items —
 which assume fifteen fully critical senders or `baa4e014`'s marked four-set —
 have no hypothesis among Family B's rows and cannot be ported there.
+
+## 11. The second external bundle, and the type-level question settled
+
+**A stronger marked-path test (verified here).** The companion bundle
+`K58_uniform_marked_path_certificates.zip` (unpacked at
+`.scratch/handoff/new_marked/`) replaces the nine-point cap by a size-sensitive
+inequality. In a uniform 14-arm there are seventy colour-0 incidences and every
+support has four or five points, so the fifteen supports are exactly **ten
+pentagons and five four-vertex paths** (`5*10 + 4*5 = 70`). With `P` the marked
+path and `a_4(H)`/`a_5(H)` the largest intersection of `H` with an allowed path
+/ pentagon, every uniform realisation satisfies
+
+    |P cap H| + 4 a_4(H) + 10 a_5(H)  >=  5 |H| ,
+
+so a violated instance excludes that marked placement. I ran both of the
+bundle's verifiers: `python3 -S verify.py` certifies 3,093 distinct witnesses
+and `python3 verify.py --recount` re-scans every subset of every passing
+orientation and confirms the list is **exhaustive for this inequality**. The
+counts: 18,276 named marked paths in 300 orientations, 2,194 excluded by the
+older nine-point test, **899 additional** by this one, 3,093 in 72
+orientations, 15,183 passing. A worked two-point obstruction: catalogue row 1,
+`P = {1,5,8,9}`, `H = B \ {0,8}` needs 60 hits and can get at most 59.
+
+**Two further items in the report.** (i) A claimed bound of **4** (not 5) for
+the number of outside vertices with no `c`-edge into a 14-point *colour class*,
+sharp on local examples — our kernel-checked `armFar_le_five` gives 5 for an
+arbitrary 14-set with no `c`-edge inside, so if the stronger form holds it is a
+genuine strengthening that the type-level model could use. (ii) A
+repeated-overlap lemma: in the reciprocal branch the fifteen supports give ten
+pentagons per arm and at most nine colour-0-free pentagons can pairwise
+intersect in at most three points, so two senders' supports overlap in four or
+five positions; at overlap four the common four induce complementary paths and
+the joining edge is forced to colour 0.
+
+**And the type-level question the first bundle reopened is settled — feasible.**
+The first bundle correctly showed round two's witness invalid (28 slots with
+`M_0 = empty` against the kernel-checked bound of two). A member then produced a
+valid one: 42 slots, **every** `m(x) = 5`, coverage exactly 14 per arm point
+(`sum = 210`, the `t = 0` case), zero empty `M_0` slots, `(P)` and `(Q)`
+satisfied, in both templates. So the type-level route stays closed for the
+reason round two gave — and the witness says why more sharply than before: its
+largest repeated type occurs 14 times and its slots are pairwise forced to a
+single colour, so three of them would form a monochromatic triangle. That is the
+obstruction in one line: the type level is feasible, and the colouring of the 42
+is not.
