@@ -132,6 +132,7 @@ coverage and the split by the templates.
 | the `n = 60` engine's opening step | its criterion `w > (n-1) - L` needs 41 at `n = 58` and wall profiles have `w <= 32` |
 | the short-arm ladder rungs | with `m(x)=5` and `d_0(a)=15`, `|X| = 42` is forced — orders 44-56 are different models, not the branch |
 | the "gluing core" | the 0.01 s refutation came from an over-constrained CNF (a global mixture cap); the sound instance is UNKNOWN at 300 s |
+| the pentagon package's Hall inequality | a theorem, exactly `alpha(G_0) <= 16`, hence implied by the X-internal triangle family; all five pair-level witnesses violate it (margin 14) and it sharpens nothing — inert |
 
 Also closed, outside this profile: no `Z_58`-circulant good colouring of `K_58`
 (DRAT-verified), and the 3,093 marked-path cuts of the external bundle are a
@@ -146,6 +147,19 @@ and **2,562** monochromatic triangles inside the 42. So the obstruction is the
 internal colouring of the 42 vertices under the pair rule, together with the
 three arms' internal 3-colourings — and the classification does not reach a
 14-vertex arm.
+
+The arm half is now located exactly. With `M_f(x)` the `f`-part of a word,
+`L(x,y) = {f != k : M_f(x) ∩ M_f(y) = empty}` is the set of colours the edge `xy`
+may take, for an arm of root colour `k` (`k ∉ L`; `f ∉ L` when the intersection is
+nonempty, by `model_pair_disjoint`). Three words of one arm with `L = L = L = {c}`
+force a `c`-triangle, so the arm is unrealisable and the triple is an
+inclusion-minimal infeasible sub-arm. Exhaustive over `C(14,3) = 364` triples per
+arm, **661 such triples occur over the 15 arms of the five order-58 pair-level
+witnesses** (0 dead pairs, 15 certificates, an independent arm-module CSP
+reproducing the counts and SAT on all 13 arms whose own colouring is legal). So
+every pair-level witness dies in the arm module at size 3. The spectrum of minimal
+local obstructions is `{3, 5, 6}`, not `{3}`: `design_1` arm 1 needs 6.
+`results/local-obstruction/`.
 
 ## 7. What is live
 
