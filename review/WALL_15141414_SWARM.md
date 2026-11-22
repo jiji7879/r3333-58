@@ -2021,3 +2021,39 @@ So the exchange lemma — one of the six K59 transfers the campaign hoped would
 bite — is now kernelised in both forms and shown to be inert where the branch
 lives. A route closed, not a step taken, and it is worth having: the next round
 should not spend a direction on it.
+
+## 45. The local obstruction family is Ramsey-indexed, and depth 3 was not a theorem
+
+Member m1, direction d8 of `smwrzh71x`; verdict **accepted**. Artefacts:
+`.ultramath/smwrzh71x/m1/{REPORT.md,verify.py,depth_check.py,audit_local.py}`.
+
+**Theorem 1.** If every pair list of a set `S` of slots lies in a fixed colour set
+of size `k`, then `|S| >= R_k(3)` is dead. Thresholds `3, 6, 17, 51`. One line —
+any colouring drawn from `k` colours on `R_k(3)` vertices has a monochromatic
+triangle — and it reframes the campaign's "three equal singletons" lemma as the
+`k = 1` rung of a family. The `k = 3` rung is `R(3,3,3) = 17` (the degree cap's
+source), and the `k = 4` rung is the target `R_4(3) = 51` itself, which is worth
+noticing: the top of the hierarchy is the theorem we are trying to prove.
+
+**The `k = 2` rung is tight and is not encoded.** For two ordinary colours,
+`|S| <= R(3,3) = 6`, and the bound is attained: `verify.py` exhibits six slots in
+one arm with all fifteen pair lists `{1,2}`, no dead pair, no bad triple, every
+5-subset feasible and the full set dead. So the pair level omits a sound family —
+"no `K_6` in the `{f,g}`-confined graph on the 42 slots" — and the recorded
+witnesses violate it: `depth_check.py` (re-run here) reports confined cliques
+`5,5,6,12,9,9` and `18` at "avoid colour 0" on `plain.solver.wit`, cliques up to 8
+on `rung3.wit` and `a_14_14_lean.wit`, and inside them 6-subsets that are dead by
+`R(3,3) = 6` with **no bad triple inside** — a refutation independent of the
+three-equal-singletons condition.
+
+**The correction.** §35's "truncation depth is exactly 3, and the shape is unique"
+is true of the five recorded witnesses and false in general. Minimal dead sets
+reach size 6 (witnesses at 4, 5 and 6, minimal over all proper subsets, on both
+templates), so the depth is **at least 6**, and the minimal-obstruction spectrum is
+`{3,5,6}` — which is what `OBSTRUCTION.md` said before I generalised it. State §6
+now carries the Ramsey-indexed statement instead.
+
+**What to do with it.** Add the `k = 2` bound per colour pair to the pair-level
+encodings. It is sound, it is strictly stronger than the pair rule, and the
+measurements say every witness violates it. That is the cheapest strengthening
+this round has produced.

@@ -187,7 +187,16 @@ every pair-level witness dies in the arm module at size 3. The spectrum of minim
 local obstructions is `{3, 5, 6}`, not `{3}`: `design_1` arm 1 needs 6.
 `results/local-obstruction/`.
 
-The depth is exactly 3, and the shape is unique. A *local object* on a set `S` of
+For these witnesses the depth is exactly 3 and the shape of every dead triple is
+unique — **but neither holds in general** (corrected 2026-11-22, member m1): the
+local obstruction family is Ramsey-indexed. If every pair list of a set `S` lies in
+a fixed `k`-colour set, then `|S| >= R_k(3)` is dead, with thresholds
+`3, 6, 17, 51`; the three-equal-singletons lemma is the `k = 1` rung. Standalone
+inclusion-minimal dead sets exist at sizes 4, 5 and 6 with no dead pair and no bad
+triple (both templates, checked by brute force), so the depth is **at least 6**, and
+the `k = 2` rung — no `K_6` in the `{f,g}`-confined graph — is a sound constraint
+the pair-level encodings do not carry (existing witnesses violate it with confined
+cliques up to 8). A *local object* on a set `S` of
 slots is the words on `S` plus a colouring of the pairs inside `S` under (P1) the
 arm colour banned inside its own arm, (P2) `colour(x,y) = f` needs
 `M_f(x) ∩ M_f(y) = empty`, (X) no monochromatic triangle; every genuine object
