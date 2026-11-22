@@ -1019,21 +1019,37 @@ The `M = 6` rigidity closes it: an arm pair of codegree 6 would force
 `codegree(r,t) = 6` at five points `t` where it is `m(t) = 5`. Hence `M >= 7`,
 and `7 <= M <= 16` is not pinned.
 
-> **Correction (2026-11-22).** The inequality above is right and the conclusion is
-> not. The 41 sites are not free: the `d_0(x) - 5` of them that are 0-adjacent to
-> `x` are forced to `d(z) = 0`, since a common 0-neighbour `p in P` would close the
-> 0-triangle `x, z, p`; the sharp minimum is therefore `C_x >= 3 d_0(x) - 8`, as
-> written, and it evaluates to `37` at `d_0(x) = 15` and to `40` at the largest
-> admissible `d_0(x) = 16`. Both give `M >= 6`. `M >= 7` would need `C_x >= 51`,
-> i.e. `d_0(x) >= 20`, which the degree cap forbids. The last step — the `M = 6`
-> rigidity — is asserted and never derived, whether or not the sentence above is
-> true. So **`M >= 6` is what this section proves; `M >= 7` is open**, and the
-> moment bound in §22 (`sum (n_{aa'} - 4)^2 >= 294`) has no source: the exact
-> identity is `sum n^2 = 420 + sum_{{x,y}} C(|P_x ∩ P_y|, 2) >= 420`. Found by
-> member m6 (d1) auditing the chain, re-derived here independently (DP over the
-> site counts gives 24 for the unforced minimum, 37 at `d_0 = 15`, 40 at
-> `d_0 = 16`). Nothing in the campaign uses 7: the spoke-table fact "the root is
-> never in a maximising pair" needs `M >= 6`, which survives.
+> **Corrected twice (2026-11-22).** First: the chain as written stops at `M >= 6`
+> (the inequality is the zeros-sharpened `3 d_0(x) - 8`, which is 37 at `d_0 = 15`
+> and 40 at 16), and the `M = 6` rigidity is asserted, not derived. That much of
+> the criticism of this section stands, and the `294` of §22 appears here without a
+> derivation.
+>
+> Second, and against that first correction: **the statement `M >= 7` is true and
+> is proved.** Member m3 of swarm `smwridmzp` supplies the missing derivation
+> (`.ultramath/smwridmzp/m3/REPORT.md` §3; arithmetic re-checked by its `audit.py`,
+> `ALL CHECKS PASSED`), and I re-derived every step of it:
+>
+> * at a pair with `mu = M = 6`, the six common neighbours `S` and
+>   `R = V \ (N_0(u) ∪ N_0(v) ∪ {u,v})` give `C >= 3(d_0(u)+d_0(v)) - 30`, i.e.
+>   60, 63 or 66 for `(15,15)`, `(15,16)`, `(16,16)`, against the cap
+>   `C <= 15*(M-2) = 60`; hence `d_0(u) = d_0(v) = 15` and `mu(s,s') = 6` for every
+>   pair of common neighbours — *this is the rigidity step this section asserted*;
+> * so under `M = 6` an arm pair at codegree 6 would force `mu(r,t) = 6` at five
+>   points where `mu(r,t) = m(t) = 5`; all 105 arm codegrees are therefore 5 (from
+>   the total 525); hence `C_x <= 10*3 = 30` against `C_x >= 37`. **`M >= 7`.**
+>
+> The same chain gives `sum (n_{aa'} - 4)^2 >= 294`: for each `x`, the ten pairs
+> inside `N_0(x) ∩ A` satisfy `sum (n-1) >= 37`, and summing over the 42 choices of
+> `x` gives `sum n(n-1) >= 1554`, hence `sum n^2 >= 1974` and the bound. So the
+> `294` of §22 is a genuine consequence too, and the 42 blocks are not a
+> `2-(15,5,4)` design. Both are restored.
+>
+> The kernel transcription is **not** finished: `M7.lean` fails with
+> `⊢ Nat.choose 5 2 = 10 ∨ M - 2 = 0`, so this is a paper proof with its arithmetic
+> machine-checked, and `armFar <= 4` remains the only one of the K59 transfers whose
+> statement has a compiled certificate. Nothing in the campaign uses more than
+> `M >= 6`, which is why the error was harmless to every model built so far.
 
 **The companion count is the usable part.** With `n_{aa'} = |N_0(a) ∩ N_0(a') ∩ X|`
 for arm points `a != a'` (so `mu(a,a') = 1 + n_{aa'}`),

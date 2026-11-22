@@ -325,22 +325,37 @@ The reduction from an arbitrary 14-set to those 240 cases is a paper argument in
 m6's `PROOF.md` §2, not kernel-checked and not audited by me; the bound itself is
 `decide`-free only in its sharpness half.)*
 
-**Correction (2026-11-22, audited by m6 and re-derived here): `M >= 7` is not
-proved; `M >= 6` is.** The `C_x` chain is: for `x in X`, `P = N_0(x) ∩ A` has five
-points, each `p in P` has `13` further 0-neighbours in `X \ {x}`, so
-`sum_z d(z) = 65` over the 41 sites of `X \ {x}` with `d(z) <= 5`; the `d_0(x) - 5`
-sites that are 0-adjacent to `x` are forced to `d(z) = 0` (a common 0-neighbour
-`p in P` would close the 0-triangle `x, z, p`), and the sharp minimum is then
-`C_x >= 130 - 3(41 - (d_0(x) - 5)) = 3 d_0(x) - 8`; with `C_x <= 10(M - 2)` this
-gives `M >= 6` at `d_0(x) = 15` and `M >= 6` at the largest possible `d_0(x) = 16`
-(`40 <= 10(M-2)`), and `M >= 7` would need `C_x >= 51`, i.e. `d_0(x) >= 20`, which
-the degree cap forbids. So §21's inequality is right and its ceiling is 6, not 7;
-the final step of §21 ("the `M = 6` rigidity closes it") is **undelivered**, and
-§22's `sum (n_{aa'} - 4)^2 >= 294` has no derivation (the exact identity gives
-`sum n^2 >= 420` and nothing above it). `M >= 7` is open. Nothing else in the
-campaign needs 7: the spoke-table fact "the root is never in a maximising pair"
-uses `M >= 6`.
+**Correction of the correction (2026-11-22, late).** An earlier revision today
+withdrew `M >= 7` on the strength of m6's audit of the *record's own* chain. That
+audit was right about the text and the withdrawal was wrong about the statement.
+Member m3 of swarm `smwridmzp` (a swarm stopped on 2026-11-22 at 07:21) has a
+complete proof in `.ultramath/smwridmzp/m3/REPORT.md` §3, which I re-derived step
+by step and whose arithmetic `audit.py` re-checks (`ALL CHECKS PASSED`):
 
+* `C_x >= 2·65 - 3|R_x| = 3 d_0(x) - 8` over `R_x = V ∖ (N_0(r) ∪ N_0(x) ∪ {r,x})`,
+  `|R_x| = 46 - d_0(x)`, and `C_x <= C(5,2)(M-2)`; with `d_0(x) >= 15` this is
+  `M >= 6`.
+* **The rigidity step the record asserted is a lemma** (m3's Lemma 4): at a pair
+  `(u,v)` with `μ = M = 6`, the six common neighbours `S` and
+  `R = V ∖ (N_0(u) ∪ N_0(v) ∪ {u,v})` give `C >= 3(d_0(u)+d_0(v)) - 30` — which is
+  60, 63 or 66 for `(15,15)`, `(15,16)`, `(16,16)` — against the cap
+  `C <= 15·(M-2) = 60`. So `d_0(u) = d_0(v) = 15` and `μ(s,s') = 6` for every pair
+  of common neighbours.
+* Hence if `M = 6`, an arm pair at codegree 6 would force `μ(r,t) = 6` at five
+  points `t` where `μ(r,t) = m(t) = 5` (m3's Lemma 5); so all 105 arm codegrees are
+  5 (Lemma 6, from the total 525); so `C_x <= 10·3 = 30` against `C_x >= 37`. Hence
+  **`M >= 7`**.
+
+The same chain gives `Σ(n_{aa'} - 4)^2 >= 294` (Theorem 2: `Σ n(n-1) >= 42·37`
+with `Σ n = 420`), so the moment bound the record cited without a derivation is a
+consequence, and the 42 blocks are **not** a `2-(15,5,4)` design. Both of those
+were withdrawn here earlier today and are hereby restored.
+
+What remains true from the earlier note: the record's own text did not prove any
+of this, `M7.lean` (m3's kernel transcription) does **not** compile — it stops with
+`⊢ Nat.choose 5 2 = 10 ∨ M - 2 = 0` — so the result is a paper proof with its
+arithmetic machine-checked and its kernel form unfinished. Nothing in the campaign
+uses more than `M >= 6`.
 **Type rigidity.** A pair of 15-classes sharing 14 points is necessarily the same
 template type; **mixed `T^-`/`U^-` classes overlap in at most 12**, and 12 is
 attained. Certified by exact maximum-common-induced-subgraph computation (two
