@@ -438,3 +438,53 @@ the ticket argument can see is slack enough to be attained by a real object two
 vertices away, and what remains is the interaction of three 14-vertex
 3-colourings, each of which is far less rigid than the templates the campaign
 has just finished classifying.
+
+## 10. An external handoff bundle (2026-11-22), checked here
+
+Another session read this repository at `89a632c8` and produced
+`R3333_project_handoff_and_first_case.zip` (unpacked at `.scratch/handoff/`,
+a cache). It contains: our ledger and the 381-row worklist; `first_case/` with
+the frozen CNF for `baa4e014…`, its generators, the marked-support sieve and two
+pilot children; three certificate bundles under `wall/`; and eleven historical
+notes. What follows has been checked here; the rest is its own claim.
+
+**Agreement with this repository (checked).**
+* `first_case/original.cnf.gz` is our frozen case **byte for byte**:
+  `sha256 71edaaa0b9c0c1556291f569b5dd8d5d09443240ea28f932e04666b0d4d1d338`,
+  12,114 variables, 146,098 clauses = 134,995 base + 309 pinned + 10,794 extra,
+  with recipe `tables, total_critical, full_root off`. Rebuilt here from the
+  ledger row; clause sets equal.
+* Both split children rebuild to the exact hashes in its `pilot.json`:
+  `8e0b49a9…` (uniform, every `m(x) <= 5`) and `f5324082…` (some-six,
+  first vertex in the physical order with `m(x) >= 6`, predecessors `<= 5`).
+  So the two pipelines agree at the byte level and a closure from either side
+  can be banked on the other.
+* Its marked-cut verifier reproduces: 2,194 excluded named four-sets of 18,276
+  across 300 surviving orientations, exclusions in 57 orientations; the worked
+  example (catalogue row 1, colour 2) gives 40 of 54 four-sets excluded with two
+  nine-set witnesses.
+* `arm_data/orientations.csv`: 345 orientations, 27 excluded by the
+  independent-support equality, 45 by the path/pentagon shapes, 300 surviving.
+* The path/pentagon premise is a property of the templates and holds: in both
+  `K_15` templates a vertex's `b`-neighbourhood inside the template has 4 points
+  inducing `P_4` in each other colour, or 5 inducing `C_5`; in both `K_16`
+  templates always 5 inducing `C_5`. *(Checked here by brute force on the four
+  template files.)*
+
+**What it corrects in this record.** §7/§9's "the type-level route is closed"
+is wrong: the feasible witness has 28 slots with `M_0 = empty` and the
+kernel-checked saturation bound allows two. That route is open.
+
+**What it contributes, if its certificates hold.** (i) A 14-arm support
+restriction: 45 of 345 orientations admit no fivefold cover by fifteen
+admissible supports, so some `x in B` has `m(x) <= 4` and hence some `y` has
+`m(y) >= 6` — a six-forcing at the 15-arm boundary, which the interface
+argument cannot produce. (ii) The nine-set cuts on marked placements. (iii) An
+extremal/word bound: at most 16 extremal vertices in `K_58`, and the uniform
+branch needs at least 26 distinct all-four-colour words, with DRAT proofs behind
+the 18-extremal and 17-vertex statements.
+
+**A scope fact that limits it.** No `U---` row has charge 15 (the 73 split as 9
+with `arm 0, charge 3` and 64 with `arm 1, charge 5`), so all three items —
+which assume fifteen fully critical senders or `baa4e014`'s marked four-set —
+have no hypothesis among Family B's rows and cannot be ported there.
