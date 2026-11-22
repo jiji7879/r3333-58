@@ -1767,3 +1767,50 @@ state §2 cites the first as proved. The file is now `lean/K58/Ticket.lean`, bui
 by `build.sh` (47 s green) and registered in `Check.lean`, with
 `crit_card_ge_thirty` and `crit_eq_univ` alongside. Second instance of this slip
 after §33's `TwoArm`; both are now in the build.
+
+## 40. The abelian Cayley family in the window 50..58: certified, and already known
+
+Member m9, direction d16; verdict **accepted**, ninth of `smwrmwgf7`. Artefacts at
+`results/cayley-window/`.
+
+**What is decided.** For every `n` in 50..58 and **every abelian group of order
+`n`** (fifteen of them) there is no good 4-colouring of `K_n` invariant under the
+regular action. Every instance UNSAT, every proof replayed by `drat-trim` against
+the CNF regenerated from the member's own encoder. I replayed four here:
+`Z_58` `s VERIFIED` with 1,181 of 1,323 clauses in core, 8.38 M resolution steps and
+100 RAT lemmas; `Z_51` and `Z_3 x Z_3 x Z_3 x Z_2` `s VERIFIED` with **5-clause
+cores**; `Z_5 x Z_5 x Z_2` `s VERIFIED` with 922 clauses in core.
+
+**Complete for the whole Cayley family at 51, 53, 55, 57**, because the cyclic
+group is the only group of those orders (`3 ∤ 16`, `53` prime, `5 ∤ 10`,
+`3 ∤ 18`). At 58 the groups are `Z_58` and `D_29`; `Z_58` is decided both freely
+and with the W2 profile `(15,14,14,14)` imposed, independently reproducing
+`PROFILE` §5's circulant exclusion from a different encoder. **`D_29` is open**, as
+are `D_25`, `D_26`, `D_27`, `D_28`; the member records them as `INCOMPLETE` in
+`results.json` rather than omitting them.
+
+**Exactness, validated the right way.** Four checks, run here: the cardinality
+encoder against 186,069 pinned cases by unit propagation; the whole pipeline
+against brute-force enumeration on 60 small instances (`n = 3..10`, with and
+without a profile constraint); every triangle of `K_n` covered up to `n = 58`; and
+the classics — `R(3,3) = 6`, `R(3,3,3) = 17` at the cyclic group, and a good
+`K_16` 3-colouring found and verified over `Z_2^4`. An encoder that reproduces the
+classics and agrees with brute force at small `n` is the standard this campaign
+should hold every encoder to.
+
+**Cross-check at 50, from the other direction.** Both K_50 artefacts are valid and
+carry 6 and 5 distinct colour-degree profiles (recomputed here), so neither is
+vertex-transitive, hence neither is Cayley over *any* group of order 50 — which is
+what the UNSAT instance at 50 says.
+
+**Correction.** "A Cayley object cannot witness `R_4(3) >= 52`" needs the word
+*abelian*: at order 52 the groups are `Z_52`, `Z_13 x Z_2 x Z_2` and `D_26`, and
+`D_26` was not attempted.
+
+**Scope, stated plainly.** The record already carries Anabanti (2023) as closing
+group-partition/Cayley constructions for `n >= 51`. This is a certified,
+independently encoded confirmation of a known exclusion, extended to all abelian
+groups in the window and run with the W2 profile — **not new mathematics, and it
+does not move the lower bound.** Its worth is that the exclusion is now
+machine-checked instance by instance with replayed proofs, in a campaign that has
+twice this round found a cited theorem absent from the tree.

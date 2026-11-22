@@ -140,7 +140,14 @@ coverage and the split by the templates.
 | the "gluing core" | the 0.01 s refutation came from an over-constrained CNF (a global mixture cap); the sound instance is UNKNOWN at 300 s |
 | the pentagon package's Hall inequality | a theorem, exactly `alpha(G_0) <= 16`, hence implied by the X-internal triangle family; all five pair-level witnesses violate it (margin 14) and it sharpens nothing — inert |
 
-Also closed, outside this profile: no `Z_58`-circulant good colouring of `K_58`
+Also closed, outside this profile: **every abelian group of order 50..58** has no
+good 4-colouring of `K_n` invariant under its regular action — fifteen groups, all
+UNSAT with DRAT replayed, complete for the *whole* Cayley family at 51, 53, 55, 57
+(cyclic is the only group there), with the W2 profile included at 58. `D_29`, and
+`D_25`..`D_28`, remain open computationally; Anabanti (2023) already closes the
+family for `n >= 51`, so this is a certified confirmation rather than new
+mathematics. `results/cayley-window/`. Also closed, outside this profile: no
+`Z_58`-circulant good colouring of `K_58`
 (DRAT-verified), and the 3,093 marked-path cuts of the external bundle are a
 **module count of 15,183 classes**, not a clause reduction (the orbit has ~10^10
 members).
