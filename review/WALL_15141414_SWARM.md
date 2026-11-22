@@ -2094,3 +2094,49 @@ to an 11-slot minimal infeasible sub-object (7 of 15 pencils UNSAT while all arm
 are SAT) is one design's structure, and is the best lead for a next direction: the
 honest question is now whether *any* design besides m5's witness is
 word-compatible.
+
+## 47. The 42-slot instance is exact, the extremal corner is closed, and the ladder is dead
+
+Member m1, direction d8 of `smwrmwgf7`; verdict **accepted**. Artefacts:
+`.ultramath/smwrmwgf7/m1/{REPORT.md,results.jsonl,wordindex.py,ladder.py,lift.py}`
+and three DRATs (1.70 GB, 2.17 GB, 842 MB).
+
+**Exactness (the important one).** The 42-slot instance — (W1) five zeros per
+word, (W2) part independence in the template, (P) pair colour with disjoint parts
+and no arm colour inside an arm, (T)+(XT) in-arm and cross-arm triangle-freeness,
+(C) per-position counts in `[4,5]` summing to 14 — is **exactly** W2's `T^-`
+branch, not a relaxation. The lift sets `r`-`A` to 0, `r`-arm to the arm colour,
+`A`-`A` to the template colour, slot-`A` to the word, slot-slot to the pair
+colour; every triangle of `K_58` falls in one of the six cases above and each is
+covered. So a model is a counterexample to W2 with `H = w = 15`, and conversely.
+Computationally the lift is checked: an abstract witness with (C) but no triangles
+lifts to profile `[15,14,14,14]`, `m(x) = 5`, coverage 14, 15 senders, and the
+monochromatic-triangle count matches exactly, 1807 = 305 in-arm + 1502 cross-arm.
+**Consequence: the 30.9 M-conflict UNKNOWN at 3,600 s is the real question, not an
+encoding gap.**
+
+**The certified theorem.** In the branch, not all 42 words have profile `(5,5,0)`
+— the "free colour" corner, where every cross-arm pair is free, never holds
+globally. Both templates. The instance restricts to the 18 extremal words with the
+branch families implied plus the copy bound (two copies force the empty colour,
+three make a triangle), so its UNSAT refutes the all-extremal case; two encoders
+sharing no code agree (word-indexed `p cnf 22422 601565`, and the cell-level one
+at 163,502 clauses), and the DRATs are 1.70 GB / 2.17 GB with **0 RAT lemmas**,
+`s VERIFIED` per the member's logs (coordinator replay of the 842 MB `E41_arm1`
+proof launched; see §47 note below).
+
+**The sizing.** 254,628 legal words; with the arm symmetry and the copy bound,
+depth-2 word cubes number 3.2·10^10 and depth-3 2.8·10^15. The conditional I set
+("if ~1e4 sub-second nodes, run it; else report the size and stop") is answered:
+**not runnable**, and `(14,12)+XT` stays closed to that factorisation.
+
+**The ladder is dead.** Rungs `(14,k)+XT` are SAT with verified witnesses for
+`k = 0..7` and rung 8 is UNKNOWN at 6 M conflicts, with the cost jumping 19x from
+`k = 6` to `k = 7`. Extrapolated, `k = 12` needs 10^10–10^12 conflicts. The
+heredity ladder yields nothing.
+
+**A kernel lemma used as a debugger.** The member's first encoder excluded the
+wrong colour on same-arm pairs; the detector was `K58.part_family_le_five` — a
+rung model exhibited a 7-clique of pairwise 0-intersecting zero-parts, which the
+lemma forbids. Every model now carries `largest_pairwise_0intersecting_family`,
+and all reported models have at most 5. Three lines of check, found by a theorem.
