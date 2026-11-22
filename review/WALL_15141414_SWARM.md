@@ -1572,3 +1572,52 @@ cheapest way to manufacture a fake refutation in this campaign.
 
 **Not run:** the `K20`/`K22` cluster models, whose truncation depth is the number I
 would most want — they are the only objects realising the high-overlap regime.
+
+## 36. Cross-arm triangle-freeness is the whole difficulty, and the per-arm profile has a guard
+
+Member m3, direction d14; verdict **accepted**, fifth of `smwrmwgf7`. Artefacts at
+`results/arm26/`. It did not answer the design quotient it was briefed on; it
+pivoted to the 26-vertex arm-level object and decided it at the two levels that
+are decidable here. I verified the witnesses from the definition with the member's
+own `arm26.verify`, and checked the template pairing first, because that is where
+this campaign has twice been bitten.
+
+| witness | template | W/P/C violations | in-arm mono triangles | cross-arm |
+| --- | --- | ---: | ---: | ---: |
+| `arm26_T_nox` | `T^-` `aut2` | 0 | 121 | 224 |
+| `arm26_T_armtri` | `T^-` `aut2` | 0 | **0** | 180 |
+| `arm26_U_nox` | `U^-` `aut10` | 0 | 165 | 236 |
+| `arm26_U_armtri` | `U^-` `aut10` | 0 | **0** | 200 |
+
+**The template pairing is load-bearing.** The `T^-` witnesses are built on
+`k15_template_Tminus_aut2_m4.col`; against `k15_link_Tminus_m5.col` — the same
+template under a different labelling, §35's hazard — they show 46 and 52
+part-independence failures. A witness in this campaign must always be quoted with
+the template file it was built on.
+
+**What is now settled about where the difficulty is.** The `(14,12)` object at the
+pair level is SAT in 0.5 s for both templates. Adding *in-arm* triangle-freeness
+keeps it SAT — `T^-` 140 s, `U^-` 342 s — with zero in-arm monochromatic triangles
+and 180 / 200 cross-arm ones. Keeping *only* the cross-arm family (`XT`) is
+UNKNOWN at 200 s. So the in-arm 3-colourings are not the obstruction, and `XT` is
+not one family among several: it is the whole of it. That is also the explanation
+of §26's wall — the family that kills every witness is exactly the family that is
+still UNKNOWN.
+
+**The per-arm profile, and an ERRATA guard.** In the genuine object `d_0(a) = 15`
+and each arm point meets each other root class in 4 or 5 points
+(`K58.sender_split`). Restricting to `B` (14 complete) and 12 of `C`: `B`-count in
+{4,5}, `C`-count <= 5, `B + C` in [7,10], because `Sum_a B = 14*5 = 70` and
+`Sum_a C = 12*5 = 60` give **130** over 15 positions. Demanding `B + C in {9,10}`
+(or `C >= 3` with `B <= 5`) at every position needs 135 and is **UNSAT by counting
+alone**: the `ERRATA` over-constrained-cardinality class. The member's own first
+build had it and read UNKNOWN for 240 s; `m4/build.py` carries only the optional
+`(3m) total coverage <= 14`, so the live `(14,12)+XT` object is not void on this
+count. The trap is linguistic: "per-arm coverage (ten 5s, five 4s)" is true of a
+complete arm and becomes an over-constraint the moment it is copied to a truncated
+one.
+
+**Scope.** The `U^-` object at `d_0 = 15` is not an emitted obligation (§33: the
+`U---` stratum's threshold is 3), so its SAT status is diagnostic only; the value
+here is the wall localisation, not a step toward closing a row. The UNKNOWN
+measurements were not re-run.

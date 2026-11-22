@@ -180,7 +180,24 @@ and 395 across. `results/truncation-depth/`.
    arms of sizes 14 and 12, with per-arm coverage (ten 5s, five 4s in a 14-arm)
    and cross-arm triangle-freeness. The families are hereditary under deleting a
    vertex, so **UNSAT at this rung refutes the uniform fully-sending branch**
-   via the kernel-checked restriction theorem, needing both templates. Current:
+   via the kernel-checked restriction theorem, needing both templates.
+   **Which family does the work is now measured.** The same object at the pair
+   level is SAT in 0.5 s for both templates; adding *in-arm* triangle-freeness
+   keeps it SAT (T^-, 140 s; U^-, 342 s) with **0 in-arm monochromatic triangles**
+   and 180 / 200 cross-arm ones; keeping *only* the cross-arm family is UNKNOWN at
+   200 s. So in-arm triangles are not the obstruction and `XT` is the whole of it.
+   Witnesses at `results/arm26/` (`arm26_{T,U}_armtri.wit`), each valid only
+   against its own template file — the `T^-` ones are on
+   `k15_template_Tminus_aut2_m4.col`, and against `k15_link_Tminus_m5.col` they
+   show 46-52 part-independence failures, the same-template-different-labelling
+   hazard.
+   **Guard on the per-arm profile.** With `|B| = 14`, a 12-subset of `C` and
+   `d_0(a) = 15`: `B`-count in {4,5}, `C`-count <= 5, `B + C` in [7,10], because
+   `Sum_a B = 70` and `Sum_a C = 60` give **130** over 15 positions. Any encoder
+   demanding `B + C in {9,10}` (or `C >= 3` with `B <= 5`) at every position is
+   UNSAT by arithmetic alone — 130 < 135 — which is the `ERRATA` class. The phrase
+   "per-arm coverage (ten 5s, five 4s)" is true of a complete arm and becomes an
+   over-constraint on a truncated one. Current:
    UNKNOWN at 400 s / 4.4 M conflicts. Its reach is counted in item 5 below:
    at most 7 of the 381 cases, one child each.
 2. **Pair level + arm saturation** — the one kernel-checked constraint every
