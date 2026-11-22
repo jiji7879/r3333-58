@@ -41,8 +41,9 @@ catalogue is built (386 rows, sha256 `b8cbf0bb…`) and two core cases were prob
 
 ## 2. Proved and kernel-checked
 
-All in `lean/`, build `bash lean/build.sh` (42 s, green), axioms only
-`[propext, Classical.choice, Quot.sound]`, no `sorry`, no `native_decide`:
+All in `lean/`, build `bash lean/build.sh` (88 s wall / 33 s CPU, green),
+axioms only `[propext, Classical.choice, Quot.sound]`, no `sorry`, no
+`native_decide` (34 declarations on `Check.lean`'s list):
 
 | item | statement | where |
 | --- | --- | --- |
@@ -55,7 +56,19 @@ All in `lean/`, build `bash lean/build.sh` (42 s, green), axioms only
 | per-(`u,y`) rigidity | `u` a sender, `y in N_0(u)`, `f != 0`: the three counts are 4 or 5 (5,5,5 at a 16-arm) | `K58.model_pair_rigidity` |
 | parity | `2e_i + n_i = 75`, `n_i` odd, `sum n_i = 15` | `K58.light_count_parity` |
 | two-arm restriction | a genuine branch object restricts to a model of the 28-vertex two-arm instance | `K58.TwoArm.two_arm_restriction` |
+| uniform child | all 15 arm points 0-critical + `m(x) <= 5` + `|V| = 58` force `d_0(a) = 15` and `m(x) = 5` | `K58.uniform_child` |
+| charge 15 = all-critical | `armSenders r 0 = 15` iff every point of `N_0(r)` is 0-critical | `K58.armSenders_zero_eq_fifteen_iff` |
+| branch = degenerate balance | balance plus sender-free 14-arms gives `s_0 = 15` | `K58.branch_of_balanced_no_small_arm_sender` |
 | **classification** | every triangle-free 3-colouring of `K_15`/`K_16` is one of the two templates | `K58.Classified 15/16`, `lean/port/` |
+
+**Provenance correction (2026-11-22).** `K58.TwoArm.two_arm_restriction` was a
+*member artefact*, `.ultramath/smwrfgma5/m5/lean/TwoArm.lean`, and was cited in
+§17 of the chronological record and in an earlier revision of this table as
+kernel-checked **before it was in `lean/`** (`rg -n TwoArm lean/` was empty, and
+`build.sh` built no such module). It is now `lean/K58/TwoArm.lean`, built after
+`Arm` and registered in `Check.lean`. The theorem was and is true — the proof was
+re-verified from the copied file — so no result that quotes it is void; the
+citation was wrong at the time it was made.
 
 The classification is the campaign's only formerly-unproved structural premise;
 it is derived in `lean/port/` from the pinned `R_4(3) <= 60` development
@@ -141,7 +154,8 @@ three arms' internal 3-colourings — and the classification does not reach a
    and cross-arm triangle-freeness. The families are hereditary under deleting a
    vertex, so **UNSAT at this rung refutes the uniform fully-sending branch**
    via the kernel-checked restriction theorem, needing both templates. Current:
-   UNKNOWN at 400 s / 4.4 M conflicts.
+   UNKNOWN at 400 s / 4.4 M conflicts. Its reach is counted in item 5 below:
+   at most 7 of the 381 cases, one child each.
 2. **Pair level + arm saturation** — the one kernel-checked constraint every
    known witness violates, never yet put in front of a solver with the pair level.
 3. ~~**The `(6,4,4,4)` plan** — a uniform, kind-free statement set at 386 rows.~~
@@ -151,6 +165,31 @@ three arms' internal 3-colourings — and the classification does not reach a
 4. **Family B (73 cases)**: `s_0 <= 2` and `s_i <= 4`. The external bundle's
    items do not port (no `U---` row has charge 15); thresholds are already
    maximal.
+
+5. **The reach of the branch, counted — the honest scope of items 1–3.**
+   The branch is *not* forced by the profile: its criticality half is one
+   hypothesis of the cover and its uniformity half (`m(x) <= 5`) a strictly
+   stronger one. The frozen encoder splits every case into `all m(x) <= 5` and
+   `some m(x) >= 6` (`WALL` §10), so obligations are (case, child) pairs. Under
+   uniformity `K58.uniform_child` gives `d_0(a) = 15` for all fifteen arm points,
+   so the two charge-15 rows whose marked class has size 16 have **no** uniform
+   child (they are some-six only, closed on that side by the kernel lemma alone),
+   and the seven with a 15-point marked class have one. **A refutation of the
+   uniform fully-sending branch therefore closes 7 uniform children out of 381,
+   plus 2 that are already empty — and needs the some-six companion before even
+   those 9 rows fall.** No other row is implied: 363 impose a sender in a 14-arm
+   and 9 impose `s_0 >= 3`, and no branch object pins either. Certified by
+   `w/regen_cases.py` (381 = 381, all OPEN), `w/poset.py` (381 distinct pins, 0
+   of 381·380 pairs with `pin_i ⊆ pin_j ∧ charge_i ≤ charge_j`), `w/closure.py`
+   (0 of 381 refuted by colour refinement, five controls), and the kernel lemmas
+   above; write-up `.ultramath/smwrmwgf7/m11/w/obligations.md`, rows listed in
+   `w/seven_cases.txt`.
+
+6. **The `U^-` twin must be built at charge 3, not at `d_0 = 15`.** The `U---`
+   stratum's arm-0 threshold is 3, so refuting `s_0 = 15` there decides a formula
+   the cover never emits; and at charge 3 heredity is unavailable, because
+   `s_0 >= 3` is existential while the interface identity controls only the
+   whole-arm sum. The same applies to the 363 arm-1 rows (`s_1 >= 1` or `>= 5`).
 
 ## 8. Errors, artefacts, corrections
 
@@ -178,7 +217,7 @@ three arms' internal 3-colourings — and the classification does not reach a
 
 * `review/WALL_15141414_SWARM.md` — the chronological record, 18 sections.
 * `review/ERRATA.md` — the encoder defects with reproductions.
-* `lean/K58/{Mixture,Corollaries,Arm,Link14,Model}.lean`, `lean/port/` — the
+* `lean/K58/{Mixture,Corollaries,Arm,TwoArm,Link14,Model}.lean`, `lean/port/` — the
   kernel-checked base and the classification.
 * `results/swarm-smwqx1yfw/` — member reports from round one.
 * `.ultramath/smwr*/` — each swarm's member directories (gitignored; scripts and

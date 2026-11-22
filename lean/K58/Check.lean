@@ -1,6 +1,10 @@
+import K58.Arm
 import K58.Corollaries
+import K58.Link14
+import K58.Model
 import K58.Selection
 import K58.Templates
+import K58.TwoArm
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -37,3 +41,12 @@ import K58.Templates
 #print axioms K58.mixture_subset
 #print axioms K58.arm_part_le_five
 #print axioms K58.nbr_indep
+#print axioms K58.interface_count
+#print axioms K58.arm_degree_sum_fourteen
+#print axioms K58.model_pair_disjoint
+#print axioms K58.model_pair_rigidity
+#print axioms K58.light_count_parity
+#print axioms K58.sum_inter_nbr_even
+#print axioms K58.TwoArm.two_arm_restriction
+#print axioms K58.TwoArm.coverage_le
+#print axioms K58.TwoArm.exact_degree

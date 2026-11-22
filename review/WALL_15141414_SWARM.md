@@ -894,12 +894,14 @@ written compact CNF (97,404 clauses) that a solver extends in 0.28 s.
 `[propext, Classical.choice, Quot.sound]`).** A triangle-free 4-colouring of
 `K_58` with `r` of profile `(15,14,14,14)`, all of `A` 0-critical and every
 outside vertex at `m(x) = 5`, restricts on **any two arms** to a model of the
-28-vertex two-arm instance. The step that makes it work: the interface identity
-plus uniformity gives fifteen terms each at least 14 summing to 210, hence each is
-exactly 14, hence `d_0(a) = 15` and every arm point has exactly fourteen colour-0
-partners outside its arm. So **UNSAT at `14+14`, for both `T^-` and `U^-`, would
-close the uniform fully-sending branch** — and both templates are needed, which is
-what the ported classification is for.
+28-vertex two-arm instance. *(Provenance: at the time of writing this was a
+member artefact in `smwrfgma5/m5/lean/`, not a file in `lean/`; integrated as
+`lean/K58/TwoArm.lean` on 2026-11-22 — §33.)* The step that makes it work: the
+interface identity plus uniformity gives fifteen terms each at least 14 summing
+to 210, hence each is exactly 14, hence `d_0(a) = 15` and every arm point has
+exactly fourteen colour-0 partners outside its arm. So **UNSAT at `14+14`, for
+both `T^-` and `U^-`, would close the uniform fully-sending branch** — and both
+templates are needed, which is what the ported classification is for.
 
 **Two scope fixes, either of which would have produced a void result.**
 1. Two-arm columns must be **`<= 14`, never `= 14`**: twenty-eight vertices carry
@@ -1340,3 +1342,80 @@ measurement also settles a detail worth having: the pool is **not** `Aut`-invari
 instance itself remains UNKNOWN and its exactness audit is unchanged; what is dead
 is this factorisation, so any future cube has to be on pair colours or on the arm's
 isomorphism class rather than on words.
+
+## 33. The branch's reach, counted: at most 7 of 381 — and it is not forced
+
+Member m11, direction d10 ("certify the branch is forced, not assumed"); verdict
+**accepted**, first accepted result of `smwrmwgf7`. Every number below I re-ran
+myself, from m11's directory, on this machine.
+
+**The direction's question is answered NO.** The branch is not a consequence of
+the profile. Its criticality half (`s_0 = 15`, equivalently all fifteen points of
+`A` 0-critical) is one hypothesis the cover already carries; its uniformity half
+(`m(x) <= 5`) is an *extra*, strictly stronger hypothesis, and the frozen encoder
+splits every case into `m <= 5` and `some m >= 6` (§10). So obligations are
+(case, child) pairs.
+
+**Reach theorem.** A refutation of the uniform fully-sending branch closes the
+uniform child of **exactly seven** of the 381 frozen rows — the charge-15 ones
+whose marked class has size 15, rows 0–6, listed in
+`.ultramath/smwrmwgf7/m11/w/seven_cases.txt`. The two charge-15 rows with a
+16-point marked class have **no uniform child at all** (`K58.uniform_child` forces
+`d_0(q) = 15`, the pin says 16), so they are some-six only and fall to the kernel
+lemma on that side for free. The other 372 rows are not implied: 363 pin a sender
+in a 14-arm (`s_1 >= 1` or `>= 5`) and 9 pin `s_0 >= 3` with the `U15` arm, and no
+branch object pins either. **So even a full closure of `(14,12) + XT` and its
+siblings is worth 9 of 381, and 7 of those still need a some-six argument.**
+
+**Three kernel lemmas, axiom-clean** (`[propext, Classical.choice, Quot.sound]`,
+no `sorry`; `LEAN_PATH=$REPO/lean lean w/Reduction.lean`, 2.4 s):
+
+* `K58.uniform_child` — 15 arm points 0-critical, `m(x) <= 5`, `|V| = 58` give
+  `d_0(a) = 15` for every arm point and `m(x) = 5` for every outside vertex. This
+  is the step §17 calls "the step that makes it work", and it was not in the
+  kernel before.
+* `K58.armSenders_zero_eq_fifteen_iff` — charge 15 at a 15-arm *is* the
+  all-tickets-returned condition.
+* `K58.branch_of_balanced_no_small_arm_sender` — balance plus sender-free 14-arms
+  gives `s_0 = 15`: the branch is what balance degenerates to exactly when the
+  small arms carry no sender.
+
+**Two corrections, both right, both taken.**
+
+1. **The `U^-` object at charge 15 decides nothing the cover needs.** The `U---`
+   stratum's arm-0 threshold is 3, so a `U^-` instance built at `d_0 = 15`
+   refutes a formula that is not emitted; it must be built at charge 3, and then
+   heredity is unavailable (`s_0 >= 3` is existential; the interface identity
+   controls only the whole-arm sum). My instruction to m3 to build the `U^-` twin
+   at the current shape was wrong for this reason. Same for the 363 arm-1 rows.
+2. **§17's citation of `K58.TwoArm.two_arm_restriction` was wrong at the time**:
+   `rg -n TwoArm lean/` was empty over `K58/`, `port/` and `supplement/`,
+   `build.sh` built no `TwoArm`, and `strings lean/K58/*.olean | grep -c two_arm`
+   gave 0. It was a member artefact. It is now `lean/K58/TwoArm.lean` — copied
+   from `smwrfgma5/m5/lean/`, built after `Arm`, registered in `Check.lean` — and
+   `bash lean/build.sh` is green in 88 s wall / 33 s CPU with all 34 declarations
+   axiom-clean, including `two_arm_restriction`, `coverage_le` and
+   `exact_degree`. The theorem was always true; only the citation was false.
+
+**Certified computations, re-run here** (`.scratch/k58/.venv/bin/python`,
+`PYTHONPATH` at the k58-solver package):
+
+* `w/regen_cases.py`: 381 regenerated, 381 frozen, multisets equal, all `OPEN`;
+  9 (arm 0, charge 15) + 299 (arm 1, charge 1) + 9 (arm 0, charge 3) + 64 (arm 1,
+  charge 5).
+* `w/poset.py`: 381 distinct pins, **0** of 381·380 ordered pairs with
+  `pin_i ⊆ pin_j ∧ charge_i <= charge_j`, so 381 maximal obligations — no row is
+  refuted for free by another.
+* `w/closure.py`: colour refinement at "one colour per edge" and "no
+  monochromatic triangle" refutes **0 of 381**; five controls fire correctly
+  (two-colour edge, three monochromatic triangles) and three stay `None`.
+
+**Not verified by m11, and not claimed here:** the classification, the palette
+quotient and `orbit_data`, `support_tables`, and the some-six child of the
+charge-15 block. Nothing here says the profile is impossible or possible.
+
+**A process note worth keeping.** m11's first version of the local-refutation
+check used a hand-rolled triangle rule that fired one-sidedly and "refuted" all
+381 rows in 0.8 s; it was killed by a real solver run (`host + pin` UNKNOWN at
+60 s), not by re-reading the code. That is `ERRATA.md`'s failure mode on the
+proof side, and it is why the check now carries controls.
