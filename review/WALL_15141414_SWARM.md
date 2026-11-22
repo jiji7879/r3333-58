@@ -744,3 +744,22 @@ disjoint from its own** (colour-0 edges obey the pair rule). Pair-level solution
 have minimum one. The pair level plus that condition is open at 100-590 s — the
 next rung worth trying, and it is conditional on (R), which is the balanced case
 and not a theorem.
+
+**The four things the reciprocity investigation leaves.** (i) `|C_c| >= 30`
+needs only the `c`-th conjunct of `(R)` ("no colour-`c` edge crosses the cut
+`(C_c, V \\ C_c)`"), so the bound is robust rather than an artefact of full
+reciprocity; (ii) at equality the colour-`c` graph on `C_c` is exactly `K_{15,15}`
+(`K58.crit_thirty_structure`); (iii) in the fully sending uniform branch `(R)`
+forces colour 0 to be critical at all 58 vertices
+(`K58.uniform_branch_zero_critical`), which is the ten-disjoint-partners
+condition on every word; (iv) at `n = 58` a vertex with `d_0 <= 14` is critical in
+an ordinary colour, since the other three degrees sum to at least `43 > 3*14`.
+
+**And the weakening I asked for is vacuous** (`K58.arm_returns_iff_zero_critical`).
+In the branch the reciprocity hypothesis reduces to the 42 colour-0 edges from `A`
+into `X`; but every arm vertex is already 0-critical, so "`a`'s ticket to `x`
+returns" asserts exactly the conclusion at `x`. The hypothesis is equivalent to
+the conclusion and selects the same roots — so the ten-partner rung cannot be
+extended beyond the balanced case this way. Checked for slack on real objects:
+true at all 48 roots of `n48_z4z4_f0.col`, and false together with the conclusion
+at 36 roots of `k49_from_n48_m5.col` (vertex 48 has `d_0 = 12`).
