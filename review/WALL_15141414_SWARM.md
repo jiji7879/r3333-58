@@ -1160,3 +1160,34 @@ pair-level witness violates its word form (cliques of 9, 9, 10 against a bound o
 — the pair level plus triangle-freeness inside each arm and across arms, where the
 columns do reach 14. Measured cost: 480 s with the full cap bundle against 12 s
 plain. Anything smaller is now known to be too weak.
+
+## 26. The object that survives: `(14,12) + XT`, and the table tool
+
+**Heredity, with the exception named.** Restricting a genuine object to `r`, `A`
+and two arms of sizes 14 and 12 preserves five zeros, part independence, pair
+disjointness with the root-colour ban, arm and cross-arm triangle-freeness, and the
+`<=` counts. It does **not** preserve the per-arm degree profile, which is indexed
+by arm size: a 14-arm keeps `4 <= t <= 5` (ten 5s, five 4s) while a 12-subset keeps
+only `t <= 5`, because `N_0(a) = {r} ⊔ (three arm parts)` needs the whole arm. So a
+genuine object restricts to `(14,12)`, and **UNSAT there with the sound families
+closes the uniform fully-sending branch** — the conditional is the kernel-checked
+interface identity, mixture, `Classified 15`, and two one-line hand steps, with no
+symmetry assumption.
+
+The object is `p cnf 7574 46752`. Undecided: kissat 4.95 M conflicts at 600 s,
+cadical 2.68 M; the extras raise conflicts rather than lowering them; `(14,14)+XT`
+is comparable. **But with the words fixed the pair stage is 531 variables and
+solves in under a second**, so the object is a cube-and-conquer over two or three
+word choices on the 12-arm, with the pair stage left to the solver. The size of
+that cube tree is the next measurement worth having.
+
+**Transfer 4 gives a tool and kills its own K59 use.** The two-root table at
+`n = 58`: 56 entries, row margins `d_i(u) - [j=i]`, corner
+`T[0][0] = |N_0(u) ∩ N_0(v)|`, diagonal zero, and — new, from the kernel-checked
+mixture bound — **`T[i][l] <= 5` for `i != l`**. Verified on 1,063 tables across
+four colourings, zero failures. K59's equal margins do not transfer (they need both
+endpoints to have equal non-0 degrees, which the branch pins for no pair). And
+**the root can never be in a maximising pair**: its codegree is `m(x) = 5` for
+outside vertices and `0` for arm points, while `M >= 6`. So the K59 opening move —
+start from a maximising pair and use the root — is unavailable here, and there is
+no maximising-pair analogue since the mixed cap is 12 while `M >= 6`.
