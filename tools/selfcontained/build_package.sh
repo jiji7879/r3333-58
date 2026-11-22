@@ -31,7 +31,7 @@ print("re-pinned the example manifest to the patched runner")
 PIN
 cp "$KISSAT" "$PKG/bin/kissat"; cp "$DRAT" "$PKG/bin/drat-trim"; chmod +x "$PKG/bin"/*
 cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,verify_parallel.py,retry_status.py,find_unpublished.py,manifest_parallel.py,cover_evidence_full_root.patch} "$PKG/tools/"
-cp "$HERE/k58.sh" "$HERE/k58-batch.sh" "$HERE/README.md" "$PKG/"
+cp "$HERE/k58.sh" "$HERE/k58-batch.sh" "$HERE/patch_batch_only_small.py" "$HERE/README.md" "$PKG/"
 for v in 3.10 3.11 3.12 3.13; do
   python3 -m pip download python-sat==1.9.dev22 -d "$PKG/wheels" --no-deps -q \
     --only-binary=:all: --python-version $v --implementation cp --abi cp${v/./} \
