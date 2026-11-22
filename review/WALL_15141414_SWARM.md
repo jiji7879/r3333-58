@@ -763,3 +763,17 @@ the conclusion and selects the same roots — so the ten-partner rung cannot be
 extended beyond the balanced case this way. Checked for slack on real objects:
 true at all 48 roots of `n48_z4z4_f0.col`, and false together with the conclusion
 at 36 roots of `k49_from_n48_m5.col` (vertex 48 has `d_0 = 12`).
+
+**The ladder's remaining rungs, each knocked down with a witness.** After the
+pair level was shown satisfiable, the next two sound additions were tested and
+both are vacuous as exclusions: the **copy bound** (at most two copies of a word,
+hence at most 16 extremal slots) costs nothing because every known witness
+carries 42 *distinct* words (5/5/6 extremal, and the first hits `455/455/455` on
+the overlap identity exactly), so pair level + copy bound + `(I_f)` is jointly
+feasible. The frontier is then the full cap set — per-slot `#1+#2+#3 <= 38`,
+forcing at least three colour-0 edges per slot and three disjoint partners per
+5-set. Measured: none of 55,022 random balanced designs qualifies, **thirteen**
+designs admit no cap-satisfying completion (one by hand certificate, twelve by
+MIP/Kissat), and the design-free instance is UNKNOWN at 460 s. Thirteen out of
+55,022 is the honest size of that constraint, and the hand certificate
+(`e_0 >= 462` against `<= 231`) is about a single design, not the class.
