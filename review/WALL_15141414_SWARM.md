@@ -1191,3 +1191,32 @@ endpoints to have equal non-0 degrees, which the branch pins for no pair). And
 outside vertices and `0` for arm points, while `M >= 6`. So the K59 opening move —
 start from a maximising pair and use the root — is unavailable here, and there is
 no maximising-pair analogue since the mixed cap is 12 while `M >= 6`.
+
+## 27. A third external package: a narrow exclusion, and a Hall consequence that is inert here
+
+`K58_companion_pentagon_transfer.zip` (unpacked at `.scratch/pent/`) proves one
+**new, narrow exclusion**: in the original `T` row `baa4e014…`, with its marked
+14-arm `B` fixed to Wesley row 1 and internal catalogue colour 2 representing
+physical colour 0, **no pentagon in `B` can be the colour-0 support of five `A`
+senders** — so the pentagon `F = {5,6,7,8,11}` occurs only once or three times.
+The five-copy family is excluded through eight case analyses (two palettes × two
+path bijections × the two possible four-supports), at order 31 for the fully
+uniform child and at order 34/35 when only `B` is uniform. Its verifier passes
+here: 12 good `K_30` matrices and two good `K_34` controls against the original
+signed facts, and all 16 regenerated inputs with their compact DRAT proofs
+verified. Scope is one orientation of one row, and the package says so.
+
+It also *independently corrects* "ten senders are deficient per arm" to **five**,
+which is what §22 recorded, and it confirms §26's heredity caveat from the other
+side: deleting two vertices from the 12-arm turns a 4-support into a 2-support and
+a 5-support into a 3-support, so the ten-pentagon/five-path law cannot be imposed
+on a truncated arm.
+
+**Its transferable consequence is a Hall inequality** for colour-0 independent
+15-sets `I`, `J` and `S ⊆ J \ I`: `|N_0(S) ∩ I| >= |S| - 1` — the K58 form of the
+K59 exchange argument with one unit of slack. Tested here on the pair-level
+witness `witnesses/p58.wit`: with `I = A` and 300 random colour-0-independent
+15-subsets `J` of `X`, checking all subsets of size at most four and the full set,
+**no violation occurs**. So the inequality does not eliminate that witness, which
+is the honest answer to the package's own open question for at least one of the
+five.
