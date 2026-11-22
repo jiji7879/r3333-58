@@ -1097,3 +1097,37 @@ being host-level (§22); (3) **succeeds and improves a kernel-checked lemma**,
 `|armFar| <= 4` rather than 5; (4) gives the root-axis table only, margins
 `(15,13,14,14)`; (5) succeeds verbatim, `(3,5,5)/(4,4,5)` on all 115 rows;
 (6) fails — the 14-core exchange is deficiency-conditional.
+
+## 24. The corrected two-arm instance: measured, undecided, and why it is hard
+
+The corrected instance — columns `<= 14`, colour 0 allowed inside arms, root colour
+excluded, good arm triangles — encoded from the definitions by an independent
+encoder (15,190 variables, 55,033 clauses, family census matching), verified, and
+anchored by `14+4` and `14+12` SAT witnesses. Capped portfolio, all UNKNOWN with
+exact conflicts:
+
+| run | conflicts | seconds |
+| --- | ---: | ---: |
+| CaDiCaL 2.1.2, plain | 4,423,856 | 800 |
+| Kissat 4.0.4, plain | 3,192,857 | 420 |
+| + sound `columns >= 9` | 4,439,025 | 700 |
+| + blocked sets and word sorting | 1,680,575 | 420 |
+| one arm pinned from the `14+12` model | — | 200 |
+
+The `>= 9` cap leaves the conflict rate unchanged, so that family is inert for
+this instance.
+
+**Why `14+14` is harder than one arm, structurally.** Each colour graph of the
+`T^-` template has `alpha = 5` with exactly eleven maximum independent 5-sets, so a
+word with an empty ordinary part has its other two parts of size 5 and there are
+only **18 extremal words**. Three copies of one word force its empty colour on all
+three pairs, so **copies <= 2 per arm**, and an all-extremal arm cannot fill 14
+slots — **every 14-slot arm needs generic words** — while cross-arm pairs are free
+exactly when a word is extremal. That is the mechanism behind the ladder's shape.
+
+**An observation to convert into a fact.** Prescribing the arm's colouring (the
+template class plus thirty random valid recolourings) killed the single-arm search
+every time, read as evidence that most of the 115 arm classes are unrealisable. If
+true, class-branching collapses from 300 branches to a handful; the test is to
+canonicalise the one-arm witness's arm against the 115-row catalogue and then try
+a handful of other classes.
