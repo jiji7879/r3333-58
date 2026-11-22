@@ -533,3 +533,22 @@ largest repeated type occurs 14 times and its slots are pairwise forced to a
 single colour, so three of them would form a monochromatic triangle. That is the
 obstruction in one line: the type level is feasible, and the colouring of the 42
 is not.
+
+**Item 3 of the first bundle, audited here.** All 108 stored refutations (92 for
+the 17-vertex theorem, 10 local 18/19 statements, 6 pair bounds) replay against
+CNFs regenerated from the bundle's encoders: 519,805 steps, 338,587 lemmas, all
+RUP, no RAT, empty clause RUP, `verified=108 failed=0`. The check ignores
+deletions and verifies every step as RUP — sound because RUP is monotone in the
+clause set, and **stronger** than `drat-trim`, which checks only the backward
+core from the empty clause (a strict all-deletions reading fails on all 108).
+An independent encoder confirms the same statements with controls: coverage at
+17 and at 18 UNSAT, 19 excluded, 17 SAT unblocked, no failing anchors, in both
+templates; and it reproduces the word count (18 words, six per missing colour),
+the 1-(15,5,2) design, the five anchor zero-hits and the 48-vertex calibration.
+
+**One step of item 3 is vacuous and one is real.** "The uniform branch requires
+at least 26 distinct all-four-colour words" is no constraint: about 254,610 (T)
+and 254,070 (U) such words exist, so 26 distinct ones are available many times
+over. What the verified argument actually gives is a **count**: at most 16 of
+the 42 vertices can have a missing ordinary colour — equivalently at least 26
+carry all four parts non-empty. That is the statement to carry forward.
