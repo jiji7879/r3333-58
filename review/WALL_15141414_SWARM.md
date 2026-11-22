@@ -1295,3 +1295,28 @@ and paper bounds are *attained*, not dodged.
 the saturation families. The obstruction has to use `M_1, M_2, M_3` on the 42, the
 pair colours, or the three arms' internal 3-colourings — which is exactly what
 `(14,12) + XT` carries and what the two-arm and pair-level objects did not.
+
+## 31. The 26-vertex object audited exact, and `XT` certified non-vacuous
+
+**Exactness, checked clause by clause** *(reproduced here by running the auditor,
+4.7 s)*. `(14,12) + XT` regenerates bit-identically in both templates
+(sha256 `d00ddc2a…`, `143004787…`); all 46,752 clauses fall into nine clause
+families and two cardinality families with zero strays; its 97 cardinality
+clusters are rebuilt from the auxiliary graph alone and their bounds **measured by
+SAT** — 26 × exactly five of fifteen word cells, 15 × four-or-five of the 14-arm
+slots, 15 × at most five of the 12 slots. Crucially **no global cap** exists in
+the encoding, so the four `ERRATA.md` failure modes are absent by construction, and
+there is no empty, unit, tautological or duplicate clause. The object is what it
+claims to be.
+
+**`XT` is not decorative.** Pinning the recorded `14+12` witness's words *without*
+cross-arm triangle-freeness is SAT; with it, UNSAT, and the DRAT replays
+`s VERIFIED`. So the cross-arm family kills a witness that satisfies every other
+family — the first hard evidence that it carries content rather than being implied.
+
+**Three corrections, all taken.** (i) The `U^-` twin **already exists**
+(`smwrfgma5/m3/cnf/u_14_12_xt.cnf`) and audits identically — my statement that
+nobody had built it was wrong. (ii) The `294` in `sum (n_{aa'} - 4)^2 >= 294` is
+derived in `smwridmzp/m3` and had been left uncited here. (iii) The "ladder of
+weak instances" reading is wrong: the **sound** ladder is SAT at `14+12`, `14+13`
+and `14+14`, the published `.wit` files passing an independent checker.

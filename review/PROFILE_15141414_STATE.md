@@ -225,7 +225,13 @@ vertex except the per-arm degree profile, which is indexed by arm size — UNSAT
 there with the sound families closes the uniform fully-sending branch. The object
 is `p cnf 7574 46752`; with the words fixed its pair stage is 531 variables and
 solves in under a second, so it is a cube-and-conquer over two or three word
-choices on the 12-arm.
+choices on the 12-arm. It has now been **audited exact** (bit-identical
+regeneration in both templates, all 46,752 clauses classified with no strays, the
+97 cardinality clusters rebuilt from the auxiliary graph and their bounds measured
+by SAT, and no global cap, so none of the errata failure modes is present), and
+`XT` is **certified non-vacuous**: pinning the recorded `14+12` witness's words
+without it is SAT, with it UNSAT and the DRAT replays. A `U^-` twin exists
+(`smwrfgma5/m3/cnf/u_14_12_xt.cnf`) and audits identically.
 
 **A tool.** The two-root spoke table at `n = 58`: 56 entries, corner
 `|N_0(u) ∩ N_0(v)|`, diagonal zero, and the off-diagonal cap `T[i][l] <= 5` from
