@@ -711,3 +711,36 @@ extremal slots, and `d_c <= 16`. No known witness survives them; the exact joint
 CNF is UNKNOWN at 460 s. The copy bound alone is the next thing to decide,
 because it is proved and it is small: a 42-slot assignment over the 254,628 words
 with per-word multiplicity bounds and fifteen column sums.
+
+## 14. Correction: the all-tickets-returned bound is 30, not 16
+
+A hand-derived section of the external note claimed that if every ticket is
+returned (call it **(R)**: an edge is critical at one end iff at the other), then
+each nonempty critical class `C_c` satisfies `|C_c| >= 30`. **I called that wrong
+and the note right.** The argument:
+
+* if `u in C_c` and `v in N_c(u)` then `v in C_c` (u's ticket to v is returned),
+  so `N_c(u) ⊆ C_c` — kernel-checked as `K58.nbrC_subset_Crit`;
+* `N_c(u)` is c-independent, so `v ∉ N_c(u)`, and `N_c(u) ∩ N_c(v)` is empty (a
+  common point would make a c-triangle with `uv`);
+* both sets have at least 15 points and both lie in `C_c`, so `|C_c| >= 30`.
+
+It is sharp: `|C_c| = 30` forces every c-degree on `C_c` to be 15 and the
+colour-c graph on `C_c` to be exactly `K_{15,15}` (`K58.crit_thirty_structure`,
+kernel-checked), and the bound is attained by the valid 30-vertex colouring
+`k30_control_C15x15.col`. Without triangle-freeness the honest bound is 16.
+
+**The other half of the note's claim is refuted.** "One colour is critical at
+every vertex" does *not* follow from (R): `k31_no_global_colour.col` is a valid
+31-vertex colouring with `(R)`, `|C_0| = 30`, `C_1 = C_2 = C_3 = empty`, and its
+31st vertex in no critical class at all.
+
+**But it does follow inside the fully sending uniform branch**, where (R) forces
+colour 0 to be critical at *all* 58 vertices
+(`K58.uniform_branch_zero_critical`, kernel-checked). That is the useful form: in
+the uniform branch `d_0(x) = m(x) + #(colour-0 neighbours of x in X) = 5 + ...`,
+so every one of the 42 words needs **at least ten partners whose 0-part is
+disjoint from its own** (colour-0 edges obey the pair rule). Pair-level solutions
+have minimum one. The pair level plus that condition is open at 100-590 s — the
+next rung worth trying, and it is conditional on (R), which is the balanced case
+and not a theorem.
