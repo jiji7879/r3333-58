@@ -129,3 +129,16 @@ pinned words it is UNKNOWN at 300 s.
 **Fix:** state every cardinality bound with the arm it applies to and check the
 sum against the coverage requirement before running. A bound that makes the sum
 impossible is a defect, not a hard instance.
+
+## "FIX plus slot sorting" is not a restriction
+
+A two-arm instance was given 5 s "UNSAT" by adding, alongside a fixed slot
+assignment, an ordering constraint on slots. Sorting slots is a symmetry of the
+*words*, not of the pinned structure: the pinned structure names specific arm
+positions, so the ordering removes models rather than orbits. The instance
+returned UNSAT for the wrong reason and the result was withdrawn.
+
+**Fix:** any symmetry break must be stated as an action on the *whole* pinned
+structure (positions, colours, template) and checked at clause level, as was done
+for the twin-code lex order after that produced 381 void refutations. Sorting
+words or slots across a pin is not such an action.

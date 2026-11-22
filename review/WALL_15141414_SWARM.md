@@ -946,3 +946,29 @@ carrying the sound caps is **`(14,12)+XT` at 26 vertices**, not 28. The heredity
 statement has to be made with care — pair conditions, part independence,
 root-colour exclusion, arm triangles and `<= 14` columns are hereditary, while the
 per-arm degree profile changes when an arm shrinks and must be indexed by arm size.
+
+## 19. The two-arm ladder, with the correct coverage bound
+
+`(14, nD)` is **SAT for every `nD` from 1 to 6** (each witness re-verified from
+its words by a second program; 2.52 M kissat conflicts at `nD = 6`), and UNKNOWN
+for `nD = 7..14` at 180-600 s on two solvers. **Monotonicity**: a model at `nD`
+deletes to one at `nD-1`, so **UNSAT at any rung closes the uniform
+fully-sending branch** — the search should aim at the smallest undecided rung,
+never at `14+14`.
+
+**A correction to §18.** The earlier two-arm runs used `coverage <= 14` over the
+28 vertices; the branch-implied bound is per arm and much tighter, because a
+truncated arm's vertices can only be reached by the supports in the arms that are
+present. With the correct bound, `14+12` **plus arm triangles is UNKNOWN at
+240 s**, where the record read SAT at 28.8 s — so "the turn is between 12 and 14"
+was an artefact of the loose bound, and a model with coverage 1..7 per arm vertex
+and 1,004 monochromatic triangles passing the pair conditions exactly shows how
+much it was letting through.
+
+Families audited one by one (five 0s; part independence; pair colour and
+`M_c`-disjointness; per-arm coverage; triangles inside `X`; at most 16 extremal;
+six-point blocked sets; `R(3,3,3)` arm saturation) with zero violations on 2,542
+words and 116 real roots. One more artefact withdrawn before it was believed: a
+5 s "UNSAT" that came from treating "FIX plus slot sorting" as a restriction when
+it is not — the fourth over-constrained artefact in this campaign, third caught in
+time (`review/ERRATA.md`).
