@@ -1270,3 +1270,28 @@ local obstruction is three words with one singleton pair colour** (thirty
 infeasible subsets at size 3, example `(0,1,3)`). That three-word certificate is
 the gluing obstruction at the smallest scale that exists, and it is what the round
 asked for — a small refutation instead of a timeout.
+
+## 30. The colour-0 layer is closed *with* the saturation families
+
+**Lemma (block form).** For `a in A`, `N_0(a) = {r} ⊔ T_a` where
+`T_a = {x : a in M_0(x)}` and `|T_a| = 14`. Hence
+`armFar(N_0(a), 0) = Z_a := {y in X \ T_a : no 0-edge y-T_a}`, and
+`armFar(T_a, 0) = {r} ⊔ (A \ V_a) ⊔ Z_a` with `V_a` the union of the blocks through
+`T_a`. The two bounds therefore read `|Z_a| <= 2` and `|A \ V_a| + |Z_a| <= 4`
+(`<= 3` with the paper 14-bound), with `Z_a` a 0-clique — checkable against the
+block design rather than abstractly.
+
+**Decision.** The relaxation carrying only colour-0 facts — 42 blocks of size 5,
+coverage 14 per arm point, the per-arm `(5,5,4)` profile, 0-edges only between
+disjoint blocks, a triangle-free 0-graph, `<= 11` and `<= 5` per arm degrees, and
+**all three saturation families** — is **SAT**. Two verified witnesses
+(`obj_kernel.txt`, `obj_sharp.txt`), kissat SAT on `p cnf 7721 24117` and
+`5424 18590`. *Checked here with an independent parser:* all 42 blocks of size 5,
+coverage exactly 14, 0-edges only across disjoint blocks, zero 0-triangles,
+degrees 1–8, and **`max |Z_a| = 2` with `max |A \ V_a| + |Z_a| = 4`** — the kernel
+and paper bounds are *attained*, not dodged.
+
+**Consequence.** No proof from colour-0 data alone can close the branch, even with
+the saturation families. The obstruction has to use `M_1, M_2, M_3` on the 42, the
+pair colours, or the three arms' internal 3-colourings — which is exactly what
+`(14,12) + XT` carries and what the two-arm and pair-level objects did not.
