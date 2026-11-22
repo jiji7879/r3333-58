@@ -1248,6 +1248,20 @@ witness `witnesses/p58.wit`: with `I = A` and 300 random colour-0-independent
 is the honest answer to the package's own open question for at least one of the
 five.
 
+> **Corrected (2026-11-22, member m7, re-run by the coordinator).** Those two
+> sentences are wrong, and the test could not have found the violation. With
+> `I = A` every word carries exactly five 0s, so `|N_0(S) ∩ A| >= 5 > |S| - 1` for
+> `|S| <= 4`, and `|S| = 15 = J` usually covers `A`: the violation lives at
+> `5 <= |S| <= 14`, which was not tested. Exhaustively, the margin
+> `|S| - 1 - |N_0(S) ∩ I|` has the closed form `min(alpha_0, 30) - 16`, and the
+> five pair-level witnesses have `alpha(G_0) = 34, 41, 36, 30, 30`: **all five
+> violate it at margin 14**, and at margin 2 even with `I = A` fixed. Hall is also
+> *equivalent* to `alpha(G_0) <= 16` — the exchange set `(I \ N_0(S)) ∪ S` is
+> colour-0 independent — so it is implied by the X-internal triangle family the
+> pair level omits, and it sharpens nothing. The package's transferable
+> consequence is inert; recorded as a closed route in state §5. Details:
+> `results/local-obstruction/HALL.md`.
+
 ## 28. The balanced `(6,4,4,4)` plan: audited, probed, and out of reach
 
 The plan is the cheapest arithmetic route to `H <= 14`: `sum(t-1) = 5 + 3*3 = 14 < 15
@@ -1444,3 +1458,53 @@ check used a hand-rolled triangle rule that fired one-sidedly and "refuted" all
 381 rows in 0.8 s; it was killed by a real solver run (`host + pin` UNKNOWN at
 60 s), not by re-reading the code. That is `ERRATA.md`'s failure mode on the
 proof side, and it is why the check now carries controls.
+
+## 34. The local level decided: Hall is inert, and three words already kill an arm
+
+Member m7, direction d2; verdict **accepted**, third of `smwrmwgf7`. I re-ran
+`sh rerun.sh` in its directory (37 s, `set -e`, ending "DONE: all certificates
+verified") and checked both arguments by hand. Artefacts now at
+`results/local-obstruction/`.
+
+**The Hall inequality is a theorem and carries nothing.** For colour-0 independent
+`I` (`|I| = 15`), `J` and `S ⊆ J \ I`, the exchange set `(I \ N_0(S)) ∪ S` is
+colour-0 independent, since `S ⊆ J` is and nothing of `S` touches a survivor of
+`I`; its size is `15 - |N_0(S) ∩ I| + |S| <= alpha(G_0) <= 16`, because 17 points
+with no colour-0 edge would be a triangle-free 3-colouring of `K_17`. Conversely
+`alpha_0 >= 17` gives a violation, so **Hall ⟺ alpha(G_0) <= 16**. The exhaustive
+margin `|S| - 1 - |N_0(S) ∩ I|` has the closed form `min(alpha_0, 30) - 16`,
+attained. Since `alpha_0 <= 16` is implied by the X-internal triangle family — the
+family the pair level deliberately omits — Hall cannot sharpen any *sound*
+relaxation. The pentagon package's transferable consequence is **inert**.
+
+Measured: `alpha(G_0) = 34, 41, 36, 30, 30` for `pair58_Tminus` (= `L_58`),
+`pair58_Tminus_recoloured`, `wit_big`, `p58`, `p58_cc`, each re-decided by a SAT
+solver at `alpha` (SAT) and `alpha + 1` (UNSAT) with an assertion per row. All five
+witnesses violate Hall at margin 14, and at margin 2 even with `I = A` fixed. §27's
+"no violation occurs" was structurally blind: with `I = A` every word has exactly
+five 0s, so `|S| <= 4` cannot violate and `|S| = 15 = J` usually covers `A` —
+the violation lives at `5 <= |S| <= 14`. Corrected in §27.
+
+**The three-word obstruction, as a lemma.** With `M_f(x)` the `f`-part of `x`'s
+word on an arm of root colour `k`, put `L(x,y) = {f != k : M_f(x) ∩ M_f(y) = ∅}`.
+Then `k ∉ L` (`x, y` lie in one root class) and `f ∉ L` whenever the intersection
+is nonempty (`K58.model_pair_disjoint`). So a triple with `L = L = L = {c}` forces
+all three edges of that triangle to `c`: the arm is unrealisable, and the triple is
+an inclusion-minimal infeasible sub-arm. Template-free; the template enters only
+through word admissibility.
+
+Counted exhaustively over all `C(14,3) = 364` triples per arm: **661
+inclusion-minimal infeasible triples over the 15 arms of the five order-58
+pair-level witnesses, 0 dead pairs, 15 certificates** re-derived from the `.wit`
+files, plus an independent arm-module CSP that reproduces `min infeasible
+sub-arm = 3` with identical counts and is validated in the dangerous direction (13
+arms whose own colouring is legal come back SAT, 0 mismatches). So every one of the
+five pair-level witnesses dies in the arm module at size 3, not only in the
+2,562 monochromatic triangles inside `X` that were already known. Not complete: the
+minimal local obstruction has spectrum `{3, 5, 6}` in these objects — `design_1`
+arm 1 needs 6 (`R(3,3) = 6` again), `L_50` arm 3 needs 5.
+
+**What it is not.** No DRAT was shipped, and none was needed: a three-variable
+module needs no solver to refute, and a general lemma is stronger evidence than one
+instance. It closes the local question and nothing above it — the exact standard of
+this campaign.
