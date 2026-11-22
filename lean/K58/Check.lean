@@ -3,6 +3,7 @@ import K58.Corollaries
 import K58.ExchangeResidue
 import K58.Link14
 import K58.M7
+import K58.Design
 import K58.Model
 import K58.Selection
 import K58.Ticket
@@ -76,3 +77,10 @@ import K58.TwoArm
 #print axioms K58.Residue.exchange_sixteen
 #print axioms K58.Residue.exchange_fifteen
 #print axioms K58.Residue.residue_arms
+-- Target 5 (design layer), swarm smwrzh71x member m6, lean/K58/Design.lean
+#print axioms K58.le_choose_two_add_one
+#print axioms K58.collision_engine_add_one
+#print axioms K58.rx_lower_refined
+#print axioms K58.design_forces_light
+#print axioms K58.trace_codegree_six
+#print axioms K58.design_not_realisable

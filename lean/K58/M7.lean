@@ -41,7 +41,6 @@ stated once and used at `(r,x)`, at a codegree-`6` pair, and in the `525` count.
 import Mathlib.Tactic
 import K58.Basic
 import K58.Mixture
-import K58.Corollaries
 import K58.DegreeCap
 import K58.Ticket
 
