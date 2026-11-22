@@ -1220,3 +1220,28 @@ witness `witnesses/p58.wit`: with `I = A` and 300 random colour-0-independent
 **no violation occurs**. So the inequality does not eliminate that witness, which
 is the honest answer to the package's own open question for at least one of the
 five.
+
+## 28. The balanced `(6,4,4,4)` plan: audited, probed, and out of reach
+
+The plan is the cheapest arithmetic route to `H <= 14`: `sum(t-1) = 5 + 3*3 = 14 < 15
+= w`, so refusing "arm `c` has at least `t_c` senders" at all four arms closes the
+profile **at every template kind with no case split**, at 386 rows (313 `T---`, 73
+`U---`).
+
+**Audited** (all 386 rows): thresholds equal to the plan's arm thresholds (6 on the
+15-arm, 4 on the 14-arms), 386 distinct case identities, and every rebuilt
+constraint set free of empty clauses and contradictory pinned units — the
+`dense.marked_threshold` defect of `ERRATA.md` does not occur in this catalogue.
+Sizes: arm-1 cases 11,933 variables / 145,712 clauses (134,995 base + 303 pinned +
+10,414 extra); arm-0 cases 12,159 / 146,170.
+
+**Probed** (kissat 4.0.4, 120 s, one case per stratum of kinds × arm × marked kind
+× marked size): **16 of 16 OPEN at 1.21-1.49 M conflicts each**, no stratum near a
+decision, and the 15-arm `t = 6` cases behaving like the 14-arm `t = 4` ones. A full
+sweep at that budget is about 6.4 hours and closes nothing; deciding a case needs
+roughly two orders of magnitude more.
+
+**So plan choice is not the bottleneck.** With the frozen plan at 0 of 9 at 300 s
+and 0 of 42 at 60 s, every admissible threshold vector at this profile is out of
+CDCL's reach at these budgets. The `(6,4,4,4)` hope — a uniform, kind-free statement
+set — is measured and dead, and the record should stop listing it as a live option.
