@@ -1941,3 +1941,42 @@ mixed-triple cuts (record the three words of every forced triple and forbid the
 combination), and compare that against the eager triangle encoding at 26 slots.
 The four committed witnesses are the first test: no fixed-edge search and no
 one-or-two-word repair can extend them.
+
+## 43. The design case dies in the kernel, and the trace threshold drops to 12
+
+Member m6, direction d4 of `smwrzh71x`; verdict **accepted**. Artefacts:
+`lean/K58/Design.lean`, and `.ultramath/smwrzh71x/m6/{PROOF.md,verify_design.py,verify_graph.py}`.
+
+**The result.** Under the branch and (R), the 42 traces `P_x = N_0(x) ∩ A` are
+**not** the blocks of a `2-(15,5,4)` design — kernel-checked as
+`K58.design_not_realisable`. It comes with a sharper *local* statement, which is
+the part worth reusing: **any outside vertex with `d_0(x) >= 12` has a pair of
+trace points at codegree at least 6** (`K58.trace_codegree_six`), and conversely
+the design case forces `d_0(x) <= 11` at every outside vertex
+(`K58.design_forces_light`). Under (R) every vertex has `d_0 >= 15`, so the case
+is impossible eleven degrees before it would have needed the global bound.
+
+**The mechanism is a second, cheaper count.** The collision count `C_x` was known
+to satisfy `C_x >= 3 d_0(x) - 8` (from `C(k,2) >= 2k - 3`). Summing the pointwise
+`C(k,2) >= k - 1` instead gives `C_x >= 65 - |R_x| = 19 + d_0(x)`, and the true
+minimum over compositions of 65 into `|R_x| = 46 - d_0(x)` parts of size at most 5
+is exactly `max(3 d_0(x) - 8, 19 + d_0(x))`. I re-ran that DP for every
+`d_0 = 5..16`: the two linear pieces cross at `d_0 = 13/14` and the formula matches
+the DP value at all twelve points. With `C_x <= 10·(K - 2)` at `K = 5` that is
+`d_0(x) <= 11`.
+
+**Verified here.** `bash lean/build.sh` green in 65 s with `Design.lean` in the
+build, `Check.lean` at 73 declarations, and `design_not_realisable`,
+`design_forces_light`, `trace_codegree_six`, `rx_lower_refined`,
+`collision_engine_add_one`, `le_choose_two_add_one` all axiom-clean
+(`le_choose_two_add_one` needs only `[propext, Quot.sound]`). The statements are
+the right ones, with the branch hypotheses explicit and no weakening. Its
+`verify_graph.py` re-checks **2,130 traces** over the real `n48`, `k49` and `k50`
+colourings against both double counts and the inequality, all passing with slack
+24-27.
+
+**Relation to §21's `M >= 7`.** The two results are independent routes to "the
+design case is empty": §42 reaches it through `M >= 7` plus the 525 identity,
+this one through a single vertex and a per-pair bound of 5. They agree, and the
+kernel now carries both. Neither closes a case, and the report says so: nothing
+here touches the `some-six` child, and no extremum is attained.
