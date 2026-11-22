@@ -552,3 +552,32 @@ and 254,070 (U) such words exist, so 26 distinct ones are available many times
 over. What the verified argument actually gives is a **count**: at most 16 of
 the 42 vertices can have a missing ordinary colour — equivalently at least 26
 carry all four parts non-empty. That is the statement to carry forward.
+
+**The uniform child is pinned, and one correlation identity is exact.** In the
+uniform child (`m(x) <= 5` for all 42) the case forces `d_0(a) >= 15` for the
+fifteen arm vertices, and the kernel interface identity then closes both bounds
+at once: `d_0(a) = 15` for every `a in A` **and** `m(x) = 5` every outside
+vertex. Nothing at the interface is slack. Consequences: each `N_0(a)` is a
+classified template with 35 edges per ordinary colour, one deficit arm per
+sender, five deficient senders per arm, coverage exactly five per arm vertex.
+
+A new identity decomposes the pairwise overlap of the colour-0 parts by
+*colour*: for each colour `f`,
+
+    sum over colour-f pairs {y,z} of X of |M_0(y) cap M_0(z)|
+      = sum_{a in A} e_f(N_0(a))  -  sum_{z in N_f(r) cap X} m_0(z)
+
+*(checked here independently: 1,758 identities across `n48_z4z4_f0.col`,
+`k49_from_n48_m5.col`, `k50_z4z4_m6.col`, zero failures).* In the uniform child
+it evaluates to `15*35 - 14*5 = 455` for each ordinary colour, `1365` in all —
+which also equals `15 * C(14,2)`, so the total is forced by the coverage and the
+colour split is the new content. It gives `>= 91` colour-`f` pairs with
+overlapping colour-0 parts; whether the design structure caps the overlap below
+1365 is open.
+
+**A claimed flaw in the split is itself wrong (checked).** A member reported
+that the bundle's some-six child forces `m(x) >= 6` for all 42 vertices. It does
+not: running the bundle's own `start.py` reproduces both child hashes
+(`8e0b49a9…` at-most-five, `f5324082…` some-six) and the some-six CNF contains
+exactly one clause built from all 42 flags — "at least one `m(x) >= 6`". The
+children are disjoint and exhaustive; the pilots are a valid split.
