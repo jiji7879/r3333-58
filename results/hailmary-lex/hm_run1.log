@@ -1,0 +1,12 @@
+{"case": 7, "profile": ["16", "14", "14", "13"], "units": 338, "twin_pairs": 100, "matching": 12}
+{"case": 7, "arm": "bare", "status": "UNKNOWN", "drat": 0, "vars": 6612, "clauses": 135333, "lex_pairs": 0}
+{"case": 7, "arm": "lex", "status": "UNKNOWN", "drat": 0, "vars": 8628, "clauses": 142737, "lex_pairs": 12}
+{"case": 8, "profile": ["16", "14", "14", "13"], "units": 338, "twin_pairs": 100, "matching": 12}
+{"case": 8, "arm": "bare", "status": "UNKNOWN", "drat": 0, "vars": 6612, "clauses": 135333, "lex_pairs": 0}
+{"case": 8, "arm": "lex", "status": "UNKNOWN", "drat": 0, "vars": 8628, "clauses": 142737, "lex_pairs": 12}
+{"case": 12, "profile": ["16", "14", "14", "13"], "units": 318, "twin_pairs": 142, "matching": 14}
+{"case": 12, "arm": "bare", "status": "UNKNOWN", "drat": 0, "vars": 6612, "clauses": 135313, "lex_pairs": 0}
+{"case": 12, "arm": "lex", "status": "UNKNOWN", "drat": 0, "vars": 8964, "clauses": 143951, "lex_pairs": 14}
+{"case": 20, "profile": ["16", "14", "14", "13"], "units": 318, "twin_pairs": 142, "matching": 14}
+{"case": 20, "arm": "bare", "status": "UNKNOWN", "drat": 0, "vars": 6612, "clauses": 135313, "lex_pairs": 0}
+{"case": 20, "arm": "lex", "status": "UNKNOWN", "drat": 0, "vars": 8964, "clauses": 143951, "lex_pairs": 14}
