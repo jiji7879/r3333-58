@@ -228,14 +228,35 @@ three arms' internal 3-colourings — and the classification does not reach a
 ## 10. The newest layer (rounds four to six)
 
 **Proved.** In the branch under all-tickets-returned, `M = max_{u != v}
-|N_0(u) ∩ N_0(v)| >= 7` *(paper proof, six elementary lemmas)*; the arm-pair
-codegrees sum to `C(15,2) + 42*C(5,2) = 525`, so the mean is exactly 5 and **some
-pair of senders shares at least six points**; the 42 blocks `N_0(x) ∩ A` are not a
-`2-(15,5,4)` design.
+|N_0(u) ∩ N_0(v)| >= 6` *(paper proof; corrected below — 7 is not proved)*. The
+arm-pair codegrees sum to `C(15,2) + 42*C(5,2) = 525`, so the mean is exactly 5;
+that identity alone gives `M >= 5`, and the `C_x` chain below is what reaches 6.
+*(An earlier revision read "so some pair of senders shares at least six points"
+off the mean, and "the 42 blocks `N_0(x) ∩ A` are not a `2-(15,5,4)` design" off
+an unsourced moment bound. Both are withdrawn: the mean is 5 and says nothing
+above 5, and the design case is arithmetically consistent — 42 blocks of size 5
+with every pair in 4 blocks — and it is exactly the case in which all 105 arm
+codegrees equal 5.)*
 
 **Improved lemma.** The independent-14 bound is **`|armFar| <= 4`**, not the 5 that
 is kernel-checked — the K59 argument transfers because its only size input is the
 exchange rule on 16-sets with a 15-core. So `armFar_le_five` is not tight.
+
+**Correction (2026-11-22, audited by m6 and re-derived here): `M >= 7` is not
+proved; `M >= 6` is.** The `C_x` chain is: for `x in X`, `P = N_0(x) ∩ A` has five
+points, each `p in P` has `13` further 0-neighbours in `X \ {x}`, so
+`sum_z d(z) = 65` over the 41 sites of `X \ {x}` with `d(z) <= 5`; the `d_0(x) - 5`
+sites that are 0-adjacent to `x` are forced to `d(z) = 0` (a common 0-neighbour
+`p in P` would close the 0-triangle `x, z, p`), and the sharp minimum is then
+`C_x >= 130 - 3(41 - (d_0(x) - 5)) = 3 d_0(x) - 8`; with `C_x <= 10(M - 2)` this
+gives `M >= 6` at `d_0(x) = 15` and `M >= 6` at the largest possible `d_0(x) = 16`
+(`40 <= 10(M-2)`), and `M >= 7` would need `C_x >= 51`, i.e. `d_0(x) >= 20`, which
+the degree cap forbids. So §21's inequality is right and its ceiling is 6, not 7;
+the final step of §21 ("the `M = 6` rigidity closes it") is **undelivered**, and
+§22's `sum (n_{aa'} - 4)^2 >= 294` has no derivation (the exact identity gives
+`sum n^2 >= 420` and nothing above it). `M >= 7` is open. Nothing else in the
+campaign needs 7: the spoke-table fact "the root is never in a maximising pair"
+uses `M >= 6`.
 
 **Type rigidity.** A pair of 15-classes sharing 14 points is necessarily the same
 template type; **mixed `T^-`/`U^-` classes overlap in at most 12**, and 12 is

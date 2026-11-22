@@ -1003,7 +1003,7 @@ per pair over 105 pairs. The rigidity constrains only a *cluster* — three or m
 senders pairwise overlapping in 13 or 14 points, which forces all of them to one
 type and pins them against each other through the two-completion structure.
 
-## 21. A proven codegree bound for the branch: `M >= 7`
+## 21. A codegree bound for the branch: `M >= 6` (`M >= 7` is not proved — see the correction)
 
 *(Paper proof, six elementary lemmas; not yet kernel-checked.)* In the uniform
 fully-sending branch **under all-tickets-returned `(R)`**, where colour 0 is
@@ -1019,6 +1019,22 @@ The `M = 6` rigidity closes it: an arm pair of codegree 6 would force
 `codegree(r,t) = 6` at five points `t` where it is `m(t) = 5`. Hence `M >= 7`,
 and `7 <= M <= 16` is not pinned.
 
+> **Correction (2026-11-22).** The inequality above is right and the conclusion is
+> not. The 41 sites are not free: the `d_0(x) - 5` of them that are 0-adjacent to
+> `x` are forced to `d(z) = 0`, since a common 0-neighbour `p in P` would close the
+> 0-triangle `x, z, p`; the sharp minimum is therefore `C_x >= 3 d_0(x) - 8`, as
+> written, and it evaluates to `37` at `d_0(x) = 15` and to `40` at the largest
+> admissible `d_0(x) = 16`. Both give `M >= 6`. `M >= 7` would need `C_x >= 51`,
+> i.e. `d_0(x) >= 20`, which the degree cap forbids. The last step — the `M = 6`
+> rigidity — is asserted and never derived, whether or not the sentence above is
+> true. So **`M >= 6` is what this section proves; `M >= 7` is open**, and the
+> moment bound in §22 (`sum (n_{aa'} - 4)^2 >= 294`) has no source: the exact
+> identity is `sum n^2 = 420 + sum_{{x,y}} C(|P_x ∩ P_y|, 2) >= 420`. Found by
+> member m6 (d1) auditing the chain, re-derived here independently (DP over the
+> site counts gives 24 for the unforced minimum, 37 at `d_0 = 15`, 40 at
+> `d_0 = 16`). Nothing in the campaign uses 7: the spoke-table fact "the root is
+> never in a maximising pair" needs `M >= 6`, which survives.
+
 **The companion count is the usable part.** With `n_{aa'} = |N_0(a) ∩ N_0(a') ∩ X|`
 for arm points `a != a'` (so `mu(a,a') = 1 + n_{aa'}`),
 `sum_{a<a'} n_{aa'} = 42 * C(5,2) = 420` over 105 pairs, so the mean of `mu` on the
@@ -1027,6 +1043,15 @@ arm is **exactly 5**. If every arm pair were at most 4 the total would be at mos
 `sum (n_{aa'} - 4)^2 >= 294` — hence **some pair of arm senders shares at least 6
 points**, and the 42 blocks `N_0(x) ∩ A` are **not** the blocks of a
 `2-(15,5,4)` design.
+
+> **Withdrawn (2026-11-22).** The `294` has no derivation: the exact identity is
+> `sum_{a<a'} n^2 = sum_{{x,y} in X} C(|P_x ∩ P_y|, 2)`, whose diagonal is
+> `42 * 10 = 420` and whose off-diagonal terms are non-negative, so it gives
+> `sum n^2 >= 420` and nothing above. The sentence above is also internally
+> confused (`= 5` then `<= 4`). The mean of 5 gives `M >= 5` and no more; the
+> `M >= 6` of §21 stands on the `C_x` chain, not on this. And the design case
+> survives: `42` blocks of size 5 with every pair in `4` blocks satisfies all the
+> parameters, and is exactly the case where all 105 arm codegrees equal 5.
 
 **Transfer ledger (what survives from K59 and what does not).** The `5+5+5` split
 of a critical neighbourhood across the three low arms weakens to `5+5+4` at arm 15;
@@ -1039,7 +1064,7 @@ templates).
 
 | transfer | verdict |
 | --- | --- |
-| (1) codegree lower bound | **`M >= 7`** (see §21); the K59 value 8 does not transfer. A member's claim of "`M >= 6` with `M = 6` exactly tight, all 105 sender pairs at codegree 6" is **arithmetically impossible**: the arm-pair codegrees sum to `C(15,2) + 42*C(5,2) = 525`, so all at six would give 630. The identity settles it against that claim. |
+| (1) codegree lower bound | **`M >= 6`** (see §21 and its correction; `7` is not proved); the K59 value 8 does not transfer. A member's claim of "`M >= 6` with `M = 6` exactly tight, all 105 sender pairs at codegree 6" is **arithmetically impossible**: the arm-pair codegrees sum to `C(15,2) + 42*C(5,2) = 525`, so all at six would give 630. The identity settles it against that claim. |
 | (2) mixed-template overlap | **fails as a transfer**: mixed `T^-`/`U^-` overlap is exactly **12** (`K16` T/U likewise), so K59's `<= 7` is host-level, not a template fact — confirmed independently from the exchange side (§20). Matching endpoint types cannot be forced. |
 | (3) independent-14 bound | **succeeds**: `|armFar| <= 4`, not the kernel's 5 — the K59 argument's only size input is the exchange rule on 16-sets with a 15-core, and `X + a + b = 16` with `16 = 3*5+1` gives `(5,5,5)`. So `armFar_le_five` is **not tight**; a bound of 4 replaces 5 in every model using it. Agrees with two independent external sources. |
 | (4) two-root `4x4` table | partial: margins `(15,13,14,14)` on the root axis only, entry `(0,0) = M >= 6`, `(1,1) = 0` trivial; no maximising-pair analogue. |
