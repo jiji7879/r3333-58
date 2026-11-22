@@ -109,3 +109,23 @@ empty clause (or whose charge exceeds the guard count), and treat that as an
 error rather than an UNSAT. It is the same class of failure as the twin-lex
 order that produced 381 void refutations: an over-constrained formula whose
 refutation proves nothing.
+
+## The global mixture cap in a three-arm instance
+
+A three-arm instance built for the gluing question capped
+`|N_0(a) ∩ (all arms)| <= 5`. Mixture (`|N_f(x) ∩ N_g(u)| <= 5`) holds **per
+arm** — L1 is stated for a fixed pair of colours, and the three arms of a root are
+three different colours — so the union can carry up to fifteen. In the
+three-arm instance each arm point must have fourteen colour-0 partners spread
+across the arms, so the global cap contradicts the branch by arithmetic alone: the
+formula is UNSAT for no reason, and the "0.01 s gluing refutation" it produced was
+an artefact.
+
+*Reproduced:* a builder matching the published file's sizes exactly under the
+global-cap reading gives 15,765 variables / 91,770 clauses for three arms and
+9,521 / 48,664 for two; the per-arm build is 14,535 / 89,040, and with the same
+pinned words it is UNKNOWN at 300 s.
+
+**Fix:** state every cardinality bound with the arm it applies to and check the
+sum against the coverage requirement before running. A bound that makes the sum
+impossible is a defect, not a hard instance.

@@ -913,3 +913,36 @@ what the ported classification is for.
 An encoder audit rounds this out: every clause and variable of the other member's
 regenerated CNF reconciled across four variants, the Sinz gadgets brute-forced,
 and the R1, R3-R6 clause families shown to be literally present, zero failures.
+
+## 18. Object 2 is dead, and object 1 moves to 26 vertices
+
+**The gluing core does not exist.** The "pinning a found arm refutes the three-arm
+instance in 0.01 s" result came from an **over-constrained CNF**: it capped
+`|N_0(a) ∩ (all arms)| <= 5`, but mixture (`|N_f(x) ∩ N_g(u)| <= 5`) holds *per
+arm*, and in the three-arm instance every arm point must have fourteen colour-0
+partners spread across them — so the cap contradicts the branch by arithmetic alone
+and the formula refutes itself. The file is reproduced byte for byte under the
+global-cap reading (15,765/91,770 for three arms, 9,521/48,664 for two), while the
+per-arm build is 14,535/89,040; with the same fourteen words pinned and the sound
+build, the instance is UNKNOWN at 300 s, and the stale file's cell-plus-cardinality
+subformula is already UNSAT with the p/e clauses deleted. Third over-constrained
+artefact in this campaign, second caught before being believed; recorded in
+`review/ERRATA.md`.
+
+**Two sound families were missing from the two-arm encoder**, and one of them
+moves the target.
+
+* **Per-arm coverage**: a 14-arm's fifteen supports have fixed sizes — ten 5s and
+  five 4s — since the sender's supports sum to its degree.
+* **Cross-arm triangle-freeness** (`XT`): triangles with one vertex in each arm.
+
+Measured: `(14,12)` with per-arm coverage is SAT (verified witness), those 26 words
+admit **no** `XT` colouring, `(14,12)+XT` is UNKNOWN at 400 s / 4.4 M conflicts,
+and the `(14,14)+XT` variants likewise.
+
+**And the sharpest consequence: the families are hereditary under deleting a
+vertex, so UNSAT at the smallest rung refutes the branch.** The smallest rung
+carrying the sound caps is **`(14,12)+XT` at 26 vertices**, not 28. The heredity
+statement has to be made with care — pair conditions, part independence,
+root-colour exclusion, arm triangles and `<= 14` columns are hereditary, while the
+per-arm degree profile changes when an arm shrinks and must be indexed by arm size.
