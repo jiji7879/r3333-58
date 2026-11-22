@@ -2057,3 +2057,40 @@ now carries the Ramsey-indexed statement instead.
 encodings. It is sound, it is strictly stronger than the pair rule, and the
 measurements say every witness violates it. That is the cheapest strengthening
 this round has produced.
+
+## 46. The ticket layer's binding constraint is pair compatibility, not the ticket count
+
+Member m7, direction d7 of `smwrzh71x`; verdict **accepted as a partial**.
+Artefacts: `.ultramath/smwrzh71x/m7/{REPORT.md,verify.py,wordcnf.py,cert/}`.
+
+**What is decided.** The design layer of the rung — `R1` (per-arm counts ≤ 5) and
+`R2` (coverage exactly 14) — is satisfiable at the full ticket strength: an
+explicit 42-block design with per-arm maximum 5, coverage 14 at all fifteen points
+and **minimum disjoint degree exactly 10** (maximum 16). I recomputed all three
+statistics from the file. So the design layer is not the obstruction, and §39's
+"the relaxation at half strength already defeats CDCL" was about the word layer,
+not this.
+
+**The reframing.** The binding family is `R3`: for every pair of slots with
+intersecting zero-parts, some ordinary colour `f` (not the arm's root colour) has
+disjoint `f`-parts. It fails at **`k = 0`** — no ticket constraint at all — on
+twelve uniformly sampled `R1+R2` designs, six spread designs with minimum degrees
+5, 5, 5, 6, 8, 10, eighteen at minimum degree 2/4/6, and eighty one-exchange
+neighbours of the best near-miss. Only **one** word-compatible design is known in
+the entire campaign: the zero-parts of m5's `k = 4` witness. So pushing `k` from 4
+to 5 to 10 climbs an axis the binding constraint does not live on.
+
+**A correction to an accepted result.** The two DRAT exclusions in
+`results/ticket-rung/` are on designs with coverage `[13 x4, 14 x7, 15 x4]` — eight
+points off 14 — so they violate `R2` and are not objects of the rung. Verified here
+from the two files. Their proofs stand; their relevance does not. That is the
+ERRATA pattern of using evidence from outside the family, and the first time this
+round it was found inside a result I had already accepted. `results/ticket-rung/README.md`
+now carries the correction.
+
+**Labelled as sampling.** "36/36 designs UNSAT" is a sample; the rung ranges over
+all designs and nothing here closes it. The localisation of one design's failure
+to an 11-slot minimal infeasible sub-object (7 of 15 pencils UNSAT while all arms
+are SAT) is one design's structure, and is the best lead for a next direction: the
+honest question is now whether *any* design besides m5's witness is
+word-compatible.

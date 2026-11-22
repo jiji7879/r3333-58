@@ -268,3 +268,20 @@ Board findings under this direction: `f1` (cube tree dead), `f2`+`f7` (heredity,
 the rung needs k=10. The relaxation at half strength already defeats CDCL, so the
 ticket layer is not a route that is nearly there — the reduction is worth keeping,
 the ladder as a route is not.
+
+## Correction (2026-11-22, swarm `smwrzh71x` m7, re-checked by the coordinator)
+
+The two DRAT exclusions above — `design_armed.json` (min disjoint degree 10) and
+`design_group_best.json` (9) — are exclusions of designs that **violate `R2`**:
+both have coverage `[13 x4, 14 x7, 15 x4]`, i.e. eight of the fifteen points are
+not covered exactly 14 times, so neither is an object of the rung the family
+ranges over (`d_0(a) = 15 = 1 + 14`). They are valid refutations of what they
+refute; they are not evidence about the ticket layer. Re-checked here from the
+two files: coverage and minimum disjoint degree both reproduce.
+
+Withdrawn with them: the impression that "spread design plus compatible words is
+not automatic" is evidence inside the family. It is not — and the design layer is
+in fact satisfiable at the full ticket strength: an explicit 42-block design with
+coverage exactly 14, per-arm maximum 5 and **minimum disjoint degree exactly 10**
+exists (`smwrzh71x/m7/design2_k10_s0.json`, recomputed here). The binding family
+is `R3`, pair compatibility, and it fails at `k = 0`, not at `k = 10`.
