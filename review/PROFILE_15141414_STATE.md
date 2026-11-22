@@ -63,6 +63,7 @@ axioms only `[propext, Classical.choice, Quot.sound]`, no `sorry`, no
 | charge 15 = all-critical | `armSenders r 0 = 15` iff every point of `N_0(r)` is 0-critical | `K58.armSenders_zero_eq_fifteen_iff` |
 | branch = degenerate balance | balance plus sender-free 14-arms gives `s_0 = 15` | `K58.branch_of_balanced_no_small_arm_sender` |
 | classification | every triangle-free 3-colouring of `K_15`/`K_16` is one of the two templates | `K58.Classified 15/16`, `lean/port/` |
+| **`M >= 7`** | in the branch under (R): every codegree of a 0-neighbourhood pair is at least 7, hence `7 <= M <= 16` | `K58.M_ge_seven` (with `M_ge_six`, `rigid_six`, `arm_codeg_le_five`, `arm_all_five`, `branch_deg_15_or_16`, `codeg_le_sixteen`), `lean/K58/M7.lean` |
 | **(R) closure** | under reciprocity every colour-`c` neighbour of a `c`-critical vertex is `c`-critical, `|C_c| >= 30`, and if every vertex has a critical `c`-neighbour then colour `c` is critical everywhere | `K58.nbrC_subset_Crit`, `K58.crit_card_ge_thirty`, `K58.crit_eq_univ`, `lean/K58/Ticket.lean` |
 | **the rung's soundness** | under (R) and the uniform branch, colour 0 is critical everywhere and every slot has at least ten colour-0 neighbours outside `A` | `K58.uniform_branch_zero_critical`, `K58.ten_outside`, `lean/K58/Ticket.lean` |
 

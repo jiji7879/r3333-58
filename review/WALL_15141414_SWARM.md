@@ -1050,6 +1050,14 @@ and `7 <= M <= 16` is not pinned.
 > machine-checked, and `armFar <= 4` remains the only one of the K59 transfers whose
 > statement has a compiled certificate. Nothing in the campaign uses more than
 > `M >= 6`, which is why the error was harmless to every model built so far.
+>
+> **Superseded by the kernel (2026-11-22, evening).** `K58.M_ge_seven` now proves
+> this in `lean/K58/M7.lean`, axiom-clean, and by a shorter route than the paper:
+> the pairs inside `N_0(x) ∩ N_0(r)` are *arm* pairs, so a per-pair bound `K`
+> applies to them, and `M <= 6` gives `K <= 5` by Lemma 5, which contradicts
+> `3 d_0(x) + 12 <= 10 K` at `d_0(x) = 15` (`57 <= 50`). Lemma 6 and the 525
+> identity are therefore not needed for Theorem 1 at all; the kernel keeps them
+> separately for Theorem 2. `7 <= M <= 16` is kernel-checked.
 
 **The companion count is the usable part.** With `n_{aa'} = |N_0(a) ∩ N_0(a') ∩ X|`
 for arm points `a != a'` (so `mu(a,a') = 1 + n_{aa'}`),
