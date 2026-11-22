@@ -1,0 +1,8 @@
+rupcheck: 44998/44998 UNSAT replayed (regenerated CNFs); fails=[]
+drat-trim cross-check on 100 random instances: 100 verified
+rupcheck: 44998/44998 UNSAT replayed (regenerated CNFs); fails=[]
+drat-trim cross-check on 100 random instances: 100 verified
+rupcheck: 44992/44992 UNSAT replayed (regenerated CNFs); fails=[]
+drat-trim cross-check on 100 random instances: 100 verified
+rupcheck: 43848/43848 UNSAT replayed (regenerated CNFs); fails=[]
+drat-trim cross-check on 100 random instances: 100 verified
