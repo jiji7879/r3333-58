@@ -50,3 +50,27 @@ profile is one of C(15,5) = 3,003 count vectors — the same 3,003 that
 `smwrmwgf7/m4` flagged as unused. If the residual is cheap for each profile, that
 is a finite cover of the arm layer; if it is not, the words carry information the
 profile does not.
+
+## Follow-up: the coverage profile is not enough
+
+The suggestion above was to cube on the arm's coverage profile — each position
+covered 4 or 5 times, ten 5s and five 4s, so C(15,5) = 3,003 count vectors. Tried
+and **it does not work**: pinning the profile as 15 exact-cardinality constraints
+over the arm's slots leaves the instance UNKNOWN at 90 s for the witness arm's own
+profile and for two random ones (`profile42.py`).
+
+| profile | result | wall |
+| --- | --- | ---: |
+| the `a_14_14.wit` arm's own profile | UNKNOWN | 90 s |
+| random (ten 5s, five 4s) | UNKNOWN | 90 s |
+| random (ten 5s, five 4s) | UNKNOWN | 90 s |
+
+So a cover of the arm layer cannot be organised by counts: the words carry
+information the profile does not, which is the same thing the 8-versus-14 pinning
+gradient said. Combined with m4's reach of 7-of-14 words pinned, that closes the
+"cover the arm by a small catalogue" hope in this form.
+
+What survives is the cheap certified cube: **any** fully pinned arm decides in
+about ten seconds with a replayable proof (`s VERIFIED`, 52 MB, 10.5 s). Those
+are real local exclusions, useful as lemmas if anyone finds a way to make the arm
+layer finite.
