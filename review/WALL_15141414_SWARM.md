@@ -1032,3 +1032,14 @@ K59's **diameter-two** step fails here, for the same reason the interface is
 saturable — `5+5+5 = 15` exactly; the **signature refinement does transfer** at
 orders 16 and 15 (SIG minus one cell, 8 types per colour, identical for both
 templates).
+
+## 22. The six K59 transfers, adjudicated
+
+| transfer | verdict |
+| --- | --- |
+| (1) codegree lower bound | **`M >= 7`** (see §21); the K59 value 8 does not transfer. A member's claim of "`M >= 6` with `M = 6` exactly tight, all 105 sender pairs at codegree 6" is **arithmetically impossible**: the arm-pair codegrees sum to `C(15,2) + 42*C(5,2) = 525`, so all at six would give 630. The identity settles it against that claim. |
+| (2) mixed-template overlap | **fails as a transfer**: mixed `T^-`/`U^-` overlap is exactly **12** (`K16` T/U likewise), so K59's `<= 7` is host-level, not a template fact — confirmed independently from the exchange side (§20). Matching endpoint types cannot be forced. |
+| (3) independent-14 bound | **succeeds**: `|armFar| <= 4`, not the kernel's 5 — the K59 argument's only size input is the exchange rule on 16-sets with a 15-core, and `X + a + b = 16` with `16 = 3*5+1` gives `(5,5,5)`. So `armFar_le_five` is **not tight**; a bound of 4 replaces 5 in every model using it. Agrees with two independent external sources. |
+| (4) two-root `4x4` table | partial: margins `(15,13,14,14)` on the root axis only, entry `(0,0) = M >= 6`, `(1,1) = 0` trivial; no maximising-pair analogue. |
+| (5) K14 degree profiles | **succeeds verbatim**: `(3,5,5)`/`(4,4,5)` is elementary (each colour degree at most 5, summing to 13), verified on all 115 archived rows, `16400 + 198120 = 214520` matching the upstream census. |
+| (6) exchange lemma | **fails as a transfer**: at a 14-core the exchange is deficiency-conditional `(5,5,4)`, and all 612 template-level common 14-cores have a disagreeing point. |
