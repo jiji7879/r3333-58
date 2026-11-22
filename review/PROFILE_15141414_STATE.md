@@ -224,8 +224,13 @@ cross-arm triangle-freeness, columns reaching 14), and the sharpest subsample of
 vertex except the per-arm degree profile, which is indexed by arm size — UNSAT
 there with the sound families closes the uniform fully-sending branch. The object
 is `p cnf 7574 46752`; with the words fixed its pair stage is 531 variables and
-solves in under a second, so it is a cube-and-conquer over two or three word
-choices on the 12-arm. It has now been **audited exact** (bit-identical
+solves in under a second. **It cannot be cubed on word choices** (measured
+exactly, both templates): the depth-1 pools are 17,846 and 31,731 admissible
+words, depth two is already `1.08e8` and `3.14e8` ordered pairs, depth three at
+least `1.1e8` and `2.7e8`, each added word multiplies by `6e3`–`1e4`, and all
+twelve free is `~1.5e56` multisets. The pool is not `Aut`-invariant, so orbital
+counting does not shrink it. Any factorisation has to cube on something else —
+pair colours, or the arm's isomorphism class. It has now been **audited exact** (bit-identical
 regeneration in both templates, all 46,752 clauses classified with no strays, the
 97 cardinality clusters rebuilt from the auxiliary graph and their bounds measured
 by SAT, and no global cap, so none of the errata failure modes is present), and

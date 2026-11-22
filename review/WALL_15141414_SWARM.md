@@ -1320,3 +1320,23 @@ nobody had built it was wrong. (ii) The `294` in `sum (n_{aa'} - 4)^2 >= 294` is
 derived in `smwridmzp/m3` and had been left uncited here. (iii) The "ladder of
 weak instances" reading is wrong: the **sound** ladder is SAT at `14+12`, `14+13`
 and `14+14`, the published `.wit` files passing an independent checker.
+
+## 32. The cube tree measured: that factorisation cannot decide the object
+
+The depth-1 pools are exact and small enough to enumerate — **17,846** words
+(`T^-`) and **31,731** (`U^-`) admissible for a 12-arm slot once the fourteen words
+of the 14-arm are pinned to a re-verified witness — and they were handed over as
+`pool_T.json` / `pool_U.json`. Everything above is out of reach: depth two is
+**107,616,189 / 314,130,596** compatible unordered pairs, depth three at least
+`1.1e8 / 2.7e8`, each added word multiplies by about `6e3 / 1e4`, and twelve free
+words is `1.55e56 / 1.51e56` multisets. The pair condition prunes only a third of
+word pairs, and the 531-variable pair stage exists only when all twenty-six words
+are fixed.
+
+So "cube on two or three word choices and leave the pair stage to the solver" —
+the coordinator's own suggestion — **cannot decide `(14,12) + XT`**. The
+measurement also settles a detail worth having: the pool is **not** `Aut`-invariant
+(17,315 and 17,987 orbits inside it), so orbital counting cannot shrink it. The
+instance itself remains UNKNOWN and its exactness audit is unchanged; what is dead
+is this factorisation, so any future cube has to be on pair colours or on the arm's
+isomorphism class rather than on words.
