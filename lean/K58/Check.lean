@@ -3,6 +3,7 @@ import K58.Corollaries
 import K58.Link14
 import K58.Model
 import K58.Selection
+import K58.Ticket
 import K58.Templates
 import K58.TwoArm
 
@@ -50,3 +51,7 @@ import K58.TwoArm
 #print axioms K58.TwoArm.two_arm_restriction
 #print axioms K58.TwoArm.coverage_le
 #print axioms K58.TwoArm.exact_degree
+#print axioms K58.uniform_branch_zero_critical
+#print axioms K58.ten_outside
+#print axioms K58.crit_card_ge_thirty
+#print axioms K58.crit_eq_univ

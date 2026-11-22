@@ -5,7 +5,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 export LEAN_PATH="$PWD:$LEAN_PATH"
-for f in CNF SequentialCounter AtLeast Basic TwoColour ThreeColour DegreeCap Mixture Corollaries Arm TwoArm Link14 Model Templates Reduction Main Plans Frontier Selection Check; do
+for f in CNF SequentialCounter AtLeast Basic Ticket TwoColour ThreeColour DegreeCap Mixture Corollaries Arm TwoArm Link14 Model Templates Reduction Main Plans Frontier Selection Check; do
   echo "== K58/$f.lean"
   lean -o "K58/$f.olean" "K58/$f.lean"
 done
