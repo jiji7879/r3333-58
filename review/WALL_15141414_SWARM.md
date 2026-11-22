@@ -2143,3 +2143,44 @@ wrong colour on same-arm pairs; the detector was `K58.part_family_le_five` — a
 rung model exhibited a 7-clique of pairwise 0-intersecting zero-parts, which the
 lemma forbids. Every model now carries `largest_pairwise_0intersecting_family`,
 and all reported models have at most 5. Three lines of check, found by a theorem.
+
+## 48. Three exclusions on the 0-graph, and a 630-boolean reduction of `M >= 8`
+
+Member m4, direction d6 of `smwrzh71x`; verdict **accepted as a partial**. No
+decision on `M`; what it settles is what the 0-graph cannot be.
+
+**The collision count is an identity, and it is sharp.** `sum_{pairs in P_x}
+(mu - 2) = C_x = sum_{z in R_x} C(d_z,2)`, verified on 1,764 random triangle-free
+graphs with 0 disagreements (`identity_check.py`), and the convexity bound
+`3 d_0(x) - 8` is attained exactly — 37 over 31 buckets at `d_0 = 15`, 40 over 30
+at 16, matching the composition minimum computed in §43.
+
+**`G_0[X]` is not bipartite.** The main new exclusion, and it removes the natural
+construction family (a bipartite ansatz on the 42). The count forces
+`(u,w) ∈ {(21,21),(20,22),(22,20)}`; the independence step is right (two points of
+one `S_a` are never 0-adjacent, so `N(Q) ∩ P = empty`); `mu <= 7` gives codegree at
+most 6 inside a block; and the convexity count over at most `w - q` buckets then
+kills every mixed `p` on one side or the other (`bipartite_exclusion.py`, re-run
+here). Only pure `S_a` survive, and then `14a = 5u` with `5u ∈ {100,105,110}` —
+`105/14 = 7.5`, not an integer. The proof uses only `mu <= 7` and `d_0(a) = 15`,
+not `M >= 7`, so it is stronger than advertised.
+
+**No vertex-transitive model.** For `d = 15` the parameters are `srg(58,15,0,5)`:
+`15·14 = 42·5` is consistent, and the multiplicities require `sqrt(65)` with
+nonzero numerator (`30 - 285`), hence irrational — no such graph. That closes
+vertex-transitivity as a family, independently of §40's abelian Cayley sweep.
+
+**A 630-boolean reduction.** A model implies an instance of 42 words of size 5 with
+each arm point in 14 words, each arm pair in at most 6, and each word disjoint from
+at least 10 others — sound for `M >= 8` and ~2,000x smaller than the 58-vertex
+encoding. Its status: SAT at the weakest form, UNKNOWN at the branch's strength.
+That is the most promising concrete object the codegree programme has produced.
+
+**And the moments stop here.** `sum n = 420`, `sum_{a'} n_{aa'} = 56`,
+`1554 <= sum n(n-1) <= 2100` are all consistent with `M = 7`, so `M >= 8` needs a
+non-moment input. Recorded as the end of the counting route, not as its failure.
+
+**Two encoder bugs of the ERRATA class, in the member's own work** — conjunction
+variables without the converse clause, giving bogus SAT twice — both caught by
+decoding at the definition level. Third member this round to have such a slip
+caught that way; the practice is holding.
