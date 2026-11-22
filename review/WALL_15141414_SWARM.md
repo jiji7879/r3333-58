@@ -1152,6 +1152,17 @@ three pairs, so **copies <= 2 per arm**, and an all-extremal arm cannot fill 14
 slots — **every 14-slot arm needs generic words** — while cross-arm pairs are free
 exactly when a word is extremal. That is the mechanism behind the ladder's shape.
 
+> **Corrected (2026-11-22, member m10, re-run by the coordinator).** The
+> conclusion is true; the step from "copies <= 2" to it is not. Seven distinct
+> extremal words twice each is fourteen slots, and at pairwise admissibility alone
+> there are **2,244,026** all-extremal size-14 arms (`extremal.py`). The
+> conclusion survives on the *triple* condition of §35: three copies of one
+> extremal word already have all three admissible lists equal to one singleton, so
+> that family is dead, and with the triple condition imposed the all-extremal
+> count is **0 for every arm colour** (`extremal2.py`, 3,843 / 3,783 / 3,093
+> nodes). "Copies <= 2" is a consequence of the triple condition, not a
+> hypothesis that implies the bound.
+
 **An observation to convert into a fact.** Prescribing the arm's colouring (the
 template class plus thirty random valid recolourings) killed the single-arm search
 every time, read as evidence that most of the 115 arm classes are unrealisable. If
@@ -1508,3 +1519,56 @@ arm 1 needs 6 (`R(3,3) = 6` again), `L_50` arm 3 needs 5.
 module needs no solver to refute, and a general lemma is stronger evidence than one
 instance. It closes the local question and nothing above it — the exact standard of
 this campaign.
+
+## 35. Truncation depth is exactly 3, and every obstruction has one shape
+
+Member m10, direction d11; verdict **accepted**, fourth of `smwrmwgf7`. I re-ran
+`score.py`, `depth.py --kmax 3`, `verify_drat.sh` and `extremal2.py`. Artefacts at
+`results/truncation-depth/`.
+
+**The local object.** For a set `S` of slots of a witness: the witness's words on
+`S`, plus a colouring of the pairs inside `S` with (P1) the arm colour never used
+inside its own arm, (P2) `colour(x,y) = f` requiring `M_f(x) ∩ M_f(y) = ∅`, and
+(X) no monochromatic triangle. Every genuine object restricts to a local object on
+every subset of its slots, so a subset with no local object is a set of slots no
+genuine object can carry with those words.
+
+**Lemma 1.** For three vertices, if any admissible list has two elements one can
+choose a non-constant triple; hence a triple is infeasible **iff all three lists
+are the same singleton**. So the depth-3 obstructions are not merely *some*
+three-word pattern — they are *all* of that one shape. (Proved in m10's `PROOF.md`;
+I checked the argument, which is two lines, and it is right.)
+
+**Measured exhaustively, no sampling** (`depth.py`, all subsets):
+
+| witness | slots | dead pairs | dead triples |
+| --- | ---: | ---: | ---: |
+| `pair58_Tminus` (T⁻) | 42 | 0 | 514 |
+| `p58` | 42 | 0 | 524 |
+| `p58_cc` | 42 | 0 | 459 |
+| m10's own plain model | 42 | 0 | 456 |
+| `14+14`, `14+13`, `14+13_cap`, `14+12`, `14+12_cap` | 28/28/28/26/26 | 0 | 50/44/55/40/52 |
+
+So the truncation depth is exactly 3 for every pair-level *and* two-arm witness in
+the record, and 0 dead pairs means size 2 never suffices. **Reconciliation with
+§34:** m7's 119 triples for `pair58_Tminus` are the within-arm ones; m10's 514 are
+all `C(42,3) = 11,480`. I computed the split: 119 within-arm, 395 cross-arm, 514
+total. Two independently written checkers, one object.
+
+**Certificates** (all replayed here, `s VERIFIED`): the design of §C2 pinned into
+the pair families is UNSAT at 7,839 conflicts with a core of 3,153 of 99,330
+clauses and 82 RAT lemmas — but the design pin is **not** a consequence of the
+branch, so it says that that sharp design does not lift to the pair level, not
+that the branch is impossible; and two 0-conflict UNSATs (the 42 words of
+`pair58_Tminus` plus the sixth arm lemma; a depth-3 word assignment), which are
+certificates of violation rather than searches. Controls: the plain pair level
+built independently here is SAT in 12 s.
+
+**Hazard.** `artifacts/k15_link_Tminus_m5.col` and
+`artifacts/k15_template_Tminus_aut2_m4.col` are the same template under different
+labelings; pinning a witness written against one into an encoder built on the other
+gives a 1-conflict, 0-decision UNSAT in 0.05 s — the `ERRATA` signature, and the
+cheapest way to manufacture a fake refutation in this campaign.
+
+**Not run:** the `K20`/`K22` cluster models, whose truncation depth is the number I
+would most want — they are the only objects realising the high-overlap regime.
