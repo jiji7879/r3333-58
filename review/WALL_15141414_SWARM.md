@@ -1797,9 +1797,14 @@ the CNF regenerated from the member's own encoder. I replayed four here:
 100 RAT lemmas; `Z_51` and `Z_3 x Z_3 x Z_3 x Z_2` `s VERIFIED` with **5-clause
 cores**; `Z_5 x Z_5 x Z_2` `s VERIFIED` with 922 clauses in core.
 
-**Complete for the whole Cayley family at 51, 53, 55, 57**, because the cyclic
-group is the only group of those orders (`3 ∤ 16`, `53` prime, `5 ∤ 10`,
-`3 ∤ 18`). At 58 the groups are `Z_58` and `D_29`; `Z_58` is decided both freely
+**Complete for the whole Cayley family at 51 and 53 only** — the cyclic group is
+the only group of order 51 (`3 ∤ 16`) and 53 (prime), but **55 and 57 each have a
+nonabelian group**: `5 | 10` gives `C_11 ⋊ C_5` and `3 | 18` gives `C_19 ⋊ C_3`.
+The first version of this paragraph asserted `5 ∤ 10` and `3 ∤ 18`, which is
+simply false arithmetic; the abelian sweep is therefore *not* computationally
+complete at 55 or 57. Anabanti (2023) enumerates both groups at each order and
+closes the whole range 51–61, so the conclusion stands on the published theorem,
+not on this sweep. At 58 the groups are `Z_58` and `D_29`; `Z_58` is decided both freely
 and with the W2 profile `(15,14,14,14)` imposed, independently reproducing
 `PROFILE` §5's circulant exclusion from a different encoder. **`D_29` is open**, as
 are `D_25`, `D_26`, `D_27`, `D_28`; the member records them as `INCOMPLETE` in
@@ -1821,7 +1826,9 @@ what the UNSAT instance at 50 says.
 
 **Correction.** "A Cayley object cannot witness `R_4(3) >= 52`" needs the word
 *abelian*: at order 52 the groups are `Z_52`, `Z_13 x Z_2 x Z_2` and `D_26`, and
-`D_26` was not attempted.
+`D_26` was not attempted. The same care applies in the other
+direction: 55 and 57 have nonabelian groups too, so completeness there needs them
+and only Anabanti supplies it.
 
 **Scope, stated plainly.** The record already carries Anabanti (2023) as closing
 group-partition/Cayley constructions for `n >= 51`. This is a certified,
@@ -1874,3 +1881,55 @@ brief and is not done.
 no cardinality encoding, no auxiliary variables — so the `ERRATA` failure modes
 are structurally impossible here rather than argued away. That is the strongest
 form of encoder-safety any member produced this round.
+
+## 42. An external review of the session, and three corrections it is right about
+
+A reviewer (the write-up at `attachments/let-s-try-and-wcbj/K58_15141414_research_report.md`,
+31 KB) checked this session against commit `b1ff92f`. It is the most useful
+external reading the campaign has had: it found two arithmetic errors in text I
+wrote the same morning, one internal inconsistency, and it supplied two numbers I
+have now verified independently.
+
+**What it is right about.**
+
+1. **The `C_x` threshold was off by ten.** To rule out `M = 6` one needs
+   `C_x >= 41`, not 51: `C_x <= 10(M-2)` forbids `M = 6` as soon as `C_x >= 41`,
+   i.e. `3 d_0(x) - 8 >= 41`, i.e. `d_0(x) >= 17` — already impossible by the
+   degree cap. My note of this morning said "`M >= 7` would need `C_x >= 51`, i.e.
+   `d_0(x) >= 20`"; both figures were wrong. Corrected in the write-up of §3.1.
+   *(The conclusion is unaffected: §21's `M >= 7` does not go through this route at
+   all, it goes through the `M = 6` rigidity.)*
+2. **Orders 55 and 57 have nonabelian groups.** I wrote `5 ∤ 10` and `3 ∤ 18` when
+   in fact `5 | 10` and `3 | 18`, so `C_11 ⋊ C_5` and `C_19 ⋊ C_3` exist. The
+   abelian sweep is complete for the whole Cayley family only at **51 and 53**, not
+   at 55 and 57; §40 and state §5 are corrected. Anabanti (2023) enumerates both
+   groups at each order, so the exclusion still stands on the published theorem.
+3. **The state document contradicted itself on the upper bound**, quoting `[51,60]`
+   in its status line and `[51,62]` in §1. Both are now stated explicitly:
+   published `62`, preprint `60` (unrefereed), and neither moves.
+
+**What it supplies, verified here.** From a fixed word assignment one can read off
+the *forced mixed triples*: three slots, two in one arm and one in the other, whose
+three admissible-colour lists are the same singleton. These are contradictions on
+the words alone — no recolouring of the edges can repair them. The reviewer reports
+48 for the `T` in-arm witness and 52 for the `U` one; I recomputed both from the
+`.wit` files (48, example `(0,2,18)` at colour 3; 52, example `(0,1,16)` at colour
+3) and the minimum hitting sets (10 and 9; my minimum sets differ from the
+reviewer's, which is expected since they are not unique). So the committed in-arm
+witnesses die at the **word** level, not at the edge level, and any repair at fixed
+slots must change at least ten (resp. nine) words. That sharpens §36's "in-arm
+triangles are not the obstruction": what kills the witness is cross-arm, and it
+kills it before any edge colour is chosen.
+
+**Where I do not follow it.** It treats `M >= 7` as withdrawn ("the withdrawn
+variance and design exclusions remain withdrawn"). That was true of the record's
+own text this morning and is no longer true of the mathematics: m3's `M = 6`
+rigidity proves it, and I have re-derived that proof step by step (§21). The
+reviewer's point 2 above concerns only the `C_x` route, which m3 also says stops at
+6. `M >= 7` stands; its kernel form does not yet exist.
+
+**What it would do next**, and which I am taking: generate words subject to
+mixed-triple cuts (record the three words of every forced triple and forbid the
+combination), and compare that against the eager triangle encoding at 26 slots.
+The four committed witnesses are the first test: no fixed-edge search and no
+one-or-two-word repair can extend them.

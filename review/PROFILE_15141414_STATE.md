@@ -4,8 +4,11 @@ Written after five Ultramath rounds (`smwqx1yfw`, `smwr0lr3q`, `smwr3llof`,
 `smwr8io45`, `smwrfgma5`) and two external bundles. The chronological record is
 `review/WALL_15141414_SWARM.md` (18 sections); this file is the organised state.
 
-**Status: W2 is open. All 381 cases are OPEN. `R_4(3)` is unmoved at
-`[51, 60]`. No case has been closed, no DRAT certificate exists for this
+**Status: W2 is open. All 381 cases are OPEN. `R_4(3)` is unmoved: the published
+interval is `[51, 62]`, and a November-2026 preprint (Tatarevic, arXiv 2610.36648v2,
+unrefereed) claims `<= 60` — this document quoted `[51, 60]` in this line while §1
+quoted `[51, 62]`, which was an inconsistency, and neither moves because of
+anything here. No case has been closed, no DRAT certificate exists for this
 profile, and no bound has moved.** What follows is what is known and what is
 excluded, with the check that establishes each item.
 
@@ -142,8 +145,10 @@ coverage and the split by the templates.
 
 Also closed, outside this profile: **every abelian group of order 50..58** has no
 good 4-colouring of `K_n` invariant under its regular action — fifteen groups, all
-UNSAT with DRAT replayed, complete for the *whole* Cayley family at 51, 53, 55, 57
-(cyclic is the only group there), with the W2 profile included at 58. `D_29`, and
+UNSAT with DRAT replayed, complete for the *whole* Cayley family at **51 and 53
+only** — cyclic is the only group of those orders; 55 and 57 each have a nonabelian
+group (`C_11 ⋊ C_5`, `C_19 ⋊ C_3`) and were not covered — with the W2 profile
+included at 58. `D_29`, and
 `D_25`..`D_28`, remain open computationally; Anabanti (2023) already closes the
 family for `n >= 51`, so this is a certified confirmation rather than new
 mathematics. `results/cayley-window/`. Also closed, outside this profile: no
