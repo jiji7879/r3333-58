@@ -671,6 +671,11 @@ child `m(x) = 5` for all 42 holds unconditionally; the type-level system *with*
 the kernel-checked saturation bound is feasible, with a witness that also shows
 why it cannot be realised (14 same-type slots forced to one colour); and the
 uniform child with every cut that transfers as a clause is UNKNOWN at 400k/600k/
-1.2M conflicts. A new hazard is recorded in `review/ERRATA.md`:
+1.2M conflicts. The most constrained child built this round carries the branch
+`m(x) <= 5` for all 42, the mixture bound `|M_c(x)| <= 5`, the same-word rule (36
+words, both templates) and the count `<= 16 with a missing ordinary colour`:
+25,428 variables, 203,927 clauses, CaDiCaL UNKNOWN at 4.07 M conflicts in 244 s.
+That is the state of the uniform child: every constraint anyone has proved is in
+it, and it does not close. A new hazard is recorded in `review/ERRATA.md`:
 `dense.marked_threshold` returns a single empty clause when the charge exceeds
 the guards, which would manufacture a closure in milliseconds.
