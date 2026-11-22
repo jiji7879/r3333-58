@@ -627,3 +627,50 @@ cuts are class-level, exactly as another member concluded from the encoding
 side; and the interface collapse is not solver-cheap (`uniform ∧ m(16) <= 4`
 UNKNOWN at 1.31 M conflicts, some_six at 2.61 M). The split itself has now been
 reproduced byte-exactly by three independent encoders.
+
+## 12. Round three: the bundles verified, and what the cuts actually buy
+
+Swarm `smwr3llof`, 8 members, on the two external bundles. Nothing was closed;
+the bundles' claims were checked, and the checking changed two things.
+
+**Bundle item 1 verified end to end** by an independent reimplementation: 115
+catalogue rows all valid three-colourings and — checked here and *not* by the
+bundle — pairwise non-isomorphic under vertex **and** colour permutations (all
+6,555 pairs, 0 isomorphic, so the 345 orientations do not double-count); 27
+excluded by the independence test, 45 by the path/pentagon shapes, 300 passing;
+certificate node counts 81/1061/1277 reproduced; all 618 positive covers
+validated in integer arithmetic, each with exactly five 4-sets and ten 5-sets;
+`orientations.csv` row by row; per-row survivor counts `{0:5, 1:8, 2:14, 3:88}`;
+rows 19, 20, 23, 24 and 77 dead in all three project colours; 18,276 named
+four-sets.
+
+**Bundle item 2 verified three ways** (the bundle's own verifier, an exact ILP,
+and a from-scratch recount): 3,093 excluded of 18,276, 72 orientations touched,
+15,183 surviving, the older 2,194 contained in the new list.
+
+**Bundle item 3 verified**: all 108 stored refutations replay, 519,805 steps, all
+RUP, no RAT, with an independent encoder confirming the statements and their
+controls.
+
+**And the thing the numbers do *not* mean.** The cut table is a **module count,
+not a clause-level reduction**: excluding `(orientation, marked four-set)` denies
+that an orbit of labelled colourings is non-empty, and the orbit has about 10^10
+members, so it cannot be encoded as clauses and fixing one labelled copy closes
+one labelling, not the module. The honest output is that the uniform child splits
+into **15,183 (orientation, marked four-set) classes**. Three members reached
+this from three directions — the class-level nature of the cuts, the failure of
+all 2,002 *physical* nine-sets without the orientation transport, and the orbit
+size — so it is settled.
+
+**What else the round settled.** The split is exhaustive and disjoint and has now
+been reproduced byte-exactly by three independent encoders; the some-six child is
+a *single* 42-literal clause (a reported flaw in it was wrong — checked by running
+the bundle's own generator); the frozen CNF itself implies `sum_x m(x) >= 210`
+(per-block SAT/UNSAT controls on the at-least-14 clusters), so in the uniform
+child `m(x) = 5` for all 42 holds unconditionally; the type-level system *with*
+the kernel-checked saturation bound is feasible, with a witness that also shows
+why it cannot be realised (14 same-type slots forced to one colour); and the
+uniform child with every cut that transfers as a clause is UNKNOWN at 400k/600k/
+1.2M conflicts. A new hazard is recorded in `review/ERRATA.md`:
+`dense.marked_threshold` returns a single empty clause when the charge exceeds
+the guards, which would manufacture a closure in milliseconds.
