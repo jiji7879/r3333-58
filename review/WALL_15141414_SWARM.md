@@ -362,7 +362,17 @@ unproved premise.
   there needs `A cap A = empty`, and colour 1 is the arm colour, leaving only
   two colours for the internal edges of a 14-vertex arm — `R(3,3) = 6 <= 14`
   forces a monochromatic triangle. **What a proof must use is the internal
-  colouring of the three 14-arms.** Note that the now-proved K15/K16
+  colouring of the three 14-arms.**
+  *Correction (external handoff, 2026-11-22, confirmed here).* That witness is
+  not admissible once the kernel-checked saturation bound is included: it has 28
+  slots with `M_0 = empty` (14 in arm 2, 14 in arm 3), and `armFar_le_two`
+  allows at most **two** vertices outside a 15-set with no colour-0 edge into it.
+  So the feasible-witness claim is true only for the relaxation that omits that
+  bound, and **the type-level route is not closed**: whether the system with the
+  full checked constraint set (the zero bound, the arm-internal caps, the
+  per-(`u,y`) rigidity with its hypothesis) is feasible is **open**. The
+  "what a proof must use" conclusion survives — the witness dies under (R)
+  either way — but the feasibility verdict above does not. Note that the now-proved K15/K16
   classification does not help there: a 14-vertex arm lies outside it.
 * **The 16-armed wall profiles force an outside vertex with six (m4, kernel-checked).**
   `K58.forced_six` and `K58.forced_six_two` (`.ultramath/smwr0lr3q/m4/lean/Sixteen.lean`,
@@ -406,12 +416,13 @@ What changed since §1–§3 were written, in the order it matters:
    fact: `14p <= 5(57 - p)` holds iff `p <= 15` — the three 15-armed wall
    profiles are exactly those where the interface has no slack, and
    `(15,14,14,14)` is the one of them with the smallest budget (`w = 15`).
-3. **The type-level route is closed, and the gap is located.** The system of
-   join types, coverage, the pair-disjointness rule and non-sending is feasible
-   in both templates; the witness dies only when the three 14-arms must be good
-   3-colourings. So **a proof must use the internal colouring of the 14-arms** —
-   and the classification does not help there, since a 14-vertex arm is outside
-   `K_15`/`K_16`.
+3. **The gap is located, and the type-level route is *not* closed** (corrected
+   §7). The witness that made the type-level system feasible has 28 vertices
+   with `m_0 = 0`, which the kernel-checked saturation bound forbids (at most
+   two); the witness also dies when the three 14-arms must be good 3-colourings.
+   So **a proof must use the internal colouring of the 14-arms** — the
+   classification does not reach a 14-vertex arm — and whether the system with
+   the full checked constraint set is feasible is open.
 4. **The model's hypothesis list is kernel-checked** and integrated:
    `lean/K58/Arm.lean`, `Link14.lean`, `Model.lean` (pair disjointness for any
    colour, the per-`(u,y)` rigidity in its correctly paired form with the `= 5`
