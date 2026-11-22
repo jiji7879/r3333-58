@@ -182,3 +182,49 @@ three arms' internal 3-colourings — and the classification does not reach a
   witnesses). The witnesses named above live there.
 * Toolchain: `.scratch/k58/.venv/bin/python` (python-sat 1.9.dev22),
   `.scratch/satcheck/bin/{kissat,drat-trim}`, `python3 tools/verify_coloring.py`.
+
+## 10. The newest layer (rounds four to six)
+
+**Proved.** In the branch under all-tickets-returned, `M = max_{u != v}
+|N_0(u) ∩ N_0(v)| >= 7` *(paper proof, six elementary lemmas)*; the arm-pair
+codegrees sum to `C(15,2) + 42*C(5,2) = 525`, so the mean is exactly 5 and **some
+pair of senders shares at least six points**; the 42 blocks `N_0(x) ∩ A` are not a
+`2-(15,5,4)` design.
+
+**Improved lemma.** The independent-14 bound is **`|armFar| <= 4`**, not the 5 that
+is kernel-checked — the K59 argument transfers because its only size input is the
+exchange rule on 16-sets with a 15-core. So `armFar_le_five` is not tight.
+
+**Type rigidity.** A pair of 15-classes sharing 14 points is necessarily the same
+template type; **mixed `T^-`/`U^-` classes overlap in at most 12**, and 12 is
+attained. Certified by exact maximum-common-induced-subgraph computation (two
+algorithms plus DRAT), and the decisive calibration is that the *same computation
+at `K_16` also gives 12* — so K59's "mixed codegree at most 7" is a host-level
+fact, not a template fact.
+
+**The high-overlap cluster.** At most 7 senders can pairwise share 14 class
+points; at a common 14-core only two spoke vectors occur (clone and deficiency), at
+most two classes per vector, so **at most four classes split 2+2**, twin pairs
+joined in colour 0 with disjoint arm supports. **Realisable**: valid 20- and
+22-vertex colourings carry the 2+1 and 2+2 clusters. So the regime is a small rigid
+object that nothing contradicts.
+
+**Routes closed since §5.** The pair level (SAT, five witnesses). The two-arm
+instance: **`14+14`, `14+13` and `14+12` are all SAT** (verified witnesses), so
+"UNSAT at `14+14` proves the branch" is impossible — and the reason is that with
+two arms the columns reach only 8-10, not 14. The "gluing core": its 0.01 s
+refutation came from a global mixture cap that contradicts the branch by arithmetic.
+
+**What is left.** The **three-arm instance at order 58** (pair level plus arm and
+cross-arm triangle-freeness, columns reaching 14), and the sharpest subsample of it,
+**`(14,12) + XT`**: by heredity — everything passes down under deleting an arm
+vertex except the per-arm degree profile, which is indexed by arm size — UNSAT
+there with the sound families closes the uniform fully-sending branch. The object
+is `p cnf 7574 46752`; with the words fixed its pair stage is 531 variables and
+solves in under a second, so it is a cube-and-conquer over two or three word
+choices on the 12-arm.
+
+**A tool.** The two-root spoke table at `n = 58`: 56 entries, corner
+`|N_0(u) ∩ N_0(v)|`, diagonal zero, and the off-diagonal cap `T[i][l] <= 5` from
+mixture; verified on 1,063 tables. **The root can never be in a maximising pair**
+(its codegree is 5 for outside vertices, 0 for arm points, while `M >= 6`).
