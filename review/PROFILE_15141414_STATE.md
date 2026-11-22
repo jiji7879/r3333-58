@@ -59,7 +59,9 @@ axioms only `[propext, Classical.choice, Quot.sound]`, no `sorry`, no
 | uniform child | all 15 arm points 0-critical + `m(x) <= 5` + `|V| = 58` force `d_0(a) = 15` and `m(x) = 5` | `K58.uniform_child` |
 | charge 15 = all-critical | `armSenders r 0 = 15` iff every point of `N_0(r)` is 0-critical | `K58.armSenders_zero_eq_fifteen_iff` |
 | branch = degenerate balance | balance plus sender-free 14-arms gives `s_0 = 15` | `K58.branch_of_balanced_no_small_arm_sender` |
-| **classification** | every triangle-free 3-colouring of `K_15`/`K_16` is one of the two templates | `K58.Classified 15/16`, `lean/port/` |
+| classification | every triangle-free 3-colouring of `K_15`/`K_16` is one of the two templates | `K58.Classified 15/16`, `lean/port/` |
+| **(R) closure** | under reciprocity every colour-`c` neighbour of a `c`-critical vertex is `c`-critical, `|C_c| >= 30`, and if every vertex has a critical `c`-neighbour then colour `c` is critical everywhere | `K58.nbrC_subset_Crit`, `K58.crit_card_ge_thirty`, `K58.crit_eq_univ`, `lean/K58/Ticket.lean` |
+| **the rung's soundness** | under (R) and the uniform branch, colour 0 is critical everywhere and every slot has at least ten colour-0 neighbours outside `A` | `K58.uniform_branch_zero_critical`, `K58.ten_outside`, `lean/K58/Ticket.lean` |
 
 **Provenance correction (2026-11-22).** `K58.TwoArm.two_arm_restriction` was a
 *member artefact*, `.ultramath/smwrfgma5/m5/lean/TwoArm.lean`, and was cited in
@@ -75,6 +77,10 @@ it is derived in `lean/port/` from the pinned `R_4(3) <= 60` development
 (Lean 4.32.1 with that project's Mathlib, 53 s; `bash lean/port/build_port.sh`).
 It is *not* citable from Kalbfleisch–Stanton/Heinrich — the upstream project
 proves it rather than importing it.
+
+`lean/K58/Ticket.lean` was integrated on 2026-11-22 (§39 of the record): the
+reciprocity chain it carries had been cited as proved while living only in a
+member directory, which is the second instance of that slip in this campaign.
 
 Also proved in the record: the **six-point arm lemma** — at most five vertices
 of `N_b(r)` are pairwise `a`-blocked, since six would give a triangle-free

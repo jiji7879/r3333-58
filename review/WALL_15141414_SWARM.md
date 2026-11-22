@@ -1726,3 +1726,44 @@ model at the definition level, not by the solver status. That is now the third
 member this round whose over-constraint or encoding slip was caught by a
 definition-level check rather than by the solver; `ERRATA.md`'s lesson has taken
 hold in the swarm's practice, which is worth more than any single object here.
+
+## 39. The ticket rung: decoupled, censused, and measured as out of reach
+
+Member m5, direction d15; verdict **accepted as a partial**, eighth of `smwrmwgf7`.
+Artefacts at `results/ticket-rung/`. The rung itself is not decided and nothing
+closes.
+
+**The decoupling (proved, and I checked the argument).** With no triangle family
+the pair colours are per-pair independent, so a word assignment extends to a model
+iff the columns are 4-5 per arm, coverage is 14, and every intersecting pair of
+zero-parts is compatible; each slot's colour-0 degree can then be raised to its
+full disjoint-partner count. Hence the rung at `k` is **exactly** "a
+word-compatible design with min disjoint degree `>= k`" — the pair-colour variables
+drop out of the problem. That is a real reduction: the rung becomes a design
+question with 42 blocks and no graph layer.
+
+**The exclusion (verified here, in a stronger form than reported).** Every
+pair-level witness in the tree fails the rung by a wide margin: the **minimum**
+number of slots with a disjoint 0-part is **0-2** and the maximum 7-9, against the
+10 the rung needs. So the existing witnesses are not near-misses and cannot be
+cited as evidence about the ticket layer either way.
+
+**The census and the cap.** 254,628 (`T^-`) / 254,088 (`U^-`) words, third
+independent reproduction; (5,5)-shaped words only 18. The compatibility cap — at
+most 6 slots sharing a zero-part, 11 for the 18 exceptional ones, exact over all
+3,003 zero-parts — was not verified here. "0 of 563 intersecting pairs is locally
+impossible" is the useful half of the negative: the obstruction, if any, is global.
+
+**The ladder, and why this is not the next thing to push.** `k = 3` SAT (53 s),
+`k = 3` + coverage SAT (360 s), `k = 4` + coverage SAT (260 s, warm start), `k = 5`
+**UNKNOWN at 620 s**, and the rung needs `k = 10`. The relaxation at *half* the
+required strength already defeats CDCL. The reduction is worth keeping; the ladder
+as a route is not, and the record should stop listing the ticket layer as live.
+
+**A citation repaired.** The rung is sound only through
+`K58.uniform_branch_zero_critical` and `K58.ten_outside`, which existed only in
+`.ultramath/smwr8io45/m1/lean/Ticket.lean` — a gitignored member directory — while
+state §2 cites the first as proved. The file is now `lean/K58/Ticket.lean`, built
+by `build.sh` (47 s green) and registered in `Check.lean`, with
+`crit_card_ge_thirty` and `crit_eq_univ` alongside. Second instance of this slip
+after §33's `TwoArm`; both are now in the build.
