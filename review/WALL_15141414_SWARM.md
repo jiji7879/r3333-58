@@ -2122,8 +2122,11 @@ branch families implied plus the copy bound (two copies force the empty colour,
 three make a triangle), so its UNSAT refutes the all-extremal case; two encoders
 sharing no code agree (word-indexed `p cnf 22422 601565`, and the cell-level one
 at 163,502 clauses), and the DRATs are 1.70 GB / 2.17 GB with **0 RAT lemmas**,
-`s VERIFIED` per the member's logs (coordinator replay of the 842 MB `E41_arm1`
-proof launched; see §47 note below).
+`s VERIFIED` per the member's logs — and the 842 MB `E41_arm1` proof I replayed
+here myself: **`s VERIFIED`** in 7 m 55 s, 9,765 of 163,528 clauses in core,
+2,653,166 of 4,380,375 lemmas, 111.8 M resolution steps, **0 RAT lemmas**. Those
+figures match the member's own transcript exactly, which is what an independent
+replay should do.
 
 **The sizing.** 254,628 legal words; with the arm symmetry and the copy bound,
 depth-2 word cubes number 3.2·10^10 and depth-3 2.8·10^15. The conditional I set
