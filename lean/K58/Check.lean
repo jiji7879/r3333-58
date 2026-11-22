@@ -1,6 +1,8 @@
 import K58.Arm
 import K58.Corollaries
+import K58.ExchangeResidue
 import K58.Link14
+import K58.M7
 import K58.Model
 import K58.Selection
 import K58.Ticket
@@ -55,3 +57,22 @@ import K58.TwoArm
 #print axioms K58.ten_outside
 #print axioms K58.crit_card_ge_thirty
 #print axioms K58.crit_eq_univ
+#print axioms K58.M_ge_seven
+#print axioms K58.M_ge_six
+#print axioms K58.rigid_six
+#print axioms K58.arm_codeg_le_five
+#print axioms K58.arm_all_five
+#print axioms K58.arm_pair_total
+#print axioms K58.rx_bound
+#print axioms K58.collision_engine
+#print axioms K58.pair_filter_le
+#print axioms K58.branch_crit
+#print axioms K58.branch_deg_15_or_16
+#print axioms K58.codeg_le_sixteen
+#print axioms K58.Residue.residue_pattern
+#print axioms K58.Residue.residue_forced
+#print axioms K58.Residue.residue_two_way
+#print axioms K58.Residue.exists_complement
+#print axioms K58.Residue.exchange_sixteen
+#print axioms K58.Residue.exchange_fifteen
+#print axioms K58.Residue.residue_arms
