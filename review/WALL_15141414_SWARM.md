@@ -972,3 +972,31 @@ words and 116 real roots. One more artefact withdrawn before it was believed: a
 5 s "UNSAT" that came from treating "FIX plus slot sorting" as a restriction when
 it is not — the fourth over-constrained artefact in this campaign, third caught in
 time (`review/ERRATA.md`).
+
+## 20. The K59 exchange lemma: transfers in form, not in strength — and a type rigidity
+
+**The K59 rule is n-free but type-specific.** *(`K58.exchange_sixteen`,
+kernel-checked.)* A 15-set `P` with `a, b` outside it, both `a ∪ P` and `b ∪ P`
+colour-0 free, forces `col(z,a) = col(z,b)` at every `z in P` — no `n` anywhere.
+But it needs 16-point classes, and our arm senders have `d_0 = 15`, so it never
+applies to them.
+
+**Its 15/14 form is a disjunction, not an equality** *(`K58.exchange_fifteen`,
+kernel-checked)*: with `P` a 14-set, either the spokes agree or both common counts
+are exactly 4. And the equality version is **false**: `exchange_witness_k16.col`
+(valid, 16 vertices, colour 0 only on `{0,15}`) has two 15-sets overlapping in 14
+points that disagree at exactly 10 core points — the maximum the dichotomy allows.
+
+**The type rigidity is the prize.** A 14-core has exactly two completions, both of
+its own type (two independent computations), so **a pair of 15-classes sharing 14
+points is necessarily the same template type**, and **mixed `T^-`/`U^-` classes
+overlap in at most 12**, with 12 attained (`mixed12_witness_k18.col`, valid). Two of
+the fifteen senders' classes are therefore either the same type or meet in at most
+twelve of fifteen points.
+
+**Where it can bite, and where it cannot.** Averaging is useless: the fifteen
+senders' classes satisfy
+`sum_{u<v} |N_0(u) ∩ N_0(v)| = sum_{x in X} C(m(x),2) = 42 * 10 = 420`, i.e. four
+per pair over 105 pairs. The rigidity constrains only a *cluster* — three or more
+senders pairwise overlapping in 13 or 14 points, which forces all of them to one
+type and pins them against each other through the two-completion structure.
