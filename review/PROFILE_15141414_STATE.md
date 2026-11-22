@@ -245,7 +245,8 @@ with a 15-core" — does not survive: `rg -n exchange lean/` is **empty**; those
 lemmas are not in the tree. The bound is established instead by m6's certificate,
 which I have run: 240 UNSAT instances, one per `X = U` or `T` minus two points,
 each with a DRAT replayed against its regenerated CNF, `verified 240, failures 0`
-(`.ultramath/smwrmwgf7/m6/cert/manifest.txt`), the SAT side checked at `|Z| = 4`
+(`results/armfar14/manifest.txt`, with the driver, the proof and the Lean files
+beside it), the SAT side checked at `|Z| = 4`
 for all 240 (`far_sanity.py`), the sharpness witness `far18.col` an independently
 valid 18-vertex 4-colouring with `|armFar| = 4` (`python3 tools/verify_coloring.py`),
 and `K58.armFar_four_attained`, `armFar_five_zero_degree`,
