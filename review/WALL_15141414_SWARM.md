@@ -1188,6 +1188,21 @@ keeping: with only two arms the columns reach 8 to 10, not 14, because the branc
 coverage needs all three arms. The two-arm model is a *weak* relaxation, and its
 satisfiability says nothing about the branch.
 
+> **Withdrawn (2026-11-22, member m8, re-run by the coordinator).** The witness
+> `wit/a_14_14.wit` is not a model of the two-arm instance that heredity delivers:
+> it has **258 monochromatic cross-arm triangles** and its column sums are
+> `[8, 9, 10]` — one position at 8, so it violates the exact law
+> `s_B + s_C in {9,10}` that every branch object satisfies (§37), and its words
+> admit **no** cross-arm-triangle-free pair colouring at all. What is SAT here is
+> the pair level + arm module + coverage `<= 10`; that is not the object the route
+> needs. The correct state: the pair level with the exact law is SAT (also §37),
+> and the rung with the arm module and the cross-arm module is **UNKNOWN**, not
+> SAT. So the route is *hard*, not *closed* — and this section's conclusion, that
+> no two-arm argument can close the branch, does not follow. The 8-to-10 remark
+> survives only in the weakened form "the two-arm relaxation without `XT` is
+> satisfiable"; with the law the sums are 9 and 10, and with `XT` nothing is
+> decided.
+
 **The sixth arm lemma is now kernel-checked** (`Blocked.lean`:
 `blocked_set_le_five`, `blocked_in_set_le_five`, `part_family_le_five`), sharp on
 4,572 triples across fifteen artefacts with maximum exactly 5, and every known
@@ -1621,3 +1636,56 @@ one.
 `U---` stratum's threshold is 3), so its SAT status is diagnostic only; the value
 here is the wall localisation, not a step toward closing a row. The UNKNOWN
 measurements were not re-run.
+
+## 37. The two-arm level with the exact interface: the law, a SAT witness, one certified cube, and a reopened route
+
+Member m8, direction d5; verdict **accepted as a partial**, sixth of `smwrmwgf7`.
+The three-arm instance it was briefed on is untouched; what it did decide is
+below, and one of those decisions reopens a route §25 had closed. Artefacts at
+`results/two-arm-interface/`.
+
+**Claim A (proved).** In the uniform child, for every `a in A`:
+`s_B(a) + s_C(a) in {9,10}`. No 0-edge lies inside `A` (else a 0-triangle with
+`r`), so `s_B + s_C + s_D = 14`; mixture (`x = a`, `u = r`, `f = 0`, `g = c`) gives
+`s_P(a) <= 5` for each arm; three parts summing to 14 with each at most 5 makes
+each at least 4. This is the sharp form of the record's "ten 5s, five 4s", and it
+is the law a two-arm instance must carry if it is to be the one heredity delivers.
+m3 found the same law from the other end and the same caveat: on a truncated arm it
+is false, and demanding it there is UNSAT by counting (130 < 135, §36).
+
+**Decided SAT.** `L3` = words + pair rule + the exact law + per-slot colour-0 caps
++ six-point clauses, at `14+14`: SAT, `wit/rung3.wit`, 28 words, coverage sums in
+{9,10}, and through the member's own independent checker **0 unexpected
+failures** — the only failures are the two omitted families (107 in-arm, 242
+cross-arm monochromatic triangles). So the exact coverage law does **not** close
+the two-arm level.
+
+**Decided UNSAT, certified.** Pin arm `B` to one one-arm model: UNSAT. The DRAT
+replays here as `s VERIFIED` — 4,403 of 114,686 clauses in core, 479,324
+resolution steps, **0 RAT lemmas** — and the CNF is the encoder's output plus 301
+pin units. Of 19 arm models: 10 do not extend, 9 open at 45 s, 0 extend. One of
+the ten has no retained proof and is reported as such.
+
+**The audit that matters.** The record's `14+14` witness (`smwrfgma5/m4/wit/a_14_14.wit`)
+has **258 monochromatic cross-arm triangles** and column sums `[8,9,10]` — one
+position at 8. Transported to the Lean template labelling it violates the exact law
+once and nothing else, and its *words* admit no cross-arm-triangle-free pair
+colouring. So §25's "the two-arm instance is SAT, that route is dead" is
+**withdrawn**: the SAT statement is about the pair level + arm module + coverage
+`<= 10`, which is not the object heredity delivers. The rung that heredity
+delivers — law + arm module + cross-arm module — is **UNKNOWN**, not SAT. The route
+is hard, not closed.
+
+**The wall moves with the instance, and the record must not average.** m8 measures
+the arm module as the wall at `14+14` with the exact law (adding `armT` alone to
+`L3` is UNKNOWN at 1.66 M conflicts / 120 s); m3 measures the cross-arm module as
+the wall at `(14,12)` without the law (in-arm triangles SAT in 140 s and 342 s,
+cross-arm only UNKNOWN at 200 s). Both are correct about their own object. Neither
+is a statement about the branch.
+
+**Two incidental facts worth keeping.** `k15_link_Tminus_m5.col` and
+`k15_template_Tminus_aut2_m4.col` are both isomorphic to Lean's `template 15 true`,
+and `k15_template_Uminus_aut10_m4.col` to `template 15 false` — which is what makes
+§35's labelling hazard possible and why a witness must be quoted with its template.
+And the 254,628-word census is reproduced here for the third time, with the same
+part-size split.

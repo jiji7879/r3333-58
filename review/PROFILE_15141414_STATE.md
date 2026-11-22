@@ -329,11 +329,23 @@ joined in colour 0 with disjoint arm supports. **Realisable**: valid 20- and
 22-vertex colourings carry the 2+1 and 2+2 clusters. So the regime is a small rigid
 object that nothing contradicts.
 
-**Routes closed since §5.** The pair level (SAT, five witnesses). The two-arm
-instance: **`14+14`, `14+13` and `14+12` are all SAT** (verified witnesses), so
-"UNSAT at `14+14` proves the branch" is impossible — and the reason is that with
-two arms the columns reach only 8-10, not 14. The "gluing core": its 0.01 s
-refutation came from a global mixture cap that contradicts the branch by arithmetic.
+**Routes closed since §5.** The pair level (SAT, five witnesses). The "gluing
+core": its 0.01 s refutation came from a global mixture cap that contradicts the
+branch by arithmetic.
+
+**The two-arm level is NOT closed — corrected 2026-11-22.** An earlier revision
+said `14+14`, `14+13`, `14+12` are "all SAT, so UNSAT at `14+14` proves the branch
+is impossible". The witness behind that has **258 monochromatic cross-arm
+triangles** and column sums `[8,9,10]`, so it violates the exact law every branch
+object satisfies (`s_B + s_C in {9,10}`, from mixture + the interface: each arm
+part is 4 or 5) and it is not a model of the instance with cross-arm
+triangle-freeness — its words admit no such completion at all. What is decided is:
+pair level **+ the exact law + per-slot caps + six-point clauses is SAT** at
+`14+14` (`rung3.wit`, coverage sums 9/10, 0 unexpected failures), so the law alone
+closes nothing; and adding the arm module is **UNKNOWN** (2.3 M conflicts / 300 s),
+the full instance **UNKNOWN** (2.0 M / 120 s). Pinning one arm to a one-arm model
+is UNSAT with a replayed DRAT (4,403-of-114,686 clause core, 0 RAT lemmas), and 10
+of 19 such models do not extend, 9 open, 0 extend. `results/two-arm-interface/`.
 
 **What is left.** The **three-arm instance at order 58** (pair level plus arm and
 cross-arm triangle-freeness, columns reaching 14), and the sharpest subsample of it,
