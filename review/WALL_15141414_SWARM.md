@@ -611,3 +611,19 @@ polarity made the child look closed at 400k conflicts — the same
 over-constraint failure mode as §5 — and the child, rebuilt to the pilot hash
 with the marked cuts transferred as sound clauses plus five other families
 (212,730 clauses), is UNKNOWN at 400k/600k/1.2M.
+
+**The interface bound is a property of the frozen CNF, machine-checked.** The
+sender-6 block is fourteen colour-0 edges, `{16-19} ∪ {30-34} ∪ {44-48}` — the
+`(4,5,5)` split visible in the formula — and every other arm vertex carries an
+at-least-14 block whose guard is a unit. Per block: guard plus any 14 of the 42
+is SAT, guard plus any 13 is UNSAT. So `sum_x m(x) >= 210` holds in **every**
+model of the frozen formula, and in the uniform child it forces `m(x) = 5` for
+all 42 unconditionally. That is the interface argument as a property of the CNF
+rather than an assumption imported from the proof.
+
+**Two negatives that agree with each other.** No *physical* nine-set works
+without the orientation transport — all 2,002 candidates fail — so the marked
+cuts are class-level, exactly as another member concluded from the encoding
+side; and the interface collapse is not solver-cheap (`uniform ∧ m(16) <= 4`
+UNKNOWN at 1.31 M conflicts, some_six at 2.61 M). The split itself has now been
+reproduced byte-exactly by three independent encoders.
