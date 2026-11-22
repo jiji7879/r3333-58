@@ -2184,3 +2184,54 @@ non-moment input. Recorded as the end of the counting route, not as its failure.
 variables without the converse clause, giving bogus SAT twice — both caught by
 decoding at the definition level. Third member this round to have such a slip
 caught that way; the practice is holding.
+
+## 49. `M` cannot be pinned by the 0-graph: the relaxation reaches codegree 10
+
+Member m8, direction d2 of `smwrzh71x`; verdict **accepted**. Artefacts:
+`.ultramath/smwrzh71x/m8/relax/{REPORT.md,encoder.py,audit.py,inst/obj_mu10.model}`.
+
+**The object, verified here.** `encoder.py --mu 10 --verify inst/obj_mu10.model`
+returns `VALID: true`: `N(r) = A`, `A` independent, `d_0(a) = 15` at every arm
+point, `m(x) = 5` and `d_0(x) = 15` at all 42 outside vertices, 0 triangles,
+435 edges, mean codegree over the 1,218 non-adjacent pairs exactly **5.000**,
+maximum **10** at `(1,2)`, and the arm structure `|N(z) ∩ arm| <= 5` present. The
+control fires: the same file at `--mu 9` gives `VALID: false` with `max_mu = 10`.
+So **`7 <= M_relax <= 10`**, the lower end from §42/§43's theorems and the upper
+from an explicit, definition-checked object.
+
+**What that kills.** No argument using only the 0-graph can prove `M <= 9`, let
+alone `M <= 7`. Combined with §48's moments (all consistent with `M = 7`), the
+counting route to pinning `M` is exhausted: any bound below 10 must use the word
+and pair structure. That is where m4's 630-boolean reduction (§48) points.
+
+**Everything else is labelled.** Cap 7 and cap 9 UNKNOWN at 300 s (348,613
+conflicts on cap 7), CEGAR UNKNOWN, local search 12.8 M moves from six starts
+reaching 12, 11, 10 and stalling at 9 with the two failure modes measured
+separately (0 excess with 25 triangles, or 0 triangles with 14 excess, never
+both). No UNSAT is claimed, so no DRAT obligation arises — correct.
+
+**Two artefacts withdrawn and kept** (`inst/NOT-A-WITNESS_*`): a mixed
+`A`-`X`/`X`-`X` 2-swap cannot preserve `m(x) = 5`, and a stale triangle cache gave
+a fake `E = 0`. The second is the same class as four earlier failures in this
+campaign, and keeping it as evidence is the right call.
+
+## The `smwrzh71x` board, as it closed
+
+Eight members, seven accepted, one ended without a solution. What the swarm
+settled, in one place:
+
+| member | direction | outcome |
+| --- | --- | --- |
+| m3 | kernelise `M >= 7` | `K58.M_ge_seven`, axiom-clean, by a shorter route than the paper (§42) |
+| m6 | the `2-(15,5,4)` design | `design_not_realisable` + `trace_codegree_six` at threshold 12 (§43) |
+| m2 | the exchange residue | kernelised, exact, and **inert** at the profile (§44) |
+| m7 | the ticket rung | design layer SAT at `k = 10`; the binding family is `R3` at `k = 0` (§46) |
+| m1 | the truncation layer | Ramsey-indexed family, thresholds 3/6/17/51; depth at least 6 (§45) |
+| m4 | the SAT-free route on `M` | `G_0[X]` not bipartite, no vertex-transitive model, 630-boolean reduction (§48) |
+| m8 | pin `M` | `7 <= M_relax <= 10`: the 0-graph cannot pin it (§49) |
+| m5 | mixed codegree at 15/14 | ended without a solution |
+
+Net effect on the profile: **no case closed, no bound moved**, and four routes
+closed with reasons (`M` by counting, the exchange lemma, the ticket ladder, the
+truncation lemma as a universal statement), plus one new tool (the 630-boolean
+instance) and four kernel theorems.
