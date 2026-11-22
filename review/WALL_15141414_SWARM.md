@@ -806,3 +806,28 @@ arm is *tiny* — it refutes in a hundredth of a second, so it has a short core.
 Extracting that core (which constraints kill the extension: a column sum, a
 cross-arm pair condition, or one of the new blocked sets) is the sharpest open
 question this round produced.
+
+**The pair level decided a second time, by a different encoding.** 42 rows of five
+zeros with ordinary parts independent in `T^-`, real pair-colour variables with
+`M_f`-disjointness, the root colour banned inside an arm, `m(x) = 5` on every row
+and `|S(a)| = 14` on every column: 22,506 variables, 95,208 clauses (hash
+recorded), CaDiCaL SAT in 16.3 s, and a checker that re-parses the template from
+the file and shares no code with the encoder reports zero failures, fifteen
+columns of 14 and 0/861 pair violations. The two witnesses differ (40 distinct
+words with 4 extremal on six vertices here, 42 distinct with 5/5/6 in §13), so the
+conclusion is robust: **the pair level at order 58 is satisfiable and cannot prove
+the uniform branch.**
+
+Two further closings from the same run. The slack family with `|S(a)| in {14,15}`
+and free rows is **SAT for every `u` from 0 to 15**, so no interface-only argument
+exists at any `u` — the interface line is closed as a class, not at a point. And
+real colourings realise the interface data with `u > 0` (`n48_z4z4_f0.col` at
+`u = 0` with every outside vertex at `m >= 6`, `k50_blockcayley` at `u = 7`,
+`k49_from_n48_m5.col` at `u = 9`), so the some-six child is inhabited and cannot
+be dismissed locally.
+
+**What the witness violates, which is where the next rung is.** The arm-saturation
+bound (`|Z|` up to 17 against 5), the degree cap (37) and mixture. The saturation
+bound is kernel-checked and fails first in every known witness, and it has never
+been put in front of a solver together with the pair level: **pair level +
+saturation** is the strongest untried rung.
