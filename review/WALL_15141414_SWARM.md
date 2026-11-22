@@ -831,3 +831,21 @@ bound (`|Z|` up to 17 against 5), the degree cap (37) and mixture. The saturatio
 bound is kernel-checked and fails first in every known witness, and it has never
 been put in front of a solver together with the pair level: **pair level +
 saturation** is the strongest untried rung.
+
+**The pair level settled three ways, with a quantitative diagnosis.** A third
+independent encoding (cells over 42 × 15, five zeros per row, part independence,
+columns exactly 14, pair auxiliaries, nothing added — 41,601 variables, 134,559
+clauses, exactness argued both ways, kissat SAT in 5.4 s and CaDiCaL in 3.9 s,
+with a separate witness checker) confirms it. Its witness is far from a colouring
+in a measurable way: overlap masses **319/314/732** where a real colouring needs
+**455 for each**, and **2,562** monochromatic triangles inside `X`. That is the
+sharpest statement available of what the `X`-internal colouring must supply — not
+"some triangles" but a specific redistribution of nearly a thousand units of
+pairwise overlap. The same model with "at most 14" columns is UNKNOWN at 300 s,
+which explains the external note's wall: it measured the encoding, not the
+mathematics.
+
+**The smallest hard target is 28 vertices.** With triangle-free arms: `14+12` SAT
+in 28.8 s, `14+13` and `14+14` UNKNOWN at 600 s, order 58 UNKNOWN. A real object
+restricted to two arms models `14+14`, so UNSAT there proves the uniform branch —
+and it is a 28-vertex object rather than a 58-vertex one.
