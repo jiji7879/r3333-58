@@ -597,3 +597,17 @@ it removes a family of candidate colourings and does not advance the cover.
 `2 × Z_29` and `3 × Z_19 + 1` were UNKNOWN at 400 s and 540 s; the latter is the
 shape of the known good `K_50` and the only structured family at this order
 where a positive answer is plausible.
+
+**The bundle's orientation table reproduced independently, and one clause-family
+scope question closed.** A member recomputed the 14-arm orientation table with
+its own parser, a tighter family and an exact ILP: 300 of 345 surviving,
+agreement 345/345, 18,276 four-sets, 2,194 excluded in 57 orientations. It also
+closed the shape-scope question — the part `S_b = N_b(r) cap T` lies inside the
+sender's own classified class `T = N_b(x)`, so the P₄/C₅ shapes are template
+properties; 248 instances over 4 templates × 4 sender colours × every vertex,
+both other palette colours, zero violations, and restricting the shapes to
+template parts adds no clause. It withdrew a build of its own whose auxiliary
+polarity made the child look closed at 400k conflicts — the same
+over-constraint failure mode as §5 — and the child, rebuilt to the pilot hash
+with the marked cuts transferred as sound clauses plus five other families
+(212,730 clauses), is UNKNOWN at 400k/600k/1.2M.
