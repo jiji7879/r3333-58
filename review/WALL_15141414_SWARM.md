@@ -849,3 +849,20 @@ mathematics.
 in 28.8 s, `14+13` and `14+14` UNKNOWN at 600 s, order 58 UNKNOWN. A real object
 restricted to two arms models `14+14`, so UNSAT there proves the uniform branch —
 and it is a 28-vertex object rather than a 58-vertex one.
+
+**The simplest witness, and a correction to my own brief.** One word per arm,
+fourteen copies each, provided the word's empty ordinary part is *not* the arm's
+root colour (otherwise the only separating colour is the forbidden one). Coverage
+then follows: each arm point is 0-adjacent to the fourteen copies in its own arm,
+so **coverage is 14 per arm point**, while each of the 42 outside vertices lies in
+five supports (`15 * 14 = 42 * 5 = 210`). An earlier brief of mine said "covered
+exactly five times" of the arm points — that conflates the two dual statements and
+is wrong. Solver confirmation on a compact exact encoding (93,261 clauses): SAT in
+10.1 s (T) and 2.9 s (U), still SAT with the verified "at most 16 extremal" bound
+added. The `U` template is a genuinely different instance (`254,088` words).
+
+**The wall as measured from a fourth encoding.** Pair level plus `X`-internal
+triangle-freeness UNKNOWN at 380 s; the exact compact encoding of the uniform child
+UNKNOWN at 600 s *even with* L1, the degree cap, the six-point arm lemma at all
+fifteen arm vertices, the root class sizes and a validated lex symmetry break;
+Family B's `(B2)` relaxation UNKNOWN at 600 s.
