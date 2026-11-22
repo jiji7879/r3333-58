@@ -61,3 +61,41 @@ No complete coverage profile, no ledger row, no change in the Ramsey bound. The
 proposed solver use — reject a branch whenever a matching covers the ten pattern
 rows (`matches_pattern`) — is **not measured**: it needs the template labels
 translated and the cut guarded by the branch hypotheses, and the package says so.
+
+## The 116-cell pattern as a cut: sound, and inert at 150 s
+
+The package proposes rejecting any branch in which a matching covers the ten
+pattern rows. Implemented on the 42-slot instance (`cut.py`), with the pattern's
+letters read from `source.wit` — the package's `template_m4.col` is byte-identical
+to our `artifacts/k15_template_Tminus_aut2_m4.col`, so no relabelling is needed.
+
+**First attempt, and why it is a lesson.** I asserted *all* Hall conditions —
+"for every subset `T` of the ten rows, at least `|T|` arm slots match some row of
+`T`". That is the assertion that a matching *exists*, which is the negation of the
+theorem, and it returned UNSAT in **0.1 s**. The direction is the whole content:
+the theorem says no injective placement exists, so in any valid object **some**
+Hall condition fails:
+
+    OR over all T of  |N(T)| < |T| .
+
+Asserting the conjunction instead is the `ERRATA` failure mode — an over-constrained
+formula that refutes itself — and the 0.1 s was the tell, the same tell as the
+0.0 s in `results/hailmary-2/`.
+
+**The sound version is inert.** 1,023 subsets (all non-empty `T`), 77 k extra
+variables, 221 k extra clauses:
+
+| instance | status @150 s | conflicts @120 s | propagations |
+| --- | --- | ---: | ---: |
+| 42 slots, no cut | UNKNOWN | 4,743,303 | 495,188,934 |
+| 42 slots + the pattern cut | UNKNOWN | 4,847,461 | 534,328,301 |
+
+Two per cent *more* conflicts: the extra structure costs slightly more than the
+pruning earns, at this budget. The cut only bites in regions where ten arm slots
+simultaneously match ten different partial rows, and the solver does not reach
+those regions early enough for it to matter.
+
+So the pattern is a real theorem and a real exclusion, but as a cut on this
+instance it changes nothing measurable. What would make it bite is an encoding
+where "slot `s` has word `w`" is a literal — the word-indexed form — and that
+blows up to 10^10 selectors with all 254,628 words.
