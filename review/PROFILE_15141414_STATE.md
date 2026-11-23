@@ -424,11 +424,30 @@ here).** Two packages from an external model, both fully replayed on this machin
   them the counts are `2·min, 2·min, min`. Since `N_0(a)` meets the three arms in a
   permutation of `(5,5,4)`, and exactly five positions have two fives, the sums are
   `5·5 + 10·4 = 65` and `2·65 = 130`. **The 130/130/65 split is forced, not a
-  constraint.** Consequence: the sentence recorded here last round, "at least nine
-  of the fourteen vertices attain five", is **false** — the 4-or-5 data are the
-  `(5,5,4)` cluster sizes at the **15 positions**, not a per-vertex attainment; the
-  `65` is `5·5 + 10·4` over positions. The law still discriminates against every
-  recorded witness (`72, 88, 151`), because those violate the instance itself.
+  constraint.** The law still discriminates against every recorded witness
+  (`72, 88, 151`), because those violate the instance itself.
+
+  **Third revision of the "nine of the fourteen" sentence, and the second one was
+  mine.**  Withdrawn here on 2026-11-23 on m8's argument that the 4-or-5 data are
+  cluster sizes at the **15 positions** — and restored on 2026-11-23 after
+  `K58_twisted_partition_screen` supplied the object m8's argument did not
+  consider.  Both decompositions of the `65` are true, and they are different
+  quantities:
+
+  * by positions, `Σ_a min(b_a, c_a) = 5·5 + 10·4 = 65`;
+  * by vertices: between two classes of the root the third-colour edges form a
+    **matching** — verified here on `T.col` and `U.col` at all 30 rooted views, the
+    maximum third-colour degree between any two classes is exactly **1**.  So for
+    `y ∈ B` each of its five zero-senders contributes at most one matched partner,
+    `t(y) ≤ 5`; `Σ_{y∈B} t(y) = 65` over fourteen vertices; and eight fives with six
+    fours give at most `8·5 + 6·4 = 64`.  Hence **at least nine of the fourteen
+    attain five**, with `t(y) = |{a ∈ Z(y) : y is matched at a}|`.
+
+  m8's calculation was right about the position decomposition and wrong to infer
+  that no per-vertex statement exists; this record was wrong to withdraw the
+  sentence on that basis.  The lesson is the one this campaign keeps relearning:
+  a total has several decompositions, and refuting one derivation does not refute
+  the statement.
 
 Neither closes a row: the seven uniform children remain open, as both packages say.
 
