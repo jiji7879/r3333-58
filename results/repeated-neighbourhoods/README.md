@@ -108,6 +108,28 @@ Two properties of the refutation, both checked by the member and worth recording
 
 Scope: this is claim 2 in the uniform branch.  The some-six analogue is untouched.
 
+## Claim 1 in the kernel, in two halves, with the bridge still by hand
+
+Registered in `lean/` (see `K58/Check.lean`, now 270 audited declarations):
+
+* `K58/ZeroSet.lean` — 16 theorems, the combinatorial inputs: zero-free sets have
+  at most 16 points, `|X(L)| <= 6`, `|X(L)| + |X(M)| + |L cap M| <= 11`, no three
+  pairwise-meeting five-sets of multiplicity >= 5, at most three fivefold classes,
+  sixfold classes disjoint, at most two fivefold at a point, senders cover >= 13
+  points and need >= 3 supports.  Most of these need only triangle-freeness and
+  `|N_0(r)| = 15` — not `|V| = 58`, not `m = 5`, not the template.
+* `K58/Multiplicity.lean` — 71 theorems, one per multiplicity spectrum, each
+  `not exists x : Fin k -> Q, (forall j, 0 <= x j) and <the spectrum's system>`:
+  the Farkas combination checked by the kernel.
+
+**Not one theorem.**  Nothing in Lean connects the two files: the passage from a
+colouring to numbers satisfying the spectra's inequalities is an audited table, in
+`REPORT.md` of m5's directory and in m4's.  So the honest sentence is "the
+combinatorial inputs and the arithmetic are both kernel-checked, and the link
+between them is checked by reading" — not "claim 1 is kernel-checked".  The same
+discipline applies to `K58.Replay.frozenCover`, which is a theorem, versus the
+refutation of any one case, which does not exist.
+
 ## What is still open about it
 
 * §5 is a finite search over 332 arms × 2 orientations by one C++ program.  An
