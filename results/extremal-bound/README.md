@@ -87,3 +87,26 @@ rather than gesturing at it: 63 natural neighbourhoods, 39,711 triples, only
 most 41 — so **an upper bound of 41 on the outside capacity would close it**
 against `|X| = 42`. That is the sharpest statement of what a covering argument
 would have to prove, and it is one vertex, not sixteen.
+
+## The sharpened bound as clauses: 6 %, and no decision
+
+The cross-arm package sharpens "at most 12" to "at most three per arm" (so at
+most nine). Encoded per arm on the 42-slot instance (`om3.py`), with the same
+`e_f(x) <-> M_f(x) = empty` machinery:
+
+| bound imposed | variables | clauses | status @120 s | conflicts @120 s |
+| --- | ---: | ---: | --- | ---: |
+| none | 45,381 | 179,318 | UNKNOWN | 4,743,303 |
+| at most 12 in total | 46,053 | 182,539 | UNKNOWN | 4,696,072 (-1 %) |
+| **at most 3 per arm** | 45,675 | 181,784 | UNKNOWN | **4,455,139 (-6 %)** |
+
+Six per cent is the best any clause-level intervention has managed in this
+campaign, and it is six per cent of nothing: the instance is still undecided at
+120 s, and the base needs 30.9 M conflicts at 3,600 s.
+
+**So the bounds do not help the solver as constraints.** They can still help it as
+a **checker**: any model a solver returns for a uniform-child case must satisfy
+both the omission bounds and the `130/130/65` matching law, and every existing
+witness violates the law badly. In a campaign whose four worst failures were all
+artefacts that looked like progress, a structural test that a candidate object
+must pass is worth more than a 6 % conflict reduction.
