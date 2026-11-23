@@ -11,6 +11,18 @@ import K58.Interface
 import K58.Blocked
 import K58.Templates
 import K58.TwoArm
+import K58.Classification
+import K58.MarkedPalette
+import K58.KindPlan
+import K58.MarkBreadth
+import K58.Ledger
+import K58.EmbeddingCover
+import K58.RawCover
+import K58.FamilyGluing
+import K58.StructuralTransport
+import K58.TransportExample
+import K58.BulkReplay
+import K58.RootMasks
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -86,10 +98,72 @@ import K58.TwoArm
 #print axioms K58.Residue.exchange_sixteen
 #print axioms K58.Residue.exchange_fifteen
 #print axioms K58.Residue.residue_arms
--- Target 5 (design layer), swarm smwrzh71x member m6, lean/K58/Design.lean
 #print axioms K58.le_choose_two_add_one
 #print axioms K58.collision_engine_add_one
 #print axioms K58.rx_lower_refined
 #print axioms K58.design_forces_light
 #print axioms K58.trace_codegree_six
 #print axioms K58.design_not_realisable
+#print axioms K58.classified_15
+#print axioms K58.classified_16
+#print axioms K58.no_marked_swap_15
+#print axioms K58.catalogue_col_15
+#print axioms K58.catalogue_col_16
+#print axioms K58.palette_15
+#print axioms K58.palette_16_fixing
+#print axioms K58.marked_sender
+#print axioms K58.pin_of_named_classification
+#print axioms K58.template_support_shape
+#print axioms K58.pinned_support_shape
+#print axioms K58.critical_arm_pinned
+#print axioms K58.marked_sender_pinned
+#print axioms K58.PositionSearch.mem_automorphisms_iff
+#print axioms K58.named15_exact
+#print axioms K58.mem_positionOrbit15
+#print axioms K58.positionOrbit16_all
+#print axioms K58.markClasses15_TTT
+#print axioms K58.markClasses15_UUU
+#print axioms K58.ledger_mark_breadth
+#print axioms K58.reached15_has_retained_mark
+#print axioms K58.root_plan_with_kinds
+#print axioms K58.frozenKeys_length
+#print axioms K58.template15_zero_degrees
+#print axioms K58.named_position_counts15
+#print axioms K58.support_embedding_represented
+#print axioms K58.pin_in_global_palette
+#print axioms K58.root_plan_in_global_palette
+#print axioms K58.slotLabel_bijective
+#print axioms K58.slotLabel_val
+#print axioms K58.exists_root_layout
+#print axioms K58.attached_block_realizes
+#print axioms K58.frozenCover_of_attachments
+#print axioms K58.reached_layout_sender
+#print axioms K58.root_layout_marked_block
+#print axioms K58.realizes_of_unitTransport
+#print axioms K58.frozenCover_of_rawCover
+#print axioms K58.secondRoots15_exact
+#print axioms K58.rawFamilies_length
+#print axioms K58.marked_orbit_lifts
+#print axioms K58.root_layout_at_retained_mark
+#print axioms K58.canonicalArm_ok
+#print axioms K58.exists_realized_raw_family
+#print axioms K58.rawCover_of_family_placements
+#print axioms K58.frozenCover_of_family_placements
+#print axioms K58.familyPlacementCover
+#print axioms K58.rawCover
+#print axioms K58.named16_exact
+#print axioms K58.supportTable_cover
+#print axioms K58.expandKey_of_labels
+#print axioms K58.Frozen.Address.mem
+#print axioms K58.transport_of_bits
+#print axioms K58.covered_of_transportCheck
+#print axioms K58.cover_family_of_grid
+#print axioms K58.PlacementTables.expand_exact
+#print axioms K58.transport_of_alignment
+#print axioms K58.covered_aligned
+#print axioms K58.PlacementTables.expand_marking
+#print axioms K58.rawTransportCover_of_plans
+#print axioms K58.frozenCover_of_transports
+#print axioms K58.example_transport_into_frozen
+#print axioms K58.grid_of_checked_rows
+#print axioms K58.root_of_packed_test

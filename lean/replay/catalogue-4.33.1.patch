@@ -1,0 +1,148 @@
+--- a/R4333Lean/CatalogueBaseCNFSemantics.lean
++++ b/R4333Lean/CatalogueBaseCNFSemantics.lean
+@@ -32,2 +32 @@
+-  simp only [List.mem_singleton] at hclause
+-  subst clause
++  obtain rfl := List.mem_singleton.mp hclause
+@@ -42,2 +41 @@
+-  simp only [List.mem_singleton] at hclause
+-  subst clause
++  obtain rfl := List.mem_singleton.mp hclause
+@@ -54,2 +52 @@
+-  simp only [List.mem_map] at hclause
+-  obtain ⟨x, hx, rfl⟩ := hclause
++  obtain ⟨x, hx, rfl⟩ := List.mem_map.mp hclause
+@@ -65,2 +62 @@
+-  simp only [List.mem_map] at hclause
+-  obtain ⟨x, hx, rfl⟩ := hclause
++  obtain ⟨x, hx, rfl⟩ := List.mem_map.mp hclause
+@@ -80,2 +76 @@
+-  simp only [List.mem_map] at hclause
+-  obtain ⟨x, hx, rfl⟩ := hclause
++  obtain ⟨x, hx, rfl⟩ := List.mem_map.mp hclause
+--- a/R4333Lean/ClebschCompletionClassification.lean
++++ b/R4333Lean/ClebschCompletionClassification.lean
+@@ -52,0 +53,7 @@
++private theorem red_symmetric (a b : Nat) : canonicalClebschRed a b = canonicalClebschRed b a := by
++  have h : canonicalPairCode a b = canonicalPairCode b a := by
++    unfold canonicalPairCode
++    rw [Nat.min_comm a b, Nat.max_comm a b]
++  unfold canonicalClebschRed
++  rw [h]
++
+@@ -63 +70 @@
+-      simp [canonicalClebschRed, canonicalPairCode, min_comm, max_comm]
++      exact red_symmetric _ _
+@@ -92 +99 @@
+-    simpa [canonicalClebschRed, canonicalPairCode, min_comm, max_comm] using h.2⟩
++    exact (red_symmetric _ _).trans h.2⟩
+@@ -168 +175 @@
+-  fin_cases i <;> decide
++  fin_cases i <;> decide +kernel
+@@ -188 +195 @@
+-  fin_cases i <;> decide
++  fin_cases i <;> decide +kernel
+--- a/R4333Lean/ClebschCompletionSemantics.lean
++++ b/R4333Lean/ClebschCompletionSemantics.lean
+@@ -197,2 +197,2 @@
+-    simp only [List.mem_cons, List.not_mem_nil, or_false] at hclause
+-    rcases hclause with rfl | rfl
++    have hcases := (List.mem_cons.mp hclause).imp_right List.mem_singleton.mp
++    rcases hcases with rfl | rfl
+@@ -257,2 +257 @@
+-    simp only [List.mem_map] at hclause
+-    obtain ⟨bits, hbitsMem, rfl⟩ := hclause
++    obtain ⟨bits, hbitsMem, rfl⟩ := List.mem_map.mp hclause
+--- a/R4333Lean/ColorRelabel.lean
++++ b/R4333Lean/ColorRelabel.lean
+@@ -51,3 +51,4 @@
+-  ext w
+-  simp only [colorNeighborhood, Finset.mem_filter, Finset.mem_univ, true_and,
+-    mapEdgeColors_apply]
++  apply Finset.ext
++  intro w
++  rw [mem_colorNeighborhood, mem_colorNeighborhood]
++  change (w ≠ v ∧ e (c v w) = q) ↔ w ≠ v ∧ c v w = e.symm q
+--- a/R4333Lean/FiniteColorCNF.lean
++++ b/R4333Lean/FiniteColorCNF.lean
+@@ -183,2 +183 @@
+-  simp only [atLeastOneClauses, List.mem_map] at hclause
+-  obtain ⟨⟨a, b⟩, hedge, rfl⟩ := hclause
++  obtain ⟨⟨a, b⟩, hedge, rfl⟩ := List.mem_map.mp hclause
+@@ -202,2 +201,2 @@
+-  simp only [atMostOneClauses, List.mem_flatMap, List.mem_map] at hclause
+-  obtain ⟨⟨a, b⟩, hedge, ⟨⟨q, r⟩, hqr, rfl⟩⟩ := hclause
++  obtain ⟨⟨a, b⟩, hedge, hrow⟩ := List.mem_flatMap.mp hclause
++  obtain ⟨⟨q, r⟩, hqr, rfl⟩ := List.mem_map.mp hrow
+@@ -235,2 +234,2 @@
+-  simp only [triangleClauses, List.mem_flatMap, List.mem_map] at hclause
+-  obtain ⟨⟨a, b, d⟩, htriple, ⟨q, hq, rfl⟩⟩ := hclause
++  obtain ⟨⟨a, b, d⟩, htriple, hrow⟩ := List.mem_flatMap.mp hclause
++  obtain ⟨q, hq, rfl⟩ := List.mem_map.mp hrow
+--- a/R4333Lean/K15DeficientCertificate.lean
++++ b/R4333Lean/K15DeficientCertificate.lean
+@@ -303,10 +303,5 @@
+-  ext x
+-  simp only [Finset.mem_filter, Finset.mem_univ, true_and, endpointCell,
+-    actualEndpointKey, awayFrom, Finset.mem_erase]
+-  by_cases hxu : x = u
+-  · subst x
+-    simp [huv]
+-  · by_cases hxv : x = v
+-    · subst x
+-      simp [hxu]
+-    · simp [hxu, hxv]
++  apply Finset.ext
++  intro x
++  rw [Finset.mem_filter]
++  simp only [Finset.mem_univ, true_and, actualEndpointKey_eq_pair_iff]
++  simp [endpointCell, awayFrom, and_assoc, and_left_comm, and_comm]
+@@ -328 +323,4 @@
+-  ext x
++  apply Finset.ext
++  intro x
++  rw [Finset.mem_filter]
++  simp only [Finset.mem_univ, true_and, Finset.mem_singleton]
+@@ -572,2 +570 @@
+-  simp only [setEdge, List.mem_cons, List.not_mem_nil, or_false] at hclause
+-  subst clause
++  obtain rfl := List.mem_singleton.mp hclause
+@@ -584,2 +581 @@
+-  simp only [forbidEdge, List.mem_cons, List.not_mem_nil, or_false] at hclause
+-  subst clause
++  obtain rfl := List.mem_singleton.mp hclause
+@@ -601,2 +597 @@
+-  simp only [setRootBlock, List.mem_map] at hclause
+-  obtain ⟨vertex, hvertex, rfl⟩ := hclause
++  obtain ⟨vertex, hvertex, rfl⟩ := List.mem_map.mp hclause
+@@ -621,2 +616 @@
+-  simp only [List.mem_map] at hclause
+-  obtain ⟨vertex, hvertex, rfl⟩ := hclause
++  obtain ⟨vertex, hvertex, rfl⟩ := List.mem_map.mp hclause
+@@ -645,2 +639 @@
+-  simp only [selectRootPrefix, List.mem_map] at hclause
+-  obtain ⟨position, hposition, rfl⟩ := hclause
++  obtain ⟨position, hposition, rfl⟩ := List.mem_map.mp hclause
+@@ -674,2 +667 @@
+-  simp only [colorRootPrefix, List.mem_map] at hclause
+-  obtain ⟨position, hposition, rfl⟩ := hclause
++  obtain ⟨position, hposition, rfl⟩ := List.mem_map.mp hclause
+--- a/R4333Lean/K16CommonCertificate.lean
++++ b/R4333Lean/K16CommonCertificate.lean
+@@ -527,2 +527 @@
+-  simp only [setRootBlock, List.mem_map] at hclause
+-  obtain ⟨vertex, hvertex, rfl⟩ := hclause
++  obtain ⟨vertex, hvertex, rfl⟩ := List.mem_map.mp hclause
+@@ -551,2 +550 @@
+-  simp only [selectRootPrefix, List.mem_map] at hclause
+-  obtain ⟨position, hposition, rfl⟩ := hclause
++  obtain ⟨position, hposition, rfl⟩ := List.mem_map.mp hclause
+@@ -579,2 +577 @@
+-  simp only [colorRootPrefix, List.mem_map] at hclause
+-  obtain ⟨position, hposition, rfl⟩ := hclause
++  obtain ⟨position, hposition, rfl⟩ := List.mem_map.mp hclause
+@@ -1373 +1370,3 @@
+-  simp [colorGraph, colorNeighborhood, eq_comm]
++  rw [SimpleGraph.mem_neighborFinset, mem_colorNeighborhood]
++  change (v ≠ w ∧ c v w = q) ↔ w ≠ v ∧ c v w = q
++  exact ⟨fun h => ⟨Ne.symm h.1, h.2⟩, fun h => ⟨Ne.symm h.1, h.2⟩⟩
