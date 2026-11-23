@@ -4,6 +4,8 @@
 #   ./k58.sh doctor     check the machine and replay the bundled example
 #   ./k58.sh test       close 5 cases end to end (a few minutes)
 #   ./k58.sh run ...    run shards
+#   ./k58.sh uniform ...         search the seven fully sending uniform children
+#   ./k58.sh profile-fast ...    run the optimized (15,14,14,14) search
 #   ./k58.sh finalise   build a manifest and replay every certificate
 #   ./k58.sh status     how far along, how much disk
 #   ./k58.sh watch      is the run alive? per-worker elapsed times and counters
@@ -87,6 +89,15 @@ cmd_test() {
 
 cmd_run() {
   need_venv
+  local opt fast=0
+  local forwarded=()
+  for opt in "$@"; do
+    if [ "$opt" = "--fast" ]; then fast=1; else forwarded+=("$opt"); fi
+  done
+  if [ "$fast" -eq 1 ]; then
+    "$PY" "$BUNDLE/profile_fast.py" "${forwarded[@]}"
+    return $?
+  fi
   local profile="" shards=1 shard=0 workers=4 tier=first seconds=12 conflicts=400000 limit=""
   local check_seconds=${K58_CHECK_SECONDS:-300}
   while [ $# -gt 0 ]; do case "$1" in
@@ -264,6 +275,8 @@ case "${1:-}" in
   doctor) cmd_doctor ;;
   test) cmd_test ;;
   run) shift; cmd_run "$@" ;;
+  uniform) shift; need_venv; exec "$PY" "$BUNDLE/uniform.py" "$@" ;;
+  profile-fast) shift; need_venv; exec "$PY" "$BUNDLE/profile_fast.py" "$@" ;;
   finalise) shift; cmd_finalise "$@" ;;
   status) cmd_status ;;
   watch) shift; cmd_watch "$@" ;;

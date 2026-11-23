@@ -32,6 +32,12 @@ PIN
 cp "$KISSAT" "$PKG/bin/kissat"; cp "$DRAT" "$PKG/bin/drat-trim"; chmod +x "$PKG/bin"/*
 cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,verify_parallel.py,retry_status.py,find_unpublished.py,manifest_parallel.py,cover_evidence_full_root.patch} "$PKG/tools/"
 cp "$HERE/k58.sh" "$HERE/k58-batch.sh" "$HERE/patch_batch_only_small.py" "$HERE/README.md" "$PKG/"
+# The compat package's additions: the compact/fast search (profile_fast.py and its
+# two kernels), the seven uniform children (uniform.py, uniform_kernel.py and the
+# arm-type table), the bundled uniform proofs, and its run_cover.py, which replaces
+# the patched one -- it carries the same K58_CHECK_SECONDS behaviour and records the
+# formula and proof sizes in a failure line.  Vendored under tools/selfcontained/k58new.
+cp -a "$HERE"/k58new/. "$PKG/k58/"
 for v in 3.10 3.11 3.12 3.13; do
   python3 -m pip download python-sat==1.9.dev22 -d "$PKG/wheels" --no-deps -q \
     --only-binary=:all: --python-version $v --implementation cp --abi cp${v/./} \
