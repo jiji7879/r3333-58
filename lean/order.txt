@@ -72,4 +72,7 @@ NoSingleton
 DesignIncidence
 Incidence
 ProfilesIncidence
+ArmLayer
+PlacementsIneq
+SixCycle
 Check

@@ -38,6 +38,9 @@ import K58.NoSingleton
 import K58.DesignIncidence
 import K58.Incidence
 import K58.ProfilesIncidence
+import K58.ArmLayer
+import K58.PlacementsIneq
+import K58.SixCycle
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -376,3 +379,33 @@ import K58.ProfilesIncidence
 #print axioms K58.x5_redundant
 #print axioms K58.profile_allW
 #print axioms K58.witnesses
+#print axioms K58.count_alternates
+#print axioms K58.count_form
+#print axioms K58.four_count_vectors
+#print axioms K58.alternating_solutions
+#print axioms K58.no_triangle_weights
+#print axioms K58.count_vector_pairs
+#print axioms K58.facts_display16
+#print axioms K58.facts_p36_0
+#print axioms K58.facts_p36_1
+#print axioms K58.facts_p36_2
+#print axioms K58.count_vector_display16
+#print axioms K58.count_vector_p36_0
+#print axioms K58.count_vector_p36_1
+#print axioms K58.count_vector_p36_2
+#print axioms K58.intra3_distinct
+#print axioms K58.case_count
+#print axioms K58.image0_facts
+#print axioms K58.image1_facts
+#print axioms K58.image2_facts
+#print axioms K58.image3_facts
+#print axioms K58.image_partitions_distinct
+#print axioms K58.image0_is_display
+#print axioms K58.T_invariant
+#print axioms K58.T_values
+#print axioms K58.no_iso_display_p36_0
+#print axioms K58.no_iso_display_p36_1
+#print axioms K58.no_iso_display_p36_2
+#print axioms K58.p36_pairwise_inequivalent
+#print axioms K58.connected_of_two_regular_of_triangle_free
+#print axioms K58.connected_of_weights
