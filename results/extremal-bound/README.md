@@ -40,3 +40,41 @@ pair-level witnesses carry 5 or 6 extremal slots, so the achievable count is low
 The live question is therefore whether the coverage and pair-rule structure forces
 a *minimum* on extremal slots — and the honest answer is that two years of work on
 this profile have never needed one.
+
+## The proof arrived, and what I could and could not check
+
+`attachments/let-s-try-and-wcbj/K58_uniform_word_cover.md` (11.3 KiB). Structure:
+a location lemma (five omitting vertices in one arm carry five of the six words
+`{6,8,10,12,16,17}` of the eighteen extremal words, by a finite classification
+over the 332-catalogue), a per-arm cap of six, an exterior lemma (if an arm has
+five or more omissions, every omitting vertex outside it omits that arm's root
+colour, and at most five occur in the other two arms), and then the table
+
+| largest omission count in one arm | bound on the total |
+| ---: | ---: |
+| <= 4 | 12 |
+| 5 | 10 |
+| 6 | 11 |
+
+which gives **12**. The table's arithmetic is right, the case split is exhaustive,
+and the shape of the argument — finite classification, then a two-star exterior
+test — is the right one.
+
+**What I could not check.** The load-bearing computation is "2,339 multisets of
+five extremal words survive the hereditary necessary conditions, and exactly six
+five-subsets are realisable", which their `verify.py` performs. I attempted an
+independent check with this campaign's own encoder and **the attempt was invalid**:
+I built the single-arm instance with `ladder.build(tpl, [14])`, and that encoder
+carries the *three-arm* coverage totality (exactly two arms at four-or-five
+coverage), which is unsatisfiable with one arm. Every UNSAT it returned was an
+artefact of that, not a refutation of the lemma — which is why it returned UNSAT
+for five of the six claimed subsets, an outcome no honest check should produce.
+The correct instance is `m4/enc.py` with sizes `(14,0)`, whose families are the
+one-arm ones; I did not get to it.
+
+**What is new and useful regardless.** Their cover analysis quantifies the target
+rather than gesturing at it: 63 natural neighbourhoods, 39,711 triples, only
+`B, C, D` covers `X`, every other triple covers at most 37, four sets cover at
+most 41 — so **an upper bound of 41 on the outside capacity would close it**
+against `|X| = 42`. That is the sharpest statement of what a covering argument
+would have to prove, and it is one vertex, not sixteen.
