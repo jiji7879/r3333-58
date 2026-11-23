@@ -23,6 +23,9 @@ import K58.StructuralTransport
 import K58.TransportExample
 import K58.BulkReplay
 import K58.RootMasks
+import K58.ArmRung
+import K58.ArmFarFive
+import K58.ArmFarFourReg
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -167,3 +170,31 @@ import K58.RootMasks
 #print axioms K58.example_transport_into_frozen
 #print axioms K58.grid_of_checked_rows
 #print axioms K58.root_of_packed_test
+#print axioms K58.mem_nbrC_swap
+#print axioms K58.sum_inter_nbrC_comm
+#print axioms K58.word_support_eq_five
+#print axioms K58.sum_support_arm
+#print axioms K58.sum_support_subset
+#print axioms K58.rung_guard
+#print axioms K58.rung_exists_le_eight
+#print axioms K58.guard_sharp
+#print axioms K58.block_le_five
+#print axioms K58.block_le_five_subset
+#print axioms K58.block_le_ten
+#print axioms K58.exists_class_of_ne
+#print axioms K58.nbrC_zero_cover
+#print axioms K58.nbrC_zero_card_split
+#print axioms K58.rung_box
+#print axioms K58.rung_three_slack
+#print axioms K58.slack_sharp
+#print axioms K58.rung_deficiency
+#print axioms K58.arm_triple
+#print axioms K58.two_arm_law
+#print axioms K58.M_ge_seven_of_crit
+#print axioms K58.armFar_five_zero_degree
+#print axioms K58.armFar_five_nonzero_degree
+#print axioms K58.far18_triangleFree
+#print axioms K58.far18X_card
+#print axioms K58.far18_X_free
+#print axioms K58.far18_armFar_card
+#print axioms K58.armFar_four_attained
