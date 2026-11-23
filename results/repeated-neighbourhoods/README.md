@@ -85,6 +85,29 @@ remainder are decided by two independent searches that agree instance by instanc
 That is the same standard the package itself met, and it should be quoted that way:
 "all 6,186 decided by two agreeing searches, 28 certified", never "6,186 proved".
 
+## Claim 2 re-derived for both templates, with reproducible certificates
+
+m1 of `smwsl7gwe` decided claim 2 independently: **664 (type, orientation) instances
+per template, each UNSAT with a DRAT proof**, so the untwisted template is covered
+too — the package states claim 2 for the twisted branch only.  I replayed a sample
+of four cases per template through the member's own `certify.py`: the CNFs and the
+proofs came out with **byte-identical sha256 prefixes** to its certificate tables
+(`T.col` type 3: `568567de…`/`43063106…`, type 4: `d61f2c4e…`/`ddbee9b0…`; `U.col`
+type 3: `a819dedd…`/`519f1117…`), all `VERIFIED`.  The remaining 1,320 stand on
+that table.
+
+Two properties of the refutation, both checked by the member and worth recording:
+
+* **W1 + W2 + R1 alone suffice.**  The package's sender-support machinery (shaped
+  supports, the ten-5/five-4 split, the partition design, hence the K15
+  classification) is not needed for this claim.  Dropping `W2` or `R1` gives SAT,
+  so both are load-bearing.
+* **It is not vacuous.**  Four explicit boards (types 2 and 3, both orientations)
+  satisfy W1 + W2 + R1 with zero own-colour-omitting rows, and forcing two of their
+  rows stays SAT.
+
+Scope: this is claim 2 in the uniform branch.  The some-six analogue is untouched.
+
 ## What is still open about it
 
 * §5 is a finite search over 332 arms × 2 orientations by one C++ program.  An
