@@ -55,8 +55,9 @@ Those remain the submission's own claims.
 
 ## m3, the same swarm, direction C
 
-m3 submitted a pair census plus an independent re-decision of all 288 shipped cases. Judged
-**rejected on evidence, not on mathematics**:
+m3 submitted a pair census plus an independent re-decision of all 288 shipped cases. It was
+**first rejected on evidence**, resubmitted with the ledger complete, and is now **accepted**.
+The history:
 
 - reproduced: `census.py` prints `labelled placements 4236 in 219 types / type16 21 type36 3`,
   agreeing with m1's enumerator and with the package's own `catalogue.py` — three implementations;
@@ -69,6 +70,16 @@ m3 submitted a pair census plus an independent re-decision of all 288 shipped ca
   already recorded five claims that turned out to have nothing behind them. The member was sent
   back to re-run `mono_all.py` over all 18 records and ship the ledger; the census, cost table and
   probes were explicitly excluded from the redo.
+
+**On resubmission (accepted).** `ledger.jsonl`, `RESULTS.tsv` and `valid288.json` carry the same
+288 keys with 0 CNF-SHA-256 mismatches, 0 verdict mismatches and 0 against the package; 240 UNSAT
+with `drat_ok`, 48 SAT with `witness_ok`, 1.42 GB of DRAT hashed then deleted. The judge's earlier
+re-runs of records 0 and 12 through the member's own pipeline had already returned identical CNF
+hashes, verdicts and flags, so the ledger is reproducible. `valid288.json` comes from a second,
+different encoder (CEGAR plus transportation rather than the monolithic CNF) and agrees on all 288.
+One remark in §4 remains unconfirmed and the member was asked again to restate or drop it: that the
+four permanently inadmissible cells are "the ones whose two sites both have 4 vertices". Only the
+count, 32 of 36, is verified.
 
 ### m3 after the rejection: the ledger is now complete
 
