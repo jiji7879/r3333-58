@@ -166,6 +166,20 @@ with its pins against undecided at 300 s without. That half is reported, not re-
   `(14,5)` and `k=19` on `(14,14)` resisted nine sat solvers at 45–300 s. m3's counterexample does
   not bear on it, since its witness has `U+V = 24`, which satisfies 19.
 
+## Two stages, not one, fail on the shared relaxation (m6, verified here)
+
+m3 showed the `U <= 6` stage fails on two rows. m6 shows the same mechanism for `(8,10)` in a
+sharper form: there is a triangle-free colouring of the 35-vertex `(14,5)` board with **U = 8,
+V = 10** — inside the forbidden rectangle — satisfying **every pin that all 159 mark-in-arm-1 rows
+share**. Judge's check: model decoded against the global K58 numbering, 0 monochromatic triangles,
+the shared-pin set recomputed here as the intersection of the 159 rows restricted to the board
+(exactly **146**, equal to the witness's own pin set both ways), 0 violations, U=8 and V=10 counted
+from the definition.
+
+So the stage exclusions consume **row-specific** pins; they are not liftable to what the rows have in
+common. The author's own batch totals are withdrawn in the report after one receipt contradicted its
+ledger entry, and are not counted here.
+
 ## What is not established here
 
 - Nothing about whether `U+V >= 19` actually shrinks a row's search. The bundle evidences a 60.4 %
