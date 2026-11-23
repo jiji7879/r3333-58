@@ -71,9 +71,21 @@ frozenKeys.length = 113179` (axioms `[propext, Quot.sound]`).
   `theorem planted : True := by sorry` is still rejected.  This is an erratum in
   the handover tooling of the same family as `review/ERRATA.md`: a checker that
   cannot run on a tree whose documentation mentions the words it forbids.
-* The replay (1,588 generated modules) is rebuilt from source in
-  `.scratch/land/lean/replay/ReplayGen/`; its result is recorded in the commit that
-  lands `ReplayCheck.lean`.
+* **The replay is green and the cover is unconditional.**  `python3 replay/run_replay.py . replay
+  --jobs 2` rebuilt all 1,588 generated modules from source plus `Complete` and
+  `CountAll`: exit 0 in **1 h 33 min**, ending
+  `Checked 1764 complete families, 190736 raw placements, 77557 omitted transports.`
+  `lean ReplayCheck.lean` then prints
+  `'K58.Replay.rawTransportCover' depends on axioms: [propext, Classical.choice, Quot.sound]`
+  and the same for **`'K58.Replay.frozenCover'`**, in 2.1 s.  So in this tree
+
+  ```lean
+  theorem frozenCover : K58.FrozenCover := K58.Replay.frozenCover
+  ```
+
+  is a theorem with no hypotheses and only the three standard axioms, and
+  `K58.frozenKeys_length : frozenKeys.length = 113179` is on `Check.lean`'s list.
+  **This is cover completeness, not a refutation of any case** — see above.
 
 ## What this landing does not do
 
