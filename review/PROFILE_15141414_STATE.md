@@ -44,9 +44,13 @@ catalogue is built (386 rows, sha256 `b8cbf0bb…`) and two core cases were prob
 
 ## 2. Proved and kernel-checked
 
-All in `lean/`, build `bash lean/build.sh` (88 s wall / 33 s CPU, green),
-axioms only `[propext, Classical.choice, Quot.sound]`, no `sorry`, no
-`native_decide` (34 declarations on `Check.lean`'s list):
+All in `lean/`, build `bash lean/build.sh` (green again on 2026-11-23, exit 0),
+axioms only `[propext, Classical.choice, Quot.sound]` (a few are *smaller*, e.g.
+`[propext]`), no `sorry`, no `native_decide`: **80 declarations** on
+`Check.lean`'s `#print axioms` list (`grep -c '^#print axioms' lean/K58/Check.lean`
+= 80; the build log carries 88 audit lines because some modules print their own).
+This line said 34 until 2026-11-23, which had been stale since `M7`,
+`ExchangeResidue`, `Design` and the `Residue` block were registered:
 
 | item | statement | where |
 | --- | --- | --- |
@@ -388,9 +392,15 @@ consequence, and the 42 blocks are **not** a `2-(15,5,4)` design. Both of those
 were withdrawn here earlier today and are hereby restored.
 
 What remains true from the earlier note: the record's own text did not prove any
-of this, `M7.lean` (m3's kernel transcription) does **not** compile — it stops with
-`⊢ Nat.choose 5 2 = 10 ∨ M - 2 = 0` — so the result is a paper proof with its
-arithmetic machine-checked and its kernel form unfinished. Nothing in the campaign
+of this. **But the kernel form is no longer unfinished (corrected 2026-11-23):**
+`lean/K58/M7.lean` compiles and `K58.M_ge_seven` is on `Check.lean`'s audit list,
+axiom-clean — `bash lean/build.sh` exits 0 and its log line reads
+`'K58.M_ge_seven' depends on axioms: [propext, Classical.choice, Quot.sound]`.
+The paragraph this replaces said `M7.lean` "does **not** compile — it stops with
+`⊢ Nat.choose 5 2 = 10 ∨ M - 2 = 0`", which was true when written and had already
+been contradicted by §2's own table; the route now taken is shorter than m3's
+paper chain (the pairs in `N_0(x) ∩ N_0(r)` are arm pairs, and `K <= 5`
+contradicts `3 d_0(x) + 12 <= 10 K`). Nothing in the campaign
 uses more than `M >= 6`.
 **Type rigidity.** A pair of 15-classes sharing 14 points is necessarily the same
 template type; **mixed `T^-`/`U^-` classes overlap in at most 12**, and 12 is
