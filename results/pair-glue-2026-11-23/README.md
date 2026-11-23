@@ -131,6 +131,25 @@ Paired pilot with and without `U+V >= 19` on four rows: search-effort ratios **0
 0.94**, every run at the conflict limit. At that budget the bound buys nothing, which is a negative
 answer to the question that decides whether the 134-board programme is worth buying.
 
+## Where the row-dependence actually sits: the spokes (m7, verified here)
+
+Splitting the 26-vertex core into the **150 A-spoke pairs** and the other **175 pairs**:
+
+| quantity | 159 shape-P rows | all 381 rows |
+| --- | ---: | ---: |
+| distinct skeleton patterns (the 175) | **6** | 28 |
+| distinct spoke patterns (the 150) | **145** | 335 |
+| distinct (skeleton, spoke) pairs | 159 | 377 |
+| spoke edges pinned to colour 1 | **0** | **0** |
+
+So the skeleton is nearly shared and the spokes carry the row. The practical consequence is
+negative: sharing skeletons saves about one and a half percent of the certificate count, so the
+~54,000 figure is not an artefact of counting.
+
+The pins are also what closes the branches: on the `(7,11)`, `(10,8)`, `(8,10)` stages, deleting
+every spoke pin turns 152 of 204 (cover, skeleton) pairs SAT, and a terminal runs in 0.05 s UNSAT
+with its pins against undecided at 300 s without. That half is reported, not re-derived here.
+
 ## What is not established here
 
 - Nothing about whether `U+V >= 19` actually shrinks a row's search. The bundle evidences a 60.4 %
