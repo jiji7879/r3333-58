@@ -399,6 +399,21 @@ here).** Two packages from an external model, both fully replayed on this machin
   `5·2, 5·2, 5·1 = 10,10,5`.  The own-colour cap of `2` is new and was not
   encoded anywhere.
 
+  **The law is a theorem of the instance, so it is inert as an added constraint**
+  (m8 of `smwsjya54`, re-derived here). For `a ∈ A`, `Z(a) = {x : w_x(a) = 0}` has
+  14 points; no pair of them is colour `0` and none is a monochromatic triangle, so
+  `N_0(a) = {r} ∪ Z(a)` is a triangle-free 3-coloured `K_15` and is `T⁻` or `U⁻`
+  (`K58.Classified 15`). In both templates at **all 15 roots** — checked directly on
+  `T.col`/`U.col` here — the root's classes have sizes `(4,5,5)` and between two of
+  them the counts are `2·min, 2·min, min`. Since `N_0(a)` meets the three arms in a
+  permutation of `(5,5,4)`, and exactly five positions have two fives, the sums are
+  `5·5 + 10·4 = 65` and `2·65 = 130`. **The 130/130/65 split is forced, not a
+  constraint.** Consequence: the sentence recorded here last round, "at least nine
+  of the fourteen vertices attain five", is **false** — the 4-or-5 data are the
+  `(5,5,4)` cluster sizes at the **15 positions**, not a per-vertex attainment; the
+  `65` is `5·5 + 10·4` over positions. The law still discriminates against every
+  recorded witness (`72, 88, 151`), because those violate the instance itself.
+
 Neither closes a row: the seven uniform children remain open, as both packages say.
 
 **Correction of the correction (2026-11-22, late).** An earlier revision today
