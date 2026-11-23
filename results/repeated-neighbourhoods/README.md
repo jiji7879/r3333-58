@@ -58,6 +58,28 @@ uniform children remain open.
   reproducibility and internal consistency.  **It is not an independent check**:
   the search code is the package's own.
 
+## Section 4 decided independently, and extended to the untwisted template
+
+m3 of swarm `smwsl7gwe` re-decided all 6,186 instances (3,093 partitions × 2 palette
+orientations) with its own search and its own encoder, and I checked the comparison
+myself rather than its `compare.py`: **6,186 keys on both sides, identical key sets,
+0 disagreements, 276 SAT on both**.  I also confirmed from the ledger directly that
+it is orientation-invariant — 3,093 (type, partition) pairs, each in both
+orientations, 0 disagreements, **138 surviving partitions on 65 types** — which is
+what makes the two counts the same object.
+
+The new result is template dependence.  For the **untwisted** 15-template the same
+computation gives **272 SAT = 136 partitions on 63 types, so 2,957 excluded, not
+2,955**; the survivor list is the twisted one with exactly `73:[1]` and `157:[1]`
+removed.  Both partitions are SAT under the twisted template with checked
+witnesses and UNSAT under the untwisted with DRAT-verified proofs.
+
+**What the decision rests on:** 28 of the 5,910 UNSAT instances have a DRAT
+certificate (I replayed one here: `s VERIFIED`, 1,112 RAT lemmas in core), the
+remainder are decided by two independent searches that agree instance by instance.
+That is the same standard the package itself met, and it should be quoted that way:
+"all 6,186 decided by two agreeing searches, 28 certified", never "6,186 proved".
+
 ## What is still open about it
 
 * §5 is a finite search over 332 arms × 2 orientations by one C++ program.  An
