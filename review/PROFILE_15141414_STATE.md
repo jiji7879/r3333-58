@@ -46,11 +46,11 @@ catalogue is built (386 rows, sha256 `b8cbf0bb…`) and two core cases were prob
 
 All in `lean/`, build `bash lean/build.sh` (green again on 2026-11-23, exit 0),
 axioms only `[propext, Classical.choice, Quot.sound]` (a few are *smaller*, e.g.
-`[propext]`), no `sorry`, no `native_decide`: **80 declarations** on
+`[propext]`), no `sorry`, no `native_decide`: **171 declarations** on
 `Check.lean`'s `#print axioms` list (`grep -c '^#print axioms' lean/K58/Check.lean`
-= 80; the build log carries 88 audit lines because some modules print their own).
-This line said 34 until 2026-11-23, which had been stale since `M7`,
-`ExchangeResidue`, `Design` and the `Residue` block were registered:
+= 171 after the gluing bundle and m6's rung modules were registered; the count was
+34, then 80, earlier today). This line said 34 until 2026-11-23, which had been
+stale since `M7`, `ExchangeResidue`, `Design` and the `Residue` block were registered:
 
 | item | statement | where |
 | --- | --- | --- |
@@ -90,6 +90,19 @@ proves it rather than importing it.
 `lean/K58/Ticket.lean` was integrated on 2026-11-22 (§39 of the record): the
 reciprocity chain it carries had been cited as proved while living only in a
 member directory, which is the second instance of that slip in this campaign.
+
+**Registered 2026-11-23** (member m6 of `smwsjya54`, compiled and re-audited here,
+commit `8592ee4`): `K58.rung_box` (`7 <= B + C' <= 10` at the truncated `(14,12)`
+rung, the `12`-subset costing two per position), `rung_guard` (no cut demanding
+`B + C' >= 9` at all fifteen positions — the sums are `130 < 135`, the `ERRATA`
+class), `rung_three_slack` (at least three positions with `B + C' <= 8`, sharp at
+12), `two_arm_law` (`9 <= B + C <= 10`), `arm_triple`, `rung_deficiency`,
+`exists_class_of_ne`, and `M_ge_seven_of_crit` (`M >= 7` from colour-0
+criticality instead of reciprocity). `ArmFarFive`/`ArmFarFourReg` carry law 4's
+kernel half in registrable form; `results/armfar14/ArmFarBase.lean` **cannot** be
+registered — it re-declares `armFar`, `interface`, `indep_le_sixteen`,
+`armFar_le_two`, `armFar_eq_empty`, all already `K58` declarations — the third
+instance of the provenance slip noted above (after `TwoArm` and `Ticket`).
 
 Also proved in the record: the **six-point arm lemma** — at most five vertices
 of `N_b(r)` are pairwise `a`-blocked, since six would give a triangle-free
