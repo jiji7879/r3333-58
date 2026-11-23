@@ -62,6 +62,30 @@ Consequences:
 - the driver is hard-wired (`CASES = (ps.SOURCE, ps.SECOND)` in `tools/nine_spokes.py`, and
   `validate()` refuses any other case), so extending it is a code change, not a rerun.
 
+## Where the bound actually lives (m8, verified here)
+
+The most useful structural result on the bundle, and it is negative for the cheapest hope:
+
+- **The 26-vertex core carries none of the bound.** For all 159 shape-P rows the core board
+  (pins both signs, triangle-free, plus the Ramsey degree bounds — *stronger* than the bundle's own
+  core board) admits `U+V <= 18`, and each of the four splits is satisfiable on it too. Judge's
+  check: five witnesses re-verified from the definition, 0 failures. So no certificate that only
+  sees the 26 vertices can give 19, and canonicalising cores cannot work — not because there are
+  many classes, but because the core has no content to certify.
+- **The load-bearing boards are the arms.** On a 35-vertex `(14,5)` board the same query is
+  unanswered in 270 s, against ~1 s at the core. That is why the bundle needs 663 certificates.
+- **A is rigid**: all 105 pairs inside `A` are pinned in every row, with exactly two templates
+  (`T` 308 rows, `U` 73), and **no spoke pair is ever pinned**. The bound is a consequence of arm
+  structure, never of the pins.
+- **Nine more rows decided.** For 9 of the 18 shape-Q rows (marked vertex inside `A`, spoke colour
+  0) the core already forces `U+V >= 19`. Judge's check: all nine CNFs return `s VERIFIED` under an
+  independent `drat-trim` invocation, and the same CNF without the bound returns SAT. Four of the
+  nine are outside the 169 entirely; the other nine Q rows admit `<= 18` at the core.
+
+Shape census: **P** 159 (the bundle's configuration), **Q** 18 (marked vertex inside `A`),
+**R** 204 (one pentagon only — the two-spoke statement cannot be posed). 159 + 10 + 204 = 373, plus
+the 8 Q rows outside the 169 = 381.
+
 ## What is not established here
 
 - Nothing about whether `U+V >= 19` actually shrinks a row's search. The bundle evidences a 60.4 %
