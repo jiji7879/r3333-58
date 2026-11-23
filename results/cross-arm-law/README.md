@@ -52,6 +52,14 @@ campaign already encodes: it is a genuine cross-arm constraint that a branch obj
 must satisfy and every existing witness breaks. That is the first such law the
 campaign has had.
 
+**Full replay also passes.** `python3 verify.py --jobs 4` completed in 13 min 40 s
+on this machine and printed, in order: the matching law on all 30 rooted template
+views, the support incidence excluding 37 of 332 arm types, **all 1,713 other
+four-word multisets excluded over 664 palette orientations**, the 4,724 joins
+reconstructed, 339 DRAT refutations covering them, the all-full `K27` exclusion
+with its positive control, and `Verified. A branch object has at most three
+omissions per small arm.` So the 9-omission bound is reproduced end to end here.
+
 ## Scope
 
 Neither package closes a row: both READMEs say so, and the seven uniform children

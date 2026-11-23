@@ -341,6 +341,26 @@ The reduction from an arbitrary 14-set to those 240 cases is a paper argument in
 m6's `PROOF.md` §2, not kernel-checked and not audited by me; the bound itself is
 `decide`-free only in its sharpness half.)*
 
+**The omission bounds and the cross-arm law (2026-11-22, late, external, verified
+here).** Two packages from an external model, both fully replayed on this machine:
+
+* **At most 12 of the 42 outside words omit an ordinary colour** (the previous
+  record bound was 16), and at most 11 if one arm already has five; equality in 12
+  forces exactly four omissions per arm. `results/extremal-bound/`.
+* **At most three omissions per 14-arm**, so at least **33** of the 42 use all four
+  colours. `results/cross-arm-law/`.
+* **The third-colour matching law**, which I re-derived independently on both
+  templates, all 15 roots, all three arm pairs: with `I`, `J` the two ordinary
+  neighbourhoods of a root in a sender's template, the colour counts between them
+  are `8,8,4` when their sizes are 4 and 5 and `10,10,5` when both are 5. Double
+  counting over the senders gives, between any two arms, total
+  `|Z(x) ∩ Z(y)|`-weight **130, 130, 65** for the two own colours and the third.
+  **Every existing witness violates it badly** — `plain.solver.wit` gives
+  `72, 88, 151` against `130, 130, 65` — so it is a genuine cross-arm constraint,
+  not an artefact of the pair level.
+
+Neither closes a row: the seven uniform children remain open, as both packages say.
+
 **Correction of the correction (2026-11-22, late).** An earlier revision today
 withdrew `M >= 7` on the strength of m6's audit of the *record's own* chain. That
 audit was right about the text and the withdrawal was wrong about the statement.
