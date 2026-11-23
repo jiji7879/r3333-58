@@ -31,10 +31,17 @@ profile:
 
 | quantity | value |
 | --- | ---: |
-| rows with a marked pentagon in arm 2 **and** one in arm 3 | **169** |
-| distinct labelled core boards among them | **165** |
-| median difference from the first row, of the 185 pinned core edges | **84** |
-| difference between the two published rows | **10** |
+| rows with a marked pentagon in arm 2 **and** one in arm 3 | 169 |
+| of those, rows where the construction applies (`family.arm = 1`) | **159** |
+| core pin counts among the 159 | **215 (134 rows), 225 (25 rows)** |
+| rows needing their own board argument after pin containment | **134** |
+| difference between the two published rows | 10 |
+
+**Correction (m1 of swarm `smwtqk6ku`, verified here).** The first version of this file counted 169
+rows and 185 core pins throughout. Both were contaminated by **ten rows with `family.arm = 0`**,
+where the marked colour is the pentagon's own colour and `U,V` would count the wrong thing; those
+ten are the only ones with 185 pins. On the 159 that carry the argument the counts are 215 and 225.
+The 165 distinct pin sets and median difference 84 were computed over all 169 and stand as stated.
 
 All 169 share the same shape — pentagons at exactly `{30..34}` and `{44..48}`, a 26-vertex core
 (`{0} + A + both pentagons`), 185 pinned core edges — but the pin patterns differ substantially. The
@@ -44,9 +51,14 @@ looked tractable.
 Consequences:
 
 - certificates **do not transfer** between rows; generalisation is per-row certification;
-- measured cost from this run: 18 min 18 s for two rows ⇒ **about 26 h wall** for all 169 at the
-  same parallelism (the earlier ~60 CPU-hour figure was an extrapolation from certificate counts and
-  is superseded by this measurement);
+- **isomorphism does not help**: all 159 relevant rows are pairwise non-isomorphic. Verified here by
+  9,211 VF2 tests on the coloured 26-vertex cores (vertex types plus negative pins), 0 isomorphic
+  pairs — a fourth program agreeing with m1's three. Classes: 163 over the 169, i.e. a 3.6 % saving
+  and none on a relevant row;
+- the one real saving is **pin containment**: 25 of the 159 sit on a 215-pin board, so 134 board
+  arguments cover all 159 (15.7 %). Verified here, difference exactly 10 literals in every pair;
+- measured cost: 18 min 18 s for two rows, so **about 20 h wall for the 134 boards** at the same
+  parallelism (the earlier ~60 CPU-hour and ~26 h figures are superseded);
 - the driver is hard-wired (`CASES = (ps.SOURCE, ps.SECOND)` in `tools/nine_spokes.py`, and
   `validate()` refuses any other case), so extending it is a code change, not a rerun.
 
