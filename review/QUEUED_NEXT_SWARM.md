@@ -1,6 +1,27 @@
 # Queued: the next swarm (the external review's §4 material)
 
-**Not started.** To be launched when `smwrmwgf7` and `smwrzh71x` have finished.
+**Consumed, 2026-11-23.**  `smwrmwgf7` and `smwrzh71x` closed on 2026-11-22, and the
+material below was worked by swarm `smwsjya54` (2026-11-23, 8 accepted of 8).  Status
+of each target:
+
+* **Target A, the four-multiset corner** — **decided** by m1 of `smwsjya54`.  The four
+  three-copy multisets at census rows 229, 240, 254, 266 of the 12312 corner are
+  UNSAT at order 35 in all four instances, both palettes and both orders (16/16),
+  SAT at orders 30-34; census re-derived from `r333_14.mc` alone.  Mask-dependent
+  (102 gives 16/16, 4618 and 9236 only 7/12), so it stays attached to that gauge.
+  Scope: one arm type of 332, four of 65 three-copy multisets.
+* **Target B, U-07** — **not attempted, and not attemptable**: the strings `U-07`, the
+  hash `7c72e9ac` and the numbers 1,936 / 212 occur nowhere in this workspace except
+  this file, and the "companion research ZIP" was never supplied.  Two members
+  abandoned it for that reason.  If the material ever arrives, this is the target.
+* **Target C, the orbit quotient** — **decided** by m2 of `smwsjya54`: 651 / 332 / 115
+  reproduced, and the 345 named orientations hit only 332 classes with 13 doubled, so
+  the sieve is **37 of 332**, never 45 of 345; `WALL` §12's inference is false.
+
+The companion ZIP that *did* arrive (`K58_repeated_neighbourhoods_and_arm_exclusions`)
+is a different package and is written up in `results/repeated-neighbourhoods/`.
+
+**Original text below.** To be launched when `smwrmwgf7` and `smwrzh71x` have finished.
 Source: `attachments/let-s-try-and-wcbj/K58_15141414_research_report.md` §4, whose
 ledgers live in a "companion research ZIP" that is **not** in this workspace — so
 every number below has to be re-derived here before it can be used, and the first
