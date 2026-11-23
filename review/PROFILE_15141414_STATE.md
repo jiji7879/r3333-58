@@ -350,7 +350,12 @@ here).** Two packages from an external model, both fully replayed on this machin
 
 * **At most 12 of the 42 outside words omit an ordinary colour** (the previous
   record bound was 16), and at most 11 if one arm already has five; equality in 12
-  forces exactly four omissions per arm. `results/extremal-bound/`.
+  forces exactly four omissions per arm. `results/extremal-bound/`. **This is
+  dominated by the per-arm bound two lines down** (noted by m3 of `smwsjya54`,
+  which abandoned its direction on it after checking): three arms with at most
+  three omissions each give at most nine omissions in total, hence at most 11 <= 12,
+  and no arm can carry five — so the 12-bound and its conditional add nothing to
+  the branch. It stays in the record as a verified statement, not as a constraint.
 * **At most three omissions per 14-arm**, so at least **33** of the 42 use all four
   colours. `results/cross-arm-law/`.
 * **The third-colour matching law**, which I re-derived independently on both

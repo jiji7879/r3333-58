@@ -7,10 +7,20 @@ Stage 1 of the campaign's obligations ("land the gluing bundle"): fold the bundl
 in a worktree built from an older base.
 
 `K58.Replay.frozenCover : K58.FrozenCover` says the 113,179 frozen keys are
-realized by the raw cover and its transports.  **It does not say that any case is
-refuted.**  Ruling out the frozen cases remains the open problem (31,751 rows are
-OPEN in `results/ledger-2026-11-22.tsv.gz`, including all 381 of the
-`(15,14,14,14)` rows this session is working on).
+realized by the raw cover and its transports.  Written out (`lean/K58/Ledger.lean`):
+
+```lean
+def FrozenCover : Prop := ∀ G : EdgeCol (Fin 58) 4, TriangleFree G →
+  ∃ k ∈ frozenKeys, RealizesKey G k
+```
+
+so it is the *cover completeness* statement: every triangle-free 4-colouring of
+`K_58` falls into at least one of the 113,179 frozen cases, each with its degree
+profile, threshold, marking and placement pins.  **It does not say that any case is
+refuted**, which is what `R_4(3) <= 58` still needs.  Ruling out the frozen cases
+remains the open problem (31,751 rows are OPEN in
+`results/ledger-2026-11-22.tsv.gz`, including all 381 of the `(15,14,14,14)` rows
+this session is working on).
 
 ## What the bundle verified before the landing
 
