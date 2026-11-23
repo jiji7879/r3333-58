@@ -74,6 +74,11 @@ computation gives **272 SAT = 136 partitions on 63 types, so 2,957 excluded, not
 removed.  Both partitions are SAT under the twisted template with checked
 witnesses and UNSAT under the untwisted with DRAT-verified proofs.
 
+The member's own replay (`bash run_all.sh`) was run here end to end afterwards:
+exit 0 in 2 min 14 s, printing `disagreements: 0 []`, `survivors mine: 276 ledger:
+276`, `witnesses verified: 276 of 276 failures 0`, and the two survivor tables for
+`T.col` (276 / 65 types / 138 partitions) and `U.col` (272 / 63 / 136).
+
 **What the decision rests on:** 28 of the 5,910 UNSAT instances have a DRAT
 certificate (I replayed one here: `s VERIFIED`, 1,112 RAT lemmas in core), the
 remainder are decided by two independent searches that agree instance by instance.
