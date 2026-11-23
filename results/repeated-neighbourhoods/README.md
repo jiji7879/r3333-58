@@ -108,6 +108,29 @@ Two properties of the refutation, both checked by the member and worth recording
 
 Scope: this is claim 2 in the uniform branch.  The some-six analogue is untouched.
 
+## Parts of claim 1 are consequences of the instance families
+
+m8 of `smwsl7gwe` decided, on rungs, that **no seven vertices carry a common
+five-set within at most two arms**: all 21 arm assignments of the splits `(7)`,
+`(6,1)`, `(5,2)`, `(4,3)`, plus the `(5+5,5,5)` partition case, each UNSAT with a
+DRAT proof.  The certificates are **bit-reproducible**: `cnf/S_p7_a0.cnf` hashes to
+`6bcf6d11…` and its proof to `59a7f5ae…`, both exactly as recorded, `s VERIFIED`
+with 0 RAT lemmas.  Without `(T)`/`(XT)` the word layer admits such classes, so
+these exclusions are **consequences of the instance families**, not new constraints
+on top of them — the third external "law" in two days found to be implied by the
+instance (the confinement ladder, the matching law, this).
+
+The corresponding encoding of claim 1 is sound and inert: `31746/152078` →
+`56379/249286`, 1.52× process time per conflict, no decision changed, with guards
+(1,215 toy configurations, a broken variant caught 243/243, the recorded pair-layer
+model extending at 0 conflicts).
+
+**A reproducibility trap, recorded because I fell into it.** The tree holds two
+families of CNF for these patterns: `cnf/S_<name>.cnf` (the certified ones) and
+`cnf/A_<pattern>.cnf` (older, uncertified).  Checking the second against the
+certificate table shows a hash mismatch and looks like a stale certificate; it is
+not.  Quote the `S_` prefix whenever these certificates are re-checked.
+
 ## Claim 1 in the kernel, in two halves, with the bridge still by hand
 
 Registered in `lean/` (see `K58/Check.lean`, now 270 audited declarations):
