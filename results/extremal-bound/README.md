@@ -60,7 +60,16 @@ which gives **12**. The table's arithmetic is right, the case split is exhaustiv
 and the shape of the argument — finite classification, then a two-star exterior
 test — is the right one.
 
-**What I could not check.** The load-bearing computation is "2,339 multisets of
+**Update: the full replay passes here.** `python3 verify.py` (no `--quick`) ran to
+completion in 2 min 58 s on this machine and printed
+`Local enumeration k=5: 2339 input multisets, 6 survivors, all subsets of
+(6, 8, 10, 12, 16, 17)` followed by the rest of the chain and the final
+`Verified: at most 12 omitting words among the 42 outsiders, and at most 11 if one
+arm has at least five`. So the package's numbers reproduce from its own verifier
+here. That is a reproducibility check on their code, not an independent
+derivation — my own attempt at the latter was invalid, see below.
+
+**What I could not check independently.** The load-bearing computation is "2,339 multisets of
 five extremal words survive the hereditary necessary conditions, and exactly six
 five-subsets are realisable", which their `verify.py` performs. I attempted an
 independent check with this campaign's own encoder and **the attempt was invalid**:
