@@ -3,7 +3,7 @@ name: lean-statement-audit
 metadata:
   display_name: "Lean Statement and Proof Review"
   category: "Lean"
-  logo: "https://lean-lang.org/static/png/lean-logo-official-TM-white-2400x900.png"
+  logo: "logos/lean.png"
   author: "Scott Armstrong"
   long_description: |-
     Audit whether Lean theorem statements and definitions express the intended

@@ -3,7 +3,7 @@ name: lean-project-architecture
 metadata:
   display_name: "Lean Project Architecture"
   category: "Lean"
-  logo: "https://lean-lang.org/static/png/lean-logo-official-TM-white-2400x900.png"
+  logo: "logos/lean.png"
   author: "Scott Armstrong"
   long_description: |-
     Plan and refactor Lean 4 projects around mathematical results, reusable APIs,

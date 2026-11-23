@@ -3,7 +3,7 @@ name: lean-elaboration
 metadata:
   display_name: "Lean Performance Tuning"
   category: "Lean"
-  logo: "https://lean-lang.org/static/png/lean-logo-official-TM-white-2400x900.png"
+  logo: "logos/lean.png"
   author: "Scott Armstrong"
   long_description: |-
     Diagnose and improve slow Lean 4 elaboration, tactic execution, and builds.

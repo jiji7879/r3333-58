@@ -14,9 +14,8 @@ metadata:
     Checks are recorded by kind (self-reading, recomputation, another model's
     reading, or Lean when a Lean statement is already present), and a result is
     reported as proved only after its cited dependencies and checks pass the ledger
-    gate. Requires Python 3 in the project shell, with optional web search and
-    Ultramath; follows user restrictions such as no lookups or no Ultramath, and
-    does not guarantee mathematical correctness.
+    gate. Follows user restrictions such as no lookups or no Ultramath, and does
+    not guarantee mathematical correctness.
 
     Independent adaptation for Open Math OS from the `siege` skill in Anthropic's
     [math-proof](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-proof)

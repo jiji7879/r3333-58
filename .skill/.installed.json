@@ -1,7 +1,10 @@
 {
-  "lean-elaboration": "sha256:fff40aca9c477c1f555c9f9f33558dcdc8f014ecfd3fea6e9af5dd5ec636a600",
-  "lean-project-architecture": "sha256:29d148baff20cafe744bae0e6e5be816d07b29508b5dab1119f1b57030157907",
-  "lean-statement-audit": "sha256:67e60f4e9580ac3e56ca37e53492d69c07ce5e56d3dfc0daad1469a654d263e7",
+  "findstat-query": "sha256:8b3f7c3471a14b7473bd3686bc1bc5caae0d80948dc48e4bce99da80fdcd2a28",
+  "gap-groups-query": "sha256:65dc96c1bd87850d5e694b60b3d0c71897efdc4df3aa0dea482ec7253890307d",
+  "lean-elaboration": "sha256:11b5c6a7906707bd9dc79ecab76e4713beaeda8acd62b4c7a38d7c16ab4f91cc",
+  "lean-project-architecture": "sha256:1118bf9fe3289aeae2a918d81013bdc09faf50444054f155e69e1ea8b5d3c115",
+  "lean-statement-audit": "sha256:de2a8d37a057207d90d3cf0a0b7b70084a802c8e3e166c2d3539dcd773a62b33",
   "lean-workflow": "sha256:3e8c48908208af56662820435b9bde26237c5bcf6ffa2f6566093adeb42b5ae0",
-  "siege-workflow": "sha256:29a024ebf92211649590aa1e714657e4c11a831b0232d832ef4a3459b11fe80f"
+  "siege-workflow": "sha256:646bc91a2b5bd3762a2de9df1a87b5d87790e9dedcc38495c6ed15631fe94f34",
+  "zbmath-query": "sha256:a8b126522690a42696f5126ddf842eed2a707a1f862dff45ce00fb08cc64dff4"
 }
