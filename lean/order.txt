@@ -69,4 +69,5 @@ Weighted
 Codegree
 ForcedPentagon
 NoSingleton
+DesignIncidence
 Check

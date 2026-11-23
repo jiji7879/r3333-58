@@ -35,6 +35,7 @@ import K58.Weighted
 import K58.Codegree
 import K58.ForcedPentagon
 import K58.NoSingleton
+import K58.DesignIncidence
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -349,3 +350,8 @@ import K58.NoSingleton
 #print axioms K58.classes_eq_two_of_wt_four
 #print axioms K58.mcodeg_le_two_of_four_five
 #print axioms K58.codegree_le_ten_of_cross
+#print axioms K58.mult_le_five
+#print axioms K58.card_large_le_three
+#print axioms K58.not_all_even
+#print axioms K58.no_design_three_three_three_three_one_one
+#print axioms K58.no_design_seven_twos
