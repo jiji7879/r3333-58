@@ -30,6 +30,7 @@ import K58.ArmSender
 import K58.SomeSix
 import K58.ZeroSet
 import K58.Multiplicity
+import K58.CountLaw
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -301,3 +302,15 @@ import K58.Multiplicity
 #print axioms K58.spec_2_0_1_5_1_2
 #print axioms K58.spec_2_0_2_4_0_3
 #print axioms K58.spec_2_1_0_5_0_3
+#print axioms K58.law_T_h2_k5
+#print axioms K58.law_U_h2_k5
+#print axioms K58.law_T_h3_k5
+#print axioms K58.law_U_h3_k5
+#print axioms K58.law_T_h2_k4
+#print axioms K58.law_U_h2_k4
+#print axioms K58.law_T_h3_k4
+#print axioms K58.law_U_h3_k4
+#print axioms K58.templates_agree
+#print axioms K58.class_sizes_T
+#print axioms K58.class_sizes_U
+#print axioms K58.class_size_profile
