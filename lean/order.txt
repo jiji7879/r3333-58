@@ -62,4 +62,5 @@ ArmFarFive
 ArmFarFourReg
 ArmSender
 SomeSix
+ZeroSet
 Check

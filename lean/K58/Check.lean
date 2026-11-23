@@ -28,6 +28,7 @@ import K58.ArmFarFive
 import K58.ArmFarFourReg
 import K58.ArmSender
 import K58.SomeSix
+import K58.ZeroSet
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -212,3 +213,19 @@ import K58.SomeSix
 #print axioms K58.some_six_count
 #print axioms K58.some_six_or_deficit
 #print axioms K58.some_six_excess
+#print axioms K58.card_le_sixteen_of_zeroFree
+#print axioms K58.wordClass_card_le_six
+#print axioms K58.wordClass_pair_le
+#print axioms K58.card_inter_union_le_two
+#print axioms K58.card_inter_union_le_three
+#print axioms K58.no_three_pairwise
+#print axioms K58.sum_inter_four_ge
+#print axioms K58.card_le_three
+#print axioms K58.distinct_supports_ge_nine
+#print axioms K58.inter_card_le_four
+#print axioms K58.inter_card_le_capacity
+#print axioms K58.sixfold_disjoint
+#print axioms K58.two_fivefold_at_point
+#print axioms K58.sender_union_ge_thirteen
+#print axioms K58.sender_not_two_supports
+#print axioms K58.sixfold_excludes_at_point
