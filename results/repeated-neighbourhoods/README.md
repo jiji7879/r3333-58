@@ -79,11 +79,20 @@ exit 0 in 2 min 14 s, printing `disagreements: 0 []`, `survivors mine: 276 ledge
 276`, `witnesses verified: 276 of 276 failures 0`, and the two survivor tables for
 `T.col` (276 / 65 types / 138 partitions) and `U.col` (272 / 63 / 136).
 
-**What the decision rests on:** 28 of the 5,910 UNSAT instances have a DRAT
-certificate (I replayed one here: `s VERIFIED`, 1,112 RAT lemmas in core), the
-remainder are decided by two independent searches that agree instance by instance.
-That is the same standard the package itself met, and it should be quoted that way:
-"all 6,186 decided by two agreeing searches, 28 certified", never "6,186 proved".
+**What the decision rested on, and now rests on.**  m3's run certified 28 of its
+5,910 UNSAT instances; that qualification is **retired** by m2 of the same swarm,
+which re-decided the layer and verified a DRAT certificate for **every** exclusion:
+`summary.py` re-runs from scratch and prints `drat {'-': 138, 'VERIFIED': 2955}` for
+`T.col` and `{'-': 136, 'VERIFIED': 2957}` for `U.col`, with 0 disagreements against
+the package's ledger and every one of the 274 joins re-verified from the definition.
+I replayed four instances myself (`replay.py`): CNF hashes `b379023d…`, `6bddab8f…`,
+`f4824f8b…` (T) and `b0f9f4cb…` (U, type 73) all regenerate to the recorded value and
+`s VERIFIED`.
+
+The honest denominator is now: **all 5,912 UNSAT decisions carry a DRAT check made
+when the instance was solved, with the proof's hash recorded; the proofs themselves
+are not kept, and `replay.py` reproduces them from the encoder.**  That is the same
+standard as the solver package's `run_cover`, and it should be quoted that way.
 
 ## Claim 2 re-derived for both templates, with reproducible certificates
 
