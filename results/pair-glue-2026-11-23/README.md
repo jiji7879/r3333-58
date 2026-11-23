@@ -86,6 +86,25 @@ Shape census: **P** 159 (the bundle's configuration), **Q** 18 (marked vertex in
 **R** 204 (one pentagon only — the two-spoke statement cannot be posed). 159 + 10 + 204 = 373, plus
 the 8 Q rows outside the 169 = 381.
 
+## The bound has no linear content (m5, verified here)
+
+A third "no shortcut" result, independent of the other two. Write the row's constraint system as
+totalness (one colour per edge), the triangle constraints (`x[e1]+x[e2]+x[e3] <= 2` per colour), and
+the row's pins; drop integrality. A feasible fractional point with `U+V = v` is a Farkas witness
+that **no** nonnegative combination of those constraints bounds `U+V` above `v`.
+
+m5 exhibits such a point for every row: `U+V <= 89/12` uniformly, with `19/4` on the first published
+row and `11/2` on the second, and exactly `0` once the pins are dropped. Judge's check: four rows
+re-verified here in exact integer arithmetic — totalness, all 123,424 triangle constraints in all
+four colours (colour 3 is the implicit slack), every pin, and the objective — zero violations,
+values matching `lp_values.csv`.
+
+So on that relaxation the gap to 19 is at least `139/12` on **every** row, and no dual, weighting or
+counting certificate can replace the per-row integral work. Caveat, stated by the author and adopted
+here: Turán K5/K6 cuts are not implied by the triangle constraints and these witnesses violate them
+off-core, so what is refuted is the linear route over (T),(R),(P) — not the strongest possible linear
+relaxation.
+
 ## What is not established here
 
 - Nothing about whether `U+V >= 19` actually shrinks a row's search. The bundle evidences a 60.4 %
