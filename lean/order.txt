@@ -67,4 +67,5 @@ Multiplicity
 CountLaw
 Weighted
 Codegree
+ForcedPentagon
 Check

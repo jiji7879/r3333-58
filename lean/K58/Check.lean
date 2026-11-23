@@ -33,6 +33,7 @@ import K58.Multiplicity
 import K58.CountLaw
 import K58.Weighted
 import K58.Codegree
+import K58.ForcedPentagon
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -322,3 +323,20 @@ import K58.Codegree
 #print axioms K58.total_le_five
 #print axioms K58.codegree_count
 #print axioms K58.nine_le_codegree
+#print axioms K58.ForcedPentagon.Colouring.card_le_two_of_clique
+#print axioms K58.ForcedPentagon.Colouring.degree_two_of_two_colours
+#print axioms K58.ForcedPentagon.Colouring.degree_into_four
+#print axioms K58.ForcedPentagon.Colouring.endpoint
+#print axioms K58.ForcedPentagon.Colouring.eq_two_or_three
+#print axioms K58.ForcedPentagon.Colouring.ne_one_of_arm
+#print axioms K58.ForcedPentagon.Colouring.ne_zero_of_common_zero
+#print axioms K58.ForcedPentagon.Colouring.completion_colour_ne
+#print axioms K58.ForcedPentagon.Colouring.two_completions_zero
+#print axioms K58.ForcedPentagon.Colouring.at_most_two_completions
+#print axioms K58.ForcedPentagon.Colouring.completions_no_common_zero
+#print axioms K58.ForcedPentagon.Colouring.triangleFree_noMono
+#print axioms K58.ForcedPentagon.Colouring.at_most_two_completions_of_triangleFree
+#print axioms K58.ForcedPentagon.Colouring.two_completions_zero_of_triangleFree
+#print axioms K58.ForcedPentagon.Colouring.degree_two_of_two_colours_of_triangleFree
+#print axioms K58.ForcedPentagon.Colouring.sharpBoard_noMono
+#print axioms K58.ForcedPentagon.Colouring.sharp_attained
