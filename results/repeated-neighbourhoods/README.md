@@ -36,13 +36,20 @@ uniform children remain open.
   rational/integer, so a pass is meaningful, but the *encoding* of the geometry
   into those inequalities is the part that needs reading, not running (see below).
 * **The two new constraints do not discriminate against the recorded witnesses.**
-  Parsed the five `.wit` files in `results/word-layer-sixth-lemma/`,
-  `results/two-arm-interface/`, `results/arm26/`: every one has **0** words
-  omitting their own root colour (claim 2 allows 1), and **40–41 distinct
-  zero-sets** out of 42 (claim 1 requires 12).  So unlike the third-colour
-  matching law, which every witness violates badly, these constraints are
-  satisfied with room to spare — they are counting constraints on the branch, not
-  discriminators against known near-misses.
+  Scanned all 80 `.wit` files in the tree; **16 of them are complete 42-slot
+  colourings** (all 861 pair colours specified) and every one of those satisfies
+  both claims with room: **40–42 distinct zero-sets** (claim 1 requires 12), **max
+  multiplicity 3** (claim 1 allows 6), and **0** own-colour omissions in any arm
+  (claim 2 allows 1).  Zero violations among the 16.  So unlike the third-colour
+  matching law, which every witness violates badly, these are counting constraints
+  on the branch, not discriminators against known near-misses.
+
+  The other 27 files with 42 words are *words-only dumps* (no pair colours) and
+  look like counterexamples if the filter is forgotten: ten `design_*.wit` and
+  three `design_words.s*.wit` have 6 or 1 distinct zero-sets with multiplicities 7
+  and 42.  They are not colourings at all, so claim 1's hypothesis (a
+  triangle-free colouring) is not met — and a zero-edge inside a repeated class is
+  exactly what the proof forbids, which these dumps cannot even express.
 * **The package's own replay** (`python3 verify.py --jobs 2`) compiles its C++
   helpers from source, so it is a re-run and not a cached replay.  Stages
   `base`, `multiplicity`, `partitions` (3,093 enumerated, 138 survive on 65 types,
