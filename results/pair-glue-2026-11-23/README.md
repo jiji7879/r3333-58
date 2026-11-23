@@ -150,6 +150,22 @@ The pins are also what closes the branches: on the `(7,11)`, `(10,8)`, `(8,10)` 
 every spoke pin turns 152 of 204 (cover, skeleton) pairs SAT, and a terminal runs in 0.05 s UNSAT
 with its pins against undecided at 300 s without. That half is reported, not re-derived here.
 
+## The 34/35 boundary, and the cheaper route (m4, verified here)
+
+- **34 vertices are not enough.** On the `(13,5)` board — 26-vertex core plus one arm at 13 and the
+  other at 5, 34 vertices — `U+V = 18` is attained on **88 of 169 rows** (the other 81 timed out).
+  Judge's check: three witnesses decoded and verified from the definition, 0 monochromatic
+  triangles, every pin matched, `U+V = 18` in all three. So 35 is the first board size that could
+  force the bound.
+- All 169 rows also admit `U+V <= 18` on the core *and* on the 27-vertex board (core plus the marked
+  vertex with its pins), so no core-shaped certificate can give 19 — this extends m8's statement
+  from 159 to 169.
+- **The cheaper route, and it is open.** If a 35-vertex `(14,5)` board forces `U+V >= 19` for a row,
+  the bound follows from **one instance per row** — at most 134 with containment — instead of
+  ~54,000 certificates. Nobody has decided whether that board forces 19: `k=18` and `k=19` on
+  `(14,5)` and `k=19` on `(14,14)` resisted nine sat solvers at 45–300 s. m3's counterexample does
+  not bear on it, since its witness has `U+V = 24`, which satisfies 19.
+
 ## What is not established here
 
 - Nothing about whether `U+V >= 19` actually shrinks a row's search. The bundle evidences a 60.4 %
