@@ -26,6 +26,7 @@ import K58.RootMasks
 import K58.ArmRung
 import K58.ArmFarFive
 import K58.ArmFarFourReg
+import K58.ArmSender
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -198,3 +199,11 @@ import K58.ArmFarFourReg
 #print axioms K58.far18_X_free
 #print axioms K58.far18_armFar_card
 #print axioms K58.armFar_four_attained
+#print axioms K58.arm_sender_free_of_reciprocal
+#print axioms K58.armSenders_eq_zero_of_reciprocal
+#print axioms K58.armSenders_le_deg
+#print axioms K58.armSenders_eq_of_reciprocal
+#print axioms K58.H_eq_w_of_reciprocal
+#print axioms K58.arm0_reaches_of_arm_senders_zero
+#print axioms K58.arm0_reaches_of_reciprocal
+#print axioms K58.not_reciprocal_of_arm_sender

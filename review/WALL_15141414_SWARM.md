@@ -1465,9 +1465,11 @@ no `sorry`; `LEAN_PATH=$REPO/lean lean w/Reduction.lean`, 2.4 s):
   kernel before.
 * `K58.armSenders_zero_eq_fifteen_iff` — charge 15 at a 15-arm *is* the
   all-tickets-returned condition.
-* `K58.branch_of_balanced_no_small_arm_sender` — balance plus sender-free 14-arms
-  gives `s_0 = 15`: the branch is what balance degenerates to exactly when the
-  small arms carry no sender.
+* ~~`K58.branch_of_balanced_no_small_arm_sender`~~ — **this declaration never existed**
+  (only `review/` mentions the name; `Check.lean` never had it). The statement is true
+  and is now `K58.arm0_reaches_of_arm_senders_zero`, proved and registered on
+  2026-11-23 by m3 of `smwsjya54`: balance plus sender-free 14-arms gives `s_0 = 15`, so
+  the branch is what balance degenerates to exactly when the small arms carry no sender.
 
 **Two corrections, both right, both taken.**
 
