@@ -636,7 +636,17 @@ the bundles' claims were checked, and the checking changed two things.
 **Bundle item 1 verified end to end** by an independent reimplementation: 115
 catalogue rows all valid three-colourings and — checked here and *not* by the
 bundle — pairwise non-isomorphic under vertex **and** colour permutations (all
-6,555 pairs, 0 isomorphic, so the 345 orientations do not double-count); 27
+6,555 pairs, 0 isomorphic) — **and the clause that followed, "so the 345 orientations
+do not double-count", is wrong** (m2 of `smwsjya54`, 2026-11-23): 6,555 pairwise checks
+show only that the 115 *types* are distinct, and an orientation collision happens inside
+one type, at a colour-permuting automorphism of it. The 345 hit exactly **332** classes,
+13 of them twice (indices 6, 7, 19, 20, 62, 63, 75, 90, 154, 162, 248, 315, 328);
+recomputed here from `results/arm-alphabet-14/classes_sat14.json`, 13 of the 651
+vertex-classes carry a `0<->1` automorphism, 13 a `0<->2`, 13 a `1<->2`, none a 3-cycle,
+and `651 = 2*306 + 26 + 13` gives `306 + 13 + 13 = 332` after the `1<->2` quotient, the 13
+paired orbits being exactly the doubled classes. So `345 = 332 + 13`, `45 = 37 + 8`,
+`27 = 24 + 3`, `300 = 295 + 5`, and a "k of the 345" count must carry the multiplicity of
+the classes it names. Original text resumes: 27
 excluded by the independence test, 45 by the path/pentagon shapes, 300 passing;
 certificate node counts 81/1061/1277 reproduced; all 618 positive covers
 validated in integer arithmetic, each with exactly five 4-sets and ten 5-sets;

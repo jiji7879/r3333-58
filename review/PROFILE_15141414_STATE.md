@@ -189,7 +189,11 @@ arm alphabet), 115 up to all colour permutations — the last agreeing with the
 literature. Only **7 of the 332** are restrictions of the two `K_15`/`K_16`
 templates, so **325 arm types are new**: the classification does not extend to
 arms, and an arm-type case split is a 332-way split with no template structure
-behind it. `results/arm-alphabet-14/`.
+behind it. `results/arm-alphabet-14/`. The older **345 named orientations** (115 types times a
+distinguished colour) are *not* 345 classes: they hit those 332 with 13 doubled
+(`345 = 332 + 13`), and the two sieves quoted as 27 / 45 / 300 are `24 + 3` / `37 + 8` /
+`295 + 5` at the class level — so the incidence law is "37 of 332", never "45 of 345"
+(m2 of `smwsjya54`, re-derived and checked here).
 
 The arm half is now located exactly. With `M_f(x)` the `f`-part of a word,
 `L(x,y) = {f != k : M_f(x) ∩ M_f(y) = empty}` is the set of colours the edge `xy`
