@@ -32,6 +32,7 @@ import K58.ZeroSet
 import K58.Multiplicity
 import K58.CountLaw
 import K58.Weighted
+import K58.Codegree
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -319,3 +320,5 @@ import K58.Weighted
 #print axioms K58.nine_of_fourteen
 #print axioms K58.not_eight_fives
 #print axioms K58.total_le_five
+#print axioms K58.codegree_count
+#print axioms K58.nine_le_codegree

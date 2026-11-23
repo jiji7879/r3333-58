@@ -66,4 +66,5 @@ ZeroSet
 Multiplicity
 CountLaw
 Weighted
+Codegree
 Check
