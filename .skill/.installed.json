@@ -1,10 +1,13 @@
 {
   "findstat-query": "sha256:8b3f7c3471a14b7473bd3686bc1bc5caae0d80948dc48e4bce99da80fdcd2a28",
   "gap-groups-query": "sha256:65dc96c1bd87850d5e694b60b3d0c71897efdc4df3aa0dea482ec7253890307d",
+  "graph-catalogs-query": "sha256:e108fd2ee941fbb034e60b1467a6682d0dfa5eb7b258eda83c5e552c01c000bf",
+  "hops-query": "sha256:525cc66004eba4f9b202f7ad6b3cdda6c62d27fde3d4cde1880648dfd6c56292",
   "lean-elaboration": "sha256:11b5c6a7906707bd9dc79ecab76e4713beaeda8acd62b4c7a38d7c16ab4f91cc",
   "lean-project-architecture": "sha256:1118bf9fe3289aeae2a918d81013bdc09faf50444054f155e69e1ea8b5d3c115",
   "lean-statement-audit": "sha256:de2a8d37a057207d90d3cf0a0b7b70084a802c8e3e166c2d3539dcd773a62b33",
   "lean-workflow": "sha256:3e8c48908208af56662820435b9bde26237c5bcf6ffa2f6566093adeb42b5ae0",
+  "math-databases": "sha256:1fba2e8a976c009f697ffca52c4e86c6ec9fac0f965bedab7ffdf1796e4025dd",
   "siege-workflow": "sha256:646bc91a2b5bd3762a2de9df1a87b5d87790e9dedcc38495c6ed15631fe94f34",
   "zbmath-query": "sha256:a8b126522690a42696f5126ddf842eed2a707a1f862dff45ce00fb08cc64dff4"
 }
