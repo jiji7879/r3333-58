@@ -16,3 +16,5 @@
 16. TRIED #1: Pinning the coverage profile, and the some-six pair level: SAT. The information in these rows sits in ordinary letters, not in the zeros.
 17. TRIED #1: Partition-design screens: inert. The stock queue is the empty cube and the package's 4 OPEN of 7 was a parent-budget artefact (7 of 7 VERIFIED_CHILD_UNSAT at child defaults).
 18. TRIED #1: Codegree counting against the no-singleton case: a codegree-9 pair violates no bound held, so counting cannot exclude it.
+19. PROVED [case]: One case per small profile at 3600 s and 200M conflicts: 0 of 4 closed, all OPEN. Each case used only 1496.9 to 1499.7 CPU-s of 3600 wall (41.6 percent) because four cases and two swarms shared four cores. The checker cap of 300 s, not the solver, would block a closure at this depth: the emitted DRAT was 3.0 to 5.6 GB at 45 min. — results/wall-hour-2026-11-23/README.md
+20. TRIED #1: Spending more wall clock per row: an hour at the release budget closes none of four sampled rows, and a closure at that depth would emit a 4-7 GB proof that the 300 s checker cap could not verify.
