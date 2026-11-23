@@ -36,6 +36,8 @@ import K58.Codegree
 import K58.ForcedPentagon
 import K58.NoSingleton
 import K58.DesignIncidence
+import K58.Incidence
+import K58.ProfilesIncidence
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -355,3 +357,22 @@ import K58.DesignIncidence
 #print axioms K58.not_all_even
 #print axioms K58.no_design_three_three_three_three_one_one
 #print axioms K58.no_design_seven_twos
+#print axioms K58.sum_tot
+#print axioms K58.disjoint_of_add_gt
+#print axioms K58.inc_card_le_three
+#print axioms K58.no_four_heavy
+#print axioms K58.tot_even
+#print axioms K58.excl_all_even
+#print axioms K58.no_all_even
+#print axioms K58.excl_3333
+#print axioms K58.excl_442211
+#print axioms K58.inc_mult_le_five
+#print axioms K58.excl_2_7
+#print axioms K58.excl_4_2_2_2_2_2
+#print axioms K58.excl_3_3_3_3_1_1
+#print axioms K58.excl_4_4_2_2_1_1
+#print axioms K58.arith_key
+#print axioms K58.arith_filter
+#print axioms K58.x5_redundant
+#print axioms K58.profile_allW
+#print axioms K58.witnesses

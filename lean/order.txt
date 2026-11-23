@@ -70,4 +70,6 @@ Codegree
 ForcedPentagon
 NoSingleton
 DesignIncidence
+Incidence
+ProfilesIncidence
 Check
