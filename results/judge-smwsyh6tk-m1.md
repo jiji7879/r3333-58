@@ -70,7 +70,24 @@ m3 submitted a pair census plus an independent re-decision of all 288 shipped ca
   back to re-run `mono_all.py` over all 18 records and ship the ledger; the census, cost table and
   probes were explicitly excluded from the redo.
 
+### m3 after the rejection: the ledger is now complete
+
+m3 re-ran the whole sweep. `ledger.jsonl` (111,942 bytes) now holds **288 records covering all 18
+cases**: 240 UNSAT each with `drat_ok` and a CNF SHA-256, 48 SAT each with `witness_ok`, **288 of
+288 agreeing with the package's verdicts, 0 disagreements**. `REPORT.md` was updated in the same
+pass.
+
+The judge re-ran two whole records through m3's own pipeline in a scratch copy — record 0 and
+record 12 — and got **16 of 16 CNF SHA-256, verdicts, `drat_ok` and `witness_ok` identical to the
+shipped ledger in both**. The ledger is reproducible, not merely written.
+
 Two of m3's structural findings corroborate m1 independently: exactly 4 of the 36 cells carry no
-rectangle, always the cells whose two sites both have 4 vertices; and the entry and two-cell layers
-decide nothing, so the content is in joint refutations of three or more cells.
+rectangle, and the entry and two-cell layers decide nothing, so the content is in joint refutations
+of three or more cells.
+
+One claim the judge could not confirm, and did not credit: m3 explains the four dead cells as "the
+ones whose two sites both have 4 vertices". The cells are indexed by classes of size 2 and 3, and m1
+describes the same four cells differently, as two size-4 rows against named columns depending on
+the placement. Only the count (32 of 36) was checked. m3 was asked to restate the explanation from
+its own data or drop it.
 
