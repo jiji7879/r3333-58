@@ -37,7 +37,31 @@ more distinct zero-sets, which would cover 14 without difficulty.  The gap does 
 matter for the conclusion, because the exhaustive exclusion is what establishes it;
 it matters if anyone tries to extend the argument by hand to a weaker family.
 
-## The queue filter
+## The queue filter is inert, and its benchmark was a budget artefact
+
+m8 of `smwsrvi5g` audited the filter against the stock runner (second attempt, after
+the first audited the wrong trigger — the package fires on **two distinct zero sets
+each on five vertices of one arm**, not on all fourteen pinned). Findings, with the
+decisive one verified here:
+
+* **The stock queue is the empty cube** (`uniform.py` line 207: `[({}, {})]` when no
+  `--cube` is given), so nothing is pinned and the filter cannot fire at all.
+* **Where it can fire, its gain is zero.** The package's "4 OPEN of 7" comes from
+  running the cube at the *parent row* budget (5 s / 20 000 conflicts). At the
+  child's own defaults (12 s / 400 000) the runner closes everything: I ran
+  `./k58.sh uniform --cube examples/B-5-5.json --seconds 12 --conflicts 400000` and
+  got `{"VERIFIED_CHILD_UNSAT": 7}` — seven of seven, no OPEN.
+* The rule's boundary: 0/1/2 pins, one fivefold set, 5+4, 4+4, ten pins on one zero
+  set, 6+4, six pins and 5+5 across two arms all forward; two fivefold sets in one
+  arm, 6+5 and fourteen pins are excluded.
+* Operational defects in the package: a malformed cube aborts the queue before
+  anything is forwarded; skipped cubes leave no record; the cube's scope is not
+  checked against the selected child.
+
+So the filter is **not shipped in `k58-solver.zip`**, and the reason is now measured
+rather than precautionary: it saves nothing.
+
+## The queue filter (original note)
 
 `cube-comparison.tsv`: on the same ten-pin cube for each of the seven uniform
 children, the stock runner made 10 solver calls (4 OPEN, 3 restricted cubes certified
