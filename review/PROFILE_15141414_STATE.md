@@ -323,6 +323,22 @@ and 395 across. `results/truncation-depth/`.
   254,610 such words exist) and the real statement is "at most 16 of the 42 have
   a missing ordinary colour"; the pair level is satisfiable.
 
+**The queued order-30 corner is decided for four multisets** (m1 of `smwsjya54`,
+2026-11-23, accepted).  Frozen row `baa4e014…`, marked path `{3,4,12,13}`
+(mask 12312), the four three-copy multisets at census rows 229, 240, 254, 266:
+`r + A + B + C30..C34` is **UNSAT at order 35 in all four instances, in both
+palettes and both orders** (16/16, 192k-354k conflicts), while orders 30-34 are
+SAT and all 148 marked-path instances are SAT at order 34.  The census was
+re-derived from `r333_14.mc` alone (54 paths, 11 pentagons, 288 multisets, n(F)
+217/65/6, and `n(F) + 2 n(P) = 5` on 288/288).  The refutation is **mask-dependent**:
+mask 102 gives 16/16 UNSAT but 4618 and 9236 only 7/12, so it stays attached to
+the 12312 gauge and is not a general bound.  Scope: one arm type of 332, four of
+65 three-copy multisets, B-uniformity only; no frozen row closes.  Two of the
+member's replay scripts are stale against its own tag format and fail with an
+AttributeError — the certificates were re-checked here by re-solving the stored
+CNFs (hashes match) and replaying fresh proofs, and 36 witnesses re-check from the
+definition with `verify_bundle.py`.
+
 ## 9. Where things are
 
 * `review/WALL_15141414_SWARM.md` — the chronological record, 18 sections.
