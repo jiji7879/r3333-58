@@ -34,6 +34,7 @@ import K58.CountLaw
 import K58.Weighted
 import K58.Codegree
 import K58.ForcedPentagon
+import K58.NoSingleton
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -340,3 +341,11 @@ import K58.ForcedPentagon
 #print axioms K58.ForcedPentagon.Colouring.degree_two_of_two_colours_of_triangleFree
 #print axioms K58.ForcedPentagon.Colouring.sharpBoard_noMono
 #print axioms K58.ForcedPentagon.Colouring.sharp_attained
+#print axioms K58.template_class_triple_T
+#print axioms K58.template_class_triple_U
+#print axioms K58.card_four_of_sum
+#print axioms K58.partition_law
+#print axioms K58.mcodeg_comm
+#print axioms K58.classes_eq_two_of_wt_four
+#print axioms K58.mcodeg_le_two_of_four_five
+#print axioms K58.codegree_le_ten_of_cross

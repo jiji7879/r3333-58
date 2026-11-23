@@ -68,4 +68,5 @@ CountLaw
 Weighted
 Codegree
 ForcedPentagon
+NoSingleton
 Check
