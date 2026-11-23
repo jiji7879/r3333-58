@@ -16,7 +16,7 @@
 #   ./k58.sh pin        pin the encoding (recipe + encoder revision + CNF hashes)
 set -uo pipefail
 cd "$(dirname "$0")"
-K58_VERSION="2026-11-17"
+K58_VERSION="2026-11-23"
 ROOT=$PWD
 BUNDLE=$ROOT/k58
 export PATH="$ROOT/bin:$PATH"
