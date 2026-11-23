@@ -105,6 +105,32 @@ here: Turán K5/K6 cuts are not implied by the triangle constraints and these wi
 off-core, so what is refuted is the linear route over (T),(R),(P) — not the strongest possible linear
 relaxation.
 
+## The four rectangles do not transfer (m3, verified here)
+
+The generalisation programme assumed the bundle's four split exclusions could be re-certified row by
+row on the same boards. **They cannot.** Sweeping the `(14,5)` board with `U <= 6` over all 159 rows
+(15 s each) gives 95 UNSAT with DRAT verified against the regenerated CNF, **2 SAT**, 62 undecided.
+The two satisfiable rows are real counters to the obligation as stated:
+
+| row | U | V | board | witness |
+| --- | ---: | ---: | --- | --- |
+| `12819910` | **6** | 18 | (14,5), 35 vertices | 0 monochromatic triangles, 224/224 pins |
+| `f9d26ea9` | **6** | 19 | (14,5), 35 vertices | same |
+
+Judge's check: both witnesses decoded and verified here from the definition with the bundle's own
+pin numbering — 595 pairs per witness, 0 monochromatic triangles, 224 pins with 0 mismatches, U=6 in
+both. So at least two of the 134 board obligations are false as stated.
+
+Correct scope, as the author states it: this does **not** make `U >= 7` false for the full 58-vertex
+rows, and it does not touch the bundle's theorem on its own two rows. It says the obligation on
+those rows needs more vertices or a different cut.
+
+## Does the bound bite? No, at 50k conflicts
+
+Paired pilot with and without `U+V >= 19` on four rows: search-effort ratios **0.93, 1.58, 1.13,
+0.94**, every run at the conflict limit. At that budget the bound buys nothing, which is a negative
+answer to the question that decides whether the 134-board programme is worth buying.
+
 ## What is not established here
 
 - Nothing about whether `U+V >= 19` actually shrinks a row's search. The bundle evidences a 60.4 %
