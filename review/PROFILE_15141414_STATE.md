@@ -161,6 +161,7 @@ coverage and the split by the templates.
 | the short-arm ladder rungs | with `m(x)=5` and `d_0(a)=15`, `|X| = 42` is forced — orders 44-56 are different models, not the branch |
 | the "gluing core" | the 0.01 s refutation came from an over-constrained CNF (a global mixture cap); the sound instance is UNKNOWN at 300 s |
 | the pentagon package's Hall inequality | a theorem, exactly `alpha(G_0) <= 16`, hence implied by the X-internal triangle family; all five pair-level witnesses violate it (margin 14) and it sharpens nothing — inert |
+| the 116-cell cut (`results/hailmary-3`) as clauses | **decided empty** (m7 of `smwsjya54`): on the exact `31746/152078` instance the Hall encoding costs `+220,912` clauses (×2.45, `31,746 → 108,686` vars) and does not prune (`2,380,642` conflicts / `79.4 s` base vs `2,986,177` / `97.2 s`). It is irreducible: exactly ten rows are needed (all `Σ_{k=2..9} C(14,k) = 14,898` smaller subsets are feasible), the A-template is needed, and the naive placement count is `3.6·10^9` against an expected `~10^-60` placements in a random word layer |
 
 Also closed, outside this profile: **every abelian group of order 50..58** has no
 good 4-colouring of `K_n` invariant under its regular action — fifteen groups, all
@@ -383,7 +384,18 @@ here).** Two packages from an external model, both fully replayed on this machin
   `|Z(x) ∩ Z(y)|`-weight **130, 130, 65** for the two own colours and the third.
   **Every existing witness violates it badly** — `plain.solver.wit` gives
   `72, 88, 151` against `130, 130, 65` — so it is a genuine cross-arm constraint,
-  not an artefact of the pair level.
+  not an artefact of the pair level. **But only the split carries information, and
+  this record quoted the totals as if they did** (m7 of `smwsjya54`, re-derived
+  here): at each position exactly one arm has four zero-neighbours, five positions
+  each, so `Σ_{a∈A} t_B(a)·t_C(a) = 5·20 + 5·20 + 5·25 = 325 = 130+130+65` is
+  forced by the `(4,5,5)` column structure alone. The law's content is that the
+  325 splits `130/130/65` across the three colours, not the sum.
+  The per-vertex form is also exact (m7, `local_law.py`, both templates, all 30
+  rooted views): for classes `I, J` of the root with `|I| ≤ |J|`, every `x ∈ I` has
+  exactly `2` `I`-colour, `2` `J`-colour and `1` third-colour neighbours in `J` —
+  which reproduces the recorded aggregates as `4·2, 4·2, 4·1 = 8,8,4` and
+  `5·2, 5·2, 5·1 = 10,10,5`.  The own-colour cap of `2` is new and was not
+  encoded anywhere.
 
 Neither closes a row: the seven uniform children remain open, as both packages say.
 
