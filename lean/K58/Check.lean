@@ -31,6 +31,7 @@ import K58.SomeSix
 import K58.ZeroSet
 import K58.Multiplicity
 import K58.CountLaw
+import K58.Weighted
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -314,3 +315,7 @@ import K58.CountLaw
 #print axioms K58.class_sizes_T
 #print axioms K58.class_sizes_U
 #print axioms K58.class_size_profile
+#print axioms K58.sum_le_of_card_eq
+#print axioms K58.nine_of_fourteen
+#print axioms K58.not_eight_fives
+#print axioms K58.total_le_five
