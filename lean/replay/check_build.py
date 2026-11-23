@@ -9,11 +9,11 @@ parser.add_argument("lean_dir", type=Path)
 parser.add_argument("build_log", type=Path)
 args = parser.parse_args()
 source = args.lean_dir / "K58"
-expected = re.findall(r"^#print axioms (K58\.[\w.]+)$", (source / "Check.lean").read_text(), re.M)
+expected = re.findall(r"^#print axioms (K58\.[\w.']+)$", (source / "Check.lean").read_text(), re.M)
 log = args.build_log.read_text()
 if re.search(r"\berror(?:\([^)]+\))?:|sorryAx", log):
     raise SystemExit("build error or placeholder in transcript")
-records = re.findall(r"'([\w.]+)' (?:depends on axioms:\s*\[([^\]]*)\]|does not depend on any axioms)", log)
+records = re.findall(r"'([\w.']+)' (?:depends on axioms:\s*\[([^\]]*)\]|does not depend on any axioms)", log)
 seen = set()
 for decl, axioms in records:
     found = {name.strip() for name in axioms.split(",") if name.strip()}

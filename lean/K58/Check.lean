@@ -27,6 +27,7 @@ import K58.ArmRung
 import K58.ArmFarFive
 import K58.ArmFarFourReg
 import K58.ArmSender
+import K58.SomeSix
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -207,3 +208,7 @@ import K58.ArmSender
 #print axioms K58.arm0_reaches_of_arm_senders_zero
 #print axioms K58.arm0_reaches_of_reciprocal
 #print axioms K58.not_reciprocal_of_arm_sender
+#print axioms K58.interface_count'
+#print axioms K58.some_six_count
+#print axioms K58.some_six_or_deficit
+#print axioms K58.some_six_excess
