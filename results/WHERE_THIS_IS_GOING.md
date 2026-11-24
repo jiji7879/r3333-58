@@ -136,3 +136,26 @@ Both are harness bugs, not mathematical errors, and both were caught by running 
    `0 pass`, i.e. no cover survives the sender test, and both seven-set enumerations (3,255 and 681
    representative seven-sets) complete. So the exclusions themselves verify; only the harness was
    broken.
+
+## A soundness trap worth recording: covers are multisets
+
+Two members of swarm `smwv2qfbi` found the same error independently, from opposite ends.
+
+**The trap.** A cover is a *multiset* of supports — the census stores masks with multiplicities and
+never labels which of the 15 senders carries which support. Deciding a cover under a **fixed
+sender-to-support assignment** therefore answers a strictly stronger question than the one that
+matters, and can return UNSAT when the cover is realisable.
+
+**The evidence.** m2 reports four covers (8, 11, 12, 15, with bundle join counts 48,701 / 12,252 /
+306 / 156) that are UNSAT for 144 random fixed assignments — every one DRAT-verified — while a
+formulation that *quantifies* the assignment (one Boolean per sender × support, one support per
+sender, exact multiplicities) returns SAT on those same four covers, matching the bundle's joins.
+m7 found the same thing from the encoder side: a pinned sender identification is refuted in 0.02 s.
+
+**The consequence, which is the reason this is written down.** An unquantified sweep reports **all
+1,346 open covers dead** — and that result is an **artefact**. Anyone who ran the naive sweep and
+trusted it would have concluded the branch was closed and moved on.
+
+**The honest cost of the real question**: 1,086 classes after residual symmetry (866 singletons, 200
+of size 2, 20 of size 4), 2,172 instances with both templates, 19.3 % saved by symmetry. Only 54 of
+the 66 roles have trivial automorphism group, so there is little more to win there.
