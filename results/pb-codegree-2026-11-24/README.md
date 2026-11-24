@@ -66,8 +66,8 @@ claim is void.** `smwu1nsf3/m8` found it and I reproduced it.
 The `d16` gadget in `tools/pb/encode.py` as committed at `0b1dd92` built its two
 guarded literals as
 
-    g <-> (red or not d16)      used for  at most >= 16   (correct)
-    h <-> (red and d16)         used for  at most <= 15   (WRONG)
+    g <-> (red or not d16)      then "at least 16 of g"    (correct)
+    h <-> (red and d16)         then "at most 15 of h"      (WRONG)
 
 With the `--all16` unit forcing `d16` true, `h` collapses to `red` and the second
 cardinality becomes `red <= 15` while the first is `red >= 16`. Every all-16
