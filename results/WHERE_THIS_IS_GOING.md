@@ -87,3 +87,18 @@ The programme is coherent: a finite ledger that shrinks by tens of thousands per
 exclusion certified. It is not close. 19,448 covers remain, the branch closure needs a third-arm
 argument nobody has, and four or five sibling branches remain after that. `R_4(3)` stays in
 `[51, 62]` until all of it is done.
+
+## Defects found in the delivered bundles (2026-11-24)
+
+Both are harness bugs, not mathematical errors, and both were caught by running the verifiers.
+
+1. **`K58_double_four_pentagon_exclusion`**: `verify.py` asserts every file in `evidence/` matches
+   its regeneration, and fails on `unquotiented_reference.tsv` — the published table lists different
+   role/cover pairs (T/590, T/1990, T/2180, T/4286) than the shipped code reproduces (T/134, T/760,
+   T/1738, T/3868). Everything substantive matches (`double_four_covers.tsv.gz`,
+   `board_counts.tsv.gz`, `roles.tsv`, `summary.json` all byte-identical to the regeneration), so the
+   31,150 / 19,448 figures stand; one auxiliary reference table is stale.
+2. **`K58_fourfold_light_18102_exclusions`**: `verify.py` line 28 passes an integer `0` as a
+   subprocess argument and dies with `TypeError: expected str, bytes or os.PathLike object, not int`
+   before reaching the evidence comparison. Patching that single argument to `'0'` lets the check run
+   (the patch is local, in `verify_judge.py`; the shipped file is untouched).
