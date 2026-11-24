@@ -37,6 +37,26 @@ pentagon, not `A`: each pentagon vertex has at most five colour-1 neighbours in 
 omits colour 0 internally and six would give a two-coloured `K_6`. (An earlier 75 in the swarm's
 brief counted 15 `A`-vertices at five spokes each and is withdrawn — it is not the binding side.)
 
+## The ceiling is an instance fact at 58 vertices, not only a board argument (m6)
+
+m3's proof caps the value on the 35-vertex board. m6 closes it at full-row scale: **`U+V >= 41` is
+UNSAT on the 58-vertex pin-relaxation of branch 62**, with a DRAT certificate. The judge reproduced
+it end to end — CNF hash `d4a4e3d9…` matches the manifest, kissat returns UNSATISFIABLE in 9.1 s, the
+proof it emits is 24,416,206 bytes with SHA-256 `fb5bed1b…` (byte-identical to the recorded proof),
+and `drat-trim` accepts it in 7.9 s.
+
+So on branch 62 the row satisfies **`21 <= U+V <= 40`** as an instance, and 40 is not merely the
+board maximum — it is the row maximum.
+
+**The board tops do not lift.** Fixing the bundle's `(18,18)` colouring or either `(20,20)`
+colouring, the 44-vertex CNF is UNSAT. So no colouring attaining the top extends, and the true
+realisable range is a proper subrange of `[21, 40]` — which is now a concrete question rather than a
+guess.
+
+**Symmetry**: the `(14,5)` board has exactly **725,760 = 9! x 2** automorphisms, enumerated
+exhaustively, and a verified isomorphism `(14,5) -> (5,14)` exchanging colours 2 and 3 transports
+every witness and exclusion between the two orientations.
+
 ## What this settles
 
 **No upper bound provable from these boards can close any of the five rows.** Closure needs
