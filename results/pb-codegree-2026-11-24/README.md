@@ -39,10 +39,13 @@ A shared site `z` has its only fixed red neighbours at `u,v`, so its red chart i
 a triangle-free 3-coloured `K15` or `K16` containing the blue edge `uv`. Two
 independent routes give the same answer:
 
-* Kalbfleisch-Stanton 1968 p.19 (two `K16` colourings) and Heinrich 1977
-  Theorem 2, J. Austral. Math. Soc. Ser. A 24, 465-495, DOI
+* Kalbfleisch-Stanton 1968 p.19 (two `K16` colourings), Zbl 0164.24702,
+  J. Comb. Theory 5, 9-20, DOI 10.1016/S0021-9800(68)80024-9, and Heinrich 1977
+  Theorem 2, Zbl 0382.05025, J. Austral. Math. Soc. Ser. A 24, 465-495, DOI
   10.1017/S1446788700020838 (exactly two `K15` colourings, each a `K16`
-  colouring with one vertex deleted); with the verified fact that every blue edge
+  colouring with one vertex deleted) - both records checked in zbMATH Open on
+  2026-11-24: the papers exist at the cited volume and pages, and Heinrich's
+  Theorem 2 is the statement used; with the verified fact that every blue edge
   of either `K16` template has the same footprint (`tools/pb/footprint.py`), the
   footprints are the full table and the full table minus one unit in one of the
   8 positive cells.
@@ -207,6 +210,21 @@ Four concrete routes, in the order I would take them.
    8 vertices) and the least constrained: internally 3-coloured, so no cell
    size is forced the way it is for the four mixed cells. If any sound rigidity
    is available in this instance it is most likely there.
+
+## The root degree lemma is kernel-checked
+
+`lean/K58/PBRoot.lean` proves `K58.pb_root_blue_degree`: over `Fin 58`, for a
+symmetric 4-colouring of `K58` with no monochromatic triangle, if `u v` is blue
+with exactly 14 common red neighbours, every red degree is at most 16, every
+other colour degree at most 14 and `v` has red degree at least 15, then
+`deg v 0 = 13` and `deg u 3 = 16`. It imports the campaign's own `K58.Basic`, so
+`EdgeCol`, `TriangleFree` and `deg` are the repository's definitions rather than
+restatements. `#print axioms` on the theorem and on both helper lemmas
+(`pb_two_colour_card_le_five`, which is `R(3,3) <= 6`, and
+`pb_card_le_five_of_avoids`) gives exactly
+`[propext, Classical.choice, Quot.sound]`; there is no `sorry` and no
+`native_decide`. Registered in `lean/order.txt` and `lean/K58/Check.lean`, and
+`research/r3333-58/ledger.md` #43 records that check against #33.
 
 ## What is external and stays external
 
