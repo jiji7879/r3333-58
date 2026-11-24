@@ -37,7 +37,7 @@ consequences of the laws, so an UNSAT at any level is an UNSAT of the child:
 
 | statement | evidence |
 | --- | --- |
-| every blue edge of T and of U has footprint 0 in (B,B), 2 in each of (B,G),(B,Y),(G,B),(Y,B),(G,G),(Y,Y), 1 in (G,G)... see `footprint.py`; so a degree-16 shared site has exactly two red neighbours in each 5-cell | `python3 tools/pb/footprint.py` |
+| every blue edge of T and of U has the same footprint: 0 in (B,B), 2 in each of (B,G),(B,Y),(G,B),(Y,B),(G,G),(Y,Y), 1 in each of (G,Y),(Y,G). So a degree-16 shared site has exactly two red neighbours in each of the four 5-cells | `python3 tools/pb/footprint.py` |
 | row TT_d02, t=3, **sub-case "all 14 shared sites have red degree 16"**: UNSAT | `--strength 1 --all16 --no-footprint`, Kissat 4.0.4, DRAT replay `s VERIFIED` (`sweep_all16.py` regenerates) |
 | the same sub-case is already UNSAT from the degree laws alone: laws (1,3) only, no triangles and no codegree | 0.9 s, 1514-clause core |
 | both verify with drat-trim | yes |
