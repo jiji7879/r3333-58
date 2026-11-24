@@ -60,10 +60,13 @@ so a shared site has two red neighbours in each of the four mixed 5-cells and in
 ## What is closed
 
 **The half where all 14 shared sites have red degree 16**, for all four rows and
-all five `t`, twice over (strength 1 and strength 3): 40 instances, every one
-UNSAT with a DRAT proof replayed to `s VERIFIED` by `drat-trim` against the same
-CNF, median 27 s, max 102 s. `tools/pb/sweep_all16.py` regenerates the whole
-table; the ledger is `.scratch/pb/all16/ledger.tsv`.
+all five `t`, twice over (strength 1 and strength 3): **40 of 40 instances UNSAT,
+every DRAT proof replayed to `s VERIFIED` against the same CNF** - median 29 s,
+max 102 s, whole sweep 45 min on a loaded 4-core VM. `tools/pb/sweep_all16.py`
+regenerates it. Ledger: [all16-ledger.tsv](all16-ledger.tsv)
+(sha256 `c5d08af238435fffa5db506d73fc22535734af27dbf2f33c9d154938b60c1bfd`),
+columns `row, t, strength, status, cnf_sha256, proof_bytes, proof_sha256,
+checker, seconds`.
 
 Stronger than that: this half already follows from the **degree laws alone**. The
 instance with (L2) triangles and (L4) codegree dropped is still UNSAT (0.9 s,
@@ -75,8 +78,17 @@ it is cheap. It is also why it says nothing about the other half.
 The complement — **some shared site has red degree 15** — and the mixed cases.
 `tools/pb/encode.py --strength 3 --fp15` is the complete child (all nine
 footprints wired in, no case split), and it is undecided: Kissat 4.0.4 at 900 s
-and then 3000 s, and CaDiCaL in parallel. Sanity ladder for that encoding:
+and then 3000 s, CaDiCaL 195 in parallel. Sanity ladder for that encoding:
 `--strength 0 --fp15` SAT, `--strength 1 --fp15` SAT (1.7 s), full undecided.
+
+Two things learned about the search, both measured. (a) The footprint clauses are
+*expensive*: `--all16 --fp15` did not finish in 600 s while `--all16` without
+them closes in 20 s, so the nine-footprint block buys pruning at a large cost in
+auxiliary variables. (b) The degree-15 sites cannot be isolated by counting:
+under the degree laws plus the footprints, every one of the 14 shared sites can
+individually be the degree-15 one (14/14 SAT, 4-7 s each), and so can every
+sampled pair (6/6 pairs SAT). So there is no cheap "at most one" split; a host
+with several degree-15 shared sites is not excluded at the degree level.
 
 **Dead route, so it is not retried.** The repeated-pentagon triple cannot give a
 codegree contradiction: for a yellow pair `a,b` in a mixed cell and three shared
