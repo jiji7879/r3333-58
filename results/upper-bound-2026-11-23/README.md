@@ -89,6 +89,17 @@ triangles, all 236 pins matched. But it does not survive to 44: **none of the se
 colourings extends to the `(14,14)` board**, and the `(14,7)` colouring does not extend to `(14,8)`.
 So the top of the range is **attained at 37 vertices and dead by 44**.
 
+## The 44-vertex board also caps at 40 (m4)
+
+A third route to the same ceiling, and the strongest board-level one: the `(14,14)` board contains
+`(14,5)`, so a cap there subsumes the 35-vertex one. m4's certificate is `U+V >= 41` on `(14,14)`
+UNSAT — 381 s solve, 7.83 M conflicts, 697 MB DRAT, and **`drat-trim` reports `s VERIFIED` after
+1519.9 s** on 8.1 M lemmas (the judge read that line in the run log but did not re-run the 25-minute
+verification; it is corroborated by m6's 58-vertex instance, which was reproduced byte-identically).
+
+Transfer: the `(14,14)` board is the row minus the colour-1 arm and keeps `A`, `C*`, `D*`, so every
+row colouring restricts to it with identical counts — board bound implies row bound.
+
 ## What this settles
 
 **No upper bound provable from these boards can close any of the five rows.** Closure needs
