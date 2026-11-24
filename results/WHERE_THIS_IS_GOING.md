@@ -1,3 +1,26 @@
+## CORRECTION 2, 2026-11-24: the two-arm layer DOES bite, at the cover level
+
+The correction below says the census is worth nothing in row terms, and that stands. But I also
+repeated all day that **the two-arm layer is vacuous**, and that is wrong as stated. It is vacuous at
+the *profile* level and it bites at the *cover* level.
+
+- **Profile level (vacuous).** 1,180 instances of `root + A + B` fixing only the arm type and the
+  support sizes are all satisfiable. That is what I generalised from.
+- **Cover level (bites).** Fixing a *specific cover's* supports — `colour(a,b) = 0` iff `b` lies in
+  the support assigned to sender `a` — makes the same 30-vertex board **UNSAT**. Verified here on
+  cover 7: rebuilt CNF byte-identical (`38ae7dbe…`), kissat UNSAT, 159 KB DRAT accepted in 0.049 s,
+  and the `nocover` guard SAT.
+
+**640 configurations proved impossible on 64 of the 1,346 covers** (m1), 2–4 placements per cover.
+Covers are not refuted — the placement still has to be quantified over, which is exactly the multiset
+trap below — but the obstruction is **local, on four `B`-points**, so exhausting placements is a
+finite classification rather than a search.
+
+It also explains a gap in the `f18` bundle: its join-plus-light-sender test enumerates *pairs of
+words*, not a 14-point model, so it accepts configurations the full two-arm CNF rejects.
+
+---
+
 ## CORRECTION, 2026-11-24: this programme closes ZERO rows
 
 **Retract the framing below.** Everything in it about the cover census is accurate, but the inference
