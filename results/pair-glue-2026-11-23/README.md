@@ -180,6 +180,24 @@ So the stage exclusions consume **row-specific** pins; they are not liftable to 
 common. The author's own batch totals are withdrawn in the report after one receipt contradicted its
 ledger entry, and are not counted here.
 
+## Which board does what: the hierarchy is now mapped (m2, verified here)
+
+| board | vertices | what it admits | rows |
+| --- | ---: | --- | --- |
+| core `{0}+A+C*+D*` | 26 | `U <= 6` SAT | 165 of 169 (164 attain 6) |
+| `{0}+A+arm2` | 30 | `U <= 6` SAT (and `V <= 7` symmetrically) | **all 169** |
+| `(13,5)` | 34 | `U+V = 18` attained | 88 of 169 |
+| `(14,5)` | 35 | `U <= 6` attained | at least 2 (m3) |
+
+Judge's check: six of the 672 witnesses re-verified from the definition — 30-vertex boards,
+triangle-free, every row pin respected, `U` at 5 or 6, **including row `076eafbfe47e`**. So no
+single-arm board forces `U >= 7`; the second pentagon is load-bearing, and 35 vertices is the first
+board that can carry the exclusion — which is exactly why m4's cheap route is a 35-vertex question.
+
+m2 also certifies the signature lemma's key step: in a triangle-free 3-colouring of `K14` with a
+two-colour pentagon the nine third-colour masks are pairwise distinct, empty excluded by hand and
+all **31** non-empty common masks UNSAT with DRAT verified from its own encoder.
+
 ## What is not established here
 
 - Nothing about whether `U+V >= 19` actually shrinks a row's search. The bundle evidences a 60.4 %
