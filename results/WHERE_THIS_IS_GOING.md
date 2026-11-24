@@ -1,3 +1,34 @@
+## CORRECTION, 2026-11-24: this programme closes ZERO rows
+
+**Retract the framing below.** Everything in it about the cover census is accurate, but the inference
+— that driving the census to zero would close the branch, and that closing the branch is progress —
+is wrong, and this file led with it. The campaign encoder
+(`.scratch/handoff/first_case/start.py:70`) emits **two complementary children per row**:
+
+```python
+for name, branch in [('at_most_five', [[-z] for z in flags]), ('some_six', [flags])]:
+```
+
+`at_most_five` is exactly the `m(x) <= 5` hypothesis on which the whole uniform fully-sending branch
+rests. A row is decided only when **both** children are, so a refutation of that branch — however
+complete — closes **0 of the 381 rows** of `(15,14,14,14)` and 0 of the 31,751 open rows. Measured
+reach: **7 of 63,502 open (row, child) pairs**, 0.011 %; one row per 4,536 open rows.
+
+And the saturated-interface machinery cannot be lifted: zero interface slack occurs at exactly nine
+rows in the whole cover (all the charge-15 block of this profile), and **the next-tightest obligation
+has 56 of 210 units of slack**. So the branch is not the tight corner of the cover; it is a tight
+corner of 9 rows out of 31,751.
+
+**Where the effort belongs instead.** 13,154 open rows — 41.4 % of the whole open cover — sit at
+gap 4, all in `(15,15,15,12)`, and the statement they need is *"at least 11 of the 15 points of the
+15-arm are critical"*. That is the nearest quantity worth building, and it is 35 times the row count
+of the branch this file was written to pursue.
+
+The census below is still correct as a census, and the exclusions are still certified. They are just
+worth nothing at row level.
+
+---
+
 # What the end goal is, and what these bundles do toward it
 
 Written because the person asked. Every number below is from a delivered artefact or a verified
