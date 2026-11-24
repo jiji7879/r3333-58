@@ -36,8 +36,12 @@ python3 replay.py --hash-only          # reconstructs every CNF, 116 manifest en
 ```
 
 So the witness audit, the reflection cover, the numerical conclusions and every CNF reconstruction
-pass. The 116 DRAT traces are being regenerated with the bundled Kissat and checked with `drat-trim`;
-that result is recorded when it lands.
+pass.
+
+**The 116 DRAT traces were regenerated and checked**: 29 min 44 s, exit 0, **116 of 116 certificates**
+(`axis` 22, `balanced` 13, `branch` 34, `fixed` 13, `free` 6, `starcover` 1, `starpair` 21, `starset`
+5, `balanced_cube` 1), **zero failures, zero mismatches**. No proof volumes were shipped and none were
+needed.
 
 ## The balanced case remains open
 
