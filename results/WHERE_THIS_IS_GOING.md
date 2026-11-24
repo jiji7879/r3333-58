@@ -124,6 +124,31 @@ That is exactly where the campaign's other verified facts point: the density of 
 one-arm (covers, partitions, supports) and two-arm (star family: nothing), so the next bite has to be
 three-arm.
 
+## The sharpest target anyone has produced: four-vertex sub-arms (m3)
+
+**Where the third arm actually bites.** Not at the one-vertex sender test (which f18 already runs),
+but one step beyond it, and it is a **propagation-level** effect:
+
+- three two-arm boards built and verified; exhaustive one-vertex censuses give 1,014 / 323 / 100 / 378
+  extensions;
+- the `C` arm grows to **four** vertices and stops: **14 four-vertex `C`-sub-arms admit no fifth
+  vertex**, exhaustive over all 254,628 words, computed by two independent programs agreeing on
+  candidate counts (2,649–7,744) and on the verdict (0 colourings);
+- the refutation is local: for ~99 % of candidates **two placed vertices are both forced to one colour
+  and are joined in that colour**, the rest die by unit propagation.
+
+So the sender test is not the wall. A 14-vertex arm contains four-vertex sub-arms, and
+
+> **proving "every four-vertex `C`-sub-arm is a dead end" would close a board.**
+
+That is the concrete target, and it is a classification of a small local object rather than a search.
+Not yet done: 7 of 1,014 first words explored, no UNSAT claim, and no proof that every four-vertex
+sub-arm is dead.
+
+**Arithmetic check on the word bank**: the judge's own counter gives 254,628 words on `T` and 254,088
+on `U`, both from 3,003 independent 5-sets — because `T.col` and `U.col` use only colours 1, 2, 3, so
+the colour-0 graph on `A` is **empty** and every 5-set is admissible.
+
 ## What would count as help, ranked
 
 1. **A three-arm condition with bite.** m4's disjoint-zero-set condition — at least `10 − g(x)`
