@@ -72,6 +72,14 @@ SAT (1.7 s), full undecided - so the nine-footprint block is not itself
 contradictory, unlike two earlier versions of it. The four rows are therefore
 still open, and the all-16 half above is only a sub-case.
 
+## Run this after any change
+
+    python3 tools/pb/selftest.py     # 6 polarity checks, ~10 s, non-zero exit on failure
+
+It asserts both that each guard fires when it should and that it does not when it
+should not. The inverted-guard bug that voided a session's result passes a
+one-sided test and fails this one.
+
 ## Traps already hit
 
 Second trap: the `--fp15` block first passed cell *vertices* where edge literals
