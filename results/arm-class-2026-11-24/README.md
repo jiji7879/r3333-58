@@ -111,3 +111,25 @@ verified witness, so it prunes without emptying.
 admits words — and since the average of `m` over the 42 outsiders is exactly 5, **every some-six
 vertex carries a some-four companion**. Also confirmed independently: the `m = 5` word count is
 exactly 254,628, pinning the encoder to the bundle's figure.
+
+## 6. The census depends on the role, not the class (m8, verified here)
+
+The cleanest statement of why the 115 alone is the wrong unit. Roles 24 and 155:
+
+| | value |
+| --- | --- |
+| same `S_3` class | **yes** (checked by exact isomorphism) |
+| independent-set pools in the special colour | **identical** — 10 five-sets, 67 four-sets |
+| placements | **24 has 0, 155 has 42** |
+
+So no local invariant decides: the degree sequences, pool sizes and edge counts all agree, and the two
+roles differ only in whether a cover exists. The LP relaxation certifies 9 of the 37 deaths, which is
+the same linear-blindness found elsewhere in this campaign.
+
+Lift to the classes: 37 dead roles = **12 all-dead-class rows + 25 mixed**. And the operational
+consequence, agreeing with Theorem V from the other side: every role is realisable in every arm slot,
+so the admissible triples are the full product except for the five all-dead classes.
+
+**Arithmetic reconciliation**: 651 labelled types = 102 orbits of size 6 + 13 of size 3; the 332 roles
+are the same object after quotienting the non-special colour swap = 102 of size 3 + 13 of size 2. Both
+`102*6 + 13*3 = 651` and `102*3 + 13*2 = 332`.
