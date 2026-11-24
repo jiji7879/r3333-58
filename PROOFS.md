@@ -109,6 +109,7 @@ Neither of the first two affects the 192 cross-arm cases.
 | file | what it is |
 |---|---|
 | `PROOFS.md` | this index |
+| `REPORT_2026-11-23.md` | the narrative report of the three 2026-11-23 swarms and the five bundles |
 | `research/r3333-58/` | the siege folder: `problem.md`, `notes.md` (13 steps), `proof.md`, and the append-only ledger whose gate prints `NOT YET: the goal #1 is open` |
 | `results/literature-r3333-2026-11-23.md` | the literature check, with Zbl ids and query dates |
 | `results/wall-hour-2026-11-23/README.md` | the one-hour measurement |
