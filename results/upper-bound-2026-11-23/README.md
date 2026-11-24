@@ -100,6 +100,21 @@ verification; it is corroborated by m6's 58-vertex instance, which was reproduce
 Transfer: the `(14,14)` board is the row minus the colour-1 arm and keeps `A`, `C*`, `D*`, so every
 row colouring restricts to it with identical counts — board bound implies row bound.
 
+## The exact-total sweep: twenty instances, twenty times inconclusive
+
+The decisive experiment the range invites is to decide `U+V = k` at 58 vertices for each `k` in
+`[21,40]` — all-UNSAT would close branch 62, any-SAT would give a `K_58` colouring and hence
+`R_4(3) >= 59`. The judge built all twenty CNFs from m6's encoder (49,469 variables, 184,982 clauses
+each) and ran them at **320 s and 10 M conflicts apiece**:
+
+```
+k=21 … k=40   OPEN (cap)      SWEEP_DONE      1 h 47 m of compute
+```
+
+**Every value is inconclusive.** Pinning the total does not make the row tractable at that budget;
+the instances are as hard as the row itself. The experiment is still the right one — it has no
+neutral outcome — but it needs an order of magnitude more time per value, not a smarter encoding.
+
 ## What this settles
 
 **No upper bound provable from these boards can close any of the five rows.** Closure needs
