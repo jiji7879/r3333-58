@@ -39,7 +39,8 @@ Inside the uniform fully-sending branch of `(15,14,14,14)`, arm by arm:
 | fourfold-light covers, total | **56,588** | census |
 | − fivefold heavy support | −5,990 | fourfold-light bundle |
 | − heavy multiplicity (4,4,1,1) | −31,150 | double-four bundle |
-| **remaining** | **19,448** | |
+| − (4,3,1,1,1) and three further patterns | −18,102 | fourfold-light 18102 bundle |
+| **remaining** | **1,346** on 66 roles | |
 | partition-cover shape | → **0** | partition-cover bundle |
 
 And the geometry breakdown in the double-four summary shows the family is not homogeneous:
@@ -50,7 +51,9 @@ And the geometry breakdown in the double-four summary shows the family is not ho
 | 2+3 | 250 | 197 |
 | 3+3 | 12 | **0** |
 
-So `3+3` is already dead, `2+3` is nearly dead, and `2+2` is the bulk.
+So `3+3` is already dead, `2+3` is nearly dead, and `2+2` is the bulk. The latest step enumerated
+**250,986,773 joins** to remove 18,102 covers, and every one of the 1,346 survivors has a
+complementary pair of supported pentagons outside the light support (1,340 with deletion sizes 6,7).
 
 Each exclusion removes blocks of tens of thousands at once. That is the difference between this and
 searching: search closes nothing at any budget; this closes 31,150 covers with one local theorem.
