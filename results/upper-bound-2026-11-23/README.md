@@ -81,6 +81,14 @@ DRAT, and the judge re-ran `(0,21)` (UNSAT in 0.2 s, proof verified). The four o
 **What is attained and what is open on branch 62**: totals 25, 28, 29, 30 and every value 31..40 are
 attained; **21-24, 26 and 27 are open**. That is the remaining question in precise form.
 
+## How far the top lifts (m8, verified here)
+
+The `(20,20)` colouring survives upward: on the **37-vertex `(14,7)` board** there is a colouring with
+`(U,V) = (20,20)`, which the judge checked from the definition — 666 pairs, zero monochromatic
+triangles, all 236 pins matched. But it does not survive to 44: **none of the seven known `(14,5)`
+colourings extends to the `(14,14)` board**, and the `(14,7)` colouring does not extend to `(14,8)`.
+So the top of the range is **attained at 37 vertices and dead by 44**.
+
 ## What this settles
 
 **No upper bound provable from these boards can close any of the five rows.** Closure needs
