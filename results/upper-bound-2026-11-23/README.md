@@ -73,6 +73,11 @@ So the argument bites on **37 of the 381 rows** and is vacuous on the other 344.
 five is exactly `[0,20]^2` with the corner `(20,20)` attained, and `U >= 21`, `V >= 21`, `U+V >= 41`
 are all UNSAT.
 
+**The floor case is down to four cells.** At `U+V = 21` the 22 possible `(U,V)` cells have 18
+excluded on the board — `(0,21)` through `(8,13)` and `(21,0)` through `(13,8)`, all with replayed
+DRAT, and the judge re-ran `(0,21)` (UNSAT in 0.2 s, proof verified). The four open cells are
+`(9,12)`, `(12,9)`, `(10,11)`, `(11,10)`, so **any 21-colouring must have `min(U,V) >= 9`**.
+
 **What is attained and what is open on branch 62**: totals 25, 28, 29, 30 and every value 31..40 are
 attained; **21-24, 26 and 27 are open**. That is the remaining question in precise form.
 
