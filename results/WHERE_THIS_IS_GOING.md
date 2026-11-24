@@ -1,3 +1,41 @@
+# Where this is going — rewritten 2026-11-24 after three corrections
+
+This file has been corrected three times in one day, twice because the swarm found that its own
+subject matter was off-target. Read this section first; the sections below are the history.
+
+## The position, stated plainly
+
+**The fourfold-light cover census is off-target on two counts, and the branch content is elsewhere.**
+
+1. **It closes zero rows.** Each row splits into two complementary children (`at_most_five` /
+   `some_six`) and the branch *is* the `at_most_five` child, so refuting it completely leaves every
+   row's `some_six` child open. Reach: 7 of 63,502 open (row, child) pairs. Verified in the encoder.
+2. **It does not cover the family the branch contains.** Sampling real two-arm colourings, the five
+   light multiplicities are `(1,1,1,1,1)` in 58 of 60 and `(2,1,1,1)` in 2 of 60; the census's own
+   `(4,1)` pattern occurs in **0 of 60**, and every one of 222 decided three-arm instances has covers
+   outside the census. So killing all 1,346 open covers would still leave the branch open.
+
+## What has actually been established about the branch
+
+| claim | status |
+| --- | --- |
+| the third arm bites | **yes** — 222/222 three-arm instances UNSAT, DRAT replayed, and SAT with the cross-arm clauses deleted |
+| where it bites | **at four vertices**, by propagation: 14 four-vertex `C`-sub-arms admit no fifth vertex, ~99 % of candidates dying because two placed vertices are forced to one colour and joined in it |
+| the mechanism | **bipartite list-colouring on `K_{14,14}`**, not a count |
+| multi-arm counts | identities — 130 or 65 by size partition; the one inequality has slack 5 and is attained |
+| the disjoint-zero-set condition (D) | tight but 1–2 short on 971 covers; 375 admit it outright |
+| two-arm at profile level | vacuous — 1,180 of 1,180 satisfiable |
+| two-arm at cover level | bites — 640 configurations on 64 covers |
+
+## The target, in one line
+
+> **Prove every four-vertex `C`-sub-arm is a dead end, in the `(1,1,1,1,1)` family.**
+
+A 14-vertex arm contains four-vertex sub-arms, so that closes a board; it is a finite classification
+of a small local object, and 222 instances of the surrounding family already die at three arms.
+
+---
+
 ## CORRECTION 2, 2026-11-24: the two-arm layer DOES bite, at the cover level
 
 The correction below says the census is worth nothing in row terms, and that stands. But I also
