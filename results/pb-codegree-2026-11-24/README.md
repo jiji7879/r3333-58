@@ -129,8 +129,10 @@ python3 tools/pb/check_matrix.py ROW T MATRIX.txt  # any claimed host, from the 
 
 Sizes, so the next person does not have to measure them again: 58 vertices, 1387
 free 4-way edge variables, 2,406,235 clauses and 1,092,138 variables at
-`--strength 3 --fp15`. Kissat 4.0.4: undecided at 900 s, at 3000 s, and with
-`--sat` at more than 1500 s; CaDiCaL 195: undecided at 45 min. The machine was
+`--strength 3 --fp15`. Kissat 4.0.4: undecided at 900 s, at 3000 s (530 MB of DRAT emitted before the
+cap, so no closure was near), and with `--sat --seed=2` and `--sat --seed=7` at
+1500 s each; CaDiCaL 195: undecided at 45 min. The incomplete proof traces were
+deleted - a timed-out DRAT is not evidence of anything. The machine was
 shared with six other solver processes throughout, so those are lower bounds on
 wall time, not measurements of difficulty.
 
