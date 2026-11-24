@@ -133,3 +133,25 @@ so the admissible triples are the full product except for the five all-dead clas
 **Arithmetic reconciliation**: 651 labelled types = 102 orbits of size 6 + 13 of size 3; the 332 roles
 are the same object after quotienting the non-special colour swap = 102 of size 3 + 13 of size 2. Both
 `102*6 + 13*3 = 651` and `102*3 + 13*2 = 332`.
+
+## 7. The root+A+B family prunes nothing — verified on re-emitted witnesses (m2)
+
+The proposed two-arm star test was first rejected because its witnesses could not be reconstructed
+from outside. Re-emitted as plain 30×30 physical matrices, they verify:
+
+```
+judge's own check, no catalogue or graph6 decoding:
+  triangle-freeness on all 30 vertices
+  root star: colour 0 to A, colour 1 to B
+  exactly five colour-0 neighbours in A for every b in B
+  support sizes 4 or 5, with exactly five senders at size 4
+  shapes: complementary C5/C5 for five-sets, P4/P4 for four-sets
+  -> 1180 accepted, 0 rejected      (three single-entry mutations all detected)
+```
+
+So **every instance of the root+A+B family is satisfiable** and the two-arm test prunes nothing
+beyond the one-arm census. This agrees with Theorem V (m4) from one side and with the finding that
+only the five all-dead classes are pruned (m8) from the other.
+
+The episode is worth recording as procedure rather than as mathematics: a witness nobody else can
+reconstruct is not evidence, and the physical-label format is what made this checkable in one pass.
