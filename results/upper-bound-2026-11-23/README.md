@@ -57,6 +57,25 @@ guess.
 exhaustively, and a verified isomorphism `(14,5) -> (5,14)` exchanging colours 2 and 3 transports
 every witness and exclusion between the two orientations.
 
+## The cap is a profile-wide fact with a narrow scope (m5, verified here)
+
+The same argument gives `U,V <= 20` on all five rows, and the colour-1 graph on the 15-arm is the
+**same 35-edge graph in every one of them**. The judge ran the census:
+
+| caps `(U_cap, V_cap)` | rows |
+| --- | ---: |
+| (20, 20) | **17** |
+| (20, 21) | 8 |
+| (21, 20) | 12 |
+| (25, 25) | **344** |
+
+So the argument bites on **37 of the 381 rows** and is vacuous on the other 344. The pair box on the
+five is exactly `[0,20]^2` with the corner `(20,20)` attained, and `U >= 21`, `V >= 21`, `U+V >= 41`
+are all UNSAT.
+
+**What is attained and what is open on branch 62**: totals 25, 28, 29, 30 and every value 31..40 are
+attained; **21-24, 26 and 27 are open**. That is the remaining question in precise form.
+
 ## What this settles
 
 **No upper bound provable from these boards can close any of the five rows.** Closure needs
