@@ -131,5 +131,8 @@ Both are harness bugs, not mathematical errors, and both were caught by running 
    31,150 / 19,448 figures stand; one auxiliary reference table is stale.
 2. **`K58_fourfold_light_18102_exclusions`**: `verify.py` line 28 passes an integer `0` as a
    subprocess argument and dies with `TypeError: expected str, bytes or os.PathLike object, not int`
-   before reaching the evidence comparison. Patching that single argument to `'0'` lets the check run
-   (the patch is local, in `verify_judge.py`; the shipped file is untouched).
+   before reaching the evidence comparison. **With that one argument patched to `'0'` the check runs
+   to completion: exit 0 in 27 minutes, "Every published table matches."** All 336 progress lines show
+   `0 pass`, i.e. no cover survives the sender test, and both seven-set enumerations (3,255 and 681
+   representative seven-sets) complete. So the exclusions themselves verify; only the harness was
+   broken.
