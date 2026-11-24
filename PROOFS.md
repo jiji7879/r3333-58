@@ -113,7 +113,12 @@ Neither of the first two affects the 192 cross-arm cases.
 | `results/literature-r3333-2026-11-23.md` | the literature check, with Zbl ids and query dates |
 | `results/wall-hour-2026-11-23/README.md` | the one-hour measurement |
 | `results/wall-sample/README.md` | the 42-row first-pass sample |
-| `results/judge-*.md`, `results/swarm-*.md` | the judging record and both swarm boards |
+| `results/judge-*.md`, `results/swarm-*.md` | the judging record and the two 2026-11-23 swarm boards |
+| `results/pair-glue-2026-11-23/README.md` | the 19-spoke bundle: what replays, and the five negative results about it |
+| `results/spoke19-2026-11-23/README.md` | the twenty-spoke add-on: 14 witnesses verified, and where a bound of 20 could live |
+| `results/wall-incidence-2026-11-23/README.md` | the 381 certified wall cuts and the 64 K50 barrier witnesses |
+| `results/longrun-2026-11-23/README.md` | two hours at 170 M conflicts on one wall row |
+| `.ultramath/<swarm>/<member>/REPORT.md` | each member's own report for the swarms `smwtqk6ku`, `smwsyh6tk`, `smwswz4x9` |
 | `results/skill-health-2026-11-23.md` | which skills were executed and which self-tests pass |
 | `lean/` | the kernel tree; `lean/K58/Check.lean` is the axiom-check list |
 | `review/` | the long-form reviews (campaign, errata, decisions, Lean end-to-end) |
