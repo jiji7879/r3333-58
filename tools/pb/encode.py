@@ -96,7 +96,7 @@ def cellmap(t):
     return cellof
 
 
-def build(M, D, t, stats=False, strength=0, laws=(1, 2, 3, 4), all16=False, footprint=True, some15=False, z15=-1):
+def build(M, D, t, stats=False, strength=0, laws=(1, 2, 3, 4), all16=False, footprint=True, some15=False, z15=-1, fp15=False, all15=False, zonly=None):
     pins, lab2v, pv, qv, u, v = layout(M, D)
     cellof = cellmap(t)
     cellv = {key: [] for key in CELLORDER}
@@ -184,9 +184,10 @@ def build(M, D, t, stats=False, strength=0, laws=(1, 2, 3, 4), all16=False, foot
             add_enc(CardEnc.atmost(lits=ys, bound=bound, top_id=top, encoding=EncType.seqcounter))
 
     # ---- strength 2: footprint of a degree-16 shared site
-    if strength >= 2 or all16 or some15 or z15 >= 0:
+    if strength >= 2 or all16 or some15 or z15 >= 0 or fp15 or all15:
         d16s = {}
         for z in range(14):
+            if zonly is not None and z != zonly: continue
             rl = [ev(z, b, RED) for b in range(N) if b != z]
             d16 = newv(); d16s[z] = d16
             # d16 -> red >= 16   (y <-> l or not d16: vacuous when d16 is false)
@@ -197,21 +198,55 @@ def build(M, D, t, stats=False, strength=0, laws=(1, 2, 3, 4), all16=False, foot
             # not d16 -> red <= 15
             h = []
             for l in rl:
-                y = newv(); cnf.append([-y, l]); cnf.append([-y, d16]); cnf.append([y, -l, -d16]); h.append(y)
+                y = newv(); cnf.append([-y, l]); cnf.append([-y, -d16]); cnf.append([y, -l, d16]); h.append(y)
             add_enc(CardEnc.atmost(lits=h, bound=15, top_id=top, encoding=EncType.seqcounter))
             if all16:
                 cnf.append([d16])
+            if all15:
+                cnf.append([-d16])
             if not footprint:
                 continue
-            for key, c in FOOTPRINT16.items():
-                L = [ev(z, w, RED) for w in cellv.get(key, [])]
-                m = len(L)
-                if m == 0 or c >= m: continue
-                for S in itertools.combinations(L, c + 1):          # at most c
-                    cnf.append([-d16] + [-x for x in S])
-                if c > 0:
-                    for S in itertools.combinations(L, m - c + 1):  # at least c
-                        cnf.append([-d16] + list(S))
+            if fp15:
+                # Heinrich 1977 Theorem 2: a 3-coloured K15 chart is a K16 chart with
+                # one vertex deleted, so its footprint is the 16-table with one unit
+                # removed from exactly one positive cell - or the full table.
+                pos = [(key, FOOTPRINT16[key], [ev(z, w, RED) for w in cellv.get(key, [])])
+                       for key in CELLORDER if FOOTPRINT16[key] > 0]
+                sel = {}
+                for key, c, L in pos:
+                    sel[key] = newv()
+                allv = [d16] + [sel[k] for k, _, _ in pos]
+                add_enc(CardEnc.atmost(lits=allv, bound=1, top_id=top, encoding=EncType.seqcounter))
+                cnf.append(list(allv))
+                for key, c, L in pos:
+                    r, m = sel[key], len(L)
+                    # r -> at most c-1 red
+                    for S in itertools.combinations(L, c):
+                        cnf.append([-r] + [-x for x in S])
+                    # r -> at least c-1 red
+                    if c - 1 > 0:
+                        for S in itertools.combinations(L, m - (c - 1) + 1):
+                            cnf.append([-r] + list(S))
+                    else:
+                        for x in L:
+                            cnf.append([-r, -x])
+                    # not r -> at most c red
+                    for S in itertools.combinations(L, c + 1):
+                        cnf.append([r] + [-x for x in S])
+                    # not r -> at least c red
+                    if c > 0:
+                        for S in itertools.combinations(L, m - c + 1):
+                            cnf.append([r] + list(S))
+            else:
+                for key, c in FOOTPRINT16.items():
+                    L = [ev(z, w, RED) for w in cellv.get(key, [])]
+                    m = len(L)
+                    if m == 0 or c >= m: continue
+                    for S in itertools.combinations(L, c + 1):
+                        cnf.append([-d16] + [-x for x in S])
+                    if c > 0:
+                        for S in itertools.combinations(L, m - c + 1):
+                            cnf.append([-d16] + list(S))
 
         if some15:
             cnf.append([-d16s[z] for z in range(14)])
@@ -251,9 +286,11 @@ if __name__ == '__main__':
     ap.add_argument('--no-footprint', action='store_true')
     ap.add_argument('--some15', action='store_true')
     ap.add_argument('--z15', type=int, default=-1)
+    ap.add_argument('--fp15', action='store_true')
+    ap.add_argument('--all15', action='store_true')
     A = ap.parse_args()
     M, D = [(m, d) for (nm, m, d) in ROWS if nm == A.row][0]
     cnf, pins, cellof = build(M, D, A.t, stats=True, strength=A.strength, all16=A.all16,
-                              footprint=not A.no_footprint, some15=A.some15, z15=A.z15)
+                              footprint=not A.no_footprint, some15=A.some15, z15=A.z15, fp15=A.fp15, all15=A.all15)
     cnf.to_file(A.out)
     print('wrote', A.out, 'pins', len(pins))

@@ -45,12 +45,40 @@ consequences of the laws, so an UNSAT at any level is an UNSAT of the child:
 The `--all16` sweep over all four rows and all five `t` is `sweep_all16.py`;
 its ledger is the table to read, not this paragraph.
 
+## The nine footprints (the lever)
+
+A shared site's red chart is a triangle-free 3-coloured K15 or K16 containing the
+blue edge uv. Two independent routes give the same nine possibilities:
+
+* literature: Kalbfleisch-Stanton 1968 p.19 (two K16 colourings) plus Heinrich
+  1977 Theorem 2, J. Austral. Math. Soc. Ser. A 24, 465-495, DOI
+  10.1017/S1446788700020838 (two K15 colourings, each a K16 colouring with one
+  vertex deleted); with `footprint.py` this gives the full table, and the full
+  table with one unit removed from one positive cell;
+* swarm `smwu1nsf3` members m6 and m8, classification-free: enumerate the 60
+  (order 16) and 432 (order 15) count matrices obeying the total and the
+  per-vertex colour degrees {5,5,5} / {4,5,5}, eliminate 449 arithmetically, and
+  refute 34 by replayed DRAT; nine survive. `check_footprints.py` in
+  `.ultramath/smwu1nsf3/m6` - replayed here, passes.
+
+`--fp15` is that theorem in the CNF: for each shared site exactly one of
+"red degree 16 and the full table" or "red degree 15 and the table minus one in
+the chosen positive cell" holds. It is the complete child, not a sub-case.
+
 ## Open
 
-The complement — **some shared site has red degree 15** — is not decided. That is
-the whole remaining gap for the four rows: `--some15` times out. A degree-15
-site's red chart is a 3-coloured K15 instead of a K16, so the footprint theorem
-does not apply to it, and only "at most two red neighbours per 5-cell" survives.
+`--strength 3 --fp15` on TT_d02 t=3 is **undecided** (Kissat 4.0.4, 900 s, and
+the run above it). Sanity ladder for that encoding: pins+fp15 SAT, degree+fp15
+SAT (1.7 s), full undecided - so the nine-footprint block is not itself
+contradictory, unlike two earlier versions of it. The four rows are therefore
+still open, and the all-16 half above is only a sub-case.
+
+## Traps already hit
+
+Second trap: the `--fp15` block first passed cell *vertices* where edge literals
+belong, so every footprint clause was over raw vertex ids and the instance was
+UNSAT in 0.03 s even with only (L1) and the pins. A CNF that is UNSAT at
+`--strength 0 --fp15` is broken: that combination must be SAT.
 
 ## Trap already hit once
 
