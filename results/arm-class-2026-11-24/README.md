@@ -49,3 +49,35 @@ which 295 survive.
 The 22 mixed classes are the interesting ones for the next step, because their survival is a
 statement about how the arm's colouring is embedded in the root, not merely about its isomorphism
 class.
+
+## 4. The per-sender triple test prunes nothing (m5, verified here)
+
+At a sender `a`, its colour-0 neighbourhood is a 3-coloured `K_15` — the root plus three supports of
+sizes 5, 5, 4 across the three arms. The proposal was to test whether those three supports can occur
+*together* around one vertex of the same template, and to use that as a joint condition.
+
+**They always can, with no constraint beyond the three conditions separately.** The judge counted
+completions of the 65 cross edges from `T.col`/`U.col` directly, with an independent encoder:
+
+```
+all 30 roots (15 in T.col, 15 in U.col):  exactly 600 completions
+```
+
+so the joint condition is *equivalent* to the three support conditions and **its pruning power is
+exactly zero**. Any progress from gluing must come from shared cross edges, not from per-sender
+compatibility.
+
+Two further checks, both agreeing with the member:
+
+- **the local law**, on cross edges only, at all 30 roots: the third present colour is a matching
+  saturating the smaller side, and each of the two class colours spans both parts as a single path
+  (sizes 4,5 — eight edges) or cycle (sizes 5,5 — ten edges). 90 pairs, 0 violations. This
+  reproduces the campaign's matching law from the template data.
+- **the 4-support is forced to be P4+P4**: of the 18 two-colourings of `K_4` with no monochromatic
+  triangle (9 up to colour swap), exactly 3 are `C4`-plus-matching, so excluding those leaves only
+  `P4+P4` — the campaign's standing statement, reached from the other direction.
+
+The judge's own errors, recorded because they cost half an hour: a first encoder allowed four colours
+on the cross edges when the templates are three-coloured (35 edges of each), which made the
+enumeration run away; a second had a directed-edge lookup bug. With both fixed the count is
+immediate.
