@@ -81,3 +81,33 @@ The judge's own errors, recorded because they cost half an hour: a first encoder
 on the cross edges when the templates are three-coloured (35 edges of each), which made the
 enumeration run away; a second had a directed-edge lookup bug. With both fixed the count is
 immediate.
+
+
+## 5. The other three directions, all negative, all verified
+
+**The nine-position matching test is vacuous** (m3). Across all 381 rows and both pentagon arms — 762
+cases — there are **zero** pinned pairs among the nine arm vertices outside the pentagon, and all
+nine always have identical pin-signatures (762 distinct signatures over 762 cases). Permuting them is
+therefore an automorphism of the pinned constraints; the matching problem degenerates to `K_9,9` with
+`9!` solutions for every embedding and the triangle conditions cannot bite. This was checked by the
+judge directly, and it saves building the machinery at all.
+
+**The core cannot supply the floor** (m6, m7). The 26-vertex board `r ∪ A ∪ C* ∪ D*` with the frozen
+pins admits `U,V ∈ [5,25]`, `U+V ∈ [14,50]` — and with the uniform-child columns `U+V ∈ [15,49]` —
+and it attains `U+V = 21` at `(9,12)` and `(10,11)`. So no argument confined to the pentagons, even
+with uniformity, proves `U+V ≥ 21`; the 35-vertex certificates are not redundant. A useful sound
+lemma from the same work: an outside vertex has at most two colour-f and two colour-g neighbours in a
+two-coloured pentagon `P`, since three would close a monochromatic triangle.
+
+**The deficient-sender gluing excludes nothing as posed** (m4, "Theorem V"). The placement conditions
+live entirely inside one arm and never mention row labels, so the deficiency set `L ⊆ A` is a union of
+orbits of the full symmetric group on `A` — empty or all of `A`. Hence compatible triples number
+exactly `295³` of `332³`, every failure being a dead type. What survives is a **new joint condition
+with real bite**: for every outside vertex `x`, at least `10 - g(x)` other-arm vertices must meet
+`Z(x)`; random layers violate it 200 of 200 with median worst margin `-6`, yet it is satisfiable on a
+verified witness, so it prunes without emptying.
+
+**Two further negative facts** (m1): `m(x) = 5` is not template-forced — every `m` from 0 to 15
+admits words — and since the average of `m` over the 42 outsiders is exactly 5, **every some-six
+vertex carries a some-four companion**. Also confirmed independently: the `m = 5` word count is
+exactly 254,628, pinning the encoder to the bundle's figure.
