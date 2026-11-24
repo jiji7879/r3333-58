@@ -7,7 +7,8 @@ project), plus swarm `smwu1nsf3`.
 > **`R_4(3) in [51,62]` has not moved.** Closing all four cases below gives
 > "max red codegree <= 13" only inside the singleton-perfect-balance branch, and
 > that branch still has the 25 overlap-13 alignments and the lower strata behind
-> it. Three of the four cases are still open anyway.
+> it. **All four cases are open. An earlier claim in this file that half of them
+> was closed was an encoding artefact and is retracted below.**
 
 ## The claim and the reduction
 
@@ -57,25 +58,49 @@ independent routes give the same answer:
 so a shared site has two red neighbours in each of the four mixed 5-cells and in
 `GG`, `YY`, one in `GY`, `YG`, and none in `BB` — or that with one unit removed.
 
-## What is closed
+## RETRACTED: the "all 14 shared sites have red degree 16" half
 
-**The half where all 14 shared sites have red degree 16**, for all four rows and
-all five `t`, twice over (strength 1 and strength 3): **40 of 40 instances UNSAT,
-every DRAT proof replayed to `s VERIFIED` against the same CNF** - median 29 s,
-max 102 s, whole sweep 45 min on a loaded 4-core VM. `tools/pb/sweep_all16.py`
-regenerates it. Ledger: [all16-ledger.tsv](all16-ledger.tsv)
-(sha256 `c5d08af238435fffa5db506d73fc22535734af27dbf2f33c9d154938b60c1bfd`),
-columns `row, t, strength, status, cnf_sha256, proof_bytes, proof_sha256,
-checker, seconds`.
+**This section previously claimed 40 of 40 UNSAT with replayed proofs, and that
+claim is void.** `smwu1nsf3/m8` found it and I reproduced it.
 
-Stronger than that: this half already follows from the **degree laws alone**. The
-instance with (L2) triangles and (L4) codegree dropped is still UNSAT (0.9 s,
-1514-clause core). So the content is arithmetic, not combinatorial — which is why
-it is cheap. It is also why it says nothing about the other half.
+The `d16` gadget in `tools/pb/encode.py` as committed at `0b1dd92` built its two
+guarded literals as
+
+    g <-> (red or not d16)      used for  at most >= 16   (correct)
+    h <-> (red and d16)         used for  at most <= 15   (WRONG)
+
+With the `--all16` unit forcing `d16` true, `h` collapses to `red` and the second
+cardinality becomes `red <= 15` while the first is `red >= 16`. Every all-16
+instance was unsatisfiable by construction, for the trivial reason, and the
+"0.9 s, degree laws alone, 1514-clause core" observation came from the same
+gadget. The DRAT proofs verified against the CNFs they were given; the CNFs did
+not encode the intended problem. This is the gate/artefact failure the campaign
+notes warn about, committed by me.
+
+Corrected measurement, with **no gadget at all** - "each of the 14 shared sites
+has red degree >= 16" written as a plain `at-least-16` cardinality over that
+site's red literals (`.scratch/pb/direct16.py`, 600 s cap):
+
+| laws kept | result |
+| --- | --- |
+| (L1),(L3) degree laws | **SAT, 2.4 s** |
+| (L1),(L2),(L3) | undecided at 600 s |
+| (L1)-(L4) | undecided at 600 s |
+
+So the all-16 hypothesis is *consistent* with the degree laws, and it does not
+make the child decidable either. **Nothing is closed in this line.** The ledger
+[all16-ledger.tsv](all16-ledger.tsv) is retained only as a record of the broken
+run and must not be cited as a certificate; every row of it is void.
+
+The lesson, recorded because it cost a session: a cardinality gadget with a
+guard literal must be tested in *both* polarities. `--all16 --fp15` was SAT-free
+and `--strength 0 --fp15` was SAT, and neither caught it, because the bug lived
+in the guard that only fires under `--all16 --no-footprint`.
 
 ## What is open
 
-The complement — **some shared site has red degree 15** — and the mixed cases.
+Everything. The "all 16" half is retracted above, so there is no closed half and
+no complement to it; the degree-15 sub-case was never more open than the rest.
 `tools/pb/encode.py --strength 3 --fp15` is the complete child (all nine
 footprints wired in, no case split), and it is undecided: Kissat 4.0.4 at 900 s
 and then 3000 s, CaDiCaL 195 in parallel. Sanity ladder for that encoding:

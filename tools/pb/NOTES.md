@@ -38,9 +38,8 @@ consequences of the laws, so an UNSAT at any level is an UNSAT of the child:
 | statement | evidence |
 | --- | --- |
 | every blue edge of T and of U has the same footprint: 0 in (B,B), 2 in each of (B,G),(B,Y),(G,B),(Y,B),(G,G),(Y,Y), 1 in each of (G,Y),(Y,G). So a degree-16 shared site has exactly two red neighbours in each of the four 5-cells | `python3 tools/pb/footprint.py` |
-| row TT_d02, t=3, **sub-case "all 14 shared sites have red degree 16"**: UNSAT | `--strength 1 --all16 --no-footprint`, Kissat 4.0.4, DRAT replay `s VERIFIED` (`sweep_all16.py` regenerates) |
-| the same sub-case is already UNSAT from the degree laws alone: laws (1,3) only, no triangles and no codegree | 0.9 s, 1514-clause core |
-| both verify with drat-trim | yes |
+| ~~the all-16 sub-case is UNSAT~~ **RETRACTED** | the `h <-> (red and d16)` guard was inverted, so `--all16` was unsatisfiable by construction. With a gadget-free `at-least-16` the same sub-case is **SAT in 2.4 s** under the degree laws and undecided at 600 s with all four. See `results/pb-codegree-2026-11-24/README.md`. |
+| the nine footprints | two independent routes, see below |
 
 The `--all16` sweep over all four rows and all five `t` is `sweep_all16.py`;
 its ledger is the table to read, not this paragraph.
@@ -67,7 +66,7 @@ the chosen positive cell" holds. It is the complete child, not a sub-case.
 
 ## Open
 
-`--strength 3 --fp15` on TT_d02 t=3 is **undecided** (Kissat 4.0.4, 900 s, and
+Nothing in this line is closed. `--strength 3 --fp15` on TT_d02 t=3 is **undecided** (Kissat 4.0.4, 900 s, and
 the run above it). Sanity ladder for that encoding: pins+fp15 SAT, degree+fp15
 SAT (1.7 s), full undecided - so the nine-footprint block is not itself
 contradictory, unlike two earlier versions of it. The four rows are therefore
