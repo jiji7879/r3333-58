@@ -184,7 +184,7 @@ def build(M, D, t, stats=False, strength=0, laws=(1, 2, 3, 4), all16=False, foot
             add_enc(CardEnc.atmost(lits=ys, bound=bound, top_id=top, encoding=EncType.seqcounter))
 
     # ---- strength 2: footprint of a degree-16 shared site
-    if strength >= 2 or all16 or some15 or z15 >= 0 or fp15 or all15:
+    if strength >= 2 or all16 or some15 or fp15 or all15 or (z15 is not None and z15 != -1 and z15 != []):
         d16s = {}
         for z in range(14):
             if zonly is not None and z != zonly: continue
@@ -250,8 +250,8 @@ def build(M, D, t, stats=False, strength=0, laws=(1, 2, 3, 4), all16=False, foot
 
         if some15:
             cnf.append([-d16s[z] for z in range(14)])
-        if z15 >= 0:
-            cnf.append([-d16s[z15]])
+        for zz in (z15 if isinstance(z15, (list, tuple, set)) else ([z15] if z15 >= 0 else [])):
+            cnf.append([-d16s[zz]])
 
     # ---- strength 3: a 5-cell is a red 5-cycle
     # inside a cell whose two coordinates exclude two colours, the internal edges
@@ -285,12 +285,12 @@ if __name__ == '__main__':
     ap.add_argument('--all16', action='store_true')
     ap.add_argument('--no-footprint', action='store_true')
     ap.add_argument('--some15', action='store_true')
-    ap.add_argument('--z15', type=int, default=-1)
+    ap.add_argument('--z15', type=str, default='')
     ap.add_argument('--fp15', action='store_true')
     ap.add_argument('--all15', action='store_true')
     A = ap.parse_args()
     M, D = [(m, d) for (nm, m, d) in ROWS if nm == A.row][0]
     cnf, pins, cellof = build(M, D, A.t, stats=True, strength=A.strength, all16=A.all16,
-                              footprint=not A.no_footprint, some15=A.some15, z15=A.z15, fp15=A.fp15, all15=A.all15)
+                              footprint=not A.no_footprint, some15=A.some15, z15=[int(x) for x in A.z15.split(',') if x != ''] or -1, fp15=A.fp15, all15=A.all15)
     cnf.to_file(A.out)
     print('wrote', A.out, 'pins', len(pins))
