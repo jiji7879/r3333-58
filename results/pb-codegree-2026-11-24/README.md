@@ -78,6 +78,15 @@ footprints wired in, no case split), and it is undecided: Kissat 4.0.4 at 900 s
 and then 3000 s, and CaDiCaL in parallel. Sanity ladder for that encoding:
 `--strength 0 --fp15` SAT, `--strength 1 --fp15` SAT (1.7 s), full undecided.
 
+**Dead route, so it is not retried.** The repeated-pentagon triple cannot give a
+codegree contradiction: for a yellow pair `a,b` in a mixed cell and three shared
+sites using it, the three charts share `{u,v,a,b}` with fixed colours, and
+enumerating all 35 triples of full-chart word families gives a maximum of 7
+disjoint forced-red slot triangles (`smwu1nsf3/m6` f6). That yields only
+`max codeg(z_i,z_j) >= 7` against the 15 needed. The prior
+`.scratch/K58_repeated_pentagon_codegree` argument is a different profile and
+does not transfer.
+
 `smwu1nsf3/m6` additionally emits a sound covering split: 1,128 branch graphs,
 5,640 strengthened branches over the 20 children, audited independently
 (`check_cover.py`: every one of the 29,120 raw block/triple choices mapped,
