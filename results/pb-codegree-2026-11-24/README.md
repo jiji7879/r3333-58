@@ -105,6 +105,17 @@ does not transfer.
 multiplicities `2*(triple orbit size)`, symmetries checked against the pins).
 No branch is decided. That is the remaining obligation.
 
+## A false SAT already appeared once
+
+`smwu1nsf3/m4` caught a `s SATISFIABLE` log in another member's directory whose
+model decodes to a monochromatic green triangle on physical vertices (0,1,40):
+the command had solved a different scratch CNF from the one it advertised, with
+the triangle clause `-6 -162 -394` missing (257,556 variables instead of
+1,092,138). So a SAT claim in this line must carry the CNF hash it was actually
+solved from, and the matrix must pass `tools/pb/check_matrix.py`. Two of the
+five reduced `TT_d12` CNFs were meanwhile reproduced byte-identically by an
+independent rebuild (`m4` f31), which is the kind of cross-check worth keeping.
+
 ## Traps hit while building this (both produced a false 0.2 s UNSAT)
 
 1. Auxiliary variables allocated from `4*C(58,2)+4` while the edge variables run
