@@ -8,11 +8,26 @@ In the campaign's frozen cover a row pins the profile of one root, so perfect
 balance is compatible only with the 381 rows of `family.profile == [15,14,14,14]`
 (any row with a part <= 13 has a vertex whose degree is <= 13 already).
 
-    python3 tools/pb/balance.py ROW_ID OUT.cnf [--balance] [--stats]
+    python3 tools/pb/balance.py ROW_ID OUT.cnf [--balance] [--dense] [--stats]
 
-The CNF is the frozen row (`gluing.host` + `gluing.units`) plus, with
-`--balance`, the constraints d_c(v) >= 14 for all 58 vertices and 4 colours.
-With d_c(v) <= 57 - 3*14 = 15 for free, both directions of {14,15} follow.
+The CNF is the frozen row plus, with `--balance`, the constraints d_c(v) >= 14 for
+all 58 vertices and 4 colours.  With d_c(v) <= 57 - 3*14 = 15 for free, both
+directions of {14,15} follow.
+
+A row has two CNFs, and the difference decides how a verdict reads:
+
+* `gluing.host` + `gluing.units` alone is a RELAXATION of the row.  It drops the
+  charge threshold that `dense.marked_threshold` adds - 74,555 clauses on row
+  `325a259a...`, which is 135,304 clauses there against the certified 210,068.
+* `--dense` adds that threshold back (`tables=True, total_critical=True,
+  full_root=False`) and reproduces a certified row CNF clause for clause: checked
+  on `325a259ab5fd...`, whose `verified.json` records 210,068 clauses and
+  `formula_sha256 eb7413e5...`.
+
+So UNSAT of the relaxation transfers to the row under perfect balance, while SAT
+of the relaxation decides nothing.  Perfect balance only ever selected the 381 rows
+of profile (15,14,14,14); 29 of those die on the ticket pin with no search (see
+`results/pb-balance-2026-11-24`), and the other 352 are the instances to decide.
 
 Needs PYTHONPATH=/workspace/nucleus/work/home/.local/lib/python3.12/site-packages
 for pysat.
@@ -49,13 +64,23 @@ def edge_lit(u, v, c):
     return 4 * i + 1 + c
 
 
-def build(rid, balance=True, stats=False):
+def build(rid, balance=True, stats=False, dense=False):
     d = row_by_id(rid)
     f = family_of(d)
     _, clauses = host(ORDER)
     fixed = units(f, tuple(d['placement']))
     clauses = [list(c) for c in clauses] + [list(c) for c in fixed]
     nv = 4 * (ORDER * (ORDER - 1) // 2)
+    nxtra = 0
+    if dense:
+        from dense import marked_threshold
+        extra = marked_threshold(f, fixed, d['charge'], tables=True,
+                                 total_critical=True, full_root=False)
+        if extra == [[]]:
+            raise SystemExit('row %s: the threshold requirements contradict the pins' % rid[:12])
+        clauses.extend([list(c) for c in extra])
+        nxtra = len(extra)
+        nv = max([nv] + [abs(l) for c in clauses for l in c])
     nbal = 0
     if balance:
         top = nv
@@ -70,8 +95,8 @@ def build(rid, balance=True, stats=False):
                 nbal += 1
         nv = top
     if stats:
-        print('row %s  profile %s  units %d  base %d  balance constraints %d  vars %d clauses %d'
-              % (rid[:12], f.profile, len(fixed), len(host(ORDER)[1]), nbal, nv, len(clauses)),
+        print('row %s  profile %s  units %d  base %d  threshold %d  balance constraints %d  vars %d clauses %d'
+              % (rid[:12], f.profile, len(fixed), len(host(ORDER)[1]), nxtra, nbal, nv, len(clauses)),
               flush=True)
     if balance:
         assert nv > 4 * (ORDER * (ORDER - 1) // 2), 'auxiliary variables must start above the edge literals'
@@ -84,6 +109,8 @@ def build(rid, balance=True, stats=False):
 if __name__ == '__main__':
     rid, out = sys.argv[1], sys.argv[2]
     bal = '--balance' in sys.argv
-    cnf, d = build(rid, balance=bal, stats=True)
+    dense = '--dense' in sys.argv
+    cnf, d = build(rid, balance=bal, stats=True, dense=dense)
     cnf.to_file(out)
-    print('wrote', out, 'balance' if bal else 'no-balance control')
+    print('wrote', out, 'balance' if bal else 'no-balance control',
+          'with the row threshold' if dense else 'relaxation without the row threshold')

@@ -60,11 +60,29 @@ a sanity check on the counting, not a second route: 4,561 of the 83,440
 | statement | rows | how |
 | --- | ---: | --- |
 | dead under perfect balance | 29 | Lemma 1, hand proof |
-| open under perfect balance | 352 | `tools/pb/balance.py` adds `d_c(v) >= 14` for all 232 (v,c) pairs to the frozen row CNF |
+| open under perfect balance | 352 | `tools/pb/balance.py` adds `d_c(v) >= 14` for all 232 (v,c) pairs to the row CNF |
 
 `tools/pb/balance.py ROW_ID OUT.cnf --balance` builds one; the control without
 `--balance` is the frozen row. One row is 146,276 variables and 407,904 clauses
 with balance, against 6,612 and 135,304 without it.
+
+**Which CNF is "the row", and why it matters.** `gluing.host` + `gluing.units` is
+a *relaxation*: the certified row CNF is `host + units + dense.marked_threshold`
+(`tables=True, total_critical=True, full_root=False`), and on row
+`325a259ab5fd...` the threshold is 74,555 clauses - 210,068 clauses in all against
+the relaxation's 135,304. Rebuilt here through `tools/pb/balance.py --dense`, the
+clause set matches that certified instance exactly: same 25,672 variables, same
+210,068 clauses, zero differences either way. So
+
+- **UNSAT of the relaxation transfers** to the row, and to the row under perfect
+  balance, which is the direction that would close anything;
+- **SAT of the relaxation decides nothing** - the row's threshold constraints may
+  still kill it;
+- the instances the runs above use are the relaxation, so a timeout or an UNSAT
+  there says nothing about the 352 rows unless it is UNSAT.
+
+With `--dense --balance` the same row is 165,336 variables and 482,668 clauses,
+which is the honest size of the thing a verdict on the row would have to decide.
 
 `tools/pb/balance_selftest.py` checks the at-least-14 gadget in **both**
 polarities and checks the edge-literal map against the frozen encoder's own.
