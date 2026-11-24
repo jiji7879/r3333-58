@@ -114,3 +114,59 @@ No branch is decided. That is the remaining obligation.
 
 Any CNF from this line must have its header above 13224 and must be SAT at
 `--strength 0 --fp15`. Both are now asserted in `tools/pb/NOTES.md`.
+
+## Handover: how to finish this
+
+Reproduce everything from the repo root:
+
+```bash
+python3 tools/pb/footprint.py                      # the footprint of one blue edge, both templates
+python3 tools/pb/encode.py TT_d02 3 x.cnf --strength 3 --fp15   # the complete open child
+python3 tools/pb/encode.py TT_d02 3 y.cnf --strength 1 --all16 --no-footprint  # the closed half
+python3 tools/pb/sweep_all16.py .scratch/pb/all16  # 40 instances, ~36 min on 4 cores
+python3 tools/pb/check_matrix.py ROW T MATRIX.txt  # any claimed host, from the definition
+```
+
+Sizes, so the next person does not have to measure them again: 58 vertices, 1387
+free 4-way edge variables, 2,406,235 clauses and 1,092,138 variables at
+`--strength 3 --fp15`. Kissat 4.0.4: undecided at 900 s, at 3000 s, and with
+`--sat` at more than 1500 s; CaDiCaL 195: undecided at 45 min. The machine was
+shared with six other solver processes throughout, so those are lower bounds on
+wall time, not measurements of difficulty.
+
+Four concrete routes, in the order I would take them.
+
+1. **Cut (L4) out of the search.** The 1,653 codegree cardinality constraints are
+   the bulk of the 2.4M clauses and almost all the auxiliary variables. Run a
+   CEGAR loop instead: solve the instance with (L4) absent, read the red
+   neighbourhoods out of the model, and add a blocking clause only for the pairs
+   that actually exceed 14. If the unconstrained instance is SAT with few
+   violations the loop converges quickly; if it is SAT with thousands, that is
+   itself the finding that the codegree bound is the whole content.
+2. **Cube on the five-cells.** At the start the only couplings between the 14
+   shared sites are the outside vertices themselves, so the 8 cells' reduced-cell
+   selectors interact weakly. A cube over the four mixed cells' choices is
+   9^4 = 6561 nodes, each pinning four sites exactly; a portfolio on those nodes
+   is the natural parallelisation and is what a machine larger than this one
+   should run.
+3. **Try to prove that no shared site has red degree 15.** That would close all
+   four rows at once, since the other half is done. It cannot be arithmetic: the
+   degree laws plus the nine footprints admit every single shared site at degree
+   15 (14 of 14 SAT) and every sampled pair (6 of 6 SAT), so any such proof must
+   use (L2) or (L4) essentially.
+4. **Look at the `GG` and `YY` cells first.** They are the largest (9 - t, up to
+   8 vertices) and the least constrained: internally 3-coloured, so no cell
+   size is forced the way it is for the four mixed cells. If any sound rigidity
+   is available in this instance it is most likely there.
+
+## What is external and stays external
+
+* The two `K16`/`K15` classifications (Kalbfleisch-Stanton 1968 p.19, Heinrich
+  1977 Theorem 2) - or, in place of them, the classification-free enumeration
+  that `smwu1nsf3/m6` and `m8` both carried out and that replays in this repo.
+* The handoff's own alignment census: exactly four surviving 14-overlap
+  alignments out of its 69,523-row catalogue. The companion archive and
+  `check_common.py` were **not** supplied, so nothing here can check it, and the
+  four-row reduction is conditional on it.
+* That `max codegree <= 13` is what the branch actually needs, and that the
+  branch closes R(3,3,3,3) <= 58 - neither is touched by this work.
