@@ -136,13 +136,24 @@ wall time, not measurements of difficulty.
 
 Four concrete routes, in the order I would take them.
 
-1. **Cut (L4) out of the search.** The 1,653 codegree cardinality constraints are
-   the bulk of the 2.4M clauses and almost all the auxiliary variables. Run a
-   CEGAR loop instead: solve the instance with (L4) absent, read the red
-   neighbourhoods out of the model, and add a blocking clause only for the pairs
-   that actually exceed 14. If the unconstrained instance is SAT with few
-   violations the loop converges quickly; if it is SAT with thousands, that is
-   itself the finding that the codegree bound is the whole content.
+1. ~~**Cut (L4) out of the search** and put it back by CEGAR.~~ **Tried, and it
+   does not work: the hardness is in (L2), not (L4).** `tools/pb/cegar.py` solves
+   the child with (L1)-(L3) only, reads the red neighbourhoods out of the model
+   and adds blocking clauses for the pairs that actually exceed 14. Its very
+   first solve - 627,935 clauses, 257,556 variables, no codegree constraints at
+   all - did not finish in 900 s. Measured ladder on the same child:
+
+   | laws kept | result |
+   | --- | --- |
+   | (L1),(L3): degree laws + footprints | SAT, 1.7 s |
+   | (L1),(L2),(L3): + triangle-freeness | **undecided at 900 s** |
+   | (L1)-(L4) | undecided at 3000 s |
+
+   So the mixed case is hard because it asks for a triangle-free 4-colouring of
+   the 38 free vertices under near-regular degrees - the original problem in
+   miniature - and not because of the codegree constraints. Any future attempt
+   should attack (L2) directly, or find a structural reason why (L2) cannot hold
+   with a degree-15 shared site.
 2. **Cube on the five-cells.** At the start the only couplings between the 14
    shared sites are the outside vertices themselves, so the 8 cells' reduced-cell
    selectors interact weakly. A cube over the four mixed cells' choices is
