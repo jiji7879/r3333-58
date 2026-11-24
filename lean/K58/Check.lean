@@ -409,3 +409,8 @@ import K58.SixCycle
 #print axioms K58.p36_pairwise_inequivalent
 #print axioms K58.connected_of_two_regular_of_triangle_free
 #print axioms K58.connected_of_weights
+
+-- results/pb-codegree-2026-11-24, ledger #33
+#print axioms K58.pb_two_colour_card_le_five
+#print axioms K58.pb_card_le_five_of_avoids
+#print axioms K58.pb_root_blue_degree
