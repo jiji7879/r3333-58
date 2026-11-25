@@ -174,3 +174,24 @@ The statements above describe the state before the two newly supplied attachment
    `Classified 16` did pass a fresh full 71-second regeneration: all 388 terminal
    certificates replayed, with identical per-graph hashes and 72 = 12 U + 60 T.
    See `m3-classification-audit-2026-11-25/REVIEW.md`.
+
+4. **The common-critical-colour theorem is now independently certified and supersedes
+   most reciprocal work.** All 496 DRATs replayed in 156.76 s (two catalogues plus two
+   encodings for each of 247 placements), and the 25-vertex composition, 4,356/247
+   orbit cover and 15/30 ticket arguments were audited. At most one colour can be
+   critical at every vertex of a triangle-free four-colouring. On `K58`, reciprocity
+   forces a sole common critical colour; after the excluded `(15,14,14,14)` profile,
+   only `(16,14,14,13)` remains eligible—not proved realizable. Root profiles with
+   two critical colours therefore have no reciprocal alternative at all. Unrestricted
+   colourings have zero or at least 15 one-way tickets when two colours are critical
+   somewhere; vertexwise ticket balance raises the latter floor to 30. This is not a
+   full row/profile/bound closure.
+
+   The current raw wall is exactly 11,204 allowed-profile IDs, matching the supplied
+   wall set: 11,116 two-critical-root rows, 70 different-critical-mark rows, and 18
+   same-critical-mark rows. These are wall IDs, not folded OPEN or all-cover counts.
+   The new 66/6 rooted catalogues also establish both template classifications by
+   exact backtracking (11 U + 55 T at 15; 1 U + 5 T at 16), bypassing m3's missing
+   filter/proofs. See `common-critical-audit-2026-11-25/AUDIT.md`. The auxiliary wall
+   solver's 83 additional DRAT archives were not attached and remain unverified;
+   UNKNOWN runs are unchanged.
