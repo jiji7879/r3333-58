@@ -16,7 +16,7 @@
 #   ./k58.sh pin        pin the encoding (recipe + encoder revision + CNF hashes)
 set -uo pipefail
 cd "$(dirname "$0")"
-K58_VERSION="2026-11-25"
+K58_VERSION="2026-11-25b"
 ROOT=$PWD
 BUNDLE=$ROOT/k58
 export PATH="$ROOT/bin:$PATH"
@@ -99,6 +99,7 @@ cmd_run() {
     return $?
   fi
   local profile="" shards=1 shard=0 workers=4 tier=first seconds=12 conflicts=400000 limit="" status=""
+  local retry_seconds=70 retry_conflicts=2400000 ids_file=""
   local check_seconds=${K58_CHECK_SECONDS:-300}
   while [ $# -gt 0 ]; do case "$1" in
     --profile) profile=$2; shift 2;; --shards) shards=$2; shift 2;;
@@ -107,6 +108,9 @@ cmd_run() {
     --seconds) seconds=$2; shift 2;; --conflicts) conflicts=$2; shift 2;;
     --out) EV=$2; shift 2;; --check-seconds) check_seconds=$2; shift 2;;
     --status) status=$2; shift 2;;
+    --retry-seconds) retry_seconds=$2; shift 2;;
+    --retry-conflicts) retry_conflicts=$2; shift 2;;
+    --case-ids-file) ids_file=$2; shift 2;;
     *) die "unknown option $1";;
   esac; done
   mkdir -p "$EV"
@@ -114,9 +118,11 @@ cmd_run() {
               --kissat "$ROOT/bin/kissat" --checker "$ROOT/bin/drat-trim"
               --output "$EV" --workers "$workers" --shards "$shards" --shard "$shard")
   [ "$tier" = first ] && args+=(--seconds "$seconds" --conflicts "$conflicts")
+  [ "$tier" = retry ] && args+=(--retry-seconds "$retry_seconds" --retry-conflicts "$retry_conflicts")
   [ -n "$profile" ] && args+=(--profile "$profile")
   [ -n "$limit" ] && args+=(--limit "$limit")
   [ -n "$status" ] && args+=(--status "$status")
+  [ -n "$ids_file" ] && args+=(--case-ids-file "$ids_file")
   export K58_CHECK_SECONDS=$check_seconds
   echo "shard $shard/$shards ${profile:-all profiles}, tier $tier, $workers workers, checker cap ${check_seconds}s"
   echo "rerun the identical command to resume."

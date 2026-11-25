@@ -188,7 +188,18 @@ evidence directory. `k58-batch.sh finish` also reads `release/manifest.json` whe
 `finalise` writes it now, so the summary no longer dies after a finished replay.
 
 `dist/k58-solver.zip` of this build is
-`b5ddba180508e9e4059742fe20529f7b56219b784080dc656a94581b2038ac4b`, version `2026-11-25`.
+`36d8830af6b62e4ff5dc42ef9796a615a69b4d132d7cb4e071b691da2a790991`, version `2026-11-25b`
+(the earlier `2026-11-25` build was `b5ddba18…`).
+
+Version `2026-11-25b` adds `--retry-seconds`, `--retry-conflicts` and `--case-ids-file` to
+`./k58.sh run`. The first two matter because the retry tier applies the `full_root`
+strengthening and used to be stuck at 70 s / 2.4M conflicts, which is the budget the
+remaining tail has already survived. Checked end to end here: a first attempt at 5 s came
+back OPEN, the retry at `--retry-seconds 20 --retry-conflicts 200000` wrote
+`retry/20s-200000/T---_0_0.jsonl` with `status OPEN, full_root True, seconds 20`, and
+`--case-ids-file` selected the same row from a one-line file. The retry tier also reports
+`NO_OPEN_FIRST_ATTEMPT` for rows it is told to retry that have no first receipt, so a
+profile-wide retry sweep is safe on a fresh evidence directory.
 
 Checked on a clean unpack before handing it over: `doctor` clean (python-sat 1.9.dev22,
 Kissat 4.0.4, drat-trim, example replay 5/5), `smoke` 5/5 in 1m13s, and one real legacy row

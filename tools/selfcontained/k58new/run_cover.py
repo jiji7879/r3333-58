@@ -221,8 +221,14 @@ def main():
                    help="Also solve selected historically closed rows, for direct certificates")
     p.add_argument("--case-id", action="append", dest="case_ids", metavar="SHA256",
                    help="Select a specific case ID, repeatable")
+    p.add_argument("--case-ids-file", type=Path, metavar="PATH",
+                   help="Read case IDs to select from PATH, one per line (blank and # lines skipped)")
     args = p.parse_args()
     args.statuses = {s.strip() for s in args.status.split(",") if s.strip()}
+    if args.case_ids_file:
+        listed = [line.strip() for line in args.case_ids_file.read_text().splitlines()]
+        listed = [line for line in listed if line and not line.startswith("#")]
+        args.case_ids = (args.case_ids or []) + listed
     if args.workers < 1 or not 0 <= args.shard < args.shards:
         p.error("Use at least one worker and a shard index in [0, shards).")
     args.kissat = str(Path(args.kissat).resolve())
