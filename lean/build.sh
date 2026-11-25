@@ -8,8 +8,8 @@
 #                              see replay/README.md for how it is generated)
 #
 # The upstream catalogue (pinned at 6c3f2fd0 with a 4.33.1 patch) is fetched on
-# the first run into .catalogue/; .catalogue/ and replay/ReplayGen/ are build
-# artefacts and are gitignored.
+# the first run into replay/.catalogue/; replay/.catalogue/ and replay/ReplayGen/
+# are build artefacts and are gitignored.
 #
 # A module is skipped when its .olean is newer than its source and than every
 # .olean of the K58 modules it imports — the same rule lake uses, and the reason
@@ -17,12 +17,12 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-if [ ! -d .catalogue/lib/R4333Lean ]; then
+if [ ! -d replay/.catalogue/lib/R4333Lean ]; then
   echo "== catalogue"
   bash replay/build-catalogue.sh
 fi
 
-export LEAN_PATH="$PWD:$PWD/.catalogue/lib:$LEAN_PATH"
+export LEAN_PATH="$PWD:$PWD/replay/.catalogue/lib:$LEAN_PATH"
 while read -r f; do
   [ -z "$f" ] && continue
   src="K58/$f.lean"; obj="K58/$f.olean"

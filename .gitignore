@@ -11,4 +11,5 @@ dist/
 work/k54/
 lean/port/build/
 lean/.catalogue/
+lean/replay/.catalogue/
 lean/replay/ReplayGen/

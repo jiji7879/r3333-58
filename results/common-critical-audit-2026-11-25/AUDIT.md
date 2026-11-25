@@ -102,9 +102,12 @@ only one common critical colour.
 
 Thus a reciprocal colouring's root has exactly one critical colour, with profile
 `(15,14,14,14)` for critical degree 15 or `(16,14,14,13)` for critical degree 16.
-After the excluded profile, **only `(16,14,14,13)` remains eligible for reciprocity,
-not proved realizable**. This supersedes the practical need for reciprocal C&C on the
-other wall profiles. The earlier n025 closure is the special common-pair case.
+**These are the two profiles not excluded by this argument; neither is proved
+realizable.** If the first is omitted from the label-only table below, only the
+second remains eligible there. That omission is not a profile exclusion, and
+all 381 first-profile rows remain OPEN in the latest unconditional release.
+The result supersedes the practical need for reciprocal C&C on the other wall
+profiles. The earlier n025 closure is the special common-pair case.
 
 ### The current wall labels (not the whole cover)
 

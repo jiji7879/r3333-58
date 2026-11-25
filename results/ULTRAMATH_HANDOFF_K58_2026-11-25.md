@@ -180,12 +180,14 @@ The statements above describe the state before the two newly supplied attachment
 
 4. **The common-critical-colour theorem is now independently certified and supersedes
    most reciprocal work.** All 496 DRATs replayed in 156.76 s (two catalogues plus two
-   encodings for each of 247 placements), and the 25-vertex composition, 4,356/247
+   encodings for each of 247 orbits), and the 25-vertex composition, 4,356/247
    orbit cover and 15/30 ticket arguments were audited. At most one colour can be
    critical at every vertex of a triangle-free four-colouring. On `K58`, reciprocity
-   forces a sole common critical colour; after the excluded `(15,14,14,14)` profile,
-   only `(16,14,14,13)` remains eligible—not proved realizable. Root profiles with
-   two critical colours therefore have no reciprocal alternative at all. Unrestricted
+   forces a sole common critical colour and leaves `(15,14,14,14)` and
+   `(16,14,14,13)` as the only two profiles not excluded by this argument. Neither
+   is thereby proved realizable. The first was merely omitted from the auxiliary
+   wall package's label table; that omission is not a profile exclusion. Root profiles
+   with two critical colours therefore have no reciprocal alternative at all. Unrestricted
    colourings have zero or at least 15 one-way tickets when two colours are critical
    somewhere; vertexwise ticket balance raises the latter floor to 30. This is not a
    full row/profile/bound closure.

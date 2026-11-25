@@ -1,0 +1,698 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,array}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\providecommand{\doi}[1]{\href{https://doi.org/#1}{doi:#1}}
+
+\newcommand{\R}{R(3,3,3,3)}
+\newcommand{\Nc}{N_c}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{computation}[theorem]{Finite computation}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\usepackage[nameinlink]{cleveref}
+\crefname{computation}{finite computation}{finite computations}
+\Crefname{computation}{Finite computation}{Finite computations}
+
+\title{A certified common-critical obstruction in\\
+four-colour triangle-free graphs\\
+\large With an audit of a 113,179-case reduction at 58}
+\author{The r3333-58 project\\[-1pt]
+\small Working draft; author list and affiliations to be supplied}
+\date{25 November 2026\\[-1pt]
+\small Mathematical source snapshot: repository revision \texttt{35140c0}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Call an edge-colouring of a complete graph \emph{good} if it has no
+monochromatic triangle, and call a colour \emph{critical} at a vertex when its
+degree there is at least $15$.  We give a self-contained reduction, backed by
+496 replayed DRAT refutations, showing that two distinct colours cannot both
+be critical at every vertex of a nonempty good four-colouring.  The certificate
+uses catalogues on $15$ and $16$ vertices and two encodings of a
+25-vertex obstruction.  It does not depend on the semantic bridge for the
+larger $K_{58}$ SAT cover.
+
+For a good four-colouring of $K_{58}$, assume that criticality is reciprocal
+along every edge.  Connectivity then makes criticality constant in each colour,
+and the obstruction leaves at most the two sorted degree profiles
+$(15,14,14,14)$ and $(16,14,14,13)$.  This is a restriction of the reciprocal
+case, not an elimination of unrestricted colourings.  A further counting
+argument gives either zero or at least $15$ unreciprocated tickets, and at
+least $30$ under vertexwise ticket balance.
+
+The second part records the associated formalisation and evidence audit.  Lean
+proves the signed-unit cover completeness statement for 113,179 frozen cases.
+The complete encoding bridge and the computational premise remain unfinished.
+In the 25 November evidence snapshot, the owner reports 98,142 replayed case
+certificates; 12,893 rows are OPEN and 2,144 require legacy evidence.  The
+proof bytes for those 98,142 cases were not included in that release.  Thus no
+new bound on $\R$ is claimed here.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+The multicolour Ramsey number $\R$ is the least $n$ for which every
+four-colouring of the edges of $K_n$ contains a monochromatic triangle.  The
+published bounds are $51\leq\R\leq62$, due respectively to Chung and to
+Fettes, Kramer and Radziszowski
+\cite{Chung1973,FKR2004,Radziszowski2026}.  A recent arXiv preprint by
+Tatarevic claims the improvement $\R\leq60$ using a global ticket count,
+small-neighbourhood classifications and exhaustive SAT computations, with the
+mathematical reductions formalised in Lean \cite{Tatarevic2026}.  We cite that
+claim as a preprint and do not treat it as one of the results established here.
+
+This paper has two connected purposes.  The first is a general obstruction for
+good four-colourings.  Write $d_c(v)$ for the number of colour-$c$ edges at
+$v$.  We call $c$ \emph{critical} at $v$ if $d_c(v)\geq15$.
+
+\begin{theorem}[Common-critical obstruction]\label{thm:common}
+In every nonempty good four-colouring of a finite complete graph, and for any
+two distinct colours $a$ and $b$, there is a vertex $x$ such that
+$d_a(x)\leq14$ or $d_b(x)\leq14$.  Equivalently, at most one colour can be
+critical at every vertex.
+\end{theorem}
+
+\Cref{thm:common} is finite and certified, rather than an inference from a
+solver timeout or a bounded search.  Its reduction uses a 25-vertex local
+obstruction.  Two catalogue refutations, 247 refutations of a slot encoding
+and 247 refutations of a word encoding establish the finite residue.  The
+complete certificate was replayed during preparation of this draft.
+\Cref{sec:certificate} describes what the encodings prove and, equally
+important, why a physical colouring would extend to their auxiliary variables.
+
+The second purpose is to make the evidence boundary of the $K_{58}$ campaign
+legible.  A signed-unit cover theorem, a DIMACS file, a solver exit code and a
+replayed refutation are different objects.  They must be joined in the right
+direction before a Ramsey bound follows.  The repository contains a Lean
+formalisation of cover completeness at the signed-unit level, but not yet the
+full bridge from a physical colouring to every auxiliary-variable clause in
+the emitted formulas.  It also does not contain a complete set of case
+refutations.  We therefore state explicitly:
+\begin{center}
+\emph{This paper does not prove $\R\leq58$.}
+\end{center}
+
+\subsection{Consequences for reciprocal colourings}\label{sec:consequences}
+
+A good four-colouring of $K_{58}$ is \emph{reciprocal} when, for every edge
+$uv$, the colour of $uv$ is critical at $u$ exactly when it is critical at
+$v$.  In the ticket terminology of \cite{Tatarevic2026}, this says that every
+ticket is returned.
+
+\begin{corollary}[Reciprocal profiles at $58$]\label[corollary]{cor:profiles}
+If a good four-colouring of $K_{58}$ is reciprocal, every vertex has the same
+sole common critical colour, and its sorted degree profile is either
+\[
+ (15,14,14,14)\quad\text{or}\quad(16,14,14,13).
+\]
+No assertion of existence for either profile is made, and nothing is concluded
+about a nonreciprocal colouring.
+\end{corollary}
+
+Thus, conditional on reciprocity, nine of the eleven degree profiles in the
+frozen $K_{58}$ analysis are impossible.  This corollary supplies no DRAT
+refutation of the original, unrestricted CNFs for their rows.  The word
+``conditional'' cannot be dropped: an unreciprocated ticket can allow
+criticality to change along a colour component.
+
+The same local obstruction gives information about that nonreciprocity.
+Define the high and low sets for a colour $c$ by
+\[
+ H_c=\{v:d_c(v)\geq15\},\qquad X_c=V\setminus H_c.
+\]
+A colour-$c$ edge from $H_c$ to $X_c$ carries one unreciprocated ticket.
+
+\begin{corollary}[Ticket gap]\label[corollary]{cor:ticket-gap}
+Every good four-colouring of $K_{58}$ has either zero unreciprocated tickets or
+at least $15$.  If two distinct colours are critical somewhere, the second
+alternative holds.  If additionally every vertex has equal total incoming and
+outgoing ticket counts, there are at least $30$ unreciprocated tickets.
+\end{corollary}
+
+As a separate observation, \Cref{thm:common} also shortens the reciprocal
+part of the perfectly balanced argument in \cite{Tatarevic2026}: on $K_{60}$
+every feasible degree profile has at least two critical colours, so a global
+reciprocity hypothesis would make two colours critical everywhere.  This does
+not reproduce or replace the nonreciprocal computations in that proof.
+
+\subsection{Organisation}
+
+\Cref{sec:local,sec:certificate} prove \Cref{thm:common} modulo the stated
+finite computations and explain their semantics.  \Cref{sec:reciprocity}
+proves the profile restriction, and \Cref{sec:ticket-gap} proves the ticket
+gap.  \Cref{sec:cover,sec:formal,sec:status} describe the frozen reduction,
+the Lean boundary and the current computational status.  \Cref{sec:audit}
+records the verification methodology and the claims that remain open.
+
+\section{The 25-vertex obstruction}\label{sec:local}
+
+We use $R(3,3)=6$ and $R(3,3,3)=17$ \cite{GreenwoodGleason1955}.  A colour
+neighbourhood in a good colouring omits its own colour, since an internal edge
+of that colour would close a monochromatic triangle.  It therefore carries a
+good three-colouring and has at most $16$ vertices.  In particular, inside a
+colour neighbourhood of size at least $6$, every vertex has at most five
+neighbours in any one of the remaining colours.
+
+\begin{lemma}[Extendible catalogues]\label[lemma]{lem:extend}
+Every good three-colouring of $K_{15}$ extends, as a coloured graph, to a good
+three-colouring of $K_{16}$.  In a good three-colouring of $K_{16}$, every
+vertex has degree five in each colour.  Consequently, after deleting the added
+vertex, ten vertices of the original $K_{15}$ retain degree five in any chosen
+colour.
+\end{lemma}
+
+The degree assertion follows immediately: degrees are at most five and sum to
+$15$.  Extendibility is a finite catalogue fact, checked by
+\Cref{comp:catalogues} below.  It is also consistent with the known two-template
+classification of good three-colourings at orders $15$ and $16$
+\cite{KalbfleischStanton1968,Heinrich1977}, but the present certificate does not
+need to assume an external completeness argument: its two catalogue CNFs close
+that finite step directly.
+
+\begin{proposition}[Local obstruction]\label[proposition]{prop:25}
+Let $a,b$ be distinct colours and let $L,R$ be 15-vertex sets in a good
+four-colouring such that $|L\cap R|=5$.  Suppose that $L$ has no colour-$a$
+edge and $R$ has no colour-$b$ edge.  Then the following two assertions cannot
+both hold:
+\begin{enumerate}[label=\textup{(\roman*)},nosep]
+ \item every vertex of $L$ has ambient colour-$b$ degree at least $15$;
+ \item every vertex of $R$ has ambient colour-$a$ degree at least $15$.
+\end{enumerate}
+Here ``ambient'' refers to the complete host graph; only consequences on the
+25 named vertices are used in the finite encoding.
+\end{proposition}
+
+\Cref{prop:25} is exactly the content certified by the slot and word
+refutations in \Cref{comp:orbits}.  We first use it to prove the global
+statement.
+
+\begin{proof}[Proof of \Cref{thm:common}]
+Suppose, for contradiction, that $a$ and $b$ are both critical at every
+vertex.  Choose $r$ and select $15$ colour-$a$ neighbours of $r$ to form $L$.
+Then $L$ omits colour $a$ and hence carries a good three-colouring.
+
+By \Cref{lem:extend}, add one vertex to obtain a good three-coloured $K_{16}$.
+Each vertex of this extension has degree five in each of its three colours.
+Deleting the added vertex leaves ten vertices of $L$ with exactly five
+colour-$b$ neighbours inside $L$.  Choose such a vertex $y$.
+
+Since $b$ is critical at $y$ in the ambient graph, choose $15$ of its ambient
+colour-$b$ neighbours, including its five colour-$b$ neighbours in $L$, and
+call the resulting set $R$.  Then $R$ omits $b$ and $L\cap R$ consists exactly
+of those five vertices.  Moreover, every vertex of $L$ is $b$-critical and
+every vertex of $R$ is $a$-critical by the global assumption.  This
+contradicts \Cref{prop:25}.
+\end{proof}
+
+\section{Certificate semantics and coverage}\label{sec:certificate}
+
+The finite computation is organised around a forced two-coloured pentagon.  In
+a good two-colouring of $K_5$, both colour degrees are at most two and sum to
+four, so both colours are pentagons.  At order $15$ or $16$, select a vertex
+and five same-colour neighbours to obtain such a pentagon.  Fix its rim and
+diagonal colours, name the third colour, and sort the remaining vertices by
+their ordered edge colours into the pentagon.
+
+\begin{computation}[Catalogue completeness and extension]\label[computation]{comp:catalogues}
+The normalised catalogues contain $66$ labelled entries at order $15$ and six
+at order $16$.  Every entry was checked to be a good colouring with its
+prescribed labels.  Blocking each entry and replaying the two DRAT proofs shows
+that the catalogues are complete under the chosen symmetry and sorting
+normalisation.  Deleting each possible unnamed vertex of every order-$16$
+entry produces exactly the $66$ order-$15$ entries.  Thus the extension property
+of \Cref{lem:extend} holds.
+\end{computation}
+
+The counts $66$ and six are counts under this labelled normalisation, not
+counts of isomorphism classes.  The sorting auxiliaries are one-way
+prefix-equality indicators: when preceding coordinates agree they enforce
+nondecreasing colours.  No false converse is imposed.  A physically sorted
+colouring therefore admits the auxiliary assignment needed by the CNF.
+
+For the 25-vertex obstruction, the common five-set $F=L\cap R$ omits both $a$
+and $b$, so its other two colours again form rim and diagonal pentagons.  Use
+one common order for $F$ on both arms.  Selecting one catalogue entry per arm
+gives $66^2=4,356$ placements.  The simultaneous dihedral action on $F$ and
+exchange of the two arms, including $a$ and $b$, reduce these to $247$ orbits.
+
+\begin{computation}[Two complete refutations per orbit]\label[computation]{comp:orbits}
+All $247$ orbits were refuted in both a slot encoding and a word encoding.
+The verifier reconstructs the orbit decomposition and checks that these orbits
+partition all $4,356$ placements.  Together with the two catalogue proofs, the
+certificate therefore consists of
+\[
+ 2+247+247=496
+\]
+distinct replayed DRAT refutations.  Its replay record reports 4,356
+placements, 247 orbits and 496 checked proofs.
+\end{computation}
+
+The direction of the encoding implications is the essential semantic point.
+
+\subsection{Slot encoding}
+
+For a vertex $v$ in one arm, let $c$ be the colour omitted by the opposite arm
+and let $Q$ be its colour-$c$ neighbours inside its own arm.  There are four or
+five such anchors.  If $d_c(v)\geq15$, its entire colour-$c$ neighbourhood has
+order at least $15$ and, by the catalogue, embeds into an order-$16$ template.
+Every further physical vertex joined to $v$ in colour $c$ must occupy a
+distinct compatible template position.
+
+The slot encoding chooses a template and position for each such vertex,
+prescribes the edge colours to the anchors, requires distinct positions and
+enforces compatibility between pairs of entering vertices.  Given a genuine
+colouring satisfying the hypotheses of \Cref{prop:25}, the actual embeddings
+supply all auxiliary choices.  Thus UNSAT of this necessary-condition formula
+excludes the ambient colouring.
+
+\subsection{Word encoding}
+
+The word encoding records vectors of edge colours into $Q$ together with the
+compatible pair colours.  With four anchors, distinct positions can have the
+same vector; the encoding therefore allows every pair colour obtainable from
+distinct compatible positions.  It too admits the actual embedding as an
+auxiliary assignment.  Among the 247 orbits, 230 already close using the
+five-anchor tests, while the remaining 17 also use the four-anchor tests.
+
+A satisfying assignment to either relaxation would not, by itself, construct a
+good ambient colouring.  Conversely, a refutation suffices precisely because
+every genuine colouring yields an auxiliary extension.  The two encoders were
+implemented separately and both exclude every orbit.  They are redundant
+cross-checks, not independent proofs of the whole theorem: both use the same
+catalogues, orbit cover and global reduction.  The slot refutations alone
+suffice for the finite local obstruction.
+
+\begin{remark}[Trust boundary]\label[remark]{rem:trust}
+The proof of \Cref{thm:common} combines ordinary mathematical reductions with
+finite SAT certificates and their checker.  The 496-refutation package was
+replayed against regenerated inputs; it was not inferred from Kissat or
+CaDiCaL exit statuses \cite{Kissat,Wetzler2014}.  This certificate is not yet a
+Lean kernel proof of \Cref{thm:common}.  In contrast, the separate signed-unit
+cover theorem in \Cref{sec:formal} is kernel-checked in Lean.
+\end{remark}
+
+\section{Reciprocity and the two profiles}\label{sec:reciprocity}
+
+First collect the elementary degree bounds on $K_{58}$.  Since $N_c(v)$ omits
+$c$, it has at most $R(3,3,3)-1=16$ vertices.  The four degrees at $v$ sum to
+$57$, hence
+\begin{equation}\label{eq:degrees}
+ 9=57-3\cdot16\leq d_c(v)\leq16,\qquad
+ \sum_{c=0}^{3}d_c(v)=57.
+\end{equation}
+
+\begin{lemma}[Colour connectivity]\label[lemma]{lem:connected}
+In every good four-colouring of $K_{58}$, each colour graph is connected.
+\end{lemma}
+\begin{proof}
+Fix $c$ and suppose $u,v$ lie in different components.  The sets $N_c(u)$ and
+$N_c(v)$ are disjoint: a common vertex would join the components.  Each set is
+$c$-independent by triangle-freeness, and no cross edge has colour $c$, again
+by disconnectedness.  Their union is therefore $c$-independent of size at
+least $2\cdot9=18$, contradicting the upper bound $16$.
+\end{proof}
+
+\begin{proof}[Proof of \Cref{cor:profiles}]
+Under reciprocity, criticality in colour $c$ is constant along every $c$-edge.
+By \Cref{lem:connected}, it is constant on all $58$ vertices, separately for
+each $c$.  Every vertex has at least one critical colour, since otherwise its
+degree sum would be at most $4\cdot14<57$.  \Cref{thm:common} allows at most
+one common critical colour, so there is exactly one, and it is the same colour
+at every vertex.
+
+At any vertex, this colour has degree $15$ or $16$ by \eqref{eq:degrees}.  The
+other three degrees are at most $14$.  If the common critical degree is $15$,
+they sum to $42$, forcing $(14,14,14)$.  If it is $16$, they sum to $41$ and
+are at most $14$, forcing $(14,14,13)$.  Sorting gives the two displayed
+profiles.
+\end{proof}
+
+For comparison, \Cref{tab:profile-arithmetic} lists all eleven numerical
+profiles, rather than only the seven profiles containing the current OPEN
+wall.  The last column is the consequence \emph{if reciprocity is assumed};
+it does not change the unrestricted ledger status.
+
+\begin{table}[htbp]
+\centering
+\caption{All sorted degree profiles at $58$: the four degrees sum to $57$ and
+are at most $16$.  A critical colour has degree at least $15$.}
+\label{tab:profile-arithmetic}
+\begin{tabular}{lcl}
+\toprule
+Profile & Number of critical colours & Under reciprocity\\
+\midrule
+$(16,16,16,9)$  & 3 & excluded\\
+$(16,16,15,10)$ & 3 & excluded\\
+$(16,16,14,11)$ & 2 & excluded\\
+$(16,16,13,12)$ & 2 & excluded\\
+$(16,15,15,11)$ & 3 & excluded\\
+$(16,15,14,12)$ & 2 & excluded\\
+$(16,15,13,13)$ & 2 & excluded\\
+$(15,15,15,12)$ & 3 & excluded\\
+$(15,15,14,13)$ & 2 & excluded\\
+$(15,14,14,14)$ & 1 & not excluded by this argument\\
+$(16,14,14,13)$ & 1 & not excluded by this argument\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Proof of the ticket gap}\label{sec:ticket-gap}
+
+Throughout this section the host is a good four-colouring of $K_{58}$.  Split
+each colour-$c$ graph at the high/low cut $(H_c,X_c)$ defined in
+\Cref{sec:consequences}.  A colour is \emph{mixed} when both sets are nonempty.
+Only crossing edges carry unreciprocated tickets.
+
+The first step strengthens the two-critical theorem when one colour has very
+few low vertices.
+
+\begin{lemma}[Low-set incidence bound]\label[lemma]{lem:incidence}
+If $|X_a|\leq2$, then
+\begin{equation}\label{eq:incidence}
+16|X_b|\ \geq\ \sum_{r\in H_a}(d_a(r)-14)
+   =|H_a|+|\{r:d_a(r)=16\}|
+\end{equation}
+for every colour $b\neq a$.  In particular, on $58$ vertices,
+$|X_a|\leq2$ implies $|X_b|\geq4$.
+\end{lemma}
+\begin{proof}
+We first prove that $|N_a(r)\cap H_b|\leq14$ for every $r$.  Otherwise choose
+a 15-set $L$ in this intersection.  As before, $L$ omits $a$ and extends to a
+good three-coloured $K_{16}$.  Let $Y\subseteq L$ be the ten vertices of
+internal colour-$b$ degree five.  The catalogue computation checks that every
+five-subset of $Y$ contains a $b$-edge.  Consequently, a vertex $x\in X_a$ can
+be $b$-joined to at most four vertices of $Y$, since $N_b(x)$ is $b$
+independent.  There are at most two such $x$, so some $y\in Y$ has no $b$-edge
+to $X_a$.
+
+Choose $15$ colour-$b$ neighbours of $y$ in $H_a$, including its five inside
+$L$, to form $R$.  This is possible because at most two ambient $b$-neighbours
+lie outside $H_a$ and none of the five internal neighbours does.  The sets
+$L,R$ then violate \Cref{prop:25}: $L\subseteq H_b$ and $R\subseteq H_a$.
+
+For each $r\in H_a$, at least $d_a(r)-14$ of its colour-$a$ neighbours lie in
+$X_b$.  Summing over $r$ counts each colour-$a$ edge into $X_b$ at most once at
+its $H_a$ endpoint and at most $16$ times at its $X_b$ endpoint.  This gives
+\eqref{eq:incidence}.  Finally, $d_a\leq16$ makes the summands $1$ or $2$,
+which proves the displayed equality, and $|H_a|\geq56$ gives the last claim.
+\end{proof}
+
+\begin{lemma}[Size of a mixed colour cut]\label[lemma]{lem:cut}
+The number of colour-$c$ edges crossing $(H_c,X_c)$ is between $9$ and $14$
+when $|X_c|=1$, and is at least $15$ whenever $|X_c|\geq2$.
+\end{lemma}
+\begin{proof}
+The singleton assertion is just \eqref{eq:degrees}.  Suppose now that
+$\ell=|X_c|\geq2$ and at most $14$ edges cross.  Call a vertex touched when it
+is incident to a crossing edge.
+
+There is an untouched high vertex.  Otherwise $h=|H_c|\leq14$.  Each high
+vertex has at least $16-h$ crossing neighbours, so at least $h(16-h)\geq15$
+edges leave $H_c$, a contradiction.  There is also an untouched low vertex.
+Otherwise $2\leq\ell\leq14$.  Since the $c$-graph on $X_c$ is triangle-free,
+it has at most $\lfloor\ell^2/4\rfloor$ internal edges.  Summing degrees gives
+at least
+\[
+ 9\ell-2\left\lfloor\frac{\ell^2}{4}\right\rfloor\geq16
+\]
+edges leaving $X_c$, again a contradiction.
+
+Choose an untouched high $u$.  It has at least $15$ high neighbours and at
+most $14$ touched neighbours, so choose an untouched high neighbour $v$.
+Choose also an untouched low vertex $w$.  The independent sets $N_c(u)$ and
+$N_c(w)$ lie on opposite sides and have at least $15+9=24$ vertices together.
+At least eight edges join them: deleting one endpoint from each of at most
+seven joining edges would leave an independent set of size at least $17$.
+The same count applies to $N_c(v)$ and $N_c(w)$.  Since $uv$ has colour $c$,
+triangle-freeness makes $N_c(u)$ and $N_c(v)$ disjoint.  These are at least
+$16$ different crossing edges, contradicting the assumption of at most $14$.
+\end{proof}
+
+\begin{proof}[Proof of \Cref{cor:ticket-gap}]
+If only one colour is critical anywhere, then \eqref{eq:degrees} forces it to
+be critical everywhere, and no colour cut is mixed.  Hence all tickets are
+reciprocated.  Suppose instead that at least two colours are critical
+somewhere.  \Cref{thm:common} implies that at least one colour is mixed.
+
+If two or more colours are mixed, \Cref{lem:cut} contributes at least
+$2\cdot9=18$ unreciprocated tickets.  If exactly one colour is mixed, another
+colour $a$ is critical everywhere.  Applying \Cref{lem:incidence} to $a$ shows
+that the mixed colour has at least four low vertices, so its cut contributes
+at least $15$.  This proves the first two assertions.
+
+For the final assertion, suppose that incoming and outgoing ticket totals
+balance at every vertex.  Reciprocated edges have no net directed
+contribution.  If two or more colours are mixed, they cannot all have singleton
+low sets: two singleton low sets in colours $a,b$ would contradict
+\Cref{lem:incidence}.  Some mixed colour therefore has at least two low
+vertices and sends at least $15$ net outgoing tickets across its high cut.
+Vertexwise balance requires at least $15$ further unreciprocated tickets in
+the opposite direction.  This proves the lower bound $30$.
+\end{proof}
+
+\section{The frozen cover at 58}\label{sec:cover}
+
+We now turn to the larger campaign, which is separate from the general
+obstruction above.  It follows the global ticket strategy of
+\cite{Tatarevic2026}, adapted to $58$ vertices.  A vertex $u$ sends a ticket
+to $v\neq u$ when $d_{c(uv)}(u)\geq15$.  If $H(v)$ is the number of tickets
+received by $v$ and $w(v)$ its total number sent, then
+\[
+ w(v)=\sum_{c:d_c(v)\geq15}d_c(v),\qquad
+ \sum_v H(v)=\sum_v w(v).
+\]
+Consequently some root satisfies $H(r)\geq w(r)$.
+
+At a chosen root, a finite table of 41 threshold plans is used.  The selected
+plan satisfies a slack inequality against $w(r)$.  If every arm stayed below
+its threshold, $H(r)$ would be below $w(r)$.  Thus one arm reaches its
+threshold and contains a sender, called the mark.  Classification of a critical
+neighbourhood at the mark, palette normalisation and support embeddings turn
+that configuration into signed edge facts.  The frozen enumeration retains
+113,179 case keys after symmetry reduction.
+
+The surrounding audit recomputed the arithmetic of the enumeration:
+\[
+ 190,736\ \text{raw placements}
+ =113,179\ \text{retained cases}+77,557\ \text{transported placements}.
+\]
+It covers 1,764 families and their 41 plan strata.  Every omitted placement
+is transported by explicit vertex and palette permutations, rather than merely
+by an appeal to symmetry.  A generated Lean replay checks this finite object;
+\Cref{sec:formal} states its exact conclusion.
+
+There are three logically distinct layers:
+\begin{enumerate}[label=\textup{(\arabic*)},nosep]
+ \item \textbf{Cover completeness:} every good colouring satisfies the signed
+ units of at least one frozen case.
+ \item \textbf{Encoding adequacy:} that colouring also satisfies every clause
+ of the corresponding emitted CNF, after assigning auxiliary variables.
+ \item \textbf{Computational exclusion:} every one of those CNFs is
+ unsatisfiable, with checkable evidence.
+\end{enumerate}
+A complete proof of $\R\leq58$ needs all three.  The present project proves
+(1), has proved only part of (2), and has only a partial dataset for (3).
+
+\section{Lean formalisation and the encoding boundary}\label{sec:formal}
+
+The formal development uses Lean 4.33.1 and Mathlib \cite{Lean2021,Mathlib2020}.
+Its public axiom-audit list admits only subsets of
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}; proof
+placeholders and \texttt{native\_decide} are rejected.  Standard finite
+\texttt{decide} computations are kernel reductions, not additional trust
+axioms.
+
+At the mathematical core, theorems \path{two_colour_six},
+\path{three_colour_seventeen} and \path{deg_le_sixteen} establish the
+small Ramsey inputs and degree cap.  \path{root_plan_arm} implements the
+balanced-root threshold step.  An earlier formulation,
+\path{exists_arm_reaches}, was retained only as an explicit record of a
+mistake: its universally quantified strict inequality was impossible at the
+zero degree vector.  The replacement assumes the plan inequality at the actual
+root profile and is nonvacuous.
+
+The imported 15/16-point catalogues establish \texttt{classified\_15} and
+\texttt{classified\_16}.  Their pinned upstream source is recorded by hash,
+and their axiom dependencies are checked in the current Lean build.  This is
+separate from the 66/6-entry certificate used for \Cref{thm:common}.
+
+The endpoint
+\[
+\texttt{K58.Replay.frozenCover : K58.FrozenCover}
+\]
+states that every good four-colouring of $K_{58}$ realises at least one of the
+113,179 frozen signed-unit cases.  The recorded generated replay contains
+1,588 modules and checks 1,764 families, 190,736 raw placements and 77,557
+transports.  Its endpoint reports only the three standard axioms above.  It is
+not an UNSAT theorem.
+
+Encoding adequacy remains the principal formal gap.  The deployed cardinality
+constraints were compared clause for clause with a staggered sequential
+counter, including variable allocation.  The Lean theorem
+\texttt{satisfiable\_atLeast} proves that, if sufficiently many input atoms
+are true, the counter auxiliaries can be assigned without changing those
+atoms.  Guarded cardinality wrappers, support selectors, the assembly of all
+clause families and the hash-level binding to emitted DIMACS still need to be
+completed.  In particular, refuting an arbitrary relaxation or a file that
+merely resembles a case is not enough.  The intended implication must be
+\[
+ \text{physical colouring}\Longrightarrow
+ \text{full CNF has an auxiliary extension},
+\]
+so that UNSAT transfers back to the colouring.
+
+None of the 496 certificates for \Cref{thm:common} has yet been converted into
+a Lean proof.  The supplementary file
+\path{paper/lean/ReciprocityBoundary.lean} nevertheless checks the conditional
+profile argument in the kernel.  Its theorem
+\path{reciprocal_profile_with_certificate} takes triangle-freeness, reciprocity
+and an explicitly defined \path{CommonCriticalCertificate} as premises, proves
+colour connectivity, and returns exactly the two profiles.  It neither imports
+nor asserts the finite certificate as a theorem.  Conversely, the proof of
+\Cref{thm:common} does not use the missing $K_{58}$ CNF bridge.
+
+\section{Computational status on 25 November 2026}\label{sec:status}
+
+\Cref{tab:ledger} reproduces the cross-tabulation from the latest release audit.
+The first column is an owner-reported status: the release reports that 98,142
+CNFs were regenerated and their DRAT certificates replayed with zero failures,
+manifest
+\path{98d82268ff4c277820f00cbed3405c625dbb53d3603610e45eacc73b562b19f9}.
+The release itself contains indices and recipes, not those proof bytes.  The
+local audit checked the manifest and case identities, matched the frozen
+ledger byte for byte, and rebuilt 12 sampled certified CNFs to their recorded
+hashes.  It could not independently replay certificates it did not receive.
+
+\begin{table}[htbp]
+\centering
+\caption{Latest release-index snapshot.  ``Certified'' is the owner-reported
+single-DRAT pipeline status; ``legacy'' groups historical evidence and scoped
+exclusions.  These are unconditional ledger fields, deliberately unaffected by
+\Cref{cor:profiles}.}
+\label{tab:ledger}
+\begin{tabular}{lrrr}
+\toprule
+Profile & Certified & OPEN & Legacy\\
+\midrule
+$(15,15,15,12)$ & 82,072 & 1,288 & 80\\
+$(16,15,15,11)$ & 16,070 & 20 & 83\\
+$(15,15,14,13)$ & 0 & 7,732 & 0\\
+$(16,15,14,12)$ & 0 & 2,058 & 0\\
+$(16,15,13,13)$ & 0 & 1,046 & 0\\
+$(15,14,14,14)$ & 0 & 381 & 0\\
+$(16,16,14,11)$ & 0 & 140 & 0\\
+$(16,16,13,12)$ & 0 & 140 & 0\\
+$(16,14,14,13)$ & 0 & 88 & 0\\
+$(16,16,15,10)$ & 0 & 0 & 1,767\\
+$(16,16,16,9)$ & 0 & 0 & 214\\
+\midrule
+Total & 98,142 & 12,893 & 2,144\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The OPEN total consists of 1,308 rows in the two large profiles and 11,585 in
+seven small profiles.  Twenty of the 1,308 have separate split certificates
+that the one-DRAT-per-case index does not represent.  The 2,144 legacy entries
+comprise 1,743 historical rows whose 11.4\,GB proof store is not present and
+401 scoped exclusions whose arguments need explicit evidence.  These categories
+must not be silently folded into either ``proved'' or ``UNSAT unknown.''
+
+The seven small profiles are not a routine retry tail.  Every sampled row in
+them remained UNKNOWN at the budgets tried.  In the larger released batches
+these probes total 0 closures from 98 rows at $12$ seconds, 68 at $70$ seconds,
+51 at $60$ seconds and nine at $300$ seconds.  Such experiments measure solver
+behaviour only.  They do not establish satisfiability or unsatisfiability, and
+they are not used as premises in \Cref{thm:common,cor:profiles}.
+
+Of the reported certificates, 76,967 use the ordinary recipe and 21,175 use
+the \texttt{full\_root} recipe.  The latter adds the balanced-root hypothesis
+$H(r)\geq w(r)$, which the campaign established from the case's charge pin.
+That distinction is part of the evidence, not an implementation detail.
+
+\section{Audit methodology and remaining obligations}\label{sec:audit}
+
+The project used several independent checks of the supplied reduction rather
+than assuming that a complete-looking bundle was sound.  The useful principles
+were as follows.
+
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=2em]
+ \item \textbf{Regenerate and bind the object.} Case identifiers were
+ recomputed from definitions, and sampled formulas were regenerated from the
+ frozen row and recipe.  A hash of a filename is not a substitute for this.
+ \item \textbf{Replay proofs, not solver claims.} A refutation counts only
+ after an independent checker accepts a proof against the regenerated input.
+ Solver timeouts and exhausted heuristic searches remain UNKNOWN.
+ \item \textbf{Check necessity in the right direction.} For auxiliary
+ encodings, a real colouring must determine an auxiliary extension.  Extra
+ constraints that a real colouring need not meet invalidate an exclusion even
+ if every generated CNF has a perfect proof.
+ \item \textbf{Test vacuity and negative controls.} The impossible zero-vector
+ hypothesis in the early threshold theorem is an example of an error that a
+ successful compilation alone does not expose.  Boolean split coverage and
+ modified-file negative controls played the same role in the computational
+ checks.
+ \item \textbf{Separate provenance levels.} Kernel theorems, locally replayed
+ DRAT certificates, owner-reported replays, historical evidence references
+ and heuristic measurements are recorded distinctly.
+\end{enumerate}
+
+The supplied-package audit found defects spanning disconnected theorem
+citations, incomplete recipe fields, checker invocations that were not actually
+performed, acceptance of a hand-written manifest without executing a checker,
+optional support tables despite their use in completeness, and inadequate
+per-case encoding pins.  These are findings about the supplied tooling, not
+claims that every current script retains the same defects.  They explain why
+this paper does not equate a green manifest with a proof.
+
+The following obligations remain before any bound $\R\leq58$ can be stated:
+\begin{enumerate}[label=\textup{(\arabic*)},nosep]
+ \item finish and check the full encoding-adequacy and DIMACS-binding layer;
+ \item resolve or explicitly discharge the 12,893 OPEN entries;
+ \item supply the historical proof archives or independently refute their
+ rows, and replace the 401 scoped exclusions with complete evidence;
+ \item assemble the resulting finite computational premise and its semantic
+ theorem without introducing an unexamined axiom.
+\end{enumerate}
+Independently, a pure-kernel formalisation of the 496-certificate proof of
+\Cref{thm:common} would strengthen its trust boundary, but is not required for
+the honest conditional statement in \Cref{cor:profiles}.
+
+\subsection*{Source and reproducibility note}
+
+The project sources and cited audit records are at
+\url{https://github.com/jiji7879/r3333-58}.  The principal internal records
+for this draft are
+\path{results/common-critical-audit-2026-11-25/AUDIT.md},
+\path{results/k58-full-cover-run-2026-11-25/README.md},
+\path{review/LEAN_FROZEN_COVER_VERIFIED.md},
+\path{review/LEAN_ENCODING_ADEQUACY.md}, and
+\path{review/ERRATA.md}.  The manuscript's exact rerun commands and outcomes
+are recorded separately in \path{paper/VERIFICATION.md}; its numerical sanity
+checks are in \path{paper/check_claims.py}.  Stored scratch directories,
+absolute machine paths and unattached proof archives are not treated as
+permanent evidence.
+
+\section*{Acknowledgements}
+
+This working draft uses mathematical arguments, formalisations and audit
+artifacts developed in the r3333-58 project, including a supplied
+common-critical certificate package.  Human authorship, contribution and
+responsibility statements must be supplied before external submission.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

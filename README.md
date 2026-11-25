@@ -3,6 +3,15 @@
 Working repository for the project on `R(3,3,3,3)`, the four-colour Ramsey
 number for triangles. Two efforts live here.
 
+## Manuscript
+
+The working paper is [paper/main.pdf](paper/main.pdf), with source in
+[paper/main.tex](paper/main.tex). It presents the certified common-critical
+obstruction, the reciprocal-profile restriction, and an audit of the unfinished
+K58 computation. It does **not** claim `R(3,3,3,3) <= 58`. Build and numerical
+checks are documented in [paper/README.md](paper/README.md); exact verification
+scope is recorded in [paper/VERIFICATION.md](paper/VERIFICATION.md).
+
 ## 1. Upper bound: the K58 campaign (current)
 
 A handoff bundle proposes a computer-assisted proof of `R(3,3,3,3) <= 58` by a

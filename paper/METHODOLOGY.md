@@ -1,4 +1,10 @@
-# Methodology — what we did, and what the enumeration costs
+# Methodology — historical planning note (21 November 2026)
+
+> **Superseded as a current status source on 25 November 2026.** The working
+> manuscript is [main.pdf](main.pdf), and its exact checks are listed in
+> [VERIFICATION.md](VERIFICATION.md). In particular, this note's older open-row
+> counts and cost estimates predate the latest release and must not be quoted as
+> the current campaign state.
 
 An outline of the process, not the mathematics. It covers how a supplied proof
 package was received and checked, how the case enumeration was verified, and
