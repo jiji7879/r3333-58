@@ -266,8 +266,14 @@ alone, not the pilot and not the row CNF.
 ## Batch status (2026-11-25, final)
 
 Closing is done row by row, each with its own DRAT proof checked by `drat-trim`.
-**All 149 `UUU-` rows are closed.** Run statistics over the whole group: median 29 s,
-mean 53 s, max 497 s, about 2.65 CPU-hours total for the whole group including replays. The swarms and the
+**All 149 `UUU-` rows are closed, every one with a `drat-trim`-verified DRAT.** Checked:
+for each of the 149 ids in `.scratch/k58par/campaign/gap4_UUU_149.tsv` there is a
+`*.drat.log` in `.scratch/gap4/batch/` whose text contains `s VERIFIED` — 149 of 149,
+none missing. Run statistics over the whole group: median 29 s, mean 53 s, max 497 s,
+about 2.65 CPU-hours total including replays. Per-row records (`row, verdict, seconds,
+pilot_sha, drat_sha`) live in `.scratch/gap4/batch/{cert_A,cert_B,bare_C,bare_D,bare_E,bare_F}.tsv`;
+the earliest 45 carry the label `UNSAT_UNCHECKED` from a grepping bug against `drat-trim`'s
+carriage returns, but their logs do contain `s VERIFIED`. The swarms and the
 sweeps established three objects, all cheap: the bare pilot (~40 s), the row's certified
 CNF bare (~45 s), and cheapest and cleanest, the frozen units alone (135k clauses,
 17-44 s, medians 33-46 s over more than 60 certified rows). `tools/gap4/run_units_bulk.sh`
