@@ -1,3 +1,35 @@
+# Correction (2026-11-25, second revision): the rows close bare, and the families are a cost
+
+Read this before the rest. The gap-four pilots are unsatisfiable and **plain kissat refutes
+them in about a minute with no added constraints at all**:
+
+| formula | clauses | verdict | time |
+| --- | ---: | --- | ---: |
+| bare pilot (UUU 0684ba38, sha `85aea7fc…`) | 171,455 | UNSAT | **41 s** |
+| row's own certified CNF (`--dense`) | 196,994 | UNSAT | **44 s** |
+| pilot + B | 188,405 | UNSAT | ~50 s |
+| row CNF + A + B | 413,249 | UNSAT | ~50 s |
+| pilot + A + B + C | 355,565 | UNSAT | 2–3 min |
+
+Every model of a pilot is a triangle-free 4-colouring of K58, so A, B and C hold in every
+model of every pilot (**Theorem E**): adding them cannot change a verdict, and on this
+evidence they only add clauses. Swarm member m1 measured bare against augmented on the same
+row seven times and bare won every time, by up to 6.6×, on 48% of the clauses; a controlled
+twin of the UUU pilot (same placement and marked cell, only `root_kinds` differing, row
+`e792ec35`) closes bare in 20 s.
+
+So the earlier framing in this file -- "one elementary constraint closes the row" -- is
+wrong twice: the row closes without the constraint, and with it the proof is slower. The
+earlier UNKNOWNs on these rows came from solver caps of 30–70 seconds, not from difficulty.
+What survives from the constraint work: the four statements are true and now
+machine-checked in Lean (`five_bound`, `card_nb_le_sixteen`, `familyB`, `familyC`,
+`dual_five_bound`, `exact_pattern`), and every closure certificate in this file is valid --
+just not the cheapest route to it.
+
+Practical consequence: 13,154 gap-four rows at 40–60 s each is roughly 180–220 CPU-hours,
+about 15–18 hours on 12 cores, using the solver the campaign already has. The wall profiles
+are the opposite case; see `results/gap4-2026-11-25/` batch logs and the (15,15,14,13) test.
+
 # Row 0684ba38 (gap four, `UUU-`) is UNSAT
 
 The first closed row of the 13,154 gap-four rows, and the first row this campaign has closed
