@@ -300,12 +300,12 @@ the swarm members' directories `.ultramath/<swarm>/m<n>/` sit at the repository 
 # certified cut instances, rebuilt from a cut description alone
 python3 ours/check_oneside.py local-15 '[[354,1],[323,1],[70,1]]' a
 # complete marginal cut frontier replay (533 cuts)
-python3 ../.ultramath/smwmsifse/m5/src/ours/replay_cuts.py
+python3 ../tools/k54/replay_marginal_cuts.py
 # kernel-check one cut core through LRAT
-python3 ../.ultramath/smwmsifse/m3/kcheck.py kc/out cert-x INSTANCE.cnf PROOF.drat
+python3 ../tools/k54/kcheck_lrat.py kc/out cert-x INSTANCE.cnf PROOF.drat
 # row-sum relaxation: feasible/infeasible per board
-python3 ../.ultramath/smwmsifse/m4/rowsum.py local-15 --timelimit 120
-python3 ../.ultramath/smwmsifse/m4/bb.py live-17 --seconds 150
+python3 ../tools/k54/rowsum.py local-15 --timelimit 120
+python3 ../tools/k54/rowsum_bb.py live-17 --seconds 150
 ```
 
 Solvers: CaDiCaL 3.0.1 and Kissat 4.0.4 built from the bundle's vendor tarballs, drat-trim
