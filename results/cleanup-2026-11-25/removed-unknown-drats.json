@@ -1,0 +1,120 @@
+{
+ "selection": "delete only DRATs paired to s UNKNOWN status records and exceeding 10 MiB; keep all sol/cnf/report/proof artifacts",
+ "files": [
+  {
+   "path": ".scratch/smwu1x5uy/m1/b44_win21_26.drat",
+   "bytes": 1426009088,
+   "status_file": ".scratch/smwu1x5uy/m1/b44_win21_26.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b39_eq21.drat",
+   "bytes": 200650498,
+   "status_file": ".scratch/smwu1x5uy/m1/b39_eq21.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/ext44_from_b35_ge37.drat",
+   "bytes": 657750900,
+   "status_file": ".scratch/smwu1x5uy/m1/ext44_from_b35_ge37.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b44_ge42.drat",
+   "bytes": 72168374,
+   "status_file": ".scratch/smwu1x5uy/m1/b44_ge42.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b35_ge41.drat",
+   "bytes": 71568910,
+   "status_file": ".scratch/smwu1x5uy/m1/b35_ge41.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b35_ge40.drat",
+   "bytes": 246561547,
+   "status_file": ".scratch/smwu1x5uy/m1/b35_ge40.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b44_plain.drat",
+   "bytes": 313471142,
+   "status_file": ".scratch/smwu1x5uy/m1/b44_plain.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b514_ge40.drat",
+   "bytes": 383158009,
+   "status_file": ".scratch/smwu1x5uy/m1/b514_ge40.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b44_ge21.drat",
+   "bytes": 450209114,
+   "status_file": ".scratch/smwu1x5uy/m1/b44_ge21.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b514_ge43.drat",
+   "bytes": 161474195,
+   "status_file": ".scratch/smwu1x5uy/m1/b514_ge43.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b37_ge40.drat",
+   "bytes": 248279403,
+   "status_file": ".scratch/smwu1x5uy/m1/b37_ge40.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b44_plain_sat.drat",
+   "bytes": 1162544928,
+   "status_file": ".scratch/smwu1x5uy/m1/b44_plain_sat.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b39_ge39.drat",
+   "bytes": 442311427,
+   "status_file": ".scratch/smwu1x5uy/m1/b39_ge39.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b514_ge42.drat",
+   "bytes": 188068035,
+   "status_file": ".scratch/smwu1x5uy/m1/b514_ge42.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b44_pent_sat.drat",
+   "bytes": 1621638577,
+   "status_file": ".scratch/smwu1x5uy/m1/b44_pent_sat.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b39_ge30.drat",
+   "bytes": 391750546,
+   "status_file": ".scratch/smwu1x5uy/m1/b39_ge30.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/ext44_from_b37_ge37.drat",
+   "bytes": 640929653,
+   "status_file": ".scratch/smwu1x5uy/m1/ext44_from_b37_ge37.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/b44_ge40.drat",
+   "bytes": 81173066,
+   "status_file": ".scratch/smwu1x5uy/m1/b44_ge40.sol",
+   "status": "s UNKNOWN"
+  },
+  {
+   "path": ".scratch/smwu1x5uy/m1/ext44_from_b35_ge39.drat",
+   "bytes": 371151649,
+   "status_file": ".scratch/smwu1x5uy/m1/ext44_from_b35_ge39.sol",
+   "status": "s UNKNOWN"
+  }
+ ],
+ "total_bytes": 9130869061
+}

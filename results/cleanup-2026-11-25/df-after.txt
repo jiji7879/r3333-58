@@ -1,0 +1,2 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda4       248G  211G   35G  86% /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680
