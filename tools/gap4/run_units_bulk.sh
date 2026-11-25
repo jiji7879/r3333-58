@@ -56,5 +56,5 @@ PY
   rm -f "$row" "$units" "$drat"
 }
 export -f one
-export K D
+export K D HERE
 cat "$ROWS" | xargs -r -P "$W" -I{} bash -c 'one "$@"' _ {} "$OUT"
