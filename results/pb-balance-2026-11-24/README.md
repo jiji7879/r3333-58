@@ -134,6 +134,14 @@ ten degree multisets (2,2,2,3)). My own probe finds perfectly balanced good
 So perfect balance is satisfiable in general, and any obstruction at 58 is a
 property of 58, not of the assumption.
 
+The ladder has since been carried much further, and I checked every matrix in it
+myself (symmetry, zero monochromatic triangles, exact degree window): balanced good
+4-colourings exist for **every n from 6 to 35 except 13, 21 and 29**, the three
+parity cases - 27 matrices, no gaps. At the 3-colour frontier the question is
+moot: in a good 3-colouring of K16 the three degrees sum to 15 with each at most
+R(3,3)-1 = 5, so all three are 5 and every good 3-colouring of K16 is already
+perfectly balanced, while K17 has none.
+
 A fuller ladder, re-checked here from the matrices rather than from the report
 (`smwvchrlk/m6`, whose first version had the scope error above and corrected it):
 perfect balance holds at **n = 7, 9, 11, 15, 19, 23** - with degree multisets
