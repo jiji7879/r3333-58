@@ -83,6 +83,36 @@ cadical -q strong.cnf                                                   # s UNSA
 pilot's flag variables with the same sequential counter the bundle's `campaign/gap_four.py`
 uses, and the rebuilt counter clauses were checked to be a subset of the pilot's (0 missing).
 
+## The sharp form: family B alone closes the row
+
+B is the only family needed. `pilot + B` is 188,405 clauses, built by
+`python3 tools/gap4/strengthen.py pilot.cnf out.cnf --families B`; kissat and CaDiCaL both
+return UNSAT, and drat-trim prints **`s VERIFIED`** on a 53,514,003-byte proof
+(5,342 of 188,405 clauses in core, 354,053 of 742,105 lemmas, 21,016,020 resolution steps).
+So the row is closed by one elementary statement: *a critical vertex sends at least four
+colour-0 edges into each of the other three arms*. No use of the K15/K16 classification, no
+search, no counting.
+
+## Ladder boundary (measured after the closure)
+
+m1's level L2 -- the pilot minus the 11,480 triples entirely inside A1 u A2 u A3 -- is
+**SAT** (kissat, 23m59s), so the all-outer triangle clauses are not what closes the row;
+family B is. L1p + family A alone is also SAT.
+
+## Transport: one row, not many
+
+All 149 `UUU-` rows have pairwise distinct frozen unit sets up to vertex and colour
+permutation (swarm member m6, re-verified: 149 distinct unit sha256, 149 isomorphism classes,
+networkx VF2 agreeing). The same run reports all 13,154 gap-four rows and all 83,440 rows of
+the profile as singletons. So a certified refutation closes exactly its own row; the batch
+below is per row, and the recipe (not the result) is what transports.
+
+## Batch status
+
+`tools/gap4` recipe, one pilot per row, `--families ABC`, proof + drat-trim per row,
+proof deleted after hashing (log: `.scratch/gap4/batch/cert_{A,B}.tsv`). At the time of
+writing: 6 rows UNSAT with `s VERIFIED` proofs plus the pilot, and the sweep continues.
+
 ## What this does and does not say
 
 * One row of the 13,154 gap-four rows, and of the 31,751 open rows. The other 148 `UUU-` rows
