@@ -265,8 +265,9 @@ alone, not the pilot and not the row CNF.
 
 ## Batch status (2026-11-25, final)
 
-Closing is done row by row, each with its own DRAT proof checked by `drat-trim`. Current
-count: **136 of the 149 `UUU-` rows closed**, the last 13 in flight. The swarms and the
+Closing is done row by row, each with its own DRAT proof checked by `drat-trim`.
+**All 149 `UUU-` rows are closed.** Run statistics over the whole group: median 29 s,
+mean 53 s, max 497 s, about 2.65 CPU-hours total for the whole group including replays. The swarms and the
 sweeps established three objects, all cheap: the bare pilot (~40 s), the row's certified
 CNF bare (~45 s), and cheapest and cleanest, the frozen units alone (135k clauses,
 17-44 s, medians 33-46 s over more than 60 certified rows). `tools/gap4/run_units_bulk.sh`
