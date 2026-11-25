@@ -18,6 +18,8 @@ import scipy.sparse as sp
 from scipy.optimize import milp, LinearConstraint, Bounds
 
 HERE = Path(__file__).resolve().parent
+OUTDIR = HERE / "out"
+OUTDIR.mkdir(exist_ok=True)
 sys.path.insert(0, str(HERE))
 from ilp import model  # noqa: E402
 from witness import Model  # noqa: E402
@@ -95,6 +97,6 @@ if __name__ == "__main__":
     p.add_argument("--indicators", action="store_true")
     a = p.parse_args()
     out = run(a.board, a.timelimit, a.indicators)
-    (HERE / "out" / ("rowsum-" + a.board + ".json")).write_text(json.dumps(dict(
+    (OUTDIR / ("rowsum-" + a.board + ".json")).write_text(json.dumps(dict(
         board=a.board, verdict=out[0],
         rowsums=None if out[2] is None else [int(v) for v in out[2]])) + "\n")

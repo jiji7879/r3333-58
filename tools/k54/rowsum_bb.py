@@ -22,6 +22,8 @@ import scipy.sparse as sp
 from scipy.optimize import linprog
 
 HERE = Path(__file__).resolve().parent
+OUTDIR = HERE / "out"
+OUTDIR.mkdir(exist_ok=True)
 sys.path.insert(0, str(HERE))
 from ilp import model as build_model  # noqa: E402
 from witness import Model  # noqa: E402
@@ -117,7 +119,7 @@ if __name__ == "__main__":
         print("   row sums sum", sum(nr), "nonzero", sum(1 for v in nr if v),
               "fractional count vars", frac, "of", int((x[:n] > 1e-7).sum()),
               "counts verified:", ok)
-        (HERE / "out" / ("bb-" + a.board + ".json")).write_text(json.dumps(dict(
+        (OUTDIR / ("bb-" + a.board + ".json")).write_text(json.dumps(dict(
             board=a.board, rowsums=nr, verified=bool(ok),
             rects=[[list(r), v] for r, v in zip(bb.rects, nr)],
             counts=xi.tolist())) + "\n")
