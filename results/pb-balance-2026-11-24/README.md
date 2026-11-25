@@ -134,6 +134,15 @@ ten degree multisets (2,2,2,3)). My own probe finds perfectly balanced good
 So perfect balance is satisfiable in general, and any obstruction at 58 is a
 property of 58, not of the assumption.
 
+A fuller ladder, re-checked here from the matrices rather than from the report
+(`smwvchrlk/m6`, whose first version had the scope error above and corrected it):
+perfect balance holds at **n = 7, 9, 11, 15, 19, 23** - with degree multisets
+(2,2,1,1), (2,2,2,2), (3,3,2,2), (4,4,3,3), (5,5,4,4), (6,6,5,5), each matrix
+symmetric with zero monochromatic triangles - and fails at **5, 13, 21** (n = 5 is
+a 1-factorisation of K5; 13 and 21 are the parity cases, 39 and 105 odd). The
+balanced value for r = 4 is therefore at least 23, and 17 and the even orders
+between are not yet decided.
+
 ## Conditional structure (needs reciprocity, which PB does not supply)
 
 `smwvchrlk/m2`: if a perfectly balanced good colouring of K_n with n = 4a+2 were
