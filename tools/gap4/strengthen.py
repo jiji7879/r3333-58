@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Add three implied constraint families to a gap-four pilot CNF.
+"""Add three implied constraint families to a GAP-FOUR pilot CNF.
+
+WARNING: the arm partition is hard-coded to profile (15,15,15,12), arm 0
+(A0 = 1..15, A1 = 16..30, A2 = 31..45, A3 = 46..57).  It is UNSOUND on any other
+profile -- in particular on the nine (15,14,14,14) charge-15 rows.  For any other
+profile use add_families.py, which takes --profile and --arm.
 
     python3 tools/gap4/strengthen.py PILOT.cnf OUT.cnf [--families ABC]
 
