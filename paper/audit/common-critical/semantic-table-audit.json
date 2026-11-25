@@ -1,0 +1,21 @@
+{
+  "manifest_orbits": 247,
+  "note": "Repeated four-anchor words are collapsed as types; nonempty diagonal pair sets witness projection over distinct slots, not identification of physical vertices.",
+  "placements": 4356,
+  "slot_anchor_sizes": {
+    "4": 1332,
+    "5": 3608
+  },
+  "slot_colour_orbits_independently_enumerated": 24,
+  "slot_constraint_calls": 4940,
+  "slot_signatures_total": 292,
+  "slot_unique_constraints": 45,
+  "verdict": "PASS",
+  "word_colour_orbits_independently_enumerated": 12,
+  "word_four_anchor_calls": 170,
+  "word_modes_with_multicolour_same_type_pairs": 0,
+  "word_same_type_diagonal_multiple_colours": 0,
+  "word_same_type_diagonal_nonempty": 0,
+  "word_signatures_total": 168,
+  "word_unique_four_anchor_constraints": 24
+}

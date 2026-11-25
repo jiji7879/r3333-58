@@ -20,6 +20,18 @@ degree profiles and the two reciprocal candidates, and checks the arithmetic in
 It does **not** solve cases, replay DRAT proofs or validate the owner-reported
 ledger statuses.
 
+The optional semantic-table audit requires the supplied certificate extracted
+at `.scratch/common-critical-audit/K58_common_critical_color_certificate`:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 paper/audit/common-critical/encoding_audit.py
+```
+
+It checks complete physical embedding/signature tables and takes several
+minutes. The audit's recorded PASS output is
+[audit/common-critical/semantic-table-audit.json](audit/common-critical/semantic-table-audit.json).
+See `VERIFICATION.md` for its replay status and limitations.
+
 After building the base Lean development, the supplementary conditional profile
 statement can be checked from the repository root with:
 

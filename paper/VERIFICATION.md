@@ -80,6 +80,25 @@ artifact and a second independent soundness artifact (`m7`) also compiled with
 only the three standard axioms. The 36-label detail is deliberately not used as
 a main theorem of the paper and is not a new UNRESTRICTED UNSAT count.
 
+### Independent semantic-table audit
+
+The reviewer-side semantic enumeration took 241.784 s and checked 45 literal
+slot constraints (4,940 calls), 24 four-anchor word constraints (170 calls),
+and all 4,356 placements. The coordinator's first additional run hit a 300 s
+limit before printing a result; that timeout was not treated as mathematical
+evidence. A longer rerun then completed successfully in **5 min 51 s**. Its
+verdict was `PASS`, byte-identical to the reviewer's JSON: 247 orbits, 4,356
+placements, complete signature-table equality, and no repeated free-word
+diagonal in the used four-anchor tables.
+
+The executable audit and its result are retained as
+`audit/common-critical/encoding_audit.py` and
+`audit/common-critical/semantic-table-audit.json`. Running it requires the
+supplied certificate extracted at
+`.scratch/common-critical-audit/K58_common_critical_color_certificate`.
+The packaged script's imports and source-path resolution were checked without
+modifying the source certificate.
+
 ### Base K58 build
 
 The first attempt exposed an incomplete upstream cache and a path mismatch:
@@ -88,19 +107,13 @@ The first attempt exposed an incomplete upstream cache and a path mismatch:
 upstream closure is being rebuilt, and the temporary local symlink has been
 removed.
 
-**At this draft's commit snapshot, that full rebuild and an additional
-coordinator rerun of the semantic-table enumeration were still running. No
-successful base-build result is claimed in this version.** Their completion
-status is intentionally left for a subsequent verification update. The common
-496-certificate replay and the supplementary conditional Lean check above are
-separate completed checks and do not depend on treating this running job as a
-pass.
-
-The successful reviewer-side semantic enumeration took 241.784 s and checked
-45 literal slot constraints (4,940 calls), 24 four-anchor word constraints
-(170 calls), and all 4,356 placements. The coordinator's first additional run
-hit a 300 s limit before printing a result; that timeout was not treated as
-mathematical evidence, and a longer rerun was started.
+The first draft commit `6ed6a79` explicitly marked both this rebuild and the
+additional semantic enumeration as unfinished. The semantic check has since
+completed as recorded above. **The full base rebuild remains running at the
+latest verification update; no successful base-build result is claimed yet.**
+The common 496-certificate replay, the supplementary conditional Lean check and
+the completed semantic-table audit are separate completed checks and do not
+depend on treating this running job as a pass.
 
 ## What was not independently rerun or established for this paper
 
