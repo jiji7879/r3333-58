@@ -7,14 +7,23 @@ number for triangles. Two efforts live here.
 
 A handoff bundle proposes a computer-assisted proof of `R(3,3,3,3) <= 58` by a
 frozen cover of 113,179 SAT cases, each refuted by Kissat with a DRAT proof
-replayed by drat-trim. The bundle's ledger is frozen at 111,035 OPEN; the
-campaign's own state is the release checkpoint below.
+replayed by drat-trim. The bundle's ledger is frozen at 111,035 OPEN; the latest
+run against it is the 2026-11-25 one below.
 
 | status | rows |
 | --- | ---: |
-| `CERTIFIED` (replayed against regenerated CNFs) | 79,264 |
+| `CERTIFIED` (replayed against regenerated CNFs) | 98,142 |
 | `LEGACY_EVIDENCE_NEEDED` (1,743 historical + 401 scoped exclusions) | 2,144 |
-| `OPEN` | 31,771 |
+| `OPEN` | 12,893 |
+
+The 2026-11-25 run on the owner's machine closed **18,858** rows in one pass:
+manifest `98d82268ff4c277820f00cbed3405c625dbb53d3603610e45eacc73b562b19f9`,
+replay `{"checked": 98142, "replayed": 98142, "failed": 0}`.
+[results/k58-full-cover-run-2026-11-25/](results/k58-full-cover-run-2026-11-25/)
+records the audit of that bundle: the case index and the frozen ledger match it
+byte for byte, and twelve sampled rows rebuild to their recorded CNF hashes.
+The proofs themselves were never sent here, so the replay line is the owner's
+report, not an independently confirmed fact.
 
 * [HANDOFF_NEXT_CHAT.md](HANDOFF_NEXT_CHAT.md) — **start here**: the state at
   the end of the last session, what is open in priority order, the traps that
@@ -35,20 +44,16 @@ campaign's own state is the release checkpoint below.
   reduction: the degree cap, `R(3,3) ≤ 6` and `R(3,3,3) ≤ 17`, the ticket
   double counting, and the threshold step.  Build with `lean/build.sh`.
 
-Where the 31,771 open rows are, and what each needs:
+Where the 12,893 open rows are, and what each needs:
 
-* **20,166** in `(15,15,15,12)` — throughput, not thought: that profile's retry
-  tier closed 14/15 and 8/10 in samples. One retry-only pass is 20,166 × 70 s =
-  ~390 CPU-h (≈33 h wall on 12 cores). Its certificates are large — the 2,297
-  retry-tier certificates in the index average 28.6 MB, against 5.6 MB for the
-  76,967 first-tier ones — so the pass emits ~480 GB of DRAT. `--publication`
-  deletes each certificate after hashing it, so peak disk is a few hundred MB;
-  keeping them needs a disk that size.
-* **20** in `(16,15,15,11)` — the hard tail of a profile whose other 16,070
-  rows are certified (the bulk run). The 20 are refuted from the 458 MB LFS
-  archive (`runs/2026-11-21-hard-tail-16-15-15-11/`) as *split* certificates
-  that the one-DRAT-per-case pipeline cannot carry, so they sit OPEN in the
-  index; 83 further rows are historical evidence.
+* **1,308** in the two big profiles — 1,288 in `(15,15,15,12)` and 20 in
+  `(16,15,15,11)`. The 20 are refuted from the 458 MB LFS archive
+  (`runs/2026-11-21-hard-tail-16-15-15-11/`) as *split* certificates that the
+  one-DRAT-per-case pipeline cannot carry, so they sit OPEN in the index; the
+  1,288 are the retry tail, throughput rather than thought. A retry pass over
+  them is ~25 CPU-h and emits large certificates — the index's retry-tier
+  entries average 28.6 MB against 5.6 MB first-tier, and `--publication`
+  deletes each proof after hashing it.
 * **11,585** in the seven small profiles — **the wall**
   ([review/WALL_STRUCTURAL_NOTE.md](review/WALL_STRUCTURAL_NOTE.md) puts it in
   structural terms: these are exactly the profiles whose vertices have two or
@@ -62,9 +67,20 @@ Where the 31,771 open rows are, and what each needs:
   or two rigid blocks and leaves 42 or 27 of 57 vertices free; refuting one is
   close to the original problem.
 
-Status in one line: 70 % of the cover is certified and replayed, but the
-reduction at n = 58 is unformalised, 2,144 rows have no proof bytes here, and
-a tenth of the cover does not fall to any budget tried. No bound moves yet.
+Status in one line: 87 % of the cover (98,142 of 113,179) is certified and
+replayed; the 12,893 that remain are 11,585 small-profile rows no budget has
+touched plus a 1,308-row tail; 2,144 rows have no proof bytes here; and the
+reduction at n = 58 is still unformalised. No bound moves yet.
+
+Two side results from the same period, both certified and both explicitly
+non-progress on the bound:
+
+* [results/k58-full-cover-run-2026-11-25/](results/k58-full-cover-run-2026-11-25/)
+  — the audit of the 98,142-row run.
+* [results/pb-balance-2026-11-24/](results/pb-balance-2026-11-24/) — the
+  perfect-balance sub-case: 29 of the 381 `(15,14,14,14)` rows die on a ticket
+  pin with a replayed proof, the other 352 stay UNKNOWN at every budget and
+  encoding tried, and no isomorphism reduction exists.
 
 ## 2. Lower bound: previous work
 

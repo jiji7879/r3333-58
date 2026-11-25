@@ -9,10 +9,23 @@ dated block at its top says which numbers to ignore.
 ## Where the work stands
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
-The K58 campaign is at 79,264 of 113,179 frozen cases, each refuted by a DRAT
-proof replayed against the CNF regenerated from its ledger row and recipe:
 
-| status | rows |
+**Updated 2026-11-25.** The owner ran the whole cover on their own machine and
+closed 18,858 more rows: **98,142 of 113,179 are certified and replayed**
+(`{"checked": 98142, "replayed": 98142, "failed": 0}`, manifest
+`98d82268ff4c277820f00cbed3405c625dbb53d3603610e45eacc73b562b19f9`), with
+12,893 OPEN and 2,144 legacy. The bundle audit — case index and ledger match byte
+for byte, twelve sampled rows rebuild to their recorded CNF hashes, the proofs
+themselves were not sent here — is
+[results/k58-full-cover-run-2026-11-25/](results/k58-full-cover-run-2026-11-25/).
+What is left: 1,288 retry-tail rows of `(15,15,15,12)`, 20 split certificates of
+`(16,15,15,11)`, and all 11,585 of the seven small profiles. The wall is
+untouched; the bound is where it was.
+
+The counts below are the state before that run and are kept because the prose
+after them refers to them:
+
+| status | rows (2026-11-22) |
 | --- | ---: |
 | `CERTIFIED` (single DRAT, replayed) | 79,264 |
 | `SPLIT_CERTIFIED` (split argument, not replayable here) | 20 |
