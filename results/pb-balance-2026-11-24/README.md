@@ -7,19 +7,43 @@ exactly one colour has degree 15 at each vertex and the other three have 14.
 > This decides a sub-case only. `R_4(3) in [51,62]` does not move, and no row of
 > the wall has been closed.
 
-## Which rows are relevant, and why the split is complete
+## The split is complete, and it costs one line
+
+`K58.FrozenCover` (`lean/K58/Ledger.lean:27`) is
+
+    forall G : EdgeCol (Fin 58) 4, TriangleFree G -> exists k in frozenKeys, RealizesKey G k
+
+with `frozenKeys_length = 113179` kernel-checked by `decide +kernel` and the cover
+itself proved in `K58.Replay.frozenCover` (recorded green in `PROOFS.md`; the
+`ReplayGen` tree is not built in this checkout, so that one step is taken from the
+record rather than re-run here). `RealizesKey` pins the root's degree profile to
+the family's profile, and perfect balance forces every vertex's profile to
+(15,14,14,14). Hence every perfectly balanced good colouring is realised by one
+of the 381 rows - unconditionally, with no appeal to the ledger's provenance.
+
+So closing the 352 live rows would prove that K58 has no perfectly balanced good
+4-colouring, and a SAT row would exhibit one.
+
+## Which rows are relevant, and why
 
 The frozen cover (`.scratch/k58/case-ledger.jsonl.gz`, 113,179 rows) pins the
-degree profile of one root vertex and is complete for all good colourings
-(`K58.Replay.frozenCover`, kernel-checked). Under perfect balance that root has
-profile (15,14,14,14), so **every perfectly balanced good colouring falls in one
-of the 381 rows with `family.profile == [15,14,14,14]`** - all 381 currently
-OPEN. So
+degree profile of one root vertex. Under perfect balance that root has profile
+(15,14,14,14), so **every perfectly balanced good colouring falls in one of the
+381 rows with `family.profile == [15,14,14,14]`** - all 381 currently OPEN. So
 
     no perfectly balanced good colouring of K58  <=>  all 381 rows UNSAT.
 
-Counts inside the 381: 308 have `root_kinds[0] = T`, 73 `U`; 352 have
-`marked_size = 15`, 29 have `marked_size = 16`.
+Counts inside the 381, cross-tabulated from the ledger: `(T,-,-,-)` arm 0 charge
+15 at mark 5 gives 9 rows, `(T,-,-,-)` arm 1 charge 1 at mark 0 gives 299,
+`(U,-,-,-)` arm 0 charge 3 gives 9, `(U,-,-,-)` arm 1 charge 5 gives 64; 352 have
+`marked_size = 15` and 29 have `marked_size = 16`.
+
+An independent audit (`smwvchrlk/m5`) re-derived the same completeness from the
+ledger alone - thresholds `(15-1)+3(1-1) = 14 < 15` and `(3-1)+3(5-1) = 14 < 15`,
+both tight; position coverage; and the enumeration counts 299/299, 64/64, 9/9 and
+9-of-23 at mark position 5 - and recorded that the program which produced the
+ledger is absent from the repository. That gap does not affect the argument above,
+which quantifies over the Lean list rather than over the ledger file.
 
 ## Lemma 1 (hand proof, no search): the 29 `marked_size = 16` rows are dead
 
