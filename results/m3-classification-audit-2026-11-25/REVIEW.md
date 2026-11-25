@@ -38,3 +38,30 @@ and `classified16-independent.log`. **`Classified 16` is independently establish
 a finite computational certificate.** The
 `Classified 15` rejection does not invalidate that result or the useful true-root
 semantic correction.
+
+## Resolution of the repaired submission — accepted
+
+The repaired artifact supplied exactly the missing evidence, and the full
+independent replay passed:
+
+- `alpha5.py check`: 1,014,271 independent-6 exclusion witnesses, 7,145 survivors
+  without an independent 6-set, and the full 1,021,416 input partition, 0 failures
+  in 50.80 s (`repair-alpha-check.log`).
+- `certify.py verify 16`: 388 graphs, 460 iterations, 72 splits, 0 failures in
+  51.99 s (`repair-cert16-verify.log`).
+- `certify.py verify 15`: 7,145 graphs, 7,217 iterations, 72 splits, 0 failures in
+  879.23 s (`repair-cert15-verify.log`).
+- An independent manifest audit matched the exact distinct input graph sets and
+  required one terminal UNSAT per graph, with no truncated SAT-only record
+  (`repaired-manifest-coverage.json`).
+
+The 12 U + 60 T split totals, exact vertex+colour backtracking and corrected
+67,894-clause anchor were confirmed. **The repaired `Classified 15` certificate,
+`Classified 16`, the true-root registry and the finite placement-orbit bookkeeping
+are accepted.** `RealizesKey`/RawTransportCover and the Lean mapping to
+`gluing.units` remain open; no frozen row or profile was closed.
+
+The final package checksum has two ancillary defects only: a stale duplicate
+`./PROOF.md` digest and a prose manifest line without a valid digest. They do not
+affect the independently rebuilt CNF chains or replayed DRAT proofs and are recorded
+in `repaired-file-hashes.log` rather than hidden.

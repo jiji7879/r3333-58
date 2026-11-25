@@ -1,0 +1,2 @@
+verify n=16: graphs 388, iterations 460, splits 72, failures 0
+WALL 51.99 s

@@ -1,0 +1,12 @@
+{
+ "15": {
+  "graphs": 7145,
+  "iterations": 7217,
+  "splits": 72
+ },
+ "16": {
+  "graphs": 388,
+  "iterations": 460,
+  "splits": 72
+ }
+}

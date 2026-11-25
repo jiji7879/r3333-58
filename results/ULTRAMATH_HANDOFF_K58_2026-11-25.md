@@ -166,14 +166,17 @@ The statements above describe the state before the two newly supplied attachment
    path/ticket arguments themselves are sound. See
    `four-row-ticket-audit-2026-11-25/AUDIT.md`.
 
-3. **m3/d9's `Classified 15` certificate was rejected pending repair.** The documented
-   independence filter is not implemented in any shipped Python file, final per-graph
-   DRAT files were deleted rather than retained for independent replay, and its
-   67,219-clause prose should read 67,894, matching the fresh registry rebuild. The
-   `RealizesFamily` root-floor and 64-digit reciprocal-hash corrections were verified.
-   `Classified 16` did pass a fresh full 71-second regeneration: all 388 terminal
-   certificates replayed, with identical per-graph hashes and 72 = 12 U + 60 T.
-   See `m3-classification-audit-2026-11-25/REVIEW.md`.
+3. **m3/d9's repaired classification certificates are now accepted.** The original
+   submission was rejected for a missing independence filter and deleted DRAT files.
+   The repair supplied both. Independent checks verified all 1,014,271 independent-6
+   exclusion witnesses and 7,145 survivors (50.80 s), all 388 `K16` graphs / 460
+   iterations (51.99 s), and all 7,145 `K15` graphs / 7,217 iterations (879.23 s),
+   with 72 U/T splits and zero failures at either order. The corrected true-root
+   registry has 67,894 threshold clauses. Placement-orbit bookkeeping remains distinct
+   from the still-open RealizesKey/RawTransportCover step. A stale prose `PROOF.md`
+   hash and one malformed bundle-hash line are recorded without affecting the rebuilt
+   CNFs and replayed proofs. No row was closed. See
+   `m3-classification-audit-2026-11-25/REVIEW.md`.
 
 4. **The common-critical-colour theorem is now independently certified and supersedes
    most reciprocal work.** All 496 DRATs replayed in 156.76 s (two catalogues plus two
