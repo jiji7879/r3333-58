@@ -130,12 +130,27 @@ repository; the only attachment supplied is `K58_PB_parallel_handoff.md`. The
 decode itself is correct - I reproduced it independently - but the citation is
 not.
 
+## What the live rows cost
+
+Nothing on the 352 closes at the budgets tried. Row `5da5b4ca2d16` (the 146,276
+variable / 407,904 clause instance, sha256 `53e63b14...`) ran 40 minutes under
+Kissat 4.0.4 on a contended 4-core box and came back UNKNOWN with 557 MB of DRAT
+and no closure in sight; `smwvchrlk/m7` sampled four other live rows at 700 s
+each, all UNKNOWN. For comparison the 29 dead rows close in under 0.2 s each with
+0.75 MB proofs, so the split between the two halves is not gradual: it is the
+difference between a counting contradiction and a full 58-vertex search.
+
+**No isomorphism reduction is available.** `smwvchrlk/m4` computed the orbit
+decomposition of the 381 pinned instances: **381 classes, 381 rows** - no two rows
+are isomorphic, so the 352 cannot be collapsed into a smaller set of
+representatives. Each row genuinely needs its own decision.
+
 ## Status
 
 | statement | rows | how |
 | --- | ---: | --- |
 | dead under perfect balance | 29 | Lemma 1 by hand, and now replay-checked UNSAT by an independent encoder |
-| open under perfect balance | 352 | UNKNOWN at 700 s on four sampled rows; one instance run here to a 40-minute cap |
+| open under perfect balance | 352 | UNKNOWN at 700 s on four sampled rows, UNKNOWN at 40 min and 557 MB of DRAT on a fifth; no isomorphism reduction (381 classes) |
 
 ## Replay-checked certificates for the 29
 
