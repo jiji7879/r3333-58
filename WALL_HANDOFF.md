@@ -187,6 +187,25 @@ tested pair was still UNKNOWN: the small cardinality disjunction is not the whol
   gap-four rows, all 83,440 profile rows were classified. **One refutation closes one row,
   never a family for free.**
 
+## 6a. One more exact OPEN-row certificate and a proper transfer test
+
+`cf5becce238c19434400a710d817aa9b3e788471160f277f83290f799ce2216e` (OPEN, charge 3 of
+`(15,15,15,12)`): full rebuilt row is 196,946 clauses, sha
+`c0c4152575c0eb016bf245a2ea52062c9078087c69b3373e20ed63dd546b8f3c`. A
+111,190,523-byte DRAT obtained from its host+units prefix replays *directly against the full
+row*, with `drat-trim` printing **`s VERIFIED`** (22,691 clauses in core, 242,442 core
+lemmas, 19,922,898 resolution steps). Thus this is a second completely certified closure of a
+currently OPEN row, matching the earlier bare charge-3 sample.
+
+m6 then transferred only independently proven clauses to the named WALL row `35b0ce3c…`.
+The result is 112,356 RUP additions, including seven forced nonedges, and a second pass adds
+six more; 128,103 source lemmas and the empty clause remain non-RUP. Replaying with
+`drat-trim -f -U -w` prints `s DERIVATION` (satisfiability of the augmented formula is
+preserved), not `s VERIFIED`. Those clauses really are consequences of the target, not
+imported donor axioms, but adding them does not refute that wall row: runs remain UNKNOWN.
+The barrier is hence precisely the source lemmas that cannot be derived independently, not an
+illicit weakening of the target row's unit set.
+
 ## 7. Why arithmetic alone will not finish the wall
 
 Tickets: if $w(v)$ is the number of critical colours at $v$, and $H(v)$ the number of tickets
