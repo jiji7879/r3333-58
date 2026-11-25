@@ -228,8 +228,9 @@ So the whole (15,15,15,12) profile — 20,166 open rows — is refuted by plain 
 median of about 45 s (sweep mean over 18 certified rows: 46 s). That is roughly
 250 CPU-hours, about a day on 12 cores, using the shipped solver and no new machinery.
 The small profiles are the opposite: a charge-1 row of (15,15,14,13) does not close in
-20 minutes even with the families, and the families are entailed by the row anyway, so
-they cannot close it. Difficulty tracks the row's charge, not the profile: charge 9 and 3
+20 minutes even with the families, an entailed family cannot make an unsatisfiable row satisfiable:
+it can only change how hard the witness is to find. A timeout still says
+nothing either way. Difficulty tracks the row's charge, not the profile: charge 9 and 3
 rows fall in under a minute, charge 1 does not fall at all in this budget.
 
 Practical recipe for the handoff:
