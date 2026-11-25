@@ -189,3 +189,11 @@ evidence directory. `k58-batch.sh finish` also reads `release/manifest.json` whe
 
 `dist/k58-solver.zip` of this build is
 `b5ddba180508e9e4059742fe20529f7b56219b784080dc656a94581b2038ac4b`, version `2026-11-25`.
+
+Checked on a clean unpack before handing it over: `doctor` clean (python-sat 1.9.dev22,
+Kissat 4.0.4, drat-trim, example replay 5/5), `smoke` 5/5 in 1m13s, and one real legacy row
+through the new selector - case `d603199fef0f` of `(16,15,15,11)`, `VERIFIED`, 0.689 s
+solver CPU, 0.793 s replay CPU, 163 KB certificate, receipt
+`first/TTT-_1_232.jsonl`. That replay time is a third of the ~2.2 CPU-s per case measured
+on the 95-case evidence, so the 10-14 h finalise estimate for a 100k-case evidence
+directory stays on the conservative side.
