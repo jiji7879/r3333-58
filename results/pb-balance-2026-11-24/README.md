@@ -87,12 +87,37 @@ the only `d_c(v) >= 14` in the tree is `tools/pb/balance.py`).
     python3 tools/pb/balance.py ROW_ID OUT.cnf --balance      # one instance
     python3 tools/pb/balance.py ROW_ID OUT.cnf                # the frozen row, as a control
 
-One row is 146,276 variables and 407,904 clauses with balance against 6,612 and
-135,304 without it (row `5da5b4ca2d16`, sha256 `53e63b14...` and `b01fdca1...`).
+One row is 292,436 variables and 706,488 clauses with balance against 6,612 and
+135,304 without it (row `5da5b4ca2d16`). Both sides of the degree window are
+emitted: the lower bound `d_c(v) >= 14` for all 232 (vertex, colour) pairs and the
+upper bound `d_c(v) <= 15`, which is implied by the lower bounds together with the
+count over the 57 edges at `v` but which CDCL does not reach on its own - with the
+lower bounds alone the same row is 146,276 variables and 407,904 clauses, and two
+of the 29 ticket-pin rows ran 300 s there without a verdict. `--dense` additionally
+adds the row threshold, which is what the certified rows carry; `host + units` is a
+relaxation of the certified row, so an UNSAT of the relaxation transfers to the row
+and a SAT of it decides nothing.
 `tools/pb/balance_selftest.py` checks the at-least-14 gadget in **both**
 polarities and checks the edge-literal map against the frozen encoder's; the
 control without balance is not instantly UNSAT, which is the check that the
 retracted encoder of 2026-11-24 would have failed.
+
+## Where perfect balance is arithmetically impossible
+
+Counting edges per colour, `2|E_c| = sum_v d_c(v)`. When `n-1 = 4q` exactly (that
+is `n = 1 mod 4`) every vertex has degree exactly `q` in every colour, so
+`2|E_c| = n q` and the order is impossible when `n q` is odd, i.e. when `q` is odd,
+i.e. when **n = 5 mod 8**. When `n` is not `1 mod 4` the deficient colours move
+between vertices, `sum_v d_c(v) = n q + t_c` with `t_c` the number of vertices whose
+colour-c degree is `q+1`, and the parity condition is satisfiable.
+
+So perfect balance is impossible exactly at n = 5, 13, 21, 29, 37, 45, 53, ...
+(`.scratch/pb/parity.py` checks the claim for every n from 2 to 79). **Among the
+orders 51..58 only 53 is excluded this way**; 51, 52, 54, 55, 56, 57 and 58 are all
+arithmetically live. This corrects a report from `smwvchrlk/m6`, which applied the
+uniform-degree count to K51 and K55, where no uniform degree vector exists at all
+(4t = 50 and 4t = 54 have no integer solution), and to K15, K19 and K23, where the
+degrees are 4/3, 5/4 and 6/5 and the count gives no contradiction.
 
 ## Calibration: perfect balance is not vacuous
 
@@ -132,11 +157,13 @@ not.
 
 ## What the live rows cost
 
-Nothing on the 352 closes at the budgets tried. Row `5da5b4ca2d16` (the 146,276
-variable / 407,904 clause instance, sha256 `53e63b14...`) ran 40 minutes under
-Kissat 4.0.4 on a contended 4-core box and came back UNKNOWN with 557 MB of DRAT
-and no closure in sight; `smwvchrlk/m7` sampled four other live rows at 700 s
-each, all UNKNOWN. For comparison the 29 dead rows close in under 0.2 s each with
+Nothing on the 352 closes at the budgets tried. Row `5da5b4ca2d16` ran 40 minutes
+under Kissat 4.0.4 on a contended 4-core box on the one-sided encoding (146,276
+variables / 407,904 clauses) and came back UNKNOWN with 557 MB of DRAT; rebuilt
+two-sided (292,436 / 706,488) the same row is UNKNOWN after 1,430,758 conflicts at
+8,521 per second with 320 MB of DRAT. So the encoding repair is decisive exactly
+where a local counting contradiction exists and buys nothing here.
+`smwvchrlk/m7` sampled four other live rows at 700 s each, all UNKNOWN. For comparison the 29 dead rows close in under 0.2 s each with
 0.75 MB proofs, so the split between the two halves is not gradual: it is the
 difference between a counting contradiction and a full 58-vertex search.
 
