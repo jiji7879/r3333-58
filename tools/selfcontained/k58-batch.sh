@@ -101,10 +101,10 @@ cmd_finish() {
     echo "## Release"
     echo
     echo '```'
-    cat "$rel.manifest.json"
+    cat "$rel/manifest.json"
     echo '```'
     echo
-    echo "Manifest: \`$(python3 -c "import json;print(json.load(open('$rel.manifest.json'))['manifest_sha256'])")\`"
+    echo "Manifest: \`$(tail -1 "$rel.manifest.log" | python3 -c 'import json,sys;print(json.load(sys.stdin)["manifest_sha256"])')\`"
     echo
     echo "## Verification"
     echo
