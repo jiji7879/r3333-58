@@ -239,6 +239,29 @@ Practical recipe for the handoff:
 
 No patch to the bundle is needed: the row CNF alone is UNSAT in this profile.
 
+### Shorter still: the frozen units alone are contradictory
+
+Swarm member m5 found, and I reproduced, that the row's **frozen units alone** are already
+unsatisfiable -- `host(58) + gluing.units(family, placement)`, with every counter clause
+deleted:
+
+* 135,498 clauses, sha256 `4b4be140fae38664019ac35a802b48221334ac6913de0a7f3355504aab058179`
+  (filter the pilot to clauses whose literals are all <= 6612);
+* kissat UNSAT; DRAT 47,666,743 bytes, `drat-trim` **`s VERIFIED`** (5,267 clauses in core,
+  20,048,679 resolution steps);
+* containment checked clause by clause: all 135,498 are in the row's certified CNF from
+  `tools/pb/balance.py --dense` (196,994 clauses), 0 missing.
+
+So the charge obligation, the counters and the implied families are all unnecessary: the
+root-and-marked-neighbourhood geometry of the row cannot be realised in any triangle-free
+4-colouring of K58. This is a local impossibility, not a case split that happens to be
+empty. The same holds for a charge-9 row of the same profile (`c4726003…`, units alone
+UNSAT). A charge-1 row of `(15,15,14,13)` is the open test.
+
+Cost model for the block: one 135k-clause solve per row, 17-40 s under load, so 13,154 rows
+is roughly 100-150 CPU-hours, 9-13 hours on 12 cores -- with the object being the units
+alone, not the pilot and not the row CNF.
+
 ## Batch status
 
 `tools/gap4` recipe, one pilot per row, `--families ABC`, proof + drat-trim per row,
