@@ -137,11 +137,35 @@ Two certified, by the same recipe and the same `tools/gap4/strengthen.py`:
 Proofs deleted after hashing. So the `T` templates and the marked set do not obstruct the
 recipe; `UUU` and `TTT` pilots are the same formula up to units, as above.
 
+### Third TTT row and the handoff tool
+
+`001567f8…` (marked 15) is also UNSAT: 99 s, 105.8 MB DRAT `s VERIFIED`, CNF sha256
+`d0e7f247788323fe…`, proof sha `58efb9b8318b011f…`. Three of three TTT rows certified
+(269 s, 27 s, 99 s).
+
+`tools/gap4/add_families.py` appends A and B to **any** row CNF built by the campaign's
+encoder, for any profile and arm (same edge numbering, fresh counters for the flags). On
+row 0684ba38's own certified CNF -- `host + 503 units + dense threshold`, 196,994 clauses
+-- it gives 413,249 clauses, 33,585 variables, sha256 `77faf2a9e37008a3…`. That run removes
+the pilot from the argument: if the row's own clause set plus A and B is UNSAT, the closure
+rests only on the two elementary lemmas and the encoder's output, not on the pilot being a
+relaxation.
+
+### Machine-checked chain
+
+Swarm member m4 formalised the two lemmas in Lean 4 + Mathlib: `five_bound`,
+`card_nb_le_sixteen`, `familyB`, `familyC`, `dual_five_bound`, `exact_pattern`, all
+compiling in 2.8 s with no `sorry` and depending only on `[propext, Classical.choice,
+Quot.sound]`, with `R(3,3)=6` and `R(3,3,3)=17` as explicit hypotheses. The repo's Lean core
+already proves both Ramsey facts, so the chain can be made unconditional. `exact_pattern`
+also shows no single-vertex sharpening of B exists: A+B+flag pin the pattern to `(5,5,5)` or
+a permutation of `(4,5,5)`.
+
 ## Batch status
 
 `tools/gap4` recipe, one pilot per row, `--families ABC`, proof + drat-trim per row,
 proof deleted after hashing (log: `.scratch/gap4/batch/cert_{A,B}.tsv`). At the time of
-writing: 24 rows UNSAT with `s VERIFIED` proofs plus the pilot, and the sweep continues.
+writing: 30 rows UNSAT with `s VERIFIED` proofs plus the pilot, and the sweep continues.
 
 ## What this does and does not say
 
