@@ -221,7 +221,8 @@ solved bare, no added family, by kissat 4.0.4 under `nice`.
 | (15,15,15,12) | 5,982 | 9 | row CNF, 199,526 cl | UNSAT | 52 s |
 | (15,15,15,12) | 1,030 | 3 | row CNF, 196,946 cl | UNSAT | 39 s |
 | (15,15,14,13) | 7,732 | 1–3 | row CNF + A + B, 371,324 cl | UNKNOWN | 20 min |
-| (15,15,14,13) | 7,732 | 1 | row CNF, 173,594 cl | running | — |
+| (15,15,14,13) | 7,732 | 1 | row CNF, 173,594 cl | UNKNOWN | 20 min |
+| (15,15,14,13) | 7,732 | 1 | **units alone**, 135,399 cl | **UNKNOWN** | 15 min |
 
 So the whole (15,15,15,12) profile — 20,166 open rows — is refuted by plain solving at a
 median of about 45 s (sweep mean over 18 certified rows: 46 s). That is roughly
@@ -256,7 +257,7 @@ So the charge obligation, the counters and the implied families are all unnecess
 root-and-marked-neighbourhood geometry of the row cannot be realised in any triangle-free
 4-colouring of K58. This is a local impossibility, not a case split that happens to be
 empty. The same holds for a charge-9 row of the same profile (`c4726003…`, units alone
-UNSAT). A charge-1 row of `(15,15,14,13)` is the open test.
+UNSAT). A charge-1 row of `(15,15,14,13)` is now measured three times: row CNF bare UNKNOWN at 20 min, with the families UNKNOWN at 20 min, and **units alone UNKNOWN at 15 min**. The wall does not die from its geometry the way the middle tier does; that is the evidence that the small profiles are a different kind of problem, not merely a harder one.
 
 Cost model for the block: one 135k-clause solve per row, 17-40 s under load, so 13,154 rows
 is roughly 100-150 CPU-hours, 9-13 hours on 12 cores -- with the object being the units
