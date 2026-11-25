@@ -1,0 +1,302 @@
+{
+  "pentagon": {
+    "00001": {
+      "formula_sha256": "58576dd3a65927554fcd1129a949263fa80479a72f0844e1c097027444bec2e7",
+      "proof_sha256": "403f1835ba7e7495369c560366fe17596f2095858fc79462a96fb65d82cb6b21",
+      "verdict": "VERIFIED"
+    },
+    "00002": {
+      "formula_sha256": "73c6a772422c1330185080901475ca37881407263611ab0a9aaa6b57969e56a7",
+      "proof_sha256": "4907565df29e2b5dc0a30b856502c54b030b48e11bfdea1e8048d93496fc20e6",
+      "verdict": "VERIFIED"
+    },
+    "00012": {
+      "formula_sha256": "cb8950f87bdcf690ef3f2778b1ad1bff6a8a682eb477edc1ffb53247cd0dd727",
+      "proof_sha256": "e8847e1aee0dc999a1439aa6787ffd53333d204a0de4d968d8a8d4ba25742acf",
+      "verdict": "VERIFIED"
+    },
+    "00022": {
+      "formula_sha256": "ddf7acc7d0dce6768625fe38565f6eaf6274974da60179b14540ff51441f8d03",
+      "proof_sha256": "090a50d1616145cd5fbd061894725af0172321cadfd75514a19eef5b38e55a39",
+      "verdict": "VERIFIED"
+    },
+    "00101": {
+      "formula_sha256": "52936bd7fd4e1859a50f5314f0ece731b877ef11f223d3798de7cffa1f186ce4",
+      "proof_sha256": "555e8802aa69483e5da83c906e313d11686701a095ec7f3473e241476566b319",
+      "verdict": "VERIFIED"
+    },
+    "00102": {
+      "formula_sha256": "6a592be308e4ea25c2af5f54346dc9ee55060be962588231aac48743d87a5b3b",
+      "proof_sha256": "5819084d3ecb9632e027d9d66af1f87506ced7931125378e150daba1d756ec95",
+      "verdict": "VERIFIED"
+    },
+    "01221": {
+      "formula_sha256": "9665169e313acedd04777314dfdd97365b45de48332130970d956ed92a2b2998",
+      "proof_sha256": "16185c5bb900f568e168cadace8455e74103df53f0f56bb5da91f5e832cd654d",
+      "verdict": "VERIFIED"
+    }
+  },
+  "inputs": {
+    "root": {
+      "source_sha256": "aa23de814810dc2b5515955a0aa318eab72df81c4541006fde253b39c48d2b44",
+      "critical_degrees": [
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          36,
+          0
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          0
+        ]
+      ],
+      "source_core_clauses": 585,
+      "derived_core_clauses": 94,
+      "source_plus_derived_clauses": {
+        "formula_sha256": "a9bb080f20e3f8ba0ce34a0b73da5cf8b2f8e2ef41cecc1d51a5e1c417e804a2",
+        "proof_sha256": "800fe2a73cb9590c05e692cc5c78838070c67ec1de7a18b4787f237418e8fdb1",
+        "verdict": "VERIFIED"
+      },
+      "composed_verdict": "UNSAT"
+    },
+    "n025": {
+      "source_sha256": "eb19101a3def5e5769d2b12977b34742e3c32b1d97219fd8327b5a081030669a",
+      "critical_degrees": [
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          36,
+          0
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          0
+        ]
+      ],
+      "source_core_clauses": 585,
+      "derived_core_clauses": 94,
+      "source_plus_derived_clauses": {
+        "formula_sha256": "89eda3d123166724878583a8fbf462f55cab7ada1c14ffbf809939d89d7ab2ab",
+        "proof_sha256": "800fe2a73cb9590c05e692cc5c78838070c67ec1de7a18b4787f237418e8fdb1",
+        "verdict": "VERIFIED"
+      },
+      "composed_verdict": "UNSAT"
+    },
+    "n026": {
+      "source_sha256": "d57c75469fed06d21452c7552ff8c603142ec425c09fc21ecbb818c83a341ff6",
+      "critical_degrees": [
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          36,
+          0
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          0
+        ]
+      ],
+      "source_core_clauses": 585,
+      "derived_core_clauses": 94,
+      "source_plus_derived_clauses": {
+        "formula_sha256": "e9dbfca16cd931265615af2f56a1030ce1964d9899cd1d51640fe4feb75fb980",
+        "proof_sha256": "800fe2a73cb9590c05e692cc5c78838070c67ec1de7a18b4787f237418e8fdb1",
+        "verdict": "VERIFIED"
+      },
+      "composed_verdict": "UNSAT"
+    },
+    "n027": {
+      "source_sha256": "acd96e2ff90ee47afeb82edd385968a3e902244ac8d4b7de7e2f351c3dc2a255",
+      "critical_degrees": [
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          36,
+          0
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          0
+        ]
+      ],
+      "source_core_clauses": 585,
+      "derived_core_clauses": 94,
+      "source_plus_derived_clauses": {
+        "formula_sha256": "b5d2950276aef3c9a21ab2ca8590c84c38ab1b507a08aed8f51e9818b92cc075",
+        "proof_sha256": "800fe2a73cb9590c05e692cc5c78838070c67ec1de7a18b4787f237418e8fdb1",
+        "verdict": "VERIFIED"
+      },
+      "composed_verdict": "UNSAT"
+    }
+  },
+  "degree": {
+    "formula_sha256": "79a8c579b7e3ee19f20114b38fc950e595acbf3369d8ab9332cebdefc5892c8f",
+    "proof_sha256": "5b2815f29815dbd792c1555af97a8e4514e002f867906c49dbeff6e23a98eeac",
+    "verdict": "VERIFIED"
+  },
+  "core": {
+    "formula_sha256": "462882b9825381fc56528e1e1c15f137a6ccd50895a2091ff31c693cec816084",
+    "proof_sha256": "800fe2a73cb9590c05e692cc5c78838070c67ec1de7a18b4787f237418e8fdb1",
+    "verdict": "VERIFIED"
+  },
+  "row_geometry": {
+    "sha256": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+    "conclusion": "one listed color-degree is at most 14",
+    "vertex_color_pairs": [
+      [
+        7,
+        1
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        33,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        48,
+        0
+      ],
+      [
+        49,
+        0
+      ]
+    ]
+  },
+  "native_replays": {
+    "kissat": {
+      "formula_sha256": "89eda3d123166724878583a8fbf462f55cab7ada1c14ffbf809939d89d7ab2ab",
+      "proof_sha256": "c2e526d88bab4a36abdd9f7d72c1558bfd959b349503edd43df7eb9e720c8638",
+      "verdict": "VERIFIED"
+    },
+    "cadical": {
+      "formula_sha256": "89eda3d123166724878583a8fbf462f55cab7ada1c14ffbf809939d89d7ab2ab",
+      "proof_sha256": "4a24c9cc26eab9b63ab34a92d0de0f07526d6c4c7f902182b11c487ce64536bb",
+      "verdict": "VERIFIED"
+    }
+  }
+}
+WALL 24.75 s

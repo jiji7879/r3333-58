@@ -1,0 +1,9 @@
+..0/388 splits=0 U=0 T=0 BAD=0 0s
+..50/388 splits=0 U=0 T=0 BAD=0 9s
+..100/388 splits=0 U=0 T=0 BAD=0 18s
+..150/388 splits=0 U=0 T=0 BAD=0 27s
+..200/388 splits=0 U=0 T=0 BAD=0 35s
+..250/388 splits=0 U=0 T=0 BAD=0 44s
+..300/388 splits=0 U=0 T=0 BAD=0 53s
+..350/388 splits=0 U=0 T=0 BAD=0 61s
+RESULT n=16 graphs=388 with_split=1 splits=72 U=12 T=60 BAD=0 failures=0 71s
