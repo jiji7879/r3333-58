@@ -161,6 +161,22 @@ already proves both Ramsey facts, so the chain can be made unconditional. `exact
 also shows no single-vertex sharpening of B exists: A+B+flag pin the pattern to `(5,5,5)` or
 a permutation of `(4,5,5)`.
 
+### The strong form: the row's own CNF closes
+
+`tools/gap4/add_families.py` on row 0684ba38's **certified row CNF** -- `host(58) + 503
+units + dense.marked_threshold(tables=True, total_critical=True, full_root=False)`,
+196,994 clauses, built by `tools/pb/balance.py --dense` -- gives 413,249 clauses and
+33,585 variables, sha256 `77faf2a9e37008a33e3c6a7e1fba47fd71a45781444ef219a1989f270e00fa0d`.
+
+* kissat: `s UNSATISFIABLE` in about 50 s
+* DRAT: 55,491,309 bytes, `drat-trim -c` prints **`s VERIFIED`**
+
+So the closure no longer rests on the pilot being a relaxation of the row: the row's own
+clause set plus families A and B is already contradictory. The only inputs are the
+campaign's encoder output and the two elementary lemmas, which are machine-checked in Lean.
+It is also *faster* than the pilot route (50 s against 2-4 minutes), so this is the form to
+hand to the campaign's 12-core batch.
+
 ## Batch status
 
 `tools/gap4` recipe, one pilot per row, `--families ABC`, proof + drat-trim per row,
