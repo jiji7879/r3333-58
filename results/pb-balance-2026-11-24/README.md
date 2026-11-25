@@ -204,3 +204,12 @@ checker line and the time; artifacts are in `.scratch/pb/ticketpin29/`.
 on the one-sided encoding. Before reading anything into that, rebuild them with the
 current `tools/pb/balance.py`; a timeout on the weak encoding is not evidence about
 the mathematics.
+
+**Two-sided does not rescue the live rows.** Row `5da5b4ca` rebuilt with both
+bounds is 292,436 variables / 706,488 clauses (CNF sha256 `8aa68286…`); Kissat
+4.0.4 returns `s UNKNOWN` after 1,430,758 conflicts at 8,521/s (167.9 s process
+time inside a 600 s wall cap) with 320 MB of DRAT. So the encoding repair above is
+decisive exactly where a local counting contradiction exists - the 29 - and buys
+nothing on the 352, where the search is the full 58-vertex problem. The one-sided
+40-minute UNKNOWN and this one differ in nothing that matters: both are timeouts,
+and neither is evidence.
