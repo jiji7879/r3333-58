@@ -238,7 +238,7 @@ not colourings; a timeout remains a timeout. Nothing in the wall section counts 
    pinning flags in this form is not sufficient; do not spend the whole budget on this before
    structural work fails elsewhere.
 4. **All-arm support, with polarity audited.** Use `critical_support` on every appropriate
-   unselected critical arm, not merely the originalem marked arm. Good checks already exist for
+   unselected critical arm, not merely the original marked arm. Good checks already exist for
    support-table implication and for all 744 classified supports. Tests so far were UNKNOWN,
    but one should check whether the same holds with *both* full-root and two-sided critical
    flags, without pretending that one-sided guards imply a maximal bound.
