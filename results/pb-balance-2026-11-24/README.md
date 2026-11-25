@@ -155,3 +155,37 @@ right instance and not a lookalike:
 Caveat recorded: its own DRUP checker reports `RuntimeError('skipped')` on all 29,
 so those rest on `drat-trim` plus my replay, and the checker itself is tested only
 on two small instances.
+
+## The instance and the encoding (gate check, 2026-11-25)
+
+Two things decide whether a verdict here means anything, and both were open.
+
+**`host + units` is a relaxation, not the row.** The certified row CNF is
+`host + units + dense.marked_threshold(tables=True, total_critical=True,
+full_root=False)`. On row `325a259b...` the threshold is 74,555 clauses: 210,068
+clauses in all against the relaxation's 135,304, and rebuilding it through
+`tools/pb/balance.py --dense` reproduces that certified instance clause for clause
+(25,672 variables, 0 differences either way). So an UNSAT of the relaxation
+transfers to the row under perfect balance, and a SAT of it decides nothing. The
+instances recorded above are the relaxation, so every UNSAT there is a statement
+about the row and every timeout there is a statement about nothing.
+
+**The balance encoding must be two-sided.** With only `d_c(v) >= 14`, the ticket-pin
+rows are UNSAT by `16 + 3*14 > 57` yet CDCL does not find it: two of the 29 ran
+300 s and wrote 76 MB and 120 MB of DRAT with no verdict. The implied upper bound
+`d_c(v) <= 15` needs the global count over all 57 edges at `v`, which unit
+propagation does not see. Adding `at_most(15)` per (vertex, colour) - the same
+formula up to an implied clause - turns each of the 29 into a 0.05 s refutation,
+and `tools/pb/balance.py` now emits both sides (146,276 variables / 407,908
+clauses become 292,436 / 706,502).
+
+**The 29, closed by a third encoder.** `tools/pb/close_dead.py` builds each
+ticket-pin row's relaxation, solves it with Kissat 4.0.4 and replays with
+drat-trim: 29/29 UNSAT, `s VERIFIED`, 0.04-0.12 s each, 47 s in total, 23.9 MB of
+proofs. `ticketpin29.tsv` holds per row the CNF sha256, the proof sha256, the
+checker line and the time; artifacts are in `.scratch/pb/ticketpin29/`.
+
+**Consequence for the 352.** The four sampled rows reported UNKNOWN above were run
+on the one-sided encoding. Before reading anything into that, rebuild them with the
+current `tools/pb/balance.py`; a timeout on the weak encoding is not evidence about
+the mathematics.

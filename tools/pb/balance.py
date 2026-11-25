@@ -88,8 +88,18 @@ def build(rid, balance=True, stats=False, dense=False):
             for c in range(4):
                 lits = [edge_lit(v, w, c) for w in range(ORDER) if w != v]
                 assert len(lits) == 57
+                # Both directions.  The upper bound is implied - d_c(v) <= 57 - 3*14 = 15
+                # once the other three colours are at least 14 - but that implication needs
+                # the global count over all 57 edges at v, which CDCL does not get for free:
+                # with the lower bounds alone the 29 ticket-pin rows stay UNKNOWN past 300 s
+                # although they are refutable by 16 + 3*14 > 57.  Adding the upper bound is
+                # sound (same formula, up to the implied clause) and unit-propagates it.
                 enc = CardEnc.atleast(lits=lits, bound=14, top_id=top,
                                       encoding=EncType.seqcounter)
+                clauses.extend([list(x) for x in enc.clauses])
+                top = enc.nv
+                enc = CardEnc.atmost(lits=lits, bound=15, top_id=top,
+                                     encoding=EncType.seqcounter)
                 clauses.extend([list(x) for x in enc.clauses])
                 top = enc.nv
                 nbal += 1
