@@ -291,3 +291,29 @@ reproduced a positive control in `(16,15,15,11)`, which has no open rows in the 
 a charge-10 row is UNSAT in 2.26 s. Difficulty tracks the row's charge and the total
 critical mass, not the template or the marked set, and the campaign's wall is a cover
 that imposes very little.
+## Wall budget: what is and is not available (added after review)
+
+The cover's actual obligations were independently regenerated against the frozen ledger
+(31,751 OPEN rows, including 11,585 in six small profiles; the campaign shorthand saying
+only charges 1-3 is stale). The observed real charges include 1, 2, 3, 4, 5, 7 and 15;
+the per-profile counts and thresholds are checked against the case ledger and joint_plan
+outputs (m3 `budget_tightness.py`, final PASS). `lean/K58/TicketBudget.lean` proves the
+global strict-or-balanced dichotomy and `lean/K58/WallDelimitation.lean` proves the exact
+arithmetic showing why L — "no two colour-degrees below 15" — would kill all six small
+profiles (remaining degree profiles (15,15,15,12), (16,15,15,11), (16,16,15,10),
+(16,16,16,9)).
+
+Integral sender-vector enumeration proves the pigeonhole/charge machinery **tight**: some
+arms can miss every charged threshold at H=M-1, and every charged row has a witness with
+H=M, exactly the total-critical floor D, and exactly its selected charge. Canonical example
+for (15,15,14,13), selected U arm: (2,1,14,13), with H=30 and total-big=3. Georgy (count)
+slack is not a colouring, so this only rules out a free higher universal count; it does not
+preclude a cross-arm lemma. In short, no cheaper universal-charge argument is available.
+
+Two safety hazards accepted from the independent rebuild:
+
+* `tools/pb/balance.py`'s `build()` defaults `balance=True`; CLI invocation defaults it off.
+  Direct API use MUST pass `balance=False`, or perfect balance is smuggled into a wall row
+  and gives an invalid closure. My scripts use the safe CLI path.
+* An entailed family does not change satisfiability, but can still make UNSAT easier for a
+  solver; an UNKNOWN run remains only a timeout, in either direction.
