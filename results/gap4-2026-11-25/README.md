@@ -306,8 +306,8 @@ profiles (remaining degree profiles (15,15,15,12), (16,15,15,11), (16,16,15,10),
 Integral sender-vector enumeration proves the pigeonhole/charge machinery **tight**: some
 arms can miss every charged threshold at H=M-1, and every charged row has a witness with
 H=M, exactly the total-critical floor D, and exactly its selected charge. Canonical example
-for (15,15,14,13), selected U arm: (2,1,14,13), with H=30 and total-big=3. Georgy (count)
-slack is not a colouring, so this only rules out a free higher universal count; it does not
+for (15,15,14,13), selected U arm: (2,1,14,13), with H=30 and total-big=3. That count-level
+slack is not a colouring, so it only rules out a free higher universal count; it does not
 preclude a cross-arm lemma. In short, no cheaper universal-charge argument is available.
 
 Two safety hazards accepted from the independent rebuild:
