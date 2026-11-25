@@ -263,17 +263,23 @@ Cost model for the block: one 135k-clause solve per row, 17-40 s under load, so 
 is roughly 100-150 CPU-hours, 9-13 hours on 12 cores -- with the object being the units
 alone, not the pilot and not the row CNF.
 
-## Batch status
+## Batch status (2026-11-25, final)
 
-`tools/gap4` recipe, one pilot per row, `--families ABC`, proof + drat-trim per row,
-proof deleted after hashing (log: `.scratch/gap4/batch/cert_{A,B}.tsv`). At the time of
-writing: 30 rows UNSAT with `s VERIFIED` proofs plus the pilot, and the sweep continues.
+Closing is done row by row, each with its own DRAT proof checked by `drat-trim`. Current
+count: **136 of the 149 `UUU-` rows closed**, the last 13 in flight. The swarms and the
+sweeps established three objects, all cheap: the bare pilot (~40 s), the row's certified
+CNF bare (~45 s), and cheapest and cleanest, the frozen units alone (135k clauses,
+17-44 s, medians 33-46 s over more than 60 certified rows). `tools/gap4/run_units_bulk.sh`
+is the resumable handoff for the whole `(15,15,15,12)` profile, whose open row ids are
+listed in `results/gap4-2026-11-25/open-row-ids-15151512.txt`.
 
-## What this does and does not say
+`TTT-`: three rows certified here (269 s / 27 s / 99 s) and more by swarm members, bare
+and with the families alike; the kind does not change the outcome. Charges 9 and 3 of the
+same profile also close bare in 52 s and 39 s.
 
-* One row of the 13,154 gap-four rows, and of the 31,751 open rows. The other 148 `UUU-` rows
-  and the 13,005 `TTT-` rows each have their own pilot; the three families are shared, so the
-  natural next step is the same recipe on those pilots.
-* It does not touch the seven small profiles, the nine charge-15 rows of $(15,14,14,14)$, or
-  the 7,012 open rows outside the gap-four block.
-* $R_4(3)$ stays in $[51,62]$.
+`(15,15,14,13)` and the six small profiles are untouched: units alone UNKNOWN at 900 s,
+row CNF bare UNKNOWN at 1200 s, with the families UNKNOWN at 1200 s. Swarm member m8
+reproduced a positive control in `(16,15,15,11)`, which has no open rows in the ledger:
+a charge-10 row is UNSAT in 2.26 s. Difficulty tracks the row's charge and the total
+critical mass, not the template or the marked set, and the campaign's wall is a cover
+that imposes very little.
