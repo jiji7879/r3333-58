@@ -1,0 +1,93 @@
+# Row 0684ba38 (gap four, `UUU-`) is UNSAT
+
+The first closed row of the 13,154 gap-four rows, and the first row this campaign has closed
+without historical evidence. **The bound does not move**: this is one row of 31,751 open, and
+the closure is of a sub-case, not of $R_4(3)\le 58$.
+
+Row `0684ba380d0659cb756d081bfd111a1a7be6882ede00458548288370f5048f01`: family profile
+$(15,15,15,12)$, root kinds `UUU-`, arm 0, mark position 1, marked size 15 kind `T`,
+root position 4, placement $[6,11,0]$, charge 11. Ledger status `OPEN`, branch 442.
+
+## Result
+
+Let $P$ be the bundle's pilot CNF for this row (`.scratch/k58par/campaign/gap_four_UUU_442.cnf.gz`,
+sha256 `740a3d3dcc1e25e10a5bda5745cf57163857b2d800e9018553266192dfe4a6a3`, raw
+`85aea7fce5df2cb9bd3eda9ed8ea85c5e612383f7dbfb063694e2ac2d3e01261`, `p cnf 15613 171455`).
+It is `host(58) + units(family, placement) + the charge-11 counters`, clause for clause.
+
+Adding three **implied** constraint families gives a formula that is **UNSAT**:
+
+| formula | clauses | sha256 |
+| --- | ---: | --- |
+| pilot | 171,455 | `85aea7fc…1261` (raw) |
+| pilot + A + B + C | 355,565 | `e0ecfa7fcf8c5997cdc77497eff45ae806e403cb01fbeb60c25b2ed19f543ed8` |
+
+* kissat 4.0.4: `s UNSATISFIABLE`
+* CaDiCaL 3.0.1: `s UNSATISFIABLE` (independent solver, same CNF)
+* DRAT: 48,197,098 bytes, `drat-trim … -c` prints **`s VERIFIED`**
+  (5,272 of 355,565 clauses in core, 321,914 of 685,327 lemmas, 18,226,859 resolution steps)
+
+Since the pilot is a relaxation of the row and the three families are theorems about any
+triangle-free 4-colouring of $K_{58}$ with this root profile, **the row is UNSAT**.
+
+## The three families
+
+Write $A_0 = N_0(r) = \{1,\dots,15\}$, $A_1 = \{16,\dots,30\}$, $A_2 = \{31,\dots,45\}$,
+$A_3 = \{46,\dots,57\}$, $x_c(a) = |N_0(a)\cap A_c|$, $m(y) = |N_0(y)\cap A_0|$. All three
+facts use only: no monochromatic triangle, and the two counts $R(3,3)=6$, $R(3,3,3)=17$.
+
+**A. $x_c(a)\le 5$ for every $a\in A_0$ and $c\in\{1,2,3\}$.**
+For $y\ne y'\in N_0(a)\cap A_c$: $\chi(yy')\ne 0$ (else $a,y,y'$ is monochromatic) and
+$\chi(yy')\ne c$ (else $r,y,y'$ is, since $y,y'\in A_c$). So $N_0(a)\cap A_c$ is
+2-coloured with no monochromatic triangle, hence has at most $R(3,3)-1 = 5$ vertices.
+
+**B. $d_0(a)\ge 15$ implies $x_c(a)\ge 4$ for every $c\in\{1,2,3\}$.**
+$N_0(a)$ has all internal colours in $\{1,2,3\}$ (colour 0 on $y,y'\in N_0(a)$ would make
+$a,y,y'$ monochromatic) and contains no monochromatic triangle, so it is a triangle-free
+3-coloured complete graph on $d_0(a)$ vertices; a 3-colouring of $K_{17}$ always has a
+monochromatic triangle, so $d_0(a)\le 16$. In a triangle-free 3-colouring every colour
+degree is at most 5 (a colour class of size 6 would be a triangle-free 2-colouring of $K_6$),
+and the three colour degrees of $r$ inside $N_0(a)$ sum to $d_0(a)-1\in\{14,15\}$; they are
+exactly $x_1(a),x_2(a),x_3(a)$. Three numbers $\le 5$ summing to 14 or 15 are each $\ge 4$.
+
+**C. $m(y)\le 12$ for $y\in A_1\cup A_2$.**
+The arm carries a $T/U$ template whose three colour classes have degrees 4 and 5, so $y$ has
+4 or 5 colour-0 neighbours inside its own arm; $d_0(y)\le 16$; hence $m(y)\le 16-4 = 12$.
+
+The same three statements hold for every gap-four row (they never mention the placement), so
+the recipe is row-independent; only the pilot changes.
+
+## The implication chain
+
+1. Pilot $\subseteq$ row. The pilot's `host(58)` is "one colour per edge" plus "no
+   monochromatic triangle", true of any colouring; its 503 units are exactly
+   `gluing.units(family, placement)`; its counters define `flag_a <=> d_0(a) >= 15` and then
+   require at least 11 of the 15 flags — the row's charge-11 obligation. Everything else the
+   row's certified CNF adds (the dense `tables` and `total_critical` restrictions) only makes
+   the row stronger. Audit: `audit_pilot.py` in the swarm's m5 directory rebuilt the pilot as
+   `base(58) + units + extra`, `171455 = 134995 + 503 + 35957`, no difference at any index.
+2. A, B, C are implied by the row (proofs above).
+3. Therefore a colouring satisfying the row satisfies the strengthened CNF, which is UNSAT.
+
+## Reproduce
+
+```sh
+zcat .scratch/k58par/campaign/gap_four_UUU_442.cnf.gz > pilot.cnf        # 85aea7fc…
+python3 tools/gap4/strengthen.py pilot.cnf strong.cnf                   # e0ecfa7f…
+kissat -q --time=3600 strong.cnf strong.drat                            # s UNSATISFIABLE
+drat-trim strong.cnf strong.drat -c                                     # s VERIFIED
+cadical -q strong.cnf                                                   # s UNSATISFIABLE
+```
+
+`tools/gap4/strengthen.py` rebuilds `strong.cnf` bit for bit from the pilot; it rebuilds the
+pilot's flag variables with the same sequential counter the bundle's `campaign/gap_four.py`
+uses, and the rebuilt counter clauses were checked to be a subset of the pilot's (0 missing).
+
+## What this does and does not say
+
+* One row of the 13,154 gap-four rows, and of the 31,751 open rows. The other 148 `UUU-` rows
+  and the 13,005 `TTT-` rows each have their own pilot; the three families are shared, so the
+  natural next step is the same recipe on those pilots.
+* It does not touch the seven small profiles, the nine charge-15 rows of $(15,14,14,14)$, or
+  the 7,012 open rows outside the gap-four block.
+* $R_4(3)$ stays in $[51,62]$.
