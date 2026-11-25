@@ -1,0 +1,401 @@
+{
+ "multiplicity": [
+  {
+   "tag": "dup-2-2121",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "6f055fd573d29a6107cb490fbd721e650561a28d3869098bc9940b1eb604243d",
+   "status": "UNSAT",
+   "proof_sha256": "9ad6caf0500d6fa94a3ea5624f9f1e4dee0ef1298cdef1ba5b48ba9467f88b32",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-2121",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "b2dc286ee0299bf553c939dd571957491e70b3dacc72c8e5f774ed266f81b640",
+   "status": "UNSAT",
+   "proof_sha256": "5ea10272158a20f6054f1c164eba9b29606fffe950d7c9176b30e7f0c3527e89",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-2-10257",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "3cf2958944a8736729638113f6a1874f3aa8f71097d1316961619eddf9cacb33",
+   "status": "UNSAT",
+   "proof_sha256": "10773bf2eb984db700fa6059c5a21635641398f96a455ade8cc7e419c5879aa9",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-2-4417",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "f1732f248e3b830fdab39cce8d40cb05f9e423eac9d27c89f6fd38a71d66105a",
+   "status": "UNSAT",
+   "proof_sha256": "5852e22b9e74ccde4a62678b53a8d4ffc34d08adab67be27823f923fc6f730f6",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-4417",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "c16b5ad6816b0cf6688d945d46789d10e870d17972730116fd6590b2aa010c2c",
+   "status": "UNSAT",
+   "proof_sha256": "ff17a467732e67634d08f6ae51c945c9bd5910f145c83729efdc500b270ed016",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-550",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "72b88ac52b855d84d998f1d9cb5d9d5eecb4baca8c2710b3ecf69c8802bd48cd",
+   "status": "UNSAT",
+   "proof_sha256": "62833f3838a483f4d139e12713ebd49cd309ec3b802bf916bd9edfaf2992b8f0",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-550",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "f65288b2f1e576f59c76246172e246fd42921a70daf2eb2d7103c63999624eb1",
+   "status": "UNSAT",
+   "proof_sha256": "b27a28705572146739bcb62f6891fae35d0b74eec7707adc33496f413f523699",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-1162",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "084bfdae5bf7dd384f2e581ae64aafa53792a92667fb05505b08b07e5a294d36",
+   "status": "UNSAT",
+   "proof_sha256": "7b53f20b5b1793ff4165fc526c9cf9553a31494763f68cdbe48e2611d7da8320",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-2-1162",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "f611da35b67b750dd3f58c875757bf842c6db37942a49213fbac731494913533",
+   "status": "UNSAT",
+   "proof_sha256": "dadcf9b97709f5b7736374aaa3a28d99e7885ea416d9c093d9068d05d8420dfa",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-1162",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "d6e4baf339ce9fff1bab7ffdbf5c07e5dc9ddc6788dc762e4605c31d46f4d520",
+   "status": "UNSAT",
+   "proof_sha256": "c25f66682d5135b35cc49cd1c65d35285665862afbc2780838ac68d353a87b59",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-5154",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "1b564fd56e3a2b34c20eea39af64e435de171a2f9dfb1eebc6d568ae430eca57",
+   "status": "UNSAT",
+   "proof_sha256": "d8ef7b43f2c55c09c59d3da5b43974e416d3a4388280116a13af9c9c2603794a",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-2-5154",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "8c687561a44e9088b245d106538da9abf6d649355b7f117c9da7eccef31ccaa8",
+   "status": "UNSAT",
+   "proof_sha256": "cdba3c8f05f8940a9ea168301ab97a6b7ea943c92fe8c8b84d7f0e2a35f55bf1",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-5154",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "b81cade7e23a84b4a2df71b6865fb2b9b5604a5e8d50a5e2e750f57239157787",
+   "status": "UNSAT",
+   "proof_sha256": "c85b77a00fa01ca075d67a96c4e212179739f62e2f815469f200171096caa567",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-8834",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "836533151f7af9fc919a023a90d6d843747c49e7136fb85df8018315da996d8f",
+   "status": "UNSAT",
+   "proof_sha256": "e0851570fe562266e93e225d79bc49e98e7d5a2f9b6849fc7feb1c48244e05e0",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-2-8834",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "0848e2071ff52ede77dcde6ee2d4aadc66d4e7e6953b717ddc8be497506b4d7f",
+   "status": "UNSAT",
+   "proof_sha256": "4f267b14dfc85df74112f6c6a99df5bbff758f999021fd6a17de64bbc0093b40",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-8834",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "1f8e6cf15a02c0ca5f5f4e5eab9b51e240ae3a947de09313bf76bd96e9899da6",
+   "status": "UNSAT",
+   "proof_sha256": "a3dcbb2dc36593a29b35edb8f44d68e8828f49aa3681e519165ec019982e67f8",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-8724",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "760cfbfe608e8acd466e363b7ad6ca8dabd102bc6b52a4abcdca47a7f91c316a",
+   "status": "UNSAT",
+   "proof_sha256": "d8ce21bb96419d864b434949e6282bb36e2d87b48ccd76c6ab33272bc3329951",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-4388",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "ed642fea28a0f0b35020976b079fe962db932d08e4176d8eb8ab8cfaf8cfbb8a",
+   "status": "UNSAT",
+   "proof_sha256": "37f26eeebe58a713fa0a882a2c448ccf8ccf897f005bbcbe3d4f5d625560a8c1",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-4388",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "10666b0c19243aedacf45740a7a583b31791570592821542ab34f97327063b3c",
+   "status": "UNSAT",
+   "proof_sha256": "7da94a59b2db8ad9860cf3fa08d26905bd29f161a979503cd93d65bf87251e05",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-5192",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "eac037c28cc6f810c3e3cf88606259a50eb00059b6e1a08b60fe0696b3fb0d3c",
+   "status": "UNSAT",
+   "proof_sha256": "d538457ada393e6eb5207fe89b88c18f2e6bfb386e320088639ec50c4434bbcc",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-2-5192",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "49dc482529f323bbbdf4f703cc3dcc1fc234dda08538fe510fe0a86ce343aba0",
+   "status": "UNSAT",
+   "proof_sha256": "076dd93dfb0e744584104447f1cc4bfa4f3193487f6bd4fc176b8387e315991a",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-5192",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "cf70eca76473f22ed1f9694a5ffb677f4a724538ccd6dec68d035cd4340cdde4",
+   "status": "UNSAT",
+   "proof_sha256": "318fa97782a01e9aacdd3e442b1f3eac059a392a8477761305c5a9f9f5e8f71b",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-0-10376",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "5dde3410ca2371489bfbf3b14b593e0c446274da375ef23c5943b29bc3fb879b",
+   "status": "UNSAT",
+   "proof_sha256": "81ad7612b3cf0331641f30b5ad53ab89188ceca44b947f48a194f18e509b71be",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-2-10376",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "a54d2794b64bb444e35ce15aedb7356d411f8c7021db69025ad880cc4836ffe1",
+   "status": "UNSAT",
+   "proof_sha256": "9050992734dae5ec7b6f7cd624ed6dc760202f5a9ec888c194f996b8931bccbb",
+   "drat_verified": true
+  },
+  {
+   "tag": "dup-4-10376",
+   "nv": 1008,
+   "nclauses": 8012,
+   "cnf_sha256": "5b3b4df1f935e5388d587238ee5dc7b37b32cbd8ce8be2b7efaba00da5df7c2a",
+   "status": "UNSAT",
+   "proof_sha256": "524f609a0f979d62aca13f36cf0f65c9f8cd6a0844016f3810858e6a448a0083",
+   "drat_verified": true
+  }
+ ],
+ "controls_nonexceptional": [
+  {
+   "tag": "cap4-4-15",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "504268f08084ccae1902be0059d75b2c6e59fdb9a08110df02736203203cae3b",
+   "status": "UNSAT",
+   "proof_sha256": "c77cf0e9c42e4d8fd018d3ff0084e078a3a00354a0b9e6e9a3901c801406c75c",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-4-8229",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "5d95722fa2990935faf2e67e34781e886d813dc0690073eb66481554c251889c",
+   "status": "UNSAT",
+   "proof_sha256": "d46026ac790721f7e0cee0053922776d13ad235ba8b28e119d75a0c6c169b0bf",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-2-209",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "c5c2521e697ab210fc553c74c0188c44532940bfa2ff7de73040a47085a5c4cc",
+   "status": "UNSAT",
+   "proof_sha256": "e35d27d2bafdc25c6219fe6013ea42c54cb679dbe8af6ca63e5f18ee750b0389",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-2-2689",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "7dee1e2b737c3ca7a4b16c617c169e6d6c47f30a067c620b418abbcaf3828083",
+   "status": "UNSAT",
+   "proof_sha256": "b4f8ebbafeac9d0f9f852a14a1c78ff940894c43483e41d86124d79b9aeb471b",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-10246",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "a592b8f4b3249dd7e439b719457e6fd22625adc60cbac412a3bf5b355bcfb411",
+   "status": "UNSAT",
+   "proof_sha256": "3630284199c761824bb0e2f2ca3109a921dd0ffe8f4574dcc55bedf03e64564f",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-12306",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "8d3f75ddf6b5723f8083332c57eb7943795c028806ffcd94f24c03306871701e",
+   "status": "UNSAT",
+   "proof_sha256": "aea80b93c85401a21d89365ff3988258c1691656fb0d65d626cf94cb0d754708",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-13314",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "239fad46c0ab6c6e55dac2d745d7866ae9f1889dafe7a9bc1dfb1e94901fbc50",
+   "status": "UNSAT",
+   "proof_sha256": "f5fecde5eccc27dac2414715c082ce09c60bdd90082b3bfa96bea83c6d75101c",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-12308",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "28259001d497f025a6cb9fe6650d86585f44b1b062c7473bf115f66d82e76e55",
+   "status": "UNSAT",
+   "proof_sha256": "01ef10946d6954690e2bf5234167c167d9c2162058b9150ecc99c9700690025b",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-11268",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "21c053ebd5b6216718f1fa3681caa5d77ae574a5049ac1d94bfe04d58feaa457",
+   "status": "UNSAT",
+   "proof_sha256": "df45bafe5063da3ac7bbd761a9df10e64cd2dff81bda6fab0c76f57996d2dd37",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-8776",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "56feab56b4a1f3f7c88463e24a615390eade79a6dd3095e71d1ca19d46b489ef",
+   "status": "UNSAT",
+   "proof_sha256": "bc96d172d142547c50905acd601c3822e3729a4f620e822004ce235959eeb161",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-4688",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "bb0669600a6d8cbb91fe69f7268abd7e6e681a4402f74b75f9cfec03a423ace1",
+   "status": "UNSAT",
+   "proof_sha256": "1d33656e21fdc2a5834e3d80c8accd29b654ce146a460342dd5df450ff3aaf24",
+   "drat_verified": true
+  },
+  {
+   "tag": "cap4-0-4896",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "bd44ee912a169b9bc7e85e82b75efba8612f141feeef414f29af441e4beb28dd",
+   "status": "UNSAT",
+   "proof_sha256": "48040ea55d245a4e70bf77cfb1be5cd7f618af5f48536248591db1b4799fa11b",
+   "drat_verified": true
+  }
+ ],
+ "controls_capacity5": [
+  {
+   "tag": "cap5-2-2121",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "09e5b76f40d4fb00eccc2cc32e606737758089553314d4e2ca7ea263549f0cde",
+   "status": "SAT",
+   "proof_sha256": null,
+   "drat_verified": null,
+   "model_ok": true
+  },
+  {
+   "tag": "cap5-2-10257",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "1d0cc477889e1b382e0e097eee43aff7b97c030d877d6e2015c02afcfd97cf77",
+   "status": "SAT",
+   "proof_sha256": null,
+   "drat_verified": null,
+   "model_ok": true
+  },
+  {
+   "tag": "cap5-2-4417",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "0a7b6477879c1788470e826066f55ee7c117b91b19f0dbc0effad8b7e4d7bc3b",
+   "status": "SAT",
+   "proof_sha256": null,
+   "drat_verified": null,
+   "model_ok": true
+  },
+  {
+   "tag": "cap5-0-550",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "76814894574a133359dd2535f5a5f8e84b70022876e0239e690bd8f69de335f1",
+   "status": "SAT",
+   "proof_sha256": null,
+   "drat_verified": null,
+   "model_ok": true
+  },
+  {
+   "tag": "cap5-0-1162",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "8464f6ccf1c1c5abeb5aa1c3e504037abe961facb29d5461fe52e758a2e16fc4",
+   "status": "SAT",
+   "proof_sha256": null,
+   "drat_verified": null,
+   "model_ok": true
+  },
+  {
+   "tag": "cap5-0-5154",
+   "nv": 918,
+   "nclauses": 7060,
+   "cnf_sha256": "20002e86389603f20af51c9e7b9f34840231e58a13d8b4b51d96f9baa306cc38",
+   "status": "SAT",
+   "proof_sha256": null,
+   "drat_verified": null,
+   "model_ok": true
+  }
+ ]
+}

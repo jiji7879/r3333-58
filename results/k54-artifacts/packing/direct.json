@@ -1,0 +1,86 @@
+[
+ {
+  "pole": 0,
+  "outsiders": 3,
+  "nv": 1711,
+  "nclauses": 11766,
+  "cnf_sha256": "b2067b6cb9345b2b53b0b3a3668d9444f19f3f6cf138cdf2f7d40bdecabaab97",
+  "status": "SAT",
+  "model_ok": true
+ },
+ {
+  "pole": 0,
+  "outsiders": 4,
+  "nv": 1999,
+  "nclauses": 13617,
+  "cnf_sha256": "0de926938e3181891c01a86a6c675d66383f147c1d27485b4faeb74c4a6795d8",
+  "status": "SAT",
+  "model_ok": true
+ },
+ {
+  "pole": 0,
+  "outsiders": 5,
+  "nv": 2291,
+  "nclauses": 15594,
+  "cnf_sha256": "3decd5cb1e3b36892b97d57af8993b10bd9cea8a8308c4815cb634f90f155afa",
+  "status": "UNSAT",
+  "proof_sha256": "cc2818821ac97fe6b7c64dfc57a5789e875bb226f6034e0636c2d4ed25baefc4",
+  "drat_verified": true
+ },
+ {
+  "pole": 2,
+  "outsiders": 3,
+  "nv": 1711,
+  "nclauses": 11766,
+  "cnf_sha256": "a9c28782d87de83d05dd4435bef4d9f4cd5ba418ff3e55f145f65331401e482d",
+  "status": "SAT",
+  "model_ok": true
+ },
+ {
+  "pole": 2,
+  "outsiders": 4,
+  "nv": 1999,
+  "nclauses": 13617,
+  "cnf_sha256": "5c0b08b348c7ed376a6c198c5dffe57be771a30b7f519ad8c4617ab8665a28d9",
+  "status": "SAT",
+  "model_ok": true
+ },
+ {
+  "pole": 2,
+  "outsiders": 5,
+  "nv": 2291,
+  "nclauses": 15594,
+  "cnf_sha256": "154c41362c04770f3e4a4f3ab48e5b38e135ebcb8e56c603ce063f204d2010c9",
+  "status": "UNSAT",
+  "proof_sha256": "d8146b63bb18f4c5ed9efb15b3603e78be53856613b335d68ba5216785dd79b4",
+  "drat_verified": true
+ },
+ {
+  "pole": 4,
+  "outsiders": 2,
+  "nv": 1427,
+  "nclauses": 10037,
+  "cnf_sha256": "56102f1f4db24006cf11b6a757166d4616ae9de1b4a571d76af25f1d0cb7ac64",
+  "status": "SAT",
+  "model_ok": true
+ },
+ {
+  "pole": 4,
+  "outsiders": 3,
+  "nv": 1711,
+  "nclauses": 11766,
+  "cnf_sha256": "bd9646ebed346909472d4fab99103c83ad7d90c268a69ea6841255bf5461c34b",
+  "status": "SAT",
+  "model_ok": true
+ },
+ {
+  "pole": 4,
+  "outsiders": 4,
+  "nv": 1999,
+  "nclauses": 13617,
+  "cnf_sha256": "0db5f263f537f40e4cae7b2a84ce4837db556b59c2bab86a601fccd29a7407f3",
+  "status": "UNSAT",
+  "proof_sha256": "107fe03f95e9b12c2bc3e64ebba17f6314a4f523a58742a28ed5dbf5151c3c47",
+  "drat_verified": true
+ }
+]

@@ -1,0 +1,14 @@
+board	columns	classes	caps	price_rows	rowsum_relaxation	nonzero_rowsums	archive
+fresh-07	8619	7203	4344	1	OPEN		open
+live-02	10917	5869	3333	12	OPEN		open
+live-07	495	3178	410	6	FEASIBLE	16	open
+live-13	12110	6313	3943	1	FEASIBLE	25	open
+live-14	672	3328	480	6	FEASIBLE	18	open
+live-16	12216	5239	3782	0	FEASIBLE	25	open
+live-17	2473	5256	3291	65	INFEASIBLE		excluded
+local-09	18475	8096	4782	0	OPEN		open
+local-15	717	4758	698	7	FEASIBLE	15	open
+local-17	14050	8070	4707	0	OPEN		open
+local-20	8539	4613	2800	5	FEASIBLE	23	open
+local-22	10800	5781	3261	1	FEASIBLE	24	open
+local-24	12911	7172	4272	0	FEASIBLE	26	open

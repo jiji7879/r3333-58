@@ -1,0 +1,1 @@
+'unsat_core_s' depends on axioms: [propext, Classical.choice, Quot.sound]
