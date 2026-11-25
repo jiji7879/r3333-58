@@ -134,5 +134,24 @@ not.
 
 | statement | rows | how |
 | --- | ---: | --- |
-| dead under perfect balance | 29 | Lemma 1, hand proof, four independent checks |
-| open under perfect balance | 352 | solver; one instance run to a 40-minute cap, see below |
+| dead under perfect balance | 29 | Lemma 1 by hand, and now replay-checked UNSAT by an independent encoder |
+| open under perfect balance | 352 | UNKNOWN at 700 s on four sampled rows; one instance run here to a 40-minute cap |
+
+## Replay-checked certificates for the 29
+
+`smwvchrlk/m7` built a second encoder from scratch and closed the 29 rows with
+Kissat 4.0.4 text DRAT, ~0.75 MB and under 0.2 s each, `drat-trim` reporting
+`s VERIFIED`. I verified one end to end here and checked that its CNF is the
+right instance and not a lookalike:
+
+* all 134,995 host clauses of `gluing.host(58)` are present (one-hot, at-most-one
+  and every monochromatic-triangle clause), as sorted multisets;
+* its 323 unit clauses are set-equal to `gluing.units` for that row, and among all
+  381 rows exactly one has that unit set, so the CNF is that row;
+* `drat-trim` on `c5eff016e42f_exact.cnf` with its proof gives `s VERIFIED`;
+* the 29 UNSAT ids in its ledger are exactly the 29 rows the hand proof kills;
+* three `balance=none` controls come back UNKNOWN, not UNSAT.
+
+Caveat recorded: its own DRUP checker reports `RuntimeError('skipped')` on all 29,
+so those rest on `drat-trim` plus my replay, and the checker itself is tested only
+on two small instances.
