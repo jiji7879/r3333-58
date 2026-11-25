@@ -170,3 +170,22 @@ safe to run repeatedly.
 Progress lands in `batch-state/batch.log`; the final summary in `RUN_SUMMARY.md`.
 Upload `release/manifest.json`, `release/cases.jsonl.gz` and the summary; the
 certificates in `evidence/` stay on disk.
+
+## Selecting rows by ledger status (added 2026-11-25, version 2026-11-25)
+
+`./k58.sh run` takes `--status`, a comma list of the frozen ledger's statuses, and
+defaults to `OPEN`. That is how the rows which carry only historical evidence get a
+direct certificate instead of an imported one:
+
+    ./k58.sh run --status CERTIFIED,PROFILE_EXCLUSION,TEMPLATE_EXCLUSION \
+                 --seconds 900 --conflicts 20000000 --workers 12
+
+selects 2,144 rows - 1,743 whose certificates live in an archive that is not here, and
+401 that rest on profile/template exclusion arguments. Everything else is unchanged:
+`--publication` keeps compressed certificates, the runner skips any case that already has
+a `verified.json`, and `./k58-batch.sh finish` then rebuilds the manifest over the whole
+evidence directory. `k58-batch.sh finish` also reads `release/manifest.json` where
+`finalise` writes it now, so the summary no longer dies after a finished replay.
+
+`dist/k58-solver.zip` of this build is
+`b5ddba180508e9e4059742fe20529f7b56219b784080dc656a94581b2038ac4b`, version `2026-11-25`.

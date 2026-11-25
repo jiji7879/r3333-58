@@ -16,7 +16,7 @@
 #   ./k58.sh pin        pin the encoding (recipe + encoder revision + CNF hashes)
 set -uo pipefail
 cd "$(dirname "$0")"
-K58_VERSION="2026-11-23"
+K58_VERSION="2026-11-25"
 ROOT=$PWD
 BUNDLE=$ROOT/k58
 export PATH="$ROOT/bin:$PATH"
@@ -98,7 +98,7 @@ cmd_run() {
     "$PY" "$BUNDLE/profile_fast.py" "${forwarded[@]}"
     return $?
   fi
-  local profile="" shards=1 shard=0 workers=4 tier=first seconds=12 conflicts=400000 limit=""
+  local profile="" shards=1 shard=0 workers=4 tier=first seconds=12 conflicts=400000 limit="" status=""
   local check_seconds=${K58_CHECK_SECONDS:-300}
   while [ $# -gt 0 ]; do case "$1" in
     --profile) profile=$2; shift 2;; --shards) shards=$2; shift 2;;
@@ -106,6 +106,7 @@ cmd_run() {
     --tier) tier=$2; shift 2;; --limit) limit=$2; shift 2;;
     --seconds) seconds=$2; shift 2;; --conflicts) conflicts=$2; shift 2;;
     --out) EV=$2; shift 2;; --check-seconds) check_seconds=$2; shift 2;;
+    --status) status=$2; shift 2;;
     *) die "unknown option $1";;
   esac; done
   mkdir -p "$EV"
@@ -115,6 +116,7 @@ cmd_run() {
   [ "$tier" = first ] && args+=(--seconds "$seconds" --conflicts "$conflicts")
   [ -n "$profile" ] && args+=(--profile "$profile")
   [ -n "$limit" ] && args+=(--limit "$limit")
+  [ -n "$status" ] && args+=(--status "$status")
   export K58_CHECK_SECONDS=$check_seconds
   echo "shard $shard/$shards ${profile:-all profiles}, tier $tier, $workers workers, checker cap ${check_seconds}s"
   echo "rerun the identical command to resume."

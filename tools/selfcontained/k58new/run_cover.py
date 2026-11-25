@@ -26,7 +26,8 @@ def open_rows(args):
     with gzip.open(args.ledger, "rt") as handle:
         for line in handle:
             row = json.loads(line)
-            if row["status"] != "OPEN" and not getattr(args, "include_closed", False):
+            wanted = getattr(args, "statuses", None) or {"OPEN"}
+            if row["status"] not in wanted and not getattr(args, "include_closed", False):
                 continue
             assert row["id"] == case_id(row), row["id"]
             if ids := getattr(args, "case_ids", None):
@@ -212,11 +213,16 @@ def main():
     p.add_argument("--trim",action="store_true")
     p.add_argument("--publication", action="store_true",
                    help="Store replayable compressed certificates, exact recipes and execution evidence")
+    p.add_argument("--status", default="OPEN",
+                   help="Comma-separated ledger statuses to select (default OPEN); "
+                        "e.g. CERTIFIED,PROFILE_EXCLUSION,TEMPLATE_EXCLUSION for the "
+                        "rows that only carry historical evidence")
     p.add_argument("--include-closed", action="store_true",
                    help="Also solve selected historically closed rows, for direct certificates")
     p.add_argument("--case-id", action="append", dest="case_ids", metavar="SHA256",
                    help="Select a specific case ID, repeatable")
     args = p.parse_args()
+    args.statuses = {s.strip() for s in args.status.split(",") if s.strip()}
     if args.workers < 1 or not 0 <= args.shard < args.shards:
         p.error("Use at least one worker and a shard index in [0, shards).")
     args.kissat = str(Path(args.kissat).resolve())
