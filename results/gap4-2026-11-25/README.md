@@ -107,11 +107,41 @@ networkx VF2 agreeing). The same run reports all 13,154 gap-four rows and all 83
 the profile as singletons. So a certified refutation closes exactly its own row; the batch
 below is per row, and the recipe (not the result) is what transports.
 
+## Framing correction (verified 2026-11-25)
+
+The two pilots of the block are the same formula up to their units: the UUU pilot
+(0684ba38) and a TTT pilot (0013b1f1) have 170,935 non-unit clauses that are **equal as
+sorted lists**, and their 520 unit clauses differ in 151 entries only. Every model of a
+pilot is a triangle-free 4-colouring of K58, so family B holds in **every** model of
+**every** gap-four pilot. Consequently B cannot change satisfiability:
+
+> the recipe closes a row exactly when that row's pilot is unsatisfiable.
+
+B is a proof aid, not the semantic reason. The semantic content is that the pilot is
+UNSAT; B is what makes that provable in minutes rather than not at all. The same holds for
+A and C. (Found by swarm member m2, re-checked here by rebuilding both pilots.)
+
+If a pilot ever comes back SAT, no implied family can close that row, and the lever is the
+row's own `total_critical`: at least `2*45-57 = 33` of the 45 vertices of A0 u A1 u A2 must
+be senders, of which the pilot keeps only the arm-0 half. That path is untested.
+
+## TTT rows (the 13,005-row group)
+
+Two certified, by the same recipe and the same `tools/gap4/strengthen.py`:
+
+| row | marked size | CNF sha256 | verdict | time | DRAT |
+| --- | ---: | --- | --- | ---: | --- |
+| 0013b1f1… | 15 | `e603f44ccbf2e663…` | UNSAT | 269 s | 176.0 MB, `s VERIFIED`, proof sha `0d521ca1…` |
+| 027fe1f8… | 16 | `a230bdc50f1f422d…` | UNSAT | 27 s | 32.5 MB, `s VERIFIED`, proof sha `f9b0dccc…` |
+
+Proofs deleted after hashing. So the `T` templates and the marked set do not obstruct the
+recipe; `UUU` and `TTT` pilots are the same formula up to units, as above.
+
 ## Batch status
 
 `tools/gap4` recipe, one pilot per row, `--families ABC`, proof + drat-trim per row,
 proof deleted after hashing (log: `.scratch/gap4/batch/cert_{A,B}.tsv`). At the time of
-writing: 6 rows UNSAT with `s VERIFIED` proofs plus the pilot, and the sweep continues.
+writing: 24 rows UNSAT with `s VERIFIED` proofs plus the pilot, and the sweep continues.
 
 ## What this does and does not say
 
