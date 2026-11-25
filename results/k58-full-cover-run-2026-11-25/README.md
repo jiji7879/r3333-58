@@ -52,6 +52,14 @@ tier). `full_root` is the `H(r) >= w(r)` strengthening, which the campaign verif
 the row's charge pin, so both are sound - but a write-up should say that 21,175 of the 98,142 rest
 on the stronger recipe rather than leave it implicit.
 
+## Re-run the audit
+
+`tools/audit_release.py BUNDLE_DIR` does all of the above in one command - hashes, id set,
+counts, the profile cross-tab, the generator hashes (with `run_cover.py` allowed to differ,
+since the shipped package patches the checker cap) and the sampled CNF reproductions. On the
+bundle above it prints `AUDIT PASSED`, 12 of 12. Use it on the next release instead of
+re-deriving the checks.
+
 ## What was not checked
 
 The 98,142 proofs. The replay line is theirs: `verify_parallel.py` rebuilds each CNF, checks it
