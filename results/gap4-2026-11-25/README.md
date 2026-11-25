@@ -209,6 +209,36 @@ campaign's encoder output and the two elementary lemmas, which are machine-check
 It is also *faster* than the pilot route (50 s against 2-4 minutes), so this is the form to
 hand to the campaign's 12-core batch.
 
+## The tiers, measured (2026-11-25)
+
+Every row below was built with `tools/pb/balance.py --dense` (or the bundle's pilot) and
+solved bare, no added family, by kissat 4.0.4 under `nice`.
+
+| profile | open rows | charge | object | verdict | time |
+| --- | ---: | --- | --- | --- | ---: |
+| (15,15,15,12) | 13,154 | 11 | pilot, 171,455 cl | UNSAT | 41 s (certified) |
+| (15,15,15,12) | 13,154 | 11 | row CNF, 196,994 cl | UNSAT | 44 s |
+| (15,15,15,12) | 5,982 | 9 | row CNF, 199,526 cl | UNSAT | 52 s |
+| (15,15,15,12) | 1,030 | 3 | row CNF, 196,946 cl | UNSAT | 39 s |
+| (15,15,14,13) | 7,732 | 1–3 | row CNF + A + B, 371,324 cl | UNKNOWN | 20 min |
+| (15,15,14,13) | 7,732 | 1 | row CNF, 173,594 cl | running | — |
+
+So the whole (15,15,15,12) profile — 20,166 open rows — is refuted by plain solving at a
+median of about 45 s (sweep mean over 18 certified rows: 46 s). That is roughly
+250 CPU-hours, about a day on 12 cores, using the shipped solver and no new machinery.
+The small profiles are the opposite: a charge-1 row of (15,15,14,13) does not close in
+20 minutes even with the families, and the families are entailed by the row anyway, so
+they cannot close it. Difficulty tracks the row's charge, not the profile: charge 9 and 3
+rows fall in under a minute, charge 1 does not fall at all in this budget.
+
+Practical recipe for the handoff:
+
+    python3 tools/pb/balance.py ROW_ID row.cnf --dense
+    kissat -q --time=600 row.cnf row.drat          # expect ~45 s in (15,15,15,12)
+    drat-trim row.cnf row.drat -c                  # s VERIFIED
+
+No patch to the bundle is needed: the row CNF alone is UNSAT in this profile.
+
 ## Batch status
 
 `tools/gap4` recipe, one pilot per row, `--families ABC`, proof + drat-trim per row,
