@@ -184,6 +184,22 @@ where a local counting contradiction exists and buys nothing here.
 0.75 MB proofs, so the split between the two halves is not gradual: it is the
 difference between a counting contradiction and a full 58-vertex search.
 
+**The cost of the balance condition, measured on a ladder.** `smwvchrlk/m1` held one
+pinned instance fixed and varied only the degree window, reporting the median number
+of monochromatic triangles at which local search reaches zero degree violations (I
+recomputed every figure from its logs):
+
+| window | {14,15} | {13,15} | {13,16} | {12,16} | {11,17} | none |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| median residual | 1442 | 1163 | 1064 | 934 | 682 | 458 |
+
+So perfect balance costs a factor of about 1.8 to 3.1 in residual triangles, the
+cost is monotone in the window with no cliff near {14,15} - widening is therefore
+not a route to making these rows searchable - and even with no degree constraint the
+search stalls at 458 triangles on the same instance. This is reachability under two
+fixed local-search algorithms, not a bound and not a statement about CDCL, and the
+search never reaches zero in any window.
+
 **Where the hardness sits, measured.** `smwvchrlk/m1` ran local search on a live
 row: the degree violations are driven to **zero** while the colouring still stalls
 at about **1,100 monochromatic triangles**. So perfect balance is not what blocks
