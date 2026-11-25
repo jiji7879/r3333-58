@@ -167,6 +167,13 @@ where a local counting contradiction exists and buys nothing here.
 0.75 MB proofs, so the split between the two halves is not gradual: it is the
 difference between a counting contradiction and a full 58-vertex search.
 
+**Where the hardness sits, measured.** `smwvchrlk/m1` ran local search on a live
+row: the degree violations are driven to **zero** while the colouring still stalls
+at about **1,100 monochromatic triangles**. So perfect balance is not what blocks
+the search - triangle-freeness is. That matches the one consistent measurement in
+this line: dropping the codegree law entirely still leaves the base instance
+unsolved, so the obstruction is (L2).
+
 **No isomorphism reduction is available.** `smwvchrlk/m4` computed the orbit
 decomposition of the 381 pinned instances: **381 classes, 381 rows** - no two rows
 are isomorphic, so the 352 cannot be collapsed into a smaller set of
