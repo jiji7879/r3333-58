@@ -1,6 +1,7 @@
 # Verification record for the manuscript
 
-Preparation date: 25 November 2026. The mathematical source snapshot began at
+Preparation began on 25 November 2026; the latest verification update was on
+26 November 2026. The mathematical source snapshot began at
 `35140c07b27e922dfa0fde19dafdaa4b0bf703fe`; independent reviewers also saw the
 concurrent classification/handoff revision `abf04ef8458e3a4760cbefa31654e0fe3490360c`.
 The manuscript and its supplementary files are new deliverables, not results that
@@ -101,19 +102,44 @@ modifying the source certificate.
 
 ### Base K58 build
 
-The first attempt exposed an incomplete upstream cache and a path mismatch:
-`build-catalogue.sh` writes `replay/.catalogue`, whereas `build.sh` looked for
-`.catalogue`. `lean/build.sh` and its ignore rule have been corrected, the
-upstream closure is being rebuilt, and the temporary local symlink has been
-removed.
+The initial catalog/cache attempt exposed an incomplete upstream cache and a
+path mismatch: `build-catalogue.sh` writes `replay/.catalogue`, whereas
+`build.sh` looked for `.catalogue`. The path and its ignore rule were corrected,
+and the temporary local symlink was removed. The upstream catalogue closure was
+then rebuilt successfully.
 
-The first draft commit `6ed6a79` explicitly marked both this rebuild and the
-additional semantic enumeration as unfinished. The semantic check has since
-completed as recorded above. **The full base rebuild remains running at the
-latest verification update; no successful base-build result is claimed yet.**
-The common 496-certificate replay, the supplementary conditional Lean check and
-the completed semantic-table audit are separate completed checks and do not
-depend on treating this running job as a pass.
+The long first run ended after **1 h 19 min** at `K58/Check.lean`, where three
+registered `pb_*` constants were unknown. The corresponding `PBRoot.olean` had
+already built; the cause was that `Check.lean` registered the three theorems
+without importing `K58.PBRoot`. Adding that import preserved every check and
+fixed the build. No theorem or hypothesis was weakened.
+
+The final check was:
+
+```sh
+cd lean
+export LEAN_PATH="$PWD:$PWD/replay/.catalogue/lib:$LEAN_PATH"
+bash build.sh > ../.scratch/manuscript/lean-build-fixed.log 2>&1
+python3 replay/check_build.py . ../.scratch/manuscript/lean-build-fixed.log
+```
+
+It exited 0 and reported:
+
+```text
+370 registered K58 declarations checked
+370 distinct declarations with axiom records in the supplied log
+Every reported axiom list is a subset of [propext, Classical.choice, Quot.sound].
+The K58 sources passed the placeholder scan.
+```
+
+**The base library rebuild and axiom audit now pass.** The successful logs are
+retained as `audit/k58-base-build.log` and `audit/k58-axioms-check.log`.
+The first draft commit `6ed6a79` had conservatively marked this build unfinished;
+this section supersedes that interim status.
+
+This base-library check is distinct from both the 1,588-module generated cover
+replay and the 496-certificate common-critical theorem. It does not turn the
+latter into a pure Lean-kernel proof and does not establish the full CNF bridge.
 
 ## What was not independently rerun or established for this paper
 

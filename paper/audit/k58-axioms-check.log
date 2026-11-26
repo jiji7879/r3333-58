@@ -1,0 +1,4 @@
+370 registered K58 declarations checked
+370 distinct declarations with axiom records in the supplied log
+Every reported axiom list is a subset of [propext, Classical.choice, Quot.sound].
+The K58 sources passed the placeholder scan.

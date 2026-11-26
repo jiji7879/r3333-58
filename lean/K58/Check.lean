@@ -41,6 +41,7 @@ import K58.ProfilesIncidence
 import K58.ArmLayer
 import K58.PlacementsIneq
 import K58.SixCycle
+import K58.PBRoot
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
