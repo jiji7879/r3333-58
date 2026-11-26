@@ -1,0 +1,51 @@
+{
+  "date_utc": "2026-11-26T07:03:28.953352+00:00",
+  "excluded_live_or_retained_swarms": [
+    "smwx73ni9"
+  ],
+  "archive": "dist/ultramath-source-2026-11-26.tar.gz",
+  "archive_sha256": "277ddd914adaa82d1aade0f0f860f2e6fd97cd7016f1d7d038c9e125b161c445",
+  "archive_bytes": 1826554796,
+  "files_archived": 59380,
+  "raw_file_records": 98294,
+  "includes_raw_drat_or_lrat": false,
+  "selection": {
+    "suffixes": [
+      ".bib",
+      ".c",
+      ".cc",
+      ".cert",
+      ".cnf",
+      ".col",
+      ".cpp",
+      ".csv",
+      ".dimacs",
+      ".g6",
+      ".gap",
+      ".gp",
+      ".graph6",
+      ".h",
+      ".json",
+      ".jsonl",
+      ".lean",
+      ".log",
+      ".m",
+      ".md",
+      ".model",
+      ".proof",
+      ".py",
+      ".sage",
+      ".sh",
+      ".sql",
+      ".tex",
+      ".toml",
+      ".tsv",
+      ".txt",
+      ".yaml",
+      ".yml"
+    ],
+    "maximum_bytes_per_file": 4194304
+  },
+  "note": "Archive is bounded source/text evidence, not raw-proof preservation. Index paths show original locations, not surviving local paths."
+}
+36 old swarms inventoried; 59380 text/witness files archived and verified.

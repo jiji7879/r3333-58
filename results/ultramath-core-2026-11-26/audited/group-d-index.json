@@ -1,0 +1,173 @@
+{
+  "audit": {
+    "swarm": "smwx73ni9",
+    "member": "m4",
+    "group": "D",
+    "registered_direction": "d3 (cross-swarm dedupe/redundancy engineering for Group D)",
+    "date": "2026-11-26",
+    "scope": "archival/verification audit of four old swarms; no solver run, no deletion, no repo write",
+    "reports": {
+      "smwr3llof": ".ultramath/smwx73ni9/m4/smwr3llof.md",
+      "smwp3xc7p": ".ultramath/smwx73ni9/m4/smwp3xc7p.md",
+      "smwvg1m43": ".ultramath/smwx73ni9/m4/smwvg1m43.md",
+      "smwswz4x9": ".ultramath/smwx73ni9/m4/smwswz4x9.md"
+    },
+    "evidence_files": [
+      ".ultramath/smwx73ni9/m4/evidence/verdicts_smwr3llof.txt",
+      ".ultramath/smwx73ni9/m4/evidence/verdicts_smwp3xc7p.txt",
+      ".ultramath/smwx73ni9/m4/evidence/verdicts_smwvg1m43.txt",
+      ".ultramath/smwx73ni9/m4/evidence/verdicts_smwswz4x9.txt (empty: no judge text in transcripts)",
+      ".ultramath/smwx73ni9/m4/evidence/task1_<swarm>.txt (verbatim task text per swarm)",
+      ".ultramath/smwx73ni9/m4/evidence/raw_submit_board.json",
+      ".ultramath/smwx73ni9/m4/evidence/board-final.json (last board snapshot per swarm; mid-run for smwr3llof and smwp3xc7p)",
+      ".ultramath/smwx73ni9/m4/evidence/file-manifest.json (path,bytes,sha256 for all 12,741 files)",
+      ".ultramath/smwx73ni9/m4/evidence/inventory.json (per-swarm largest files)"
+    ]
+  },
+  "cross_cutting": {
+    "entrance_families": "NOT in Group D. rg 'TT:2|TT:3|UT:3|entrance' over all four swarm trees and over their transcripts returned 0 hits, so the TT:2/UT:3 = 600+600 = 1200 and TT:3 = 443/600 counts were neither verified nor altered by this audit. Group D's raw proof stores (7.6 GB .drat, 2.1 GB .proof) are not a complete theorem.",
+    "ramsey_bounds": "No report of Group D proves or implies R(3,3,3,3) <= 58. smwp3xc7p's task text states 51 <= R_4(3) <= 60 and its committed record says 'R_4(3) <= 58 is still unproved'. Never call an UNKNOWN or a timeout UNSAT.",
+    "platform_state": "'solved' / 'succeeded' direction states are platform bookkeeping. smwswz4x9 is described as 'ended solved, 8 directions accepted' for its zero-set layer only; smwp3xc7p's d6 'succeeded' is a classification result, not a bound."
+  },
+  "totals": {
+    "files": 12741,
+    "bytes": 14536704343,
+    "text_files_le_2MiB": 7714,
+    "text_bytes_le_2MiB": 63600000,
+    "bulky_bytes": 14432500000,
+    "duplicate_clusters": 135,
+    "redundant_bytes_in_duplicates": 503800000,
+    "bytes_by_extension_MB": {".drat": 7603.9, ".proof": 2062.4, ".gz": 1852.1, ".cnf": 1745.9, "no_extension": 1097.7, ".jsonl": 43.5, ".json": 9.9, ".txt": 16.5}
+  },
+  "swarms": [
+    {
+      "id": "smwr3llof",
+      "files": 1405,
+      "bytes": 4471412286,
+      "members": 8,
+      "submit_calls": 51,
+      "submissions_taken": 9,
+      "judge_verdicts_found": 7,
+      "members_submitting": ["m2", "m3", "m5", "m6", "m7", "m8"],
+      "no_submission": ["m1 (report only, unreviewed)", "m4 (no report)"],
+      "accepted_as_solution": [],
+      "directions_dead": ["d8 (m6, 2 rejections)", "d6 (m7, 2 rejections)"],
+      "coordinator_verified": [
+        "bundle item 3: 108 stored refutations replay, 519,805 RUP steps, 0 RAT",
+        "bundle item 1 verified end to end; 27 independence + 45 path exclusions, 300 passing, 618 covers",
+        "bundle item 2: 3,093 of 18,276 marked paths excluded, 72 orientations, 15,183 surviving",
+        "split baa4e014 into uniform/some_six sound, disjoint, exhaustive; hashes 71edaaa0/8e0b49a9/f5324082",
+        "frozen CNF implies sum_x m(x) >= 210; uniform child has m(x)=5 for all 42",
+        "uniform-child biregularity d_0(a)=15, m(x)=5; identity 455 per colour / 1365 total is a check not a constraint",
+        "type-level system with armFar_le_two FEASIBLE",
+        "Z_58 circulant exclusion, DRAT VERIFIED (existence-side only)",
+        "some_six child is a single 42-literal clause (m7 retraction confirmed)"
+      ],
+      "rejected_or_wrong": [
+        "m7 item 4 'some_six forces m(x)>=6 for all 42' (withdrawn)",
+        "m8 '18 types x 2 < 42 so uniform child empty' (retracted; census 254,628 T / 254,088 U)",
+        "bundle phrase '>= 26 distinct words' is not a constraint; the count <= 16 extremals is",
+        "345 orientations hit only 332 classes (13 doubled): 345=332+13",
+        "the 3,093-cut table is a module count (15,183 classes), not a clause-level reduction"
+      ],
+      "open": [
+        "uniform child of baa4e014 (all proved constraints: 25,428 vars / 203,927 clauses, UNKNOWN at 4.07M conflicts)",
+        "some_six child",
+        "W2; R_4(3) <= 58; the 113,179-case cover reduction itself unaudited",
+        "block-Cayley 2xZ_29 UNKNOWN 400 s; 3xZ_19+1 UNKNOWN 540 s"
+      ],
+      "git_retained": ["review/WALL_15141414_SWARM.md sec.12", "review/PROFILE_15141414_STATE.md header", "review/ERRATA.md (hazard)"],
+      "largest": {"m5/work/runs/uniform42/uniform_mge5_900.drat": 1601531904, "m7/runs/3efee19066b2.drat": 493879296, "m7/runs/41ad024cd322.drat": 434642099, "m8/circ58.drat": 49638533},
+      "flags": [
+        "uniform_mge5_900.drat (1.6 GB) belongs to a run whose log says 'c UNKNOWN' and ends SIGTERM: partial proof, not a certificate",
+        "m7/runs: 3 DRATs with verified:true in certify.jsonl + 1 UNKNOWN (tag 41ad024cd322): branch proofs, not a closure"
+      ],
+      "recommend_retain_separately": ["m8/circ58.cnf + m8/circ58.drat (52 MB, the only coordinator-replayed large proof)"],
+      "text_bytes_le_2MiB": 15880000
+    },
+    {
+      "id": "smwp3xc7p",
+      "files": 10012,
+      "bytes": 3568165846,
+      "members": 8,
+      "submit_calls": 34,
+      "submissions_taken": 8,
+      "judge_verdicts_found": 8,
+      "accepted_reports": ["m7 d6 cyclic two-orbit classification", "m3 d8 1,018 newly certified K58 cases", "m4 d1 circulant census 33,752/1,102/104", "m1 d7 profile counts 47/39/6", "m8 d4 LEDGER F2 + link alphabet", "m8 d12 correction: >=1 not >=6 colour-0 edges"],
+      "directions_dead": ["d4 (m8, 2 rejections)", "d7 (m1, 2 rejections)", "d11 (m1, 2 rejections)"],
+      "directions_abandoned": ["d2", "d3", "d5", "d9", "d10"],
+      "accepted_as_solution": [],
+      "corrections": [
+        "quote 1,018 newly closed, not 1,050 (32 were re-derivations)",
+        "handoff circulant census 217/71 is wrong: 33,752/1,102/104 orbits",
+        "colour degree <= 16, not 15; a 13/14/15 sweep omits exactly the size-16 Chung cases",
+        "'circulant colour class must have degree 12-15' is not a theorem; window [3,16]",
+        "template gluing must be at the labelled level",
+        "involution row is 650 orbits, not 350"
+      ],
+      "open": ["98 circulant orbits", "degree-16 cell", "general involutions", "Z/17 at n=51, Z/13 at n=52", "no good K_51; lower bound not improved", "K58 cover: OPEN 110,017"],
+      "git_retained": ["results/run_smwp3xc7p_report.md", "results/storage-cleanup-2026-11-26/README.md", "results/storage-cleanup-2026-11-26/measurement.json", "results/storage-cleanup-2026-11-26/retained-source-sha256.json", "artifacts/ (K50s, K15/K16 templates)"],
+      "already_deleted": {".ultramath/smwp3xc7p/m8/scratch": 3283110478, "text_preserved_files": 5679, "text_preserved_bytes": 2790180, "archive": "dist/legacy-scratch-text-2026-11-26.tar.gz", "archive_sha256": "5787069cc5f22801a74f0d3964c61d46229bba50def7a71b82e0811dc2c75375"},
+      "largest": {"m4/out/pw/pw_099_18.drat": 281223168, "m4/out/pw/pw_099_19.drat": 274276352, "m2/sym_work/p17_uc2.drat": 244318208, "m2/sym_work/p17_u.drat": 183444967, "m7/cnf/k50_Z25.drat": 57054679},
+      "verified_store": {"m3/w/k58-solver/ev0": "1.8 GB certificates", "m3/w/k58-solver/release-final": "4.8 MB (manifest sha b4d44efa...)", "m3/w/k58-solver/.venv": "27 MB tooling, not evidence"},
+      "text_bytes_le_2MiB": 24700000
+    },
+    {
+      "id": "smwvg1m43",
+      "files": 563,
+      "bytes": 3289571965,
+      "members": 8,
+      "submit_calls": 29,
+      "submissions_taken": 8,
+      "judge_verdicts_found": 1,
+      "accepted_reports": 7,
+      "acceptance_evidence": ["WALL_HANDOFF.md: 'ended with 7 accepted reports including the bare-pilot measurements and Lean family chain'", "results/gap4-2026-11-25/README.md attributes m1..m6, m8 content"],
+      "accepted_as_solution": [],
+      "coordinator_verified": [
+        "bare pilot closes gap-four rows in 41 s; row CNF in 44 s (the families are not needed)",
+        "Theorem E: A,B,C entailed by every pilot; recipe closes a row iff the pilot is UNSAT",
+        "host(58)+units alone UNSAT (m5, reproduced by coordinator): 135,498 clauses, DRAT VERIFIED",
+        "Lean chain five_bound/card_nb_le_sixteen/familyB/familyC/dual_five_bound/exact_pattern, 2.8 s, no sorry -> lean/K58/GapFamilies.lean",
+        "149 UUU rows pairwise distinct up to vertex+colour permutation (m6)",
+        "m8 wall measurement: (15,15,14,13) UNKNOWN at 20 min with families, 15 min units alone"
+      ],
+      "corrections": [
+        "'one elementary constraint closes the row' is wrong twice: closes without it, slower with it",
+        "earlier UNKNOWNs came from 30-70 s caps",
+        "tools/gap4/strengthen.py hard-codes (15,15,15,12): never point it at (15,14,14,14)",
+        "tools/pb/balance.py API build() defaults balance=True: pass balance=False for wall rows",
+        "dense.marked_threshold can emit a single empty clause when charge exceeds guards (review/ERRATA.md)"
+      ],
+      "open": ["(15,15,14,13) 7,732 rows and the six small profiles", "the 9 charge-15 (15,14,14,14) rows (not gap four)", "R_4(3) <= 58 unproved"],
+      "git_retained": ["results/gap4-2026-11-25/README.md", "results/gap4-2026-11-25/open-row-ids-15151512.txt", "results/gap4-2026-11-25/sweep/*.tsv", "tools/gap4/{strengthen,add_families,run_units_bulk}", "tools/pb/balance.py", "lean/K58/GapFamilies.lean", "WALL_HANDOFF.md"],
+      "largest": {"m6/proof/TTT969_bare.drat": 131594341, "m3/work/ttt/0013b1f1...drat": 131594341, "m6/proof/T15b_B.drat": 127921842, "m6/proof/T16_bare.drat": 121191780},
+      "text_bytes_le_2MiB": 10670000
+    },
+    {
+      "id": "smwswz4x9",
+      "files": 761,
+      "bytes": 3207554246,
+      "members": 8,
+      "submit_calls": 19,
+      "submissions_taken": 8,
+      "judge_verdicts_found": "0 in transcripts; 1 committed judge record (results/judge-smwswz4x9-m4.md) covering all 8 accepted directions",
+      "coordinator_record": {"path": "results/judge-smwswz4x9-m4.md", "commit": "12f0864", "directions_accepted": 8, "directions_abandoned": ["d8"]},
+      "accepted_as_solution": ["d4 (m4) per-type zero-set census: 37 types dead, 33 profiles realised"],
+      "verdict_table": {"d1_m2": "join layer not replayed", "d2_m5": "44 survive incidence layer, exhausted at that level", "d3_m1": "codegree core correct", "d4_m4": "accepted", "d5_m8": "no-singleton compatible", "d6_m7": "cross-arm transfer partial, general statement not proved", "d7_m6": "design filter for 135 partitions (53/82)", "d9_m3": "forced-pentagon parent rule kernel-checked"},
+      "corrections": ["48 is the candidate list; 44 survive; only 33 are realised by some arm type", "'multiplicity layer exhausted' holds only at the incidence layer", "37 dead types have no DRAT; judge re-ran 2 of 332 types"],
+      "open": ["general cross-arm transfer (free board UNKNOWN at k=6)", "six-distinct join layer not replayed", "arm-realisation census completeness", "no-singleton case not excluded"],
+      "git_retained": ["results/judge-smwswz4x9-m4.md", "results/arm-class-2026-11-24/README.md", "PROOFS.md", "REPORT_2026-11-23.md", "lean/K58/{Multiplicity,Incidence,DesignIncidence,ForcedPentagon,ProfilesIncidence}.lean"],
+      "largest": {"m5/work/p40_2_2_2_2_2_2_2.proof": 1698693120, "m5/work2/pr": 1029701632, "m5/work/p19_4_2_2_2_2_2.proof": 360662751, "m1/certs.tsv": 2849555},
+      "flags": ["p40_...proof and work2/pr (2.73 GB = 85% of the swarm) are uncited by m5/REPORT.md and have no s VERIFIED record; t1.py runs kissat with timeout=300 so 'pr' can be a killed run's partial proof"],
+      "recommend_retain_separately": ["m5/work/dec/*.drat (15 MB, the four replayed refutations)", "m1/certs.tsv", "m6/certs/ (72.8 MB design-certificate CNFs)"],
+      "text_bytes_le_2MiB": 12350000
+    }
+  ],
+  "not_verified_locally": [
+    "m1 of smwr3llof: never submitted; its 'new classification-derived lemma' and 'stronger marked filter' have no judge verdict",
+    "smwvg1m43: six of the eight taken submissions have no judge text in the local transcripts; acceptance rests on WALL_HANDOFF.md's '7 accepted reports' and results/gap4-2026-11-25/README.md attribution",
+    "smwswz4x9: 330 of 332 exhaustive per-type searches rest on the member enumerator (judge re-ran 2)",
+    "verification status of the large uncited DRATs in smwp3xc7p (pw_099_*, p17_*) and of the .proof dumps in smwswz4x9",
+    "the 113,179-case cover reduction itself (unaudited in every Group D swarm)"
+  ]
+}

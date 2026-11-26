@@ -1,0 +1,26 @@
+{
+  "allow_raw_discard": true,
+  "protected_tree_prefixes": [
+    ".ultramath/smwwdcyxb/m2/proofs",
+    ".ultramath/smwwdcyxb/m1/k16-regular",
+    ".ultramath/smwwdcyxb/m3",
+    ".ultramath/smwx2syxr/m1",
+    ".ultramath/smwvx4uzm",
+    ".ultramath/smwswz4x9/m5/work/dec",
+    ".ultramath/smwswz4x9/m6/certs",
+    ".ultramath/smwr3llof/m8",
+    ".ultramath/smwp3xc7p/m3/w/k58-solver/release-final"
+  ],
+  "live_swarms": ["smwx73ni9"],
+  "reason": {
+    ".ultramath/smwwdcyxb/m2/proofs": "Primary entrance certificate store; the only complete family coverage currently replayable locally.",
+    ".ultramath/smwwdcyxb/m1/k16-regular": "Classification certificates and checkable table support.",
+    ".ultramath/smwwdcyxb/m3": "Complete finite K15/K16 classification material, not merely solver bootstrap files.",
+    ".ultramath/smwx2syxr/m1": "Unique Saturation.lean, Discharge.lean and their verified build environment.",
+    ".ultramath/smwvx4uzm": "Compact clone/cross-support theorem and certificate family required by current reductions.",
+    ".ultramath/smwswz4x9/m5/work/dec": "Four small replayed incidence-layer refutations with CNFs.",
+    ".ultramath/smwswz4x9/m6/certs": "Compact design-certificate formulas.",
+    ".ultramath/smwr3llof/m8": "Replayed circulant exclusion certificate and modest supporting scripts.",
+    ".ultramath/smwp3xc7p/m3/w/k58-solver/release-final": "Manifest and case index for the 1018 newly certified cases; not the whole 1.8 GB evidence tree."
+  }
+}

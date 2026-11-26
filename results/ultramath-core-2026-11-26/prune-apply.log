@@ -1,0 +1,37 @@
+PROGRESS 10000/98294 indexed files; verified source hashes continue
+PROGRESS 20000/98294 indexed files; verified source hashes continue
+PROGRESS 30000/98294 indexed files; verified source hashes continue
+PROGRESS 40000/98294 indexed files; verified source hashes continue
+PROGRESS 50000/98294 indexed files; verified source hashes continue
+PROGRESS 60000/98294 indexed files; verified source hashes continue
+PROGRESS 70000/98294 indexed files; verified source hashes continue
+PROGRESS 80000/98294 indexed files; verified source hashes continue
+PROGRESS 90000/98294 indexed files; verified source hashes continue
+{
+  "mode": "apply",
+  "input_file_records": 98294,
+  "previously_absent_file_records": [],
+  "source_hash_checks_passed": 50782,
+  "source_hash_mismatches": [],
+  "protected_tree_prefixes": [
+    ".ultramath/smwwdcyxb/m2/proofs",
+    ".ultramath/smwwdcyxb/m1/k16-regular",
+    ".ultramath/smwwdcyxb/m3",
+    ".ultramath/smwx2syxr/m1",
+    ".ultramath/smwvx4uzm",
+    ".ultramath/smwswz4x9/m5/work/dec",
+    ".ultramath/smwswz4x9/m6/certs",
+    ".ultramath/smwr3llof/m8",
+    ".ultramath/smwp3xc7p/m3/w/k58-solver/release-final"
+  ],
+  "live_swarms_untouched": [
+    "smwx73ni9"
+  ],
+  "deleted_file_count": 20364,
+  "deleted_allocated_bytes": 116092264448,
+  "deleted_logical_bytes": 116048807907,
+  "free_bytes_before": 52687007744,
+  "free_bytes_after": 168770531328,
+  "free_bytes_increase": 116083523584,
+  "missing_paths_verified_after": 20364
+}

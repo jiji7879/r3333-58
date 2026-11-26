@@ -1,0 +1,366 @@
+{
+ "audit": {
+  "swarm": "smwx73ni9",
+  "member": "m1",
+  "group": "A",
+  "date": "2026-11-26",
+  "method": "read-only: member transcripts, coordinator handoff/erratum/audit records, manifests re-run, sizes and file counts measured",
+  "rules_honoured": [
+   "no solver run",
+   "nothing deleted",
+   "no repo file modified",
+   "writes only in .ultramath/smwx73ni9/m1/",
+   "UNKNOWN/timeout never reported as UNSAT",
+   "no inference of R(3,3,3,3) <= 58",
+   "platform 'solved'/submitted:true not treated as proof"
+  ]
+ },
+ "swarms": [
+  {
+   "id": "smwwdcyxb",
+   "path": ".ultramath/smwwdcyxb",
+   "report": ".ultramath/smwx73ni9/m1/smwwdcyxb.md",
+   "bytes": 22009836573,
+   "files": 29508,
+   "members": 8,
+   "purpose": "reduce the 140 OPEN frozen rows of complete profile (16,16,13,12) to 0 with verified exact coverage (70 TU, 56 TT, 14 UU; charges 14/70/56)",
+   "acceptance": {
+    "accepted_directions": 8,
+    "source": "results/final-smwwdcyxb-2026-11-26.md (git-tracked, commit ef9a727)",
+    "per_direction": {
+     "d1": {
+      "member": "m4",
+      "accepted": "strict split, 25 cubes / 3500 first-level objects, Lean witness chain",
+      "open": "no cube or strict branch eliminated"
+     },
+     "d2": {
+      "member": "m7",
+      "accepted": "343-node tree, 169 certified leaves, 3 open cubes, hash-checked",
+      "open": "3 open cubes r5_n025b2-019, c485-022, c485_029-033"
+     },
+     "d3": {
+      "member": "m1",
+      "accepted": "marked-free reciprocal parent for 70 TU rows, 4-way reduction, 15 K16 refutations, C4 family",
+      "open": "reciprocal parent UNKNOWN"
+     },
+     "d5": {
+      "member": "m8",
+      "accepted": "hash-pinned active/inactive refinements, 280 frontier formulas rebuilt, ticket-mass lemmas",
+      "open": "balanced-active and balanced-inactive not refuted"
+     },
+     "d6": {
+      "member": "m2",
+      "accepted": "2830 entrance DRATs replayed; complete families TT:2 and UT:3 = 1200 cases",
+      "open": "770 open (5,5,5) cases; 4740 degree-15 brace cases"
+     },
+     "d8": {
+      "member": "m6",
+      "accepted": "n017, n022, n024 refuted; 4 equal-kind parents audited; rational counting witnesses",
+      "open": "n025; equal-kind parents unrefuted; no encoder bridge"
+     },
+     "d9": {
+      "member": "m3",
+      "accepted": "K15/K16 U/T classification certificates, 1021416 -> 7145 survivors, 388 order-16 candidates",
+      "open": "no row eliminated"
+     },
+     "d10": {
+      "member": "m5",
+      "accepted": "physical colouring checker, 12 valid + 1 rejected control, templates matched, K32 16-arm realisable",
+      "open": "no K58 model found (not impossibility)"
+     }
+    },
+    "judge_rejections": [
+     {
+      "member": "m1",
+      "direction": "d3",
+      "n": 1,
+      "reason_short": "15 vs 11 K16 refutations; rec-H-clone-c4 C4 count not reproducible",
+      "outcome": "repaired, resubmitted, accepted"
+     },
+     {
+      "member": "m2",
+      "direction": "d6",
+      "n": 1,
+      "reason_short": "entrance = beta>=1 not strict; 3391/3402 coverage wrong; deleted proofs",
+      "outcome": "proof store preserved, resubmitted, accepted with 1200-case scope"
+     },
+     {
+      "member": "m3",
+      "direction": "d9",
+      "n": 1,
+      "reason_short": "certpipe.py missing CLI/has_alpha6; drive.py deletes proofs; 67219 vs 67894",
+      "outcome": "alpha5.py + certify.py added, accepted"
+     },
+     {
+      "member": "m5",
+      "direction": "d7",
+      "n": 1,
+      "reason_short": "support gap false; full_root=True means H>=32; RealizesFamily has w<=H; stale n025",
+      "outcome": "revised"
+     },
+     {
+      "member": "m5",
+      "direction": "d7",
+      "n": 2,
+      "reason_short": "raw transport already covered by tracked 1588-module replay; Romulus negative control wrong proof",
+      "outcome": "direction dead; m5 registered d10, accepted"
+     }
+    ],
+    "unreviewed": 0
+   },
+   "entrance_scope_literal": {
+    "entrance": "beta_r >= 1, not beta_r > alpha_r (H - w = beta - alpha, w = 32)",
+    "complete_families": {
+     "TT:2:5,5,5": "600/600, T/T entrance in the 13-class",
+     "UT:3:5,5,5": "600/600, U/T entrance in the 12-class"
+    },
+    "accepted_case_count": 1200,
+    "partial": {
+     "TT:3:5,5,5": "443 verified / 157 open",
+     "UT:2:5,5,5": "596 / 4",
+     "UU:2:5,5,5": "591 / 9",
+     "UU:3:5,5,5": "0 / 600"
+    },
+    "source": "results/entrance-brace-audit-2026-11-26/store-audit.json; erratum results/verdict-correction-smwwdcyxb-m2.md"
+   },
+   "open_objects": [
+    "all 140 rows under their own hypotheses (no refutation, no physical countermodel)",
+    "3 open reciprocal cubes (all extend the n025 cube)",
+    "strict, mixed, balanced-active, balanced-inactive branches",
+    "770 open (5,5,5) entrance cases + 4740 degree-15 brace cases",
+    "complete semantic encoder bridge to CNF aux/cardinality selectors"
+   ],
+   "git_retained": [
+    "results/final-smwwdcyxb-2026-11-26.md",
+    "results/verdict-correction-smwwdcyxb-m2.md",
+    "results/entrance-brace-audit-2026-11-26/ (incl. store-audit.json, accepted-scope.json)",
+    "results/cc-frontier-audit-2026-11-26/",
+    "results/m6-audit-2026-11-26/",
+    "results/storage-cleanup-2026-11-26/"
+   ],
+   "not_in_git": [
+    ".ultramath/smwwdcyxb/m*/REPORT.md, PROOF.md, MANIFEST.sha256",
+    ".ultramath/smwwdcyxb/m2/proofs/ (8.62 GB)",
+    ".ultramath/smwwdcyxb/m4/lean/WitnessChain.lean (6306 B)",
+    ".ultramath/smwwdcyxb/m8/lean/TicketMass.lean (2611 B)"
+   ],
+   "large_artifacts": [
+    {
+     "path": ".ultramath/smwwdcyxb/m2/proofs",
+     "bytes": 8619795662,
+     "files": 3042,
+     "note": "3039 .drat.gz + manifest/replay/residual.tsv; manifest 2832 records (2830 UNSAT + 2 UNKNOWN)"
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/m7/cc",
+     "bytes": 7593520757,
+     "files": 1179
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/m4",
+     "bytes": 2203249631,
+     "files": 819
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/m6",
+     "bytes": 1799898022,
+     "files": 188,
+     "note": "lc6-n024.drat 498189884, lc2-n017.drat 393820584, lc-n022.drat 235672894"
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/m5",
+     "bytes": 1113416092,
+     "files": 1039
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/m1",
+     "bytes": 444782831,
+     "files": 91
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/m3",
+     "bytes": 222591115,
+     "files": 23068
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/m8",
+     "bytes": 657223,
+     "files": 47
+    },
+    {
+     "path": ".ultramath/smwwdcyxb/transcripts",
+     "bytes": 11811465,
+     "files": 8
+    }
+   ],
+   "verified_by_auditor": [
+    "m1 sha256sum -c MANIFEST.sha256 -> 25/25 OK",
+    "m6 sha256sum -c MANIFEST.sha256 -> 21/21 OK",
+    "3039 .drat.gz under m2/proofs; manifest 2832 records = 2830 UNSAT + 2 UNKNOWN",
+    "m3/work/surv15.txt = 7145 lines; m3/work/registry140.jsonl = 140 lines",
+    "m4/rows/SUMMARY.tsv = 140 data rows; m5/rows140.tsv = 140; m8 root-active-140.jsonl = 140",
+    "m7/cc/merged-tree.json -> 343 nodes, 172 leaves, 3 open leaves",
+    "results/storage-cleanup tar holds 8386 entries, 42 under .ultramath/smwwdcyxb"
+   ],
+   "not_verified": [
+    "2830 drat-trim replays (read store-audit.json only)",
+    "m4's 3500 per-row objects (certs.json shows 29+4 cubes, not 25 - unreconciled)",
+    "m7 external 347.168 s replay",
+    "m3 388-candidate enumeration",
+    "m5 K32 colouring (checker not re-run)",
+    "m6 n024 replay (264.3 s, recorded)"
+   ],
+   "recommendation": "keep the small reports/manifests/Lean files; manifest-then-drop the proof stores; retain m1/k16-regular.json, m4/lean/WitnessChain.lean, m8/lean/TicketMass.lean, m7/cc/merged-tree.json separately; do not re-run degree caps, ticket cuts, (15,14,14,14), or the UNKNOWN leaves"
+  },
+  {
+   "id": "smwx2syxr",
+   "path": ".ultramath/smwx2syxr",
+   "report": ".ultramath/smwx73ni9/m1/smwx2syxr.md",
+   "bytes": 1240851991,
+   "files": 652,
+   "members": 8,
+   "purpose": "engineering/verification swarm: byte-exact A/B measurement, per-leaf certificate conversion, hypothesis-aware clause builders, encoder bridges for the K58 (16,16,13,12) rows",
+   "acceptance": {
+    "accepted_directions": 8,
+    "source": "results/storage-cleanup-2026-11-26/README.md ('All of the accepted smwx2syxr working tree') + results/solver-integration-2026-11-26/README.md",
+    "per_direction": {
+     "d1": {
+      "member": "m8",
+      "accepted": "portable dcap builder, byte-exact reproduction, matched 100k-conflict A/B (cost, not speed)",
+      "open": "pruned-dcap closure of n017/n022 unverified"
+     },
+     "d2": {
+      "member": "m6",
+      "accepted": "leafcert per-leaf C&C harness, 27 controls, inccnf delimitation",
+      "open": "3 open cubes"
+     },
+     "d3": {
+      "member": "m1",
+      "accepted": "K58.sixteen_arm_outside_nonempty + arm_ind + saturation_clause; R33/R333 discharged",
+      "open": "p=q stays open at 5"
+     },
+     "d4": {
+      "member": "m4",
+      "accepted": "entcap.py entrance-cut projection over 1568 instances / 126 rows; T1-T7",
+      "open": "no speedup; UU-- uncut"
+     },
+     "d5": {
+      "member": "m2",
+      "accepted": "engine conformance layer, 39/39 adversarial tests; sound-but-not-attributive verification",
+      "open": "2 of 4 pilot certificates vacuous"
+     },
+     "d6": {
+      "member": "m7",
+      "accepted": "aux/cardinality encoder bridge L1-L6 for gen-TT and gen-TT-recip",
+      "open": "declared bounds not certified"
+     },
+     "d7": {
+      "member": "m5",
+      "accepted": "closure simplification with replayed certificates; layer inertness census",
+      "open": "no time gain"
+     },
+     "d8": {
+      "member": "m3",
+      "accepted": "rootreduce.py + check_trace.py; 1058750 -> 649327 clauses verified",
+      "open": "flag bounds source-verified, not decoded"
+     }
+    },
+    "judge_rejections": [],
+    "unreviewed": 0
+   },
+   "literal_hypotheses": {
+    "entcap_validity": "only (16,16,13,12); only T/T at the 13-class and mixed T/U at the 12-class; UU-- and partial families receive no cut; --direct means outside-class count <= 14 (not a global cap)",
+    "saturation_lemma": "K58.sixteen_arm_outside_nonempty: |A|=16, no c-edge inside A, w not in A => exists a in A with col w a = c; sharp (|A|=15 gives nothing)",
+    "dcap_inertness": "116/232 caps implied by the parent's at-most-14 flags (155092 clauses redundant); physical level-0 closure identical (7362)",
+    "marked_free": "gen-TT/UU/L4 parents are relaxations: UNSAT transfers, SAT is not a row counterexample"
+   },
+   "open_objects": [
+    "n025 and the 3 open cubes (inherited from smwwdcyxb)",
+    "declared bounds of the cardinality-circuit layer not certified",
+    "pruned-dcap closure of n017/n022 at m6's budget not checked",
+    "two 85/94 MB proofs unreplayed by m2",
+    "no speedup demonstrated anywhere"
+   ],
+   "git_retained": [
+    "tools/selfcontained/wallcc/{entcap.py,rootreduce.py,check_trace.py,leafcert.py,engine_conformance.py,bcp.py} (byte-identical to member copies, verified)",
+    "tools/selfcontained/wallcc/ (31 tracked files, commit 94c7482)",
+    "results/solver-integration-2026-11-26/ (README + 47 logs)",
+    "results/storage-cleanup-2026-11-26/README.md"
+   ],
+   "not_in_git": [
+    ".ultramath/smwx2syxr/m1/lean/Saturation.lean (6158 B) and Discharge.lean (6863 B)",
+    ".ultramath/smwx2syxr/m7/{bridge.py,rebuild.py}",
+    ".ultramath/smwx2syxr/m5/{rootsimpl.py,verify_cert.py}",
+    ".ultramath/smwx2syxr/m8/k58x/k58x.py"
+   ],
+   "large_artifacts": [
+    {
+     "path": ".ultramath/smwx2syxr/m3",
+     "bytes": 341593242,
+     "files": 44,
+     "note": "run/TTrecip-dcap/trace.json 77827960; run/TTrecip/trace.json 59669987"
+    },
+    {
+     "path": ".ultramath/smwx2syxr/m8",
+     "bytes": 297022824,
+     "files": 40,
+     "note": "cnf/ dcap variants; receipt.json"
+    },
+    {
+     "path": ".ultramath/smwx2syxr/m4",
+     "bytes": 266535835,
+     "files": 58,
+     "note": "work/arm-*.cnf ~33 MB each"
+    },
+    {
+     "path": ".ultramath/smwx2syxr/m5",
+     "bytes": 138931439,
+     "files": 264,
+     "note": "out/*-simp.cnf"
+    },
+    {
+     "path": ".ultramath/smwx2syxr/m7",
+     "bytes": 70617489,
+     "files": 14,
+     "note": "gen-TT-recip.cnf 37157479; gen-TT.cnf 32739619"
+    },
+    {
+     "path": ".ultramath/smwx2syxr/m1",
+     "bytes": 66731055,
+     "files": 22,
+     "note": ".scratch CNFs; lean/ 995 KB incl .olean"
+    },
+    {
+     "path": ".ultramath/smwx2syxr/m6",
+     "bytes": 48986203,
+     "files": 121
+    },
+    {
+     "path": ".ultramath/smwx2syxr/m2",
+     "bytes": 5177474,
+     "files": 81
+    },
+    {
+     "path": ".ultramath/smwx2syxr/transcripts",
+     "bytes": 5256430,
+     "files": 8
+    }
+   ],
+   "verified_by_auditor": [
+    "six member scripts byte-identical to tools/selfcontained/wallcc/ copies (sha256)",
+    "m3/MANIFEST.sha256: 9 valid entries all OK, 24 lines improperly formatted",
+    "gen-TT-recip.cnf sha f450ae9c... = 1058750 clauses (bridge.json + smwwdcyxb/m6 MANIFEST 21/21 OK)",
+    "all byte totals and file counts"
+   ],
+   "not_verified": [
+    "bash build.sh (m1 Lean rebuild)",
+    "m7 bridge 1.0M-case check",
+    "m6 27 controls",
+    "m2 39-test suite",
+    "m3 root-reduction replay",
+    "m4 T1-T7"
+   ],
+   "recommendation": "keep the small reports/scripts/receipts and the two m1 Lean files (~13 KB, unique, untracked); manifest-then-drop run traces and CNF products; repair m3/MANIFEST.sha256; do not re-run the no-improvement A/Bs"
+  }
+ ]
+}
