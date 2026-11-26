@@ -1,0 +1,2015 @@
+{
+  "attempts": [
+    {
+      "audit_status": "PASS",
+      "branch": 0,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -1605,
+            -1798
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -1605,
+            1798
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            1605,
+            -1609
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            1605,
+            1609
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "031c400998346ebc3bf743f4fe69a8ece6191da3b9df7197acf62ec4cb4092ce",
+      "plan_sha256": "53e968911dc89c6848b541e3c3c3e38fe55f7bcad7d278b8b886f60a671fa66f",
+      "profile": "15,14,14,14",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,14,14,14/076eafbfe47eece51caf59db5d7ba4837744555a7c06414346f24b6ab222e7df/receipt.json",
+      "row_id": "076eafbfe47eece51caf59db5d7ba4837744555a7c06414346f24b6ab222e7df",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 4,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3240,
+            -3244
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3240,
+            3244
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3240,
+            -3244
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3240,
+            3244
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "7a271bbce1cdf675ea0a68662e55954f64dd0e44b8468997abbf7f044f2864ba",
+      "plan_sha256": "7358ee385cba0a17416796fcfcc6d90026c75254cf402de9d670f82bfaccfb2c",
+      "profile": "15,14,14,14",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,14,14,14/66aec8853d00a8b94b856a1ab81d9dc96325c9caf2d518c685fcb419676f24e4/receipt.json",
+      "row_id": "66aec8853d00a8b94b856a1ab81d9dc96325c9caf2d518c685fcb419676f24e4",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 11,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -2373,
+            -2549
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -2373,
+            2549
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350006,
+          "cube": [
+            2373,
+            -2362
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            2373,
+            2362
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "0e8ea7f21f6a236664cb242990bcb16d480bb192a97a3dbbf3806ba7dd4ba906",
+      "plan_sha256": "c81f573078b1d8d4e5b7aad973aeffee8d849910b3570e55292993dd8d2623d9",
+      "profile": "15,14,14,14",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,14,14,14/df1144681acb4939480417902dbee6d221d827821a36ce784e2d0664fb6a4d37/receipt.json",
+      "row_id": "df1144681acb4939480417902dbee6d221d827821a36ce784e2d0664fb6a4d37",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 25,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -2001,
+            -2189
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -2001,
+            2189
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            2001,
+            -1797
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            2001,
+            1797
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "6b9b57ec899ff3fc710d98694e731d844d9749077b1c8ccf88467b8bbe1e8e38",
+      "plan_sha256": "1c0eea62d7496207373e8df1be2cd944ddb89cc901e71c1e622e4e710a6f34d6",
+      "profile": "15,14,14,14",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,14,14,14/e6a695057cdd6066d1db2bb0ad3f7c643327db4e7ed28eca8079aae8ad5d817d/receipt.json",
+      "row_id": "e6a695057cdd6066d1db2bb0ad3f7c643327db4e7ed28eca8079aae8ad5d817d",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 21,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350001,
+          "cube": [
+            -1609,
+            -2377
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -1609,
+            2377
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            1609,
+            -2729
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            1609,
+            2729
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "f23a7300044f91ab4664c3a464ae0eb20d5ee75e25c27dd703e6d579ad13881b",
+      "plan_sha256": "0128d624de1397d1d497e842d8e875200f2e5207126f90343fd9dd1f24e22797",
+      "profile": "15,14,14,14",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,14,14,14/e9e63f1b9b350e4a1899494597259a75a8e5d646eba16dcff4890abc9a3ef8e2/receipt.json",
+      "row_id": "e9e63f1b9b350e4a1899494597259a75a8e5d646eba16dcff4890abc9a3ef8e2",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1002,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 9,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350002,
+          "cube": [
+            -3545,
+            -3541
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3545,
+            3541
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3545,
+            -3698
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3545,
+            3698
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "1f6cab2fd0e42508ba2289a5ff8573aa66cea031d51cd4bfb6caa49e2fcdfaf7",
+      "plan_sha256": "223ded72b2ea9995dba3cf41bdb3a81bc2e1d2c505a348975d24a315eb6e18dc",
+      "profile": "15,15,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,15,14,13/0b7669c7d3213018b4b888b04251af8e64a443c7424fb63dbe99d25dfd1b5d5b/receipt.json",
+      "row_id": "0b7669c7d3213018b4b888b04251af8e64a443c7424fb63dbe99d25dfd1b5d5b",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 487,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -1605,
+            -2197
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            -1605,
+            2197
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            1605,
+            -2181
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            1605,
+            2181
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "dbd02eab20d7a42879074dd8fda2c6c901cc86d2ccf4d9588f66f12a74b113f7",
+      "plan_sha256": "6ecce5c34ce6d4cf29be7474bd8c4be87604ed5c6587444317ba10dde5a108c2",
+      "profile": "15,15,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,15,14,13/2bcaf5a123e1cc692fc353bb07c59c7279dcb62c9b2e42d98bf4d333258514e1/receipt.json",
+      "row_id": "2bcaf5a123e1cc692fc353bb07c59c7279dcb62c9b2e42d98bf4d333258514e1",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1001,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 122,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350002,
+          "cube": [
+            -4129,
+            -4768
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            -4129,
+            4768
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            4129,
+            -4886
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            4129,
+            4886
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "62903d9be6d1c085821f18694d7a52674d2417918f558ecd7d7aa7d7c025ce88",
+      "plan_sha256": "33e146aaf3ee9f800187bfb243a0ed6d20d5f310aa567f24598fcd6906f62762",
+      "profile": "15,15,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,15,14,13/3bdc43804776da92a2ffe0d955849865f69e8296676c25e0a91079db2babc657/receipt.json",
+      "row_id": "3bdc43804776da92a2ffe0d955849865f69e8296676c25e0a91079db2babc657",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1001,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 1347,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350006,
+          "cube": [
+            -4262,
+            -5104
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -4262,
+            5104
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            4262,
+            -4645
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "assumption_core": [
+            4262,
+            4645
+          ],
+          "conflicts": 0,
+          "cube": [
+            4262,
+            4645
+          ],
+          "node": "r11",
+          "result": false
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "d27d34c0d8336997d545c76120e040ff1aa0f448ef362d443502372d4c1a1ff2",
+      "plan_sha256": "4dea9e14284398299ce866b63783269de8129b62efcc438997f2aa1a665841fa",
+      "profile": "15,15,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,15,14,13/3d443146013949bb1f01e907953c366c617e4178c4638cc2c8eb59d4e2745d1c/receipt.json",
+      "row_id": "3d443146013949bb1f01e907953c366c617e4178c4638cc2c8eb59d4e2745d1c",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 1541,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350001,
+          "cube": [
+            -4133,
+            -4141
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            -4133,
+            4141
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            4133,
+            -4141
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            4133,
+            4141
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "054b563be3e12df4ad953b1597d8e7c4b6cf19df9e926e83e561c7c3515b9a01",
+      "plan_sha256": "932919b731abc78a9f27ee94204ce1e629f7fb36ecef536766b7099d23920cc2",
+      "profile": "15,15,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m1/shared-fresh/15,15,14,13/bffb4a76605d9b42605d91205d1ca31363d9de548cad952253bb575380e1f52e/receipt.json",
+      "row_id": "bffb4a76605d9b42605d91205d1ca31363d9de548cad952253bb575380e1f52e",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 48,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -581,
+            -2561
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -581,
+            2561
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            581,
+            -2565
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            581,
+            2565
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+      "plan_sha256": "5c3da7a3f3498915e286fb292a4a172f01a2ad489cf89e0e53831bb43203b4f4",
+      "profile": "16,16,13,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296/receipt.json",
+      "row_id": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1002,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 9,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350001,
+          "cube": [
+            -577,
+            -2557
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -577,
+            2557
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            577,
+            -2565
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            577,
+            2565
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "c07ff04840c3c85464794071202956186ca62bb823ac0fcfd9e13bb93f6cde2c",
+      "plan_sha256": "70cfeea5c0b29c2a962bff0a49384b03ca12b578ab0a46a5a09ee9d1e0bd85d1",
+      "profile": "16,16,13,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e/receipt.json",
+      "row_id": "22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 99,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3701,
+            -3992
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            -3701,
+            3992
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350009,
+          "cube": [
+            3701,
+            -3697
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3701,
+            3697
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "577826693b85609833d32d8f9553144e747791072d4e34e29978e66e67342922",
+      "plan_sha256": "6e256a9b983caf569c7dde9da2501980e6c65f89b5b112d5c33c75850ec22434",
+      "profile": "16,15,14,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/receipt.json",
+      "row_id": "2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1002,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 7,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3997,
+            -4005
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3997,
+            4005
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3997,
+            -4541
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3997,
+            4541
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "9dece8456e52dac71089442312b8c62fbe4532db9d43b1c8436486ccfc0fec6a",
+      "plan_sha256": "314c1b5a447eb5caa35eecd34849c6d052027073abe732d0b590587ef5db398d",
+      "profile": "16,16,13,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d/receipt.json",
+      "row_id": "30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1001,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 8,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3565,
+            -4897
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3565,
+            4897
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3565,
+            -5230
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3565,
+            5230
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "3dad685ecb5c7e00aef9fb371145e3e5b718e03425912a46976dafaa272d3af7",
+      "plan_sha256": "e45c18737c51a7d204fab170bdcf912287cbc1ba8e7d17c84343f1e1c991ff08",
+      "profile": "16,16,13,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558/receipt.json",
+      "row_id": "5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1003,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 451,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350002,
+          "cube": [
+            -3697,
+            -4777
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3697,
+            4777
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3697,
+            -3857
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3697,
+            3857
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "1048771073685add6efbdd1cdd8fb97a6870158a66b469126eefdf2093e0df2a",
+      "plan_sha256": "8346ec8d27e855133d275a06607d796cfd6d68bade07fffdb9186df0bf0cb707",
+      "profile": "16,15,14,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1/receipt.json",
+      "row_id": "728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 572,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3697,
+            -3701
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3697,
+            3701
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350003,
+          "cube": [
+            3697,
+            -4770
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350003,
+          "cube": [
+            3697,
+            4770
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "333a63ab7a31dab0049a1527eb30f288eae65e2a70811306715e70da814e2c8e",
+      "plan_sha256": "620f362e55bb39a7b19482157a3989948455cb84ffab957deb15984a4157ddd0",
+      "profile": "16,15,14,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289/receipt.json",
+      "row_id": "7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 39,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -1209,
+            -2729
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -1209,
+            2729
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            1209,
+            -1222
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            1209,
+            1222
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "41f3b54debc74a49d8559f425f23237484ddd1bf7beb17c2a79581da283bf11a",
+      "plan_sha256": "e0b146e8b5754a1eb75581f6b3000c3d42ba13a49c99a6418ac03e5c6c1dd9a4",
+      "profile": "16,16,13,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b/receipt.json",
+      "row_id": "cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1002,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 90,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3549,
+            -3545
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3549,
+            3545
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350004,
+          "cube": [
+            3549,
+            -5117
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            3549,
+            5117
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "a6d7fe229798959c150ed2eb93c4103ee01886759792d8e658b68074082a6e2b",
+      "plan_sha256": "71004d7e1a4e388665c80e20c63bdbe0cc140003167994ef2c56a81a776ce984",
+      "profile": "16,15,14,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e/receipt.json",
+      "row_id": "ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1001,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 529,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3697,
+            -3705
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            -3697,
+            3705
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3697,
+            -4526
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3697,
+            4526
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "e7b7491481feb02d9b5136b0f5c8ca01aed1838fe8571d9b9f6df5131cfb03a8",
+      "plan_sha256": "ca69a043bc153d2d3587e0bff992f8ffac909b8a7d72a94c72d0b55185d43b93",
+      "profile": "16,15,14,12",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m3/shared-pass1/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c/receipt.json",
+      "row_id": "ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 35,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350001,
+          "cube": [
+            -577,
+            -3061
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -577,
+            3061
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            577,
+            -2557
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            577,
+            2557
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "ab2ff62ae870e2b716d6976c54baca195ef53063a569f69856330a2338e30697",
+      "plan_sha256": "40dd89d457fab3aa8869edd9b2db9e71710fbf1b736aa41fe952668b2b59ad06",
+      "profile": "16,14,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r01-41af124db7cd/shared-first/receipt.json",
+      "row_id": "41af124db7cd0530ff1038b0e6a36d168bfa8d4dc36965044cbfa9967677ff90",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 24,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350001,
+          "cube": [
+            -581,
+            -2909
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350003,
+          "cube": [
+            -581,
+            2909
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350006,
+          "cube": [
+            581,
+            -997
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            581,
+            997
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "a8574aeacc98e3b937e04316451957a1ef9066c4ee7a3778d1632caa817b14af",
+      "plan_sha256": "8e557e731549d6a53073043458504ed91755a2d0b1882f5222321c9e521a0710",
+      "profile": "16,14,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r02-b17f4613bba2/shared-first/receipt.json",
+      "row_id": "b17f4613bba26d4a6a192e987ee4eb8dcd48e7bd1d54ea649d836b4addadb5dd",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1002,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 8,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3408,
+            -3412
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3408,
+            3412
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3408,
+            -3412
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3408,
+            3412
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "cd3e89bb3a9cb855083810da6f7c1260db7da1d7d741f1d181ff18b6997f62de",
+      "plan_sha256": "5e03d35c35839db30e8e186fd41cabb68668cffd1e552ef1712a3abb32dd656d",
+      "profile": "16,14,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r03-9de989518ea3/shared-first/receipt.json",
+      "row_id": "9de989518ea374f0315ea2736b226529f3f73d2baac2ccf7464646a759e8ee76",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1004,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 28,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -569,
+            -2549
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -569,
+            2549
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            569,
+            -2558
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            569,
+            2558
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "1c43197affc842be693a4319419542a446b8f44043ade5cd0dbd7af2df6aa9a2",
+      "plan_sha256": "193cf60ea743d505c371043a2f64a107a78ccffcbbf719adeabc4baacc9e38dd",
+      "profile": "16,14,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r04-61a3ca5f9ff1/shared-first/receipt.json",
+      "row_id": "61a3ca5f9ff17604ffaa285ff52008ee1786b0c787ac94dd9d2ee1d11767d85a",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 34,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -789,
+            -786
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -789,
+            786
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            789,
+            -786
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            789,
+            786
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "d9819b26b5c946d4fe6e917baf038cc46bd48f215be4c407e0045c50e467c8d1",
+      "plan_sha256": "7281e6c98cf8dd1fd625a81ecafc323c382739baba49fef97375c2602a7b8f1d",
+      "profile": "16,14,14,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r05-d3a56e303b1b/shared-first/receipt.json",
+      "row_id": "d3a56e303b1be3d6d64d636777a52aa535c87643ddbb3badaba36586cfe1a8bf",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1002,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 245,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3705,
+            -3861
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3705,
+            3861
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3705,
+            -5114
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350007,
+          "cube": [
+            3705,
+            5114
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "d19cdf96113356542793081c2039bb03519688038fdbac62f54aa8952b0c2cb7",
+      "plan_sha256": "4e721db4cd74578a358ad61271234aa09a44c01cea40468705a81298006fc6f5",
+      "profile": "16,15,13,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r06-070a9793cae6/shared-first/receipt.json",
+      "row_id": "070a9793cae62f52fff56d3312d2fcac91c85e08fadc730380f803b35da2e1dc",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 253,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350001,
+          "cube": [
+            -3549,
+            -3557
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            -3549,
+            3557
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3549,
+            -4890
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3549,
+            4890
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "788265fe0cc7ee158edfa03c3341053c23677568d22fefac73ae8c8d2f719675",
+      "plan_sha256": "98d35c651d9eccb437c0121d45ceec057c414c0c1c3e8fb27b0d9cf92b42379d",
+      "profile": "16,15,13,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r07-9f0ac234bfc8/shared-first/receipt.json",
+      "row_id": "9f0ac234bfc8dccc3283320dfafd2e9c8231ea17c7dbb58de243fe6d180a6cb5",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 13,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -585,
+            -3073
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -585,
+            3073
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            585,
+            -2549
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            585,
+            2549
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "93ba1d9ae456d5383e622466b5408a4a06a8f2936f0a5f7f2b1b748331da9e4a",
+      "plan_sha256": "b7ec1542576c11b292caf9f000cd40423a66bea9ae8ba4e23275caacd4be89ec",
+      "profile": "16,15,13,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r08-88d42ac48819/shared-first/receipt.json",
+      "row_id": "88d42ac48819b2665cf6eb83f4520e1241c1572a2d1bcedf7b3e1c1c1d6b61e1",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1001,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 68,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -4133,
+            -4129
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            -4133,
+            4129
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350003,
+          "cube": [
+            4133,
+            -4781
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350003,
+          "cube": [
+            4133,
+            4781
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "f1674b653c7217acb12fa62a3922afd581952989a16d09762a409d440ba0935f",
+      "plan_sha256": "6deb85b8052607188efbd16aa9a928f03d5fed0e2fa280c90235cacd958f9d90",
+      "profile": "16,15,13,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r09-b08ff21a14c3/shared-first/receipt.json",
+      "row_id": "b08ff21a14c320e9f5e30d8a006974d0d1ef2737fd70989c0bf31472094b4c1f",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 125,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3989,
+            -4001
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350005,
+          "cube": [
+            -3989,
+            4001
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350003,
+          "cube": [
+            3989,
+            -4526
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3989,
+            4526
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "66707fb5e9d8d234f4ff45a59da2278398a92ca3a7a65ae778e5597ea2c268fb",
+      "plan_sha256": "aad722bdeff0619e5fc0bf0c47452e86570d1b09498ca499946640c308d857a5",
+      "profile": "16,15,13,13",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r10-479de1087a39/shared-first/receipt.json",
+      "row_id": "479de1087a399687f477fde8eef64a8753ca66453d59008c9de1802e9fdd842a",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 51,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350002,
+          "cube": [
+            -4141,
+            -5322
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            -4141,
+            5322
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            4141,
+            -4773
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            4141,
+            4773
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "4cd2848c3367244b5ccbd26159939f48cd38a7309c7fd011db8e0a3e440181d0",
+      "plan_sha256": "668227cda1092a48fbb671c86e0ff6de8e5f4443e3dc731635af5f0b93f8e220",
+      "profile": "16,16,14,11",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m5/runs/1-a2323f6487a28deee85ea668d1afd8d4db1f2e2ccb419435dc7422319e699243/shared-first-350k-300s/receipt.json",
+      "row_id": "a2323f6487a28deee85ea668d1afd8d4db1f2e2ccb419435dc7422319e699243",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1003,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 49,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3549,
+            -3561
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3549,
+            3561
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            3549,
+            -5214
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3549,
+            5214
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "3d1c1a1130dacd4fe4bdd6a238d776a52bab338bac67d260c8613875ea9f2d4a",
+      "plan_sha256": "d64c7a7c8525b3245d576ff3611f6931d7fc9d5a2aa61d2652777236a1056176",
+      "profile": "16,16,14,11",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m5/runs/2-8af9d38d1f1c30d9e5faa8347a186f258695f6d06b50d95553addf62288361fa/shared-first-350k-300s/receipt.json",
+      "row_id": "8af9d38d1f1c30d9e5faa8347a186f258695f6d06b50d95553addf62288361fa",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1001,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 18,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350003,
+          "cube": [
+            -3549,
+            -4901
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3549,
+            4901
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3549,
+            -4890
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            3549,
+            4890
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "ea4c457911227a8b9a42de55cf05a407c8cd1e7b88069dae4a75c5557e28ae4f",
+      "plan_sha256": "a9f21fec972159c0adacb5783c1b0dd35aa256e85473a40c4b68decb56596635",
+      "profile": "16,16,14,11",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m5/runs/3-6de444c30c34fd45a197a44ed773a845cd8ebd9e57cc227348401d9fa99bb36f/shared-first-350k-300s/receipt.json",
+      "row_id": "6de444c30c34fd45a197a44ed773a845cd8ebd9e57cc227348401d9fa99bb36f",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 3,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350001,
+          "cube": [
+            -5113,
+            -4892
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350001,
+          "cube": [
+            -5113,
+            4892
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            5113,
+            -4413
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            5113,
+            4413
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "ce45a850fd713483337e9456dcfe18640135a99052a322fd0dcbe4391fe2b7ed",
+      "plan_sha256": "aa3cec8dde52b87a9f7992d354ee9cef26211340aa235120c8bd82ed53eb37d2",
+      "profile": "16,16,14,11",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m5/runs/4-fd4eb39b9f1593e6f2ebe834fdcffeacb3d08a73338599cfc3844c4f2fdc6810/shared-first-350k-300s/receipt.json",
+      "row_id": "fd4eb39b9f1593e6f2ebe834fdcffeacb3d08a73338599cfc3844c4f2fdc6810",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    },
+    {
+      "audit_status": "PASS",
+      "branch": 27,
+      "checker_sha256_receipt": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "conflict_cap": 350000,
+      "errors": [],
+      "leaf_search": [
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3853,
+            -3857
+          ],
+          "node": "r00",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            -3853,
+            3857
+          ],
+          "node": "r01",
+          "result": null
+        },
+        {
+          "conflicts": 350002,
+          "cube": [
+            3853,
+            -4894
+          ],
+          "node": "r10",
+          "result": null
+        },
+        {
+          "conflicts": 350000,
+          "cube": [
+            3853,
+            4894
+          ],
+          "node": "r11",
+          "result": null
+        }
+      ],
+      "method": "shared CaDiCaL",
+      "parent_sha256": "184ae838686403cff48dc7c4cc0319dc746cc6877503cc42804d2ec0c35a3184",
+      "plan_sha256": "547312ff40868615ff1882ce8db02104f220f562c945188f4c9a55e8172fa933",
+      "profile": "16,16,14,11",
+      "proof_credit": false,
+      "reason": null,
+      "receipt": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m5/runs/5-46c207930c255da61cd130e487772a2cfaf0c0eb46c3cbdad6551b670f06f07a/shared-first-350k-300s/receipt.json",
+      "row_id": "46c207930c255da61cd130e487772a2cfaf0c0eb46c3cbdad6551b670f06f07a",
+      "status": "OPEN",
+      "tail_cap": 1000,
+      "tail_conflicts": 1000,
+      "termination": "CONFLICT_LIMITS"
+    }
+  ],
+  "counts": {
+    "OPEN": 35,
+    "OPEN_conflict_limits": 35,
+    "OPEN_wall_time": 0,
+    "VERIFIED_UNSAT_receipts": 0,
+    "independent_UNSAT_proofs": 0,
+    "independent_full_physical_models": 0,
+    "receipts": 35,
+    "static_pass": 35
+  },
+  "generated_unix": 1795721966,
+  "schema": 1
+}

@@ -1,0 +1,20 @@
+{
+  "status": "INCOMPLETE_FRONTIER_ALL_LEAVES_OPEN",
+  "block": "CB4",
+  "profile": "16,16,14,11",
+  "plans_completed": 5,
+  "declared_cubes": 20,
+  "processed_leaf_attempts": 20,
+  "counts": {
+    "CERTIFIED_UNSAT": 0,
+    "CHECKED_SAT": 0,
+    "OPEN": 20,
+    "NOT_RUN": 0
+  },
+  "whole_rows_verified": 0,
+  "whole_parent_exports": 0,
+  "ordinary_leaf_drats_replayed": 0,
+  "no_whole_cover_acceptance": true,
+  "scope_limit": "Five selected CB4 rows only; no profile elimination and no Ramsey-number claim.",
+  "bytes_owned_at_audit": 35286324
+}

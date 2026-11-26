@@ -1,0 +1,2037 @@
+{
+  "block": "CB3",
+  "row_count": 10,
+  "cube_count": 40,
+  "whole_row_covers": 0,
+  "whole_row_UNSAT": 0,
+  "whole_row_SAT": 0,
+  "per_cube_counts": {
+    "OPEN": 40
+  },
+  "CHECKED_UNSAT": 0,
+  "CHECKED_SAT": 0,
+  "CHECK_FAILED": 0,
+  "NOT_RUN": 0,
+  "all_shared_first_passes": "OPEN conflict limits (not wall limits)",
+  "all_leaf_workers": "OPEN conflict limits; no proof or model artifacts",
+  "strict_verification": "10/10 plans checked with exact parent SHA and check-seconds=600; all returned OPEN with four OPEN receipts",
+  "exports_attempted": 0,
+  "exports_reason": "No row has four independently replayed UNSAT leaves; export-drat is not applicable.",
+  "replay_note": "No UNSAT certificate or model existed, so ordinary DRAT replay and 1653-edge decoding were not applicable.",
+  "roster_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "selection_sha256": "86188322ae02e4e25b6eafe83564acb9c3592d1ecf19213b7921b3920442302a",
+  "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "python_sat": "1.9.dev22",
+  "rows": [
+    {
+      "order": 1,
+      "row_id": "ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e",
+      "profile": "16,15,14,12",
+      "branch": 90,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        15,
+        14,
+        12,
+        0
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "71004d7e1a4e388665c80e20c63bdbe0cc140003167994ef2c56a81a776ce984",
+      "plan_path": "plans/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e/plan.json",
+      "parent_sha256": "a6d7fe229798959c150ed2eb93c4103ee01886759792d8e658b68074082a6e2b",
+      "working_sha256": "f8c5a1f3a80731c8e0164c066af9903434d2d94f6931aa252444dfa1bd291861",
+      "cas_proof_sha256": "a82aa3a6f1b7f3900d913da955eefa65976ed9fd8238c1f28696f82c3344d0ae",
+      "variables": 18703,
+      "clauses": 175323,
+      "cuts": 147,
+      "tables": 7,
+      "splits": {
+        "r": 3549,
+        "r0": 3545,
+        "r1": 5117
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -3549,
+            -3545
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 60.736,
+            "receipt_sha256": "32cc2666eca486c3ffc5334152f52be15cd699212a3429c5bd87a06e349a64cc",
+            "receipt_path": "plans/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -3549,
+            3545
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 52.376,
+            "receipt_sha256": "0cca0c2aa7e3c4e6590a4429db98514a1926614bc189e7798f03dd4f600c8e65",
+            "receipt_path": "plans/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            3549,
+            -5117
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350004,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 44.248,
+            "receipt_sha256": "4b66b7d609c53a9e8bce96d3daf1617b6933b771a70c6bbe6705eb6087f1ecae",
+            "receipt_path": "plans/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            3549,
+            5117
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350002,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 60.61,
+            "receipt_sha256": "8845db450053fd79a4a1fa1a48b6bd8ba30f6fe82c15cf04911238731f79e0e9",
+            "receipt_path": "plans/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e/receipt.json",
+      "shared_receipt_sha256": "a9728a2d918ba73b94e73c7845316de8df9fac6ff3ce8d4197ea579d5c22588f",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "a6d7fe229798959c150ed2eb93c4103ee01886759792d8e658b68074082a6e2b",
+        "log_path": "logs/verify-s600/ec5d747e21b53d7c13cc01b651b63958e6fb8de38377d9e5211f5d2b4a095c3e.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 2,
+      "row_id": "ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c",
+      "profile": "16,15,14,12",
+      "branch": 529,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        15,
+        14,
+        12,
+        0
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "ca69a043bc153d2d3587e0bff992f8ffac909b8a7d72a94c72d0b55185d43b93",
+      "plan_path": "plans/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c/plan.json",
+      "parent_sha256": "e7b7491481feb02d9b5136b0f5c8ca01aed1838fe8571d9b9f6df5131cfb03a8",
+      "working_sha256": "6c1478c8290ac0aa20cf7b5d717dae8461de5b0c138c1b20208b2606796cb98d",
+      "cas_proof_sha256": "bbdfa0d0eb6df161bd752cf49b849da81edc859b6f134b5b806bec9b3d892782",
+      "variables": 18703,
+      "clauses": 175323,
+      "cuts": 147,
+      "tables": 7,
+      "splits": {
+        "r": 3697,
+        "r0": 3705,
+        "r1": 4526
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -3697,
+            -3705
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 56.158,
+            "receipt_sha256": "6173f85a3f45d88b948144ab1c24f71e7b875eaaffb3585a04d1f046ab8e650d",
+            "receipt_path": "plans/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -3697,
+            3705
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350002,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 59.93,
+            "receipt_sha256": "e575c4bda43190b24893dc6c192fe941691645bfdada113d037652943a3c72a4",
+            "receipt_path": "plans/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            3697,
+            -4526
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350001,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000006,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 61.934,
+            "receipt_sha256": "3179308cadb4c6eadd2568f17a8ecc1a2d334a92b2a58bfb59c940af5e195f01",
+            "receipt_path": "plans/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            3697,
+            4526
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 55.305,
+            "receipt_sha256": "72a7845989d64be57efe597746add592644ef49877432ef7179b5e045961b3e0",
+            "receipt_path": "plans/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c/receipt.json",
+      "shared_receipt_sha256": "509ef1583ef023bf587f0b42334902b2b7783a5e0af7a9e97a7a5e05eb0dc919",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "e7b7491481feb02d9b5136b0f5c8ca01aed1838fe8571d9b9f6df5131cfb03a8",
+        "log_path": "logs/verify-s600/ef7cb5c60016e49052509c0a48c81e5d6393d7741842970fc459c9649bbc6b4c.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 3,
+      "row_id": "2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9",
+      "profile": "16,15,14,12",
+      "branch": 99,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        15,
+        14,
+        12,
+        0
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "6e256a9b983caf569c7dde9da2501980e6c65f89b5b112d5c33c75850ec22434",
+      "plan_path": "plans/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/plan.json",
+      "parent_sha256": "577826693b85609833d32d8f9553144e747791072d4e34e29978e66e67342922",
+      "working_sha256": "4436940f47aefb4156491348a05d69965a469370dc4704c937b46b80ecdae5b9",
+      "cas_proof_sha256": "fc213a217f970bc03c24cb63d5b83fa370d8889a36e08476dfcabc3289653a00",
+      "variables": 18813,
+      "clauses": 175545,
+      "cuts": 336,
+      "tables": 16,
+      "splits": {
+        "r": 3701,
+        "r0": 3992,
+        "r1": 3697
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -3701,
+            -3992
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 41.784,
+            "receipt_sha256": "3b0b5a0c353efd27b70d6c624a960347fba12f4064320badfe6d0fa445f72132",
+            "receipt_path": "plans/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -3701,
+            3992
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350001,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 42.998,
+            "receipt_sha256": "7e51ebb8e58b6013d15978dc54936b42af4c91745931a624eee39898d3a224c5",
+            "receipt_path": "plans/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            3701,
+            -3697
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350009,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000006,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 62.228,
+            "receipt_sha256": "5c246bd5b8d0e6d18b98f88c8ece6fb8fca2fd1e631b90901b17d8e59a356595",
+            "receipt_path": "plans/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            3701,
+            3697
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000002,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 57.639,
+            "receipt_sha256": "396718c8e2a551be5cc6d16df14788483a6dce051b46021afca5dd44c4e829d3",
+            "receipt_path": "plans/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/receipt.json",
+      "shared_receipt_sha256": "f0311098f494131402522f9659ace3a769e0227c5aca2c179417146c961e688c",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "577826693b85609833d32d8f9553144e747791072d4e34e29978e66e67342922",
+        "log_path": "logs/verify-s600/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 4,
+      "row_id": "7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289",
+      "profile": "16,15,14,12",
+      "branch": 572,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        15,
+        14,
+        12,
+        0
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "620f362e55bb39a7b19482157a3989948455cb84ffab957deb15984a4157ddd0",
+      "plan_path": "plans/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289/plan.json",
+      "parent_sha256": "333a63ab7a31dab0049a1527eb30f288eae65e2a70811306715e70da814e2c8e",
+      "working_sha256": "817e59e26def5dcb1ed5705c3f7a8f27f3589a79ccbc12c362266a516fe12a6b",
+      "cas_proof_sha256": "fc213a217f970bc03c24cb63d5b83fa370d8889a36e08476dfcabc3289653a00",
+      "variables": 18631,
+      "clauses": 175194,
+      "cuts": 336,
+      "tables": 16,
+      "splits": {
+        "r": 3697,
+        "r0": 3701,
+        "r1": 4770
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -3697,
+            -3701
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 62.122,
+            "receipt_sha256": "691321c3896bbcb4f4eb3e53956aa1ba1e77cf605176166d05ee251b8ef1ca80",
+            "receipt_path": "plans/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -3697,
+            3701
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 61.85,
+            "receipt_sha256": "1b50791187cdc210f8f921786fa68033ae8a6f043d5302500dca58b96b7ed09d",
+            "receipt_path": "plans/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            3697,
+            -4770
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350003,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 40.701,
+            "receipt_sha256": "f6c4bc8e19debc277107507c84baa9a01996bff74028db26b8f46dc230aa946d",
+            "receipt_path": "plans/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            3697,
+            4770
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350003,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 54.798,
+            "receipt_sha256": "ace543f0990a6fcd561347f314ed600c571f1c72695918e3e5e627f38b420406",
+            "receipt_path": "plans/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289/receipt.json",
+      "shared_receipt_sha256": "8b7e37152a058ec9790665a7621a26276fef9ae50ba701bbd299f25ba0c47dbb",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "333a63ab7a31dab0049a1527eb30f288eae65e2a70811306715e70da814e2c8e",
+        "log_path": "logs/verify-s600/7d2d6b044c1b56f2064726d4a93563187e44905bf4ec334c8fb5de716f37d289.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 5,
+      "row_id": "728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1",
+      "profile": "16,15,14,12",
+      "branch": 451,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        15,
+        14,
+        12,
+        0
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "8346ec8d27e855133d275a06607d796cfd6d68bade07fffdb9186df0bf0cb707",
+      "plan_path": "plans/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1/plan.json",
+      "parent_sha256": "1048771073685add6efbdd1cdd8fb97a6870158a66b469126eefdf2093e0df2a",
+      "working_sha256": "fe70d1ed5ee37e0a6f922dcca506c4c61798f26d4793d0b53468635c4e318457",
+      "cas_proof_sha256": "90a431585b7c9c40df74858732a637c0d52d23f910e20ed0cee2372c4dfe7393",
+      "variables": 18813,
+      "clauses": 175545,
+      "cuts": 336,
+      "tables": 16,
+      "splits": {
+        "r": 3697,
+        "r0": 4777,
+        "r1": 3857
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -3697,
+            -4777
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350002,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 53.624,
+            "receipt_sha256": "dda909697dfce848aafb907bba2cc362602a9a72066dec18f94dfd9fdd44232c",
+            "receipt_path": "plans/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -3697,
+            4777
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 61.196,
+            "receipt_sha256": "dcc35aa1e64a7caf94f223c9ed803c65b3d8ab18a8346ff1519b01f3113aba76",
+            "receipt_path": "plans/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            3697,
+            -3857
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350001,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 53.46,
+            "receipt_sha256": "6ba4051cfe64f6c4a04852243e1d82d332d0fcdf45b7deef023754aa4ee9abaf",
+            "receipt_path": "plans/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            3697,
+            3857
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000002,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 52.503,
+            "receipt_sha256": "d6a271bf35880992a8697bfd6feda181ef51a492aa4177be4078399bf3394bbd",
+            "receipt_path": "plans/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1/receipt.json",
+      "shared_receipt_sha256": "8c5d02183e1b48a4b9cf2d10710789a3f567f48e71480a20c1760d48c5fba1c3",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "1048771073685add6efbdd1cdd8fb97a6870158a66b469126eefdf2093e0df2a",
+        "log_path": "logs/verify-s600/728e83e892c0fd5b069be51f4267661d2cafff395209db51c94eef11a0be5aa1.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 6,
+      "row_id": "cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b",
+      "profile": "16,16,13,12",
+      "branch": 39,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        16,
+        13,
+        12,
+        1
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "e0b146e8b5754a1eb75581f6b3000c3d42ba13a49c99a6418ac03e5c6c1dd9a4",
+      "plan_path": "plans/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b/plan.json",
+      "parent_sha256": "41f3b54debc74a49d8559f425f23237484ddd1bf7beb17c2a79581da283bf11a",
+      "working_sha256": "69a189cbd810086d65cb4f406b602e2e35305c380d484e67a7c41a9b5155eb9d",
+      "cas_proof_sha256": "60d7b83eef8315c52f8a6c4d2bdcb3020e6f954ac2929af94573ba9376773d2c",
+      "variables": 19533,
+      "clauses": 184335,
+      "cuts": 315,
+      "tables": 15,
+      "splits": {
+        "r": 1209,
+        "r0": 2729,
+        "r1": 1222
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -1209,
+            -2729
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 60.031,
+            "receipt_sha256": "138eb4c199cb6f4e1c12fe7a948d5415aa7eb7e1e31791cf55d8bca498018166",
+            "receipt_path": "plans/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -1209,
+            2729
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 61.344,
+            "receipt_sha256": "561e75094151e11260c8bb0fd86f18a7776faad77d20da61f294c75595e0425e",
+            "receipt_path": "plans/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            1209,
+            -1222
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350001,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 61.408,
+            "receipt_sha256": "7638ee071a05729558c6c7f30d91191534609704a63be53cbacbbf508a594607",
+            "receipt_path": "plans/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            1209,
+            1222
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 45.355,
+            "receipt_sha256": "88132d2e9a6763f5e1aa703d93057cb69b20a6ec4bc21020098153be5728aa00",
+            "receipt_path": "plans/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b/receipt.json",
+      "shared_receipt_sha256": "18ac4c746127a2c0b6a92c7cb36f176205be0167254fcb0c6fc6a991e99882df",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "41f3b54debc74a49d8559f425f23237484ddd1bf7beb17c2a79581da283bf11a",
+        "log_path": "logs/verify-s600/cf720980ea6fdeff6c98f495b5d4bd008d87900390eaa93460614d1a29a8a43b.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 7,
+      "row_id": "30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d",
+      "profile": "16,16,13,12",
+      "branch": 7,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        16,
+        13,
+        12,
+        0
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "314c1b5a447eb5caa35eecd34849c6d052027073abe732d0b590587ef5db398d",
+      "plan_path": "plans/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d/plan.json",
+      "parent_sha256": "9dece8456e52dac71089442312b8c62fbe4532db9d43b1c8436486ccfc0fec6a",
+      "working_sha256": "d6ecc3ad53eb3ca65c274d84ef23772af760d33d7c40ea6c45c562b2f8fc645d",
+      "cas_proof_sha256": "a82aa3a6f1b7f3900d913da955eefa65976ed9fd8238c1f28696f82c3344d0ae",
+      "variables": 19407,
+      "clauses": 184075,
+      "cuts": 147,
+      "tables": 7,
+      "splits": {
+        "r": 3997,
+        "r0": 4005,
+        "r1": 4541
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -3997,
+            -4005
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 61.993,
+            "receipt_sha256": "19bfda987396e09eeb348ab8267fdb0c6401908ee9033de4c3a4870e972f6808",
+            "receipt_path": "plans/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -3997,
+            4005
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 43.639,
+            "receipt_sha256": "f46469b9a80b888c6e7e481898bcb93c8e554f9d269b7e71acef6b45a2770cfd",
+            "receipt_path": "plans/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            3997,
+            -4541
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350001,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 58.989,
+            "receipt_sha256": "2058a0f985ce30019d961a9a97d6d603b529dbdee04799cea985a81e32c13c13",
+            "receipt_path": "plans/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            3997,
+            4541
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 61.47,
+            "receipt_sha256": "59aaa771b4a40dbedc5b09d58ce1b6a9d14a4b02dad5405655d237ee36a798f7",
+            "receipt_path": "plans/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d/receipt.json",
+      "shared_receipt_sha256": "7f325fbde8d1fbd41a37c622d5c64fcbb2b65000fdc3b82ca7b4491501d5666c",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "9dece8456e52dac71089442312b8c62fbe4532db9d43b1c8436486ccfc0fec6a",
+        "log_path": "logs/verify-s600/30d968716bc907d9161b5fc4c0cad1954acfd5de642d2255bf9e8c41cc32793d.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 8,
+      "row_id": "22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e",
+      "profile": "16,16,13,12",
+      "branch": 9,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        16,
+        13,
+        12,
+        1
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "70cfeea5c0b29c2a962bff0a49384b03ca12b578ab0a46a5a09ee9d1e0bd85d1",
+      "plan_path": "plans/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e/plan.json",
+      "parent_sha256": "c07ff04840c3c85464794071202956186ca62bb823ac0fcfd9e13bb93f6cde2c",
+      "working_sha256": "6ebb2e08b2e763372585f9681a512cd3dc4ba653a0a7fbd48cac6ee676710729",
+      "cas_proof_sha256": "4815e7a4e81f4cd0d2d8ba08c1e3c0cfcc63a95a90c20db3011a0f395b3f2b40",
+      "variables": 19425,
+      "clauses": 184117,
+      "cuts": 147,
+      "tables": 7,
+      "splits": {
+        "r": 577,
+        "r0": 2557,
+        "r1": 2565
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -577,
+            -2557
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350001,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 59.362,
+            "receipt_sha256": "1a33f448b7e1e845b67000bb59ae8b67ebe923dab7e05c5c5ae1347932aec0a0",
+            "receipt_path": "plans/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -577,
+            2557
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 56.859,
+            "receipt_sha256": "13300b1b7d92f4837cd438957cf3d7758b4da151fc6be8b78c5ccb9224e568d5",
+            "receipt_path": "plans/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            577,
+            -2565
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 60.594,
+            "receipt_sha256": "b5c51bb95083c7ab3b667ee7daa4643f5565401e856700b5d8aa1b1df1190510",
+            "receipt_path": "plans/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            577,
+            2565
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350002,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000002,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 44.538,
+            "receipt_sha256": "f20afb31a3c87bb8fcd8944ed6a99b4b2de18e7030ea61a4e98ae792d7d1231f",
+            "receipt_path": "plans/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e/receipt.json",
+      "shared_receipt_sha256": "273b62300ea08265cf72a3e04688169f1c30ce6c3f1b92002d04ac1fc626abd8",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "c07ff04840c3c85464794071202956186ca62bb823ac0fcfd9e13bb93f6cde2c",
+        "log_path": "logs/verify-s600/22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 9,
+      "row_id": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296",
+      "profile": "16,16,13,12",
+      "branch": 48,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        16,
+        13,
+        12,
+        1
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "5c3da7a3f3498915e286fb292a4a172f01a2ad489cf89e0e53831bb43203b4f4",
+      "plan_path": "plans/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296/plan.json",
+      "parent_sha256": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+      "working_sha256": "bf2742abe620821bbf526fa653982fddb29b9fc28c89bd905f001f9d206cd937",
+      "cas_proof_sha256": "7300408572adce0c4af7426af50ccfae52e594e460ca6ce0188dd7efe699699e",
+      "variables": 19425,
+      "clauses": 184117,
+      "cuts": 168,
+      "tables": 8,
+      "splits": {
+        "r": 581,
+        "r0": 2561,
+        "r1": 2565
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -581,
+            -2561
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000002,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 43.347,
+            "receipt_sha256": "32226b271517a5b315c56eef0a59a9854d4573d147c92576623ccc18fdb1f35e",
+            "receipt_path": "plans/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -581,
+            2561
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000000,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 57.711,
+            "receipt_sha256": "87ede677f06dd1e894c94867e94adbf6106c008573891069e958dd6afdc4655f",
+            "receipt_path": "plans/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            581,
+            -2565
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 59.936,
+            "receipt_sha256": "49037cfddc1765f2aa126fdfb39031abc489dfaa734ebb3ccdb4db5ed55bb936",
+            "receipt_path": "plans/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            581,
+            2565
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350002,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000001,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 49.133,
+            "receipt_sha256": "4e2707578e6655cb4846eb16d847b4ee1a9b8c0da156899b1a073490cf59e40a",
+            "receipt_path": "plans/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296/receipt.json",
+      "shared_receipt_sha256": "eb3ab016092c680a5fee01a33063ac8a2356b54755f6289bc6da90530901b375",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+        "log_path": "logs/verify-s600/0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    },
+    {
+      "order": 10,
+      "row_id": "5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558",
+      "profile": "16,16,13,12",
+      "branch": 8,
+      "tier": "first",
+      "recipe": {
+        "tables": true,
+        "total_critical": true,
+        "full_root": false
+      },
+      "arm_pair": [
+        16,
+        16,
+        13,
+        12,
+        0
+      ],
+      "arm_mode": "both",
+      "depth": 2,
+      "split_limit": 6612,
+      "plan_sha256": "e45c18737c51a7d204fab170bdcf912287cbc1ba8e7d17c84343f1e1c991ff08",
+      "plan_path": "plans/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558/plan.json",
+      "parent_sha256": "3dad685ecb5c7e00aef9fb371145e3e5b718e03425912a46976dafaa272d3af7",
+      "working_sha256": "edffd42019b0991217e84a0793930d02cf7e267d04d06c900c38e5791bddff90",
+      "cas_proof_sha256": "d2f13c8099bb5a88cb235c0c9b3ae87ebfe250e41b14b910e9ccc82b5826d742",
+      "variables": 19167,
+      "clauses": 180235,
+      "cuts": 168,
+      "tables": 8,
+      "splits": {
+        "r": 3565,
+        "r0": 4897,
+        "r1": 5230
+      },
+      "leaves": [
+        {
+          "node": "r00",
+          "cube": [
+            -3565,
+            -4897
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r00"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000003,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 42.01,
+            "receipt_sha256": "1ed12a200af5f33acd819e185007f727f1bc44b5f4269f58535b36508b34bdc7",
+            "receipt_path": "plans/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558/leaves/r00/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r01",
+          "cube": [
+            -3565,
+            4897
+          ],
+          "ancestry": [
+            "r",
+            "r0",
+            "r01"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000004,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 38.132,
+            "receipt_sha256": "8bdf7316c20782ad7b5413e3d0e74385222a4f1f03706fd4539e7ab52b5ddc73",
+            "receipt_path": "plans/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558/leaves/r01/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r10",
+          "cube": [
+            3565,
+            -5230
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r10"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000003,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 51.289,
+            "receipt_sha256": "cd3a69c0abb2616a0b79658ca1543a5ef8038b22555e083482cecb0b8a3f35aa",
+            "receipt_path": "plans/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558/leaves/r10/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        },
+        {
+          "node": "r11",
+          "cube": [
+            3565,
+            5230
+          ],
+          "ancestry": [
+            "r",
+            "r1",
+            "r11"
+          ],
+          "shared_first_pass": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts": 350000,
+            "conflict_cap": 350000,
+            "seconds_cap": 300,
+            "check_seconds": 600
+          },
+          "leaf_worker": {
+            "status": "OPEN",
+            "termination": "conflict_limit",
+            "conflicts_used": 1000002,
+            "budget": {
+              "check_seconds": 600,
+              "conflicts": 1000000,
+              "proof": "eager",
+              "seconds": 300
+            },
+            "elapsed_s": 43.483,
+            "receipt_sha256": "a7ffaab80a171abbfa8ee7ed5b38443de5ea665de5a966a65adc354a62be2cfc",
+            "receipt_path": "plans/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558/leaves/r11/receipt.json"
+          },
+          "proof_sha256": null,
+          "ordinary_DRAT_replay": "NOT_APPLICABLE_NO_UNSAT_CERTIFICATE",
+          "model": null
+        }
+      ],
+      "shared_receipt_path": "shared-pass1/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558/receipt.json",
+      "shared_receipt_sha256": "566545945ebdb8292098414c7a5395b087804ac73082c523c9e8bc9f114445c1",
+      "shared_termination": "conflict_limit_all_4_and_tail",
+      "shared_receipt_status": "OPEN",
+      "strict_verify": {
+        "status": "OPEN",
+        "counts": {
+          "OPEN": 4
+        },
+        "check_seconds": 600,
+        "expected_parent_sha256": "3dad685ecb5c7e00aef9fb371145e3e5b718e03425912a46976dafaa272d3af7",
+        "log_path": "logs/verify-s600/5ff592a88ea23fa985c0164a00bab9b059437b63b4924e73ae3c089e4af7a558.log"
+      },
+      "whole_row_coverage": false,
+      "export_drat": "NOT_ATTEMPTED_NO_VERIFIED_COVER"
+    }
+  ]
+}

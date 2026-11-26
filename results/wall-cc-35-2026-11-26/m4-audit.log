@@ -1,0 +1,33 @@
+{
+  "block": "CB2",
+  "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "counts": {
+    "CHECKED_SAT": 0,
+    "CHECKED_UNSAT": 0,
+    "NOT_RUN": 0,
+    "OPEN": 40
+  },
+  "cube_count": 40,
+  "driver_hashes": {
+    "cadical_leaf.py": "5c4ef6727936fc30bd1b60074fd77ca110569a8117f163fdbc95168069645ff9",
+    "campaign.py": "b412c758a0ab3dc245e37c55cbf304aa5e441dd3691a8d713c7d0aac668c9a6b",
+    "export_drat.py": "005e488ca4b3112a5f33925819f58b4594b8071693932e63b542624fe99261b7",
+    "shared_conquer.py": "94fd812ef7316df8fd1e4c4d24f7a8119aa29eff3911b9b7e88c2c9b6b3c225f",
+    "wallcc.py": "628238db4776078122e92c8467bb759b4c617eebd700afa802501cd72ce6dc35"
+  },
+  "files": {
+    "frontier_json": "frontier.json",
+    "frontier_tsv": "frontier.tsv"
+  },
+  "leaf_command_elapsed_s": 1849.221,
+  "note": "No cube or row is UNSAT/SAT certified. Strict same-plan verify returned OPEN for all ten rows; export was therefore inapplicable.",
+  "roster_uncompressed_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "row_count": 10,
+  "sat_candidate_count": 0,
+  "selection_sha256": "86188322ae02e4e25b6eafe83564acb9c3592d1ecf19213b7921b3920442302a",
+  "shared_elapsed_s": 759.026,
+  "status": "COMPLETE_FRONTIER_ALL_OPEN",
+  "unfinished_trace_paths": [],
+  "verified_parent_export_count": 0,
+  "whole_row_cover_count": 0
+}

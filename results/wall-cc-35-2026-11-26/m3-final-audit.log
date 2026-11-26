@@ -1,0 +1,27 @@
+{
+  "block": "CB3",
+  "row_count": 10,
+  "cube_count": 40,
+  "whole_row_covers": 0,
+  "whole_row_UNSAT": 0,
+  "whole_row_SAT": 0,
+  "per_cube_counts": {
+    "OPEN": 40
+  },
+  "CHECKED_UNSAT": 0,
+  "CHECKED_SAT": 0,
+  "CHECK_FAILED": 0,
+  "NOT_RUN": 0,
+  "all_shared_first_passes": "OPEN conflict limits (not wall limits)",
+  "all_leaf_workers": "OPEN conflict limits; no proof or model artifacts",
+  "strict_verification": "10/10 plans checked with exact parent SHA and check-seconds=600; all returned OPEN with four OPEN receipts",
+  "exports_attempted": 0,
+  "exports_reason": "No row has four independently replayed UNSAT leaves; export-drat is not applicable.",
+  "replay_note": "No UNSAT certificate or model existed, so ordinary DRAT replay and 1653-edge decoding were not applicable.",
+  "roster_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "selection_sha256": "86188322ae02e4e25b6eafe83564acb9c3592d1ecf19213b7921b3920442302a",
+  "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "python_sat": "1.9.dev22"
+}
+frontier.json 448d92f40d61a450d6ce4e1d453203af6970935237cf2b11dc901035848e9711
+frontier.tsv 6cfd7cb53cf9b23915f0af641108fda3d896320b8dbd7687ada22ed1596dbaa3

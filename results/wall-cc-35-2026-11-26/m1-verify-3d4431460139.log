@@ -1,0 +1,1 @@
+{"counts": {"OPEN": 3, "VERIFIED_UNSAT": 1}, "leaves": 4, "origin": {"id": "3d443146013949bb1f01e907953c366c617e4178c4638cc2c8eb59d4e2745d1c", "kind": "wall", "tier": "first"}, "parent_sha256": "d27d34c0d8336997d545c76120e040ff1aa0f448ef362d443502372d4c1a1ff2", "processed": 4, "status": "OPEN"}

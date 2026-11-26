@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "cube_OPEN_NO_RETAINED_PROOF": 139,
+    "cube_SHARED_UNSAT_NO_RETAINED_PROOF": 1,
+    "rows_OPEN": 35,
+    "termination_conflict_limits": 35
+  },
+  "report": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m2/shared-semantic-census.json",
+  "rows": 35
+}

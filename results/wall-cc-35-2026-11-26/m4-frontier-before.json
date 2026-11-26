@@ -1,0 +1,2440 @@
+{
+  "block": "CB2",
+  "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "counts": {
+    "CHECKED_SAT": 0,
+    "CHECKED_UNSAT": 0,
+    "NOT_RUN": 0,
+    "OPEN": 40
+  },
+  "cube_count": 40,
+  "driver_hashes": {
+    "cadical_leaf.py": "5c4ef6727936fc30bd1b60074fd77ca110569a8117f163fdbc95168069645ff9",
+    "campaign.py": "b412c758a0ab3dc245e37c55cbf304aa5e441dd3691a8d713c7d0aac668c9a6b",
+    "export_drat.py": "005e488ca4b3112a5f33925819f58b4594b8071693932e63b542624fe99261b7",
+    "shared_conquer.py": "94fd812ef7316df8fd1e4c4d24f7a8119aa29eff3911b9b7e88c2c9b6b3c225f",
+    "wallcc.py": "628238db4776078122e92c8467bb759b4c617eebd700afa802501cd72ce6dc35"
+  },
+  "leaf_command_elapsed_s": 1849.221,
+  "roster_uncompressed_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "row_count": 10,
+  "rows": [
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        14,
+        14,
+        13,
+        1
+      ],
+      "branch": 35,
+      "cas_proof_sha256": "19a1e1cefe03918650e0b5037c27fe12edd5bfec3eed3b33444ec402d129bfc3",
+      "clauses": 179242,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 189,
+      "depth": 2,
+      "driver_plan_id_sha256": "40dd89d457fab3aa8869edd9b2db9e71710fbf1b736aa41fe952668b2b59ad06",
+      "key_sha256": "0281760f0bb718ffd30928905198000f3772210bd5b808454238eea2070cdcdb",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r01-41af124db7cd",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 174.68,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:56:36.349345+00:00",
+        "log_sha256": "a8e207ffc604024c87e90b7eff672462d31ce7acb3350bc9e09727a8d3f6f613",
+        "metadata": "logs/r01-41af124db7cd.leaf-eager-300s-1m.log.json",
+        "path": "logs/r01-41af124db7cd.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T18:53:41.669157+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000005,
+          "cube": [
+            -577,
+            -3061
+          ],
+          "elapsed_s": 42.739,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r01-41af124db7cd/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -577,
+            3061
+          ],
+          "elapsed_s": 43.92,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r01-41af124db7cd/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            577,
+            -2557
+          ],
+          "elapsed_s": 44.766,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r01-41af124db7cd/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            577,
+            2557
+          ],
+          "elapsed_s": 42.614,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r01-41af124db7cd/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "ab2ff62ae870e2b716d6976c54baca195ef53063a569f69856330a2338e30697",
+      "plan_file": "plans/r01-41af124db7cd/plan.json",
+      "plan_file_sha256": "40dd89d457fab3aa8869edd9b2db9e71710fbf1b736aa41fe952668b2b59ad06",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "41af124db7cd0530ff1038b0e6a36d168bfa8d4dc36965044cbfa9967677ff90",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r01-41af124db7cd"
+        ],
+        "elapsed_s": 0.704,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:41.721705+00:00",
+        "log_sha256": "cbb95e79ddff9d4eede665e45f7e54dec03e4688538f243f32f65da6f4b4c649",
+        "metadata": "logs/r01-41af124db7cd.prepare.log.json",
+        "path": "logs/r01-41af124db7cd.prepare.log",
+        "started_utc": "2026-11-26T18:40:41.018014+00:00"
+      },
+      "profile": "16,14,14,13",
+      "rank": 1,
+      "row_id": "41af124db7cd0530ff1038b0e6a36d168bfa8d4dc36965044cbfa9967677ff90",
+      "run": "r01-41af124db7cd",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r01-41af124db7cd",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r01-41af124db7cd/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 61.08,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:41:56.028275+00:00",
+          "log_sha256": "27c3ab217a1c6a0b51205a8f2c577322bfb42afa6e3185ce24e4a0a599d96ec5",
+          "metadata": "logs/r01-41af124db7cd.shared-first.log.json",
+          "path": "logs/r01-41af124db7cd.shared-first.log",
+          "started_utc": "2026-11-26T18:40:54.948203+00:00"
+        },
+        "receipt": "plans/r01-41af124db7cd/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1000,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 577,
+        "r0": 3061,
+        "r1": 2557
+      },
+      "tables": 9,
+      "tier": "first",
+      "variables": 18603,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r01-41af124db7cd",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "ab2ff62ae870e2b716d6976c54baca195ef53063a569f69856330a2338e30697"
+        ],
+        "elapsed_s": 0.603,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:41.799386+00:00",
+        "log_sha256": "a8e207ffc604024c87e90b7eff672462d31ce7acb3350bc9e09727a8d3f6f613",
+        "metadata": "logs/r01-41af124db7cd.verify.log.json",
+        "path": "logs/r01-41af124db7cd.verify.log",
+        "started_utc": "2026-11-26T19:24:41.196187+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "41af124db7cd0530ff1038b0e6a36d168bfa8d4dc36965044cbfa9967677ff90",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "ab2ff62ae870e2b716d6976c54baca195ef53063a569f69856330a2338e30697",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "3ef554849a21a2a0752a9665f2e55c53f2250bb05782bdeecd364ead6349b6dd"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        14,
+        14,
+        13,
+        1
+      ],
+      "branch": 24,
+      "cas_proof_sha256": "30beab1c98b7f9d769e42e90c2025ad4e42057cd01b1ae6f74ce175f130c4064",
+      "clauses": 179242,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 189,
+      "depth": 2,
+      "driver_plan_id_sha256": "8e557e731549d6a53073043458504ed91755a2d0b1882f5222321c9e521a0710",
+      "key_sha256": "0802195812c6d087870f4b00288ac565ea0820c095dc12577e5778a5f9b0fae7",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r02-b17f4613bba2",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 177.785,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:59:34.135539+00:00",
+        "log_sha256": "649b650db440abf1160aa06c4d28178a94441129b5ebf9960cde5e025a3a62f9",
+        "metadata": "logs/r02-b17f4613bba2.leaf-eager-300s-1m.log.json",
+        "path": "logs/r02-b17f4613bba2.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T18:56:36.350898+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            -581,
+            -2909
+          ],
+          "elapsed_s": 48.431,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r02-b17f4613bba2/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            -581,
+            2909
+          ],
+          "elapsed_s": 41.318,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r02-b17f4613bba2/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000003,
+          "cube": [
+            581,
+            -997
+          ],
+          "elapsed_s": 45.09,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r02-b17f4613bba2/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            581,
+            997
+          ],
+          "elapsed_s": 42.321,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r02-b17f4613bba2/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "a8574aeacc98e3b937e04316451957a1ef9066c4ee7a3778d1632caa817b14af",
+      "plan_file": "plans/r02-b17f4613bba2/plan.json",
+      "plan_file_sha256": "8e557e731549d6a53073043458504ed91755a2d0b1882f5222321c9e521a0710",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "b17f4613bba26d4a6a192e987ee4eb8dcd48e7bd1d54ea649d836b4addadb5dd",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r02-b17f4613bba2"
+        ],
+        "elapsed_s": 0.713,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:42.484329+00:00",
+        "log_sha256": "ea8049ca8aa522d91ecb5dc93878c22b5bf241081e4685a3f90aae796a2786bf",
+        "metadata": "logs/r02-b17f4613bba2.prepare.log.json",
+        "path": "logs/r02-b17f4613bba2.prepare.log",
+        "started_utc": "2026-11-26T18:40:41.771027+00:00"
+      },
+      "profile": "16,14,14,13",
+      "rank": 2,
+      "row_id": "b17f4613bba26d4a6a192e987ee4eb8dcd48e7bd1d54ea649d836b4addadb5dd",
+      "run": "r02-b17f4613bba2",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r02-b17f4613bba2",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r02-b17f4613bba2/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 54.209,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:42:50.237795+00:00",
+          "log_sha256": "f83ccbc3179e2e9c091d50b7a0c322853d78ab684710da0915040808b7d4efb1",
+          "metadata": "logs/r02-b17f4613bba2.shared-first.log.json",
+          "path": "logs/r02-b17f4613bba2.shared-first.log",
+          "started_utc": "2026-11-26T18:41:56.028882+00:00"
+        },
+        "receipt": "plans/r02-b17f4613bba2/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1002,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 581,
+        "r0": 2909,
+        "r1": 997
+      },
+      "tables": 9,
+      "tier": "first",
+      "variables": 18603,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r02-b17f4613bba2",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "a8574aeacc98e3b937e04316451957a1ef9066c4ee7a3778d1632caa817b14af"
+        ],
+        "elapsed_s": 0.616,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:42.416381+00:00",
+        "log_sha256": "649b650db440abf1160aa06c4d28178a94441129b5ebf9960cde5e025a3a62f9",
+        "metadata": "logs/r02-b17f4613bba2.verify.log.json",
+        "path": "logs/r02-b17f4613bba2.verify.log",
+        "started_utc": "2026-11-26T19:24:41.799920+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "b17f4613bba26d4a6a192e987ee4eb8dcd48e7bd1d54ea649d836b4addadb5dd",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "a8574aeacc98e3b937e04316451957a1ef9066c4ee7a3778d1632caa817b14af",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "fa8f0f162c97e10557451db0a14a35d82e6a63fb987032b15c830cf3d97de89c"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        14,
+        14,
+        13,
+        0
+      ],
+      "branch": 8,
+      "cas_proof_sha256": "153606f7ce549bd44acda7fe6a4b0b8ab716571bf4b72fab55111b6a5be5f19b",
+      "clauses": 146478,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 546,
+      "depth": 2,
+      "driver_plan_id_sha256": "5e03d35c35839db30e8e186fd41cabb68668cffd1e552ef1712a3abb32dd656d",
+      "key_sha256": "087f8146fe4c9ff22ef184e0347292b3bc01fe48b1bcaec516cf008cd92c0e5c",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r03-9de989518ea3",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 175.591,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:02:29.728270+00:00",
+        "log_sha256": "fd179ceee18585a79eeb81f72222407bc3d7799e524082c3d85b51af8fe88520",
+        "metadata": "logs/r03-9de989518ea3.leaf-eager-300s-1m.log.json",
+        "path": "logs/r03-9de989518ea3.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T18:59:34.137051+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -3408,
+            -3412
+          ],
+          "elapsed_s": 43.4,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r03-9de989518ea3/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -3408,
+            3412
+          ],
+          "elapsed_s": 43.693,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r03-9de989518ea3/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            3408,
+            -3412
+          ],
+          "elapsed_s": 42.196,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r03-9de989518ea3/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000002,
+          "cube": [
+            3408,
+            3412
+          ],
+          "elapsed_s": 45.727,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r03-9de989518ea3/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "cd3e89bb3a9cb855083810da6f7c1260db7da1d7d741f1d181ff18b6997f62de",
+      "plan_file": "plans/r03-9de989518ea3/plan.json",
+      "plan_file_sha256": "5e03d35c35839db30e8e186fd41cabb68668cffd1e552ef1712a3abb32dd656d",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "9de989518ea374f0315ea2736b226529f3f73d2baac2ccf7464646a759e8ee76",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r03-9de989518ea3"
+        ],
+        "elapsed_s": 0.661,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:43.195172+00:00",
+        "log_sha256": "37934bdc42faed92f7819bc437bf322144432338c844b19351e14c37573cb595",
+        "metadata": "logs/r03-9de989518ea3.prepare.log.json",
+        "path": "logs/r03-9de989518ea3.prepare.log",
+        "started_utc": "2026-11-26T18:40:42.534532+00:00"
+      },
+      "profile": "16,14,14,13",
+      "rank": 3,
+      "row_id": "9de989518ea374f0315ea2736b226529f3f73d2baac2ccf7464646a759e8ee76",
+      "run": "r03-9de989518ea3",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r03-9de989518ea3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r03-9de989518ea3/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 61.461,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:43:51.699277+00:00",
+          "log_sha256": "0c718201cc73419fef3f1ff0bebc821716b1ee7afd1d20f72c28f9b8edb19c28",
+          "metadata": "logs/r03-9de989518ea3.shared-first.log.json",
+          "path": "logs/r03-9de989518ea3.shared-first.log",
+          "started_utc": "2026-11-26T18:42:50.238335+00:00"
+        },
+        "receipt": "plans/r03-9de989518ea3/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1004,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 3408,
+        "r0": 3412,
+        "r1": 3412
+      },
+      "tables": 26,
+      "tier": "first",
+      "variables": 12297,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r03-9de989518ea3",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "cd3e89bb3a9cb855083810da6f7c1260db7da1d7d741f1d181ff18b6997f62de"
+        ],
+        "elapsed_s": 0.559,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:42.975565+00:00",
+        "log_sha256": "fd179ceee18585a79eeb81f72222407bc3d7799e524082c3d85b51af8fe88520",
+        "metadata": "logs/r03-9de989518ea3.verify.log.json",
+        "path": "logs/r03-9de989518ea3.verify.log",
+        "started_utc": "2026-11-26T19:24:42.416808+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "9de989518ea374f0315ea2736b226529f3f73d2baac2ccf7464646a759e8ee76",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "cd3e89bb3a9cb855083810da6f7c1260db7da1d7d741f1d181ff18b6997f62de",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "9870680f7afddeb6c9a7e272d635e2c7d6e4432d3b6509154ee5c85751809763"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        14,
+        14,
+        13,
+        1
+      ],
+      "branch": 28,
+      "cas_proof_sha256": "d80232833ada0721fc92b2344ea83d850f1b13e5bef246dfa8d50b816bd4cdcd",
+      "clauses": 179242,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 168,
+      "depth": 2,
+      "driver_plan_id_sha256": "193cf60ea743d505c371043a2f64a107a78ccffcbbf719adeabc4baacc9e38dd",
+      "key_sha256": "0b8b32485b452f96021833ebe251fb1e7075a3618869d30a1791546cec901211",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r04-61a3ca5f9ff1",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 175.515,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:05:25.244939+00:00",
+        "log_sha256": "ba1d0d4f679c8c4a9358edeed42244312fd0d6a966c0c41f535ffb33ac062595",
+        "metadata": "logs/r04-61a3ca5f9ff1.leaf-eager-300s-1m.log.json",
+        "path": "logs/r04-61a3ca5f9ff1.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T19:02:29.729778+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            -569,
+            -2549
+          ],
+          "elapsed_s": 43.646,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r04-61a3ca5f9ff1/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -569,
+            2549
+          ],
+          "elapsed_s": 42.266,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r04-61a3ca5f9ff1/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            569,
+            -2558
+          ],
+          "elapsed_s": 44.267,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r04-61a3ca5f9ff1/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            569,
+            2558
+          ],
+          "elapsed_s": 44.698,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r04-61a3ca5f9ff1/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "1c43197affc842be693a4319419542a446b8f44043ade5cd0dbd7af2df6aa9a2",
+      "plan_file": "plans/r04-61a3ca5f9ff1/plan.json",
+      "plan_file_sha256": "193cf60ea743d505c371043a2f64a107a78ccffcbbf719adeabc4baacc9e38dd",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "61a3ca5f9ff17604ffaa285ff52008ee1786b0c787ac94dd9d2ee1d11767d85a",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r04-61a3ca5f9ff1"
+        ],
+        "elapsed_s": 0.764,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:44.008306+00:00",
+        "log_sha256": "baad5cfd3333f7707cb10fb7cf4bb2ef12359a2bb7ce1d9d3181a360400d9d4e",
+        "metadata": "logs/r04-61a3ca5f9ff1.prepare.log.json",
+        "path": "logs/r04-61a3ca5f9ff1.prepare.log",
+        "started_utc": "2026-11-26T18:40:43.244257+00:00"
+      },
+      "profile": "16,14,14,13",
+      "rank": 4,
+      "row_id": "61a3ca5f9ff17604ffaa285ff52008ee1786b0c787ac94dd9d2ee1d11767d85a",
+      "run": "r04-61a3ca5f9ff1",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r04-61a3ca5f9ff1",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r04-61a3ca5f9ff1/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 62.366,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:44:54.066001+00:00",
+          "log_sha256": "a652cc9b874497ea4ef46491b5c4a1fd8be0e668e9906de4b042f7df8d7196c9",
+          "metadata": "logs/r04-61a3ca5f9ff1.shared-first.log.json",
+          "path": "logs/r04-61a3ca5f9ff1.shared-first.log",
+          "started_utc": "2026-11-26T18:43:51.699798+00:00"
+        },
+        "receipt": "plans/r04-61a3ca5f9ff1/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1000,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 569,
+        "r0": 2549,
+        "r1": 2558
+      },
+      "tables": 8,
+      "tier": "first",
+      "variables": 18603,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r04-61a3ca5f9ff1",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "1c43197affc842be693a4319419542a446b8f44043ade5cd0dbd7af2df6aa9a2"
+        ],
+        "elapsed_s": 0.616,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:43.591646+00:00",
+        "log_sha256": "ba1d0d4f679c8c4a9358edeed42244312fd0d6a966c0c41f535ffb33ac062595",
+        "metadata": "logs/r04-61a3ca5f9ff1.verify.log.json",
+        "path": "logs/r04-61a3ca5f9ff1.verify.log",
+        "started_utc": "2026-11-26T19:24:42.976100+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "61a3ca5f9ff17604ffaa285ff52008ee1786b0c787ac94dd9d2ee1d11767d85a",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "1c43197affc842be693a4319419542a446b8f44043ade5cd0dbd7af2df6aa9a2",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "6f11f83c3d85ffe766ed25a920b224740a61642e7c8cac36b32063c6b63886ab"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        14,
+        14,
+        13,
+        1
+      ],
+      "branch": 34,
+      "cas_proof_sha256": "67efac696df821157a3f32044022ba34408b19e68fe3f527c880a1c4c62ecb3f",
+      "clauses": 179460,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 357,
+      "depth": 2,
+      "driver_plan_id_sha256": "7281e6c98cf8dd1fd625a81ecafc323c382739baba49fef97375c2602a7b8f1d",
+      "key_sha256": "0ce1476348f260431bb32db928f53f199c4cf599cfb03c668406a7686a920fb3",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r05-d3a56e303b1b",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 181.035,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:08:26.284699+00:00",
+        "log_sha256": "0f24b7f55c53a164345012acd73414f50a9004ad8771c9e1dec3f80358cf4f16",
+        "metadata": "logs/r05-d3a56e303b1b.leaf-eager-300s-1m.log.json",
+        "path": "logs/r05-d3a56e303b1b.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T19:05:25.249888+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000002,
+          "cube": [
+            -789,
+            -786
+          ],
+          "elapsed_s": 46.398,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r05-d3a56e303b1b/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -789,
+            786
+          ],
+          "elapsed_s": 46.816,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r05-d3a56e303b1b/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            789,
+            -786
+          ],
+          "elapsed_s": 42.786,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r05-d3a56e303b1b/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            789,
+            786
+          ],
+          "elapsed_s": 44.401,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r05-d3a56e303b1b/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "d9819b26b5c946d4fe6e917baf038cc46bd48f215be4c407e0045c50e467c8d1",
+      "plan_file": "plans/r05-d3a56e303b1b/plan.json",
+      "plan_file_sha256": "7281e6c98cf8dd1fd625a81ecafc323c382739baba49fef97375c2602a7b8f1d",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "d3a56e303b1be3d6d64d636777a52aa535c87643ddbb3badaba36586cfe1a8bf",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r05-d3a56e303b1b"
+        ],
+        "elapsed_s": 0.756,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:44.818538+00:00",
+        "log_sha256": "81171cc76382e577cc14eb5c90ac04eff46fb591a9ee0c98a13577a22f49b0f4",
+        "metadata": "logs/r05-d3a56e303b1b.prepare.log.json",
+        "path": "logs/r05-d3a56e303b1b.prepare.log",
+        "started_utc": "2026-11-26T18:40:44.062301+00:00"
+      },
+      "profile": "16,14,14,13",
+      "rank": 5,
+      "row_id": "d3a56e303b1be3d6d64d636777a52aa535c87643ddbb3badaba36586cfe1a8bf",
+      "run": "r05-d3a56e303b1b",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r05-d3a56e303b1b",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r05-d3a56e303b1b/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 65.422,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:45:59.488079+00:00",
+          "log_sha256": "49bd44e8b97e724fc89ee04b513a79e39b80714871c396ce40b2d641f349bc7d",
+          "metadata": "logs/r05-d3a56e303b1b.shared-first.log.json",
+          "path": "logs/r05-d3a56e303b1b.shared-first.log",
+          "started_utc": "2026-11-26T18:44:54.066509+00:00"
+        },
+        "receipt": "plans/r05-d3a56e303b1b/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1002,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 789,
+        "r0": 786,
+        "r1": 786
+      },
+      "tables": 17,
+      "tier": "first",
+      "variables": 18711,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r05-d3a56e303b1b",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "d9819b26b5c946d4fe6e917baf038cc46bd48f215be4c407e0045c50e467c8d1"
+        ],
+        "elapsed_s": 0.611,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:44.203438+00:00",
+        "log_sha256": "0f24b7f55c53a164345012acd73414f50a9004ad8771c9e1dec3f80358cf4f16",
+        "metadata": "logs/r05-d3a56e303b1b.verify.log.json",
+        "path": "logs/r05-d3a56e303b1b.verify.log",
+        "started_utc": "2026-11-26T19:24:43.592162+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "d3a56e303b1be3d6d64d636777a52aa535c87643ddbb3badaba36586cfe1a8bf",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "d9819b26b5c946d4fe6e917baf038cc46bd48f215be4c407e0045c50e467c8d1",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "2f2d23ba0bcfc5acafb2761901bcca474c4943b3f3c25b48556a615a3a57d756"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        15,
+        13,
+        13,
+        0
+      ],
+      "branch": 245,
+      "cas_proof_sha256": "da30395dfd0094811c0d15e9cb12b6413eaca4f35e8feb5abfdb8a3a6455dfae",
+      "clauses": 175545,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 336,
+      "depth": 2,
+      "driver_plan_id_sha256": "4e721db4cd74578a358ad61271234aa09a44c01cea40468705a81298006fc6f5",
+      "key_sha256": "001e49e405dda644fe713355cdc1d95a3b5d41d5087e6fd00102e68767bd2724",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r06-070a9793cae6",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 184.324,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:11:30.610583+00:00",
+        "log_sha256": "014284f20f750a5743ccf67fa98cfda1d75a410007db41d5bb0a944cb6e0af92",
+        "metadata": "logs/r06-070a9793cae6.leaf-eager-300s-1m.log.json",
+        "path": "logs/r06-070a9793cae6.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T19:08:26.286412+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            -3705,
+            -3861
+          ],
+          "elapsed_s": 40.511,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r06-070a9793cae6/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000003,
+          "cube": [
+            -3705,
+            3861
+          ],
+          "elapsed_s": 54.522,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r06-070a9793cae6/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000002,
+          "cube": [
+            3705,
+            -5114
+          ],
+          "elapsed_s": 46.281,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r06-070a9793cae6/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000004,
+          "cube": [
+            3705,
+            5114
+          ],
+          "elapsed_s": 42.407,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r06-070a9793cae6/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "d19cdf96113356542793081c2039bb03519688038fdbac62f54aa8952b0c2cb7",
+      "plan_file": "plans/r06-070a9793cae6/plan.json",
+      "plan_file_sha256": "4e721db4cd74578a358ad61271234aa09a44c01cea40468705a81298006fc6f5",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "070a9793cae62f52fff56d3312d2fcac91c85e08fadc730380f803b35da2e1dc",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r06-070a9793cae6"
+        ],
+        "elapsed_s": 0.686,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:45.556225+00:00",
+        "log_sha256": "6286ea605ed40efa8846ebb2b2c38faae6e3626d7049365e3891a1c950d7f418",
+        "metadata": "logs/r06-070a9793cae6.prepare.log.json",
+        "path": "logs/r06-070a9793cae6.prepare.log",
+        "started_utc": "2026-11-26T18:40:44.870100+00:00"
+      },
+      "profile": "16,15,13,13",
+      "rank": 1,
+      "row_id": "070a9793cae62f52fff56d3312d2fcac91c85e08fadc730380f803b35da2e1dc",
+      "run": "r06-070a9793cae6",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r06-070a9793cae6",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r06-070a9793cae6/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 97.18,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:47:36.668911+00:00",
+          "log_sha256": "6e7131e0abc12063631fb97ba5dd6524f377b19e5c42ce541ba1ce20a03cb445",
+          "metadata": "logs/r06-070a9793cae6.shared-first.log.json",
+          "path": "logs/r06-070a9793cae6.shared-first.log",
+          "started_utc": "2026-11-26T18:45:59.488634+00:00"
+        },
+        "receipt": "plans/r06-070a9793cae6/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1000,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 3705,
+        "r0": 3861,
+        "r1": 5114
+      },
+      "tables": 16,
+      "tier": "first",
+      "variables": 18813,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r06-070a9793cae6",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "d19cdf96113356542793081c2039bb03519688038fdbac62f54aa8952b0c2cb7"
+        ],
+        "elapsed_s": 0.596,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:44.799985+00:00",
+        "log_sha256": "014284f20f750a5743ccf67fa98cfda1d75a410007db41d5bb0a944cb6e0af92",
+        "metadata": "logs/r06-070a9793cae6.verify.log.json",
+        "path": "logs/r06-070a9793cae6.verify.log",
+        "started_utc": "2026-11-26T19:24:44.203979+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "070a9793cae62f52fff56d3312d2fcac91c85e08fadc730380f803b35da2e1dc",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "d19cdf96113356542793081c2039bb03519688038fdbac62f54aa8952b0c2cb7",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "22857471691e3f5d53566ad3cd7f0ce0976c2dd564870223f312fc46cefe3d1f"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        15,
+        13,
+        13,
+        0
+      ],
+      "branch": 253,
+      "cas_proof_sha256": "caf891793ca80878cd554056d4bef441402b0b4a30c5829c06b7fff922fa1035",
+      "clauses": 175323,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 168,
+      "depth": 2,
+      "driver_plan_id_sha256": "98d35c651d9eccb437c0121d45ceec057c414c0c1c3e8fb27b0d9cf92b42379d",
+      "key_sha256": "002cae71b2aff82052f1ab765be8e0dd9cb5fd98cd2a37c8cdc79ec4833c2978",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r07-9f0ac234bfc8",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 172.511,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:14:23.123010+00:00",
+        "log_sha256": "2fe8db1ac6629b4290701dcbf08703c5c312dba8b5fd2dab715a8d366fda59b5",
+        "metadata": "logs/r07-9f0ac234bfc8.leaf-eager-300s-1m.log.json",
+        "path": "logs/r07-9f0ac234bfc8.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T19:11:30.612453+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -3549,
+            -3557
+          ],
+          "elapsed_s": 43.829,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r07-9f0ac234bfc8/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000002,
+          "cube": [
+            -3549,
+            3557
+          ],
+          "elapsed_s": 41.876,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r07-9f0ac234bfc8/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            3549,
+            -4890
+          ],
+          "elapsed_s": 42.025,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r07-9f0ac234bfc8/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000003,
+          "cube": [
+            3549,
+            4890
+          ],
+          "elapsed_s": 44.184,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r07-9f0ac234bfc8/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "788265fe0cc7ee158edfa03c3341053c23677568d22fefac73ae8c8d2f719675",
+      "plan_file": "plans/r07-9f0ac234bfc8/plan.json",
+      "plan_file_sha256": "98d35c651d9eccb437c0121d45ceec057c414c0c1c3e8fb27b0d9cf92b42379d",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "9f0ac234bfc8dccc3283320dfafd2e9c8231ea17c7dbb58de243fe6d180a6cb5",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r07-9f0ac234bfc8"
+        ],
+        "elapsed_s": 0.656,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:46.259990+00:00",
+        "log_sha256": "2492ff8ac4da83f55f8f28793be02e5d2d29979e713b22755dab496b0d3c08a3",
+        "metadata": "logs/r07-9f0ac234bfc8.prepare.log.json",
+        "path": "logs/r07-9f0ac234bfc8.prepare.log",
+        "started_utc": "2026-11-26T18:40:45.604234+00:00"
+      },
+      "profile": "16,15,13,13",
+      "rank": 2,
+      "row_id": "9f0ac234bfc8dccc3283320dfafd2e9c8231ea17c7dbb58de243fe6d180a6cb5",
+      "run": "r07-9f0ac234bfc8",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r07-9f0ac234bfc8",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r07-9f0ac234bfc8/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 101.475,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:49:18.145797+00:00",
+          "log_sha256": "3a83d1834f4f012b9f5deb85f91202bcf1d1fc9a61c5ffe376962e5d72ac14de",
+          "metadata": "logs/r07-9f0ac234bfc8.shared-first.log.json",
+          "path": "logs/r07-9f0ac234bfc8.shared-first.log",
+          "started_utc": "2026-11-26T18:47:36.670931+00:00"
+        },
+        "receipt": "plans/r07-9f0ac234bfc8/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1000,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 3549,
+        "r0": 3557,
+        "r1": 4890
+      },
+      "tables": 8,
+      "tier": "first",
+      "variables": 18703,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r07-9f0ac234bfc8",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "788265fe0cc7ee158edfa03c3341053c23677568d22fefac73ae8c8d2f719675"
+        ],
+        "elapsed_s": 0.6,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:45.400184+00:00",
+        "log_sha256": "2fe8db1ac6629b4290701dcbf08703c5c312dba8b5fd2dab715a8d366fda59b5",
+        "metadata": "logs/r07-9f0ac234bfc8.verify.log.json",
+        "path": "logs/r07-9f0ac234bfc8.verify.log",
+        "started_utc": "2026-11-26T19:24:44.800484+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "9f0ac234bfc8dccc3283320dfafd2e9c8231ea17c7dbb58de243fe6d180a6cb5",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "788265fe0cc7ee158edfa03c3341053c23677568d22fefac73ae8c8d2f719675",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "fcc4642f2fe13f402dc7ae702133c635f048c00dc4f91a4c4a6c92d7c275eb5e"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        15,
+        13,
+        13,
+        1
+      ],
+      "branch": 13,
+      "cas_proof_sha256": "1738788a474f15cf8ad560ad3c90a1e4ce8c429d3318fd98813e1e2533527138",
+      "clauses": 178109,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 336,
+      "depth": 2,
+      "driver_plan_id_sha256": "b7ec1542576c11b292caf9f000cd40423a66bea9ae8ba4e23275caacd4be89ec",
+      "key_sha256": "00aab0237ca8ba1c18312ce5555ba5996d7ebd74acffea0ad702ad2056f5de77",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r08-88d42ac48819",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 238.861,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:18:21.985548+00:00",
+        "log_sha256": "ca2641eb4ecf9eb607efda5c8597d61d001928446f916cdcaff441f0afa5bc7a",
+        "metadata": "logs/r08-88d42ac48819.leaf-eager-300s-1m.log.json",
+        "path": "logs/r08-88d42ac48819.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T19:14:23.124896+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000002,
+          "cube": [
+            -585,
+            -3073
+          ],
+          "elapsed_s": 54.829,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r08-88d42ac48819/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -585,
+            3073
+          ],
+          "elapsed_s": 61.563,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r08-88d42ac48819/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            585,
+            -2549
+          ],
+          "elapsed_s": 60.014,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r08-88d42ac48819/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            585,
+            2549
+          ],
+          "elapsed_s": 61.828,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r08-88d42ac48819/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "93ba1d9ae456d5383e622466b5408a4a06a8f2936f0a5f7f2b1b748331da9e4a",
+      "plan_file": "plans/r08-88d42ac48819/plan.json",
+      "plan_file_sha256": "b7ec1542576c11b292caf9f000cd40423a66bea9ae8ba4e23275caacd4be89ec",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "88d42ac48819b2665cf6eb83f4520e1241c1572a2d1bcedf7b3e1c1c1d6b61e1",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r08-88d42ac48819"
+        ],
+        "elapsed_s": 0.726,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:47.034883+00:00",
+        "log_sha256": "c0bbf9030377af71f0a62fe5ad431452e1071d503fa9665d771b0458ddfc6c68",
+        "metadata": "logs/r08-88d42ac48819.prepare.log.json",
+        "path": "logs/r08-88d42ac48819.prepare.log",
+        "started_utc": "2026-11-26T18:40:46.308948+00:00"
+      },
+      "profile": "16,15,13,13",
+      "rank": 3,
+      "row_id": "88d42ac48819b2665cf6eb83f4520e1241c1572a2d1bcedf7b3e1c1c1d6b61e1",
+      "run": "r08-88d42ac48819",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r08-88d42ac48819",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r08-88d42ac48819/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 99.132,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:50:57.281068+00:00",
+          "log_sha256": "8f52517fa5eb93c7ec907293eaf7d8dc1759b0fddbfe01a29ca9b90a8b774adb",
+          "metadata": "logs/r08-88d42ac48819.shared-first.log.json",
+          "path": "logs/r08-88d42ac48819.shared-first.log",
+          "started_utc": "2026-11-26T18:49:18.148951+00:00"
+        },
+        "receipt": "plans/r08-88d42ac48819/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1001,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 585,
+        "r0": 3073,
+        "r1": 2549
+      },
+      "tables": 16,
+      "tier": "first",
+      "variables": 18776,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r08-88d42ac48819",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "93ba1d9ae456d5383e622466b5408a4a06a8f2936f0a5f7f2b1b748331da9e4a"
+        ],
+        "elapsed_s": 0.623,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:46.023937+00:00",
+        "log_sha256": "ca2641eb4ecf9eb607efda5c8597d61d001928446f916cdcaff441f0afa5bc7a",
+        "metadata": "logs/r08-88d42ac48819.verify.log.json",
+        "path": "logs/r08-88d42ac48819.verify.log",
+        "started_utc": "2026-11-26T19:24:45.400714+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "88d42ac48819b2665cf6eb83f4520e1241c1572a2d1bcedf7b3e1c1c1d6b61e1",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "93ba1d9ae456d5383e622466b5408a4a06a8f2936f0a5f7f2b1b748331da9e4a",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "b4314e68937e8fc1294fee5e27e6b4575bc3b0750ecbf1ec7e36f7f846d95af3"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        15,
+        13,
+        13,
+        0
+      ],
+      "branch": 68,
+      "cas_proof_sha256": "29b323c7bfa1e4310a6f40bdbc82d7e79a90feff2818e633428ee1ad532e109a",
+      "clauses": 175545,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 336,
+      "depth": 2,
+      "driver_plan_id_sha256": "6deb85b8052607188efbd16aa9a928f03d5fed0e2fa280c90235cacd958f9d90",
+      "key_sha256": "00f1ecb593a46932714bb43ca3d50926bf023be082e3432c5f19aac76803252f",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r09-b08ff21a14c3",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 172.851,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:21:14.839041+00:00",
+        "log_sha256": "63849e714c55e2536884b6bcd300e12b726cc144780a3dee81b1b55074b349c0",
+        "metadata": "logs/r09-b08ff21a14c3.leaf-eager-300s-1m.log.json",
+        "path": "logs/r09-b08ff21a14c3.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T19:18:21.987616+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -4133,
+            -4129
+          ],
+          "elapsed_s": 42.822,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r09-b08ff21a14c3/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -4133,
+            4129
+          ],
+          "elapsed_s": 41.969,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r09-b08ff21a14c3/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000002,
+          "cube": [
+            4133,
+            -4781
+          ],
+          "elapsed_s": 45.595,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r09-b08ff21a14c3/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000002,
+          "cube": [
+            4133,
+            4781
+          ],
+          "elapsed_s": 41.869,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r09-b08ff21a14c3/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "f1674b653c7217acb12fa62a3922afd581952989a16d09762a409d440ba0935f",
+      "plan_file": "plans/r09-b08ff21a14c3/plan.json",
+      "plan_file_sha256": "6deb85b8052607188efbd16aa9a928f03d5fed0e2fa280c90235cacd958f9d90",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "b08ff21a14c320e9f5e30d8a006974d0d1ef2737fd70989c0bf31472094b4c1f",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r09-b08ff21a14c3"
+        ],
+        "elapsed_s": 0.67,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:47.757357+00:00",
+        "log_sha256": "3ea34423a734f69e4f8fbcf4d362f9f5c7932f228fe20b02d99530d3fa808acb",
+        "metadata": "logs/r09-b08ff21a14c3.prepare.log.json",
+        "path": "logs/r09-b08ff21a14c3.prepare.log",
+        "started_utc": "2026-11-26T18:40:47.087121+00:00"
+      },
+      "profile": "16,15,13,13",
+      "rank": 4,
+      "row_id": "b08ff21a14c320e9f5e30d8a006974d0d1ef2737fd70989c0bf31472094b4c1f",
+      "run": "r09-b08ff21a14c3",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r09-b08ff21a14c3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r09-b08ff21a14c3/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 72.07,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:52:09.351166+00:00",
+          "log_sha256": "07934ad920c69aa81ee3e40e9044369884f4b5a77bf7894346346a1573b552da",
+          "metadata": "logs/r09-b08ff21a14c3.shared-first.log.json",
+          "path": "logs/r09-b08ff21a14c3.shared-first.log",
+          "started_utc": "2026-11-26T18:50:57.281577+00:00"
+        },
+        "receipt": "plans/r09-b08ff21a14c3/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1000,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 4133,
+        "r0": 4129,
+        "r1": 4781
+      },
+      "tables": 16,
+      "tier": "first",
+      "variables": 18813,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r09-b08ff21a14c3",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "f1674b653c7217acb12fa62a3922afd581952989a16d09762a409d440ba0935f"
+        ],
+        "elapsed_s": 0.596,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:46.620674+00:00",
+        "log_sha256": "63849e714c55e2536884b6bcd300e12b726cc144780a3dee81b1b55074b349c0",
+        "metadata": "logs/r09-b08ff21a14c3.verify.log.json",
+        "path": "logs/r09-b08ff21a14c3.verify.log",
+        "started_utc": "2026-11-26T19:24:46.024341+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "b08ff21a14c320e9f5e30d8a006974d0d1ef2737fd70989c0bf31472094b4c1f",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "f1674b653c7217acb12fa62a3922afd581952989a16d09762a409d440ba0935f",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "f5c882bd879cca19a12103c2c227c45321c9d028b9051893099e6ff024e5b0ee"
+    },
+    {
+      "arm_mode": "both",
+      "arm_pair": [
+        16,
+        15,
+        13,
+        13,
+        0
+      ],
+      "branch": 125,
+      "cas_proof_sha256": "1ce85d083000fdd03fb5c8c0f767b16b91a9adb77219993487f78d7ea2f86727",
+      "clauses": 175323,
+      "counts": {
+        "CHECKED_SAT": 0,
+        "CHECKED_UNSAT": 0,
+        "NOT_RUN": 0,
+        "OPEN": 4
+      },
+      "cuts": 168,
+      "depth": 2,
+      "driver_plan_id_sha256": "aad722bdeff0619e5fc0bf0c47452e86570d1b09498ca499946640c308d857a5",
+      "key_sha256": "00f31f5ea3ac00329cb14735258356ce7eb7f03fccf1408d22a70f2d2ed27e55",
+      "leaf_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "resume",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r10-479de1087a39",
+          "--proof",
+          "eager",
+          "--seconds",
+          "300",
+          "--conflicts",
+          "1000000",
+          "--check-seconds",
+          "600",
+          "--jobs",
+          "1"
+        ],
+        "elapsed_s": 196.068,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T19:24:30.908826+00:00",
+        "log_sha256": "a92bb99fcecbc4684c4b44f775e45d8f483f95e72fcf8908dc6809aee5f67e41",
+        "metadata": "logs/r10-479de1087a39.leaf-eager-300s-1m.log.json",
+        "path": "logs/r10-479de1087a39.leaf-eager-300s-1m.log",
+        "started_utc": "2026-11-26T19:21:14.841141+00:00"
+      },
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -3989,
+            -4001
+          ],
+          "elapsed_s": 52.649,
+          "node": "r00",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r10-479de1087a39/leaves/r00/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000000,
+          "cube": [
+            -3989,
+            4001
+          ],
+          "elapsed_s": 43.979,
+          "node": "r01",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r10-479de1087a39/leaves/r01/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000001,
+          "cube": [
+            3989,
+            -4526
+          ],
+          "elapsed_s": 44.333,
+          "node": "r10",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r10-479de1087a39/leaves/r10/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        },
+        {
+          "budget": {
+            "check_seconds": 600,
+            "conflicts": 1000000,
+            "proof": "eager",
+            "seconds": 300
+          },
+          "certified": false,
+          "conflicts_used": 1000003,
+          "cube": [
+            3989,
+            4526
+          ],
+          "elapsed_s": 54.489,
+          "node": "r11",
+          "proof_replay": "NOT_APPLICABLE_NO_CERTIFICATE",
+          "receipt": "plans/r10-479de1087a39/leaves/r11/receipt.json",
+          "status": "OPEN",
+          "termination": "conflict_limit"
+        }
+      ],
+      "parent_export": "NOT_ATTEMPTED_OPEN_COVER",
+      "parent_sha256": "66707fb5e9d8d234f4ff45a59da2278398a92ca3a7a65ae778e5597ea2c268fb",
+      "plan_file": "plans/r10-479de1087a39/plan.json",
+      "plan_file_sha256": "aad722bdeff0619e5fc0bf0c47452e86570d1b09498ca499946640c308d857a5",
+      "prepare_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "prepare",
+          "--row",
+          "479de1087a399687f477fde8eef64a8753ca66453d59008c9de1802e9fdd842a",
+          "--tier",
+          "first",
+          "--depth",
+          "2",
+          "--arm-pair",
+          "auto",
+          "--arm-mode",
+          "both",
+          "--out",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r10-479de1087a39"
+        ],
+        "elapsed_s": 0.649,
+        "exit_code": 0,
+        "finished_utc": "2026-11-26T18:40:48.455033+00:00",
+        "log_sha256": "76d46e3bfa88e250d513cd205aafdadfccf7465f74a633f7fd704ec7888b97af",
+        "metadata": "logs/r10-479de1087a39.prepare.log.json",
+        "path": "logs/r10-479de1087a39.prepare.log",
+        "started_utc": "2026-11-26T18:40:47.805956+00:00"
+      },
+      "profile": "16,15,13,13",
+      "rank": 5,
+      "row_id": "479de1087a399687f477fde8eef64a8753ca66453d59008c9de1802e9fdd842a",
+      "run": "r10-479de1087a39",
+      "shared": {
+        "command": {
+          "argv": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/shared_conquer.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r10-479de1087a39",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r10-479de1087a39/shared-first",
+            "--no-reuse",
+            "--conflicts",
+            "350000",
+            "--tail-conflicts",
+            "1000",
+            "--seconds",
+            "300",
+            "--check-seconds",
+            "600"
+          ],
+          "elapsed_s": 84.631,
+          "exit_code": 2,
+          "finished_utc": "2026-11-26T18:53:33.983173+00:00",
+          "log_sha256": "1aaa20c6b50ee01b8593a7305f114982564ee88449230229606742e94c4d3cee",
+          "metadata": "logs/r10-479de1087a39.shared-first.log.json",
+          "path": "logs/r10-479de1087a39.shared-first.log",
+          "started_utc": "2026-11-26T18:52:09.351891+00:00"
+        },
+        "receipt": "plans/r10-479de1087a39/shared-first/receipt.json",
+        "status": "OPEN",
+        "tail_conflicts": 1000,
+        "termination": "conflict_limits"
+      },
+      "split_limit": 6612,
+      "splits": {
+        "r": 3989,
+        "r0": 4001,
+        "r1": 4526
+      },
+      "tables": 8,
+      "tier": "first",
+      "variables": 18703,
+      "verify_command": {
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/wallcc.py",
+          "verify",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m4/plans/r10-479de1087a39",
+          "--jobs",
+          "1",
+          "--check-seconds",
+          "600",
+          "--expect-sha256",
+          "66707fb5e9d8d234f4ff45a59da2278398a92ca3a7a65ae778e5597ea2c268fb"
+        ],
+        "elapsed_s": 0.595,
+        "exit_code": 2,
+        "finished_utc": "2026-11-26T19:24:47.215705+00:00",
+        "log_sha256": "a92bb99fcecbc4684c4b44f775e45d8f483f95e72fcf8908dc6809aee5f67e41",
+        "metadata": "logs/r10-479de1087a39.verify.log.json",
+        "path": "logs/r10-479de1087a39.verify.log",
+        "started_utc": "2026-11-26T19:24:46.621101+00:00"
+      },
+      "verify_result": {
+        "counts": {
+          "OPEN": 4
+        },
+        "leaves": 4,
+        "origin": {
+          "id": "479de1087a399687f477fde8eef64a8753ca66453d59008c9de1802e9fdd842a",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "66707fb5e9d8d234f4ff45a59da2278398a92ca3a7a65ae778e5597ea2c268fb",
+        "processed": 4,
+        "status": "OPEN"
+      },
+      "whole_row_cover": false,
+      "working_sha256": "c03831df8ada95d604858a5a8b6e6290f52bdad8b680165c984a1e7a7b2a40af"
+    }
+  ],
+  "sat_candidate_count": 0,
+  "selection_sha256": "86188322ae02e4e25b6eafe83564acb9c3592d1ecf19213b7921b3920442302a",
+  "shared_elapsed_s": 759.026,
+  "status": "COMPLETE_FRONTIER_ALL_OPEN",
+  "unfinished_trace_paths": [],
+  "verified_parent_export_count": 0,
+  "whole_row_cover_count": 0
+}

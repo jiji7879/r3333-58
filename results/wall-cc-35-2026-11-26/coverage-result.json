@@ -1,0 +1,245 @@
+{
+  "canonical_selection_sha256": "86188322ae02e4e25b6eafe83564acb9c3592d1ecf19213b7921b3920442302a",
+  "evidence_files": {
+    "audit_coverage.py": {
+      "bytes": 21682,
+      "sha256": "b52dbc5fb3edb6d5a2fffabaf15302bbb781f8f1542be651e5108b6e6cc32f7c"
+    },
+    "audit_shared.py": {
+      "bytes": 10524,
+      "sha256": "a4664041ed141c3359feac0c52bf8f07a8fbf8dc2f06ad776e2f3711aebc5e99"
+    },
+    "frontier.cubes.tsv": {
+      "bytes": 78788,
+      "sha256": "dca195f623b98db44e9f2fb66a02938afb4827e29036cf11e21c47571b660445"
+    },
+    "frontier.manifest.json": {
+      "bytes": 677,
+      "sha256": "4a53d1aab822316f5fa81b415d591145446b3a67bc8287fb9ae84e049b40c31d"
+    },
+    "frontier.rows.tsv": {
+      "bytes": 22993,
+      "sha256": "b2a54513060292e69a43bc91b9de523ae3edcb7ec0b0cf4081da73b1a0e5310c"
+    },
+    "live-coverage.json": {
+      "bytes": 152412,
+      "sha256": "ec0bbed5a9ff9a027bb773cc2190021e3444d1e1fab9ee6af1077869cd84a814"
+    },
+    "live-shared.json": {
+      "bytes": 57336,
+      "sha256": "a9d4b95492c3a0f64c025684c92931002761adabd785aaf6e52b8696976714f7"
+    },
+    "make_frontier.py": {
+      "bytes": 6155,
+      "sha256": "54ee6596859e2279b52e26ee96d5fa8407dd410bd0926c9f2bbec433193462af"
+    },
+    "replay-cache.json": {
+      "bytes": 2163,
+      "sha256": "63a813adf7771923a8b2d3542584da1bd6bff361592afa9adbfcc4e3d9a8862d"
+    },
+    "verify_covers.py": {
+      "bytes": 3070,
+      "sha256": "ab18505ce0b66fa587a20090a96d8047eb9abd7960f78c5d70d668414cd07736"
+    },
+    "wallcc-verify.json": {
+      "bytes": 67834,
+      "sha256": "e3dac1030bfc600f1a50ed731186893ba45ca4c33b3385b6ce9df9a5d644480d"
+    }
+  },
+  "leaf_frontier": {
+    "CHECKED_SAT": 0,
+    "CHECKED_UNSAT_receipts": 1,
+    "CHECK_FAILED": 0,
+    "NOT_RUN": 0,
+    "OPEN_conflict_limit": 139,
+    "PROOF_PENDING": 0,
+    "independently_replayed_UNSAT": 1,
+    "open_conflicts_max": 1000006,
+    "open_conflicts_min": 1000000,
+    "open_elapsed_s_max": 68.831,
+    "open_elapsed_s_min": 38.132,
+    "open_reason": "conflict limit",
+    "total": 140
+  },
+  "per_profile": {
+    "15,14,14,14": {
+      "complete_rows": 0,
+      "cubes": 20,
+      "independently_certified_unsat": 0,
+      "open": 20,
+      "plans": 5,
+      "shared_open_conflict": 5
+    },
+    "15,15,14,13": {
+      "complete_rows": 0,
+      "cubes": 20,
+      "independently_certified_unsat": 1,
+      "open": 19,
+      "plans": 5,
+      "shared_open_conflict": 5
+    },
+    "16,14,14,13": {
+      "complete_rows": 0,
+      "cubes": 20,
+      "independently_certified_unsat": 0,
+      "open": 20,
+      "plans": 5,
+      "shared_open_conflict": 5
+    },
+    "16,15,13,13": {
+      "complete_rows": 0,
+      "cubes": 20,
+      "independently_certified_unsat": 0,
+      "open": 20,
+      "plans": 5,
+      "shared_open_conflict": 5
+    },
+    "16,15,14,12": {
+      "complete_rows": 0,
+      "cubes": 20,
+      "independently_certified_unsat": 0,
+      "open": 20,
+      "plans": 5,
+      "shared_open_conflict": 5
+    },
+    "16,16,13,12": {
+      "complete_rows": 0,
+      "cubes": 20,
+      "independently_certified_unsat": 0,
+      "open": 20,
+      "plans": 5,
+      "shared_open_conflict": 5
+    },
+    "16,16,14,11": {
+      "complete_rows": 0,
+      "cubes": 20,
+      "independently_certified_unsat": 0,
+      "open": 20,
+      "plans": 5,
+      "shared_open_conflict": 5
+    }
+  },
+  "plans": {
+    "canonical_full_ids": 35,
+    "depth": 2,
+    "distinct_parent_sha256": 35,
+    "distinct_plan_sha256": 35,
+    "leaves_per_plan": 4,
+    "split_nodes": [
+      "r",
+      "r0",
+      "r1"
+    ],
+    "static_fail": 0,
+    "static_pass": 35,
+    "total": 35
+  },
+  "retained_artifacts": {
+    "cap_GiB": 40,
+    "cas_files": 35,
+    "leaf_proof_files": 1,
+    "native_search_processes_at_snapshot": 0,
+    "ordinary_DRAT_bytes": 5123535,
+    "ordinary_DRAT_files": 36,
+    "snapshot_note": "du snapshot before writing result.json/REPORT.md; exact certificate inventory above is stable",
+    "unexpected_parent_export_or_trace_DRAT": [],
+    "unfinished_trace_paths": [],
+    "whole_campaign_allocated_bytes_snapshot": 245018624,
+    "whole_campaign_apparent_bytes_snapshot": 241866721
+  },
+  "role": "m6 independent final coverage/assessment",
+  "roster_uncompressed_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "sat_models": {
+    "physical_model_checks": 0,
+    "receipts": 0,
+    "retained_model_files": 0
+  },
+  "schema": 1,
+  "shared_first_pass": {
+    "OPEN": 35,
+    "OPEN_conflict_limits": 35,
+    "OPEN_wall_time": 0,
+    "VERIFIED_UNSAT_receipts": 0,
+    "independent_UNSAT_proofs": 0,
+    "independent_full_physical_models": 0,
+    "receipts": 35,
+    "static_pass": 35
+  },
+  "sole_independently_certified_leaf": {
+    "artifact_bytes": 6707,
+    "artifact_sha256": "1e605f06553a1152d358bccf16f49dcb7a4102da7ccb9d3adade9a2f662d3007",
+    "branch": 1347,
+    "budget": {
+      "check_seconds": 600,
+      "conflicts": 1000000,
+      "proof": "eager",
+      "seconds": 300
+    },
+    "cas_proof_sha256": "036ec2b03282f64d5ccdc1336210ef9b4f565c07abbc04138971ad340a08a95f",
+    "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+    "cube": [
+      4262,
+      4645
+    ],
+    "node": "r11",
+    "parent_sha256": "d27d34c0d8336997d545c76120e040ff1aa0f448ef362d443502372d4c1a1ff2",
+    "plan_sha256": "4dea9e14284398299ce866b63783269de8129b62efcc438997f2aa1a665841fa",
+    "profile": "15,15,14,13",
+    "remaining_cubes": [
+      {
+        "cube": [
+          -4262,
+          -5104
+        ],
+        "node": "r00",
+        "status": "OPEN"
+      },
+      {
+        "cube": [
+          -4262,
+          5104
+        ],
+        "node": "r01",
+        "status": "OPEN"
+      },
+      {
+        "cube": [
+          4262,
+          -4645
+        ],
+        "node": "r10",
+        "status": "OPEN"
+      }
+    ],
+    "replay": "VERIFIED_UNSAT",
+    "replay_binding_sha256": "fb3c2d3c6e139bb538b65f961a1122d81272a087e57292ce0448210c3bf0f9af",
+    "replay_log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxwbjk8/m6/replay-logs/3d443146013949bb1f01e907953c366c617e4178c4638cc2c8eb59d4e2745d1c-r11-ordinary.log",
+    "replay_log_sha256": "06b383eff2f4fbac95186c5e35fa91cb55cb05e427239b8d99aecccbc8daf33d",
+    "replay_mode": "ordinary binary DRAT: drat-trim -i -p -t 600 on original parent plus exact units and cas.drat prefix",
+    "row_id": "3d443146013949bb1f01e907953c366c617e4178c4638cc2c8eb59d4e2745d1c",
+    "splits": {
+      "r": 4262,
+      "r0": 5104,
+      "r1": 4645
+    }
+  },
+  "wallcc_verify": {
+    "aggregate_cube_counts": {
+      "OPEN": 139,
+      "VERIFIED_UNSAT": 1
+    },
+    "check_seconds": 600,
+    "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+    "explicit_parent_sha_bindings": true,
+    "parent_status_OPEN": 35,
+    "plans": 35,
+    "report": "wallcc-verify.json",
+    "report_sha256": "e3dac1030bfc600f1a50ed731186893ba45ca4c33b3385b6ce9df9a5d644480d"
+  },
+  "whole_row_coverage": {
+    "accepted_complete_covers": 0,
+    "parent_DRAT_exports_attempted": 0,
+    "parent_DRAT_exports_verified": 0,
+    "reason": "every row has at least one OPEN cube"
+  }
+}

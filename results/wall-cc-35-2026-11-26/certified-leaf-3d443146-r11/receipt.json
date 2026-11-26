@@ -1,0 +1,42 @@
+{
+  "row_id": "3d443146013949bb1f01e907953c366c617e4178c4638cc2c8eb59d4e2745d1c",
+  "profile": [
+    15,
+    15,
+    14,
+    13
+  ],
+  "parent_sha256": "d27d34c0d8336997d545c76120e040ff1aa0f448ef362d443502372d4c1a1ff2",
+  "leaf_cube": [
+    4262,
+    4645
+  ],
+  "leaf_cnf_sha256": "b3a5bded030682e02472bc1f95147efaade87c01ab88772a98967194b3e48f41",
+  "cas_sha256": "036ec2b03282f64d5ccdc1336210ef9b4f565c07abbc04138971ad340a08a95f",
+  "leaf_sha256": "1e605f06553a1152d358bccf16f49dcb7a4102da7ccb9d3adade9a2f662d3007",
+  "joined_proof_sha256": "d195712e4f07f7ad522dd3b4513b665ab5f8c339974f25db53aa959095506244",
+  "proof_bytes": 214311,
+  "scope": "One genuine original-parent plus [4262,4645] cube and matching-CAS certificate; three sibling cubes are OPEN. No row/profile claim.",
+  "replays": [
+    {
+      "checker": "shared-learning/tools/drat-trim",
+      "sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+      "rc": 0,
+      "verdict": "s VERIFIED"
+    },
+    {
+      "checker": "smwxbvh79/m6/checker/drat-trim",
+      "sha256": "dc0fb03ed4a924d9721545baa215941d336d296719796f05747970ee63aac6de",
+      "rc": 0,
+      "verdict": "s VERIFIED"
+    }
+  ],
+  "wrong_cube_control": {
+    "cube": [
+      4262,
+      -4645
+    ],
+    "returncode": 1,
+    "verdict": "s NOT VERIFIED"
+  }
+}
