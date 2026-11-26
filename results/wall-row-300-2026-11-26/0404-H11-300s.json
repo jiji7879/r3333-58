@@ -1,0 +1,27 @@
+{
+  "cnf": ".ultramath/smwxbvh79/m2/work/h11-certified/parent.cnf",
+  "cnf_sha256": "271c2a1d1b7564bfff538bf994f0b25b3c2f9e82aa4ed5bec638e868303e8b56",
+  "engine": "kissat",
+  "command": [
+    ".scratch/wall-row-300-2026-11-26/bin/kissat",
+    "--time=300",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxbvh79/m2/work/h11-certified/parent.cnf",
+    ".scratch/wall-row-300-2026-11-26/0404-H11-300s/proof.drat"
+  ],
+  "solver_wall_limit_seconds": 300,
+  "conflict_limit": null,
+  "watchdog_seconds": 360,
+  "started_utc": "2026-11-26T11:01:01Z",
+  "wall_seconds": 300.04330444405787,
+  "returncode": 0,
+  "user_cpu_seconds": 299.421497,
+  "system_cpu_seconds": 0.447986,
+  "log": ".scratch/wall-row-300-2026-11-26/0404-H11-300s/solver.log",
+  "log_sha256": "b4da021b08e1bd42e7e0b96ed75b6fb9373449790dfac03b6f42e3b625c09b1b",
+  "watchdog_timeout": false,
+  "space_dispatch": "single sequential solver process",
+  "scope": "The complete hash-pinned first-tier-row formula plus its named directional cuts. Not a Ramsey conclusion by itself.",
+  "solver_result": "OPEN",
+  "status": "OPEN_AT_300_SECONDS",
+  "unfinished_trace_deleted": true
+}
