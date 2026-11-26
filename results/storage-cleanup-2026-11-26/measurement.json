@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-11-26T06:32:42.163374+00:00",
+  "free_bytes_before": 31002316800,
+  "deleted_path_bytes_du_sb": {
+    ".ultramath/smwwdcyxb/m2/.scratch": 2780399876,
+    ".ultramath/smwp3xc7p/m8/scratch": 3283110478,
+    ".ultramath/smwwdcyxb/m7/cc/run10/c021_030": 40359793,
+    ".ultramath/smwwdcyxb/m7/cc/run10/c021_031": 83043963,
+    ".ultramath/smwwdcyxb/m7/cc/run10/c021_032": 2074592822,
+    ".scratch/smwu1x5uy": 6841019385,
+    ".scratch/smwtqk6ku": 6194311380,
+    ".scratch/d4work": 2461445190
+  },
+  "referenced_169_leaf_cover_untouched": true,
+  "free_bytes_after": 54808825856,
+  "free_bytes_increase": 23806509056,
+  "protected_present_after": {
+    ".ultramath/smwwdcyxb/m2/proofs": true,
+    ".ultramath/smwwdcyxb/m7/cc/run4/core017/failed/core017-001.drat": true,
+    ".ultramath/smwwdcyxb/m7/cc/run5/r5_core024-001/failed/r5_core024-001-001.drat": true,
+    ".ultramath/smwwdcyxb/m7/cc/run5/r5_n025a-015/failed/r5_n025a-015-001.drat": true,
+    ".ultramath/smwwdcyxb/m7/cc/run6/n025b_core/failed/n025b_core-001.drat": true,
+    ".ultramath/smwwdcyxb/m7/cc/run11/c485_028/failed/c485_028-001.drat": true,
+    ".ultramath/smwwdcyxb/m7/cc/run10/c485_032": true,
+    ".ultramath/smwx2syxr": true,
+    ".ultramath/smwtqk6ku/m6/cnf": true,
+    "attachments": true,
+    "dist/k58-solver.zip": true
+  },
+  "preserved_text_archive": {
+    "path": "dist/legacy-scratch-text-2026-11-26.tar.gz",
+    "sha256": "5787069cc5f22801a74f0d3964c61d46229bba50def7a71b82e0811dc2c75375",
+    "bytes": 2765326,
+    "source_manifest": "results/storage-cleanup-2026-11-26/retained-source-sha256.json"
+  }
+}
