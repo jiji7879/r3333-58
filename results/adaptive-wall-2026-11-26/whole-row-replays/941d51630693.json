@@ -1,0 +1,40 @@
+{
+  "row": "941d51630693bc62155d7b9e40a54ac60d5e524d83fdd22dbd8e6731e00dcba6",
+  "branch": 4376,
+  "profile": [
+    15,
+    15,
+    15,
+    12
+  ],
+  "proof_sha256": "47a27fbbc8a071e9a7bbe2f6fd34ce2c0a24a7bdfc0bc1710ae3d5bd9fad9d0e",
+  "core_vertices": 34,
+  "replays": [
+    {
+      "tier": "core",
+      "formula_sha256": "a0b6c8033dbf967f9485206176095036e94567bdbea74e8fcd27328b849e591e",
+      "verified": true,
+      "checker_returncode": 0,
+      "checker_tail": "\rc turning on binary mode checking\n\rc parsing input formula with 29788 variables and 4223 clauses\n\rc finished parsing, read 5032014 bytes from proof file\n\rc detected empty clause; start verification via backward checking\n\rc 4193 of 4223 clauses in core                            \n\rc 82754 of 84086 lemmas in core using 4448800 resolution steps\n\rc 58 RAT lemmas in core; 19909 redundant literals in core lemmas\n\rs VERIFIED\n\rc verification time: 1.202 seconds\n"
+    },
+    {
+      "tier": "first",
+      "formula_sha256": "8215018485f8feae011936c74078faf66670f5424a1e88e57f20e6202647953e",
+      "verified": true,
+      "checker_returncode": 0,
+      "checker_tail": "\rc turning on binary mode checking\n\rc parsing input formula with 24816 variables and 199304 clauses\n\rc finished parsing, read 5032014 bytes from proof file\n\rc detected empty clause; start verification via backward checking\n\rc 4212 of 199304 clauses in core                            \n\rc 82738 of 84086 lemmas in core using 4448146 resolution steps\n\rc 58 RAT lemmas in core; 19903 redundant literals in core lemmas\n\rs VERIFIED\n\rc verification time: 1.539 seconds\n"
+    },
+    {
+      "tier": "retry",
+      "formula_sha256": "b01cb20c078d6680fc924fe27c55a7007775a6dca124da691a6b15d0ee09aa2c",
+      "verified": true,
+      "checker_returncode": 0,
+      "checker_tail": "\rc turning on binary mode checking\n\rc parsing input formula with 29788 variables and 209064 clauses\n\rc finished parsing, read 5032014 bytes from proof file\n\rc detected empty clause; start verification via backward checking\n\rc 4212 of 209064 clauses in core                            \n\rc 82738 of 84086 lemmas in core using 4448146 resolution steps\n\rc 58 RAT lemmas in core; 19903 redundant literals in core lemmas\n\rs VERIFIED\n\rc verification time: 1.543 seconds\n"
+    }
+  ],
+  "empty_proof_negative_control": {
+    "accepted": false,
+    "returncode": 1,
+    "tail": "\rc parsing input formula with 29788 variables and 4223 clauses\n\rc finished parsing\n\rc ERROR: no conflict\n\ns NOT VERIFIED\n\rc verification time: 0.036 seconds\n"
+  }
+}

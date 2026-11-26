@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "branch": 4376,
+      "case_id": "2559c343683db4c01698d55540be5d760c242c4b848c72ed2101f795172588ab",
+      "original_first_sha256": "8215018485f8feae011936c74078faf66670f5424a1e88e57f20e6202647953e",
+      "proof_sha256": "47a27fbbc8a071e9a7bbe2f6fd34ce2c0a24a7bdfc0bc1710ae3d5bd9fad9d0e",
+      "root_parent_id": "bef745d78083ee59b81a82bf89e8b3e8a57c9facafe0df4b5d889eae48a0c252",
+      "row_id": "941d51630693bc62155d7b9e40a54ac60d5e524d83fdd22dbd8e6731e00dcba6",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "branch": 9011,
+      "case_id": "f072a76f6a76321f1b4405e4101511c6020dc8dc6564b8913b86f1245c2c987c",
+      "original_first_sha256": "5e1cc0532f3118fb7b1172677f429026aedcc12a7f7b828cf977e41da628a54f",
+      "proof_sha256": "f8439fa5be1f916238bfc25f9a86e34d74e838325b38569838a80f25baa66379",
+      "root_parent_id": "7a4021cb97b7d4f0b64e234f72be596c22f65ff7acd1a2af95d6b27f03683c71",
+      "row_id": "dee496580877f1970a6124c2c1e6bdf60714d7d20c34b93b9d1275cc39ccc080",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "branch": 23562,
+      "case_id": "d4b67010c7352905b5559c555c4cf40d73a25bf382164c367275d6321281b861",
+      "original_first_sha256": "bf90c6698b73b04f99b3167ca8915868dcfa143ee436656a027f444e77bf506c",
+      "proof_sha256": "f132e02410b5da57dc7d5e6318f5c31e742fa8a35a3f3d82e7eff0c949f5b42d",
+      "root_parent_id": "2c68e29c35ae678ecff056511658985053703fabd3221480e20ca96256097c51",
+      "row_id": "e8f23d56f87a6da7c87ad5c8e7155626230bb016e416b839dbf31eaaf470b9c1",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "branch": 20771,
+      "case_id": "16f6e6b3a4f8a5f092291d6211c47adf81e386f3a449a7db3e70ab9934a25bf7",
+      "original_first_sha256": "acde62439a7475a76afeea7b51755fa252f715177572fb73743fe222654b9d7d",
+      "proof_sha256": "007ffa8d306fdf7192e63dcfc6adb6e54ad3603e9bdecc21ad4c7d23890f5b8f",
+      "root_parent_id": "4388fb6d00b12fe5d503bb822d446d2d75a7981446a2c91f9b803d0f06b17299",
+      "row_id": "51bc7095926bdbf0a550fc60f458e7474c24030bd331034b06c914fd987066c8",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "branch": 12311,
+      "case_id": "0154192f3a92a1f9622ca7f4884c1d9dacd2a420af1161d7aeebae2b5338bdfc",
+      "original_first_sha256": "75ae275d93b06ae8a1d192fa0c4100c23559b705c8f8ec252a852dcb931f3bfa",
+      "proof_sha256": "db19ac7399101e309bba019f22389ea66bbfc01db270ce2f80e2b818b1c7cd03",
+      "root_parent_id": "9f34418a60066534b305d400731d34f6adeb0e240c8503b12d309ef977589d54",
+      "row_id": "3ff77fbe193eee36dfbe316ee53e1b5c6006df8e644ebf68c1f00e89aaeab7aa",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "branch": 18495,
+      "case_id": "47a4a5472635a786146681d6dbc70ea67d9dda7e4b6c7fc288417a87d0857592",
+      "original_first_sha256": "f1c74ea0d5fe44af543fd9fb74299982a69c53031e54a612d9d51a1dcb135362",
+      "proof_sha256": "37f6f18308b8af5e85ccb1d6de7b074fd659ca142728f61746cfb560f503924e",
+      "root_parent_id": "5db911c1cb4e9a754f695fac171244ac44c43c5590659238b5cfbd35eac95bad",
+      "row_id": "9b247de9c90c84897a7d1e131b48d793468067ae99bde8d0b5dfa2e5e7f6846c",
+      "status": "VERIFIED_UNSAT"
+    }
+  ],
+  "open_tasks_after_import": [],
+  "queue": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/adaptive-wall/six-direct-v2/open.sqlite3",
+  "schema": "adaptive-wall-case-queue-six-import/v1",
+  "scope": "six direct FIRST parents only; no cohort or wall closure",
+  "validator": "original_formula_validator",
+  "verified_closed": 6
+}

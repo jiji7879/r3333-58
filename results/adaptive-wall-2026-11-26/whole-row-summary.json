@@ -1,0 +1,145 @@
+{
+  "result": "all_six_verified_on_core_first_retry",
+  "rows": [
+    {
+      "branch": 12311,
+      "charge": 9,
+      "core_clauses": 4150,
+      "core_sha256": "09e8c9c93176f463ede0044f237623e90fc36510a1a12f64384c86218143dac1",
+      "core_vertices": 34,
+      "original_first_sha256": "75ae275d93b06ae8a1d192fa0c4100c23559b705c8f8ec252a852dcb931f3bfa",
+      "original_retry_sha256": "b3469144c9026b77265f7db9feb80484e6df58e159666b71783cb30b32e67db6",
+      "placement": [
+        42,
+        10,
+        0
+      ],
+      "profile": [
+        15,
+        15,
+        15,
+        12
+      ],
+      "proof_sha256": "db19ac7399101e309bba019f22389ea66bbfc01db270ce2f80e2b818b1c7cd03",
+      "receipt": "results/adaptive-wall-2026-11-26/whole-row-replays/3ff77fbe193e.json",
+      "row_id": "3ff77fbe193eee36dfbe316ee53e1b5c6006df8e644ebf68c1f00e89aaeab7aa"
+    },
+    {
+      "branch": 20771,
+      "charge": 9,
+      "core_clauses": 16647,
+      "core_sha256": "82ee61da68a7d1126210228830f9eb42667719ab1956144894a7b8aff3f9ad0c",
+      "core_vertices": 50,
+      "original_first_sha256": "acde62439a7475a76afeea7b51755fa252f715177572fb73743fe222654b9d7d",
+      "original_retry_sha256": "c81b82ce578641776c632cbaf9bb4f420d37c366aa7a25b85a04a040c6a83c82",
+      "placement": [
+        50,
+        8,
+        0
+      ],
+      "profile": [
+        15,
+        15,
+        15,
+        12
+      ],
+      "proof_sha256": "007ffa8d306fdf7192e63dcfc6adb6e54ad3603e9bdecc21ad4c7d23890f5b8f",
+      "receipt": "results/adaptive-wall-2026-11-26/whole-row-replays/51bc7095926b.json",
+      "row_id": "51bc7095926bdbf0a550fc60f458e7474c24030bd331034b06c914fd987066c8"
+    },
+    {
+      "branch": 4376,
+      "charge": 9,
+      "core_clauses": 4223,
+      "core_sha256": "a0b6c8033dbf967f9485206176095036e94567bdbea74e8fcd27328b849e591e",
+      "core_vertices": 34,
+      "original_first_sha256": "8215018485f8feae011936c74078faf66670f5424a1e88e57f20e6202647953e",
+      "original_retry_sha256": "b01cb20c078d6680fc924fe27c55a7007775a6dca124da691a6b15d0ee09aa2c",
+      "placement": [
+        20,
+        3,
+        0
+      ],
+      "profile": [
+        15,
+        15,
+        15,
+        12
+      ],
+      "proof_sha256": "47a27fbbc8a071e9a7bbe2f6fd34ce2c0a24a7bdfc0bc1710ae3d5bd9fad9d0e",
+      "receipt": "results/adaptive-wall-2026-11-26/whole-row-replays/941d51630693.json",
+      "row_id": "941d51630693bc62155d7b9e40a54ac60d5e524d83fdd22dbd8e6731e00dcba6"
+    },
+    {
+      "branch": 18495,
+      "charge": 9,
+      "core_clauses": 4315,
+      "core_sha256": "face259d01819ec81ca95b54f14d03273dc5355f3a0ec4b4322ed2afa8803893",
+      "core_vertices": 34,
+      "original_first_sha256": "f1c74ea0d5fe44af543fd9fb74299982a69c53031e54a612d9d51a1dcb135362",
+      "original_retry_sha256": "5550eb416e4edb6616d9a7deb7098362fb7eb4bd47ffbc6c94775c5fa5b38645",
+      "placement": [
+        7,
+        3,
+        0
+      ],
+      "profile": [
+        15,
+        15,
+        15,
+        12
+      ],
+      "proof_sha256": "37f6f18308b8af5e85ccb1d6de7b074fd659ca142728f61746cfb560f503924e",
+      "receipt": "results/adaptive-wall-2026-11-26/whole-row-replays/9b247de9c90c.json",
+      "row_id": "9b247de9c90c84897a7d1e131b48d793468067ae99bde8d0b5dfa2e5e7f6846c"
+    },
+    {
+      "branch": 9011,
+      "charge": 9,
+      "core_clauses": 4663,
+      "core_sha256": "72952cf112f063499a1cc047c496249935bd78c9b3f1e4df36d2a974d743da8f",
+      "core_vertices": 35,
+      "original_first_sha256": "5e1cc0532f3118fb7b1172677f429026aedcc12a7f7b828cf977e41da628a54f",
+      "original_retry_sha256": "43e016ff3448b3ad510a0ff50ced022788a6d7530139e9d5dfbe598c41090677",
+      "placement": [
+        49,
+        10,
+        0
+      ],
+      "profile": [
+        15,
+        15,
+        15,
+        12
+      ],
+      "proof_sha256": "f8439fa5be1f916238bfc25f9a86e34d74e838325b38569838a80f25baa66379",
+      "receipt": "results/adaptive-wall-2026-11-26/whole-row-replays/dee496580877.json",
+      "row_id": "dee496580877f1970a6124c2c1e6bdf60714d7d20c34b93b9d1275cc39ccc080"
+    },
+    {
+      "branch": 23562,
+      "charge": 9,
+      "core_clauses": 4784,
+      "core_sha256": "0eb5239f043579f94406570c37578a8d0df731818fdc59cc9c97956db6824c7d",
+      "core_vertices": 35,
+      "original_first_sha256": "bf90c6698b73b04f99b3167ca8915868dcfa143ee436656a027f444e77bf506c",
+      "original_retry_sha256": "b164e510771072d7fce7f56b5cbd11b817615b2b459554d98392691471ce2efe",
+      "placement": [
+        6,
+        6,
+        0
+      ],
+      "profile": [
+        15,
+        15,
+        15,
+        12
+      ],
+      "proof_sha256": "f132e02410b5da57dc7d5e6318f5c31e742fa8a35a3f3d82e7eff0c949f5b42d",
+      "receipt": "results/adaptive-wall-2026-11-26/whole-row-replays/e8f23d56f87a.json",
+      "row_id": "e8f23d56f87a6da7c87ad5c8e7155626230bb016e416b839dbf31eaaf470b9c1"
+    }
+  ],
+  "schema": "adaptive-wall-six-direct-rows/v1",
+  "scope": "Exactly these six (15,15,15,12) direct cases; not a profile, seven-profile wall, cohort or Ramsey-number closure."
+}
