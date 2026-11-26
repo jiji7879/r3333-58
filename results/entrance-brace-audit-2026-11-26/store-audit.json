@@ -1,0 +1,72 @@
+{
+  "all_replays_cnf_and_proof_match": true,
+  "certified_records": 2830,
+  "cnf_hashes_rebuilt": 2830,
+  "complete": false,
+  "families": {
+    "TT:2:5,5,5": {
+      "cases": 600,
+      "certified": 600,
+      "open": 0,
+      "raw": 3200,
+      "replayed": 600
+    },
+    "TT:3:5,5,5": {
+      "cases": 600,
+      "certified": 443,
+      "open": 157,
+      "raw": 3200,
+      "replayed": 443
+    },
+    "UT:2:5,5,5": {
+      "cases": 600,
+      "certified": 596,
+      "open": 4,
+      "raw": 3200,
+      "replayed": 596
+    },
+    "UT:3:5,5,5": {
+      "cases": 600,
+      "certified": 600,
+      "open": 0,
+      "raw": 3200,
+      "replayed": 600
+    },
+    "UU:2:5,5,5": {
+      "cases": 600,
+      "certified": 591,
+      "open": 9,
+      "raw": 3200,
+      "replayed": 591
+    },
+    "UU:3:5,5,5": {
+      "cases": 600,
+      "certified": 0,
+      "open": 600,
+      "raw": 3200,
+      "replayed": 0
+    }
+  },
+  "manifest_lines": 2832,
+  "per_family_certified": {
+    "TT:2:5,5,5": 600,
+    "TT:3:5,5,5": 443,
+    "UT:2:5,5,5": 596,
+    "UT:3:5,5,5": 600,
+    "UU:2:5,5,5": 591
+  },
+  "per_family_replayed": {
+    "TT:2:5,5,5": 600,
+    "TT:3:5,5,5": 438,
+    "UT:2:5,5,5": 596,
+    "UT:3:5,5,5": 600,
+    "UU:2:5,5,5": 591
+  },
+  "proof_gz_hashes_checked": 2830,
+  "replayed_verified": 2825,
+  "residual_cases": 3600,
+  "residual_cases_open": 770,
+  "scope_warning": "Only these listed cases are certified. This is not a strict/mixed/profile elimination.",
+  "source_manifest": ".ultramath/smwwdcyxb/m2/proofs/manifest.jsonl",
+  "unknown_manifest_lines": 2
+}

@@ -1,0 +1,13 @@
+{
+  "certified_cnf_hashes_rebuilt": 2830,
+  "compressed_proof_hashes_checked": 2830,
+  "description": "These source hashes pin the already successful 3600-key and 2830-CNF/checksum audit. They are checked again before combining it with new proof replay receipts.",
+  "enumerated_case_keys_checked": 3600,
+  "proof_replays_complete": false,
+  "sha256": {
+    "manifest.jsonl": "e3f2753632bafecfe20541c05675a513ff9693165a1fd11084103a3f02a693ba",
+    "replay.jsonl": "f5f057bf54e6cea8a2a5929a277b936ac06faa67d463b9d46c32a626c95ac079",
+    "residual.tsv": "df64961fc41bc8107261522005230f72acca97f23e12696aa6be8ca82a297fb6"
+  },
+  "structural_audit": "results/entrance-brace-audit-2026-11-26/store-audit.json"
+}
