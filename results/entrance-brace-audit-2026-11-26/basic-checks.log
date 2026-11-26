@@ -1,0 +1,23 @@
+selftest gadgets
+  atmost   ok (60 random cases)
+  atleast  ok (60 random cases)
+  exact_guard ok (60 random cases, both polarities)
+ALL OK
+trial 0: 57 vertices, guard arithmetic exact
+trial 1: 57 vertices, guard arithmetic exact
+trial 2: 57 vertices, guard arithmetic exact
+trial 3: 57 vertices, guard arithmetic exact
+U: |Aut| = 160
+   5-supports for arm colour 0: 16, orbits 1
+   4-supports for arm colour 0: 80, orbits 1
+   5-supports for arm colour 1: 16, orbits 1
+   4-supports for arm colour 1: 80, orbits 1
+   5-supports for arm colour 2: 16, orbits 1
+   4-supports for arm colour 2: 80, orbits 1
+T: |Aut| = 32
+   5-supports for arm colour 0: 16, orbits 1
+   4-supports for arm colour 0: 96, orbits 4
+   5-supports for arm colour 1: 16, orbits 1
+   4-supports for arm colour 1: 96, orbits 4
+   5-supports for arm colour 2: 16, orbits 1
+   4-supports for arm colour 2: 96, orbits 4

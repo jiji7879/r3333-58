@@ -1,0 +1,100 @@
+{
+  "root_sha256": "aa23de814810dc2b5515955a0aa318eab72df81c4541006fde253b39c48d2b44",
+  "nodes": 343,
+  "leaves": 172,
+  "verdicts": {
+    "UNSAT_VERIFIED": 169,
+    "UNKNOWN": 1,
+    "OPEN_NO_BUDGET": 2
+  },
+  "proof_artifacts": {
+    "pilot": 9,
+    "inline": 155,
+    "external": 5
+  },
+  "open_leaves": [
+    {
+      "id": "r5_n025b2-019",
+      "cube": [
+        -305498,
+        -305501,
+        -305503,
+        -305505,
+        -305512,
+        -305482,
+        -305483,
+        -305484,
+        305485,
+        -305486,
+        -305487,
+        -305488,
+        -305489,
+        -305490,
+        -305491,
+        -305492,
+        -305493,
+        -305494,
+        -305495,
+        -305496,
+        -305497
+      ],
+      "verdict": "UNKNOWN",
+      "cnf_sha256": "f167b31790d3cf5605887648fd2a9df2799bc0791b4041cfeb17ea10db6c9dda",
+      "selectors_true": []
+    },
+    {
+      "id": "c485-022",
+      "cube": [
+        -305498,
+        -305501,
+        -305503,
+        -305505,
+        -305512,
+        -305482,
+        -305483,
+        -305484,
+        -305485,
+        305486,
+        -305487,
+        -305488,
+        -305489,
+        -305490,
+        -305491,
+        -305492,
+        -305493,
+        -305494,
+        -305495,
+        -305496
+      ],
+      "verdict": "OPEN_NO_BUDGET",
+      "cnf_sha256": "3159be40996f1c23766d7e25f489f6a1a2ef0e634882330331a74afa0f9ef4f7",
+      "selectors_true": []
+    },
+    {
+      "id": "c485_029-033",
+      "cube": [
+        -305498,
+        -305501,
+        -305503,
+        -305505,
+        -305512,
+        -305482,
+        -305483,
+        -305484,
+        -305485,
+        -305486,
+        -305487,
+        -305488
+      ],
+      "verdict": "OPEN_NO_BUDGET",
+      "cnf_sha256": "fa9b361846ae5d5ee644d048c6c36227e825b11db8d0a336a2b884c2b2c70c62",
+      "selectors_true": []
+    }
+  ],
+  "all_leaf_cnfs_rebuilt": true,
+  "all_pilot_and_inline_compressed_proof_hashes_checked": true,
+  "all_external_uncompressed_cnf_and_proof_hashes_checked": true,
+  "all_external_verification_logs_contain_verified": true,
+  "fresh_replays": "Separate: pilot fresh replays and selected out-of-band replay",
+  "scope": "Exact disjunction for the named augmented reciprocal CNF only; no whole-row closure."
+}

@@ -1,4 +1,9 @@
-# Entrance points at a (16,16,13,12) root of K58 have a 15-vertex brace — certified, proofs kept and replayed
+# Entrance points at a (16,16,13,12) root of K58 have a 15-vertex brace — historical submission
+
+**Read `AUDIT.md` first.** This is the member's original write-up. Its
+certificate inventory and replayed scope have since changed; only the three
+complete families described in `AUDIT.md` are accepted. The broad theorem in
+this original report must not be quoted without that scope.
 
 Direction E (mixed roots), member m2 of swarm `smwwdcyxb`. Second submission;
 section 0 corrects the semantic error of the first one.

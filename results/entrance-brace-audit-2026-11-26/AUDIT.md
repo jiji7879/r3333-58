@@ -1,4 +1,4 @@
-# Scoped entrance proof store — independent audit in progress
+# Scoped entrance proof store — independently verified
 
 Source: `smwwdcyxb/m2`, direction d6. The accompanying checks do not modify the
 source proof store.
@@ -45,3 +45,36 @@ formula; `store-audit.json` records that intermediate status.
 
 The $(4,5,5)$, $(5,4,5)$ and $(5,5,4)$ shapes (entrances with degree 15) are not
 part of this certified store. Their 4,740 cases remain an open separate task..
+
+## Final replay result
+
+All six omitted proofs subsequently printed `s VERIFIED`. Their additional
+replay times were 184.299, 582.515, 944.861, 804.433, 685.134 and 686.110
+seconds. Combining these receipts with the unchanged structural audit gives
+**2,830/2,830 verified stored proofs**, with independently checked CNF hashes,
+compressed-proof hashes and actual CNF-against-proof verification. The frozen
+source fingerprints are recorded in `geometry-receipt.json` and rechecked by
+`finish_audit.py`; see `finish-audit.log` and `store-audit.json`.
+
+There are still **770 OPEN cases** of the $(5,5,5)$ shape in this enumeration:
+157 in `TT:3`, 9 in `UU:2`, 4 in `UT:2`, and all 600 in `UU:3`. The three
+complete accepted families total 1,800 cases; the additional verified partial
+families do not change the acceptance's scope. A 16-brace theorem at every
+$(16,16,13,12)$ root is **not** established. An entrance is $\beta_r\ge1$, not
+strictness $\beta_r>\alpha_r$, so neither strict nor balanced-active is closed.
+Neither this store nor the separate reciprocal C&C audit closes a frozen row,
+reduces the 140 target rows to zero, or moves a Ramsey bound.
+
+Reproduce with:
+
+```sh
+python3 results/entrance-brace-audit-2026-11-26/replay_missing.py
+python3 results/entrance-brace-audit-2026-11-26/check_store.py
+python3 results/entrance-brace-audit-2026-11-26/finish_audit.py
+```
+
+The approximately 8.1 GB compressed DRAT archive remains at
+`.ultramath/smwwdcyxb/m2/proofs/`; it is intentionally not duplicated or
+committed. `check_store.py` rechecks the complete geometry rather than relying
+only on the smaller finalisation pass. `replay_missing.py` reads, but never
+rewrites, that archive.

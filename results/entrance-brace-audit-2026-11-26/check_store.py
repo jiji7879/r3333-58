@@ -96,7 +96,7 @@ def main():
         'per_family_certified': dict(sorted(counts.items())),
         'per_family_replayed': dict(sorted(verified_counts.items())),
         'complete': len(replayed) == len(records),
-        'scope_warning': 'Only these listed cases are certified. This is not a strict/mixed/profile elimination.',
+        'scope_warning': 'Only explicitly stored/replayed cases are covered; this is not a strict/mixed/profile elimination. Accepted theorem: three complete TT:2, TT:3 and UT:3 families (1800 cases).',
     }
     assert doc['cnf_hashes_rebuilt'] == 2830
     assert len(records) == 2830

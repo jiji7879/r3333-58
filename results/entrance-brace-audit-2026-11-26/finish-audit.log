@@ -1,0 +1,2 @@
+PASS: frozen structural audit unchanged; 2830/2830 stored proofs replay VERIFIED
+This completes the scoped proof-store audit only; strict/mixed/full rows remain open.

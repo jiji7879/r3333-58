@@ -1,0 +1,14 @@
+External replay command: drat-trim c485_028-001.cnf c485_028-001.drat
+c turning on binary mode checking
+c parsing input formula with 305513 variables and 834125 clauses
+c finished parsing, read 585308080 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 13097 of 834125 clauses in core                            
+c 2250641 of 5643544 lemmas in core using 231141126 resolution steps
+c 1173 RAT lemmas in core; 3837541 redundant literals in core lemmas
+s VERIFIED
+c verification time: 347.168 seconds
+
+real	5m47.228s
+user	5m46.296s
+sys	0m0.414s
