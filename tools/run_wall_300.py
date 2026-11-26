@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Run one hash-pinned wall-row CNF with a 300-second solver clock.
+"""Run one hash-pinned wall-row CNF with an explicit solver wall clock.
 
 Only a completed UNSAT result with native DRAT replay is called a certificate.
 OPEN runs delete their traces; SAT retains only the encoding/model log.
+The caller controls concurrency; the default is 300 seconds per run.
 """
 import argparse
 import hashlib
@@ -27,11 +28,15 @@ def main():
     p.add_argument('expected_sha256')
     p.add_argument('engine', choices=['kissat', 'cadical'])
     p.add_argument('work', type=Path)
+    p.add_argument('--seconds', type=int, default=300)
+    p.add_argument('--results-dir', type=Path, default=Path('results/wall-row-300-2026-11-26'))
     args = p.parse_args()
+    if args.seconds <= 0:
+        p.error('--seconds must be positive')
     assert sha(args.cnf) == args.expected_sha256, 'input hash mismatch'
     args.work.mkdir(parents=True, exist_ok=False)
     root = Path(__file__).resolve().parents[1]
-    results = root / 'results/wall-row-300-2026-11-26'
+    results = args.results_dir if args.results_dir.is_absolute() else root / args.results_dir
     results.mkdir(parents=True, exist_ok=True)
     kissat = args.work.parent / 'bin/kissat'
     assert sha(kissat) == 'b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f'
@@ -40,16 +45,16 @@ def main():
     drat = args.work / 'proof.drat'
     log = args.work / 'solver.log'
     if args.engine == 'kissat':
-        argv = [str(kissat), '--time=300', str(args.cnf.resolve()), str(drat)]
+        argv = [str(kissat), f'--time={args.seconds}', str(args.cnf.resolve()), str(drat)]
     else:
-        argv = ['/opt/lean/bin/cadical', '-t', '300', str(args.cnf.resolve()), str(drat)]
+        argv = ['/opt/lean/bin/cadical', '-t', str(args.seconds), str(args.cnf.resolve()), str(drat)]
     before = resource.getrusage(resource.RUSAGE_CHILDREN)
     begin = time.monotonic()
     started_utc = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
     with log.open('wb') as stream:
         try:
             completed = subprocess.run(argv, stdout=stream, stderr=subprocess.STDOUT,
-                                       check=False, timeout=360)
+                                       check=False, timeout=args.seconds + 60)
             rc = completed.returncode
             timed_out = False
         except subprocess.TimeoutExpired as exc:
@@ -60,8 +65,8 @@ def main():
     record = {
         'cnf': str(args.cnf), 'cnf_sha256': args.expected_sha256,
         'engine': args.engine, 'command': argv,
-        'solver_wall_limit_seconds': 300, 'conflict_limit': None,
-        'watchdog_seconds': 360, 'started_utc': started_utc,
+        'solver_wall_limit_seconds': args.seconds, 'conflict_limit': None,
+        'watchdog_seconds': args.seconds + 60, 'started_utc': started_utc,
         'wall_seconds': elapsed, 'returncode': rc,
         'user_cpu_seconds': after.ru_utime - before.ru_utime,
         'system_cpu_seconds': after.ru_stime - before.ru_stime,
@@ -92,7 +97,7 @@ def main():
         drat.unlink(missing_ok=True)
     elif rc == 0 or timed_out:
         record['solver_result'] = 'OPEN'
-        record['status'] = 'OPEN_AT_300_SECONDS' if not timed_out else 'OPEN_WATCHDOG_TIMEOUT'
+        record['status'] = f'OPEN_AT_{args.seconds}_SECONDS' if not timed_out else 'OPEN_WATCHDOG_TIMEOUT'
         drat.unlink(missing_ok=True)
         record['unfinished_trace_deleted'] = not drat.exists()
     else:

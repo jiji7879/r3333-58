@@ -1,0 +1,1 @@
+{"budget":{"check_seconds":600,"conflicts":1000000,"proof":"eager","seconds":300},"conflicts_used":1000003,"cube":[1413,-1426],"elapsed_s":67.2,"node":"r10","plan_sha256":"683969b82a6459befa58d75321fc1873dc26b63d01c5a9c64b8bfa0e46c1c29e","reason":"conflict limit","solver":"CaDiCaL 1.9.5 / python-sat 1.9.dev22","status":"OPEN"}

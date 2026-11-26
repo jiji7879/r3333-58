@@ -1,0 +1,1 @@
+{"origin": {"kind": "wall", "id": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06", "tier": "first"}, "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae", "variables": 19533, "clauses": 184335, "cuts": 315, "tables": 15, "depth": 2, "leaf_count": 4}

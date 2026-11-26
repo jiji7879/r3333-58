@@ -1,0 +1,27 @@
+{
+  "cnf": ".scratch/wall-profile-16-16-14-11-600/06861a3df60c-600s/parent.cnf",
+  "cnf_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "engine": "kissat",
+  "command": [
+    ".scratch/wall-profile-16-16-14-11-600/bin/kissat",
+    "--time=600",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-profile-16-16-14-11-600/06861a3df60c-600s/parent.cnf",
+    ".scratch/wall-profile-16-16-14-11-600/06861a3df60c-600s-concurrent-kissat/proof.drat"
+  ],
+  "solver_wall_limit_seconds": 600,
+  "conflict_limit": null,
+  "watchdog_seconds": 660,
+  "started_utc": "2026-11-26T11:44:23Z",
+  "wall_seconds": 600.0534061670769,
+  "returncode": 0,
+  "user_cpu_seconds": 599.161713,
+  "system_cpu_seconds": 0.641995,
+  "log": ".scratch/wall-profile-16-16-14-11-600/06861a3df60c-600s-concurrent-kissat/solver.log",
+  "log_sha256": "e69de12d483c33505507e9f78363b34afce36ce683b1aed4b852eb1b6e1608e7",
+  "watchdog_timeout": false,
+  "process_scope": "one solver subprocess per invocation; caller controls concurrency",
+  "scope": "The complete hash-pinned first-tier-row formula plus its named directional cuts. Not a Ramsey conclusion by itself.",
+  "solver_result": "OPEN",
+  "status": "OPEN_AT_600_SECONDS",
+  "unfinished_trace_deleted": true
+}

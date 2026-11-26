@@ -1,0 +1,48 @@
+{
+  "status": "OPEN",
+  "tail_conflicts": 1003,
+  "leaves": [
+    {
+      "node": "r00",
+      "cube": [
+        -1413,
+        -2206
+      ],
+      "result": null,
+      "conflicts": 350000
+    },
+    {
+      "node": "r01",
+      "cube": [
+        -1413,
+        2206
+      ],
+      "result": null,
+      "conflicts": 350001
+    },
+    {
+      "node": "r10",
+      "cube": [
+        1413,
+        -1426
+      ],
+      "result": null,
+      "conflicts": 350001
+    },
+    {
+      "node": "r11",
+      "cube": [
+        1413,
+        1426
+      ],
+      "result": null,
+      "conflicts": 350002
+    }
+  ],
+  "method": "shared CaDiCaL",
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "plan_sha256": "683969b82a6459befa58d75321fc1873dc26b63d01c5a9c64b8bfa0e46c1c29e",
+  "conflict_cap": 350000,
+  "tail_cap": 1000,
+  "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066"
+}
