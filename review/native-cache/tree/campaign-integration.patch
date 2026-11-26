@@ -1,0 +1,231 @@
+--- a/frontier.py
++++ b/frontier.py
+@@ -85,8 +85,38 @@
+ 
+ 
+ def read_tree(rid):
++    """Read the raw state for mutation or diagnostics; terminal fields are unverified."""
+     loc=RUNS/rid/'tree.json'
+     return json.loads(loc.read_bytes()) if loc.exists() else {'id':rid,'splits':{},'closed':{}}
++
++
++def checked_tree(rid):
++    """Replay persisted terminal claims before resume, scheduling, or export.
++
++    Invalid evidence remains an explicit nonterminal cache failure. The raw tree
++    is passed to verify_native so a concurrent replacement cannot validate one
++    tree while this function returns another. No solver is launched here.
++    """
++    tree=None
++    try:
++        tree=read_tree(rid)
++        if not isinstance(tree,dict):raise ValueError('cached tree is not a JSON object')
++        root=tree.get('root_verdict')
++        closed=tree.get('closed',{})
++        if root is None and not closed:return tree
++        if root not in (None,'UNSAT_BASE','SAT_BASE'):
++            raise ValueError(f'invalid cached root verdict {root!r}')
++        if not isinstance(closed,dict) or set(closed.values())-DEAD:
++            raise ValueError('invalid/nonterminal status in cached closed map')
++        from verify_campaign import verify_native
++        verify_native(rid,tree=tree)
++        return tree
++    except Exception as exc:
++        clean=dict(tree) if isinstance(tree,dict) else {'id':rid,'splits':{}}
++        clean.pop('root_verdict',None);clean['closed']={}
++        clean['cache_status']='INVALID_CACHE'
++        clean['cache_error']=f'{type(exc).__name__}: {exc}'[-1000:]
++        return clean
+ 
+ 
+ def walk(tree):
+@@ -166,7 +196,7 @@
+ def run_row(task):
+     rid,depth,cap,control,third=task
+     rows,bindings,_,tables=context()
+-    row=rows[rid]; binding=bindings[rid]; tree=read_tree(rid)
++    row=rows[rid]; binding=bindings[rid]; tree=checked_tree(rid)
+     folder=RUNS/rid; folder.mkdir(parents=True,exist_ok=True)
+     def save():atomic(folder/'tree.json',json_bytes(tree))
+     base=row_formula(row,'first');bind_parent(row,base)
+@@ -228,7 +258,7 @@
+     writer.writerow(['row_id','profile','node','cube','status'])
+     states=Counter(); receipts=Counter()
+     for rid,r in sr.items():
+-        tree=read_tree(rid)
++        tree=checked_tree(rid)
+         states[tree.get('root_verdict','OPEN')]+=1
+         for node,cube in walk(tree):
+             status=tree['closed'].get(node,'INACTIVE_SAT_ROOT' if tree.get('root_verdict')=='SAT_BASE' else 'OPEN')
+@@ -266,7 +296,7 @@
+                 if opt.action=='advance' and not exists:
+                     byprofile[rec['profile']].append(rid)
+                 elif opt.action=='deepen' and exists:
+-                    tree=read_tree(rid)
++                    tree=checked_tree(rid)
+                     mode='guided3' if opt.third_cuts else 'guided'
+                     if not tree.get('root_verdict') and any(n not in tree['closed'] and
+                             (len(cube)<opt.depth or not (RUNS/rid/f'{n}-{mode}-{opt.cap}.json').exists())
+--- a/coverage.py
++++ b/coverage.py
+@@ -9,7 +9,7 @@
+ 
+ from arm_pairs import RESULTS, WORDS, between, partition, records
+ from bind import json_bytes, tsv, write_gzip
+-from frontier import HERE, RUNS, atomic, context, read_tree, walk
++from frontier import HERE, RUNS, atomic, context, checked_tree, walk
+ from roster import write_table
+ from third_star import DEST, LEFT, RIGHT, candidates
+ 
+@@ -17,6 +17,15 @@
+ def tabbytes(rows):
+     s=io.StringIO();w=csv.DictWriter(s,fieldnames=rows[0].keys(),delimiter='\t',lineterminator='\n')
+     w.writeheader();w.writerows(rows);return s.getvalue().encode()
++
++
++def exported_native_status(receipt,tree):
++    """Only evidence validated with its tree may be exported as terminal."""
++    status=receipt['status']
++    if status=='OPEN':return status
++    if (status in ('UNSAT_BASE','SAT_BASE') and isinstance(tree,dict) and
++            tree.get('closed',{}).get(receipt.get('node'))==status):return status
++    return 'UNVERIFIED_'+status
+ 
+ 
+ def count_by_size():
+@@ -46,11 +55,11 @@
+         nt[status]+=1
+         third.append(dict(first=LEFT,second=RIGHT,third=w,status=status))
+     write_table(HERE/'results/third-class-index.tsv',third)
+-    profiles=defaultdict(Counter);physical=Counter();virtual=Counter();native=defaultdict(Counter)
++    profiles=defaultdict(Counter);physical=Counter();virtual=Counter();native=defaultdict(Counter);checked={}
+     mins={r['id']:r for r in map(json.loads,gzip.decompress((HERE/'results/minimum-propagation.jsonl.gz').read_bytes()).splitlines())}
+     res=[];arm_interfaces=Counter();incidences=Counter();nominated=Counter()
+     for rid,r in sr.items():
+-        b=bindings[rid];tree=read_tree(rid);leaves=list(walk(tree))
++        b=bindings[rid];tree=checked_tree(rid);checked[rid]=tree;leaves=list(walk(tree))
+         arms=b['pentagons'];ai=max(range(len(arms)),key=lambda i:arms[i]['size'])
+         arm=arms[ai];n=arm['size'];five=set(arm['pentagon'])
+         outs=[u for u in range(arm['block_start'],arm['block_start']+n) if u not in five]
+@@ -85,10 +94,10 @@
+     runlist=[]
+     for p in sorted(RUNS.glob('*/*.json')):
+         if p.name=='tree.json':continue
+-        r=json.loads(p.read_bytes()); g=native[r['mode']]
+-        g['runs']+=1;g[r['status']]+=1;g['conflicts']+=r['conflicts'];g['elapsed_milliseconds']+=round(1000*r['seconds'])
++        r=json.loads(p.read_bytes()); g=native[r['mode']];status=exported_native_status(r,checked.get(r['id']))
++        g['runs']+=1;g[status]+=1;g['conflicts']+=r['conflicts'];g['elapsed_milliseconds']+=round(1000*r['seconds'])
+         runlist.append(dict(id=r['id'],node=r['node'],mode=r['mode'],cap=r['cap'],conflicts=r['conflicts'],
+-                            seconds=r['seconds'],status=r['status'],cube=' '.join(map(str,r['cube'])),query_sha256=r['query_sha256']))
++                            seconds=r['seconds'],status=status,reported_status=r['status'],cube=' '.join(map(str,r['cube'])),query_sha256=r['query_sha256']))
+     if runlist:write_table(HERE/'results/full-row-runs.tsv',runlist)
+     receipts=[json.loads(p.read_bytes()) for p in (HERE/'results/physical-replays').glob('*.json')]
+     num=Counter();reps=set();tris=set()
+--- a/arm_pairs.py
++++ b/arm_pairs.py
+@@ -96,7 +96,7 @@
+ 
+ 
+ def check_drat(cnf, pf, only_rup=False):
+-    job = subprocess.run([str(HERE/'tools/drat-trim'),str(cnf),str(pf),'-i','-w',*(['-U'] if only_rup else [])],
++    job = subprocess.run([str(HERE/'tools/drat-trim'),str(cnf),str(pf),'-i',*(['-U'] if only_rup else [])],
+                          stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+     if job.returncode or b's VERIFIED' not in job.stdout:
+         raise ValueError(job.stdout[-1000:])
+--- a/verify_campaign.py
++++ b/verify_campaign.py
+@@ -45,10 +45,17 @@
+     print('Independent direct color enumeration agrees for every marked interface.',flush=True)
+ 
+ 
+-def verify_native(rid):
+-    rows,bindings,_,_=context();tree=read_tree(rid); folder=RUNS/rid
++def require_native(condition,message):
++    """Security checks must remain active even under python -O."""
++    if not condition:raise ValueError(message)
++
++
++def verify_native(rid,tree=None):
++    rows,bindings,_,_=context();tree=read_tree(rid) if tree is None else tree; folder=RUNS/rid
+     raw=row_formula(rows[rid],'first');bind_parent(rows[rid],raw)
+-    assert tree['id']==rid and tree['parent_sha256']==sha(raw)
++    require_native(tree['id']==rid and tree['parent_sha256']==sha(raw),'tree identity/parent mismatch')
++    require_native(tree.get('root_verdict','OPEN') in ('OPEN','SAT_BASE','UNSAT_BASE'),'invalid root verdict')
++    require_native(set(tree['closed'].values()) <= {'SAT_BASE','UNSAT_BASE'},'nonterminal status in closed map')
+     leaves=dict(walk(tree)); cube_nodes={'r':[]}
+     for node,cube in leaves.items():
+         for i in range(1,len(node)+1):cube_nodes[node[:i]]=cube[:i-1]
+@@ -56,36 +63,44 @@
+     witnesses=set();count=0
+     for file in folder.glob('*.json'):
+         if file.name=='tree.json':continue
+-        r=json.loads(file.read_bytes());assert r['id']==rid and r['parent_sha256']==sha(raw)
+-        node=r['node'];cube=r['cube'];assert cube_nodes.get(node,cube)==cube
+-        if node not in cube_nodes:assert tree.get('root_verdict') in ('SAT_BASE','UNSAT_BASE')
++        r=json.loads(file.read_bytes());require_native(r['id']==rid and r['parent_sha256']==sha(raw),'receipt identity/parent mismatch')
++        node=r['node'];cube=r['cube'];require_native(cube_nodes.get(node,cube)==cube,'receipt node/cube is outside tree')
++        if node not in cube_nodes:require_native(tree.get('root_verdict') in ('SAT_BASE','UNSAT_BASE'),'orphan receipt without terminal root')
+         _,plain=append(raw,[[v] for v in cube]) if cube else (None,raw)
+-        assert sha(plain)==r['plain_sha256']
++        require_native(sha(plain)==r['plain_sha256'],'plain SHA-256 mismatch')
+         if r['mode']=='stock':query=plain
+         else:
+-            assert r['mode'] in ('guided','guided3')
++            require_native(r['mode'] in ('guided','guided3'),'invalid native mode')
+             pairs=list(pair_clauses(bindings[rid],r['mode']=='guided3'))
+-            assert len(pent)+len(sp)==r['cuts'] and len(pairs)==r['pair_cuts']
++            require_native(len(pent)+len(sp)==r['cuts'] and len(pairs)==r['pair_cuts'],'cut count mismatch')
+             _,query=append(plain,pent+sp+pairs)
+-        assert r['query_sha256']==sha(query)
++        require_native(r['query_sha256']==sha(query),'query SHA-256 mismatch')
+         status=r['status']
+         if status in ('UNSAT_BASE','AUGMENTED_UNSAT_PENDING_BASE'):
+-            data=gzip.decompress((folder/r['proof']).read_bytes());assert sha(data)==r['proof_sha256']
++            require_native(r.get('proof')==file.stem+'.drat.gz','proof is not receipt-local')
++            proof_path=folder/r['proof'];require_native(proof_path.is_file() and not proof_path.is_symlink(),'proof is not a regular local artifact')
++            data=gzip.decompress(proof_path.read_bytes());require_native(sha(data)==r['proof_sha256'],'proof SHA-256 mismatch')
+             with TemporaryDirectory() as tmp:
+                 q=Path(tmp)/'q.cnf';p=Path(tmp)/'p.drat'
+                 q.write_bytes(plain if status=='UNSAT_BASE' else query);p.write_bytes(data);check_drat(q,p)
+         elif status=='SAT_BASE':
+-            data=gzip.decompress((folder/r['model']).read_bytes());assert sha(data)==r['model_sha256']
+-            nv,clauses=read_dimacs(plain);check_model(clauses,cube,json.loads(data),nv)
++            require_native(r.get('model')==file.stem+'.model.json.gz','model is not receipt-local')
++            model_path=folder/r['model'];require_native(model_path.is_file() and not model_path.is_symlink(),'model is not a regular local artifact')
++            data=gzip.decompress(model_path.read_bytes());require_native(sha(data)==r['model_sha256'],'model SHA-256 mismatch')
++            nv,clauses=read_dimacs(plain);model=json.loads(data)
++            require_native(type(model) is list and len(model)==nv and
++                           all(type(x) is int and x!=0 for x in model) and
++                           {abs(x) for x in model}==set(range(1,nv+1)),
++                           'model is not a complete one-literal-per-variable assignment')
++            check_model(clauses,cube,model,nv)
+         else:
+-            assert status=='OPEN' and r['conflicts']>=r['cap']
++            require_native(status=='OPEN' and r['conflicts']>=r['cap'],'invalid/under-cap OPEN receipt')
+         witnesses.add((node,status));count+=1
+-    assert all((n,s) in witnesses for n,s in tree['closed'].items())
++    require_native(all((n,s) in witnesses for n,s in tree['closed'].items()),'closed node lacks a matching receipt')
+     if tree.get('root_verdict')=='UNSAT_BASE':
+-        assert all(tree['closed'].get(n)=='UNSAT_BASE' for n in leaves)
+-    if tree.get('root_verdict')=='SAT_BASE':assert 'SAT_BASE' in tree['closed'].values()
++        require_native(all(tree['closed'].get(n)=='UNSAT_BASE' for n in leaves),'incomplete UNSAT leaf cover')
++    if tree.get('root_verdict')=='SAT_BASE':require_native('SAT_BASE' in tree['closed'].values(),'SAT root lacks a model-backed closed node')
+     return count
+-
+ 
+ def physical_check(file):
+     r=json.loads(file.read_bytes())
+@@ -123,7 +138,12 @@
+                         q.write_bytes(plain if status=='UNSAT_BASE' else query);p.write_bytes(proof);check_drat(q,p)
+                 elif status=='SAT_BASE':
+                     modeldata=gzip.decompress((folder/r['model']).read_bytes());assert sha(modeldata)==r['model_sha256']
+-                    nv,clauses=read_dimacs(plain);check_model(clauses,cube(w),json.loads(modeldata),nv)
++                    nv,clauses=read_dimacs(plain);model=json.loads(modeldata)
++                    require_native(type(model) is list and len(model)==nv and
++                                   all(type(x) is int and x!=0 for x in model) and
++                                   {abs(x) for x in model}==set(range(1,nv+1)),
++                                   'model is not a complete one-literal-per-variable assignment')
++                    check_model(clauses,cube(w),model,nv)
+                 else:raise ValueError(status)
+                 count+=1
+             assert Counter(cover['physical_conditions'].values())==Counter(cover['full_statuses'])

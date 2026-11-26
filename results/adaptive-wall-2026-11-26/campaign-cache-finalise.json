@@ -1,0 +1,17 @@
+{
+  "campaign": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign",
+  "entries": 1000,
+  "frontier_has_tree_integration": true,
+  "manifest_after_sha256": "1659fdb554896de24379407fb6e6ad58369299da93bc22f4b0ebb45275232761",
+  "manifest_before_sha256": "87f4f890cea4ff0413778a1b665dd9f30825d616d9327ad3be19b5da83cfc029",
+  "manifest_note": "Byte authentication only; semantic checks are separate.",
+  "schema": "k58-native-cache-manifest/v1",
+  "source_sha256": {
+    "arm_pairs.py": "c57adafd0a7cfcd93c455e8c849e869928c8344a2a52620bd1c5c9a46be3ec74",
+    "campaign_cache.py": "a06a2c63364c547a29893da60ebb528ab181fa75ad621a3809a5147db2f2ad52",
+    "coverage.py": "a454d266253b4e90eb03627262bec210a41ddc09d6aaf311c0f45f001636fa4f",
+    "frontier.py": "567b770fd55fb2e31144da94aeb857239ca6a48569d26761de33c3ed765b42b6",
+    "verify_campaign.py": "19070a38ef1519080c2c150126188b3fe0259996aba44d1eab24722c5b830260"
+  },
+  "verified_entries": 1000
+}

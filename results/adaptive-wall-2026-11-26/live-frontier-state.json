@@ -1,0 +1,16 @@
+{
+  "checked_root_statuses": {
+    "OPEN": 11585
+  },
+  "closed_nodes_after_checked_tree": 0,
+  "k58_solver_calls": 0,
+  "native_receipt_statuses": {
+    "OPEN": 105
+  },
+  "original_rows": 11585,
+  "persisted_tree_files": 35,
+  "raw_root_statuses": {
+    "OPEN": 11585
+  },
+  "schema": "k58-live-cache-frontier-state/v1"
+}

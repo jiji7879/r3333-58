@@ -1,0 +1,34 @@
+--- a/tools/adaptive_wall/run_unsplit_ablation.py
++++ b/tools/adaptive_wall/run_unsplit_ablation.py
+@@ -27,6 +27,14 @@
+     assert spec.loader is not None
+     spec.loader.exec_module(module)
+     return module
++
++
++def require_fresh_case_folder(folder: Path) -> None:
++    """No native cache bytes may enter a fresh-performance observation."""
++    if folder.is_symlink() or not folder.is_dir():
++        raise ValueError(f"native case folder is not a real directory: {folder}")
++    if any(folder.iterdir()):
++        raise ValueError(f"native case folder is not fresh/empty: {folder}")
+ 
+ 
+ def main() -> None:
+@@ -107,6 +115,7 @@
+     def observe(rid, variant_name, variant, base, cuts, prefix, pairs, folder):
+         nonlocal current_case
+         mode = variant["mode"]
++        require_fresh_case_folder(folder)
+         receipt = folder / f"r-{mode}-{CAP}.json"
+         if receipt.exists():
+             raise ValueError(f"stale receipt before launch: {receipt}")
+@@ -117,6 +126,8 @@
+             result = frontier.run_native(base, [], cuts, prefix, pairs, rid, "r", mode, CAP, folder)
+         finally:
+             assert current_case is not None
++            if not current_case["invocations"]:
++                raise ValueError("run_native returned without a fresh native invocation")
+             obs = {
+                 "schema": "k58-native-observation/v1",
+                 "row_id": rid,

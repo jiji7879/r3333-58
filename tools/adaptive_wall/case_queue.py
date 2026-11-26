@@ -350,7 +350,9 @@ class DratTrimVerifier:
             cnf, drat = Path(name, "exact.cnf"), Path(name, "proof.drat")
             cnf.write_bytes(formula)
             drat.write_bytes(proof)
-            run = subprocess.run([self.executable, str(cnf), str(drat), "-i", "-w"],
+            # Warning suppression also bypasses this checker's malformed
+            # binary-prefix break; only the strict binary mode is fail-closed.
+            run = subprocess.run([self.executable, str(cnf), str(drat), "-i"],
                                  stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                                  timeout=self.timeout_seconds)
             log = run.stdout.decode("utf-8", "replace")

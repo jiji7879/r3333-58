@@ -1,0 +1,22 @@
+test_existing_model_checker_accepts_incomplete_assignment (__main__.ContractTests.test_existing_model_checker_accepts_incomplete_assignment) ... ok
+test_missing_corrupt_and_wrong_binding_receipts (__main__.ContractTests.test_missing_corrupt_and_wrong_binding_receipts) ... ok
+test_pending_adversaries_never_close (__main__.ContractTests.test_pending_adversaries_never_close) ... ok
+test_sat_artifact_adversaries (__main__.ContractTests.test_sat_artifact_adversaries) ... ok
+test_unknown_timeout_and_raw_solver_states_do_not_close (__main__.ContractTests.test_unknown_timeout_and_raw_solver_states_do_not_close) ... ok
+test_unsat_artifact_adversaries (__main__.ContractTests.test_unsat_artifact_adversaries) ... ok
+test_valid_terminal_and_nonterminal_controls (__main__.ContractTests.test_valid_terminal_and_nonterminal_controls) ... ok
+test_warning_suppressing_helper_accepts_malformed_prefix (__main__.ContractTests.test_warning_suppressing_helper_accepts_malformed_prefix) ... ok
+test_cached_sat_accepts_incomplete_model (__main__.CurrentVulnerabilityTests.test_cached_sat_accepts_incomplete_model) ... ok
+test_cached_sat_accepts_missing_model (__main__.CurrentVulnerabilityTests.test_cached_sat_accepts_missing_model) ... ok
+test_cached_unsat_accepts_hash_matched_false_proof (__main__.CurrentVulnerabilityTests.test_cached_unsat_accepts_hash_matched_false_proof) ... ok
+test_cached_unsat_accepts_missing_proof (__main__.CurrentVulnerabilityTests.test_cached_unsat_accepts_missing_proof) ... ok
+test_corrupt_cached_receipt_has_no_clean_nonterminal_decision (__main__.CurrentVulnerabilityTests.test_corrupt_cached_receipt_has_no_clean_nonterminal_decision) ... ok
+test_fresh_augmented_pending_receipt_never_becomes_base (__main__.FreshCompatibilityTests.test_fresh_augmented_pending_receipt_never_becomes_base) ... ok
+test_fresh_open_receipt_remains_open (__main__.FreshCompatibilityTests.test_fresh_open_receipt_remains_open) ... ok
+test_fresh_valid_sat_receipt_still_verifies (__main__.FreshCompatibilityTests.test_fresh_valid_sat_receipt_still_verifies) ... ok
+test_fresh_valid_unsat_receipt_still_verifies (__main__.FreshCompatibilityTests.test_fresh_valid_unsat_receipt_still_verifies) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 1.113s
+
+OK

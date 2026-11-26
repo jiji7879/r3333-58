@@ -20,6 +20,16 @@ from pathlib import Path
 CAP = 40000
 
 
+def require_empty_case_directory(folder: Path) -> None:
+    if (folder.is_symlink() or not folder.is_dir() or any(folder.iterdir())):
+        raise ValueError(f"case directory is not a fresh empty directory: {folder}")
+
+
+def require_observed_native_call(invocations) -> None:
+    if not invocations:
+        raise ValueError("no Kissat invocation observed; refusing cached/fresh provenance claim")
+
+
 def load_module(path: Path, alias: str):
     import importlib.util
     spec = importlib.util.spec_from_file_location(alias, path)
@@ -107,9 +117,7 @@ def main() -> None:
     def observe(rid, variant_name, variant, base, cuts, prefix, pairs, folder):
         nonlocal current_case
         mode = variant["mode"]
-        receipt = folder / f"r-{mode}-{CAP}.json"
-        if receipt.exists():
-            raise ValueError(f"stale receipt before launch: {receipt}")
+        require_empty_case_directory(folder)
         current_case = {"dir": folder, "invocations": []}
         call_start = time.monotonic()
         started_ns = time.time_ns()
@@ -117,6 +125,7 @@ def main() -> None:
             result = frontier.run_native(base, [], cuts, prefix, pairs, rid, "r", mode, CAP, folder)
         finally:
             assert current_case is not None
+            require_observed_native_call(current_case["invocations"])
             obs = {
                 "schema": "k58-native-observation/v1",
                 "row_id": rid,

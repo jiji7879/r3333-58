@@ -1,0 +1,42 @@
+patching file frontier.py
+Hunk #2 succeeded at 270 (offset 74 lines).
+Hunk #3 succeeded at 332 (offset 74 lines).
+Hunk #4 succeeded at 370 (offset 74 lines).
+patching file coverage.py
+patching file arm_pairs.py
+patching file verify_campaign.py
+Unsplit guard already present in concurrent working-tree source; testing it without duplicate patch.
+{"native_receipt_count": 0, "note": "Original control demonstrates the bypass; patched tests require OPEN/INVALID_CACHE.", "proof_artifact_count": 0, "root_verdict_after_run_row": "UNSAT_BASE", "schema": "k58-original-tree-cache-control/v1", "solver_calls": 0, "terminal_tree_accepted_without_receipt": true}
+test_corrupt_tree_json_is_explicit_nonterminal (__main__.CampaignTreeIntegrationTests.test_corrupt_tree_json_is_explicit_nonterminal) ... ok
+test_coverage_never_exports_unvalidated_raw_terminal_status (__main__.CampaignTreeIntegrationTests.test_coverage_never_exports_unvalidated_raw_terminal_status) ... ok
+test_forged_terminal_tree_without_receipt_is_invalid_open (__main__.CampaignTreeIntegrationTests.test_forged_terminal_tree_without_receipt_is_invalid_open) ... ok
+test_hash_matching_malformed_prefix_is_revoked_by_strict_replay (__main__.CampaignTreeIntegrationTests.test_hash_matching_malformed_prefix_is_revoked_by_strict_replay) ... ok
+test_partial_model_cannot_reopen_as_cached_sat (__main__.CampaignTreeIntegrationTests.test_partial_model_cannot_reopen_as_cached_sat) ... ok
+test_positive_tree_keepsordinary_valid_early_return (__main__.CampaignTreeIntegrationTests.test_positive_tree_keepsordinary_valid_early_return) ... ok
+test_run_row_does_not_skip_a_revoked_closed_node (__main__.CampaignTreeIntegrationTests.test_run_row_does_not_skip_a_revoked_closed_node) ... ok
+test_valid_cached_proof_is_replayed_and_closure_is_preserved (__main__.CampaignTreeIntegrationTests.test_valid_cached_proof_is_replayed_and_closure_is_preserved) ... ok
+test_valid_proof_under_unbound_artifact_name_is_rejected (__main__.CampaignTreeIntegrationTests.test_valid_proof_under_unbound_artifact_name_is_rejected) ... ok
+test_valid_total_sat_model_is_preserved (__main__.CampaignTreeIntegrationTests.test_valid_total_sat_model_is_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.140s
+
+OK
+test_fresh_folder_helper_rejects_both_receipt_forms_and_is_not_a_solver (__main__.UnsplitFreshBoundaryTests.test_fresh_folder_helper_rejects_both_receipt_forms_and_is_not_a_solver) ... ok
+test_ordinary_fresh_open_receipts_still_record_invocations (__main__.UnsplitFreshBoundaryTests.test_ordinary_fresh_open_receipts_still_record_invocations) ... ok
+test_preexisting_alternate_cache_is_rejected_before_native (__main__.UnsplitFreshBoundaryTests.test_preexisting_alternate_cache_is_rejected_before_native) ... ok
+test_zero_invocation_return_cannot_attest_fresh_execution (__main__.UnsplitFreshBoundaryTests.test_zero_invocation_return_cannot_attest_fresh_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK
+test_forged_terminal_tree_without_receipt_is_invalid_open (__main__.CampaignTreeIntegrationTests.test_forged_terminal_tree_without_receipt_is_invalid_open) ... ok
+test_hash_matching_malformed_prefix_is_revoked_by_strict_replay (__main__.CampaignTreeIntegrationTests.test_hash_matching_malformed_prefix_is_revoked_by_strict_replay) ... ok
+test_partial_model_cannot_reopen_as_cached_sat (__main__.CampaignTreeIntegrationTests.test_partial_model_cannot_reopen_as_cached_sat) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.072s
+
+OK
+ALL INTEGRATION CHECKS PASSED; no SAT solver was executed.

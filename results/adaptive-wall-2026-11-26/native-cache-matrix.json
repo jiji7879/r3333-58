@@ -1,0 +1,581 @@
+{
+  "campaign_frontier_sha256": "567b770fd55fb2e31144da94aeb857239ca6a48569d26761de33c3ed765b42b6",
+  "checker": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+  "kissat_executions": 0,
+  "notes": [
+    "All native Kissat calls were replaced by SearchAttempt; no solver ran.",
+    "A corrupt receipt exception is nonterminal but not a clean OPEN/INVALID_CACHE return.",
+    "Default mode records the baseline; --require-contract enforces the oracle terminal semantics."
+  ],
+  "results": [
+    {
+      "contract_match": true,
+      "expected_cache_valid": true,
+      "expected_terminal": true,
+      "name": "valid-unsat",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "UNSAT_BASE",
+      "native_terminal": true,
+      "oracle": {
+        "cache_valid": true,
+        "reason": "plain-proof-verified",
+        "status": "UNSAT_BASE",
+        "terminal": true
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": true,
+      "expected_terminal": true,
+      "name": "valid-fallback-unsat",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "UNSAT_BASE",
+      "native_terminal": true,
+      "oracle": {
+        "cache_valid": true,
+        "reason": "plain-proof-verified",
+        "status": "UNSAT_BASE",
+        "terminal": true
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "fallback-corrupt-proof",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "Not a gzipped file (b'ba')"
+        ],
+        "reason": "corrupt-or-truncated-gzip",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": true,
+      "expected_terminal": true,
+      "name": "valid-sat",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "SAT_BASE",
+      "native_terminal": true,
+      "oracle": {
+        "cache_valid": true,
+        "reason": "complete-physical-model-verified",
+        "status": "SAT_BASE",
+        "terminal": true
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": true,
+      "expected_terminal": false,
+      "name": "open",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "OPEN",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": true,
+        "reason": "open-is-not-closure",
+        "status": "OPEN",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": true,
+      "expected_terminal": false,
+      "name": "valid-augmented-pending",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "AUGMENTED_UNSAT_PENDING_BASE",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": true,
+        "reason": "augmented-only-remains-pending",
+        "status": "AUGMENTED_UNSAT_PENDING_BASE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unknown",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "'UNKNOWN'"
+        ],
+        "reason": "nonterminal-or-unrecognized-status",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "timeout",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "'TIMEOUT'"
+        ],
+        "reason": "nonterminal-or-unrecognized-status",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "raw-unsat-with-proof",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "'UNSAT'"
+        ],
+        "reason": "nonterminal-or-unrecognized-status",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "missing-receipt",
+      "native_detail": "Kissat invocation forbidden by cached audit",
+      "native_outcome": "SearchAttempt",
+      "native_status": "NO_RECEIPT_DECISION",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [],
+        "reason": "missing-receipt",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "corrupt-receipt",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "Expecting ',' delimiter: line 1 column 23 (char 22)"
+        ],
+        "reason": "invalid-json",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "wrong-parent-binding",
+      "native_detail": "Kissat invocation forbidden by cached audit",
+      "native_outcome": "SearchAttempt",
+      "native_status": "NO_RECEIPT_DECISION",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "parent_sha256"
+        ],
+        "reason": "wrong-parent-query-or-case",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "wrong-query-binding",
+      "native_detail": "Kissat invocation forbidden by cached audit",
+      "native_outcome": "SearchAttempt",
+      "native_status": "NO_RECEIPT_DECISION",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "query_sha256"
+        ],
+        "reason": "wrong-parent-query-or-case",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unsat-missing-proof",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "proof"
+        ],
+        "reason": "missing-or-unsafe-artifact",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unsat-hash-mismatch",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [],
+        "reason": "proof-hash-mismatch",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unsat-corrupt-gzip",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "Not a gzipped file (b'no')"
+        ],
+        "reason": "corrupt-or-truncated-gzip",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unsat-truncated-gzip",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "Compressed file ended before the end-of-stream marker was reached"
+        ],
+        "reason": "corrupt-or-truncated-gzip",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unsat-truncated-binary-proof",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "no exact s VERIFIED verdict"
+        ],
+        "reason": "proof-replay-failed",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unsat-malformed-prefix-accepted-by-w",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "no exact s VERIFIED verdict"
+        ],
+        "reason": "proof-replay-failed",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "unsat-query-only-mislabeled-base",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "no exact s VERIFIED verdict"
+        ],
+        "reason": "proof-replay-failed",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "sat-missing-model",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "model"
+        ],
+        "reason": "missing-or-unsafe-artifact",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "sat-hash-mismatch",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [],
+        "reason": "model-hash-mismatch",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "sat-corrupt-gzip",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "Not a gzipped file (b'ba')"
+        ],
+        "reason": "corrupt-or-truncated-gzip",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "sat-truncated-model-json",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "Expecting value: line 1 column 7 (char 6)"
+        ],
+        "reason": "invalid-json",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "sat-incomplete-model",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "expected exactly 3 literals"
+        ],
+        "reason": "incomplete-model",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "sat-wrong-full-model",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "2"
+        ],
+        "reason": "model-fails-physical-parent",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "sat-model-violates-cube",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [],
+        "reason": "model-violates-cube",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "pending-missing-proof",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [
+          "proof"
+        ],
+        "reason": "missing-or-unsafe-artifact",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    },
+    {
+      "contract_match": true,
+      "expected_cache_valid": false,
+      "expected_terminal": false,
+      "name": "pending-hash-mismatch",
+      "native_detail": null,
+      "native_outcome": "RETURN",
+      "native_status": "CACHE_INVALID",
+      "native_terminal": false,
+      "oracle": {
+        "cache_valid": false,
+        "detail": [],
+        "reason": "proof-hash-mismatch",
+        "status": "INVALID_CACHE",
+        "terminal": false
+      },
+      "terminal_semantics_match": true
+    }
+  ],
+  "schema": "k58-native-cache-adversarial-matrix/v1",
+  "summary": {
+    "cases": 29,
+    "contract_mismatches": [],
+    "false_cached_terminal_cases": [],
+    "lost_valid_terminal_cases": [],
+    "native_exceptions_or_search_attempts": [
+      "missing-receipt",
+      "wrong-parent-binding",
+      "wrong-query-binding"
+    ],
+    "terminal_mismatches": 0,
+    "valid_cached_state_mismatches": []
+  }
+}

@@ -209,6 +209,19 @@ class CubeLearnTests(unittest.TestCase):
                                    self.path("extension-transport"), 5)
         self.assertEqual("VERIFIED_UNSAT", result["status"])
 
+    def test_malformed_binary_prefix_is_rejected_without_warning_suppression(self):
+        cnf = self.write_cnf("strict-binary.cnf", 2,
+                             [(1, 2), (-1, 2), (1, -2), (-1, -2)])
+        proof = self.path("strict-binary.drat")
+        cl.put_binary(proof, [(97, (2,)), (97, ())])
+        valid = cl.run_checker(CHECKER, cnf, proof, 5, binary=True)
+        self.assertEqual("VERIFIED", valid.status, valid.log)
+        proof.write_bytes(b"X" + proof.read_bytes()[1:])
+        invalid = cl.run_checker(CHECKER, cnf, proof, 5, binary=True)
+        self.assertEqual("REJECTED", invalid.status, invalid.log)
+        self.assertNotIn("-w", valid.command)
+        self.assertNotIn("-w", invalid.command)
+
     def test_checker_timeout_is_open(self):
         cnf = self.write_cnf("timeout.cnf", 1, [(1,)])
         proof = self.path("timeout.drat")

@@ -60,7 +60,8 @@ def load_fixture(square: Path):
 
 
 def checker_run(checker: Path, formula: Path, proof: Path, output: Path, rup_only=True):
-    command = [str(checker), str(formula), str(proof), "-i", "-w"]
+    # Keep warnings enabled: -w can continue after an invalid binary prefix.
+    command = [str(checker), str(formula), str(proof), "-i"]
     if rup_only:
         command.append("-U")
     run = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)

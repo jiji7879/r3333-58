@@ -1,0 +1,32 @@
+test_corrupt_tree_json_is_explicit_nonterminal (__main__.CampaignTreeIntegrationTests.test_corrupt_tree_json_is_explicit_nonterminal) ... ok
+test_coverage_never_exports_unvalidated_raw_terminal_status (__main__.CampaignTreeIntegrationTests.test_coverage_never_exports_unvalidated_raw_terminal_status) ... ok
+test_forged_terminal_tree_without_receipt_is_invalid_open (__main__.CampaignTreeIntegrationTests.test_forged_terminal_tree_without_receipt_is_invalid_open) ... ok
+test_hash_matching_malformed_prefix_is_revoked_by_strict_replay (__main__.CampaignTreeIntegrationTests.test_hash_matching_malformed_prefix_is_revoked_by_strict_replay) ... ok
+test_partial_model_cannot_reopen_as_cached_sat (__main__.CampaignTreeIntegrationTests.test_partial_model_cannot_reopen_as_cached_sat) ... ok
+test_positive_tree_keepsordinary_valid_early_return (__main__.CampaignTreeIntegrationTests.test_positive_tree_keepsordinary_valid_early_return) ... ok
+test_run_row_does_not_skip_a_revoked_closed_node (__main__.CampaignTreeIntegrationTests.test_run_row_does_not_skip_a_revoked_closed_node) ... ok
+test_valid_cached_proof_is_replayed_and_closure_is_preserved (__main__.CampaignTreeIntegrationTests.test_valid_cached_proof_is_replayed_and_closure_is_preserved) ... ok
+test_valid_proof_under_unbound_artifact_name_is_rejected (__main__.CampaignTreeIntegrationTests.test_valid_proof_under_unbound_artifact_name_is_rejected) ... ok
+test_valid_total_sat_model_is_preserved (__main__.CampaignTreeIntegrationTests.test_valid_total_sat_model_is_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.147s
+
+OK
+test_fresh_folder_helper_rejects_both_receipt_forms_and_is_not_a_solver (__main__.UnsplitFreshBoundaryTests.test_fresh_folder_helper_rejects_both_receipt_forms_and_is_not_a_solver) ... ok
+test_ordinary_fresh_open_receipts_still_record_invocations (__main__.UnsplitFreshBoundaryTests.test_ordinary_fresh_open_receipts_still_record_invocations) ... ok
+test_preexisting_alternate_cache_is_rejected_before_native (__main__.UnsplitFreshBoundaryTests.test_preexisting_alternate_cache_is_rejected_before_native) ... ok
+test_zero_invocation_return_cannot_attest_fresh_execution (__main__.UnsplitFreshBoundaryTests.test_zero_invocation_return_cannot_attest_fresh_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK
+test_forged_terminal_tree_without_receipt_is_invalid_open (__main__.CampaignTreeIntegrationTests.test_forged_terminal_tree_without_receipt_is_invalid_open) ... ok
+test_hash_matching_malformed_prefix_is_revoked_by_strict_replay (__main__.CampaignTreeIntegrationTests.test_hash_matching_malformed_prefix_is_revoked_by_strict_replay) ... ok
+test_partial_model_cannot_reopen_as_cached_sat (__main__.CampaignTreeIntegrationTests.test_partial_model_cannot_reopen_as_cached_sat) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.074s
+
+OK

@@ -1,0 +1,132 @@
+--- a/.scratch/campaign-1000/workspace/K58_wall_campaign/frontier.py
++++ b/.scratch/campaign-1000/workspace/K58_wall_campaign/frontier.py
+@@ -103,6 +103,72 @@
+     assert seen==set(tree['splits'])
+ 
+ 
++class _CacheMiss(Exception):
++    """The named receipt belongs to a different native query."""
++
++
++def check_full_model(plain,cube,model):
++    """Require a total, contradictory-free assignment satisfying the signed parent."""
++    nv,clauses=read_dimacs(plain)
++    if (not isinstance(model,list) or len(model)!=nv or
++            any(type(x) is not int for x in model) or
++            {abs(x) for x in model}!=set(range(1,nv+1))):
++        raise ValueError('model is not a complete one-literal-per-variable assignment')
++    check_model(clauses,cube,model,nv)
++
++
++def receipt_artifact(receipt,old,key,suffix):
++    """Load only the artifact generated beside this receipt, then bind its plaintext."""
++    expected_name=receipt.stem+suffix
++    if old.get(key)!=expected_name:
++        raise ValueError(f'{key} is not the receipt-local artifact {expected_name!r}')
++    data=gzip.decompress((receipt.parent/expected_name).read_bytes())
++    if sha(data)!=old.get(key+'_sha256'):
++        raise ValueError(f'{key} SHA-256 mismatch')
++    return data
++
++
++def check_native_drat(cnf,pf):
++    """Replay binary DRAT without warning suppression changing parser control flow."""
++    job=subprocess.run([str(HERE/'tools/drat-trim'),str(cnf),str(pf),'-i'],
++                       stdin=subprocess.DEVNULL,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
++    lines=[line.strip() for line in job.stdout.replace(b'\r',b'\n').splitlines()]
++    if job.returncode or b's VERIFIED' not in lines:
++        raise ValueError(job.stdout[-1000:])
++
++
++def replay_receipt(receipt,expected,plain,query,cube):
++    """A metadata match is only a cache key; terminal evidence must be replayed."""
++    old=json.loads(receipt.read_bytes())
++    if not isinstance(old,dict):
++        raise ValueError('cached receipt is not a JSON object')
++    if any(old.get(k)!=v for k,v in expected.items()):
++        raise _CacheMiss(receipt.name)
++    status=old.get('status')
++    if status=='OPEN':
++        return old
++    if status not in ('UNSAT_BASE','AUGMENTED_UNSAT_PENDING_BASE','SAT_BASE'):
++        raise ValueError(f'invalid cached native status {status!r}')
++    if status=='SAT_BASE':
++        modeldata=receipt_artifact(receipt,old,'model','.model.json.gz')
++        check_full_model(plain,cube,json.loads(modeldata))
++    else:
++        proof=receipt_artifact(receipt,old,'proof','.drat.gz')
++        with TemporaryDirectory(dir=receipt.parent) as tmp:
++            q=Path(tmp)/'query.cnf';p=Path(tmp)/'proof.drat'
++            # An augmented-query proof is evidence only for its nonterminal status.
++            q.write_bytes(plain if status=='UNSAT_BASE' else query)
++            p.write_bytes(proof);check_native_drat(q,p)
++    return old
++
++
++def invalid_cache(expected,errors):
++    """Fail closed without destroying evidence or silently starting another search."""
++    result=dict(expected,status='OPEN',cache_status='INVALID_CACHE')
++    result['cache_error']='; '.join(errors)[:1000]
++    return result
++
++
+ def run_native(base,cube,cuts,prefix,paircuts,rid,node,mode,cap,folder):
+     name=f'{node}-{mode}-{cap}'
+     receipt=folder/(name+'.json')
+@@ -110,15 +176,23 @@
+     _,plain=append(base,[[v] for v in cube]) if cube else (None,base)
+     _,query=append(plain,cuts+paircuts) if cuts or paircuts else (None,plain)
+     expected.update(plain_sha256=sha(plain),query_sha256=sha(query),cuts=len(cuts),pair_cuts=len(paircuts))
++    errors=[]
+     if receipt.exists():
+-        old=json.loads(receipt.read_bytes())
++        try:
++            return replay_receipt(receipt,expected,plain,query,cube)
++        except _CacheMiss:
++            pass
++        except Exception as exc:
++            errors.append(f'{receipt.name}: {type(exc).__name__}: {exc}')
+         # The available shared rules can grow later. Keep older disjoint wave receipts.
+-        if all(old.get(k)==v for k,v in expected.items()): return old
+-        name+='-'+sha(query)[:12]; receipt=folder/(name+'.json')
++        name+='-'+sha(query)[:12];receipt=folder/(name+'.json')
+         if receipt.exists():
+-            old=json.loads(receipt.read_bytes())
+-            assert all(old.get(k)==v for k,v in expected.items())
+-            return old
++            try:
++                return replay_receipt(receipt,expected,plain,query,cube)
++            except Exception as exc:
++                label=type(exc).__name__
++                errors.append(f'{receipt.name}: {label}: {exc}')
++        if errors:return invalid_cache(expected,errors)
+     result=dict(expected)
+     with TemporaryDirectory(dir=folder) as tmp:
+         q=Path(tmp)/'query.cnf'; p=Path(tmp)/'proof.drat'; q.write_bytes(query)
+@@ -133,22 +207,22 @@
+         elif job.returncode==10:
+             model=[int(v) for line in job.stdout.splitlines() if line.startswith(b'v ')
+                    for v in line.split()[1:] if int(v)]
+-            nv,cls=read_dimacs(plain); check_model(cls,cube,model,nv)
++            check_full_model(plain,cube,model)
+             modeldata=json_bytes(model); fn=name+'.model.json.gz'
+             atomic(folder/fn,gzip.compress(modeldata,mtime=0))
+             result.update(status='SAT_BASE',model=fn,model_sha256=sha(modeldata))
+         elif job.returncode==20:
+-            check_drat(q,p)
++            check_native_drat(q,p)
+             tail=p.read_bytes()
+             q.write_bytes(plain); p.write_bytes(prefix+tail)
+             try:
+-                check_drat(q,p)
++                check_native_drat(q,p)
+             except ValueError:
+                 # Re-certify directly against the original parent with only the cube as input.
+                 check=subprocess.run([str(HERE/'tools/kissat'),'-s',f'--conflicts={4*cap}',str(q),str(Path(tmp)/'base.drat')],
+                                      stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+                 if check.returncode==20:
+-                    p=Path(tmp)/'base.drat';check_drat(q,p)
++                    p=Path(tmp)/'base.drat';check_native_drat(q,p)
+                 elif check.returncode==0 and b's UNKNOWN' in check.stdout:
+                     result['status']='AUGMENTED_UNSAT_PENDING_BASE'; p.write_bytes(tail)
+                 else:

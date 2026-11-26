@@ -10,6 +10,17 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-26 (adaptive-cache integrity).** Cached native proofs/models
+and persisted tree verdicts are now revalidated before reuse/export; malformed
+artifacts stay nonterminal, DRAT replay does not use warning suppression, and
+models must be total. The independent 29-case matrix has zero mismatches, the
+full campaign verifier and all 1,000 manifest hashes pass, and all 11,585 small
+profiles remain OPEN. No solver speedup or wall closure was measured. Read
+[results/adaptive-wall-2026-11-26/CACHE_FAIL_CLOSED.md](results/adaptive-wall-2026-11-26/CACHE_FAIL_CLOSED.md)
+and [tools/adaptive_wall/README.md](tools/adaptive_wall/README.md) before using
+the adaptive campaign. The older campaign priorities and measurements below
+are otherwise unchanged.
+
 **Updated 2026-11-25.** The owner ran the whole cover on their own machine and
 closed 18,858 more rows: **98,142 of 113,179 are certified and replayed**
 (`{"checked": 98142, "replayed": 98142, "failed": 0}`, manifest

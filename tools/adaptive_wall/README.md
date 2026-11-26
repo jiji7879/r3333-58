@@ -24,12 +24,18 @@ and not a claim that any complete profile is closed.
 - `benchmark_audit.py`, `projection_bindings.py`, `probe_audit.py` —
   independent receipt, signed-projection and exact matched-run accounting for
   the copy-map experiment and this strengthened-parent probe.
-- A separate `probe_audit.py compare` check reports matched allocation while
-  retaining CaDiCaL's actual conflict counters, including cap overshoot.
+- `campaign_cache.py` — fail-closed native cached-receipt validation with exact
+  plain/query targets, strict DRAT replay and total-model checking.
+- `install_campaign_cache_fix.py` and `finalise_campaign_cache_fix.py` —
+  hash-guarded installation into an unmodified supplied campaign and complete
+  source-manifest rebinding after the reviewed tree patch.
+- `audit_campaign_cache.py` — actual `run_native` integration controls over
+  tiny synthetic SAT/UNSAT/OPEN/pending formulas.
 
-The source files were copied unchanged from the accepted member artifacts,
-except for repository-relative fixture/checker paths in the tests. Tests and
-examples use small fixtures; they do not search the K58 wall.
+The package originated in accepted member artifacts, with repository-relative
+fixture/checker paths in tests. Subsequent reviewed checker/cache changes are
+recorded below. Tests and examples use small fixtures; they do not search the
+K58 wall.
 
 ## Closure rules
 
@@ -59,15 +65,50 @@ From the repository root:
 cd tools/adaptive_wall
 export PYTHONDONTWRITEBYTECODE=1
 export K58_937_ZIP="../../attachments/let-s-try-and-rbdv/K58_wall_937_copy_map_solver.zip"
-python3 -m unittest -v test_case_queue test_cubelearn test_benchmark test_strengthened_probe test_probe_audit
+python3 -m unittest -v test_case_queue test_cubelearn test_benchmark test_strengthened_probe test_probe_audit test_campaign_cache test_run_unsplit_ablation
 ```
 
-Expected scope: **69 tests** (25 queue, 10 learner, 12 benchmark/policy,
-10 strengthened-probe and 12 exact-match accounting tests).
+Expected scope: **92 tests** (25 queue, 11 learner, 12 benchmark/policy,
+11 strengthened-probe, 12 exact-match accounting, 17 native-cache and
+4 fresh-observation tests).
 The `drat-trim` and Kissat binaries used by tests are the already checked
 executables in `../selfcontained/wallcc/bin/`. The benchmark integration test
 uses the supplied ZIP but never unpacks or modifies it and launches no solver.
 Only the learner's tiny synthetic minimization test starts a solver.
+
+## Fail-closed campaign cache and tree integration
+
+The combined native/tree patch now reloads cached terminal artifacts, verifies
+plain/query-specific DRAT evidence and total models, and returns nonterminal
+`CACHE_INVALID` on failure. Persisted trees are revalidated before resume or
+export; unvalidated raw terminal strings become `UNVERIFIED_*`. Fresh native
+proofs use strict `-i` replay, with no warning suppression.
+
+Install only into an **unmodified** supplied campaign. The installers are
+intentionally one-shot and refuse unexpected source or manifest edits. From the
+repository root:
+
+```sh
+C=/absolute/path/to/unmodified/K58_wall_campaign
+python3 tools/adaptive_wall/install_campaign_cache_fix.py "$C"
+patch --directory="$C" -p1 < review/native-cache/tree/campaign-integration.patch
+python3 tools/adaptive_wall/finalise_campaign_cache_fix.py "$C"
+mkdir -p .scratch/cache-validation-tmp
+"$C/.venv/bin/python" tools/adaptive_wall/audit_campaign_cache.py "$C" \
+  --work .scratch/cache-validation-new \
+  --out results/adaptive-wall-2026-11-26/cache-validation-new.json
+```
+
+`finalise` rebuilds a complete 1,000-entry manifest after the five source
+changes. Hash binding authenticates source bytes; the separate proof/model and
+mathematical checks establish evidence validity. The independent 29-case
+matrix can then be run with `K58_CAMPAIGN="$C"` through
+`review/native-cache/oracle/native_cache_matrix.py --require-contract`.
+
+Live outcome: the supplied campaign is installed and passes these checks, but
+all 11,585 original rows remain OPEN. See
+`../../results/adaptive-wall-2026-11-26/CACHE_FAIL_CLOSED.md`, its final test
+logs, and `../../review/native-cache/README.md` for exact limits and reruns.
 
 ## Matched direct versus one-level split
 

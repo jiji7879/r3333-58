@@ -168,7 +168,9 @@ def run_checker(checker: Path, cnf: Path, proof: Path, seconds: float,
                 extra: Sequence[str] = ()) -> CheckResult:
     if binary and ascii_proof:
         raise LearningError("proof cannot be both ASCII and binary")
-    command = [str(checker), str(cnf), str(proof), "-w"]
+    # Do not use -w: this checker can otherwise continue after a malformed
+    # binary prefix and report VERIFIED for the corrupted artifact.
+    command = [str(checker), str(cnf), str(proof)]
     if binary:
         command.append("-i")
     if ascii_proof:

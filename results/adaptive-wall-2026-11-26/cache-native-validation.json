@@ -1,0 +1,404 @@
+{
+  "cached_calls_added_no_kissat": true,
+  "campaign_cache_sha256": "a06a2c63364c547a29893da60ebb528ab181fa75ad621a3809a5147db2f2ad52",
+  "check_count": 22,
+  "checks": [
+    {
+      "detail": null,
+      "name": "invalid_is_not_terminal",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "pending_is_not_terminal",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cap": 100,
+        "conflicts": 0,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "plain_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "proof": "r-stock-100.drat.gz",
+        "proof_sha256": "ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3",
+        "query_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "seconds": 0.001,
+        "status": "UNSAT_BASE"
+      },
+      "name": "fresh_unsat",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "valid_cached_unsat",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "cached_unsat_uses_strict_checker",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cache_error": "proof must name a regular artifact in the receipt directory",
+        "cache_error_type": "ValueError",
+        "cache_receipt_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/r-stock-100.json",
+        "cached_receipt_sha256": "4cf615ce8f27617755133b64ee546cfa59fc853cc74813bac23dd586f9b4ca45",
+        "cached_status": "UNSAT_BASE",
+        "cap": 100,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "plain_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "query_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "status": "CACHE_INVALID"
+      },
+      "name": "missing_cached_proof",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "invalid_receipt_not_rewritten",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cap": 100,
+        "conflicts": 0,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "model": "r-stock-100.model.json.gz",
+        "model_sha256": "f109b002d2f351fa534341fcb7d18145d187efd8a47fc21539f8395a7a85d0d6",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "plain_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "query_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "seconds": 0.001,
+        "status": "SAT_BASE"
+      },
+      "name": "fresh_total_sat",
+      "passed": true
+    },
+    {
+      "detail": [
+        1,
+        2
+      ],
+      "name": "fresh_sat_has_every_variable",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "valid_cached_sat",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cache_error": "model must contain exactly 2 in-range nonzero literals",
+        "cache_error_type": "ValueError",
+        "cache_receipt_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-sat/r-stock-100.json",
+        "cached_receipt_sha256": "ecde87ccfd4526bb54ffdefbd1525b3cf22b47d4669fcee9481fd2bac7152973",
+        "cached_status": "SAT_BASE",
+        "cap": 100,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "plain_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "query_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "status": "CACHE_INVALID"
+      },
+      "name": "incomplete_cached_sat",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cache_error": "under-cap cached OPEN receipt",
+        "cache_error_type": "ValueError",
+        "cache_receipt_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/under_cap_open/r-stock-100.json",
+        "cached_receipt_sha256": "9176468dd4a8ae93f520ecd05565ad1dae93b359e0b4ffb8b51ffe5828fbf4c9",
+        "cached_status": "OPEN",
+        "cap": 100,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "plain_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "query_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "status": "CACHE_INVALID"
+      },
+      "name": "under_cap_open",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "under_cap_open_preserves_receipt",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cache_error": "model must name a regular artifact in the receipt directory",
+        "cache_error_type": "ValueError",
+        "cache_receipt_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/missing_model/r-stock-100.json",
+        "cached_receipt_sha256": "0c5ac7737e9d4dfefdee344a6b04fcb0b239da51756c3339e89cb6296cc12b1d",
+        "cached_status": "SAT_BASE",
+        "cap": 100,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "plain_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "query_sha256": "69350da1afe4549b770c1b3e3c599cba1f45bfdadbd35863b2db23dc14ea867a",
+        "status": "CACHE_INVALID"
+      },
+      "name": "missing_model",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "missing_model_preserves_receipt",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cache_error": "unknown cached status",
+        "cache_error_type": "ValueError",
+        "cache_receipt_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/raw_unsat_not_promoted/r-stock-100.json",
+        "cached_receipt_sha256": "4e88bf7ceae03c0b9371753b50b49fea623f92189d438ce67dfc2f378c2ee398",
+        "cached_status": "RAW_UNSAT",
+        "cap": 100,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "plain_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "query_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "status": "CACHE_INVALID"
+      },
+      "name": "raw_unsat_not_promoted",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "raw_unsat_not_promoted_preserves_receipt",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cap": 100,
+        "conflicts": 0,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "d9231948f3910d44b0069f2e1bda8b5908ed956d408461c20be7a9eea5c7f9ab",
+        "plain_sha256": "d9231948f3910d44b0069f2e1bda8b5908ed956d408461c20be7a9eea5c7f9ab",
+        "proof": "r-stock-100.drat.gz",
+        "proof_sha256": "6e8f3aa6e5cd1134ac162f6ccd0be67a9459a4b2fffe7e618a0a5ba50e0ae807",
+        "query_sha256": "d9231948f3910d44b0069f2e1bda8b5908ed956d408461c20be7a9eea5c7f9ab",
+        "seconds": 0.001,
+        "status": "UNSAT_BASE"
+      },
+      "name": "fresh_nonunit_unsat",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cache_error": "b'\\rc turning on binary mode checking\\n\\rc parsing input formula with 2 variables and 4 clauses\\n\\rc WARNING: wrong binary prefix, stop reading proof\\n\\rc finished parsing\\n\\rc ERROR: no conflict\\n\\ns NOT VERIFIED\\n\\rc verification time: 0.038 seconds\\n'",
+        "cache_error_type": "ValueError",
+        "cache_receipt_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/corrupt-binary-tag/r-stock-100.json",
+        "cached_receipt_sha256": "2025d239f74386ede984a3a9810c40ee11ecb3da281abd4cd4d5f88f3f58cfa4",
+        "cached_status": "UNSAT_BASE",
+        "cap": 100,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "d9231948f3910d44b0069f2e1bda8b5908ed956d408461c20be7a9eea5c7f9ab",
+        "plain_sha256": "d9231948f3910d44b0069f2e1bda8b5908ed956d408461c20be7a9eea5c7f9ab",
+        "query_sha256": "d9231948f3910d44b0069f2e1bda8b5908ed956d408461c20be7a9eea5c7f9ab",
+        "status": "CACHE_INVALID"
+      },
+      "name": "corrupt_binary_tag_rejected_strictly",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cap": 100,
+        "conflicts": 1,
+        "cube": [],
+        "cuts": 3,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "0800169e860f9787c06f93fda5b53358492aa00f2ee2ce2e6931e4c6335ded7e",
+        "plain_sha256": "0800169e860f9787c06f93fda5b53358492aa00f2ee2ce2e6931e4c6335ded7e",
+        "proof": "pending.drat.gz",
+        "proof_sha256": "6e8f3aa6e5cd1134ac162f6ccd0be67a9459a4b2fffe7e618a0a5ba50e0ae807",
+        "query_sha256": "d9231948f3910d44b0069f2e1bda8b5908ed956d408461c20be7a9eea5c7f9ab",
+        "seconds": 0.0,
+        "status": "AUGMENTED_UNSAT_PENDING_BASE"
+      },
+      "name": "pending_stays_pending",
+      "passed": true
+    },
+    {
+      "detail": {
+        "cache_error": "query-suffixed cache identity mismatch",
+        "cache_error_type": "ValueError",
+        "cache_receipt_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/suffix/r-stock-100-ac42a371b5a1.json",
+        "cached_receipt_sha256": "6e0d63625f0e008b882dec42f9cdfaed50b5ea5f7ca679e50d2f53bbdc237e51",
+        "cached_status": null,
+        "cap": 100,
+        "cube": [],
+        "cuts": 0,
+        "id": "synthetic",
+        "mode": "stock",
+        "node": "r",
+        "pair_cuts": 0,
+        "parent_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "plain_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "query_sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8",
+        "status": "CACHE_INVALID"
+      },
+      "name": "query_suffix_identity",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "all_native_drat_calls_strict",
+      "passed": true
+    }
+  ],
+  "drat_trim_calls": 7,
+  "fresh_tiny_kissat_calls": 3,
+  "frontier_sha256": "567b770fd55fb2e31144da94aeb857239ca6a48569d26761de33c3ed765b42b6",
+  "invocations": [
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/kissat",
+        "-s",
+        "--conflicts=100",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp4efjyazt/query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp4efjyazt/proof.drat"
+      ],
+      "executable": "kissat"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp4efjyazt/query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp4efjyazt/proof.drat",
+        "-i"
+      ],
+      "executable": "drat-trim"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp4efjyazt/query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp4efjyazt/proof.drat",
+        "-i"
+      ],
+      "executable": "drat-trim"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp_ed36yp9/cached.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-unsat/tmp_ed36yp9/cached.drat",
+        "-i"
+      ],
+      "executable": "drat-trim"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/kissat",
+        "-s",
+        "--conflicts=100",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-sat/tmpu9s7z2p5/query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/fresh-sat/tmpu9s7z2p5/proof.drat"
+      ],
+      "executable": "kissat"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/kissat",
+        "-s",
+        "--conflicts=100",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/proof-source/tmp_fkjl262/query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/proof-source/tmp_fkjl262/proof.drat"
+      ],
+      "executable": "kissat"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/proof-source/tmp_fkjl262/query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/proof-source/tmp_fkjl262/proof.drat",
+        "-i"
+      ],
+      "executable": "drat-trim"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/proof-source/tmp_fkjl262/query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/proof-source/tmp_fkjl262/proof.drat",
+        "-i"
+      ],
+      "executable": "drat-trim"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/corrupt-binary-tag/tmp_e98vklh/cached.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/corrupt-binary-tag/tmp_e98vklh/cached.drat",
+        "-i"
+      ],
+      "executable": "drat-trim"
+    },
+    {
+      "arguments": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/campaign-1000/workspace/K58_wall_campaign/tools/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/pending/tmpljwurtpn/cached.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/cache-live-validation/pending/tmpljwurtpn/cached.drat",
+        "-i"
+      ],
+      "executable": "drat-trim"
+    }
+  ],
+  "k58_rows_or_formulas_used": false,
+  "schema": "k58-native-cache-integration-audit/v1",
+  "verdict": "PASS"
+}

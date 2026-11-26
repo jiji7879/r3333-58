@@ -81,6 +81,14 @@ replayed; the 12,893 that remain are 11,585 small-profile rows no budget has
 touched plus a 1,308-row tail; 2,144 rows have no proof bytes here; and the
 reduction at n = 58 is still unformalised. No bound moves yet.
 
+**Evidence-integrity update, 2026-11-26:** the small-profile adaptive campaign
+now validates cached terminal artifacts and persisted trees before reusing or
+exporting them, with strict DRAT replay, complete-model checks and nonterminal
+invalid-cache outcomes. The final live replay passes 92 unit tests, the
+29-case independent matrix and all 1,000 source/result hashes. All 11,585 small
+profiles remain OPEN; this is not a solver improvement or a new closure.
+See [results/adaptive-wall-2026-11-26/CACHE_FAIL_CLOSED.md](results/adaptive-wall-2026-11-26/CACHE_FAIL_CLOSED.md).
+
 Two side results from the same period, both certified and both explicitly
 non-progress on the bound:
 

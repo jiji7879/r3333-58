@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 import strengthened_probe as probe
-from case_queue import parse_dimacs, sha256
+from case_queue import encode_dimacs, parse_dimacs, sha256
 
 TOTAL = 60000
 PARENT = "a" * 64
@@ -108,6 +108,27 @@ class ProbeAnalysisTests(unittest.TestCase):
 
 
 class FixtureRuleReplayTest(unittest.TestCase):
+    def test_checker_rejects_malformed_binary_prefix(self):
+        checker = Path("../selfcontained/wallcc/bin/drat-trim").resolve()
+        scratch = Path(__file__).parent / ".scratch"
+        scratch.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=scratch) as tmp:
+            root = Path(tmp)
+            formula = root / "xor.cnf"
+            valid = root / "valid.drat"
+            invalid = root / "invalid.drat"
+            formula.write_bytes(encode_dimacs(2, [(1, 2), (-1, 2), (1, -2), (-1, -2)]))
+            valid.write_bytes(b"a\x04\x00a\x00")
+            invalid.write_bytes(b"X" + valid.read_bytes()[1:])
+            positive = probe.checker_run(checker, formula, valid, root / "positive.log",
+                                         rup_only=False)
+            negative = probe.checker_run(checker, formula, invalid, root / "negative.log",
+                                         rup_only=False)
+            self.assertTrue(positive["verified"], positive["checker_tail"])
+            self.assertFalse(negative["verified"], negative["checker_tail"])
+            self.assertNotIn("-w", positive["command"])
+            self.assertNotIn("-w", negative["command"])
+
     def test_actual_square_parent_prepare_and_negative_control(self):
         square = Path(os.environ.get("K58_SQUARE_FIXTURE", "../../.ultramath/smwy2754s/m4/extracted/K58_square_six"))
         checker = Path("../selfcontained/wallcc/bin/drat-trim")

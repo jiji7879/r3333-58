@@ -240,6 +240,13 @@ class QueueTests(unittest.TestCase):
             self.assertIn("s VERIFIED", drat.unsat(formula, b"0\n", checker))
             with self.assertRaises(VerificationError):
                 drat.unsat(encode_dimacs(1, [(1,)]), b"0\n", checker)
+            # Proof: add unit 2 by RUP, then the empty clause.  The valid
+            # certificate passes; changing its first binary tag must fail.
+            hard = encode_dimacs(2, [(1, 2), (-1, 2), (1, -2), (-1, -2)])
+            valid = b"a\x04\x00a\x00"
+            self.assertIn("s VERIFIED", drat.unsat(hard, valid, checker))
+            with self.assertRaisesRegex(VerificationError, "exact DRAT replay failed"):
+                drat.unsat(hard, b"X" + valid[1:], checker)
 
     def test_nonentailed_cut_rejected_at_registration(self):
         with self.assertRaises(VerificationError):

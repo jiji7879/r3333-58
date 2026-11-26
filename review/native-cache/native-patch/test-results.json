@@ -1,0 +1,32 @@
+{
+  "command": "./run_tests.sh",
+  "errors": 0,
+  "failures": 0,
+  "frontier_candidate": "frontier.py",
+  "frontier_sha256": "3ededc2907eace8257303fe645fc8fdee706eac4de1f0c8d810c2edb1b26ff91",
+  "isolated_patch_apply_cmp": "PASS",
+  "output": "test-output.txt",
+  "output_sha256": "8374852d7c146692f7189116b4704407012aba460c4e2804c27d60f2c0a622eb",
+  "patch": "native-cache-fail-closed.patch",
+  "patch_sha256": "cdfbd60664fec7a766ee58473be1d35061cadd8755a9b2c2efe3fe6d92a946b9",
+  "proof_checker": "campaign tools/drat-trim; tiny synthetic binary DRAT controls only",
+  "real_kissat_solver_searches": 0,
+  "schema": "k58-native-cache-patch-tests/v1",
+  "source_head": "279a9a0f3923e2b8b6a0ed9a1ca89f51ffae9919",
+  "status": "PASS",
+  "test_source": "test_cached_receipts.py",
+  "test_source_sha256": "2a646f0466afd5c24b116f7be1ac755a44fb0d4c5c821f1cc10ad288bfed18c8",
+  "tests_run": 14,
+  "warning_suppression_control": {
+    "cached_result": "OPEN/INVALID_CACHE",
+    "new_check_native_drat_flags": [
+      "-i"
+    ],
+    "new_verdict": "REJECTED",
+    "old_check_drat_flags": [
+      "-i",
+      "-w"
+    ],
+    "old_verdict": "VERIFIED"
+  }
+}

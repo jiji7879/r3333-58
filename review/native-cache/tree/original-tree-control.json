@@ -1,0 +1,9 @@
+{
+  "native_receipt_count": 0,
+  "note": "Original control demonstrates the bypass; patched tests require OPEN/INVALID_CACHE.",
+  "proof_artifact_count": 0,
+  "root_verdict_after_run_row": "UNSAT_BASE",
+  "schema": "k58-original-tree-cache-control/v1",
+  "solver_calls": 0,
+  "terminal_tree_accepted_without_receipt": true
+}
