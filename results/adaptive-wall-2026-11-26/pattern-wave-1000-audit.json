@@ -1,0 +1,46 @@
+{
+  "checked_receipts": 1000,
+  "closed_unsat_count": 0,
+  "conflicts_max": 5006,
+  "conflicts_min": 5000,
+  "conflicts_total": 5000623,
+  "open_elapsed_seconds_total": 268.801,
+  "over_cap_cases": 399,
+  "parents": [
+    "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "000483e5a20684441c72fe3434f2cc468edebe9ec8fe625973e01b10fe628e37",
+    "001356cad1c62d1e08ec906249b4ba34a827aad8697b9f03f44563db38974cb0",
+    "0018b53050d9208ab1eff2400b11e62d291439156914769c13eb29fa9de3a149",
+    "0037e99c93e2805815ec95d0e10a380f28e271a889d086748aa8a354419903c8",
+    "0040977b8cff2c896fb448046a8a2abe6c6faf6e7e2b8644f8fbb9c4bc107a29",
+    "00457a253b0423e4c17847f52dfed02f314b6182d7476b641e2ad9b3253d952d",
+    "00669405468c895849547a36ab682dbbd6f0e914763443a448dd92c9f7a77afb",
+    "011c860ee71d6dc50f93bb53a90194d512f124478051ec15bf9ba00f8a51e05e",
+    "0178e348f087f16b49137454fdf53ec6f24faf40b631fc654ddf60b79327e2c2",
+    "01a6d6b32b6df27b246629575d13f7eba4a61cd6eb382ad407d4006cc2890476",
+    "024440c4b1aa0e4770a611fa311d97c180221e549213166a04a5f9938c0b7faf",
+    "02ad10c083c25a5871cd83a5eed9a403af57a03e86c44683fbc32b5acd6ee2c5",
+    "0374f38a068e1fa47755bd58cb174129984812fa8ea0818548723f8c3ec4236c",
+    "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+    "075f5e3e64f5649cd1be86a03118498f933c5da3c9057a94ced4c88be697ef22",
+    "08b6eccd06818ffbabcc6f8bfb268368265f39fb84425daeff7017292bdd5fc8"
+  ],
+  "profile_pattern_counts": {
+    "15,14,14,14": 244,
+    "15,15,14,13": 207,
+    "16,14,14,13": 183,
+    "16,15,14,12": 183,
+    "16,16,14,11": 183
+  },
+  "query_and_parent_hashes_rebuilt": 1000,
+  "sat_count": 0,
+  "schema": "k58-pattern-wave-independent-receipt-audit/v1",
+  "selected_row_count": 17,
+  "source_report_sha256": "8c10e972d0edf3d6204b972f873880e433b8b8a888d87871da5820f8b407f44a",
+  "status_counts": {
+    "OPEN": 1000
+  },
+  "unique_pattern_keys": 1000,
+  "unresolved_open_count": 1000,
+  "whole_row_closure_claimed": false
+}

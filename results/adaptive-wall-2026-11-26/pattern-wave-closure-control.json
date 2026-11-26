@@ -1,0 +1,18 @@
+{
+  "cap": 35000,
+  "independent_replay": {
+    "prefix_and_leaf_proof_present": true,
+    "saved_proof_uses_campaign_prefix": true,
+    "verified": true
+  },
+  "measured_conflicts": 29306,
+  "mode": "word",
+  "native_proof_gzip_bytes": 2739922,
+  "node": "w00210",
+  "parent_sha256": "9b408ba408d1ebc15ed7f3be798f3e94bdbac43feee01023e4e10ccc1b6fdd71",
+  "plain_sha256": "bb9e542d7f098dd85de53da73a553ba00192795a8f6ebbe29e10000c49efdb0e",
+  "proof_sha256": "944e7cc76ecab1287ac3c3157b770bf15986ee417e4781bbb63db9f1c4a8f13c",
+  "row_id": "00457a253b0423e4c17847f52dfed02f314b6182d7476b641e2ad9b3253d952d",
+  "scope": "known locally refuted closure/classification control; not part of the 1,000 live pattern batch and not a whole-row verdict",
+  "word": "00210"
+}

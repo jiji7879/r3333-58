@@ -126,6 +126,34 @@ This binds the exact `941d51630693…` FIRST parent and transports its proof to
 the exact RETRY formula, with a missing-signed-unit negative control. It does
 not generalize the result to any other row.
 
+## Model-supported physical word probes
+
+`pattern_wave_probe.py` runs a bounded batch of physical third-word patterns
+from the new campaign. It selects the 61 full-arm model-supported words on the
+largest size-14 pentagon of distinct rows, rather than the 73 earlier
+pair-live candidates, and can exclude the previously sampled 61-word row.
+Every case uses the original first-tier parent plus fifteen physical spoke
+units and `run_native`'s exact query/proof pipeline. It is not a local
+three-color approximation and cannot close a whole row by itself.
+
+From this directory:
+
+```sh
+/path/to/campaign/.venv/bin/python pattern_wave_probe.py \
+  /path/to/K58_wall_campaign \
+  --limit 1000 --cap 5000 --jobs 2 \
+  --out ../../results/adaptive-wall-2026-11-26/pattern-wave-new.json
+```
+
+The result keeps every (row, arm, word), native receipt, cap, actual conflict
+count and parent/query hash. OPEN is retained. UNSAT_BASE is replayed against
+the exact physical parent; SAT_BASE means only a physical model under that
+cube. A known locally refuted example was separately used as a 430,058-byte
+original-parent RUP control, not included in the model-supported batch.
+Current result: all 1,000 selected cases OPEN.
+See `../../results/adaptive-wall-2026-11-26/PATTERN_WAVE_1000.md` and its two
+JSON report/audit files for the exact authorization and scope.
+
 ## Real CaseQueue integration check
 
 `import_six.py` supplies and runs a real frozen-formula validator, not only the
