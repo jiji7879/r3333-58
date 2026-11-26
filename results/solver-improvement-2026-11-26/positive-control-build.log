@@ -1,0 +1,23 @@
+{
+  "parent": ".ultramath/smwwdcyxb/m6/leaf-n017.cnf",
+  "output": ".scratch/solver-improvement/positive-n017-dcap.cnf",
+  "parent_nvars": 305513,
+  "parent_clauses": 834107,
+  "parent_sha256": "8653a3b03ccf0a31f65515ba88c3b23f916b8bb585a545406eaa496ed69bb6f7",
+  "new_clauses": 310184,
+  "output_nvars": 457937,
+  "total_clauses": 1144291,
+  "sha256": "eb37b0697699c0a20213b906f305e6a86fda44dcfd4c776fb2a43729e526889a",
+  "unit_aware": false,
+  "unit_literals": 672,
+  "physical_hypothesis": "TriangleFree edge-colouring of K58 with four colours",
+  "encoding": "4 colours * 58 vertices, sequential-counter d_c(v) <= 16",
+  "base_preserved": true,
+  "fresh_variables_allocated_above_parent": true,
+  "literal_map": "frozen host(58), 4*edge_index+colour+1",
+  "off_limits": [
+    "c=q support cap",
+    "perfect degree balance",
+    "15-ticket floor"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "results/solver-improvement-2026-11-26/whole-81e8.cnf",
+  "output": "results/solver-improvement-2026-11-26/whole-81e8-plus-all-degree-caps.cnf",
+  "parent_nvars": 21433,
+  "parent_clauses": 191940,
+  "parent_sha256": "f12e25ceed77a47b1548eca0277bbc0c76d5f3f8814e4f85e6dc77f8aabb1c54",
+  "new_clauses": 310184,
+  "output_nvars": 173857,
+  "total_clauses": 502124,
+  "sha256": "751c14da5b93ce90ba9b37e090cc8137022b7d27a0ef2af928a8d068a900cdb0",
+  "unit_aware": false,
+  "unit_literals": 450,
+  "physical_hypothesis": "TriangleFree edge-colouring of K58 with four colours",
+  "encoding": "4 colours * 58 vertices, sequential-counter d_c(v) <= 16",
+  "base_preserved": true,
+  "fresh_variables_allocated_above_parent": true,
+  "literal_map": "frozen host(58), 4*edge_index+colour+1",
+  "off_limits": [
+    "c=q support cap",
+    "perfect degree balance",
+    "15-ticket floor"
+  ]
+}
