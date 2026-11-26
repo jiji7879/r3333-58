@@ -1,0 +1,281 @@
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 12, in <module>
+    from cover_evidence import checked_case
+ImportError: cannot import name 'checked_case' from 'cover_evidence' (/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/attachment-audit/four-row/K58_four_row_degree_solver/parent/cc/K58_wall_cube_conquer/frozen/cover_evidence.py)
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 122, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 43, in all_maps
+    assert set(rows)=={r['row']['id']for r in records}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 137, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 43, in all_maps
+    assert set(rows)=={r['row']['id']for r in records}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 138, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 39, in all_maps
+    rec_ids={r['row']['id']for r in records}
+                                    ^^^^^^^
+NameError: name 'records' is not defined. Did you mean: 'rec_ids'?
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 139, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 42, in all_maps
+    rec=json.loads(line);records.append(rec);rec_ids.add(rec['row']['id'])
+                         ^^^^^^^
+NameError: name 'records' is not defined. Did you mean: 'rec_ids'?
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 139, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 65, in all_maps
+    assert (owner,key)==(rec['owner'],rec['key'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 139, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 65, in all_maps
+    assert (owner,key)==(rec['owner'],rec['key'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 139, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 65, in all_maps
+    assert (owner,key)==(rec['owner'],rec['key'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 137, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+             ^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 64, in all_maps
+    units=list(map(int,rawunits.split(b',')))
+                       ^^^^^^^^^^^^^^^^^^^^
+TypeError: must be str or None, not bytes
+PRIMARY SOURCE SIGNED-PIN EQUALITY ON ALL 20166 ROWS: PASS
+LEDGER/CROSSWALK 20166 exact ids, frozen metadata, maps, vertex-image bijections, palettes: PASS {'E_TTT': 13005, 'E_UTT': 5982, 'E_UUT': 1030, 'E_UUU': 149}
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 137, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 76, in workflow
+    vr=json.loads((p/'verified.json').read_bytes())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/K58_Tatarevic_transfer/evidence/000866d3b1df/verified.json'
+PRIMARY SOURCE SIGNED-PIN EQUALITY ON ALL 20166 ROWS: PASS
+LEDGER/CROSSWALK 20166 exact ids, frozen metadata, maps, vertex-image bijections, palettes: PASS {'E_TTT': 13005, 'E_UTT': 5982, 'E_UUT': 1030, 'E_UUU': 149}
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 138, in <module>
+    mappings=all_maps();jobs,reports=workflow(mappings)
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 80, in workflow
+    assert rec['vertices']==sorted(m.items()) and rec['palette']==pal
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+PRIMARY SOURCE SIGNED-PIN EQUALITY ON ALL 20166 ROWS: PASS
+LEDGER/CROSSWALK 20166 exact ids, frozen metadata, maps, vertex-image bijections, palettes: PASS {'E_TTT': 13005, 'E_UTT': 5982, 'E_UUT': 1030, 'E_UUU': 149}
+EXACT 2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a signed pins 503 K60 core vertices 50
+EXACT 2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d signed pins 503 K60 core vertices 48
+EXACT 38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb signed pins 503 K60 core vertices 35
+EXACT c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63 signed pins 503 K60 core vertices 35
+FALLBACK 3d366579cb84 signed pins 503 core units 285
+FALLBACK 4f94a88e7c76 signed pins 503 core units 285
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 140, in <module>
+    answers=list(pool.map(replay,jobs))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/math/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/new-bundles-audit/audit_transfer_independent.py", line 133, in replay
+    assert proc.returncode==0 and b's VERIFIED' in proc.stdout,(name,proc.returncode,proc.stdout[-1000:])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a K60-core', 1, b'r: [0] -3274 -3273 0\n\rc WARNING: deleted clause on proof line 411861 does not occur: [0] -4166 -4165 0\n\rc WARNING: deleted clause on proof line 411880 does not occur: [0] -4932 -4929 0\n\rc WARNING: deleted clause on proof line 411965 does not occur: [0] -5646 -4946 -4898 0\n\rc WARNING: deleted clause on proof line 412154 does not occur: [0] -3878 -3877 0\n\rc WARNING: deleted clause on proof line 412184 does not occur: [0] -5107 -5106 0\n\rc WARNING: deleted clause on proof line 412188 does not occur: [0] -4167 -4165 0\n\rc WARNING: deleted clause on proof line 412243 does not occur: [0] -5269 -4829 -4765 0\n\rc WARNING: deleted clause on proof line 412257 does not occur: [0] -4563 -4562 0\n\rc WARNING: deleted clause on proof line 412345 does not occur: [0] -3600 -3598 0\n\rc WARNING: deleted clause on proof line 412359 does not occur: [0] -4767 -4765 0\n\rc finished parsing, read 15370506 bytes from proof file\n\rc conflict claimed, but not detected\n\ns NOT VERIFIED\n\rc verification time: 0.929 seconds\n')
+PRIMARY SOURCE SIGNED-PIN EQUALITY ON ALL 20166 ROWS: PASS
+LEDGER/CROSSWALK 20166 exact ids, frozen metadata, maps, vertex-image bijections, palettes: PASS {'E_TTT': 13005, 'E_UTT': 5982, 'E_UUT': 1030, 'E_UUU': 149}
+EXACT 2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a signed pins 503 K60 core vertices 50
+EXACT 2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d signed pins 503 K60 core vertices 48
+EXACT 38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb signed pins 503 K60 core vertices 35
+EXACT c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63 signed pins 503 K60 core vertices 35
+FALLBACK 3d366579cb84 signed pins 503 core units 285
+FALLBACK 4f94a88e7c76 signed pins 503 core units 285
+{
+ "full_crosswalk_rows": 20166,
+ "retained_case_ids": 6,
+ "drat_verified_replays": 26,
+ "jobs": [
+  [
+   "2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a first",
+   14.043
+  ],
+  [
+   "2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a retry",
+   13.41
+  ],
+  [
+   "2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a K60-source",
+   12.36
+  ],
+  [
+   "2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a K60-core",
+   9.475
+  ],
+  [
+   "2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a K58-core",
+   8.47
+  ],
+  [
+   "2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d first",
+   14.117
+  ],
+  [
+   "2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d retry",
+   13.55
+  ],
+  [
+   "2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d K60-source",
+   13.521
+  ],
+  [
+   "2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d K60-core",
+   10.955
+  ],
+  [
+   "2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d K58-core",
+   9.777
+  ],
+  [
+   "38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb first",
+   10.51
+  ],
+  [
+   "38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb retry",
+   9.303
+  ],
+  [
+   "38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb K60-source",
+   9.77
+  ],
+  [
+   "38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb K60-core",
+   8.367
+  ],
+  [
+   "38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb K58-core",
+   8.754
+  ],
+  [
+   "c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63 first",
+   5.925
+  ],
+  [
+   "c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63 retry",
+   6.144
+  ],
+  [
+   "c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63 K60-source",
+   6.19
+  ],
+  [
+   "c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63 K60-core",
+   5.125
+  ],
+  [
+   "c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63 K58-core",
+   4.411
+  ],
+  [
+   "3d366579cb84 first",
+   19.289
+  ],
+  [
+   "3d366579cb84 retry",
+   18.148
+  ],
+  [
+   "3d366579cb84 physical-core",
+   15.652
+  ],
+  [
+   "4f94a88e7c76 first",
+   18.376
+  ],
+  [
+   "4f94a88e7c76 retry",
+   18.272
+  ],
+  [
+   "4f94a88e7c76 physical-core",
+   14.967
+  ]
+ ],
+ "reports": [
+  [
+   "2cad8d149de7234daac06c6ab825db2fe85d290b693d3970f4ce8a85fe947c6a",
+   "signed pins/map/core/parent exact",
+   "K60 TTT:131:48:3",
+   50
+  ],
+  [
+   "2eea7d578d80d189fd675ed02f842f96445adb8b772bee7a314efe1f7c8c4b2d",
+   "signed pins/map/core/parent exact",
+   "K60 TTT:117:43:3",
+   48
+  ],
+  [
+   "38bd7b456e04e4acb8e97018a58e7c32b735185fcdc87bd4b9a010403e70c0eb",
+   "signed pins/map/core/parent exact",
+   "K60 TTT:117:42:3",
+   35
+  ],
+  [
+   "c17143277f2407835314a90cd56014117145c6de0345f72926ac405536c70b63",
+   "signed pins/map/core/parent exact",
+   "K60 TTT:113:44:3",
+   35
+  ],
+  [
+   "3d366579cb84",
+   "fallback exact signed pins and both parents",
+   285,
+   285
+  ],
+  [
+   "4f94a88e7c76",
+   "fallback exact signed pins and both parents",
+   285,
+   285
+  ]
+ ]
+}
