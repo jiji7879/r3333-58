@@ -9,7 +9,7 @@ adopted from a missing archive or invented from its receipts.
 
 Package and runtime version: **`2026-11-26-wallcc`**.
 The ready archive is **`dist/k58-solver.zip`**, SHA-256
-**`d5d34e99c17a08fdc7240dc2062d38d5bd72aad624703c3af185bd11a75fdb0e`**.
+**`eedbf3da50edae0054e278a89f822b1d3a9f2bbf55df42a6f3fa082525276428`**.
 `dist/SHA256SUMS` is updated to the same hash. The archive is for handing over
 through the conversation, not committing as repository history.
 
@@ -68,6 +68,33 @@ silently promoted into a trusted cut family.
 - Root reduction: **1,058,750 to 649,327 clauses**, with an independently
   replayed reconstruction and all seven negative controls rejected. That is a
   verified preprocessing equivalence, not a new wall refutation.
+
+## Clean repackaging and cache cleanup
+
+`build_package.sh` now removes generated wall test output from its staging tree,
+then creates `k58-solver.next.zip`, runs `unzip -tq` on that new file and only
+then renames it over `dist/k58-solver.zip`. It never relies on a ZIP update to
+remove an old entry. The old archive therefore survives a failed build.
+
+The clean archive passed its ZIP integrity check, its entry list contains no
+`selftest-work/` path, and its installed version is `2026-11-26-wallcc`. Against
+a fresh extraction of this exact archive, `setup` installed python-sat
+1.9.dev22; `doctor` replayed all 5 bundled examples; `wallcc-smoke` passed its
+ordinary controls and 20/20 per-leaf checks; and the full `smoke` closed 3 real
+cases, independently replayed all 3 (`failed: 0`), rejected a truncated
+certificate and built a valid batch plan. The optional external
+`smoke-results.json` fixture remains absent, so the direct optional fixture
+test was not run. See `release-setup.log`, `release-doctor.log`,
+`release-wallcc-smoke.log`, `release-smoke.log` and `release-build.log`.
+
+Only the pre-identified regenerable cache directories were removed. Their
+1,022,387,777 bytes of allocated contents are itemized in
+`cleanup-measurement.json`. Free space rose by 1,044,967,424 bytes (0.973 GiB),
+from 28 GiB to 29 GiB in `df -h`; the freshly extracted package for these tests
+was also removed after saving its logs. Protected entrance and swarm proof
+stores, original attachments and other sessions' work were left alone. RAM was
+not the constraint: 13 GiB remained available with no swap and no active
+project job.
 
 ## Actual wall attempt, not a proof of a new bound
 

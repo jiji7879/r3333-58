@@ -1,0 +1,5 @@
+patched /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/package-build/tmp.L2WtCnIjdt/k58-solver/k58/run_cover.py: checker limit 300s, failures skip the case
+re-pinned the example manifest to the patched runner
+No errors detected in compressed data of /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/dist/k58-solver.next.zip.
+eedbf3da50edae0054e278a89f822b1d3a9f2bbf55df42a6f3fa082525276428  /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/dist/k58-solver.zip
+BUILD_WALL_SECONDS=2.54

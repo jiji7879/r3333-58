@@ -1,0 +1,18 @@
+
+[1/5] toolchain and the bundled example (5 certificates)
+   PASS  versions pinned, example replayed
+
+[2/5] close real cases end to end
+   PASS  3 case(s) closed and certified
+
+[3/5] manifest and parallel replay
+   PASS  every certificate replayed: {"checked": 3, "replayed": 3, "failed": 0, "unknown": 0}
+
+[4/5] rejecting a corrupted certificate
+   PASS  truncated certificate rejected
+
+[5/5] batch driver
+   PASS  plan builds
+
+SMOKE TEST PASSED -- this machine is ready.
+start the real run with:  ./k58-batch.sh all --shards 4 --workers 4

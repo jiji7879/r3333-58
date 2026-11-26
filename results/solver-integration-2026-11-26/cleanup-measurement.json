@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-11-26T06:15:31.393687+00:00",
+  "free_bytes_before": 29891665920,
+  "paths": {
+    ".scratch/review-m3-negative": 551245853,
+    ".scratch/review-m3": 78748624,
+    ".scratch/review-m8": 19133460,
+    ".scratch/solver-improvement": 54225690,
+    ".scratch/package-run": 74513717,
+    ".scratch/package-final-smoke": 66466609,
+    ".scratch/package-final-smoke-v2": 74640985,
+    ".scratch/package-final-smoke-v3": 66662507,
+    ".scratch/k58-wall-95c7": 20654489,
+    ".scratch/k58-wall-d11c": 16095843,
+    ".scratch/package-build": 0
+  },
+  "directory_bytes_before_deletion": 1022387777,
+  "removed_paths": [
+    ".scratch/review-m3-negative",
+    ".scratch/review-m3",
+    ".scratch/review-m8",
+    ".scratch/solver-improvement",
+    ".scratch/package-run",
+    ".scratch/package-final-smoke",
+    ".scratch/package-final-smoke-v2",
+    ".scratch/package-final-smoke-v3",
+    ".scratch/k58-wall-95c7",
+    ".scratch/k58-wall-d11c",
+    ".scratch/package-build"
+  ],
+  "free_bytes_after": 30936633344,
+  "free_bytes_increase": 1044967424,
+  "protected_items_present_after": {
+    ".ultramath/smwwdcyxb/m2/proofs": true,
+    ".ultramath/smwx2syxr": true,
+    ".scratch/satcheck": true,
+    ".scratch/k58": true
+  }
+}

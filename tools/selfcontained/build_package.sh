@@ -23,6 +23,8 @@ cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,verify_pa
 cp "$HERE/k58.sh" "$HERE/k58-batch.sh" "$HERE/patch_batch_only_small.py" "$HERE/README.md" "$PKG/"
 # The tested single-row wall driver, optional entrance projection and proof tools.
 cp -a "$HERE/wallcc" "$PKG/"
+# The self-tests generate regenerable work files; those never belong in a release.
+rm -rf "$PKG/wallcc/selftest-work"
 # The compat package's additions: the compact/fast search (profile_fast.py and its
 # two kernels), the seven uniform children (uniform.py, uniform_kernel.py and the
 # arm-type table), the bundled uniform proofs, and its run_cover.py, which replaces
@@ -48,6 +50,12 @@ for v in 3.10 3.11 3.12 3.13; do
     --platform manylinux_2_24_x86_64 || echo "warning: no wheel for python $v"
 done
 python3 -m pip download six -d "$PKG/wheels" --no-deps -q --only-binary=:all: || true
-( cd "$WORK" && zip -q -X -r "$REPO/dist/k58-solver.zip" k58-solver )
+# Build a new archive rather than updating an old one in place: zip update does
+# not remove deleted files. Keep the previous usable archive until the new one
+# passes its integrity check, then publish it with a same-filesystem rename.
+rm -f "$REPO/dist/k58-solver.next.zip"
+( cd "$WORK" && zip -q -X -r "$REPO/dist/k58-solver.next.zip" k58-solver )
+unzip -tq "$REPO/dist/k58-solver.next.zip"
+mv "$REPO/dist/k58-solver.next.zip" "$REPO/dist/k58-solver.zip"
 rm -rf "$WORK"
 sha256sum "$REPO/dist/k58-solver.zip"

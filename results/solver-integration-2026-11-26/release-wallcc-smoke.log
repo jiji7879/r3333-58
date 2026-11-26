@@ -1,0 +1,40 @@
+PASS  K5/K6, all split assignments, sharding, same-plan resume, missing sibling, damaged proof and model with updated hashes, capped retry, both DRAT exports, and DIMACS edge cases
+PASS freeze: header clause count grows by |cube|
+PASS freeze: base body byte-identical
+PASS freeze: units appended exactly
+PASS freeze: variable count unchanged
+PASS freeze: DIMACS clause count matches file
+PASS freeze refuses out-of-range literal (variable collision)
+PASS freeze refuses contradictory cube
+PASS freeze refuses empty cube
+PASS freeze refuses a 'p inccnf' base
+PASS freeze refuses a wrong base hash
+PASS coverage refuses duplicate cubes
+PASS coverage: [-1],[1] is exhaustive
+PASS coverage: [-1],[1,2] is NOT exhaustive
+PASS leaf [-1,2] is UNSAT
+PASS leaf [-1,2] DRAT verifies
+PASS solve: conflict counter parsed
+PASS leaf [1,2] is SAT (no certificate possible)
+PASS NEG: leaf proof does NOT verify against the base alone (cube units are load-bearing)
+PASS NEG: leaf proof does NOT verify against a satisfiable sibling leaf (wrong-leaf swap caught)
+PASS inccnf run exits 20 (all cubes UNSAT)
+INFO inccnf whole-trace replay vs leaf1 [-1, 2]: verified=True
+INFO inccnf whole-trace replay vs leaf2 [1, -2]: verified=True
+{"leaf": "leaf000", "status": "UNSAT_VERIFIED", "wall": 0.001, "conflicts": 1}
+{"leaf": "leaf001", "status": "UNSAT_VERIFIED", "wall": 0.001, "conflicts": 1}
+{"leaf": "leaf002", "status": "SAT", "wall": 0.001, "conflicts": 0}
+PASS certify: partial leaf list -> NO CLOSURE
+PASS certify: SAT leaf counted
+PASS certify: certified leaves are UNSAT_VERIFIED
+{"leaf": "leaf000", "status": "UNSAT_VERIFIED", "wall": 0.001, "conflicts": 1}
+{"leaf": "leaf001", "status": "UNSAT_VERIFIED", "wall": 0.001, "conflicts": 1}
+PASS certify: non-exhaustive cubes -> NO CLOSURE
+{"leaf": "leaf000", "status": "UNSAT_VERIFIED", "wall": 0.001, "conflicts": 1}
+{"leaf": "leaf001", "status": "UNSAT_VERIFIED", "wall": 0.001, "conflicts": 1}
+PASS certify: exhaustive + all verified -> BASE UNSAT
+PASS replay: independent rebuild + fresh drat-trim agrees
+PASS dimacs_header rejects a non-numeric header
+
+20/20 checks passed
+optional merged wall-row fixture smoke-results.json is absent; it was not run or replaced
