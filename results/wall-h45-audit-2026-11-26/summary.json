@@ -1,0 +1,49 @@
+{
+  "h4": {
+    "passes_replayed": true,
+    "patterns_refuted": 6975,
+    "open": 0,
+    "walls_passed_seconds": [
+      33.27,
+      48.63,
+      0.93
+    ]
+  },
+  "h5": {
+    "compact_replay_passed": true,
+    "seconds": 729.79,
+    "rows_h6_or_better": 93,
+    "rows_h7": 2,
+    "h5_patterns": 51615,
+    "h6_patterns": 4830
+  },
+  "main_transfer_verifier": {
+    "passed": true,
+    "seconds": 143.626,
+    "destination_replays": 803,
+    "independently_verified_donors": 66
+  },
+  "next_unrun": {
+    "h6_frontier": [
+      91,
+      219765,
+      23023
+    ],
+    "h7_frontier": [
+      2,
+      10910,
+      1158
+    ]
+  },
+  "control_output": "dist/k58-0404-forward11-reverse7.cnf.gz",
+  "unperformed_optional_full_row_dratreplay": "SHA256-FULL parts and first/second trees are absent from the supplied H5 archive",
+  "frontend_0404": {
+    "status": "OPEN",
+    "depth": 0,
+    "conflicts": 10001,
+    "elapsed_seconds": 0.621,
+    "source_and_parent_sha256": "70881fa4b499354fbee6f1fdf047d733eba33cf2e9011b36c7719845fe29e62b",
+    "verify_reproduced_parent": true,
+    "proof_export": "not attempted: OPEN parent, no completed cover"
+  }
+}

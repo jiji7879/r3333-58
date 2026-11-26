@@ -1,0 +1,144 @@
+189 native certified queries on 42 catalogs / source-target pairs
+Physical rows 93 distinct three-arm descriptions 56
+donor 1 56 447dcef59366 9 9 41 4.986
+donor 2 56 a9ed9506b66e 9 9 42 4.568
+donor 3 56 2a537bf8df54 9 9 42 3.276
+donor 4 56 b675323966a7 9 9 43 2.068
+donor 5 56 8f7e17edbbc6 9 9 42 4.912
+donor 6 56 dc06d31a92c8 9 9 43 3.988
+donor 7 56 7f8e4b5bfc02 9 9 41 4.396
+donor 8 56 fac2936e30ac 9 9 43 4.612
+donor 9 56 756af8341a80 9 9 41 4.771
+donor 10 56 16ecaeb3493f 9 9 42 3.478
+donor 11 56 11f0fa5a7a63 9 9 41 3.866
+donor 12 56 5cfacd29c15a 9 9 42 3.966
+donor 13 56 50ffbc4bdc79 9 9 41 4.913
+donor 14 56 fab12008ceb1 9 9 42 4.845
+donor 15 56 e7e59fdf7838 9 9 42 6.231
+donor 16 56 9f6297de6651 9 9 42 4.391
+donor 17 56 c6a31320c919 9 9 42 5.278
+donor 18 56 bab8dddbe828 9 9 42 4.682
+donor 19 56 30f0df0c6285 9 9 41 4.356
+donor 20 56 121cfa7aaf26 9 9 42 5.921
+donor 21 56 f227ee33ef5b 9 9 42 5.793
+donor 22 56 b640fda632a1 9 9 42 4.722
+donor 23 56 94e35914c452 9 9 42 4.67
+donor 24 56 d4dea77b42da 9 9 41 4.041
+donor 25 56 1f941b42c1df 9 9 41 3.589
+donor 26 56 e926d4dd778c 9 9 42 3.273
+donor 27 56 b03dc14b9a35 9 9 42 2.789
+donor 28 56 a82db155e3b3 9 9 41 2.301
+donor 29 56 b3b28cd1cddf 9 9 41 1.485
+donor 30 56 aa86cf53626f 9 9 41 3.176
+donor 31 56 22ef39432e40 9 9 41 4.384
+donor 32 56 7cbd40e2dbf3 9 9 42 3.422
+donor 33 56 9137faf4fab4 9 9 41 4.806
+donor 34 56 071a2f99ea86 9 9 42 3.804
+donor 35 56 50fdd53efd1a 9 9 42 4.306
+donor 36 56 66196da3198d 9 9 42 3.493
+donor 37 56 5e49259caa91 9 9 41 4.365
+donor 38 56 aae98d76968b 9 9 42 4.037
+donor 39 56 dbdd59d2bfd2 9 9 41 2.922
+donor 40 56 592a66e56bc0 9 9 42 3.95
+donor 41 56 b68d6a69a516 9 9 41 4.12
+donor 42 56 0d5e1e62163f 9 9 42 3.996
+donor 43 56 09d5b3eab078 9 9 41 3.512
+donor 44 56 c916bf91352c 9 9 41 4.484
+donor 45 56 cbe0039c2734 9 9 41 3.549
+donor 46 56 17c4b4bc27a9 9 9 42 4.116
+donor 47 56 f29fee123c67 9 9 41 2.443
+donor 48 56 c403e07c9bed 9 9 43 4.199
+donor 49 56 a269a1fa98b4 9 9 42 5.869
+donor 50 56 6d7c0eace7c4 9 9 41 3.974
+donor 51 56 a1aea0121285 9 9 42 4.272
+donor 52 56 43d109686dde 9 9 42 2.315
+donor 53 56 3dbedce9889c 9 9 42 2.964
+donor 54 56 d728c5185d4d 9 9 42 4.464
+donor 55 56 454e007d33de 9 9 42 4.852
+donor 56 56 900a531db7c6 9 9 41 2.171
+rows 10 93 covered 750
+rows 20 93 covered 1500
+rows 30 93 covered 2250
+rows 40 93 covered 3000
+rows 50 93 covered 3750
+rows 60 93 covered 4500
+rows 70 93 covered 5250
+rows 80 93 covered 6000
+rows 90 93 covered 6750
+rows 93 93 covered 6975
+Physical rows 93 distinct three-arm descriptions 56
+donor 1 56 447dcef59366 63 63 41 23.687
+donor 2 56 a9ed9506b66e 63 63 42 14.003
+donor 3 56 2a537bf8df54 63 63 42 15.393
+donor 4 56 b675323966a7 63 63 43 14.092
+donor 5 56 8f7e17edbbc6 63 63 42 20.818
+donor 6 56 dc06d31a92c8 63 63 43 15.795
+donor 7 56 fac2936e30ac 63 63 43 16.73
+donor 8 56 7f8e4b5bfc02 63 63 41 17.999
+donor 9 56 756af8341a80 63 63 41 19.244
+donor 10 56 16ecaeb3493f 63 63 42 14.94
+donor 11 56 11f0fa5a7a63 63 63 41 20.521
+donor 12 56 5cfacd29c15a 63 63 42 14.018
+donor 13 56 50ffbc4bdc79 63 63 41 20.722
+donor 14 56 fab12008ceb1 63 63 42 22.498
+donor 15 56 e7e59fdf7838 63 63 42 16.575
+donor 16 56 9f6297de6651 63 63 42 18.922
+donor 17 56 c6a31320c919 63 63 42 17.223
+donor 18 56 bab8dddbe828 63 63 42 23.07
+donor 19 56 30f0df0c6285 63 63 41 22.096
+donor 20 56 121cfa7aaf26 63 63 42 18.467
+donor 21 56 f227ee33ef5b 63 63 42 19.187
+donor 22 56 b640fda632a1 63 63 42 19.483
+donor 23 56 94e35914c452 63 63 42 17.639
+donor 24 56 d4dea77b42da 63 63 41 15.252
+donor 25 56 1f941b42c1df 63 63 41 20.838
+donor 26 56 e926d4dd778c 63 63 42 18.847
+donor 27 56 b03dc14b9a35 63 63 42 20.372
+donor 28 56 a82db155e3b3 63 63 41 25.102
+donor 29 56 b3b28cd1cddf 63 63 41 18.558
+donor 30 56 aa86cf53626f 63 63 41 16.342
+donor 31 56 22ef39432e40 63 63 41 20.644
+donor 32 56 7cbd40e2dbf3 63 63 42 18.093
+donor 33 56 9137faf4fab4 63 63 41 19.746
+donor 34 56 071a2f99ea86 63 63 42 19.782
+donor 35 56 50fdd53efd1a 63 63 42 19.025
+donor 36 56 66196da3198d 63 63 42 12.238
+donor 37 56 5e49259caa91 63 63 41 21.15
+donor 38 56 aae98d76968b 63 63 42 12.815
+donor 39 56 dbdd59d2bfd2 63 63 41 14.195
+donor 40 56 592a66e56bc0 63 63 42 16.523
+donor 41 56 b68d6a69a516 63 63 41 18.885
+donor 42 56 0d5e1e62163f 63 63 42 19.498
+donor 43 56 09d5b3eab078 63 63 41 16.078
+donor 44 56 c916bf91352c 63 63 41 14.088
+donor 45 56 cbe0039c2734 63 63 41 13.72
+donor 46 56 17c4b4bc27a9 63 63 42 10.088
+donor 47 56 f29fee123c67 63 63 41 14.629
+donor 48 56 c403e07c9bed 63 63 43 14.031
+donor 49 56 a269a1fa98b4 63 63 42 12.77
+donor 50 56 6d7c0eace7c4 63 63 41 11.836
+donor 51 56 a1aea0121285 63 63 42 16.449
+donor 52 56 43d109686dde 63 63 42 16.837
+donor 53 56 3dbedce9889c 63 63 42 12.53
+donor 54 56 d728c5185d4d 63 63 42 11.003
+donor 55 56 454e007d33de 63 63 42 13.591
+donor 56 56 900a531db7c6 63 63 41 11.673
+rows 10 93 covered 5550
+rows 20 93 covered 11100
+rows 30 93 covered 16650
+rows 40 93 covered 22200
+rows 50 93 covered 27750
+rows 60 93 covered 33300
+rows 70 93 covered 38850
+rows 80 93 covered 44400
+rows 90 93 covered 49950
+rows 93 93 covered 51615
+Physical rows 2 distinct three-arm descriptions 1
+donor 1 1 a9ed9506b66e 253 253 42 47.322
+rows 2 2 covered 4830
+11585 929 93 0 ['0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296', '8f9f3644c15b423945ba11e778540f6cf6234d095e7493ed24dd537f1c8db31a']
+{"row": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296", "forward_floor": 11, "reverse_floor": 5, "cap": 170000, "result": "OPEN", "query_sha256": "992c692868715b8b5541eb6da24ca89505a5646f5272564302ec10f425aaa7e2", "conflicts": 170001, "seconds": 64.844}
+{"row": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296", "forward_floor": 11, "reverse_floor": 6, "cap": 170000, "result": "OPEN", "query_sha256": "3ad09f20107994a03e76b9fe118a28ebbeef1803e9f6921397f8342b6585a383", "conflicts": 170004, "seconds": 52.33}
+{"row": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296", "forward_floor": 11, "reverse_floor": 7, "cap": 170000, "result": "OPEN", "query_sha256": "70881fa4b499354fbee6f1fdf047d733eba33cf2e9011b36c7719845fe29e62b", "conflicts": 170003, "seconds": 65.371}
+{"wall_rows": 11585, "rows_h6_or_better": 93, "rows_h7": ["0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296", "8f9f3644c15b423945ba11e778540f6cf6234d095e7493ed24dd537f1c8db31a"], "totals": {"eleven_low_subsets": 6975, "eleven_low_replays": 930, "h5_local_replays": 930, "h5_patterns": 51615, "h6_patterns": 4830, "h6_local_replays": 20}, "by_profile": {"16,15,13,13": 19, "16,16,13,12": 18, "16,16,14,11": 18, "16,15,14,12": 38}, "h7_by_profile": {"16,16,13,12": 1, "16,16,14,11": 1}, "three_arm_rows_by_size": {"41": 33, "42": 52, "43": 8}, "projected_h5_inputs": 56, "h5_representative_queries": 3528, "h5_local_conflicts": 1061102, "eleven_low_local_conflicts": 199060, "h6_local_conflicts": 60253, "next_labeled": {"6": 219765, "7": 10910}, "next_orbit_representatives": {"6": 23023, "7": 1158}}
+VERIFY_WALL_SECONDS=729.79

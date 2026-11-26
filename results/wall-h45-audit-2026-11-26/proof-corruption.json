@@ -1,0 +1,24 @@
+{
+  "control": "0404 H6, 253 masks; genuine proof replayed VERIFIED with project checker before mutations",
+  "query_sha256": "ffa61fbbd4e08e3bc1676917525b17686273365deb821ce2df5a3793d134cbb8",
+  "original_proof_sha256": "fea642dd9edcffe3bdab8a914fccb265c14c744cb4c3ecab4877214abc14130f",
+  "stale_hash_binding_rejected": true,
+  "mutations": [
+    {
+      "case": "appended-garbage",
+      "bytes": 6502889,
+      "status": "ACCEPTED"
+    },
+    {
+      "case": "truncated-last-two-bytes",
+      "bytes": 6502870,
+      "status": "ACCEPTED"
+    },
+    {
+      "case": "truncated-half",
+      "bytes": 3251436,
+      "status": "REJECTED"
+    }
+  ],
+  "conclusion": "The bundled replay does not reject every noncanonical mutation: ignored trailing bytes are ACCEPTED. It is a semantic proof replay, not a canonical proof-byte authenticator. Pin the CNF and proof digests independently; hash-consistent truncation behavior is recorded per case. No rejected mutation is treated as a valid proof."
+}

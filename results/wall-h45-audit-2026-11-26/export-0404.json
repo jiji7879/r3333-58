@@ -1,0 +1,14 @@
+{
+  "forward_H_historic": 11,
+  "reverse_H_newly_verified": 7,
+  "historic_header": "p cnf 20389 223603",
+  "new_header": "p cnf 20536 225915",
+  "historic_body_byte_identical_prefix": true,
+  "raw_sha256": "70881fa4b499354fbee6f1fdf047d733eba33cf2e9011b36c7719845fe29e62b",
+  "matches_whole_7_receipt": true,
+  "matches_rebuilt_row_input": true,
+  "corrupt_checkpoint_rejected": true,
+  "whole_row_result_from_existing_replay": "OPEN",
+  "conflicts": 170003,
+  "note": "The three supplied whole-row checks cover reverse floors 5,6,7; each reached 170000 conflicts and remained OPEN. The local directional bound is certified; no row is closed."
+}

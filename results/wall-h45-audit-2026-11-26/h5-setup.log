@@ -1,0 +1,5 @@
+Looking in links: engine/wheels
+Processing ./engine/wheels/python_sat-1.9.dev22-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+Processing ./engine/wheels/six-1.17.0-py2.py3-none-any.whl (from python-sat==1.9.dev22)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev22 six-1.17.0

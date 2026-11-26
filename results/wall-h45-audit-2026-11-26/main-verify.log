@@ -1,0 +1,158 @@
+189 native certified queries on 42 catalogs / source-target pairs
+rows 11585 coverage Counter({(15, 'has_direction'): 11384, (15, 'covered_with_bound'): 4071, (16, 'has_direction'): 3066, (16, 'covered_with_bound'): 1450}) row floors Counter({(15, 2): 2282, (15, 1): 986, (16, 3): 888, (15, 3): 803, (16, 2): 562}) 
+ [((15, 15, 14, 13), {(): 5168, (15,): 2379, (15, 16): 185}), ((16, 15, 13, 13), {(): 561, (15, 16): 351, (15,): 109, (16,): 25}), ((16, 15, 14, 12), {(): 1107, (15, 16): 692, (15,): 213, (16,): 46}), ((15, 14, 14, 14), {(): 374, (15,): 5, (15, 16): 2}), ((16, 14, 14, 13), {(): 79, (15, 16): 7, (16,): 2}), ((16, 16, 13, 12), {(15, 16): 64, (): 70, (16,): 6}), ((16, 16, 14, 11), {(15, 16): 64, (): 70, (16,): 6})]
+Directions with cuts and number of physical clauses: [(15, 6777, 2112242), (16, 1535, 311409)]
+five exterior transport 21 geometry-side-color certificates, Counter({'directions': 777, 'rows': 556})
+combined-star exterior transport 69 geometry-side-color certificates, Counter({'directions': 777, 'rows': 556})
+96 scheduled
+5 000d21f2cf01 bound UNSAT 1860
+6 0040977b8cff bound UNSAT 2245
+11 0093a6b3560b bound UNSAT 6481
+12 0404c3a22462 direct OPEN 16000
+14 038dd297d867 bound UNSAT 2435
+17 0404c3a22462 bound UNSAT 7644
+23 06861a3df60c bound UNSAT 7468
+24 3df7d5045a25 direct OPEN 16001
+29 371dc23e0d9f bound UNSAT 14223
+31 4ef4688eef38 bound UNSAT 1079
+35 57374ca1bcbb bound UNSAT 6914
+36 5b11637f718d direct OPEN 16003
+38 5a43a4507489 bound UNSAT 7787
+41 5b11637f718d bound UNSAT 6402
+46 5b8d0f0624d3 bound UNSAT 1682
+48 a3726ddf049d direct OPEN 16001
+50 8387fd93a3a5 bound UNSAT 14624
+53 a3726ddf049d bound UNSAT 7378
+56 a7b6f28da31a bound UNSAT 2006
+59 aa2152aba971 bound UNSAT 2054
+60 b08ff21a14c3 direct OPEN 16000
+62 ae2b04e51f53 bound UNSAT 8003
+71 b08ff21a14c3 bound UNSAT 7620
+72 e302782fc814 direct OPEN 16000
+77 cae768ddd555 bound UNSAT 6727
+80 e871c48dd545 bound UNSAT 6067
+83 f6e9a3cdcd63 bound UNSAT 7497
+84 fef27d770672 direct OPEN 16002
+86 f7f8d80bb20b bound UNSAT 7304
+89 fef27d770672 bound UNSAT 1097
+92 ff6020e9947d bound UNSAT 6373
+95 ff818b7a0813 bound UNSAT 9572
+96 ffebef9f99aa bound UNSAT 1459
+72 scheduled
+1 245c46ce742c bound UNSAT 1599
+2 00032f347903 bound UNSAT 1453
+3 6e0057d759f1 bound UNSAT 1337
+4 4910f4e5101b bound UNSAT 2186
+5 92a904912812 bound UNSAT 1209
+6 b8a011da74cd bound UNSAT 2879
+7 dbf4736a1b44 bound UNSAT 1398
+8 fff2b2d2f183 bound UNSAT 1062
+9 23dd2eae64e2 bound UNSAT 458
+10 001f3cc0e142 bound UNSAT 1272
+11 4a431765d68a bound UNSAT 985
+12 718c58a5dfa9 bound UNSAT 2067
+13 943475a6ef1a bound UNSAT 2171
+14 bb476db1a214 bound UNSAT 2441
+15 db60f91e86cc bound UNSAT 1304
+16 ffb699699a44 bound UNSAT 883
+17 0037e99c93e2 bound UNSAT 512
+18 236f1bac2c07 bound UNSAT 1480
+19 47a4be9b4124 bound UNSAT 2292
+20 6b381bb93f89 bound UNSAT 1034
+21 8d20283c0b1f bound UNSAT 396
+22 b1a0b8f9d2a6 bound UNSAT 916
+23 da2991eb5628 bound UNSAT 3304
+24 ffe5d8dbbc76 bound UNSAT 837
+36 64489150bb62 bound OPEN 14000
+48 e3211a3fcce0 bound OPEN 14000
+49 090babc6858c bound UNSAT 1765
+50 2f8bc9289c21 bound UNSAT 835
+51 4ed61855bdc5 bound UNSAT 555
+52 73db2a51b17d bound UNSAT 1771
+53 960ed4282bfc bound UNSAT 1960
+54 c0cf4cba4744 bound UNSAT 1973
+55 df422e498768 bound UNSAT 1537
+56 fd4eb39b9f15 bound UNSAT 1442
+57 0fd511b2dee5 bound UNSAT 907
+58 2bd6345905b2 bound UNSAT 903
+59 44f2401d08a4 bound UNSAT 870
+60 626020ff7cd3 bound UNSAT 1013
+61 8dc8e4b952f6 bound UNSAT 1668
+62 b8e5992b1321 bound UNSAT 1821
+63 e1ad318c0aea bound UNSAT 1330
+67 ff6470c83ac7 bound UNSAT 1483
+72 fa5e09a31e53 bound OPEN 14001
+21 scheduled
+12 6d734e6a3c33 final OPEN 170001
+Relaxed, independently verified donors 66
+Checked transfers on row-directions: 803
+Native replays on destination pins 803
+30 {'SAT': 30}
+60 {'SAT': 60}
+90 {'SAT': 90}
+120 {'SAT': 120}
+150 {'SAT': 150}
+180 {'SAT': 180}
+209 {'SAT': 209}
+30 {'SAT': 27, 'OPEN': 3}
+60 {'SAT': 57, 'OPEN': 3}
+90 {'SAT': 87, 'OPEN': 3}
+120 {'SAT': 117, 'OPEN': 3}
+150 {'SAT': 147, 'OPEN': 3}
+180 {'SAT': 176, 'OPEN': 4}
+210 {'SAT': 206, 'OPEN': 4}
+240 {'SAT': 232, 'OPEN': 8}
+270 {'SAT': 262, 'OPEN': 8}
+300 {'SAT': 290, 'OPEN': 10}
+330 {'SAT': 315, 'OPEN': 15}
+360 {'SAT': 345, 'OPEN': 15}
+390 {'SAT': 371, 'OPEN': 19}
+420 {'SAT': 398, 'OPEN': 22}
+450 {'SAT': 427, 'OPEN': 23}
+480 {'SAT': 442, 'OPEN': 38}
+510 {'SAT': 471, 'OPEN': 39}
+540 {'SAT': 501, 'OPEN': 39}
+570 {'SAT': 527, 'OPEN': 43}
+600 {'SAT': 557, 'OPEN': 43}
+630 {'SAT': 583, 'OPEN': 47}
+660 {'SAT': 613, 'OPEN': 47}
+690 {'SAT': 642, 'OPEN': 48}
+720 {'SAT': 666, 'OPEN': 54}
+750 {'SAT': 696, 'OPEN': 54}
+780 {'SAT': 726, 'OPEN': 54}
+810 {'SAT': 753, 'OPEN': 57}
+840 {'SAT': 780, 'OPEN': 60}
+870 {'SAT': 808, 'OPEN': 62}
+900 {'SAT': 834, 'OPEN': 66}
+930 {'SAT': 857, 'OPEN': 73}
+960 {'SAT': 886, 'OPEN': 74}
+990 {'SAT': 910, 'OPEN': 80}
+1020 {'SAT': 938, 'OPEN': 82}
+1050 {'SAT': 961, 'OPEN': 89}
+1080 {'SAT': 987, 'OPEN': 93}
+1110 {'SAT': 1014, 'OPEN': 96}
+1140 {'SAT': 1040, 'OPEN': 100}
+1170 {'SAT': 1066, 'OPEN': 104}
+1200 {'SAT': 1092, 'OPEN': 108}
+1230 {'SAT': 1114, 'OPEN': 116}
+1254 {'SAT': 1125, 'OPEN': 129}
+30 {'UNSAT': 9, 'SAT': 15, 'OPEN': 6}
+36 {'UNSAT': 9, 'SAT': 18, 'OPEN': 9}
+30 {'SAT': 30}
+60 {'SAT': 59, 'OPEN': 1}
+90 {'SAT': 89, 'OPEN': 1}
+120 {'SAT': 117, 'OPEN': 1, 'UNSAT': 2}
+150 {'SAT': 145, 'OPEN': 1, 'UNSAT': 4}
+180 {'SAT': 175, 'OPEN': 1, 'UNSAT': 4}
+205 {'SAT': 188, 'OPEN': 13, 'UNSAT': 4}
+30 {'OPEN': 30}
+60 {'OPEN': 60}
+90 {'OPEN': 90}
+120 {'OPEN': 116, 'UNSAT': 4}
+150 {'OPEN': 142, 'UNSAT': 8}
+180 {'OPEN': 172, 'UNSAT': 8}
+210 {'OPEN': 199, 'UNSAT': 11}
+212 {'OPEN': 201, 'UNSAT': 11}
+{"rows": 11585, "local_15": 4071, "local_16": 1450, "exterior": 556, "transport": 803, "above_local": 1152, "any_positive": 4814} native target replays 803
+All row bindings, certificates, saved local models and output bounds verified.
+MAIN_VERIFY_WALL_SECONDS=143.62
