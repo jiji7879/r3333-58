@@ -1,0 +1,76 @@
+{
+ "file": "gen-TT.cnf",
+ "kind": "T",
+ "stats": {
+  "units": 297,
+  "flag_clauses": 44700,
+  "global_flags": 0,
+  "profile": 0,
+  "saturation": 82,
+  "floors": 6880,
+  "caps": 54216,
+  "c4free": 581760,
+  "clauses_built": 822930,
+  "leftover": 0,
+  "random_triangles": 1645,
+  "fails": 0
+ },
+ "ok": true
+}
+{
+ "file": "gen-TT-recip.cnf",
+ "kind": "T",
+ "stats": {
+  "units": 297,
+  "flag_clauses": 44700,
+  "global_flags": 235820,
+  "profile": 0,
+  "saturation": 82,
+  "floors": 6880,
+  "caps": 54216,
+  "c4free": 581760,
+  "clauses_built": 1058750,
+  "leftover": 0,
+  "random_triangles": 1645,
+  "fails": 0
+ },
+ "ok": true
+}
+{
+ "file": "gen-UU.cnf",
+ "kind": "U",
+ "stats": {
+  "units": 297,
+  "flag_clauses": 44700,
+  "global_flags": 0,
+  "profile": 0,
+  "saturation": 82,
+  "floors": 6880,
+  "caps": 54216,
+  "c4free": 581760,
+  "clauses_built": 822930,
+  "leftover": 0,
+  "random_triangles": 1645,
+  "fails": 0
+ },
+ "ok": true
+}
+{
+ "file": "gen-UU-recip.cnf",
+ "kind": "U",
+ "stats": {
+  "units": 297,
+  "flag_clauses": 44700,
+  "global_flags": 235820,
+  "profile": 0,
+  "saturation": 82,
+  "floors": 6880,
+  "caps": 54216,
+  "c4free": 581760,
+  "clauses_built": 1058750,
+  "leftover": 0,
+  "random_triangles": 1645,
+  "fails": 0
+ },
+ "ok": true
+}

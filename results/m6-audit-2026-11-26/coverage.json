@@ -1,0 +1,91 @@
+{
+  "original_13_leaves_closed": 12,
+  "original_residual_id": "n025",
+  "original_residual_cube": [
+    -305498,
+    -305501,
+    -305503,
+    -305505,
+    -305512,
+    -305482
+  ],
+  "twelve_profile_options_exact": true,
+  "twelve_profile_options": [
+    [
+      15,
+      15,
+      13,
+      14
+    ],
+    [
+      15,
+      15,
+      14,
+      13
+    ],
+    [
+      15,
+      16,
+      12,
+      14
+    ],
+    [
+      15,
+      16,
+      13,
+      13
+    ],
+    [
+      15,
+      16,
+      14,
+      12
+    ],
+    [
+      16,
+      15,
+      12,
+      14
+    ],
+    [
+      16,
+      15,
+      13,
+      13
+    ],
+    [
+      16,
+      15,
+      14,
+      12
+    ],
+    [
+      16,
+      16,
+      11,
+      14
+    ],
+    [
+      16,
+      16,
+      12,
+      13
+    ],
+    [
+      16,
+      16,
+      13,
+      12
+    ],
+    [
+      16,
+      16,
+      14,
+      11
+    ]
+  ],
+  "later_m7_tree_residual_note": "m7 separately refined the root to three open cubes; this report does not claim to supersede it.",
+  "full_rows_closed": 0,
+  "full_profiles_closed": 0,
+  "scope": "Equal-kind reciprocal/inactive relaxations and three augmented leaf refutations; not the ticket-balanced, strict or mixed full-row alternatives."
+}

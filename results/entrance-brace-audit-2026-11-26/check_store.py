@@ -96,10 +96,18 @@ def main():
         'per_family_certified': dict(sorted(counts.items())),
         'per_family_replayed': dict(sorted(verified_counts.items())),
         'complete': len(replayed) == len(records),
-        'scope_warning': 'Only explicitly stored/replayed cases are covered; this is not a strict/mixed/profile elimination. Accepted theorem: three complete TT:2, TT:3 and UT:3 families (1800 cases).',
+        'scope_warning': 'All 2830 stored proofs replay VERIFIED. Accepted complete families: only TT:2 and UT:3 (1200 cases); TT:3 is partial at 443/600. No strict/mixed/profile elimination.',
     }
     assert doc['cnf_hashes_rebuilt'] == 2830
     assert len(records) == 2830
+    complete_families = {
+        fam: counts[fam] for fam in counts
+        if summary[fam]['certified'] == 600 and summary[fam]['replayed'] == 600
+    }
+    doc['accepted_complete_families'] = complete_families
+    doc['accepted_case_count'] = sum(complete_families.values())
+    assert doc['accepted_case_count'] == 1200
+    assert complete_families == {'TT:2:5,5,5': 600, 'UT:3:5,5,5': 600}
     (OUT / 'store-audit.json').write_text(json.dumps(doc, indent=2, sort_keys=True) + '\n')
     print(json.dumps(doc, indent=2, sort_keys=True), flush=True)
     if not doc['complete']:

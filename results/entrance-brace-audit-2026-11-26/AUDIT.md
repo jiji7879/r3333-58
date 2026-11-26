@@ -14,19 +14,20 @@ list assigns 2,830 cases to verified certificates and 770 to OPEN. The manifest
 also contains two earlier UNKNOWN attempts with no stored proof. Counts must
 therefore filter records by `drat == "VERIFIED"`, not count manifest lines.
 
-**Accepted scoped theorem.** The three complete, independently replayed
-families have 600 cases each:
+**Correct accepted scope (see also [verdict correction](../verdict-correction-smwwdcyxb-m2.md)).**
+Only two complete, independently replayed families have 600 cases each:
 
 | family | certified scope |
 | --- | --- |
 | `TT:2:5,5,5` | two 16-arms carry T/T, entrance in the 13-class |
-| `TT:3:5,5,5` | two 16-arms carry T/T, entrance in the 12-class |
 | `UT:3:5,5,5` | two 16-arms carry U/T, entrance in the 12-class |
 
-These 1,800 DRAT certificates exclude a 16-vertex entrance brace in exactly
-those cases. No `(5,5,5)` case outside them, no partial `UT:2`, `UU:2`, `UU:3`
-family, and no broader wording is part of the acceptance. In particular, the
-report's headline about *every* root is not established by the store.
+These 1,200 DRAT certificates exclude a 16-vertex entrance brace in exactly
+those cases. `TT:3` is only partly covered (443/600), so an earlier verdict that
+included it as a complete family was a scope bookkeeping error. No `(5,5,5)`
+case outside the two complete families, no partial `TT:3`, `UT:2`, `UU:2`,
+`UU:3` family, and no broader wording is part of the accepted theorem. In
+particular, the report's headline about *every* root is not established.
 
 At the start of this audit 2,824 of all 2,830 stored proofs had been
 independently replayed; the six others are being replayed by
@@ -57,9 +58,10 @@ source fingerprints are recorded in `geometry-receipt.json` and rechecked by
 `finish_audit.py`; see `finish-audit.log` and `store-audit.json`.
 
 There are still **770 OPEN cases** of the $(5,5,5)$ shape in this enumeration:
-157 in `TT:3`, 9 in `UU:2`, 4 in `UT:2`, and all 600 in `UU:3`. The three
-complete accepted families total 1,800 cases; the additional verified partial
-families do not change the acceptance's scope. A 16-brace theorem at every
+157 in `TT:3`, 9 in `UU:2`, 4 in `UT:2`, and all 600 in `UU:3`. The two
+complete accepted families total 1,200 cases; all other stored certificates,
+including those in `TT:3`, are partial-family evidence only. They do not change
+the acceptance's scope. A 16-brace theorem at every
 $(16,16,13,12)$ root is **not** established. An entrance is $\beta_r\ge1$, not
 strictness $\beta_r>\alpha_r$, so neither strict nor balanced-active is closed.
 Neither this store nor the separate reciprocal C&C audit closes a frozen row,

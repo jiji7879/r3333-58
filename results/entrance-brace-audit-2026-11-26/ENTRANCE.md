@@ -1,7 +1,7 @@
 # Entrance points at a (16,16,13,12) root of K58 have a 15-vertex brace — historical submission
 
 **Read `AUDIT.md` first.** This is the member's original write-up. Its
-certificate inventory and replayed scope have since changed; only the three
+certificate inventory and replayed scope have since changed; only the two
 complete families described in `AUDIT.md` are accepted. The broad theorem in
 this original report must not be quoted without that scope.
 

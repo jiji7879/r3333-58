@@ -1,4 +1,9 @@
 {
+  "accepted_case_count": 1200,
+  "accepted_complete_families": {
+    "TT:2:5,5,5": 600,
+    "UT:3:5,5,5": 600
+  },
   "all_replays_cnf_and_proof_match": true,
   "certified_records": 2830,
   "cnf_hashes_rebuilt": 2830,
@@ -71,7 +76,7 @@
   "replayed_verified": 2830,
   "residual_cases": 3600,
   "residual_cases_open": 770,
-  "scope_warning": "All 2830 stored case proofs replay VERIFIED, but only the listed cases are covered. This is not a strict/mixed/profile elimination. The accepted theorem is limited to the three complete TT:2, TT:3 and UT:3 families (1800 cases).",
+  "scope_warning": "All 2830 stored proofs replay VERIFIED. Complete-family acceptance is only TT:2 (T/T, entrance in 13-class) and UT:3 (U/T, entrance in 12-class), 1200 cases. TT:3 is partial at 443/600. No strict/mixed/profile elimination.",
   "source_inputs_unchanged": true,
   "source_manifest": ".ultramath/smwwdcyxb/m2/proofs/manifest.jsonl",
   "unknown_manifest_lines": 2

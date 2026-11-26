@@ -1,0 +1,3 @@
+PASS n017,n022,n024: root+cube, augmented input and proof SHA-256 checked
+PASS all three retained verification receipts; fresh independent n024 replay
+PASS 12 exact profile options, and original residual n025 only

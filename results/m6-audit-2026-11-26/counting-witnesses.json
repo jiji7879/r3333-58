@@ -1,0 +1,16 @@
+{
+  "inactive": {
+    "all_nonnegative": true,
+    "constraints": 1324,
+    "tight_constraints": 966,
+    "variables": 912,
+    "verified_with_exact_Fraction": true
+  },
+  "reciprocal": {
+    "all_nonnegative": true,
+    "constraints": 1495,
+    "tight_constraints": 935,
+    "variables": 912,
+    "verified_with_exact_Fraction": true
+  }
+}
