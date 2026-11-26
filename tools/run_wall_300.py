@@ -30,6 +30,8 @@ def main():
     p.add_argument('work', type=Path)
     p.add_argument('--seconds', type=int, default=300)
     p.add_argument('--results-dir', type=Path, default=Path('results/wall-row-300-2026-11-26'))
+    p.add_argument('--bin-dir', type=Path,
+                   help='Directory containing the pinned Kissat binary (default: WORK/bin)')
     args = p.parse_args()
     if args.seconds <= 0:
         p.error('--seconds must be positive')
@@ -38,7 +40,7 @@ def main():
     root = Path(__file__).resolve().parents[1]
     results = args.results_dir if args.results_dir.is_absolute() else root / args.results_dir
     results.mkdir(parents=True, exist_ok=True)
-    kissat = args.work.parent / 'bin/kissat'
+    kissat = (args.bin_dir if args.bin_dir is not None else args.work.parent / 'bin') / 'kissat'
     assert sha(kissat) == 'b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f'
     checker = root / '.ultramath/smwxbvh79/m6/checker/drat-trim'
     assert sha(checker) == 'dc0fb03ed4a924d9721545baa215941d336d296719796f05747970ee63aac6de'

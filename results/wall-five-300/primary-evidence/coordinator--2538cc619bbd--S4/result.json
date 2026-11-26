@@ -1,0 +1,27 @@
+{
+  "cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-five-300/rows/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/parent.cnf",
+  "cnf_sha256": "577826693b85609833d32d8f9553144e747791072d4e34e29978e66e67342922",
+  "engine": "kissat",
+  "command": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-five-300/bin/kissat",
+    "--time=300",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-five-300/rows/2538cc619bbd84b5dd36927b3c660912938814c5ec894e3323e8b09137135ac9/parent.cnf",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-five-300/runs/2538cc619bbd--S4/proof.drat"
+  ],
+  "solver_wall_limit_seconds": 300,
+  "conflict_limit": null,
+  "watchdog_seconds": 360,
+  "started_utc": "2026-11-26T17:04:20Z",
+  "wall_seconds": 300.00781778618693,
+  "returncode": 0,
+  "user_cpu_seconds": 299.092771,
+  "system_cpu_seconds": 0.526582,
+  "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-five-300/runs/2538cc619bbd--S4/solver.log",
+  "log_sha256": "d7ca5f24e8cdb49258109fb844e380db23a5e95a3826bf58f13ab1252409d90d",
+  "watchdog_timeout": false,
+  "process_scope": "one solver subprocess per invocation; caller controls concurrency",
+  "scope": "The complete hash-pinned first-tier-row formula plus its named directional cuts. Not a Ramsey conclusion by itself.",
+  "solver_result": "OPEN",
+  "status": "OPEN_AT_300_SECONDS",
+  "unfinished_trace_deleted": true
+}

@@ -1,0 +1,59 @@
+{
+  "row_id": "a2323f6487a28deee85ea668d1afd8d4db1f2e2ccb419435dc7422319e699243",
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "branch": 51,
+  "charge": 4,
+  "placement": [
+    3,
+    0,
+    0
+  ],
+  "root_kinds": [
+    "T",
+    "T",
+    "-",
+    "-"
+  ],
+  "tier": "first",
+  "recipe": "tables=True,total_critical=True,full_root=False,cas=off,depth=0",
+  "parent_cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m8/rows/a2323f6487a2/parent.cnf",
+  "parent_sha256": "4cd2848c3367244b5ccbd26159939f48cd38a7309c7fd011db8e0a3e440181d0",
+  "roster_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "variables": 19407,
+  "clauses": 184075,
+  "engine": {
+    "name": "kissat",
+    "version": "4.0.4",
+    "binary": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-profile-16-16-14-11-600/bin/kissat",
+    "binary_sha256": "b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f"
+  },
+  "command": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-profile-16-16-14-11-600/bin/kissat",
+    "--time=300",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m8/rows/a2323f6487a2/parent.cnf",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m8/runs/a2323f6487a2-300s-kissat/proof.drat"
+  ],
+  "solver_wall_limit_seconds": 300,
+  "conflict_limit": null,
+  "watchdog_seconds": 360,
+  "started_utc": "2026-11-26T16:33:30Z",
+  "wall_seconds": 300.0427617051173,
+  "returncode": 0,
+  "user_cpu_seconds": 293.79384899999997,
+  "system_cpu_seconds": 0.47685099999999997,
+  "solver_status_line": "UNKNOWN",
+  "conflicts": 5777579,
+  "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m8/runs/a2323f6487a2-300s-kissat/solver.log",
+  "log_sha256": "047b2c529b959af9920243bfef9540fbaa6c00942670e0c14a085c24a0568394",
+  "watchdog_timeout": false,
+  "process_scope": "one native solver subprocess; sequentially in this member lane",
+  "scope": "The complete hash-pinned frozen first-tier whole-row parent (tables=True,total_critical=True,full_root=False, CAS off, depth 0). Not a Ramsey conclusion and not a profile result.",
+  "solver_result": "OPEN",
+  "status": "OPEN_AT_300_SECONDS",
+  "unfinished_trace_deleted": true
+}

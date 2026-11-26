@@ -1,0 +1,63 @@
+{
+  "row_id": "b17f4613bba26d4a6a192e987ee4eb8dcd48e7bd1d54ea649d836b4addadb5dd",
+  "profile": [
+    16,
+    14,
+    14,
+    13
+  ],
+  "profile_key": "16,14,14,13",
+  "branch": 24,
+  "root_kinds": [
+    "T",
+    "-",
+    "-",
+    "-"
+  ],
+  "marked_size": 15,
+  "mark_position": 0,
+  "charge": 2,
+  "placement": [
+    3,
+    0,
+    0
+  ],
+  "selection_key_sha256": "0802195812c6d087870f4b00288ac565ea0820c095dc12577e5778a5f9b0fae7",
+  "tier": "first",
+  "recipe": "tables=True,total_critical=True,full_root=False,cas=off,depth=0",
+  "parent_cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m6/rows/b17f4613bba2/parent.cnf",
+  "parent_sha256": "a8574aeacc98e3b937e04316451957a1ef9066c4ee7a3778d1632caa817b14af",
+  "roster_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "variables": 18603,
+  "clauses": 179242,
+  "engine": {
+    "name": "kissat",
+    "version": "4.0.4",
+    "binary": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-profile-16-16-14-11-600/bin/kissat",
+    "binary_sha256": "b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f"
+  },
+  "command": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-profile-16-16-14-11-600/bin/kissat",
+    "--time=300",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m6/rows/b17f4613bba2/parent.cnf",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m6/runs/b17f4613bba2-300s-kissat/proof.drat"
+  ],
+  "solver_wall_limit_seconds": 300,
+  "conflict_limit": null,
+  "watchdog_seconds": 360,
+  "started_utc": "2026-11-26T17:06:39Z",
+  "wall_seconds": 300.03486255393364,
+  "returncode": 0,
+  "user_cpu_seconds": 298.78253,
+  "system_cpu_seconds": 0.636629,
+  "solver_status_line": "UNKNOWN",
+  "conflicts": 10978837,
+  "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwxrqkfl/m6/runs/b17f4613bba2-300s-kissat/solver.log",
+  "log_sha256": "161664ac192398db376e05b90e8e3c40fe9a703c388e5973e60c24dd4d22a026",
+  "watchdog_timeout": false,
+  "process_scope": "one native solver subprocess; sequential in member m6 lane",
+  "scope": "The complete hash-pinned frozen first-tier whole-row parent (tables=True,total_critical=True,full_root=False, CAS off, depth 0). Not a Ramsey conclusion and not a profile result.",
+  "solver_result": "OPEN",
+  "status": "OPEN_AT_300_SECONDS",
+  "unfinished_trace_deleted": true
+}
