@@ -126,6 +126,28 @@ This binds the exact `941d51630693…` FIRST parent and transports its proof to
 the exact RETRY formula, with a missing-signed-unit negative control. It does
 not generalize the result to any other row.
 
+## Four-row unsplit A/B/C ablation
+
+`run_unsplit_ablation.py` combines the independent construction and
+measurement auditors for one controlled test of rules without binary splitting:
+
+- A: original first-tier parent only;
+- B: original plus pentagon, generalized-spoke and pair clauses;
+- C: B plus the validated third-word clauses.
+
+Four third-active parents were each called at cap 40,000 with one worker.
+Launch observations bind the fresh case directory, actual native invocations
+(including any hidden 4x-cap base fallback), stdout, conflicts, return codes and
+wall timings. A separate constructor audit checks the exact construction plan.
+All 12 valid results are OPEN: 480,007 actual conflicts, five cap overshoots
+(maximum 2), no base-fallback invocation and no SAT or UNSAT result. The
+stopping decision is to stop rather than rank variants by overshoot.
+
+See `../../results/adaptive-wall-2026-11-26/UNSPLIT_ABLATION.md`, its two JSON
+audit reports and `unsplit-construction-plan.json`. The small hand-over archive
+is `../../dist/unsplit-ablation-v2.zip` (hash in `../../dist/SHA256SUMS`). This
+is a matched-block local measurement, not a cohort or Ramsey claim.
+
 ## Model-supported physical word probes
 
 `pattern_wave_probe.py` runs a bounded batch of physical third-word patterns
