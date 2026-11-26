@@ -1,0 +1,13 @@
+{
+  "formula": "results/wall-closeout-2026-11-26/work/child.cnf",
+  "formula_sha256": "10ce781d8b3572a39bcaafab45439ae8e26324fd9bc966724c86affea54eb4d9",
+  "proof_sha256": "4a867d051a62ecfaa06f45c5a17395d0c890ef31fefa4afaf606845b550be5f8",
+  "proof_bytes": 100900149,
+  "checker": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/satcheck/bin/drat-trim",
+  "invocation": "drat-trim child.cnf negative.drat -w -i",
+  "returncode": 0,
+  "wall_seconds": 74.6214883159846,
+  "verified_lines": [
+    "s VERIFIED"
+  ]
+}

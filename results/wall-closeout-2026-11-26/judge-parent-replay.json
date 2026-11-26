@@ -1,0 +1,25 @@
+{
+  "formula_sha256": "27d40700033eb1b9c98eef4ba40710d3eac698e3fedbf9e356e5438fdecf90bf",
+  "proof_sha256": "4a867d051a62ecfaa06f45c5a17395d0c890ef31fefa4afaf606845b550be5f8",
+  "returncode": 0,
+  "wall_seconds": 76.82956068706699,
+  "verified": true,
+  "last": [
+    "",
+    "c parsing input formula with 305599 variables and 835933 clauses",
+    "",
+    "c finished parsing, read 100900149 bytes from proof file",
+    "",
+    "c detected empty clause; start verification via backward checking",
+    "",
+    "c 13169 of 835933 clauses in core                            ",
+    "",
+    "c 358025 of 1739360 lemmas in core using 51111404 resolution steps",
+    "",
+    "c 2042 RAT lemmas in core; 417195 redundant literals in core lemmas",
+    "",
+    "s VERIFIED",
+    "",
+    "c verification time: 76.681 seconds"
+  ]
+}

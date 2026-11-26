@@ -1,0 +1,8 @@
+results/wall-closeout-2026-11-26/lean-check/ContactBridge.lean:41:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'ContactBridge.flagClauses_eq_meaning' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ContactBridge.one_sided_miss_clauses_do_not_converse' does not depend on any axioms
+'ContactBridge.reverse_H11_of_exact6_to_exact10' depends on axioms: [propext, Classical.choice, Quot.sound]

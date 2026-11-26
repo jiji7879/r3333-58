@@ -1,0 +1,33 @@
+{
+  "script": ".ultramath/smwxbvh79/m6/audit_frontier.py",
+  "script_sha256": "ca6e33c50d7da9d0a91afae6b311fdd58bca3e2fb8be9669e0408817234106bc",
+  "dependency": "m1/.deps, python-sat 1.9.dev22",
+  "method": "fresh rebuild and byte-comparison of exact split-cover receipts; separate native checker replays are in m6-all-terminal-proofs-coordinator-replay.json",
+  "parents": {
+    "c488_021-001": {
+      "receipt": ".ultramath/smwxbvh79/m6/frontier-c488_021-001.json",
+      "receipt_sha256": "a18ea91a14fa39eaade55a062eb64992c4d8a2fa9b7ab40693cc1603e56bae2a",
+      "regenerated_byte_identical": true,
+      "parent_H11p_sha256": "504636f5cb093aadc4bfce6649a6144dfde4c5ba338a33d6cda39921e59df015",
+      "cut_sha256": "154619abe147d55f439ff9327cb813e97ed0494060a74db9dcd5aaf2c860a32c",
+      "terminal_count": 16,
+      "closed_count": 14,
+      "residuals": [
+        "c488_021-032",
+        "c488_021-033"
+      ]
+    },
+    "c488_021-002": {
+      "receipt": ".ultramath/smwxbvh79/m6/frontier-c488_021-002.json",
+      "receipt_sha256": "72ef8c4349648cab3b479f6968bf61308d029b079065673997482c98f2e42e61",
+      "regenerated_byte_identical": true,
+      "parent_H11p_sha256": "3742eb72996eb5aab26f3608c2af8729b37717cbc9f8b50a0d714e9b5fdd06bb",
+      "cut_sha256": "154619abe147d55f439ff9327cb813e97ed0494060a74db9dcd5aaf2c860a32c",
+      "terminal_count": 15,
+      "closed_count": 14,
+      "residuals": [
+        "c488_021-032"
+      ]
+    }
+  }
+}

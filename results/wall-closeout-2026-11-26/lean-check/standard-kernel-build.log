@@ -1,0 +1,5 @@
+'ContactBridge.flagClauses_eq_meaning' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactBridge.flagClauses_true_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactBridge.one_sided_miss_clauses_do_not_converse' does not depend on any axioms
+'ContactBridge.floor_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactBridge.reverse_H11_of_exact6_to_exact10' depends on axioms: [propext, Classical.choice, Quot.sound]

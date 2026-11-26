@@ -1,0 +1,27 @@
+{
+  "bit_positions": "source vertices 1..15; bit 0 unused",
+  "inputs": {
+    "frontier": ".scratch/hrise-audit/K58_wall_H_rise/results/next-low-orbits.tsv.gz",
+    "frontier_sha256": "5bc029788080e9922653a1e4e859299f3ebad96183ecbd528c045c2dd676e68d",
+    "receipt": ".ultramath/smwxbvh79/m1/h11-link-receipt.json",
+    "receipt_sha256": "b1c929721904519be2d5041e91a1d189970bb32e447d839b7e38601db6a6ca45"
+  },
+  "new_complement_contained_old": true,
+  "new_low_masks": 210,
+  "new_low_orbits": 26,
+  "normalized_spec": "a9ed9506b66e66226d295a874f3502b06b72ec7997b7af925edfd3e436bc1cd3",
+  "old_representatives_remaining_if_new_exclusions_are_verified": 63,
+  "old_unresolved_masks_per_row": 775,
+  "older_masks_no_longer_remaining_given_new_exclusions": 565,
+  "relation": "low_mask = 65534 xor high_mask",
+  "remaining_if_new_exclusions_are_verified": 210,
+  "rows": {
+    "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296": {
+      "mask_difference": 565,
+      "new_complement_contained_old": true,
+      "orbit_representative_difference": 63
+    }
+  },
+  "scope": "0404 exact-11 remaining high masks versus attached four-low frontier",
+  "unverified": "No new exclusion is replayed or raised to a bound by this comparison."
+}

@@ -1,0 +1,21 @@
+{
+  "baseline_child_sha256": "2a8f73ae1ddaa69e7471abb62ae6341807e5ef29b86e2ea889374212a4a01601",
+  "proof_sha256": "4a867d051a62ecfaa06f45c5a17395d0c890ef31fefa4afaf606845b550be5f8",
+  "returncode": 0,
+  "wall_seconds": 72.25863952399231,
+  "has_verified_line": true,
+  "tail": [
+    "",
+    "c detected empty clause; start verification via backward checking",
+    "",
+    "c 13178 of 834128 clauses in core                            ",
+    "",
+    "c 359441 of 1739360 lemmas in core using 50930544 resolution steps",
+    "",
+    "c 2043 RAT lemmas in core; 419625 redundant literals in core lemmas",
+    "",
+    "s VERIFIED",
+    "",
+    "c verification time: 72.121 seconds"
+  ]
+}

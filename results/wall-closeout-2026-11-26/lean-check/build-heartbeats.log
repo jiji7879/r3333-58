@@ -1,0 +1,6 @@
+results/wall-closeout-2026-11-26/lean-check/ContactBridge.lean:42:2: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+'ContactBridge.flagClauses_eq_meaning' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ContactBridge.one_sided_miss_clauses_do_not_converse' does not depend on any axioms
+'ContactBridge.reverse_H11_of_exact6_to_exact10' depends on axioms: [propext, Classical.choice, Quot.sound]
