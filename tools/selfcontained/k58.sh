@@ -4,6 +4,8 @@
 #   ./k58.sh doctor     check the machine and replay the bundled example
 #   ./k58.sh test       close 5 cases end to end (a few minutes)
 #   ./k58.sh run ...    run shards
+#   ./k58.sh wallcc ...        single-row cube-and-conquer with fresh per-leaf DRAT
+#   ./k58.sh wallcc-smoke      run the wall toolkit's ordinary proof controls
 #   ./k58.sh uniform ...         search the seven fully sending uniform children
 #   ./k58.sh profile-fast ...    run the optimized (15,14,14,14) search
 #   ./k58.sh finalise   build a manifest and replay every certificate
@@ -16,7 +18,7 @@
 #   ./k58.sh pin        pin the encoding (recipe + encoder revision + CNF hashes)
 set -uo pipefail
 cd "$(dirname "$0")"
-K58_VERSION="2026-11-25b"
+K58_VERSION="2026-11-26-wallcc"
 ROOT=$PWD
 BUNDLE=$ROOT/k58
 export PATH="$ROOT/bin:$PATH"
@@ -128,6 +130,26 @@ cmd_run() {
   echo "rerun the identical command to resume."
   $PY "$BUNDLE/run_cover.py" "${args[@]}" | tee -a "$EV/run.log"
   $PY "$BUNDLE/summarize_queue.py" "$EV" | tee -a "$EV/summary.txt"
+}
+
+cmd_wallcc() {
+  need_venv
+  local pdir="$ROOT/wallcc"
+  export PYTHONPATH="$pdir/frozen${PYTHONPATH:+:$PYTHONPATH}"
+  export TMPDIR="${TMPDIR:-$ROOT/.scratch/wallcc}"
+  mkdir -p "$TMPDIR"
+  "$PY" "$pdir/wallcc.py" "$@"
+}
+
+cmd_wallcc_smoke() {
+  need_venv
+  local pdir="$ROOT/wallcc"
+  export PYTHONPATH="$pdir/frozen${PYTHONPATH:+:$PYTHONPATH}"
+  export TMPDIR="$ROOT/.scratch/wallcc-smoke"
+  mkdir -p "$TMPDIR"
+  "$PY" "$pdir/selftest.py"
+  "$PY" "$pdir/leafcert_selftest.py"
+  [ -f "$pdir/smoke-results.json" ] || echo "optional merged wall-row fixture smoke-results.json is absent; it was not run or replaced"
 }
 
 cmd_finalise() {
@@ -285,6 +307,8 @@ case "${1:-}" in
   run) shift; cmd_run "$@" ;;
   uniform) shift; need_venv; exec "$PY" "$BUNDLE/uniform.py" "$@" ;;
   profile-fast) shift; need_venv; exec "$PY" "$BUNDLE/profile_fast.py" "$@" ;;
+  wallcc) shift; cmd_wallcc "$@" ;;
+  wallcc-smoke) shift; cmd_wallcc_smoke "$@" ;;
   finalise) shift; cmd_finalise "$@" ;;
   status) cmd_status ;;
   watch) shift; cmd_watch "$@" ;;

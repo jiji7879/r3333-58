@@ -1,0 +1,2 @@
+{"origin": {"kind": "dimacs", "source_sha256": "523e1110d2fb8b38d97e7d2f37f0b169c10c83095ed924bac84eb599b73db3e7"}, "parent_sha256": "523e1110d2fb8b38d97e7d2f37f0b169c10c83095ed924bac84eb599b73db3e7", "variables": 36463, "clauses": 217986, "cuts": 0, "tables": 0, "depth": 1, "leaf_count": 2}
+{"counts": {"OPEN": 2}, "leaves": 2, "origin": {"kind": "dimacs", "source_sha256": "523e1110d2fb8b38d97e7d2f37f0b169c10c83095ed924bac84eb599b73db3e7"}, "parent_sha256": "523e1110d2fb8b38d97e7d2f37f0b169c10c83095ed924bac84eb599b73db3e7", "processed": 2, "status": "OPEN"}

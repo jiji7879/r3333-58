@@ -208,3 +208,13 @@ solver CPU, 0.793 s replay CPU, 163 KB certificate, receipt
 `first/TTT-_1_232.jsonl`. That replay time is a third of the ~2.2 CPU-s per case measured
 on the 95-case evidence, so the 10-14 h finalise estimate for a 100k-case evidence
 directory stays on the conservative side.
+
+## Optional single-row wall/frontier driver (added 2026-11-26)
+
+`./k58.sh wallcc` adds the validated single-row cube-and-conquer frontend, and
+`./k58.sh wallcc-smoke` runs its ordinary proof controls. See
+[wallcc/README.md](wallcc/README.md) for frozen-row commands, per-leaf DRAT,
+`inccnf` versus base-level certificate boundaries, exact root reduction, and the
+optional hypothesis-scoped entrance projection. Existing `run_cover.py` recipes
+and completed ledger cases are unchanged. The initial wall pilot remained OPEN;
+this is an integration feature, not a claimed wall or bound result.

@@ -1,0 +1,2 @@
+PASS  K5/K6, all split assignments, sharding, same-plan resume, missing sibling, damaged proof and model with updated hashes, capped retry, both DRAT exports, and DIMACS edge cases
+optional merged wall-row fixture smoke-results.json is absent; it was not run or replaced

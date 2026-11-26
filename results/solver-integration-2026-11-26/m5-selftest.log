@@ -1,0 +1,63 @@
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f002.cnf", "closure": 1, "deleted": 1, "kept": 0, "output_clauses": 1}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f009.cnf", "closure": 3, "deleted": 7, "kept": 3, "output_clauses": 6}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f010.cnf", "closure": 2, "deleted": 4, "kept": 2, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f011.cnf", "closure": 1, "deleted": 1, "kept": 0, "output_clauses": 1}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f017.cnf", "closure": 0, "deleted": 0, "kept": 6, "output_clauses": 6}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f020.cnf", "closure": 2, "deleted": 3, "kept": 0, "output_clauses": 2}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f026.cnf", "closure": 0, "deleted": 0, "kept": 3, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f032.cnf", "closure": 1, "deleted": 1, "kept": 1, "output_clauses": 2}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f034.cnf", "closure": 2, "deleted": 5, "kept": 9, "output_clauses": 11}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f036.cnf", "closure": 1, "deleted": 3, "kept": 3, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f037.cnf", "closure": 2, "deleted": 3, "kept": 4, "output_clauses": 6}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f038.cnf", "closure": 0, "deleted": 0, "kept": 1, "output_clauses": 1}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f041.cnf", "closure": 0, "deleted": 0, "kept": 3, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f044.cnf", "closure": 3, "deleted": 7, "kept": 2, "output_clauses": 5}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f045.cnf", "closure": 1, "deleted": 1, "kept": 2, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f046.cnf", "closure": 3, "deleted": 5, "kept": 2, "output_clauses": 5}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f049.cnf", "closure": 1, "deleted": 3, "kept": 1, "output_clauses": 2}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f051.cnf", "closure": 0, "deleted": 0, "kept": 2, "output_clauses": 2}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f052.cnf", "closure": 2, "deleted": 3, "kept": 1, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f053.cnf", "closure": 3, "deleted": 5, "kept": 1, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f056.cnf", "closure": 4, "deleted": 9, "kept": 2, "output_clauses": 6}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f058.cnf", "closure": 2, "deleted": 4, "kept": 5, "output_clauses": 7}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f060.cnf", "closure": 0, "deleted": 0, "kept": 3, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f061.cnf", "closure": 9, "deleted": 29, "kept": 0, "output_clauses": 9}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f062.cnf", "closure": 2, "deleted": 4, "kept": 8, "output_clauses": 10}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f063.cnf", "closure": 0, "deleted": 0, "kept": 1, "output_clauses": 1}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f064.cnf", "closure": 2, "deleted": 2, "kept": 0, "output_clauses": 2}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f066.cnf", "closure": 3, "deleted": 4, "kept": 0, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f068.cnf", "closure": 3, "deleted": 9, "kept": 8, "output_clauses": 11}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f069.cnf", "closure": 4, "deleted": 7, "kept": 0, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f074.cnf", "closure": 2, "deleted": 6, "kept": 0, "output_clauses": 2}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f076.cnf", "closure": 1, "deleted": 2, "kept": 1, "output_clauses": 2}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f077.cnf", "closure": 1, "deleted": 1, "kept": 0, "output_clauses": 1}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f078.cnf", "closure": 1, "deleted": 1, "kept": 2, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f079.cnf", "closure": 4, "deleted": 9, "kept": 0, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f081.cnf", "closure": 3, "deleted": 5, "kept": 2, "output_clauses": 5}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f085.cnf", "closure": 2, "deleted": 5, "kept": 2, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f087.cnf", "closure": 0, "deleted": 0, "kept": 4, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f089.cnf", "closure": 1, "deleted": 4, "kept": 6, "output_clauses": 7}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f091.cnf", "closure": 3, "deleted": 3, "kept": 0, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f092.cnf", "closure": 7, "deleted": 9, "kept": 0, "output_clauses": 7}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f093.cnf", "closure": 3, "deleted": 9, "kept": 0, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f094.cnf", "closure": 4, "deleted": 8, "kept": 4, "output_clauses": 8}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f095.cnf", "closure": 0, "deleted": 0, "kept": 8, "output_clauses": 8}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f096.cnf", "closure": 0, "deleted": 0, "kept": 4, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f099.cnf", "closure": 3, "deleted": 12, "kept": 0, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f103.cnf", "closure": 1, "deleted": 1, "kept": 0, "output_clauses": 1}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f107.cnf", "closure": 1, "deleted": 2, "kept": 4, "output_clauses": 5}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f109.cnf", "closure": 1, "deleted": 2, "kept": 0, "output_clauses": 1}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f111.cnf", "closure": 1, "deleted": 2, "kept": 3, "output_clauses": 4}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f112.cnf", "closure": 3, "deleted": 6, "kept": 0, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f116.cnf", "closure": 5, "deleted": 13, "kept": 0, "output_clauses": 5}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f117.cnf", "closure": 0, "deleted": 0, "kept": 3, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f118.cnf", "closure": 3, "deleted": 12, "kept": 0, "output_clauses": 3}
+{"ok": true, "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m5/out/selftest/f119.cnf", "closure": 4, "deleted": 8, "kept": 0, "output_clauses": 4}
+{"instances": 120, "model_set_equal": 55, "root_unsat": 65, "certificates_replayed": 55}
+{
+ "deleted_clause_witness": "rejected: ('deleted clause lacks its satisfying trail literal', 0)",
+ "newlen": "rejected: ('newlen mismatch', 4, 2, 3)",
+ "output_bytes": "rejected: output file differs from reconstruction",
+ "reason_clause": "rejected: ('literal missing from reason clause', 0, 1, 1)",
+ "trail_literal_sign": "rejected: ('literal missing from reason clause', 0, -1, 0)"
+}

@@ -1,0 +1,26 @@
+{
+ "rows": 140,
+ "kinds": {
+  "UU--": 14,
+  "TU--": 70,
+  "TT--": 56
+ },
+ "rows_with_at_least_one_certified_class": 126,
+ "covered_point_instances": 1568,
+ "by_kind_points": {
+  "UU--": 0,
+  "TU--": 840,
+  "TT--": 728
+ },
+ "uncovered_not_certified": {
+  "TT:3": "443/600",
+  "UT:2": "596/600",
+  "UU:2": "591/600",
+  "UU:3": "0/600"
+ }
+}
+
+kind rows   pts    covered                uncovered classes
+TT-- 56     728    2                      3
+TU-- 70     840    3                      2
+UU-- 14     0      -                      2,3

@@ -21,6 +21,8 @@ python3 "$REPO/tools/patch_run_cover_timeout.py" "$PKG/k58/run_cover.py" --secon
 cp "$KISSAT" "$PKG/bin/kissat"; cp "$DRAT" "$PKG/bin/drat-trim"; chmod +x "$PKG/bin"/*
 cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,verify_parallel.py,retry_status.py,find_unpublished.py,manifest_parallel.py,cover_evidence_full_root.patch} "$PKG/tools/"
 cp "$HERE/k58.sh" "$HERE/k58-batch.sh" "$HERE/patch_batch_only_small.py" "$HERE/README.md" "$PKG/"
+# The tested single-row wall driver, optional entrance projection and proof tools.
+cp -a "$HERE/wallcc" "$PKG/"
 # The compat package's additions: the compact/fast search (profile_fast.py and its
 # two kernels), the seven uniform children (uniform.py, uniform_kernel.py and the
 # arm-type table), the bundled uniform proofs, and its run_cover.py, which replaces

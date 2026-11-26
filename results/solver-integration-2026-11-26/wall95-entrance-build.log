@@ -1,0 +1,26 @@
+{
+ "parent": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-wall-95c7/baseline/parent.cnf",
+ "out": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-wall-95c7/entrance-parent.cnf",
+ "parent_clauses": 202662,
+ "parent_vars": 28903,
+ "clauses": 217986,
+ "variables": 36463,
+ "added": 15324,
+ "ternaries": 0,
+ "mode": "direct",
+ "kinds": "TU",
+ "points": 12,
+ "coverage": {
+  "2": [
+   "UT:2:5,5,5",
+   false,
+   "596/600 certified cases"
+  ],
+  "3": [
+   "UT:3:5,5,5",
+   true,
+   "600/600 certified cases"
+  ]
+ },
+ "sha256": "523e1110d2fb8b38d97e7d2f37f0b169c10c83095ed924bac84eb599b73db3e7"
+}

@@ -1,0 +1,2 @@
+{"origin": {"kind": "wall", "id": "95c7de5e1875afea2972703c547d5ea57407d6e4ccdbb378b1711da74622a12c", "tier": "retry"}, "parent_sha256": "04ba3caa5e458e73cd52374fbdf547e3be4a1f80f7ddf6f9ba074a8f58aad4d2", "variables": 28903, "clauses": 202662, "cuts": 315, "tables": 15, "depth": 1, "leaf_count": 2}
+{"counts": {"OPEN": 2}, "leaves": 2, "origin": {"id": "95c7de5e1875afea2972703c547d5ea57407d6e4ccdbb378b1711da74622a12c", "kind": "wall", "tier": "retry"}, "parent_sha256": "04ba3caa5e458e73cd52374fbdf547e3be4a1f80f7ddf6f9ba074a8f58aad4d2", "processed": 2, "status": "OPEN"}

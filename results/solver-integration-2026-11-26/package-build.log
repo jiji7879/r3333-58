@@ -1,0 +1,3 @@
+patched /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/package-build/tmp.FVLh40fbym/k58-solver/k58/run_cover.py: checker limit 300s, failures skip the case
+re-pinned the example manifest to the patched runner
+d5d34e99c17a08fdc7240dc2062d38d5bd72aad624703c3af185bd11a75fdb0e  /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/dist/k58-solver.zip

@@ -1,0 +1,5 @@
+s VERIFIED  /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/review-m3/root-reduced/trace.json
+  derived units       7362
+  deleted (satisfied) 416785
+  kept (restricted)   641965
+  clauses 1058750 -> 649327

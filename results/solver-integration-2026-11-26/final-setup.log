@@ -1,0 +1,11 @@
+installing python-sat 1.9.dev22 (python 3.12)
+installed from the network
+python-sat 1.9.dev22
+python                 Python 3.12.14
+python-sat             ok 1.9.dev22
+kissat                 ok 4.0.4
+drat-trim              ok
+checker-cap            300s per certificate (K58_CHECK_SECONDS); a certificate that does not check in that time leaves its case OPEN
+disk                   28 GB free here (plan on 150-350 GB for the whole cover)
+replaying the bundled example (5 certificates, ~25 s)...
+example                ok {"counts": {"CADICAL_UNSAT": 1, "CERTIFIED": 5, "LEGACY_EVIDENCE_NEEDED": 2139, "OPEN": 111035}, "replayed": 5}

@@ -1,0 +1,10 @@
+T1 atmost_seq exact on n<=8, k<=3: PASS
+T2 no real literal or its negation is implied: PASS
+T3 caps+ternary projection exact on 13 points x 47 assignments: PASS
+T4 drop_root      rejected: vertex 1 has 0 pinned root colours
+T4 break_template rejected: R0 template is [], expected exactly one of U,T
+T4 hypothesis guards: PASS
+T5 scope table and empty UU cut: PASS
+T6 deterministic build, byte reproduction, tamper rejected: PASS (421809 clauses, 149764 vars, 13 ternary)
+T7 parent max var 146904, parent header 146904, augmented header 149764: PASS
+ALL TESTS PASS

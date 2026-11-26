@@ -1,0 +1,85 @@
+== toolchain
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+== GapFamilies.lean: verbatim copy of the repo file, hash-pinned
+ada8b3ca3a038172fff06376d612f8f9548297d739255e9796b7afad469b9324  lean/GapFamilies.lean
+ada8b3ca3a038172fff06376d612f8f9548297d739255e9796b7afad469b9324  /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/lean/K58/GapFamilies.lean
+   (identical)
+== compile
+   GapFamilies    lean/GapFamilies.lean:59:40: warning: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'K58.five_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.card_nb_le_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.familyB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.familyC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.dual_five_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.exact_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+ok
+   Saturation     lean/Saturation.lean:32:0: warning: automatically included section variable(s) unused in theorem `K58.saturation`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/Saturation.lean:110:0: warning: automatically included section variable(s) unused in theorem `K58.arm_ind`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'K58.saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.sixteen_arm_outside_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.arm_ind' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.saturation_clause' depends on axioms: [propext, Classical.choice, Quot.sound]
+ok
+   Discharge      lean/Discharge.lean:28:0: warning: automatically included section variable(s) unused in theorem `K58.R33_of`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/Discharge.lean:68:0: warning: automatically included section variable(s) unused in theorem `K58.R333_of`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'K58.R33_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R333_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.five_bound_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.card_nb_le_sixteen_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.familyB_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.familyC_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.dual_five_bound_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+ok
+== the four-cycle family of another member, recompiled here (unmodified)
+0defec33625bc1d2fa9dc42132d6773536cf19e85bd63e118456052448101b45  /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwvpsb38/m5/SmallSupportC4.lean
+'K58.supportShape_no_cycle4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.pinned_support_no_cycle4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.critical_support_no_cycle4' depends on axioms: [propext, Classical.choice, Quot.sound]
+== axiom audit (the only admissible axioms are the three standard ones)
+   'K58.saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.sixteen_arm_outside_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.arm_ind' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.saturation_clause' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.R33_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.R333_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.five_bound_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.card_nb_le_sixteen_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.familyB_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.familyC_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.dual_five_bound_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+   'K58.exact_pattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+== python hypothesis tests on the real parents
+   {"T0_atom_map_bijection": {"ok": true, "atoms": 6612, "expected": 6612, "collisions": [], "max_var": 6612}}
+   {"T1_reproduction": {"ok": true, "artifact": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwwdcyxb/m6/leaf-n024-fam.cnf", "sha256": "7e7e7a7859df54024cc3410c3c910a9a25cf7b011580de59773d5b2af2330480", "manifest_sha256": "7e7e7a7859df54024cc3410c3c910a9a25cf7b011580de59773d5b2af2330480", "manifest_listed": true, "hash_matches_manifest": true, "base_clauses": 834107, "family_clauses": 1474596, "appended": 640489, "rebuilt_saturation": 82, "recovered_from_artifact": 82, "missing_from_artifact": 0, "extra_in_artifact": 0, "pair": ["leaf-n024.cnf", "leaf-n024-fam.cnf"]}}
+   {"T1_reproduction": {"ok": true, "artifact": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwwdcyxb/m6/leaf-n017-fam.cnf", "sha256": "f467814092c56788ecd8202950144a8965d1797eb083f8c22f7244e5739bc117", "manifest_sha256": null, "manifest_listed": false, "hash_matches_manifest": false, "base_clauses": 834107, "family_clauses": 1474596, "appended": 640489, "rebuilt_saturation": 82, "recovered_from_artifact": 82, "missing_from_artifact": 0, "extra_in_artifact": 0, "pair": ["leaf-n017.cnf", "leaf-n017-fam.cnf"]}}
+   {"T1_reproduction": {"ok": true, "artifact": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwwdcyxb/m6/leaf-n022-fam.cnf", "sha256": "fe90bc61e7ed81430a28a39d582133cb2c8e0c555ebdb3abb5ed62c3df1f4d1c", "manifest_sha256": null, "manifest_listed": false, "hash_matches_manifest": false, "base_clauses": 834107, "family_clauses": 1474596, "appended": 640489, "rebuilt_saturation": 82, "recovered_from_artifact": 82, "missing_from_artifact": 0, "extra_in_artifact": 0, "pair": ["leaf-n022.cnf", "leaf-n022-fam.cnf"]}}
+   {"T2_negative_controls": {"drop_arm_unit": {"rejected": true, "fail_tags": ["H1 root arm 0 not pinned"]}, "flip_arm_unit": {"rejected": true, "fail_tags": ["H1 root arm 0 not pinned", "H1' negative unit in arm 0"]}, "positive_control": {"accepted": true}, "ok": true}}
+   10 result lines in .scratch/hypotheses.jsonl
+   passing: 8
+== all checks passed

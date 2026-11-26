@@ -1,0 +1,86 @@
+{
+ "formula": "gen-TT.cnf",
+ "sha256": "a95bd1488478bda460a8012ca22f37b8896a3b1cdb3df375d02b9f43f7bac8dc",
+ "sha_matches_manifest": true,
+ "nv": 59372,
+ "n_clauses": 822930,
+ "stats": {
+  "units": 297,
+  "pos_flags": 32,
+  "neg_flags": 25,
+  "global_flags": 0,
+  "profile_split": 0,
+  "saturation": 82,
+  "floors": 96,
+  "caps": 588,
+  "clone_rows": 0,
+  "c4free": 581760
+ },
+ "n_gadgets": 741,
+ "base": {
+  "definition_clauses": 134995,
+  "missing_from_formula": 0,
+  "formula_has_extra_base_shaped": null
+ },
+ "aux_ranges_disjoint": true,
+ "aux_outside_base": true,
+ "aux_cover_upto_nv": true,
+ "clauses_mixing_gadgets_or_unknown_aux": 0,
+ "gadget_clause_counts_match": true,
+ "family_counts": {
+  "base": 134995,
+  "units": 297,
+  "saturation": 82,
+  "c4free": 581760
+ },
+ "gadgets_all_transfer": true,
+ "gadgets_all_fresh": true,
+ "enforcement_checked": 741,
+ "enforcement_all_unsat": true,
+ "extension_all_ok": true,
+ "extension_exhaustive_gadgets": 406,
+ "extension_cases_total": 1020650
+}
+{
+ "formula": "gen-TT-recip.cnf",
+ "sha256": "f450ae9cfe1acfadfd6a173a61b0e9912f71cfdeec4f15e2f40606b10e747cbc",
+ "sha_matches_manifest": true,
+ "nv": 177280,
+ "n_clauses": 1058750,
+ "stats": {
+  "units": 297,
+  "pos_flags": 32,
+  "neg_flags": 25,
+  "global_flags": 232,
+  "profile_split": 0,
+  "saturation": 82,
+  "floors": 96,
+  "caps": 588,
+  "clone_rows": 0,
+  "c4free": 581760
+ },
+ "n_gadgets": 971,
+ "base": {
+  "definition_clauses": 134995,
+  "missing_from_formula": 0,
+  "formula_has_extra_base_shaped": null
+ },
+ "aux_ranges_disjoint": true,
+ "aux_outside_base": true,
+ "aux_cover_upto_nv": true,
+ "clauses_mixing_gadgets_or_unknown_aux": 0,
+ "gadget_clause_counts_match": true,
+ "family_counts": {
+  "base": 134995,
+  "units": 297,
+  "saturation": 82,
+  "c4free": 581760
+ },
+ "gadgets_all_transfer": true,
+ "gadgets_all_fresh": true,
+ "enforcement_checked": 971,
+ "enforcement_all_unsat": true,
+ "extension_all_ok": true,
+ "extension_exhaustive_gadgets": 406,
+ "extension_cases_total": 1035828
+}

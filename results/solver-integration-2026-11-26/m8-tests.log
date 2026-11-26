@@ -1,0 +1,45 @@
+{
+ "T1_litmap": {
+  "cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwwdcyxb/m6/gen-TT-recip.cnf",
+  "expected": 1653,
+  "found": 1653,
+  "missing": 0,
+  "ok": true
+ },
+ "T2_family": {
+  "vertices_x_colours": 232,
+  "failures": [],
+  "n_failures": 0,
+  "ok": true
+ },
+ "T4_level0": {
+  "cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwwdcyxb/m6/gen-TT-recip.cnf",
+  "level0": 7362,
+  "ok": true,
+  "n_failures": 0
+ },
+ "T5_simplify": {
+  "missing_level0_units": [],
+  "clauses_satisfied_by_L0": 416785,
+  "clauses_reduced_and_kept": 641965,
+  "n_unjustified": 0,
+  "unjustified_sample": [],
+  "out_declared_clauses": 649327,
+  "out_reduced_plus_units": 649327,
+  "ok": true
+ },
+ "T6_m6_hash_reproduction": {
+  "gen-TT-recip.cnf": {
+   "sha256": "0d32dad7c046f6e0b0dd64a7969f04a5f323d9c5f3cf5e00bd0ff2bcc868fa9e",
+   "manifest": "0d32dad7c046f6e0b0dd64a7969f04a5f323d9c5f3cf5e00bd0ff2bcc868fa9e",
+   "matches": true,
+   "bytes": 43241447
+  },
+  "root.cnf": {
+   "sha256": "559397e55e00a3c16f394d88741bd3bdffb7f86dad6be5179610ebb3e7346f8b",
+   "manifest": "559397e55e00a3c16f394d88741bd3bdffb7f86dad6be5179610ebb3e7346f8b",
+   "matches": true,
+   "bytes": 27819215
+  }
+ }
+}

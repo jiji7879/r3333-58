@@ -1,0 +1,15 @@
+PASS  K5/K6, all split assignments, sharding, same-plan resume, missing sibling, damaged proof and model with updated hashes, capped retry, both DRAT exports, and DIMACS edge cases
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/solver-improvement/K58_four_row_degree_solver/K58_four_row_degree_solver/parent/cc/K58_wall_cube_conquer/selftest.py", line 155, in <module>
+    print(json.dumps(audit_wall(out), sort_keys=True))
+                     ^^^^^^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/solver-improvement/K58_four_row_degree_solver/K58_four_row_degree_solver/parent/cc/K58_wall_cube_conquer/selftest.py", line 133, in audit_wall
+    fixture = json.loads((ROOT / "smoke-results.json").read_bytes())["merged_control"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/math/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/solver-improvement/K58_four_row_degree_solver/K58_four_row_degree_solver/parent/cc/K58_wall_cube_conquer/smoke-results.json'

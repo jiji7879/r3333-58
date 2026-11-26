@@ -1,0 +1,43 @@
+[PASS] T00 fixture php32 is UNSAT-shaped and not unit-closed: expected True, observed True
+[PASS] T00b fixture unit.cnf is unit-closed: expected True, observed True
+[PASS] T01 kissat UNSAT: expected True, observed verdict=UNSAT authority=drat-replay rc=20 bytes=20 cpu=0.001 wall=0.006
+[PASS] T01 kissat drat-trim verdict found by splitlines: expected True, observed True
+[PASS] T01 kissat raw '
+'-split would reject this valid proof: expected False, observed False
+[PASS] T01 kissat header count: expected True, observed True
+[PASS] T03 cadical UNSAT: expected True, observed verdict=UNSAT authority=drat-replay rc=20 bytes=20 cpu=0.002 wall=0.006
+[PASS] T03 cadical drat-trim verdict found by splitlines: expected True, observed True
+[PASS] T03 cadical raw '
+'-split would reject this valid proof: expected False, observed False
+[PASS] T03 cadical header count: expected True, observed True
+[PASS] T02 kissat SAT: expected True, observed verdict=SAT authority=model-check rc=10 bytes=0 cpu=0.001 wall=0.006
+[PASS] T02 kissat header count: expected True, observed True
+[PASS] T04 cadical SAT: expected True, observed verdict=SAT authority=model-check rc=10 bytes=0 cpu=0.002 wall=0.006
+[PASS] T04 cadical header count: expected True, observed True
+[PASS] T05 kissat --conflicts=1 gives UNKNOWN not a verdict: expected True, observed rc=0 verdict=UNKNOWN bytes=22
+[PASS] T05b cadical -c 1 gives UNKNOWN not a verdict: expected True, observed rc=0 verdict=UNKNOWN bytes=33
+[INFO] T05c cadical -t 1: rc=20 verdict=UNSAT wall=0.95s bytes=2916904
+[PASS] T06 SIGKILL gives negative exit status: expected True, observed rc=-9 wall=0.80 bytes=2097152
+[PASS] T06b partial proof from killed run does not verify: expected True, observed verified=False drat_rc=1 tail='s NOT VERIFIED |  | c verification time: 0.113 seconds'
+[PASS] T07a stale valid proof replays (the trap is real): expected True, observed verified=True bytes=20
+[PASS] T07b engine rejected the option, stale proof survives: expected True, observed rc=1 state=ERROR(1) bytes_now=20
+[PASS] T07c adapter does not report a verdict from the stale proof: expected True, observed verdict=ERROR authority=none
+[PASS] T08 empty proof verifies on a unit-closed formula (so 's VERIFIED' carries no attribution): expected True, observed verified=True tail='s VERIFIED |  | c verification time: 0.037 seconds'
+[PASS] T09 bare empty-clause proof rejected on non-UP-UNSAT formula: expected True, observed verified=False drat_rc=1 tail='s NOT VERIFIED |  | c verification time: 0.038 seconds'
+[PASS] T10 bare empty-clause proof rejected on non-UP-UNSAT formula: expected True, observed verified=False drat_rc=1 tail='s NOT VERIFIED |  | c verification time: 0.041 seconds'
+[PASS] T11 accepted truncation: 10 of 20 proof bytes still verify: expected True, observed verified=True drat_rc=0
+[PASS] T11b acceptance is sound: php32 + unit(5) is BCP-inconsistent: expected True, observed True
+[PASS] T11c unterminated binary empty clause rejected (no conflict): expected True, observed verified=False tail='s NOT VERIFIED |  | c verification time: 0.038 seconds'
+[PASS] T11d lemma without its 0-terminator is not accepted: expected True, observed verified=False tail='s NOT VERIFIED |  | c verification time: 0.041 seconds'
+[PASS] T11e full proof still verifies: expected True, observed verified=True
+[PASS] T12 missing CNF gives a nonzero non-verdict status: expected True, observed rc=1 status=ERROR(1)
+[PASS] T13 reader detects the header undercount: expected True, observed declared=4 actual=9
+[INFO] T13b undercounted header: kissat rc=1 status=ERROR(1); cadical rc=1 status=ERROR(1)
+[INFO] T13c kissat --relaxed on undercounted header: rc=20 status=UNSAT
+[PASS] T17a genuine model satisfies the formula: expected True, observed True
+[PASS] T17b the same model is rejected for a strengthened formula: expected True, observed first_unsatisfied=(-1,)
+[INFO] T14 out-of-range literal: rc=1 status=ERROR(1)
+[PASS] T15 existing proof file is rewritten on a SAT run: expected True, observed preexisting=True bytes=0 fresh=True verdict=SAT
+[PASS] T18 unopenable proof path is not a verdict: expected True, observed rc=1 status=ERROR(1) log="kissat: error: can not write proof to '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultrama"
+
+39/39 tests met expectation in 3.17s -> /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwx2syxr/m2/receipts-suite.json

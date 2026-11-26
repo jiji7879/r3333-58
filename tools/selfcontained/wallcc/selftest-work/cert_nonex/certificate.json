@@ -1,0 +1,143 @@
+{
+ "base": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/base.cnf",
+ "base_sha256": "f417ac693ea74798bc9a5c520f76a731f9d8908864f297eeecc0305269377ffb",
+ "variables": 8,
+ "engine": "kissat",
+ "budget": {
+  "conflicts": 10000,
+  "seconds": 30
+ },
+ "leaves": 2,
+ "status_counts": {
+  "UNSAT_VERIFIED": 2
+ },
+ "coverage_exhaustive": false,
+ "coverage": {
+  "cubes": 2,
+  "blocking_cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/coverage/blocking.cnf",
+  "blocking_sha256": "bb154129d7db8db7f04b6bae3b353e68724310863323e5a2b5c696342ad49252",
+  "exhaustive": false,
+  "solver": {
+   "cmd": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/bin/kissat",
+    "--conflicts=200000",
+    "--time=60",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/coverage/blocking.cnf",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/coverage/blocking.drat"
+   ],
+   "rc": 10,
+   "verdict": "SAT",
+   "wall_seconds": 0.001,
+   "child_cpu_seconds": 0.001,
+   "stdout_tail": "c maximum-resident-set-size:         20541440 bytes         20 MB\nc process-time:                                              0.00 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 10",
+   "stderr_tail": "",
+   "conflicts": 0,
+   "decisions": 0,
+   "propagations": 2,
+   "max_rss_bytes": 20541440,
+   "process_time": 0.0,
+   "proof": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/coverage/blocking.drat",
+   "proof_bytes": 0,
+   "proof_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "model_literals": 8
+  }
+ },
+ "conclusion": "NO CLOSURE: cube disjunction not shown exhaustive",
+ "total_wall_seconds": 0.081,
+ "records": [
+  {
+   "leaf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf000.cnf",
+   "cube": [
+    -1,
+    2
+   ],
+   "cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf000.cnf",
+   "cnf_sha256": "569dc6757d5d206e82de8c2d58d8fd092ba91677092693e167b199bc61d26937",
+   "base": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/base.cnf",
+   "base_sha256": "f417ac693ea74798bc9a5c520f76a731f9d8908864f297eeecc0305269377ffb",
+   "leaf_sha256": "569dc6757d5d206e82de8c2d58d8fd092ba91677092693e167b199bc61d26937",
+   "variables": 8,
+   "base_clauses": 12,
+   "solve": {
+    "cmd": [
+     "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/bin/kissat",
+     "--conflicts=10000",
+     "--time=30",
+     "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf000.cnf",
+     "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf000.drat"
+    ],
+    "rc": 20,
+    "verdict": "UNSAT",
+    "wall_seconds": 0.001,
+    "child_cpu_seconds": 0.001,
+    "stdout_tail": "c maximum-resident-set-size:         20410368 bytes         19 MB\nc process-time:                                              0.00 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20",
+    "stderr_tail": "",
+    "conflicts": 1,
+    "decisions": 0,
+    "propagations": 2,
+    "max_rss_bytes": 20410368,
+    "process_time": 0.0,
+    "proof": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf000.drat",
+    "proof_bytes": 11,
+    "proof_sha256": "90650e4cfb9779c9e12713f1c23006ffd5d6a847e18f65697bea49ba93a1ae6b"
+   },
+   "drat": {
+    "verified": true,
+    "drat_trim_rc": 0,
+    "drat_trim_wall_seconds": 0.038,
+    "drat_trim_cpu_seconds": 0.038,
+    "drat_trim_tail": "c 0 RAT lemmas in core; 0 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.038 seconds",
+    "cnf_sha256": "569dc6757d5d206e82de8c2d58d8fd092ba91677092693e167b199bc61d26937",
+    "proof_sha256": "90650e4cfb9779c9e12713f1c23006ffd5d6a847e18f65697bea49ba93a1ae6b"
+   },
+   "status": "UNSAT_VERIFIED"
+  },
+  {
+   "leaf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf001.cnf",
+   "cube": [
+    1,
+    -2
+   ],
+   "cnf": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf001.cnf",
+   "cnf_sha256": "e9e4962ced657e0860551cfdff425a8cba75da99827fb376b5d91176d4ecc871",
+   "base": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/base.cnf",
+   "base_sha256": "f417ac693ea74798bc9a5c520f76a731f9d8908864f297eeecc0305269377ffb",
+   "leaf_sha256": "e9e4962ced657e0860551cfdff425a8cba75da99827fb376b5d91176d4ecc871",
+   "variables": 8,
+   "base_clauses": 12,
+   "solve": {
+    "cmd": [
+     "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/bin/kissat",
+     "--conflicts=10000",
+     "--time=30",
+     "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf001.cnf",
+     "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf001.drat"
+    ],
+    "rc": 20,
+    "verdict": "UNSAT",
+    "wall_seconds": 0.001,
+    "child_cpu_seconds": 0.001,
+    "stdout_tail": "c maximum-resident-set-size:         20541440 bytes         20 MB\nc process-time:                                              0.00 seconds\nc\nc ---- [ shutting down ] -----------------------------------------------------\nc\nc exit 20",
+    "stderr_tail": "",
+    "conflicts": 1,
+    "decisions": 0,
+    "propagations": 3,
+    "max_rss_bytes": 20541440,
+    "process_time": 0.0,
+    "proof": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/selfcontained/wallcc/selftest-work/cert_nonex/leaf001.drat",
+    "proof_bytes": 11,
+    "proof_sha256": "1d6da119106677d1abd1ea0267e7652c3b0c84ea4c74df45ec0244372dba4cc5"
+   },
+   "drat": {
+    "verified": true,
+    "drat_trim_rc": 0,
+    "drat_trim_wall_seconds": 0.039,
+    "drat_trim_cpu_seconds": 0.039,
+    "drat_trim_tail": "c 0 RAT lemmas in core; 0 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.039 seconds",
+    "cnf_sha256": "e9e4962ced657e0860551cfdff425a8cba75da99827fb376b5d91176d4ecc871",
+    "proof_sha256": "1d6da119106677d1abd1ea0267e7652c3b0c84ea4c74df45ec0244372dba4cc5"
+   },
+   "status": "UNSAT_VERIFIED"
+  }
+ ]
+}
