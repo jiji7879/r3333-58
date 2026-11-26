@@ -1,7 +1,7 @@
 .................................../opt/math/lib/python3.12/zipfile/__init__.py:1625: UserWarning: Duplicate name: 'K58_wall_copy_maps/data/wall-copy/outside-27/0122d0de168c7733374d5055af2a37e9c745a42a1e9da3fc6617dd098d530a3b/cap-45000-part-0-of-8/receipt.json'
   return self._open_to_write(zinfo, force_zip64=force_zip64)
-............
+..................................
 ----------------------------------------------------------------------
-Ran 47 tests in 2.819s
+Ran 69 tests in 4.234s
 
 OK

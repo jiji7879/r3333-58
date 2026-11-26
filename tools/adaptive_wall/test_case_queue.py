@@ -1,4 +1,5 @@
 import json
+import os
 import sqlite3
 import tempfile
 import unittest
@@ -320,7 +321,7 @@ class QueueTests(unittest.TestCase):
             other.close()
 
     def test_k58_identity_recomputes_real_supplied_row(self):
-        fixture = Path("../../.scratch/shared-learning-pilot/K58_shared_learning/cases/0dafe3363dab/row.json")
+        fixture = Path(os.environ.get("K58_ROW_JSON", "../../.scratch/shared-learning-pilot/K58_shared_learning/cases/0dafe3363dab/row.json"))
         if not fixture.exists():
             self.skipTest("checked installation absent")
         row = json.loads(fixture.read_text())

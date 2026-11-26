@@ -1,0 +1,30 @@
+{
+  "archive": "dist/adaptive-wall-solver.zip",
+  "archive_crc": "pass",
+  "bytes": 1452824,
+  "full_probe": {
+    "allocated_budgets_match": true,
+    "both_attempts": "OPEN",
+    "direct_conflicts": 60000,
+    "original_row": "OPEN",
+    "policy_outcome": "INVALID_SPLIT_WORK",
+    "split_conflicts": 60002,
+    "work_equality_match": false
+  },
+  "internal_files": 59,
+  "manifest_file_hashes": "59/59 verified",
+  "prepare": {
+    "audit_identity": "pass",
+    "derived_parent_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+    "empty_proof_rejected": true,
+    "original_parent_sha256": "33b7898ed58bd1a3a2e088f57d4bc9d01b5397e7b72f1f5f1449a7bf16f4a02a",
+    "positive_rup_replay": true
+  },
+  "schema": "adaptive-wall-solver-smoke/v1",
+  "scope": "one derived parent and one small test/archive; no cohort or Ramsey-bound claim",
+  "sha256": "507d436edce1e0caadeed63e9d121ea1fe899f71a8ebd5c1a53fb09701815b83",
+  "tests": {
+    "ran": 69,
+    "result": "OK"
+  }
+}

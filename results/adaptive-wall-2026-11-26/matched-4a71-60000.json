@@ -1,0 +1,130 @@
+{
+  "comparison_scope": "one selected strengthened parent; no cohort or wall-speedup claim",
+  "direct": {
+    "budget_conflicts": 60000,
+    "conflicts_used": 60000,
+    "leaf_receipts": [
+      {
+        "budget": {
+          "check_seconds": 300,
+          "conflicts": 60000,
+          "proof": "eager",
+          "seconds": 60
+        },
+        "conflicts_used": 60000,
+        "cube": [],
+        "elapsed_s": 2.21,
+        "node": "r",
+        "plan_sha256": "35415f3d57e4dba7d5de6bcfe95d825443a8df1dc03a70475b4011a31d42122b",
+        "reason": "conflict limit",
+        "solver": "CaDiCaL 1.9.5 / python-sat 1.9.dev22",
+        "status": "OPEN"
+      }
+    ],
+    "run_wall_seconds": 2.929976920830086,
+    "status": {
+      "counts": {
+        "OPEN": 1
+      },
+      "leaves": 1,
+      "origin": {
+        "kind": "dimacs",
+        "source_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b"
+      },
+      "parent_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+      "processed": 1,
+      "status": "OPEN"
+    },
+    "verify_wall_seconds": 0.24251832091249526
+  },
+  "observed_wall_seconds": {
+    "direct_run": 2.929976920830086,
+    "direct_verify": 0.24251832091249526,
+    "note": "Separate process timings; not used to override the conflict-policy outcome. Split run includes both sequential attempts.",
+    "split_run": 3.0671686711721122,
+    "split_verify": 0.2515657099429518
+  },
+  "original_row_closure": "NOT_EVALUATED: requires a complete original-parent DRAT replay",
+  "parent_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+  "policy": {
+    "case_id": "4a71c66153af2a1cb64fc609b92bdd3dc93714fb3983a687812849a19f1798b2",
+    "general_speedup_claim": false,
+    "may_split_on_this_evidence": false,
+    "outcome": "INVALID_SPLIT_WORK",
+    "scope": "strengthened-parent:17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+    "wall_clock_conclusion": "NOT_MEASURED"
+  },
+  "rule_receipt": {
+    "added_clauses": 384,
+    "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+    "empty_proof_rejected": true,
+    "original_root_status": "OPEN",
+    "original_sha256": "33b7898ed58bd1a3a2e088f57d4bc9d01b5397e7b72f1f5f1449a7bf16f4a02a",
+    "positive_verified": true,
+    "proof_sha256": "bbfe14c5a30eaa7879718da67c83866700f2b486e8121accb8e06b62bfb543fa",
+    "query_sha256": "810f073981467885bca1604f9bdf46e7f00f3729736378663e4c4008af2317b7",
+    "row_id": "4a71c66153af2a1cb64fc609b92bdd3dc93714fb3983a687812849a19f1798b2",
+    "scope": "RUP-only verification of all 384 rule consequences; not a parent refutation",
+    "strengthened_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b"
+  },
+  "source_report_sha256": "3a7b244a2953f9de62e952e647be9bf256b47c9654c6b417811caf60cc701129",
+  "split": {
+    "budget_conflicts": 60000,
+    "conflicts_used": 60002,
+    "leaf_receipts": [
+      {
+        "budget": {
+          "check_seconds": 300,
+          "conflicts": 30000,
+          "proof": "eager",
+          "seconds": 60
+        },
+        "conflicts_used": 30002,
+        "cube": [
+          -11857
+        ],
+        "elapsed_s": 1.068,
+        "node": "r0",
+        "plan_sha256": "1639222f16df1ded3a0ee4b89785d8090cae7632126cdbe0b4a3fd1e177b5612",
+        "reason": "conflict limit",
+        "solver": "CaDiCaL 1.9.5 / python-sat 1.9.dev22",
+        "status": "OPEN"
+      },
+      {
+        "budget": {
+          "check_seconds": 300,
+          "conflicts": 30000,
+          "proof": "eager",
+          "seconds": 60
+        },
+        "conflicts_used": 30000,
+        "cube": [
+          11857
+        ],
+        "elapsed_s": 1.231,
+        "node": "r1",
+        "plan_sha256": "1639222f16df1ded3a0ee4b89785d8090cae7632126cdbe0b4a3fd1e177b5612",
+        "reason": "conflict limit",
+        "solver": "CaDiCaL 1.9.5 / python-sat 1.9.dev22",
+        "status": "OPEN"
+      }
+    ],
+    "run_wall_seconds": 3.0671686711721122,
+    "split_variable": 11857,
+    "status": {
+      "counts": {
+        "OPEN": 2
+      },
+      "leaves": 2,
+      "origin": {
+        "kind": "dimacs",
+        "source_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b"
+      },
+      "parent_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+      "processed": 2,
+      "status": "OPEN"
+    },
+    "verify_wall_seconds": 0.2515657099429518
+  },
+  "status_summary": "both attempts OPEN; INVALID_SPLIT_WORK; no split/direct winner or original-row closure"
+}

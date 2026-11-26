@@ -12,14 +12,20 @@ and not a claim that any complete profile is closed.
   RUP-entailed cut materialization and worker leases.
 - `cubelearn.py` — exact parent-plus-cube child binding, DRAT core extraction,
   assumption-deletion reproof and signed-map proof transport.
+- `strengthened_probe.py` — construct a derived parent from the 384 audited
+  square/six clauses, freshly replay their implication, then compare one direct
+  attempt against an exact depth-one pair on that same derived parent.
 - `replay_941.py` — one bounded supplied-artifact replay driver; it starts no
   SAT search and uses the already checked local encoder environment.
 - `import_six.py` — real queue integration for all six direct cases: frozen
   FIRST-parent regeneration, exact registration and full root replay.
 - `split_policy.py` — conservative same-query conflict accounting and bounded
   one-level split/stop decisions.
-- `benchmark_audit.py` and `projection_bindings.py` — independent receipt and
-  signed-projection accounting for the supplied copy-map experiment.
+- `benchmark_audit.py`, `projection_bindings.py`, `probe_audit.py` —
+  independent receipt, signed-projection and exact matched-run accounting for
+  the copy-map experiment and this strengthened-parent probe.
+- A separate `probe_audit.py compare` check reports matched allocation while
+  retaining CaDiCaL's actual conflict counters, including cap overshoot.
 
 The source files were copied unchanged from the accepted member artifacts,
 except for repository-relative fixture/checker paths in the tests. Tests and
@@ -53,14 +59,55 @@ From the repository root:
 cd tools/adaptive_wall
 export PYTHONDONTWRITEBYTECODE=1
 export K58_937_ZIP="../../attachments/let-s-try-and-rbdv/K58_wall_937_copy_map_solver.zip"
-python3 -m unittest -v test_case_queue test_cubelearn test_benchmark
+python3 -m unittest -v test_case_queue test_cubelearn test_benchmark test_strengthened_probe test_probe_audit
 ```
 
-Expected scope: **47 tests** (25 queue, 10 learner, 12 benchmark/policy).
+Expected scope: **69 tests** (25 queue, 10 learner, 12 benchmark/policy,
+10 strengthened-probe and 12 exact-match accounting tests).
 The `drat-trim` and Kissat binaries used by tests are the already checked
 executables in `../selfcontained/wallcc/bin/`. The benchmark integration test
 uses the supplied ZIP but never unpacks or modifies it and launches no solver.
 Only the learner's tiny synthetic minimization test starts a solver.
+
+## Matched direct versus one-level split
+
+`strengthened_probe.py` is the updated runnable controller for the requested
+experiment. It uses `wallcc` directly on the same strengthened CNF. Direct uses
+60,000 conflicts at depth 0; the two depth-1 children receive 30,000 each. It
+uses one worker and eager proof generation and separately records run/verify
+wall time. The 384-goal implication and an empty-proof negative control are
+replayed before any search. Plan, parent, child, proof and checker hashes are
+retained.
+
+From this directory, with a checked `python-sat==1.9.dev22` interpreter:
+
+```sh
+python3 strengthened_probe.py \
+  --square /path/to/K58_square_six \
+  --wallcc ../selfcontained/wallcc/wallcc.py \
+  --checker ../selfcontained/wallcc/bin/drat-trim \
+  --python /path/to/python-sat-1.9.dev22/bin/python \
+  --out ../../.scratch/adaptive-wall/matched-new \
+  --conflicts 60000 --seconds 60
+```
+
+The square directory must contain `evidence/parent.cnf.gz`,
+`evidence/study.json` and `evidence/implication.drat`. `--prepare-only`
+performs the RUP and materialization checks without solving. Output directories
+must be new.
+
+The actual probe used derived parent SHA-256
+`17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b`.
+Both attempts returned OPEN: direct used 60,000 conflicts, and the children
+used 30,002 and 30,000. CaDiCaL's two-conflict overshoot is preserved, so the
+strict work-equality outcome is `INVALID_SPLIT_WORK`; it is not a tie and not
+evidence for splitting. Independently, `probe_audit.py compare` confirms the
+matching parent/source and 60,000 allocated conflicts per arm and reports the
+actual 60,002 split total without masking the overshoot. Cap equality and
+actual-work equality are distinct checks. The original row remains OPEN. Wall
+time was 2.929977 seconds for direct run and 3.067169 seconds for split run
+(cubing and solving), with separate verification timings recorded. These are
+observations on one parent, not a speedup estimate.
 
 ## Replay the demonstrated supplied full case
 

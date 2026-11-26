@@ -1,0 +1,110 @@
+{
+  "actual_conflicts": {
+    "complete": true,
+    "direct": 60000,
+    "split": 60002
+  },
+  "direct": {
+    "accounting_note": "Caps are allocated, not actual work; actual may exceed cap. No UNSAT closure claim is made.",
+    "actual_conflicts_total": 60000,
+    "allocated_conflicts_total": 60000,
+    "depth": 0,
+    "leaf_count": 1,
+    "leaves": [
+      {
+        "actual_conflicts": 60000,
+        "allocated_conflicts": 60000,
+        "artifact_sha256": null,
+        "budget": {
+          "check_seconds": 300,
+          "conflicts": 60000,
+          "proof": "eager",
+          "seconds": 60
+        },
+        "checker_sha256": null,
+        "conflict_components": {
+          "conflicts_used": 60000
+        },
+        "cube": [],
+        "elapsed_s_including_leaf_check": 2.21,
+        "node": "r",
+        "reason": "conflict limit",
+        "status": "OPEN"
+      }
+    ],
+    "parent_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+    "run": "../../.scratch/adaptive-wall/matched-4a71-v1/direct",
+    "source_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+    "split_limit": 19425,
+    "split_variable": null,
+    "status_counts": {
+      "OPEN": 1
+    },
+    "unknown_actual_conflict_nodes": []
+  },
+  "matched_parent_and_source": true,
+  "matched_total_allocated_conflicts": 60000,
+  "scope": "Matched single-case accounting only; no speedup, root/export, or original-parent closure conclusion.",
+  "split": {
+    "accounting_note": "Caps are allocated, not actual work; actual may exceed cap. No UNSAT closure claim is made.",
+    "actual_conflicts_total": 60002,
+    "allocated_conflicts_total": 60000,
+    "depth": 1,
+    "leaf_count": 2,
+    "leaves": [
+      {
+        "actual_conflicts": 30002,
+        "allocated_conflicts": 30000,
+        "artifact_sha256": null,
+        "budget": {
+          "check_seconds": 300,
+          "conflicts": 30000,
+          "proof": "eager",
+          "seconds": 60
+        },
+        "checker_sha256": null,
+        "conflict_components": {
+          "conflicts_used": 30002
+        },
+        "cube": [
+          -11857
+        ],
+        "elapsed_s_including_leaf_check": 1.068,
+        "node": "r0",
+        "reason": "conflict limit",
+        "status": "OPEN"
+      },
+      {
+        "actual_conflicts": 30000,
+        "allocated_conflicts": 30000,
+        "artifact_sha256": null,
+        "budget": {
+          "check_seconds": 300,
+          "conflicts": 30000,
+          "proof": "eager",
+          "seconds": 60
+        },
+        "checker_sha256": null,
+        "conflict_components": {
+          "conflicts_used": 30000
+        },
+        "cube": [
+          11857
+        ],
+        "elapsed_s_including_leaf_check": 1.231,
+        "node": "r1",
+        "reason": "conflict limit",
+        "status": "OPEN"
+      }
+    ],
+    "parent_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+    "run": "../../.scratch/adaptive-wall/matched-4a71-v1/split",
+    "source_sha256": "17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b",
+    "split_limit": 19425,
+    "split_variable": 11857,
+    "status_counts": {
+      "OPEN": 2
+    },
+    "unknown_actual_conflict_nodes": []
+  }
+}

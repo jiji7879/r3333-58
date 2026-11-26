@@ -19,6 +19,39 @@ measure a cohort-wide efficiency gain**. The artifacts support concrete local
 closures and implementations, not a claim that adaptive splitting will solve
 the 11,585-row wall or improve the Ramsey bound.
 
+## Updated strengthened-parent probe
+
+The new ``tools/adaptive_wall/strengthened_probe.py`` materialized the 384
+verified square/six consequences on the OPEN row `4a71c66153af…` and replayed
+the RUP-only implication plus an empty-proof negative control before solving.
+Original parent SHA-256 is `33b7898ed58bd1a3a2e088f57d4bc9d01b5397e7b72f1f5f1449a7bf16f4a02a`;
+the distinct derived parent SHA-256 is
+`17cd9b8bf8ee597782feb426145f7f926a076171e818635a270b4d662e0afe0b`.
+
+Branch 44, charge 7, profile `(16,16,14,11)` and the original parent bytes were
+independently regenerated from the checked encoder. Matching was then tested
+on that one derived parent:
+
+- direct depth 0, cap 60,000: **60,000 conflicts, OPEN**, 2.929977 s run wall time;
+- depth-one split, children at cube `-11857` and `11857`, each capped at 30,000:
+  **30,002 + 30,000 = 60,002 conflicts, both OPEN**, 3.067169 s total run wall time.
+
+The caps match nominally, but CaDiCaL overshot one child's cap by two
+conflicts. The independent allocation audit in `matched-4a71-accounting.json`
+confirms matched parent/source and 60,000 allocated conflicts on each arm, with
+complete actual counters 60,000 and 60,002. Overshoot is not normalized away.
+Separately, the strict work-equality policy returns **INVALID_SPLIT_WORK**,
+not a tie and not support for either schedule. Verification timings are
+separately retained. No general wall-speedup interpretation or original-row
+closure follows. The exact report is `matched-4a71-60000.json`; source report
+SHA-256 is `3a7b244a2953f9de62e952e647be9bf256b47c9654c6b417811caf60cc701129`.
+
+The updated controller also has regression tests for parent/plan hash
+mismatches, noncomplementary children, receipt reuse, premature OPEN and this
+cap overshoot. The exact allocation audit has additional tests for unknown
+timeout counters, deferred passes, changed settings and cube geometry. The
+complete old-plus-new suite is now **69 passing tests**.
+
 ## Six direct whole-row certificates now independently replayed
 
 All six direct rows in the separate `(15,15,15,12)` package passed on:
@@ -126,7 +159,7 @@ close their parent.
 - `replay_941.py`: bounded representative driver with no SAT search;
 - tests and `README.md`.
 
-The consolidated test command ran **47 tests, all passing**. Log:
+The consolidated test command ran **69 tests, all passing**. Log:
 `tests.log`. No broad SAT search was launched; only the tiny synthetic
 learner-minimization test invokes Kissat.
 
@@ -180,6 +213,30 @@ split on one OPEN parent. No cohort-wide H floor or edge bound should enter
 that experiment without its required native evidence. The frozen-formula
 validator is now demonstrated for these six real parents, but it is not a
 substitute for those four integrations.
+
+## Runnable solver bundle and independent checks
+
+`dist/adaptive-wall-solver.zip` is the checked hand-over package, 1,452,824
+bytes, SHA-256
+`507d436edce1e0caadeed63e9d121ea1fe899f71a8ebd5c1a53fb09701815b83`.
+It includes the controller, audit code, tests, small real-row identity fixture
+and only the `4a71…` 384-rule fixture, not the large historical proof stores.
+The packed launcher supports `setup`, `test`, `prepare` and `probe`; an existing
+checked python-sat 1.9.dev22 interpreter can be selected with `K58_PYTHON`.
+It does not silently download dependencies except on an explicit `setup`.
+
+Independent checks of the extracted final bundle include all 69 tests, the
+RUP/materialization preparation path, probe identity reconstruction, 59
+internal manifest file-hash checks and ZIP CRC validation. Full probe behavior
+is the exact matched result above: both attempts OPEN, nominal allocations
+60,000 per arm but actual totals 60,000 versus 60,002. The independent
+allocation auditor confirms matched parent/source; strict work equality remains
+invalid and no split winner or original-row closure is claimed. See
+`bundle-smoke.json` and `matched-4a71-accounting.json`.
+
+The archive remains ignored by Git. Its new hash is recorded in
+`dist/SHA256SUMS`; large proof payloads, temporary environments and the six
+internal execution databases are not part of the commit.
 
 ## Provenance and auxiliary records
 
