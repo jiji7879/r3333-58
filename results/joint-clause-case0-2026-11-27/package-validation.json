@@ -1,0 +1,9 @@
+{
+  "proofs_replayed": 8,
+  "literal_goal_definitions_checked": 8,
+  "parent_hashes_checked": 8,
+  "strengthened_formulas_and_OPEN_UNKNOWN_checked": 2,
+  "whole_branch_closed": false,
+  "file_hashes_checked": 50,
+  "scope": "Only these exact case-0 branches entail the displayed clauses. No generic Wave A transfer, full branch/row closure or Ramsey result."
+}

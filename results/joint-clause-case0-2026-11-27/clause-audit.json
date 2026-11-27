@@ -1,0 +1,140 @@
+{
+  "schema": "joined-clause-bank-strict-replay/v1",
+  "entailed_clauses": [
+    {
+      "tag": "branch1-w1-1-w2-2",
+      "parent_sha256": "f7e6f5b2cb5a95bf65c16c730f7c4e10bd359b3d413d031bcbf9dd180dd5ff8d",
+      "clause": [
+        -347,
+        -390,
+        -610
+      ],
+      "query_sha256": "a8401bd0765da9bf234a439e2ac0dfbaa9fb97fafb27f2be37922ee60d3a04ad",
+      "proof_sha256": "e8de6749efda841152653e913a8be8e736da8247565c59dfab43ca5394d4a1f2",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    },
+    {
+      "tag": "branch2-w1-1-w2-2",
+      "parent_sha256": "e85234ab42705601f1b83a2e6127ecb89dea669ba78865f35ea57e47815ece7a",
+      "clause": [
+        -347,
+        -390,
+        -610
+      ],
+      "query_sha256": "9765cb6524c703fdb39c5c928ea7832cbe6ba5dfcc172999ed01c0c580c5148e",
+      "proof_sha256": "36c9d8b9fe65855ef52cdac1c11edbdee00e47ba4eb94cfb1b49f370af2dab0c",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    },
+    {
+      "tag": "branch1-w1-1-w2-9",
+      "parent_sha256": "f7e6f5b2cb5a95bf65c16c730f7c4e10bd359b3d413d031bcbf9dd180dd5ff8d",
+      "clause": [
+        -347,
+        -390,
+        -2038
+      ],
+      "query_sha256": "1fe716f5a2cb994392a21428d646f90c57fdb033fdd7d4a7a8034bf9ed6d3724",
+      "proof_sha256": "e8de6749efda841152653e913a8be8e736da8247565c59dfab43ca5394d4a1f2",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    },
+    {
+      "tag": "branch1-w1-1-w2-11",
+      "parent_sha256": "f7e6f5b2cb5a95bf65c16c730f7c4e10bd359b3d413d031bcbf9dd180dd5ff8d",
+      "clause": [
+        -347,
+        -390,
+        -2410
+      ],
+      "query_sha256": "3372336c8eac7f835f5d6473707e302d25bb986ba9d6b6652fc5130bd8f7012c",
+      "proof_sha256": "e8de6749efda841152653e913a8be8e736da8247565c59dfab43ca5394d4a1f2",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    },
+    {
+      "tag": "branch1-w1-1-w2-13",
+      "parent_sha256": "f7e6f5b2cb5a95bf65c16c730f7c4e10bd359b3d413d031bcbf9dd180dd5ff8d",
+      "clause": [
+        -347,
+        -390,
+        -2766
+      ],
+      "query_sha256": "26f5c6bf61e0a97f3b73d4f90f5901b554f536872e7d2cd552b08f487f18c42c",
+      "proof_sha256": "e8de6749efda841152653e913a8be8e736da8247565c59dfab43ca5394d4a1f2",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    },
+    {
+      "tag": "branch2-w1-1-w2-9",
+      "parent_sha256": "e85234ab42705601f1b83a2e6127ecb89dea669ba78865f35ea57e47815ece7a",
+      "clause": [
+        -347,
+        -390,
+        -2038
+      ],
+      "query_sha256": "779a082bb140c30a0ff4bac6a16a6bda93e3975f912b2c49763641f964ca954a",
+      "proof_sha256": "36c9d8b9fe65855ef52cdac1c11edbdee00e47ba4eb94cfb1b49f370af2dab0c",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    },
+    {
+      "tag": "branch2-w1-1-w2-11",
+      "parent_sha256": "e85234ab42705601f1b83a2e6127ecb89dea669ba78865f35ea57e47815ece7a",
+      "clause": [
+        -347,
+        -390,
+        -2410
+      ],
+      "query_sha256": "d552b611724cbaae2f6d0912ccaab9d61460403d42f9cc750624e370280d9b50",
+      "proof_sha256": "36c9d8b9fe65855ef52cdac1c11edbdee00e47ba4eb94cfb1b49f370af2dab0c",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    },
+    {
+      "tag": "branch2-w1-1-w2-13",
+      "parent_sha256": "e85234ab42705601f1b83a2e6127ecb89dea669ba78865f35ea57e47815ece7a",
+      "clause": [
+        -347,
+        -390,
+        -2766
+      ],
+      "query_sha256": "8da5fbb9c4e3f5f971031ccebb9ecacda680aca63f634b2d58e9b02762f6e4a5",
+      "proof_sha256": "36c9d8b9fe65855ef52cdac1c11edbdee00e47ba4eb94cfb1b49f370af2dab0c",
+      "strict_replay": "s VERIFIED, zero warnings",
+      "entailment_form": "P AND C-falsifying-units is UNSAT, therefore P entails C"
+    }
+  ],
+  "count": 8,
+  "unknown_full_parent_candidates": 20,
+  "strengthened_branches": [
+    {
+      "branch": 1,
+      "query_sha256": "1c8ea2ba60dcacc2e6d2e3dddc028790e844592e90e5f097293206698cd467d0",
+      "status": "OPEN_UNKNOWN",
+      "search_seconds": 3.0019550900906324,
+      "stats": {
+        "conflicts": 83909,
+        "decisions": 315808,
+        "propagations": 10977813,
+        "restarts": 6219
+      }
+    },
+    {
+      "branch": 2,
+      "query_sha256": "8555945565d41680e1eb8bdf069ffad20c0b82706131809d28da8349041a4b91",
+      "status": "OPEN_UNKNOWN",
+      "search_seconds": 3.002070977818221,
+      "stats": {
+        "conflicts": 93197,
+        "decisions": 516829,
+        "propagations": 10873182,
+        "restarts": 5798
+      }
+    }
+  ],
+  "whole_branch_closed": false,
+  "wave_a_physical_transfer_claimed": false,
+  "scope": "Each clause entailed by exact case-0 branch, certified by separate negation query. No claimed one-line RUP prefix or generic Wave A family. No whole branch, wall row or Ramsey bound is closed."
+}

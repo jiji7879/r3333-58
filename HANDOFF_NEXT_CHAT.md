@@ -10,6 +10,18 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (joint clause bank).** For the case-0 pivot $(31,42)$ and
+first second-arm vertex $1$, the conditional clause
+$\neg E_{31,w_1,2}\lor\neg E_{42,w_1,1}\lor\neg E_{42,w_2,1}$ is established at
+**$w_2=2,9,11,13$, independently on each physical pivot branch (0 and 3)**:
+eight full-parent negation queries are UNSAT with strict, warning-free replay.
+This is semantic entailment from the falsifying assignment, not a claimed RUP
+prefix or a generic Wave A transfer. Adding the four proven target clauses to
+each exact branch leaves both strengthened full branches OPEN at three seconds;
+the other 20 candidate hypotheses remain UNKNOWN, not invalid. The production
+cover is unchanged. Report, compact audit and archive-native replay:
+[results/joint-clause-case0-2026-11-27/REPORT.md](results/joint-clause-case0-2026-11-27/REPORT.md).
+
 **Updated 2026-11-27 (joint second-arm choices).** A controlled case-0 test at
 physical pivot $(31,42)$ and second-arm vertices $1,2$ found 56 checked local
 models and 200 strict local UNSAT proofs **per pivot colour** (physical 0/3),
