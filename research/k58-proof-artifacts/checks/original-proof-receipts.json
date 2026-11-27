@@ -1,0 +1,20 @@
+{
+  "D_formula_identity": "unchanged baseline body plus exactly 4687 3590 4034 4673 0 and -5160 3282 4822 0",
+  "compiled_tools": {
+    "drat_trim": "9df6d86b72f917c3bcb30f91e683c16843871fb93739ac14fb8dd18f15075077",
+    "lrat_check": "5b3c74ec9da4f635346142596a1665b670a45b112a17b724963ea2336099768a",
+    "lrat_text": "c9ab6a1ff626b87f08fc96a9892829a4ec945a2eb7baecdd33d13b83c805bbed"
+  },
+  "complete_original_parent_replays": {
+    "A0": "PASS",
+    "C0": "PASS",
+    "D0": "PASS",
+    "P13000": "PASS",
+    "squares_all_seven": "PASS"
+  },
+  "mined_clause_derivations": {
+    "502176": "s DERIVATION: all lemmas preserve satisfiability; not a refutation",
+    "577233": "s DERIVATION: all lemmas preserve satisfiability; not a refutation"
+  },
+  "path_harness_note": "An initial missing path was due to optional proof archives being separate from recheck.py; linked supplied files into the documented location before the passing replays."
+}

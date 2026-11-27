@@ -1,0 +1,1 @@
+1. OPEN [goal]: Independently establish what the four supplied archives prove about clause validity, original-parent UNSAT/projection semantics, and actual versus amortized CaDiCaL benefit. — problem.md

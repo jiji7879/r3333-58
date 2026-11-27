@@ -1,0 +1,16 @@
+{
+  "complete_local_and_audit_rerun": true,
+  "complete_two_color_graphs_through_K5": true,
+  "explicit_K10_triangle_free_model": true,
+  "extra_random_controls": {
+    "mismatches": 0,
+    "queries": 4000,
+    "satisfying": 3293,
+    "unsatisfiable": 707
+  },
+  "odd_cycle_edge_deletion_controls": true,
+  "ordinary_wall_performance_all_OPEN": 16,
+  "ordinary_wall_two_step_RUP_replays": 4,
+  "scope": "Direct local two-colour avoidance on fixed edges and user-chosen at-most-two spoke colour lists. No whole-wall performance improvement is established by these checks.",
+  "varying_list_audit_cases": 600
+}

@@ -1,0 +1,12 @@
+{
+  "Rerun log": ".scratch/new-proofs-v1/A0-rebuilt-core-check.log",
+  "baseline_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+  "byte_identical_to_packaged_A0_core": true,
+  "core_clauses": 5250,
+  "explanation": "This A0 core belongs to the native 2.1.2 raw DRAT above. The earlier 5,245-clause coordinator core belongs to the distinct rebuilt-stock 1.9.5 DRAT (91be7183\u2026), not to a checker nondeterminism.",
+  "full_original_parent_recheck": "A0 VERIFIED against 56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+  "packaged_core_sha256": "5f4d62aa81757098093d988c9914ae35642d7aa9f77df4c7fef49b41043cf8e0",
+  "raw_drat_sha256": "9798683a7f8b3e5ee7c77b86c005bd64aa4357490be350bafd71ea0e76ee9e89",
+  "rebuilt_core_sha256": "5f4d62aa81757098093d988c9914ae35642d7aa9f77df4c7fef49b41043cf8e0",
+  "trimmer_c_source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+}

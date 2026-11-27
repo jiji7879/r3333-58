@@ -1,0 +1,37 @@
+{
+  "A": {
+    "conflicts": 1845186,
+    "cpu_seconds": 218.03295,
+    "native_proof_bytes": 190090051
+  },
+  "B": {
+    "conflicts": 1897464,
+    "cpu_seconds": 194.824858,
+    "native_proof_bytes": 191173690,
+    "percent_change_vs_stock": {
+      "conflicts": 2.8332103105052826,
+      "cpu_seconds": -10.644304908959858,
+      "native_proof_bytes": 0.5700661314463007
+    }
+  },
+  "C": {
+    "conflicts": 1752372,
+    "cpu_seconds": 205.27540899999997,
+    "native_proof_bytes": 176859580,
+    "percent_change_vs_stock": {
+      "conflicts": -5.030062010008747,
+      "cpu_seconds": -5.8511986376371246,
+      "native_proof_bytes": -6.960107028431488
+    }
+  },
+  "D": {
+    "conflicts": 1680786,
+    "cpu_seconds": 200.611902,
+    "native_proof_bytes": 167306123,
+    "percent_change_vs_stock": {
+      "conflicts": -8.909670894966686,
+      "cpu_seconds": -7.990098744249442,
+      "native_proof_bytes": -11.98586032258995
+    }
+  }
+}

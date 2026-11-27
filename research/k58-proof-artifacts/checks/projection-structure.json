@@ -1,0 +1,55 @@
+{
+  "P1294": {
+    "all_edges_within_selected_vertices": true,
+    "clauses": 30630,
+    "clauses_are_exact_original_subset": true,
+    "original_sha256": "f412890f03453fe16da8c735ccd97d875b339da603ed7987e02f81f842952312",
+    "projection_sha256": "28dba9b6ff6d5839cd9c8b4ddcfa17e3626c40a0450f0f43d28d78cd61a772e3"
+  },
+  "P1295": {
+    "all_edges_within_selected_vertices": true,
+    "clauses": 30630,
+    "clauses_are_exact_original_subset": true,
+    "original_sha256": "f58026d4c2a25efaf04a4deac1320d25331217f01e7750d3af2789e9c8db4d9a",
+    "projection_sha256": "4c6d81d2885112c0c333a17c4033ca69f233118e7e61839483e346f1ef4b3815"
+  },
+  "P1296": {
+    "all_edges_within_selected_vertices": true,
+    "clauses": 30630,
+    "clauses_are_exact_original_subset": true,
+    "original_sha256": "9c2dcdcf0061eea1a4d70f6ddba3835cba110d35341c94b2ccd69474e48adcd4",
+    "projection_sha256": "ebfc5058ec54faec465b7f1e4b439b1e79ecf42c19bdd71b4ceeec0ac6c93f3b"
+  },
+  "P1297": {
+    "all_edges_within_selected_vertices": true,
+    "clauses": 30630,
+    "clauses_are_exact_original_subset": true,
+    "original_sha256": "d75196e6a5445f2035b84777720e99a0c10482fe591f4bb17139b12f744c61a6",
+    "projection_sha256": "47bec565f235b1a91ec3273e603688598b5ab6a9c27abd7927ddc99df7b986ea"
+  },
+  "P1298": {
+    "all_edges_within_selected_vertices": true,
+    "clauses": 30630,
+    "clauses_are_exact_original_subset": true,
+    "full_parent_clauses_falsified_by_projection_model": 1318,
+    "local_model_satisfies_all_projected_clauses": true,
+    "original_sha256": "7af7ba5d5a329fb232bc3b00cd56327728c6a9f71f0c4ff2196d1c68cd8e628d",
+    "projection_sha256": "af627791a0dd844b70d54972fadf3d9a96d671cec9031aa5e5473fd24cd26922"
+  },
+  "P1299": {
+    "all_edges_within_selected_vertices": true,
+    "clauses": 33270,
+    "clauses_are_exact_original_subset": true,
+    "full_parent_clauses_falsified_by_projection_model": 1287,
+    "local_model_satisfies_all_projected_clauses": true,
+    "original_sha256": "e8c2728da2199d8685017748796a579e9e4a9ee7991a7a6903a2b07ff74d9e38",
+    "projection_sha256": "749f6deebf34a5356b167e6af9ef95245f13f3ff1d5fba6e60a3aff064e3345a"
+  },
+  "P1300": {
+    "all_edges_within_selected_vertices": true,
+    "clauses": 30630,
+    "clauses_are_exact_original_subset": true,
+    "original_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+    "projection_sha256": "4a794c02b99f57166a088da9bae0fd35ad5f37bfcadf107da8e54af30d765662"
+  }
+}
