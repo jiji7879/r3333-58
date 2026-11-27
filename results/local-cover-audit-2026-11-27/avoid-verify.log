@@ -1,0 +1,11 @@
+inventory rows / shapes / keys / sizes: 11585 41 19048 {25: 6941, 24: 3283, 26: 693, 23: 628, 22: 40}
+shape 0 learned 0 unresolved {}
+shape 5 learned 0 unresolved {}
+shape 10 learned 0 unresolved {}
+shape 15 learned 0 unresolved {}
+shape 20 learned 0 unresolved {}
+shape 25 learned 0 unresolved {}
+shape 30 learned 0 unresolved {}
+shape 35 learned 0 unresolved {}
+shape 40 learned 0 unresolved {}
+{'unknown': {}, 'changed': {'original': 0, 'revised': 0}, 'clauses': 0}

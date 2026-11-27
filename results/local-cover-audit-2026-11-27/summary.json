@@ -1,0 +1,70 @@
+{
+  "accepted_independent_audits": 3,
+  "case0_growth": {
+    "maximum_extension_certificate": false,
+    "sat_models_checked": 8,
+    "timeout_means_unknown": true,
+    "unsat_proof_objects_supplied": false
+  },
+  "case0_projection": {
+    "assigned_edges": 300,
+    "auxiliary_owner_gate": -19172,
+    "fixed_row_unit_literals": 404,
+    "local_to_physical_colors": {
+      "1": 0,
+      "2": 3
+    },
+    "omitted_edges": 1353,
+    "physical_pivot": [
+      31,
+      42
+    ],
+    "revised_owner_pin_units": 10,
+    "total_parent_unit_clauses": 415,
+    "vertices": 25
+  },
+  "case0_repair": {
+    "assigned_edges": 325,
+    "changed_nonarm_edges_by_branch": [
+      54,
+      71
+    ],
+    "nominated_arm_edges_held_fixed": 91,
+    "remaining_edges": 1328,
+    "vertices": 26
+  },
+  "degree_bank_scope": {
+    "conditional_branch_bank_records": 334,
+    "full_rows_one_common_vertex": 0,
+    "original_transferred_owner_instances": 13933,
+    "revised_pivot_free_owner_instances": 14345
+  },
+  "exterior_spoke_recheck": {
+    "original_checked": 1260830,
+    "remaining_clashes": 0,
+    "revised_checked": 1967548
+  },
+  "geometries": 41,
+  "input_sha256": "d9d5a68214d1692237b6b3cc332f2116b3d90064f1f178b5b00497138d70cf3d",
+  "local_degree_proof_records_replayed": {
+    "branch_specific_degree16": 334,
+    "root_cap": 59
+  },
+  "normalized_records": 19048,
+  "ordinary_rows": 11585,
+  "original_branch_incidences_checked": 1260830,
+  "pending_audits": 0,
+  "projection_orders": [
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "relative_counts_warning": "Normalized records and branch incidences are not independent global models, and banks/owners can overlap.",
+  "relaxed_degree_support_models_checked": 118,
+  "revised_branch_incidences_checked": 1967548,
+  "revised_representatives": 983774,
+  "schema": "k58-local-cover-audit/v1",
+  "scope": "Local model checks, obstruction proofs and conditional constraint transfer only. No complete K58 model, parent or wall-row closure, queue reduction or Ramsey-bound change."
+}

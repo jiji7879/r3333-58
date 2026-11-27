@@ -1,0 +1,27 @@
+{
+  "archive_sha256": "d9d5a68214d1692237b6b3cc332f2116b3d90064f1f178b5b00497138d70cf3d",
+  "method": "independent reimplementation; complete assignment to every generated CNF clause; no SAT solving",
+  "root_hypotheses": 59,
+  "events": 169,
+  "sat_models_fully_checked": 118,
+  "words_models": 59,
+  "row_models": 59,
+  "original_owner_unsat_payloads_present_but_not_replayed": 51,
+  "no_original_event": [
+    "rootcap-0001",
+    "rootcap-0005",
+    "rootcap-0006",
+    "rootcap-0007",
+    "rootcap-0040",
+    "rootcap-0041",
+    "rootcap-0042",
+    "rootcap-0043"
+  ],
+  "scope_warning": "These SAT models refute relaxation of a local cap query. They are not K58 colorings, whole-row SAT results, or global extension witnesses. Original-owner RUP/DRAT payloads were not verified here."
+}
+SAMPLE rootcap-0000 words five_set (0, 4, 9, 11, 12) cycle (0, 4, 12, 11, 9, 0) avoid_color 2
+SAMPLE rootcap-0000 row five_set (0, 4, 9, 11, 12) cycle (0, 4, 12, 11, 9, 0) avoid_color 2
+SAMPLE rootcap-0001 words five_set (1, 2, 8, 10, 11) cycle (1, 2, 11, 10, 8, 1) avoid_color 2
+SAMPLE rootcap-0001 row five_set (1, 2, 8, 10, 11) cycle (1, 2, 11, 10, 8, 1) avoid_color 2
+SAMPLE rootcap-0002 words five_set (0, 4, 8, 10, 11) cycle (0, 4, 11, 10, 8, 0) avoid_color 2
+SAMPLE rootcap-0002 row five_set (0, 4, 8, 10, 11) cycle (0, 4, 11, 10, 8, 0) avoid_color 2

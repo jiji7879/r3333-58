@@ -1,0 +1,790 @@
+{
+  "checks": [
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 1,
+      "branch_physical_color": 0,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "case0[0]",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "revised",
+      "sha256": "f5f40aff711a6f52b682960afc07d60809b1044d7e52052e5e7a5878ead55116",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "00001",
+          "01000",
+          "02201",
+          "10010",
+          "10122",
+          "12210",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 2,
+      "branch_physical_color": 3,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "case0[1]",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "revised",
+      "sha256": "0da7573e02af936861a71592db129c9736fab051a341699b7bb1b943741c63c1",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "02201",
+          "10102",
+          "10220",
+          "12010",
+          "20012",
+          "21001",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 0,
+      "branch_physical_color": 1,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "initial:original:c0",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        38
+      ],
+      "pivot_local_vertices": [
+        0,
+        7
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "original",
+      "sha256": "312461a7ea83c94ff648b591c87308d0377d16b9fc852b1545e5cd09c73d6516",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "00001",
+          "01000",
+          "02201",
+          "10010",
+          "10122",
+          "12210",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 0,
+      "branch_physical_color": 1,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "robust:original:c0",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        38
+      ],
+      "pivot_local_vertices": [
+        0,
+        7
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "original",
+      "sha256": "78fa314514860fa46f1fcca230c585db856560ae317f7481c395983861b7c5b0",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "00001",
+          "01000",
+          "02201",
+          "10010",
+          "10122",
+          "12210",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 1,
+      "branch_physical_color": 0,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "initial:revised:c1",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "revised",
+      "sha256": "9737a0edcb3d4b597dcd6ad6dae044c3047f2ce40b56631d74bced07f09b7c49",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "00001",
+          "01000",
+          "02201",
+          "10010",
+          "10122",
+          "12210",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 1,
+      "branch_physical_color": 0,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "robust:revised:c1",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "revised",
+      "sha256": "81667538811b42cedc8770feb1edc5712729954fb19f798c03604e13c6264b97",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "00001",
+          "01000",
+          "02201",
+          "10010",
+          "10122",
+          "12210",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 2,
+      "branch_physical_color": 3,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "initial:revised:c2",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "revised",
+      "sha256": "c07db4c1cbe881ceab428ed0030f1ea5673e31cc01c56c24601674d2aa48258d",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "02201",
+          "10102",
+          "10220",
+          "12010",
+          "20012",
+          "21001",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 2,
+      "branch_physical_color": 3,
+      "edges": 300,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "robust:revised:c2",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 9,
+      "projected_positive_signs": 129,
+      "projected_signs": 138,
+      "scheme": "revised",
+      "sha256": "c07db4c1cbe881ceab428ed0030f1ea5673e31cc01c56c24601674d2aa48258d",
+      "triangles": 2300,
+      "vertices": 25,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "02201",
+          "10102",
+          "10220",
+          "12010",
+          "20012",
+          "21001",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 1,
+      "branch_physical_color": 0,
+      "edges": 325,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "repair[0]",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 10,
+      "projected_positive_signs": 135,
+      "projected_signs": 145,
+      "scheme": "revised",
+      "sha256": "cd4f27027bc20ecdf207802e11abce29842d27ee7ede7bd179c00a30ddac622e",
+      "triangles": 2600,
+      "vertices": 26,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "00001",
+          "01000",
+          "02201",
+          "10010",
+          "10122",
+          "12210",
+          "22100"
+        ]
+      }
+    },
+    {
+      "all_checks_passed": true,
+      "branch_local_color": 2,
+      "branch_physical_color": 3,
+      "edges": 325,
+      "max_degree_sites": [
+        17
+      ],
+      "max_local_degree": 15,
+      "name": "repair[1]",
+      "pair": [
+        "00000",
+        "01022"
+      ],
+      "physical_pivot_vertices": [
+        31,
+        42
+      ],
+      "pivot_local_vertices": [
+        0,
+        11
+      ],
+      "projected_negative_signs": 10,
+      "projected_positive_signs": 135,
+      "projected_signs": 145,
+      "scheme": "revised",
+      "sha256": "8c9f0a590604f7a569aaa53ae775943fddbb691e4e307eb2523905e53c8d06fd",
+      "triangles": 2600,
+      "vertices": 26,
+      "words": {
+        "original_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "original_owner_ok": true,
+        "revised_owner_min": [
+          "00000",
+          "01022"
+        ],
+        "revised_owner_ok": true,
+        "words": [
+          "00000",
+          "01022",
+          "02201",
+          "10102",
+          "10220",
+          "12010",
+          "20012",
+          "21001",
+          "22100"
+        ]
+      }
+    }
+  ],
+  "marked": [
+    1,
+    0,
+    31,
+    32,
+    45,
+    46,
+    33,
+    47,
+    48,
+    15,
+    34,
+    14,
+    35,
+    12,
+    10
+  ],
+  "nominated_arm": [
+    31,
+    32,
+    35,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "omitted_vertices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    13,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "palette": [
+    1,
+    0,
+    3,
+    2
+  ],
+  "projection": [
+    31,
+    32,
+    35,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    17,
+    1,
+    0,
+    45,
+    46,
+    47,
+    48,
+    15,
+    14,
+    12,
+    10
+  ],
+  "q": 17,
+  "record_comparisons": [
+    {
+      "against": "initial",
+      "case": 0,
+      "differing_arm_edges": 0,
+      "differing_edge_positions": 61,
+      "exactly_equal": false,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "first_differing_edge_position": 119
+    },
+    {
+      "against": "robust",
+      "case": 0,
+      "differing_arm_edges": 0,
+      "differing_edge_positions": 51,
+      "exactly_equal": false,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "first_differing_edge_position": 119
+    },
+    {
+      "against": "initial",
+      "case": 1,
+      "differing_arm_edges": 0,
+      "differing_edge_positions": 45,
+      "exactly_equal": false,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "first_differing_edge_position": 119
+    },
+    {
+      "against": "robust",
+      "case": 1,
+      "differing_arm_edges": 0,
+      "differing_edge_positions": 45,
+      "exactly_equal": false,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "first_differing_edge_position": 119
+    }
+  ],
+  "root": 0,
+  "row_id": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+  "row_signed_units": 404,
+  "scope_counts": {
+    "case0_original_incidence_weight": 545,
+    "case0_original_owner_rank": 1,
+    "case0_revised_incidence_weight_per_color": 545,
+    "case0_revised_owner_rank": 0,
+    "case0_row_revised_branch_incidences": 94,
+    "case0_row_revised_representatives": 47,
+    "case0_two_witnesses_as_fraction_of_all_revised_incidences": 1.016493625568474e-06,
+    "geometry_rows_case0": 545,
+    "global_edges": 1653,
+    "global_triangles": 30856,
+    "live_revised_branch_incidences": 1967548,
+    "live_revised_representatives": 983774,
+    "live_rows": 11585,
+    "local_edge_fraction": 0.18148820326678766,
+    "local_edges": 300,
+    "local_triangles": 2300,
+    "omitted_edges_global": 1353,
+    "record_schemes": {
+      "original": 8174,
+      "revised": 10874
+    },
+    "saved_normalized_records": 19048
+  },
+  "six_vertex_example": {
+    "anchors": [
+      1,
+      10,
+      12
+    ],
+    "exterior": 5,
+    "exterior_physical_spokes": [
+      3,
+      2,
+      1
+    ],
+    "forced_mutual_physical_color": 0,
+    "witnesses": [
+      {
+        "case": 0,
+        "exact_assignment_cannot_include_vertex5": true,
+        "triples": {
+          "43": {
+            "physical_colors": [
+              3,
+              2,
+              1
+            ],
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ]
+          },
+          "44": {
+            "physical_colors": [
+              3,
+              2,
+              1
+            ],
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "case": 1,
+        "exact_assignment_cannot_include_vertex5": true,
+        "triples": {
+          "43": {
+            "physical_colors": [
+              3,
+              2,
+              1
+            ],
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ]
+          },
+          "44": {
+            "physical_colors": [
+              3,
+              2,
+              1
+            ],
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "wall_uncompressed_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc"
+}

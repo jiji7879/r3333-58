@@ -1,0 +1,1 @@
+geometry/star pairs: 1006 result: {"('original', 'checked')": 1260830, "('original', 'contradicted')": 0, "('original', 'parents_all_witnesses_hit')": 0, "('original', 'parents_at_least_one_hit')": 0, "('revised', 'checked')": 1967548, "('revised', 'contradicted')": 0, "('revised', 'parents_all_witnesses_hit')": 0, "('revised', 'parents_at_least_one_hit')": 0}

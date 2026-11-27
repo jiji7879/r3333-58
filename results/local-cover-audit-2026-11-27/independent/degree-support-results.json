@@ -1,0 +1,317 @@
+{
+  "archive_sha256": "d9d5a68214d1692237b6b3cc332f2116b3d90064f1f178b5b00497138d70cf3d",
+  "method": "independent reimplementation; complete assignment to every generated CNF clause; no SAT solving",
+  "root_hypotheses": 59,
+  "events": 169,
+  "sat_models_fully_checked": 118,
+  "words_models": 59,
+  "row_models": 59,
+  "original_owner_unsat_payloads_present_but_not_replayed": 51,
+  "no_original_event": [
+    "rootcap-0001",
+    "rootcap-0005",
+    "rootcap-0006",
+    "rootcap-0007",
+    "rootcap-0040",
+    "rootcap-0041",
+    "rootcap-0042",
+    "rootcap-0043"
+  ],
+  "semantic_samples": {
+    "rootcap-0000": [
+      {
+        "key": "rootcap-0000",
+        "mode": "words",
+        "n": 13,
+        "pair": [
+          "10122",
+          "22101"
+        ],
+        "a": 2,
+        "Y": [
+          0,
+          4
+        ],
+        "variables": 906,
+        "clauses": 7911,
+        "selected_selector": 888,
+        "five_set": [
+          0,
+          4,
+          9,
+          11,
+          12
+        ],
+        "cycle": [
+          0,
+          4,
+          12,
+          11,
+          9,
+          0
+        ],
+        "other_colors": [
+          0,
+          1
+        ],
+        "five_set_colors": {
+          "0-4": 1,
+          "0-9": 1,
+          "0-11": 0,
+          "0-12": 0,
+          "4-9": 0,
+          "4-11": 0,
+          "4-12": 1,
+          "9-11": 1,
+          "9-12": 0,
+          "11-12": 1
+        }
+      },
+      {
+        "key": "rootcap-0000",
+        "mode": "row",
+        "n": 13,
+        "pair": [
+          "10122",
+          "22101"
+        ],
+        "a": 2,
+        "Y": [
+          0,
+          4
+        ],
+        "variables": 906,
+        "clauses": 7901,
+        "selected_selector": 888,
+        "five_set": [
+          0,
+          4,
+          9,
+          11,
+          12
+        ],
+        "cycle": [
+          0,
+          4,
+          12,
+          11,
+          9,
+          0
+        ],
+        "other_colors": [
+          0,
+          1
+        ],
+        "five_set_colors": {
+          "0-4": 1,
+          "0-9": 1,
+          "0-11": 0,
+          "0-12": 0,
+          "4-9": 0,
+          "4-11": 0,
+          "4-12": 1,
+          "9-11": 1,
+          "9-12": 0,
+          "11-12": 1
+        }
+      }
+    ],
+    "rootcap-0001": [
+      {
+        "key": "rootcap-0001",
+        "mode": "words",
+        "n": 12,
+        "pair": [
+          "01210",
+          "22010"
+        ],
+        "a": 2,
+        "Y": [
+          1,
+          2
+        ],
+        "variables": 618,
+        "clauses": 5145,
+        "selected_selector": 600,
+        "five_set": [
+          1,
+          2,
+          8,
+          10,
+          11
+        ],
+        "cycle": [
+          1,
+          2,
+          11,
+          10,
+          8,
+          1
+        ],
+        "other_colors": [
+          0,
+          1
+        ],
+        "five_set_colors": {
+          "1-2": 1,
+          "1-8": 1,
+          "1-10": 0,
+          "1-11": 0,
+          "2-8": 0,
+          "2-10": 0,
+          "2-11": 1,
+          "8-10": 1,
+          "8-11": 0,
+          "10-11": 1
+        }
+      },
+      {
+        "key": "rootcap-0001",
+        "mode": "row",
+        "n": 12,
+        "pair": [
+          "01210",
+          "22010"
+        ],
+        "a": 2,
+        "Y": [
+          1,
+          2
+        ],
+        "variables": 618,
+        "clauses": 5135,
+        "selected_selector": 600,
+        "five_set": [
+          1,
+          2,
+          8,
+          10,
+          11
+        ],
+        "cycle": [
+          1,
+          2,
+          11,
+          10,
+          8,
+          1
+        ],
+        "other_colors": [
+          0,
+          1
+        ],
+        "five_set_colors": {
+          "1-2": 1,
+          "1-8": 1,
+          "1-10": 0,
+          "1-11": 0,
+          "2-8": 0,
+          "2-10": 0,
+          "2-11": 1,
+          "8-10": 1,
+          "8-11": 0,
+          "10-11": 1
+        }
+      }
+    ],
+    "rootcap-0002": [
+      {
+        "key": "rootcap-0002",
+        "mode": "words",
+        "n": 12,
+        "pair": [
+          "01210",
+          "22101"
+        ],
+        "a": 2,
+        "Y": [
+          0,
+          4
+        ],
+        "variables": 618,
+        "clauses": 5145,
+        "selected_selector": 600,
+        "five_set": [
+          0,
+          4,
+          8,
+          10,
+          11
+        ],
+        "cycle": [
+          0,
+          4,
+          11,
+          10,
+          8,
+          0
+        ],
+        "other_colors": [
+          0,
+          1
+        ],
+        "five_set_colors": {
+          "0-4": 1,
+          "0-8": 1,
+          "0-10": 0,
+          "0-11": 0,
+          "4-8": 0,
+          "4-10": 0,
+          "4-11": 1,
+          "8-10": 1,
+          "8-11": 0,
+          "10-11": 1
+        }
+      },
+      {
+        "key": "rootcap-0002",
+        "mode": "row",
+        "n": 12,
+        "pair": [
+          "01210",
+          "22101"
+        ],
+        "a": 2,
+        "Y": [
+          0,
+          4
+        ],
+        "variables": 618,
+        "clauses": 5135,
+        "selected_selector": 600,
+        "five_set": [
+          0,
+          4,
+          8,
+          10,
+          11
+        ],
+        "cycle": [
+          0,
+          4,
+          11,
+          10,
+          8,
+          0
+        ],
+        "other_colors": [
+          0,
+          1
+        ],
+        "five_set_colors": {
+          "0-4": 1,
+          "0-8": 1,
+          "0-10": 0,
+          "0-11": 0,
+          "4-8": 0,
+          "4-10": 0,
+          "4-11": 1,
+          "8-10": 1,
+          "8-11": 0,
+          "10-11": 1
+        }
+      }
+    ]
+  },
+  "scope_warning": "These SAT models refute relaxation of a local cap query. They are not K58 colorings, whole-row SAT results, or global extension witnesses. Original-owner RUP/DRAT payloads were not verified here."
+}

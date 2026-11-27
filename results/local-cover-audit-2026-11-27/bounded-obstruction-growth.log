@@ -1,0 +1,284 @@
+{
+  "checker": "bounded_audit.py",
+  "solver_runs": 0,
+  "proof_checker_runs": 0,
+  "colorings": {
+    "records": 19048,
+    "none_models": 0,
+    "schemes": {
+      "original": 8174,
+      "revised": 10874
+    },
+    "geometries": 41,
+    "generic_checks_by_projection_order": {
+      "22": 6304,
+      "23": 3548,
+      "24": 5664,
+      "25": 3052,
+      "26": 480
+    }
+  },
+  "robust": {
+    "records": 19048,
+    "none_models": 0,
+    "schemes": {
+      "original": 8174,
+      "revised": 10874
+    },
+    "geometries": 41,
+    "generic_checks_by_projection_order": {
+      "22": 6304,
+      "23": 3548,
+      "24": 5664,
+      "25": 3052,
+      "26": 480
+    }
+  },
+  "replacement_alignment": {
+    "jobs_aligned": 19048,
+    "changed_unique_geometry_owner_convention_color_jobs": {
+      "original": 1883,
+      "revised": 2770
+    },
+    "changed_matches_summary": true,
+    "note": "These are 19,048 normalized jobs, not 19,048 roster branches; 5,776 learned clauses were not regenerated."
+  },
+  "case0_parent_data": {
+    "case0_zip_sha256": "f08ec771eaf99c31d22cbe4d364ccd0ca80365f41a1395e1a152d067aabcf192",
+    "parent_cnf_gzip_sha256": "aceef062c0f8b511a96c10f39265c02cd25333cd101000a6c0493568a5d5a380",
+    "parent_cnf_sha256": "ae90931dc6cd482105153dd720209e602bbfc7cc0915e18c6e87023ee2659931",
+    "parent_unit_count": 415,
+    "parent_sha_matches_prior_binding": true
+  },
+  "case0_six_vertex_direct_proof": {
+    "anchor_order": [
+      1,
+      10,
+      12
+    ],
+    "exterior_vertex": 5,
+    "vertex_5_spokes_from_parent_units": [
+      3,
+      2,
+      1
+    ],
+    "witness_signatures": [
+      {
+        "local_pivot_color": 1,
+        "43": [
+          3,
+          2,
+          1
+        ],
+        "44": [
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "local_pivot_color": 2,
+        "43": [
+          3,
+          2,
+          1
+        ],
+        "44": [
+          3,
+          2,
+          1
+        ]
+      }
+    ],
+    "core_edge_checks": [
+      {
+        "witness": 0,
+        "key": "blocked-01",
+        "six_edges_match": true
+      },
+      {
+        "witness": 1,
+        "key": "blocked-01",
+        "six_edges_match": true
+      },
+      {
+        "witness": 0,
+        "key": "blocked-0",
+        "six_edges_match": true
+      },
+      {
+        "witness": 1,
+        "key": "blocked-1",
+        "six_edges_match": true
+      }
+    ],
+    "argument": "Each pair among {43,44,5} cannot use colors 3,2,1 because of the respective anchor triangles, so all three mutual edges must be color 0, itself a monochromatic triangle.",
+    "conclusion": "Both exact original assignments are non-extendable along vertex 5; this does not refute either owner/branch after recoloring."
+  },
+  "growth": [
+    {
+      "physical_pivot_color": 0,
+      "order": "critical-first",
+      "order_of_projection": 31,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "critical-first",
+      "order_of_projection": 28,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "critical-first",
+      "order_of_projection": 26,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 155
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "critical-first",
+      "order_of_projection": 27,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "small-arm-first",
+      "order_of_projection": 31,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 160
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "small-arm-first",
+      "order_of_projection": 37,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "small-arm-first",
+      "order_of_projection": 34,
+      "recorded_answer": null,
+      "meaning": "UNKNOWN/timeout"
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "small-arm-first",
+      "order_of_projection": 32,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 162
+    },
+    {
+      "physical_pivot_color": 0,
+      "order": "small-arm-first",
+      "order_of_projection": 33,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 164
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "critical-first",
+      "order_of_projection": 31,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "critical-first",
+      "order_of_projection": 28,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "critical-first",
+      "order_of_projection": 26,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 155
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "critical-first",
+      "order_of_projection": 27,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "small-arm-first",
+      "order_of_projection": 31,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 160
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "small-arm-first",
+      "order_of_projection": 37,
+      "recorded_answer": false,
+      "meaning": "recorded UNSAT or deterministic domain contradiction; no proof archived here"
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "small-arm-first",
+      "order_of_projection": 34,
+      "recorded_answer": null,
+      "meaning": "UNKNOWN/timeout"
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "small-arm-first",
+      "order_of_projection": 32,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 162
+    },
+    {
+      "physical_pivot_color": 3,
+      "order": "small-arm-first",
+      "order_of_projection": 33,
+      "recorded_answer": true,
+      "independent_triangle_degree_check": true,
+      "all_300_original_projection_edges_frozen": true,
+      "available_parent_units_checked": 164
+    }
+  ],
+  "case0_repairs": [
+    {
+      "local_pivot_color": 1,
+      "independent_triangle_degree_check": true,
+      "nominated_14_vertex_arm_unchanged": true,
+      "available_parent_units_checked": 155,
+      "changed_of_209_old_nonarm_edges": 54
+    },
+    {
+      "local_pivot_color": 2,
+      "independent_triangle_degree_check": true,
+      "nominated_14_vertex_arm_unchanged": true,
+      "available_parent_units_checked": 155,
+      "changed_of_209_old_nonarm_edges": 71
+    }
+  ],
+  "scope_not_checked": [
+    "No full K58 model or whole-row/global UNSAT claim.",
+    "No regeneration of the 5,776 clauses or all physical exterior spoke patterns.",
+    "No RUP replay, owner/word/glyph validation, or complete helper-based replay.",
+    "Recorded UNSAT growth results have no proof object in growth.json and were not re-solved."
+  ]
+}

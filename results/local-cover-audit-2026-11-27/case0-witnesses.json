@@ -1,0 +1,256 @@
+{
+  "projection": {
+    "vertices": 25,
+    "arm": 14,
+    "palette": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "row_signed_units": 404,
+    "wall_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc"
+  },
+  "checks": [
+    {
+      "name": "case0[0]",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "case0[1]",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "initial:original:c0",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "robust:original:c0",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "initial:revised:c1",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "robust:revised:c1",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "initial:revised:c2",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "robust:revised:c2",
+      "vertices": 25,
+      "edges": 300,
+      "triangles": 2300,
+      "projected_signs": 138,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "repair[0]",
+      "vertices": 26,
+      "edges": 325,
+      "triangles": 2600,
+      "projected_signs": 145,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    },
+    {
+      "name": "repair[1]",
+      "vertices": 26,
+      "edges": 325,
+      "triangles": 2600,
+      "projected_signs": 145,
+      "max_local_degree": 15,
+      "all_checks_passed": true
+    }
+  ],
+  "six_vertex_example": {
+    "anchors": [
+      1,
+      10,
+      12
+    ],
+    "exterior": 5,
+    "exterior_physical_spokes": [
+      3,
+      2,
+      1
+    ],
+    "forced_mutual_physical_color": 0,
+    "witnesses": [
+      {
+        "case": 0,
+        "triples": {
+          "43": {
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ],
+            "physical_colors": [
+              3,
+              2,
+              1
+            ]
+          },
+          "44": {
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ],
+            "physical_colors": [
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        "exact_assignment_cannot_include_vertex5": true
+      },
+      {
+        "case": 1,
+        "triples": {
+          "43": {
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ],
+            "physical_colors": [
+              3,
+              2,
+              1
+            ]
+          },
+          "44": {
+            "stored_palette_indices": [
+              2,
+              3,
+              0
+            ],
+            "physical_colors": [
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        "exact_assignment_cannot_include_vertex5": true
+      }
+    ]
+  },
+  "record_comparisons": [
+    {
+      "case": 0,
+      "against": "initial",
+      "exactly_equal": false,
+      "differing_edge_positions": 61,
+      "first_differing_edge_position": 119,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "differing_arm_edges": 0
+    },
+    {
+      "case": 0,
+      "against": "robust",
+      "exactly_equal": false,
+      "differing_edge_positions": 51,
+      "first_differing_edge_position": 119,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "differing_arm_edges": 0
+    },
+    {
+      "case": 1,
+      "against": "initial",
+      "exactly_equal": false,
+      "differing_edge_positions": 45,
+      "first_differing_edge_position": 119,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "differing_arm_edges": 0
+    },
+    {
+      "case": 1,
+      "against": "robust",
+      "exactly_equal": false,
+      "differing_edge_positions": 45,
+      "first_differing_edge_position": 119,
+      "first_differing_edge": [
+        5,
+        15
+      ],
+      "differing_arm_edges": 0
+    }
+  ],
+  "scope_counts": {
+    "saved_normalized_records": 19048,
+    "record_schemes": {
+      "original": 8174,
+      "revised": 10874
+    },
+    "geometry_rows_case0": 545,
+    "case0_original_owner_rank": 1,
+    "case0_revised_owner_rank": 0,
+    "case0_original_incidence_weight": 545,
+    "case0_revised_incidence_weight_per_color": 545,
+    "live_rows": 11585,
+    "live_revised_representatives": 983774,
+    "live_revised_branch_incidences": 1967548,
+    "case0_row_revised_representatives": 47,
+    "case0_row_revised_branch_incidences": 94,
+    "case0_two_witnesses_as_fraction_of_all_revised_incidences": 1.016493625568474e-06,
+    "local_edges": 300,
+    "global_edges": 1653,
+    "local_edge_fraction": 0.18148820326678766,
+    "omitted_edges_global": 1353,
+    "local_triangles": 2300,
+    "global_triangles": 30856
+  }
+}
