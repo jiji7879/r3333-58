@@ -1,0 +1,421 @@
+{
+  "case_continuation": {
+    "actual_frozen_live_total": 983774,
+    "continuations_are_empty_so_no_successor_artifact_audited": true,
+    "hypothetical_live_total_if_only_this_expansion_applied": 983775,
+    "queue_delta_if_applied": 1,
+    "required_action_with_capacity_at_least_3": "EXPAND_ALL_OPEN_CHILDREN",
+    "unique_survivor": false,
+    "unresolved_colors": [
+      0,
+      3
+    ]
+  },
+  "event_json_sha256": "af30cc194054c79a93b063d78087c0ec5ef1dbec4d37244239a163c6b20efda2",
+  "guard": {
+    "arm": 14,
+    "first_gate": 19172,
+    "index": 0,
+    "ordinary_field_scope": "not regenerated in direction A; direction C owns that provenance check",
+    "owner": "revised",
+    "owner_cube": [
+      5226,
+      5326,
+      5602,
+      5422,
+      5514,
+      5230,
+      5329,
+      5606,
+      5428,
+      5520,
+      -19172
+    ],
+    "pair": [
+      "00000",
+      "01022"
+    ],
+    "palette": [
+      1,
+      0,
+      3
+    ],
+    "profile": [
+      15,
+      15,
+      14,
+      13
+    ],
+    "rank": 0,
+    "recipe_archive_sha256": "3324b778ea425dbcd48a3c7f19a38812820066d769581569f318b61108837b75",
+    "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "row_id_recomputed": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "tier_field_scope": "committed metadata here; parent regeneration is direction C"
+  },
+  "ledger": {
+    "authentication": "none: unsigned hash, predecessor and expected head supplied in same package",
+    "committed_bytes_scope": [
+      "PREDECESSOR",
+      "event",
+      "state",
+      "live",
+      "continuations"
+    ],
+    "continuations": [],
+    "head": "5f6644251423ebb5207722ee641d08a93696703dac1df4cfbb56e58fbc7d4d9e",
+    "head_sha256": "5f6644251423ebb5207722ee641d08a93696703dac1df4cfbb56e58fbc7d4d9e",
+    "historical_execution_verified": false,
+    "live": 983774,
+    "live_roster_rows": 11585,
+    "mode": "lazy",
+    "not_head_bound": [
+      "ZIP container bytes",
+      "verify.py",
+      "drat-trim.c",
+      "README.md",
+      "LRAT files",
+      "gzip container bytes"
+    ],
+    "predecessor": "33eff43a97ada9bda78eb5a4f744fc019c421492a767ac0a89784f76a364283c",
+    "preimage_sha256_note": "head is SHA-256 of preimage bytes, including final LF",
+    "state": "OPEN_UNKNOWN"
+  },
+  "logical_scope": {
+    "either_open_branch_sat_or_unsat_decided": false,
+    "from_cover_unsat": "P entails x_5249 OR x_5252",
+    "from_two_child_unsats_and_host_exact_one": "M(P)=M(P AND x_5249) union M(P AND x_5252)",
+    "parent_unsat_follows": false,
+    "unique_survivor_follows": false,
+    "whole_parent_wall_row_or_ramsey_closure": false
+  },
+  "negative_controls": {
+    "continuation_tamper_under_old_expected_head": {
+      "accepted_by_expected_head": false,
+      "new_head": "db97affd8038ada2ce5c283d002f811cb267e3fbed060b41e7cb9f34eee8793b"
+    },
+    "cover_positive_signs": {
+      "matches_archived": false,
+      "pins": [
+        5249,
+        5252
+      ],
+      "sha256": "c5348f9ddc5d7c4833fa534ce525e1f13f881c0b70d1b90427c24b51d34391c2"
+    },
+    "cover_reversed_semantically_equivalent_units": {
+      "pins": [
+        -5252,
+        -5249
+      ],
+      "same_archived_bytes": false,
+      "same_formula": true,
+      "sha256": "9aaa7959792d66ddd56aeb1c0e9f38eb99ff6e1ee93367dc8bcdd25a3a6a762e"
+    },
+    "live_tamper_under_old_expected_head": {
+      "accepted_by_expected_head": false,
+      "new_head": "8aa0ef17b573eabb70fbc522a962f438c336ee41efed47cee8f10628f130f435"
+    },
+    "one_bit_proof_mutation": {
+      "matches_archived_proof_hash": false,
+      "sha256": "73e31f80260a5e32398f8defeb4ef63c4c3ae66f087ecc3300cce7a3a769fcef"
+    },
+    "unsigned_recomputed_head_demonstration": {
+      "attacker_computed_head": "9352b42ef612587f4bdeedb5c4ae714cd3ac474ec9e200fb2b601bac2baa7b05",
+      "changed_field": "event.pivot",
+      "equals_externally_expected_head": false,
+      "requires_no_secret_or_signature_key": true
+    },
+    "wrong_pivot_31_43": {
+      "archived_variables": [
+        5249,
+        5250,
+        5251,
+        5252
+      ],
+      "computed_variables": [
+        5253,
+        5254,
+        5255,
+        5256
+      ],
+      "rejected_by_identity_check": true
+    }
+  },
+  "outcome": "PASS: formula/guard/head/queue semantics; proof verdicts explicitly out of scope",
+  "parent": {
+    "base_representative_not_strengthened": true,
+    "bytes": 3423661,
+    "clauses": 178823,
+    "sha256": "ae90931dc6cd482105153dd720209e602bbfc7cc0915e18c6e87023ee2659931",
+    "variables": 19218
+  },
+  "pivot": {
+    "edge_index": 1312,
+    "exact_one_clause_ids": {
+      "(-5249, -5250)": [
+        9186
+      ],
+      "(-5249, -5251)": [
+        9187
+      ],
+      "(-5249, -5252)": [
+        9188
+      ],
+      "(-5250, -5251)": [
+        9189
+      ],
+      "(-5250, -5252)": [
+        9190
+      ],
+      "(-5251, -5252)": [
+        9191
+      ],
+      "(5249, 5250, 5251, 5252)": [
+        9185
+      ]
+    },
+    "local": [
+      0,
+      11
+    ],
+    "local_palette": [
+      1,
+      0,
+      3
+    ],
+    "local_palette_literals": [
+      5250,
+      5249,
+      5252
+    ],
+    "physical": [
+      31,
+      42
+    ],
+    "physical_vertex_map": [
+      31,
+      32,
+      35,
+      33,
+      34,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "variables": [
+      5249,
+      5250,
+      5251,
+      5252
+    ]
+  },
+  "proof_hashes": {
+    "color_1": {
+      "bytes": 958,
+      "role": "identity only; replay is outside this direction",
+      "sha256": "7bb85210d29faa078a357ecc0da28e51cb9d58ed0c5a48eaec7d201284acc6b4"
+    },
+    "color_2": {
+      "bytes": 2,
+      "role": "identity only; replay is outside this direction",
+      "sha256": "ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3"
+    },
+    "cover": {
+      "bytes": 378,
+      "role": "identity only; replay is outside this direction",
+      "sha256": "67229c09284239f78229d4920d7527495a2ccaca3775e262d11d8754ec161d66"
+    }
+  },
+  "queries": {
+    "color_0": {
+      "archived_status": "OPEN_UNKNOWN",
+      "bytes": 3423668,
+      "path": "queries/color-0.cnf",
+      "pins": [
+        5249
+      ],
+      "sha256": "25bb3d2500487ee87ccde7c41274538ac484344a42b301b54b9d99036ff0a5e5"
+    },
+    "color_1": {
+      "archived_status": "CLOSED",
+      "bytes": 3423668,
+      "path": "queries/color-1.cnf",
+      "pins": [
+        5250
+      ],
+      "sha256": "84ba8a7e6bb372c0d5e6c4485bee7e47c8ca5081277f4f8d8beabbe0d1fee33f"
+    },
+    "color_2": {
+      "archived_status": "CLOSED",
+      "bytes": 3423668,
+      "path": "queries/color-2.cnf",
+      "pins": [
+        5251
+      ],
+      "sha256": "858216a74117455646e51880ca1392e957da8800ccb95f5189870d67007ad83c"
+    },
+    "color_3": {
+      "archived_status": "OPEN_UNKNOWN",
+      "bytes": 3423668,
+      "path": "queries/color-3.cnf",
+      "pins": [
+        5252
+      ],
+      "sha256": "7aedd43ca0cd6ea1be6a5219abd17c72160807bcc4c2b95936741b7dfdbf6bee"
+    },
+    "cover": {
+      "archived_status": "CLOSED",
+      "bytes": 3423677,
+      "path": "queries/cover.cnf",
+      "pins": [
+        -5249,
+        -5252
+      ],
+      "sha256": "30163e3ddaefb8241137b19bcdceafc7d1c9facfb85f0c76a239d53c71923a70"
+    }
+  },
+  "queue_policy_controls": {
+    "1": {
+      "action": "KEEP_PARENT_QUEUED",
+      "queue_delta": 0,
+      "unresolved": [
+        0,
+        3
+      ]
+    },
+    "2": {
+      "action": "KEEP_PARENT_QUEUED",
+      "queue_delta": 0,
+      "unresolved": [
+        0,
+        3
+      ]
+    },
+    "3": {
+      "action": "EXPAND_ALL_OPEN_CHILDREN",
+      "queue_delta": 1,
+      "unresolved": [
+        0,
+        3
+      ]
+    },
+    "4": {
+      "action": "EXPAND_ALL_OPEN_CHILDREN",
+      "queue_delta": 1,
+      "unresolved": [
+        0,
+        3
+      ]
+    },
+    "5": {
+      "action": "EXPAND_ALL_OPEN_CHILDREN",
+      "queue_delta": 1,
+      "unresolved": [
+        0,
+        3
+      ]
+    }
+  },
+  "repository_head": "1fa1a9115af7b93b6f3131e75a2a70a26289e764",
+  "search_query_metadata": [
+    {
+      "archived_status": "OPEN_UNKNOWN",
+      "color": 0,
+      "method": null,
+      "query": "25bb3d2500487ee87ccde7c41274538ac484344a42b301b54b9d99036ff0a5e5",
+      "search_query": null
+    },
+    {
+      "archived_status": "CLOSED",
+      "color": 1,
+      "method": "CaDiCaL with lifted arm consequences",
+      "query": "84ba8a7e6bb372c0d5e6c4485bee7e47c8ca5081277f4f8d8beabbe0d1fee33f",
+      "search_query": "7b3910a5331ded5cf2108dd04f225ca5075a9d44a636b0c8a1017d297385cc25"
+    },
+    {
+      "archived_status": "CLOSED",
+      "color": 2,
+      "method": "unit propagation",
+      "query": "858216a74117455646e51880ca1392e957da8800ccb95f5189870d67007ad83c",
+      "search_query": null
+    },
+    {
+      "archived_status": "OPEN_UNKNOWN",
+      "color": 3,
+      "method": null,
+      "query": "7aedd43ca0cd6ea1be6a5219abd17c72160807bcc4c2b95936741b7dfdbf6bee",
+      "search_query": null
+    }
+  ],
+  "strengthened_crosswalk": {
+    "local_branches": {
+      "1": {
+        "clauses": 178854,
+        "physical_pivot_pin": 5249,
+        "sha256": "f7e6f5b2cb5a95bf65c16c730f7c4e10bd359b3d413d031bcbf9dd180dd5ff8d"
+      },
+      "2": {
+        "clauses": 178857,
+        "physical_pivot_pin": 5252,
+        "sha256": "e85234ab42705601f1b83a2e6127ecb89dea669ba78865f35ea57e47815ece7a"
+      }
+    },
+    "parent": {
+      "clauses": 178846,
+      "pins": [
+        -5233,
+        -5236,
+        -5240,
+        -5244,
+        -5246,
+        -5248,
+        -5250,
+        -5254,
+        -5258,
+        -5257,
+        -5345,
+        -5636,
+        -5452,
+        -5456,
+        -5533,
+        -5694,
+        -5698,
+        -5702,
+        -5706,
+        -5710,
+        -5714,
+        -5718,
+        -5774
+      ],
+      "sha256": "d69970e19ddadfad5057ffaf8ffbd1354f957a4003852dc2b6b8aeff63cb3004"
+    }
+  },
+  "unit_propagation": {
+    "base": {
+      "assignments": 1932,
+      "clause_inspections": 24601,
+      "conflict": false,
+      "negation_derived": true
+    },
+    "non_conflict_meaning": "not SAT and not a model",
+    "pin_5251": {
+      "assignments": 419,
+      "clause_inspections": 4,
+      "conflict": true,
+      "conflict_clause": 16594,
+      "negation_derived": false
+    },
+    "pin_minus_5251": {
+      "assignments": 1932,
+      "clause_inspections": 24601,
+      "conflict": false,
+      "negation_derived": true
+    }
+  },
+  "zip_sha256": "f08ec771eaf99c31d22cbe4d364ccd0ca80365f41a1395e1a152d067aabcf192"
+}

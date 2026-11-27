@@ -1,5 +1,10 @@
 {
   "accepted_native_checks_warning_free": true,
+  "accepted_reports": [
+    "independent/proof-replay.md",
+    "independent/formula-semantics.md",
+    "independent/parent-regeneration.md"
+  ],
   "artifact_sha256": "f08ec771eaf99c31d22cbe4d364ccd0ca80365f41a1395e1a152d067aabcf192",
   "binary_rup_proofs_strictly_replayed": 3,
   "cover_query_sha256": "30163e3ddaefb8241137b19bcdceafc7d1c9facfb85f0c76a239d53c71923a70",
@@ -16,7 +21,12 @@
     2
   ],
   "fresh_full_k58_searches": 0,
-  "independent_swarm": "smwyronzn; pending",
+  "independent_swarm": {
+    "accepted_directions": 3,
+    "id": "smwyronzn",
+    "pending_reports": 0,
+    "state": "solved"
+  },
   "index": 0,
   "literals": [
     5249,
@@ -32,12 +42,12 @@
   "native_wrong_query_rejected": true,
   "parent": "OPEN_UNKNOWN",
   "review_bundle": {
-    "bytes": 1259778,
-    "crc_test": "passed",
-    "files_including_manifest": 27,
-    "manifest_entries": 26,
+    "bytes": 1285671,
+    "files_including_manifest": 35,
+    "manifest_entries": 34,
+    "manifest_hash_check": "passed",
     "path": "dist/K58_case0-verification.zip",
-    "sha256": "71a4ff5ab02a77802e288f8fd17a44bc752f488e223dc6c6c1df125986a9d054",
+    "sha256": "88e09e4f8b06bcb999dc96b155767585b10802bff0279bfa094146ff7367d386",
     "unpacked_default_and_strict_native_replay": "passed"
   },
   "schema": "k58-case0-verification/v1",

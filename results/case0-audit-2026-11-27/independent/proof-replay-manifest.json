@@ -1,0 +1,366 @@
+{
+  "archive_sha256": "f08ec771eaf99c31d22cbe4d364ccd0ca80365f41a1395e1a152d067aabcf192",
+  "claims": {
+    "color1": {
+      "addition_count": 36,
+      "addition_literals": [
+        4,
+        4,
+        4,
+        5,
+        4,
+        6,
+        6,
+        4,
+        3,
+        5,
+        3,
+        4,
+        3,
+        2,
+        4,
+        3,
+        3,
+        2,
+        3,
+        4,
+        2,
+        4,
+        1,
+        3,
+        3,
+        3,
+        4,
+        4,
+        3,
+        3,
+        3,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "deletion_count": 77,
+      "final_record_span": [
+        956,
+        958
+      ],
+      "lrat_sha256": "767d2ea4b9817eb5a204c790a95bbe130fb1cb6e56a2fce1dfebac393254534f",
+      "pins": [
+        5250
+      ],
+      "proof": "7bb85210d29faa078a357ecc0da28e51cb9d58ed0c5a48eaec7d201284acc6b4",
+      "query": "84ba8a7e6bb372c0d5e6c4485bee7e47c8ca5081277f4f8d8beabbe0d1fee33f",
+      "record_count": 113,
+      "rup_sha256": "7bb85210d29faa078a357ecc0da28e51cb9d58ed0c5a48eaec7d201284acc6b4"
+    },
+    "color2": {
+      "addition_count": 1,
+      "addition_literals": [
+        0
+      ],
+      "deletion_count": 0,
+      "final_record_span": [
+        0,
+        2
+      ],
+      "lrat_sha256": "0664efa14bd9864d81cdb10d64b791fc03c1e7db64199f4d69b4bedf054635c3",
+      "pins": [
+        5251
+      ],
+      "proof": "ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3",
+      "query": "858216a74117455646e51880ca1392e957da8800ccb95f5189870d67007ad83c",
+      "record_count": 1,
+      "rup_sha256": "ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3"
+    },
+    "cover": {
+      "addition_count": 38,
+      "addition_literals": [
+        5,
+        5,
+        5,
+        6,
+        5,
+        7,
+        7,
+        5,
+        4,
+        6,
+        4,
+        5,
+        4,
+        3,
+        5,
+        4,
+        4,
+        3,
+        4,
+        5,
+        3,
+        5,
+        2,
+        4,
+        4,
+        4,
+        5,
+        5,
+        4,
+        4,
+        4,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "deletion_count": 0,
+      "final_record_span": [
+        376,
+        378
+      ],
+      "lrat_sha256": "1c2452e0738c29a3a84b223484e221ebb4196ca2d6acd399fd18bab9209d1613",
+      "pins": [
+        -5249,
+        -5252
+      ],
+      "proof": "67229c09284239f78229d4920d7527495a2ccaca3775e262d11d8754ec161d66",
+      "query": "30163e3ddaefb8241137b19bcdceafc7d1c9facfb85f0c76a239d53c71923a70",
+      "record_count": 38,
+      "rup_sha256": "67229c09284239f78229d4920d7527495a2ccaca3775e262d11d8754ec161d66"
+    }
+  },
+  "drat_trim_executable_sha256": "c098569ea4088393aeb3c134075fdf7ba9f32a7384571ce5cba0eb8c36b6b3c8",
+  "drat_trim_source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee",
+  "edge_index": 1312,
+  "negative_native": {
+    "color1_drop_penultimate_addition": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/color1.cnf",
+        "controls/color1.drop-penultimate-addition.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 1,
+      "status_lines": [
+        "s NOT VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178824 clauses\n\nc finished parsing, read 954 bytes from proof file\n\nc conflict claimed, but not detected\n\ns NOT VERIFIED\n\nc verification time: 0.106 seconds\n",
+      "stdout_sha256": "5af1e6908066bfb71415c3aa932c2ab9c17f537132a7fa1666feb5b536397f0a",
+      "verified_lines": 0,
+      "warning_occurrences": 0
+    },
+    "color1_empty_only": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/color1.cnf",
+        "controls/empty-addition.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 1,
+      "status_lines": [
+        "s NOT VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178824 clauses\n\nc finished parsing, read 2 bytes from proof file\n\nc conflict claimed, but not detected\n\ns NOT VERIFIED\n\nc verification time: 0.106 seconds\n",
+      "stdout_sha256": "fd07737f7f7563e4896d7e62d5ba287151cf8fd436e423878c8f1f2f7ec0b7a8",
+      "verified_lines": 0,
+      "warning_occurrences": 0
+    },
+    "color2_unsigned_parent": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/parent.cnf",
+        "package/K58_case0/proofs/ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 1,
+      "status_lines": [
+        "s NOT VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178823 clauses\n\nc finished parsing, read 2 bytes from proof file\n\nc conflict claimed, but not detected\n\ns NOT VERIFIED\n\nc verification time: 0.106 seconds\n",
+      "stdout_sha256": "64ead80b3ca1c98eed08aacb6e0fa2d87bdc0d954e3c56a1d9a5430471fc722a",
+      "verified_lines": 0,
+      "warning_occurrences": 0
+    },
+    "cover_empty_only": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/cover.cnf",
+        "controls/empty-addition.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 1,
+      "status_lines": [
+        "s NOT VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178825 clauses\n\nc finished parsing, read 2 bytes from proof file\n\nc conflict claimed, but not detected\n\ns NOT VERIFIED\n\nc verification time: 0.106 seconds\n",
+      "stdout_sha256": "88a8a7b8465586fe291e0d38c71a7f3b5c6ec21f00c6d0621f2be80fd5a172d1",
+      "verified_lines": 0,
+      "warning_occurrences": 0
+    },
+    "cover_trailing_junk": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/cover.cnf",
+        "controls/cover.trailing-junk.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 0,
+      "status_lines": [
+        "s VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178825 clauses\n\nc WARNING: wrong binary prefix, stop reading proof\n\nc finished parsing, read 378 bytes from proof file\n\nc detected empty clause; start verification via backward checking\n\nc 115 of 178825 clauses in core                            \n\nc 35 of 39 lemmas in core using 1516 resolution steps\n\nc 0 RAT lemmas in core; 34 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.106 seconds\n",
+      "stdout_sha256": "7ec54df6920bc83590a06e668cd85fb7629169923ede332827e0f26979127afb",
+      "verified_lines": 1,
+      "warning_occurrences": 1
+    }
+  },
+  "parent_clauses": 178823,
+  "parent_gzip_sha256": "aceef062c0f8b511a96c10f39265c02cd25333cd101000a6c0493568a5d5a380",
+  "parent_raw_bytes": 3423661,
+  "parent_raw_sha256": "ae90931dc6cd482105153dd720209e602bbfc7cc0915e18c6e87023ee2659931",
+  "parent_variables": 19218,
+  "pivot": [
+    31,
+    42
+  ],
+  "positive_native": {
+    "color1": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/color1.cnf",
+        "package/K58_case0/proofs/7bb85210d29faa078a357ecc0da28e51cb9d58ed0c5a48eaec7d201284acc6b4.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 0,
+      "status_lines": [
+        "s VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178824 clauses\n\nc finished parsing, read 958 bytes from proof file\n\nc detected empty clause; start verification via backward checking\n\nc 110 of 178824 clauses in core                            \n\nc 36 of 37 lemmas in core using 1419 resolution steps\n\nc 0 RAT lemmas in core; 0 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.110 seconds\n",
+      "stdout_sha256": "0b3b059c0da246cd0470fd3310d62a1ac12da4a7d70affc9b77b5b75e52de09f",
+      "verified_lines": 1,
+      "warning_occurrences": 0
+    },
+    "color2": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/color2.cnf",
+        "package/K58_case0/proofs/ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 0,
+      "status_lines": [
+        "s VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178824 clauses\n\nc finished parsing, read 2 bytes from proof file\n\nc UNSAT via unit propagation on the input instance\n\nc 4 of 178824 clauses in core                            \n\nc 1 of 2 lemmas in core using 4 resolution steps\n\nc 0 RAT lemmas in core; 0 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.108 seconds\n",
+      "stdout_sha256": "0aad9cbfa9e761075b6170eec958dfe1b7375177f571c877afd07ab8680314cd",
+      "verified_lines": 1,
+      "warning_occurrences": 0
+    },
+    "cover": {
+      "command": [
+        "work/drat-trim",
+        "work/queries/cover.cnf",
+        "package/K58_case0/proofs/67229c09284239f78229d4920d7527495a2ccaca3775e262d11d8754ec161d66.rup",
+        "-i",
+        "-U"
+      ],
+      "exit": 0,
+      "status_lines": [
+        "s VERIFIED"
+      ],
+      "stderr_bytes": 0,
+      "stderr_display": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_display": "\nc turning on binary mode checking\n\nc parsing input formula with 19218 variables and 178825 clauses\n\nc finished parsing, read 378 bytes from proof file\n\nc detected empty clause; start verification via backward checking\n\nc 115 of 178825 clauses in core                            \n\nc 35 of 39 lemmas in core using 1516 resolution steps\n\nc 0 RAT lemmas in core; 34 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.106 seconds\n",
+      "stdout_sha256": "3cf09c999dad699a0e7e5d6e6a9440ca550996aa35ad0e330fca3728c101e019",
+      "verified_lines": 1,
+      "warning_occurrences": 0
+    }
+  },
+  "queries": {
+    "color0": {
+      "bytes": 3423668,
+      "pins": [
+        5249
+      ],
+      "sha256": "25bb3d2500487ee87ccde7c41274538ac484344a42b301b54b9d99036ff0a5e5"
+    },
+    "color1": {
+      "bytes": 3423668,
+      "pins": [
+        5250
+      ],
+      "sha256": "84ba8a7e6bb372c0d5e6c4485bee7e47c8ca5081277f4f8d8beabbe0d1fee33f"
+    },
+    "color2": {
+      "bytes": 3423668,
+      "pins": [
+        5251
+      ],
+      "sha256": "858216a74117455646e51880ca1392e957da8800ccb95f5189870d67007ad83c"
+    },
+    "color3": {
+      "bytes": 3423668,
+      "pins": [
+        5252
+      ],
+      "sha256": "7aedd43ca0cd6ea1be6a5219abd17c72160807bcc4c2b95936741b7dfdbf6bee"
+    },
+    "cover": {
+      "bytes": 3423677,
+      "pins": [
+        -5249,
+        -5252
+      ],
+      "sha256": "30163e3ddaefb8241137b19bcdceafc7d1c9facfb85f0c76a239d53c71923a70"
+    }
+  },
+  "strict_contract": {
+    "empty_stderr": true,
+    "exactly_one_s_VERIFIED": true,
+    "exit_zero": true,
+    "flags": [
+      "-i",
+      "-U"
+    ],
+    "forbidden_flag_used": false,
+    "zero_warnings": true
+  },
+  "variables": [
+    5249,
+    5250,
+    5251,
+    5252
+  ]
+}

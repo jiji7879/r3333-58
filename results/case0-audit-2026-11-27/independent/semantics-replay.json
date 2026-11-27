@@ -1,0 +1,15 @@
+{
+  "fresh_solver_searches": 0,
+  "head": "5f6644251423ebb5207722ee641d08a93696703dac1df4cfbb56e58fbc7d4d9e",
+  "live": 983774,
+  "negative_controls": 7,
+  "outcome": "PASS: formula/guard/head/queue semantics; proof verdicts explicitly out of scope",
+  "positive_unit_control": true,
+  "queries": {
+    "color_0": "25bb3d2500487ee87ccde7c41274538ac484344a42b301b54b9d99036ff0a5e5",
+    "color_1": "84ba8a7e6bb372c0d5e6c4485bee7e47c8ca5081277f4f8d8beabbe0d1fee33f",
+    "color_2": "858216a74117455646e51880ca1392e957da8800ccb95f5189870d67007ad83c",
+    "color_3": "7aedd43ca0cd6ea1be6a5219abd17c72160807bcc4c2b95936741b7dfdbf6bee",
+    "cover": "30163e3ddaefb8241137b19bcdceafc7d1c9facfb85f0c76a239d53c71923a70"
+  }
+}

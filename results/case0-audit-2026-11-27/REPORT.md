@@ -22,12 +22,18 @@ eg5252$, which is also UNSAT. Hence
 
 $$P\vdash (5249\lor5252).$$
 
-Thus a complete parent model must use color 0 or color 3. The third certificate
-is an implication about complete models, not a witness for either model. With
-two unresolved children, the queue cannot reduce this node to one continuation:
-retain the parent or represent both unresolved branches subject to free slots.
+Thus a complete parent model must use color 0 or color 3. The host's
+at-least-one and pairwise at-most-one clauses make the two retained child queries
+an exact, disjoint partition of parent models. Keeping both therefore loses no
+parent model; it does not say that either query is satisfiable.
+
+The third certificate is an implication about complete models, not a witness
+for either model. With two unresolved children, the queue cannot reduce this
+node to one continuation: retain the parent or represent both unresolved
+branches subject to free slots (one additional slot if expanded).
 Likewise, `cover.status: CLOSED` is an obligation/check status, not evidence
-that the parent itself is closed.
+that the parent itself is closed. The hypothetical expansion by one slot is
+not an actual queue mutation: the frozen count remains 983,774.
 
 The three native replay receipts match these exact queries and proof files:
 
@@ -91,6 +97,16 @@ does not independently authenticate a longer history.
 The `OPEN_UNKNOWN` status is also retained in metadata; no later search here
 re-decides it. Nevertheless nothing in the artifact supplies a refutation or
 model for the parent, and its recorded live count is the familiar 983,774.
+
+## Independent review
+
+All three swarm directions are accepted. `independent/proof-replay.md` checks all
+strict native proofs and discriminating corruption controls;
+`independent/formula-semantics.md` independently derives the pivot, exact
+queries, guard and two-open queue partition; and
+`independent/parent-regeneration.md` reproduces the parent from both pristine
+recipe source/data and the audited initialized tree. Their machine receipts
+and an actual semantic replay are in the same folder.
 
 ## Files
 
