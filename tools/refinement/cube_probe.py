@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """Small proof-carrying refinement prototype; bounded local C&C probes."""
+
+if not __debug__:
+    raise RuntimeError("Refinement verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
 import argparse
 import collections
 import gzip

@@ -7,7 +7,7 @@
 c 46 of 99 lemmas in core using 1802 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.136 seconds
 
 ===== 2 / cohort =====
 c turning on binary mode checking
@@ -18,7 +18,7 @@
 c 1 of 57 lemmas in core using 4 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.126 seconds
+c verification time: 0.133 seconds
 
 ===== 3 / cohort =====
 c turning on binary mode checking
@@ -29,7 +29,7 @@
 c 5 of 61 lemmas in core using 621 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.242 seconds
 
 ===== 4 / cohort =====
 c turning on binary mode checking
@@ -40,7 +40,7 @@
 c 78 of 144 lemmas in core using 3892 resolution steps
 c 0 RAT lemmas in core; 4 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.120 seconds
+c verification time: 0.175 seconds
 
 ===== 5 / cohort =====
 c turning on binary mode checking
@@ -51,7 +51,7 @@
 c 3 of 70 lemmas in core using 179 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.169 seconds
 
 ===== 6 / cohort =====
 c turning on binary mode checking
@@ -62,7 +62,7 @@
 c 29 of 96 lemmas in core using 1107 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.247 seconds
 
 ===== 7 / cohort =====
 c turning on binary mode checking
@@ -73,7 +73,7 @@
 c 58 of 134 lemmas in core using 1128 resolution steps
 c 0 RAT lemmas in core; 1 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.147 seconds
 
 ===== 8 / cohort =====
 c turning on binary mode checking
@@ -84,7 +84,7 @@
 c 113 of 191 lemmas in core using 14641 resolution steps
 c 0 RAT lemmas in core; 2 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.137 seconds
 
 ===== 9 / cohort =====
 c turning on binary mode checking
@@ -95,7 +95,7 @@
 c 8 of 87 lemmas in core using 166 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.219 seconds
 
 ===== 10 / cohort =====
 c turning on binary mode checking
@@ -106,7 +106,7 @@
 c 298 of 386 lemmas in core using 17876 resolution steps
 c 0 RAT lemmas in core; 6 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.189 seconds
 
 ===== 11 / cohort =====
 c turning on binary mode checking
@@ -117,7 +117,7 @@
 c 1974 of 2058 lemmas in core using 177156 resolution steps
 c 0 RAT lemmas in core; 652 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.144 seconds
+c verification time: 0.201 seconds
 
 ===== 12 / cohort =====
 c turning on binary mode checking
@@ -128,7 +128,7 @@
 c 457 of 550 lemmas in core using 43699 resolution steps
 c 0 RAT lemmas in core; 275 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.135 seconds
 
 ===== 13 / cohort =====
 c turning on binary mode checking
@@ -139,7 +139,7 @@
 c 1 of 810 lemmas in core using 4 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.234 seconds
 
 ===== 14 / cohort =====
 c turning on binary mode checking
@@ -150,7 +150,7 @@
 c 5 of 1040 lemmas in core using 144 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.165 seconds
 
 ===== 15 / cohort =====
 c turning on binary mode checking
@@ -161,7 +161,7 @@
 c 1 of 856 lemmas in core using 4 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.123 seconds
+c verification time: 0.130 seconds
 
 ===== 16 / cohort =====
 c turning on binary mode checking
@@ -172,7 +172,7 @@
 c 1 of 854 lemmas in core using 32 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.179 seconds
 
 ===== 17 / cohort =====
 c turning on binary mode checking
@@ -183,7 +183,7 @@
 c 1 of 906 lemmas in core using 35 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.120 seconds
+c verification time: 0.258 seconds
 
 ===== 18 / cohort =====
 c turning on binary mode checking
@@ -194,7 +194,7 @@
 c 1 of 928 lemmas in core using 32 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.117 seconds
+c verification time: 0.141 seconds
 
 ===== 19 / cohort =====
 c turning on binary mode checking
@@ -205,7 +205,7 @@
 c 1 of 904 lemmas in core using 35 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.147 seconds
 
 ===== 20 / cohort =====
 c turning on binary mode checking
@@ -216,7 +216,7 @@
 c 9 of 1012 lemmas in core using 268 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.120 seconds
+c verification time: 0.160 seconds
 
 ===== 21 / cohort =====
 c turning on binary mode checking
@@ -227,7 +227,7 @@
 c 1 of 696 lemmas in core using 3 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.129 seconds
 
 ===== 22 / cohort =====
 c turning on binary mode checking
@@ -238,7 +238,7 @@
 c 1 of 696 lemmas in core using 3 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.128 seconds
 
 ===== 23 / cohort =====
 c turning on binary mode checking
@@ -249,7 +249,7 @@
 c 1 of 821 lemmas in core using 28 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.131 seconds
 
 ===== 24 / cohort =====
 c turning on binary mode checking
@@ -260,7 +260,7 @@
 c 1 of 825 lemmas in core using 28 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.120 seconds
+c verification time: 0.173 seconds
 
 ===== 25 / cohort =====
 c turning on binary mode checking
@@ -271,7 +271,7 @@
 c 1 of 832 lemmas in core using 28 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.129 seconds
 
 ===== 26 / cohort =====
 c turning on binary mode checking
@@ -282,7 +282,7 @@
 c 1 of 822 lemmas in core using 28 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.134 seconds
 
 ===== 27 / cohort =====
 c turning on binary mode checking
@@ -293,7 +293,7 @@
 c 130 of 1149 lemmas in core using 12356 resolution steps
 c 0 RAT lemmas in core; 22 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.217 seconds
 
 ===== 28 / cohort =====
 c turning on binary mode checking
@@ -304,7 +304,7 @@
 c 1 of 852 lemmas in core using 15 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.150 seconds
 
 ===== 29 / cohort =====
 c turning on binary mode checking
@@ -315,7 +315,7 @@
 c 1 of 840 lemmas in core using 15 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.141 seconds
 
 ===== 30 / cohort =====
 c turning on binary mode checking
@@ -326,7 +326,7 @@
 c 2 of 831 lemmas in core using 51 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.129 seconds
 
 ===== 31 / cohort =====
 c turning on binary mode checking
@@ -337,7 +337,7 @@
 c 2 of 861 lemmas in core using 87 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.128 seconds
 
 ===== 1 / excluded-sibling =====
 c turning on binary mode checking
@@ -348,7 +348,7 @@
 c 1 of 810 lemmas in core using 4 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.120 seconds
+c verification time: 0.164 seconds
 
 ===== 1 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -359,7 +359,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.123 seconds
+c verification time: 0.155 seconds
 
 ===== 2 / excluded-sibling =====
 c turning on binary mode checking
@@ -370,7 +370,7 @@
 c 1 of 854 lemmas in core using 32 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.243 seconds
 
 ===== 2 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -381,7 +381,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.174 seconds
 
 ===== 3 / excluded-sibling =====
 c turning on binary mode checking
@@ -392,7 +392,7 @@
 c 1 of 904 lemmas in core using 35 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.165 seconds
 
 ===== 3 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -403,7 +403,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.206 seconds
 
 ===== 4 / excluded-sibling =====
 c turning on binary mode checking
@@ -414,7 +414,7 @@
 c 9 of 1012 lemmas in core using 268 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.224 seconds
 
 ===== 4 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -425,7 +425,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.145 seconds
 
 ===== 5 / excluded-sibling =====
 c turning on binary mode checking
@@ -436,7 +436,7 @@
 c 1 of 821 lemmas in core using 28 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.120 seconds
+c verification time: 0.205 seconds
 
 ===== 5 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -447,7 +447,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.165 seconds
 
 ===== 6 / excluded-sibling =====
 c turning on binary mode checking
@@ -458,7 +458,7 @@
 c 1 of 822 lemmas in core using 28 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.148 seconds
 
 ===== 6 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -469,7 +469,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.139 seconds
 
 ===== 7 / excluded-sibling =====
 c turning on binary mode checking
@@ -480,7 +480,7 @@
 c 130 of 1149 lemmas in core using 12356 resolution steps
 c 0 RAT lemmas in core; 22 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.123 seconds
+c verification time: 0.243 seconds
 
 ===== 7 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -491,7 +491,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.322 seconds
 
 ===== 8 / excluded-sibling =====
 c turning on binary mode checking
@@ -502,7 +502,7 @@
 c 1 of 852 lemmas in core using 15 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.248 seconds
 
 ===== 8 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -513,7 +513,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.140 seconds
 
 ===== 9 / excluded-sibling =====
 c turning on binary mode checking
@@ -524,7 +524,7 @@
 c 1 of 840 lemmas in core using 15 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.119 seconds
+c verification time: 0.175 seconds
 
 ===== 9 / complete-two-child-cover =====
 c turning on binary mode checking
@@ -535,7 +535,7 @@
 c 1 of 2 lemmas in core using 7 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.117 seconds
+c verification time: 0.213 seconds
 
 ===== 1 / stock-transport =====
 c turning on binary mode checking
@@ -546,7 +546,7 @@
 c 46 of 99 lemmas in core using 1802 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.208 seconds
 
 ===== 2 / stock-transport =====
 c turning on binary mode checking
@@ -557,7 +557,7 @@
 c 1 of 57 lemmas in core using 4 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.224 seconds
 
 ===== 3 / stock-transport =====
 c turning on binary mode checking
@@ -568,7 +568,7 @@
 c 5 of 61 lemmas in core using 621 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.154 seconds
 
 ===== 4 / stock-transport =====
 c turning on binary mode checking
@@ -579,7 +579,7 @@
 c 78 of 144 lemmas in core using 3892 resolution steps
 c 0 RAT lemmas in core; 4 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.195 seconds
 
 ===== 5 / stock-transport =====
 c turning on binary mode checking
@@ -590,7 +590,7 @@
 c 3 of 70 lemmas in core using 179 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.118 seconds
+c verification time: 0.170 seconds
 
 ===== 6 / stock-transport =====
 c turning on binary mode checking
@@ -601,7 +601,7 @@
 c 29 of 96 lemmas in core using 1107 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.129 seconds
+c verification time: 0.155 seconds
 
 ===== 7 / stock-transport =====
 c turning on binary mode checking
@@ -612,7 +612,7 @@
 c 78 of 144 lemmas in core using 3892 resolution steps
 c 0 RAT lemmas in core; 4 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.147 seconds
 
 ===== 8 / stock-transport =====
 c turning on binary mode checking
@@ -623,7 +623,7 @@
 c 3 of 70 lemmas in core using 179 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.167 seconds
 
 ===== 9 / stock-transport =====
 c turning on binary mode checking
@@ -634,7 +634,7 @@
 c 29 of 96 lemmas in core using 1107 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.120 seconds
+c verification time: 0.256 seconds
 
 ===== 10 / stock-transport =====
 c turning on binary mode checking
@@ -645,7 +645,7 @@
 c 58 of 134 lemmas in core using 1128 resolution steps
 c 0 RAT lemmas in core; 1 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.123 seconds
+c verification time: 0.264 seconds
 
 ===== 11 / stock-transport =====
 c turning on binary mode checking
@@ -656,7 +656,7 @@
 c 113 of 191 lemmas in core using 14641 resolution steps
 c 0 RAT lemmas in core; 2 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.125 seconds
+c verification time: 0.210 seconds
 
 ===== 12 / stock-transport =====
 c turning on binary mode checking
@@ -667,7 +667,7 @@
 c 8 of 87 lemmas in core using 166 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.227 seconds
 
 ===== 13 / stock-transport =====
 c turning on binary mode checking
@@ -678,7 +678,7 @@
 c 58 of 134 lemmas in core using 1128 resolution steps
 c 0 RAT lemmas in core; 1 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.121 seconds
+c verification time: 0.171 seconds
 
 ===== 14 / stock-transport =====
 c turning on binary mode checking
@@ -689,7 +689,7 @@
 c 113 of 191 lemmas in core using 14641 resolution steps
 c 0 RAT lemmas in core; 2 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.205 seconds
 
 ===== 15 / stock-transport =====
 c turning on binary mode checking
@@ -700,7 +700,7 @@
 c 8 of 87 lemmas in core using 166 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.243 seconds
 
 ===== 16 / stock-transport =====
 c turning on binary mode checking
@@ -711,7 +711,7 @@
 c 58 of 134 lemmas in core using 1128 resolution steps
 c 0 RAT lemmas in core; 1 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.127 seconds
+c verification time: 0.187 seconds
 
 ===== 17 / stock-transport =====
 c turning on binary mode checking
@@ -722,7 +722,7 @@
 c 113 of 191 lemmas in core using 14641 resolution steps
 c 0 RAT lemmas in core; 2 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.128 seconds
+c verification time: 0.148 seconds
 
 ===== 18 / stock-transport =====
 c turning on binary mode checking
@@ -733,7 +733,7 @@
 c 8 of 87 lemmas in core using 166 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.122 seconds
+c verification time: 0.141 seconds
 
 ===== 19 / stock-transport =====
 c turning on binary mode checking
@@ -744,7 +744,7 @@
 c 298 of 386 lemmas in core using 17876 resolution steps
 c 0 RAT lemmas in core; 6 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.123 seconds
+c verification time: 0.165 seconds
 
 ===== 20 / stock-transport =====
 c turning on binary mode checking
@@ -755,7 +755,7 @@
 c 1974 of 2058 lemmas in core using 177156 resolution steps
 c 0 RAT lemmas in core; 652 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.151 seconds
+c verification time: 0.157 seconds
 
 ===== 21 / stock-transport =====
 c turning on binary mode checking
@@ -766,7 +766,7 @@
 c 457 of 550 lemmas in core using 43699 resolution steps
 c 0 RAT lemmas in core; 275 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.127 seconds
+c verification time: 0.139 seconds
 
 ===== 22 / stock-transport =====
 c turning on binary mode checking
@@ -777,7 +777,7 @@
 c 298 of 386 lemmas in core using 17876 resolution steps
 c 0 RAT lemmas in core; 6 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.136 seconds
+c verification time: 0.138 seconds
 
 ===== 23 / stock-transport =====
 c turning on binary mode checking
@@ -788,7 +788,7 @@
 c 1974 of 2058 lemmas in core using 177156 resolution steps
 c 0 RAT lemmas in core; 652 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.145 seconds
+c verification time: 0.157 seconds
 
 ===== 24 / stock-transport =====
 c turning on binary mode checking
@@ -799,7 +799,7 @@
 c 457 of 550 lemmas in core using 43699 resolution steps
 c 0 RAT lemmas in core; 275 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.128 seconds
+c verification time: 0.138 seconds
 
 ===== 25 / stock-transport =====
 c turning on binary mode checking
@@ -810,7 +810,7 @@
 c 298 of 386 lemmas in core using 17876 resolution steps
 c 0 RAT lemmas in core; 6 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.133 seconds
 
 ===== 26 / stock-transport =====
 c turning on binary mode checking
@@ -821,7 +821,7 @@
 c 1974 of 2058 lemmas in core using 177156 resolution steps
 c 0 RAT lemmas in core; 652 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.149 seconds
+c verification time: 0.155 seconds
 
 ===== 27 / stock-transport =====
 c turning on binary mode checking
@@ -832,7 +832,7 @@
 c 457 of 550 lemmas in core using 43699 resolution steps
 c 0 RAT lemmas in core; 275 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.126 seconds
+c verification time: 0.150 seconds
 
 ===== malformed-prefix control (strictly rejected) =====
 c turning on binary mode checking
@@ -844,7 +844,7 @@
 c 1 of 1 lemmas in core using 4 resolution steps
 c 0 RAT lemmas in core; 0 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.124 seconds
+c verification time: 0.216 seconds
 
 ===== 14 / fresh-guard_parent =====
 c turning on binary mode checking
@@ -855,7 +855,7 @@
 c 18176 of 190533 lemmas in core using 3306384 resolution steps
 c 0 RAT lemmas in core; 10995 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.768 seconds
+c verification time: 0.966 seconds
 
 ===== 14 / fresh-refined_child =====
 c turning on binary mode checking
@@ -866,5 +866,5 @@
 c 22674 of 237832 lemmas in core using 5407613 resolution steps
 c 0 RAT lemmas in core; 14731 redundant literals in core lemmas
 s VERIFIED
-c verification time: 0.924 seconds
+c verification time: 0.981 seconds
 

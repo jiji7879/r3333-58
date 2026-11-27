@@ -1,0 +1,11 @@
+{
+  "checker": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/refinement/bin/drat-trim",
+  "direct_cover_rechecked_strictly": true,
+  "external_checker_used": true,
+  "output_from_supplied_runner": "PASS  14-arm RUP proof and explicit 13-vertex counterexample to lowering its threshold.\nPASS  Representative 983585, pivot (32,43). Colors 0, 2, 3 refuted. Color 1 remains OPEN_UNKNOWN.\nPASS  Direct cover proof and ledger replay. One subcase in, one subcase out. Parent REFINED.\nPASS  {\"common_depth_two_before\": 728748912, \"common_depth_two_removed\": 11733475, \"featured_second_exclusions\": 477919, \"first_exclusions\": 252112, \"further_second_exclusions\": 9057585, \"live_representatives\": 983774, \"owner_classes\": 829, \"representatives_reached\": 420871, \"wall_rows\": 11585}\nPASS  9 invalid ledger records rejected. Quick review 1.34 seconds.\n",
+  "package": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/review-attachments-v1/quickstart/K58_review",
+  "package_manifest_checked": true,
+  "schema": "quickstart-strict-replay/v1",
+  "seconds": 1.4765178989619017,
+  "warning_suppression_used": false
+}

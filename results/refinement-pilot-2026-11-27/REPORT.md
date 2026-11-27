@@ -12,7 +12,9 @@ A subsequent eight-search comparison left the first examples for arms 11–13
 and the refined child. Both fresh deletion-free proof transformations passed
 strict warning-free replay. This closes **one guarded inner region** identified
 in this pilot, not its unguarded original representative, wall row, or Ramsey
-bound.
+bound. After that comparison, the current pilot view has **eight** open guarded
+nodes (1–6, 8 and 9); the nine-open queue snapshot is the preceding historical
+snapshot, not a current authoritative event-log view.
 
 No broad parent sweep or long DAG search was run.
 
@@ -125,9 +127,9 @@ the warning. Neither a return code nor a success line alone is sufficient.
 
 ## Evidence bundle
 
-The audit bundle is `dist/k58-refinement-pilot-audit.zip` (93,327,839 bytes),
-SHA-256 `c0b73190fd7884e5420aa198c2a33362386b6235fd6f83fb8c524630c2ace158`.
-Its CRC test passed. A fresh extraction passed all 495 filename/hash entries in
+The audit bundle is `dist/k58-refinement-pilot-audit.zip` (93,330,972 bytes),
+SHA-256 `2a63073549b8c1e73b9b53eb454712a976d2a7b3e94af6ceb9ff3e632983cb4c`.
+Its CRC test passed. A fresh extraction passed all 497 filename/hash entries in
 its manifest. Replaying from that extraction produced byte-identical summary
 JSON to the direct independent replay. The bundle stays outside Git; only source
 and small reports/logs are committed.
@@ -147,6 +149,12 @@ checks without campaign imports or reliance on recorded statuses. It passed:
 See [replay summary](independent-replay/replay-summary.json) and
 [full replay output](independent-replay/replay.log). Positive checks contain no
 warnings and no `-w` flag.
+
+All proof-bearing Python tools now fail immediately when Python assertions are
+disabled (`python -O` or `PYTHONOPTIMIZE`). An independent optimized-mode review
+showed why this guard is necessary; no published replay used that mode. After
+adding the guards, the normal 78-check replay and its JSON summary remained
+byte-identical, and both refreshed ZIP bundles passed fresh-extraction checks.
 
 The Ultramath run `smwymdevf` ended without member submissions, so no member
 solution was accepted. Its shared transport counterexamples reinforced the same

@@ -1,0 +1,6 @@
+test_every_proof_bearing_tool_fails_immediately (__main__.OptimizedGuardTests.test_every_proof_bearing_tool_fails_immediately) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.458s
+
+OK

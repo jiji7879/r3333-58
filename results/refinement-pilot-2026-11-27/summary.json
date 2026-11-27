@@ -56,15 +56,16 @@
   ],
   "completed_comparison_calls": 8,
   "conditional_refinements": 9,
+  "current_open_unknown_guarded_nodes_after_comparison": 8,
   "distinct_replayed_query_proof_pairs": 42,
   "earlier_hard_cutoff_attempts_not_counted_as_completed": 4,
   "evidence_archive": {
-    "bytes": 93327839,
+    "bytes": 93330972,
     "crc_test": "passed",
-    "files_including_manifest": 496,
-    "manifest_files_checked": 495,
+    "files_including_manifest": 498,
+    "manifest_files_checked": 497,
     "path": "dist/k58-refinement-pilot-audit.zip",
-    "sha256": "c0b73190fd7884e5420aa198c2a33362386b6235fd6f83fb8c524630c2ace158",
+    "sha256": "2a63073549b8c1e73b9b53eb454712a976d2a7b3e94af6ceb9ff3e632983cb4c",
     "unpacked_replay": "passed",
     "unpacked_summary_byte_identical_to_direct": true
   },
@@ -76,13 +77,15 @@
     "independent_replay_summary_sha256": "94f8be61dbf5ea96e8c6adc72da263a924370af9b78566e228d7d5f049dc9c44",
     "queue_ledger_sha256": "237d3027c55c9455d8f389bca0f6def02cd4fc5468028e36bc1c56592d3ff515",
     "source_sha256": {
-      "assemble.py": "80038348f2a05fc1a3be60b67d35d277b68577308561d610c9f92cddb79463ff",
-      "cadical_leaf.py": "c5b56fd3c9bfe23931eafe2324eef195e979887ccd56c55bd1a6c9b08cc16092",
-      "compare.py": "1118fab9e85fd9548c028f2dc596f1808ea748c66a87e43e8038305d1fa70dd1",
-      "cube_probe.py": "cae6d43b0e0f47f119d79485292417c14dba844320fcd7a234c9fcf2f61ac8b2",
-      "queue_refine.py": "c3b0820992f41f24a636a8069f4dc4c2ee52d71c02b3527b637d54672403edd9",
+      "assemble.py": "9035698621ad38256b9d38bef42f7dcddcca30049c1ccefa7547bf60c3769601",
+      "cadical_leaf.py": "5ba044da68f398d3b50bea245105a304490343371ede385876a3edf4e718d850",
+      "compare.py": "afb4cab46a7d692eb3b9fb0f87755a2bb159fa2613622faa956d5437fc78b9e8",
+      "cube_probe.py": "ad064297cbd67a128bce80fba720bda807230179a81ce22c5c05224893c91100",
+      "queue_refine.py": "6cb23744669d5d9d7ae1c9e64b7404f81a1915e71faa3aee66e527eeeb1ccfc7",
+      "review_quickstart.py": "20a03e4c361ac1f449688acf4bcdc55a2e97a3f86f8000c36248ffee0eda5b68",
+      "test_optimized_guards.py": "485e88d75b64460712de0a8ab6c1e828e42c8d176b8ecf6869141d464c460bc7",
       "test_queue.py": "6f58a5f4ec4c835c53c142c02c269a532aacfffc7757a962114035b1ce35c594",
-      "verify_release.py": "6d32ee88573d61c8774c4912afa1acf42df29a672165941f98167cb55fa42924"
+      "verify_release.py": "97f7916ac8054f4e39d2ff3f885384e0cad908c971e159ccaf0818cf1378fe5c"
     }
   },
   "initial_open_unknown_survivors": 9,
@@ -93,6 +96,31 @@
   "queue_slots_after_sat_preserving_replacements": 9,
   "queue_unit_tests_passed": 3,
   "schema": "refinement-pilot-report/v1",
+  "status_views": [
+    {
+      "closed_guarded_nodes": 0,
+      "open_unknown_guarded_nodes": 9,
+      "stage": "after single-survivor replacements, before comparison"
+    },
+    {
+      "closed_guarded_node_ids": [
+        7
+      ],
+      "open_guarded_node_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "open_unknown_guarded_nodes": 8,
+      "scope": "these pilot nodes only, not original representatives or wall rows",
+      "stage": "after bounded comparison"
+    }
+  ],
   "strict_positive_replays": 78,
   "subsequent_guarded_regions_closed": 1,
   "total_completed_search_seconds": 20.26174401398748,

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """Fresh strict replay of a refinement evidence set; no campaign imports."""
+
+if not __debug__:
+    raise RuntimeError("Refinement verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
 import argparse
 import hashlib
 import json

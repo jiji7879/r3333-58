@@ -1,0 +1,6 @@
+PASS  14-arm RUP proof and explicit 13-vertex counterexample to lowering its threshold.
+PASS  Representative 983585, pivot (32,43). Colors 0, 2, 3 refuted. Color 1 remains OPEN_UNKNOWN.
+PASS  Direct cover proof and ledger replay. One subcase in, one subcase out. Parent REFINED.
+PASS  {"common_depth_two_before": 728748912, "common_depth_two_removed": 11733475, "featured_second_exclusions": 477919, "first_exclusions": 252112, "further_second_exclusions": 9057585, "live_representatives": 983774, "owner_classes": 829, "representatives_reached": 420871, "wall_rows": 11585}
+PASS  9 invalid ledger records rejected. Quick review 1.43 seconds.
+PASS  Independent cover replay with -i -U and zero warnings.

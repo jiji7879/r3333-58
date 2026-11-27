@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """Bounded fresh guard-parent versus proof-refined-child K58 comparison."""
+
+if not __debug__:
+    raise RuntimeError("Refinement verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
 import argparse
 import hashlib
 import json

@@ -489,6 +489,8 @@ tools/refinement/cadical_leaf.py: OK
 tools/refinement/compare.py: OK
 tools/refinement/cube_probe.py: OK
 tools/refinement/queue_refine.py: OK
+tools/refinement/review_quickstart.py: OK
+tools/refinement/test_optimized_guards.py: OK
 tools/refinement/test_queue.py: OK
 tools/refinement/verify_release.py: OK
 bin/drat-trim: OK

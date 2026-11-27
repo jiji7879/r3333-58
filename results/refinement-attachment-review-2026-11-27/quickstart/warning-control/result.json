@@ -1,0 +1,35 @@
+{
+  "strict": {
+    "flags": [
+      "-i",
+      "-U"
+    ],
+    "output_tail": [
+      "",
+      "s VERIFIED",
+      "",
+      "c verification time: 0.131 seconds"
+    ],
+    "returncode": 0,
+    "strict_warning_free_acceptance": false,
+    "supplied_acceptance_predicate": true,
+    "warning_diagnostic": true
+  },
+  "supplied_default": {
+    "flags": [
+      "-i",
+      "-w",
+      "-U"
+    ],
+    "output_tail": [
+      "",
+      "s VERIFIED",
+      "",
+      "c verification time: 0.129 seconds"
+    ],
+    "returncode": 0,
+    "strict_warning_free_acceptance": false,
+    "supplied_acceptance_predicate": true,
+    "warning_diagnostic": false
+  }
+}

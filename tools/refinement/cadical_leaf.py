@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """One fresh proof-logging CaDiCaL call on an exact physical query."""
+
+if not __debug__:
+    raise RuntimeError("Refinement verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
 import ctypes
 import hashlib
 import json

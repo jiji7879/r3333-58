@@ -4,6 +4,9 @@
 No SAT search is run here. This program rebuilds and strictly checks each
 proof obligation before recording a single-survivor replacement.
 """
+
+if not __debug__:
+    raise RuntimeError("Refinement verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
 import argparse
 import collections
 import hashlib

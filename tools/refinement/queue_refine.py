@@ -5,6 +5,9 @@ Only the guarded inner nodes in an assembler ledger are touched.  No solver
 search runs here.  Every UNSAT status and every complete two-child cover is
 re-derived from its exact files with strict drat-trim checks before use.
 """
+
+if not __debug__:
+    raise RuntimeError("Refinement verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
 import argparse
 import hashlib
 import json

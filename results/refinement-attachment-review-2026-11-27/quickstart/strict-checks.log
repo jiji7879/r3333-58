@@ -1,0 +1,55 @@
+===== generic 14-arm rule =====
+c turning on binary mode checking
+c parsing input formula with 273 variables and 1472 clauses
+c finished parsing, read 1454656 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 892 of 1472 clauses in core                            
+c 30954 of 31315 lemmas in core using 1235968 resolution steps
+c 0 RAT lemmas in core; 3308 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.295 seconds
+
+===== physical pivot color 0 =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180561 clauses
+c finished parsing, read 1573704 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 348 of 180561 clauses in core                            
+c 272 of 31406 lemmas in core using 9409 resolution steps
+c 0 RAT lemmas in core; 556 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.136 seconds
+
+===== physical pivot color 2 =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180561 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 4 of 180561 clauses in core                            
+c 1 of 2 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.106 seconds
+
+===== physical pivot color 3 =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180561 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 4 of 180561 clauses in core                            
+c 1 of 2 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.107 seconds
+
+===== parent excluding the retained color =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180561 clauses
+c finished parsing, read 1573716 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 351 of 180561 clauses in core                            
+c 272 of 31409 lemmas in core using 9722 resolution steps
+c 0 RAT lemmas in core; 556 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.138 seconds
+

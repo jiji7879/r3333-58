@@ -1,0 +1,14 @@
+$ git show a74f7c2915f4482f5f7906bb2ca451acd031de4d:tools/refinement/review_quickstart.py
+fatal: path 'tools/refinement/review_quickstart.py' exists on disk, but not in 'a74f7c2915f4482f5f7906bb2ca451acd031de4d'
+
+$ git status --short -- tools/refinement/review_quickstart.py
+?? tools/refinement/review_quickstart.py
+
+$ git log --all --format=%H -- tools/refinement/review_quickstart.py
+(no output above means no local commit contains this path)
+
+$ sha256sum tools/refinement/review_quickstart.py
+20a03e4c361ac1f449688acf4bcdc55a2e97a3f86f8000c36248ffee0eda5b68  ../../../tools/refinement/review_quickstart.py
+
+$ git hash-object tools/refinement/review_quickstart.py
+de821bd3bf446935e5cc414d738b7e4c057b26f2

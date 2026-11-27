@@ -1,0 +1,14 @@
+{
+  "strict_positive_checks": 78,
+  "distinct_positive_query_proof_pairs": 42,
+  "checks_by_label": {
+    "cohort": 31,
+    "complete-two-child-cover": 9,
+    "excluded-sibling": 9,
+    "fresh-guard_parent": 1,
+    "fresh-refined_child": 1,
+    "stock-transport": 27
+  },
+  "malformed_control_returncode": 0,
+  "malformed_control_printed_s_VERIFIED": true
+}

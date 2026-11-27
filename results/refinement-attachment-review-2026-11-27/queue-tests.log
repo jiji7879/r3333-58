@@ -1,0 +1,8 @@
+test_every_status_vector_and_backpressure (__main__.QueueTests.test_every_status_vector_and_backpressure) ... ok
+test_exact_unit_extension (__main__.QueueTests.test_exact_unit_extension) ... ok
+test_models_are_never_pruned_on_valid_moves (__main__.QueueTests.test_models_are_never_pruned_on_valid_moves) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
