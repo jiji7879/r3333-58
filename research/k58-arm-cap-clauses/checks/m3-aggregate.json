@@ -1,0 +1,49 @@
+{
+  "independent_seed4": "checks/m3-seed4-v2/summary.json",
+  "new_independent": {
+    "conflicts": 7038007,
+    "propagations": 870725353,
+    "user_cpu_seconds": 408.79533100000003,
+    "wall_seconds": 501.63472254690714
+  },
+  "published_ablation": {
+    "new-independent": {
+      "conflicts": 7038007,
+      "propagations": 870725353,
+      "user_cpu_seconds": 349.958191,
+      "wall_seconds": 383.93658747826703
+    },
+    "published": {
+      "conflicts": 7199953,
+      "propagations": 890715542,
+      "user_cpu_seconds": 387.09838,
+      "wall_seconds": 493.4751742563676
+    }
+  },
+  "published_reduction_percent": {
+    "conflicts": 2.249264682700014,
+    "propagations": 2.2442842925042394,
+    "user_cpu_seconds": 9.594509023778407,
+    "wall_seconds": 22.19738550032786
+  },
+  "rank1200_seed0_regression": {
+    "conflict_change_percent": 20.592242159579733,
+    "cpu_change_percent": 50.899970331696906,
+    "new_conflicts": 1292375,
+    "new_cpu": 102.004449,
+    "stock_conflicts": 1071690,
+    "stock_cpu": 67.59739500000002
+  },
+  "reduction_percent": {
+    "conflicts": 3.410214407701262,
+    "propagations": 2.3351805063573705,
+    "user_cpu_seconds": 9.402173819938364,
+    "wall_seconds": 21.851557166241854
+  },
+  "stock": {
+    "conflicts": 7286492,
+    "propagations": 891544527,
+    "user_cpu_seconds": 451.219801,
+    "wall_seconds": 641.8998310868628
+  }
+}

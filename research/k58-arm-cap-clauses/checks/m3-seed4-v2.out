@@ -1,0 +1,2 @@
+{"sequence": 1, "rank": 1300, "policy": "stock", "seed": 4, "conflict_budget": 3000000, "status": "UNSAT", "conflicts": 930148, "propagations": 113158785, "user_cpu_seconds": 43.653830000000006, "wall_seconds": 43.74280091095716}
+{"sequence": 2, "rank": 1300, "policy": "new-independent", "seed": 4, "conflict_budget": 3000000, "status": "UNSAT", "conflicts": 768563, "propagations": 95728853, "user_cpu_seconds": 34.870655, "wall_seconds": 34.96952028409578}

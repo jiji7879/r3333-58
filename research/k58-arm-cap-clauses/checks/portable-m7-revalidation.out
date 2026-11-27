@@ -1,0 +1,64 @@
+(2, 0, 1, 2) {'False': 19}
+(3, 0, 1, 2) {'False': 19}
+(4, 0, 1, 2) {'False': 19}
+(5, 0, 1, 2) {'False': 19}
+(6, 0, 1, 2) {'False': 19}
+(7, 0, 1, 2) {'False': 19}
+(8, 0, 1, 2) {'False': 19}
+(9, 0, 1, 2) {'False': 19}
+(10, 0, 1, 2) {'False': 19}
+(11, 0, 1, 2) {'False': 19}
+(12, 0, 1, 2) {'False': 19}
+(13, 0, 1, 2) {'False': 19}
+(14, 0, 1, 2) {'False': 19}
+(15, 0, 1, 2) {'False': 19}
+(31, 2, 0, 1) {'False': 6}
+(34, 2, 0, 1) {'False': 6}
+(35, 2, 0, 1) {'False': 6}
+(37, 2, 0, 1) {'False': 6}
+(39, 2, 0, 1) {'False': 6}
+(40, 2, 0, 1) {'False': 6}
+(41, 2, 0, 1) {'False': 6}
+(42, 2, 0, 1) {'False': 6}
+(44, 2, 0, 1) {'False': 6}
+(45, 2, 0, 1) {'False': 6}
+(51, 3, 0, 2) {'False': 3}
+(51, 3, 1, 2) {'False': 4}
+(52, 3, 0, 2) {'False': 3}
+(52, 3, 1, 2) {'False': 4}
+(53, 3, 0, 2) {'False': 3}
+(53, 3, 1, 2) {'False': 4}
+(54, 3, 0, 2) {'False': 3}
+(54, 3, 1, 2) {'False': 4}
+(55, 3, 0, 2) {'False': 3}
+(55, 3, 1, 2) {'False': 4}
+(56, 3, 0, 2) {'False': 3}
+(56, 3, 1, 2) {'False': 4}
+(57, 3, 0, 2) {'False': 3}
+(57, 3, 1, 2) {'False': 4}
+{
+  "schema": "minimal-clause-revalidation/v1",
+  "rank": 1300,
+  "row_id": "e52b5bdaef139b32a0778abac2b39470076bd55b225de3840bafc83e9110556b",
+  "parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+  "candidate_hints": 837,
+  "unique_candidates": 375,
+  "accepted_unique": 375,
+  "answers": {
+    "False": 375
+  },
+  "query_conflicts": 200000,
+  "formula_sha256": "5d9982127ba9407b735bc342b5c23ae888607903df5310decc7dee9040dccb73",
+  "full_formula_byte_identical": true,
+  "clause_widths": {
+    "8": 137,
+    "2": 28,
+    "9": 28,
+    "6": 84,
+    "7": 70,
+    "4": 28
+  },
+  "cpu_seconds": 22.347896692000003,
+  "wall_seconds": 22.352314449846745,
+  "scope": "All unique direct clauses were freshly re-solved on an original-parent subset. Only UNSAT accepted. No SAT or OPEN result became a clause. The direct benchmark input is reproduced byte-for-byte."
+}

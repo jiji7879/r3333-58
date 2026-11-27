@@ -1,0 +1,1 @@
+{"rank": 1300, "baseline_direct": 620, "all_direct": 462094, "new_direct": 461474, "new_length_histogram": {"15": 1400, "13": 11200, "12": 30800, "11": 28000, "10": 123224, "9": 192109, "8": 62403, "7": 8285, "6": 3155, "5": 810, "4": 88}, "all_generation_cpu_including_parent": 2.447697767}

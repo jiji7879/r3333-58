@@ -1,0 +1,74 @@
+[
+  {
+    "cadical_total_process_seconds": 46.36,
+    "cadical_version": "2.1.2",
+    "command": [
+      "/opt/lean/bin/cadical",
+      "-t",
+      "285",
+      "--seed=1",
+      "-n",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/arm-cap-research/m7-panel/1300/stock.cnf"
+    ],
+    "conflicts": 969334,
+    "decisions": 1512600,
+    "eliminated": 14125,
+    "external_timeout": false,
+    "fixed": 2317,
+    "learned": 948541,
+    "log": "r1300-stock-s1.log",
+    "native_time_limit_seconds": 285.0,
+    "policy": "stock",
+    "propagations": 116482687,
+    "query_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+    "rank": 1300,
+    "reduced": 711549,
+    "restarts": 27295,
+    "returncode": 20,
+    "search_plus_parse_cpu_seconds": 46.361036,
+    "seed": 1,
+    "status": "UNSAT",
+    "status_lines": [
+      "s UNSATISFIABLE"
+    ],
+    "strengthened": 32283,
+    "subsumed": 162101,
+    "wall_seconds": 46.39182272693142
+  },
+  {
+    "cadical_total_process_seconds": 43.69,
+    "cadical_version": "2.1.2",
+    "command": [
+      "/opt/lean/bin/cadical",
+      "-t",
+      "285",
+      "--seed=1",
+      "-n",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/arm-cap-research/m7-panel/1300/direct375.cnf"
+    ],
+    "conflicts": 930009,
+    "decisions": 1447907,
+    "eliminated": 14083,
+    "external_timeout": false,
+    "fixed": 2171,
+    "learned": 910157,
+    "log": "r1300-direct375-s1.log",
+    "native_time_limit_seconds": 285.0,
+    "policy": "direct375",
+    "propagations": 113395686,
+    "query_sha256": "5d9982127ba9407b735bc342b5c23ae888607903df5310decc7dee9040dccb73",
+    "rank": 1300,
+    "reduced": 644943,
+    "restarts": 26089,
+    "returncode": 20,
+    "search_plus_parse_cpu_seconds": 43.69456600000001,
+    "seed": 1,
+    "status": "UNSAT",
+    "status_lines": [
+      "s UNSATISFIABLE"
+    ],
+    "strengthened": 32211,
+    "subsumed": 160899,
+    "wall_seconds": 43.73529783706181
+  }
+]
