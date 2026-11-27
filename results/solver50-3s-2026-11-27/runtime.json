@@ -1,0 +1,18 @@
+{
+  "budget_seconds": 3.0,
+  "checker_flags": [
+    "-i"
+  ],
+  "deadline_binary_sha256": "c2d3433ff92c4b8e65e7ab6056cf42bf62a4e03dcd5460fa8771831c6e282672",
+  "deadline_source_sha256": "d8e3ff9c6e1262cc3079ebabe97f5ee010846ceb2173c385ab4dcf5ac50b2b97",
+  "drat_trim_binary_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "drat_trim_source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee",
+  "input_bundle_sha256": "e8a9fe88fbc7b647d6dd37e5ec5c257cb13365fa4dfd18685a2e1a599c378496",
+  "pysolvers_sha256": "cda792186335cb628804eaf73f2c6008699d7c983188053ffa5c9c118a6be3b3",
+  "python_sat_version": "1.9.dev22",
+  "schema": "k58-3s-runtime/v1",
+  "solver": "CaDiCaL195 via CaDiCaL195(with_proof=True)",
+  "timer_scope": "after CNF decode and solver bootstrap; not total encode/check time",
+  "worker_count_direct": 1,
+  "worker_count_shared": 1
+}

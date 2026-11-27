@@ -20,6 +20,14 @@ solver timings are not matched comparisons; the new disjoint cap-512 batch is
 on the present evidence. Full assessment and reproduction:
 [results/preferred-wall-2026-11-26/REVIEW.md](results/preferred-wall-2026-11-26/REVIEW.md).
 
+**Updated 2026-11-27 (three-second representatives).** Direct CaDiCaL
+produced four independently replayed full-representative UNSAT proofs on a new
+24-case cohort. All four are already locally excluded; a fixed 12-job locally
+surviving cohort remained OPEN in both direct and shared executions. There is
+no general solver winner and no target-row or wall closure. The shared/direct
+comparison checks query and proof identities and is not described as a speedup.
+Read [results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md](results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md).
+
 **Updated 2026-11-26 (adaptive-cache integrity).** Cached native proofs/models
 and persisted tree verdicts are now revalidated before reuse/export; malformed
 artifacts stay nonterminal, DRAT replay does not use warning suppression, and

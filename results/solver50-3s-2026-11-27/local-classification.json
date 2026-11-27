@@ -1,0 +1,63 @@
+{
+  "all_closed_also_locally_excluded": true,
+  "closed_rows": [
+    {
+      "local_table_status": "REFUTATION_CANDIDATE",
+      "proof_bytes": 9291,
+      "proof_sha": "c9e665b63b62713178017a3daa63a9891b3236a99ba1ecd11af3cc355f39f66c",
+      "row_id": "208b5a57b326dcfbb74494f48a31ea26eb424cb0ee78f3d558c4f9ef7081098b",
+      "sorted_status": "VERIFIED_UNSAT",
+      "test": 4,
+      "words": [
+        "01220",
+        "02210"
+      ]
+    },
+    {
+      "local_table_status": "REFUTATION_CANDIDATE",
+      "proof_bytes": 705368,
+      "proof_sha": "32f9d84ec65d4bfb18bfb7535e5399ecaf4f3d1da84e0575372010e6348d6dde",
+      "row_id": "25e1d3f7087191a5d330bacb647f759afb89d21590565f7ebc4e9bc4845bbae0",
+      "sorted_status": "VERIFIED_UNSAT",
+      "test": 13,
+      "words": [
+        "01002",
+        "01010"
+      ]
+    },
+    {
+      "local_table_status": "REFUTATION_CANDIDATE",
+      "proof_bytes": 703411,
+      "proof_sha": "9f9dddb7d170c417ffc680bb9354efdad3b550ae9cf7c60e22e8bb5715f4ff59",
+      "row_id": "60c7996f1e6de9887b164e6111ada46523708c0b18306297c0c89f48f256f957",
+      "sorted_status": "VERIFIED_UNSAT",
+      "test": 20,
+      "words": [
+        "00020",
+        "00220"
+      ]
+    },
+    {
+      "local_table_status": "REFUTATION_CANDIDATE",
+      "proof_bytes": 701396,
+      "proof_sha": "aca4917b7f81926522d01f770a636e355497d3aba0d06e18fd08099fba994b23",
+      "row_id": "1bc2e9d866c9b71ac738cb040b7470779550c89184218421a98bdc2548a490ad",
+      "sorted_status": "VERIFIED_UNSAT",
+      "test": 23,
+      "words": [
+        "01022",
+        "01200"
+      ]
+    }
+  ],
+  "direct_verified_unsat": 4,
+  "locally_surviving_matched_cohort": {
+    "direct_open": 12,
+    "jobs": 12,
+    "newly_verified": 0,
+    "shared_open": 12
+  },
+  "schema": "k58-3s-local-scope-verification/v1",
+  "validated_rows": 24,
+  "whole_rows_open": 11585
+}

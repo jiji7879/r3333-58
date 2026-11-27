@@ -1,0 +1,4 @@
+Checked ordinary signed units and anonymous-site transpositions on 11585 rows. {14: 7543, 13: 3374, 12: 628, 11: 40} templates 41
+Checked 200000 scoped job receipts
+Verified 885 private arm witnesses and 5930 joint witnesses
+Replayed prior and new cover, physical timing proofs, 120 edge proofs, and 14 physical sorted-table examples.

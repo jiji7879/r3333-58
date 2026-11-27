@@ -1,0 +1,75 @@
+--- a/cover_proofs.py
++++ b/cover_proofs.py
+@@ -22,7 +22,7 @@
+ 
+ 
+ def rup(q,p,extra=()):
+-    p1=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i','-w',*extra],capture_output=True)
++    p1=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i',*extra],capture_output=True)
+     return p1.returncode==0 and b's VERIFIED' in p1.stdout
+ 
+ 
+--- a/raw_glue.py
++++ b/raw_glue.py
+@@ -40,7 +40,7 @@
+         raw=f'p cnf {4*(N*(N-1)//2)} {len(clauses)}\n'.encode()+encode_clauses(clauses);q.write_bytes(raw)
+         sol=subprocess.run([str(HERE/'tools/kissat'),'-q','--conflicts=2500000',str(q),str(p)],capture_output=True)
+         if sol.returncode!=20:return 'PENDING'
+-        chk=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i','-w'],capture_output=True)
++        chk=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i'],capture_output=True)
+         assert not chk.returncode and b's VERIFIED' in chk.stdout
+         stem=f'{key}-{w}-{z}';proof=p.read_bytes();put(folder/(stem+'.drat.gz'),proof)
+         put(folder/(stem+'.json'),canonical(dict(key=key,w=w,z=z,proof=sha(proof),query=sha(raw))))
+--- a/engine/arm_pairs.py
++++ b/engine/arm_pairs.py
+@@ -96,7 +96,7 @@
+ 
+ 
+ def check_drat(cnf, pf, only_rup=False):
+-    job = subprocess.run([str(HERE/'tools/drat-trim'),str(cnf),str(pf),'-i','-w',*(['-U'] if only_rup else [])],
++    job = subprocess.run([str(HERE/'tools/drat-trim'),str(cnf),str(pf),'-i',*(['-U'] if only_rup else [])],
+                          stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+     if job.returncode or b's VERIFIED' not in job.stdout:
+         raise ValueError(job.stdout[-1000:])
+--- a/timed50.py
++++ b/timed50.py
+@@ -46,6 +46,8 @@
+     return [(i,kind,scope,{k:r[k] for k in ('row_id','arm','w','z','profile','rank')}) for i,(kind,scope,r) in enumerate(runs)]
+ 
+ def destination(kind,scope):
++    if kind=='fresh-sorted-survivors-3s':return HERE/'round50/timed-survivors-3s'
++    if kind=='fresh-sorted-3s-open':return HERE/'round50'/'timed-sorted-next3s'
+     if kind=='fresh-sorted-128-open':return HERE/'round50'/'timed-sorted'
+     if scope=='round50':return HERE/'round50'/'timed-new'
+     return DEST
+@@ -68,7 +70,7 @@
+             with TemporaryDirectory() as tmp:
+                 q,p=Path(tmp)/'q.cnf',Path(tmp)/'p.drat';q.write_bytes(raw);p.write_bytes(proof)
+                 now=monotonic()
+-                ck=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i','-w'],capture_output=True)
++                ck=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i'],capture_output=True)
+                 receipt['check_s']=monotonic()-now
+                 if ck.returncode or b's VERIFIED' not in ck.stdout:
+                     raise RuntimeError((ck.returncode,ck.stdout[-1000:],ck.stderr[-1000:]))
+--- a/cheap.py
++++ b/cheap.py
+@@ -86,7 +86,7 @@
+         sol=subprocess.run(cmd,capture_output=True)
+         if sol.returncode==10:raise RuntimeError('First-tier model requires independent verification')
+         if sol.returncode!=20:return 'PENDING_BASE'
+-        check=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i','-w'],capture_output=True)
++        check=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i'],capture_output=True)
+         assert not check.returncode and b's VERIFIED' in check.stdout
+         tag=((str(ordered)+'-' if ordered in ('preferred','round50') else 'sorted-') if ordered else '')+row['id']+'-'+w+'-'+z;raw=p.read_bytes()
+         put(OUT/'raw-proofs'/(tag+'.drat.gz'),raw)
+--- a/verify50.py
++++ b/verify50.py
+@@ -72,7 +72,7 @@
+     assert sha(pf)==rec['proof_sha'] and len(pf)==rec['proof_bytes']
+     with TemporaryDirectory() as d:
+         q=Path(d)/'q';p=Path(d)/'p';q.write_bytes(raw);p.write_bytes(pf)
+-        ck=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i','-w'],capture_output=True)
++        ck=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i'],capture_output=True)
+         assert ck.returncode==0 and b's VERIFIED' in ck.stdout
+ 
+ def check_witnesses():

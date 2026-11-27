@@ -1,0 +1,17 @@
+{
+  "blocks": 18,
+  "direct_status_counts": {
+    "OPEN": 20,
+    "VERIFIED_UNSAT": 4
+  },
+  "max_shared_search_seconds": 3.0067851687781513,
+  "records": 24,
+  "schema": "k58-shared-sorted-3s-cohort/v1",
+  "shared_status_counts": {
+    "SHARED_OPEN": 20,
+    "SHARED_UNSAT_DIRECT_VERIFIED": 4
+  },
+  "sum_shared_conflicts": 1239871,
+  "sum_shared_search_seconds": 60.091214284766465,
+  "whole_original_rows_closed": 0
+}

@@ -1,0 +1,639 @@
+{
+  "cohorts": {
+    "preferred": {
+      "arm_sizes": {
+        "11": 674,
+        "12": 8186,
+        "13": 24786,
+        "14": 16354
+      },
+      "cadical_status": {
+        "OPEN": 50000
+      },
+      "conflicts": {
+        "max": 177,
+        "mean": 128.93458,
+        "median": 128.0,
+        "min": 128,
+        "n": 50000,
+        "p95": 131,
+        "sum": 6446729
+      },
+      "conflicts_above_128": 24246,
+      "conflicts_below_128": 0,
+      "conflicts_equal_128": 25754,
+      "distinct_rows": 11585,
+      "jobs": 50000,
+      "joining": {
+        "affected": 3421,
+        "color_children_excluded": 3421,
+        "newly_forced": 3328
+      },
+      "sorted_arm": {
+        "": 50000
+      }
+    },
+    "round50": {
+      "arm_sizes": {
+        "11": 779,
+        "12": 6928,
+        "13": 25063,
+        "14": 17230
+      },
+      "cadical_status": {
+        "OPEN": 50000
+      },
+      "conflicts": {
+        "max": 161,
+        "mean": 128.9354,
+        "median": 128.0,
+        "min": 128,
+        "n": 50000,
+        "p95": 131,
+        "sum": 6446770
+      },
+      "conflicts_above_128": 24212,
+      "conflicts_below_128": 0,
+      "conflicts_equal_128": 25788,
+      "distinct_rows": 7023,
+      "jobs": 50000,
+      "joining": {
+        "affected": 4395,
+        "color_children_excluded": 4400,
+        "newly_forced": 4169
+      },
+      "sorted_arm": {
+        "": 50000
+      }
+    },
+    "sorted": {
+      "arm_sizes": {
+        "11": 301,
+        "12": 4701,
+        "13": 15049,
+        "14": 29949
+      },
+      "cadical_status": {
+        "OPEN": 37165,
+        "UNSAT_SORTED_ARM": 12835
+      },
+      "conflicts": {
+        "max": 205,
+        "mean": 99.4372,
+        "median": 128.0,
+        "min": 0,
+        "n": 50000,
+        "p95": 131,
+        "sum": 4971860
+      },
+      "conflicts_above_128": 18385,
+      "conflicts_below_128": 12835,
+      "conflicts_equal_128": 18780,
+      "distinct_rows": 11398,
+      "jobs": 50000,
+      "sorted_arm": {
+        "ARM_WITNESS": 32576,
+        "EXCLUDED": 17424
+      }
+    }
+  },
+  "cold_Kissat_512": {
+    "cap": 512,
+    "conflicts": {
+      "max": 518,
+      "mean": 512.515625,
+      "median": 512.0,
+      "min": 512,
+      "n": 512,
+      "p95": 515,
+      "sum": 262408
+    },
+    "identity_matches_A_B_trials": "512/512 exact",
+    "jobs": 512,
+    "per_query_seconds": {
+      "max": 0.5085,
+      "mean": 0.17462890625,
+      "median": 0.1618,
+      "min": 0.1398,
+      "n": 512,
+      "p95": 0.2312,
+      "sum": 89.41
+    },
+    "solver_caution": "cold Kissat controls, not shared-learning CaDiCaL and not a three-second campaign",
+    "status": {
+      "OPEN": 512
+    }
+  },
+  "input": {
+    "byte_identical_to_campaign_ledger": true,
+    "decompressed_bytes": 21346209,
+    "decompressed_sha256": "63bbb8b466013c456367d5029b2cf73d162830be34ee2fb71c300b66fc06191b",
+    "rows": 150000
+  },
+  "matched_C_raw_vs_sorted": {
+    "cap": 128,
+    "interpretation": "same jobs and nominal cap, but different formulas/groupings/shared-state paths and different worker counts; closure comparison is matched, timing is not controlled",
+    "jobs": 10000,
+    "raw_conflicts": 1288377,
+    "raw_verdicts": {
+      "OPEN": 10000
+    },
+    "same_raw_identities": true,
+    "sorted_conflicts": 1011952,
+    "sorted_verdicts": {
+      "OPEN": 7582,
+      "UNSAT_SORTED_ARM": 2418
+    }
+  },
+  "new_plain_vs_edge": {
+    "assumption_hash_changed_among_affected": 4395,
+    "assumption_hash_changed_jobs": 4395,
+    "conflict_delta_cuts_minus_plain": {
+      "max": 59,
+      "mean": -0.0112,
+      "median": 0.0,
+      "min": -30,
+      "n": 50000,
+      "p95": 3,
+      "sum": -560
+    },
+    "conflict_delta_on_joining_affected": {
+      "max": 12,
+      "mean": -0.007508532423208191,
+      "median": 0,
+      "min": -29,
+      "n": 4395,
+      "p95": 3,
+      "sum": -33
+    },
+    "cuts_status": {
+      "OPEN": 50000
+    },
+    "delta_negative_zero_positive": [
+      13597,
+      22886,
+      13517
+    ],
+    "paired_block_seconds_delta_cuts_minus_plain": {
+      "max": 1.4925,
+      "mean": 0.145411943793911,
+      "median": 0.009199999999999875,
+      "min": -1.6498,
+      "n": 427,
+      "p95": 1.2011999999999998,
+      "sum": 62.0909
+    },
+    "paired_block_seconds_delta_negative_zero_positive": [
+      180,
+      3,
+      244
+    ],
+    "plain_status": {
+      "OPEN": 50000
+    },
+    "runtime_comparison_valid": false,
+    "runtime_reason": "4 workers versus 5 and different concurrent verification load; block timings are not per-call timers",
+    "same_jobs_order_group_block": "50,000/50,000 exact",
+    "wall_seconds_delta_cuts_minus_plain": -20.454000000000008
+  },
+  "ordered_rates": {
+    "exact_arm_rate_difference_F_minus_C_percentage_points": 1.258,
+    "fresh_F_50000": {
+      "exact_arm_excluded": 17424,
+      "exact_arm_rate": 0.34848,
+      "jobs": 50000,
+      "solver_and_local_closed": 12835,
+      "solver_rate": 0.2567
+    },
+    "inference_scope": "descriptive rates for these naming rules and deterministic samples only",
+    "new_G_50000_edge_solver_closed": 0,
+    "new_G_50000_plain_solver_closed": 0,
+    "preferred_E_50000_solver_closed": 0,
+    "prior_C_10000": {
+      "exact_arm_excluded": 3359,
+      "exact_arm_rate": 0.3359,
+      "jobs": 10000,
+      "solver_and_local_closed": 2418,
+      "solver_rate": 0.2418
+    },
+    "solver_rate_difference_F_minus_C_percentage_points": 1.49
+  },
+  "predeclared_candidates": {
+    "eligibility": "sorted ARM_WITNESS, cap-128 OPEN, no existing 3-second receipt; deterministic first six in selected existing block",
+    "group_field_warning": "cheap.py's group is a canonical grouping-metadata hash, not a hash of the generated CNF; query/parent hashes must be regenerated and matched before any run",
+    "groups": [
+      {
+        "arm": 14,
+        "block": 1,
+        "group": "c6468840fde4d6252adc8086f8bf06705c14ddaf30b0917a3cc12f26170f917b",
+        "jobs": 6
+      },
+      {
+        "arm": 13,
+        "block": 95,
+        "group": "e938d04575eb2467cfe8027c1a1be402b28e31aadec2a7b953fec77a83928cff",
+        "jobs": 6
+      }
+    ],
+    "jobs": 12
+  },
+  "prior_40000": {
+    "A": {
+      "ordering_stage": {
+        "COLUMN": 3632,
+        "PREFERRED": 590,
+        "REASSIGN": 310,
+        "SORTED_ARM": 461,
+        "SWAP": 5007
+      },
+      "possible_two_smallest": {
+        "0": 9100,
+        "1": 900
+      },
+      "preferred_label": {
+        "0": 9410,
+        "1": 590
+      },
+      "probe_preferred": {
+        "": 10000
+      },
+      "probe_raw": {
+        "OPEN": 10000
+      },
+      "probe_sorted": {
+        "": 10000
+      }
+    },
+    "B": {
+      "ordering_stage": {
+        "COLUMN": 3596,
+        "PREFERRED": 617,
+        "REASSIGN": 313,
+        "SORTED_ARM": 456,
+        "SWAP": 5018
+      },
+      "possible_two_smallest": {
+        "0": 9070,
+        "1": 930
+      },
+      "preferred_label": {
+        "0": 9383,
+        "1": 617
+      },
+      "probe_preferred": {
+        "": 10000
+      },
+      "probe_raw": {
+        "OPEN": 10000
+      },
+      "probe_sorted": {
+        "": 10000
+      }
+    },
+    "C": {
+      "ordering_stage": {
+        "PREFERRED": 4391,
+        "REASSIGN": 2250,
+        "SORTED_ARM": 3359
+      },
+      "possible_two_smallest": {
+        "0": 3359,
+        "1": 6641
+      },
+      "preferred_label": {
+        "0": 5609,
+        "1": 4391
+      },
+      "probe_preferred": {
+        "": 10000
+      },
+      "probe_raw": {
+        "OPEN": 10000
+      },
+      "probe_sorted": {
+        "OPEN": 7582,
+        "UNSAT_SORTED_ARM": 2418
+      }
+    },
+    "D": {
+      "ordering_stage": {
+        "PREFERRED": 10000
+      },
+      "possible_two_smallest": {
+        "1": 10000
+      },
+      "preferred_label": {
+        "1": 10000
+      },
+      "probe_preferred": {
+        "OPEN": 10000
+      },
+      "probe_raw": {
+        "": 10000
+      },
+      "probe_sorted": {
+        "": 10000
+      }
+    }
+  },
+  "prior_receipt_checks": {
+    "preferred_D": {
+      "block_seconds": {
+        "max": 4.2592,
+        "mean": 0.5923528957528957,
+        "median": 0.1826,
+        "min": 0.0556,
+        "n": 259,
+        "p95": 2.7759,
+        "sum": 153.4194
+      },
+      "blocks": 259,
+      "conflicts": 1289283,
+      "identity_and_block_match": "10000/10000 exact",
+      "jobs": 10000,
+      "mean_block_ms_per_job_including_init": 15.34194,
+      "run_wall_seconds": 44.539,
+      "sum_block_seconds": 153.4194,
+      "verdicts": {
+        "OPEN": 10000
+      },
+      "workers": 4
+    },
+    "raw_A_B": {
+      "block_seconds": {
+        "max": 3.1403,
+        "mean": 1.5731598684210526,
+        "median": 1.8045499999999999,
+        "min": 0.078,
+        "n": 152,
+        "p95": 3.025,
+        "sum": 239.1203
+      },
+      "blocks": 152,
+      "conflicts": 2576473,
+      "identity_and_block_match": "20000/20000 exact",
+      "jobs": 20000,
+      "mean_block_ms_per_job_including_init": 11.956014999999999,
+      "run_wall_seconds": 62.565,
+      "sum_block_seconds": 239.1203,
+      "verdicts": {
+        "OPEN": 20000
+      },
+      "workers": 4
+    },
+    "raw_C_control": {
+      "block_seconds": {
+        "max": 3.0792,
+        "mean": 1.3752636363636364,
+        "median": 1.7189,
+        "min": 0.0723,
+        "n": 77,
+        "p95": 2.9398,
+        "sum": 105.8953
+      },
+      "blocks": 77,
+      "conflicts": 1288377,
+      "identity_and_block_match": "10000/10000 exact",
+      "jobs": 10000,
+      "mean_block_ms_per_job_including_init": 10.58953,
+      "run_wall_seconds": 28.035,
+      "sum_block_seconds": 105.8953,
+      "verdicts": {
+        "OPEN": 10000
+      },
+      "workers": 4
+    },
+    "sorted_C": {
+      "block_seconds": {
+        "max": 8.5291,
+        "mean": 1.0701231939163498,
+        "median": 0.2739,
+        "min": 0.0537,
+        "n": 263,
+        "p95": 4.8319,
+        "sum": 281.4424
+      },
+      "blocks": 263,
+      "conflicts": 1011952,
+      "identity_and_block_match": "10000/10000 exact",
+      "jobs": 10000,
+      "mean_block_ms_per_job_including_init": 28.144240000000003,
+      "run_wall_seconds": 101.044,
+      "sum_block_seconds": 281.4424,
+      "verdicts": {
+        "OPEN": 7582,
+        "UNSAT_SORTED_ARM": 2418
+      },
+      "workers": 3
+    }
+  },
+  "queue_data": {
+    "all_root_status_OPEN": true,
+    "new_jobs": 1101974,
+    "new_jobs_after_offset_50000": 1051974,
+    "old_jobs": 3604436,
+    "rows": 11585,
+    "rows_not_represented_in_first_50000_new_jobs": 4562,
+    "rows_represented_in_first_50000_new_jobs": 7023
+  },
+  "raw_identity_overlaps": {
+    "preferred__prior_40000": 0,
+    "preferred__round50": 92,
+    "round50__prior_40000": 35,
+    "sorted__preferred": 0,
+    "sorted__prior_40000": 0,
+    "sorted__round50": 49
+  },
+  "receipt_checks": {
+    "preferred": {
+      "block_records_matching_consolidated": "50,000/50,000 exact",
+      "block_seconds": {
+        "max": 4.0876,
+        "mean": 1.6896494456762747,
+        "median": 1.7833,
+        "min": 0.0601,
+        "n": 451,
+        "p95": 3.6863,
+        "sum": 762.0319
+      },
+      "block_size_min_max": [
+        1,
+        192
+      ],
+      "blocks": 451,
+      "conflicts": 6446729,
+      "mean_block_ms_per_job_including_init": 15.240637999999999,
+      "run_wall_seconds": 202.91,
+      "source_and_consolidated_identity": "50,000/50,000 exact",
+      "sum_block_seconds": 762.0319,
+      "workers": 4
+    },
+    "round50": {
+      "block_records_matching_consolidated": "50,000/50,000 exact",
+      "block_seconds": {
+        "max": 3.6903,
+        "mean": 1.4883723653395784,
+        "median": 1.6931,
+        "min": 0.0875,
+        "n": 427,
+        "p95": 3.2834,
+        "sum": 635.535
+      },
+      "block_size_min_max": [
+        1,
+        192
+      ],
+      "blocks": 427,
+      "conflicts": 6446770,
+      "mean_block_ms_per_job_including_init": 12.7107,
+      "run_wall_seconds": 169.728,
+      "source_and_consolidated_identity": "50,000/50,000 exact",
+      "sum_block_seconds": 635.535,
+      "workers": 4
+    },
+    "round50_with_cuts": {
+      "block_records_matching_consolidated": "50,000/50,000 exact",
+      "block_seconds": {
+        "max": 3.5258,
+        "mean": 1.6337843091334894,
+        "median": 1.7129,
+        "min": 0.074,
+        "n": 427,
+        "p95": 3.3406,
+        "sum": 697.6259
+      },
+      "block_size_min_max": [
+        1,
+        192
+      ],
+      "blocks": 427,
+      "conflicts": 6446210,
+      "mean_block_ms_per_job_including_init": 13.952518000000001,
+      "run_wall_seconds": 149.274,
+      "source_and_consolidated_identity": "50,000/50,000 exact",
+      "sum_block_seconds": 697.6259,
+      "workers": 5
+    },
+    "sorted": {
+      "block_records_matching_consolidated": "50,000/50,000 exact",
+      "block_seconds": {
+        "max": 3.0307,
+        "mean": 1.0642907692307693,
+        "median": 1.0622,
+        "min": 0.054,
+        "n": 455,
+        "p95": 2.6209,
+        "sum": 484.2523
+      },
+      "block_size_min_max": [
+        1,
+        192
+      ],
+      "blocks": 455,
+      "conflicts": 4971860,
+      "mean_block_ms_per_job_including_init": 9.685046,
+      "run_wall_seconds": 175.489,
+      "source_and_consolidated_identity": "50,000/50,000 exact",
+      "sum_block_seconds": 484.2523,
+      "workers": 3
+    }
+  },
+  "scope": "receipts only; no proof replay and no new solving",
+  "sorted_partition": {
+    "conflicts": {
+      "cap_open_and_arm_witness": {
+        "max": 205,
+        "mean": 128.92976424361493,
+        "median": 128.0,
+        "min": 128,
+        "n": 32576,
+        "p95": 131,
+        "sum": 4200016
+      },
+      "cap_open_but_local_excluded": {
+        "max": 137,
+        "mean": 128.97646546088473,
+        "median": 129,
+        "min": 128,
+        "n": 4589,
+        "p95": 131,
+        "sum": 591873
+      },
+      "solver_false_and_local_excluded": {
+        "max": 127,
+        "mean": 14.021893260615505,
+        "median": 1,
+        "min": 0,
+        "n": 12835,
+        "p95": 89,
+        "sum": 179971
+      }
+    },
+    "counts": {
+      "cap_open_and_arm_witness": 32576,
+      "cap_open_but_local_excluded": 4589,
+      "solver_false_and_local_excluded": 12835
+    }
+  },
+  "timed_3s": {
+    "by_source_status": {
+      "fresh-sorted-128-open / OPEN": 3,
+      "fresh-sorted-128-open / VERIFIED_UNSAT": 3,
+      "new-cover / OPEN": 6,
+      "preferred-128-open / OPEN": 6,
+      "prior-sorted-128-closed / VERIFIED_UNSAT": 2,
+      "prior-sorted-128-open / VERIFIED_UNSAT": 4
+    },
+    "jobs": 24,
+    "max_receipt_encode_setup_search_check_seconds": 4.685143710998091,
+    "max_search_overrun_ms": 15.395140999316936,
+    "open_conflicts": {
+      "max": 56349,
+      "mean": 42380.73333333333,
+      "median": 39656,
+      "min": 32514,
+      "n": 15,
+      "p95": 56349,
+      "sum": 635711
+    },
+    "open_search_seconds": {
+      "max": 3.015395140999317,
+      "mean": 3.0055487167335135,
+      "median": 3.003815365002083,
+      "min": 3.002331878997211,
+      "n": 15,
+      "p95": 3.015395140999317,
+      "sum": 45.0832307510027
+    },
+    "proof_hashes_matching_stored_bytes": 9,
+    "proofs_replayed_by_this_audit": 0,
+    "sorted_arm_witness_successes": 0,
+    "sorted_arm_witness_timeouts": 3,
+    "sorted_successes_already_local_excluded": 9,
+    "timer_scope": "search only; encoding, solver setup and proof checking are separate",
+    "unsat_conflicts": {
+      "max": 998,
+      "mean": 466.22222222222223,
+      "median": 258,
+      "min": 152,
+      "n": 9,
+      "p95": 998,
+      "sum": 4196
+    },
+    "unsat_search_seconds": {
+      "max": 0.07770146100301645,
+      "mean": 0.02401289122240592,
+      "median": 0.012800686999980826,
+      "min": 0.004451502998563228,
+      "n": 9,
+      "p95": 0.07770146100301645,
+      "sum": 0.21611602100165328
+    }
+  },
+  "trials_tsv_consistency": {
+    "preferred_D": 10000,
+    "raw_A_B_C": 30000,
+    "sorted_C": 10000,
+    "status_conflicts_and_identity": "exact"
+  }
+}

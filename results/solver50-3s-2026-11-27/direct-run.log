@@ -1,0 +1,41 @@
+0 fresh-sorted-3s-open 01001 01012 OPEN 64477 3.009
+1 fresh-sorted-3s-open 00221 01001 OPEN 70852 3.004
+2 fresh-sorted-3s-open 00010 01000 OPEN 71337 3.002
+3 fresh-sorted-3s-open 01221 02101 OPEN 72417 3.002
+4 fresh-sorted-3s-open 01220 02210 VERIFIED_UNSAT 159 0.007
+5 fresh-sorted-3s-open 00000 00022 OPEN 74015 3.004
+6 fresh-sorted-3s-open 01000 02001 OPEN 68608 3.002
+7 fresh-sorted-3s-open 00020 01012 OPEN 94309 3.002
+8 fresh-sorted-3s-open 00010 00021 OPEN 82536 3.002
+9 fresh-sorted-3s-open 00022 01200 OPEN 79601 3.002
+10 fresh-sorted-3s-open 00001 00200 OPEN 87175 3.002
+11 fresh-sorted-3s-open 00200 00221 OPEN 100908 3.002
+12 fresh-sorted-3s-open 00000 01012 OPEN 79152 3.002
+13 fresh-sorted-3s-open 01002 01010 VERIFIED_UNSAT 334 0.015
+14 fresh-sorted-3s-open 00001 00102 OPEN 78567 3.002
+15 fresh-sorted-3s-open 00020 00122 OPEN 80235 3.002
+16 fresh-sorted-3s-open 00020 00120 OPEN 90814 3.002
+17 fresh-sorted-3s-open 01000 02201 OPEN 84246 3.002
+18 fresh-sorted-3s-open 01001 01221 OPEN 68980 3.002
+19 fresh-sorted-3s-open 00201 01010 OPEN 83047 3.004
+20 fresh-sorted-3s-open 00020 00220 VERIFIED_UNSAT 1863 0.037
+21 fresh-sorted-3s-open 00000 00002 OPEN 83901 3.002
+22 fresh-sorted-3s-open 00221 01001 OPEN 80465 3.002
+23 fresh-sorted-3s-open 01022 01200 VERIFIED_UNSAT 340 0.016
+{
+  "max_search_seconds": 3.0092788280453533,
+  "new_cap_open_candidates_outside_supplied_six": 24,
+  "records": 24,
+  "schema": "k58-fresh-sorted-3s-cohort/v1",
+  "search_budget_seconds_per_call": 3.0,
+  "status_counts": {
+    "OPEN": 20,
+    "VERIFIED_UNSAT": 4
+  },
+  "sum_proof_bytes": 2119466,
+  "sum_search_seconds": 60.12502256920561,
+  "tampered_proof_rejected": true,
+  "total_coordinator_seconds": 66.83015094697475,
+  "whole_original_rows_closed": 0,
+  "workers": 1
+}

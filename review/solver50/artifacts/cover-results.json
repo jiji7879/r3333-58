@@ -1,0 +1,82 @@
+{
+  "drat_trim_options": [
+    "-i",
+    "-U"
+  ],
+  "joining_classes": {
+    "SAT": 2091,
+    "classes": 2126,
+    "global_affected_jobs": 97283,
+    "global_excluded_children": 97363,
+    "global_newly_forced": 92533,
+    "refutations": 35
+  },
+  "minimal_delete": {
+    "property": "each retained label occurs alone in a checked complete sorted arm; fixed-list single deletion uncovered; no global minimum claimed",
+    "witnesses": 885
+  },
+  "negative_controls": {
+    "empty_only_full_edge": {
+      "rejected": true,
+      "returncode": 1,
+      "tail": "\rc turning on binary mode checking\n\rc parsing input formula with 20376 variables and 188351 clauses\n\rc finished parsing, read 2 bytes from proof file\n\rc ERROR: no conflict\n\ns NOT VERIFIED\n\rc verification time: 0.127 seconds\n"
+    },
+    "empty_only_new_cover": {
+      "rejected": true,
+      "returncode": 1,
+      "tail": "\rc turning on binary mode checking\n\rc parsing input formula with 717 variables and 4643 clauses\n\rc finished parsing, read 2 bytes from proof file\n\rc conflict claimed, but not detected\n\ns NOT VERIFIED\n\rc verification time: 0.040 seconds\n"
+    }
+  },
+  "queue": {
+    "jobs": 1101974,
+    "labels": {
+      "11": 425,
+      "12": 246,
+      "13": 164,
+      "14": 50
+    },
+    "previous_jobs": 3604436,
+    "reduction": 2502462,
+    "root_status": {
+      "OPEN": 11585
+    },
+    "rows": 11585,
+    "sizes": {
+      "11": 40,
+      "12": 628,
+      "13": 3374,
+      "14": 7543
+    }
+  },
+  "receipt_scope": {
+    "UNSAT_SORTED_ARM_statuses": 12835,
+    "caveat": "UNSAT_SORTED_ARM is a local-table return in cheap.certify, not a stored per-job CaDiCaL proof",
+    "exact_local_exclusions": 17424,
+    "other_statuses": {
+      "OPEN": 37165,
+      "UNSAT_SORTED_ARM": 12835
+    },
+    "physical_sorted_lift_examples": 14,
+    "sorted_sample_jobs": 50000
+  },
+  "seconds": 21.348,
+  "solver_calls": 0,
+  "sorted_local_table": {
+    "SAT": 3330,
+    "records": 3951,
+    "refuted": 621
+  },
+  "spoke_words": 76,
+  "strict_replay": {
+    "edge_full_parent_bytes": 1818068,
+    "edge_local_and_full_parent_pairs": 35,
+    "edge_local_bytes": 1452721,
+    "new_cover_proofs": 304,
+    "new_cover_rup_bytes": 38295411,
+    "sorted_cover_proofs": 304,
+    "sorted_cover_rup_bytes": 2273933,
+    "total_drated_checks": 678
+  },
+  "verdict": "PASS_WITH_STRICT_SCOPE_LIMITS",
+  "warning_suppression": false
+}

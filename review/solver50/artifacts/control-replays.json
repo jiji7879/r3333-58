@@ -1,0 +1,491 @@
+{
+  "checker": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+  "checker_options": [
+    "-i"
+  ],
+  "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "negative_controls": [
+    {
+      "check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-0.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/negative-bad-prefix.drat",
+          "-i"
+        ],
+        "log": "replay/negative-bad-prefix.strict.log",
+        "returncode": 1,
+        "seconds": 0.11338448198512197,
+        "stdout_sha256": "8eac226ab26f489848c7092cec0d2870bebc19bc0cfe6acd104f018d989edb31",
+        "verified": false
+      },
+      "expected": "REJECTED",
+      "kind": "bad-binary-prefix",
+      "proof": "replay/negative-bad-prefix.drat",
+      "query": "replay/timed-0.cnf"
+    },
+    {
+      "check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-1.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-0.drat",
+          "-i"
+        ],
+        "log": "replay/negative-wrong-query.strict.log",
+        "returncode": 1,
+        "seconds": 0.11608947603963315,
+        "stdout_sha256": "c61aa1ba5d8c7bc433aeb0f3a6c32cb66c27b7471e25cf59648912cad45a3e14",
+        "verified": false
+      },
+      "expected": "REJECTED",
+      "kind": "wrong-query",
+      "source_proof": "timed-0",
+      "wrong_query": "timed-1"
+    }
+  ],
+  "positive_controls": 9,
+  "records": [
+    {
+      "group": "timed",
+      "ownership_literals": [],
+      "parent_clauses": 171112,
+      "parent_sha256": "bab154164c424334df78aa4e4719ab3647da1931310464f0f31fee04ae72ac63",
+      "parent_variables": 18243,
+      "physical_cube": [
+        5225,
+        5421,
+        5516,
+        5328,
+        5601,
+        5229,
+        5428,
+        5518,
+        5329,
+        5606
+      ],
+      "proof": "replay/timed-0.drat",
+      "proof_sha256": "ec161ce3aae05aeb5db38a2ead706c9f1ed0b66450110651fd622ebd8675fffd",
+      "query": "replay/timed-0.cnf",
+      "query_clauses": 171458,
+      "query_sha256": "df48e21a02f5058af3607b45ce0a3fbba106933eec901ca521ea4355c5652676",
+      "query_variables": 18275,
+      "receipt": "round50/timed/0.json",
+      "row_id": "780e9154eef19eca715e973fdbff8db63754056bb31a2208e9d71e15ec3391cc",
+      "scope": "sorted",
+      "source": "prior-sorted-128-open",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-0.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-0.drat",
+          "-i"
+        ],
+        "log": "replay/timed-0.strict.log",
+        "returncode": 0,
+        "seconds": 0.11642628605477512,
+        "stdout_sha256": "32fe7eb2802a83b256a626f487da5f930319511e6579afb07f8972460ba456ba",
+        "verified": true
+      },
+      "test": 0,
+      "words": [
+        "00220",
+        "02101"
+      ]
+    },
+    {
+      "group": "timed",
+      "ownership_literals": [],
+      "parent_clauses": 173595,
+      "parent_sha256": "5fd4fd223e6e6fa7836d744f6d05e5a623c12f67b2bde26496da43d62a8fb0df",
+      "parent_variables": 18387,
+      "physical_cube": [
+        6317,
+        6361,
+        6470,
+        6401,
+        6438,
+        6321,
+        6367,
+        6475,
+        6405,
+        6442
+      ],
+      "proof": "replay/timed-1.drat",
+      "proof_sha256": "fd93da455eadfe5875df88a608d335317a81a39ca3c946077441adbcde1efa27",
+      "query": "replay/timed-1.cnf",
+      "query_clauses": 173899,
+      "query_sha256": "e6a279e93a8699138e5e73b67749373ce9b0d84c03b1e83ebe61d4be9ecd6328",
+      "query_variables": 18415,
+      "receipt": "round50/timed/1.json",
+      "row_id": "0846a190f9be96f1ce9830219fbe4f2437be4aeb5e785d009dea1b8ffe3f7e66",
+      "scope": "sorted",
+      "source": "prior-sorted-128-open",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-1.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-1.drat",
+          "-i"
+        ],
+        "log": "replay/timed-1.strict.log",
+        "returncode": 0,
+        "seconds": 0.129932327196002,
+        "stdout_sha256": "92a55484ff28289f64d4e42a10c3929076dc810a40438aded7b24f149056505a",
+        "verified": true
+      },
+      "test": 1,
+      "words": [
+        "00101",
+        "02201"
+      ]
+    },
+    {
+      "group": "timed",
+      "ownership_literals": [],
+      "parent_clauses": 173594,
+      "parent_sha256": "7578a7b315cc99c9707098da85272235e45a8f255197e473170cee9069c1cc1b",
+      "parent_variables": 18387,
+      "physical_cube": [
+        5226,
+        5326,
+        5513,
+        5422,
+        5601,
+        5230,
+        5329,
+        5518,
+        5428,
+        5605
+      ],
+      "proof": "replay/timed-2.drat",
+      "proof_sha256": "2a01e4439da83584a94480ed8ed374a8e9865c8de6fa89d6b92f08ac18d03868",
+      "query": "replay/timed-2.cnf",
+      "query_clauses": 173940,
+      "query_sha256": "656eb4a7c556489a811a987e87a55d8d91187fcf61e250c43691b7b8823b81f7",
+      "query_variables": 18419,
+      "receipt": "round50/timed/2.json",
+      "row_id": "09c39c0fe78964677625d74cb48e5de05ed4a0be954bc6877212b4949b03a1a9",
+      "scope": "sorted",
+      "source": "prior-sorted-128-open",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-2.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-2.drat",
+          "-i"
+        ],
+        "log": "replay/timed-2.strict.log",
+        "returncode": 0,
+        "seconds": 0.15300068305805326,
+        "stdout_sha256": "72a31fdb76943de6a9af8374ccdfcd904dfb291968d06f8f0e67a41bc748be9f",
+        "verified": true
+      },
+      "test": 2,
+      "words": [
+        "00101",
+        "01021"
+      ]
+    },
+    {
+      "group": "timed",
+      "ownership_literals": [],
+      "parent_clauses": 173817,
+      "parent_sha256": "aa9cf14ea7a2030780c5058b1d0bb18663340f7b00a7f8e74ca5d6c39ecaec7a",
+      "parent_variables": 18497,
+      "physical_cube": [
+        5225,
+        5325,
+        5516,
+        5422,
+        5601,
+        5229,
+        5330,
+        5520,
+        5425,
+        5605
+      ],
+      "proof": "replay/timed-3.drat",
+      "proof_sha256": "239c11029c706fd65335a7ecb42968057ad1880bc7bafc73bdaca050a1af026b",
+      "query": "replay/timed-3.cnf",
+      "query_clauses": 174163,
+      "query_sha256": "1c37919f181002338e7c7a2e41991873ec9db88ff98915efbce094c924a958b6",
+      "query_variables": 18529,
+      "receipt": "round50/timed/3.json",
+      "row_id": "ae7554f6482e75bd1036241b4477ffc1ef529e50bdc7475ca2abe9d57dd0f401",
+      "scope": "sorted",
+      "source": "prior-sorted-128-open",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-3.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-3.drat",
+          "-i"
+        ],
+        "log": "replay/timed-3.strict.log",
+        "returncode": 0,
+        "seconds": 0.15380950295366347,
+        "stdout_sha256": "fa5cc32f6be28fa7542120a6aa46806301973dff9ea07cfa8a9a2cfd7ffdf248",
+        "verified": true
+      },
+      "test": 3,
+      "words": [
+        "00210",
+        "01200"
+      ]
+    },
+    {
+      "group": "timed",
+      "ownership_literals": [],
+      "parent_clauses": 173595,
+      "parent_sha256": "7fdc3e7586999a7e1c1c8145425e3b621ecba8dfe2e9dd09cbc5aa2a2a515e41",
+      "parent_variables": 18387,
+      "physical_cube": [
+        5225,
+        5326,
+        5601,
+        5422,
+        5516,
+        5229,
+        5332,
+        5606,
+        5425,
+        5518
+      ],
+      "proof": "replay/timed-4.drat",
+      "proof_sha256": "dfff035a3ece7b466b1b3adfadff7b162eb2ca8d2ab24c2909185f8e637a00b7",
+      "query": "replay/timed-4.cnf",
+      "query_clauses": 173941,
+      "query_sha256": "26316d253ef1d067519186e39c980bcf0bc30dab71d16c055e0eef8337a68d2f",
+      "query_variables": 18419,
+      "receipt": "round50/timed/4.json",
+      "row_id": "79bcd36d02ae3b84368cd585e8101e01c895871e3856e435b8dfe9ed3d2ee9c7",
+      "scope": "sorted",
+      "source": "prior-sorted-128-closed",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-4.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-4.drat",
+          "-i"
+        ],
+        "log": "replay/timed-4.strict.log",
+        "returncode": 0,
+        "seconds": 0.12615192495286465,
+        "stdout_sha256": "e89bfa6cc44ccb08db816ee5b1151eb2d78b81a5446e856ced75cb31693c5a27",
+        "verified": true
+      },
+      "test": 4,
+      "words": [
+        "01012",
+        "02101"
+      ]
+    },
+    {
+      "group": "timed",
+      "ownership_literals": [],
+      "parent_clauses": 173817,
+      "parent_sha256": "4c15967948b210bf588428a770ffd7b52a63343c880f2298afa53be5e13cdda3",
+      "parent_variables": 18497,
+      "physical_cube": [
+        5225,
+        5513,
+        5421,
+        5326,
+        5604,
+        5229,
+        5520,
+        5425,
+        5329,
+        5605
+      ],
+      "proof": "replay/timed-5.drat",
+      "proof_sha256": "beecb68022390aa5778fe59fc3638da20feec33df575d8384cafb24531cca4cd",
+      "query": "replay/timed-5.cnf",
+      "query_clauses": 174163,
+      "query_sha256": "51a9e9a8e01974a5f1caeef6a2a9e1cf826fd734b3b1d81cef66fca25267c9e1",
+      "query_variables": 18529,
+      "receipt": "round50/timed/5.json",
+      "row_id": "9debc8a5f8a17f73f71ffdd779b9ea250bc2c416d616c9f9685186fc14d5b570",
+      "scope": "sorted",
+      "source": "prior-sorted-128-closed",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-5.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-5.drat",
+          "-i"
+        ],
+        "log": "replay/timed-5.strict.log",
+        "returncode": 0,
+        "seconds": 0.12478914810344577,
+        "stdout_sha256": "217084eb2b1ebeeee951231d4e675f2eddaa00c21c518d022df51281c1239e2e",
+        "verified": true
+      },
+      "test": 5,
+      "words": [
+        "00012",
+        "02000"
+      ]
+    },
+    {
+      "group": "timed-sorted",
+      "ownership_literals": [],
+      "parent_clauses": 173817,
+      "parent_sha256": "9aaaac17f64a2954c2cfaee5f37b494f78069fdb3a4e61ae1f72d79838d9db1f",
+      "parent_variables": 18497,
+      "physical_cube": [
+        5225,
+        5513,
+        5421,
+        5328,
+        5604,
+        5229,
+        5518,
+        5428,
+        5329,
+        5605
+      ],
+      "proof": "replay/timed-sorted-0.drat",
+      "proof_sha256": "e56a1ce47c535ce2256f07821ce29cde4d7018cd5120c05cc0c037d851ccb150",
+      "query": "replay/timed-sorted-0.cnf",
+      "query_clauses": 174163,
+      "query_sha256": "62508b8b14eb7dba0b78d00c17e7bc2f728854da3b6314422e69b848f709556a",
+      "query_variables": 18529,
+      "receipt": "round50/timed-sorted/0.json",
+      "row_id": "90085700bed34f6c9c51f5a733ef26e3cc3a2d529afbddc92e0d8610b971c53e",
+      "scope": "sorted",
+      "source": "fresh-sorted-128-open",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-sorted-0.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-sorted-0.drat",
+          "-i"
+        ],
+        "log": "replay/timed-sorted-0.strict.log",
+        "returncode": 0,
+        "seconds": 0.16155589604750276,
+        "stdout_sha256": "592ad3947bf9f39a2b08a481936ae95b3f2fca86b106c3d7fc708e8edee8b15b",
+        "verified": true
+      },
+      "test": 0,
+      "words": [
+        "00022",
+        "01200"
+      ]
+    },
+    {
+      "group": "timed-sorted",
+      "ownership_literals": [],
+      "parent_clauses": 175323,
+      "parent_sha256": "2c39133193084b8960fff9974e141f4560dc306abe442de0eb1270fa8b53868e",
+      "parent_variables": 18703,
+      "physical_cube": [
+        5329,
+        5606,
+        5425,
+        5517,
+        5690,
+        5333,
+        5612,
+        5432,
+        5521,
+        5694
+      ],
+      "proof": "replay/timed-sorted-1.drat",
+      "proof_sha256": "a7030b5dbd63aecefe98a9b372b54142fba1e134a27fa0ee1f58a9086c415375",
+      "query": "replay/timed-sorted-1.cnf",
+      "query_clauses": 175669,
+      "query_sha256": "ab2578b4e79755dc361c139b5d4420a3fe205e7b2d5cbb76ceef9dda09ac6b3b",
+      "query_variables": 18735,
+      "receipt": "round50/timed-sorted/1.json",
+      "row_id": "b8854af690d6b7024fe2a2bbaf1d0aabcc601aeec4ff8cfc945807bd0ac82b08",
+      "scope": "sorted",
+      "source": "fresh-sorted-128-open",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-sorted-1.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-sorted-1.drat",
+          "-i"
+        ],
+        "log": "replay/timed-sorted-1.strict.log",
+        "returncode": 0,
+        "seconds": 0.12523112492635846,
+        "stdout_sha256": "4960212c458361ce5d0539617ab6b570f379fef5699ac4c34572dbc5fb1a9191",
+        "verified": true
+      },
+      "test": 1,
+      "words": [
+        "01001",
+        "02201"
+      ]
+    },
+    {
+      "group": "timed-sorted",
+      "ownership_literals": [],
+      "parent_clauses": 175545,
+      "parent_sha256": "2c98e8a3c12c545fd2bc2e489c7d344ab1f6c2c8f47e4d8c556388967d58a6e9",
+      "parent_variables": 18813,
+      "physical_cube": [
+        5329,
+        5425,
+        5606,
+        5520,
+        5690,
+        5333,
+        5430,
+        5612,
+        5521,
+        5693
+      ],
+      "proof": "replay/timed-sorted-5.drat",
+      "proof_sha256": "1c1bffaa4d370abcf653d0c4ddffcd6d786c7f74013d8ed3461309d2c7e64205",
+      "query": "replay/timed-sorted-5.cnf",
+      "query_clauses": 175891,
+      "query_sha256": "9575d37ee9f0350d683ffd2f9d12e8f32b7df22d7072369a2e3e0a859881f06d",
+      "query_variables": 18845,
+      "receipt": "round50/timed-sorted/5.json",
+      "row_id": "83be510af81bbabe07cdc45f1ff4840dcfb98cc967c30007f6800a52b99e32fb",
+      "scope": "sorted",
+      "source": "fresh-sorted-128-open",
+      "status": "VERIFIED_EXACT_REPRESENTATIVE_UNSAT",
+      "strict_check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/artifacts/K58_wall_50k/tools/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-sorted-5.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwydhgx1/m4/replay/timed-sorted-5.drat",
+          "-i"
+        ],
+        "log": "replay/timed-sorted-5.strict.log",
+        "returncode": 0,
+        "seconds": 0.15313672693446279,
+        "stdout_sha256": "b7c66e952094d935a1333cf543535c31b4251168df071f078f0557cfd6f8e32e",
+        "verified": true
+      },
+      "test": 5,
+      "words": [
+        "00121",
+        "01200"
+      ]
+    }
+  ],
+  "schema": "m4-k58-strict-positive-control-replay/v1",
+  "scope": "Nine exact representative formulas only; no whole-row or cover closure.",
+  "selection": {
+    "fresh-sorted-128-open": 3,
+    "prior-sorted-128-closed": 2,
+    "prior-sorted-128-open": 4
+  },
+  "solver_calls": 0,
+  "warning_suppression": false
+}

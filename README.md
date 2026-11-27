@@ -97,6 +97,14 @@ accepted semantic, proof, data and original-export audits support using it as a
 local preprocessor; no solver-speed improvement was found. See
 [results/preferred-wall-2026-11-26/REVIEW.md](results/preferred-wall-2026-11-26/REVIEW.md).
 
+**Three-second representative probes, 2026-11-27:** fresh CaDiCaL produced
+four exact full-representative proofs on newly selected cap-OPEN sorted cases,
+with strict independent replay and a malformed-proof negative control. All four
+are already locally excluded, and a matched 12-job locally surviving cohort
+closed nothing under fresh or shared execution. No whole-row or solver-speed
+claim changes. See
+[results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md](results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md).
+
 Two side results from the same period, both certified and both explicitly
 non-progress on the bound:
 

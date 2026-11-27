@@ -1,0 +1,13 @@
+{
+  "direct_search_seconds": 60.12502256920561,
+  "identical_query_and_proof_ids": true,
+  "interpretation": "No demonstrable shared-state speedup on this selected 24-job sample; 18 block states and no direct+shared anomalous closure",
+  "records": 24,
+  "relative_shared_over_direct": 0.9994377002619794,
+  "schema": "k58-3s-shared-vs-direct-audit/v1",
+  "shared_blocks": 18,
+  "shared_remaining_verified": 4,
+  "shared_search_seconds": 60.091214284766465,
+  "status_alignment_pass": true,
+  "whole_rows_open": 11585
+}
