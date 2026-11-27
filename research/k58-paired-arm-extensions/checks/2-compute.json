@@ -1,0 +1,351 @@
+{
+ "zip_sha256": "01b80535b4bee450b8d5cd0b888502816d4e6071f27037be02798fd5877628e8",
+ "all_zip_members_crc_checked": true,
+ "all_1300_full_root_hashes_match": true,
+ "regeneration_compare": {
+  "wider": "identical decompressed JSON to the supplied artifact",
+  "signed": "identical decompressed JSON to the supplied artifact",
+  "rules": "identical decompressed JSON to the supplied artifact",
+  "same": "identical decompressed JSON to the supplied artifact"
+ },
+ "census": {
+  "four_literal_total": 176136,
+  "nonempty_all_1300_input_rows": true,
+  "mixed_signed": 26224,
+  "both_negative_signed": 10136,
+  "same_arm_empty_row_results": 1300,
+  "new_single_spoke_beyond_frozen_triangle_exclusions": 0
+ },
+ "screen": {
+  "rows": 13,
+  "four_literal_candidates": 1747,
+  "survivors_after_ternaries": 1747,
+  "survivors_after_direct": 939,
+  "matches_supplied_panel": true
+ },
+ "four_literal_support_examples": [
+  {
+   "rank": 1,
+   "clause": [
+    -19002,
+    1794,
+    1986,
+    5010
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  },
+  {
+   "rank": 8,
+   "clause": [
+    -24663,
+    1056,
+    2428,
+    6024
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  },
+  {
+   "rank": 132,
+   "clause": [
+    -14103,
+    934,
+    3002,
+    3274
+   ],
+   "compatible_fives": [
+    8,
+    1
+   ]
+  },
+  {
+   "rank": 201,
+   "clause": [
+    -15667,
+    1758,
+    3018,
+    3898
+   ],
+   "compatible_fives": [
+    8,
+    1
+   ]
+  },
+  {
+   "rank": 255,
+   "clause": [
+    -6613,
+    293,
+    345,
+    377
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  },
+  {
+   "rank": 330,
+   "clause": [
+    -6613,
+    289,
+    321,
+    405
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  },
+  {
+   "rank": 340,
+   "clause": [
+    -24652,
+    3908,
+    4832,
+    6028
+   ],
+   "compatible_fives": [
+    2,
+    1
+   ]
+  },
+  {
+   "rank": 400,
+   "clause": [
+    -14439,
+    506,
+    3002,
+    3278
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  },
+  {
+   "rank": 600,
+   "clause": [
+    -15225,
+    1750,
+    1942,
+    3582
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  },
+  {
+   "rank": 800,
+   "clause": [
+    -14832,
+    1746,
+    1938,
+    3426
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  },
+  {
+   "rank": 1000,
+   "clause": [
+    -19999,
+    1207,
+    2899,
+    4999
+   ],
+   "compatible_fives": [
+    8,
+    1
+   ]
+  },
+  {
+   "rank": 1200,
+   "clause": [
+    -20834,
+    1219,
+    2911,
+    4899
+   ],
+   "compatible_fives": [
+    8,
+    1
+   ]
+  },
+  {
+   "rank": 1300,
+   "clause": [
+    -14832,
+    1746,
+    1938,
+    3402
+   ],
+   "compatible_fives": [
+    6,
+    1
+   ]
+  }
+ ],
+ "open_four_literal_queries": [
+  {
+   "rank": 1,
+   "clause": [
+    -19002,
+    1794,
+    1986,
+    5010
+   ],
+   "conflicts": 40001,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 1000,
+   "clause": [
+    -19999,
+    1207,
+    2899,
+    4999
+   ],
+   "conflicts": 40000,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 1200,
+   "clause": [
+    -20834,
+    1219,
+    2911,
+    4899
+   ],
+   "conflicts": 40000,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 1300,
+   "clause": [
+    -14832,
+    1746,
+    1938,
+    3402
+   ],
+   "conflicts": 40000,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 132,
+   "clause": [
+    -14103,
+    934,
+    3002,
+    3274
+   ],
+   "conflicts": 40003,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 201,
+   "clause": [
+    -15667,
+    1758,
+    3018,
+    3898
+   ],
+   "conflicts": 40003,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 255,
+   "clause": [
+    -6613,
+    293,
+    345,
+    377
+   ],
+   "conflicts": 40000,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 330,
+   "clause": [
+    -6613,
+    289,
+    321,
+    405
+   ],
+   "conflicts": 40001,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 400,
+   "clause": [
+    -14439,
+    506,
+    3002,
+    3278
+   ],
+   "conflicts": 40000,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 600,
+   "clause": [
+    -15225,
+    1750,
+    1942,
+    3582
+   ],
+   "conflicts": 40001,
+   "status": "OPEN, no supplied native proof"
+  },
+  {
+   "rank": 800,
+   "clause": [
+    -14832,
+    1746,
+    1938,
+    3426
+   ],
+   "conflicts": 40000,
+   "status": "OPEN, no supplied native proof"
+  }
+ ],
+ "original_warning_checks": [
+  {
+   "query_sha256": "81e1732b5656d46ea8502957f82af1c51e28f8d79769da9a44ba2df085961dbc",
+   "proof_sha256": "5e1a1ea8b3cb617c3b6ad53874518c4370b9501fc4c3c841c032ada35aa350e1",
+   "returncode": 0,
+   "plain_modes_verified_lines": 1,
+   "warning_count": 241,
+   "example_warning": "c WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 714 0"
+  },
+  {
+   "query_sha256": "ff71e6828b71e12b445bc58db140a59c858a37ce9e5626c2b284a67e6b5e8a30",
+   "proof_sha256": "86b098d252dcc983e7d15fc88e939d3a880ac8baab2db4704c92aa7503de4ea2",
+   "returncode": 0,
+   "plain_modes_verified_lines": 1,
+   "warning_count": 250,
+   "example_warning": "c WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 714 0"
+  }
+ ],
+ "clean_strict_replay": {
+  "original_batch_emitted_warnings": true,
+  "original_batch_status": "strict unmodified batch aborted on warnings; not a clean 16/16 pass before deletion-only normalisation",
+  "normalisation": "parse and remove ONLY deletion records, retain all addition records",
+  "complete_examples": 16,
+  "strict_rup_accepted": 16,
+  "full_byte_reads": 16,
+  "zero_warning_or_error_outputs": 16,
+  "zero_RAT_in_core": 16,
+  "original_total_proof_bytes": 431370,
+  "normalised_total_proof_bytes": 263222
+ },
+ "scope": "Conditional per-row guard/clause implications, not full-parent/model/row-wide solver or Ramsey conclusions."
+}

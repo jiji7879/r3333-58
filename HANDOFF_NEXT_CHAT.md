@@ -10,6 +10,34 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (wider paired-arm families and repaired strict replay).**
+The extension has **176,136 four-literal clauses over every one of the 1,300
+inputs**, separate **26,224 mixed** and **10,136 double-negative** signed
+candidates, and no additional same-arm singleton rules in this tested regime.
+Regenerated JSON matches the supplied bytes, all 1,300 full-root hashes match,
+and all thirteen selected support intersections are independently evaluated.
+
+For the wider family, **1,747** countercubes survive the older ternaries and
+**939** survive older direct-plus-ternary propagation. This is a new
+conditional-clause opportunity, not proof that four literals dominate ternaries
+or that guards are always active. Both four-literal native examples verified;
+the other eleven remain OPEN at 40,000 conflicts. The fourteen signed examples
+are already closed by the older unit propagation, so their evidence should not
+be conflated with the wider incremental opportunity.
+
+The original unmodified strict replay **aborts on warnings** involving ignored
+deletion of pseudo-unit clauses. Only deleting `d` records while retaining all
+`a` additions gives strictly stronger RUP checks with warnings fatal, no
+`-w`, whole proof streams consumed and zero RAT in core: **16/16 pass**. Original
+proof hashes are preserved alongside the new normalised-proof hashes;
+431,370 original bytes and 263,222 stripped bytes are tracked. This is a
+verification repair, not mathematical refutation of the clauses or a licence to
+hide warnings. Proven inputs and compact scripts are in
+[research/k58-paired-arm-extensions/audit.md](research/k58-paired-arm-extensions/audit.md).
+The six seed-zero 60,000-conflict benchmark calls remain OPEN on both policies.
+No unrestricted solver completion, row closure, new bound or production-ledger
+change follows.
+
 **Updated 2026-11-27 (general paired-arm clauses on the 1,300 hard inputs).**
 The proposed general clause form is correct as a **conditional** theorem on
 these root encodings: if the sender guard requires at least 14 colour-$c$
