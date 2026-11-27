@@ -1,0 +1,221 @@
+{
+  "archives": {
+    "dist/k58-quickstart-strict-replay.zip": {
+      "bytes": 3097133,
+      "sha256": "e91aee1b0a85f49082b022cdaf1ce28715de38c5efa7019ec5335ed41c4f4489"
+    },
+    "dist/k58-refinement-pilot-audit.zip": {
+      "bytes": 93330972,
+      "sha256": "2a63073549b8c1e73b9b53eb454712a976d2a7b3e94af6ceb9ff3e632983cb4c"
+    }
+  },
+  "closure_boundary": "Verification of scoped stored execution evidence, physical proof transport and encoding. No original parent, ordinary wall row or Ramsey bound closed; no global Lean reduction",
+  "closure_replays": {
+    "full_closed_representatives_replayed": 3066,
+    "selected_physical_consequence_queries_replayed": 2469
+  },
+  "completed": true,
+  "coordinator_pilot_status_views": {
+    "after_comparison": {
+      "closed_guarded_node_ids": [
+        7
+      ],
+      "open_unknown": 8
+    },
+    "after_replacement": {
+      "open_unknown": 9
+    }
+  },
+  "execution_scope": {
+    "control_warnings_are_diagnostic_of_rejected_attempts_or_negative_controls_not_accepted_evidence": true,
+    "fresh_kissat_binary_build": false,
+    "full_lean_reduction_replay": false,
+    "general_runtime_improvement_established": false,
+    "new_cap128_or_wall_search_launched": false,
+    "producer_identity_or_original_execution_date_authenticated": false,
+    "source_to_binary_proof": false
+  },
+  "first_tier_encoding": {
+    "host_clauses": 134995,
+    "ordered_ledger_sha256": "5f0ea1a4d5f8281f207b3d3038bb9714137fe23b41842335d73e0fefd0b70d28",
+    "physical_variables": 6612,
+    "rows": 11585,
+    "total_suffix_clauses": 456079506
+  },
+  "forward_additions_only_transport": {
+    "cases": {
+      "0": 634,
+      "1": 823,
+      "2": 182,
+      "empty": 1,
+      "root": 829
+    },
+    "forward_proofs": 2469,
+    "interfaces": [
+      {
+        "arm": 11,
+        "direct_axioms": 670,
+        "proof": "a6a2bd2cc04289108db877b847b42ead5562348caa969886c55e4adefad63a3b",
+        "query": "169c21ca077e9aabff83e72284fb021d12c4496e4f915b3ea29d829f817e9b06",
+        "rup_ternaries": 55
+      },
+      {
+        "arm": 12,
+        "direct_axioms": 868,
+        "proof": "2e2446025a4898f5e6730e9839239d36cab02e2becb3261cffcfb1140f429590",
+        "query": "c3b17610e93e777b6d76590b3e513fb1db872c167ea31ae384373876b7b55d5a",
+        "rup_ternaries": 66
+      },
+      {
+        "arm": 13,
+        "direct_axioms": 1102,
+        "proof": "55e498f720751c2cf3829075e66ce92a208414cdad47a536f9c67d8d2d3a6192",
+        "query": "0ea9fd9875825a5ee9c3d273690bfa44c1d9cd2111ecc563d23129a060e572ed",
+        "rup_ternaries": 78
+      },
+      {
+        "arm": 14,
+        "direct_axioms": 1375,
+        "proof": "4e0a5f0ad9b57d6bf2bd16d174db7a691ff2510174d9ccde151e782f86967042",
+        "query": "e5627bd37f4d193603be9801a62374c5d3166f710d61d0f492695bf77a9455dd",
+        "rup_ternaries": 91
+      }
+    ],
+    "owners": 830
+  },
+  "frozen_batch": {
+    "command_count": 28,
+    "commands_passed": 28,
+    "commands_verified_from_log": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "jobs": 3,
+    "log_sha256": "6811e042d9ea1cf1bb7a08e6c4f4a17849ccad767088277de5a1d0aa4d404d9f",
+    "maximum_rss": "not used: the timer produced zero and is not treated as a valid maximum-memory measurement",
+    "seconds": {
+      "SYS_SECONDS": 292.98,
+      "USER_SECONDS": 2844.19,
+      "WALL_SECONDS": 1110.05
+    },
+    "time_record_sha256": "d8a013432fc18c9a1fa352697d08a156e7f3f648bf7756617ec4cc1d011f3c2b"
+  },
+  "inputs_sha256": {
+    "K58_adaptive_wall_solver.zip": "3324b778ea425dbcd48a3c7f19a38812820066d769581569f318b61108837b75",
+    "K58_cube_conquer_audit.md": "de8caf4afb26e4341f99d2181c4dff3beaf3b2fc270f1e4a2065fcd135f81099",
+    "K58_cube_conquer_verification.zip": "42b5c997dc6ad341e42b1af0dc76c5ffc49fadc55a01838f20bbbc183039f9de",
+    "K58_reviewer_quickstart.zip": "57c572afbd7db2047facf614788a903924e01bb60ed3cb1f210922da1f5cff95",
+    "K58_wall_sweep_evidence.zip": "47bd1aa500756d70dce15b7680f83a290ee13e81c618f8ecae62583ab6fbef7b"
+  },
+  "not_reproduced": {
+    "linked_page_returned": "HTML, not archive",
+    "missing_archive": "K58_portable_learning.zip",
+    "quickstart_full_original_replay": true,
+    "required_sha256": "bf26cbcf1d1e07c8bb8f11cbc8055e71e4a7c7ab3990f1e72632a26c8071910e"
+  },
+  "owner_minimum": {
+    "dimacs_clauses": 3040,
+    "dimacs_variables": 522,
+    "earlier_pairs": 147,
+    "independent_lrat_tamper_rejected": true,
+    "lrat_additions": 200064,
+    "lrat_unit_hints": 9412150,
+    "minimum": 28,
+    "minimum_eight_pins": 28,
+    "minimum_ten_pins": 28,
+    "old_29_list_single_deletion_tests_passed": true,
+    "pair": [
+      "21012",
+      "22100"
+    ],
+    "rup_bytes": 10535211
+  },
+  "physical_recipient_projection": {
+    "checks": {
+      "child": 1966300,
+      "child_literals": 24921805,
+      "empty": 3066,
+      "root": 983774,
+      "root_literals": 17618107
+    },
+    "host_sha256": "c68e1cc384a4982b29691edc76078a175739f8fde358c07de4297c6ae8b86fc1",
+    "live": 983774,
+    "matched_full_sample_queries": 2469,
+    "rows": 11585
+  },
+  "quickstart": {
+    "cover_proof_sha256": "6a22c515098b6d0a2f095c2805edde6621302036372ad35a086a451459726632",
+    "cover_query_sha256": "364c1d632b8f220ebb185e7a43ad23b733abc62163f9b5032d79fa9611ec9b95",
+    "invalid_event_controls_rejected": 9,
+    "parent": "REFINED",
+    "physical_edge": [
+      32,
+      43
+    ],
+    "refuted_physical_colors": [
+      0,
+      2,
+      3
+    ],
+    "representative_index": 983585,
+    "strict_seconds_first_run": 1.34,
+    "survivor": "OPEN_UNKNOWN",
+    "survivor_color": 1,
+    "warning_suppression_used": false
+  },
+  "saved_cap128_transcript": {
+    "conflicts": 142061920,
+    "decisions": 1335188169,
+    "fresh_cap128_execution_by_this_coordinator": false,
+    "historical_counter_triples_matched": 1101974,
+    "native_returns_unknown": 1101974,
+    "observed_conflicts_max": 191,
+    "observed_conflicts_min": 128,
+    "propagations": 35089528161
+  },
+  "schema": "k58-attachment-verification/v1",
+  "scoped_queue": {
+    "closed_representatives": 3066,
+    "live_representatives": 983774,
+    "ordinary_wall_rows": 11585
+  },
+  "swarm": {
+    "accepted_directions": 6,
+    "id": "smwyob8l4",
+    "pending_reports": 0,
+    "state": "solved"
+  },
+  "verification_hardening": {
+    "optimized_mode_rejection_tests_passed": 7,
+    "ordinary_queue_tests_passed": 3,
+    "postguard_ordinary_positive_replays": 78,
+    "postguard_original_summary_byte_identical": true,
+    "proof_bearing_tools_requiring_assertions": 7
+  }
+}

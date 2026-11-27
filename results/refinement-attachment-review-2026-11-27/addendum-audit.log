@@ -1,0 +1,223 @@
+[1/28] audit_provenance.py
+Verified pinned public Git commit, three tree objects, three audit blobs and input digests.
+Verified exact upstream Kissat Git tree from the source tarball, binaries and frozen wheel hashes.
+[2/28] audit_queue.py
+{"rows": 11585, "original": 1101974, "before_symmetry": 1022357, "revised": 986840, "closed": 3066, "live": 983774, "by_arm": {"14": 344454, "13": 485432, "12": 139304, "11": 14584}, "by_profile": {"15,15,14,13": {"rows": 7732, "original": 638312, "revised": 578104, "closed": 2082, "live": 576022}, "16,15,13,13": {"rows": 1046, "original": 171544, "revised": 148238, "closed": 896, "live": 147342}, "16,15,14,12": {"rows": 2058, "original": 218148, "revised": 196930, "closed": 0, "live": 196930}, "15,14,14,14": {"rows": 381, "original": 19050, "revised": 17264, "closed": 0, "live": 17264}, "16,14,14,13": {"rows": 88, "original": 6680, "revised": 5564, "closed": 16, "live": 5548}, "16,16,13,12": {"rows": 140, "original": 26240, "revised": 21868, "closed": 72, "live": 21796}, "16,16,14,11": {"rows": 140, "original": 22000, "revised": 18872, "closed": 0, "live": 18872}}, "live_tsv_gz": "ba7901a685cc87e6d00bc8f876cff9986e985b1706cd098985477d1b2b898dcd"}
+[3/28] verify_cap_log.py
+{
+  "rows": 11585,
+  "returns": {
+    "UNKNOWN": 1101974
+  },
+  "equal_historical_counter_triples": 1101974,
+  "totals": {
+    "conflicts": 142061920,
+    "decisions": 1335188169,
+    "propagations": 35089528161,
+    "call_microseconds": 27991514427
+  },
+  "min_conflicts": 128,
+  "max_conflicts": 191,
+  "utc_start": "2026-11-27T06:11:06.926933+00:00",
+  "utc_end": "2026-11-27T07:19:26.930854+00:00",
+  "worker_shards": 161,
+  "ordered_stdout_hashes_sha256": "0a570692fea799797b1b5de5f4083ccadbbcaeeb19b45f3b313788b81edd3a47"
+}
+[4/28] census.py sweep
+{"rows": 11585, "cap": 128, "outcomes": {"attempted": 1101974, "open": 1101974}, "aggregate_search_cpu_seconds": 13786.527207892977, "totals": {"conflicts": 142061920, "decisions": 1335188169, "propagations": 35089528161, "call_us": 16950171638}, "observed_max_conflicts_per_call": 191, "row_receipts_digest": "8fed5c9b08f758811febb612a6142e0dc1b0cbf1c346c233840201d7cb282bde"}
+[5/28] census.py geometry
+Verified the physical palette, three-color arm, two-colored pentagon, and outside-site anonymity on 11585 rows
+[6/28] row_symmetries.py --verify
+Counter({(14, 1): 6819, (13, 1): 3066, (14, 2): 695, (12, 1): 560, (13, 2): 299, (12, 2): 68, (11, 1): 32, (14, 10): 29, (13, 10): 9, (11, 2): 8}) nontrivial 1108
+[7/28] revised.py verify --jobs 3
+Checked complete arm cover 304 38795851 RUP bytes
+Replayed revised symmetry exclusions 718 26891809 RUP bytes
+Revised two-spoke-word cover 1022357 before row symmetries; 986840 after
+[8/28] symmetry_cover.py --verify --jobs 3
+Counter({'before': 1101974, 'after': 1067886, 'removed': 34088, 'affected_rows': 1108}) Counter({'KEEP': 1084, 'COVERED_BY_SYMMETRY': 707})
+[9/28] minimize_symmetry.py verify --jobs 3
+Verified 765 final cover certificates, bytes 30629731
+Original representatives retained 1063715 suppressed 38259
+[10/28] owner_implication.py --verify
+{"alternatives": [["00021", "22100"], ["00022", "22100"], ["00121", "22100"], ["00122", "22100"], ["00201", "12010"], ["00210", "22001"], ["00220", "22001"], ["00221", "22100"], ["01001", "10210"], ["01001", "10220"], ["01010", "10102"], ["01020", "10102"], ["01021", "10020"], ["01021", "10100"], ["01021", "10102"], ["01021", "10120"], ["01021", "10220"], ["01201", "10010"], ["01201", "10210"], ["01210", "21012"], ["01220", "22001"], ["01221", "21012"], ["02200", "10022"], ["02201", "10210"], ["02201", "12010"], ["02210", "21012"], ["10022", "12200"], ["10122", "21012"], ["12210", "21012"]], "certificate": {"bytes": 8445358, "proof": "a2ee45c432657af0f6a504ac92e2e08823f0163b6097208f1a399572a221f460", "query": "663d221dca7885b1de39eee7db6c886d341f1821bfb9cdd965c9a3e3252ef283"}, "conditions": [15, 47, 104, 129, 18, 51, 80, 130], "physical_conditions": [[0, 5, 2], [0, 6, 2], [1, 5, 1], [1, 6, 2], [2, 6, 1], [3, 5, 1], [4, 5, 2], [4, 6, 0]]}
+[11/28] audit_owner.py --verify
+compact 37 deletions 37 SAT witnesses
+ten_pins 29 deletions 29 SAT witnesses
+{'original_witnesses': 160, 'earliest_revised': {'10022/12200': 77, '01021/10020': 83}, 'empty_revised_rank': 147}
+[12/28] audit_owner_optimum.py
+{"earlier_alternatives": 147, "minimum_eight_pins": 28, "minimum_ten_pins": 28, "lower_witnesses": 29, "upper_pairs": 28, "query": "ab78dd02501e7efbd3b411fa863bb202ad61f4034977963b8e588e7584463d6a", "proof": "99ce1dd988267c66b38c89a22f2664dc4de5d1e98ad50b7ba6894d9152635889", "bytes": 10535211}
+[13/28] audit_owner_lrat.py
+{
+  "query": "ab78dd02501e7efbd3b411fa863bb202ad61f4034977963b8e588e7584463d6a",
+  "lrat": "76bf5da40ebf87e70825226fb0ab8f8e162b489a3f5f1296b1c8560c282aa6a6",
+  "original_clauses": 3040,
+  "additions": 200064,
+  "positive_hints": 9412150,
+  "deletions": 203063,
+  "last_empty_id": 205523
+}
+[14/28] edge_domains.py --verify --jobs 3
+150 / 1715 {(14, 2, 2): 97, (13, 1, 1): 7, (13, 2, 2): 46}
+300 / 1715 {(14, 2, 2): 97, (13, 1, 1): 12, (13, 2, 2): 191}
+450 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 33, (12, 2, 2): 6}
+600 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 168, (12, 2, 2): 21}
+750 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 258, (12, 2, 2): 81}
+900 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 343, (12, 2, 2): 135, (11, 1, 1): 11}
+1050 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 343, (12, 2, 2): 135, (11, 1, 1): 160, (11, 2, 2): 1}
+1200 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 343, (12, 2, 2): 135, (11, 1, 1): 303, (11, 2, 2): 8}
+1350 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 343, (12, 2, 2): 135, (11, 1, 1): 385, (11, 2, 2): 75, (11, 2, 1): 1}
+1500 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 343, (12, 2, 2): 135, (11, 1, 1): 533, (11, 2, 2): 77, (11, 2, 1): 1}
+1650 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 343, (12, 2, 2): 135, (11, 1, 1): 672, (11, 2, 2): 88, (11, 2, 1): 1}
+1715 / 1715 {(14, 2, 2): 97, (13, 1, 1): 14, (13, 2, 2): 299, (13, 0, 0): 1, (12, 1, 1): 343, (12, 2, 2): 135, (11, 1, 1): 683, (11, 2, 2): 142, (11, 2, 1): 1}
+[15/28] propagate_rules.py --verify --jobs 3
+50 / 830 {'root color exclusions': 1379, 'tested signed children': 100}
+100 / 830 {'root color exclusions': 2016, 'tested signed children': 200}
+150 / 830 {'root color exclusions': 2611, 'tested signed children': 300}
+200 / 830 {'root color exclusions': 3452, 'tested signed children': 398}
+250 / 830 {'root color exclusions': 3833, 'tested signed children': 498}
+300 / 830 {'root color exclusions': 4141, 'tested signed children': 598}
+350 / 830 {'root color exclusions': 4409, 'tested signed children': 698}
+400 / 830 {'root color exclusions': 4746, 'tested signed children': 798}
+450 / 830 {'root color exclusions': 5225, 'tested signed children': 898}
+500 / 830 {'root color exclusions': 5454, 'tested signed children': 998}
+550 / 830 {'root color exclusions': 5661, 'tested signed children': 1098}
+600 / 830 {'root color exclusions': 5852, 'tested signed children': 1198}
+650 / 830 {'root color exclusions': 6057, 'tested signed children': 1298}
+700 / 830 {'root color exclusions': 6268, 'tested signed children': 1398}
+750 / 830 {'root color exclusions': 6557, 'tested signed children': 1498}
+800 / 830 {'root color exclusions': 7062, 'tested signed children': 1598}
+830 / 830 {'root color exclusions': 7641, 'tested signed children': 1658}
+[16/28] audit_domains.py --scheme original --verify --jobs 3
+100 / 885
+200 / 885
+300 / 885
+400 / 885
+500 / 885
+600 / 885
+700 / 885
+800 / 885
+{"scheme": "original", "labels": 885, "empty": 0, "edges_scanned": 38368, "affected": 7539}
+[17/28] audit_domains.py --scheme revised --verify --jobs 3
+100 / 830
+200 / 830
+300 / 830
+400 / 830
+500 / 830
+600 / 830
+700 / 830
+800 / 830
+{"scheme": "revised", "labels": 830, "empty": 1, "edges_scanned": 35914, "affected": 6930}
+[18/28] original_domain_replay.py --verify --jobs 3
+Original-owner physical recipients 19 signed RUP replays 31
+[19/28] closed_parents.py --verify --jobs 3
+200 / 3066 verified exact K58 representatives
+400 / 3066 verified exact K58 representatives
+600 / 3066 verified exact K58 representatives
+800 / 3066 verified exact K58 representatives
+1000 / 3066 verified exact K58 representatives
+1200 / 3066 verified exact K58 representatives
+1400 / 3066 verified exact K58 representatives
+1600 / 3066 verified exact K58 representatives
+1800 / 3066 verified exact K58 representatives
+2000 / 3066 verified exact K58 representatives
+2200 / 3066 verified exact K58 representatives
+2400 / 3066 verified exact K58 representatives
+2600 / 3066 verified exact K58 representatives
+2800 / 3066 verified exact K58 representatives
+3000 / 3066 verified exact K58 representatives
+3066 / 3066 verified exact K58 representatives
+[20/28] campaign_solver.py replay --verify --jobs 3
+50 / 830 recipient labels; 150 physical RUP replays
+100 / 830 recipient labels; 300 physical RUP replays
+150 / 830 recipient labels; 450 physical RUP replays
+200 / 830 recipient labels; 598 physical RUP replays
+250 / 830 recipient labels; 748 physical RUP replays
+300 / 830 recipient labels; 898 physical RUP replays
+350 / 830 recipient labels; 1048 physical RUP replays
+400 / 830 recipient labels; 1197 physical RUP replays
+450 / 830 recipient labels; 1343 physical RUP replays
+500 / 830 recipient labels; 1488 physical RUP replays
+550 / 830 recipient labels; 1638 physical RUP replays
+600 / 830 recipient labels; 1782 physical RUP replays
+650 / 830 recipient labels; 1932 physical RUP replays
+700 / 830 recipient labels; 2081 physical RUP replays
+750 / 830 recipient labels; 2229 physical RUP replays
+800 / 830 recipient labels; 2379 physical RUP replays
+830 / 830 recipient labels; 2469 physical RUP replays
+[21/28] audit_first_tier.py --jobs 3
+500 / 11585
+1000 / 11585
+1500 / 11585
+2000 / 11585
+2500 / 11585
+3000 / 11585
+3500 / 11585
+4000 / 11585
+4500 / 11585
+5000 / 11585
+5500 / 11585
+6000 / 11585
+6500 / 11585
+7000 / 11585
+7500 / 11585
+8000 / 11585
+8500 / 11585
+9000 / 11585
+9500 / 11585
+10000 / 11585
+10500 / 11585
+11000 / 11585
+11500 / 11585
+{"rows": 11585, "host_clauses": 134995, "physical_variables": 6612, "total_suffix_clauses": 456079506, "ordered_ledger_sha256": "5f0ea1a4d5f8281f207b3d3038bb9714137fe23b41842335d73e0fefd0b70d28"}
+[22/28] audit_rup_transport.py --jobs 3
+{"owners": 830, "forward_proofs": 2469, "cases": {"root": 829, "1": 823, "2": 182, "0": 634, "empty": 1}, "interfaces": [{"arm": 11, "direct_axioms": 670, "rup_ternaries": 55, "query": "169c21ca077e9aabff83e72284fb021d12c4496e4f915b3ea29d829f817e9b06", "proof": "a6a2bd2cc04289108db877b847b42ead5562348caa969886c55e4adefad63a3b"}, {"arm": 12, "direct_axioms": 868, "rup_ternaries": 66, "query": "c3b17610e93e777b6d76590b3e513fb1db872c167ea31ae384373876b7b55d5a", "proof": "2e2446025a4898f5e6730e9839239d36cab02e2becb3261cffcfb1140f429590"}, {"arm": 13, "direct_axioms": 1102, "rup_ternaries": 78, "query": "0ea9fd9875825a5ee9c3d273690bfa44c1d9cd2111ecc563d23129a060e572ed", "proof": "55e498f720751c2cf3829075e66ce92a208414cdad47a536f9c67d8d2d3a6192"}, {"arm": 14, "direct_axioms": 1375, "rup_ternaries": 91, "query": "e5627bd37f4d193603be9801a62374c5d3166f710d61d0f492695bf77a9455dd", "proof": "4e0a5f0ad9b57d6bf2bd16d174db7a691ff2510174d9ccde151e782f86967042"}]}
+[23/28] audit_transport.py --jobs 3
+500 {'root': 44997, 'root_literals': 779719, 'child': 89938, 'child_literals': 1113209, 'empty': 158}
+1000 {'root': 87900, 'root_literals': 1538671, 'child': 175640, 'child_literals': 2188065, 'empty': 290}
+1500 {'root': 130587, 'root_literals': 2295752, 'child': 260982, 'child_literals': 3270894, 'empty': 416}
+2000 {'root': 170977, 'root_literals': 3042488, 'child': 341722, 'child_literals': 4317836, 'empty': 531}
+2500 {'root': 212322, 'root_literals': 3799526, 'child': 424388, 'child_literals': 5380018, 'empty': 661}
+3000 {'root': 254653, 'root_literals': 4562841, 'child': 509006, 'child_literals': 6459602, 'empty': 792}
+3500 {'root': 296948, 'root_literals': 5327669, 'child': 593507, 'child_literals': 7529252, 'empty': 929}
+4000 {'root': 340228, 'root_literals': 6099406, 'child': 680045, 'child_literals': 8619997, 'empty': 1077}
+4500 {'root': 383922, 'root_literals': 6864137, 'child': 767370, 'child_literals': 9711311, 'empty': 1216}
+5000 {'root': 425679, 'root_literals': 7617782, 'child': 850824, 'child_literals': 10778040, 'empty': 1336}
+5500 {'root': 467812, 'root_literals': 8377391, 'child': 935068, 'child_literals': 11847721, 'empty': 1475}
+6000 {'root': 508157, 'root_literals': 9124605, 'child': 1015718, 'child_literals': 12891978, 'empty': 1596}
+6500 {'root': 551842, 'root_literals': 9887816, 'child': 1103004, 'child_literals': 13984881, 'empty': 1726}
+7000 {'root': 593925, 'root_literals': 10647701, 'child': 1187141, 'child_literals': 15060355, 'empty': 1854}
+7500 {'root': 638410, 'root_literals': 11411277, 'child': 1275984, 'child_literals': 16160562, 'empty': 1986}
+8000 {'root': 679509, 'root_literals': 12167203, 'child': 1358129, 'child_literals': 17217955, 'empty': 2111}
+8500 {'root': 722228, 'root_literals': 12934342, 'child': 1443522, 'child_literals': 18304137, 'empty': 2244}
+9000 {'root': 763592, 'root_literals': 13688852, 'child': 1526211, 'child_literals': 19361074, 'empty': 2374}
+9500 {'root': 807300, 'root_literals': 14459186, 'child': 1613572, 'child_literals': 20451906, 'empty': 2522}
+10000 {'root': 851072, 'root_literals': 15230028, 'child': 1701062, 'child_literals': 21547419, 'empty': 2666}
+10500 {'root': 895009, 'root_literals': 15985798, 'child': 1788864, 'child_literals': 22642584, 'empty': 2791}
+11000 {'root': 936077, 'root_literals': 16739647, 'child': 1870948, 'child_literals': 23692757, 'empty': 2923}
+11500 {'root': 977360, 'root_literals': 17493316, 'child': 1953475, 'child_literals': 24749326, 'empty': 3049}
+{"rows": 11585, "live": 983774, "checks": {"root": 983774, "root_literals": 17618107, "child": 1966300, "child_literals": 24921805, "empty": 3066}, "matched_full_sample_queries": 2469, "host_sha256": "c68e1cc384a4982b29691edc76078a175739f8fde358c07de4297c6ae8b86fc1"}
+[24/28] audit_panel_receipts.py --jobs 3
+{"workers": 124, "records": 1140, "totals": {"positive/archive-direct/VERIFIED_UNSAT": 23, "positive/archive-kissat/VERIFIED_UNSAT": 23, "positive/archive-shared/VERIFIED_UNSAT": 24, "positive/rebuilt-kissat/VERIFIED_UNSAT": 24, "positive/archive-direct/OPEN": 1, "positive/archive-kissat/OPEN": 1, "leaf/arm-leaf/OPEN": 816, "hard/base/OPEN": 24, "hard/table/OPEN": 24, "hard/table-capacity/OPEN": 24, "hard/native-kissat/OPEN": 24, "hard/shared/OPEN": 24, "adaptive/base/OPEN": 24, "adaptive/strengthened/OPEN": 24, "adaptive/child/OPEN": 48, "long/parent/OPEN": 4, "long/child/OPEN": 8}}
+[25/28] audit_joining.py verify
+Verified two replacement proofs, all 12 complementary physical proofs and eight OPEN query bindings.
+[26/28] conquer.py --index 0 --out verification/live-0 --verify-only
+{"index": 0, "status": "OPEN", "verification": "reconstructed"}
+[27/28] audit_controls.py
+c WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 5 0
+s VERIFIED
+
+c verification time: 0.036 seconds
+c WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 5 0
+s VERIFIED
+
+c verification time: 0.037 seconds
+s NOT VERIFIED
+
+c verification time: 0.036 seconds
+s NOT VERIFIED
+
+c verification time: 0.037 seconds
+[["native SAT and cached model", "passed"], ["unrecognised direct status", "rejected", "ValueError"], ["derived cover status in a direct receipt", "rejected", "ValueError"], ["foreign query", "rejected", "ValueError"], ["foreign base", "rejected", "ValueError"], ["different branch", "rejected", "ValueError"], ["invalid OPEN budget", "rejected", "ValueError"], ["invalid model hash", "rejected", "ValueError"], ["bad model with matching hash", "rejected", "ValueError"], ["missing SAT evidence", "rejected", "FileNotFoundError"], ["reuse only OPEN at sufficient matching budget", "passed"], ["higher-budget OPEN retry", "passed"], ["physical graph model, two-colour pentagon", "passed"], ["physical monochromatic triangle", "rejected", "ValueError"], ["one exact checker verdict", "passed"], ["attempt to suppress replay warnings", "rejected", "ValueError"], ["two real child proofs and exhaustive pivot compose", "passed"], ["read-only reassembly of composed answer", "passed"], ["inconsistent aggregate", "rejected", "ValueError"], ["missing sibling", "rejected", "FileNotFoundError"], ["incomplete child proof with matching metadata", "rejected", "ValueError"], ["missing child proof", "rejected", "FileNotFoundError"], ["two colors fail to cover an explicit assignment", "rejected", "ValueError"], ["complete physical K5 parent SAT", "passed"], ["cached K5 parent SAT", "passed"], ["complete physical K5 adaptive SAT", "passed"], ["cached K5 adaptive SAT", "passed"], ["live-0 direct cache VERIFIED_UNSAT_BY_COVER", "rejected", "ValueError"], ["no aggregate published on live-0 rejection VERIFIED_UNSAT_BY_COVER", "passed"], ["live-0 direct cache UNRECOGNIZED", "rejected", "ValueError"], ["no aggregate published on live-0 rejection UNRECOGNIZED", "passed"], ["live index 0", "passed"], ["actual live identity mismatch", "rejected", "ValueError"], ["legacy adaptive index 41638", "passed"], ["legacy adaptive index 553344", "passed"], ["legacy adaptive index 849689", "passed"], ["legacy adaptive index 913275", "passed"]]
+[28/28] engines/shared/selftest.py
+PASS  K5/K6, all split assignments, sharding, same-plan resume, missing sibling, damaged proof and model with updated hashes, capped retry, both DRAT exports, and DIMACS edge cases
+All 28 frozen-audit commands passed.

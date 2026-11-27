@@ -21,6 +21,11 @@ snapshots except where a later report explicitly tested them.
 - `revision-attribution.txt`: the strict helper's untracked-worktree provenance,
   correcting the report's original claim that it belonged to a74f7c2.
 
+The quickstart helper has since been committed in `9296a0176bdf038e184b002fb6a8bc9d94168f3a`;
+its SHA-256 remains `20a03e4c361ac1f449688acf4bcdc55a2e97a3f86f8000c36248ffee0eda5b68`.
+The report and attribution transcript describe the earlier pre-commit state,
+and correctly reject any attribution of that helper to `a74f7c2`.
+
 All six directions are accepted. Reproduction paths inside these reports point
 to their original private member workspaces. The coordinator's final replay
 commands and logs live one directory above these documents, not inside the
