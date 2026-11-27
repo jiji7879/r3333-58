@@ -1,0 +1,47 @@
+{
+  "matching": {
+    "sha256": "9fb32091685b9e3adf1e7e670c3d4333f35b0d12ed6990e968a44b83fb180b01",
+    "variables": 315,
+    "clauses": 1825,
+    "clauses_with_duplicate_literals": 0
+  },
+  "path": {
+    "sha256": "7f0384253359d2fe39b2830becbd9da75bb933324cdd148a3edb75c63f6fd9b1",
+    "variables": 315,
+    "clauses": 1825
+  },
+  "proof": {
+    "bytes": 470852,
+    "sha256": "4ca7a5d302ceadc4afb5d8d54e4f9c3d5613f48cf08681fe0461a05acb6085d7",
+    "gz_sha256": "63db62ec43ac015e53a7013b5da59a705c3432136b0946da21d414ea2cf1c4e3"
+  },
+  "strict_original": {
+    "exit": 0,
+    "verified": 1,
+    "warnings": [],
+    "full_read": true,
+    "rat_zero": true
+  },
+  "strict_deletions_ignored": {
+    "exit": 0,
+    "verified": 1,
+    "warnings": [],
+    "full_read": true,
+    "rat_zero": true
+  },
+  "negative_path": {
+    "exit": 1,
+    "verified": 0,
+    "warnings": [],
+    "full_read": true,
+    "rat_zero": false
+  },
+  "trace": {
+    "records": 24384,
+    "additions": 11868,
+    "deletions": 12516,
+    "clauses_with_duplicate_literals": 0,
+    "clauses_with_complementary_literals": 0,
+    "ends_in_complete_record": true
+  }
+}

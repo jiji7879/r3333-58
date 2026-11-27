@@ -1,0 +1,6 @@
+cycle0_0 UNSAT 16369 isomorphic to canonical: True
+cycle0_1 UNSAT 17877 isomorphic to canonical: True
+cycle2_0 UNSAT 14949 isomorphic to canonical: True
+cycle2_1 UNSAT 16231 isomorphic to canonical: True
+matching-colour swap UNSAT 13319 isomorphic to canonical: True
+all UNSAT: True all isomorphic: True

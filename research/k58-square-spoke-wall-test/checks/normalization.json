@@ -1,0 +1,14 @@
+{
+  "K4_triangle_free_two_colourings": 18,
+  "K5_triangle_free_two_colourings": 12,
+  "K6_triangle_free_two_colourings": 0,
+  "K5_induced_four_subsets_path_plus_path": 60,
+  "four_site_raw_square_matchings_normalized": 6,
+  "both_groups_all_labelled_K5_and_cycle_colour_cases_normalized": 144,
+  "matching_square_colour_swap_is_canonical": true,
+  "normalization_uses_vertex_permutations_only_for_five_groups": true,
+  "root_and_cross_group_edges_unchanged_for_five_groups": true,
+  "canonical_variables": 315,
+  "canonical_clauses": 1825,
+  "canonical_sha256": "9fb32091685b9e3adf1e7e670c3d4333f35b0d12ed6990e968a44b83fb180b01"
+}

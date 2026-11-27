@@ -1,0 +1,5 @@
+1. OPEN [goal]: The supplied square/matching spoke rule, exact K15 normalization and boundary models, 14 first-tier wall batches, and separate historical controls have only the scoped consequences stated in the audit, with no whole-parent, wall-row or Ramsey closure — problem.md
+2. PROVED #1: The supplied archive's local rule, finite normalization, models, measured bound/control results and stated scope are established as claimed after the recorded normalization, unit and metadata corrections — checks/claim.md
+3. CHECK #2 [compute]: PASS: full finite case enumeration and literal clause permutations; fresh strict native/RUP/model replay plus receipt totalling for 14 wall and 13 historical rows — checks/reproduction.md
+4. CHECK #2 [self]: PASS: all quantified root-group cases, threshold thinning, literal signs, normalization alternatives and bounded/whole-proof ceilings checked — checks/2-read.md
+5. CHECK #2 [model]: PASS: all four smwziqvco reports reviewed after fresh replay; earlier normalization and historical-key defects corrected; accepted local scope only — checks/2-model.md

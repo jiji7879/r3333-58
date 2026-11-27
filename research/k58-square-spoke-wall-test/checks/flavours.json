@@ -1,0 +1,87 @@
+{
+ "matching_swap": {
+  "status": "UNSAT",
+  "conflicts": 13319,
+  "iso_to_canonical": true
+ },
+ "cycle_combos": {
+  "cycle0_0": {
+   "status": "UNSAT",
+   "conflicts": 16369,
+   "iso_to_canonical": true,
+   "order_g1": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "order_g2": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  "cycle0_1": {
+   "status": "UNSAT",
+   "conflicts": 17877,
+   "iso_to_canonical": true,
+   "order_g1": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "order_g2": [
+    10,
+    12,
+    14,
+    11,
+    13
+   ]
+  },
+  "cycle2_0": {
+   "status": "UNSAT",
+   "conflicts": 14949,
+   "iso_to_canonical": true,
+   "order_g1": [
+    5,
+    7,
+    9,
+    6,
+    8
+   ],
+   "order_g2": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  "cycle2_1": {
+   "status": "UNSAT",
+   "conflicts": 16231,
+   "iso_to_canonical": true,
+   "order_g1": [
+    5,
+    7,
+    9,
+    6,
+    8
+   ],
+   "order_g2": [
+    10,
+    12,
+    14,
+    11,
+    13
+   ]
+  }
+ },
+ "all_cycle_combos_unsat": true,
+ "all_cycle_combos_iso": true
+}

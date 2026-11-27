@@ -1,0 +1,6 @@
+query sha256 9fb32091685b9e3adf1e7e670c3d4333f35b0d12ed6990e968a44b83fb180b01 | nv 315 | clauses 1825
+path  sha256 7f0384253359d2fe39b2830becbd9da75bb933324cdd148a3edb75c63f6fd9b1 | nv 315 | clauses 1825
+records 24384 | additions 11868 | deletions 12516 | deletions ignored (addition-only mode)
+non-RUP additions: 0 []
+empty clause present among additions: True
+RESULT STRICT RUP VERIFIED

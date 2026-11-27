@@ -1,0 +1,11 @@
+c turning on binary mode checking
+c parsing input formula with 315 variables and 1825 clauses
+c finished parsing, read 470852 bytes from proof file
+c detected empty clause; start verification via backward checking
+c RUP check failed
+c failed at proof line 287 (modulo deletion errors)
+
+s NOT VERIFIED
+c verification time: 0.221 seconds
+
+exit=1

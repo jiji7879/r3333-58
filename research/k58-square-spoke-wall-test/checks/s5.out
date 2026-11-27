@@ -1,0 +1,14 @@
+{'rank': 1, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 8, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 132, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 201, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 255, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 878, 'edge_lits_in_led_clauses': 20618, 'edge_lits_outside_sender_scope': 0}
+{'rank': 330, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 878, 'edge_lits_in_led_clauses': 20618, 'edge_lits_outside_sender_scope': 0}
+{'rank': 340, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 878, 'edge_lits_in_led_clauses': 20614, 'edge_lits_outside_sender_scope': 0}
+{'rank': 400, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 600, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 800, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 1000, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 1200, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+{'rank': 1300, 'guards': 56, 'guards_with_block': 56, 'block_min': 409, 'block_max': 851, 'edge_lits_in_led_clauses': 20730, 'edge_lits_outside_sender_scope': 0}
+TOTAL outside-scope 0 of 269150 | all guarded True

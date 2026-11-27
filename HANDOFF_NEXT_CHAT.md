@@ -10,6 +10,34 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (K15 square/matching spokes on the ordinary wall).**
+The shared K15 matching formula and its normalization are now exhaustively
+checked, including all 144 pairs of labelled valid K5 pins and the exact
+clause multiset. A strict native replay (full 470,852-byte read, no `-w`,
+zero warnings/errors and zero RAT) and an independent addition-only RUP check
+pass; the K15-path and K14 square/matching models are genuine boundaries. The
+earlier “eight flavours” objection was a generator bug, not a missing graph
+case.
+
+Four accepted audits of `smwziqvco` bind **9,287 per-row-distinct rules**
+(7,247 globally distinct) to fourteen first-tier parents with
+`tables=True,total_critical=True,full_root=False`; there are **4,807**
+falsifying cubes surviving original unit propagation across ten rows, and
+**four zero-gain rows**, two each for $(15,14,14,14)$ and $(16,14,14,13)$.
+This is a conditional clause inventory, not a row, representative or Ramsey
+proof: ten full-parent cube calls remain OPEN at their nominal caps and no
+full-parent DRAT was retained for them. The thirteen full-root historical
+controls are a separate panel; their corrected counts are 939 seeds, 2,817
+one-spoke neighbours, 1,918 with extra propagation and length-3/4/5 counts
+353/151/18,528. Bound-exhaustion does not prove minimality. Important
+provenance repairs: the K15 CNF hash is now explicitly pinned, local proof
+hashes use decompressed bytes, and batch hashes use compressed JSON bytes.
+
+Read [research/k58-square-spoke-wall-test/audit.md](research/k58-square-spoke-wall-test/audit.md)
+and [its reproduction receipt](research/k58-square-spoke-wall-test/checks/reproduction.md).
+The Siege gate is scoped to this finite and package verification, not the K58
+wall. No production inputs, ledger or search queue were modified.
+
 **Updated 2026-11-27 (wider paired-arm families and repaired strict replay).**
 The extension has **176,136 four-literal clauses over every one of the 1,300
 inputs**, separate **26,224 mixed** and **10,136 double-negative** signed

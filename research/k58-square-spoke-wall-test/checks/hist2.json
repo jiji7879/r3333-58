@@ -1,0 +1,678 @@
+[
+ {
+  "rank": 1,
+  "parent_sha": "fc6ea04ca84ab6dc96a950a24193969ea6bea1f40042755f118d7d7ee132a09b",
+  "parent_bytes": 4061359,
+  "nofr_sha": "7439860513b5033a2726317517d7c889018152e4718bb61d51e2f95218f1dd07",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 21,
+  "direct": 620,
+  "wide": 69,
+  "neighbors_distinct": 84,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 28,
+   "neighbors": 84,
+   "more_propagation": 53
+  },
+  "query": [
+   19002,
+   -1794,
+   -1986,
+   5010
+  ],
+  "runs": {
+   "base": [
+    null,
+    3003
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 1970,
+  "pathcuts": {
+   "3": 22,
+   "4": 11,
+   "5": 1317
+  },
+  "path_s": 0.2,
+  "elapsed": 4.4
+ },
+ {
+  "rank": 8,
+  "parent_sha": "e5304d3c469a8e1be3ea697395dac823408b2d46db7b9ba07d41a5fef6eb740e",
+  "parent_bytes": 4058468,
+  "nofr_sha": "b4874ce2b7c98ed10a868321b8e8f0c664a712cfd2917a6357a6eb7975a4e111",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 21,
+  "direct": 652,
+  "wide": 111,
+  "neighbors_distinct": 132,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 44,
+   "neighbors": 132,
+   "more_propagation": 66
+  },
+  "query": [
+   24663,
+   -4944,
+   -5164,
+   6024
+  ],
+  "runs": {
+   "base": [
+    null,
+    3000
+   ],
+   "wide": [
+    null,
+    3002
+   ]
+  },
+  "pathcuts_total": 1982,
+  "pathcuts": {
+   "3": 22,
+   "4": 11,
+   "5": 1329
+  },
+  "path_s": 0.2,
+  "elapsed": 3.7
+ },
+ {
+  "rank": 132,
+  "parent_sha": "32989b77a3a6c826a89c6e1e5faa535733dffbd7819f72380c92f5a3308dea9e",
+  "parent_bytes": 3987004,
+  "nofr_sha": "4b7ec483c91c773a88107e1b254e4fb68c643125765102dd184310761e5f19b2",
+  "nofr_matches": false,
+  "nclauses": 206476,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1014,
+  "pos_guard_in_clause_len_le_4": 1014,
+  "ternary": 12,
+  "direct": 666,
+  "wide": 169,
+  "neighbors_distinct": 264,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 88,
+   "neighbors": 264,
+   "more_propagation": 167
+  },
+  "query": [
+   14103,
+   -934,
+   -3002,
+   3274
+  ],
+  "runs": {
+   "base": [
+    null,
+    3000
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 2812,
+  "pathcuts": {
+   "3": 41,
+   "4": 16,
+   "5": 1736
+  },
+  "path_s": 0.2,
+  "elapsed": 4.4
+ },
+ {
+  "rank": 201,
+  "parent_sha": "c11d1c541f7be36985b580da9a53abad26f70e96bcaca18985c92108788e857a",
+  "parent_bytes": 4058468,
+  "nofr_sha": "3bd76d1bad57136e9d27949114eb2afa140d3b1ad05f8ca8c76f0c8f8901c2d4",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 12,
+  "direct": 666,
+  "wide": 172,
+  "neighbors_distinct": 264,
+  "three_per_seed": true,
+  "prop_s": 0.2,
+  "counts": {
+   "seeds": 88,
+   "neighbors": 264,
+   "more_propagation": 167
+  },
+  "query": [
+   15667,
+   -1758,
+   -3018,
+   3898
+  ],
+  "runs": {
+   "base": [
+    null,
+    3000
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 1974,
+  "pathcuts": {
+   "3": 25,
+   "4": 9,
+   "5": 1329
+  },
+  "path_s": 0.2,
+  "elapsed": 3.7
+ },
+ {
+  "rank": 255,
+  "parent_sha": "79eb59d8b399f6b695c0d09fd3071242a440791732ce71b8ac0105772040d694",
+  "parent_bytes": 4180776,
+  "nofr_sha": "319cf3bf9962741b83c10b1e97ef2f164b0bf9ff51fac359822a78762ba2412a",
+  "nofr_matches": false,
+  "nclauses": 218948,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1002,
+  "pos_guard_in_clause_len_le_4": 1002,
+  "ternary": 0,
+  "direct": 618,
+  "wide": 112,
+  "neighbors_distinct": 210,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 70,
+   "neighbors": 210,
+   "more_propagation": 140
+  },
+  "query": [
+   6613,
+   -317,
+   -321,
+   353
+  ],
+  "runs": {
+   "base": [
+    null,
+    3001
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 2153,
+  "pathcuts": {
+   "3": 28,
+   "4": 9,
+   "5": 1399
+  },
+  "path_s": 0.2,
+  "elapsed": 4.0
+ },
+ {
+  "rank": 330,
+  "parent_sha": "65cf3f746bbb6de7a0ac6cc3122d0a65aeeb23d94d46007bd7c8dbd25d70b75c",
+  "parent_bytes": 4142330,
+  "nofr_sha": "20d0b395dfb0d137b81c6b3fd6a82c34d0c4de3bce71f45ad3aa03a11f4d40d1",
+  "nofr_matches": false,
+  "nclauses": 216392,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 984,
+  "pos_guard_in_clause_len_le_4": 984,
+  "ternary": 0,
+  "direct": 618,
+  "wide": 112,
+  "neighbors_distinct": 210,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 70,
+   "neighbors": 210,
+   "more_propagation": 140
+  },
+  "query": [
+   6613,
+   -313,
+   -345,
+   377
+  ],
+  "runs": {
+   "base": [
+    null,
+    3000
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 2578,
+  "pathcuts": {
+   "3": 33,
+   "4": 16,
+   "5": 1604
+  },
+  "path_s": 0.2,
+  "elapsed": 4.0
+ },
+ {
+  "rank": 340,
+  "parent_sha": "5ac15fc2f02935d99436d43289532a562f89a3b8d01ea237c2e7548920707570",
+  "parent_bytes": 4013351,
+  "nofr_sha": "241c1a126e6fe1913574f60bef998a1e18b432f68edb3b996e93943301c44a54",
+  "nofr_matches": false,
+  "nclauses": 208360,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 996,
+  "pos_guard_in_clause_len_le_4": 996,
+  "ternary": 12,
+  "direct": 702,
+  "wide": 90,
+  "neighbors_distinct": 189,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 63,
+   "neighbors": 189,
+   "more_propagation": 150
+  },
+  "query": [
+   24652,
+   -5168,
+   -5272,
+   6028
+  ],
+  "runs": {
+   "base": [
+    null,
+    3001
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 3026,
+  "pathcuts": {
+   "3": 41,
+   "4": 16,
+   "5": 1890
+  },
+  "path_s": 0.2,
+  "elapsed": 3.7
+ },
+ {
+  "rank": 400,
+  "parent_sha": "3c0c3564cd16dc35ca27bd7f6579001ee40b18704ff5c03db20f128d5e9c799b",
+  "parent_bytes": 4061360,
+  "nofr_sha": "aacf68373b72c0b6bd6a273bf1feb6d6dde313cbec7d8722be51ca40bfe44d0b",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 12,
+  "direct": 636,
+  "wide": 142,
+  "neighbors_distinct": 237,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 79,
+   "neighbors": 237,
+   "more_propagation": 158
+  },
+  "query": [
+   14439,
+   -1742,
+   -1934,
+   3238
+  ],
+  "runs": {
+   "base": [
+    null,
+    3001
+   ],
+   "wide": [
+    null,
+    3004
+   ]
+  },
+  "pathcuts_total": 1961,
+  "pathcuts": {
+   "3": 25,
+   "4": 9,
+   "5": 1315
+  },
+  "path_s": 0.2,
+  "elapsed": 3.8
+ },
+ {
+  "rank": 600,
+  "parent_sha": "138e4a40adfbc8e1bfa8a9368a5f54595c3a532e1c674abd3eb9d777d45fbced",
+  "parent_bytes": 4061359,
+  "nofr_sha": "62838c890791e49deb5edb648c28dbc51610fcb279a0a05b246ff934d21cb8ad",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 3,
+  "direct": 620,
+  "wide": 152,
+  "neighbors_distinct": 261,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 87,
+   "neighbors": 261,
+   "more_propagation": 213
+  },
+  "query": [
+   15225,
+   -1750,
+   -1942,
+   3582
+  ],
+  "runs": {
+   "base": [
+    null,
+    3001
+   ],
+   "wide": [
+    null,
+    3001
+   ]
+  },
+  "pathcuts_total": 1962,
+  "pathcuts": {
+   "3": 21,
+   "4": 14,
+   "5": 1317
+  },
+  "path_s": 0.3,
+  "elapsed": 4.1
+ },
+ {
+  "rank": 800,
+  "parent_sha": "a6a5b6576039187f1a82b3c7d39aa8e560607970d7e6871655c669e8932cc2f6",
+  "parent_bytes": 4061359,
+  "nofr_sha": "7bf651341fe830f6f4188834c85609132bad375cc54cb96aad7c29d06bf1f6e3",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 12,
+  "direct": 630,
+  "wide": 121,
+  "neighbors_distinct": 174,
+  "three_per_seed": true,
+  "prop_s": 0.3,
+  "counts": {
+   "seeds": 58,
+   "neighbors": 174,
+   "more_propagation": 117
+  },
+  "query": [
+   14832,
+   -1746,
+   -1938,
+   3426
+  ],
+  "runs": {
+   "base": [
+    null,
+    3001
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 1960,
+  "pathcuts": {
+   "3": 22,
+   "4": 9,
+   "5": 1317
+  },
+  "path_s": 0.2,
+  "elapsed": 4.0
+ },
+ {
+  "rank": 1000,
+  "parent_sha": "f8713cdd9f276784ad3f52dc4cca887de740674c6da590b2e5d489b2b69628f7",
+  "parent_bytes": 4058468,
+  "nofr_sha": "f3d18adb6124b0539cda5053e289a635a1136d532876f88761b5bb5dda680412",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 12,
+  "direct": 666,
+  "wide": 172,
+  "neighbors_distinct": 264,
+  "three_per_seed": true,
+  "prop_s": 0.2,
+  "counts": {
+   "seeds": 88,
+   "neighbors": 264,
+   "more_propagation": 167
+  },
+  "query": [
+   19999,
+   -1207,
+   -2899,
+   4999
+  ],
+  "runs": {
+   "base": [
+    null,
+    3000
+   ],
+   "wide": [
+    null,
+    3002
+   ]
+  },
+  "pathcuts_total": 1971,
+  "pathcuts": {
+   "3": 26,
+   "4": 9,
+   "5": 1329
+  },
+  "path_s": 0.1,
+  "elapsed": 3.4
+ },
+ {
+  "rank": 1200,
+  "parent_sha": "1b64a42899da92580af353c09be7772ad5dc785b97809aa3ce744cf115e0c98a",
+  "parent_bytes": 4058468,
+  "nofr_sha": "d2aa4ab7bffc27a6d49c2e5870683ad70a28fe94c41f743f71d31d404732b68f",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 12,
+  "direct": 666,
+  "wide": 172,
+  "neighbors_distinct": 264,
+  "three_per_seed": true,
+  "prop_s": 0.2,
+  "counts": {
+   "seeds": 88,
+   "neighbors": 264,
+   "more_propagation": 167
+  },
+  "query": [
+   20834,
+   -1219,
+   -2911,
+   4899
+  ],
+  "runs": {
+   "base": [
+    null,
+    3001
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 1974,
+  "pathcuts": {
+   "3": 25,
+   "4": 9,
+   "5": 1329
+  },
+  "path_s": 0.1,
+  "elapsed": 3.3
+ },
+ {
+  "rank": 1300,
+  "parent_sha": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+  "parent_bytes": 4061359,
+  "nofr_sha": "5eb46db11e1421163fb96fb7586d65b799ab808d1b5b9770ad9825bb71a0dce0",
+  "nofr_matches": false,
+  "nclauses": 211564,
+  "nbase": 134995,
+  "guards": 56,
+  "units_ok": true,
+  "guards_with_leading_block": 56,
+  "guards_without_leading_block": 0,
+  "neg_guard_off_leader": 0,
+  "neg_guard_off_leader_in_single_guard_clause": 0,
+  "pos_guard_occurrences": 1038,
+  "pos_guard_in_clause_len_le_4": 1038,
+  "ternary": 3,
+  "direct": 620,
+  "wide": 153,
+  "neighbors_distinct": 264,
+  "three_per_seed": true,
+  "prop_s": 0.2,
+  "counts": {
+   "seeds": 88,
+   "neighbors": 264,
+   "more_propagation": 213
+  },
+  "query": [
+   14832,
+   -1746,
+   -1938,
+   3402
+  ],
+  "runs": {
+   "base": [
+    null,
+    3000
+   ],
+   "wide": [
+    null,
+    3000
+   ]
+  },
+  "pathcuts_total": 1964,
+  "pathcuts": {
+   "3": 22,
+   "4": 13,
+   "5": 1317
+  },
+  "path_s": 0.2,
+  "elapsed": 2.9
+ }
+]

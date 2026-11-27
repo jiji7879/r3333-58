@@ -1,0 +1,15 @@
+== micro sanity checks of the propagation engine ==
+  [[1,2],[-1,2],[1,-2]]  rup([-1]) = False (expect False)
+  [[1,2],[-1,2],[1,-2]]  rup([1])  = True (expect True)
+  chain units ending in contradiction: rup([]) = True (expect True)
+  satisfiable [1,2] alone: rup([-3]) = False (expect False)
+== formula-level controls ==
+  matching template, rup([]) with no additions: False (expect False)
+  path template,     rup([]) with no additions: False (expect False)
+  K14 sharpness,     rup([]) with no additions: False (expect False)
+  matching template, rup([fresh unused var 400+1=401]): False (expect False)
+== full trace against each formula, empty clause checked ==
+matching template: all 11868 additions RUP including the empty clause -- REFUTED
+path template  : first failure at addition #27 [-110, -279, -248, -250, -230, -241]
+K14 sharpness  : first failure at addition #1 [-251, 246, 243]
+RESULT positive verified and both negatives rejected

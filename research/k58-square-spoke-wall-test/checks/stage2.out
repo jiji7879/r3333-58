@@ -1,0 +1,14 @@
+0 00032f34 senders 30 guarded 29 pairs 702 clauses 667 skip {'blocked': 35} novel 415 miss/extra/wit 0 0 667 0.405
+47 000483e5 senders 30 guarded 29 pairs 522 clauses 498 skip {'blocked': 24} novel 246 miss/extra/wit 0 0 498 0.201
+370 001f3cc0 senders 31 guarded 30 pairs 630 clauses 606 skip {'blocked': 24} novel 336 miss/extra/wit 0 0 606 0.234
+762 0037e99c senders 31 guarded 30 pairs 870 clauses 820 skip {'blocked': 50} novel 550 miss/extra/wit 0 0 820 0.247
+945 0040977b senders 31 guarded 30 pairs 870 clauses 820 skip {'blocked': 50} novel 550 miss/extra/wit 0 0 820 0.21
+1039 00457a25 senders 29 guarded 28 pairs 390 clauses 390 skip {} novel 0 miss/extra/wit 0 0 390 0.179
+1086 0049d41a senders 31 guarded 30 pairs 870 clauses 830 skip {'blocked': 40} novel 560 miss/extra/wit 0 0 830 0.205
+4234 011c860e senders 29 guarded 28 pairs 234 clauses 234 skip {} novel 0 miss/extra/wit 0 0 234 0.16
+5300 0178e348 senders 30 guarded 29 pairs 312 clauses 312 skip {} novel 0 miss/extra/wit 0 0 312 0.165
+6476 01a6d6b3 senders 30 guarded 29 pairs 520 clauses 520 skip {} novel 0 miss/extra/wit 0 0 520 0.207
+15533 0404c3a2 senders 32 guarded 31 pairs 1000 clauses 950 skip {'blocked': 50} novel 590 miss/extra/wit 0 0 950 0.258
+24541 063b7966 senders 32 guarded 31 pairs 744 clauses 720 skip {'blocked': 24} novel 360 miss/extra/wit 0 0 720 0.241
+25557 06861a3d senders 32 guarded 31 pairs 1000 clauses 960 skip {'blocked': 40} novel 600 miss/extra/wit 0 0 960 0.264
+30056 075f5e3e senders 32 guarded 31 pairs 1000 clauses 960 skip {'blocked': 40} novel 600 miss/extra/wit 0 0 960 0.268

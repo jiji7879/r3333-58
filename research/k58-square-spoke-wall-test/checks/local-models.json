@@ -1,0 +1,77 @@
+{
+ "K15_path_boundary": {
+  "sha256": "42a691ee85a353e50623773d8e782c3aaf023dcc0d027b8f2c414e09305dec11",
+  "model_literal_count": 315,
+  "edge_count": 105,
+  "every_clause_of_exact_formula_satisfied": true,
+  "full_edge_colour_map_reconstructed": true,
+  "triangle_free": true,
+  "root_group_sizes": [
+   4,
+   5,
+   5
+  ],
+  "root_group_colours_verified": true,
+  "designated_four_site_degrees_by_colour": {
+   "0": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "1": [
+    1,
+    1,
+    2,
+    2
+   ],
+   "2": [
+    1,
+    1,
+    2,
+    2
+   ]
+  }
+ },
+ "K14_square_sharpness": {
+  "sha256": "29c2852439d32e3e1b42d5ef47c008171fd4ccdadab01f5fd5f0813eb5697d92",
+  "model_literal_count": 91,
+  "edge_count": 91,
+  "every_clause_of_exact_formula_satisfied": true,
+  "full_edge_colour_map_reconstructed": true,
+  "triangle_free": true,
+  "root_group_sizes": [
+   4,
+   4,
+   5
+  ],
+  "root_group_colours_verified": true,
+  "designated_four_site_degrees_by_colour": {
+   "0": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "1": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "2": [
+    2,
+    2,
+    2,
+    2
+   ]
+  }
+ },
+ "shared_K15_matching_proof": {
+  "sha256": "4ca7a5d302ceadc4afb5d8d54e4f9c3d5613f48cf08681fe0461a05acb6085d7",
+  "raw_bytes": 470852,
+  "warning_suppressed_checker_used": false,
+  "status": "one exact s VERIFIED, zero warnings/errors, RAT lemma count zero",
+  "proof_bytes_fully_read": true
+ }
+}

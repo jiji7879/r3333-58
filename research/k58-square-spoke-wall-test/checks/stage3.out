@@ -1,0 +1,15 @@
+0 00032f34 digest True parent True tier first theorem True rules 667 667 novel 415 415 guards 29 used 29 unguarded_ok True bad {} omitted 35 True {'other-colour-unit': 35}
+47 000483e5 digest True parent True tier first theorem True rules 498 498 novel 246 246 guards 29 used 29 unguarded_ok True bad {} omitted 24 True {'other-colour-unit': 24}
+370 001f3cc0 digest True parent True tier first theorem True rules 606 606 novel 336 336 guards 30 used 30 unguarded_ok True bad {} omitted 24 True {'other-colour-unit': 24}
+762 0037e99c digest True parent True tier first theorem True rules 820 820 novel 550 550 guards 30 used 30 unguarded_ok True bad {} omitted 50 True {'other-colour-unit': 50}
+945 0040977b digest True parent True tier first theorem True rules 820 820 novel 550 550 guards 30 used 30 unguarded_ok True bad {} omitted 50 True {'other-colour-unit': 50}
+1039 00457a25 digest True parent True tier first theorem True rules 390 390 novel 0 0 guards 28 used 13 unguarded_ok True bad {} omitted 0 True {}
+1086 0049d41a digest True parent True tier first theorem True rules 830 830 novel 560 560 guards 30 used 30 unguarded_ok True bad {} omitted 40 True {'other-colour-unit': 40}
+4234 011c860e digest True parent True tier first theorem True rules 234 234 novel 0 0 guards 28 used 13 unguarded_ok True bad {} omitted 0 True {}
+5300 0178e348 digest True parent True tier first theorem True rules 312 312 novel 0 0 guards 29 used 13 unguarded_ok True bad {} omitted 0 True {}
+6476 01a6d6b3 digest True parent True tier first theorem True rules 520 520 novel 0 0 guards 29 used 13 unguarded_ok True bad {} omitted 0 True {}
+15533 0404c3a2 digest True parent True tier first theorem True rules 950 950 novel 590 590 guards 31 used 31 unguarded_ok True bad {} omitted 50 True {'other-colour-unit': 50}
+24541 063b7966 digest True parent True tier first theorem True rules 720 720 novel 360 360 guards 31 used 31 unguarded_ok True bad {} omitted 24 True {'other-colour-unit': 24}
+25557 06861a3d digest True parent True tier first theorem True rules 960 960 novel 600 600 guards 31 used 31 unguarded_ok True bad {} omitted 40 True {'other-colour-unit': 40}
+30056 075f5e3e digest True parent True tier first theorem True rules 960 960 novel 600 600 guards 31 used 31 unguarded_ok True bad {} omitted 40 True {'other-colour-unit': 40}
+TOTAL rules 9287 novel 4807 omitted 377 theorem 4ca7a5d302ceadc4
