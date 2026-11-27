@@ -1,0 +1,96 @@
+{
+  "accepted_native_checks_warning_free": true,
+  "artifact_sha256": "f08ec771eaf99c31d22cbe4d364ccd0ca80365f41a1395e1a152d067aabcf192",
+  "binary_rup_proofs_strictly_replayed": 3,
+  "cover_query_sha256": "30163e3ddaefb8241137b19bcdceafc7d1c9facfb85f0c76a239d53c71923a70",
+  "cover_result": "P |- color0 OR color3; no unique survivor and no parent model is thereby established",
+  "edge": [
+    31,
+    42
+  ],
+  "event_head": "5f6644251423ebb5207722ee641d08a93696703dac1df4cfbb56e58fbc7d4d9e",
+  "event_head_authenticates_producer_or_execution_dates": false,
+  "event_live_count_matches_verified_campaign_queue": true,
+  "excluded_colors": [
+    1,
+    2
+  ],
+  "fresh_full_k58_searches": 0,
+  "independent_swarm": "smwyronzn; pending",
+  "index": 0,
+  "literals": [
+    5249,
+    5250,
+    5251,
+    5252
+  ],
+  "lrat_additions": {
+    "color_1": 36,
+    "color_2": 1,
+    "cover": 35
+  },
+  "native_wrong_query_rejected": true,
+  "parent": "OPEN_UNKNOWN",
+  "review_bundle": {
+    "bytes": 1259778,
+    "crc_test": "passed",
+    "files_including_manifest": 27,
+    "manifest_entries": 26,
+    "path": "dist/K58_case0-verification.zip",
+    "sha256": "71a4ff5ab02a77802e288f8fd17a44bc752f488e223dc6c6c1df125986a9d054",
+    "unpacked_default_and_strict_native_replay": "passed"
+  },
+  "schema": "k58-case0-verification/v1",
+  "scope": "Exact case-0 query and certificate check only. No parent, representative, ordinary wall row, queue reduction or Ramsey-bound closure.",
+  "source_regeneration": {
+    "arm": 14,
+    "event_head": "5f6644251423ebb5207722ee641d08a93696703dac1df4cfbb56e58fbc7d4d9e",
+    "event_state": "OPEN_UNKNOWN",
+    "fresh_solver_searches": 0,
+    "index": 0,
+    "live_count": 983774,
+    "missing_color": 2,
+    "ordinary_sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+    "owner": "revised",
+    "pair": [
+      "00000",
+      "01022"
+    ],
+    "palette": [
+      1,
+      0,
+      3
+    ],
+    "parent_raw_base_bytes_equal": true,
+    "physical_vertex_map": [
+      31,
+      32,
+      35,
+      33,
+      34,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "rank": 0,
+    "recipe_archive_sha256": "3324b778ea425dbcd48a3c7f19a38812820066d769581569f318b61108837b75",
+    "representative_sha256": "ae90931dc6cd482105153dd720209e602bbfc7cc0915e18c6e87023ee2659931",
+    "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "scope": "Regenerated input identity with current audited encoder; no authentication of original native execution or closure claim",
+    "strengthened_is_not_base_representative": true,
+    "strengthened_query_sha256": "d69970e19ddadfad5057ffaf8ffbd1354f957a4003852dc2b6b8aeff63cb3004"
+  },
+  "truncated_lrat_rejected": "Proof did not derive the empty clause",
+  "unresolved_branches_are_not_feasibility_witnesses": true,
+  "unresolved_colors": [
+    0,
+    3
+  ],
+  "warning_suppression_used": false
+}

@@ -1,0 +1,4 @@
+{
+  "wrong_query_rejected": true,
+  "truncated_lrat_rejected": "Proof did not derive the empty clause"
+}

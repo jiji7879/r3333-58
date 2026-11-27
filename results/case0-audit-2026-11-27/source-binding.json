@@ -1,0 +1,44 @@
+{
+  "arm": 14,
+  "event_head": "5f6644251423ebb5207722ee641d08a93696703dac1df4cfbb56e58fbc7d4d9e",
+  "event_state": "OPEN_UNKNOWN",
+  "fresh_solver_searches": 0,
+  "index": 0,
+  "live_count": 983774,
+  "missing_color": 2,
+  "ordinary_sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+  "owner": "revised",
+  "pair": [
+    "00000",
+    "01022"
+  ],
+  "palette": [
+    1,
+    0,
+    3
+  ],
+  "parent_raw_base_bytes_equal": true,
+  "physical_vertex_map": [
+    31,
+    32,
+    35,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "rank": 0,
+  "recipe_archive_sha256": "3324b778ea425dbcd48a3c7f19a38812820066d769581569f318b61108837b75",
+  "representative_sha256": "ae90931dc6cd482105153dd720209e602bbfc7cc0915e18c6e87023ee2659931",
+  "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+  "scope": "Regenerated input identity with current audited encoder; no authentication of original native execution or closure claim",
+  "strengthened_is_not_base_representative": true,
+  "strengthened_query_sha256": "d69970e19ddadfad5057ffaf8ffbd1354f957a4003852dc2b6b8aeff63cb3004"
+}

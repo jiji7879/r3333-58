@@ -1,0 +1,41 @@
+{
+  "67229c09284239f78229d4920d7527495a2ccaca3775e262d11d8754ec161d66.rup": {
+    "flags": [
+      "-i",
+      "-U",
+      "-t",
+      "300"
+    ],
+    "proof_sha256": "67229c09284239f78229d4920d7527495a2ccaca3775e262d11d8754ec161d66",
+    "query_sha256": "30163e3ddaefb8241137b19bcdceafc7d1c9facfb85f0c76a239d53c71923a70",
+    "returncode": 0,
+    "success_lines": 1,
+    "warning_free": true
+  },
+  "7bb85210d29faa078a357ecc0da28e51cb9d58ed0c5a48eaec7d201284acc6b4.rup": {
+    "flags": [
+      "-i",
+      "-U",
+      "-t",
+      "300"
+    ],
+    "proof_sha256": "7bb85210d29faa078a357ecc0da28e51cb9d58ed0c5a48eaec7d201284acc6b4",
+    "query_sha256": "84ba8a7e6bb372c0d5e6c4485bee7e47c8ca5081277f4f8d8beabbe0d1fee33f",
+    "returncode": 0,
+    "success_lines": 1,
+    "warning_free": true
+  },
+  "ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3.rup": {
+    "flags": [
+      "-i",
+      "-U",
+      "-t",
+      "300"
+    ],
+    "proof_sha256": "ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3",
+    "query_sha256": "858216a74117455646e51880ca1392e957da8800ccb95f5189870d67007ad83c",
+    "returncode": 0,
+    "success_lines": 1,
+    "warning_free": true
+  }
+}

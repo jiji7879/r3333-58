@@ -1,0 +1,158 @@
+{
+  "audited_source_and_required_data_files_matching_recipe": 48,
+  "audited_source_overlay_differences": [
+    {
+      "path": "audit_batch.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_controls.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_domains.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_first_tier.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_joining.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_owner.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_owner_lrat.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_owner_optimum.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_panel_receipts.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_panels.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_provenance.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_queue.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_rup_transport.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_sweep.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "path": "audit_transport.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "archived_sha256": "79dc76b42083c2b20c01a3a4463bcf84182e0f9f4673cd595678a35ac8d3b9c2",
+      "installed_sha256": "c7a3e8c44c6a4add9d0af5c81e96c6175d25ddabdc6f86791554f7235b746254",
+      "path": "common.py"
+    },
+    {
+      "archived_sha256": "61b4d7a2f91951f4bd5e0f4a77ccdae5515c824b096dec47e6b086ab8a4328e3",
+      "installed_sha256": "f3f47cc8edd05c4c8553e0443f4a439e7e38e276701c9b504321fd2fb4c04496",
+      "path": "conquer.py"
+    },
+    {
+      "archived_sha256": "2cd03fab68f14e6551ded4cde8e63e38590f7671285faab25e785bf4b5ee7787",
+      "installed_sha256": "e4ab598c5d992f10cbcda2f9b9120bd8fb8bd7c692f8b2e047da49d1f061a54e",
+      "path": "cover_proofs.py"
+    },
+    {
+      "archived_sha256": "a0c219b19a2e52bfe13f8be7a0308ad011b88bb24fa59cd90447ede57482c808",
+      "installed_sha256": "d9e486dbe840b43193544680b4e188816e832a0779c17d3a72baa5ee0fda8c51",
+      "path": "engine/arm_pairs.py"
+    },
+    {
+      "archived_sha256": "c720c6cd3898e29c01ed3335b3dc9da58db9ce961fa81b519048d30304658279",
+      "installed_sha256": "14daf2d81763e1cd111b7277d6e090c8c952ca5484ee9358950f5491f656c05a",
+      "path": "engine/compile.py"
+    },
+    {
+      "archived_sha256": "8168f31ebe26131e84b19a41b80a5fe2c1a3ffa57b6c14bc2ccca20cfe19b726",
+      "installed_sha256": "2897b271fc433a7ef2b81327fda524fb6b8ed8ced22eb7519ecc11486249c909",
+      "path": "engine/frozen/audit_campaign.py"
+    },
+    {
+      "archived_sha256": "11911dba40470b7108dc77ddc216ccd22d1619d2840122c8dcebdd4c0e632cd5",
+      "installed_sha256": "179ae7f59d57376ec7c693389da613b596b21b79cff7db4676daab2531bc63fa",
+      "path": "engine/frozen/cover_evidence.py"
+    },
+    {
+      "path": "engine/proof_status.py",
+      "reason": "absent from recipe"
+    },
+    {
+      "archived_sha256": "f28b2579bb580980725dabdfb5f120220b8e1eaf3f669fc7978ddde4ffeb2210",
+      "installed_sha256": "7a7f2361f5dcc456667c956a8383187a57185a4f658edc5a0462fc5bf6bcf734",
+      "path": "one_second.py"
+    },
+    {
+      "archived_sha256": "4ccd55626db4d43723240f727a8cd9df103d653e72f8743c8625cc529fc45a49",
+      "installed_sha256": "b72326ce734d2a25e3cf8c5f206c76fe53b433be6027785e9f5f926431ee38e3",
+      "path": "parent_pass.py"
+    },
+    {
+      "archived_sha256": "a6b453a6fe5539e7f5f1168e232f6c0fff8a4de3f66d33f0fcf3d01770f7ba6d",
+      "installed_sha256": "7e9209dc0c6fae61388bcb3ed701d809057e477800dea13a264d2df2cb7c5633",
+      "path": "shared_backend.py"
+    },
+    {
+      "archived_sha256": "708eaff9b4eddb1f478c297131d3fe3acbbe2de683352cf13c035fe00d6d543f",
+      "installed_sha256": "05aee98bfbd75bde2d4daa6c38896da6332d5ad96123a598e90f4f9d64db539d",
+      "path": "timed50.py"
+    },
+    {
+      "path": "verify_cap_log.py",
+      "reason": "absent from recipe"
+    }
+  ],
+  "negative_controls": {
+    "flipped_owner_gate_distinguished": true,
+    "strengthened_parent_distinguished_from_attachment": true,
+    "valid_wrong_rank_1_pair": [
+      "00000",
+      "22010"
+    ],
+    "valid_wrong_rank_1_sha256": "ba5edb2f3e09dc65bdcd4e1c65c6ef996a957a24344f0a62e112640269adf17f",
+    "valid_wrong_rank_distinguished": true
+  },
+  "parent_bytes": 3423661,
+  "parent_clauses": 178823,
+  "parent_sha256": "ae90931dc6cd482105153dd720209e602bbfc7cc0915e18c6e87023ee2659931",
+  "parent_variables": 19218,
+  "pristine_recipe_source_files_and_required_data": 59,
+  "pristine_strict_source_differences": [],
+  "pristine_vs_audited_decompressed_parent_bytes_equal": true,
+  "proof_checker_calls": 0,
+  "repository_head": "1fa1a9115af7b93b6f3131e75a2a70a26289e764",
+  "schema": "k58-case0-parent-crosscheck/v1",
+  "scope": [
+    "Exact decompressed DIMACS byte identity, not identity of an unarchived original gzip stream.",
+    "The attachment is the base first-tier revised representative, not the root-consequence-strengthened export.",
+    "Recipe/source reproducibility is not producer authentication or proof of the historical native execution.",
+    "No SAT/UNSAT inference, new search, whole-row closure, or Ramsey result is made."
+  ],
+  "solver_calls": 0,
+  "status": "PASS",
+  "strengthened_clauses": 178846,
+  "strengthened_sha256": "d69970e19ddadfad5057ffaf8ffbd1354f957a4003852dc2b6b8aeff63cb3004"
+}
