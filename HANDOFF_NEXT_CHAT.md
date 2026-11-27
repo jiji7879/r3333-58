@@ -10,6 +10,30 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (general paired-arm clauses on the 1,300 hard inputs).**
+The proposed general clause form is correct as a **conditional** theorem on
+these root encodings: if the sender guard requires at least 14 colour-$c$
+neighbours outside its own arm and $H_i$ hits every feasible five-neighbourhood
+in two selected other arms, then $\neg g_{a,c}\lor\bigvee_{v\in H_1\cup H_2}
+E_{a,v,c}$ holds. The local cap of five follows from a two-colour Ramsey
+argument, not from a template; all 32,768 $K_6$ edge colourings were checked,
+as well as all 48 template/colour alternatives. Guard and physical-arm bindings
+must be rebound per row. Cube-learned strengthenings need $\neg Q$ at parent
+level and a fresh feasibility intersection, not an over-general transfer.
+
+All **1,300 full-root input hashes** and the complete **16,530** ternary
+clauses in **1,236 rows** regenerate exactly, including the entire count vector
+(maximum 33). Fourteen physical matched instances have strict full-byte native
+proof replay, totaling 32,972 bytes, zero warnings/errors and no RAT lemmas in
+core. This is a major **conditional preprocessing space**, not 1,300 solved
+rows: six full parents at 60,000 conflicts and ranks 1200/1300 at 800,000 stay
+OPEN for stock/direct/extended policies. The supplied historical byte total is
+not locally available historical proof evidence, nor is this a solver speedup,
+Ramsey proof, or proof that guards are always active. Ultramath remains off.
+
+See [research/k58-hard1300-paired-arms/audit.md](research/k58-hard1300-paired-arms/audit.md)
+for the proof, independent recomputation and scope limits.
+
 **Updated 2026-11-27 (reusable spoke rules and twenty more case-0 cubes).**
 Local auditing confirms three distinct packages of evidence in the latest
 archive, without any new independent-model run (Ultramath was explicitly
