@@ -1,0 +1,154 @@
+{
+  "binary_K6_colorings_exhaustively_checked": 32768,
+  "certified_representatives_waiting_for_replay": [
+    {
+      "clause": [
+        -24663,
+        1056,
+        2428,
+        6024
+      ],
+      "in_short": true,
+      "in_wide_delta": true,
+      "parent_sha256": "e5304d3c469a8e1be3ea697395dac823408b2d46db7b9ba07d41a5fef6eb740e",
+      "previous_direct_and_ternaries_UP": false,
+      "rank": 8
+    },
+    {
+      "clause": [
+        -24652,
+        3908,
+        4832,
+        6028
+      ],
+      "in_short": true,
+      "in_wide_delta": true,
+      "parent_sha256": "5ac15fc2f02935d99436d43289532a562f89a3b8d01ea237c2e7548920707570",
+      "previous_direct_and_ternaries_UP": false,
+      "rank": 340
+    }
+  ],
+  "negative_controls": [
+    {
+      "broken": [
+        25094,
+        1276,
+        2440,
+        4840
+      ],
+      "kind": "guard_sign_flipped",
+      "original": [
+        -25094,
+        1276,
+        2440,
+        4840
+      ],
+      "rank": 1288,
+      "rejected_by": "first literal must be the negated exact sender guard"
+    },
+    {
+      "broken_targets": {
+        "0": [
+          0,
+          1
+        ],
+        "1": [
+          11
+        ]
+      },
+      "compatible_five_set_avoiding_broken_pair": [
+        3,
+        4,
+        8,
+        9,
+        11
+      ],
+      "kind": "non_hitting_pair_substituted",
+      "original_targets": {
+        "0": [
+          4,
+          10
+        ],
+        "1": [
+          11
+        ]
+      },
+      "rank": 1288,
+      "rejected_by": "some compatible five-set is not hit by the substituted pair"
+    },
+    {
+      "broken": [
+        25359,
+        1880,
+        2260,
+        5384
+      ],
+      "kind": "guard_sign_flipped",
+      "original": [
+        -25359,
+        1880,
+        2260,
+        5384
+      ],
+      "rank": 1162,
+      "rejected_by": "first literal must be the negated exact sender guard"
+    },
+    {
+      "broken_targets": {
+        "0": [
+          0,
+          1
+        ],
+        "2": [
+          1
+        ]
+      },
+      "compatible_five_set_avoiding_broken_pair": [
+        2,
+        5,
+        8,
+        9,
+        10
+      ],
+      "kind": "non_hitting_pair_substituted",
+      "original_targets": {
+        "0": [
+          7,
+          9
+        ],
+        "2": [
+          1
+        ]
+      },
+      "rank": 1162,
+      "rejected_by": "some compatible five-set is not hit by the substituted pair"
+    }
+  ],
+  "rows": [
+    {
+      "all_guards_rebound": true,
+      "all_support_witnesses_valid": true,
+      "clauses_checked": {
+        "short": 196,
+        "wide_delta": 112
+      },
+      "id": "c727c283cbc7362e3949618c3c8e61b266bd391cdf6c04f325e83ca69afb0a53",
+      "input_sha256": "7dbeb644b51b9734f930f67426c6b6bd30ac2e7e0904b9b473dc3b31d6cb8ca3",
+      "rank": 1288,
+      "selection_sets_exactly_regenerated": true
+    },
+    {
+      "all_guards_rebound": true,
+      "all_support_witnesses_valid": true,
+      "clauses_checked": {
+        "short": 217,
+        "wide_delta": 85
+      },
+      "id": "4ad39a8a63900830aa1b3a551eec16c34e627b987f536fe48144354d95838982",
+      "input_sha256": "3d8304c621b2907761b5db92e864901bb04c1702b255b26a4630f4062b5da944",
+      "rank": 1162,
+      "selection_sets_exactly_regenerated": true
+    }
+  ],
+  "schema": "selection-finite-audit/v1"
+}

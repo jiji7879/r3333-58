@@ -1,0 +1,38 @@
+[
+  {
+    "augmented_conflicts": 3363248,
+    "augmented_propagations": 418517576,
+    "augmented_search_seconds": 160.67000000000002,
+    "body_identity_and_aggregates_verified": true,
+    "conflict_change_percent": -16.300594836652603,
+    "policy": "wide_delta",
+    "rank": 1288,
+    "search_seconds_change_percent": -38.94356830704921,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "stock_conflicts": 4018246,
+    "stock_propagations": 502162015,
+    "stock_search_seconds": 263.15000000000003
+  },
+  {
+    "augmented_conflicts": 3054950,
+    "augmented_propagations": 383723862,
+    "augmented_search_seconds": 141.27,
+    "body_identity_and_aggregates_verified": true,
+    "conflict_change_percent": -5.119234928619298,
+    "policy": "short",
+    "rank": 1162,
+    "search_seconds_change_percent": -26.563393460518792,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "stock_conflicts": 3219778,
+    "stock_propagations": 402926547,
+    "stock_search_seconds": 192.37
+  }
+]

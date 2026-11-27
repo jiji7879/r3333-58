@@ -87,3 +87,16 @@ From the verified core, 15 final physical units alone turn the identical source-
 ## 9. Production status
 
 No production ledger, queue, or 1,300-row campaign was changed. `two5`, the arm caps, and the degree-cap experiments use fresh auxiliary variables and have no implemented original-parent DRAT derivation prefix in this work. The mathematical model-extension argument is distinct from a production certificate pipeline. The direct physical signed pairs and lower bounds have representative proofs, not a complete per-row bank of refutations. The Glucose patch was rebuilt and benchmarked but not installed into the cohort tooling.
+
+## 10. Compact paired-arm selection and signed-kernel follow-up
+
+The strongest clause-based result is a compact selection on two representatives. The coordinator regenerated the exact formulas and complete audit, independently repeated one primary comparison, copied the source into `work/`, and verified the portable copy byte-identically. No logical novelty is claimed over the paired-arm clauses themselves.
+
+| selection | added clauses | three-seed conflicts stock → selected | native search CPU stock → selected |
+|---|---:|---:|---:|
+| TUU 1288 `wide_delta = F \ (D ∪ T)` | 112 width 4 | 4,018,246 → 3,363,248 (−16.30%) | 263.15 → 160.67 s (−38.94%) |
+| UUU 1162 `short = {C in D ∪ T ∪ F: card(C) ≤ 4}` | 24 width 3 + 193 width 4 | 3,219,778 → 3,054,950 (−5.12%) | 192.37 → 141.27 s (−26.56%) |
+
+The independent TUU seed-2 rerun reproduced exactly 1,041,030 versus 1,149,949 conflicts, with coordinator CPU 47.28 versus 53.96 seconds. All 112 and 217 emitted clauses and their guards were independently checked; the representative 16,954-byte wide proof passed warning-free original-parent replay with 0 RAT. All primary timing calls returned UNSAT but did not generate full proofs. One seed on each profile has a small conflict regression, and every tested paired-arm policy on rank 1300 was worse. Scope is still these two rows and their seeds.
+
+The m4 signed-pair follow-up explicitly withdraws every speedup claim. I regenerated the reverse kernels' exact hashes and independently verified their final-UP coverage: 438/445 clauses remain after eliminating 88.19%/85.14% while every original false cube remains closed. Fresh forward, reverse and combined policies still leave rank-1200 regressions, so the accepted disposition is mathematical/negative evidence, not a solver improvement. It does not change the positive m6 selection result above.

@@ -1,0 +1,30 @@
+{
+  "all_input_false_cubes_closed_by_final_UP": true,
+  "coverage_survivors": 0,
+  "generation_cpu_seconds_including_rebuild": 0.902100119,
+  "generation_wall_seconds_including_rebuild": 0.9024980599060655,
+  "generator_sha256": "61dc48ce886b0fec7afdd01d3f782e224d906729e1f54b05d09b04d4e8fed635",
+  "input_bank_count": 3709,
+  "input_bank_receipt_sha256": "06e2bfbfbdb34a3c64b3442dfe85b2f90692d3cc777ccd723d816d92d7ffbfda",
+  "interpretation": "A deterministic encoding reduction only. All candidate validity was established earlier; this is not a solver timing result.",
+  "old_prior_unique_clause_count": 757,
+  "order": "reverse",
+  "parent_sha256": "1b64a42899da92580af353c09be7772ad5dc785b97809aa3ce744cf115e0c98a",
+  "prior_plus_kernel": {
+    "added_clauses": 1195,
+    "bytes": 4096751,
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/arm-cap-research/m4-kernel-1200/prior-plus-kernel.cnf",
+    "sha256": "9169cf69f8a023fa3f5d27585861358be7ceff5ceb7c80bfd7208efaef6b56ce"
+  },
+  "rank": 1200,
+  "schema": "signed-pair-up-irredundant-kernel/v1",
+  "selected_count": 438,
+  "selection_and_verification_cpu_seconds": 0.12225407700000002,
+  "selection_and_verification_wall_seconds": 0.12226552097126842,
+  "stock_plus_kernel": {
+    "added_clauses": 438,
+    "bytes": 4071512,
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/arm-cap-research/m4-kernel-1200/plus-kernel.cnf",
+    "sha256": "c555afbabc83ec5ba0a7aed1d5641ce3c8419b5dcc4330ac407f3d84bbc9ad07"
+  }
+}

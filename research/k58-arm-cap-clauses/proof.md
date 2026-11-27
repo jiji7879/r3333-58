@@ -1,12 +1,40 @@
-**Status: NOT YET a general, production-ready solver improvement.** The work establishes one sound general constraint schema with independently reproduced isolated gains, a stronger measured phase policy on the selected panel, and a negative hard-row result for the Glucose-style reducer. The ledger goal remains open because no robust cohort-wide or end-to-end certificate-producing improvement was established.
+**Status: NOT YET a general, production-ready solver improvement.** The work establishes two useful scoped clause-selection policies, one sound general constraint schema with independently reproduced isolated gains, a stronger measured phase policy on the selected panel, and a negative hard-row result for the Glucose-style reducer. The ledger goal remains open because no robust cohort-wide or end-to-end certificate-producing improvement was established.
 
 # Scope and outcome
 
 The inputs are the 1,300 historically completed `full_root=true` K58 rows, not the unresolved wall profiles. Nothing here is a new SAT model, row closure, upper-bound improvement, or result about $R(3,3,3,3)$. Only small panels were run; no 1,300-row campaign occurred.
 
-The main result is not a new counting theorem. It is a compact **selector encoding** of the existing $4+4+5<14$ argument that is materially better than the direct hitting banks on some inputs and worse on others. The best measured configuration overall is phase guidance on the unchanged formula, not a clause bank.
+The useful result is **encoding and selection**, not a new counting theorem. Two compact policies built from already proved paired-arm clauses give the strongest clause-based improvements. A separate selector encoding of the same $4+4+5<14$ argument helps on some inputs and hurts on others. Phase guidance on the unchanged formula gives the strongest broader six-row panel result.
 
-# 1. General `two5` encoding
+# 1. Compact paired-arm selection
+
+Let $D$ be the existing direct bank, $T$ the singleton ternaries and $F$ the four-literal wider bank on a hash-matched parent. The two useful policies are
+
+$$\texttt{wide\_delta}=F\setminus(D\cup T),$$
+$$\texttt{short}=\{C\in D\cup T\cup F:|C|\le4\}.$$
+
+Every selected clause is an original-parent consequence with the exact rebound guard and compatible-support witness already used by those banks. No auxiliary variables are added and the original body is preserved byte-for-byte after the header. All primary timing runs returned UNSAT; full timing proofs were not requested.
+
+| policy / row | clauses | stock → selected conflicts | change | stock → selected native search CPU | change |
+|---|---:|---:|---:|---:|---:|
+| `wide_delta`, TUU rank 1288, seeds 0–2 | 112 four-literal | 4,018,246 → 3,363,248 | **−16.30%** | 263.15 → 160.67 s | **−38.94%** |
+| `short`, UUU rank 1162, seeds 0–2 | 24 ternary + 193 four-literal | 3,219,778 → 3,054,950 | **−5.12%** | 192.37 → 141.27 s | **−26.56%** |
+
+Resolve-time totals also fell: TUU 279.78 → 170.52 seconds (−39.05%) and UUU 206.11 → 151.21 seconds (−26.64%). Propagations fell by 16.66% and 4.77%, respectively. Generation took about 0.24/0.22 CPU-s, separately from search. One seed on each row has a slight conflict regression (0.96%/1.08%) but lower CPU. These are descriptive three-seed sums on two representatives, not a universal paired-arm rule. All tested paired-arm policies on rank 1300 seed 0 were worse than stock, and TTU's CPU did not improve.
+
+The coordinator independently:
+
+* regenerated both selections byte-for-byte, with augmented hashes `155bc637…1c89` and `e95f6409…883f`;
+* reran the complete guard/support audit on all 112 `wide_delta` and 217 `short` clauses, the larger audit sets, and the negative controls;
+* independently repeated TUU seed 2 and matched all search statistics exactly: 1,041,030 versus 1,149,949 conflicts, 1,612,973 versus 1,781,511 decisions and 131,440,094 versus 145,841,528 propagations; coordinator CPU was 47.28 versus 53.96 seconds;
+* independently reconstructed the rank-8 wide-clause query and replayed all 16,954 normalized proof bytes with `-i -U -W`, one `s VERIFIED`, zero warnings and 0 RAT lemmas;
+* recomputed every three-seed aggregate identity.
+
+See [independent aggregate](checks/m6-aggregate.json), [finite audit](checks/m6-finite-audit.json), [seed-2 receipt](checks/m6-seed2/results.json), and [strict wide replay](checks/m6-wide-strict.log). The portable selection sources are [generate_panel.py](work/generate_panel.py), [generate_selection.py](work/generate_selection.py), [audit_selection.py](work/audit_selection.py) and [run_cadical.py](work/run_cadical.py). Their regeneration was byte-identical again (`PORTABLE_SELECTION_BYTE_IDENTICAL`).
+
+The selected clauses on the two performance rows were not individually DRAT-replayed, so the representative wide certificate and general support proof are not being inflated into complete per-row proof coverage. Even so, the absence of auxiliary counters makes these policies simpler to carry into a proof-producing preprocessing pass than the `two5` selectors below. They are the first clause candidates to test on a broader controlled TUU/UUU panel, not a global default.
+
+# 2. General `two5` encoding
 
 Let $g=g_{x,c}$ be the original forward guard requiring at least 14 colour-$c$ neighbours of $x$ in its three other root arms. Write $n_B$ for the realised colour-$c$ support in one such arm $B$. Since internal support edges have only two available colours, $n_B\le5$ by $R(3,3)=6$; no arm classification is needed. Under $g$, the three supports are consequently $(4,5,5)$ or $(5,5,5)$.
 
@@ -50,7 +78,7 @@ See [two5-finite.json](checks/two5-finite.json), [two5 coordinator receipt](work
 
 **Certificate gap.** No original-parent DRAT derivation prefix for the new selector/counter definitions and pair clauses has been implemented. Mathematical model extension is not the same as a production certificate pipeline. A 1,300-row deployment should wait for that prefix and a representative full augmented-to-original proof lift.
 
-# 2. Explicit phase guidance has the stronger measured panel
+# 3. Explicit phase guidance has the stronger measured panel
 
 The accepted phase policy is exactly:
 
@@ -77,7 +105,7 @@ Individual regressions remain: rank 1298 conflicts increase slightly, and rank-1
 
 Combining `two5` with all-false is not a synergistic improvement: rank 1300 took 847,047 conflicts, worse than either mechanism alone. Keep the policies separate.
 
-# 3. Glucose-style learned-clause deletion
+# 4. Glucose-style learned-clause deletion
 
 The supplied patch was rebuilt from its pinned CaDiCaL 1.9.5 source archive and five-file patch. The option remains off by default. It only changes which redundant learnt clauses are deleted; it does not add or delete structural input facts.
 
@@ -94,7 +122,7 @@ The package's own bounded results are mixed too: strong improvements on some sig
 
 The 90,064,584-byte stock DRAT first verified with visible pseudo-unit-deletion warnings. A deletion-free normalization of that core then passed `-i -U -W -t 600` with all 24,356,572 proof bytes read, one `s VERIFIED`, no warnings/errors and 0 RAT lemmas. An earlier full deletion-free check timed out at 300 seconds and is not counted. See [full stock proof receipt](checks/stock-full-proof.json) and [paired performance receipts](work/glucose-rank1300/receipts.json).
 
-# 4. Other tested clause observations
+# 5. Other tested clause observations
 
 - **Global degree cap.** $R_3(3)=17$ implies maximum colour-degree 16; the root colour has at most 15 cross-arm neighbours. On native rank 1300 this reduced conflicts from 875,852 to 828,729 (−5.38%) but CPU only from 52.421 to 51.554 seconds (−1.65%). This is a small one-row lead, not a replicated improvement.
 - **Simple five-caps.** On the same completed comparison they increased conflicts to 888,836, propagations to 122,803,884 and CPU to 56.597 seconds. Guarded caps were nearly inert at smaller budgets; per-arm lower-four and pair-nine counters did not pay for their size.
@@ -102,7 +130,7 @@ The 90,064,584-byte stock DRAT first verified with visible pseudo-unit-deletion 
 - **Signed size-two support certificates.** The independent mathematics and all 3,709/2,995 support checks on ranks 1200/1300 passed, including scope-negative controls and a warning-free representative original-parent replay. It was nevertheless rejected as a solver improvement: six-pair CPU increased 6.45% and wall increased 5.83%, with much worse selected subsets. See [rank-1300 finite verification](checks/m4-review/finite-1300.out) and [strict representative log](checks/m4-review/strict-candidate.log).
 - **Proof-derived checkpoints.** A fresh stock full-row core contained 5,245 original clauses and its 15 final physical units let the same stock binary refute that exact source row in 0.04 CPU-s. That is not a transferable clause family or a general speedup. Core-only solving remained OPEN at 60 seconds, and no transfer or automatic relabelling was established.
 
-# 5. What was not done
+# 6. What was not done
 
 No production ledger, queue, code package or 1,300-row campaign was changed. No new SAT model or wall-row closure was found. No Lean or pure-kernel proof was requested or claimed. The historical 177.9 GB proof set was unavailable; the reported core observations come from one newly generated and replayed stock proof, not historical proof mining. Not every bound in every one of the 1,300 rows was individually replayed. Timing runs deliberately omit proof logging unless stated, and wall time on the shared VM is kept separate from conflicts and process CPU.
 
@@ -112,6 +140,12 @@ Use the pinned python-sat environment. Generated output directories must be fres
 
 ```sh
 PY=.scratch/k58/.venv/bin/python
+$PY -B research/k58-arm-cap-clauses/work/generate_selection.py \
+  --ranks 1288,1162 --out .scratch/arm-cap-research/compact-selection
+$PY -B research/k58-arm-cap-clauses/work/audit_selection.py \
+  --selection .scratch/arm-cap-research/compact-selection \
+  --out .scratch/arm-cap-research/compact-selection-audit.json
+
 $PY -B research/k58-arm-cap-clauses/work/two5_encoder.py 1300 \
   --mode two5 --out .scratch/arm-cap-research/portable-two5.cnf
 python3 research/k58-arm-cap-clauses/checks/verify_two5.py
