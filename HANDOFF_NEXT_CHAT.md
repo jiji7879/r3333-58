@@ -10,6 +10,35 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (reusable spoke rules and twenty more case-0 cubes).**
+Local auditing confirms three distinct packages of evidence in the latest
+archive, without any new independent-model run (Ultramath was explicitly
+turned off). First, the donor-36/40 cores produce **53** strict, replayed
+transported exclusions across **27 wall rows**, including the donors. Each is
+a conditional binary clause on its own named signed parent, not a closure of
+an owner or a universal rule. Next, the geometric catalogue has **9,288**
+distinct representative/clause pairs on **6,617 representatives and 6,489
+rows**. Its placements all verify, with six canonical proofs and **eight**
+full physical examples covering all six classes; it is not a 9,288-full-
+parent-proof sweep. Finally, **20 direct case-0 arm exclusions** prove on the
+full parent without trigger units: eleven 82-pin cubes and nine 13–16-pin
+cubes.
+
+All **91** native obligations passed strict full-byte replay: six canonical,
+eight physical, 53 transfers, two pivot eliminations, two case-0 arm covers,
+and twenty cubes. Reconstructed queries and hashes match the native receipts,
+with no warnings/errors and no RAT lemmas. The exhaustive case-0 arm covers give
+**1417/1417 OPEN at pivot 0** and **20 exclusions with 325/345 OPEN at pivot 3**.
+All 57/36 old word-group sets still have surviving arms, so this does not close
+pivot 3. The three strengthened three-second branch/parent controls stay OPEN;
+the four control observations elsewhere are not an advertised speedup. Both
+negative controls reject appropriately.
+
+Read [research/k58-reusable-spoke-rules/audit.md](research/k58-reusable-spoke-rules/audit.md).
+The manufacture of a reusable clause is not a representative or row closure,
+and the upstream arm-classification/marking proof obligations remain outside
+this local theorem-transfer audit. No production ledger or sweep was changed.
+
 **Updated 2026-11-27 (the two trigger assumptions are now excluded on signed
 case 0).** The 24-pattern package closes all remaining 7+17 words from the
 preceding two-site checkpoint. There are 217 complete arm alternatives
