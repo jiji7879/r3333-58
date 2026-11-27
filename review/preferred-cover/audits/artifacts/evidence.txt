@@ -1,0 +1,346 @@
+K58 m2 successful evidence log
+Git base: 8e5a10eb58de4c4b50b128eadc9a36c4b105ee4f
+
+== Input hashes ==
+93055577ff1adb617949a66376c48940a3e1177a7874ff00bae7a2ed17c9386a  ../../../attachments/let-s-try-and-rbdv/K58_wall_batch_handoff.md
+10398532cfbccfa8fcc680f34308ad9465d71f976cbac56b117298ff3a08cae6  ../../../attachments/let-s-try-and-rbdv/K58_40000_pattern_trials.tsv
+c59d0dbbd8e2108ab0f376377a489f26897246f3ff3d971983ebd5b3523e387a  ../../../attachments/let-s-try-and-rbdv/K58_wall_10k_batches.zip
+
+== ZIP CRC ==
+    testing: K58_wall_10k_batches/wheels/six-1.17.0-py2.py3-none-any.whl   OK
+    testing: K58_wall_10k_batches/SHA256SUMS   OK
+No errors detected in compressed data of ../../../attachments/let-s-try-and-rbdv/K58_wall_10k_batches.zip.
+
+== Exact ZIP/manifest coverage ==
+zip entries 2125 unique 2125
+manifest paths 2124 zip payload excluding SHA256SUMS 2124
+unlisted []
+missing_from_zip []
+PASS: unique safe names and exact manifest coverage
+
+== SHA256SUMS verification summary ==
+OK entries: 2124
+Non-OK entries (expected none):
+
+== Tool versions and helper hash after strict local patch ==
+Tool versions and hashes
+4.0.4
+usage: drat-trim [INPUT] [<PROOF>] [<option> ...]
+
+where <option> is one of the following
+
+d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee  tools/drat-trim.c
+a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066  tools/drat-trim
+1c90eeee9920f6e08a111a8a10c1aa69c28b0d07c14eb930f34fbb2bfc9886ed  tools/relabel.c
+ee950a491f2925dcc39b065024dad1df24e52bc25801e5d5f0cc63c3c9869268  tools/relabel
+b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f  tools/kissat
+
+Patched strict helper:
+25:    p1=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i',*extra],capture_output=True)
+
+Python package:
+3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]
+/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwy7kg2n/m2/extracted/K58_wall_10k_batches/.venv/lib/python3.12/site-packages/pysat/__init__.py
+43432b41076c23d1006c82a632f57b3dd652d410060f8d3da462eef26565e2ee  cover_proofs.py
+da5215494d9dcc7a5913febf30fd2d6050c012a2ebceb7da231d3c7b67a36fb3  verify.py
+
+== Offline setup ==
+Looking in links: wheels
+Processing ./wheels/python_sat-1.9.dev22-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+Processing ./wheels/six-1.17.0-py2.py3-none-any.whl (from python-sat==1.9.dev22)
+Installing collected packages: six, python-sat
+Successfully installed python-sat-1.9.dev22 six-1.17.0
+
+== Command ==
+sh setup.sh
+TMPDIR="$PWD/../../.scratch" /usr/bin/time -v .venv/bin/python verify.py --jobs 1
+(from extracted/K58_wall_10k_batches)
+
+== Strict one-worker supplied verifier ==
+Checked ordinary signed units and anonymous-site transpositions on 11585 rows. {14: 7543, 13: 3374, 12: 628, 11: 40} templates 41
+Replayed 608 cover certificates and all sample physical sorted-guard proofs.
+Every retained job has a checked local coloring satisfying its ownership guard.
+Rebuilt sampled physical projection maps and verified arm colorings.
+Checked identities, scoped assumptions and results for 50000 full-order CaDiCaL probes.
+Verified 40,000 distinct sampled cells and the 3604436 job root cover on all 11,585 rows.
+	Command being timed: ".venv/bin/python verify.py --jobs 1"
+	User time (seconds): 73.99
+	System time (seconds): 9.80
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:23.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 305492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 10728552
+	Voluntary context switches: 8727
+	Involuntary context switches: 7809
+	Swaps: 0
+	File system inputs: 160
+	File system outputs: 369856
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+== Command ==
+TMPDIR="$PWD/.scratch" /usr/bin/time -v extracted/K58_wall_10k_batches/.venv/bin/python audit_independent.py
+(from m2)
+
+== Independent no-solver audit ==
+{
+  "all_whole_rows_OPEN": 11585,
+  "capacity_survivors_per_size": {
+    "11": 1308,
+    "12": 1249,
+    "13": 743,
+    "14": 651
+  },
+  "catalog_discovery_rounds": {
+    "11": [
+      {
+        "initial_jobs": 1272,
+        "initial_pairs": 810,
+        "training_multisets": 25225
+      },
+      {
+        "added": 331,
+        "budget_hits": 0,
+        "chosen": 1141,
+        "holes": 425,
+        "pending": 95,
+        "round": 1
+      },
+      {
+        "added": 69,
+        "budget_hits": 0,
+        "chosen": 1210,
+        "holes": 81,
+        "pending": 12,
+        "round": 2
+      },
+      {
+        "added": 4,
+        "budget_hits": 0,
+        "chosen": 1214,
+        "holes": 4,
+        "pending": 0,
+        "round": 3
+      }
+    ],
+    "12": [
+      {
+        "initial_jobs": 1049,
+        "initial_pairs": 503,
+        "training_multisets": 20590
+      },
+      {
+        "added": 234,
+        "budget_hits": 0,
+        "chosen": 737,
+        "holes": 444,
+        "pending": 226,
+        "round": 1
+      },
+      {
+        "added": 171,
+        "budget_hits": 0,
+        "chosen": 908,
+        "holes": 206,
+        "pending": 40,
+        "round": 2
+      },
+      {
+        "added": 31,
+        "budget_hits": 0,
+        "chosen": 939,
+        "holes": 34,
+        "pending": 4,
+        "round": 3
+      },
+      {
+        "added": 2,
+        "budget_hits": 0,
+        "chosen": 941,
+        "holes": 2,
+        "pending": 0,
+        "round": 4
+      }
+    ],
+    "13": [
+      {
+        "initial_jobs": 692,
+        "initial_pairs": 373,
+        "training_multisets": 13760
+      },
+      {
+        "added": 87,
+        "budget_hits": 0,
+        "chosen": 460,
+        "holes": 215,
+        "pending": 135,
+        "round": 1
+      },
+      {
+        "added": 51,
+        "budget_hits": 0,
+        "chosen": 511,
+        "holes": 84,
+        "pending": 36,
+        "round": 2
+      },
+      {
+        "added": 12,
+        "budget_hits": 0,
+        "chosen": 523,
+        "holes": 24,
+        "pending": 15,
+        "round": 3
+      },
+      {
+        "added": 5,
+        "budget_hits": 0,
+        "chosen": 528,
+        "holes": 7,
+        "pending": 3,
+        "round": 4
+      },
+      {
+        "added": 2,
+        "budget_hits": 0,
+        "chosen": 530,
+        "holes": 2,
+        "pending": 0,
+        "round": 5
+      }
+    ],
+    "14": [
+      {
+        "initial_jobs": 317,
+        "initial_pairs": 138,
+        "training_multisets": 3975
+      },
+      {
+        "added": 15,
+        "budget_hits": 18,
+        "chosen": 153,
+        "holes": 18,
+        "pending": 21,
+        "round": 1
+      },
+      {
+        "added": 2,
+        "budget_hits": 6,
+        "chosen": 155,
+        "holes": 2,
+        "pending": 6,
+        "round": 2
+      },
+      {
+        "added": 1,
+        "budget_hits": 1,
+        "chosen": 156,
+        "holes": 0,
+        "pending": 0,
+        "round": 3
+      }
+    ]
+  },
+  "checker": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwy7kg2n/m2/extracted/K58_wall_10k_batches/tools/drat-trim",
+    "QUERY",
+    "PROOF",
+    "-i",
+    "-U"
+  ],
+  "checker_outputs_containing_WARNING": 0,
+  "empty_proof_negative_control": {
+    "output": "\rc parsing input formula with 185 variables and 940 clauses\n\rc finished parsing\n\rc ERROR: no conflict\n\ns NOT VERIFIED\n\rc verification time: 0.034 seconds\n",
+    "returncode": 1
+  },
+  "external_TSV_equals_bundled_trials_payload": true,
+  "preferred_jobs_with_independently_checked_owner_witness": {
+    "11": 1214,
+    "12": 941,
+    "13": 530,
+    "14": 156
+  },
+  "preferred_pairs_per_size": {
+    "11": 1214,
+    "12": 941,
+    "13": 530,
+    "14": 156
+  },
+  "proof_bytes": {
+    "preferred": 7616831,
+    "sorted": 2273933
+  },
+  "raw_pairs_per_size": {
+    "11": 5361,
+    "12": 5361,
+    "13": 5361,
+    "14": 5190
+  },
+  "regenerated_query_bytes": {
+    "preferred": 26028176,
+    "sorted": 6050667
+  },
+  "representative_scheduling_reduction_percent": 94.07334080357225,
+  "sat_solver_calls": 0,
+  "sorted_SAT_per_size": {
+    "11": 1272,
+    "12": 1049,
+    "13": 692,
+    "14": 317
+  },
+  "strict_local_RUP_replays": 608,
+  "validated_complete_arm_models": 3330,
+  "wall_rows": {
+    "11": 40,
+    "12": 628,
+    "13": 3374,
+    "14": 7543
+  },
+  "weighted_job_totals": {
+    "capacity": 8254067,
+    "preferred": 3604436,
+    "raw": 60817332,
+    "sorted": 5435591
+  }
+}
+	Command being timed: "extracted/K58_wall_10k_batches/.venv/bin/python audit_independent.py"
+	User time (seconds): 19.69
+	System time (seconds): 8.77
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:28.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 152508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 9624980
+	Voluntary context switches: 2460
+	Involuntary context switches: 4114
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 88096
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+== Probe certification/usefulness boundary ==
+C by exact-local-table exclusion and sorted probe status:
+excluded=True {'OPEN': 941, 'UNSAT_SORTED_ARM': 2418} conflicts {'sorted': 155759, 'raw': 432766}
+excluded=False {'OPEN': 6641} conflicts {'sorted': 856193, 'raw': 855611}
+raw-A/B+C rows 30000 statuses {'OPEN': 30000} caps {'128': 30000} min_conflicts 128
+sorted-C rows 10000 statuses {'OPEN': 7582, 'UNSAT_SORTED_ARM': 2418} caps {'128': 10000} min_conflicts 0
+preferred-D rows 10000 statuses {'OPEN': 10000} caps {'128': 10000} min_conflicts 128
+No full-parent proofs stored for the 2418: physical-replays JSON count = 42

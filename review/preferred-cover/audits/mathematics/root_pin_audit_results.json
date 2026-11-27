@@ -1,0 +1,29 @@
+{
+  "arm_size_counts": {
+    "11": 40,
+    "12": 628,
+    "13": 3374,
+    "14": 7543
+  },
+  "aux_predicate_conditions": "For every row: nominated arm is size 11..14, unnamed ('-'), and distinct from marked arm.",
+  "claim_per_row": "Exactly the positive root-color star and negative marked-color star are incident on O; no other fixed signed unit touches O.",
+  "incident_pin_count_per_row_histogram": {
+    "12": 40,
+    "14": 628,
+    "16": 3374,
+    "18": 7543
+  },
+  "physical_pentagon_edges_checked_against_local_convention": 115850,
+  "profiles": {
+    "15,14,14,14": 381,
+    "15,15,14,13": 7732,
+    "16,14,14,13": 88,
+    "16,15,13,13": 1046,
+    "16,15,14,12": 2058,
+    "16,16,13,12": 140,
+    "16,16,14,11": 140
+  },
+  "roster_decompressed_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc",
+  "rows_checked": 11585,
+  "total_signed_units_generated": 4715467
+}

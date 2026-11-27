@@ -1,0 +1,9 @@
+{
+  "auxiliary_assignments_per_word_pair": 16,
+  "cnf_existentiably_accepts_lexicographically_nondecreasing_pairs": 29646,
+  "expected_nondecreasing_pairs": 29646,
+  "mismatches": 0,
+  "ordered_pairs_of_all_3_color_5_digit_words": 59049,
+  "scope": "Actual sorted_base(7) comparator, exhaustive over physical words and all four auxiliary variables",
+  "sorting_clauses_tested": 42
+}

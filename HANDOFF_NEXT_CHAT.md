@@ -10,6 +10,16 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (preferred-pair cover).** Four accepted audits verified the
+608 local cover proofs, all row symmetry premises, preferred-owner semantics,
+original-parent/export identities and complete next-queue permutation. The
+result is an exact root decision cover of 3,604,436 representative jobs, useful
+as a local preprocessor, not a reduction of the 11,585 OPEN wall rows. C's
+solver timings are not matched comparisons; the new disjoint cap-512 batch is
+10,000/10,000 OPEN with zero fallback calls. Do not scale the preferred search
+on the present evidence. Full assessment and reproduction:
+[results/preferred-wall-2026-11-26/REVIEW.md](results/preferred-wall-2026-11-26/REVIEW.md).
+
 **Updated 2026-11-26 (adaptive-cache integrity).** Cached native proofs/models
 and persisted tree verdicts are now revalidated before reuse/export; malformed
 artifacts stay nonterminal, DRAT replay does not use warning suppression, and

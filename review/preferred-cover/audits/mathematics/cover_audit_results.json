@@ -1,0 +1,156 @@
+{
+  "by_size": {
+    "11": 1272,
+    "12": 1049,
+    "13": 692,
+    "14": 317
+  },
+  "canonicalization_failures": [],
+  "owner_vertex_choice_histogram_n_and_choice_count": {
+    "11,1": 1258,
+    "11,2": 14,
+    "12,1": 1037,
+    "12,2": 11,
+    "12,4": 1,
+    "13,1": 685,
+    "13,2": 7,
+    "14,1": 317
+  },
+  "preferred_catalog_sizes": {
+    "11": 1214,
+    "12": 941,
+    "13": 530,
+    "14": 156
+  },
+  "preferred_labels_hit_by_witnesses": {
+    "11": 1214,
+    "12": 941,
+    "13": 530,
+    "14": 156
+  },
+  "raw_nonuniqueness_examples": [
+    {
+      "n": 11,
+      "raw_pair": [
+        "00000",
+        "02100"
+      ],
+      "witnesses": [
+        {
+          "permuted_model": "1221000111122022002120100121000121001200121121021210202",
+          "permuted_model_sha256": "0e4cc953d4e0af7dc6daed9e25c5dd0f147bbf5bab14f589e39d388071dae8aa",
+          "preferred_label": [
+            "00000",
+            "02001"
+          ],
+          "sorted_label": [
+            "00000",
+            "02001"
+          ],
+          "source_witness_index": 33
+        },
+        {
+          "permuted_model": "1221000112122022002120121201000201001200221121021210202",
+          "permuted_model_sha256": "b1f99fc86416bb9c863d85db4297a27afba67df0b55da76b554ff46592c328c9",
+          "preferred_label": [
+            "00000",
+            "02100"
+          ],
+          "sorted_label": [
+            "00000",
+            "02100"
+          ],
+          "source_witness_index": 35
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "raw_pair": [
+        "00000",
+        "02101"
+      ],
+      "witnesses": [
+        {
+          "permuted_model": "1221000111122020002120120121000101010020111222021211220",
+          "permuted_model_sha256": "c4d1f76f7b6fabb46ae03ea2786959651aa010923b583e51da58c4a476a7c9a0",
+          "preferred_label": [
+            "00000",
+            "00200"
+          ],
+          "sorted_label": [
+            "00000",
+            "00200"
+          ],
+          "source_witness_index": 14
+        },
+        {
+          "permuted_model": "1221000111122020002120120121000101011020111222021211220",
+          "permuted_model_sha256": "582dfe026feb1b29709933ab40dd7ffc9fdcb6af214dcd7eb301c234c6ee84b9",
+          "preferred_label": [
+            "00000",
+            "00201"
+          ],
+          "sorted_label": [
+            "00000",
+            "00201"
+          ],
+          "source_witness_index": 15
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "raw_pair": [
+        "00000",
+        "02200"
+      ],
+      "witnesses": [
+        {
+          "permuted_model": "1221000112122022002120200111001200000201221121211120202",
+          "permuted_model_sha256": "1776a6596d1b7fd838a212e6fe55f3b6fd34f7f0c95e322b774ecdd982c68a62",
+          "preferred_label": [
+            "00000",
+            "02010"
+          ],
+          "sorted_label": [
+            "00000",
+            "02010"
+          ],
+          "source_witness_index": 34
+        },
+        {
+          "permuted_model": "1221001222122020012120211001002001000220112122121201101",
+          "permuted_model_sha256": "7d10683301fe7e131cc0a1bbbfc95f1605229cc75379fee7f63008b96f7ad969",
+          "preferred_label": [
+            "00000",
+            "02200"
+          ],
+          "sorted_label": [
+            "00000",
+            "02200"
+          ],
+          "source_witness_index": 37
+        }
+      ]
+    }
+  ],
+  "raw_pairs_represented_by_size": {
+    "11": 5107,
+    "12": 5087,
+    "13": 4949,
+    "14": 4164
+  },
+  "raw_pairs_represented_in_this_witness_set": 19307,
+  "raw_pairs_with_multiple_preferred_labels_in_witness_set": 15251,
+  "raw_pairs_with_multiple_sorted_labels_in_witness_set": 15389,
+  "raw_table_sizes": {
+    "11": 5361,
+    "12": 5361,
+    "13": 5361,
+    "14": 5190
+  },
+  "sat_witnesses_checked": 3330,
+  "scope": "Finite supplied SAT witnesses only; not a completeness proof",
+  "two_colorings_of_K6_without_monochromatic_triangle": 0
+}

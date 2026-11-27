@@ -1,0 +1,6 @@
+Checked ordinary signed units and anonymous-site transpositions on 11585 rows. {14: 7543, 13: 3374, 12: 628, 11: 40} templates 41
+Replayed 608 cover certificates and all sample physical sorted-guard proofs.
+Every retained job has a checked local coloring satisfying its ownership guard.
+Rebuilt sampled physical projection maps and verified arm colorings.
+Checked identities, scoped assumptions and results for 50000 full-order CaDiCaL probes.
+Verified 40,000 distinct sampled cells and the 3604436 job root cover on all 11,585 rows.

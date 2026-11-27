@@ -1,0 +1,11 @@
+--- a/engine/arm_pairs.py
++++ b/engine/arm_pairs.py
+@@ -96,7 +96,7 @@
+ 
+ 
+ def check_drat(cnf, pf, only_rup=False):
+-    job = subprocess.run([str(HERE/'tools/drat-trim'),str(cnf),str(pf),'-i','-w',*(['-U'] if only_rup else [])],
++    job = subprocess.run([str(HERE/'tools/drat-trim'),str(cnf),str(pf),'-i',*(['-U'] if only_rup else [])],
+                          stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+     if job.returncode or b's VERIFIED' not in job.stdout:
+         raise ValueError(job.stdout[-1000:])

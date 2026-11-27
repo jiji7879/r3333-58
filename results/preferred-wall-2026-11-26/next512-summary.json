@@ -1,0 +1,15 @@
+{
+  "blocks": 271,
+  "cap": 512,
+  "conflicts": 5129608,
+  "convention": "preferred",
+  "k58_whole_rows_closed": 0,
+  "records": 10000,
+  "run_seconds": 147.655,
+  "stop_rule": "All 10000 OPEN: do not raise cap or start another unmatched wave",
+  "verdicts": {
+    "OPEN": 10000
+  },
+  "wall_time_command": "campaign_queue.py next --start 0 --count 10000 --run --cap 512 --jobs 2",
+  "workers": 2
+}

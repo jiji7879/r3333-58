@@ -1,0 +1,10 @@
+{
+  "fallback_cap": 32,
+  "k58_formula_used": false,
+  "proof_bytes": 2,
+  "proof_sha256": "ffe9aaeaa2a2d5048174df0b80599ef0197ec024c4b051bc9860cff58ef7f9f3",
+  "query": "p cnf 1 2 (contradictory unit literals)",
+  "schema": "preferred-certify-control/v1",
+  "status": "UNSAT_PREFERRED_BASE",
+  "verdict": "PASS"
+}

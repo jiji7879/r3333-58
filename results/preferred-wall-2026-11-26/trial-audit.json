@@ -1,0 +1,145 @@
+{
+  "distinct_physical_identities": 40000,
+  "notes": [
+    "Count compression is not row closure",
+    "C alone has a comparable probe_sorted field",
+    "D has no UNSAT result and no raw matched control at its 128 cap"
+  ],
+  "row_count": 40000,
+  "schema": "preferred-cover-independent-trials/v1",
+  "wall_totals": {
+    "eliminated_fraction": 0.9407334080357225,
+    "preferred_cells": 3604436,
+    "raw_cells": 60817332,
+    "representative_fraction": 0.059266591964277554,
+    "stage_partition_sum": 60817332
+  },
+  "waves": {
+    "A": {
+      "conflicts": {
+        "conflicts_raw": {
+          "count": 10000,
+          "max": 176,
+          "mean": 128.8255,
+          "min": 128,
+          "sum": 1288255
+        }
+      },
+      "count": 10000,
+      "distinct_physical_identities": 10000,
+      "ordering_stages": {
+        "COLUMN": 3632,
+        "PREFERRED": 590,
+        "REASSIGN": 310,
+        "SORTED_ARM": 461,
+        "SWAP": 5007
+      },
+      "probe_statuses": {
+        "marked_template_plus_arm": {
+          "SAT": 10000
+        },
+        "probe_raw": {
+          "OPEN": 10000
+        },
+        "third_arm_probe": {
+          "OPEN": 9939,
+          "SAT": 61
+        }
+      },
+      "stage_probe": {}
+    },
+    "B": {
+      "conflicts": {
+        "conflicts_raw": {
+          "count": 10000,
+          "max": 143,
+          "mean": 128.8218,
+          "min": 128,
+          "sum": 1288218
+        }
+      },
+      "count": 10000,
+      "distinct_physical_identities": 10000,
+      "ordering_stages": {
+        "COLUMN": 3596,
+        "PREFERRED": 617,
+        "REASSIGN": 313,
+        "SORTED_ARM": 456,
+        "SWAP": 5018
+      },
+      "probe_statuses": {
+        "marked_template_plus_arm": {
+          "SAT": 10000
+        },
+        "probe_raw": {
+          "OPEN": 10000
+        }
+      },
+      "stage_probe": {}
+    },
+    "C": {
+      "conflicts": {
+        "conflicts_raw": {
+          "count": 10000,
+          "max": 141,
+          "mean": 128.8377,
+          "min": 128,
+          "sum": 1288377
+        },
+        "conflicts_sorted": {
+          "count": 10000,
+          "max": 152,
+          "mean": 101.1952,
+          "min": 0,
+          "sum": 1011952
+        }
+      },
+      "count": 10000,
+      "distinct_physical_identities": 10000,
+      "ordering_stages": {
+        "PREFERRED": 4391,
+        "REASSIGN": 2250,
+        "SORTED_ARM": 3359
+      },
+      "probe_statuses": {
+        "probe_raw": {
+          "OPEN": 10000
+        },
+        "probe_sorted": {
+          "OPEN": 7582,
+          "UNSAT_SORTED_ARM": 2418
+        }
+      },
+      "stage_probe": {
+        "PREFERRED/OPEN": 4391,
+        "PREFERRED/UNSAT_SORTED_ARM": 0,
+        "REASSIGN/OPEN": 2250,
+        "REASSIGN/UNSAT_SORTED_ARM": 0,
+        "SORTED_ARM/OPEN": 941,
+        "SORTED_ARM/UNSAT_SORTED_ARM": 2418
+      }
+    },
+    "D": {
+      "conflicts": {
+        "conflicts_preferred": {
+          "count": 10000,
+          "max": 188,
+          "mean": 128.9283,
+          "min": 128,
+          "sum": 1289283
+        }
+      },
+      "count": 10000,
+      "distinct_physical_identities": 10000,
+      "ordering_stages": {
+        "PREFERRED": 10000
+      },
+      "probe_statuses": {
+        "probe_preferred": {
+          "OPEN": 10000
+        }
+      },
+      "stage_probe": {}
+    }
+  }
+}

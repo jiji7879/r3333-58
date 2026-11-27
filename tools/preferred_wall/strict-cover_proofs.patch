@@ -1,0 +1,11 @@
+--- a/cover_proofs.py
++++ b/cover_proofs.py
+@@ -22,7 +22,7 @@
+ 
+ 
+ def rup(q,p,extra=()):
+-    p1=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i','-w',*extra],capture_output=True)
++    p1=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i',*extra],capture_output=True)
+     return p1.returncode==0 and b's VERIFIED' in p1.stdout
+ 
+ 

@@ -1,0 +1,26 @@
+{
+  "cap_each_group_and_fallback_call": 512,
+  "distinct_physical_identities": 10000,
+  "full_parent_fallback_calls": 0,
+  "full_parent_fallback_conflicts_actual": 0,
+  "group_conflicts_actual": 5129608,
+  "records": 10000,
+  "records_detail": [],
+  "schema": "k58-preferred-next-batch-audit/v1",
+  "scope_note": "OPEN/PENDING are unresolved. Refutations settle only exact representative classes, not complete original rows. Existing row-level cover remains OPEN.",
+  "status_by_profile": {
+    "15,14,14,14/OPEN": 162,
+    "15,15,14,13/OPEN": 5614,
+    "16,14,14,13/OPEN": 56,
+    "16,15,13,13/OPEN": 1557,
+    "16,15,14,12/OPEN": 2165,
+    "16,16,13,12/OPEN": 261,
+    "16,16,14,11/OPEN": 185
+  },
+  "status_counts": {
+    "OPEN": 10000
+  },
+  "strict_preferred_query_refutations": 0,
+  "verdict": "PASS",
+  "whole_original_rows_closed": 0
+}

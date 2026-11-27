@@ -1,0 +1,52 @@
+{
+  "accepted_independent_audits": 4,
+  "bound_change": false,
+  "catalog_ownership_witnesses": 2841,
+  "checked_complete_arm_models": 3330,
+  "decision": "Apply exact local exclusions before search. Do not scale preferred batches on present evidence.",
+  "mathematical_wall_reduction": false,
+  "new_bounded_batch": {
+    "audit": "PASS",
+    "cap": 512,
+    "full_parent_fallback_calls": 0,
+    "group_conflicts": 5129608,
+    "jobs": 2,
+    "records": 10000,
+    "run_seconds": 147.655,
+    "source": "next-0-10000",
+    "status_counts": {
+      "OPEN": 10000
+    },
+    "verified_refutations": 0,
+    "whole_row_closures": 0
+  },
+  "original_export": {
+    "cold_parents_and_queries_regenerated": 512,
+    "frozen_encoder_files_matched": 10,
+    "independently_cross_generated_FIRST_parents": 6,
+    "remaining_queue_positions_bijection_checked": 3594436
+  },
+  "preferred_jobs": 3604436,
+  "raw_labeled_cells": 60817332,
+  "repository_base": "8e5a10eb58de4c4b50b128eadc9a36c4b105ee4f",
+  "scheduling_reduction_percent": 94.07334080357225,
+  "schema": "preferred-cover-assessment/v1",
+  "sorting_comparator": {
+    "mismatches": 0,
+    "nondecreasing_accepted": 29646,
+    "word_pairs": 59049
+  },
+  "strict_full_parent_lifts": 42,
+  "strict_local_RUP_replays": 608,
+  "supplied_trials": {
+    "A_B_raw_OPEN": 20000,
+    "C_complete_local_exclusions": 3359,
+    "C_locally_realizable_raw_conflicts": 855611,
+    "C_locally_realizable_sorted_conflicts": 856193,
+    "C_sorted_UNSAT_SORTED_ARM": 2418,
+    "D_preferred_OPEN": 10000
+  },
+  "verdict": "LOCAL_PREPROCESSOR_AND_ROOT_COVER_ONLY",
+  "whole_rows_closed": 0,
+  "whole_rows_open": 11585
+}

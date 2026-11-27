@@ -1,0 +1,52 @@
+--- a/cheap.py
++++ b/cheap.py
+@@ -61,7 +61,8 @@
+     return sorted(pins-base)+flags
+ 
+ 
+-def certify(row,w,z,ordered=False):
++def certify(row,w,z,ordered=False,fallback_cap=1000000):
++    assert type(fallback_cap) is int and fallback_cap>0
+     base=row_formula(row,'first');cube=physical(row['id'],w,z)
+     if ordered=='preferred':
+         from representatives import full_query
+@@ -79,15 +80,25 @@
+         _,data=append(base,[[v] for v in cube])
+     with TemporaryDirectory() as d:
+         d=Path(d);q=d/'q.cnf';p=d/'proof';q.write_bytes(data)
+-        cmd=[str(HERE/'tools/kissat'),'-q','--conflicts=1000000',str(q),str(p)]
++        cmd=[str(HERE/'tools/kissat'),'-q',f'--conflicts={fallback_cap}',str(q),str(p)]
++        native_start=monotonic()
+         sol=subprocess.run(cmd,capture_output=True)
++        tag=(('preferred-' if ordered=='preferred' else 'sorted-') if ordered else '')+row['id']+'-'+w+'-'+z
++        native=dict(solver_returncode=sol.returncode,fallback_cap=fallback_cap,
++                    full_solver_seconds=monotonic()-native_start,
++                    full_solver_conflicts=next((int(line.split()[-1]) for line in sol.stdout.splitlines()
++                                               if line.startswith(b'c conflicts:')),None))
++        put(OUT/'raw-native-attempts'/(tag+'.stdout'),sol.stdout)
+         if sol.returncode==10:raise RuntimeError('First-tier model requires independent verification')
+-        if sol.returncode!=20:return 'PENDING_BASE'
+-        check=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i','-w'],capture_output=True)
++        if sol.returncode!=20:
++            put(OUT/'raw-native-attempts'/(tag+'.json'),canonical(dict(query=sha(data),status='PENDING_BASE',**native)))
++            return 'PENDING_BASE'
++        check=subprocess.run([str(HERE/'tools/drat-trim'),str(q),str(p),'-i'],capture_output=True)
+         assert not check.returncode and b's VERIFIED' in check.stdout
+-        tag=(('preferred-' if ordered=='preferred' else 'sorted-') if ordered else '')+row['id']+'-'+w+'-'+z;raw=p.read_bytes()
++        raw=p.read_bytes()
+         put(OUT/'raw-proofs'/(tag+'.drat.gz'),raw)
+-        put(OUT/'raw-proofs'/(tag+'.json'),canonical(dict(query=sha(data),proof=sha(raw),cube=cube)))
++        put(OUT/'raw-proofs'/(tag+'.json'),canonical(dict(query=sha(data),proof=sha(raw),cube=cube,**native)))
++        put(OUT/'raw-native-attempts'/(tag+'.json'),canonical(dict(query=sha(data),status='VERIFIED_UNSAT_BASE',proof_sha256=sha(raw),**native)))
+         return ('UNSAT_PREFERRED_BASE' if ordered=='preferred' else 'UNSAT_SORTED_BASE') if ordered else 'UNSAT_BASE'
+ 
+ 
+@@ -117,7 +128,7 @@
+                 from model_evidence import retain
+                 scope='preferred' if ordered=='preferred' else ('sorted' if ordered else 'raw')
+                 verdict=retain(rid,w,z,scope,sat.get_model())
+-            else:verdict=certify(r,w,z,ordered) if status is False else 'OPEN'
++            else:verdict=certify(r,w,z,ordered,cap) if status is False else 'OPEN'
+             out.append(dict(wave=t['wave'],rank=int(t['rank']),row_id=rid,w=w,z=z,group=digest,block=block,
+                             assumptions_sha256=sha(canonical(assumption)),cap=cap,conflicts=nc,status=verdict))
+     return out,round(monotonic()-start,4)

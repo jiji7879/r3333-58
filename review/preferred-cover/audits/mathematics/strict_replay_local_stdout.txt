@@ -1,0 +1,17 @@
+{
+  "checker": "extracted/K58_wall_10k_batches/tools/drat-trim",
+  "checker_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "command_flags_per_proof": [
+    "-i",
+    "-U"
+  ],
+  "queries_and_proof_sha256_regenerated_and_checked": 608,
+  "total_proof_bytes": 9890764,
+  "verified_counts": {
+    "preferred": 304,
+    "sorted": 304
+  },
+  "wall_seconds": 26.979,
+  "warnings_suppressed": false,
+  "workers": 1
+}

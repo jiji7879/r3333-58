@@ -1,0 +1,721 @@
+{
+  "all_receipts_regenerated_exactly": true,
+  "checks": [
+    {
+      "lifted_rup_sha256": "f2c982360ef95ac870abbadec09d654282a0cec18563719aecc59e7920626311",
+      "log": "strict_logs/09a17f6a1b72-10220-22100.log",
+      "parent_sha256": "c1e1d9de8b05773d8e375e36e243360d006f1577a3940a824ea0c01f7d0cb432",
+      "query_sha256": "2ff2b38f2b01f2930453e6d0be92e3855b931c42be6c0c6235bbf33b61aa3177",
+      "receipt": "09a17f6a1b72-10220-22100.json",
+      "result": "s VERIFIED",
+      "row_id": "09a17f6a1b72d42fd75111331e86ab9a3c20b3998b5e95837bfac1c554d2a627",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "10220",
+        "22100"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "57cb0081868952e33be93c294c6b24f890767c7934b971506c9b717311380db5",
+      "log": "strict_logs/0c4b55a48dcd-00021-10200.log",
+      "parent_sha256": "061ad8ac2bc4387e331ac012adbf6c0a9c3d7ac1e831c1be4b71e76f3accc7f2",
+      "query_sha256": "40c245ce3686de50721a500da0792aa1775d3aa7cd54cdedeee66ed288b499c5",
+      "receipt": "0c4b55a48dcd-00021-10200.json",
+      "result": "s VERIFIED",
+      "row_id": "0c4b55a48dcd40ccaad4218913f6ab933d9897549c8bfa988c6d5bb82a12dae9",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00021",
+        "10200"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "4b0ecc48280e511b7ee53aefef85685c2a73e7de9fe44c0b86618bae85741568",
+      "log": "strict_logs/0e6e61889d34-00120-01200.log",
+      "parent_sha256": "d4b9cfc084de00031db87361c259bb16bd9570ca55ada41b79405a564c7bdf14",
+      "query_sha256": "f58fc6b7a7a47b0f7f4c20d0c41ee996276361a2899411347710df230acc4e3a",
+      "receipt": "0e6e61889d34-00120-01200.json",
+      "result": "s VERIFIED",
+      "row_id": "0e6e61889d344dabda9897fa4887311bce9c3d8bb3b74077f935a08f6ce5a2a5",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00120",
+        "01200"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "0b84ea299cd5463c9b7d4e7c79c19de08c62e296b2c7b9b26ce85a53dc3adac8",
+      "log": "strict_logs/1b9ae9524d6c-10122-20001.log",
+      "parent_sha256": "e3bc8d15652e09976bcf6c83486031f6e1989f6380f8233b80031a294ea3fef8",
+      "query_sha256": "32957101adf5d24b94f3129f39f4030d4446c788beb7adab74e4032aed37219e",
+      "receipt": "1b9ae9524d6c-10122-20001.json",
+      "result": "s VERIFIED",
+      "row_id": "1b9ae9524d6ce9b616ea0249463399441573e689a484534fce393459dd95d0da",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "10122",
+        "20001"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "d1e480d8803a7fcd10c35b5e2ad1c758c4df0a39ed37e8350629f4e1238b4b26",
+      "log": "strict_logs/22cb066d1309-01210-21010.log",
+      "parent_sha256": "c07ff04840c3c85464794071202956186ca62bb823ac0fcfd9e13bb93f6cde2c",
+      "query_sha256": "e9e95ccd0057d86609d489c5a7fabbe249007edcb837a7502361c3c72d607a5e",
+      "receipt": "22cb066d1309-01210-21010.json",
+      "result": "s VERIFIED",
+      "row_id": "22cb066d130960cabdefb096cdb483c197058e5e2e6ac78237d157280926354e",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01210",
+        "21010"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "c6f57cf3c3e97c4d44883471c66f2166c53d5a53782fcd2a6942b454ef4329ad",
+      "log": "strict_logs/2657410d716e-22100-00012.log",
+      "parent_sha256": "f07be8f6f2c83bc4860bd2cef4ddaa3bc77577e1770d17dc4597884beea4bbc0",
+      "query_sha256": "abfa7e858647ea6c6782c9f1a987029e4df3a12751c90cd3adfae81f13cef6d3",
+      "receipt": "2657410d716e-22100-00012.json",
+      "result": "s VERIFIED",
+      "row_id": "2657410d716e94dcaf5a0cccf2379caa6a21b400ee3a45c83431b14222a46ed3",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "22100",
+        "00012"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "341231c38331340fe060ddec24f99a1c12b1c08608037d2958945632df72151c",
+      "log": "strict_logs/28e220f02583-01201-12200.log",
+      "parent_sha256": "2e0e04595cfd7263bc8b5f4da6bf3095a683aab086640e089a236693917097fc",
+      "query_sha256": "26345875e518e1956dbec2a8bc2fda46f0436abdaf8e1723da322e99f1b1e252",
+      "receipt": "28e220f02583-01201-12200.json",
+      "result": "s VERIFIED",
+      "row_id": "28e220f0258300752ac0f4223ee00beb457dd37761c3724be182da4007d5fe9a",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01201",
+        "12200"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "39fadeea3e8c56e92fddd1fc49205b16d2fb9ce86e0d0f58f74284ad66cef5d3",
+      "log": "strict_logs/2cb9b333e011-01000-10210.log",
+      "parent_sha256": "a84dcc7aae02c3ef6e78ee1479cb52c9f16367c397807e05865368eaa7392431",
+      "query_sha256": "7d99f58463fcdc5d7f31e2106c338a8b8d72f765ac1a636701758a1516d50c16",
+      "receipt": "2cb9b333e011-01000-10210.json",
+      "result": "s VERIFIED",
+      "row_id": "2cb9b333e01171a2b24058141402afeb3a5bd88b324d2025fcf4919d95b73919",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01000",
+        "10210"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "e0a57dabc963b5ce92631a675369729deab42e8055bac55931d512a8b7eff20b",
+      "log": "strict_logs/3372f65a316f-00020-21012.log",
+      "parent_sha256": "806a04e7861414f980495add43ba3882609b21579b59c1cf3a4e22c7ae563ea1",
+      "query_sha256": "15d196f237600a640fb95d1ed5e1f6d1e68d4faef668adaaa2ccaf52db6c1833",
+      "receipt": "3372f65a316f-00020-21012.json",
+      "result": "s VERIFIED",
+      "row_id": "3372f65a316fa07b7ca5ee08dccd8356ca22e56543d81572d1289f49cd8e01e7",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00020",
+        "21012"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "bc33e1a6fa2000bf11bde000f1bfdfcd18ef7d545918d7b45d4b4671b1dad831",
+      "log": "strict_logs/3374c8e247ed-02001-02010.log",
+      "parent_sha256": "63795cbb871df41c9357b54e8b6a29cab4acebb8c967f45db7ffdc3f228326b7",
+      "query_sha256": "6b1187f06a7505b676771887b71448dccc16732645112899a5f93164e09941ba",
+      "receipt": "3374c8e247ed-02001-02010.json",
+      "result": "s VERIFIED",
+      "row_id": "3374c8e247ed8a88036f2b6cdce9a6e4385dc95a3966749138b82571b73d55e4",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "02001",
+        "02010"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "cafa6ac5e6a5732745ea425e873ca367bd8b033f15f8877207433641083f1e6d",
+      "log": "strict_logs/41c01a76b971-00001-02010.log",
+      "parent_sha256": "04f70959511828a9355985138fab94745fb3c5bf5c92e7ccd6eb94ea4f98f2e3",
+      "query_sha256": "f4e57a3fad90d3556dd8803d013e5263d55e24b97a5ece221c5af57ad2e2a7a5",
+      "receipt": "41c01a76b971-00001-02010.json",
+      "result": "s VERIFIED",
+      "row_id": "41c01a76b97136330155e36a308a1e49233855a9a103c72c9550f91bc4987578",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00001",
+        "02010"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "9a3e0d2a082240d5c8f9f4f1576c7e9c431c23aea845552df034a6ece2d250ba",
+      "log": "strict_logs/491746958077-00021-00000.log",
+      "parent_sha256": "007efc31b0810d26b83c3ef97737188132780b3008eee6988d3e7f834b0698a3",
+      "query_sha256": "2a58adeb3eb76f4578a3d0cf1717a2907d8ed2821e58ffe2470c160d0aef9b37",
+      "receipt": "491746958077-00021-00000.json",
+      "result": "s VERIFIED",
+      "row_id": "491746958077ee4126e8efbe7b2f8f4fbc6b94321fb2863474898a147e06dafa",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00021",
+        "00000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "00dbe67c1444e6d49dd669e9d7a2d4e6fd042e9e94e0b060970b0b1d73b7f517",
+      "log": "strict_logs/4aca4e8295d5-20001-21010.log",
+      "parent_sha256": "83e78697d141f3cb88eddacac6206f8f12be85046f1474ce226964e2b53a5ddd",
+      "query_sha256": "7e01e44e672464c63fb3f2c07dcfe05764a089f9db110b33f42a5ebe88e27ad1",
+      "receipt": "4aca4e8295d5-20001-21010.json",
+      "result": "s VERIFIED",
+      "row_id": "4aca4e8295d52ef67196c1e03d936e85ef04900c64e6aa6469ddd44b34a7d1d7",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "20001",
+        "21010"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "867436705270224dce4fce63db3c4e779c2ac8b60a03aa56c4b18cc2435d8767",
+      "log": "strict_logs/5a32bc985e29-00020-00002.log",
+      "parent_sha256": "1ebb346a713edbf76d57b87b953058419bfdc6047a99e5f418f4b23329284577",
+      "query_sha256": "64e02c7528b666182baa74022bab07e43e0f429eb358313a3f8d9a2eb86fa1be",
+      "receipt": "5a32bc985e29-00020-00002.json",
+      "result": "s VERIFIED",
+      "row_id": "5a32bc985e2995199b4a8a84b6a8d3ec2ed946f09fc92d053c6ecac9031c6bdb",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00020",
+        "00002"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "9842a6800635ea1c12c67ac38f7be3d9b9af3c3a0db9eb5a4b309e780b5b203a",
+      "log": "strict_logs/5c7e220d0858-01221-00210.log",
+      "parent_sha256": "c3eb88e05a81e8a42c07377676e75cce1f6358bb0a600d814579805eff3f2157",
+      "query_sha256": "5b2e39d5588eb9f58516531849d3e222c34c743ffa3dc4c32d254400a88eb59b",
+      "receipt": "5c7e220d0858-01221-00210.json",
+      "result": "s VERIFIED",
+      "row_id": "5c7e220d0858e4e293c97db467a86dcf0bd8dde215ed8622ddeb74fe78c62548",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01221",
+        "00210"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "85daf10356455b1e32ad74f40186b4f80498d56e3e6eb5a77fa116862e2c8bb9",
+      "log": "strict_logs/5c901bc328a9-01000-00220.log",
+      "parent_sha256": "a42d4950c979e614a647d6287e704eb8aa72ffe6a51ca11e05b4a4b3f09df76b",
+      "query_sha256": "db3a943bd6938f6c5f85c45c32eb81515c467c6a4c60b28a08ee66d61640ad83",
+      "receipt": "5c901bc328a9-01000-00220.json",
+      "result": "s VERIFIED",
+      "row_id": "5c901bc328a9ff4a74f09187a9a0a2c4a5c5aea4f27b2fafd41f78bd83324d45",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01000",
+        "00220"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "39fb02c1e2381f5cab080eac579de569b89e61723c702abe879f9ac670bedeb6",
+      "log": "strict_logs/5df64f078fff-20001-10002.log",
+      "parent_sha256": "32d9b911f15a58109ae33eb8f60a094826870f628d5d438736506cb897666497",
+      "query_sha256": "720a7a09b59ee4ec1037d9b7d7e2c3b7c6274760ba941cce169620f9f068fcee",
+      "receipt": "5df64f078fff-20001-10002.json",
+      "result": "s VERIFIED",
+      "row_id": "5df64f078ffff0d10edb688598fb44010caf308e69550d50a25b60f35e9afb2a",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "20001",
+        "10002"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "ff3e775be660b1771bfc7cda10a75c72141938d77519ea31230814c201fa85fe",
+      "log": "strict_logs/5fa006dacd00-01012-02100.log",
+      "parent_sha256": "884465e854d652478dae94384722d742232ea89a11b61206e8b70456bcd74d0e",
+      "query_sha256": "a76fa6a8624896211491dee3ecfd6c8ccdd7b3e2c249269fd0f161dba7ebf59c",
+      "receipt": "5fa006dacd00-01012-02100.json",
+      "result": "s VERIFIED",
+      "row_id": "5fa006dacd00bb6bc90db69f6cf3d41fbcbf115d0402df433263419390382f24",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01012",
+        "02100"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "7b538487c96affc81b40179fd31f1c6b3a053e2e443f7b93ce38893a19bd4d9f",
+      "log": "strict_logs/6d734e6a3c33-21012-02010.log",
+      "parent_sha256": "85c3b7706708dc27e9800f418fa622bab929a62a425b6e1258b71e0899bc7360",
+      "query_sha256": "a11de9970e496aee9efb16b272334d1c4e0923462cb0b4dafafb8fe5ea1c0a08",
+      "receipt": "6d734e6a3c33-21012-02010.json",
+      "result": "s VERIFIED",
+      "row_id": "6d734e6a3c33d84196eae43db0df6a26c579cd8703fe58066a613c07c7348ca4",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "21012",
+        "02010"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "75dddb0aa8bab8122defd23a68c602cf8fb4a60a94782ed169c8729fdfce200d",
+      "log": "strict_logs/71e271968e19-00020-02000.log",
+      "parent_sha256": "fa2246902f804d92a4b32803c5b954359540cb4c00cd62baeccead4deec4c339",
+      "query_sha256": "2cee5fbd5e926551156cbd0bdcae4f2df99382096dc51e3d7f2bcbdfd5aacfc7",
+      "receipt": "71e271968e19-00020-02000.json",
+      "result": "s VERIFIED",
+      "row_id": "71e271968e19ea3ac3a60d72f209589f34cb502efe8c5696a17049bfefac20db",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00020",
+        "02000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "1f5fd8e9daaff53addc1f88ea571fcdce939af4ca4a0689b2fb0b23b68625385",
+      "log": "strict_logs/73822f599d66-00201-01200.log",
+      "parent_sha256": "d9fed665a74b39cf88682fcbc79c11eaabbfda6c81a11e44a8afc3b62cc75908",
+      "query_sha256": "edae0cac72c5d6405f3173e118dd438e861747719f6a98a46ea80aa48be2d6fe",
+      "receipt": "73822f599d66-00201-01200.json",
+      "result": "s VERIFIED",
+      "row_id": "73822f599d6680a79c3c0f0f891aa77e7bd0c78134d24c53a5f71c9ee00eb8ef",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00201",
+        "01200"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "8eaea34eecfed3d72d5c0870d479b8853fcfc6a6b8216f58fec43a5be34b4a72",
+      "log": "strict_logs/7ce483320afc-01000-02201.log",
+      "parent_sha256": "32b2ec4bc07c51907a255a0638603c6e3d3ab6bd21d750b756644f84b2c1f165",
+      "query_sha256": "4f921747e194e17366f61e0801d81b9008c63eb6b17a99ae1704997003b4b24d",
+      "receipt": "7ce483320afc-01000-02201.json",
+      "result": "s VERIFIED",
+      "row_id": "7ce483320afc97b5170df099052b517f83e7bc7bfaf35a763edc86f351f14981",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01000",
+        "02201"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "b06f3d2a528dacbe397284cdbc0fa7d42602e0395a19fb928a49bd1da343aab8",
+      "log": "strict_logs/7d6bb9a7c73b-01012-02000.log",
+      "parent_sha256": "6f5daa4feff2b4a5fe6356849c45745a0847e1f9da888cfcbd8f0b67d3101584",
+      "query_sha256": "09d682c9000beb7df4ea8d8dba5109c646558b882dc6347b633e60ace7cc680d",
+      "receipt": "7d6bb9a7c73b-01012-02000.json",
+      "result": "s VERIFIED",
+      "row_id": "7d6bb9a7c73bac418515e46bc4fb230f986e93b903c830270c64c97cc6c30b24",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01012",
+        "02000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "f66d82f0bf1432a6ee5d1fadec57ac3eaf5a0abdaf22de6b99a0831667e511a7",
+      "log": "strict_logs/8b341f05ca7f-12010-00000.log",
+      "parent_sha256": "a23000a534ba79df2732030d79eb9b8ff69925d9d1948968eface0bd97385735",
+      "query_sha256": "13b6e338295bc77ba218f422b7085506089427da16fe5410cf80a0ffcffdfcbe",
+      "receipt": "8b341f05ca7f-12010-00000.json",
+      "result": "s VERIFIED",
+      "row_id": "8b341f05ca7fda39a4e9f8587420601462aebca9e98dcab589e8e86ce4336414",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "12010",
+        "00000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "68fed34b8f6f889471815a556603dee6f307a33518de608965b2b8e8f3ee7a39",
+      "log": "strict_logs/93ad59499f05-01012-01210.log",
+      "parent_sha256": "7fe3029eef2385ed447ebca07b2df1321f0a0ccb7a9353fbf2f7cfe13c65c5ed",
+      "query_sha256": "a16376a22ba94e338bff7d30729e5f20bc732f619f0eb7c669e20ac6afec1efe",
+      "receipt": "93ad59499f05-01012-01210.json",
+      "result": "s VERIFIED",
+      "row_id": "93ad59499f056789320ce639b45f76af2dd7e74ff0f8b3c3b67ef21f41e5ffd9",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01012",
+        "01210"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "dd9cd5615c95d7bdd44e050f60c81a56b7025e752f9db6507a805025769fb273",
+      "log": "strict_logs/a16475be0ec1-02000-10100.log",
+      "parent_sha256": "dfb4fcf264756d38ff81d15c89dbdbe5399b3404fb403b41d710f937482737ea",
+      "query_sha256": "0bbc1e76ea63672ad0a2dccd9061b36181e5a6f24dae902319abae81892e3990",
+      "receipt": "a16475be0ec1-02000-10100.json",
+      "result": "s VERIFIED",
+      "row_id": "a16475be0ec1e2c8ce452ae9777bc545f6f7ad584178bf901cdb56a211df24f7",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "02000",
+        "10100"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "eca84377beff26e8457bcfdcb6c8fe08a311299ec3a712b305c59d1be87bade2",
+      "log": "strict_logs/a1ff74946d7e-10020-22000.log",
+      "parent_sha256": "bf559ce74516704158e69d4fccfdc1f3fb1a6ab9018f9fb8e85309d24a3f4db3",
+      "query_sha256": "1a779b6bebeeb99a73b7f979685cef23d5106168f87b08cfcafddb9f80c22da5",
+      "receipt": "a1ff74946d7e-10020-22000.json",
+      "result": "s VERIFIED",
+      "row_id": "a1ff74946d7ef9b96f6420fd6a8036daea5ad6034a2980aac15541d3649c6896",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "10020",
+        "22000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "85631daec1ff6e79e6dd3dcca25185214f48be16568788943b54bdcb7aa09c17",
+      "log": "strict_logs/a2323f6487a2-21002-00121.log",
+      "parent_sha256": "4cd2848c3367244b5ccbd26159939f48cd38a7309c7fd011db8e0a3e440181d0",
+      "query_sha256": "5159e5cff1bdbb14b7de255900dde9bb89789a5293af25180ad4c023f6596749",
+      "receipt": "a2323f6487a2-21002-00121.json",
+      "result": "s VERIFIED",
+      "row_id": "a2323f6487a28deee85ea668d1afd8d4db1f2e2ccb419435dc7422319e699243",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "21002",
+        "00121"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "dbe219d5acf44edfff563b8afc44e0d09b7047b80c0fec5ee454c7d846ff61f6",
+      "log": "strict_logs/a40e1441f47d-01010-12010.log",
+      "parent_sha256": "1c7b1d4644e3ec18a2c7af3925932fd6c30c38a3779797b9700aab675393bee2",
+      "query_sha256": "aa15727f4426bd7cc8d34ffd410548828ecf0b12f675d81e38918d25a03a432c",
+      "receipt": "a40e1441f47d-01010-12010.json",
+      "result": "s VERIFIED",
+      "row_id": "a40e1441f47d3f9d4fef216f69519b2b1ecd9b509685afffbe610d415f395d5c",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01010",
+        "12010"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "bb8749c98996584a6c621439a64d12fa4bc1863ed4aaf781988cb1b6815e00ec",
+      "log": "strict_logs/a5baa599dc5f-10102-22010.log",
+      "parent_sha256": "4b510357096955c4d22db9467b1ec7b768947ccbe7c1cffd91b387c0033cdffd",
+      "query_sha256": "b4979db92fe4bc5db14058f9514632c13f228ffe935688822dc6e2c0d3256ab8",
+      "receipt": "a5baa599dc5f-10102-22010.json",
+      "result": "s VERIFIED",
+      "row_id": "a5baa599dc5f6bb4719f0109ca8980219cb990c11975b7a03b6995ad3b734b9f",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "10102",
+        "22010"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "bd154518a9933577f5654214f5514bbf0e87e2a55d2b96aa89dc32c2c5e2bff5",
+      "log": "strict_logs/a912a17460b3-01001-02101.log",
+      "parent_sha256": "7b789fa30866dffc11e0d171854a2a5d4523b1233426dbb1009944f62b5b98e5",
+      "query_sha256": "d41b2e79ed76fd8d407c614a5e926b6589f77fb2cfd972fa690645238b041c25",
+      "receipt": "a912a17460b3-01001-02101.json",
+      "result": "s VERIFIED",
+      "row_id": "a912a17460b3361763b1ca8b3204d8252a95dc47d3fdf9ea89b51df26ab85c85",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01001",
+        "02101"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "6ed705f0df20a981dac30740ece39f32b9962c2f38285269ad0054f8ffa1e3f5",
+      "log": "strict_logs/a991bbf33474-22001-20000.log",
+      "parent_sha256": "67fd1a1c9125dfb14ec9ee200074d57dc7110955dfb32cd858b1ae2d9f94f895",
+      "query_sha256": "28b4da48844b954c007379ac6846c4717cdadc4d3bf667d02642741145dc0cbb",
+      "receipt": "a991bbf33474-22001-20000.json",
+      "result": "s VERIFIED",
+      "row_id": "a991bbf33474eb2c0595910c7cc6c4cb6882e37b7d78a43da6472fbeb932cffa",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "22001",
+        "20000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "1f167389fc57abc766fe20c5f043888a096eeeab1cb00619a9944f358dc49430",
+      "log": "strict_logs/aebcb3bc2807-01221-00200.log",
+      "parent_sha256": "939a4745764d110120b8ed1cbfc47b7975a43ff3ccae78722bead41611837ecd",
+      "query_sha256": "5209400921affad4618b2240c8caabcce2b6a4b9f9ebc39498c8355edfa07715",
+      "receipt": "aebcb3bc2807-01221-00200.json",
+      "result": "s VERIFIED",
+      "row_id": "aebcb3bc2807e231414cd5c00eba328e10ba758402267cd8194eef673e618176",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01221",
+        "00200"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "d905b4f748246252ce6a3db2d5870920f7b297cb2f42f0e00cbd3429a3605595",
+      "log": "strict_logs/b05e6af87ec5-02200-22001.log",
+      "parent_sha256": "68d039e6692e9fec8dd9a1f8040b6d10b9d3b5e06410ad936af827aab56040aa",
+      "query_sha256": "435de7d45ab9d7802a6408b0933b927ea58d81ca7c5ea4079572232dd6393af9",
+      "receipt": "b05e6af87ec5-02200-22001.json",
+      "result": "s VERIFIED",
+      "row_id": "b05e6af87ec5b61f44acb8022319d3dd11797da979904298737778f2d0fe7e58",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "02200",
+        "22001"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "764e519ef16b41317285d586e8ac514cf77b745b16398acd6641a51ee86b51aa",
+      "log": "strict_logs/c647736b4df3-00210-02000.log",
+      "parent_sha256": "627f9f6c8971e1056db0b631a2ed9423ee48fca31078209416140cd550caf2b3",
+      "query_sha256": "fab53fc691d72a8b879db3fb93fbc997c82022ee4a9ead87193edc10f97454be",
+      "receipt": "c647736b4df3-00210-02000.json",
+      "result": "s VERIFIED",
+      "row_id": "c647736b4df30f27acc1a1bbce5045b5636f42bfc7bf9ead461e317a5db35ba7",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00210",
+        "02000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "c6d8d3edeb486b66350fd8685453d74b0fab1307da7aa5c8ccf981dd5e77797f",
+      "log": "strict_logs/c673a6286132-00012-01201.log",
+      "parent_sha256": "2ae40f76ec5f6d782202c811e376c9765cc414b12f1b7bf569df5b453536640f",
+      "query_sha256": "2c7752db39abbc70c5a553129639e15aa4e42e50b97cc44e6f6308f6a0b02c37",
+      "receipt": "c673a6286132-00012-01201.json",
+      "result": "s VERIFIED",
+      "row_id": "c673a6286132999032992bdb487ce0f6889df116b05bd6cf68d22c66e1db20fb",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00012",
+        "01201"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "82ecf95da3e35fc6bef6d16debb0f6b2091f3b0fbe7db68829339cfab2b15d27",
+      "log": "strict_logs/ce7d65cfcf8c-02200-00121.log",
+      "parent_sha256": "c20c4efb462f6d062babdff27bbe734e6529502ccea138990349a47395403a71",
+      "query_sha256": "fab594fc9703962081df535272e29d0458ae68ca9ac3bb58aa919cd855d57075",
+      "receipt": "ce7d65cfcf8c-02200-00121.json",
+      "result": "s VERIFIED",
+      "row_id": "ce7d65cfcf8c53788f81c887c090a48a2485482b07cb06d49025aea0756205b9",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "02200",
+        "00121"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "6dd0b239c4952aa6c91d1a3df3cf359f6aa6d585cde689debf9d37173dd26cc6",
+      "log": "strict_logs/d370ecc805d2-01021-10102.log",
+      "parent_sha256": "55994cb8cc8ebb86fe262b1d8cfaf697c88167cdd5744c603bca98136af357a3",
+      "query_sha256": "80b092cb7f4ff861e0695dfe7c9126e1a23f5eca69568555e81e44574a69c652",
+      "receipt": "d370ecc805d2-01021-10102.json",
+      "result": "s VERIFIED",
+      "row_id": "d370ecc805d2a89de312ee0c8341bdc9cf1ef6c461aa4f7cc845dbcd788c43c5",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "01021",
+        "10102"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "14681f981abbb011389d78a910b4c312dee0efeac53b3aebb9d2a46e45c53d72",
+      "log": "strict_logs/dd523a45cd18-02100-01210.log",
+      "parent_sha256": "438214dd91b67f5746c5b1d4f1de170c0b9d772eab88432475c815d1b6818150",
+      "query_sha256": "0e22549e0800ffd0a1d2ad8302faa2aedafffb4437d8114cb2ad1b841bb61167",
+      "receipt": "dd523a45cd18-02100-01210.json",
+      "result": "s VERIFIED",
+      "row_id": "dd523a45cd18ea3ced0613badf01574250671377d08765836a3cb994dc5f6cc7",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "02100",
+        "01210"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "39ea3c3328146f32415e94a941e5884e03edd00827f1ad60d64381dfb34c85f5",
+      "log": "strict_logs/e2925452a386-00120-10210.log",
+      "parent_sha256": "57065d174ca9bbc26f99ea28aa28a579e6adbfbf317c9f81cb93e0d442ab9ab1",
+      "query_sha256": "0957b19df5e36a2ee60687f7a5a024c0b605d6b46b9e3a217b6f290190d289ad",
+      "receipt": "e2925452a386-00120-10210.json",
+      "result": "s VERIFIED",
+      "row_id": "e2925452a386107f9b212003ab7b1e73abb4b3e704fc96309a8377380c8d49aa",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00120",
+        "10210"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "f775775ddff1493976132ce7ee905831192b8253b5a025e3fab00cbdd59562ae",
+      "log": "strict_logs/e2f23e9aa44a-00002-20000.log",
+      "parent_sha256": "c89871de7c0ac9881411ce148d90fdb9175ff23ef42b49b23a31d3026e90c0ab",
+      "query_sha256": "f167e1548bce9d950cc73f7ce17e5d9e3f207e512277eef8ef81aea2830e9d66",
+      "receipt": "e2f23e9aa44a-00002-20000.json",
+      "result": "s VERIFIED",
+      "row_id": "e2f23e9aa44ae1f90999b518707ce9b6d9968c00da2cf4103f1971a6c430a5f9",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "00002",
+        "20000"
+      ]
+    },
+    {
+      "lifted_rup_sha256": "b0611563523066e34787dcd701769ea32af8fa806be4a8fc8ae46b6900a9c18b",
+      "log": "strict_logs/e816b967f89a-20001-01200.log",
+      "parent_sha256": "8783ba17697f3f98bce655262c2dc95c44325bf11f81fe6bd938e5fb2af2d962",
+      "query_sha256": "73a721b18815ce12fa8e556c6b0ebe8af584681d7afa92c51ac2395ae1a3cff9",
+      "receipt": "e816b967f89a-20001-01200.json",
+      "result": "s VERIFIED",
+      "row_id": "e816b967f89a2c8ad075f91709e007fcaf729c56214fe02d3459ce7013ce46b5",
+      "strict_command_options": [
+        "-i",
+        "-U"
+      ],
+      "words": [
+        "20001",
+        "01200"
+      ]
+    }
+  ],
+  "drat_trim_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+  "proofs": 42
+}

@@ -89,6 +89,14 @@ invalid-cache outcomes. The final live replay passes 92 unit tests, the
 profiles remain OPEN; this is not a solver improvement or a new closure.
 See [results/adaptive-wall-2026-11-26/CACHE_FAIL_CLOSED.md](results/adaptive-wall-2026-11-26/CACHE_FAIL_CLOSED.md).
 
+**Preferred-cover review, 2026-11-27:** the exact local sorted/preferred tables
+form a checked unrestricted-root decision cover of 3,604,436 representative jobs,
+not a reduction of the 11,585 OPEN wall rows. A capped next batch is 10,000/10,000
+OPEN at 512 conflicts, with zero fallback calls and no whole-row closure. Four
+accepted semantic, proof, data and original-export audits support using it as a
+local preprocessor; no solver-speed improvement was found. See
+[results/preferred-wall-2026-11-26/REVIEW.md](results/preferred-wall-2026-11-26/REVIEW.md).
+
 Two side results from the same period, both certified and both explicitly
 non-progress on the bound:
 

@@ -1,0 +1,163 @@
+{
+  "export": {
+    "parent_clauses": 181818,
+    "parent_sha256": "ccf8b9e9fdc387efa61eab85e7d1cfc1fedda15afd0f05bf711dc98cdfce0481",
+    "parent_variables": 19070,
+    "preferred": {
+      "added_clauses": 6108,
+      "clauses": 187926,
+      "full_exported_cube": [
+        6366,
+        6406,
+        6502,
+        6443,
+        6474,
+        6370,
+        6409,
+        6506,
+        6446,
+        6478,
+        19919,
+        -19920
+      ],
+      "physical_cube": [
+        6366,
+        6406,
+        6502,
+        6443,
+        6474,
+        6370,
+        6409,
+        6506,
+        6446,
+        6478
+      ],
+      "sha256": "e2a86483100cf96bc6560581556d341d06b21c32105062bf1c29f4a1d7f6b5b5",
+      "variables": 20635
+    },
+    "raw": {
+      "added_clauses": 10,
+      "clauses": 181828,
+      "full_exported_cube": [
+        6366,
+        6406,
+        6502,
+        6443,
+        6474,
+        6370,
+        6409,
+        6506,
+        6446,
+        6478
+      ],
+      "physical_cube": [
+        6366,
+        6406,
+        6502,
+        6443,
+        6474,
+        6370,
+        6409,
+        6506,
+        6446,
+        6478
+      ],
+      "sha256": "c28ff93460900066851ef9efa3eabc1a18a28b254b7b11368c1ae63eb90f0fa7",
+      "variables": 19070
+    },
+    "row_id": "f936154b8863241cffd794e00baece058d5fef6bc3f7396c9fcbe7a1b48a7894",
+    "sorted": {
+      "added_clauses": 262,
+      "clauses": 182080,
+      "full_exported_cube": [
+        6366,
+        6406,
+        6502,
+        6443,
+        6474,
+        6370,
+        6409,
+        6506,
+        6446,
+        6478
+      ],
+      "physical_cube": [
+        6366,
+        6406,
+        6502,
+        6443,
+        6474,
+        6370,
+        6409,
+        6506,
+        6446,
+        6478
+      ],
+      "sha256": "9aad0ec607d847515ddcb6457f570592d3cca49cee39fbb8f71f91aae0f84541",
+      "variables": 19094
+    },
+    "words": [
+      "00020",
+      "01000"
+    ]
+  },
+  "group_encoding": {
+    "all_row_pin_sets_contain_group_fixed_pins": true,
+    "automatic_sender_bypasses": 11585,
+    "bypass_exactly_original_needed_le_zero": true,
+    "distinct_group_formulas": 36,
+    "nominated_arm_vertices_checked": 175794,
+    "nonautomatic_guarded_senders": 164209,
+    "rows_checked": 11585,
+    "unsat_policy": "cheap.certify regenerates original parent and exact convention export; group OPEN is not closure"
+  },
+  "original_parent": {
+    "all_parent_and_query_sha256_match": true,
+    "all_were_budget_hits_not_closure": true,
+    "cold_receipts_regenerated": 512,
+    "distinct_parent_hashes": 499
+  },
+  "preferred_semantics": {
+    "all_extension_and_owner_clauses_satisfied_without_SAT": true,
+    "known_complete_arm_colorings_relabelled_and_checked": {
+      "11": 1272,
+      "12": 1049,
+      "13": 692,
+      "14": 317
+    },
+    "mapping_sha256": "49afd5146ac41b48fdf1084aa469afa4f6b12e1207cb75da770d00fc4a949384",
+    "preferred_jobs_hit": {
+      "11": 1214,
+      "12": 941,
+      "13": 530,
+      "14": 156
+    },
+    "sorted_table_statuses": {
+      "11:REFUTATION_CANDIDATE": 36,
+      "11:SAT": 1272,
+      "12:REFUTATION_CANDIDATE": 200,
+      "12:SAT": 1049,
+      "13:REFUTATION_CANDIDATE": 51,
+      "13:SAT": 692,
+      "14:REFUTATION_CANDIDATE": 334,
+      "14:SAT": 317
+    }
+  },
+  "queue": {
+    "exact_complement_is_D": true,
+    "first_200_match_campaign_queue_batch": true,
+    "first_200_preferred_position_sha256": "d89b14216bf2de393a0f87ab4af9fd81f0c7155b4978e7f91ec514db7406d99e",
+    "full_permutation_positions_checked": 3594436,
+    "gcd_stride_live": 1,
+    "live_after_D": 3594436,
+    "preferred_jobs": 3604436,
+    "prior_D": 10000,
+    "stride": 104729,
+    "whole_position_sequence_sha256": "e46b631864747b9a15fdcf9eb16f4d5e8187259f1938ea321b89b573e728ee77"
+  },
+  "root_status": {
+    "OPEN": 11585,
+    "mathematical_wall_reduction_from_job_compression": false,
+    "ordinary_rows": 11585
+  }
+}

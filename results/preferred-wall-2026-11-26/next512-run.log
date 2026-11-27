@@ -1,0 +1,15 @@
+Batch next-0-10000.tsv.gz jobs 10000 next start 10000
+completed 20 / 271 blocks; 162 cells
+completed 40 / 271 blocks; 3218 cells
+completed 60 / 271 blocks; 5164 cells
+completed 80 / 271 blocks; 5736 cells
+completed 100 / 271 blocks; 6406 cells
+completed 120 / 271 blocks; 6838 cells
+completed 140 / 271 blocks; 7358 cells
+completed 160 / 271 blocks; 8121 cells
+completed 180 / 271 blocks; 8676 cells
+completed 200 / 271 blocks; 9407 cells
+completed 220 / 271 blocks; 9646 cells
+completed 240 / 271 blocks; 9800 cells
+completed 260 / 271 blocks; 9922 cells
+Counter({'OPEN': 10000}) 10000 5129608

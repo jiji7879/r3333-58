@@ -1,0 +1,37 @@
+{
+  "new_searches": 0,
+  "parent_identity_all_modes": true,
+  "preferred_pair_in_catalog": true,
+  "queries": {
+    "preferred": {
+      "cube_literals": 12,
+      "parent_header": "p cnf 19070 181818",
+      "parent_sha256": "ccf8b9e9fdc387efa61eab85e7d1cfc1fedda15afd0f05bf711dc98cdfce0481",
+      "query_bytes": 3567463,
+      "query_header": "p cnf 20635 187926",
+      "query_sha256": "e2a86483100cf96bc6560581556d341d06b21c32105062bf1c29f4a1d7f6b5b5"
+    },
+    "raw": {
+      "cube_literals": 10,
+      "parent_header": "p cnf 19070 181818",
+      "parent_sha256": "ccf8b9e9fdc387efa61eab85e7d1cfc1fedda15afd0f05bf711dc98cdfce0481",
+      "query_bytes": 3450137,
+      "query_header": "p cnf 19070 181828",
+      "query_sha256": "c28ff93460900066851ef9efa3eabc1a18a28b254b7b11368c1ae63eb90f0fa7"
+    },
+    "sorted": {
+      "cube_literals": 10,
+      "parent_header": "p cnf 19070 181818",
+      "parent_sha256": "ccf8b9e9fdc387efa61eab85e7d1cfc1fedda15afd0f05bf711dc98cdfce0481",
+      "query_bytes": 3455429,
+      "query_header": "p cnf 19094 182080",
+      "query_sha256": "9aad0ec607d847515ddcb6457f570592d3cca49cee39fbb8f71f91aae0f84541"
+    }
+  },
+  "row_id": "f936154b8863241cffd794e00baece058d5fef6bc3f7396c9fcbe7a1b48a7894",
+  "schema": "preferred-representative-export-audit/v1",
+  "words": [
+    "00020",
+    "01000"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "C_split": {
+    "complete_table_exclusions": 3359,
+    "raw_UNSAT": 0,
+    "solver_reported_UNSAT_SORTED_ARM": 2418,
+    "table_exclusions_still_OPEN_at_cap": 941,
+    "table_realizable_REASSIGN_or_PREFERRED_any_sorted_UNSAT": 0
+  },
+  "C_stage_status": {
+    "PREFERRED": {
+      "OPEN": 4391
+    },
+    "REASSIGN": {
+      "OPEN": 2250
+    },
+    "SORTED_ARM": {
+      "OPEN": 941,
+      "UNSAT_SORTED_ARM": 2418
+    }
+  },
+  "D_conflicts": {
+    "above_cap": 4794,
+    "below_cap": 0,
+    "equal_cap": 5206
+  },
+  "checks": {
+    "AB_exact_seed_and_uniform_without_replacement_draw_reproduced": true,
+    "C_exact_conditional_survivor_frame_draw_reproduced": true,
+    "C_raw_sorted_identities_rank_cap_and_physical_assumption_hashes_match": true,
+    "D_exact_conditional_preferred_frame_draw_reproduced": true,
+    "all_40000_global_indices_reconstructed": true,
+    "all_40000_stages_and_local_table_flags_recomputed": true,
+    "all_751_block_gz_receipts_reconstruct_top_level_probe_tables": true,
+    "all_probe_cells_join_exactly_to_identities_conflicts_and_statuses": true,
+    "all_probe_counts_conflicts_verdicts_and_block_times_match_metadata": true,
+    "all_rows_profiles_arms_and_words_match_roster": true,
+    "cold_controls_all_OPEN_not_closure": true,
+    "distinct_global_indices": 40000,
+    "distinct_physical_identities": 40000,
+    "distinct_rows": 11134,
+    "external_tsv_equals_bundled_trials_bytes": true,
+    "external_tsv_sha256": "10398532cfbccfa8fcc680f34308ad9465d71f976cbac56b117298ff3a08cae6",
+    "per_wave_ranks_exact_0_through_9999": true,
+    "projection_SAT_is_only_partial_graph_witness_not_full_row_closure": true,
+    "row_queue_all_11585_OPEN_counts_indices_and_D_charges_recomputed": true,
+    "trial_rows": 40000
+  },
+  "compression": {
+    "note": "Representative-count compression only; all ordinary rows remain OPEN.",
+    "preferred_divided_by_after_degree": 0.4366860603384974,
+    "preferred_divided_by_raw": 0.059266591964277554,
+    "preferred_divided_by_sorted": 0.6631175892373065,
+    "scheduled_job_reduction_percent": 94.07334080357225
+  },
+  "headline": {
+    "A_B_C_raw_OPEN": 30000,
+    "C_complete_local_table_exclusions": 3359,
+    "C_sorted_UNSAT_SORTED_ARM": 2418,
+    "D_preferred_OPEN": 10000,
+    "ordinary_wall_rows_OPEN": 11585,
+    "verified_whole_row_closures_in_these_probe_receipts": 0
+  },
+  "run_summaries": {
+    "cheap-C-control": {
+      "block_seconds_sum": 105.8953,
+      "block_size": {
+        "max": 192,
+        "mean": 129.87012987012986,
+        "median": 192.0,
+        "min": 3,
+        "n": 77,
+        "p05": 11.8,
+        "p25": 54.0,
+        "p75": 192.0,
+        "p95": 192.0,
+        "sum": 10000
+      },
+      "blocks": 77,
+      "conflicts": {
+        "max": 141,
+        "mean": 128.8377,
+        "median": 128.0,
+        "min": 128,
+        "n": 10000,
+        "p05": 128.0,
+        "p25": 128.0,
+        "p75": 129.0,
+        "p95": 131.0,
+        "sum": 1288377
+      },
+      "distinct_groups": 36,
+      "records": 10000,
+      "reported_run_seconds": 28.035,
+      "verdicts": {
+        "OPEN": 10000
+      },
+      "workers": 4
+    },
+    "cheap-preferred": {
+      "block_seconds_sum": 153.4194,
+      "block_size": {
+        "max": 192,
+        "mean": 38.61003861003861,
+        "median": 12.0,
+        "min": 1,
+        "n": 259,
+        "p05": 1.0,
+        "p25": 4.0,
+        "p75": 42.5,
+        "p95": 192.0,
+        "sum": 10000
+      },
+      "blocks": 259,
+      "conflicts": {
+        "max": 188,
+        "mean": 128.9283,
+        "median": 128.0,
+        "min": 128,
+        "n": 10000,
+        "p05": 128.0,
+        "p25": 128.0,
+        "p75": 129.0,
+        "p95": 131.0,
+        "sum": 1289283
+      },
+      "distinct_groups": 239,
+      "records": 10000,
+      "reported_run_seconds": 44.539,
+      "verdicts": {
+        "OPEN": 10000
+      },
+      "workers": 4
+    },
+    "cheap-raw": {
+      "block_seconds_sum": 239.1203,
+      "block_size": {
+        "max": 192,
+        "mean": 131.57894736842104,
+        "median": 192.0,
+        "min": 5,
+        "n": 152,
+        "p05": 8.0,
+        "p25": 54.0,
+        "p75": 192.0,
+        "p95": 192.0,
+        "sum": 20000
+      },
+      "blocks": 152,
+      "conflicts": {
+        "max": 176,
+        "mean": 128.82365,
+        "median": 128.0,
+        "min": 128,
+        "n": 20000,
+        "p05": 128.0,
+        "p25": 128.0,
+        "p75": 129.0,
+        "p95": 131.0,
+        "sum": 2576473
+      },
+      "distinct_groups": 36,
+      "records": 20000,
+      "reported_run_seconds": 62.565,
+      "verdicts": {
+        "OPEN": 20000
+      },
+      "workers": 4
+    },
+    "cheap-sorted": {
+      "block_seconds_sum": 281.4424,
+      "block_size": {
+        "max": 192,
+        "mean": 38.02281368821293,
+        "median": 11.0,
+        "min": 1,
+        "n": 263,
+        "p05": 1.0,
+        "p25": 4.0,
+        "p75": 40.0,
+        "p95": 192.0,
+        "sum": 10000
+      },
+      "blocks": 263,
+      "conflicts": {
+        "max": 152,
+        "mean": 101.1952,
+        "median": 128.0,
+        "min": 0,
+        "n": 10000,
+        "p05": 0.0,
+        "p25": 128.0,
+        "p75": 129.0,
+        "p95": 131.0,
+        "sum": 1011952
+      },
+      "distinct_groups": 243,
+      "records": 10000,
+      "reported_run_seconds": 101.044,
+      "verdicts": {
+        "OPEN": 7582,
+        "UNSAT_SORTED_ARM": 2418
+      },
+      "workers": 3
+    }
+  }
+}
+WROTE /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwy7kg2n/m1/work/audit_results.json
