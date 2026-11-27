@@ -48,3 +48,37 @@ run remains a failure, not a reusable closure.
 Current measured result: four exact representative closures, all already
 excluded by the local table; zero closure on the fixed 12 locally surviving
 jobs. Stop after the matched cohort.
+
+## Mandatory joining-colour children
+
+`joining3s.py` implements the separately frozen four-pair primary experiment
+and `verify_joining3s.py` independently checks its artifacts. It does not
+combine the superseded six-pair reserve schedule with the primary cohort.
+
+For each representative, preparation regenerates the exact `round50` parent,
+representative and singleton child, and refutes all three other physical
+joining-colour branches on that exact representative. Transported RUP proofs
+are replayed with `-i -U`; fresh direct CaDiCaL proofs use unrestricted DRAT
+`-i`. There is no `-w`. Empty local/full proofs are negative controls.
+
+The ten-call run begins with two known positive controls. A control failure
+stops the run before candidates. Every formula gets a fresh process, a
+three-second native search timer, a separately monitored six-second
+solve-phase watchdog (0.05-second polling), and a 120-second worker cutoff. A
+representative closes only after a strict direct proof, or a strict child
+proof with all three complementary proofs. OPEN or broken infrastructure is
+never closure.
+
+```sh
+ROOT=/absolute/path/to/K58_wall_50k
+OUT=.scratch/solver50/joining3s-reproduction
+"$ROOT/.venv/bin/python" tools/solver50/joining3s.py "$ROOT" \
+  --design .ultramath/smwyejhdn/m3/execution-ready --out "$OUT"
+"$ROOT/.venv/bin/python" tools/solver50/verify_joining3s.py "$ROOT" \
+  --prepared "$OUT"
+```
+
+Use a new output path each time. `--prepare-only` launches no SAT search.
+Measured result: both fresh controls verified, all eight candidate parent/child
+queries OPEN, zero new representative or whole-row closures. Full evidence and
+reproduction notes are in `results/solver50-joining3s-2026-11-27/`.

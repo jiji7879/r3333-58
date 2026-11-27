@@ -105,6 +105,14 @@ closed nothing under fresh or shared execution. No whole-row or solver-speed
 claim changes. See
 [results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md](results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md).
 
+**Mandatory joining-colour probe, 2026-11-27:** four unprobed representatives
+were compared with their sole unrefuted joining children after independently
+replaying proofs of every complementary physical colour branch. Both fresh
+controls closed with verified DRAT; all eight candidate parent/child calls hit
+the three-second search deadline. No new representative or row closed, so this
+is not evidence for scaling the mechanism. See
+[results/solver50-joining3s-2026-11-27/RESULTS.md](results/solver50-joining3s-2026-11-27/RESULTS.md).
+
 Two side results from the same period, both certified and both explicitly
 non-progress on the bound:
 

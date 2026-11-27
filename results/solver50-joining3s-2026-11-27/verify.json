@@ -1,0 +1,8 @@
+{
+  "closed_representatives_rechecked": 0,
+  "fresh_control_replays": 2,
+  "fresh_query_replays": 2,
+  "negative_controls_rejected": 4,
+  "prepared_representatives": 4,
+  "strict_complementary_proof_replays": 12
+}

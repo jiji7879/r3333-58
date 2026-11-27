@@ -1,0 +1,25 @@
+prepared A11 arm=11: 3 complementary branches strictly refuted
+prepared A12 arm=12: 3 complementary branches strictly refuted
+prepared A13 arm=13: 3 complementary branches strictly refuted
+prepared A14 arm=14: 3 complementary branches strictly refuted
+0  positive_control VERIFIED_UNSAT 159 0.0063
+1  positive_control VERIFIED_UNSAT 1863 0.0358
+2 A11 parent OPEN 86181 3.0022
+3 A12 child OPEN 78017 3.0029
+4 A13 parent OPEN 77322 3.0021
+5 A14 child OPEN 79246 3.0022
+6 A14 parent OPEN 66271 3.0024
+7 A13 child OPEN 81234 3.0022
+8 A12 parent OPEN 77915 3.0022
+9 A11 child OPEN 95478 3.0022
+{
+  "records": 10,
+  "status_counts": {
+    "OPEN": 8,
+    "VERIFIED_UNSAT": 2
+  },
+  "cohort_complete": true,
+  "sum_search_seconds": 24.060446951072663,
+  "closed_representatives": 0,
+  "whole_original_rows_closed": 0
+}

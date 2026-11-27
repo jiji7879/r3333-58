@@ -28,6 +28,15 @@ no general solver winner and no target-row or wall closure. The shared/direct
 comparison checks query and proof identities and is not described as a speedup.
 Read [results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md](results/solver50-3s-2026-11-27/THREE_SECOND_RESULTS.md).
 
+**Updated 2026-11-27 (mandatory joining-colour children).** Four genuinely
+unprobed new-cover representatives were tested against their sole unrefuted
+joining children, with exact, independently replayed refutations of every
+other physical colour branch. Eight parent/child CaDiCaL calls all remained
+OPEN at three seconds; two fresh positive controls produced replayed DRAT
+proofs. There are zero new representative or row closures and no basis to
+scale this mechanism. Read
+[results/solver50-joining3s-2026-11-27/RESULTS.md](results/solver50-joining3s-2026-11-27/RESULTS.md).
+
 **Updated 2026-11-26 (adaptive-cache integrity).** Cached native proofs/models
 and persisted tree verdicts are now revalidated before reuse/export; malformed
 artifacts stay nonterminal, DRAT replay does not use warning suppression, and
