@@ -10,7 +10,38 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
-**Updated 2026-11-27 (two-site consequences audit).** The supplied case-0
+**Updated 2026-11-27 (the two trigger assumptions are now excluded on signed
+case 0).** The 24-pattern package closes all remaining 7+17 words from the
+preceding two-site checkpoint. There are 217 complete arm alternatives
+(69/148), four direct word refutations and 203 arm refutations, plus exhaustive
+arm-cover proofs. With the two eliminated pivot colours and the exact 7/17
+prior covers, this gives the full signed-parent entailment
+$P\Rightarrow\neg E_{31,13,0}\lor\neg E_{42,13,1}$, printed as
+`-2721 -2766 0`. This is **not** an unconditional branch or representative
+closure, a model, or a Ramsey result, and it does not transfer automatically
+to other owners. Source archive and raw parent SHA-256 are checked against the
+prior package.
+
+All **236** component proofs passed strict replay, with whole proof files read,
+one exact `s VERIFIED`, no warnings/errors and zero RAT lemmas. The separately
+written DAG audit passed **2,113 assertions**, reconstructs every expected
+query/hash and certifies the case-combination. The supplied verifier's final
+conditional-clause loop is vacuous with no retained leaves, so the conclusion
+rests on the explicit exhaustive/disjunctive argument, not on its printed
+`OPEN=[]` or `Verified conditional clauses` line. One model's 8/28 versus 7/17
+case-count confusion was caught and corrected before accepting its inherited
+cover/composition review. A later submitted literal-fidelity report was read
+independently; remaining swarm work was then stopped at the person’s request.
+Satisfiable/unrelated-query and truncated-proof controls reject.
+
+Proof, compute checks and receipts:
+[research/k58-case0-24-patterns/proof.md](research/k58-case0-24-patterns/proof.md).
+The Siege gate returns `PROVED #2` for this conditional implication, not a
+wall closure or theorem about `R(3,3,3,3)`. No production ledger or sweep was
+modified.
+
+**Updated 2026-11-27 (two-site consequences audit; the earlier state used
+ by the preceding 24-pattern continuation).** The supplied case-0
 package now has a scoped, independently checked verdict: twelve word
 refutations on the **full signed parent**, plus an exact conditional frontier
 of 24 still-OPEN words under the two trigger pins $(31,13)=0,(42,13)=1$.
