@@ -1,0 +1,25 @@
+{
+  "answer": false,
+  "clauses": 220097,
+  "cnf": "research/k58-arm-cap-clauses/work/m1-reproduced-r1300-two5.cnf",
+  "cnf_bytes": 4269511,
+  "cnf_sha256": "fe9de879d99b320c57c7d90582842a532a045da9c3d90c8df5880d96498eb9af",
+  "conflict_budget": 1200000,
+  "construction_cpu_seconds": 0.065855726,
+  "parse_cpu_seconds": 0.031051014999999998,
+  "pid": 44748,
+  "python_sat": "1.9.dev22",
+  "search_cpu_seconds": 39.907911831,
+  "search_wall_seconds": 48.366326002869755,
+  "seed": 0,
+  "solver": "python-sat Cadical195",
+  "stats": {
+    "conflicts": 796760,
+    "decisions": 1296311,
+    "propagations": 98781013,
+    "restarts": 25971
+  },
+  "status": "UNSAT",
+  "total_wall_seconds": 48.46807904611342,
+  "variables": 34865
+}

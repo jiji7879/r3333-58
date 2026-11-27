@@ -1,0 +1,9 @@
+{
+  "six_pairs": 6,
+  "stock_conflicts": 6029773,
+  "guided_conflicts": 5283249,
+  "conflict_reduction_percent": 12.380631907701998,
+  "stock_cpu": 332.211016051,
+  "guided_cpu": 302.258322864,
+  "cpu_reduction_percent": 9.016164949329006
+}

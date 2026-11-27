@@ -1,0 +1,5 @@
+c turning on binary mode checking
+c parsing input formula with 29942 variables and 211564 clauses
+c WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 714 0
+Command exited with non-zero status 80
+wall=0.22 user=0.10 sys=0.01 rss_kb=71832 exit=80

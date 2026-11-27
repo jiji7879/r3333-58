@@ -1,0 +1,69 @@
+{
+  "distribution": {
+    "integer_triples_0_to_5": 216,
+    "legal_totals_at_least_14": {
+      "14": [
+        [
+          4,
+          5,
+          5
+        ],
+        [
+          5,
+          4,
+          5
+        ],
+        [
+          5,
+          5,
+          4
+        ]
+      ],
+      "15": [
+        [
+          5,
+          5,
+          5
+        ]
+      ]
+    },
+    "selector_extensions_checked": 220,
+    "total_13_counterexample": [
+      5,
+      4,
+      4
+    ]
+  },
+  "generation": {
+    "added_clauses": 8533,
+    "augmented_sha256": "fe9de879d99b320c57c7d90582842a532a045da9c3d90c8df5880d96498eb9af",
+    "augmented_variables": 34865,
+    "base_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+    "coordinator_receipt": "work/m1-coordinator-r1300-two5.json",
+    "original_body_preserved": true,
+    "original_variables": 29942,
+    "pair_selector_clauses": 168
+  },
+  "original_parent_replay": {
+    "accepted": true,
+    "clause_kind": "representative direct guarded per-arm lower bound; not a whole-row or full two5 proof",
+    "flags": [
+      "-i",
+      "-U",
+      "-W",
+      "-t",
+      "300"
+    ],
+    "full_read": [
+      16661
+    ],
+    "proof_bytes": 16661,
+    "proof_sha256": "a98bffd0f6d6f66d581de7e5202dc439defe2829f17d148910e5adf8a029ec1b",
+    "query_sha256": "e5b7353e84344d661f4be820a8b9b59911ccf9ae51a54ae3c5ca7624293e34a0"
+  },
+  "two_color_finite": {
+    "K5_triangle_free_colorings": 12,
+    "K6_triangle_free_colorings": 0,
+    "assignments_K6_checked": 32768
+  }
+}

@@ -1,0 +1,5 @@
+c turning on binary mode checking
+c parsing input formula with 29942 variables and 211564 clauses
+c finished parsing, read 48752028 bytes from proof file
+Command exited with non-zero status 80
+wall=2.05 user=0.96 sys=0.04 rss_kb=135960 exit=80

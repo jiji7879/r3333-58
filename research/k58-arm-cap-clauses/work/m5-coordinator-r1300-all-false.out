@@ -1,0 +1,1 @@
+{"out": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-arm-cap-clauses/work/m5-coordinator-r1300-all-false.json", "policy": "all-false", "search_cpu_seconds": 41.589473811, "search_wall_seconds": 52.8008164439816, "seed": 0, "stats": {"conflicts": 745335, "decisions": 1317934, "propagations": 93044313, "restarts": 23993}, "status": "UNSAT"}

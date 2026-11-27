@@ -1,0 +1,386 @@
+[
+  {
+    "base_clauses": 211564,
+    "base_generation_cpu_seconds": 0.777001453,
+    "base_variables": 29942,
+    "cap_stats": {
+      "candidate_literals": 2255,
+      "clause_literals": 34745,
+      "clauses": 14630,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.02597857399999992,
+      "new_variables": 6968,
+      "next_top": 36910,
+      "scope": "unconditional",
+      "zero_cap_literals": 17
+    },
+    "charge": 11,
+    "conflict_budget": 60000,
+    "direct_clauses": 652,
+    "id": "c4bd798bd4f8fd7c73150164685bc79cc6ca9bc4f79ed5ad3d33179f470b7ae2",
+    "input_sha256": "e5304d3c469a8e1be3ea697395dac823408b2d46db7b9ba07d41a5fef6eb740e",
+    "kinds": "TTT-",
+    "lower_variants": {
+      "arm4": {
+        "clause_literals": 39222,
+        "clauses": 11240,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.0041155260000000915,
+        "impossible_guards": 0,
+        "kind": "arm4",
+        "new_variables": 6122,
+        "next_top": 43032
+      },
+      "pair9": {
+        "clause_literals": 176808,
+        "clauses": 50680,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.014785017999999983,
+        "impossible_guards": 0,
+        "kind": "pair9",
+        "new_variables": 26176,
+        "next_top": 63086
+      }
+    },
+    "policies": {
+      "caps_arm4": {
+        "added_clauses": 25870,
+        "conflicts": 60002,
+        "decisions": 134716,
+        "propagations": 12290958,
+        "restarts": 2545,
+        "search_cpu_seconds": 2.6757756409999995,
+        "status": "OPEN"
+      },
+      "caps_pair9": {
+        "added_clauses": 65310,
+        "conflicts": 60000,
+        "decisions": 141213,
+        "propagations": 10942184,
+        "restarts": 2412,
+        "search_cpu_seconds": 2.6140973900000004,
+        "status": "OPEN"
+      },
+      "caps_pair9_plus_direct": {
+        "added_clauses": 65962,
+        "conflicts": 60000,
+        "decisions": 145045,
+        "propagations": 10995053,
+        "restarts": 2597,
+        "search_cpu_seconds": 2.614066145,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60002,
+        "decisions": 136912,
+        "propagations": 9872388,
+        "restarts": 2897,
+        "search_cpu_seconds": 2.296172457000001,
+        "status": "OPEN"
+      },
+      "unconditional_caps": {
+        "added_clauses": 14630,
+        "conflicts": 60000,
+        "decisions": 116925,
+        "propagations": 11719587,
+        "restarts": 1934,
+        "search_cpu_seconds": 2.515948702000001,
+        "status": "OPEN"
+      }
+    },
+    "profile": "15,15,15,12",
+    "proof_bytes": 365296434,
+    "rank": 8,
+    "seed": 0
+  },
+  {
+    "base_clauses": 206476,
+    "base_generation_cpu_seconds": 0.23947686400000023,
+    "base_variables": 29590,
+    "cap_stats": {
+      "candidate_literals": 2255,
+      "clause_literals": 34745,
+      "clauses": 14630,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.004212857999998931,
+      "new_variables": 6968,
+      "next_top": 36558,
+      "scope": "unconditional",
+      "zero_cap_literals": 17
+    },
+    "charge": 3,
+    "conflict_budget": 60000,
+    "direct_clauses": 666,
+    "id": "e58720ff75d478b4cc57a5f1639ca6c9b85070e0b68fad8d73f4def3445a9f7f",
+    "input_sha256": "32989b77a3a6c826a89c6e1e5faa535733dffbd7819f72380c92f5a3308dea9e",
+    "kinds": "TUU-",
+    "lower_variants": {
+      "arm4": {
+        "clause_literals": 39222,
+        "clauses": 11240,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.032920557999998934,
+        "impossible_guards": 0,
+        "kind": "arm4",
+        "new_variables": 6122,
+        "next_top": 42680
+      },
+      "pair9": {
+        "clause_literals": 176808,
+        "clauses": 50680,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.013582935000000518,
+        "impossible_guards": 0,
+        "kind": "pair9",
+        "new_variables": 26176,
+        "next_top": 62734
+      }
+    },
+    "policies": {
+      "caps_arm4": {
+        "added_clauses": 25870,
+        "conflicts": 60001,
+        "decisions": 132305,
+        "propagations": 11092282,
+        "restarts": 2647,
+        "search_cpu_seconds": 2.319423983,
+        "status": "OPEN"
+      },
+      "caps_pair9": {
+        "added_clauses": 65310,
+        "conflicts": 60002,
+        "decisions": 146075,
+        "propagations": 10433174,
+        "restarts": 2786,
+        "search_cpu_seconds": 2.314281761,
+        "status": "OPEN"
+      },
+      "caps_pair9_plus_direct": {
+        "added_clauses": 65976,
+        "conflicts": 60000,
+        "decisions": 142711,
+        "propagations": 10346878,
+        "restarts": 2615,
+        "search_cpu_seconds": 2.2732939159999983,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60002,
+        "decisions": 212376,
+        "propagations": 19176381,
+        "restarts": 3754,
+        "search_cpu_seconds": 2.522691117000001,
+        "status": "OPEN"
+      },
+      "unconditional_caps": {
+        "added_clauses": 14630,
+        "conflicts": 60003,
+        "decisions": 127870,
+        "propagations": 10944432,
+        "restarts": 2580,
+        "search_cpu_seconds": 2.2361388180000006,
+        "status": "OPEN"
+      }
+    },
+    "profile": "15,15,15,12",
+    "proof_bytes": 234636622,
+    "rank": 132,
+    "seed": 0
+  },
+  {
+    "base_clauses": 218948,
+    "base_generation_cpu_seconds": 0.27879494500000135,
+    "base_variables": 30198,
+    "cap_stats": {
+      "candidate_literals": 2247,
+      "clause_literals": 34537,
+      "clauses": 14542,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.004302606999999625,
+      "new_variables": 6928,
+      "next_top": 37126,
+      "scope": "unconditional",
+      "zero_cap_literals": 17
+    },
+    "charge": 10,
+    "conflict_budget": 60000,
+    "direct_clauses": 618,
+    "id": "9a1dfad86ba28ba607737048b90fa80b50eb5a7f0441f024f96060966d806db2",
+    "input_sha256": "79eb59d8b399f6b695c0d09fd3071242a440791732ce71b8ac0105772040d694",
+    "kinds": "TTT-",
+    "lower_variants": {
+      "arm4": {
+        "clause_literals": 39022,
+        "clauses": 11184,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.004189413999998948,
+        "impossible_guards": 0,
+        "kind": "arm4",
+        "new_variables": 6090,
+        "next_top": 43216
+      },
+      "pair9": {
+        "clause_literals": 175848,
+        "clauses": 50408,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.04634792199999893,
+        "impossible_guards": 0,
+        "kind": "pair9",
+        "new_variables": 26032,
+        "next_top": 63158
+      }
+    },
+    "policies": {
+      "caps_arm4": {
+        "added_clauses": 25726,
+        "conflicts": 60001,
+        "decisions": 128911,
+        "propagations": 11783073,
+        "restarts": 2547,
+        "search_cpu_seconds": 2.4591239359999975,
+        "status": "OPEN"
+      },
+      "caps_pair9": {
+        "added_clauses": 64950,
+        "conflicts": 60001,
+        "decisions": 144593,
+        "propagations": 12261023,
+        "restarts": 2316,
+        "search_cpu_seconds": 2.504922803999996,
+        "status": "OPEN"
+      },
+      "caps_pair9_plus_direct": {
+        "added_clauses": 65568,
+        "conflicts": 60003,
+        "decisions": 142737,
+        "propagations": 12142850,
+        "restarts": 2252,
+        "search_cpu_seconds": 2.4416607269999986,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60000,
+        "decisions": 148828,
+        "propagations": 10995278,
+        "restarts": 3057,
+        "search_cpu_seconds": 2.1280051459999996,
+        "status": "OPEN"
+      },
+      "unconditional_caps": {
+        "added_clauses": 14542,
+        "conflicts": 60000,
+        "decisions": 111015,
+        "propagations": 12000777,
+        "restarts": 1871,
+        "search_cpu_seconds": 2.1888944959999996,
+        "status": "OPEN"
+      }
+    },
+    "profile": "16,15,15,11",
+    "proof_bytes": 188430430,
+    "rank": 255,
+    "seed": 0
+  },
+  {
+    "base_clauses": 208360,
+    "base_generation_cpu_seconds": 0.23443360799999624,
+    "base_variables": 29593,
+    "cap_stats": {
+      "candidate_literals": 2248,
+      "clause_literals": 34652,
+      "clauses": 14588,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.00444268900000111,
+      "new_variables": 6951,
+      "next_top": 36544,
+      "scope": "unconditional",
+      "zero_cap_literals": 16
+    },
+    "charge": 5,
+    "conflict_budget": 60000,
+    "direct_clauses": 702,
+    "id": "88bf7e10f1421f909b94eb06d81eaed34ec8d2b7bd6d7edd7f2eb65f927111ca",
+    "input_sha256": "5ac15fc2f02935d99436d43289532a562f89a3b8d01ea237c2e7548920707570",
+    "kinds": "TUU-",
+    "lower_variants": {
+      "arm4": {
+        "clause_literals": 39173,
+        "clauses": 11227,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.004107631000003664,
+        "impossible_guards": 0,
+        "kind": "arm4",
+        "new_variables": 6112,
+        "next_top": 42656
+      },
+      "pair9": {
+        "clause_literals": 175968,
+        "clauses": 50442,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.013271932000002096,
+        "impossible_guards": 0,
+        "kind": "pair9",
+        "new_variables": 26050,
+        "next_top": 62594
+      }
+    },
+    "policies": {
+      "caps_arm4": {
+        "added_clauses": 25815,
+        "conflicts": 60000,
+        "decisions": 127436,
+        "propagations": 11352890,
+        "restarts": 2371,
+        "search_cpu_seconds": 2.364403515999996,
+        "status": "OPEN"
+      },
+      "caps_pair9": {
+        "added_clauses": 65030,
+        "conflicts": 60000,
+        "decisions": 142093,
+        "propagations": 10521960,
+        "restarts": 2680,
+        "search_cpu_seconds": 2.317026259000002,
+        "status": "OPEN"
+      },
+      "caps_pair9_plus_direct": {
+        "added_clauses": 65732,
+        "conflicts": 60000,
+        "decisions": 142813,
+        "propagations": 10832024,
+        "restarts": 2576,
+        "search_cpu_seconds": 2.3210443489999975,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60000,
+        "decisions": 133838,
+        "propagations": 9253707,
+        "restarts": 2853,
+        "search_cpu_seconds": 1.9452898179999991,
+        "status": "OPEN"
+      },
+      "unconditional_caps": {
+        "added_clauses": 14588,
+        "conflicts": 60001,
+        "decisions": 110591,
+        "propagations": 11119429,
+        "restarts": 1709,
+        "search_cpu_seconds": 2.249108159000002,
+        "status": "OPEN"
+      }
+    },
+    "profile": "16,15,15,11",
+    "proof_bytes": 164747538,
+    "rank": 340,
+    "seed": 0
+  }
+]

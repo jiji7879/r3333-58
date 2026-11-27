@@ -1,0 +1,66 @@
+{
+  "all_clause_certificates_checked_against_every_independently_enumerated_support": true,
+  "count_distributions_enumerated": 216,
+  "fixed_scope_negative_control": {
+    "arm": 1,
+    "certificate": [
+      -4960,
+      -4472
+    ],
+    "certificate_fails_without_original_scope": true,
+    "clause_index": 0,
+    "counter_support_local_indices": [
+      0,
+      2,
+      3,
+      8,
+      12
+    ],
+    "support_is_excluded_by_original_fixed_spokes": true
+  },
+  "guard_broken_satisfiable_control": {
+    "details": [
+      {
+        "actual_size": 4,
+        "arm": 1,
+        "certificate_may_be_false_below_size_five": true,
+        "negative_literals_falsified_by_including_required_vertices": [
+          -4960,
+          -4472
+        ],
+        "positive_literals_falsified_by_excluding_vertices": []
+      },
+      {
+        "actual_size": 4,
+        "arm": 2,
+        "certificate_may_be_false_below_size_five": true,
+        "negative_literals_falsified_by_including_required_vertices": [
+          -6320,
+          -6220
+        ],
+        "positive_literals_falsified_by_excluding_vertices": []
+      },
+      {
+        "actual_size": 5,
+        "arm": 0
+      }
+    ],
+    "guard_at_least_14_is_false": true,
+    "support_sizes": [
+      4,
+      4,
+      5
+    ],
+    "total": 13
+  },
+  "guard_semantics": "each guard is rebound by hash-matching marked_threshold; implication uses only guard -> at least 14 other-arm color-c neighbours",
+  "id": "286dc9e4c168ddd95cf60fe56d5309e9bbc7c096d0034b5f980d261cd7df1dff",
+  "input_sha256": "1b64a42899da92580af353c09be7772ad5dc785b97809aa3ce744cf115e0c98a",
+  "original_units_only_no_extra_cube": true,
+  "per_arm_cap_proof": "internal edges in a color-c support avoid its root arm color and c; six vertices would be a two-color triangle-free K6, hence at most five",
+  "rank": 1200,
+  "schema": "independent-signed-pair-finite-verification/v1",
+  "scope": "Finite verification of the emitted clauses on this exact parent; not a whole-parent UNSAT replay and not a solver speed result.",
+  "verification_cpu_seconds": 0.4445335039999999,
+  "verified_clause_count": 3709
+}

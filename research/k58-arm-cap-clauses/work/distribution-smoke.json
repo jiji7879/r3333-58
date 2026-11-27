@@ -1,0 +1,98 @@
+[
+  {
+    "base_clauses": 211564,
+    "base_generation_cpu_seconds": 0.771608527,
+    "base_variables": 29942,
+    "cap_stats": {
+      "candidate_literals": 2255,
+      "clause_literals": 34745,
+      "clauses": 14630,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.02675773199999998,
+      "new_variables": 6968,
+      "next_top": 36910,
+      "scope": "unconditional",
+      "zero_cap_literals": 17
+    },
+    "charge": 11,
+    "conflict_budget": 1000,
+    "direct_clauses": 652,
+    "id": "c4bd798bd4f8fd7c73150164685bc79cc6ca9bc4f79ed5ad3d33179f470b7ae2",
+    "input_sha256": "e5304d3c469a8e1be3ea697395dac823408b2d46db7b9ba07d41a5fef6eb740e",
+    "kinds": "TTT-",
+    "lower_variants": {
+      "arm4": {
+        "clause_literals": 39222,
+        "clauses": 11240,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.004125803999999955,
+        "impossible_guards": 0,
+        "kind": "arm4",
+        "new_variables": 6122,
+        "next_top": 43032
+      },
+      "pair9": {
+        "clause_literals": 176808,
+        "clauses": 50680,
+        "counter_groups": 168,
+        "generation_cpu_seconds": 0.014758979000000005,
+        "impossible_guards": 0,
+        "kind": "pair9",
+        "new_variables": 26176,
+        "next_top": 63086
+      }
+    },
+    "policies": {
+      "caps_arm4": {
+        "added_clauses": 25870,
+        "conflicts": 1002,
+        "decisions": 10658,
+        "propagations": 243266,
+        "restarts": 105,
+        "search_cpu_seconds": 0.02584790899999989,
+        "status": "OPEN"
+      },
+      "caps_pair9": {
+        "added_clauses": 65310,
+        "conflicts": 1000,
+        "decisions": 20363,
+        "propagations": 254254,
+        "restarts": 129,
+        "search_cpu_seconds": 0.028627049000000016,
+        "status": "OPEN"
+      },
+      "caps_pair9_plus_direct": {
+        "added_clauses": 65962,
+        "conflicts": 1000,
+        "decisions": 20363,
+        "propagations": 255265,
+        "restarts": 129,
+        "search_cpu_seconds": 0.028735752999999975,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 1004,
+        "decisions": 8112,
+        "propagations": 162509,
+        "restarts": 163,
+        "search_cpu_seconds": 0.02765945599999986,
+        "status": "OPEN"
+      },
+      "unconditional_caps": {
+        "added_clauses": 14630,
+        "conflicts": 1001,
+        "decisions": 4256,
+        "propagations": 209114,
+        "restarts": 28,
+        "search_cpu_seconds": 0.02489586399999988,
+        "status": "OPEN"
+      }
+    },
+    "profile": "15,15,15,12",
+    "proof_bytes": 365296434,
+    "rank": 8,
+    "seed": 0
+  }
+]

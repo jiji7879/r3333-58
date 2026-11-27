@@ -1,0 +1,85 @@
+{
+  "all_passed": true,
+  "engine": "Cadical195 via python-sat 1.9.dev22",
+  "finite_controls": [
+    {
+      "clauses": 40,
+      "colors": 2,
+      "exhaustive_edge_assignments": 1024,
+      "exhaustive_valid_colorings": 12,
+      "expected": "SAT",
+      "input_sha256": "4d9ad8b329a1838633b95402f8b7e3e723cc06d05c145edb53eb7b545dc73a8a",
+      "runs": [
+        {
+          "cpu_seconds": 0.00014796799999999832,
+          "model_checked": true,
+          "policy": "stock",
+          "stats": {
+            "conflicts": 2,
+            "decisions": 5,
+            "propagations": 30,
+            "restarts": 0
+          },
+          "status": "SAT"
+        },
+        {
+          "cpu_seconds": 5.487199999999748e-05,
+          "model_checked": true,
+          "policy": "all-false",
+          "stats": {
+            "conflicts": 3,
+            "decisions": 6,
+            "propagations": 39,
+            "restarts": 0
+          },
+          "status": "SAT"
+        }
+      ],
+      "variables": 20,
+      "vertices": 5
+    },
+    {
+      "clauses": 70,
+      "colors": 2,
+      "exhaustive_edge_assignments": 32768,
+      "exhaustive_valid_colorings": 0,
+      "expected": "UNSAT",
+      "input_sha256": "a60bc7efd7bf6d97835db6e0c0939b6ab44cb43f9c038d8f8e731ce46fae58e1",
+      "runs": [
+        {
+          "cpu_seconds": 0.00014931099999998532,
+          "model_checked": true,
+          "policy": "stock",
+          "stats": {
+            "conflicts": 21,
+            "decisions": 26,
+            "propagations": 224,
+            "restarts": 0
+          },
+          "status": "UNSAT"
+        },
+        {
+          "cpu_seconds": 7.364700000001001e-05,
+          "model_checked": true,
+          "policy": "all-false",
+          "stats": {
+            "conflicts": 21,
+            "decisions": 24,
+            "propagations": 215,
+            "restarts": 0
+          },
+          "status": "UNSAT"
+        }
+      ],
+      "variables": 30,
+      "vertices": 6
+    }
+  ],
+  "meaning": "Phases cannot change models: identical clauses plus a satisfiable control preclude a universal false-UNSAT claim.",
+  "seed": 0,
+  "wrong_hash_negative_control": {
+    "actual_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+    "expected_wrong_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "would_reject_before_solver": true
+  }
+}

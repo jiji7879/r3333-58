@@ -1,0 +1,18 @@
+{
+  "answer": false,
+  "clauses": 220097,
+  "cnf_sha256": "fe9de879d99b320c57c7d90582842a532a045da9c3d90c8df5880d96498eb9af",
+  "conflict_budget": 1200000,
+  "policy": "two5+all-false",
+  "search_cpu_seconds": 47.18174133,
+  "search_wall_seconds": 47.43992560496554,
+  "seed": 0,
+  "stats": {
+    "conflicts": 847047,
+    "decisions": 1385932,
+    "propagations": 103501199,
+    "restarts": 23393
+  },
+  "status": "UNSAT",
+  "variables": 34865
+}

@@ -1,0 +1,60 @@
+{
+  "binary_pattern_counts": {
+    "adjacent=False": 98,
+    "adjacent=True": 3218,
+    "colors=0": 1006,
+    "colors=0,1": 103,
+    "colors=0,2": 85,
+    "colors=0,3": 35,
+    "colors=1": 600,
+    "colors=1,2": 20,
+    "colors=1,3": 15,
+    "colors=2": 589,
+    "colors=2,3": 7,
+    "colors=3": 856,
+    "root_edges=0": 3316,
+    "same_edge=False": 3316,
+    "signs=++": 29,
+    "signs=+-": 90,
+    "signs=-+": 91,
+    "signs=--": 3106
+  },
+  "core_proof_sha256": "6e67adb7086d7828c1abf77f4a13034c07b4018a0153696da80b6a78c8854d4b",
+  "formulas": {
+    "learned_le3": {
+      "added": 5212,
+      "bytes": 4142448,
+      "path": ".scratch/arm-cap-research/rank1300-learned-le3.cnf",
+      "sha256": "3aa38a57520cd0432a156acd2920b7f3e03e1bb848a2d9b8793a0ddd950853b6"
+    },
+    "units": {
+      "added": 15,
+      "bytes": 4061474,
+      "path": ".scratch/arm-cap-research/rank1300-learned-units.cnf",
+      "sha256": "83fb5c8f194fc2638dc2bef9aac4a205cb4165b0071cead5f6b567f85a1b9e86"
+    },
+    "units_binary": {
+      "added": 3331,
+      "bytes": 4107659,
+      "path": ".scratch/arm-cap-research/rank1300-learned-units-binary.cnf",
+      "sha256": "7922866335d57934ba7b9d6967b8f412cc2c251c20c3e1d0950352fefddef8ba"
+    }
+  },
+  "original_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+  "ternary_sign_counts": {
+    "signs=+++": 145,
+    "signs=++-": 405,
+    "signs=+-+": 107,
+    "signs=+--": 179,
+    "signs=-++": 317,
+    "signs=-+-": 304,
+    "signs=--+": 255,
+    "signs=---": 169
+  },
+  "unique_new_by_length": {
+    "1": 15,
+    "2": 3316,
+    "3": 1881
+  },
+  "unique_total": 5212
+}

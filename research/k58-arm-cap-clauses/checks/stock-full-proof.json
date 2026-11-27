@@ -1,0 +1,45 @@
+{
+  "first_deletion_free_full_attempt": "timeout at checker limit 300 seconds; not counted as verification",
+  "flags": [
+    "-i",
+    "-U",
+    "-W",
+    "-t",
+    "600"
+  ],
+  "normalization": "only complete binary deletion records omitted from core; every addition preserved",
+  "parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+  "raw_check": {
+    "errors": 0,
+    "log": "research/k58-arm-cap-clauses/work/glucose-rank1300/stock-core-check.log",
+    "proof_bytes": null,
+    "read_counts": [
+      90064584
+    ],
+    "status_lines": [
+      "s VERIFIED"
+    ],
+    "warnings": 236,
+    "zero_rat": true
+  },
+  "raw_proof_bytes": 90064584,
+  "raw_proof_sha256": "91be718315926c5f0348a5d98a211b70e3dec2c4345ccea05d275fc58b3bbac5",
+  "raw_verified_with_visible_pseudo_unit_deletion_warnings": true,
+  "row_id": "e52b5bdaef139b32a0778abac2b39470076bd55b225de3840bafc83e9110556b",
+  "scope": "fresh stock CaDiCaL 1.9.5 refutation of rank 1300, not a new Ramsey result",
+  "strict_core_check": {
+    "errors": 0,
+    "log": "research/k58-arm-cap-clauses/work/glucose-rank1300/stock-core-nodeletions-strict-check.log",
+    "proof_bytes": 24356572,
+    "read_counts": [
+      24356572
+    ],
+    "status_lines": [
+      "s VERIFIED"
+    ],
+    "warnings": 0,
+    "zero_rat": true
+  },
+  "strict_core_proof_bytes": 24356572,
+  "strict_core_proof_sha256": "5e2425a3dd8264758c73d5bac6a04d6ed7a74a92508277c3d7fc41e2f9b5aef4"
+}

@@ -1,0 +1,5566 @@
+{
+  "added_clauses": 8533,
+  "added_variables": 4923,
+  "augmented_sha256": "fe9de879d99b320c57c7d90582842a532a045da9c3d90c8df5880d96498eb9af",
+  "encoding": "seq",
+  "generation_cpu_seconds": 0.44449897000000005,
+  "generator_sha256": "76e5db2adc5f53c95623594eccc45ce8dac82cdd6a366e7f69e711ef4532e115",
+  "id": "e52b5bdaef139b32a0778abac2b39470076bd55b225de3840bafc83e9110556b",
+  "mode": "two5",
+  "original_clauses": 211564,
+  "original_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+  "original_variables": 29942,
+  "rank": 1300,
+  "schema": "guarded-support-lower-bound/v1",
+  "scope": "all",
+  "specifications": [
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -29943,
+        505,
+        29944
+      ],
+      "fixed": 0,
+      "guard": 29943,
+      "need": 3,
+      "optional": 15,
+      "sender": 2
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -29980,
+        565,
+        29981
+      ],
+      "fixed": 0,
+      "guard": 29980,
+      "need": 3,
+      "optional": 15,
+      "sender": 2
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30017,
+        625,
+        30018
+      ],
+      "fixed": 0,
+      "guard": 30017,
+      "need": 3,
+      "optional": 12,
+      "sender": 2
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -6613,
+        29943,
+        29980
+      ],
+      "guard": 6613,
+      "selector_clause": [
+        -6613,
+        29943,
+        29980
+      ],
+      "sender": 2
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -6613,
+        29943,
+        30017
+      ],
+      "guard": 6613,
+      "selector_clause": [
+        -6613,
+        29943,
+        30017
+      ],
+      "sender": 2
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -6613,
+        29980,
+        30017
+      ],
+      "guard": 6613,
+      "selector_clause": [
+        -6613,
+        29980,
+        30017
+      ],
+      "sender": 2
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30045,
+        721,
+        30046
+      ],
+      "fixed": 0,
+      "guard": 30045,
+      "need": 3,
+      "optional": 15,
+      "sender": 3
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30082,
+        781,
+        30083
+      ],
+      "fixed": 0,
+      "guard": 30082,
+      "need": 3,
+      "optional": 15,
+      "sender": 3
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30119,
+        841,
+        30120
+      ],
+      "fixed": 0,
+      "guard": 30119,
+      "need": 3,
+      "optional": 12,
+      "sender": 3
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -7172,
+        30045,
+        30082
+      ],
+      "guard": 7172,
+      "selector_clause": [
+        -7172,
+        30045,
+        30082
+      ],
+      "sender": 3
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -7172,
+        30045,
+        30119
+      ],
+      "guard": 7172,
+      "selector_clause": [
+        -7172,
+        30045,
+        30119
+      ],
+      "sender": 3
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -7172,
+        30082,
+        30119
+      ],
+      "guard": 7172,
+      "selector_clause": [
+        -7172,
+        30082,
+        30119
+      ],
+      "sender": 3
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30147,
+        933,
+        30148
+      ],
+      "fixed": 0,
+      "guard": 30147,
+      "need": 3,
+      "optional": 15,
+      "sender": 4
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30184,
+        993,
+        30185
+      ],
+      "fixed": 0,
+      "guard": 30184,
+      "need": 3,
+      "optional": 15,
+      "sender": 4
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30221,
+        1053,
+        30222
+      ],
+      "fixed": 0,
+      "guard": 30221,
+      "need": 3,
+      "optional": 12,
+      "sender": 4
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -7731,
+        30147,
+        30184
+      ],
+      "guard": 7731,
+      "selector_clause": [
+        -7731,
+        30147,
+        30184
+      ],
+      "sender": 4
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -7731,
+        30147,
+        30221
+      ],
+      "guard": 7731,
+      "selector_clause": [
+        -7731,
+        30147,
+        30221
+      ],
+      "sender": 4
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -7731,
+        30184,
+        30221
+      ],
+      "guard": 7731,
+      "selector_clause": [
+        -7731,
+        30184,
+        30221
+      ],
+      "sender": 4
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30249,
+        1141,
+        30250
+      ],
+      "fixed": 0,
+      "guard": 30249,
+      "need": 3,
+      "optional": 15,
+      "sender": 5
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30286,
+        1201,
+        30287
+      ],
+      "fixed": 0,
+      "guard": 30286,
+      "need": 3,
+      "optional": 15,
+      "sender": 5
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30323,
+        1261,
+        30324
+      ],
+      "fixed": 0,
+      "guard": 30323,
+      "need": 3,
+      "optional": 12,
+      "sender": 5
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -8290,
+        30249,
+        30286
+      ],
+      "guard": 8290,
+      "selector_clause": [
+        -8290,
+        30249,
+        30286
+      ],
+      "sender": 5
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -8290,
+        30249,
+        30323
+      ],
+      "guard": 8290,
+      "selector_clause": [
+        -8290,
+        30249,
+        30323
+      ],
+      "sender": 5
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -8290,
+        30286,
+        30323
+      ],
+      "guard": 8290,
+      "selector_clause": [
+        -8290,
+        30286,
+        30323
+      ],
+      "sender": 5
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30351,
+        1345,
+        30352
+      ],
+      "fixed": 0,
+      "guard": 30351,
+      "need": 3,
+      "optional": 15,
+      "sender": 6
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30388,
+        1405,
+        30389
+      ],
+      "fixed": 0,
+      "guard": 30388,
+      "need": 3,
+      "optional": 15,
+      "sender": 6
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30425,
+        1465,
+        30426
+      ],
+      "fixed": 0,
+      "guard": 30425,
+      "need": 3,
+      "optional": 12,
+      "sender": 6
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -8849,
+        30351,
+        30388
+      ],
+      "guard": 8849,
+      "selector_clause": [
+        -8849,
+        30351,
+        30388
+      ],
+      "sender": 6
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -8849,
+        30351,
+        30425
+      ],
+      "guard": 8849,
+      "selector_clause": [
+        -8849,
+        30351,
+        30425
+      ],
+      "sender": 6
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -8849,
+        30388,
+        30425
+      ],
+      "guard": 8849,
+      "selector_clause": [
+        -8849,
+        30388,
+        30425
+      ],
+      "sender": 6
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30453,
+        1545,
+        30454
+      ],
+      "fixed": 0,
+      "guard": 30453,
+      "need": 3,
+      "optional": 15,
+      "sender": 7
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30490,
+        1605,
+        30491
+      ],
+      "fixed": 0,
+      "guard": 30490,
+      "need": 3,
+      "optional": 15,
+      "sender": 7
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30527,
+        1665,
+        30528
+      ],
+      "fixed": 0,
+      "guard": 30527,
+      "need": 3,
+      "optional": 12,
+      "sender": 7
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -9408,
+        30453,
+        30490
+      ],
+      "guard": 9408,
+      "selector_clause": [
+        -9408,
+        30453,
+        30490
+      ],
+      "sender": 7
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -9408,
+        30453,
+        30527
+      ],
+      "guard": 9408,
+      "selector_clause": [
+        -9408,
+        30453,
+        30527
+      ],
+      "sender": 7
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -9408,
+        30490,
+        30527
+      ],
+      "guard": 9408,
+      "selector_clause": [
+        -9408,
+        30490,
+        30527
+      ],
+      "sender": 7
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30555,
+        1741,
+        30556
+      ],
+      "fixed": 0,
+      "guard": 30555,
+      "need": 3,
+      "optional": 15,
+      "sender": 8
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30592,
+        1801,
+        30593
+      ],
+      "fixed": 0,
+      "guard": 30592,
+      "need": 3,
+      "optional": 15,
+      "sender": 8
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30629,
+        1861,
+        30630
+      ],
+      "fixed": 0,
+      "guard": 30629,
+      "need": 3,
+      "optional": 12,
+      "sender": 8
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -9967,
+        30555,
+        30592
+      ],
+      "guard": 9967,
+      "selector_clause": [
+        -9967,
+        30555,
+        30592
+      ],
+      "sender": 8
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -9967,
+        30555,
+        30629
+      ],
+      "guard": 9967,
+      "selector_clause": [
+        -9967,
+        30555,
+        30629
+      ],
+      "sender": 8
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -9967,
+        30592,
+        30629
+      ],
+      "guard": 9967,
+      "selector_clause": [
+        -9967,
+        30592,
+        30629
+      ],
+      "sender": 8
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30657,
+        1933,
+        30658
+      ],
+      "fixed": 0,
+      "guard": 30657,
+      "need": 3,
+      "optional": 15,
+      "sender": 9
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30694,
+        1993,
+        30695
+      ],
+      "fixed": 0,
+      "guard": 30694,
+      "need": 3,
+      "optional": 15,
+      "sender": 9
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30731,
+        2053,
+        30732
+      ],
+      "fixed": 0,
+      "guard": 30731,
+      "need": 3,
+      "optional": 12,
+      "sender": 9
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -10526,
+        30657,
+        30694
+      ],
+      "guard": 10526,
+      "selector_clause": [
+        -10526,
+        30657,
+        30694
+      ],
+      "sender": 9
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -10526,
+        30657,
+        30731
+      ],
+      "guard": 10526,
+      "selector_clause": [
+        -10526,
+        30657,
+        30731
+      ],
+      "sender": 9
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -10526,
+        30694,
+        30731
+      ],
+      "guard": 10526,
+      "selector_clause": [
+        -10526,
+        30694,
+        30731
+      ],
+      "sender": 9
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30759,
+        2121,
+        30760
+      ],
+      "fixed": 0,
+      "guard": 30759,
+      "need": 3,
+      "optional": 15,
+      "sender": 10
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30796,
+        2181,
+        30797
+      ],
+      "fixed": 0,
+      "guard": 30796,
+      "need": 3,
+      "optional": 15,
+      "sender": 10
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30833,
+        2241,
+        30834
+      ],
+      "fixed": 0,
+      "guard": 30833,
+      "need": 3,
+      "optional": 12,
+      "sender": 10
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -11085,
+        30759,
+        30796
+      ],
+      "guard": 11085,
+      "selector_clause": [
+        -11085,
+        30759,
+        30796
+      ],
+      "sender": 10
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -11085,
+        30759,
+        30833
+      ],
+      "guard": 11085,
+      "selector_clause": [
+        -11085,
+        30759,
+        30833
+      ],
+      "sender": 10
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -11085,
+        30796,
+        30833
+      ],
+      "guard": 11085,
+      "selector_clause": [
+        -11085,
+        30796,
+        30833
+      ],
+      "sender": 10
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30861,
+        2305,
+        30862
+      ],
+      "fixed": 0,
+      "guard": 30861,
+      "need": 3,
+      "optional": 15,
+      "sender": 11
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30898,
+        2365,
+        30899
+      ],
+      "fixed": 0,
+      "guard": 30898,
+      "need": 3,
+      "optional": 15,
+      "sender": 11
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -30935,
+        2425,
+        30936
+      ],
+      "fixed": 0,
+      "guard": 30935,
+      "need": 3,
+      "optional": 12,
+      "sender": 11
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -11644,
+        30861,
+        30898
+      ],
+      "guard": 11644,
+      "selector_clause": [
+        -11644,
+        30861,
+        30898
+      ],
+      "sender": 11
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -11644,
+        30861,
+        30935
+      ],
+      "guard": 11644,
+      "selector_clause": [
+        -11644,
+        30861,
+        30935
+      ],
+      "sender": 11
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -11644,
+        30898,
+        30935
+      ],
+      "guard": 11644,
+      "selector_clause": [
+        -11644,
+        30898,
+        30935
+      ],
+      "sender": 11
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -30963,
+        2485,
+        30964
+      ],
+      "fixed": 0,
+      "guard": 30963,
+      "need": 3,
+      "optional": 15,
+      "sender": 12
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -31000,
+        2545,
+        31001
+      ],
+      "fixed": 0,
+      "guard": 31000,
+      "need": 3,
+      "optional": 15,
+      "sender": 12
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -31037,
+        2605,
+        31038
+      ],
+      "fixed": 0,
+      "guard": 31037,
+      "need": 3,
+      "optional": 12,
+      "sender": 12
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -12203,
+        30963,
+        31000
+      ],
+      "guard": 12203,
+      "selector_clause": [
+        -12203,
+        30963,
+        31000
+      ],
+      "sender": 12
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -12203,
+        30963,
+        31037
+      ],
+      "guard": 12203,
+      "selector_clause": [
+        -12203,
+        30963,
+        31037
+      ],
+      "sender": 12
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -12203,
+        31000,
+        31037
+      ],
+      "guard": 12203,
+      "selector_clause": [
+        -12203,
+        31000,
+        31037
+      ],
+      "sender": 12
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -31065,
+        2661,
+        31066
+      ],
+      "fixed": 0,
+      "guard": 31065,
+      "need": 3,
+      "optional": 15,
+      "sender": 13
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -31102,
+        2721,
+        31103
+      ],
+      "fixed": 0,
+      "guard": 31102,
+      "need": 3,
+      "optional": 15,
+      "sender": 13
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -31139,
+        2781,
+        31140
+      ],
+      "fixed": 0,
+      "guard": 31139,
+      "need": 3,
+      "optional": 12,
+      "sender": 13
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -12762,
+        31065,
+        31102
+      ],
+      "guard": 12762,
+      "selector_clause": [
+        -12762,
+        31065,
+        31102
+      ],
+      "sender": 13
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -12762,
+        31065,
+        31139
+      ],
+      "guard": 12762,
+      "selector_clause": [
+        -12762,
+        31065,
+        31139
+      ],
+      "sender": 13
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -12762,
+        31102,
+        31139
+      ],
+      "guard": 12762,
+      "selector_clause": [
+        -12762,
+        31102,
+        31139
+      ],
+      "sender": 13
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -31167,
+        2833,
+        31168
+      ],
+      "fixed": 0,
+      "guard": 31167,
+      "need": 3,
+      "optional": 15,
+      "sender": 14
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -31204,
+        2893,
+        31205
+      ],
+      "fixed": 0,
+      "guard": 31204,
+      "need": 3,
+      "optional": 15,
+      "sender": 14
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -31241,
+        2953,
+        31242
+      ],
+      "fixed": 0,
+      "guard": 31241,
+      "need": 3,
+      "optional": 12,
+      "sender": 14
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -13321,
+        31167,
+        31204
+      ],
+      "guard": 13321,
+      "selector_clause": [
+        -13321,
+        31167,
+        31204
+      ],
+      "sender": 14
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -13321,
+        31167,
+        31241
+      ],
+      "guard": 13321,
+      "selector_clause": [
+        -13321,
+        31167,
+        31241
+      ],
+      "sender": 14
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -13321,
+        31204,
+        31241
+      ],
+      "guard": 13321,
+      "selector_clause": [
+        -13321,
+        31204,
+        31241
+      ],
+      "sender": 14
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -31269,
+        3001,
+        31270
+      ],
+      "fixed": 0,
+      "guard": 31269,
+      "need": 3,
+      "optional": 15,
+      "sender": 15
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 0,
+      "first": [
+        -31306,
+        3061,
+        31307
+      ],
+      "fixed": 0,
+      "guard": 31306,
+      "need": 3,
+      "optional": 15,
+      "sender": 15
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 0,
+      "first": [
+        -31343,
+        3121,
+        31344
+      ],
+      "fixed": 0,
+      "guard": 31343,
+      "need": 3,
+      "optional": 12,
+      "sender": 15
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -13880,
+        31269,
+        31306
+      ],
+      "guard": 13880,
+      "selector_clause": [
+        -13880,
+        31269,
+        31306
+      ],
+      "sender": 15
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -13880,
+        31269,
+        31343
+      ],
+      "guard": 13880,
+      "selector_clause": [
+        -13880,
+        31269,
+        31343
+      ],
+      "sender": 15
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 0,
+      "first": [
+        -13880,
+        31306,
+        31343
+      ],
+      "guard": 13880,
+      "selector_clause": [
+        -13880,
+        31306,
+        31343
+      ],
+      "sender": 15
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31371,
+        286,
+        31372
+      ],
+      "fixed": 0,
+      "guard": 31371,
+      "need": 3,
+      "optional": 15,
+      "sender": 16
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31408,
+        3226,
+        31409
+      ],
+      "fixed": 0,
+      "guard": 31408,
+      "need": 3,
+      "optional": 15,
+      "sender": 16
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -31445,
+        3286,
+        31446
+      ],
+      "fixed": 0,
+      "guard": 31445,
+      "need": 3,
+      "optional": 12,
+      "sender": 16
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -14439,
+        31371,
+        31408
+      ],
+      "guard": 14439,
+      "selector_clause": [
+        -14439,
+        31371,
+        31408
+      ],
+      "sender": 16
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -14439,
+        31371,
+        31445
+      ],
+      "guard": 14439,
+      "selector_clause": [
+        -14439,
+        31371,
+        31445
+      ],
+      "sender": 16
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -14439,
+        31408,
+        31445
+      ],
+      "guard": 14439,
+      "selector_clause": [
+        -14439,
+        31408,
+        31445
+      ],
+      "sender": 16
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 1,
+      "first": [
+        -31473,
+        510,
+        31474
+      ],
+      "fixed": 0,
+      "guard": 31473,
+      "need": 3,
+      "optional": 14,
+      "sender": 17
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -31507,
+        3386,
+        3398,
+        3402,
+        3410,
+        3418,
+        3422,
+        3426,
+        3430,
+        3438,
+        3442
+      ],
+      "fixed": 2,
+      "guard": 31507,
+      "need": 1,
+      "optional": 10,
+      "sender": 17
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -31508,
+        3466,
+        3470,
+        3474,
+        3478,
+        3482,
+        3486,
+        3490
+      ],
+      "fixed": 2,
+      "guard": 31508,
+      "need": 1,
+      "optional": 7,
+      "sender": 17
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -14832,
+        31473,
+        31507
+      ],
+      "guard": 14832,
+      "selector_clause": [
+        -14832,
+        31473,
+        31507
+      ],
+      "sender": 17
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -14832,
+        31473,
+        31508
+      ],
+      "guard": 14832,
+      "selector_clause": [
+        -14832,
+        31473,
+        31508
+      ],
+      "sender": 17
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -14832,
+        31507,
+        31508
+      ],
+      "guard": 14832,
+      "selector_clause": [
+        -14832,
+        31507,
+        31508
+      ],
+      "sender": 17
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31509,
+        294,
+        31510
+      ],
+      "fixed": 0,
+      "guard": 31509,
+      "need": 3,
+      "optional": 15,
+      "sender": 18
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31546,
+        3542,
+        31547
+      ],
+      "fixed": 0,
+      "guard": 31546,
+      "need": 3,
+      "optional": 15,
+      "sender": 18
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -31583,
+        3602,
+        31584
+      ],
+      "fixed": 0,
+      "guard": 31583,
+      "need": 3,
+      "optional": 12,
+      "sender": 18
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15043,
+        31509,
+        31546
+      ],
+      "guard": 15043,
+      "selector_clause": [
+        -15043,
+        31509,
+        31546
+      ],
+      "sender": 18
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15043,
+        31509,
+        31583
+      ],
+      "guard": 15043,
+      "selector_clause": [
+        -15043,
+        31509,
+        31583
+      ],
+      "sender": 18
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15043,
+        31546,
+        31583
+      ],
+      "guard": 15043,
+      "selector_clause": [
+        -15043,
+        31546,
+        31583
+      ],
+      "sender": 18
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 1,
+      "first": [
+        -31611,
+        518,
+        31612
+      ],
+      "fixed": 0,
+      "guard": 31611,
+      "need": 3,
+      "optional": 14,
+      "sender": 19
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -31645,
+        3694,
+        3706,
+        3710,
+        3718,
+        3726,
+        3730,
+        3734,
+        3738,
+        3746,
+        3750
+      ],
+      "fixed": 2,
+      "guard": 31645,
+      "need": 1,
+      "optional": 10,
+      "sender": 19
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -31646,
+        3774,
+        3778,
+        3782,
+        3786,
+        3790,
+        3794,
+        3798
+      ],
+      "fixed": 2,
+      "guard": 31646,
+      "need": 1,
+      "optional": 7,
+      "sender": 19
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15436,
+        31611,
+        31645
+      ],
+      "guard": 15436,
+      "selector_clause": [
+        -15436,
+        31611,
+        31645
+      ],
+      "sender": 19
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15436,
+        31611,
+        31646
+      ],
+      "guard": 15436,
+      "selector_clause": [
+        -15436,
+        31611,
+        31646
+      ],
+      "sender": 19
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15436,
+        31645,
+        31646
+      ],
+      "guard": 15436,
+      "selector_clause": [
+        -15436,
+        31645,
+        31646
+      ],
+      "sender": 19
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31647,
+        302,
+        31648
+      ],
+      "fixed": 0,
+      "guard": 31647,
+      "need": 3,
+      "optional": 15,
+      "sender": 20
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31684,
+        3842,
+        31685
+      ],
+      "fixed": 0,
+      "guard": 31684,
+      "need": 3,
+      "optional": 15,
+      "sender": 20
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -31721,
+        3902,
+        31722
+      ],
+      "fixed": 0,
+      "guard": 31721,
+      "need": 3,
+      "optional": 12,
+      "sender": 20
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15647,
+        31647,
+        31684
+      ],
+      "guard": 15647,
+      "selector_clause": [
+        -15647,
+        31647,
+        31684
+      ],
+      "sender": 20
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15647,
+        31647,
+        31721
+      ],
+      "guard": 15647,
+      "selector_clause": [
+        -15647,
+        31647,
+        31721
+      ],
+      "sender": 20
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -15647,
+        31684,
+        31721
+      ],
+      "guard": 15647,
+      "selector_clause": [
+        -15647,
+        31684,
+        31721
+      ],
+      "sender": 20
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31749,
+        306,
+        31750
+      ],
+      "fixed": 0,
+      "guard": 31749,
+      "need": 3,
+      "optional": 15,
+      "sender": 21
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31786,
+        3986,
+        31787
+      ],
+      "fixed": 0,
+      "guard": 31786,
+      "need": 3,
+      "optional": 15,
+      "sender": 21
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -31823,
+        4046,
+        31824
+      ],
+      "fixed": 0,
+      "guard": 31823,
+      "need": 3,
+      "optional": 12,
+      "sender": 21
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16040,
+        31749,
+        31786
+      ],
+      "guard": 16040,
+      "selector_clause": [
+        -16040,
+        31749,
+        31786
+      ],
+      "sender": 21
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16040,
+        31749,
+        31823
+      ],
+      "guard": 16040,
+      "selector_clause": [
+        -16040,
+        31749,
+        31823
+      ],
+      "sender": 21
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16040,
+        31786,
+        31823
+      ],
+      "guard": 16040,
+      "selector_clause": [
+        -16040,
+        31786,
+        31823
+      ],
+      "sender": 21
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 1,
+      "first": [
+        -31851,
+        530,
+        31852
+      ],
+      "fixed": 0,
+      "guard": 31851,
+      "need": 3,
+      "optional": 14,
+      "sender": 22
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -31885,
+        4126,
+        4138,
+        4142,
+        4150,
+        4158,
+        4162,
+        4166,
+        4170,
+        4178,
+        4182
+      ],
+      "fixed": 2,
+      "guard": 31885,
+      "need": 1,
+      "optional": 10,
+      "sender": 22
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -31886,
+        4206,
+        4210,
+        4214,
+        4218,
+        4222,
+        4226,
+        4230
+      ],
+      "fixed": 2,
+      "guard": 31886,
+      "need": 1,
+      "optional": 7,
+      "sender": 22
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16433,
+        31851,
+        31885
+      ],
+      "guard": 16433,
+      "selector_clause": [
+        -16433,
+        31851,
+        31885
+      ],
+      "sender": 22
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16433,
+        31851,
+        31886
+      ],
+      "guard": 16433,
+      "selector_clause": [
+        -16433,
+        31851,
+        31886
+      ],
+      "sender": 22
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16433,
+        31885,
+        31886
+      ],
+      "guard": 16433,
+      "selector_clause": [
+        -16433,
+        31885,
+        31886
+      ],
+      "sender": 22
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31887,
+        314,
+        31888
+      ],
+      "fixed": 0,
+      "guard": 31887,
+      "need": 3,
+      "optional": 15,
+      "sender": 23
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -31924,
+        4262,
+        31925
+      ],
+      "fixed": 0,
+      "guard": 31924,
+      "need": 3,
+      "optional": 15,
+      "sender": 23
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -31961,
+        4322,
+        31962
+      ],
+      "fixed": 0,
+      "guard": 31961,
+      "need": 3,
+      "optional": 12,
+      "sender": 23
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16644,
+        31887,
+        31924
+      ],
+      "guard": 16644,
+      "selector_clause": [
+        -16644,
+        31887,
+        31924
+      ],
+      "sender": 23
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16644,
+        31887,
+        31961
+      ],
+      "guard": 16644,
+      "selector_clause": [
+        -16644,
+        31887,
+        31961
+      ],
+      "sender": 23
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -16644,
+        31924,
+        31961
+      ],
+      "guard": 16644,
+      "selector_clause": [
+        -16644,
+        31924,
+        31961
+      ],
+      "sender": 23
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 1,
+      "first": [
+        -31989,
+        538,
+        31990
+      ],
+      "fixed": 0,
+      "guard": 31989,
+      "need": 3,
+      "optional": 14,
+      "sender": 24
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -32023,
+        4394,
+        4406,
+        4410,
+        4418,
+        4426,
+        4430,
+        4434,
+        4438,
+        4446,
+        4450
+      ],
+      "fixed": 2,
+      "guard": 32023,
+      "need": 1,
+      "optional": 10,
+      "sender": 24
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -32024,
+        4474,
+        4478,
+        4482,
+        4486,
+        4490,
+        4494,
+        4498
+      ],
+      "fixed": 2,
+      "guard": 32024,
+      "need": 1,
+      "optional": 7,
+      "sender": 24
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17037,
+        31989,
+        32023
+      ],
+      "guard": 17037,
+      "selector_clause": [
+        -17037,
+        31989,
+        32023
+      ],
+      "sender": 24
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17037,
+        31989,
+        32024
+      ],
+      "guard": 17037,
+      "selector_clause": [
+        -17037,
+        31989,
+        32024
+      ],
+      "sender": 24
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17037,
+        32023,
+        32024
+      ],
+      "guard": 17037,
+      "selector_clause": [
+        -17037,
+        32023,
+        32024
+      ],
+      "sender": 24
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32025,
+        322,
+        32026
+      ],
+      "fixed": 0,
+      "guard": 32025,
+      "need": 3,
+      "optional": 15,
+      "sender": 25
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32062,
+        4522,
+        32063
+      ],
+      "fixed": 0,
+      "guard": 32062,
+      "need": 3,
+      "optional": 15,
+      "sender": 25
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -32099,
+        4582,
+        32100
+      ],
+      "fixed": 0,
+      "guard": 32099,
+      "need": 3,
+      "optional": 12,
+      "sender": 25
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17248,
+        32025,
+        32062
+      ],
+      "guard": 17248,
+      "selector_clause": [
+        -17248,
+        32025,
+        32062
+      ],
+      "sender": 25
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17248,
+        32025,
+        32099
+      ],
+      "guard": 17248,
+      "selector_clause": [
+        -17248,
+        32025,
+        32099
+      ],
+      "sender": 25
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17248,
+        32062,
+        32099
+      ],
+      "guard": 17248,
+      "selector_clause": [
+        -17248,
+        32062,
+        32099
+      ],
+      "sender": 25
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32127,
+        326,
+        32128
+      ],
+      "fixed": 0,
+      "guard": 32127,
+      "need": 3,
+      "optional": 15,
+      "sender": 26
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32164,
+        4646,
+        32165
+      ],
+      "fixed": 0,
+      "guard": 32164,
+      "need": 3,
+      "optional": 15,
+      "sender": 26
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -32201,
+        4706,
+        32202
+      ],
+      "fixed": 0,
+      "guard": 32201,
+      "need": 3,
+      "optional": 12,
+      "sender": 26
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17641,
+        32127,
+        32164
+      ],
+      "guard": 17641,
+      "selector_clause": [
+        -17641,
+        32127,
+        32164
+      ],
+      "sender": 26
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17641,
+        32127,
+        32201
+      ],
+      "guard": 17641,
+      "selector_clause": [
+        -17641,
+        32127,
+        32201
+      ],
+      "sender": 26
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -17641,
+        32164,
+        32201
+      ],
+      "guard": 17641,
+      "selector_clause": [
+        -17641,
+        32164,
+        32201
+      ],
+      "sender": 26
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32229,
+        330,
+        32230
+      ],
+      "fixed": 0,
+      "guard": 32229,
+      "need": 3,
+      "optional": 15,
+      "sender": 27
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32266,
+        4766,
+        32267
+      ],
+      "fixed": 0,
+      "guard": 32266,
+      "need": 3,
+      "optional": 15,
+      "sender": 27
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -32303,
+        4826,
+        32304
+      ],
+      "fixed": 0,
+      "guard": 32303,
+      "need": 3,
+      "optional": 12,
+      "sender": 27
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18034,
+        32229,
+        32266
+      ],
+      "guard": 18034,
+      "selector_clause": [
+        -18034,
+        32229,
+        32266
+      ],
+      "sender": 27
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18034,
+        32229,
+        32303
+      ],
+      "guard": 18034,
+      "selector_clause": [
+        -18034,
+        32229,
+        32303
+      ],
+      "sender": 27
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18034,
+        32266,
+        32303
+      ],
+      "guard": 18034,
+      "selector_clause": [
+        -18034,
+        32266,
+        32303
+      ],
+      "sender": 27
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32331,
+        334,
+        32332
+      ],
+      "fixed": 0,
+      "guard": 32331,
+      "need": 3,
+      "optional": 15,
+      "sender": 28
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32368,
+        4882,
+        32369
+      ],
+      "fixed": 0,
+      "guard": 32368,
+      "need": 3,
+      "optional": 15,
+      "sender": 28
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -32405,
+        4942,
+        32406
+      ],
+      "fixed": 0,
+      "guard": 32405,
+      "need": 3,
+      "optional": 12,
+      "sender": 28
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18427,
+        32331,
+        32368
+      ],
+      "guard": 18427,
+      "selector_clause": [
+        -18427,
+        32331,
+        32368
+      ],
+      "sender": 28
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18427,
+        32331,
+        32405
+      ],
+      "guard": 18427,
+      "selector_clause": [
+        -18427,
+        32331,
+        32405
+      ],
+      "sender": 28
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18427,
+        32368,
+        32405
+      ],
+      "guard": 18427,
+      "selector_clause": [
+        -18427,
+        32368,
+        32405
+      ],
+      "sender": 28
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32433,
+        338,
+        32434
+      ],
+      "fixed": 0,
+      "guard": 32433,
+      "need": 3,
+      "optional": 15,
+      "sender": 29
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32470,
+        4994,
+        32471
+      ],
+      "fixed": 0,
+      "guard": 32470,
+      "need": 3,
+      "optional": 15,
+      "sender": 29
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -32507,
+        5054,
+        32508
+      ],
+      "fixed": 0,
+      "guard": 32507,
+      "need": 3,
+      "optional": 12,
+      "sender": 29
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18820,
+        32433,
+        32470
+      ],
+      "guard": 18820,
+      "selector_clause": [
+        -18820,
+        32433,
+        32470
+      ],
+      "sender": 29
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18820,
+        32433,
+        32507
+      ],
+      "guard": 18820,
+      "selector_clause": [
+        -18820,
+        32433,
+        32507
+      ],
+      "sender": 29
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -18820,
+        32470,
+        32507
+      ],
+      "guard": 18820,
+      "selector_clause": [
+        -18820,
+        32470,
+        32507
+      ],
+      "sender": 29
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32535,
+        342,
+        32536
+      ],
+      "fixed": 0,
+      "guard": 32535,
+      "need": 3,
+      "optional": 15,
+      "sender": 30
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 1,
+      "first": [
+        -32572,
+        5102,
+        32573
+      ],
+      "fixed": 0,
+      "guard": 32572,
+      "need": 3,
+      "optional": 15,
+      "sender": 30
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 1,
+      "first": [
+        -32609,
+        5162,
+        32610
+      ],
+      "fixed": 0,
+      "guard": 32609,
+      "need": 3,
+      "optional": 12,
+      "sender": 30
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -19213,
+        32535,
+        32572
+      ],
+      "guard": 19213,
+      "selector_clause": [
+        -19213,
+        32535,
+        32572
+      ],
+      "sender": 30
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -19213,
+        32535,
+        32609
+      ],
+      "guard": 19213,
+      "selector_clause": [
+        -19213,
+        32535,
+        32609
+      ],
+      "sender": 30
+    },
+    {
+      "arms": "2-3",
+      "clauses": 1,
+      "color": 1,
+      "first": [
+        -19213,
+        32572,
+        32609
+      ],
+      "guard": 19213,
+      "selector_clause": [
+        -19213,
+        32572,
+        32609
+      ],
+      "sender": 30
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -32637,
+        347,
+        32638
+      ],
+      "fixed": 0,
+      "guard": 32637,
+      "need": 3,
+      "optional": 15,
+      "sender": 31
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -32674,
+        3227,
+        32675
+      ],
+      "fixed": 0,
+      "guard": 32674,
+      "need": 3,
+      "optional": 15,
+      "sender": 31
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -32711,
+        5267,
+        32712
+      ],
+      "fixed": 0,
+      "guard": 32711,
+      "need": 3,
+      "optional": 12,
+      "sender": 31
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -19606,
+        32637,
+        32674
+      ],
+      "guard": 19606,
+      "selector_clause": [
+        -19606,
+        32637,
+        32674
+      ],
+      "sender": 31
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -19606,
+        32637,
+        32711
+      ],
+      "guard": 19606,
+      "selector_clause": [
+        -19606,
+        32637,
+        32711
+      ],
+      "sender": 31
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -19606,
+        32674,
+        32711
+      ],
+      "guard": 19606,
+      "selector_clause": [
+        -19606,
+        32674,
+        32711
+      ],
+      "sender": 31
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 2,
+      "first": [
+        -32739,
+        571,
+        32740
+      ],
+      "fixed": 0,
+      "guard": 32739,
+      "need": 3,
+      "optional": 14,
+      "sender": 32
+    },
+    {
+      "arms": "1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -32773,
+        3231,
+        3547,
+        3847,
+        3991,
+        4267,
+        4527,
+        4651,
+        4771,
+        4887,
+        4999,
+        5107
+      ],
+      "fixed": 2,
+      "guard": 32773,
+      "need": 1,
+      "optional": 11,
+      "sender": 32
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -32774,
+        5387,
+        5391,
+        5395,
+        5399,
+        5403,
+        5407,
+        5411
+      ],
+      "fixed": 2,
+      "guard": 32774,
+      "need": 1,
+      "optional": 7,
+      "sender": 32
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -19999,
+        32739,
+        32773
+      ],
+      "guard": 19999,
+      "selector_clause": [
+        -19999,
+        32739,
+        32773
+      ],
+      "sender": 32
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -19999,
+        32739,
+        32774
+      ],
+      "guard": 19999,
+      "selector_clause": [
+        -19999,
+        32739,
+        32774
+      ],
+      "sender": 32
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -19999,
+        32773,
+        32774
+      ],
+      "guard": 19999,
+      "selector_clause": [
+        -19999,
+        32773,
+        32774
+      ],
+      "sender": 32
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 2,
+      "first": [
+        -32775,
+        575,
+        32776
+      ],
+      "fixed": 0,
+      "guard": 32775,
+      "need": 3,
+      "optional": 14,
+      "sender": 33
+    },
+    {
+      "arms": "1",
+      "clauses": 29,
+      "color": 2,
+      "first": [
+        -32809,
+        3235,
+        32810
+      ],
+      "fixed": 1,
+      "guard": 32809,
+      "need": 2,
+      "optional": 11,
+      "sender": 33
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -32828,
+        5483,
+        5487,
+        5491,
+        5495,
+        5499,
+        5503,
+        5507
+      ],
+      "fixed": 2,
+      "guard": 32828,
+      "need": 1,
+      "optional": 7,
+      "sender": 33
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20220,
+        32775,
+        32809
+      ],
+      "guard": 20220,
+      "selector_clause": [
+        -20220,
+        32775,
+        32809
+      ],
+      "sender": 33
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20220,
+        32775,
+        32828
+      ],
+      "guard": 20220,
+      "selector_clause": [
+        -20220,
+        32775,
+        32828
+      ],
+      "sender": 33
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20220,
+        32809,
+        32828
+      ],
+      "guard": 20220,
+      "selector_clause": [
+        -20220,
+        32809,
+        32828
+      ],
+      "sender": 33
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -32829,
+        359,
+        32830
+      ],
+      "fixed": 0,
+      "guard": 32829,
+      "need": 3,
+      "optional": 15,
+      "sender": 34
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -32866,
+        3239,
+        32867
+      ],
+      "fixed": 0,
+      "guard": 32866,
+      "need": 3,
+      "optional": 15,
+      "sender": 34
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -32903,
+        5555,
+        32904
+      ],
+      "fixed": 0,
+      "guard": 32903,
+      "need": 3,
+      "optional": 12,
+      "sender": 34
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20452,
+        32829,
+        32866
+      ],
+      "guard": 20452,
+      "selector_clause": [
+        -20452,
+        32829,
+        32866
+      ],
+      "sender": 34
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20452,
+        32829,
+        32903
+      ],
+      "guard": 20452,
+      "selector_clause": [
+        -20452,
+        32829,
+        32903
+      ],
+      "sender": 34
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20452,
+        32866,
+        32903
+      ],
+      "guard": 20452,
+      "selector_clause": [
+        -20452,
+        32866,
+        32903
+      ],
+      "sender": 34
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -32931,
+        363,
+        32932
+      ],
+      "fixed": 0,
+      "guard": 32931,
+      "need": 3,
+      "optional": 15,
+      "sender": 35
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -32968,
+        3243,
+        32969
+      ],
+      "fixed": 0,
+      "guard": 32968,
+      "need": 3,
+      "optional": 15,
+      "sender": 35
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33005,
+        5643,
+        33006
+      ],
+      "fixed": 0,
+      "guard": 33005,
+      "need": 3,
+      "optional": 12,
+      "sender": 35
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20845,
+        32931,
+        32968
+      ],
+      "guard": 20845,
+      "selector_clause": [
+        -20845,
+        32931,
+        32968
+      ],
+      "sender": 35
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20845,
+        32931,
+        33005
+      ],
+      "guard": 20845,
+      "selector_clause": [
+        -20845,
+        32931,
+        33005
+      ],
+      "sender": 35
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -20845,
+        32968,
+        33005
+      ],
+      "guard": 20845,
+      "selector_clause": [
+        -20845,
+        32968,
+        33005
+      ],
+      "sender": 35
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 2,
+      "first": [
+        -33033,
+        587,
+        33034
+      ],
+      "fixed": 0,
+      "guard": 33033,
+      "need": 3,
+      "optional": 14,
+      "sender": 36
+    },
+    {
+      "arms": "1",
+      "clauses": 29,
+      "color": 2,
+      "first": [
+        -33067,
+        3247,
+        33068
+      ],
+      "fixed": 1,
+      "guard": 33067,
+      "need": 2,
+      "optional": 11,
+      "sender": 36
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -33086,
+        5747,
+        5751,
+        5755,
+        5759,
+        5763,
+        5767,
+        5771
+      ],
+      "fixed": 2,
+      "guard": 33086,
+      "need": 1,
+      "optional": 7,
+      "sender": 36
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21238,
+        33033,
+        33067
+      ],
+      "guard": 21238,
+      "selector_clause": [
+        -21238,
+        33033,
+        33067
+      ],
+      "sender": 36
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21238,
+        33033,
+        33086
+      ],
+      "guard": 21238,
+      "selector_clause": [
+        -21238,
+        33033,
+        33086
+      ],
+      "sender": 36
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21238,
+        33067,
+        33086
+      ],
+      "guard": 21238,
+      "selector_clause": [
+        -21238,
+        33067,
+        33086
+      ],
+      "sender": 36
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33087,
+        371,
+        33088
+      ],
+      "fixed": 0,
+      "guard": 33087,
+      "need": 3,
+      "optional": 15,
+      "sender": 37
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33124,
+        3251,
+        33125
+      ],
+      "fixed": 0,
+      "guard": 33124,
+      "need": 3,
+      "optional": 15,
+      "sender": 37
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33161,
+        5807,
+        33162
+      ],
+      "fixed": 0,
+      "guard": 33161,
+      "need": 3,
+      "optional": 12,
+      "sender": 37
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21470,
+        33087,
+        33124
+      ],
+      "guard": 21470,
+      "selector_clause": [
+        -21470,
+        33087,
+        33124
+      ],
+      "sender": 37
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21470,
+        33087,
+        33161
+      ],
+      "guard": 21470,
+      "selector_clause": [
+        -21470,
+        33087,
+        33161
+      ],
+      "sender": 37
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21470,
+        33124,
+        33161
+      ],
+      "guard": 21470,
+      "selector_clause": [
+        -21470,
+        33124,
+        33161
+      ],
+      "sender": 37
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 2,
+      "first": [
+        -33189,
+        595,
+        33190
+      ],
+      "fixed": 0,
+      "guard": 33189,
+      "need": 3,
+      "optional": 14,
+      "sender": 38
+    },
+    {
+      "arms": "1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -33223,
+        3255,
+        3571,
+        3871,
+        4015,
+        4291,
+        4551,
+        4675,
+        4795,
+        4911,
+        5023,
+        5131
+      ],
+      "fixed": 2,
+      "guard": 33223,
+      "need": 1,
+      "optional": 11,
+      "sender": 38
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -33224,
+        5903,
+        5907,
+        5911,
+        5915,
+        5919,
+        5923,
+        5927
+      ],
+      "fixed": 2,
+      "guard": 33224,
+      "need": 1,
+      "optional": 7,
+      "sender": 38
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21863,
+        33189,
+        33223
+      ],
+      "guard": 21863,
+      "selector_clause": [
+        -21863,
+        33189,
+        33223
+      ],
+      "sender": 38
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21863,
+        33189,
+        33224
+      ],
+      "guard": 21863,
+      "selector_clause": [
+        -21863,
+        33189,
+        33224
+      ],
+      "sender": 38
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -21863,
+        33223,
+        33224
+      ],
+      "guard": 21863,
+      "selector_clause": [
+        -21863,
+        33223,
+        33224
+      ],
+      "sender": 38
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33225,
+        379,
+        33226
+      ],
+      "fixed": 0,
+      "guard": 33225,
+      "need": 3,
+      "optional": 15,
+      "sender": 39
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33262,
+        3259,
+        33263
+      ],
+      "fixed": 0,
+      "guard": 33262,
+      "need": 3,
+      "optional": 15,
+      "sender": 39
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33299,
+        5955,
+        33300
+      ],
+      "fixed": 0,
+      "guard": 33299,
+      "need": 3,
+      "optional": 12,
+      "sender": 39
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22084,
+        33225,
+        33262
+      ],
+      "guard": 22084,
+      "selector_clause": [
+        -22084,
+        33225,
+        33262
+      ],
+      "sender": 39
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22084,
+        33225,
+        33299
+      ],
+      "guard": 22084,
+      "selector_clause": [
+        -22084,
+        33225,
+        33299
+      ],
+      "sender": 39
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22084,
+        33262,
+        33299
+      ],
+      "guard": 22084,
+      "selector_clause": [
+        -22084,
+        33262,
+        33299
+      ],
+      "sender": 39
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33327,
+        383,
+        33328
+      ],
+      "fixed": 0,
+      "guard": 33327,
+      "need": 3,
+      "optional": 15,
+      "sender": 40
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33364,
+        3263,
+        33365
+      ],
+      "fixed": 0,
+      "guard": 33364,
+      "need": 3,
+      "optional": 15,
+      "sender": 40
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33401,
+        6023,
+        33402
+      ],
+      "fixed": 0,
+      "guard": 33401,
+      "need": 3,
+      "optional": 12,
+      "sender": 40
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22477,
+        33327,
+        33364
+      ],
+      "guard": 22477,
+      "selector_clause": [
+        -22477,
+        33327,
+        33364
+      ],
+      "sender": 40
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22477,
+        33327,
+        33401
+      ],
+      "guard": 22477,
+      "selector_clause": [
+        -22477,
+        33327,
+        33401
+      ],
+      "sender": 40
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22477,
+        33364,
+        33401
+      ],
+      "guard": 22477,
+      "selector_clause": [
+        -22477,
+        33364,
+        33401
+      ],
+      "sender": 40
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33429,
+        387,
+        33430
+      ],
+      "fixed": 0,
+      "guard": 33429,
+      "need": 3,
+      "optional": 15,
+      "sender": 41
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33466,
+        3267,
+        33467
+      ],
+      "fixed": 0,
+      "guard": 33466,
+      "need": 3,
+      "optional": 15,
+      "sender": 41
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33503,
+        6087,
+        33504
+      ],
+      "fixed": 0,
+      "guard": 33503,
+      "need": 3,
+      "optional": 12,
+      "sender": 41
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22870,
+        33429,
+        33466
+      ],
+      "guard": 22870,
+      "selector_clause": [
+        -22870,
+        33429,
+        33466
+      ],
+      "sender": 41
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22870,
+        33429,
+        33503
+      ],
+      "guard": 22870,
+      "selector_clause": [
+        -22870,
+        33429,
+        33503
+      ],
+      "sender": 41
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -22870,
+        33466,
+        33503
+      ],
+      "guard": 22870,
+      "selector_clause": [
+        -22870,
+        33466,
+        33503
+      ],
+      "sender": 41
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33531,
+        391,
+        33532
+      ],
+      "fixed": 0,
+      "guard": 33531,
+      "need": 3,
+      "optional": 15,
+      "sender": 42
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33568,
+        3271,
+        33569
+      ],
+      "fixed": 0,
+      "guard": 33568,
+      "need": 3,
+      "optional": 15,
+      "sender": 42
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33605,
+        6147,
+        33606
+      ],
+      "fixed": 0,
+      "guard": 33605,
+      "need": 3,
+      "optional": 12,
+      "sender": 42
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23263,
+        33531,
+        33568
+      ],
+      "guard": 23263,
+      "selector_clause": [
+        -23263,
+        33531,
+        33568
+      ],
+      "sender": 42
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23263,
+        33531,
+        33605
+      ],
+      "guard": 23263,
+      "selector_clause": [
+        -23263,
+        33531,
+        33605
+      ],
+      "sender": 42
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23263,
+        33568,
+        33605
+      ],
+      "guard": 23263,
+      "selector_clause": [
+        -23263,
+        33568,
+        33605
+      ],
+      "sender": 42
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 2,
+      "first": [
+        -33633,
+        615,
+        33634
+      ],
+      "fixed": 0,
+      "guard": 33633,
+      "need": 3,
+      "optional": 14,
+      "sender": 43
+    },
+    {
+      "arms": "1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -33667,
+        3275,
+        3591,
+        3891,
+        4035,
+        4311,
+        4571,
+        4695,
+        4815,
+        4931,
+        5043,
+        5151
+      ],
+      "fixed": 2,
+      "guard": 33667,
+      "need": 1,
+      "optional": 11,
+      "sender": 43
+    },
+    {
+      "arms": "3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -33668,
+        6223,
+        6227,
+        6231,
+        6235,
+        6239,
+        6243,
+        6247
+      ],
+      "fixed": 2,
+      "guard": 33668,
+      "need": 1,
+      "optional": 7,
+      "sender": 43
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23656,
+        33633,
+        33667
+      ],
+      "guard": 23656,
+      "selector_clause": [
+        -23656,
+        33633,
+        33667
+      ],
+      "sender": 43
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23656,
+        33633,
+        33668
+      ],
+      "guard": 23656,
+      "selector_clause": [
+        -23656,
+        33633,
+        33668
+      ],
+      "sender": 43
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23656,
+        33667,
+        33668
+      ],
+      "guard": 23656,
+      "selector_clause": [
+        -23656,
+        33667,
+        33668
+      ],
+      "sender": 43
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33669,
+        399,
+        33670
+      ],
+      "fixed": 0,
+      "guard": 33669,
+      "need": 3,
+      "optional": 15,
+      "sender": 44
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33706,
+        3279,
+        33707
+      ],
+      "fixed": 0,
+      "guard": 33706,
+      "need": 3,
+      "optional": 15,
+      "sender": 44
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33743,
+        6255,
+        33744
+      ],
+      "fixed": 0,
+      "guard": 33743,
+      "need": 3,
+      "optional": 12,
+      "sender": 44
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23877,
+        33669,
+        33706
+      ],
+      "guard": 23877,
+      "selector_clause": [
+        -23877,
+        33669,
+        33706
+      ],
+      "sender": 44
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23877,
+        33669,
+        33743
+      ],
+      "guard": 23877,
+      "selector_clause": [
+        -23877,
+        33669,
+        33743
+      ],
+      "sender": 44
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -23877,
+        33706,
+        33743
+      ],
+      "guard": 23877,
+      "selector_clause": [
+        -23877,
+        33706,
+        33743
+      ],
+      "sender": 44
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33771,
+        403,
+        33772
+      ],
+      "fixed": 0,
+      "guard": 33771,
+      "need": 3,
+      "optional": 15,
+      "sender": 45
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 2,
+      "first": [
+        -33808,
+        3283,
+        33809
+      ],
+      "fixed": 0,
+      "guard": 33808,
+      "need": 3,
+      "optional": 15,
+      "sender": 45
+    },
+    {
+      "arms": "3",
+      "clauses": 48,
+      "color": 2,
+      "first": [
+        -33845,
+        6303,
+        33846
+      ],
+      "fixed": 0,
+      "guard": 33845,
+      "need": 3,
+      "optional": 12,
+      "sender": 45
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -24270,
+        33771,
+        33808
+      ],
+      "guard": 24270,
+      "selector_clause": [
+        -24270,
+        33771,
+        33808
+      ],
+      "sender": 45
+    },
+    {
+      "arms": "0-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -24270,
+        33771,
+        33845
+      ],
+      "guard": 24270,
+      "selector_clause": [
+        -24270,
+        33771,
+        33845
+      ],
+      "sender": 45
+    },
+    {
+      "arms": "1-3",
+      "clauses": 1,
+      "color": 2,
+      "first": [
+        -24270,
+        33808,
+        33845
+      ],
+      "guard": 24270,
+      "selector_clause": [
+        -24270,
+        33808,
+        33845
+      ],
+      "sender": 45
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 3,
+      "first": [
+        -33873,
+        628,
+        33874
+      ],
+      "fixed": 0,
+      "guard": 33873,
+      "need": 3,
+      "optional": 14,
+      "sender": 46
+    },
+    {
+      "arms": "1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -33907,
+        3288,
+        3604,
+        3904,
+        4048,
+        4324,
+        4584,
+        4708,
+        4828,
+        4944,
+        5056,
+        5164
+      ],
+      "fixed": 2,
+      "guard": 33907,
+      "need": 1,
+      "optional": 11,
+      "sender": 46
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -33908,
+        5268,
+        5556,
+        5644,
+        5808,
+        5956,
+        6024,
+        6088,
+        6148,
+        6256,
+        6304
+      ],
+      "fixed": 2,
+      "guard": 33908,
+      "need": 1,
+      "optional": 10,
+      "sender": 46
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -24663,
+        33873,
+        33907
+      ],
+      "guard": 24663,
+      "selector_clause": [
+        -24663,
+        33873,
+        33907
+      ],
+      "sender": 46
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -24663,
+        33873,
+        33908
+      ],
+      "guard": 24663,
+      "selector_clause": [
+        -24663,
+        33873,
+        33908
+      ],
+      "sender": 46
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -24663,
+        33907,
+        33908
+      ],
+      "guard": 24663,
+      "selector_clause": [
+        -24663,
+        33907,
+        33908
+      ],
+      "sender": 46
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 3,
+      "first": [
+        -33909,
+        632,
+        33910
+      ],
+      "fixed": 0,
+      "guard": 33909,
+      "need": 3,
+      "optional": 14,
+      "sender": 47
+    },
+    {
+      "arms": "1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -33943,
+        3292,
+        3608,
+        3908,
+        4052,
+        4328,
+        4588,
+        4712,
+        4832,
+        4948,
+        5060,
+        5168
+      ],
+      "fixed": 2,
+      "guard": 33943,
+      "need": 1,
+      "optional": 11,
+      "sender": 47
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -33944,
+        5272,
+        5560,
+        5648,
+        5812,
+        5960,
+        6028,
+        6092,
+        6152,
+        6260,
+        6308
+      ],
+      "fixed": 2,
+      "guard": 33944,
+      "need": 1,
+      "optional": 10,
+      "sender": 47
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -24914,
+        33909,
+        33943
+      ],
+      "guard": 24914,
+      "selector_clause": [
+        -24914,
+        33909,
+        33943
+      ],
+      "sender": 47
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -24914,
+        33909,
+        33944
+      ],
+      "guard": 24914,
+      "selector_clause": [
+        -24914,
+        33909,
+        33944
+      ],
+      "sender": 47
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -24914,
+        33943,
+        33944
+      ],
+      "guard": 24914,
+      "selector_clause": [
+        -24914,
+        33943,
+        33944
+      ],
+      "sender": 47
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 3,
+      "first": [
+        -33945,
+        636,
+        33946
+      ],
+      "fixed": 0,
+      "guard": 33945,
+      "need": 3,
+      "optional": 14,
+      "sender": 48
+    },
+    {
+      "arms": "1",
+      "clauses": 29,
+      "color": 3,
+      "first": [
+        -33979,
+        3296,
+        33980
+      ],
+      "fixed": 1,
+      "guard": 33979,
+      "need": 2,
+      "optional": 11,
+      "sender": 48
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -33998,
+        5276,
+        5564,
+        5652,
+        5816,
+        5964,
+        6032,
+        6096,
+        6156,
+        6264,
+        6312
+      ],
+      "fixed": 2,
+      "guard": 33998,
+      "need": 1,
+      "optional": 10,
+      "sender": 48
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25165,
+        33945,
+        33979
+      ],
+      "guard": 25165,
+      "selector_clause": [
+        -25165,
+        33945,
+        33979
+      ],
+      "sender": 48
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25165,
+        33945,
+        33998
+      ],
+      "guard": 25165,
+      "selector_clause": [
+        -25165,
+        33945,
+        33998
+      ],
+      "sender": 48
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25165,
+        33979,
+        33998
+      ],
+      "guard": 25165,
+      "selector_clause": [
+        -25165,
+        33979,
+        33998
+      ],
+      "sender": 48
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 3,
+      "first": [
+        -33999,
+        640,
+        34000
+      ],
+      "fixed": 0,
+      "guard": 33999,
+      "need": 3,
+      "optional": 14,
+      "sender": 49
+    },
+    {
+      "arms": "1",
+      "clauses": 29,
+      "color": 3,
+      "first": [
+        -34033,
+        3300,
+        34034
+      ],
+      "fixed": 1,
+      "guard": 34033,
+      "need": 2,
+      "optional": 11,
+      "sender": 49
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -34052,
+        5280,
+        5568,
+        5656,
+        5820,
+        5968,
+        6036,
+        6100,
+        6160,
+        6268,
+        6316
+      ],
+      "fixed": 2,
+      "guard": 34052,
+      "need": 1,
+      "optional": 10,
+      "sender": 49
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25430,
+        33999,
+        34033
+      ],
+      "guard": 25430,
+      "selector_clause": [
+        -25430,
+        33999,
+        34033
+      ],
+      "sender": 49
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25430,
+        33999,
+        34052
+      ],
+      "guard": 25430,
+      "selector_clause": [
+        -25430,
+        33999,
+        34052
+      ],
+      "sender": 49
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25430,
+        34033,
+        34052
+      ],
+      "guard": 25430,
+      "selector_clause": [
+        -25430,
+        34033,
+        34052
+      ],
+      "sender": 49
+    },
+    {
+      "arms": "0",
+      "clauses": 58,
+      "color": 3,
+      "first": [
+        -34053,
+        644,
+        34054
+      ],
+      "fixed": 0,
+      "guard": 34053,
+      "need": 3,
+      "optional": 14,
+      "sender": 50
+    },
+    {
+      "arms": "1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -34087,
+        3304,
+        3620,
+        3920,
+        4064,
+        4340,
+        4600,
+        4724,
+        4844,
+        4960,
+        5072,
+        5180
+      ],
+      "fixed": 2,
+      "guard": 34087,
+      "need": 1,
+      "optional": 11,
+      "sender": 50
+    },
+    {
+      "arms": "2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -34088,
+        5284,
+        5572,
+        5660,
+        5824,
+        5972,
+        6040,
+        6104,
+        6164,
+        6272,
+        6320
+      ],
+      "fixed": 2,
+      "guard": 34088,
+      "need": 1,
+      "optional": 10,
+      "sender": 50
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25695,
+        34053,
+        34087
+      ],
+      "guard": 25695,
+      "selector_clause": [
+        -25695,
+        34053,
+        34087
+      ],
+      "sender": 50
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25695,
+        34053,
+        34088
+      ],
+      "guard": 25695,
+      "selector_clause": [
+        -25695,
+        34053,
+        34088
+      ],
+      "sender": 50
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25695,
+        34087,
+        34088
+      ],
+      "guard": 25695,
+      "selector_clause": [
+        -25695,
+        34087,
+        34088
+      ],
+      "sender": 50
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34089,
+        428,
+        34090
+      ],
+      "fixed": 0,
+      "guard": 34089,
+      "need": 3,
+      "optional": 15,
+      "sender": 51
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34126,
+        3308,
+        34127
+      ],
+      "fixed": 0,
+      "guard": 34126,
+      "need": 3,
+      "optional": 15,
+      "sender": 51
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34163,
+        5288,
+        34164
+      ],
+      "fixed": 0,
+      "guard": 34163,
+      "need": 3,
+      "optional": 15,
+      "sender": 51
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25946,
+        34089,
+        34126
+      ],
+      "guard": 25946,
+      "selector_clause": [
+        -25946,
+        34089,
+        34126
+      ],
+      "sender": 51
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25946,
+        34089,
+        34163
+      ],
+      "guard": 25946,
+      "selector_clause": [
+        -25946,
+        34089,
+        34163
+      ],
+      "sender": 51
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -25946,
+        34126,
+        34163
+      ],
+      "guard": 25946,
+      "selector_clause": [
+        -25946,
+        34126,
+        34163
+      ],
+      "sender": 51
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34200,
+        432,
+        34201
+      ],
+      "fixed": 0,
+      "guard": 34200,
+      "need": 3,
+      "optional": 15,
+      "sender": 52
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34237,
+        3312,
+        34238
+      ],
+      "fixed": 0,
+      "guard": 34237,
+      "need": 3,
+      "optional": 15,
+      "sender": 52
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34274,
+        5292,
+        34275
+      ],
+      "fixed": 0,
+      "guard": 34274,
+      "need": 3,
+      "optional": 15,
+      "sender": 52
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -26381,
+        34200,
+        34237
+      ],
+      "guard": 26381,
+      "selector_clause": [
+        -26381,
+        34200,
+        34237
+      ],
+      "sender": 52
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -26381,
+        34200,
+        34274
+      ],
+      "guard": 26381,
+      "selector_clause": [
+        -26381,
+        34200,
+        34274
+      ],
+      "sender": 52
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -26381,
+        34237,
+        34274
+      ],
+      "guard": 26381,
+      "selector_clause": [
+        -26381,
+        34237,
+        34274
+      ],
+      "sender": 52
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34311,
+        436,
+        34312
+      ],
+      "fixed": 0,
+      "guard": 34311,
+      "need": 3,
+      "optional": 15,
+      "sender": 53
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34348,
+        3316,
+        34349
+      ],
+      "fixed": 0,
+      "guard": 34348,
+      "need": 3,
+      "optional": 15,
+      "sender": 53
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34385,
+        5296,
+        34386
+      ],
+      "fixed": 0,
+      "guard": 34385,
+      "need": 3,
+      "optional": 15,
+      "sender": 53
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -26816,
+        34311,
+        34348
+      ],
+      "guard": 26816,
+      "selector_clause": [
+        -26816,
+        34311,
+        34348
+      ],
+      "sender": 53
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -26816,
+        34311,
+        34385
+      ],
+      "guard": 26816,
+      "selector_clause": [
+        -26816,
+        34311,
+        34385
+      ],
+      "sender": 53
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -26816,
+        34348,
+        34385
+      ],
+      "guard": 26816,
+      "selector_clause": [
+        -26816,
+        34348,
+        34385
+      ],
+      "sender": 53
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34422,
+        440,
+        34423
+      ],
+      "fixed": 0,
+      "guard": 34422,
+      "need": 3,
+      "optional": 15,
+      "sender": 54
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34459,
+        3320,
+        34460
+      ],
+      "fixed": 0,
+      "guard": 34459,
+      "need": 3,
+      "optional": 15,
+      "sender": 54
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34496,
+        5300,
+        34497
+      ],
+      "fixed": 0,
+      "guard": 34496,
+      "need": 3,
+      "optional": 15,
+      "sender": 54
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -27251,
+        34422,
+        34459
+      ],
+      "guard": 27251,
+      "selector_clause": [
+        -27251,
+        34422,
+        34459
+      ],
+      "sender": 54
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -27251,
+        34422,
+        34496
+      ],
+      "guard": 27251,
+      "selector_clause": [
+        -27251,
+        34422,
+        34496
+      ],
+      "sender": 54
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -27251,
+        34459,
+        34496
+      ],
+      "guard": 27251,
+      "selector_clause": [
+        -27251,
+        34459,
+        34496
+      ],
+      "sender": 54
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34533,
+        444,
+        34534
+      ],
+      "fixed": 0,
+      "guard": 34533,
+      "need": 3,
+      "optional": 15,
+      "sender": 55
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34570,
+        3324,
+        34571
+      ],
+      "fixed": 0,
+      "guard": 34570,
+      "need": 3,
+      "optional": 15,
+      "sender": 55
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34607,
+        5304,
+        34608
+      ],
+      "fixed": 0,
+      "guard": 34607,
+      "need": 3,
+      "optional": 15,
+      "sender": 55
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -27686,
+        34533,
+        34570
+      ],
+      "guard": 27686,
+      "selector_clause": [
+        -27686,
+        34533,
+        34570
+      ],
+      "sender": 55
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -27686,
+        34533,
+        34607
+      ],
+      "guard": 27686,
+      "selector_clause": [
+        -27686,
+        34533,
+        34607
+      ],
+      "sender": 55
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -27686,
+        34570,
+        34607
+      ],
+      "guard": 27686,
+      "selector_clause": [
+        -27686,
+        34570,
+        34607
+      ],
+      "sender": 55
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34644,
+        448,
+        34645
+      ],
+      "fixed": 0,
+      "guard": 34644,
+      "need": 3,
+      "optional": 15,
+      "sender": 56
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34681,
+        3328,
+        34682
+      ],
+      "fixed": 0,
+      "guard": 34681,
+      "need": 3,
+      "optional": 15,
+      "sender": 56
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34718,
+        5308,
+        34719
+      ],
+      "fixed": 0,
+      "guard": 34718,
+      "need": 3,
+      "optional": 15,
+      "sender": 56
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -28121,
+        34644,
+        34681
+      ],
+      "guard": 28121,
+      "selector_clause": [
+        -28121,
+        34644,
+        34681
+      ],
+      "sender": 56
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -28121,
+        34644,
+        34718
+      ],
+      "guard": 28121,
+      "selector_clause": [
+        -28121,
+        34644,
+        34718
+      ],
+      "sender": 56
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -28121,
+        34681,
+        34718
+      ],
+      "guard": 28121,
+      "selector_clause": [
+        -28121,
+        34681,
+        34718
+      ],
+      "sender": 56
+    },
+    {
+      "arms": "0",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34755,
+        452,
+        34756
+      ],
+      "fixed": 0,
+      "guard": 34755,
+      "need": 3,
+      "optional": 15,
+      "sender": 57
+    },
+    {
+      "arms": "1",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34792,
+        3332,
+        34793
+      ],
+      "fixed": 0,
+      "guard": 34792,
+      "need": 3,
+      "optional": 15,
+      "sender": 57
+    },
+    {
+      "arms": "2",
+      "clauses": 63,
+      "color": 3,
+      "first": [
+        -34829,
+        5312,
+        34830
+      ],
+      "fixed": 0,
+      "guard": 34829,
+      "need": 3,
+      "optional": 15,
+      "sender": 57
+    },
+    {
+      "arms": "0-1",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -28556,
+        34755,
+        34792
+      ],
+      "guard": 28556,
+      "selector_clause": [
+        -28556,
+        34755,
+        34792
+      ],
+      "sender": 57
+    },
+    {
+      "arms": "0-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -28556,
+        34755,
+        34829
+      ],
+      "guard": 28556,
+      "selector_clause": [
+        -28556,
+        34755,
+        34829
+      ],
+      "sender": 57
+    },
+    {
+      "arms": "1-2",
+      "clauses": 1,
+      "color": 3,
+      "first": [
+        -28556,
+        34792,
+        34829
+      ],
+      "guard": 28556,
+      "selector_clause": [
+        -28556,
+        34792,
+        34829
+      ],
+      "sender": 57
+    }
+  ],
+  "variables": 34865
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "armcap_variant": {
+      "candidate_literals": 2255,
+      "clause_literals": 34745,
+      "clauses": 14630,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.004683871000000006,
+      "new_variables": 6968,
+      "next_top": 45051,
+      "scope": "unconditional",
+      "zero_cap_literals": 17
+    },
+    "base_clauses": 211564,
+    "base_generation_cpu_seconds": 0.732155803,
+    "base_variables": 29942,
+    "cap_variants": {
+      "all_km": {
+        "clause_literals": 254785,
+        "clauses": 91229,
+        "counters": 228,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.055998359999999914,
+        "new_variables": 33509,
+        "next_top": 63451,
+        "scope": "all"
+      },
+      "own_km": {
+        "clause_literals": 63534,
+        "clauses": 22616,
+        "counters": 57,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.005432715000000088,
+        "new_variables": 8141,
+        "next_top": 38083,
+        "scope": "own"
+      },
+      "own_seq": {
+        "clause_literals": 103650,
+        "clauses": 42192,
+        "counters": 57,
+        "encoding": 1,
+        "generation_cpu_seconds": 0.038360699000000054,
+        "new_variables": 20749,
+        "next_top": 50691,
+        "scope": "own"
+      }
+    },
+    "charge": 11,
+    "conflict_budget": 60000,
+    "id": "c4bd798bd4f8fd7c73150164685bc79cc6ca9bc4f79ed5ad3d33179f470b7ae2",
+    "input_sha256": "e5304d3c469a8e1be3ea697395dac823408b2d46db7b9ba07d41a5fef6eb740e",
+    "kinds": "TTT-",
+    "policies": {
+      "all_km": {
+        "added_clauses": 91229,
+        "conflicts": 60001,
+        "decisions": 131487,
+        "propagations": 12011663,
+        "restarts": 2710,
+        "search_cpu_seconds": 3.2431257860000002,
+        "status": "OPEN"
+      },
+      "own_km": {
+        "added_clauses": 22616,
+        "conflicts": 60001,
+        "decisions": 126025,
+        "propagations": 9839791,
+        "restarts": 2484,
+        "search_cpu_seconds": 2.690026625999999,
+        "status": "OPEN"
+      },
+      "own_km_plus_armcaps": {
+        "added_clauses": 37246,
+        "conflicts": 60004,
+        "decisions": 122504,
+        "propagations": 11707519,
+        "restarts": 2211,
+        "search_cpu_seconds": 3.0974339410000002,
+        "status": "OPEN"
+      },
+      "own_seq": {
+        "added_clauses": 42192,
+        "conflicts": 60004,
+        "decisions": 119638,
+        "propagations": 12612792,
+        "restarts": 1912,
+        "search_cpu_seconds": 2.9933227769999995,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60002,
+        "decisions": 136912,
+        "propagations": 9872388,
+        "restarts": 2897,
+        "search_cpu_seconds": 2.507728570000001,
+        "status": "OPEN"
+      }
+    },
+    "profile": "15,15,15,12",
+    "proof_bytes": 365296434,
+    "rank": 8,
+    "seed": 0
+  },
+  {
+    "armcap_variant": {
+      "candidate_literals": 2255,
+      "clause_literals": 34745,
+      "clauses": 14630,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.004896479999999315,
+      "new_variables": 6968,
+      "next_top": 44699,
+      "scope": "unconditional",
+      "zero_cap_literals": 17
+    },
+    "base_clauses": 206476,
+    "base_generation_cpu_seconds": 0.25982919900000034,
+    "base_variables": 29590,
+    "cap_variants": {
+      "all_km": {
+        "clause_literals": 254547,
+        "clauses": 91138,
+        "counters": 228,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.06778224399999999,
+        "new_variables": 33492,
+        "next_top": 63082,
+        "scope": "all"
+      },
+      "own_km": {
+        "clause_literals": 63534,
+        "clauses": 22616,
+        "counters": 57,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.004942354000000648,
+        "new_variables": 8141,
+        "next_top": 37731,
+        "scope": "own"
+      },
+      "own_seq": {
+        "clause_literals": 103650,
+        "clauses": 42192,
+        "counters": 57,
+        "encoding": 1,
+        "generation_cpu_seconds": 0.008262401000003194,
+        "new_variables": 20749,
+        "next_top": 50339,
+        "scope": "own"
+      }
+    },
+    "charge": 3,
+    "conflict_budget": 60000,
+    "id": "e58720ff75d478b4cc57a5f1639ca6c9b85070e0b68fad8d73f4def3445a9f7f",
+    "input_sha256": "32989b77a3a6c826a89c6e1e5faa535733dffbd7819f72380c92f5a3308dea9e",
+    "kinds": "TUU-",
+    "policies": {
+      "all_km": {
+        "added_clauses": 91138,
+        "conflicts": 60002,
+        "decisions": 128966,
+        "propagations": 11298554,
+        "restarts": 2825,
+        "search_cpu_seconds": 3.145938461,
+        "status": "OPEN"
+      },
+      "own_km": {
+        "added_clauses": 22616,
+        "conflicts": 60000,
+        "decisions": 123326,
+        "propagations": 9801034,
+        "restarts": 2498,
+        "search_cpu_seconds": 2.4734876539999995,
+        "status": "OPEN"
+      },
+      "own_km_plus_armcaps": {
+        "added_clauses": 37246,
+        "conflicts": 60001,
+        "decisions": 125453,
+        "propagations": 11890127,
+        "restarts": 2374,
+        "search_cpu_seconds": 2.836481502999998,
+        "status": "OPEN"
+      },
+      "own_seq": {
+        "added_clauses": 42192,
+        "conflicts": 60001,
+        "decisions": 119136,
+        "propagations": 12588869,
+        "restarts": 2045,
+        "search_cpu_seconds": 2.8957206069999977,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60002,
+        "decisions": 212376,
+        "propagations": 19176381,
+        "restarts": 3754,
+        "search_cpu_seconds": 2.7426563339999994,
+        "status": "OPEN"
+      }
+    },
+    "profile": "15,15,15,12",
+    "proof_bytes": 234636622,
+    "rank": 132,
+    "seed": 0
+  },
+  {
+    "armcap_variant": {
+      "candidate_literals": 2247,
+      "clause_literals": 34537,
+      "clauses": 14542,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.004726601000001551,
+      "new_variables": 6928,
+      "next_top": 45247,
+      "scope": "unconditional",
+      "zero_cap_literals": 17
+    },
+    "base_clauses": 218948,
+    "base_generation_cpu_seconds": 0.2934613730000031,
+    "base_variables": 30198,
+    "cap_variants": {
+      "all_km": {
+        "clause_literals": 251030,
+        "clauses": 90022,
+        "counters": 228,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.02274429099999864,
+        "new_variables": 33118,
+        "next_top": 63316,
+        "scope": "all"
+      },
+      "own_km": {
+        "clause_literals": 63485,
+        "clauses": 22604,
+        "counters": 57,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.004726040000001319,
+        "new_variables": 8121,
+        "next_top": 38319,
+        "scope": "own"
+      },
+      "own_seq": {
+        "clause_literals": 103042,
+        "clauses": 41944,
+        "counters": 57,
+        "encoding": 1,
+        "generation_cpu_seconds": 0.008207497000000785,
+        "new_variables": 20629,
+        "next_top": 50827,
+        "scope": "own"
+      }
+    },
+    "charge": 10,
+    "conflict_budget": 60000,
+    "id": "9a1dfad86ba28ba607737048b90fa80b50eb5a7f0441f024f96060966d806db2",
+    "input_sha256": "79eb59d8b399f6b695c0d09fd3071242a440791732ce71b8ac0105772040d694",
+    "kinds": "TTT-",
+    "policies": {
+      "all_km": {
+        "added_clauses": 90022,
+        "conflicts": 60000,
+        "decisions": 133407,
+        "propagations": 12002197,
+        "restarts": 3004,
+        "search_cpu_seconds": 3.287868299000003,
+        "status": "OPEN"
+      },
+      "own_km": {
+        "added_clauses": 22604,
+        "conflicts": 60001,
+        "decisions": 149755,
+        "propagations": 10686498,
+        "restarts": 3455,
+        "search_cpu_seconds": 2.512089555000003,
+        "status": "OPEN"
+      },
+      "own_km_plus_armcaps": {
+        "added_clauses": 37146,
+        "conflicts": 60002,
+        "decisions": 111450,
+        "propagations": 12350120,
+        "restarts": 1896,
+        "search_cpu_seconds": 2.8434954390000016,
+        "status": "OPEN"
+      },
+      "own_seq": {
+        "added_clauses": 41944,
+        "conflicts": 60000,
+        "decisions": 122544,
+        "propagations": 14462191,
+        "restarts": 2031,
+        "search_cpu_seconds": 2.8355193539999988,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60000,
+        "decisions": 148828,
+        "propagations": 10995278,
+        "restarts": 3057,
+        "search_cpu_seconds": 2.3880656309999964,
+        "status": "OPEN"
+      }
+    },
+    "profile": "16,15,15,11",
+    "proof_bytes": 188430430,
+    "rank": 255,
+    "seed": 0
+  },
+  {
+    "armcap_variant": {
+      "candidate_literals": 2248,
+      "clause_literals": 34652,
+      "clauses": 14588,
+      "encoded_groups": 169,
+      "encoding": 1,
+      "generation_cpu_seconds": 0.005000204000005226,
+      "new_variables": 6951,
+      "next_top": 44653,
+      "scope": "unconditional",
+      "zero_cap_literals": 16
+    },
+    "base_clauses": 208360,
+    "base_generation_cpu_seconds": 0.2516865999999993,
+    "base_variables": 29593,
+    "cap_variants": {
+      "all_km": {
+        "clause_literals": 249780,
+        "clauses": 89590,
+        "counters": 228,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.0724350979999997,
+        "new_variables": 33016,
+        "next_top": 62609,
+        "scope": "all"
+      },
+      "own_km": {
+        "clause_literals": 63391,
+        "clauses": 22574,
+        "counters": 57,
+        "encoding": 8,
+        "generation_cpu_seconds": 0.004990476000003241,
+        "new_variables": 8109,
+        "next_top": 37702,
+        "scope": "own"
+      },
+      "own_seq": {
+        "clause_literals": 103022,
+        "clauses": 41936,
+        "counters": 57,
+        "encoding": 1,
+        "generation_cpu_seconds": 0.04878667200000564,
+        "new_variables": 20625,
+        "next_top": 50218,
+        "scope": "own"
+      }
+    },
+    "charge": 5,
+    "conflict_budget": 60000,
+    "id": "88bf7e10f1421f909b94eb06d81eaed34ec8d2b7bd6d7edd7f2eb65f927111ca",
+    "input_sha256": "5ac15fc2f02935d99436d43289532a562f89a3b8d01ea237c2e7548920707570",
+    "kinds": "TUU-",
+    "policies": {
+      "all_km": {
+        "added_clauses": 89590,
+        "conflicts": 60000,
+        "decisions": 127434,
+        "propagations": 11606530,
+        "restarts": 2723,
+        "search_cpu_seconds": 3.1842015000000004,
+        "status": "OPEN"
+      },
+      "own_km": {
+        "added_clauses": 22574,
+        "conflicts": 60001,
+        "decisions": 126703,
+        "propagations": 10313993,
+        "restarts": 2659,
+        "search_cpu_seconds": 2.450963696999999,
+        "status": "OPEN"
+      },
+      "own_km_plus_armcaps": {
+        "added_clauses": 37162,
+        "conflicts": 60001,
+        "decisions": 114350,
+        "propagations": 11818489,
+        "restarts": 1852,
+        "search_cpu_seconds": 2.8328265610000045,
+        "status": "OPEN"
+      },
+      "own_seq": {
+        "added_clauses": 41936,
+        "conflicts": 60001,
+        "decisions": 116769,
+        "propagations": 12239011,
+        "restarts": 1919,
+        "search_cpu_seconds": 2.6983397710000006,
+        "status": "OPEN"
+      },
+      "stock": {
+        "added_clauses": 0,
+        "conflicts": 60000,
+        "decisions": 133838,
+        "propagations": 9253707,
+        "restarts": 2853,
+        "search_cpu_seconds": 2.1563866019999978,
+        "status": "OPEN"
+      }
+    },
+    "profile": "16,15,15,11",
+    "proof_bytes": 164747538,
+    "rank": 340,
+    "seed": 0
+  }
+]

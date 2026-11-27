@@ -1,0 +1,3 @@
+cadical: error: DIMACS input file '.scratch/arm-cap-research/rank1300-host-units.cnf' does not exist
+Command exited with non-zero status 1
+host-units wall=0.00 user=0.00 rss=4268 exit=1
