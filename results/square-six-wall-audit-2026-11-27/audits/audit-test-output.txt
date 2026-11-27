@@ -1,0 +1,21 @@
+PASS: 38 manifest hashes; original parent SHA-256 33b7898ed58bd1a3a2e088f57d4bc9d01b5397e7b72f1f5f1449a7bf16f4a02a
+PASS: 345 template edges match positive unit pins in the packaged parent
+16T minimal supports per color pair (24, 80, 32) monochromatic six-sets and two-color-extendable six-sets (320, 128)
+16U minimal supports per color pair (40, 16, 0) monochromatic six-sets and two-color-extendable six-sets (320, 80)
+15T minimal supports per color pair (18, 55, 20) monochromatic six-sets and two-color-extendable six-sets (200, 80)
+15U minimal supports per color pair (30, 11, 0) monochromatic six-sets and two-color-extendable six-sets (200, 50)
+PASS: packaged all-subsets/two-triangle and minimal-support/rim checks
+PASS: 16T uses SRG(16,5,0,2) graphs in every color (Clebsch parameters)
+PASS: 16U uses SRG(16,5,0,2) graphs in every color (Clebsch parameters)
+PASS: README square example is abstractly non-extendable and minimal; deletion counts [3, 3, 3, 3]
+PASS: README paired triangles example is abstractly non-extendable and minimal; deletion counts [9, 9, 1, 1, 1, 1]
+PASS: 16T rim totals and extendability for BOTH colors in every pair: (320, 128)
+PASS: 16U rim totals and extendability for BOTH colors in every pair: (320, 80)
+PASS: 15T rim totals and extendability for BOTH colors in every pair: (200, 80)
+PASS: 15U rim totals and extendability for BOTH colors in every pair: (200, 50)
+All 311 by 235 degree-sequence pairs give at least 22; abstract witness attains 22.
+PASS: 384 unique direct goals; 1020 unique short clauses (widths 364/306/350); 189 unique stock clauses
+SELECTION ONLY: stored candidates {'4': 8546, '6': 4736}, cap 192; selected kinds {('square', '16T'): 6, ('square', '15T'): 132, ('square', '16U'): 54, ('paired-triangles', '15T'): 192}
+SELECTION ONLY: all 192 six-site cuts are 15T and their outside-x set has size 16: [38, 39, 40, 41, 42, 43, 44, 45, 46, 51, 52, 53, 54, 55, 56, 57]
+SCOPE: candidate-generation/scoring and full shape-subcount regeneration are not supplied in catalog.py
+ALL BOUNDED CHECKS PASSED; no solver or wall search was run

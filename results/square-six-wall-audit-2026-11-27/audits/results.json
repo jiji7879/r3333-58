@@ -1,0 +1,170 @@
+{
+  "package_example": {
+    "vertex_convention": "zero-based",
+    "rule_[x,u,a,b,red,blue]": [
+      17,
+      2,
+      4,
+      11,
+      2,
+      3
+    ],
+    "raw_clause": [
+      -511,
+      937,
+      938,
+      2309,
+      2310
+    ],
+    "stored_clause": [
+      -511,
+      937,
+      2309
+    ],
+    "removed_false_literals_with_negated_parent_units": {
+      "938": true,
+      "2310": true
+    },
+    "selected_clause_count": 1020,
+    "selected_length_histogram": {
+      "3": 364,
+      "4": 306,
+      "5": 350
+    }
+  },
+  "real_parent_single_clause_rup": {
+    "goal": [
+      -511,
+      937,
+      2309
+    ],
+    "parent_clauses_used": [
+      [
+        459
+      ],
+      [
+        487
+      ],
+      [
+        916
+      ],
+      [
+        -938
+      ],
+      [
+        -2310
+      ],
+      [
+        -459,
+        -511,
+        -939
+      ],
+      [
+        -487,
+        -511,
+        -2311
+      ],
+      [
+        937,
+        938,
+        939,
+        940
+      ],
+      [
+        2309,
+        2310,
+        2311,
+        2312
+      ],
+      [
+        -916,
+        -940,
+        -2312
+      ]
+    ],
+    "all_are_exact_original_parent_clauses": true,
+    "propagation_conflict": [
+      -916,
+      -940,
+      -2312
+    ],
+    "forced_key_values": {
+      "511": true,
+      "937": false,
+      "938": false,
+      "939": false,
+      "940": true,
+      "2309": false,
+      "2310": false,
+      "2311": false,
+      "2312": true
+    },
+    "scope": "one selected short clause only; not the full 1020-rule prefix"
+  },
+  "toy": {
+    "vertices_[u,a,b,x]": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "red_blue": [
+      0,
+      1
+    ],
+    "other_colors": [
+      2,
+      3
+    ],
+    "candidate": [
+      -9,
+      19,
+      20,
+      23,
+      24
+    ],
+    "proof_clauses": [
+      [
+        -9,
+        19,
+        20,
+        23,
+        24
+      ],
+      [
+        -25
+      ],
+      []
+    ],
+    "positive_rup": {
+      "argv": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-bin/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-out/good-rup.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-out/good-rup.drat",
+        "-i",
+        "-U"
+      ],
+      "exit": 0,
+      "status_lines": [
+        "s VERIFIED"
+      ],
+      "warning_count": 0,
+      "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-out/good-rup.log"
+    },
+    "broken_guard_negative_control": {
+      "argv": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-bin/drat-trim",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-out/bad-guard.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-out/bad-guard.drat",
+        "-i",
+        "-U"
+      ],
+      "exit": 1,
+      "status_lines": [
+        "s NOT VERIFIED"
+      ],
+      "warning_count": 0,
+      "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwz646yy/m1/audit-out/bad-guard.log"
+    }
+  }
+}

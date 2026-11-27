@@ -1,0 +1,8 @@
+{
+  "row": "4a71c66153af2a1cb64fc609b92bdd3dc93714fb3983a687812849a19f1798b2",
+  "generator": "audited initialized engine/problem.py: row_formula(row, \"first\")",
+  "generator_sha256": "12cd5280fb162d6f18dc69e6ca382cff7dfc879ce3a7bb4dc7afb6763ce400e6",
+  "bytes": 3487573,
+  "sha256": "33b7898ed58bd1a3a2e088f57d4bc9d01b5397e7b72f1f5f1449a7bf16f4a02a",
+  "byte_identical_to_packaged_parent": true
+}

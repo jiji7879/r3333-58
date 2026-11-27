@@ -1,0 +1,210 @@
+[
+  {
+    "cube": "r000",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r000-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r000-parent.cnf",
+    "parent_query_sha256": "2ae9ffee61943f0adb14ddd6ec3e9810b71b41aefd47172aa189703708d394f3",
+    "query_sha256": "ce6220df6d32fd68e9e7e55ace9c78389271c71fe9dddae0cd4e27b5340e753e",
+    "units": [
+      -294,
+      -2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r000",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r000-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r000-parent.cnf",
+    "parent_query_sha256": "2ae9ffee61943f0adb14ddd6ec3e9810b71b41aefd47172aa189703708d394f3",
+    "query_sha256": "979b408898b42edd3978523070c2645c29b40fd4dc40f8579fab544245d68137",
+    "units": [
+      -294,
+      -2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r001",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r001-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r001-parent.cnf",
+    "parent_query_sha256": "6004ba54e46b865b95e30b11a1cac78a85205f01df8b7913aeb0543cb2474da3",
+    "query_sha256": "8185897d713b0e70b9e038defcf2795e32fcd9cf37ea2e3833198ee39b1e3f9f",
+    "units": [
+      -294,
+      -2846,
+      2850
+    ]
+  },
+  {
+    "cube": "r001",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r001-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r001-parent.cnf",
+    "parent_query_sha256": "6004ba54e46b865b95e30b11a1cac78a85205f01df8b7913aeb0543cb2474da3",
+    "query_sha256": "f14d9ef6dc5c6b2d46f1cdcc25368eb71bd5ebd9b2b794656c11f79f03524bfa",
+    "units": [
+      -294,
+      -2846,
+      2850
+    ]
+  },
+  {
+    "cube": "r010",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r010-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r010-parent.cnf",
+    "parent_query_sha256": "0b11c00f5bdbd9cd642ef8ede1cbb6f83fd4558cdedd6ef74f22aafbd244900a",
+    "query_sha256": "c393908a881ea3739173094c5af3a5063c0957f984c11ce2ee04bab52bda0994",
+    "units": [
+      -294,
+      2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r010",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r010-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r010-parent.cnf",
+    "parent_query_sha256": "0b11c00f5bdbd9cd642ef8ede1cbb6f83fd4558cdedd6ef74f22aafbd244900a",
+    "query_sha256": "d4aad0e3429d77fd9de88e137e5791230d9ac3c142a66ec73f9ed1672a9d5249",
+    "units": [
+      -294,
+      2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r011",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r011-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r011-parent.cnf",
+    "parent_query_sha256": "1672e316bd5862d71e1b916c3a8929e0b3a88790b351c4c57e6ecbbd792cdbbc",
+    "query_sha256": "ef136b686dd51cfbb7f37bc0a5001b60424e0f021786d323a572ec240f14993d",
+    "units": [
+      -294,
+      2846,
+      2850
+    ]
+  },
+  {
+    "cube": "r011",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r011-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r011-parent.cnf",
+    "parent_query_sha256": "1672e316bd5862d71e1b916c3a8929e0b3a88790b351c4c57e6ecbbd792cdbbc",
+    "query_sha256": "6b107c2cf8e0675bd62cf9290c0761679a7ebf2b8cda3a7101d84ac066bc787b",
+    "units": [
+      -294,
+      2846,
+      2850
+    ]
+  },
+  {
+    "cube": "r100",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r100-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r100-parent.cnf",
+    "parent_query_sha256": "b507a2a8388f7e24fa3d12ce7e51043d2e34dba717aad4ddad63bc1a70a802c0",
+    "query_sha256": "2d7cb339ab9ed5ab9cab6ca244b5f136d12e040b3cd006f4574bd758c3293d37",
+    "units": [
+      294,
+      -2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r100",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r100-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r100-parent.cnf",
+    "parent_query_sha256": "b507a2a8388f7e24fa3d12ce7e51043d2e34dba717aad4ddad63bc1a70a802c0",
+    "query_sha256": "2132ebc596c6325bacbd5c3506fbfa3e8c16b2abc6d3e6804cd7bc5b83420747",
+    "units": [
+      294,
+      -2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r101",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r101-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r101-parent.cnf",
+    "parent_query_sha256": "5cb4f10c41f7a37bfb0c7a845c290ac842fff3468b0c5db782fc46f4ab6388b9",
+    "query_sha256": "34725ab464c461d65d07cd047d3206c1cb7a17d5a65230f9a81cd7154243b871",
+    "units": [
+      294,
+      -2846,
+      2850
+    ]
+  },
+  {
+    "cube": "r101",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r101-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r101-parent.cnf",
+    "parent_query_sha256": "5cb4f10c41f7a37bfb0c7a845c290ac842fff3468b0c5db782fc46f4ab6388b9",
+    "query_sha256": "6586f2c20067127415a12cb13f3873fce2b386a6ed3ac3af3476293aeba3c188",
+    "units": [
+      294,
+      -2846,
+      2850
+    ]
+  },
+  {
+    "cube": "r110",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r110-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r110-parent.cnf",
+    "parent_query_sha256": "c10a8bb14e7c024561a5fe1a24bb4083da9ebb37ad6b04db886bb1921260096b",
+    "query_sha256": "1d6d8856453cbb28136f36f42256c4f85ca6aa798f49d7eedd1179967b1abb5b",
+    "units": [
+      294,
+      2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r110",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r110-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r110-parent.cnf",
+    "parent_query_sha256": "c10a8bb14e7c024561a5fe1a24bb4083da9ebb37ad6b04db886bb1921260096b",
+    "query_sha256": "db5a4699cd70bbe2281e1b332ed42fee2dae3f299fb462e40684b0f5102cddee",
+    "units": [
+      294,
+      2846,
+      -2850
+    ]
+  },
+  {
+    "cube": "r111",
+    "kind": "stock",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r111-stock.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r111-parent.cnf",
+    "parent_query_sha256": "578f5cde3cb7b81f2c92a31d175870eccc7319e84b72913c3e5958df35e13e88",
+    "query_sha256": "bb9fe26d594e4170a3c3a20fdfc97ad9e21f02856affc1d3a55b052cddf9d561",
+    "units": [
+      294,
+      2846,
+      2850
+    ]
+  },
+  {
+    "cube": "r111",
+    "kind": "short",
+    "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r111-short.cnf",
+    "parent_path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/square-six-v1/direct-3s-v1/queries/r111-parent.cnf",
+    "parent_query_sha256": "578f5cde3cb7b81f2c92a31d175870eccc7319e84b72913c3e5958df35e13e88",
+    "query_sha256": "80d4954f2d519515ac9dc7968777d2601566385a387bd475ea3937f14dae6736",
+    "units": [
+      294,
+      2846,
+      2850
+    ]
+  }
+]

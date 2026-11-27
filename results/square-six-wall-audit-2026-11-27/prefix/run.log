@@ -1,0 +1,11 @@
+16T minimal supports per color pair (24, 80, 32) monochromatic six-sets and two-color-extendable six-sets (320, 128)
+16U minimal supports per color pair (40, 16, 0) monochromatic six-sets and two-color-extendable six-sets (320, 80)
+15T minimal supports per color pair (18, 55, 20) monochromatic six-sets and two-color-extendable six-sets (200, 80)
+15U minimal supports per color pair (30, 11, 0) monochromatic six-sets and two-color-extendable six-sets (200, 50)
+All 311 by 235 degree-sequence pairs give at least 22; abstract witness attains 22.
+{"flags": ["-i", "-U", "-t", "300"], "proof_bytes": 24752, "proof_sha256": "bbfe14c5a30eaa7879718da67c83866700f2b486e8121accb8e06b62bfb543fa", "query_sha256": "810f073981467885bca1604f9bdf46e7f00f3729736378663e4c4008af2317b7", "warning_free": true}
+384 consequences checked on the frozen parent with violation selectors
+{"flags": ["-i", "-U", "-t", "300"], "proof_bytes": 15274, "proof_sha256": "99b764cd7f73df68ff3f87e2f58f5bbf06fcc6af99ec476329490058d2ecc929", "query_sha256": "b5253bb16534220d7e575969256f06bfcdd2556b1467c668fa38add6da82e69f", "warning_free": true}
+1020 consequences checked on the frozen parent with violation selectors
+{"flags": ["-i", "-U", "-t", "300"], "proof_bytes": 126127, "proof_sha256": "ca0ca3f9f336b0cf98b61e45e1d7d4e5e822cac706294ec725bfb710e1df739e", "query_sha256": "906357860b969dc8c2fecbbb5aca37b3ea16b4cb40111ff33cab261306932a82", "warning_free": true}
+1209 consequences checked with the exact solver proof prefix

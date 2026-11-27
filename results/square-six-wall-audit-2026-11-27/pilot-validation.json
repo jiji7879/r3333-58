@@ -1,0 +1,31 @@
+{
+  "all_queries_match_independent_hashes": true,
+  "all_records_match_per_leaf_receipts": true,
+  "failures_or_external_cutoffs": 0,
+  "fresh_calls": 16,
+  "paired_cubes": 8,
+  "pass": true,
+  "status_counts": {
+    "OPEN_UNKNOWN": 16,
+    "VERIFIED_SAT": 0,
+    "VERIFIED_UNSAT": 0
+  },
+  "totals": {
+    "short": {
+      "conflicts": 744144,
+      "decisions": 4890619,
+      "process_wall_seconds": 25.040885146474466,
+      "propagations": 180985441,
+      "search_seconds": 24.041184631641954
+    },
+    "stock": {
+      "conflicts": 660787,
+      "decisions": 3002843,
+      "process_wall_seconds": 25.02823815192096,
+      "propagations": 214379275,
+      "search_seconds": 24.01870862673968
+    }
+  },
+  "unexercised": "No fresh solver UNSAT or SAT occurred, so new leaf-proof composition and model-check branches did not run on this panel.",
+  "whole_row_closed": false
+}

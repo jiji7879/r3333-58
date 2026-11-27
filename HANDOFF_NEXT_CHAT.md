@@ -10,6 +10,19 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (square/six-rule direct-wall pilot).** The package has one
+conditional-triangle schema, not six universal rules. Three independently
+replayed audits accepted its local semantics, input design and finite-template
+catalog scope. Its “six” refers to six-vertex obstructions. All 384 direct and
+1,020 short additions, plus the complete 1,209-clause
+prefix, passed strict warning-unsuppressed original-parent verification. The
+matched direct run on branch 44 used stock versus stock + 1,020 short clauses
+on eight depth-three cubes: **16/16 fresh three-second calls returned UNKNOWN**.
+There is no new cube or row closure, no model, no certified comparison of speed,
+and no basis to scale. No further search was started. Full input identities,
+exact timings, audit reproductions and limitations:
+[results/square-six-wall-audit-2026-11-27/REPORT.md](results/square-six-wall-audit-2026-11-27/REPORT.md).
+
 **Updated 2026-11-27 (preferred-pair cover).** Four accepted audits verified the
 608 local cover proofs, all row symmetry premises, preferred-owner semantics,
 original-parent/export identities and complete next-queue permutation. The

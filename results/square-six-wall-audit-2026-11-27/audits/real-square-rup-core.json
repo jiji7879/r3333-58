@@ -1,0 +1,69 @@
+{
+  "goal": [
+    -511,
+    937,
+    2309
+  ],
+  "parent_clauses_used": [
+    [
+      459
+    ],
+    [
+      487
+    ],
+    [
+      916
+    ],
+    [
+      -938
+    ],
+    [
+      -2310
+    ],
+    [
+      -459,
+      -511,
+      -939
+    ],
+    [
+      -487,
+      -511,
+      -2311
+    ],
+    [
+      937,
+      938,
+      939,
+      940
+    ],
+    [
+      2309,
+      2310,
+      2311,
+      2312
+    ],
+    [
+      -916,
+      -940,
+      -2312
+    ]
+  ],
+  "all_are_exact_original_parent_clauses": true,
+  "propagation_conflict": [
+    -916,
+    -940,
+    -2312
+  ],
+  "forced_key_values": {
+    "511": true,
+    "937": false,
+    "938": false,
+    "939": false,
+    "940": true,
+    "2309": false,
+    "2310": false,
+    "2311": false,
+    "2312": true
+  },
+  "scope": "one selected short clause only; not the full 1020-rule prefix"
+}

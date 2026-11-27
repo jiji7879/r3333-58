@@ -1,0 +1,23 @@
+1 r000 stock OPEN_UNKNOWN
+2 r000 short OPEN_UNKNOWN
+3 r001 stock OPEN_UNKNOWN
+4 r001 short OPEN_UNKNOWN
+5 r010 stock OPEN_UNKNOWN
+6 r010 short OPEN_UNKNOWN
+7 r011 stock OPEN_UNKNOWN
+8 r011 short OPEN_UNKNOWN
+9 r100 stock OPEN_UNKNOWN
+10 r100 short OPEN_UNKNOWN
+11 r101 stock OPEN_UNKNOWN
+12 r101 short OPEN_UNKNOWN
+13 r110 stock OPEN_UNKNOWN
+14 r110 short OPEN_UNKNOWN
+15 r111 stock OPEN_UNKNOWN
+16 r111 short OPEN_UNKNOWN
+{
+  "calls": 16,
+  "actual_search_seconds": 48.059893258381635,
+  "statuses": {
+    "OPEN_UNKNOWN": 16
+  }
+}
