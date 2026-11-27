@@ -1,0 +1,199 @@
+{
+  "schema": "k58-wall-983774-audit/v1",
+  "date": "2026-11-27",
+  "overall": "SCOPED_PASS_WITH_IMPLEMENTATION_DEFECTS_AND_UNAUTHENTICATED_HISTORY",
+  "ramsey_bound_changed": false,
+  "ordinary_rows_closed": 0,
+  "live_representatives": 983774,
+  "ordinary_rows_with_live_representatives": 11585,
+  "verified_queue": {
+    "original": 1101974,
+    "pre_symmetry_revised": 1022357,
+    "revised": 986840,
+    "closed_representatives": 3066,
+    "live": 983774,
+    "pair_list_reduction": 79617,
+    "revised_symmetry_reduction": 35517,
+    "total_original_to_revised_reduction": 115134,
+    "original_alternate_suppressed": 38259,
+    "original_alternate_retained": 1063715,
+    "closed_by_profile": {
+      "15,15,14,13": 2082,
+      "16,14,14,13": 16,
+      "16,15,13,13": 896,
+      "16,16,13,12": 72
+    },
+    "distinct_closed_rows": 3066,
+    "distinct_closed_original_parents": 3066,
+    "distinct_closed_representatives": 3066,
+    "distinct_closed_lifted_proofs": 69,
+    "all_closed_full_queries_strictly_replayed": true
+  },
+  "verified_proof_families": {
+    "replacement_cover": 304,
+    "owner_layer": 2,
+    "revised_local_symmetry": 718,
+    "original_final_symmetry": 765,
+    "original_intermediate_symmetry": 707,
+    "symmetry_all_layers_total": 2190,
+    "symmetry_keep_witnesses": 1084,
+    "local_propagation_and_domain_proofs": 4858,
+    "revised_physical_consequences": 2469,
+    "distinct_revised_physical_queries": 2469,
+    "distinct_revised_lifted_proofs": 2119,
+    "original_owner_physical_checks": 31,
+    "full_closed_parent_RUP_replays": 3066,
+    "positive_control_DRAT_replays": 70,
+    "strict_RUN_count_warning_suppression": false,
+    "note": "These are overlapping query families. Do not add them as a unique-certificate total."
+  },
+  "verified_counts": {
+    "root_exclusions": 17618107,
+    "root_forced_edges": 2399187,
+    "parents_with_forced_edge": 856935,
+    "children_with_further_exclusions": 1966300,
+    "further_child_exclusions": 24921805,
+    "both_children_gain_exclusions": 982526,
+    "exactly_one_child_gains_exclusions": 1248,
+    "conditional_new_forced_edges": 6262071,
+    "original_forced_selected_edges": 943118,
+    "original_binary_selected_edges": 158856,
+    "original_selected_color_exclusions": 2045092,
+    "original_exclusions_surviving_failed_literal_propagation": 2045052,
+    "pivot_side_propagation_calls": 12438,
+    "physical_permutations_checked": 12997,
+    "nonidentity_signed_row_maps": 1412,
+    "encoder_candidate_sets": 392605,
+    "encoder_support_selector_sets": 182909,
+    "encoder_support_selectors": 15425339
+  },
+  "receipt_and_formula_bindings": {
+    "all_11585_parent_shared_cube_triples_match": true,
+    "original_ordered_cubes_regenerated": 1101974,
+    "full_original_samples": {
+      "official": 39,
+      "independent_stratified": 36
+    },
+    "hard_base_table_table_capacity": 72,
+    "arm_physical_cubes": 816,
+    "positive_revised_queries": 24,
+    "adaptive_queries": 96,
+    "deeper_live_queries": 16,
+    "complete_original_receipt_map_records": 1101974,
+    "complete_map_uncompressed_sha256": "47df39a98622968dc28446c7ce092a7b3a9508b148468ec4c60076751363b312",
+    "complete_map_compressed_sha256": "5dfeea976c2566c1d841528d0d20c237b619950934a93daea9dcbb00069cdaa1",
+    "conflict_range": [128, 191],
+    "total_conflicts": 142061920,
+    "total_decisions": 1335188169,
+    "total_propagations": 35089528161,
+    "total_call_microseconds": 16950171638,
+    "row_cpu_seconds": 13786.527207892977,
+    "row_receipts_digest": "8fed5c9b08f758811febb612a6142e0dc1b0cbf1c346c233840201d7cb282bde",
+    "solver_calls_made_by_formula_audit": 0
+  },
+  "official_pipeline": {
+    "all_documented_commands_returned_zero": true,
+    "commands": [
+      "geometry", "row_symmetries", "revised", "propagate_rules",
+      "campaign_solver_replay", "closed_parents", "edge_domains",
+      "owner_implication", "original_domain_replay", "minimize_symmetry", "sweep"
+    ],
+    "wall_seconds": 2135.774,
+    "uses_warning_suppression": true,
+    "accepted_solely_on_official_output": false
+  },
+  "issues": {
+    "cached_unknown_status_fail_open": {
+      "confirmed": true,
+      "synthetic_negative_control": true,
+      "exact_strengthened_live0_query_sha256": "d69970e19ddadfad5057ffaf8ffbd1354f957a4003852dc2b6b8aeff63cb3004",
+      "false_status_propagated": "VERIFIED_UNSAT_BY_COVER",
+      "proof_present": false,
+      "model_present": false,
+      "children": 0,
+      "ordinary_supplied_receipt_shown_forged": false
+    },
+    "checker_warning_suppression": {
+      "official_wrapper_has_w_flag": true,
+      "independent_positive_replays_without_w_flag": true
+    },
+    "m4_summary_KeyError": {
+      "after_all_physical_checks_completed": true,
+      "raw_ledger_independently_validated": true,
+      "complete_producer_independently_rerun": true
+    }
+  },
+  "unverified": [
+    "Historical execution and UNKNOWN/OPEN return of cap128 calls and all OPEN-only panels; receipt statistics are not raw engine/exit logs.",
+    "Satisfiability or unsatisfiability of any remaining live representative from OPEN results.",
+    "A full physical proof application for every representative, rather than local rules plus selected physical recipients.",
+    "External author/release identity, provenance, expected digests and complete source ancestry.",
+    "Unselected-domain affected_edges statistics, which are not used in accepted weighted totals.",
+    "One-assumption-deletion minimality of the 29 owner alternatives; the 29 are proved sufficient, not proved minimal.",
+    "A first-principles rederivation of the complete frozen K58 encoding or the missing formal semantic bridge for the original reduction.",
+    "Source rebuild of Kissat; only binary/hash/version identity was checked.",
+    "SAT-model and emergency-kill branches of the earlier small joining-color probe, which only produced OPEN searches."
+  ],
+  "package_integrity": {
+    "solver_sha256": "3324b778ea425dbcd48a3c7f19a38812820066d769581569f318b61108837b75",
+    "solver_manifest_hashes": 10409,
+    "evidence_sha256": "47bd1aa500756d70dce15b7680f83a290ee13e81c618f8ecae62583ab6fbef7b",
+    "evidence_manifest_hashes": 19925,
+    "nonmanifest_files": 30336,
+    "unsafe_paths": 0,
+    "duplicate_member_paths": 0,
+    "cross_archive_path_collisions": 0,
+    "external_live_sha256": "ba7901a685cc87e6d00bc8f876cff9986e985b1706cd098985477d1b2b898dcd"
+  },
+  "ultramath": {
+    "swarm": "smwyfnpf0",
+    "model": "moonshotai/kimi-k3.1-pro",
+    "members": 8,
+    "reasoning_effort": "max",
+    "minutes_limit": 180,
+    "member_steps_limit": 100,
+    "total_budget": 1600,
+    "directions_accepted": 8,
+    "directions": {
+      "A": {"member": "m8", "scope": "archive/provenance/queue arithmetic", "accepted": true},
+      "B": {"member": "m1", "scope": "replacement cover and owner implication", "accepted": true},
+      "C": {"member": "m3", "scope": "all closed parents and positive controls", "accepted": true},
+      "D": {"member": "m4", "scope": "propagation/domains/physical rules", "accepted": true},
+      "E": {"member": "m7", "scope": "symmetry and encoder invariance", "accepted": true},
+      "F": {"member": "m6", "scope": "sweep receipts and formula bindings", "accepted": true},
+      "G": {"member": "m5", "scope": "live executable and cache behavior", "accepted": true},
+      "H": {"member": "m2", "scope": "independent strict integration", "accepted": true}
+    },
+    "board_state": "solved_for_the_audit_tasks_only",
+    "judge_error": {
+      "member": "m7",
+      "initial_rejection_reason": "PLACEHOLDER",
+      "substantive_mathematical_rejection": false,
+      "superseded_by_checked_resubmission_and_acceptance": true,
+      "additional_verified_layer": {
+        "original_intermediate_proofs": 707,
+        "keep_witnesses": 1084
+      }
+    }
+  },
+  "coordinator_reproductions": {
+    "all_member_major_checks_independently_rerun": true,
+    "official_documented_pipeline_run": true,
+    "live0_adaptive_run": {
+      "parent_seconds": 2.0,
+      "child_seconds_each": 1.0,
+      "parent_status": "OPEN",
+      "child_1_status": "OPEN",
+      "child_2_status": "OPEN",
+      "whole_parent_closed": false
+    },
+    "stratified_full_parent_sample": {
+      "positive_checks": 16,
+      "affected_profiles": 4,
+      "malformed_proof_rejected": true,
+      "not_substitute_for_exhaustive_run": true
+    },
+    "queue_census_artifacts_byte_identical": true,
+    "wrong_query_and_wrong_cache_negative_controls_passed": true
+  }
+}

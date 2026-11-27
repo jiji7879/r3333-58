@@ -1,0 +1,7 @@
+Checked complete arm cover 304 38795851 RUP bytes
+Replayed revised symmetry exclusions 718 26891809 RUP bytes
+Revised two-spoke-word cover 1022357 before row symmetries; 986840 after
+WALL_SECONDS=58.28
+CPU_USER=43.70
+CPU_SYSTEM=14.58
+MAX_RSS_KB=117840

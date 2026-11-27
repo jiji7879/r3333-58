@@ -113,6 +113,17 @@ the three-second search deadline. No new representative or row closed, so this
 is not evidence for scaling the mechanism. See
 [results/solver50-joining3s-2026-11-27/RESULTS.md](results/solver50-joining3s-2026-11-27/RESULTS.md).
 
+**Adaptive-wall batch audit, 2026-11-27:** all 3,066 revised-owner full
+representatives have independently replayed RUP proofs, leaving 983,774 live
+representatives after the checked cover reductions. Cover, symmetry,
+propagation and physical-certificate audits reproduced without warning
+suppression; no wall row or Ramsey bound closed, and historical OPEN executions
+remain unauthenticated. A separate synthetic test reproduced fail-open reuse of
+unknown cached statuses in the supplied `conquer.py`. Do not trust imported
+status text without its exact proof/model. Full findings and all eight accepted
+Ultramath audits:
+[results/wall-983774-2026-11-27/REPORT.md](results/wall-983774-2026-11-27/REPORT.md).
+
 Two side results from the same period, both certified and both explicitly
 non-progress on the bound:
 

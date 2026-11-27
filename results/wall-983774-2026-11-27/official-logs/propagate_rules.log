@@ -1,0 +1,21 @@
+50 / 830 {'root color exclusions': 1379, 'tested signed children': 100}
+100 / 830 {'root color exclusions': 2016, 'tested signed children': 200}
+150 / 830 {'root color exclusions': 2602, 'tested signed children': 300}
+200 / 830 {'root color exclusions': 3452, 'tested signed children': 398}
+250 / 830 {'root color exclusions': 3833, 'tested signed children': 498}
+300 / 830 {'root color exclusions': 4141, 'tested signed children': 598}
+350 / 830 {'root color exclusions': 4409, 'tested signed children': 698}
+400 / 830 {'root color exclusions': 4744, 'tested signed children': 798}
+450 / 830 {'root color exclusions': 5225, 'tested signed children': 898}
+500 / 830 {'root color exclusions': 5454, 'tested signed children': 998}
+550 / 830 {'root color exclusions': 5661, 'tested signed children': 1098}
+600 / 830 {'root color exclusions': 5852, 'tested signed children': 1198}
+650 / 830 {'root color exclusions': 6057, 'tested signed children': 1298}
+700 / 830 {'root color exclusions': 6268, 'tested signed children': 1398}
+750 / 830 {'root color exclusions': 6557, 'tested signed children': 1498}
+800 / 830 {'root color exclusions': 7062, 'tested signed children': 1598}
+830 / 830 {'root color exclusions': 7641, 'tested signed children': 1658}
+WALL_SECONDS=110.16
+CPU_USER=76.72
+CPU_SYSTEM=33.31
+MAX_RSS_KB=64984

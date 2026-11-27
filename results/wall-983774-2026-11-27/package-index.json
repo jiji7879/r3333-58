@@ -1,0 +1,9 @@
+{
+  "archive": "dist/k58-wall-983774-audit.zip",
+  "bytes": 41717410,
+  "files": 499,
+  "member_report_count": 498,
+  "sha256": "b7f73f34c43c5fbfa18dfb3e3e977758d1cc12577a4960d1a23e5f67eedfd35b",
+  "source_bundles_required_for_regeneration": true,
+  "uncompressed_bytes": 81056899
+}

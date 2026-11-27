@@ -1,0 +1,5 @@
+{"rows": 11585, "cap": 128, "outcomes": {"attempted": 1101974, "open": 1101974}, "aggregate_search_cpu_seconds": 13786.527207892977, "totals": {"conflicts": 142061920, "decisions": 1335188169, "propagations": 35089528161, "call_us": 16950171638}, "observed_max_conflicts_per_call": 191, "row_receipts_digest": "8fed5c9b08f758811febb612a6142e0dc1b0cbf1c346c233840201d7cb282bde"}
+WALL_SECONDS=7.26
+CPU_USER=5.29
+CPU_SYSTEM=0.25
+MAX_RSS_KB=193552

@@ -37,6 +37,19 @@ proofs. There are zero new representative or row closures and no basis to
 scale this mechanism. Read
 [results/solver50-joining3s-2026-11-27/RESULTS.md](results/solver50-joining3s-2026-11-27/RESULTS.md).
 
+**Updated 2026-11-27 (adaptive-wall batch audit).** The revised cover and
+signed symmetries reduce 1,101,974 representatives to 986,840, and 3,066 exact
+full-representative RUP proofs have been independently replayed, leaving
+**983,774 live representatives on all 11,585 wall rows**. All 2,469 selected
+physical rules and all 4,858 local domain/propagation proofs replay without
+`-w`, with full proof-sharing identities checked. This does not close a wall
+row or validate historical OPEN solver executions. The supplied batch's
+`conquer.py` also has a reproduced fail-open path for unknown cached statuses,
+and its official proof helpers suppress warnings. This cache defect is separate
+from the earlier hardened adaptive-wall tooling below. Full report, including
+all eight accepted Ultramath audits and what remains unverified:
+[results/wall-983774-2026-11-27/REPORT.md](results/wall-983774-2026-11-27/REPORT.md).
+
 **Updated 2026-11-26 (adaptive-cache integrity).** Cached native proofs/models
 and persisted tree verdicts are now revalidated before reuse/export; malformed
 artifacts stay nonterminal, DRAT replay does not use warning suppression, and

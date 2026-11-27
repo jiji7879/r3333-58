@@ -1,0 +1,29 @@
+{
+  "all_11585_row_ids_aligned": true,
+  "all_closed_statuses": {
+    "VERIFIED_UNSAT": 3066
+  },
+  "attachment_live_queue_byte_identical": true,
+  "closed_by_arm_owner": {
+    "13:['21012', '22100']": 3066
+  },
+  "closed_by_profile": {
+    "15,15,14,13": 2082,
+    "16,14,14,13": 16,
+    "16,15,13,13": 896,
+    "16,16,13,12": 72
+  },
+  "closed_parent_receipts": 3066,
+  "closed_physical_receipt_files": 3066,
+  "closure_scope": "3066 exact revised-index full representatives; not original-index or whole-root-row closure",
+  "cover_change_reduction": 115134,
+  "distinct_closed_revised_indices": 3066,
+  "distinct_closed_row_owner_identities": 3066,
+  "distinct_physical_proof_hashes": 69,
+  "distinct_representative_hashes": 3066,
+  "distinct_row_ids_closed": 3066,
+  "exact_revised_set_subtraction_matches_live": true,
+  "original_representatives": 1101974,
+  "post_symmetry_revised_representatives": 986840,
+  "pre_symmetry_revised_representatives": 1022357
+}

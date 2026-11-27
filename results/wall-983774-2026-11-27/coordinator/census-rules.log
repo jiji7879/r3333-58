@@ -1,0 +1,26 @@
+{
+ "original_jobs": {
+  "total": 1101974,
+  "binary_selected_edge": 158856,
+  "selected_color_exclusions": 2045092,
+  "beyond_failed_literal": 2045052,
+  "has_beyond_failed_literal": 1101974,
+  "forced_selected_edge": 943118
+ },
+ "revised_live": {
+  "parents": 983774,
+  "root_exclusions": 17618107,
+  "parents_with_exclusions": 983774,
+  "root_forced_edges": 2399187,
+  "parents_with_forced": 856935,
+  "parents_with_binary_pivot": 983774,
+  "conditional_children": 1967548,
+  "further_exclusions": 24921805,
+  "children_with_further_exclusions": 1966300,
+  "parents_with_both_children_pruned": 982526,
+  "parents_with_either_child_pruned": 983774,
+  "conditional_forced_edges": 6262071,
+  "children_with_new_forced_edges": 1811071
+ }
+}
+WALL_SECONDS=0.99 CPU_USER=0.93 MAX_RSS_KB=142436

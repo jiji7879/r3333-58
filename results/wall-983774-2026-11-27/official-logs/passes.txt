@@ -1,0 +1,11 @@
+geometry	PASS
+row_symmetries	PASS
+revised	PASS
+propagate_rules	PASS
+campaign_solver_replay	PASS
+closed_parents	PASS
+edge_domains	PASS
+owner_implication	PASS
+original_domain_replay	PASS
+minimize_symmetry	PASS
+sweep	PASS

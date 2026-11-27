@@ -1,0 +1,13 @@
+setup.sh
+geometry
+row_symmetries
+revised
+propagate_rules
+campaign_solver_replay
+closed_parents
+edge_domains
+owner_implication
+original_domain_replay
+minimize_symmetry
+sweep
+ALL DOCUMENTED CHECKS RETURNED 0

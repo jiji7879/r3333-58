@@ -1,0 +1,21 @@
+50 / 830 recipient labels; 150 physical RUP replays
+100 / 830 recipient labels; 300 physical RUP replays
+150 / 830 recipient labels; 450 physical RUP replays
+200 / 830 recipient labels; 598 physical RUP replays
+250 / 830 recipient labels; 748 physical RUP replays
+300 / 830 recipient labels; 898 physical RUP replays
+350 / 830 recipient labels; 1048 physical RUP replays
+400 / 830 recipient labels; 1197 physical RUP replays
+450 / 830 recipient labels; 1343 physical RUP replays
+500 / 830 recipient labels; 1488 physical RUP replays
+550 / 830 recipient labels; 1638 physical RUP replays
+600 / 830 recipient labels; 1782 physical RUP replays
+650 / 830 recipient labels; 1932 physical RUP replays
+700 / 830 recipient labels; 2081 physical RUP replays
+750 / 830 recipient labels; 2229 physical RUP replays
+800 / 830 recipient labels; 2379 physical RUP replays
+830 / 830 recipient labels; 2469 physical RUP replays
+WALL_SECONDS=1040.42
+CPU_USER=453.08
+CPU_SYSTEM=53.70
+MAX_RSS_KB=171272
