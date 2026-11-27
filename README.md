@@ -17,15 +17,17 @@ scope is recorded in [paper/VERIFICATION.md](paper/VERIFICATION.md).
 A handoff bundle proposes a computer-assisted proof of `R(3,3,3,3) <= 58` by a
 frozen cover of 113,179 SAT cases, each refuted by Kissat with a DRAT proof
 replayed by drat-trim. The bundle's ledger is frozen at 111,035 OPEN; the latest
-run against it is the 2026-11-25 one below.
+run against it is the 2026-11-27 one below.
 
 | status | rows |
 | --- | ---: |
-| `CERTIFIED` (replayed against regenerated CNFs) | 98,142 |
-| `LEGACY_EVIDENCE_NEEDED` (1,743 historical + 401 scoped exclusions) | 2,144 |
-| `OPEN` | 12,893 |
+| `CERTIFIED` (replayed against regenerated CNFs) | 101,586 |
+| `LEGACY_EVIDENCE_NEEDED` | 0 |
+| `OPEN` | 11,593 |
 
-The 2026-11-25 run on the owner's machine closed **18,858** rows in one pass:
+The 2026-11-27 run closed the last 2,144 legacy rows and 1,300 more, so **no row
+now rests on imported evidence**: every certified row carries a certificate this
+machine replayed. Before it, the 2026-11-25 run closed **18,858** rows in one pass:
 manifest `98d82268ff4c277820f00cbed3405c625dbb53d3603610e45eacc73b562b19f9`,
 replay `{"checked": 98142, "replayed": 98142, "failed": 0}`.
 [results/k58-full-cover-run-2026-11-25/](results/k58-full-cover-run-2026-11-25/)
@@ -53,16 +55,11 @@ report, not an independently confirmed fact.
   reduction: the degree cap, `R(3,3) ≤ 6` and `R(3,3,3) ≤ 17`, the ticket
   double counting, and the threshold step.  Build with `lean/build.sh`.
 
-Where the 12,893 open rows are, and what each needs:
+Where the 11,593 open rows are, and what each needs:
 
-* **1,308** in the two big profiles — 1,288 in `(15,15,15,12)` and 20 in
-  `(16,15,15,11)`. The 20 are refuted from the 458 MB LFS archive
-  (`runs/2026-11-21-hard-tail-16-15-15-11/`) as *split* certificates that the
-  one-DRAT-per-case pipeline cannot carry, so they sit OPEN in the index; the
-  1,288 are the retry tail, throughput rather than thought. A retry pass over
-  them is ~25 CPU-h and emits large certificates — the index's retry-tier
-  entries average 28.6 MB against 5.6 MB first-tier, and `--publication`
-  deletes each proof after hashing it.
+* **8** in `(15,15,15,12)` — the entire remainder of the two big profiles;
+  `(16,15,15,11)` is complete at 16,173. These 8 are worth one more pass at a
+  large budget, and nothing else in the two big profiles needs anything.
 * **11,585** in the seven small profiles — **the wall**
   ([review/WALL_STRUCTURAL_NOTE.md](review/WALL_STRUCTURAL_NOTE.md) puts it in
   structural terms: these are exactly the profiles whose vertices have two or
@@ -76,10 +73,11 @@ Where the 12,893 open rows are, and what each needs:
   or two rigid blocks and leaves 42 or 27 of 57 vertices free; refuting one is
   close to the original problem.
 
-Status in one line: 87 % of the cover (98,142 of 113,179) is certified and
-replayed; the 12,893 that remain are 11,585 small-profile rows no budget has
-touched plus a 1,308-row tail; 2,144 rows have no proof bytes here; and the
-reduction at n = 58 is still unformalised. No bound moves yet.
+Status in one line: 101,586 of 113,179 rows (89.8 %) are certified and
+replayed, every one of them by a certificate this machine replays; the 11,593
+that remain are the 11,585 small-profile rows no budget has touched plus 8 rows
+of `(15,15,15,12)`; and the reduction at n = 58 is still unformalised. No bound
+moves yet.
 
 **Evidence-integrity update, 2026-11-26:** the small-profile adaptive campaign
 now validates cached terminal artifacts and persisted trees before reusing or
@@ -127,6 +125,9 @@ Ultramath audits:
 Two side results from the same period, both certified and both explicitly
 non-progress on the bound:
 
+* [results/k58-release-2026-11-27/](results/k58-release-2026-11-27/) — the
+  101,586-row release, audited; `(16,15,15,11)` complete, `(15,15,15,12)` 8
+  rows short.
 * [results/k58-full-cover-run-2026-11-25/](results/k58-full-cover-run-2026-11-25/)
   — the audit of the 98,142-row run.
 * [results/pb-balance-2026-11-24/](results/pb-balance-2026-11-24/) — the
