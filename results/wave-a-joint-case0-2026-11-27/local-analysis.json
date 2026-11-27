@@ -1,0 +1,160 @@
+{
+  "scope": "one case-0 pair; local 30-vertex necessary-condition experiment; no global Ramsey claim",
+  "counts": {
+    "1": {
+      "physical_color": 0,
+      "first_pair_realized": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "second_pair_realized_count": 15,
+      "independent_product_size": 60,
+      "joint_sat": 56,
+      "joint_unsat": 200,
+      "independent_product_joint_unsat": [
+        [
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          3,
+          1
+        ]
+      ],
+      "difference_is_known_mono_pivot_triangle_at_w2": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    "2": {
+      "physical_color": 3,
+      "first_pair_realized": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "second_pair_realized_count": 15,
+      "independent_product_size": 60,
+      "joint_sat": 56,
+      "joint_unsat": 200,
+      "independent_product_joint_unsat": [
+        [
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          3,
+          1
+        ]
+      ],
+      "difference_is_known_mono_pivot_triangle_at_w2": [
+        [
+          2,
+          0,
+          3,
+          3
+        ],
+        [
+          2,
+          1,
+          3,
+          3
+        ],
+        [
+          2,
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          3,
+          3
+        ]
+      ]
+    }
+  },
+  "shared_joint_compatible_count": 52
+}

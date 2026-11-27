@@ -1,0 +1,9 @@
+{
+  "models_physically_checked": 112,
+  "strict_full_parent_joint_proofs": 8,
+  "individual_open_unknown_controls": 10,
+  "all_400_local_proofs_reverified": false,
+  "owner_models_rechecked": 112,
+  "file_hashes_checked": 590,
+  "scope": "Local realizations and conditional branch-specific joint UNSAT only; no K58, row or Ramsey bound claim."
+}

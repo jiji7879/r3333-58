@@ -1,0 +1,30 @@
+{
+  "trailing_byte_control": {
+    "file": ".scratch/wave-a-pairs-v1/tmp/tampered-trailing.drat",
+    "accepted_is_verified": true,
+    "returncode": 0,
+    "status_lines": [
+      "s VERIFIED"
+    ],
+    "sha256": "a93e4d99392d0b2c625e2a30e766facfcd947fba0cf86e06523169f5947c2a1c",
+    "warnings": [],
+    "strict_policy": "fail unless rc=0, exactly [s VERIFIED] and zero warnings"
+  },
+  "first_byte_corruption": {
+    "file": ".scratch/wave-a-pairs-v1/tmp/tampered-prefactor.drat",
+    "accepted_is_verified": false,
+    "returncode": 0,
+    "status_lines": [
+      "s VERIFIED"
+    ],
+    "sha256": "93982a3b9947de71ba8de5a082a7283657194327b85a25ca7ee116f7ed9de5fc",
+    "warnings": [
+      "c WARNING: wrong binary prefix, stop reading proof"
+    ],
+    "strict_policy": "fail unless rc=0, exactly [s VERIFIED] and zero warnings"
+  },
+  "notes": [
+    "The last-byte mutation alone is not used as a rejection control.",
+    "The first-byte corruption was rejected as intended."
+  ]
+}

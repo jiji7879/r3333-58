@@ -10,6 +10,18 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (joint second-arm choices).** A controlled case-0 test at
+physical pivot $(31,42)$ and second-arm vertices $1,2$ found 56 checked local
+models and 200 strict local UNSAT proofs **per pivot colour** (physical 0/3),
+with 52 jointly feasible tuples common to both. The four shared product-level
+incompatibilities are $(2,1)$ at the first vertex and $(c,1)$ at the other for
+all $c$: each has a full signed-parent UNSAT query in both colours, proof-replayed
+strictly. The ten one-vertex controls stayed UNKNOWN at two seconds. This is a
+real joint condition, not a result on all 28 previously sampled parents and not
+a branch or wall closure. The supplied Wave A JSON/proof digests remain absent;
+its separate bare-arm bounds do not supply physical transfers. Reports, replay
+and archive provenance: [results/wave-a-joint-case0-2026-11-27/REPORT.md](results/wave-a-joint-case0-2026-11-27/REPORT.md).
+
 **Updated 2026-11-27 (square/six-rule direct-wall pilot).** The package has one
 conditional-triangle schema, not six universal rules. Three independently
 replayed audits accepted its local semantics, input design and finite-template
