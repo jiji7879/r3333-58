@@ -160,9 +160,16 @@ def run_one(row, tier, args):
             # The checker rejected the proof or hit the time limit.  Write no
             # verified.json, so the case stays OPEN, and keep the shard running.
             sizes = {p.name + "_bytes": p.stat().st_size for p in (formula, proof) if p.exists()}
+            # A receipt that says UNSAT with no proof file on disk is a dead end: the next
+            # run finds the receipt, skips the solver, and fails the replay for ever.  In
+            # that case drop the receipt so the next run re-solves the row.
+            recover = "resume" if proof.exists() else "re-solve"
+            if not proof.exists():
+                receipt.unlink(missing_ok=True)
             (case/"CHECK_FAILED.json").write_text(
                 __import__("json").dumps(dict(id=row["id"], stage=tier, limit_seconds=CHECK_SECONDS,
-                                              reason=str(exc)[:400], **sizes), sort_keys=True) + "\n")
+                                              reason=str(exc)[:400], recovery=recover,
+                                              **sizes), sort_keys=True) + "\n")
             return "CHECK_FAILED"
         if getattr(args, "publication", False):
             if "solver" not in result:
