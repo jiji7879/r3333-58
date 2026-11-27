@@ -14,6 +14,17 @@ bytes, and 111,035 cases are open. What is new here: 95 certified cases, a
 measured cost model, six reproduced defects in the bundle, and a kernel-checked
 Lean core of the reduction.
 
+> **Dated case-0 audit (27 November 2026), not a new cover count.** The
+> two-site package verifies twelve full-signed-parent word refutations, with a
+> 24-word conditional frontier still OPEN under the two stated trigger pins.
+> Its unsplit proofs are pivot-independent; branch files carry further arm
+> exclusions and must not be confused with the proof bases. All 196 supplied
+> verifier calls passed under a strict no-`-w`, no-warning proxy, alongside
+> 3,701 independent finite assertions and 42 fresh strict replays. This is not
+> a representative/branch/wall closure, a model, a universal two-site transfer
+> or a Ramsey result. See
+> [research/k58-two-site-consequences/proof.md](research/k58-two-site-consequences/proof.md).
+>
 > **Later status (21 November 2026), which supersedes the tables below.** The
 > campaign has since certified and replayed **79,264** of the 113,179 cases
 > ([release/2026-11-21-checkpoint/](release/2026-11-21-checkpoint/), manifest

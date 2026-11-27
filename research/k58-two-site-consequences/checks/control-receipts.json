@@ -1,0 +1,36 @@
+{
+  "positive_closure_control": "Strict query/proof replay passed for lift-0-1113 unsplit.",
+  "bad_binary_prefix": [
+    {
+      "criterion": "proxy rejects even though the warning is suppressed in the supplied verifier",
+      "native_output": "\rc turning on binary mode checking\n\rc parsing input formula with 19218 variables and 178829 clauses\n\rc WARNING: wrong binary prefix, stop reading proof\n\rc finished parsing\n\rc ERROR: no conflict\n\ns NOT VERIFIED\n\rc verification time: 0.116 seconds\n",
+      "native_receipt": {
+        "accepted": false,
+        "argv": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/two-site-consequences-v1/controls/positive.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/two-site-consequences-v1/controls/bad-prefix.drat",
+          "-i",
+          "-U",
+          "-t",
+          "300"
+        ],
+        "exit": 1,
+        "flags_have_warning_suppression_removed": true,
+        "output_sha256": "329a84bf0c2727d5712dae9c52c51d2f85fe13ef5d63146c7c54a06cf4cc9718",
+        "proof_sha256": "7b840960b19983d67270bec07b4512e1133f3c361ec921d8756f56bbc2c43999",
+        "query_sha256": "ac949b14674f233570cbd362b06813e69ffc922ae420e687d213fc3552dc5e19",
+        "seconds": 0.11995275202207267
+      }
+    }
+  ],
+  "satisfiable_toy_empty_proof": {
+    "returncode": 1,
+    "output": "\rc turning on binary mode checking\n\rc parsing input formula with 1 variables and 1 clauses\n\rc finished parsing, read 2 bytes from proof file\n\rc ERROR: no conflict\n\ns NOT VERIFIED\n\rc verification time: 0.037 seconds\n",
+    "accepted": false
+  },
+  "attempted_tail_truncation": {
+    "accepted": true,
+    "classification": "Not used as a rejection control: deleting this tail still gave a valid certified proof."
+  },
+  "note": "A corrupt prefix must be rejected, not given free passage by -w or a VERIFIED substring. Untouched positive proofs passed normally with zero warnings."
+}

@@ -1,0 +1,1183 @@
+{
+ "regenerated": 47,
+ "parents_distinct": 47,
+ "all_parent_hashes_match": true,
+ "all_owner_cubes_match": true,
+ "solver_calls": 0,
+ "records": [
+  {
+   "index": 0,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00000",
+    "01022"
+   ],
+   "parent": "ae90931dc6cd482105153dd720209e602bbfc7cc0915e18c6e87023ee2659931",
+   "owner_cube": [
+    5226,
+    5326,
+    5602,
+    5422,
+    5514,
+    5230,
+    5329,
+    5606,
+    5428,
+    5520,
+    -19172
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 1,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00000",
+    "22010"
+   ],
+   "parent": "ba5edb2f3e09dc65bdcd4e1c65c6ef996a957a24344f0a62e112640269adf17f",
+   "owner_cube": [
+    5226,
+    5326,
+    5602,
+    5422,
+    5514,
+    5232,
+    5332,
+    5606,
+    5425,
+    5518,
+    19172,
+    -19173
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 2,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00001",
+    "12210"
+   ],
+   "parent": "163b1a5e22949ec7d63649e696d2d996b63d7a5d54d88c3e86f845a91afc31f1",
+   "owner_cube": [
+    5226,
+    5326,
+    5602,
+    5422,
+    5513,
+    5229,
+    5332,
+    5608,
+    5425,
+    5518,
+    19173,
+    -19174
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 3,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00010",
+    "01021"
+   ],
+   "parent": "a62fe1c2c150f097f6c71f6813859c2987ee1d65d6bcb8c8e3af4cb5d9cb62f3",
+   "owner_cube": [
+    5226,
+    5326,
+    5602,
+    5421,
+    5514,
+    5230,
+    5329,
+    5606,
+    5428,
+    5517,
+    19174,
+    -19175
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 4,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00020",
+    "22101"
+   ],
+   "parent": "934b75e1893bafdafc495ce7daaa0a20add55f8d398317c37dda8fe7db829e45",
+   "owner_cube": [
+    5226,
+    5326,
+    5602,
+    5424,
+    5514,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19175,
+    -19176
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 5,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00101",
+    "01221"
+   ],
+   "parent": "4ed768024670443cc134d6247293f5aaa206cc52bc113b93011632b07d92402f",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5422,
+    5513,
+    5230,
+    5329,
+    5608,
+    5428,
+    5517,
+    19176,
+    -19177
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 6,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00101",
+    "22101"
+   ],
+   "parent": "e1a0a8034670262cfe5f161610592cc2f972939591dff46dd3edca9b4f3732cc",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5422,
+    5513,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19177,
+    -19178
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 7,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00121",
+    "00220"
+   ],
+   "parent": "b0661d7e60d757a7772e262ceb79fb3d6c54adb3da0de61384325aa673896e02",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5424,
+    5513,
+    5230,
+    5330,
+    5608,
+    5428,
+    5518,
+    19178,
+    -19179
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 8,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00121",
+    "12100"
+   ],
+   "parent": "f0b2c5fce0d59bdb71213ab5bf069a944b03f9b366cc1e39d4040693f7fdfd24",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5424,
+    5513,
+    5229,
+    5332,
+    5605,
+    5426,
+    5518,
+    19179,
+    -19180
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 9,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00121",
+    "22100"
+   ],
+   "parent": "ba4d0e94aa8ebc4567e3ed11d5058dbdaea1f509842e81d497ffa0a9234d12c7",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5424,
+    5513,
+    5232,
+    5332,
+    5605,
+    5426,
+    5518,
+    19180,
+    -19181
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 10,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00121",
+    "22101"
+   ],
+   "parent": "623fedd6d4b43f5b5647932da241934e2fec82ca169c33d8f0ccbc498cabe7ac",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5424,
+    5513,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19181,
+    -19182
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 11,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00122",
+    "00200"
+   ],
+   "parent": "5f6af20107d26d87ca78ac44f447ed57ef0fbf7d9398f7f9f50a88a193547d88",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5424,
+    5516,
+    5230,
+    5330,
+    5608,
+    5426,
+    5518,
+    19182,
+    -19183
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 12,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00122",
+    "10210"
+   ],
+   "parent": "89e736a9aeae88add9a21bd7e26d9489136c5db0af1a7d4a45988c1ab07b2182",
+   "owner_cube": [
+    5226,
+    5326,
+    5601,
+    5424,
+    5516,
+    5229,
+    5330,
+    5608,
+    5425,
+    5518,
+    19183,
+    -19184
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 13,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00220",
+    "01221"
+   ],
+   "parent": "b448c41b24b7cf93c70be7fcccbb504c4222955c52d38f605cf916ccc13d76f7",
+   "owner_cube": [
+    5226,
+    5326,
+    5604,
+    5424,
+    5514,
+    5230,
+    5329,
+    5608,
+    5428,
+    5517,
+    19184,
+    -19185
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 14,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00220",
+    "21002"
+   ],
+   "parent": "93afcbef91e24f2b569f6493933187fca279f2e0882701d24ad2359b74b3a174",
+   "owner_cube": [
+    5226,
+    5326,
+    5604,
+    5424,
+    5514,
+    5232,
+    5329,
+    5606,
+    5426,
+    5520,
+    19185,
+    -19186
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 15,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00221",
+    "12200"
+   ],
+   "parent": "fa351421176dcb7338e463641cb6c4f22ac5160331640d5e2e44748a6e14e42c",
+   "owner_cube": [
+    5226,
+    5326,
+    5604,
+    5424,
+    5513,
+    5229,
+    5332,
+    5608,
+    5426,
+    5518,
+    19186,
+    -19187
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 16,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00221",
+    "21001"
+   ],
+   "parent": "da291d35daa51525dbdce5dbd5d53980c83c532579198d6fbd0df6c0b50f422a",
+   "owner_cube": [
+    5226,
+    5326,
+    5604,
+    5424,
+    5513,
+    5232,
+    5329,
+    5606,
+    5426,
+    5517,
+    19187,
+    -19188
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 17,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00221",
+    "22001"
+   ],
+   "parent": "4754f91b40181e8d947a4a94dd0a8f5ed3adbb0d8faafd070ca7f02d2b7fc13d",
+   "owner_cube": [
+    5226,
+    5326,
+    5604,
+    5424,
+    5513,
+    5232,
+    5332,
+    5606,
+    5426,
+    5517,
+    19188,
+    -19189
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 18,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "00221",
+    "22101"
+   ],
+   "parent": "6043b14c9fdc4fd12af5c8bee8a1267b32fde68a867db5b5f1d4102e15e6b01a",
+   "owner_cube": [
+    5226,
+    5326,
+    5604,
+    5424,
+    5513,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19189,
+    -19190
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 19,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01021",
+    "01210"
+   ],
+   "parent": "56d0289f75db3f41b2053effa9ffeedf2954ee6ec0efadbd93b5774a3fc2daac",
+   "owner_cube": [
+    5226,
+    5325,
+    5602,
+    5424,
+    5513,
+    5230,
+    5329,
+    5608,
+    5425,
+    5518,
+    19190,
+    -19191
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 20,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01022",
+    "20012"
+   ],
+   "parent": "65c6810e4911907d13b0a86b5c6a55a6acd35090ae398d796b36d8f335935ff4",
+   "owner_cube": [
+    5226,
+    5325,
+    5602,
+    5424,
+    5516,
+    5232,
+    5330,
+    5606,
+    5425,
+    5520,
+    19191,
+    -19192
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 21,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01201",
+    "10220"
+   ],
+   "parent": "07c238f570b5c44672c10250a338c4d9c46e2108ab7573eba7e9d7a850b0506f",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5422,
+    5513,
+    5229,
+    5330,
+    5608,
+    5428,
+    5518,
+    19192,
+    -19193
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 22,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01201",
+    "21010"
+   ],
+   "parent": "c5f7a5ed804b47691f856fcfd3ca98a4477530123aa7469fd9b1820d2e2da16e",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5422,
+    5513,
+    5232,
+    5329,
+    5606,
+    5425,
+    5518,
+    19193,
+    -19194
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 23,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01210",
+    "12010"
+   ],
+   "parent": "4ae4abf03e518b335cf0ea2365070601cee3d47f779b763dc39338e7fe98f95c",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5421,
+    5514,
+    5229,
+    5332,
+    5606,
+    5425,
+    5518,
+    19194,
+    -19195
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 24,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01220",
+    "10122"
+   ],
+   "parent": "c38449809c1ebf34d4e7ddf9d4c9fb824cbb06765104d5aaa5ce49335ce454a9",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5424,
+    5514,
+    5229,
+    5330,
+    5605,
+    5428,
+    5520,
+    19195,
+    -19196
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 25,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01221",
+    "10122"
+   ],
+   "parent": "5099ae8499ca410ed0ed1f3dc1f81082cd4db8bc9b52b0b46f6b3725bb5ac451",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5424,
+    5513,
+    5229,
+    5330,
+    5605,
+    5428,
+    5520,
+    19196,
+    -19197
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 26,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01221",
+    "10220"
+   ],
+   "parent": "84fcd66e5c6cb15a6ddde7357d97468fa0abb643ffa59d00befb59b9608946fd",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5424,
+    5513,
+    5229,
+    5330,
+    5608,
+    5428,
+    5518,
+    19197,
+    -19198
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 27,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01221",
+    "12210"
+   ],
+   "parent": "06c9dad31d68e342a63f5c1ec93822ab0e87e0cff69c6ce07f85f043e4a1687e",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5424,
+    5513,
+    5229,
+    5332,
+    5608,
+    5425,
+    5518,
+    19198,
+    -19199
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 28,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01221",
+    "21012"
+   ],
+   "parent": "6b4b477349ee0c581e496e0226dd291a1a18f7a5c51a5fddd1d7474b26de7eb7",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5424,
+    5513,
+    5232,
+    5329,
+    5606,
+    5425,
+    5520,
+    19199,
+    -19200
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 29,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "01221",
+    "22101"
+   ],
+   "parent": "4a807c664b68ed979ab8470ba2744d6714527aa6bac636e03732a19c139a677f",
+   "owner_cube": [
+    5226,
+    5325,
+    5604,
+    5424,
+    5513,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19200,
+    -19201
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 30,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "02101",
+    "10120"
+   ],
+   "parent": "d56320556778884e8eabe9211614b8b648183c30ba1dee1a10c0399df0cd4bc6",
+   "owner_cube": [
+    5226,
+    5328,
+    5601,
+    5422,
+    5513,
+    5229,
+    5330,
+    5605,
+    5428,
+    5518,
+    19201,
+    -19202
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 31,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "02200",
+    "20101"
+   ],
+   "parent": "c0547f4502e255bdaaa7a4452dbffaf6d7998c0cd17035c3bf2a6b427277c9a3",
+   "owner_cube": [
+    5226,
+    5328,
+    5604,
+    5422,
+    5514,
+    5232,
+    5330,
+    5605,
+    5426,
+    5517,
+    19202,
+    -19203
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 32,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "02201",
+    "10210"
+   ],
+   "parent": "77846d2c93c56092d3e2580f50546cd396837bdb370b84503b3fbc055e55a091",
+   "owner_cube": [
+    5226,
+    5328,
+    5604,
+    5422,
+    5513,
+    5229,
+    5330,
+    5608,
+    5425,
+    5518,
+    19203,
+    -19204
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 33,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "02201",
+    "10220"
+   ],
+   "parent": "50fa16a7f2cff5401af4f64311c8427cca8039cae598bbf245a2a2b0a5f5dc5a",
+   "owner_cube": [
+    5226,
+    5328,
+    5604,
+    5422,
+    5513,
+    5229,
+    5330,
+    5608,
+    5428,
+    5518,
+    19204,
+    -19205
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 34,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "02201",
+    "12210"
+   ],
+   "parent": "cbb8bfd9cb95865a0bf39b09efac1381ab72e48fc33ed28a769400768a77d7ce",
+   "owner_cube": [
+    5226,
+    5328,
+    5604,
+    5422,
+    5513,
+    5229,
+    5332,
+    5608,
+    5425,
+    5518,
+    19205,
+    -19206
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 35,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "02210",
+    "10120"
+   ],
+   "parent": "1997251734bc274ad530c1baa9a6f036839b3a7cb444d131f94956c897f1f09e",
+   "owner_cube": [
+    5226,
+    5328,
+    5604,
+    5421,
+    5514,
+    5229,
+    5330,
+    5605,
+    5428,
+    5518,
+    19206,
+    -19207
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 36,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "02210",
+    "22001"
+   ],
+   "parent": "6fec10b481388d0336519f00d58a8f94fc6447375220fcacc381edd1929fc2d9",
+   "owner_cube": [
+    5226,
+    5328,
+    5604,
+    5421,
+    5514,
+    5232,
+    5332,
+    5606,
+    5426,
+    5517,
+    19207,
+    -19208
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 37,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "10010",
+    "12210"
+   ],
+   "parent": "c25b2a1f32cb61e31dc9ca74779ca62d38c33aad983a12ff5d8c7ac28b92763d",
+   "owner_cube": [
+    5225,
+    5326,
+    5602,
+    5421,
+    5514,
+    5229,
+    5332,
+    5608,
+    5425,
+    5518,
+    19208,
+    -19209
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 38,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "10022",
+    "20102"
+   ],
+   "parent": "84eff4106d04d6d2bb330c07db865196622e3057a4b7f8c3a107b8051c762484",
+   "owner_cube": [
+    5225,
+    5326,
+    5602,
+    5424,
+    5516,
+    5232,
+    5330,
+    5605,
+    5426,
+    5520,
+    19209,
+    -19210
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 39,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "10122",
+    "12210"
+   ],
+   "parent": "850ac44745b47cc9d8db235c6baf559e32eaacc9230294af4f96cc17886009e1",
+   "owner_cube": [
+    5225,
+    5326,
+    5601,
+    5424,
+    5516,
+    5229,
+    5332,
+    5608,
+    5425,
+    5518,
+    19210,
+    -19211
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 40,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "10122",
+    "21012"
+   ],
+   "parent": "19f0752043f9bba61570c45743b0a4a552d7559f6a72088fa74eb5beb97553ee",
+   "owner_cube": [
+    5225,
+    5326,
+    5601,
+    5424,
+    5516,
+    5232,
+    5329,
+    5606,
+    5425,
+    5520,
+    19211,
+    -19212
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 41,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "10122",
+    "22101"
+   ],
+   "parent": "56429e043a14656744d969c7e7eb1da4eb1e1868e7026b6ef28ab36db62b3e46",
+   "owner_cube": [
+    5225,
+    5326,
+    5601,
+    5424,
+    5516,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19212,
+    -19213
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 42,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "12100",
+    "20101"
+   ],
+   "parent": "4992ec7789e730d3d50ab4cf80b5a07fba43344af3f09b2d5f27e00d1e2e24b8",
+   "owner_cube": [
+    5225,
+    5328,
+    5601,
+    5422,
+    5514,
+    5232,
+    5330,
+    5605,
+    5426,
+    5517,
+    19213,
+    -19214
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 43,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "12200",
+    "20101"
+   ],
+   "parent": "5f508bb53bb35571bbf5ebe55c21271b2acc904214253600475823503197a98a",
+   "owner_cube": [
+    5225,
+    5328,
+    5604,
+    5422,
+    5514,
+    5232,
+    5330,
+    5605,
+    5426,
+    5517,
+    19214,
+    -19215
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 44,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "12210",
+    "21012"
+   ],
+   "parent": "e828c1fdb06785b1d7d725ea93662320d5b011212b831b5ca788e92a6728940e",
+   "owner_cube": [
+    5225,
+    5328,
+    5604,
+    5421,
+    5514,
+    5232,
+    5329,
+    5606,
+    5425,
+    5520,
+    19215,
+    -19216
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 45,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "12210",
+    "22101"
+   ],
+   "parent": "b525a05bac34320d70fece4ec23de2a816a02287ad1f9bad11879b19efe6cbec",
+   "owner_cube": [
+    5225,
+    5328,
+    5604,
+    5421,
+    5514,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19216,
+    -19217
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  },
+  {
+   "index": 46,
+   "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+   "pair": [
+    "21012",
+    "22101"
+   ],
+   "parent": "06ea3367b20772a771456a2432b6a7fdeec344fdf8702aa235beb5a8254dece8",
+   "owner_cube": [
+    5228,
+    5325,
+    5602,
+    5421,
+    5516,
+    5232,
+    5332,
+    5605,
+    5426,
+    5517,
+    19217,
+    -19218
+   ],
+   "parent_matches": true,
+   "cube_matches": true
+  }
+ ]
+}

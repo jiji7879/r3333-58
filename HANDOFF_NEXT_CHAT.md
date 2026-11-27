@@ -10,6 +10,43 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-27 (two-site consequences audit).** The supplied case-0
+package now has a scoped, independently checked verdict: twelve word
+refutations on the **full signed parent**, plus an exact conditional frontier
+of 24 still-OPEN words under the two trigger pins $(31,13)=0,(42,13)=1$.
+Both `search` and `unsplit` variants of all twelve proofs replayed cleanly.
+The scope correction is essential: `unsplit` pins only trigger+word, **not the
+pivot**, so these twelve exclusions hold whichever pivot colour is used. The
+other 24 remain unresolved, not SAT; neither whole pivot branch, representative
+0, a wall row, nor the Ramsey bound is closed.
+
+All 196 calls of the supplied verifier passed through a proxy that removes
+`-w` and requires an exact `s VERIFIED` with no warning. The package's stated
+`-w`/substring acceptance itself is not trusted: a corrupted proof demonstrably
+produces a warning-bearing `s VERIFIED` which that criterion hides and accepts.
+The signed-parent full constraint families, eight local cover tables,
+conditional frontier and all owner formulas were separately regenerated.
+An independent checker passed **3,701 assertions and 42 strict replays**.
+Both pivot projections contain **24,686** clauses including the formerly
+missed 5,201 owner/auxiliary clauses; all 315 table witnesses and 157 owner
+witnesses pass the complete projections with maximum mono-degree 15, still
+only 30-vertex models.
+
+On the single 47-variant row, 11 forcing indices have a local antecedent
+witness and three antecedents are impossible. Exactly six live indices
+(3,5,7,19,23,32) have a two-pin minimum, five need all three pins, and 33
+`LOCAL_COUNTEREXAMPLE`s are only local models, not global counterexamples.
+The 47 source formulas and owner cubes rebuild byte-identically from restored
+`revised.py::export`. No transfer to the 11,585-row roster is justified.
+Three accepted Ultramath audits cover closures, semantics and provenance;
+the abandoned counting direction was replaced by the independent checker.
+There are no new production searches or production-ledger changes.
+
+Read [research/k58-two-site-consequences/proof.md](research/k58-two-site-consequences/proof.md)
+for the provable statements and [its compute
+checks](research/k58-two-site-consequences/checks/2-compute.md) while resuming.
+The Siege gate returns `PROVED #2` **only for those literal package claims**.
+
 **Updated 2026-11-27 (joint clause bank).** For the case-0 pivot $(31,42)$ and
 first second-arm vertex $1$, the conditional clause
 $\neg E_{31,w_1,2}\lor\neg E_{42,w_1,1}\lor\neg E_{42,w_2,1}$ is established at
