@@ -1,0 +1,100 @@
+{
+  "closure_boundary": "Nine guarded SAT-preserving refinements; one guarded region later refuted. No original parent, ordinary wall row or Ramsey bound closed. No general runtime improvement established.",
+  "comparison": [
+    {
+      "arm": 11,
+      "guard_parent": {
+        "query_sha256": "e6792f6de4fb9eac16438e45cd838312879f8ad54da83383b96e354c4be8e509",
+        "search_seconds": 3.0071483820211142,
+        "status": "OPEN_UNKNOWN"
+      },
+      "refined_child": {
+        "query_sha256": "fb66c3fb9615d1c3bb92ef4741415c8cb1ca4b2ee9bd251057395ed4535a895c",
+        "search_seconds": 3.0024360748939216,
+        "status": "OPEN_UNKNOWN"
+      }
+    },
+    {
+      "arm": 12,
+      "guard_parent": {
+        "query_sha256": "4ab13e9494888e5114ad30ec86da3206dd3c92c28d83a96fdcb92f7336edb664",
+        "search_seconds": 3.0020129531621933,
+        "status": "OPEN_UNKNOWN"
+      },
+      "refined_child": {
+        "query_sha256": "b52d1b6704e758db1cd14ef9a8fdad0043c66cb47a81dd9f0fe771db12993342",
+        "search_seconds": 3.002166057936847,
+        "status": "OPEN_UNKNOWN"
+      }
+    },
+    {
+      "arm": 13,
+      "guard_parent": {
+        "query_sha256": "07b72151e3e957c8fc17e88044de910255b0dbb16cc0f7f67275bbf1ef0781fa",
+        "search_seconds": 3.002046004869044,
+        "status": "OPEN_UNKNOWN"
+      },
+      "refined_child": {
+        "query_sha256": "425c7afc3213d5df658962d38c1fb7dd1e39a3bc2f479002bb9b50bf3f8db6e0",
+        "search_seconds": 3.0046381710562855,
+        "status": "OPEN_UNKNOWN"
+      }
+    },
+    {
+      "arm": 14,
+      "guard_parent": {
+        "query_sha256": "26fceae0eb90a315fa5b463e909feb5f1c8acd3f0c4b0974dc07ad8d7324a292",
+        "search_seconds": 1.039420765126124,
+        "status": "VERIFIED_UNSAT"
+      },
+      "refined_child": {
+        "query_sha256": "74bf323df1722117b4fbdbfecf82ea2554c64c4afb27dd4d164586dc0dec4a36",
+        "search_seconds": 1.201875604921952,
+        "status": "VERIFIED_UNSAT"
+      }
+    }
+  ],
+  "completed_comparison_calls": 8,
+  "conditional_refinements": 9,
+  "distinct_replayed_query_proof_pairs": 42,
+  "earlier_hard_cutoff_attempts_not_counted_as_completed": 4,
+  "evidence_archive": {
+    "bytes": 93327839,
+    "crc_test": "passed",
+    "files_including_manifest": 496,
+    "manifest_files_checked": 495,
+    "path": "dist/k58-refinement-pilot-audit.zip",
+    "sha256": "c0b73190fd7884e5420aa198c2a33362386b6235fd6f83fb8c524630c2ace158",
+    "unpacked_replay": "passed",
+    "unpacked_summary_byte_identical_to_direct": true
+  },
+  "files": {
+    "assembled_ledger_sha256": "1a32fc09488041826d9bcb587e73fefa7567b492609f88fc89a82c118e27a703",
+    "checker_sha256": "89cf61daaa46407abea590254926f95e7995df215c82f9620f5c287e312a8a8a",
+    "cohort_summary_sha256": "38a6e447c39b7a107ccef8c118110ec1e15d9b2b658c4c8a9abb1d5bf67d27f0",
+    "comparison_summary_sha256": "687fc8f203fd4deee693ae1cd334dec19ef746d20f1eaebb795dc47e31a56085",
+    "independent_replay_summary_sha256": "94f8be61dbf5ea96e8c6adc72da263a924370af9b78566e228d7d5f049dc9c44",
+    "queue_ledger_sha256": "237d3027c55c9455d8f389bca0f6def02cd4fc5468028e36bc1c56592d3ff515",
+    "source_sha256": {
+      "assemble.py": "80038348f2a05fc1a3be60b67d35d277b68577308561d610c9f92cddb79463ff",
+      "cadical_leaf.py": "c5b56fd3c9bfe23931eafe2324eef195e979887ccd56c55bd1a6c9b08cc16092",
+      "compare.py": "1118fab9e85fd9548c028f2dc596f1808ea748c66a87e43e8038305d1fa70dd1",
+      "cube_probe.py": "cae6d43b0e0f47f119d79485292417c14dba844320fcd7a234c9fcf2f61ac8b2",
+      "queue_refine.py": "c3b0820992f41f24a636a8069f4dc4c2ee52d71c02b3527b637d54672403edd9",
+      "test_queue.py": "6f58a5f4ec4c835c53c142c02c269a532aacfffc7757a962114035b1ce35c594",
+      "verify_release.py": "6d32ee88573d61c8774c4912afa1acf42df29a672165941f98167cb55fa42924"
+    }
+  },
+  "initial_open_unknown_survivors": 9,
+  "initial_queue_slots": 9,
+  "malformed_prefix_strictly_rejected": true,
+  "per_call_search_budget_seconds": 3.0,
+  "physical_attempts_including_earlier_cutoffs": 12,
+  "queue_slots_after_sat_preserving_replacements": 9,
+  "queue_unit_tests_passed": 3,
+  "schema": "refinement-pilot-report/v1",
+  "strict_positive_replays": 78,
+  "subsequent_guarded_regions_closed": 1,
+  "total_completed_search_seconds": 20.26174401398748,
+  "warning_free_positive_replays": true
+}

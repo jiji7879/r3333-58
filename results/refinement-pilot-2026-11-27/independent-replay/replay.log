@@ -1,0 +1,870 @@
+===== 1 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188331 clauses
+c finished parsing, read 4436 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 427 of 188331 clauses in core                            
+c 46 of 99 lemmas in core using 1802 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 2 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188332 clauses
+c finished parsing, read 450 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 4 of 188332 clauses in core                            
+c 1 of 57 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.126 seconds
+
+===== 3 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188332 clauses
+c finished parsing, read 1357 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 305 of 188332 clauses in core                            
+c 5 of 61 lemmas in core using 621 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 4 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179774 clauses
+c finished parsing, read 5308 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 557 of 179774 clauses in core                            
+c 78 of 144 lemmas in core using 3892 resolution steps
+c 0 RAT lemmas in core; 4 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.120 seconds
+
+===== 5 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179775 clauses
+c finished parsing, read 590 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 152 of 179775 clauses in core                            
+c 3 of 70 lemmas in core using 179 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 6 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179775 clauses
+c finished parsing, read 2746 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 260 of 179775 clauses in core                            
+c 29 of 96 lemmas in core using 1107 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 7 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183096 clauses
+c finished parsing, read 3797 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 270 of 183096 clauses in core                            
+c 58 of 134 lemmas in core using 1128 resolution steps
+c 0 RAT lemmas in core; 1 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 8 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 9075 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 823 of 183097 clauses in core                            
+c 113 of 191 lemmas in core using 14641 resolution steps
+c 0 RAT lemmas in core; 2 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 9 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 964 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 83 of 183097 clauses in core                            
+c 8 of 87 lemmas in core using 166 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 10 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180554 clauses
+c finished parsing, read 19634 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1100 of 180554 clauses in core                            
+c 298 of 386 lemmas in core using 17876 resolution steps
+c 0 RAT lemmas in core; 6 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 11 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 129728 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 2013 of 180555 clauses in core                            
+c 1974 of 2058 lemmas in core using 177156 resolution steps
+c 0 RAT lemmas in core; 652 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.144 seconds
+
+===== 12 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 29549 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1090 of 180555 clauses in core                            
+c 457 of 550 lemmas in core using 43699 resolution steps
+c 0 RAT lemmas in core; 275 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 13 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188341 clauses
+c finished parsing, read 4155 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 4 of 188341 clauses in core                            
+c 1 of 810 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 14 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188341 clauses
+c finished parsing, read 5260 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 81 of 188341 clauses in core                            
+c 5 of 1040 lemmas in core using 144 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 15 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188341 clauses
+c finished parsing, read 4381 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 4 of 188341 clauses in core                            
+c 1 of 856 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.123 seconds
+
+===== 16 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179798 clauses
+c finished parsing, read 4385 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 32 of 179798 clauses in core                            
+c 1 of 854 lemmas in core using 32 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 17 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179798 clauses
+c finished parsing, read 4643 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 35 of 179798 clauses in core                            
+c 1 of 906 lemmas in core using 35 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.120 seconds
+
+===== 18 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179798 clauses
+c finished parsing, read 4746 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 32 of 179798 clauses in core                            
+c 1 of 928 lemmas in core using 32 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.117 seconds
+
+===== 19 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179798 clauses
+c finished parsing, read 4632 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 35 of 179798 clauses in core                            
+c 1 of 904 lemmas in core using 35 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 20 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183116 clauses
+c finished parsing, read 5268 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 111 of 183116 clauses in core                            
+c 9 of 1012 lemmas in core using 268 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.120 seconds
+
+===== 21 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183116 clauses
+c finished parsing, read 3650 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 3 of 183116 clauses in core                            
+c 1 of 696 lemmas in core using 3 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 22 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183116 clauses
+c finished parsing, read 3650 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 3 of 183116 clauses in core                            
+c 1 of 696 lemmas in core using 3 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 23 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183120 clauses
+c finished parsing, read 4259 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 28 of 183120 clauses in core                            
+c 1 of 821 lemmas in core using 28 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 24 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183120 clauses
+c finished parsing, read 4279 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 28 of 183120 clauses in core                            
+c 1 of 825 lemmas in core using 28 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.120 seconds
+
+===== 25 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183120 clauses
+c finished parsing, read 4311 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 28 of 183120 clauses in core                            
+c 1 of 832 lemmas in core using 28 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 26 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183120 clauses
+c finished parsing, read 4266 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 28 of 183120 clauses in core                            
+c 1 of 822 lemmas in core using 28 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 27 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180604 clauses
+c finished parsing, read 6648 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 656 of 180604 clauses in core                            
+c 130 of 1149 lemmas in core using 12356 resolution steps
+c 0 RAT lemmas in core; 22 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 28 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180604 clauses
+c finished parsing, read 4447 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 15 of 180604 clauses in core                            
+c 1 of 852 lemmas in core using 15 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 29 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180604 clauses
+c finished parsing, read 4391 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 15 of 180604 clauses in core                            
+c 1 of 840 lemmas in core using 15 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 30 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180592 clauses
+c finished parsing, read 4343 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 48 of 180592 clauses in core                            
+c 2 of 831 lemmas in core using 51 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 31 / cohort =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180592 clauses
+c finished parsing, read 4485 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 54 of 180592 clauses in core                            
+c 2 of 861 lemmas in core using 87 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 1 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188341 clauses
+c finished parsing, read 4155 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 4 of 188341 clauses in core                            
+c 1 of 810 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.120 seconds
+
+===== 1 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188342 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 188342 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.123 seconds
+
+===== 2 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179798 clauses
+c finished parsing, read 4385 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 32 of 179798 clauses in core                            
+c 1 of 854 lemmas in core using 32 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 2 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179799 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 179799 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 3 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179798 clauses
+c finished parsing, read 4632 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 35 of 179798 clauses in core                            
+c 1 of 904 lemmas in core using 35 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 3 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179799 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 179799 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 4 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183116 clauses
+c finished parsing, read 5268 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 111 of 183116 clauses in core                            
+c 9 of 1012 lemmas in core using 268 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 4 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183117 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 183117 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 5 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183120 clauses
+c finished parsing, read 4259 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 28 of 183120 clauses in core                            
+c 1 of 821 lemmas in core using 28 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.120 seconds
+
+===== 5 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183121 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 183121 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 6 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183120 clauses
+c finished parsing, read 4266 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 28 of 183120 clauses in core                            
+c 1 of 822 lemmas in core using 28 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 6 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183121 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 183121 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 7 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180604 clauses
+c finished parsing, read 6648 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 656 of 180604 clauses in core                            
+c 130 of 1149 lemmas in core using 12356 resolution steps
+c 0 RAT lemmas in core; 22 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.123 seconds
+
+===== 7 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180605 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 180605 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 8 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180604 clauses
+c finished parsing, read 4447 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 15 of 180604 clauses in core                            
+c 1 of 852 lemmas in core using 15 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 8 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180605 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 180605 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 9 / excluded-sibling =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180604 clauses
+c finished parsing, read 4391 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 15 of 180604 clauses in core                            
+c 1 of 840 lemmas in core using 15 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.119 seconds
+
+===== 9 / complete-two-child-cover =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180605 clauses
+c finished parsing, read 2 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 7 of 180605 clauses in core                            
+c 1 of 2 lemmas in core using 7 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.117 seconds
+
+===== 1 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188331 clauses
+c finished parsing, read 4436 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 427 of 188331 clauses in core                            
+c 46 of 99 lemmas in core using 1802 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 2 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188332 clauses
+c finished parsing, read 450 bytes from proof file
+c UNSAT via unit propagation on the input instance
+c 4 of 188332 clauses in core                            
+c 1 of 57 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 3 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188332 clauses
+c finished parsing, read 1357 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 305 of 188332 clauses in core                            
+c 5 of 61 lemmas in core using 621 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 4 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179774 clauses
+c finished parsing, read 5308 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 557 of 179774 clauses in core                            
+c 78 of 144 lemmas in core using 3892 resolution steps
+c 0 RAT lemmas in core; 4 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 5 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179775 clauses
+c finished parsing, read 590 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 152 of 179775 clauses in core                            
+c 3 of 70 lemmas in core using 179 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.118 seconds
+
+===== 6 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179775 clauses
+c finished parsing, read 2746 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 260 of 179775 clauses in core                            
+c 29 of 96 lemmas in core using 1107 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.129 seconds
+
+===== 7 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179774 clauses
+c finished parsing, read 5308 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 557 of 179774 clauses in core                            
+c 78 of 144 lemmas in core using 3892 resolution steps
+c 0 RAT lemmas in core; 4 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 8 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179775 clauses
+c finished parsing, read 590 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 152 of 179775 clauses in core                            
+c 3 of 70 lemmas in core using 179 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 9 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19559 variables and 179775 clauses
+c finished parsing, read 2746 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 260 of 179775 clauses in core                            
+c 29 of 96 lemmas in core using 1107 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.120 seconds
+
+===== 10 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183096 clauses
+c finished parsing, read 3797 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 270 of 183096 clauses in core                            
+c 58 of 134 lemmas in core using 1128 resolution steps
+c 0 RAT lemmas in core; 1 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.123 seconds
+
+===== 11 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 9075 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 823 of 183097 clauses in core                            
+c 113 of 191 lemmas in core using 14641 resolution steps
+c 0 RAT lemmas in core; 2 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.125 seconds
+
+===== 12 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 964 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 83 of 183097 clauses in core                            
+c 8 of 87 lemmas in core using 166 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 13 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183096 clauses
+c finished parsing, read 3797 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 270 of 183096 clauses in core                            
+c 58 of 134 lemmas in core using 1128 resolution steps
+c 0 RAT lemmas in core; 1 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.121 seconds
+
+===== 14 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 9075 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 823 of 183097 clauses in core                            
+c 113 of 191 lemmas in core using 14641 resolution steps
+c 0 RAT lemmas in core; 2 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 15 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 964 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 83 of 183097 clauses in core                            
+c 8 of 87 lemmas in core using 166 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 16 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183096 clauses
+c finished parsing, read 3797 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 270 of 183096 clauses in core                            
+c 58 of 134 lemmas in core using 1128 resolution steps
+c 0 RAT lemmas in core; 1 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.127 seconds
+
+===== 17 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 9075 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 823 of 183097 clauses in core                            
+c 113 of 191 lemmas in core using 14641 resolution steps
+c 0 RAT lemmas in core; 2 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.128 seconds
+
+===== 18 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19700 variables and 183097 clauses
+c finished parsing, read 964 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 83 of 183097 clauses in core                            
+c 8 of 87 lemmas in core using 166 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.122 seconds
+
+===== 19 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180554 clauses
+c finished parsing, read 19634 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1100 of 180554 clauses in core                            
+c 298 of 386 lemmas in core using 17876 resolution steps
+c 0 RAT lemmas in core; 6 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.123 seconds
+
+===== 20 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 129728 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 2013 of 180555 clauses in core                            
+c 1974 of 2058 lemmas in core using 177156 resolution steps
+c 0 RAT lemmas in core; 652 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.151 seconds
+
+===== 21 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 29549 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1090 of 180555 clauses in core                            
+c 457 of 550 lemmas in core using 43699 resolution steps
+c 0 RAT lemmas in core; 275 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.127 seconds
+
+===== 22 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180554 clauses
+c finished parsing, read 19634 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1100 of 180554 clauses in core                            
+c 298 of 386 lemmas in core using 17876 resolution steps
+c 0 RAT lemmas in core; 6 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.136 seconds
+
+===== 23 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 129728 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 2013 of 180555 clauses in core                            
+c 1974 of 2058 lemmas in core using 177156 resolution steps
+c 0 RAT lemmas in core; 652 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.145 seconds
+
+===== 24 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 29549 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1090 of 180555 clauses in core                            
+c 457 of 550 lemmas in core using 43699 resolution steps
+c 0 RAT lemmas in core; 275 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.128 seconds
+
+===== 25 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180554 clauses
+c finished parsing, read 19634 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1100 of 180554 clauses in core                            
+c 298 of 386 lemmas in core using 17876 resolution steps
+c 0 RAT lemmas in core; 6 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 26 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 129728 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 2013 of 180555 clauses in core                            
+c 1974 of 2058 lemmas in core using 177156 resolution steps
+c 0 RAT lemmas in core; 652 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.149 seconds
+
+===== 27 / stock-transport =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180555 clauses
+c finished parsing, read 29549 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 1090 of 180555 clauses in core                            
+c 457 of 550 lemmas in core using 43699 resolution steps
+c 0 RAT lemmas in core; 275 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.126 seconds
+
+===== malformed-prefix control (strictly rejected) =====
+c turning on binary mode checking
+c parsing input formula with 20370 variables and 188341 clauses
+c WARNING: wrong binary prefix, stop reading proof
+c finished parsing
+c UNSAT via unit propagation on the input instance
+c 4 of 188341 clauses in core                            
+c 1 of 1 lemmas in core using 4 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.124 seconds
+
+===== 14 / fresh-guard_parent =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180603 clauses
+c finished parsing, read 4047273 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 5736 of 180603 clauses in core                            
+c 18176 of 190533 lemmas in core using 3306384 resolution steps
+c 0 RAT lemmas in core; 10995 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.768 seconds
+
+===== 14 / fresh-refined_child =====
+c turning on binary mode checking
+c parsing input formula with 19534 variables and 180604 clauses
+c finished parsing, read 4733894 bytes from proof file
+c detected empty clause; start verification via backward checking
+c 5598 of 180604 clauses in core                            
+c 22674 of 237832 lemmas in core using 5407613 resolution steps
+c 0 RAT lemmas in core; 14731 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.924 seconds
+
