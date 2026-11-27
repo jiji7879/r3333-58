@@ -160,6 +160,14 @@ cmd_finalise() {
     *) die "unknown option $1";;
   esac; done
   [ -d "$EV" ] || die "no evidence at $EV; run ./k58.sh run first"
+  # manifest_parallel.py creates its output directory and refuses an existing one, so a
+  # second finalise (the normal case after another run) died on FileExistsError.  Move the
+  # previous release aside instead: it is superseded, and its files stay for comparison.
+  if [ -e "$rel" ]; then
+    local aside="$rel.superseded-$(date -u +%Y%m%dT%H%M%SZ)"
+    mv "$rel" "$aside"
+    echo "previous release moved to $aside"
+  fi
   echo "1/2 building the manifest with $workers processes (this re-derives every CNF)"
   $PY "$ROOT/tools/manifest_parallel.py" --bundle "$BUNDLE" --root "$EV" \
      --out "$rel" --workers "$workers" | tee "$rel.manifest.log" | tail -1

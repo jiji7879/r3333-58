@@ -86,7 +86,10 @@ cmd_retry() {
 
 cmd_finish() {
   echo "$(stamp) finalising $EV" | tee -a "$STATE/batch.log"
-  ./k58.sh finalise --release "$ROOT/release" 2>&1 | tee -a "$STATE/batch.log"
+  if ! ./k58.sh finalise --release "$ROOT/release" 2>&1 | tee -a "$STATE/batch.log"; then
+    echo "$(stamp) finalise FAILED; RUN_SUMMARY.md not written" | tee -a "$STATE/batch.log"
+    return 1
+  fi
   local rel=$ROOT/release n size
   n=$(find "$EV" -name verified.json | wc -l)
   size=$(du -sh "$EV" | cut -f1)
