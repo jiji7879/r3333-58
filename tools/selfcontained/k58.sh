@@ -157,11 +157,12 @@ cmd_wallcc_smoke() {
 cmd_finalise() {
   need_venv
   local rel="$ROOT/release" workers=${WORKERS:-$(nproc 2>/dev/null || echo 4)}
-  local only="" skip_verify=0
+  local only="" skip_verify=0 skip_coverage=0
   while [ $# -gt 0 ]; do case "$1" in
     --release) rel=$2; shift 2;; --workers) workers=$2; shift 2;;
     --only) only=$2; shift 2;;
     --skip-verify) skip_verify=1; shift;;
+    --skip-coverage) skip_coverage=1; shift;;
     *) die "unknown option $1";;
   esac; done
   [ -d "$EV" ] || die "no evidence at $EV; run ./k58.sh run first"
@@ -181,10 +182,16 @@ cmd_finalise() {
   sha=$(tail -1 "$rel.manifest.log" | $PY -c "import json,sys;print(json.load(sys.stdin)['manifest_sha256'])")
   [ -n "$sha" ] || die "could not read the manifest hash from $rel.manifest.log"
   echo "manifest $sha"
-  echo "checking coverage and manifest consistency (no replay, fast)"
-  $PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
-     --root "$EV" verify "$rel" --manifest-sha256 "$sha" > "$rel.coverage.json" \
-     || die "manifest/coverage check failed: see $rel.coverage.json"
+  if [ "$skip_coverage" = 1 ]; then
+    echo "coverage check SKIPPED (--skip-coverage)"
+  else
+    # Not fast at cover scale: this re-derives every CNF and hashes every compressed
+    # certificate, single-threaded - hours on a 400 GB evidence directory.
+    echo "checking coverage and manifest consistency (re-derives every CNF; hours at cover scale)"
+    $PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
+       --root "$EV" verify "$rel" --manifest-sha256 "$sha" > "$rel.coverage.json" \
+       || die "manifest/coverage check failed: see $rel.coverage.json"
+  fi
   if [ "$skip_verify" = 1 ]; then
     echo "2/2 replay SKIPPED (--skip-verify): the manifest and coverage only"
     echo "replay the whole evidence later with: ./k58.sh replay --release $rel"
