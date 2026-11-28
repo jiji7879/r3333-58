@@ -21,13 +21,14 @@ run against it is the 2026-11-27 one below.
 
 | status | rows |
 | --- | ---: |
-| `CERTIFIED` (replayed against regenerated CNFs) | 101,586 |
+| `CERTIFIED` (replayed against regenerated CNFs) | 101,594 |
 | `LEGACY_EVIDENCE_NEEDED` | 0 |
-| `OPEN` | 11,593 |
+| `OPEN` | 11,585 |
 
-The 2026-11-27 run closed the last 2,144 legacy rows and 1,300 more, so **no row
-now rests on imported evidence**: every certified row carries a certificate this
-machine replayed. Before it, the 2026-11-25 run closed **18,858** rows in one pass:
+The 2026-11-27 and 2026-11-28 runs between them closed the last 2,144 legacy rows,
+1,300 retry-tier rows and the 8 that remained, so **no row now rests on imported
+evidence and both big profiles are complete**:
+[results/k58-release-2026-11-28/](results/k58-release-2026-11-28/). Before it, the 2026-11-25 run closed **18,858** rows in one pass:
 manifest `98d82268ff4c277820f00cbed3405c625dbb53d3603610e45eacc73b562b19f9`,
 replay `{"checked": 98142, "replayed": 98142, "failed": 0}`.
 [results/k58-full-cover-run-2026-11-25/](results/k58-full-cover-run-2026-11-25/)
@@ -55,13 +56,13 @@ report, not an independently confirmed fact.
   reduction: the degree cap, `R(3,3) ≤ 6` and `R(3,3,3) ≤ 17`, the ticket
   double counting, and the threshold step.  Build with `lean/build.sh`.
 
-Where the 11,593 open rows are, and what each needs:
+Where the 11,585 open rows are, and what each needs:
 
-* **8** in `(15,15,15,12)` — the entire remainder of the two big profiles;
-  `(16,15,15,11)` is complete at 16,173. These 8 are worth one more pass at a
-  large budget, and nothing else in the two big profiles needs anything.
-* **11,585** in the seven small profiles — **the wall**
-  ([review/WALL_STRUCTURAL_NOTE.md](review/WALL_STRUCTURAL_NOTE.md) puts it in
+* **All 11,585 are in the seven small profiles — the wall.**
+  Nothing else in the cover is open: both big profiles are complete
+  (`(15,15,15,12)` 83,440 of 83,440, `(16,15,15,11)` 16,173 of 16,173), as are
+  `(16,16,15,10)` and `(16,16,16,9)`, and there are no legacy rows left.
+  ([review/WALL_STRUCTURAL_NOTE.md](review/WALL_STRUCTURAL_NOTE.md) puts the wall in
   structural terms: these are exactly the profiles whose vertices have two or
   one colour-degrees `<= 14`, and the ticket argument's budget there is 15 to
   32 against 45 to 48 on the four reachable profiles). All seven have now
@@ -73,11 +74,11 @@ Where the 11,593 open rows are, and what each needs:
   or two rigid blocks and leaves 42 or 27 of 57 vertices free; refuting one is
   close to the original problem.
 
-Status in one line: 101,586 of 113,179 rows (89.8 %) are certified and
-replayed, every one of them by a certificate this machine replays; the 11,593
-that remain are the 11,585 small-profile rows no budget has touched plus 8 rows
-of `(15,15,15,12)`; and the reduction at n = 58 is still unformalised. No bound
-moves yet.
+Status in one line: 101,594 of 113,179 rows (89.8 %) are certified and
+replayed, every one of them by a certificate this machine replays; the 11,585
+that remain are exactly the seven small profiles no budget has touched; both big
+profiles are complete; and the reduction at n = 58 is still unformalised. No
+bound moves yet.
 
 **Evidence-integrity update, 2026-11-26:** the small-profile adaptive campaign
 now validates cached terminal artifacts and persisted trees before reusing or
