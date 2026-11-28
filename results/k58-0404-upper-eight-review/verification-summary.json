@@ -1,0 +1,146 @@
+{
+  "archive_sha256": "56f5b85641a305aa5aea9f86b4abd362a388ce492abcf7dfc1dab53cce5b1d1d",
+  "bound": "Original first-tier parent implies (colour-0 spoke count from mark 17 to sites 1..16) is between 1 and 8; five spokes pinned colour 1; not a global or root-ticket H theorem.",
+  "local_word_census": {
+    "excluded_by_bound": 203,
+    "remaining": 5021,
+    "scope": "local relaxation, not extension-to-K58 proof",
+    "total": 5224
+  },
+  "minimum_endpoint": {
+    "query_sha256": "64c41082df1681d826bc08c71149ef6097bd265f082a2391ae72ad1e99d840bb",
+    "shape": "H=1 forces unique full word with single colour-0 hit at site 16",
+    "trimmed_proof_sha256": "9945992b8fd76b54dedc5ddcd6571016db9c4226cbf93684d6f3219fd7c68aea",
+    "verified": true
+  },
+  "negative_controls": [
+    {
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-candidate-verification/native/drat-trim",
+        ".scratch/k58-row-16161411/plain-ca2/parent.cnf",
+        ".scratch/k58-0404-upper-eight/negative-controls/normalized.drat",
+        "-i",
+        "-W"
+      ],
+      "control": "different-parent",
+      "derivation_lines": 0,
+      "elapsed_s": 0.3720915890298784,
+      "exit": 1,
+      "log_tail": [
+        "c turning on binary mode checking",
+        "c parsing input formula with 19533 variables and 184335 clauses",
+        "c finished parsing, read 17528840 bytes from proof file",
+        "c conflict claimed, but not detected",
+        "s NOT VERIFIED",
+        "c verification time: 0.367 seconds"
+      ],
+      "not_verified_lines": 1,
+      "verified_lines": 0,
+      "warnings": []
+    },
+    {
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-candidate-verification/native/drat-trim",
+        ".scratch/k58-0404-upper-eight/negative-controls/query.cnf",
+        ".scratch/k58-0404-upper-eight/negative-controls/half-normalized.drat",
+        "-i",
+        "-W"
+      ],
+      "control": "truncated",
+      "derivation_lines": 0,
+      "elapsed_s": 0.23204002995043993,
+      "exit": 1,
+      "log_tail": [
+        "c turning on binary mode checking",
+        "c parsing input formula with 19425 variables and 184163 clauses",
+        "c finished parsing, read 8764476 bytes from proof file",
+        "c ERROR: no conflict",
+        "s NOT VERIFIED",
+        "c verification time: 0.228 seconds"
+      ],
+      "not_verified_lines": 1,
+      "verified_lines": 0,
+      "warnings": [
+        "c ERROR: no conflict"
+      ]
+    }
+  ],
+  "not_proved": [
+    "satisfiability or unsatisfiability of the full 0404c3a2 row",
+    "that any local word extends to all 58 vertices",
+    "a general speedup",
+    "change of Ramsey number, production cover or H-site/root-ticket statistic"
+  ],
+  "original_parent_sha256": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+  "partition": {
+    "cover_cases": 12,
+    "masks_checked": 2048,
+    "masks_with_H_at_least_9": 67,
+    "masks_with_H_at_most_8": 1981,
+    "opportunity_sites": [
+      2,
+      3,
+      5,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16
+    ],
+    "pinned_spokes": [
+      1,
+      4,
+      6,
+      8,
+      15
+    ]
+  },
+  "production_changes": false,
+  "proofs": {
+    "all_exact_verified_lines": 1,
+    "all_lrat_verified": true,
+    "all_normalized_proof_bytes_read": true,
+    "all_zero_warnings": true,
+    "cases": 12,
+    "drat_normalized_verified": true,
+    "producing_conflicts_in_receipts": 2562043,
+    "proof_rule": "DRAT with RAT enabled where required; raw -W and RUP-only modes must not be applied indiscriminately",
+    "rat_lemmas_in_core": {
+      "full-high11": 0,
+      "high9-first0": 0,
+      "high9-first1": 0,
+      "high9-first10": 489,
+      "high9-first2": 689,
+      "high9-first3": 592,
+      "high9-first4": 763,
+      "high9-first5": 632,
+      "high9-first6": 634,
+      "high9-first7": 633,
+      "high9-first8": 628,
+      "high9-first9": 588
+    },
+    "uncompressed_original_proof_bytes": 155641641
+  },
+  "records": {
+    "mathematical_audit": ".ultramath/smwzyl4uc/m2/REPORT_m2_B.md",
+    "negative_controls": ".scratch/k58-0404-upper-eight/negative-controls/results.json",
+    "normalized_drat": ".scratch/k58-0404-upper-eight/run/normalized-rat-strict.json",
+    "package_replay": ".scratch/k58-0404-upper-eight/run/replay.log",
+    "pipeline_audit": ".ultramath/smwzyl4uc/m3/FINDINGS.md",
+    "utility_audit": ".ultramath/smwzyl4uc/m4/REPORT.md"
+  },
+  "row_id": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296",
+  "strengthened": {
+    "added_clauses": 55,
+    "byte_identical_reproduction": true,
+    "literals_per_clause": 9,
+    "original_body_preserved": true,
+    "parent_sha256": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+    "query_sha256": "87bc5a174c86dc99abe963ce9c71e5fe5492a78368558fb17a356b06d741894a"
+  },
+  "strengthened_sha256": "87bc5a174c86dc99abe963ce9c71e5fe5492a78368558fb17a356b06d741894a",
+  "whole_row_status": "OPEN"
+}
