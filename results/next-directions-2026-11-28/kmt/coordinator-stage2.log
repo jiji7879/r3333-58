@@ -1,0 +1,62 @@
+{
+  "stock": {
+    "gadgets": 31,
+    "enforcement_unsat": 31,
+    "witness_sat": 3294,
+    "witness_sets": 3294,
+    "guard_false_sat": 31,
+    "unguarded_violation_unsat": 31,
+    "too_strong_rejects": 31,
+    "too_weak_accepts": 31,
+    "true_rejects_k_minus_1": 31,
+    "total_aux": 11006,
+    "total_clauses": 21621
+  },
+  "kmt": {
+    "gadgets": 31,
+    "enforcement_unsat": 31,
+    "witness_sat": 3294,
+    "witness_sets": 3294,
+    "guard_false_sat": 31,
+    "unguarded_violation_unsat": 31,
+    "too_strong_rejects": 31,
+    "too_weak_accepts": 31,
+    "true_rejects_k_minus_1": 31,
+    "total_aux": 4837,
+    "total_clauses": 13946
+  },
+  "exhaustive_small": {
+    "checks": 32776,
+    "mismatches": [],
+    "max_n": 9
+  },
+  "atmost_controls": [
+    {
+      "n": 30,
+      "k": 10,
+      "accepts_k_minus_1": true,
+      "rejects_k": true
+    },
+    {
+      "n": 41,
+      "k": 14,
+      "accepts_k_minus_1": true,
+      "rejects_k": true
+    },
+    {
+      "n": 15,
+      "k": 6,
+      "accepts_k_minus_1": true,
+      "rejects_k": true
+    },
+    {
+      "n": 31,
+      "k": 6,
+      "accepts_k_minus_1": true,
+      "rejects_k": true
+    }
+  ],
+  "sat_calls": 39744,
+  "cpu_seconds": 16.758,
+  "all_checks_pass": true
+}

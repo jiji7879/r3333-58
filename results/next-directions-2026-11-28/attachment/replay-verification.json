@@ -1,0 +1,53 @@
+{
+  "all_census_data_equal": true,
+  "coordinator_cpu_seconds": 727.53,
+  "coordinator_maxrss_kb": 252844,
+  "coordinator_receipt_sha256": "3ead8a721b77ce11bf83d1f6feaec70d752c27566fcbf03dbd5ad3e767d6e080",
+  "coordinator_wall_seconds": 727.68,
+  "excluded_metadata": [
+    "cpu_seconds",
+    "log",
+    "script_sha256"
+  ],
+  "external_premises": [
+    "the two-good-K16-colourings classification",
+    "the two-good-K15-deletions classification"
+  ],
+  "formal_swarm_verdict": "none: m4 ended without submitting; this is the coordinator replay verdict for a bounded negative experiment",
+  "matched_fields": "Every field except cpu_seconds, timestamp-bearing log strings, and corrected script provenance.",
+  "member_cpu_seconds": 730.89,
+  "member_receipt_sha256": "25494224ee4874db85d93a57d36f5e15b184e1fb5d8f0e842aaf5aed009132f0",
+  "scope": "bounded exact combinatorial replay; no SAT solver, attachment cover, wall search or Ramsey-bound claim",
+  "source_adaptations": {
+    "census_generic.py": "Byte-identical enumeration source.",
+    "run_census.py": "Only the receipt driver name corrected; coordinator replay and integrated source match.",
+    "templates.py": "Only repository-root depth adjusted in scratch; integrated path uses original depth."
+  },
+  "source_files": {
+    "census_generic.py": {
+      "coordinator_replay_sha256": "f510845b42517c6b1863688c42c64d18eef92dd2f33889ff9ba6d6775e19a0b2",
+      "integrated_sha256": "f510845b42517c6b1863688c42c64d18eef92dd2f33889ff9ba6d6775e19a0b2",
+      "member_sha256": "f510845b42517c6b1863688c42c64d18eef92dd2f33889ff9ba6d6775e19a0b2"
+    },
+    "run_census.py": {
+      "coordinator_replay_sha256": "04ecbccce4375bac60ed9680f29c5ec9ec208732c28476e41327967bf54c0941",
+      "integrated_sha256": "04ecbccce4375bac60ed9680f29c5ec9ec208732c28476e41327967bf54c0941",
+      "member_sha256": "3b0359428a805f980276d06d8f1b80cd68ea1522368d35b722a7d0681d919a1f"
+    },
+    "templates.py": {
+      "coordinator_replay_sha256": "34221f7aa06e9efb1c945fb58e98fb69a36bbbb2a9fe8be6083e8085d3d915a9",
+      "integrated_sha256": "2e74f9c2004f3db6b18256b47e3c3b0b9ee1339b934c1a903578cf887b130f4a",
+      "member_sha256": "2e74f9c2004f3db6b18256b47e3c3b0b9ee1339b934c1a903578cf887b130f4a"
+    }
+  },
+  "verified_counts": {
+    "continue_criterion_met": false,
+    "engineering_cutoff": 10000,
+    "marked_15_total": 3402,
+    "marked_16_total": 533,
+    "overlaps_15_total": 31283,
+    "overlaps_16_total": 724,
+    "relevant_k58_normalized_early_cases": 31712
+  },
+  "witnesses": "all 196604 member subset transports verified in replay; separate verifier checks 196604 nonempty subsets under named and weak groups with direct orbit enumeration and Burnside"
+}

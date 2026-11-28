@@ -1,0 +1,634 @@
+{
+ "member": "m4",
+ "direction": "early FKR attachment-cover feasibility/calibration",
+ "A_templates": {
+  "U16": {
+   "order": 16,
+   "triangle_free": true,
+   "degree_triples": [
+    [
+     5,
+     5,
+     5
+    ]
+   ],
+   "aut_named_order": 160,
+   "weak_group_order": 960,
+   "weak_group_order_over_aut": 6,
+   "strong_subset_classes": 573
+  },
+  "T16": {
+   "order": 16,
+   "triangle_free": true,
+   "degree_triples": [
+    [
+     5,
+     5,
+     5
+    ]
+   ],
+   "aut_named_order": 32,
+   "weak_group_order": 192,
+   "weak_group_order_over_aut": 6,
+   "strong_subset_classes": 2301
+  },
+  "U15": {
+   "order": 15,
+   "triangle_free": true,
+   "degree_triples": [
+    [
+     4,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     5
+    ],
+    [
+     5,
+     5,
+     4
+    ]
+   ],
+   "aut_named_order": 10,
+   "weak_group_order": 60,
+   "weak_group_order_over_aut": 6,
+   "strong_subset_classes": 3535
+  },
+  "T15": {
+   "order": 15,
+   "triangle_free": true,
+   "degree_triples": [
+    [
+     4,
+     5,
+     5
+    ],
+    [
+     5,
+     4,
+     5
+    ],
+    [
+     5,
+     5,
+     4
+    ]
+   ],
+   "aut_named_order": 2,
+   "weak_group_order": 12,
+   "weak_group_order_over_aut": 6,
+   "strong_subset_classes": 16639
+  },
+  "controls": {
+   "U16_weak_iso_T16": false,
+   "U15_weak_iso_T15": false,
+   "frozen_gluing_asserts_160_32_10_2": true
+  }
+ },
+ "B_transport_witnesses": {
+  "U16": {
+   "subsets": 65535,
+   "failures": 0,
+   "retained_representatives": 573
+  },
+  "T16": {
+   "subsets": 65535,
+   "failures": 0,
+   "retained_representatives": 2301
+  },
+  "U15": {
+   "subsets": 32767,
+   "failures": 0,
+   "retained_representatives": 3535
+  },
+  "T15": {
+   "subsets": 32767,
+   "failures": 0,
+   "retained_representatives": 16639
+  }
+ },
+ "C_table5": {
+  "printed": [
+   2,
+   3,
+   7,
+   21,
+   34,
+   66,
+   83,
+   99,
+   83,
+   66,
+   34,
+   21,
+   7,
+   3,
+   2,
+   2
+  ],
+  "reproduced_s3_quotient": [
+   2,
+   3,
+   7,
+   21,
+   34,
+   66,
+   83,
+   99,
+   83,
+   66,
+   34,
+   21,
+   7,
+   3,
+   2,
+   2
+  ],
+  "reproduced_burnside_independent": [
+   2,
+   3,
+   7,
+   21,
+   34,
+   66,
+   83,
+   99,
+   83,
+   66,
+   34,
+   21,
+   7,
+   3,
+   2,
+   2
+  ],
+  "per_seed_s3": {
+   "U16": [
+    1,
+    1,
+    2,
+    5,
+    8,
+    14,
+    17,
+    20,
+    17,
+    14,
+    8,
+    5,
+    2,
+    1,
+    1,
+    1
+   ],
+   "T16": [
+    1,
+    2,
+    5,
+    16,
+    26,
+    52,
+    66,
+    79,
+    66,
+    52,
+    26,
+    16,
+    5,
+    2,
+    1,
+    1
+   ]
+  },
+  "per_seed_burnside": {
+   "U16": [
+    1,
+    1,
+    2,
+    5,
+    8,
+    14,
+    17,
+    20,
+    17,
+    14,
+    8,
+    5,
+    2,
+    1,
+    1,
+    1
+   ],
+   "T16": [
+    1,
+    2,
+    5,
+    16,
+    26,
+    52,
+    66,
+    79,
+    66,
+    52,
+    26,
+    16,
+    5,
+    2,
+    1,
+    1
+   ]
+  },
+  "match": true,
+  "total": 533
+ },
+ "C_table6": {
+  "printed": [
+   3,
+   7,
+   20,
+   54,
+   74,
+   109,
+   110,
+   116,
+   91,
+   69,
+   35,
+   22,
+   7,
+   3,
+   2,
+   2
+  ],
+  "reproduced": [
+   3,
+   7,
+   20,
+   54,
+   74,
+   109,
+   110,
+   116,
+   91,
+   69,
+   35,
+   22,
+   7,
+   3,
+   2,
+   2
+  ],
+  "match": true,
+  "total": 724,
+  "by_family": {
+   "U16/U16": {
+    "weak_total": 117,
+    "strong_total": 573,
+    "per_order": [
+     1,
+     1,
+     2,
+     5,
+     8,
+     14,
+     17,
+     20,
+     17,
+     14,
+     8,
+     5,
+     2,
+     1,
+     1,
+     1
+    ]
+   },
+   "U16/T16": {
+    "weak_total": 111,
+    "strong_total": 576,
+    "per_order": [
+     1,
+     2,
+     5,
+     13,
+     18,
+     25,
+     20,
+     15,
+     7,
+     3,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "T16/T16": {
+    "weak_total": 496,
+    "strong_total": 2751,
+    "per_order": [
+     1,
+     4,
+     13,
+     36,
+     48,
+     70,
+     73,
+     81,
+     67,
+     52,
+     26,
+     16,
+     5,
+     2,
+     1,
+     1
+    ]
+   }
+  }
+ },
+ "D_brute_force_crosscheck_16": {
+  "counts": {
+   "U16/U16/k1": 1,
+   "U16/U16/k2": 3,
+   "U16/T16/k1": 1,
+   "U16/T16/k2": 9,
+   "T16/T16/k1": 1,
+   "T16/T16/k2": 18
+  },
+  "expected_strong_from_canonical_keys": {
+   "U16/U16/k1": 1,
+   "U16/U16/k2": 3,
+   "U16/T16/k1": 1,
+   "U16/T16/k2": 9,
+   "T16/T16/k1": 1,
+   "T16/T16/k2": 18
+  },
+  "match": true
+ },
+ "E_census_15_15": {
+  "marked_per_order_k1_to_15": [
+   3,
+   13,
+   51,
+   145,
+   312,
+   517,
+   659,
+   659,
+   517,
+   312,
+   145,
+   51,
+   13,
+   3,
+   2
+  ],
+  "marked_total": 3402,
+  "marked_burnside_crosscheck": [
+   3,
+   13,
+   51,
+   145,
+   312,
+   517,
+   659,
+   659,
+   517,
+   312,
+   145,
+   51,
+   13,
+   3,
+   2
+  ],
+  "marked_burnside_match": true,
+  "marked_per_seed": {
+   "U15": [
+    1,
+    3,
+    10,
+    27,
+    56,
+    91,
+    115,
+    115,
+    91,
+    56,
+    27,
+    10,
+    3,
+    1,
+    1
+   ],
+   "T15": [
+    2,
+    10,
+    41,
+    118,
+    256,
+    426,
+    544,
+    544,
+    426,
+    256,
+    118,
+    41,
+    10,
+    2,
+    1
+   ]
+  },
+  "overlaps_per_order_k1_to_15": [
+   17,
+   268,
+   1720,
+   4369,
+   5969,
+   6080,
+   5086,
+   3740,
+   2283,
+   1151,
+   434,
+   132,
+   26,
+   6,
+   2
+  ],
+  "overlaps_total": 31283,
+  "overlaps_by_family": {
+   "U15/U15": {
+    "weak_total": 2768,
+    "strong_total": 16411,
+    "per_order": [
+     2,
+     13,
+     58,
+     163,
+     319,
+     486,
+     559,
+     510,
+     354,
+     193,
+     77,
+     25,
+     6,
+     2,
+     1
+    ]
+   },
+   "U15/T15": {
+    "weak_total": 7710,
+    "strong_total": 46138,
+    "per_order": [
+     5,
+     74,
+     467,
+     1218,
+     1798,
+     1856,
+     1328,
+     672,
+     229,
+     54,
+     7,
+     2,
+     0,
+     0,
+     0
+    ]
+   },
+   "T15/T15": {
+    "weak_total": 20805,
+    "strong_total": 124483,
+    "per_order": [
+     10,
+     181,
+     1195,
+     2988,
+     3852,
+     3738,
+     3199,
+     2558,
+     1700,
+     904,
+     350,
+     105,
+     20,
+     4,
+     1
+    ]
+   }
+  },
+  "brute_force_crosscheck_k1_k2": {
+   "U15/U15/k1": 6,
+   "U15/U15/k2": 63,
+   "U15/T15/k1": 27,
+   "U15/T15/k2": 438,
+   "T15/T15/k1": 45,
+   "T15/T15/k2": 1029
+  },
+  "brute_force_note": "brute force enumerates the strong (named-colour) groupoid including the copy swap, so it is compared with the strong per-order counts; the S_3 layer then gives the weak counts",
+  "brute_force_match": true
+ },
+ "F_k58_early_census": {
+  "families": {
+   "16/16": {
+    "template_pairs": [
+     [
+      "U16",
+      "U16"
+     ],
+     [
+      "U16",
+      "T16"
+     ],
+     [
+      "T16",
+      "T16"
+     ]
+    ],
+    "split": {
+     "k1_k2_excluded_by_CAT58": 10,
+     "ordinary_3_to_14": 710,
+     "adjacent_k_s-1": 2,
+     "high_overlap_k_s": 2,
+     "k_ge_3": 714
+    }
+   },
+   "15/15": {
+    "template_pairs": [
+     [
+      "U15",
+      "U15"
+     ],
+     [
+      "U15",
+      "T15"
+     ],
+     [
+      "T15",
+      "T15"
+     ]
+    ],
+    "split": {
+     "k1_k2_excluded_by_CAT58": 285,
+     "ordinary_3_to_14": 30996,
+     "adjacent_k_s-1": 6,
+     "high_overlap_k_s": 2,
+     "k_ge_3": 30998
+    }
+   }
+  },
+  "excluded_by_CAT58": "mixed 15/16 or 14/16 attachments: degrees differ",
+  "normalised_early_census": 31712,
+  "engineering_cutoff": 10000,
+  "below_cutoff": false,
+  "ratio_to_cutoff": 3.171,
+  "verdict": "ABOVE the declared 10^4 cut-off; the go criterion is not met"
+ },
+ "G_controls": {
+  "colour_relabelled_U16_marked_matches": true,
+  "colour_relabelled_U16_T16_overlap_matches_724": true,
+  "corrupted_template_has_triangle": true,
+  "marked16_dropping_T": 117,
+  "marked16_dropping_U": 416,
+  "overlaps16_dropping_cross_family": 613,
+  "k56_high_overlap_16_16": {
+   "k15": 2,
+   "k16": 2
+  },
+  "k56_high_overlap_15_15": {
+   "k14": 6,
+   "k15": 2
+  }
+ },
+ "cpu_seconds": 727.53,
+ "log": [
+  "A templates audited (1.4 s)",
+  "B transport witnesses verified for 196604 subsets",
+  "C Table 5 matched: 533 (3.4 s)",
+  "   overlap family U16/U16: 117 weak classes (9.5 s)",
+  "   overlap family U16/T16: 111 weak classes (14.6 s)",
+  "   overlap family T16/T16: 496 weak classes (27.0 s)",
+  "C Table 6 matched: 724 (27.0 s)",
+  "D brute-force cross-check ok (32.1 s)",
+  "   overlap family U15/U15: 2768 weak classes (60.7 s)",
+  "   overlap family U15/T15: 7710 weak classes (251.6 s)",
+  "   overlap family T15/T15: 20805 weak classes (718.7 s)",
+  "E 15/15 census done (720.8 s)",
+  "F early census 31712 vs cut-off 10000"
+ ],
+ "script_sha256": {
+  "templates.py": "34221f7aa06e9efb1c945fb58e98fb69a36bbbb2a9fe8be6083e8085d3d915a9",
+  "census_generic.py": "f510845b42517c6b1863688c42c64d18eef92dd2f33889ff9ba6d6775e19a0b2",
+  "run_census.py": "04ecbccce4375bac60ed9680f29c5ec9ec208732c28476e41327967bf54c0941"
+ }
+}

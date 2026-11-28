@@ -10,7 +10,9 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
-**Updated 2026-11-28 (bounded MCTS/counter/maximality follow-up: arm 3 gains and exact-parent conditional assembly).**
+**Latest 2026-11-28: literature-inspired experiments (`smx06hpp8`).** Five directions were accepted; FKR and SMS ended without formal submissions and were independently replayed as bounded results. `K58.cat58` and its attachment bounds, the finite 112-support catalogue, conditional physical transport, and exact readiness of all 15 emitted support steps are Lean-checked in the root build. Physical pinning, emitted atom-order identification, physical criticality, guard=`Sends`, and `ChainReady` remain open. LRAT replays use two independent but unverified checkers. KMT has exact allocation receipts but regresses CPU. The FKR early census reaches 31,712 cases, exceeding its 10,000 continuation gate; the one-colour SMS substitute has no demonstrated useful speedup. See the [experiment index](results/next-directions-2026-11-28/README.md) and the [checked FKR stop](results/next-directions-2026-11-28/attachment/README.md). No bound, wall-row status, production encoding default, or frozen ledger changed.
+
+**Earlier update (bounded MCTS/counter/maximality follow-up: arm 3 gains and exact-parent conditional assembly).**
 All eight directions of `smwzzs8qs` were accepted after independent replay.
 MCTS remains negative: direct two-sim "full rollout" reaches only root depth 1
 and reproduces shallow cubes; selective hybrid selection loses cap-normalised

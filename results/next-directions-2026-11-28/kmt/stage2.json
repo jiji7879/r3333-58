@@ -1,0 +1,64 @@
+{
+  "all_checks_pass": true,
+  "atmost_controls": [
+    {
+      "accepts_k_minus_1": true,
+      "k": 10,
+      "n": 30,
+      "rejects_k": true
+    },
+    {
+      "accepts_k_minus_1": true,
+      "k": 14,
+      "n": 41,
+      "rejects_k": true
+    },
+    {
+      "accepts_k_minus_1": true,
+      "k": 6,
+      "n": 15,
+      "rejects_k": true
+    },
+    {
+      "accepts_k_minus_1": true,
+      "k": 6,
+      "n": 31,
+      "rejects_k": true
+    }
+  ],
+  "cpu_seconds": 16.758,
+  "exhaustive_small": {
+    "checks": 32776,
+    "max_n": 9,
+    "mismatches": []
+  },
+  "kmt": {
+    "enforcement_unsat": 31,
+    "gadgets": 31,
+    "guard_false_sat": 31,
+    "too_strong_rejects": 31,
+    "too_weak_accepts": 31,
+    "total_aux": 4837,
+    "total_clauses": 13946,
+    "true_rejects_k_minus_1": 31,
+    "unguarded_violation_unsat": 31,
+    "witness_sat": 3294,
+    "witness_sets": 3294
+  },
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "sat_calls": 39744,
+  "schema": 1,
+  "stock": {
+    "enforcement_unsat": 31,
+    "gadgets": 31,
+    "guard_false_sat": 31,
+    "too_strong_rejects": 31,
+    "too_weak_accepts": 31,
+    "total_aux": 11006,
+    "total_clauses": 21621,
+    "true_rejects_k_minus_1": 31,
+    "unguarded_violation_unsat": 31,
+    "witness_sat": 3294,
+    "witness_sets": 3294
+  }
+}

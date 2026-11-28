@@ -1,0 +1,390 @@
+{
+  "benchmark": {
+    "analysis": {
+      "abandon": false,
+      "cpu_ratio_kmt_over_stock_by_seed": {
+        "0": 1.1408864736038402,
+        "1": 1.3861581339346576
+      },
+      "determinate": false,
+      "favourable_bounded_throughput": false,
+      "geometric_mean_ratio": 1.2575567841183122,
+      "memory": {
+        "0": {
+          "kmt_kib": 87592,
+          "stock_kib": 96592
+        },
+        "1": {
+          "kmt_kib": 86508,
+          "stock_kib": 96748
+        }
+      },
+      "memory_reduced": true,
+      "scope": "CNF-only bounded performance on parent+cube; OPEN is not UNSAT; no physical colouring, ChainReady or bound is claimed",
+      "statuses": [
+        "OPEN",
+        "OPEN",
+        "OPEN",
+        "OPEN"
+      ]
+    },
+    "calls": [
+      {
+        "arm": "stock",
+        "bootstrap_process_cpu_seconds": 0.057399086999999994,
+        "maxrss_kib": 96592,
+        "parse_process_cpu_seconds": 0.028051699,
+        "query_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+        "search_process_cpu_seconds": 3.733290383,
+        "seed": 0,
+        "sequence": 1,
+        "stats": {
+          "conflicts": 100001,
+          "decisions": 529694,
+          "propagations": 32489100,
+          "restarts": 7141
+        },
+        "status": "OPEN"
+      },
+      {
+        "arm": "kmt",
+        "bootstrap_process_cpu_seconds": 0.054464215999999996,
+        "maxrss_kib": 87592,
+        "parse_process_cpu_seconds": 0.02641919,
+        "query_sha256": "fdb46b2f8cddc74053809a8106801a327af32cc0ef191247b8980a0200779afd",
+        "search_process_cpu_seconds": 4.2592605,
+        "seed": 0,
+        "sequence": 2,
+        "stats": {
+          "conflicts": 100000,
+          "decisions": 363429,
+          "propagations": 43472331,
+          "restarts": 7577
+        },
+        "status": "OPEN"
+      },
+      {
+        "arm": "kmt",
+        "bootstrap_process_cpu_seconds": 0.056053026,
+        "maxrss_kib": 86508,
+        "parse_process_cpu_seconds": 0.030150955,
+        "query_sha256": "fdb46b2f8cddc74053809a8106801a327af32cc0ef191247b8980a0200779afd",
+        "search_process_cpu_seconds": 4.345204708,
+        "seed": 1,
+        "sequence": 3,
+        "stats": {
+          "conflicts": 100001,
+          "decisions": 400550,
+          "propagations": 44109768,
+          "restarts": 8670
+        },
+        "status": "OPEN"
+      },
+      {
+        "arm": "stock",
+        "bootstrap_process_cpu_seconds": 0.058832971000000005,
+        "maxrss_kib": 96748,
+        "parse_process_cpu_seconds": 0.027500347,
+        "query_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+        "search_process_cpu_seconds": 3.134710681,
+        "seed": 1,
+        "sequence": 4,
+        "stats": {
+          "conflicts": 100002,
+          "decisions": 777586,
+          "propagations": 21181699,
+          "restarts": 7779
+        },
+        "status": "OPEN"
+      }
+    ],
+    "conflict_budget": 100000,
+    "cube": [
+      -1413,
+      1014
+    ],
+    "engine": "CaDiCaL 1.9.5 SAT solver.",
+    "pysat_version": "1.9.dev22",
+    "replicate_cpu_ratios": [
+      1.10566,
+      1.39638
+    ],
+    "replicate_identical_statistics": true,
+    "total_solver_cpu_seconds_spent": 286.213
+  },
+  "benchmark_1m": {
+    "analysis": {
+      "abandon": false,
+      "cpu_ratio_kmt_over_stock_by_seed": {
+        "0": 1.0445395755017752,
+        "1": 1.4587996875743616
+      },
+      "determinate": false,
+      "favourable_bounded_throughput": false,
+      "geometric_mean_ratio": 1.2344124134182408,
+      "memory": {
+        "0": {
+          "kmt_kib": 99296,
+          "stock_kib": 116516
+        },
+        "1": {
+          "kmt_kib": 108776,
+          "stock_kib": 126716
+        }
+      },
+      "memory_reduced": true,
+      "scope": "CNF-only bounded performance on parent+cube; OPEN is not UNSAT; no physical colouring, ChainReady or bound is claimed",
+      "statuses": [
+        "OPEN",
+        "OPEN",
+        "OPEN",
+        "OPEN"
+      ]
+    },
+    "calls": [
+      {
+        "arm": "stock",
+        "bootstrap_process_cpu_seconds": 0.053783529000000004,
+        "maxrss_kib": 116516,
+        "parse_process_cpu_seconds": 0.027301404,
+        "query_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+        "search_process_cpu_seconds": 61.172025986,
+        "seed": 0,
+        "sequence": 1,
+        "stats": {
+          "conflicts": 1000000,
+          "decisions": 2318963,
+          "propagations": 381196308,
+          "restarts": 33143
+        },
+        "status": "OPEN"
+      },
+      {
+        "arm": "kmt",
+        "bootstrap_process_cpu_seconds": 0.05085457,
+        "maxrss_kib": 99296,
+        "parse_process_cpu_seconds": 0.023585376999999998,
+        "query_sha256": "fdb46b2f8cddc74053809a8106801a327af32cc0ef191247b8980a0200779afd",
+        "search_process_cpu_seconds": 63.896602056000006,
+        "seed": 0,
+        "sequence": 2,
+        "stats": {
+          "conflicts": 1000002,
+          "decisions": 2105737,
+          "propagations": 395209230,
+          "restarts": 32356
+        },
+        "status": "OPEN"
+      },
+      {
+        "arm": "kmt",
+        "bootstrap_process_cpu_seconds": 0.053424639,
+        "maxrss_kib": 108776,
+        "parse_process_cpu_seconds": 0.026342786,
+        "query_sha256": "fdb46b2f8cddc74053809a8106801a327af32cc0ef191247b8980a0200779afd",
+        "search_process_cpu_seconds": 67.553746414,
+        "seed": 1,
+        "sequence": 3,
+        "stats": {
+          "conflicts": 1000003,
+          "decisions": 2124252,
+          "propagations": 396050662,
+          "restarts": 32618
+        },
+        "status": "OPEN"
+      },
+      {
+        "arm": "stock",
+        "bootstrap_process_cpu_seconds": 0.056483188999999996,
+        "maxrss_kib": 126716,
+        "parse_process_cpu_seconds": 0.027124914,
+        "query_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+        "search_process_cpu_seconds": 46.307760407,
+        "seed": 1,
+        "sequence": 4,
+        "stats": {
+          "conflicts": 1000000,
+          "decisions": 4314184,
+          "propagations": 261551338,
+          "restarts": 36281
+        },
+        "status": "OPEN"
+      }
+    ],
+    "conflict_budget": 1000000
+  },
+  "classification": {
+    "bound": "unchanged, 51 <= R_4(3) <= 62; OPEN is not UNSAT",
+    "capability_only": [],
+    "completed_bounded_measurement": true,
+    "completed_implementation": true,
+    "kmt_throughput_verdict": "negative at both caps: 1.2576x search CPU at 100k, 1.2344x at 1M; peak RSS lower by 9.5% / 14.5%",
+    "one_million_conflict_stage_run": true,
+    "open_semantics_untouched": [
+      "physical candidate criticality",
+      "coded/automatic guard equalities",
+      "112-support physical membership",
+      "ChainReady",
+      "whole-parent semantic bridge"
+    ]
+  },
+  "direction": "5 (sender-only kmtotalizer + matched A/B)",
+  "gadget_semantics": {
+    "all_checks_pass": true,
+    "atmost_encoder_controls": [
+      {
+        "accepts_k_minus_1": true,
+        "k": 10,
+        "n": 30,
+        "rejects_k": true
+      },
+      {
+        "accepts_k_minus_1": true,
+        "k": 14,
+        "n": 41,
+        "rejects_k": true
+      },
+      {
+        "accepts_k_minus_1": true,
+        "k": 6,
+        "n": 15,
+        "rejects_k": true
+      },
+      {
+        "accepts_k_minus_1": true,
+        "k": 6,
+        "n": 31,
+        "rejects_k": true
+      }
+    ],
+    "cpu_seconds": 17.409,
+    "exhaustive_small": {
+      "checks": 32776,
+      "max_n": 9,
+      "mismatches": []
+    },
+    "kmt": {
+      "enforcement_unsat": 31,
+      "gadgets": 31,
+      "guard_false_sat": 31,
+      "too_strong_rejects": 31,
+      "too_weak_accepts": 31,
+      "total_aux": 4837,
+      "total_clauses": 13946,
+      "true_rejects_k_minus_1": 31,
+      "unguarded_violation_unsat": 31,
+      "witness_sat": 3294,
+      "witness_sets": 3294
+    },
+    "not_exhaustive_at_n30_n41": "extension direction verified on positional witness families only",
+    "sat_calls": 39744,
+    "stock": {
+      "enforcement_unsat": 31,
+      "gadgets": 31,
+      "guard_false_sat": 31,
+      "too_strong_rejects": 31,
+      "too_weak_accepts": 31,
+      "total_aux": 11006,
+      "total_clauses": 21621,
+      "true_rejects_k_minus_1": 31,
+      "unguarded_violation_unsat": 31,
+      "witness_sat": 3294,
+      "witness_sets": 3294
+    }
+  },
+  "interpreter": ".scratch/k58/.venv/bin/python (python-sat 1.9.dev22)",
+  "member": "m7",
+  "parents": {
+    "cube": {
+      "appended_as_units": true,
+      "literals": [
+        -1413,
+        1014
+      ]
+    },
+    "kmt": {
+      "bytes": 3339511,
+      "clauses": 176660,
+      "delta_clauses": -7675,
+      "delta_variables": -6169,
+      "matches_prediction": true,
+      "sha256": "6e71fc07c907f7947a35565d04c3459cf90ac05dc5c4789ffe1cd27f078b6441",
+      "variables": 13364
+    },
+    "kmt_cube": {
+      "clauses": 176662,
+      "sha256": "fdb46b2f8cddc74053809a8106801a327af32cc0ef191247b8980a0200779afd",
+      "variables": 13364
+    },
+    "stock": {
+      "bytes": 3493016,
+      "clauses": 184335,
+      "matches_retained": true,
+      "private_copy_faithful": true,
+      "production_row_formula_match": true,
+      "sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "variables": 19533
+    },
+    "stock_cube": {
+      "clauses": 184337,
+      "sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+      "variables": 19533
+    }
+  },
+  "preservation": {
+    "logical_comparison_ok": true,
+    "physical_literals_involved": 1227,
+    "positional_clause_mismatches": 0,
+    "root_bcp": {
+      "agreement": true,
+      "disagreements": 0,
+      "logical_literals": 1865
+    },
+    "support_and_final_blocks_preserved": {
+      "final": 2,
+      "support": 15
+    }
+  },
+  "recipe": {
+    "full_root": false,
+    "tables": true,
+    "total_critical": true
+  },
+  "replacement": {
+    "auxiliary_blocks_remapped": 17,
+    "final_counters_kept_sinz": [
+      {
+        "aux": 54,
+        "clauses": 105,
+        "k": 6,
+        "label": "arm-senders",
+        "n": 15
+      },
+      {
+        "aux": 150,
+        "clauses": 281,
+        "k": 6,
+        "label": "critical-senders",
+        "n": 31
+      }
+    ],
+    "guards_remapped": 31,
+    "sender_kmt_aux_clauses": [
+      4837,
+      13946
+    ],
+    "sender_shapes": {
+      "AtLeast(30,10)": 4,
+      "AtLeast(41,14)": 27
+    },
+    "sender_sinz_aux_clauses": [
+      11006,
+      21621
+    ],
+    "support_events": 15
+  },
+  "repo_head": "e43e78e",
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "schema": 1,
+  "swarm": "smx06hpp8"
+}

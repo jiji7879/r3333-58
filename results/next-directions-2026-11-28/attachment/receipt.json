@@ -1,0 +1,298 @@
+{
+ "member": "m4",
+ "swarm": "smx06hpp8",
+ "direction": "early FKR attachment-cover feasibility/calibration",
+ "repo_head_base": "e43e78e",
+ "concurrent_commits_used": [
+  "012c7a2 (K58.cat58, K58.attachment_bound)"
+ ],
+ "inputs": {
+  "templates_module": "tools/color-resolved-wallcc/frozen/gluing.py",
+  "templates_sha256": "ca534d9d5dca23f2b29e9180db633114a1c45743b22fdf8262c7793e85227b48",
+  "upstream": "Tatarevic formal/src/R4333Lean/CriticalTemplates.lean @6c3f2fd"
+ },
+ "calibration": {
+  "table5_marked": {
+   "printed": [
+    2,
+    3,
+    7,
+    21,
+    34,
+    66,
+    83,
+    99,
+    83,
+    66,
+    34,
+    21,
+    7,
+    3,
+    2,
+    2
+   ],
+   "reproduced_s3": [
+    2,
+    3,
+    7,
+    21,
+    34,
+    66,
+    83,
+    99,
+    83,
+    66,
+    34,
+    21,
+    7,
+    3,
+    2,
+    2
+   ],
+   "reproduced_burnside": [
+    2,
+    3,
+    7,
+    21,
+    34,
+    66,
+    83,
+    99,
+    83,
+    66,
+    34,
+    21,
+    7,
+    3,
+    2,
+    2
+   ],
+   "total": 533,
+   "match": true
+  },
+  "table6_overlaps": {
+   "printed": [
+    3,
+    7,
+    20,
+    54,
+    74,
+    109,
+    110,
+    116,
+    91,
+    69,
+    35,
+    22,
+    7,
+    3,
+    2,
+    2
+   ],
+   "reproduced": [
+    3,
+    7,
+    20,
+    54,
+    74,
+    109,
+    110,
+    116,
+    91,
+    69,
+    35,
+    22,
+    7,
+    3,
+    2,
+    2
+   ],
+   "total": 724,
+   "match": true,
+   "by_family": {
+    "U16/U16": {
+     "weak": 117,
+     "strong": 573
+    },
+    "U16/T16": {
+     "weak": 111,
+     "strong": 576
+    },
+    "T16/T16": {
+     "weak": 496,
+     "strong": 2751
+    }
+   }
+  },
+  "brute_force_crosscheck_k1_k2": {
+   "counts": {
+    "U16/U16/k1": 1,
+    "U16/U16/k2": 3,
+    "U16/T16/k1": 1,
+    "U16/T16/k2": 9,
+    "T16/T16/k1": 1,
+    "T16/T16/k2": 18
+   },
+   "expected_strong_from_canonical_keys": {
+    "U16/U16/k1": 1,
+    "U16/U16/k2": 3,
+    "U16/T16/k1": 1,
+    "U16/T16/k2": 9,
+    "T16/T16/k1": 1,
+    "T16/T16/k2": 18
+   },
+   "match": true
+  }
+ },
+ "new_15_15_census": {
+  "templates": [
+   "U^- = U minus a vertex",
+   "T^- = T minus a vertex"
+  ],
+  "marked_per_order_k1_to_15": [
+   3,
+   13,
+   51,
+   145,
+   312,
+   517,
+   659,
+   659,
+   517,
+   312,
+   145,
+   51,
+   13,
+   3,
+   2
+  ],
+  "marked_total": 3402,
+  "marked_burnside_match": true,
+  "overlaps_per_order_k1_to_15": [
+   17,
+   268,
+   1720,
+   4369,
+   5969,
+   6080,
+   5086,
+   3740,
+   2283,
+   1151,
+   434,
+   132,
+   26,
+   6,
+   2
+  ],
+  "overlaps_total": 31283,
+  "overlaps_by_family": {
+   "U15/U15": {
+    "weak": 2768,
+    "strong": 16411
+   },
+   "U15/T15": {
+    "weak": 7710,
+    "strong": 46138
+   },
+   "T15/T15": {
+    "weak": 20805,
+    "strong": 124483
+   }
+  },
+  "brute_force_crosscheck_k1_k2": {
+   "U15/U15/k1": 6,
+   "U15/U15/k2": 63,
+   "U15/T15/k1": 27,
+   "U15/T15/k2": 438,
+   "T15/T15/k1": 45,
+   "T15/T15/k2": 1029
+  }
+ },
+ "witnesses": {
+  "verified_transport_witnesses": 196604,
+  "failures": 0
+ },
+ "k58_verdict": {
+  "families": {
+   "16/16": {
+    "template_pairs": [
+     [
+      "U16",
+      "U16"
+     ],
+     [
+      "U16",
+      "T16"
+     ],
+     [
+      "T16",
+      "T16"
+     ]
+    ],
+    "split": {
+     "k1_k2_excluded_by_CAT58": 10,
+     "ordinary_3_to_14": 710,
+     "adjacent_k_s-1": 2,
+     "high_overlap_k_s": 2,
+     "k_ge_3": 714
+    }
+   },
+   "15/15": {
+    "template_pairs": [
+     [
+      "U15",
+      "U15"
+     ],
+     [
+      "U15",
+      "T15"
+     ],
+     [
+      "T15",
+      "T15"
+     ]
+    ],
+    "split": {
+     "k1_k2_excluded_by_CAT58": 285,
+     "ordinary_3_to_14": 30996,
+     "adjacent_k_s-1": 6,
+     "high_overlap_k_s": 2,
+     "k_ge_3": 30998
+    }
+   }
+  },
+  "excluded_by_CAT58": "mixed 15/16 or 14/16 attachments: degrees differ",
+  "normalised_early_census": 31712,
+  "engineering_cutoff": 10000,
+  "below_cutoff": false,
+  "ratio_to_cutoff": 3.171,
+  "verdict": "ABOVE the declared 10^4 cut-off; the go criterion is not met"
+ },
+ "controls": {
+  "colour_relabelled_U16_marked_matches": true,
+  "colour_relabelled_U16_T16_overlap_matches_724": true,
+  "corrupted_template_has_triangle": true,
+  "marked16_dropping_T": 117,
+  "marked16_dropping_U": 416,
+  "overlaps16_dropping_cross_family": 613,
+  "k56_high_overlap_16_16": {
+   "k15": 2,
+   "k16": 2
+  },
+  "k56_high_overlap_15_15": {
+   "k14": 6,
+   "k15": 2
+  }
+ },
+ "cpu_seconds": 730.89,
+ "no_solver_run": true,
+ "files": {
+  "fkr/templates.py": "2e74f9c2004f3db6b18256b47e3c3b0b9ee1339b934c1a903578cf887b130f4a",
+  "fkr/census_generic.py": "f510845b42517c6b1863688c42c64d18eef92dd2f33889ff9ba6d6775e19a0b2",
+  "fkr/run_census.py": "3b0359428a805f980276d06d8f1b80cd68ea1522368d35b722a7d0681d919a1f",
+  "fkr/run_census.json": "25494224ee4874db85d93a57d36f5e15b184e1fb5d8f0e842aaf5aed009132f0",
+  "fkr/exploratory/README.md": "0116237a593c99f4200101232032af5373241bcb1b4c326c4350d9e9ebe25ac0",
+  "REPORT.md": "4fd45381e9a6770e82d0f4d75eedbba3afe878392cee76099ba2b04d185ea688"
+ }
+}

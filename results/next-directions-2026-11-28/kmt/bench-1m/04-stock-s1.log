@@ -1,0 +1,3 @@
+{"bootstrap_process_cpu_seconds": 0.056483188999999996, "conflict_budget": 1000000, "engine": "CaDiCaL 1.9.5 via python-sat 1.9.dev22", "engine_doc": "CaDiCaL 1.9.5 SAT solver.", "maxrss_kib": 126716, "nclauses": 184337, "nvars": 19533, "parse_process_cpu_seconds": 0.027124914, "proof_logging": false, "pysat_version": "1.9.dev22", "search_process_cpu_seconds": 46.307760407, "seed": 1, "stats": {"conflicts": 1000000, "decisions": 4314184, "propagations": 261551338, "restarts": 36281}, "status": "OPEN", "total_process_cpu_seconds": 46.39136851000001, "wall_seconds": 53.48842526995577}
+
+[stderr]

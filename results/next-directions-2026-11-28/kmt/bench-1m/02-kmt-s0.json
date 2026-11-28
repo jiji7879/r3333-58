@@ -1,0 +1,48 @@
+{
+  "arm": "kmt",
+  "bootstrap_process_cpu_seconds": 0.05085457,
+  "children_system_cpu_seconds": 0.143745,
+  "children_user_cpu_seconds": 63.873160999999996,
+  "command": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58/.venv/bin/python",
+    "-B",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m7/kmt_bench.py",
+    "--worker",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/m7/kmt-cube.cnf",
+    "--seed",
+    "0",
+    "--cap",
+    "1000000"
+  ],
+  "conflict_budget": 1000000,
+  "cube": [
+    -1413,
+    1014
+  ],
+  "driver_wall_seconds": 80.20346943498589,
+  "engine": "CaDiCaL 1.9.5 via python-sat 1.9.dev22",
+  "engine_doc": "CaDiCaL 1.9.5 SAT solver.",
+  "maxrss_kib": 99296,
+  "nclauses": 176662,
+  "nvars": 13364,
+  "parse_process_cpu_seconds": 0.023585376999999998,
+  "proof_logging": false,
+  "pysat_version": "1.9.dev22",
+  "query_bytes": 3339526,
+  "query_sha256": "fdb46b2f8cddc74053809a8106801a327af32cc0ef191247b8980a0200779afd",
+  "returncode": 0,
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "search_process_cpu_seconds": 63.896602056000006,
+  "seed": 0,
+  "sequence": 2,
+  "stats": {
+    "conflicts": 1000002,
+    "decisions": 2105737,
+    "propagations": 395209230,
+    "restarts": 32356
+  },
+  "status": "OPEN",
+  "total_process_cpu_seconds": 63.971042003,
+  "wall_seconds": 80.15663911704905,
+  "wall_timeout_seconds": 480
+}

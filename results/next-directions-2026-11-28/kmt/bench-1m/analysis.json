@@ -1,0 +1,28 @@
+{
+  "abandon": false,
+  "cpu_ratio_kmt_over_stock_by_seed": {
+    "0": 1.0445395755017752,
+    "1": 1.4587996875743616
+  },
+  "determinate": false,
+  "favourable_bounded_throughput": false,
+  "geometric_mean_ratio": 1.2344124134182408,
+  "memory": {
+    "0": {
+      "kmt_kib": 99296,
+      "stock_kib": 116516
+    },
+    "1": {
+      "kmt_kib": 108776,
+      "stock_kib": 126716
+    }
+  },
+  "memory_reduced": true,
+  "scope": "CNF-only bounded performance on parent+cube; OPEN is not UNSAT; no physical colouring, ChainReady or bound is claimed",
+  "statuses": [
+    "OPEN",
+    "OPEN",
+    "OPEN",
+    "OPEN"
+  ]
+}

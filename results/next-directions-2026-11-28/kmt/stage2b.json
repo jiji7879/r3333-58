@@ -1,0 +1,21 @@
+{
+  "agreement": true,
+  "disagreements": [],
+  "kmt": {
+    "consistent": true,
+    "propagated": 1865,
+    "rounds": 8
+  },
+  "logical_kmt": 1865,
+  "logical_stock": 1865,
+  "only_kmt": 0,
+  "only_stock": 0,
+  "schema": 1,
+  "scope": "root-level BCP agreement is a receipt, not a semantic proof; it cannot certify UNSAT or replace the gadget controls",
+  "shared_logical": 1865,
+  "stock": {
+    "consistent": true,
+    "propagated": 1865,
+    "rounds": 8
+  }
+}
