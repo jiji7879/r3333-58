@@ -1,0 +1,5 @@
+1. OPEN [goal]: Obtain a freshly checked native K58 cohort refutation and a role-quantified physical clause with warning-visible fresh-parent transfer certificates. — problem.md
+2. PROVED #1: Three exact freshly executed historical K58 parents have native s VERIFIED DRAT refutations, and the role-quantified physical schemas Q and R have fresh RUP certificates on source and both destinations, with negative controls. Only these scoped facts are claimed. — checks/2-proof.md
+3. CHECK #2 [model]: PASS: independent reading of formulas, quantifiers, host/triangle/palette resolution, case units, original-only versus auxiliary scope and false-cube versus parent-refutation distinction; no gap found. — checks/2-read.md
+4. CHECK #2 [compute]: PASS: standard-library reconstruction and native replay of three parent proofs plus six transfer implications, exact mined occurrences, three required negative controls, motif enumeration and both fork self-test suites. — checks/2-compute.md
+- checkpoint after #4: progress

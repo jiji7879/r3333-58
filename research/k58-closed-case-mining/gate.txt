@@ -1,0 +1,3 @@
+PROVED #2. The argument was checked by: model.
+  model: PASS: independent reading of formulas, quantifiers, host/triangle/palette resolution, case units, original-only versus auxiliary scope and false-cube versus parent-refutation distinction; no gap found.
+  compute: PASS: standard-library reconstruction and native replay of three parent proofs plus six transfer implications, exact mined occurrences, three required negative controls, motif enumeration and both fork self-test suites.

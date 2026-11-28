@@ -1,0 +1,801 @@
+{
+  "archive_sha256_expected": "cc78f1d9f6f7901615b264c9ceaa3319bd152cd4caccc381a74ed742538bdb6a",
+  "cases": {
+    "dest6116": {
+      "fresh_proof": {
+        "bytes": 6401828,
+        "path": ".ultramath/smx04vulj/m3/native/comparison-panel/61/6116d9150f721359c6bf2e8ab7da22512f076c1c77c3c687d7d637ab94459708/first/TTT-_2_33.drat",
+        "sha256": "5defe1b9aecff6a6874f2346e2622fc1e4f35a29fbfd0f030dba4c735cc15d31"
+      },
+      "fresh_replay": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx04vulj/m3/replay/61/parent.regenerated.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx04vulj/m3/native/comparison-panel/61/6116d9150f721359c6bf2e8ab7da22512f076c1c77c3c687d7d637ab94459708/first/TTT-_2_33.drat",
+          "-W",
+          "-p",
+          "-t",
+          "60",
+          "-i"
+        ],
+        "exit_code": 0,
+        "log": {
+          "bytes": 464,
+          "path": "research/k58-closed-case-mining/work/dest6116.fresh-replay.log",
+          "sha256": "66ef5893ceceba3299b7337aa1b89926bd0ac87dbef8514143c01fde056ffecb"
+        },
+        "rat_disabled": false,
+        "result": "s VERIFIED",
+        "warnings_visible": true
+      },
+      "parent": {
+        "bytes": 4097014,
+        "path": ".ultramath/smx04vulj/m3/replay/61/parent.regenerated.cnf",
+        "sha256": "e4dfee1874f41fdf2475c08a51f6ba05bb914064c7c9530c8c5c5735c5e1bd3a"
+      },
+      "pinned": {
+        "palette": [
+          213,
+          214,
+          215,
+          216
+        ],
+        "pins": [
+          196,
+          216
+        ],
+        "qv": [
+          -196,
+          -6488,
+          213,
+          214,
+          215
+        ],
+        "residual": [
+          6485,
+          6486,
+          6487
+        ],
+        "role_u_v_w_c": [
+          49,
+          54,
+          0,
+          3
+        ],
+        "triangle": [
+          -6488,
+          -196,
+          -216
+        ]
+      },
+      "pinned_transfer": {
+        "check": {
+          "command": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest6116/pinned.query.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest6116/pinned.rup.drat",
+            "-W",
+            "-p",
+            "-t",
+            "60",
+            "-I",
+            "-U"
+          ],
+          "exit_code": 0,
+          "log": {
+            "bytes": 355,
+            "path": "research/k58-closed-case-mining/work/dest6116/pinned.log",
+            "sha256": "4a4c33eb0db928f11f7c5a484c062de6b43c0a4b230e1115daac2518d92a809f"
+          },
+          "rat_disabled": true,
+          "result": "s VERIFIED",
+          "warnings_visible": true
+        },
+        "clause": [
+          6485,
+          6486,
+          6487
+        ],
+        "negated_cube": [
+          [
+            -6485
+          ],
+          [
+            -6486
+          ],
+          [
+            -6487
+          ]
+        ],
+        "query": {
+          "bytes": 4097038,
+          "path": "research/k58-closed-case-mining/work/dest6116/pinned.query.cnf",
+          "sha256": "e4c22fa60dd53ae5c20ec798c0a5d95d4a707590a6a0f06d92a42b126162dd7c"
+        }
+      },
+      "q": {
+        "palette": [
+          4013,
+          4014,
+          4015,
+          4016
+        ],
+        "pins": [
+          1230,
+          4014
+        ],
+        "qv": [
+          -1230,
+          -1162,
+          4013,
+          4015,
+          4016
+        ],
+        "residual": [
+          1161,
+          1163,
+          1164
+        ],
+        "role_u_v_w_c": [
+          5,
+          21,
+          38,
+          1
+        ],
+        "triangle": [
+          -1162,
+          -1230,
+          -4014
+        ]
+      },
+      "q_transfer": {
+        "check": {
+          "command": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest6116/q.query.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest6116/q.rup.drat",
+            "-W",
+            "-p",
+            "-t",
+            "60",
+            "-I",
+            "-U"
+          ],
+          "exit_code": 0,
+          "log": {
+            "bytes": 355,
+            "path": "research/k58-closed-case-mining/work/dest6116/q.log",
+            "sha256": "547b52bd7e13cb373bd4fc84b7d83cea79693676e4850e333c126f051a06c6b9"
+          },
+          "rat_disabled": true,
+          "result": "s VERIFIED",
+          "warnings_visible": true
+        },
+        "clause": [
+          -1230,
+          -1162,
+          4013,
+          4015,
+          4016
+        ],
+        "negated_cube": [
+          [
+            1230
+          ],
+          [
+            1162
+          ],
+          [
+            -4013
+          ],
+          [
+            -4015
+          ],
+          [
+            -4016
+          ]
+        ],
+        "query": {
+          "bytes": 4097052,
+          "path": "research/k58-closed-case-mining/work/dest6116/q.query.cnf",
+          "sha256": "4eba538f3872faaa6f6291726394a7152052e53ce751cfe0f1378d1ea9d1e1a8"
+        }
+      }
+    },
+    "dest944": {
+      "fresh_proof": {
+        "bytes": 6315937,
+        "path": ".ultramath/smx04vulj/m3/native/closed-panel/94/944f4a5583e16a177498240d7799ec98a0f8b3c1785c5c712e205c4c1380af63/first/TTT-_0_0.drat",
+        "sha256": "383ade3a567b35da1d868ff7baa45889e9359c08b317b48f6a0e1fb4de39a86d"
+      },
+      "fresh_replay": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx04vulj/m3/replay/94/parent.regenerated.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx04vulj/m3/native/closed-panel/94/944f4a5583e16a177498240d7799ec98a0f8b3c1785c5c712e205c4c1380af63/first/TTT-_0_0.drat",
+          "-W",
+          "-p",
+          "-t",
+          "60",
+          "-i"
+        ],
+        "exit_code": 0,
+        "log": {
+          "bytes": 464,
+          "path": "research/k58-closed-case-mining/work/dest944.fresh-replay.log",
+          "sha256": "0cab4b4c09db1ef70762bcaeeebc1339ac04f790055a81663b494b99d3b9796d"
+        },
+        "rat_disabled": false,
+        "result": "s VERIFIED",
+        "warnings_visible": true
+      },
+      "parent": {
+        "bytes": 4142944,
+        "path": ".ultramath/smx04vulj/m3/replay/94/parent.regenerated.cnf",
+        "sha256": "a3e46c0ba80e51fd15c49db332471449d8a371aa5976b61c7426939b24e9b302"
+      },
+      "pinned": {
+        "palette": [
+          213,
+          214,
+          215,
+          216
+        ],
+        "pins": [
+          196,
+          216
+        ],
+        "qv": [
+          -196,
+          -6488,
+          213,
+          214,
+          215
+        ],
+        "residual": [
+          6485,
+          6486,
+          6487
+        ],
+        "role_u_v_w_c": [
+          49,
+          54,
+          0,
+          3
+        ],
+        "triangle": [
+          -6488,
+          -196,
+          -216
+        ]
+      },
+      "pinned_transfer": {
+        "check": {
+          "command": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest944/pinned.query.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest944/pinned.rup.drat",
+            "-W",
+            "-p",
+            "-t",
+            "60",
+            "-I",
+            "-U"
+          ],
+          "exit_code": 0,
+          "log": {
+            "bytes": 355,
+            "path": "research/k58-closed-case-mining/work/dest944/pinned.log",
+            "sha256": "6a79d013dd2b4eafc0ee64663ba49aa8dac7a3af19d52a2c06b3d2499b325b6a"
+          },
+          "rat_disabled": true,
+          "result": "s VERIFIED",
+          "warnings_visible": true
+        },
+        "clause": [
+          6485,
+          6486,
+          6487
+        ],
+        "negated_cube": [
+          [
+            -6485
+          ],
+          [
+            -6486
+          ],
+          [
+            -6487
+          ]
+        ],
+        "query": {
+          "bytes": 4142968,
+          "path": "research/k58-closed-case-mining/work/dest944/pinned.query.cnf",
+          "sha256": "c7acbc4a6fc5ac0fecece2b246078d222780c2b8d25206ee3d8f56f13adfc4fc"
+        }
+      },
+      "q": {
+        "palette": [
+          3397,
+          3398,
+          3399,
+          3400
+        ],
+        "pins": [
+          578,
+          3398
+        ],
+        "qv": [
+          -578,
+          -510,
+          3397,
+          3399,
+          3400
+        ],
+        "residual": [
+          509,
+          511,
+          512
+        ],
+        "role_u_v_w_c": [
+          2,
+          17,
+          34,
+          1
+        ],
+        "triangle": [
+          -510,
+          -578,
+          -3398
+        ]
+      },
+      "q_transfer": {
+        "check": {
+          "command": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest944/q.query.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/dest944/q.rup.drat",
+            "-W",
+            "-p",
+            "-t",
+            "60",
+            "-I",
+            "-U"
+          ],
+          "exit_code": 0,
+          "log": {
+            "bytes": 355,
+            "path": "research/k58-closed-case-mining/work/dest944/q.log",
+            "sha256": "b311c848f5180323958c0d6081742df40c7c35c69284d7db8edf623c60380130"
+          },
+          "rat_disabled": true,
+          "result": "s VERIFIED",
+          "warnings_visible": true
+        },
+        "clause": [
+          -578,
+          -510,
+          3397,
+          3399,
+          3400
+        ],
+        "negated_cube": [
+          [
+            578
+          ],
+          [
+            510
+          ],
+          [
+            -3397
+          ],
+          [
+            -3399
+          ],
+          [
+            -3400
+          ]
+        ],
+        "query": {
+          "bytes": 4142980,
+          "path": "research/k58-closed-case-mining/work/dest944/q.query.cnf",
+          "sha256": "8cf3749acad81697a79a76bb0ed488dcbfdc615fc9ad168c0cfa7ae83eeed6ac"
+        }
+      }
+    },
+    "source": {
+      "fresh_proof": {
+        "bytes": 5152549,
+        "path": ".ultramath/smx04vulj/m3/native/closed-panel/2c/2ce34a4453cb6cb30dc4f2d9fc61327dc07c3b5ab7d8fec512c3658cd95a4af3/first/TTT-_2_32.drat",
+        "sha256": "083d6b3381bd2459b830ab505fd5f63e39d8f172a07dbea8275a7dfedf204e50"
+      },
+      "fresh_replay": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx04vulj/m3/replay/2c/parent.regenerated.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx04vulj/m3/native/closed-panel/2c/2ce34a4453cb6cb30dc4f2d9fc61327dc07c3b5ab7d8fec512c3658cd95a4af3/first/TTT-_2_32.drat",
+          "-W",
+          "-p",
+          "-t",
+          "60",
+          "-i"
+        ],
+        "exit_code": 0,
+        "log": {
+          "bytes": 462,
+          "path": "research/k58-closed-case-mining/work/source.fresh-replay.log",
+          "sha256": "9d547b1f31e65584e24bc0f217dcc69332f8560f210c631a287039f86c67b470"
+        },
+        "rat_disabled": false,
+        "result": "s VERIFIED",
+        "warnings_visible": true
+      },
+      "parent": {
+        "bytes": 4097014,
+        "path": ".ultramath/smx04vulj/m3/replay/2c/parent.regenerated.cnf",
+        "sha256": "1bb9f188a7c11cd8335e465e9f815991015f4c4ce4c2bce3d510cc5063b5fd97"
+      },
+      "pinned": {
+        "palette": [
+          3501,
+          3502,
+          3503,
+          3504
+        ],
+        "pins": [
+          308,
+          3504
+        ],
+        "qv": [
+          -308,
+          -296,
+          3501,
+          3502,
+          3503
+        ],
+        "residual": [
+          293,
+          294,
+          295
+        ],
+        "role_u_v_w_c": [
+          1,
+          18,
+          21,
+          3
+        ],
+        "triangle": [
+          -296,
+          -308,
+          -3504
+        ]
+      },
+      "pinned_transfer": {
+        "check": {
+          "command": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/source/pinned.query.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/source/pinned.rup.drat",
+            "-W",
+            "-p",
+            "-t",
+            "60",
+            "-I",
+            "-U"
+          ],
+          "exit_code": 0,
+          "log": {
+            "bytes": 355,
+            "path": "research/k58-closed-case-mining/work/source/pinned.log",
+            "sha256": "3ead4aa25da2ac50754e7587ec936ee3ff44db05d1fae2bc64fd3bb4bf84477d"
+          },
+          "rat_disabled": true,
+          "result": "s VERIFIED",
+          "warnings_visible": true
+        },
+        "clause": [
+          293,
+          294,
+          295
+        ],
+        "negated_cube": [
+          [
+            -293
+          ],
+          [
+            -294
+          ],
+          [
+            -295
+          ]
+        ],
+        "query": {
+          "bytes": 4097035,
+          "path": "research/k58-closed-case-mining/work/source/pinned.query.cnf",
+          "sha256": "767f5e20d9073a47cf0c2667eb1092429e0dd815bcba13d806dc82753ecc5f5e"
+        }
+      },
+      "q": {
+        "palette": [
+          5065,
+          5066,
+          5067,
+          5068
+        ],
+        "pins": [
+          2620,
+          5068
+        ],
+        "qv": [
+          -2620,
+          -2540,
+          5065,
+          5066,
+          5067
+        ],
+        "residual": [
+          2537,
+          2538,
+          2539
+        ],
+        "role_u_v_w_c": [
+          12,
+          29,
+          49,
+          3
+        ],
+        "triangle": [
+          -2540,
+          -2620,
+          -5068
+        ]
+      },
+      "q_transfer": {
+        "check": {
+          "command": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/source/q.query.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/source/q.rup.drat",
+            "-W",
+            "-p",
+            "-t",
+            "60",
+            "-I",
+            "-U"
+          ],
+          "exit_code": 0,
+          "log": {
+            "bytes": 355,
+            "path": "research/k58-closed-case-mining/work/source/q.log",
+            "sha256": "54182c0b0f2745af60632f8d87f724e729575a9719d5aae005c70cf74c4907b1"
+          },
+          "rat_disabled": true,
+          "result": "s VERIFIED",
+          "warnings_visible": true
+        },
+        "clause": [
+          -2620,
+          -2540,
+          5065,
+          5066,
+          5067
+        ],
+        "negated_cube": [
+          [
+            2620
+          ],
+          [
+            2540
+          ],
+          [
+            -5065
+          ],
+          [
+            -5066
+          ],
+          [
+            -5067
+          ]
+        ],
+        "query": {
+          "bytes": 4097052,
+          "path": "research/k58-closed-case-mining/work/source/q.query.cnf",
+          "sha256": "e29296680c8a245a830a80d8a5c8e461bfc778e8df8edda5ed415eaafc3330cd"
+        }
+      }
+    }
+  },
+  "checker": {
+    "bytes": 56224,
+    "path": ".scratch/massive-clean-install/k58-solver/bin/drat-trim",
+    "sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce"
+  },
+  "host": {
+    "clauses_reconstructed": 134995,
+    "colours": 4,
+    "edges": 1653,
+    "triangles": 30856,
+    "variables": 6612
+  },
+  "motif": {
+    "nonmonochromatic_words": 60,
+    "ordered_local_colour_words": 64,
+    "quantifier_reduction": "RGB/role symmetry reduces the Q proof to one pivot resolution for all distinct ordered u,v,w,c; all four colours checked exhaustively."
+  },
+  "negative_controls": {
+    "altered_clause": {
+      "check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/altered-q.query.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/altered-q.rup.drat",
+          "-W",
+          "-p",
+          "-t",
+          "60",
+          "-I",
+          "-U"
+        ],
+        "exit_code": 1,
+        "log": {
+          "bytes": 174,
+          "path": "research/k58-closed-case-mining/work/altered-q.log",
+          "sha256": "7ae6d4ee6a4dd116813b60f5d842952f160274e34311fa76fc6c84a4c35e0396"
+        },
+        "rat_disabled": true,
+        "result": "s NOT VERIFIED",
+        "warnings_visible": true
+      },
+      "clause": [
+        -578,
+        -510,
+        3399,
+        3400
+      ],
+      "negated_cube": [
+        [
+          578
+        ],
+        [
+          510
+        ],
+        [
+          -3399
+        ],
+        [
+          -3400
+        ]
+      ],
+      "query": {
+        "bytes": 2581007,
+        "path": "research/k58-closed-case-mining/work/altered-q.query.cnf",
+        "sha256": "5b7978d9855c3c5c25e2f4875e38c81c21519ff5ba868ba21330bec77eca87e7"
+      }
+    },
+    "omitted_host_triangle": {
+      "check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/omitted-triangle.query.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/omitted-triangle.rup.drat",
+          "-W",
+          "-p",
+          "-t",
+          "60",
+          "-I",
+          "-U"
+        ],
+        "exit_code": 1,
+        "log": {
+          "bytes": 175,
+          "path": "research/k58-closed-case-mining/work/omitted-triangle.log",
+          "sha256": "ac517d73ae53c3dfb8cd9b9169690d75e5862546dc7d202557645d22a03b1c41"
+        },
+        "rat_disabled": true,
+        "result": "s NOT VERIFIED",
+        "warnings_visible": true
+      },
+      "clause": [
+        -578,
+        -510,
+        3397,
+        3399,
+        3400
+      ],
+      "negated_cube": [
+        [
+          578
+        ],
+        [
+          510
+        ],
+        [
+          -3397
+        ],
+        [
+          -3399
+        ],
+        [
+          -3400
+        ]
+      ],
+      "query": {
+        "bytes": 4142962,
+        "path": "research/k58-closed-case-mining/work/omitted-triangle.query.cnf",
+        "sha256": "1ef5d6002d3b8fb1368508d6d720f871a8ebc7341802324f3ed39a9547706ef7"
+      }
+    },
+    "wrong_parent": {
+      "check": {
+        "command": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/massive-clean-install/k58-solver/bin/drat-trim",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/wrong-parent-pinned.query.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/research/k58-closed-case-mining/work/wrong-parent-pinned.rup.drat",
+          "-W",
+          "-p",
+          "-t",
+          "60",
+          "-I",
+          "-U"
+        ],
+        "exit_code": 1,
+        "log": {
+          "bytes": 175,
+          "path": "research/k58-closed-case-mining/work/wrong-parent-pinned.log",
+          "sha256": "f3be210bcec8dfaf68777910171a49b1e2b3d2fbcdb638bf57265e4fffb42159"
+        },
+        "rat_disabled": true,
+        "result": "s NOT VERIFIED",
+        "warnings_visible": true
+      },
+      "clause": [
+        293,
+        294,
+        295
+      ],
+      "negated_cube": [
+        [
+          -293
+        ],
+        [
+          -294
+        ],
+        [
+          -295
+        ]
+      ],
+      "query": {
+        "bytes": 4097035,
+        "path": "research/k58-closed-case-mining/work/wrong-parent-pinned.query.cnf",
+        "sha256": "6902ba3e8c6e893f2bab6562a1049aac198ee3a101d174ada40e35702c0141c2"
+      }
+    }
+  },
+  "prior_bank_comparison": "One host one-colour clause resolved with one physical triangle. It is not the audited square/matching, colour-pivot, guarded-counter or K15 family. Validity does not show useful search acceleration.",
+  "scope": "native full-parent refutations and clause implications, not OPEN-wall outcome or parent SAT model",
+  "source_core_lemmas": {
+    "bytes": 1591452,
+    "path": ".ultramath/smx04vulj/m3/replay/2c/core-lemmas.drat",
+    "sha256": "d0c8826c7843a6753ad2e54d28b9955b26d84b60a2e564e8ad4a8fed5997e40e"
+  },
+  "source_mined_occurrences": {
+    "pinned": {
+      "file_line": 1,
+      "literals": [
+        294,
+        293,
+        295
+      ]
+    },
+    "q": {
+      "file_line": 17130,
+      "literals": [
+        -2620,
+        -2540,
+        5065,
+        5066,
+        5067
+      ]
+    }
+  }
+}

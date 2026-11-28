@@ -1,0 +1,122 @@
+{
+  "counter": {
+    "status": "PASS",
+    "comparator_assignments": 4,
+    "network_assignments": 510
+  },
+  "benchmarks": [
+    {
+      "name": "0",
+      "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+      "status": "PASS",
+      "receipt_sha256": "cce53e3b7b1b6c3f3f913f2b4ffb67f16c83fef150750b146a82de059f9b9a59",
+      "query_sha256": "eb0739a46d30b2ace18f112bcf700c50af6c4401d30e8d9ffb08860828886ce4",
+      "proof_sha256": "8f13b890d68d7d66700e358b2519f8868c9f541c8290bf92ef0722d3dc101448",
+      "formula_sha256": {
+        "original": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+        "counter": "b6e1c057fe23dcf7b62f8ee008684c84e9bc689fe37b51c6bcb0c9c2308de501",
+        "escape": "b325bd5cdd88adb135e73e54c066e0afe6412e5b50a73faa1930e195d1fb5c35",
+        "color": "66cde0ddb0556a76a73244981976aff09d9928788a9dbf59f1a56779049efa50"
+      },
+      "native_checker": "PASS_RUP_DERIVATION",
+      "wall_status": "NOT_SOLVED_BY_THIS_TEST"
+    },
+    {
+      "name": "15533",
+      "row": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296",
+      "status": "PASS",
+      "receipt_sha256": "5fe07862b22767dc681f4edb978034eb4bf9e69580a200c2ffbeccc5f49a0c77",
+      "query_sha256": "8bd9eb5f3440414716541d64ee0c63ea56a71e18fc80b998326115c2cebb27ff",
+      "proof_sha256": "d340b2dbcf80546890477a471718331e6a6926868abdef1d640975175e0ecf59",
+      "formula_sha256": {
+        "original": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+        "counter": "55c270c4d1f769b03c6fbdb1235f13333c2034c1a9954177f0bbcae85ae9ccba",
+        "escape": "1713ba828ece0894e0f41e173e0b68eedb0c7020d47ac92547f07cbf83daec81",
+        "color": "ed59b471af53bfb5015c1581386267aa0e8da3f9d757134113cd4f06a3116df4"
+      },
+      "native_checker": "PASS_RUP_DERIVATION",
+      "wall_status": "NOT_SOLVED_BY_THIS_TEST"
+    },
+    {
+      "name": "370",
+      "row": "001f3cc0e142f72fe1d046019a6e9dc90d9e310336c393eec00e0339b5944f85",
+      "status": "PASS",
+      "receipt_sha256": "4d107f0bf6ead25eb9d35b138007bdcdb598e9c50298c8846e4ac150a1011ce9",
+      "query_sha256": "9120a799431639afebd91906393cc999a0a41461312c9b68b433b0465a60fb70",
+      "proof_sha256": "123df5fbb5b8b34887e2d132ee06fbb342e810ea6e94b32593d709dfaf5fbda6",
+      "formula_sha256": {
+        "original": "d7b1b7cd9d08d92b08410846d3e0a813c0d3082ee8771b407fa8343d4ced2dc6",
+        "counter": "c970d9e04d5ee1e9f98a5b40fc5e851e735abc03c6517db1737b34ede3946b49",
+        "escape": "4667be6c1cb6d56603f34a36c820837b5cc0aedb8f64b3b8c9aa1a097524ee76",
+        "color": "52c68f644586219c4418de6014452f0716d89b53d72a0272a359659dbc56e30a"
+      },
+      "native_checker": "PASS_RUP_DERIVATION",
+      "wall_status": "NOT_SOLVED_BY_THIS_TEST"
+    },
+    {
+      "name": "762",
+      "row": "0037e99c93e2805815ec95d0e10a380f28e271a889d086748aa8a354419903c8",
+      "status": "PASS",
+      "receipt_sha256": "64bb9b2c023f3324460e72f24735fc420658914417cc3f856105b2aece70ffaa",
+      "query_sha256": "71048ae8c897f2643e909e74ab7ef3bc28a4d6001e341bf302ff43116278d91e",
+      "proof_sha256": "64eb9eca777b5ad2f4f0c2a7ad7b813fcc0ebf7d17cdf72f371ac3d729a4fe47",
+      "formula_sha256": {
+        "original": "d8c1dac0cb6823b58b38f207a6a2643cead96865022bb948c65e665823fe4815",
+        "counter": "64a23e18f920df0cdb57ff403e689c7408f737787b115ca943f207a44a874360",
+        "escape": "55cd8ae71f387ec7b1c76ca39aa37da08a0399cf16d0bd872c6cb6bb2bb916fd",
+        "color": "7fd4ec42be3016f66a21a2251645ace6a54267a5376e800ce6d208f2dacce61b"
+      },
+      "native_checker": "PASS_RUP_DERIVATION",
+      "wall_status": "NOT_SOLVED_BY_THIS_TEST"
+    },
+    {
+      "name": "gap1",
+      "row": "0020e92a31516d5e31a12ad88453e746a7b50015119f454d04233992ab438487",
+      "status": "PASS",
+      "receipt_sha256": "255bc98f1d49bfa56943532bf7c7df23771899cdd7f51cc5cd88a78911ccd7a3",
+      "query_sha256": "254e3affdb6a1dd26a855fc01eb20663257a02492dc1c0d69ccf6becfab9b6ee",
+      "proof_sha256": "21057cd483cc288b8428c980989944c90aec0464781e242099b27ba7bf656718",
+      "formula_sha256": {
+        "original": "9c141776b9e66be96f9db8b7d32a9fcb5f4737559dbb37e0e87ead18c8330b8d",
+        "counter": "00961a4c129b231971485bccf055c03494a9ef8702f87078dab6122d65185b5b",
+        "escape": "6ad2698d5eb4318baf99d0dd52248f8a09e3304fbe06723dec24285e11cf669f",
+        "color": "18f0b90c1a442b19f03fdd7404d8c76f4c8586ce0e9a58dafb2c8b60431e73c7"
+      },
+      "native_checker": "PASS_RUP_DERIVATION",
+      "wall_status": "NOT_SOLVED_BY_THIS_TEST"
+    },
+    {
+      "name": "gap2",
+      "row": "0040977b8cff2c896fb448046a8a2abe6c6faf6e7e2b8644f8fbb9c4bc107a29",
+      "status": "PASS",
+      "receipt_sha256": "04e0720ccdfe039a1d59a3eca2dd176e06a22a83430916134ec94eb5c008522f",
+      "query_sha256": "285f82f2a55ed15f376b25ae6c6fbc45c5b41a9e0cb5dbfbbc76950ca7a37ff9",
+      "proof_sha256": "1d5aee6113dc94d77809053183d79d4ce310c371a82dd01d4cbe5e0d939ebd9a",
+      "formula_sha256": {
+        "original": "a50a3648a16ce937bf2bacd5d809089c26380e3b05de2baf16d1dbdf062cb930",
+        "counter": "05b99a035e200b275c712524adddd3079ba34059a14e0ac68791488c23bbb70f",
+        "escape": "05b99a035e200b275c712524adddd3079ba34059a14e0ac68791488c23bbb70f",
+        "color": "ce69e196ae302f0cb00d3ee4c7d3114f401c21ba4633e1616438a20b43fb091d"
+      },
+      "native_checker": "PASS_RUP_DERIVATION",
+      "wall_status": "NOT_SOLVED_BY_THIS_TEST"
+    }
+  ],
+  "local_words": {
+    "status": "PASS",
+    "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "physical_words": 2914,
+    "targets_checked_per_word": 36,
+    "above_minimum_alternative": "T_(m+1) checked true on every above-minimum word"
+  },
+  "tampering": {
+    "status": "PASS",
+    "checker_exit": 1,
+    "query_sha256": "eb0739a46d30b2ace18f112bcf700c50af6c4401d30e8d9ffb08860828886ce4",
+    "tampered_proof_sha256": "08786b324dd392489755463bab0e842aac29a8a945ad77e6c44ec51f0c404063",
+    "omitted_derivation_steps": 122,
+    "expected_rejection": true,
+    "log_tail": "\rc parsing input formula with 18513 variables and 173996 clauses\n\rc finished parsing\n\rc start forward verification\n\rc RUP check failed\nc failed at proof line 74 (modulo deletion errors)\n\ns NOT VERIFIED\n\rc verification time: 0.116 seconds\n"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,2 @@
+# Preserve verbatim native-checker whitespace (including padded progress lines).
+*.log -whitespace
