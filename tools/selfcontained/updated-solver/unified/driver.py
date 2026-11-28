@@ -57,7 +57,8 @@ def atomic_json(path, data):
 def package_sources():
     paths = ['unified/driver.py', 'unified/store.py', 'color-resolved-wallcc/wallcc.py',
              'color-resolved-wallcc/campaign.py', 'color-resolved-wallcc/color_pivot.py',
-             'color-resolved-wallcc/square_merge.py']
+             'color-resolved-wallcc/square_merge.py', 'color-resolved-wallcc/native_leaf.py',
+             'color-resolved-wallcc/bin/cadical-2.1.2']
     return {p: file_hash(ROOT / p) for p in paths}
 
 

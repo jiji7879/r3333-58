@@ -340,10 +340,16 @@ def replay(certificate_json, workdir):
         proof = rec["solve"].get("proof")
         row = {"leaf": rec["leaf"], "rebuild_sha_matches": same,
                "recorded_status": rec["status"]}
-        if proof is None or not Path(proof).exists():
+        if not same:
+            row["error"] = "rebuilt leaf hash differs from the receipt"
+            ok = False
+        if rec["status"] != "UNSAT_VERIFIED":
+            row["error"] = "recorded leaf is not independently replayable UNSAT evidence"
+            ok = False
+        elif proof is None or not Path(proof).exists():
             row["error"] = "recorded proof missing; cannot replay"
             ok = False
-        elif rec["status"] == "UNSAT_VERIFIED":
+        else:
             same_proof = sha256(proof) == rec["solve"]["proof_sha256"]
             vr = verify_drat(cnf, proof)
             row.update({"proof_sha_matches": same_proof, "drat": vr})
@@ -352,8 +358,10 @@ def replay(certificate_json, workdir):
         results.append(row)
     cov = coverage([r["cube"] for r in cert["records"]], cert["variables"],
                    workdir / "coverage")
-    ok = ok and cov["exhaustive"]
-    out = {"certificate": str(certificate_json), "replay_ok": ok,
+    closed = ok and cov["exhaustive"]
+    # Keep replay_ok as the legacy name for a fully replayed, exhaustive cover;
+    # SAT or UNKNOWN records are not proof evidence and cannot make it true.
+    out = {"certificate": str(certificate_json), "replay_ok": closed, "closed": closed,
            "coverage_exhaustive": cov["exhaustive"], "results": results}
     (workdir / "replay.json").write_text(json.dumps(out, indent=1) + "\n")
     return out

@@ -58,6 +58,11 @@ def parser():
             cmd.add_argument("out", metavar="RUN", type=Path)
         if name != "prepare":
             cmd.add_argument("--jobs", type=positive, default=2)
+        if name in ("run", "resume"):
+            cmd.add_argument("--engine", choices=("pysat", "native"), default="pysat",
+                             help="opt into the bundled native CaDiCaL 2.1.2 engine")
+            cmd.add_argument("--native-policy", choices=("default", "search-only"), default="default",
+                             help="native engine policy; default never changes existing PySAT behaviour")
         if name == "prepare":
             cmd.add_argument("--checker", type=Path, default=ROOT / "tools/drat-trim")
             cmd.add_argument("--check-seconds", type=positive, default=120)

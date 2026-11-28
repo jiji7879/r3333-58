@@ -7,6 +7,7 @@ import json
 import os
 from itertools import islice
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -161,6 +162,9 @@ def replay(out, temp, cube, proof, checker, seconds):
 
 
 def check_trace(formula, trace, checker, seconds, *options):
+    # drat-trim -w can accept malformed input after suppressing parser warnings;
+    # -W changes deletion warnings into verdict-changing checker exits.
+    require(not {"-w", "-W"}.intersection(options), "checker warning controls are forbidden")
     cmd = [str(checker), str(formula), str(trace), "-i", "-t", str(seconds), *options]
     try:
         p = subprocess.run(cmd, capture_output=True, timeout=seconds + 2)
@@ -169,6 +173,12 @@ def check_trace(formula, trace, checker, seconds, *options):
     log = (p.stdout + p.stderr).decode(errors="replace")
     messages = log.splitlines()
     passed = p.returncode == 0 and "s VERIFIED" in messages
+    consumed = re.search(r'finished parsing, read (\d+) bytes from proof file', log)
+    if passed:
+        if consumed is None:
+            return False, 'checker did not account for the complete proof stream'
+        if int(consumed.group(1)) != trace.stat().st_size:
+            return False, 'checker accepted a valid prefix without consuming the entire proof'
     # The bundled drat-trim prints VERIFIED but exits 1 if it parses an
     # explicit empty input clause. Check that syntactic contradiction directly.
     if p.returncode == 1 and "c trivial UNSAT" in messages and "s VERIFIED" in messages:
@@ -178,6 +188,11 @@ def check_trace(formula, trace, checker, seconds, *options):
 
 
 def probe(out, temp, cube, args, traced):
+    if getattr(args, "engine", "pysat") == "native":
+        from native_leaf import solve
+        result = solve(out / "working.cnf", temp, cube, args, traced)
+        result["solver"] = f"CaDiCaL 2.1.2 standalone ({getattr(args, 'native_policy', 'default')})"
+        return result
     command = [sys.executable, str(ROOT / "cadical_leaf.py"), str(out / "working.cnf"),
                str(temp), str(args.conflicts), "trace" if traced else "search", *map(str, cube)]
     try:
@@ -213,6 +228,10 @@ def conquer_one(out, item, plan_id, nv, clauses, checker, args):
     folder.mkdir(parents=True, exist_ok=True)
     budget = dict(seconds=args.seconds, conflicts=args.conflicts, proof=args.proof,
                   check_seconds=args.check_seconds)
+    if getattr(args, 'engine', 'pysat') == 'native':
+        from native_leaf import BINARY
+        budget.update(engine='native', native_policy=getattr(args, 'native_policy', 'default'),
+                      native_sha256=file_hash(BINARY))
     with lock(folder / ".lock"):
         receipt_path = folder / "receipt.json"
         if receipt_path.exists():
@@ -220,7 +239,10 @@ def conquer_one(out, item, plan_id, nv, clauses, checker, args):
             check_binding(rec, plan_id, node, cube)
             if rec["status"] in ("CHECKED_UNSAT", "CHECKED_SAT"):
                 validate_artifact(folder, rec)
-                return rec["status"]
+                native = getattr(args, "engine", "pysat") == "native"
+                native_receipt = "native_sha256" in rec.get("budget", {})
+                if native == native_receipt and (not native or rec["budget"] == budget):
+                    return rec["status"]
             if rec["status"] == "OPEN" and rec["budget"] == budget and not args.again:
                 return "OPEN"
         started = monotonic()

@@ -6,6 +6,7 @@ Exit status 0 iff all tests pass.
 """
 from __future__ import annotations
 
+import copy
 import json
 import subprocess
 import sys
@@ -163,7 +164,26 @@ def main():
                    rep3["conclusion"].startswith("BASE UNSAT"), rep3["conclusion"]))
     rp = L.replay(W / "cert_full" / "certificate.json", W / "replay_full")
     good.append(ok("replay: independent rebuild + fresh drat-trim agrees",
-                   rp["replay_ok"], rp))
+                   rp["replay_ok"] and rp["closed"], rp))
+
+    # ---- replay must reject both nonterminal evidence and every bad leaf hash
+    unknown = copy.deepcopy(rep3)
+    unknown["records"][0]["status"] = "UNKNOWN"
+    unknown["records"][0]["cnf_sha256"] = "0" * 64
+    (W / "unknown.json").write_text(json.dumps(unknown))
+    ru = L.replay(W / "unknown.json", W / "replay_unknown")
+    good.append(ok("NEG: replay rejects UNKNOWN and checks its leaf hash",
+                   not ru["replay_ok"] and not ru["closed"] and
+                   not ru["results"][0]["rebuild_sha_matches"] and
+                   ru["coverage_exhaustive"], ru))
+    damaged = copy.deepcopy(rep3)
+    damaged["records"][0]["cnf_sha256"] = "0" * 64
+    (W / "damaged.json").write_text(json.dumps(damaged))
+    rd = L.replay(W / "damaged.json", W / "replay_damaged")
+    good.append(ok("NEG: replay rejects a bad hash on a recorded UNSAT leaf",
+                   not rd["replay_ok"] and not rd["closed"] and
+                   not rd["results"][0]["rebuild_sha_matches"] and
+                   rd["results"][0]["drat"]["verified"], rd))
 
     # ---- exit code handling
     bad = write_cnf(W / "badheader.cnf", 2, [(1,)])

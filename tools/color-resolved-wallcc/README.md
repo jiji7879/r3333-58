@@ -41,13 +41,18 @@ a new Ramsey bound.
   verified independently by `check_trace.py`. This preserves equivalence and
   is intended for output/protocol cost, not promised speedup.
 
+For an explicitly bounded opt-in native CaDiCaL 2.1.2 backend and its policy/budget conventions, see [NATIVE.md](NATIVE.md).
+
 Use the pinned Python 3.10–3.13 environment from `./k58.sh setup`, with
 `python-sat==1.9.dev22`. The current smoke procedure uses PySAT's
 `Cadical195` binding; the bundled `bin/kissat` remains available separately.
 The incremental `p inccnf` path needs different assumptions: only complete
 cube coverage with base-level DRAT should be accepted. IDRUP output and a trace
 prefix are not automatically an ordinary leaf proof. `leafcert.py` supplies the
-conservative per-leaf + exhaustiveness-check route.
+conservative per-leaf + exhaustiveness-check route. Its replay checks every
+leaf's rebuilt hash and rejects recorded SAT or UNKNOWN statuses as evidence;
+`closed` is explicit, with `replay_ok` retained as its legacy name for a fully
+replayed exhaustive UNSAT cover. It does not turn a SAT record into a checked model.
 
 The original toolkit lacks `smoke-results.json`. Hence running `selftest.py
 --wall <row>` directly needs that external fixture. It is absent here and is
