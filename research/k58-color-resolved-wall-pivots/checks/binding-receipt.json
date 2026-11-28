@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "method": "standard-library independent identity, graph, support-orbit, binding, and exhaustive-word reconstruction",
+  "rows": 11585,
+  "unique_row_ids": 11585,
+  "bindings_compared_exactly": 11585,
+  "null_pivots": 36,
+  "configurations_compared_exactly": 240,
+  "profiles_seen_all_rows": 7,
+  "summary": {
+    "classified": 11549,
+    "min_differs": 1347,
+    "number_differs": 9518,
+    "unique_at_either_false_min": 6176,
+    "unique_at_both_false_min": 348,
+    "strictly_forces_nonpivot_at_either_false_min": 9229,
+    "no_pivot": 36
+  },
+  "inputs": {
+    "wall.jsonl.gz": {
+      "bytes": 563106,
+      "sha256": "8d91ebc7d9fe6623bb04f6a0846953827a90265453c9dbcd51e3d1acf0c8bafd",
+      "decompressed_bytes": 3056045,
+      "decompressed_sha256": "d5641e1ba875bc4ec5fbe156d48585f610e877f5232de7181eb464d4ad4fa2bc"
+    },
+    "campaign.tsv.gz": {
+      "bytes": 587075,
+      "sha256": "cac0cf121d566f85b4e2f9e60b786b59fd42a887ca605b619df8618f461c9a95",
+      "decompressed_bytes": 2315361,
+      "decompressed_sha256": "b9615f719fea1656f3544ad735760000a1ff584e28a7e6f72b30aba70732dd00"
+    },
+    "full-wall.json.gz": {
+      "bytes": 484859,
+      "sha256": "a0a6e29a4389dd7e36aabc3d2e75a31487280d1abe2144ee732841c522aaba8f"
+    }
+  },
+  "wall_clock_seconds": 3.793079,
+  "scope_note": "Local minima and forced sites are arm-local only; no extension to a complete K58 coloring is claimed here."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pivot_rows_checked": 11549,
+  "arm_sites_checked": 174535,
+  "support_sites_exact_singleton": 53556,
+  "free_sites_exact_three_color_domain": 120979,
+  "physical_units_independently_reconstructed": true,
+  "template_edges_and_sender_domains": "all matched on every non-null binding",
+  "wall_clock_seconds": 11.181442
+}

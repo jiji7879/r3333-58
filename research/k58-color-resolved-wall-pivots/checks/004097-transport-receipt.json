@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "method": "independent cc build plus original supplied apply.py export code after inspection",
+  "receipt": {
+    "row": "0040977b8cff2c896fb448046a8a2abe6c6faf6e7e2b8644f8fbb9c4bc107a29",
+    "template": 10,
+    "pivot": 294,
+    "parent_sha256": "a50a3648a16ce937bf2bacd5d809089c26380e3b05de2baf16d1dbdf062cb930",
+    "export_sha256": "ce69e196ae302f0cb00d3ee4c7d3114f401c21ba4633e1616438a20b43fb091d",
+    "query_sha256": "285f82f2a55ed15f376b25ae6c6fbc45c5b41a9e0cb5dbfbbc76950ca7a37ff9",
+    "proof_sha256": "1d5aee6113dc94d77809053183d79d4ce310c371a82dd01d4cbe5e0d939ebd9a",
+    "conditional_clauses": 25
+  },
+  "exact_match_to_package_transport_record": true,
+  "checker_binary_sha256": "dad9f476eafff57172b34e8966c9ddef932ced6bb4c705a32b23fade09c5f055",
+  "scope": "one on-demand original-parent transported export; not the parent formula itself UNSAT, not a wall solve; other transports covered by separate audit directions"
+}

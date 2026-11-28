@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "method": "actual supplied verify_panel strict native call on batch 0 followed by independent export-byte hashing",
+  "stdout": [
+    "0 verified 00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d"
+  ],
+  "export_bytes": 3328774,
+  "export_sha256": "66cde0ddb0556a76a73244981976aff09d9928788a9dbf59f1a56779049efa50",
+  "command": "verify_panel.py drat-trim --case 0 --variant color --export panel0-color.cnf",
+  "scope": "batch conditional-clause derivation and actual exported benchmark query only, not a wall-parent SAT/UNSAT result; no new solver timing"
+}

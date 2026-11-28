@@ -1,0 +1,64 @@
+{
+  "status": "PASS ARITHMETIC ONLY",
+  "completed_rows": 0,
+  "record_count": 48,
+  "all_OPEN": true,
+  "by_variant": {
+    "original": {
+      "cpu_s": 43.431247,
+      "wall_s": 43.547189463992254,
+      "materialize_s": 0.34989734699775,
+      "conflicts": 480013,
+      "partial_trace_bytes": 130161177
+    },
+    "counter": {
+      "cpu_s": 40.87376,
+      "wall_s": 40.906382865985506,
+      "materialize_s": 0.44417566699848976,
+      "conflicts": 480012,
+      "partial_trace_bytes": 124882696
+    },
+    "escape": {
+      "cpu_s": 43.895359,
+      "wall_s": 43.99468329500087,
+      "materialize_s": 0.3413254420083831,
+      "conflicts": 480006,
+      "partial_trace_bytes": 125073969
+    },
+    "color": {
+      "cpu_s": 40.746612,
+      "wall_s": 40.82838787200308,
+      "materialize_s": 0.3252398499826086,
+      "conflicts": 480015,
+      "partial_trace_bytes": 129884777
+    }
+  },
+  "color_original_cpu_ratio": 0.9381865549474092,
+  "children": {
+    "B": {
+      "cases": 16,
+      "conflicts": 114,
+      "recorded_wall_s": 1.9081747900054324,
+      "per_child_native_proofs_available": false
+    },
+    "C": {
+      "cases": 16,
+      "conflicts": 0,
+      "recorded_wall_s": 1.688678342005005,
+      "per_child_native_proofs_available": false
+    }
+  },
+  "archived_discovery": {
+    "total_s": 4.010449305002112,
+    "replay_s": 1.8680889009992825,
+    "non_replay_difference_s": 2.1423604040028295,
+    "baseline_clause_total": 94,
+    "color_clause_total": 97
+  },
+  "limitations": [
+    "No completed parent formula is certified by a capped run.",
+    "The unsplit partial solver traces are not retained; no new timing run was performed.",
+    "Materialization stops before writing solver input, and batch total_s stops before persistent gzip/JSON writes; no complete cold-stage ledger.",
+    "Child results are selected small cubes without retained per-child native proofs, not full-row closures."
+  ]
+}

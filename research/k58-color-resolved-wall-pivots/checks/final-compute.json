@@ -1,0 +1,42 @@
+{
+  "status": "PASS component consistency; not a new SAT/UNSAT or speedup result",
+  "by_variant": {
+    "original": {
+      "cpu_s": 43.431247,
+      "conflicts": 480013,
+      "partial_trace_bytes": 130161177
+    },
+    "counter": {
+      "cpu_s": 40.87376,
+      "conflicts": 480012,
+      "partial_trace_bytes": 124882696
+    },
+    "escape": {
+      "cpu_s": 43.895359,
+      "conflicts": 480006,
+      "partial_trace_bytes": 125073969
+    },
+    "color": {
+      "cpu_s": 40.746612,
+      "conflicts": 480015,
+      "partial_trace_bytes": 129884777
+    }
+  },
+  "child_conflicts": {
+    "B": 114,
+    "C": 0
+  },
+  "archived_batch_clauses": {
+    "baseline": 94,
+    "color": 97
+  },
+  "row_geometry_checked": 11549,
+  "local_words_checked": 1448380,
+  "local_native_pass": 240,
+  "baseline_clauses": 4510,
+  "literal_deletion_counterexamples": 21173,
+  "transported_parent_proofs": 10,
+  "conditional_clauses": 159,
+  "UP_not_refuted_not_SAT": 135,
+  "bounded_claim": "models preserve under unique counter extension and derived clauses; no global extension or completed wall-row search"
+}
