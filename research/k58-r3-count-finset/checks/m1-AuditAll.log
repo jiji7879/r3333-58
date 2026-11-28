@@ -1,0 +1,6 @@
+'K58.R3.counterRow_audit_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterRow_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterRow_atoms_incident' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterRow_edge_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterRow_loop_code_collision' depends on axioms: [propext]
+m1-AuditAll elapsed=1.52 max_rss_KiB=3388424

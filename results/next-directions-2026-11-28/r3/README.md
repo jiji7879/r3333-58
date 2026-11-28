@@ -15,6 +15,14 @@ replays and the numerical extraction check are described below.
 
 ## Theorem content
 
+**Essential semantic clarification.** `PhysicalGuard.lean` proves that every
+auxiliary sender guard is `false` under the physical valuation. Bare
+`.ready (realizedValuation G e p)` is therefore true vacuously. The meaningful
+result is the emitted catalogue mask derived from the real physical neighbour
+set, not that bare-ready statement. The production bridge also exports it at
+any valuation agreeing on the sixteen physical atom bits, and constructs a
+guard-true valuation satisfying that agreement premise.
+
 There are three Lean production layers:
 
 * `lean/K58/CounterNeighbours.lean` gives the exact forty-one input atoms of
@@ -35,9 +43,14 @@ There are three Lean production layers:
   by `pin_of_named_classification`. This uses the repository's pinned R4333Lean
   order-15/16 catalogue; it is not a new independent proof of that catalogue.
 * `CountedSenderReady.lean` combines these facts. For every `k : Fin 15`,
-  `emitted_sender_step_ready_of_emitted_count_classified` proves the emitted
-  support step ready at the physical valuation from the actual emitted-atom
-  count, without the former neighbour-set bundle or separate `hclass`.
+  `exists_catalogue_mask_of_emitted_count_classified` derives a real physical
+  catalogue mask from the actual emitted-atom count without the former
+  neighbour-set bundle or separate `hclass`.
+  `catalogueVec_of_atom_agreement_classified` and
+  `senderStep_ready_of_atom_agreement_classified` prove the corresponding
+  non-vacuous statements at an arbitrary agreeing valuation. The older bare
+  physical-valuation `.ready` theorem is retained only with the explicit
+  vacuity warning above.
 
 Root and sender coordinate identifications, `p 1 = 1`, triangle-freeness, the
 T16 arm-0 pinning and its coordinate coherence remain explicit hypotheses,
@@ -69,9 +82,30 @@ as they should be.
   original sender-18 constants and emitted support theorem. M7's all-sender
   decoder was formally accepted after those checks.
 
+A second root build after the non-vacuity strengthening exited **0 in 5.82 s**,
+with maximum RSS **6,813,156 KiB**. It includes `PhysicalGuard`, the physical
+catalogue mask, both atom-agreement theorems, and the guard-true witness. Its
+log is `research/k58-r3-count-finset/checks/root-build-strengthened.log`; the
+unchanged input audits were reused by the dependency-aware build. A later
+root check after the explanatory-comment updates also exited **0 in 2.90 s**,
+with maximum RSS **6,813,676 KiB**, retained as `root-build-final.log`.
+
+* M2's adversarial review was independently recompiled: physical 2.47 s,
+  all-sender 25.47 s, classification 1.59 s and non-vacuous mask 1.55 s, with
+  an additional 119.28 s row audit. Its auxiliary-guard observation is now
+  root-checked in `PhysicalGuard` and reflected in the stronger mask interface.
+  M1 independently rebuilt every input group (29.99–30.68 s each), assembled
+  the all-row audit, verified M2's table, and proved the degenerate
+  `hostVar 32 33 one = hostVar 32 32 one` collision in 1.38 s. That collision
+  does not invalidate the endpoint construction, which proves distinct
+  endpoints rather than excluding a degenerate code numeral.
+
 Coordinator replay logs and the problem ledger live in
-`research/k58-r3-count-finset/`, especially `checks/` and `proof.md` once the
-root result is recorded.
+`research/k58-r3-count-finset/`, especially `proof.md` and `checks/`. The
+checked theorem statement and complete integrated source argument are in
+`checks/17-proof.md`. Across the first root build and independent m3/m5 replays,
+501 axiom-report lines were checked and none escaped the allowed set; the
+strengthened report has the same clean footprint.
 
 To regenerate the independent table, run from the repository root:
 

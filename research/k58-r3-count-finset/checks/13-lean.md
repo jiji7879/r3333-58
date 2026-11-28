@@ -19,3 +19,17 @@ Across the root build and independent m3/m5 audit logs, 501 `depends on axioms`
 outputs were mechanically scanned for unwanted names: none were found.
 Axiom checking supports proof status, not mathematical fidelity; statement
 scope was reviewed separately in `13-read.md` and `13-model.md`.
+
+
+## Strengthened root build
+
+After an adversarial semantic review, the root build was rerun. Final retained
+result: **exit 0, 5.82 s, maximum RSS 6,813,156 KiB**. The modules
+`PhysicalGuard`, `CountedSenderReady` and `K58.Check` now include the physical
+catalogue mask, agreeing-atom proposition, bare-ready vacuity theorem and a
+guard-true agreeing-atom witness. Every reported axiom is still within the
+permitted standard set. Audit assessments generated during failed intermediate
+edits were not used; the saved log is the final successful invocation.
+The dependency-aware build leaves unchanged audited counter inputs at their
+previously checked artifacts, as intended; those were rebuilt in the first
+root run documented above.

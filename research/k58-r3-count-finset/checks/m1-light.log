@@ -1,0 +1,55 @@
+R3.counterAtoms18_eq_lab : ∀ i < 41, counterAtoms18 i = hostVar (R3.lab i) 18 one
+R3.card_filter_univ_fin_eq_prefixCount : ∀ (b : ℕ → Bool) (n : ℕ), {i | b ↑i = true}.card = prefixCount b n
+R3.W18 : EdgeCol (Fin 58) 4 → Equiv.Perm (Fin 58) → Equiv.Perm (Fin 4) → Finset (Fin 58)
+R3.W18_card : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  (R3.W18 G e p).card = prefixCount (fun i => realizedValuation G e p (counterAtoms18 i)) 41
+R3.W18_mem : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  p one = 1 → ∀ (q : Fin 58), e ⟨18, ⋯⟩ = q → ∀ x ∈ R3.W18 G e p, x ≠ q ∧ G.col q x = 1
+R3.W18_root_not_mem : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)) (r : Fin 58),
+  e ⟨0, ⋯⟩ = r → r ∉ R3.W18 G e p
+R3.deg_ge_fifteen_of_prefixCount : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  p one = 1 →
+    ∀ (q r : Fin 58),
+      q ≠ r →
+        G.col q r = 1 →
+          e ⟨18, ⋯⟩ = q →
+            e ⟨0, ⋯⟩ = r → 14 ≤ prefixCount (fun i => realizedValuation G e p (counterAtoms18 i)) 41 → 15 ≤ deg G q 1
+R3.emitted_sender_step_ready_of_prefixCount : ∀ (G : EdgeCol (Fin 58) 4),
+  TriangleFree G →
+    ∀ (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+      p one = 1 →
+        ∀ (q r : Fin 58),
+          G.col q r = 1 →
+            e ⟨18, ⋯⟩ = q →
+              e ⟨0, ⋯⟩ = r →
+                14 ≤ prefixCount (fun i => realizedValuation G e p (counterAtoms18 i)) 41 →
+                  (∀ (n : ℕ),
+                      n = 15 ∨ n = 16 →
+                        ∀ (C : EdgeCol (Fin n) 3),
+                          TriangleFree C → ∃ t e, ∀ (i j : Fin n), i ≠ j → C.col i j = (template n t).col (e i) (e j)) →
+                    ∀ (er : ↥(arm G r 0) ≃ Fin 16),
+                      (∀ (x y : ↥(arm G r 0)),
+                          x ≠ y → G.col ↑x ↑y = Fin.succAbove 0 ((template 16 true).col (er x) (er y))) →
+                        (∀ (j : Fin 16), e ⟨1 + ↑j, ⋯⟩ = ↑(er.symm j)) →
+                          ∀ (hb : VarsBelow (catalogueCNF (rowGuard 0) (rowAtoms 0) (rowSel 0)) (rowNewTop 0)),
+                            (senderStep (rowOldTop 0) (rowGuard 0) (rowNewTop 0) (rowAtoms 0) (rowSel 0) ⋯ ⋯ ⋯ ⋯ ⋯
+                                  hb).ready
+                              (realizedValuation G e p)
+'K58.R3.lab_inj' depends on axioms: [propext, Quot.sound]
+'K58.R3.counterAtoms18_eq_lab' depends on axioms: [propext]
+'K58.R3.row_zero_audit' depends on axioms: [propext]
+'K58.R3.prefixCount_eq_sum_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.card_filter_univ_fin_eq_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.card_filter_range_eq_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.phys_injective' depends on axioms: [propext, Quot.sound]
+'K58.R3.counterAtom_phys' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.countP_range_eq_prefixCount' depends on axioms: [propext]
+'K58.R3.counterModel_count_value' depends on axioms: [propext]
+'K58.R3.trueSet_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.W18_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.W18_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.W18_root_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.deg_ge_fifteen_of_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.exists_catalogue_mask_of_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.emitted_sender_step_ready_of_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+m1-light elapsed=1.96 max_rss_KiB=3402188

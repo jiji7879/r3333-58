@@ -53,6 +53,7 @@ import K58.SenderReady
 import K58.SupportCatalogue
 import K58.SupportTransport
 import K58.EmittedBridge
+import K58.PhysicalGuard
 import K58.ClassifiedBridge
 import K58.CountedSenderReady
 import K58.TargetUnits
@@ -492,9 +493,11 @@ import K58.TicketPremises
 #print axioms K58.SenderReady.counter_then_support_unsatisfiable
 #print axioms K58.SenderReady.coordinate_order_matters
 
--- All-sender counter decoding, physical neighbour extraction and classification are
--- proved at the physical valuation.  Guard-to-count soundness at arbitrary sequential
--- models, exact key bookkeeping and ChainReady remain separate.
+-- Counter decoding, neighbour extraction, classification and physical catalogue masks
+-- are proved for all fifteen senders.  The guards are false at realizedValuation,
+-- so mere `.ready` at that valuation is explicitly documented as vacuous; the mask
+-- and agreeing-atom valuations are the substantive interfaces.  Guard-to-count
+-- soundness at arbitrary sequential models, key bookkeeping and ChainReady remain open.
 #print axioms K58.EmittedBridge.rowAtoms_val
 #print axioms K58.EmittedBridge.rowAtomsList_val
 #print axioms K58.EmittedBridge.realized_rowAtoms
@@ -512,6 +515,14 @@ import K58.TicketPremises
 #print axioms K58.R3Counter.exists_neighbour_finset_emitted
 #print axioms K58.R3Counter.emitted_sender_step_ready_of_counter_count
 #print axioms K58.R3Counter.emitted_sender_step_ready_of_emitted_count_classified
+#print axioms K58.R3Counter.exists_catalogue_mask_of_emitted_count_classified
+#print axioms K58.R3Counter.catalogueVec_of_atom_agreement_classified
+#print axioms K58.R3Counter.senderStep_ready_of_atom_agreement_classified
+#print axioms K58.PhysicalGuard.realizedValuation_eq_false_of_gt
+#print axioms K58.PhysicalGuard.rowGuard_gt
+#print axioms K58.PhysicalGuard.realizedValuation_rowGuard
+#print axioms K58.PhysicalGuard.senderStep_ready_at_realized_valuation
+#print axioms K58.PhysicalGuard.exists_guard_true_of_atom_agreement
 #print axioms K58.TargetUnits.arm0_block_units
 #print axioms K58.TargetUnits.arm0_root_units
 #print axioms K58.TargetUnits.arm1_root_units

@@ -43,3 +43,14 @@
 
 No gap found in this scoped R3 claim. Arbitrary sequential guard/count
 semantics is a separate open entry and not an implicit step here.
+
+
+## Adversarial-addendum scope
+
+The final bare-ready conclusion would be vacuous at the physical valuation,
+because auxiliary guards are false there. Do not read it as geometric content.
+The meaningful theorem now exported is the real physical catalogue mask,
+and its agreement-on-sixteen-genuine-atoms form, whose guard may also be true.
+This is an explicit semantic correction found by m2 rather than a weakening
+of the neighbour-set result. The reverse counter-condition remains open;
+atom-by-atom preservation is not by itself sequel-level ChainReady assembly.

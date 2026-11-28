@@ -88,6 +88,7 @@ SenderReady
 SupportCatalogue
 SupportTransport
 EmittedBridge
+PhysicalGuard
 ClassifiedBridge
 CounterNeighbours
 CounterNeighboursAudit0

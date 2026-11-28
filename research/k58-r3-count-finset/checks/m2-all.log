@@ -1,0 +1,38 @@
+.ultramath/smx0gue0b/m2/R3AllSenders.lean:321:24: warning: This simp argument is unused:
+  Fin.ext_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ne_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'K58.R3.counterMeta_guard' does not depend on any axioms
+'K58.R3.counterMeta_newTop' does not depend on any axioms
+'K58.R3.counterTable_take16' does not depend on any axioms
+'K58.R3.counterTable_row_zero_take' depends on axioms: [propext]
+'K58.R3.counterTable_row_19' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterTable_row_32' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterTable_length' does not depend on any axioms
+'K58.R3.counterListOf_length' does not depend on any axioms
+'K58.R3.counterListOf_zero' depends on axioms: [propext]
+'K58.R3.counterAtomsOf_head' depends on axioms: [propext]
+'K58.R3.counterAtomsOf_tail' depends on axioms: [propext]
+'K58.R3.counterListOf_nodup' does not depend on any axioms
+'K58.R3.counterAtomsOf_incident' depends on axioms: [propext, Quot.sound]
+'K58.R3.partner18_ne_sender_label' depends on axioms: [propext, Quot.sound]
+'K58.R3.realized_counterAtomsOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.physNeighboursOf_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.physNeighboursOf_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.physNeighboursOf_notMem_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.exists_physical_neighbours_of_prefixCount_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.rowAtoms_eq_counterAtoms' depends on axioms: [propext]
+'K58.R3.rowAtoms_ne_guard' depends on axioms: [propext, Quot.sound]
+'K58.R3.exists_v_atoms_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.realizedValuation_eq_false_of_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.realizedValuation_rowGuard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.senderStep_ready_of_guard_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.senderStep_ready_at_realized_vacuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterAtomsOf_zero' depends on axioms: [propext]
+'K58.R3.deg_ge_of_prefixCount_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.prefixCount_le_deg_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.emitted_sender_step_ready_all_of_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+m2-all elapsed=25.47 max_rss_KiB=4448904

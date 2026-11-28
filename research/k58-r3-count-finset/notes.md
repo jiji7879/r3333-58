@@ -110,3 +110,33 @@
     mechanical-ledger entry #13 was replaced by #18 solely because mentioning
     #10 in the earlier sentence encoded it as a dependency; no source or scope
     changed. The complete final proof text is `proof.md`.
+
+15. Final adversarial review (m2, accepted direction 7) exposed that every
+    auxiliary rowGuard is false at the ordinary physical valuation: bare
+    `.ready (realizedValuation …)` is vacuous. The R3 finite-set and physical
+    mask statements remain mathematical content, but their presentation must
+    not imply that this bare proposition is useful end-to-end ChainReady.
+    PhysicalGuard and a non-vacuous catalogue mask, agreeing-atom theorems,
+    and a guard-true agreeing-atom witness are now integrated. The latest
+    strengthened root build is exit 0 / 5.82 s / 6,813,156 KiB RSS; its
+    declaration-level output in `checks/root-build-strengthened.log` again
+    uses only standard axioms. All 15 exact audits in the first full root pass
+    are unchanged and independently rerun by m1 too.
+
+16. All eight swarm directions are accepted and `smx0gue0b` has finished
+    (solved in the task's technical, accepted-submission sense). M1's loop
+    collision `hostVar 32 33 one = hostVar 32 32 one` is valid and proves why
+    code inequality cannot express no-loop; the real proof uses non-equal
+    endpoints explicitly. M2's root/palette/duplication controls validate
+    which assumptions remain essential. Independent remaining replays:
+    m1 A–E 29.99–30.68 s each plus assembly/collision/table checks;
+    m2 physical 2.47 s, all 25.47 s, classification 1.59 s,
+    mask 1.55 s and rowaudit 119.28 s (4.41 GiB peak RSS).
+
+17. The production warning comments and final root audit are complete. After
+    the vacuity caveat was also added to `K58.Check.lean`, `bash lean/build.sh`
+    ran again with only `K58/Check.lean` still needing re-elaboration: exit 0,
+    2.90 s, 6,813,676 KiB RSS (`checks/root-build-final.log`). First commit
+    `d3f8883157202b4ab6207fe2802b32cc2dec8d29` is pushed; this strengthened
+    non-vacuity correction is intentionally a separate new commit, not an
+    amend or force-push.

@@ -1,0 +1,10 @@
+'K58.R3.catalogueVec_of_atoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.senderStep_ready_of_atom_agreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.emitted_sender_step_ready_all_of_prefixCount_classified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'K58.R3.emitted_sender_step_ready_18_of_prefixCount_classified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'K58.M4.hclass_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+m2-mask elapsed=1.55 max_rss_KiB=3419264

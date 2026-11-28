@@ -21,3 +21,23 @@ not of the coordinator's own discarded attempt.
 
 Under the declared all-sender physical-valuation scope, no model/path mismatch
 or extra semantic shortcut was found.
+
+
+## Adversarial follow-up (m2/m1)
+
+The final independent review identified an important semantic qualification:
+auxiliary guards are above 6612 and therefore false at realizedValuation.
+Hence bare `.ready (realizedValuation)` is vacuous. This does not falsify
+W/cardinality, degree criticality or the physical support mask, but it changes
+which endpoint is meaningful. `PhysicalGuard` and the explicit catalogue mask,
+agreeing-atom proofs and guard-true witness in `PhysicalGuard.lean` have now
+been added and root-built. The goal statement never asserted ChainReady.
+The valid finite counting theorem is not retracted, but its presentation is
+amended accordingly. All eight directions were accepted, including these two
+review directions, and the complete swarm has finished.
+
+M1 independently exposed the degenerate code equality
+`hostVar 32 33 one = hostVar 32 32 one`. Its source code and compiler replay
+confirm that no-loop should mean distinct actual endpoints, not inequality to
+that degenerate code. The integrated construction uses exactly distinct
+endpoints, so this warning does not invalidate it.
