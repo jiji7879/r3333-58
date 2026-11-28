@@ -1,0 +1,19 @@
+{
+  "explicit_opt_in_only": true,
+  "files": {
+    "MCF_README.md": "2aa2a95e74c748399217a165e41c6f1b9f1a6ef4d74d5bf291acc3aab6bb80d9",
+    "k58-mcf.sh": "e0be8ac4c832bfe22584bc29b7232a4b81aebb671ebb578888caa01f9bcc3fb7",
+    "mcf/audit_queries.py": "6227d920bc4f063a621fbb702fd77c184b19d831b8c99b08b0a2e1940b908bfa",
+    "mcf/cadical_worker.py": "50f44cab2f18cb7ea2408483be32f13c645fded45fe202479961101144bd4d2c",
+    "mcf/driver.py": "25b4fbf202f9a11505c569ed66091f44c746ef36017f7b327fed2eb47f55e7f7",
+    "mcf/normal_form.py": "661e0c42501893598eff1c0c3f47d0649523a8ebb34aabe46dc5e8470a750fdf",
+    "mcf/package_controls.py": "f281e011fe5f698bb0d9a5a371907125247100a139d242d031683528e1d2b920",
+    "mcf/proof.py": "929e392061602d69ee289453d7e49cbfed6907a97dd4e6da10816429f3ba5e31",
+    "mcf/strict_rup.py": "062359c42fb1d8dfebb99ad402a4afc49c8d29cbd4460c2f7d97f07d86637a0c",
+    "mcf/test_controls.py": "a3b9b6449a2ec45f487e745ba9546e99ef7200cf68b0081238156f5435c41500"
+  },
+  "schema": "k58-mcf-overlay-install/v1",
+  "scope": "raw arm3, colour0, exact retained cube; no stock-finalise admission or physical-row claim",
+  "stock_k58_sha256": "43f20cd7100775efcd16834934de9ceaeda82c0c43861cd04c217e54d7d844ad",
+  "variant": "mcf-arm3"
+}

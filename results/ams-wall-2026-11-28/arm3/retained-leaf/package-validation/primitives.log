@@ -1,0 +1,15 @@
+test_cube_collision_rejected (__main__.AllocationControls.test_cube_collision_rejected) ... ok
+test_empty_or_same_colour_arm_rejected (__main__.AllocationControls.test_empty_or_same_colour_arm_rejected) ... ok
+test_positive_shape (__main__.AllocationControls.test_positive_shape) ... ok
+test_suffix_collision_rejected (__main__.AllocationControls.test_suffix_collision_rejected) ... ok
+test_wrong_allocation_rejected (__main__.AllocationControls.test_wrong_allocation_rejected) ... ok
+test_bad_cubes_and_dimacs_rejected (__main__.DimacsControls.test_bad_cubes_and_dimacs_rejected) ... ok
+test_positive_freeze_preserves_body_and_order (__main__.DimacsControls.test_positive_freeze_preserves_body_and_order) ... ok
+test_deletion_only_and_malformed (__main__.ProofNormalizationControls.test_deletion_only_and_malformed) ... ok
+test_exhaustive_k4_normalisations (__main__.SemanticControl.test_exhaustive_k4_normalisations) ... ok
+test_normalise_colouring_with_generator_rule_schema (__main__.SemanticControl.test_normalise_colouring_with_generator_rule_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.721s
+
+OK

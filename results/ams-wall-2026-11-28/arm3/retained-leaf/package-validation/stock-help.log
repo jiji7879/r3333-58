@@ -1,0 +1,28 @@
+K58 cover — one entry point.
+  ./k58.sh setup      install the pinned Python environment
+  ./k58.sh doctor     check the machine and replay the bundled example
+  ./k58.sh test       close 5 cases end to end (a few minutes)
+  ./k58.sh run ...    run shards
+  ./k58.sh wallcc ...        single-row cube-and-conquer with fresh per-leaf DRAT
+  ./k58.sh wallcc-smoke      run the wall toolkit's ordinary proof controls
+  ./k58.sh uniform ...         search the seven fully sending uniform children
+  ./k58.sh profile-fast ...    run the optimized (15,14,14,14) search
+  ./k58.sh finalise   build a manifest and replay every certificate
+  ./k58.sh replay     replay certificates against an existing release
+                      (--only IDS.txt replays just those, --out FILE names the log)
+  ./k58.sh status     how far along, how much disk
+  ./k58.sh watch      is the run alive? per-worker elapsed times and counters
+  ./k58.sh smoke      end-to-end self test incl. rejecting a bad certificate
+  ./k58.sh retrystatus  is the retry pass actually closing cases?
+  ./k58.sh unpublished  closed-but-unpublished vs still-open cases
+  ./k58.sh version    print the package version
+  ./k58.sh pin        pin the encoding (recipe + encoder revision + CNF hashes)
+  ./k58.sh square ... strict K15 spoke verification/export/bounded search
+  ./k58.sh color-wallcc ... optional color-pivot wall engine
+  ./k58.sh color-smoke ... color-interface native controls
+  ./k58.sh armcap ... optional historical paired-arm/transversal/two5 tools
+  ./k58.sh modified-smoke --out DIR combined modified-build controls
+  ./k58.sh unified ...    bounded/resumable stock+colour+square cohorts
+  ./k58.sh store adopt/check        read-only byte adoption and integrity checks
+
+version 2026-11-28-massive-unified

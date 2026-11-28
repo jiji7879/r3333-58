@@ -1,0 +1,45 @@
+{
+  "physical_closure": false,
+  "result_paths": {
+    "parent": ".scratch/mcf-coordinator/full-hardened-controls/open-interface/parent/result.json",
+    "raw-arm": ".scratch/mcf-coordinator/full-hardened-controls/open-interface/raw-arm/result.json"
+  },
+  "results": [
+    {
+      "conclusion": "OPEN at exact conflict cap; no SAT/UNSAT claim",
+      "conflict_cap": 1,
+      "label": "parent",
+      "query_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+      "solve_cpu_seconds": 0.004922007000000006,
+      "solve_wall_seconds": 0.0049235220067203045,
+      "statistics": {
+        "conflicts": 1,
+        "decisions": 6084,
+        "propagations": 11677,
+        "restarts": 0
+      },
+      "status": "OPEN"
+    },
+    {
+      "conclusion": "OPEN at exact conflict cap; no SAT/UNSAT claim",
+      "conflict_cap": 1,
+      "label": "raw-arm",
+      "query_sha256": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+      "solve_cpu_seconds": 0.004193242,
+      "solve_wall_seconds": 0.004194139037281275,
+      "statistics": {
+        "conflicts": 1,
+        "decisions": 29,
+        "propagations": 4382,
+        "restarts": 0
+      },
+      "status": "OPEN"
+    }
+  ],
+  "schema": "k58-mcf-comparison-result/v1",
+  "scope": "CNF comparison only. Augmented UNSAT, if verified, reduces through the separate existence-preserving normal form; all physical-row and cover bridges remain explicit.",
+  "status_counts": {
+    "OPEN": 2
+  },
+  "stock_finalise_admission": false
+}

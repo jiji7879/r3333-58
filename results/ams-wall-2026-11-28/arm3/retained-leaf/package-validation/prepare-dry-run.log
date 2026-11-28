@@ -1,0 +1,126 @@
+{
+  "arms": [
+    3
+  ],
+  "baseline_run": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/arm3-hard-leaf",
+  "cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+  "certification_comparison": {
+    "cas_prefix": "baseline/cas.drat",
+    "parent": "certification/working-cube.cnf",
+    "proof_targets": {
+      "parent": "queries/parent-cube.cnf",
+      "raw-arm": "queries/raw-arm-cube.cnf"
+    },
+    "raw-arm": "certification/raw-arm-working-cube.cnf"
+  },
+  "colour": 0,
+  "cube": [
+    -1413,
+    1014
+  ],
+  "feature": "explicit opt-in only; stock run/finalise unchanged",
+  "files": {
+    "baseline/cas.drat": {
+      "bytes": 183180,
+      "sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3"
+    },
+    "baseline/parent.cnf": {
+      "bytes": 3493016,
+      "sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae"
+    },
+    "baseline/plan.json": {
+      "bytes": 612,
+      "sha256": "683969b82a6459befa58d75321fc1873dc26b63d01c5a9c64b8bfa0e46c1c29e"
+    },
+    "baseline/working.cnf": {
+      "bytes": 3501521,
+      "sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+    },
+    "certification/raw-arm-working-cube.cnf": {
+      "bytes": 3637211,
+      "sha256": "df8fd6a2332272c5f5ee99dd9efed7e0f120ae90712844a71f561de25d285664"
+    },
+    "certification/raw-arm-working.cnf": {
+      "bytes": 3637196,
+      "sha256": "46d5b7801e09407e505226bc42208bc3112d175e35bd3dbcb44463bb932586bc"
+    },
+    "certification/working-cube.cnf": {
+      "bytes": 3501536,
+      "sha256": "72ee6940d74f920e941622f340fc7a0cd6db6f31be0059a88f602af952d640b6"
+    },
+    "queries/parent-cube.cnf": {
+      "bytes": 3493031,
+      "sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8"
+    },
+    "queries/raw-arm-cube.cnf": {
+      "bytes": 3628706,
+      "sha256": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a"
+    },
+    "queries/raw-arm-parent.cnf": {
+      "bytes": 3628691,
+      "sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2"
+    }
+  },
+  "main_comparison": {
+    "body_and_cube_unchanged_except_mcf_suffix": true,
+    "parent": "queries/parent-cube.cnf",
+    "raw-arm": "queries/raw-arm-cube.cnf"
+  },
+  "normal_form": {
+    "added_clauses": 7605,
+    "arms": [
+      3
+    ],
+    "augmented_cube_sha256": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+    "augmented_parent_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+    "augmented_variables": 22053,
+    "charge": 7,
+    "colour": 0,
+    "configurable_edges": 45,
+    "cube": [
+      -1413,
+      1014
+    ],
+    "cube_disjoint": true,
+    "fresh_range": [
+      19534,
+      22053
+    ],
+    "fresh_witnesses": 2520,
+    "host_clauses": 134995,
+    "nonhost_clauses": 49340,
+    "ordinary_parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "original_clauses": 184335,
+    "original_variables": 19533,
+    "parent_body_prefix_byte_exact": true,
+    "parent_cube_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+    "physical_closure": false,
+    "profile": [
+      16,
+      16,
+      14,
+      11
+    ],
+    "reduction": "existence-preserving sequential recolouring; NOT a DRAT implication; each new witness is its defining conjunction",
+    "remaining_bridge_obligations": [
+      "physical realization itself; hbase/hvars are formalized in PhysicalBridge",
+      "candidate criticality and adjusted/112-support guard-set totals",
+      "whole-parent ChainReady and semantic assembly",
+      "other leaves and exhaustive cover before any row-level conclusion"
+    ],
+    "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+    "schema": "k58-configurable-mcf-normal-form/v2",
+    "suffix_disjoint": true,
+    "tier": "first",
+    "working_cuts": 315
+  },
+  "normal_form_sha256_payload": "8622ca72e840fdce931be28aab5b574d5ce57e0f8cbd88d570851393808c3ee1",
+  "ordinary_parent_cube_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+  "ordinary_parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "ordinary_working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38",
+  "package": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-mcf-solver",
+  "physical_closure": false,
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "schema": "k58-optin-configurable-mcf/v1",
+  "tier": "first"
+}

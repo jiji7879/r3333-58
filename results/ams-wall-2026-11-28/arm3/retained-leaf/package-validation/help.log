@@ -1,0 +1,15 @@
+usage: k58-mcf.sh [-h] {prepare,run,toy-proof} ...
+
+Explicit opt-in configurable maximal-colour CNF generation and balanced
+CaDiCaL195 runs. Never a stock finalise path.
+
+positional arguments:
+  {prepare,run,toy-proof}
+    prepare             regenerate exact frozen parent+cube, then append raw
+                        MCF
+    run                 balanced exact parent/raw-arm conflict-capped
+                        comparison
+    toy-proof           positive toy UNSAT/replay and negative proof controls
+
+options:
+  -h, --help            show this help message and exit

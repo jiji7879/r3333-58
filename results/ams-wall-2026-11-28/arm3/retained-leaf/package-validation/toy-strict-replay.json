@@ -1,0 +1,50 @@
+{
+  "addition_records_retained": 7,
+  "cas_bytes": 0,
+  "cas_records": 0,
+  "cas_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "checker": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/mcf-coordinator/k58-solver/bin/drat-trim",
+  "checker_command": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/mcf-coordinator/k58-solver/bin/drat-trim",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/mcf-coordinator/hardened-toy-3/toy.cnf",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/mcf-coordinator/hardened-toy-3/solve/strict-replay/proof-nodeletions.drat",
+    "-i",
+    "-U",
+    "-W",
+    "-t",
+    "30"
+  ],
+  "checker_returncode": 0,
+  "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+  "checks": {
+    "checker_returncode_zero": true,
+    "exactly_one_verified_status": true,
+    "full_normalized_file_read_exactly_once": true,
+    "no_RAT_lemmas_in_core": true,
+    "no_checker_timeout": true,
+    "no_warning_or_error": true
+  },
+  "conclusion": "AUGMENTED_CNF_UNSAT_VERIFIED",
+  "deletion_records_removed": 0,
+  "expected_query_sha256": "66dc4a4c38ac63a4f7f52e52eeecefded88e9acf7297dffe4048855a932df29b",
+  "joined_additions_end_in_empty": true,
+  "joined_proof_bytes": 20,
+  "joined_proof_sha256": "1216594c05a1e7261bf1793fe07c0358bfaadd92ceb74829f26f5161f6bcd5de",
+  "leaf_proof_bytes": 20,
+  "leaf_proof_sha256": "1216594c05a1e7261bf1793fe07c0358bfaadd92ceb74829f26f5161f6bcd5de",
+  "leaf_records": 7,
+  "normalization": "independently parse complete CAS and leaf binary streams; retain every valid a addition in order; remove only valid d records; canonical varint re-encoding",
+  "normalized_proof_bytes": 20,
+  "normalized_proof_sha256": "1216594c05a1e7261bf1793fe07c0358bfaadd92ceb74829f26f5161f6bcd5de",
+  "proof_file_bytes_read": [
+    20
+  ],
+  "query": ".scratch/mcf-coordinator/hardened-toy-3/toy.cnf",
+  "query_sha256": "66dc4a4c38ac63a4f7f52e52eeecefded88e9acf7297dffe4048855a932df29b",
+  "schema": "k58-strict-augmented-leaf-replay/v2",
+  "scope": "exact augmented CNF only; not ordinary-parent DRAT or physical-row closure",
+  "status_lines": [
+    "s VERIFIED"
+  ],
+  "strict_accepted": true
+}

@@ -1,0 +1,132 @@
+{
+  "checks": [
+    {
+      "log": "logs/help.log",
+      "name": "help",
+      "returncode": 0
+    },
+    {
+      "log": "logs/prepare-missing-output.log",
+      "name": "prepare-missing-output",
+      "returncode": 2
+    },
+    {
+      "log": "logs/prepare-dry-run.log",
+      "name": "prepare-dry-run",
+      "returncode": 0
+    },
+    {
+      "log": "logs/prepare.log",
+      "name": "prepare",
+      "returncode": 0
+    },
+    {
+      "log": "logs/run-dry-run.log",
+      "name": "run-dry-run",
+      "returncode": 0
+    },
+    {
+      "log": "logs/open-interface.log",
+      "name": "open-interface",
+      "returncode": 0
+    },
+    {
+      "log": "logs/toy-proof.log",
+      "name": "toy-proof",
+      "returncode": 0
+    },
+    {
+      "log": "logs/independent-arm3-schema.log",
+      "name": "independent-arm3-schema",
+      "returncode": 0
+    },
+    {
+      "name": "primitives",
+      "returncode": 0,
+      "semantic_normalisation_runs": 807936,
+      "tests": 10
+    },
+    {
+      "log": "logs/wrong-parent.log",
+      "name": "wrong-parent",
+      "returncode": 2
+    },
+    {
+      "log": "logs/wrong-root-sign.log",
+      "name": "wrong-root-sign",
+      "returncode": 2
+    },
+    {
+      "log": "logs/wrong-arm.log",
+      "name": "wrong-arm",
+      "returncode": 2
+    },
+    {
+      "log": "logs/wrong-colour.log",
+      "name": "wrong-colour",
+      "returncode": 2
+    },
+    {
+      "log": "logs/cube-disjoint.log",
+      "name": "cube-disjoint",
+      "returncode": 2
+    },
+    {
+      "log": "logs/contradictory-cube.log",
+      "name": "contradictory-cube",
+      "returncode": 2
+    },
+    {
+      "log": "logs/wrong-augmented-pin.log",
+      "name": "wrong-augmented-pin",
+      "returncode": 2
+    },
+    {
+      "log": "logs/wrong-expected-baseline.log",
+      "name": "wrong-expected-baseline",
+      "returncode": 2
+    },
+    {
+      "log": "logs/tampered-query-no-fallback.log",
+      "name": "tampered-query-no-fallback",
+      "returncode": 2
+    },
+    {
+      "log": "logs/rehashed-semantic-tamper-rejected.log",
+      "name": "rehashed-semantic-tamper-rejected",
+      "returncode": 2
+    },
+    {
+      "log": "logs/query-only-rehash-rejected.log",
+      "name": "query-only-rehash-rejected",
+      "returncode": 2
+    },
+    {
+      "log": "logs/stock-wallcc-smoke.log",
+      "name": "stock-wallcc-smoke",
+      "returncode": 0
+    },
+    {
+      "log": "logs/stock-help.log",
+      "name": "stock-help",
+      "returncode": 2
+    },
+    {
+      "k58_sha256": "43f20cd7100775efcd16834934de9ceaeda82c0c43861cd04c217e54d7d844ad",
+      "name": "stock-unchanged-and-no-mcf-fallback"
+    }
+  ],
+  "exact_hashes": {
+    "cas": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+    "parent": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "parent_cube": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+    "raw_arm_cube": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+    "raw_arm_parent": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+    "working": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+  },
+  "live_solver_scope": "one-conflict OPEN interface only; no performance result, UNSAT result, or physical closure",
+  "physical_closure": false,
+  "proof_scope": "three-pigeon/two-hole toy plus derived-cut CAS toy only; target remains OPEN",
+  "status": "PASS",
+  "stock_finalise_admission": false
+}

@@ -1,0 +1,279 @@
+{
+  "schema": "m5-exact-leaf-bcp-benchmark-selection/v1",
+  "result": "PASS",
+  "repository_head_at_input_preparation": "e291a43b0ab08f369d22a289b2c457f03a504ef3",
+  "engine": "PySAT Solver(name='cadical195'), python-sat 1.9.dev22, fresh default instance per query",
+  "budget": "solve_limited after conf_budget only; no solver wall/CPU time budget and no propagation budget",
+  "execution": "sequential queries within each pair; reversed-order repetition; all pairs and all counters retained",
+  "queries": {
+    "parent-cube": {
+      "path": "inputs/parent-cube.cnf",
+      "bytes": 3493031,
+      "sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+      "variables": 19533,
+      "clauses": 184337,
+      "cube": [
+        -1413,
+        1014
+      ],
+      "parent_body_byte_preserved": true
+    },
+    "arm3-cube": {
+      "path": "inputs/arm3-raw-cube.cnf",
+      "bytes": 3628706,
+      "sha256": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+      "variables": 22053,
+      "clauses": 191942,
+      "cube": [
+        -1413,
+        1014
+      ],
+      "parent_body_byte_preserved": true
+    },
+    "arm3-bcp-cube": {
+      "path": "inputs/arm3-bcp-cube.cnf",
+      "bytes": 3617882,
+      "sha256": "ffcaa2f5c37509ba2e4df2c7dcce6d47f859fc9740c7e2ca8b0555cf8a0b6ea4",
+      "variables": 22053,
+      "clauses": 191477,
+      "cube": [
+        -1413,
+        1014
+      ],
+      "parent_body_byte_preserved": true
+    }
+  },
+  "selected_bcp_pairs": [
+    {
+      "source": "results/cadical-bcp-1m.jsonl",
+      "order": [
+        "parent-cube",
+        "arm3-bcp-cube"
+      ],
+      "cap": 1000000,
+      "status": {
+        "parent-cube": "OPEN",
+        "arm3-bcp-cube": "OPEN"
+      },
+      "query_sha256": {
+        "parent-cube": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+        "arm3-bcp-cube": "ffcaa2f5c37509ba2e4df2c7dcce6d47f859fc9740c7e2ca8b0555cf8a0b6ea4"
+      },
+      "deterministic_counters": {
+        "parent-cube": {
+          "restarts": 33143,
+          "conflicts": 1000000,
+          "decisions": 2318963,
+          "propagations": 381196308
+        },
+        "arm3-bcp-cube": {
+          "restarts": 30143,
+          "conflicts": 1000001,
+          "decisions": 2437973,
+          "propagations": 385980874
+        }
+      },
+      "solve_cpu_seconds": {
+        "parent-cube": 73.054778096,
+        "arm3-bcp-cube": 64.169472826
+      },
+      "solve_wall_seconds": {
+        "parent-cube": 75.69790441985242,
+        "arm3-bcp-cube": 64.1965856780298
+      },
+      "variant_over_parent": {
+        "propagation_ratio": 1.0125514489505496,
+        "propagation_change_percent": 1.2551448950549604,
+        "solve_cpu_ratio": 0.8783747551963819,
+        "solve_cpu_reduction_percent": 12.162524480361814
+      }
+    },
+    {
+      "source": "results/cadical-bcp-1m-reversed.jsonl",
+      "order": [
+        "arm3-bcp-cube",
+        "parent-cube"
+      ],
+      "cap": 1000000,
+      "status": {
+        "arm3-bcp-cube": "OPEN",
+        "parent-cube": "OPEN"
+      },
+      "query_sha256": {
+        "arm3-bcp-cube": "ffcaa2f5c37509ba2e4df2c7dcce6d47f859fc9740c7e2ca8b0555cf8a0b6ea4",
+        "parent-cube": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8"
+      },
+      "deterministic_counters": {
+        "arm3-bcp-cube": {
+          "restarts": 30143,
+          "conflicts": 1000001,
+          "decisions": 2437973,
+          "propagations": 385980874
+        },
+        "parent-cube": {
+          "restarts": 33143,
+          "conflicts": 1000000,
+          "decisions": 2318963,
+          "propagations": 381196308
+        }
+      },
+      "solve_cpu_seconds": {
+        "arm3-bcp-cube": 61.450188776000005,
+        "parent-cube": 65.654854623
+      },
+      "solve_wall_seconds": {
+        "arm3-bcp-cube": 61.832898932974786,
+        "parent-cube": 66.1565774269402
+      },
+      "variant_over_parent": {
+        "propagation_ratio": 1.0125514489505496,
+        "propagation_change_percent": 1.2551448950549604,
+        "solve_cpu_ratio": 0.9359580358353724,
+        "solve_cpu_reduction_percent": 6.40419641646276
+      }
+    }
+  ],
+  "cross_member_raw_controls": [
+    {
+      "source": "results/control-raw-parent-1m.jsonl",
+      "order": [
+        "arm3-cube",
+        "parent-cube"
+      ],
+      "cap": 1000000,
+      "status": {
+        "arm3-cube": "OPEN",
+        "parent-cube": "OPEN"
+      },
+      "query_sha256": {
+        "arm3-cube": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+        "parent-cube": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8"
+      },
+      "deterministic_counters": {
+        "arm3-cube": {
+          "restarts": 30143,
+          "conflicts": 1000001,
+          "decisions": 2437973,
+          "propagations": 385980874
+        },
+        "parent-cube": {
+          "restarts": 33143,
+          "conflicts": 1000000,
+          "decisions": 2318963,
+          "propagations": 381196308
+        }
+      },
+      "solve_cpu_seconds": {
+        "arm3-cube": 60.644920112,
+        "parent-cube": 64.463593637
+      },
+      "solve_wall_seconds": {
+        "arm3-cube": 60.688000991009176,
+        "parent-cube": 64.77451791195199
+      },
+      "variant_over_parent": {
+        "propagation_ratio": 1.0125514489505496,
+        "propagation_change_percent": 1.2551448950549604,
+        "solve_cpu_ratio": 0.9407623232036476,
+        "solve_cpu_reduction_percent": 5.9237676796352385
+      }
+    },
+    {
+      "source": "results/control-raw-parent-2m.jsonl",
+      "order": [
+        "parent-cube",
+        "arm3-cube"
+      ],
+      "cap": 2000000,
+      "status": {
+        "parent-cube": "OPEN",
+        "arm3-cube": "OPEN"
+      },
+      "query_sha256": {
+        "parent-cube": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+        "arm3-cube": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a"
+      },
+      "deterministic_counters": {
+        "parent-cube": {
+          "restarts": 104804,
+          "conflicts": 2000002,
+          "decisions": 5406820,
+          "propagations": 855298483
+        },
+        "arm3-cube": {
+          "restarts": 104712,
+          "conflicts": 2000005,
+          "decisions": 5620061,
+          "propagations": 884198407
+        }
+      },
+      "solve_cpu_seconds": {
+        "parent-cube": 209.925346513,
+        "arm3-cube": 209.68539076099998
+      },
+      "solve_wall_seconds": {
+        "parent-cube": 210.468305908842,
+        "arm3-cube": 211.84724074602127
+      },
+      "variant_over_parent": {
+        "propagation_ratio": 1.0337892847636443,
+        "propagation_change_percent": 3.378928476364429,
+        "solve_cpu_ratio": 0.9988569472148751,
+        "solve_cpu_reduction_percent": 0.11430527851249428
+      }
+    }
+  ],
+  "bcp_repeated_deterministic_counters_match": true,
+  "bcp_raw_exact_cube_1m_deterministic_counters_match": true,
+  "bcp_pooled_solve_cpu_reduction_percent_descriptive_only": 9.436958962697172,
+  "resource_logs": [
+    {
+      "source": "logs/cadical-bcp-1m.time",
+      "exit_status": 0,
+      "job_cpu_percent": 98
+    },
+    {
+      "source": "logs/cadical-bcp-1m-reversed.time",
+      "exit_status": 0,
+      "job_cpu_percent": 99
+    }
+  ],
+  "rejected_historical_no_cube_pair": {
+    "source": "results/rejected-historical-no-cube-1m.jsonl",
+    "selected_for_exact_leaf": false,
+    "reason": "Both queries lack the required units -1413 and 1014; neither query hash is an exact-leaf cube hash.",
+    "query_sha256": {
+      "arm3": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+      "parent": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae"
+    },
+    "status": {
+      "arm3": "OPEN",
+      "parent": "OPEN"
+    },
+    "variant_over_parent": {
+      "propagation_ratio": 0.7053030501790875,
+      "propagation_change_percent": -29.469694982091255,
+      "solve_cpu_ratio": 0.731959463459434,
+      "solve_cpu_reduction_percent": 26.804053654056602
+    }
+  },
+  "negative_controls": {
+    "wrong_query_hash": true,
+    "wrong_parent_dimensions": true,
+    "unbalanced_conflict_cap": true,
+    "uncertified_unsat_not_open": true,
+    "cap_not_reached": true,
+    "invalid_counter": true,
+    "duplicate_instead_of_pair": true,
+    "nonfinite_timing": true
+  },
+  "open_proof_or_trace_files": [],
+  "preprocessing_scope": "Solve CPU excludes CNF generation and parent-BCP residualization. The full independent residual rebuild plus audits took 0.85 user + 0.09 system seconds and is not folded into the solve ratios.",
+  "timing_caveat": "Only two capped BCP pairs on a shared VM. CPU ratios are descriptive, not a stable performance guarantee; maxrss is a cumulative process high-water mark and is not compared per solver.",
+  "established": {
+    "cnf_capped_performance_at_1m_conflicts": true,
+    "augmented_cnf_unsat": false,
+    "physical_colouring_or_physical_row_closure": false
+  },
+  "semantic_boundary": "Parent+cube, raw arm3+cube, and residual arm3+cube are CNF queries on a semantic-row relaxation. OPEN results and deterministic counters establish neither a proof nor physical closure; ChainReady, hbase/hvars, criticality and adjusted-support guards remain outside this benchmark."
+}

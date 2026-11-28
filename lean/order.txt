@@ -83,5 +83,6 @@ PBRoot
 FullVertexBudget
 TargetSuffix
 TargetParent
+PhysicalBridge
 TicketPremises
 Check

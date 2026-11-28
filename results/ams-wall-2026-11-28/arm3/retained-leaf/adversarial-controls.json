@@ -1,0 +1,64 @@
+{
+  "naive_cross_stream_join_would_parse": true,
+  "negative_control_details": {
+    "cross_stream_truncated_cas": "CAS prefix: unterminated record at byte 0",
+    "literal_zero_in_deletion": "CAS prefix: literal zero before byte 5",
+    "original_sat_query": "strict checker rejected proof; see /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx01fwza/m8/work/adversarial/negative-original/strict-replay.json and /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx01fwza/m8/work/adversarial/negative-original/checker.log",
+    "record_aligned_truncation": "joined proof additions do not end in the empty clause",
+    "short_read_despite_verified_exit_zero": "strict checker rejected proof; see /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx01fwza/m8/work/adversarial/negative-short-read/strict-replay.json and /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx01fwza/m8/work/adversarial/negative-short-read/checker.log",
+    "warning_despite_verified_exit_zero": "strict checker rejected proof; see /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx01fwza/m8/work/adversarial/negative-warning/strict-replay.json and /workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx01fwza/m8/work/adversarial/negative-warning/checker.log",
+    "wrong_expected_query_hash": "query SHA-256 mismatch: expected 0000000000000000000000000000000000000000000000000000000000000000, got 59a083f8cba81bfc7a5312d3c507692a1c97abb2db1a7122c5a7209c66d9fa86"
+  },
+  "negative_controls": {
+    "cross_stream_truncated_cas": true,
+    "literal_zero_in_deletion": true,
+    "original_sat_query": true,
+    "record_aligned_truncation": true,
+    "short_read_despite_verified_exit_zero": true,
+    "warning_despite_verified_exit_zero": true,
+    "wrong_expected_query_hash": true
+  },
+  "normal_form_counterexample": {
+    "augmented_models": [],
+    "guard_violation": "cube variable 1 is one of the configurable edge's physical variables",
+    "normalising_recolour": "edge colour 1 -> 0, violating frozen cube -x_e,0",
+    "original_models": [
+      [
+        false,
+        true
+      ]
+    ],
+    "selected_edge": [
+      0,
+      1
+    ],
+    "vertices": 2
+  },
+  "positive": {
+    "augmented_query_model_count": 0,
+    "cas_sha256": "f03357b3cb2ec03bd35bfce5fe1a9ca0858dae9e88b8fc3cbfd2e58346717f99",
+    "deletion_only_normalization_replay": "AUGMENTED_CNF_UNSAT_VERIFIED",
+    "deletion_records_removed": 1,
+    "engine": "CaDiCaL195 via python-sat, fresh instance, with_proof=True",
+    "leaf_proof_sha256": "cd7a169c9780c64a9c7e7d84ca08726a265fd8fe6eac8fa7ed0acf3a79e0881b",
+    "meaning": "A strictly verified augmented-CNF refutation, by itself, does not refute the original query.",
+    "original_query_model_count": 2,
+    "query_sha256": "59a083f8cba81bfc7a5312d3c507692a1c97abb2db1a7122c5a7209c66d9fa86",
+    "strict_replay": "AUGMENTED_CNF_UNSAT_VERIFIED",
+    "toy_solver_stats": {
+      "conflicts": 1,
+      "decisions": 0,
+      "propagations": 2,
+      "restarts": 0
+    },
+    "toy_solver_verdict": "UNSAT"
+  },
+  "result": "PASS",
+  "schema": "k58-arm3-adversarial-proof-controls/v1",
+  "target_establishment": {
+    "cnf_performance": false,
+    "note": "This file proves toy controls and replay/reduction scope only; it is not a retained-leaf solver receipt.",
+    "physical_colouring_or_row_closure": false,
+    "target_augmented_cnf_unsat": false
+  }
+}

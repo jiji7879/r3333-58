@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "expected_query_sha256": {
+    "parent": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+    "arm3": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+    "arm3-bcp": "ffcaa2f5c37509ba2e4df2c7dcce6d47f859fc9740c7e2ca8b0555cf8a0b6ea4"
+  },
+  "negative_controls_rejected": [],
+  "parent_bcp_units": 1813,
+  "parent_bcp_scan_passes": 3,
+  "safe_edges": 45,
+  "fresh_witnesses": 2520,
+  "raw_suffix_clauses": 7605,
+  "bcp_residual_suffix_clauses": 7140,
+  "kind": "arm3",
+  "query_sha256": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+  "variables": 22053,
+  "clauses": 191942,
+  "cube": [
+    -1413,
+    1014
+  ],
+  "body_and_cube_byte_exact": true,
+  "scope": "CNF identity/schema only; no SAT/UNSAT or physical-colouring verdict",
+  "physical_closure_established": false,
+  "augmented_cnf_unsat_established": false
+}

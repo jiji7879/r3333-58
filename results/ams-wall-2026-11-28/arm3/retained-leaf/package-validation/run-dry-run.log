@@ -1,0 +1,32 @@
+{
+  "balanced_conflict_budget": true,
+  "jobs": [
+    {
+      "conflicts": 1000000,
+      "engine": "fresh CaDiCaL195",
+      "label": "parent",
+      "on_unsat": "additional working-plan/CAS certification attempt at same conflicts",
+      "query": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/mcf-coordinator/full-hardened-controls/prepared/queries/parent-cube.cnf",
+      "query_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+      "sat_check": "complete model re-evaluation",
+      "unsat_check": "independent complete CAS/leaf parse + final derived empty + valid deletion-only normalization + -i -U -W full-byte replay",
+      "wall_timeout_seconds": null,
+      "with_proof": true
+    },
+    {
+      "conflicts": 1000000,
+      "engine": "fresh CaDiCaL195",
+      "label": "raw-arm",
+      "on_unsat": "additional working-plan/CAS certification attempt at same conflicts",
+      "query": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/mcf-coordinator/full-hardened-controls/prepared/queries/raw-arm-cube.cnf",
+      "query_sha256": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+      "sat_check": "complete model re-evaluation",
+      "unsat_check": "independent complete CAS/leaf parse + final derived empty + valid deletion-only normalization + -i -U -W full-byte replay",
+      "wall_timeout_seconds": null,
+      "with_proof": true
+    }
+  ],
+  "physical_closure": false,
+  "prepared_sha256": "679443fc68026dcf0313326cf45c0b5b41d170a490e71494b896eaca19ff15ec",
+  "schema": "k58-mcf-balanced-comparison/v1"
+}

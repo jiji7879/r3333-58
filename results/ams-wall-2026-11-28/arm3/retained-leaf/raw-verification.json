@@ -1,0 +1,63 @@
+{
+  "schema": "k58-arm3-retained-hard-leaf-verification/v1",
+  "result": "PASS",
+  "repository_head": "e291a43b0ab08f369d22a289b2c457f03a504ef3",
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "cube": [
+    -1413,
+    1014
+  ],
+  "query_hashes": {
+    "parent_cube": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+    "arm3_cube": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a"
+  },
+  "cube_disjoint_from_all_180_changing_physical_variables": true,
+  "safe_edges": 45,
+  "fresh_witnesses": 2520,
+  "added_clauses_before_cube": 7605,
+  "negative_controls": [
+    "wrong root sign rejected",
+    "deleted suffix clause rejected",
+    "colliding first witness rejected",
+    "cube dependence on a changing variable rejected",
+    "fake UNSAT benchmark statuses rejected at both caps",
+    "external schema auditor flipped witness sign and deleted clause rejected"
+  ],
+  "solver": "fresh pysat cadical195 / python-sat 1.9.dev22, default settings, conflict budget only",
+  "benchmarks": {
+    "cadical-1m-reversed.jsonl": {
+      "order": [
+        "arm3-cube",
+        "parent-cube"
+      ],
+      "arm3_minus_parent": {
+        "propagations": 4784566,
+        "propagations_percent": 1.2551448950549646,
+        "decisions": 119010,
+        "decisions_percent": 5.132035310610821,
+        "solve_cpu_seconds": -3.8186735250000012,
+        "solve_cpu_percent": -5.923767679635234
+      },
+      "status": "both OPEN; no leaf proof or UNSAT conclusion"
+    },
+    "cadical-2m.jsonl": {
+      "order": [
+        "parent-cube",
+        "arm3-cube"
+      ],
+      "arm3_minus_parent": {
+        "propagations": 28899924,
+        "propagations_percent": 3.378928476364432,
+        "decisions": 213241,
+        "decisions_percent": 3.943926374467802,
+        "solve_cpu_seconds": -0.2399557520000144,
+        "solve_cpu_percent": -0.11430527851249955
+      },
+      "status": "both OPEN; no leaf proof or UNSAT conclusion"
+    }
+  },
+  "leaf_proof_files": 0,
+  "cnf_unsat_established": false,
+  "physical_colouring_established": false,
+  "scope": "Exact CNF identity/layout and fixed-budget performance only. The CAS file is retained input provenance, not a leaf refutation."
+}

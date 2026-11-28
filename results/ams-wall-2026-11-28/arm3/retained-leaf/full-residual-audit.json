@@ -1,0 +1,217 @@
+{
+  "schema": "m2-independent-arm3-bcp-residual/v1",
+  "result": "PASS",
+  "algorithm": "two watched literals plus chronological reason-trail replay and independent final fixpoint scan",
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "raw_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+  "output_sha256": "31108fb9204b9e615a6396bb6239019f04307e083786db3d2b8e181f82e38daa",
+  "parent_variables": 19533,
+  "raw_variables": 22053,
+  "output_variables": 22053,
+  "parent_clauses": 184335,
+  "raw_suffix_clauses": 7605,
+  "deleted_parent_satisfied_suffix_clauses": 465,
+  "residual_suffix_clauses": 7140,
+  "parent_bcp_units": 1813,
+  "parent_bcp_units_sha256": "9d773ef00ac64b36bb7d764f323208534c635ea7a29ee7bb959e48f81e6edabd",
+  "chronological_reason_trail_sha256": "6b55ee4604b410de842d9cbaa8da6b30cd4f7bbd4f113f1f1cdcdc1ff65a0041",
+  "all_reason_clauses_unit_before_use": true,
+  "fresh_witnesses": 2520,
+  "fresh_witness_range": [
+    19534,
+    22053
+  ],
+  "fresh_variable_mapping_is_identity": true,
+  "all_witnesses_present_in_residual": true,
+  "long_mcf_clauses_preserved_exactly": 45,
+  "long_mcf_raw_suffix_indices": [
+    168,
+    337,
+    506,
+    675,
+    844,
+    1013,
+    1182,
+    1351,
+    1520,
+    1689,
+    1858,
+    2027,
+    2196,
+    2365,
+    2534,
+    2703,
+    2872,
+    3041,
+    3210,
+    3379,
+    3548,
+    3717,
+    3886,
+    4055,
+    4224,
+    4393,
+    4562,
+    4731,
+    4900,
+    5069,
+    5238,
+    5407,
+    5576,
+    5745,
+    5914,
+    6083,
+    6252,
+    6421,
+    6590,
+    6759,
+    6928,
+    7097,
+    7266,
+    7435,
+    7604
+  ],
+  "long_mcf_output_suffix_indices": [
+    153,
+    307,
+    461,
+    615,
+    769,
+    923,
+    1077,
+    1231,
+    1385,
+    1539,
+    1693,
+    1847,
+    2001,
+    2155,
+    2309,
+    2463,
+    2617,
+    2771,
+    2925,
+    3079,
+    3233,
+    3387,
+    3541,
+    3695,
+    3849,
+    4003,
+    4157,
+    4311,
+    4465,
+    4619,
+    4787,
+    4955,
+    5123,
+    5291,
+    5459,
+    5627,
+    5795,
+    5963,
+    6131,
+    6299,
+    6467,
+    6635,
+    6803,
+    6971,
+    7139
+  ],
+  "parent_body_preserved_byte_for_byte": true,
+  "retained_clause_order_matches_raw_sources": true,
+  "deletion_index_digest": "309e9fc0ae6d81bbc8b5cf649c228c0b4ac88a6e99dcd39bc1abb0bcdf6ad4ff",
+  "role_counts": {
+    "back_definition:deleted": 327,
+    "back_definition:retained": 2193,
+    "left_definition:deleted": 138,
+    "left_definition:retained": 2382,
+    "long_mcf:retained": 45,
+    "right_definition:retained": 2520
+  },
+  "length_transitions": [
+    {
+      "role": "back_definition",
+      "raw_length": 3,
+      "residual_length": 2,
+      "count": 138
+    },
+    {
+      "role": "back_definition",
+      "raw_length": 3,
+      "residual_length": 3,
+      "count": 2055
+    },
+    {
+      "role": "left_definition",
+      "raw_length": 2,
+      "residual_length": 1,
+      "count": 327
+    },
+    {
+      "role": "left_definition",
+      "raw_length": 2,
+      "residual_length": 2,
+      "count": 2055
+    },
+    {
+      "role": "long_mcf",
+      "raw_length": 57,
+      "residual_length": 57,
+      "count": 45
+    },
+    {
+      "role": "right_definition",
+      "raw_length": 2,
+      "residual_length": 1,
+      "count": 45
+    },
+    {
+      "role": "right_definition",
+      "raw_length": 2,
+      "residual_length": 2,
+      "count": 2475
+    }
+  ],
+  "queries": {
+    "parent_cube": {
+      "path": "work/query-parent.cnf",
+      "sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+      "variables": 19533,
+      "clauses": 184337,
+      "cube": [
+        -1413,
+        1014
+      ]
+    },
+    "raw_cube": {
+      "path": "work/query-raw.cnf",
+      "sha256": "fface1b819e26261736cb516be9063e7be2b1be120253875947a4400d4ac912a",
+      "variables": 22053,
+      "clauses": 191942,
+      "cube": [
+        -1413,
+        1014
+      ]
+    },
+    "bcp_cube": {
+      "path": "work/query-bcp.cnf",
+      "sha256": "ffcaa2f5c37509ba2e4df2c7dcce6d47f859fc9740c7e2ca8b0555cf8a0b6ea4",
+      "variables": 22053,
+      "clauses": 191477,
+      "cube": [
+        -1413,
+        1014
+      ]
+    }
+  },
+  "negative_controls": {
+    "flipped_long_mcf_literal_rejected": true,
+    "deleted_long_mcf_clause_rejected": true,
+    "unentailed_extra_deletion_rejected": true,
+    "wrong_cube_sign_rejected": true,
+    "stale_cube_header_rejected": true
+  },
+  "semantic_result": "P AND raw_suffix is logically equivalent to P AND residual_suffix on the same variables; adding the same two cube units preserves equivalence.",
+  "scope": "Exact CNF residual equivalence modulo the ordinary parent only. No augmented UNSAT, DRAT implication, physical-row closure, ChainReady, hbase/hvars, or guard-set result is claimed."
+}

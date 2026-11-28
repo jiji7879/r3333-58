@@ -1,4 +1,5 @@
 import K58.Arm
+import K58.PhysicalBridge
 import K58.Corollaries
 import K58.ExchangeResidue
 import K58.Link14
@@ -447,3 +448,12 @@ import K58.TicketPremises
 #print axioms targetParent_satisfiable_of_ready
 #print axioms K58.SemanticAssembly.seven_critical_senders_of_16_16_14_11
 #print axioms K58.SemanticAssembly.six_of_adjusted_guard_count
+
+-- Physical base/unit realization; ChainReady remains an explicit premise.
+#print axioms targetBase_varsBelow
+#print axioms hostVar_inj_sorted
+#print axioms realizedValuation_hostVar
+#print axioms hostBase_satisfiable
+#print axioms targetUnit_satisfiable_of_expanded
+#print axioms targetBase_satisfiable_of_realizesKey
+#print axioms targetParent_satisfiable_of_expanded_ready
