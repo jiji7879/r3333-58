@@ -23,9 +23,11 @@
 #   ./k58.sh color-smoke ... color-interface native controls
 #   ./k58.sh armcap ... optional historical paired-arm/transversal/two5 tools
 #   ./k58.sh modified-smoke --out DIR combined modified-build controls
+#   ./k58.sh unified ...    bounded/resumable stock+colour+square cohorts
+#   ./k58.sh store adopt/check        read-only byte adoption and integrity checks
 set -uo pipefail
 cd "$(dirname "$0")"
-K58_VERSION="2026-11-28-square-color-armcap"
+K58_VERSION="2026-11-28-massive-unified"
 ROOT=$PWD
 BUNDLE=$ROOT/k58
 export PATH="$ROOT/bin:$PATH"
@@ -196,6 +198,20 @@ cmd_armcap() {
   "$PY" "$ROOT/paired_arm/driver.py" "$@"
 }
 
+cmd_unified() {
+  need_venv
+  export K58_SQUARE_ROOT="$ROOT/square_spoke"
+  export TMPDIR="${TMPDIR:-$ROOT/.scratch/unified}"
+  mkdir -p "$TMPDIR"
+  "$PY" "$ROOT/unified/driver.py" "$@"
+}
+
+cmd_store() {
+  need_venv
+  export PYTHONPATH="$ROOT/unified"
+  "$PY" "$ROOT/unified/store.py" "$@"
+}
+
 cmd_modified_smoke() {
   need_venv
   local out="" deep=0
@@ -218,6 +234,17 @@ cmd_modified_smoke() {
   echo "PASS: color native derivations, local words, rejecting control"
   "$0" color-wallcc run --row 00032f347903 --tier first --cas pentagon     --pivot-color color --depth 1 --out "$out/color-interface" --jobs 1     --seconds 3 --conflicts 10 --checker "$ROOT/bin/drat-trim"     >"$out/color-interface.log" || return 1
   echo "PASS: bounded color interface; OPEN/augmented scope remains explicit"
+  "$0" unified run --rows square:0 --variants original,square,square-color     --out "$out/unified" --depth 1 --seconds 1 --conflicts 1     --max-total-conflicts 50 --wall-seconds 20 --check-seconds 8 --workers 1     >"$out/unified.log" || rc=$?
+  if [ "${rc:-0}" != 2 ]; then cat "$out/unified.log"; return 1; fi
+  "$PY" - "$out/unified/cohort-summary.json" <<'PYUNIFIED' || return 1
+import json, pathlib, sys
+s = json.loads(pathlib.Path(sys.argv[1]).read_text())
+assert s['status'] == 'OPEN' and s['reports'].get('OPEN') == 3, s
+assert s['allocated_conflicts_ceiling'] <= 50, s
+print('PASS: unified stock/square/colour composition, bounded receipts and blob store')
+PYUNIFIED
+  "$0" store check --store "$out/unified/store" >"$out/unified-store.json" || return 1
+
   "$0" armcap finite-check >"$out/armcap-finite.json" || return 1
   "$0" armcap build --family short --rank 1288 --out "$out/armcap-panel"     >"$out/armcap-panel.log" || return 1
   "$0" armcap build --family two5 --rank 1300 --out "$out/armcap-two5"     >"$out/armcap-two5.log" || return 1
@@ -455,6 +482,8 @@ case "${1:-}" in
   color-wallcc) shift; cmd_color_wallcc "$@" ;;
   color-smoke) shift; cmd_color_smoke "$@" ;;
   armcap) shift; cmd_armcap "$@" ;;
+  unified) shift; cmd_unified "$@" ;;
+  store) shift; cmd_store "$@" ;;
   modified-smoke) shift; cmd_modified_smoke "$@" ;;
   finalise) shift; cmd_finalise "$@" ;;
   status) cmd_status ;;

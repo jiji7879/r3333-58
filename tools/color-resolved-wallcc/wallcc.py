@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 import sys
 
-from problem import ROOT, digest, external_formula, lookup, require, roster, row_formula
+from problem import ROOT, digest, external_formula, json_bytes, lookup, require, roster, row_formula
 from campaign import execute, store_plan
 
 
@@ -46,6 +46,8 @@ def parser():
             group.add_argument("--cnf", type=Path, help="external DIMACS, optionally gzipped")
             cmd.add_argument("--out", type=Path, required=True)
             cmd.add_argument("--tier", choices=("first", "retry"), default="first")
+            cmd.add_argument("--square-spokes", action="store_true",
+                             help="append audited K15 clauses on one of the 14 supported rows (first tier only)")
             cmd.add_argument("--cas", choices=("pentagon", "off"),
                              help="defaults to pentagon on frozen rows and off on DIMACS")
             cmd.add_argument("--pivot-color", choices=("off", "counter", "escape", "color"), default="off",
@@ -106,13 +108,15 @@ def main():
         require(0 <= args.shard < args.shards, "shard must be in [0, shards)")
     if args.cmd in ("run", "prepare"):
         require(args.depth >= 0, "depth must be nonnegative")
-        color_artifacts = None
+        color_artifacts, square_receipt = None, None
         if args.row:
+            from square_merge import apply as append_square, unsupported_row
             row = lookup(args.row)
             ordinary = row_formula(row, args.tier)
             base, cas = ordinary, args.cas or "pentagon"
             if args.pivot_color == "off":
-                origin = {"kind": "wall", "id": row["id"], "tier": args.tier}
+                if not args.square_spokes:
+                    origin = {"kind": "wall", "id": row["id"], "tier": args.tier}
             else:
                 from color_pivot import build, core_digest, publish
                 color_artifacts = build(row, args.tier, args.checker, args.check_seconds)
@@ -123,14 +127,26 @@ def main():
                           "variant": args.pivot_color,
                           "original_parent_sha256": digest(ordinary),
                           "color_receipt_sha256": core_digest(color_artifacts)}
+            if args.square_spokes:
+                unsupported_row(row)
+                base, square_receipt = append_square(base, row, args.tier)
+                if args.pivot_color == "off":
+                    origin = {"kind": "square", "id": row["id"], "tier": args.tier}
+                else:
+                    origin["kind"] = "wall-color-square"
+                origin["square_receipt_sha256"] = digest(json_bytes(square_receipt))
         else:
-            require(args.cas != "pentagon" and args.tier == "first" and args.pivot_color == "off",
-                    "DIMACS input has its own recipe; pivot-color/CAS/retry augmentation needs --row")
+            require(args.cas != "pentagon" and args.tier == "first" and args.pivot_color == "off"
+                    and not args.square_spokes,
+                    "DIMACS input has its own recipe; pivot-color/square/retry augmentation needs --row")
             base, origin = external_formula(args.cnf)
             row, cas = None, "off"
         plan = store_plan(out, base, origin, row, cas, args.depth, args.lookahead)
         if color_artifacts is not None:
             publish(out, color_artifacts)
+        if square_receipt is not None:
+            from square_merge import publish as publish_square
+            publish_square(out, square_receipt)
         print(json.dumps({k: plan[k] for k in ("origin", "parent_sha256", "variables", "clauses",
                                                "cuts", "tables", "depth", "leaf_count")}), flush=True)
         if args.cmd == "prepare":

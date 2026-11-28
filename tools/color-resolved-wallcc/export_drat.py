@@ -85,7 +85,7 @@ def export(out, target, method, checker, seconds):
         require(rec["status"] == "CHECKED_UNSAT", f"leaf {node} has no checked refutation")
         proofs[node] = validate_artifact(folder, rec)
     color_check = None
-    if plan["origin"]["kind"] == "wall-color":
+    if plan["origin"]["kind"] in ("wall-color", "wall-color-square"):
         from color_pivot import verify_saved
         color_check = verify_saved(out, checker, seconds)
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -118,5 +118,8 @@ def export(out, target, method, checker, seconds):
     if color_check is not None:
         result["original_parent_sha256"] = color_check["original_parent_sha256"]
         result["color_derivation"] = color_check["status"]
-        result["closure_scope"] = "aux_extended_parent_with_native_original_plus_counter_derivation"
+        result["closure_scope"] = (
+            "square_aux_extended_with_native_colour_derivation_and_local_K15_rules"
+            if plan["origin"]["kind"] == "wall-color-square" else
+            "aux_extended_parent_with_native_original_plus_counter_derivation")
     return result

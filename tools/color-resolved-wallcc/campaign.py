@@ -103,11 +103,42 @@ def inspect(out, for_search=False, expected=None):
                 "missing or changed color receipt")
         check = json.loads((out / "color-check.json").read_bytes())
         require(check.get("status") == "PASS_RUP_DERIVATION", "augmentation lacks a native derivation check")
+    elif origin["kind"] in ("square", "wall-color-square"):
+        from square_merge import apply as merge_square, verify_saved as verify_saved_square
+        from color_pivot import build, core_digest
+        row = lookup(origin["id"])
+        verify_saved_square(out, origin["square_receipt_sha256"])
+        require(origin["tier"] == "first", "square-spoke merging requires first tier")
+        if origin["kind"] == "square":
+            base = row_formula(row, "first")
+            require(base == row_formula(row, origin["tier"]),
+                    "square row changed the ordinary first-tier parent")
+        else:
+            require(origin["variant"] in ("counter", "escape", "color"), "unknown colour-square variant")
+            artifacts = build(row, "first")
+            base = artifacts["formulas"][origin["variant"]]
+            require(artifacts["formulas"]["original"] == row_formula(row, "first"),
+                    "colour-square merge changed the ordinary parent")
+            require(digest(artifacts["formulas"]["original"]) == origin["original_parent_sha256"],
+                    "colour-square merge lost its ordinary-parent hash")
+            require(core_digest(artifacts) == origin["color_receipt_sha256"],
+                    "saved colour-square receipt mismatch")
+            require(digest((out / "color-receipt.json").read_bytes()) == origin["color_receipt_sha256"],
+                    "missing or changed colour-square receipt")
+            check = json.loads((out / "color-check.json").read_bytes())
+            require(check.get("status") == "PASS_RUP_DERIVATION",
+                    "colour-square augmentation lacks a native derivation check")
+        expected, metadata = merge_square(base, row, "first")
+        require(parent == expected, "stored CNF is not the exact validated colour-square composition")
+        require(digest(json_bytes(metadata)) == origin["square_receipt_sha256"],
+                "stored square reconstruction differs from its batch or original tier binding")
+        require((out / "square-receipt.json").read_bytes() == json_bytes(metadata),
+                "stored square receipt content differs from its checked reconstruction")
     else:
         require(origin["kind"] == "dimacs", "unknown formula origin")
     nv, clauses = read_dimacs(parent)
     require(plan["variables"] == nv and plan["clauses"] == len(clauses), "parent size mismatch")
-    limit = min(PHYSICAL, nv) if origin["kind"] in ("wall", "wall-color") else nv
+    limit = min(PHYSICAL, nv) if origin["kind"] in ("wall", "wall-color", "square", "wall-color-square") else nv
     require(plan["split_limit"] == limit and type(plan["depth"]) is int and plan["depth"] >= 0,
             "invalid tree parameters")
     leaves = cover(plan["splits"], limit, plan["depth"])
@@ -251,7 +282,7 @@ def execute(out, args, verify):
             f"missing executable checker {checker}; run setup.sh")
     args.checker_sha256 = file_hash(checker)
     color_check = None
-    if verify and plan["origin"]["kind"] == "wall-color":
+    if verify and plan["origin"]["kind"] in ("wall-color", "wall-color-square"):
         from color_pivot import verify_saved
         color_check = verify_saved(out, checker, args.check_seconds)
     if verify:
@@ -289,5 +320,7 @@ def execute(out, args, verify):
         result["color_derivation"] = {key: color_check[key] for key in
                                       ("status", "checker_sha256", "original_parent_sha256",
                                        "selected_parent_sha256")}
-        result["closure_scope"] = "aux_extended_parent_with_native_original_plus_counter_derivation"
+        result["closure_scope"] = ("square_aux_extended_with_native_colour_derivation_and_local_K15_rules"
+                                    if plan["origin"]["kind"] == "wall-color-square"
+                                    else "aux_extended_parent_with_native_original_plus_counter_derivation")
     return result

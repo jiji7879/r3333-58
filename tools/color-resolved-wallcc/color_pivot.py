@@ -469,7 +469,7 @@ def verify_saved(out, checker, seconds=120):
     out = Path(out)
     plan = json.loads((out / "plan.json").read_bytes())
     origin = plan["origin"]
-    require(origin["kind"] == "wall-color", "run has no color-pivot extension")
+    require(origin["kind"] in ("wall-color", "wall-color-square"), "run has no color-pivot extension")
     from problem import lookup
     row = lookup(origin["id"])
     artifacts = build(row, origin["tier"])

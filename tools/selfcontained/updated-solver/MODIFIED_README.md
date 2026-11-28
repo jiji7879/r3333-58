@@ -27,6 +27,11 @@ All original commands, including `setup`, `run`, `wallcc`, `finalise` and
 ./k58.sh armcap export-stock --rank 8 --out results/armcap/rank8-stock.cnf
 ./k58.sh armcap certify --rank 8 --clause=-24663,1056,2428,6024   --stock results/armcap/rank8-stock.cnf --out results/armcap/certify-r8   --checker "$PWD/bin/drat-trim"  # uses bundled Kissat by default
 
+./k58.sh unified run --rows square:0,square:25557   --variants original,color,square,square-color   --out results/unified-cohort --depth 1 --seconds 10 --conflicts 1000   --workers 2 --dry-run
+./k58.sh unified run --out results/unified-cohort --seconds 10 --conflicts 1000
+./k58.sh unified verify --out results/unified-cohort
+./k58.sh unified status --out results/unified-cohort
+
 ./k58.sh modified-smoke --out results/modified-smoke
 ```
 
@@ -50,6 +55,48 @@ All original commands, including `setup`, `run`, `wallcc`, `finalise` and
   historic proof bytes and do not select unresolved wall profiles by accident.
   `armcap run` is a bounded, ordinary external-DIMACS `wallcc` invocation, not
   a shortcut to an original-row certificate.
+
+## Unified bounded cohorts
+
+`unified run --rows ...` creates an immutable list of `(row,variant)` job IDs
+before any search. `--rows` accepts full/unique wall-row prefixes and
+`square:INDEX`. `--profiles 15,14,14,14` is a deliberately explicit large
+selection; it is never the default. `--limit`, `--shards`/--`shard`,
+`--workers`, and positive `--seconds`/`--conflicts` control the actual bounded
+search. Without an explicit selector the command will refuse an unknown new
+output directory. Plan budgets are frozen: resume with only `--out`, optionally
+adjusting `--workers` or raising `--min-free-gb`. **Raising a budget requires a
+new cohort directory**, and `--again` deliberately makes a fresh attempt instead
+of overwriting one. `--wall-seconds` bounds the whole child process group,
+`--check-seconds` bounds drat-trim, and `--max-total-conflicts` caps the
+conservative total conflict reservation for the invocation (including a
+search-plus-trace estimate); native leaf caching may re-use fewer actual conflicts.
+`--limit 0` is rejected, never interpreted as an unbounded cohort.
+
+The `color` family has the native original-plus-counter derivation. `square`
+adds the audited K15 rules, and `square-color` appends exactly those rules to
+the colour-extended parent without renumbering its auxiliaries. Counter, escape
+and full colour can also be combined this way, but only for the fourteen named
+square rows on tier `first`. Recipe/tier mismatches and unsupported rows fail.
+The composite has a separately checked parent hash and separate derivation/
+K15 evidence, not a monolithic original-parent certificate.
+
+Use `--dry-run` to print the plan without generating formulas or searching.
+`status` summarizes saved jobs. `verify` re-runs the ordinary model/leaf/parent
+checks and exits 2 if subtrees remain OPEN. Each job's `unified-result.json`,
+child `plan.json`, colour/square receipts and leaf artifacts are retained. Any
+hash, receipt or executable failure disqualifies promotion. The cohort is not a
+Ramsey-cover tautology checker: an `OPEN` status is unknown, not SAT or UNSAT;
+only `original` can be individually eligible for an eventual original-row
+finalisation even when all its leaves are VERIFIED_UNSAT. All new layers keep
+`finalise` incompatible with strengthened and auxiliary-extended searches.
+
+External DIMACS is supported with `--external FILE --variants external`.
+Its normalized source hash is rebound on resume, and model/leaf verification
+remains a statement about that supplied file, not a K58 parent classification.
+The paired/historical toolkit continues to use `armcap`, with its separate
+full-root/historical contract; it is not relabelled as this first-tier cohort.
+`--min-free-gb 10` is the default free-disk guard. Workers each run one solver.
 
 ## Verification and proof ceilings
 
@@ -86,3 +133,30 @@ never rewritten by the new preprocessing commands.
 `armcap build --family joint-support ...` may issue thousands of SAT calls.
 `--query-conflicts` caps each query, not the whole wall-clock search or its
 amortization cost. It is intentionally excluded from the smoke test.
+
+## Attempts, models and storage
+
+Each attempt gets its own `jobs/<attempt-id>/jobs/<job-id>/` directory. A reopen
+of an existing attempt still rechecks its saved artifacts; `--again` yields a
+new attempt with a suffix rather than exposing a different search as the same
+evidence. A complete cover needs both native leaf verification and an exported,
+replayed DRAT. Cohort verification checks the same composed proof again and
+rejects an empty attempt set or a wrong/weakened parent.
+
+SAT leaf results are projected onto the original variables and rechecked with
+the exact original first-tier CNF. Counts of `verified_case_models` include only
+that original-parent validation; an external DIMACS model is subject to its
+exact supplied parent and remains external. A model can be proved without a
+whole-column cover; it is not rewritten as a leaf-closed subproblem.
+
+The cohort-level `store/` hashes CNFs, proof carriers and models, and deduplicates
+them by raw bytes using immutable blob paths. Metadata distinguishes raw carrier
+hash, decompressed proof hash and regenerated/formula digests. `store adopt`
+indexes bytes as `stored-untyped`, not as trusted evidence or a K58 parent;
+`store check` verifies blob integrity, not semantic sufficiency. There is no GC,
+no 64-hex row-ID lookup, and no claim that scanning an old directory certifies
+its artifacts or preserves historical cases.
+
+Small fixtures are under `unified/test_store.py` and `unified/test_controls.py`.
+They exercise duplicate compression payload hashes, empty/tampered rejection,
+and a complete child process-group timeout. They do not start a solver campaign.

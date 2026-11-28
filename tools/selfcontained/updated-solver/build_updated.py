@@ -84,6 +84,7 @@ def build(base, square, output):
         safe_extract(square, root / 'paired_arm' / 'source')
         copy_tree(REPO / 'tools/color-resolved-wallcc', root / 'color-resolved-wallcc')
         copy_tree(HERE / 'paired_arm/work', root / 'paired_arm' / 'work')
+        copy_tree(HERE / 'unified', root / 'unified')
         copy_tree(HERE / 'square_spoke/tools', root / 'square_spoke')
         copy_tree(HERE / 'square_spoke/work', root / 'square_spoke' / 'work')
         shutil.copyfile(HERE / 'paired_arm/driver.py', root / 'paired_arm/driver.py')
@@ -93,13 +94,14 @@ def build(base, square, output):
         shutil.copyfile(HERE / 'MODIFIED_README.md', root / 'README.md')
         shutil.copyfile(HERE / 'MODIFIED_README.md', root / 'MODIFIED_README.md')
         shutil.copyfile(HERE / 'UPDATES.md', root / 'UPDATES.md')
+        shutil.copyfile(HERE / 'MASSIVE_VALIDATION.md', root / 'MASSIVE_VALIDATION.md')
         for script in ['k58.sh', 'square_spoke/driver.py', 'paired_arm/driver.py']:
             (root / script).chmod(0o755)
         assert (root / 'color-resolved-wallcc/tools/drat-trim').read_bytes() == (root / 'bin/drat-trim').read_bytes()
         assert (root / 'color-resolved-wallcc/bin/kissat').read_bytes() == (root / 'bin/kissat').read_bytes()
         assert 'STRENGTHENED_UNSAT_NOT_ORIGINAL_CLOSURE' in (root / 'square_spoke/driver.py').read_text()
         (root / '.scratch').mkdir(exist_ok=True)
-        for script in ['square_spoke/driver.py', 'paired_arm/driver.py',
+        for script in ['square_spoke/driver.py', 'paired_arm/driver.py', 'unified/driver.py', 'unified/store.py',
                        *('paired_arm/work/' + n for n in (p.name for p in (HERE / 'paired_arm/work').glob('*.py'))),
                        *('square_spoke/' + n for n in (p.name for p in (HERE / 'square_spoke/tools').glob('*.py')))]:
             compile((root / script).read_text(), str(root / script), 'exec')

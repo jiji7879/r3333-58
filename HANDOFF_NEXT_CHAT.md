@@ -10,6 +10,41 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-28 (massive unified frontend; no new closure).**
+A separate `dist/k58-massive-solver.zip` now unifies bounded stock,
+colour and square-plus-colour jobs. Both earlier archives are unchanged.
+`unified` and `store` are opt-in: stock `run`, `finalise` and `replay`
+were not changed, no production cohort was launched, and the later
+fourteen-row negative result is still negative.
+
+`square-merge` is restricted to the fourteen checked ordinary rows on
+first tier. It can compose square constraints with `off`, `counter`,
+`escape`, or `color`, preserving the original body and auxiliary allocation;
+verified composite parents get separate square/colour provenance rather
+than a pretend original-parent certificate. The cohort runner has frozen
+positive budgets (including checker and wall time), exact job/attempt keys,
+resume verification, 1–16 concurrent workers, a total conflict reservation,
+and no implicit retry-tier or stale-parent promotion. Complete covers need
+outgoing proof export and replay, not merely leaf OPEN/status text. Models
+are projected and re-evaluated on original clauses; external DIMACS jobs
+remain explicitly outside stock-case provenance.
+
+The content-addressed store deduplicates payloads without deduplicating
+logical cases or upgrading byte adoption into evidence. Compressed carriers
+and their decompressed proof hashes are kept separately. There is no GC.
+Plan integrity tests include a wrong/weakened parent, an empty attempt set,
+conflict-budget exhaustion, and a complete child-group timeout.
+
+Four accepted reviews (`smwzsk4n0`) supplied 195 row-crosswalk checks,
+12 scope guards, 90 scheduler checks, and 13 artifact-store tests. A fresh
+archive passed offline-wheel setup, five stock example replays, and the full
+deep modified smoke including a two-worker bounded mixed cohort and blob
+integrity checks. Read [unified/README.md](tools/selfcontained/updated-solver/unified/README.md)
+and [MASSIVE_VALIDATION.md](tools/selfcontained/updated-solver/MASSIVE_VALIDATION.md).
+No Ramsey bound or wall-row closure is claimed and no general speedup was
+measured. Full source and test controls live under
+`tools/selfcontained/updated-solver/`; the handover ZIP stays out of Git.
+
 **Updated 2026-11-28 (a self-contained modified solver archive).**
 Copied `dist/k58-solver.zip` to a separate **49,739,924-byte**
 `dist/k58-updated-solver.zip`; the stock archive and production paths are
