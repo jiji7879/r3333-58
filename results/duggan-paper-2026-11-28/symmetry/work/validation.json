@@ -1,0 +1,57 @@
+{
+  "two_witness_row_pairs_checked": 256,
+  "historical_comparator_nonlex_pairs_accepted": 120,
+  "historical_comparator_first_bad_pair": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "matrices_per_partition": 4096,
+  "integer_sbstar_checks": [
+    {
+      "cells": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "canonical_orbits": 276,
+      "accepted_matrices": 331
+    },
+    {
+      "cells": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "canonical_orbits": 1216,
+      "accepted_matrices": 1376
+    },
+    {
+      "cells": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "canonical_orbits": 816,
+      "accepted_matrices": 816
+    }
+  ]
+}

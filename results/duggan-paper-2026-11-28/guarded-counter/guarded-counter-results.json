@@ -1,0 +1,166 @@
+{
+  "checks": {
+    "full_violation_backpropagation": {
+      "boundary": {
+        "derived_not_guard": 9216,
+        "violating_assignments": 9216
+      },
+      "naive": {
+        "derived_not_guard": 2044,
+        "violating_assignments": 9216
+      }
+    },
+    "negative_no_guard_rejected": true,
+    "partial_propagation": {
+      "boundary": {
+        "forced_literals": 4008,
+        "missed_conflicts": 0,
+        "missed_forced_literals": 0,
+        "partial_assignments": 18036,
+        "unsound_conflicts": 0
+      },
+      "naive": {
+        "forced_literals": 4008,
+        "missed_conflicts": 0,
+        "missed_forced_literals": 1034,
+        "partial_assignments": 18036,
+        "unsound_conflicts": 0
+      }
+    },
+    "pysat_hard_clause_equality": 77,
+    "sat_projection_assignments": 9212
+  },
+  "encoding": "guard only Sinz overflow clauses",
+  "naive_miss_examples": [
+    {
+      "k": 2,
+      "missed": {
+        "4": false
+      },
+      "n": 3,
+      "naive_assignment": {
+        "2": false,
+        "3": false
+      },
+      "partial": {
+        "2": false,
+        "3": false
+      }
+    },
+    {
+      "k": 2,
+      "missed": {
+        "4": false
+      },
+      "n": 3,
+      "naive_assignment": {
+        "1": false,
+        "3": false
+      },
+      "partial": {
+        "1": false,
+        "3": false
+      }
+    },
+    {
+      "k": 2,
+      "missed": {
+        "4": false
+      },
+      "n": 3,
+      "naive_assignment": {
+        "1": false,
+        "2": false
+      },
+      "partial": {
+        "1": false,
+        "2": false
+      }
+    },
+    {
+      "k": 2,
+      "missed": {
+        "4": false
+      },
+      "n": 3,
+      "naive_assignment": {
+        "1": false,
+        "2": false,
+        "3": false
+      },
+      "partial": {
+        "1": false,
+        "2": false,
+        "3": false
+      }
+    },
+    {
+      "k": 2,
+      "missed": {
+        "4": false
+      },
+      "n": 3,
+      "naive_assignment": {
+        "1": false,
+        "2": false,
+        "3": true
+      },
+      "partial": {
+        "1": false,
+        "2": false,
+        "3": true
+      }
+    },
+    {
+      "k": 2,
+      "missed": {
+        "4": false
+      },
+      "n": 3,
+      "naive_assignment": {
+        "1": false,
+        "2": true,
+        "3": false
+      },
+      "partial": {
+        "1": false,
+        "2": true,
+        "3": false
+      }
+    },
+    {
+      "k": 2,
+      "missed": {
+        "4": false
+      },
+      "n": 3,
+      "naive_assignment": {
+        "1": true,
+        "2": false,
+        "3": false
+      },
+      "partial": {
+        "1": true,
+        "2": false,
+        "3": false
+      }
+    },
+    {
+      "k": 2,
+      "missed": {
+        "5": false
+      },
+      "n": 4,
+      "naive_assignment": {
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "partial": {
+        "2": false,
+        "3": false,
+        "4": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "added_literals": {
+    "boundary": 22184,
+    "naive": 30097,
+    "removed_guard_occurrences": 7913
+  },
+  "aux_collision_failures": 0,
+  "base_body_preserved": true,
+  "boundary_backprop": 736,
+  "boundary_full_sha256": "8a054217a84fd3b995cc371fc795b2422ea6eb7f60d0336cad2ed567b499a277",
+  "counter_gadgets": 168,
+  "naive_backprop": 24,
+  "naive_full_sha256": "fe9de879d99b320c57c7d90582842a532a045da9c3d90c8df5880d96498eb9af",
+  "sat_assignment_checks": 10992,
+  "selector_clauses": 168,
+  "two5_all_empty_composition": {
+    "boundary": {
+      "conflict": false,
+      "not_guard_derived": true,
+      "selectors_derived_false": true
+    },
+    "naive": {
+      "conflict": false,
+      "not_guard_derived": false,
+      "selectors_derived_false": false
+    }
+  },
+  "violating_gadget_assignments": 736
+}

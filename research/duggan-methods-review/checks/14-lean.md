@@ -1,0 +1,1 @@
+Ran lean FullVertexBudget.lean. Reports k58_root_margin and k58_total_deficit_lower with only propext, Classical.choice, Quot.sound, and k3_naive_phi with propext. Scope is the interval/sum arithmetic; it does not purport to prove the graph classification or a Ramsey bound.

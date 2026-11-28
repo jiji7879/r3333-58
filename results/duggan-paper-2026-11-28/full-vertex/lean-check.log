@@ -1,0 +1,3 @@
+'k58_root_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'k58_total_deficit_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'k3_naive_phi' depends on axioms: [propext]

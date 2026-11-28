@@ -1,0 +1,4504 @@
+[
+  {
+    "source": "../../../artifacts/k50_z4z4_m6.col",
+    "n": 50,
+    "colour": 0,
+    "source_sha256_matrix": "b574e9f9a2b5b3734acec1cb7eebeec1453c157103e3f8118789b2d72ef3f736",
+    "final_sha256_matrix": "1c5d6e79ac3a024eaffad4df2da84040cac97633d747b2fe65ef100060bd5d94",
+    "steps": 8,
+    "steps_detail": [
+      [
+        16,
+        49,
+        1,
+        0
+      ],
+      [
+        18,
+        49,
+        1,
+        0
+      ],
+      [
+        20,
+        48,
+        1,
+        0
+      ],
+      [
+        22,
+        48,
+        1,
+        0
+      ],
+      [
+        24,
+        48,
+        1,
+        0
+      ],
+      [
+        26,
+        48,
+        1,
+        0
+      ],
+      [
+        27,
+        49,
+        1,
+        0
+      ],
+      [
+        30,
+        49,
+        1,
+        0
+      ]
+    ],
+    "old_colours_removed": {
+      "1": 8,
+      "2": 0,
+      "3": 0
+    },
+    "initial_missing_paths": 8,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_z4z4_m6_max_c0.col"
+  },
+  {
+    "source": "../../../artifacts/k50_z4z4_m6.col",
+    "n": 50,
+    "colour": 1,
+    "source_sha256_matrix": "b574e9f9a2b5b3734acec1cb7eebeec1453c157103e3f8118789b2d72ef3f736",
+    "final_sha256_matrix": "8fbe1cb83e7a28a5a1a1106e2307bf5eef559ba7170a714423c81ffa15256fd4",
+    "steps": 11,
+    "steps_detail": [
+      [
+        5,
+        49,
+        3,
+        1
+      ],
+      [
+        8,
+        49,
+        3,
+        1
+      ],
+      [
+        12,
+        49,
+        3,
+        1
+      ],
+      [
+        14,
+        49,
+        3,
+        1
+      ],
+      [
+        32,
+        48,
+        2,
+        1
+      ],
+      [
+        33,
+        49,
+        2,
+        1
+      ],
+      [
+        34,
+        48,
+        2,
+        1
+      ],
+      [
+        40,
+        49,
+        2,
+        1
+      ],
+      [
+        42,
+        49,
+        2,
+        1
+      ],
+      [
+        44,
+        48,
+        2,
+        1
+      ],
+      [
+        46,
+        48,
+        2,
+        1
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 0,
+      "2": 7,
+      "3": 4
+    },
+    "initial_missing_paths": 12,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 12,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 33,
+          "path_capacity": 223,
+          "degree": 16
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 33,
+          "path_capacity": 232,
+          "degree": 16
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 34,
+          "path_capacity": 216,
+          "degree": 15
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 33,
+          "path_capacity": 221,
+          "degree": 16
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 33,
+          "path_capacity": 232,
+          "degree": 16
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 34,
+          "path_capacity": 216,
+          "degree": 15
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 33,
+          "path_capacity": 232,
+          "degree": 16
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 34,
+          "path_capacity": 216,
+          "degree": 15
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 33,
+          "path_capacity": 221,
+          "degree": 16
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 37,
+          "path_capacity": 178,
+          "degree": 12
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 35,
+          "path_capacity": 206,
+          "degree": 14
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_z4z4_m6_max_c1.col"
+  },
+  {
+    "source": "../../../artifacts/k50_z4z4_m6.col",
+    "n": 50,
+    "colour": 2,
+    "source_sha256_matrix": "b574e9f9a2b5b3734acec1cb7eebeec1453c157103e3f8118789b2d72ef3f736",
+    "final_sha256_matrix": "3083d10eb7336563152f2f0c7da037bb6da5ec8a5450cf4de59d92dc67bbb639",
+    "steps": 1,
+    "steps_detail": [
+      [
+        36,
+        49,
+        1,
+        2
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 0,
+      "1": 1,
+      "3": 0
+    },
+    "initial_missing_paths": 1,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_z4z4_m6_max_c2.col"
+  },
+  {
+    "source": "../../../artifacts/k50_z4z4_m6.col",
+    "n": 50,
+    "colour": 3,
+    "source_sha256_matrix": "b574e9f9a2b5b3734acec1cb7eebeec1453c157103e3f8118789b2d72ef3f736",
+    "final_sha256_matrix": "24a9c9c8d8bdf3cabf11cf7e055a2a34c1a0797c43c2b3543e72d3807bf9292b",
+    "steps": 4,
+    "steps_detail": [
+      [
+        0,
+        48,
+        1,
+        3
+      ],
+      [
+        2,
+        49,
+        1,
+        3
+      ],
+      [
+        4,
+        48,
+        1,
+        3
+      ],
+      [
+        6,
+        48,
+        1,
+        3
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 0,
+      "1": 4,
+      "2": 0
+    },
+    "initial_missing_paths": 4,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      11,
+      15,
+      11,
+      12
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_z4z4_m6_max_c3.col"
+  },
+  {
+    "source": "../../../artifacts/k50_blockcayley_Z4xZ4_m4.col",
+    "n": 50,
+    "colour": 0,
+    "source_sha256_matrix": "641050295957984af26a50950627992b033d97d7c8dfb682220b0f0475a4babb",
+    "final_sha256_matrix": "aadd8538c9901dd5cab6fac3bf77a7cc060535743d672b69f95c078f0f984d2c",
+    "steps": 8,
+    "steps_detail": [
+      [
+        6,
+        49,
+        2,
+        0
+      ],
+      [
+        15,
+        48,
+        2,
+        0
+      ],
+      [
+        20,
+        48,
+        3,
+        0
+      ],
+      [
+        24,
+        48,
+        3,
+        0
+      ],
+      [
+        25,
+        49,
+        3,
+        0
+      ],
+      [
+        29,
+        49,
+        3,
+        0
+      ],
+      [
+        37,
+        49,
+        1,
+        0
+      ],
+      [
+        44,
+        48,
+        1,
+        0
+      ]
+    ],
+    "old_colours_removed": {
+      "1": 2,
+      "2": 2,
+      "3": 4
+    },
+    "initial_missing_paths": 8,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "final_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 13,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 33,
+          "path_capacity": 222,
+          "degree": 16
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 33,
+          "path_capacity": 222,
+          "degree": 16
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 33,
+          "path_capacity": 222,
+          "degree": 16
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 33,
+          "path_capacity": 222,
+          "degree": 16
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 33,
+          "path_capacity": 222,
+          "degree": 16
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 33,
+          "path_capacity": 222,
+          "degree": 16
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 33,
+          "path_capacity": 228,
+          "degree": 16
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 36,
+          "path_capacity": 192,
+          "degree": 13
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 36,
+          "path_capacity": 192,
+          "degree": 13
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_blockcayley_Z4xZ4_m4_max_c0.col"
+  },
+  {
+    "source": "../../../artifacts/k50_blockcayley_Z4xZ4_m4.col",
+    "n": 50,
+    "colour": 1,
+    "source_sha256_matrix": "641050295957984af26a50950627992b033d97d7c8dfb682220b0f0475a4babb",
+    "final_sha256_matrix": "a1e538d1c195d0a1b3fd008663a84c1ee8a9b5a51638941a06c727231ff48dba",
+    "steps": 6,
+    "steps_detail": [
+      [
+        32,
+        48,
+        0,
+        1
+      ],
+      [
+        33,
+        49,
+        0,
+        1
+      ],
+      [
+        36,
+        49,
+        0,
+        1
+      ],
+      [
+        39,
+        48,
+        0,
+        1
+      ],
+      [
+        45,
+        48,
+        0,
+        1
+      ],
+      [
+        46,
+        49,
+        0,
+        1
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 6,
+      "2": 0,
+      "3": 0
+    },
+    "initial_missing_paths": 6,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "final_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_blockcayley_Z4xZ4_m4_max_c1.col"
+  },
+  {
+    "source": "../../../artifacts/k50_blockcayley_Z4xZ4_m4.col",
+    "n": 50,
+    "colour": 2,
+    "source_sha256_matrix": "641050295957984af26a50950627992b033d97d7c8dfb682220b0f0475a4babb",
+    "final_sha256_matrix": "23a96cf49448b7678a904c7afa12cbc5dffb31efa8da72348edd5e5bf8860192",
+    "steps": 6,
+    "steps_detail": [
+      [
+        4,
+        48,
+        0,
+        2
+      ],
+      [
+        5,
+        49,
+        0,
+        2
+      ],
+      [
+        8,
+        48,
+        0,
+        2
+      ],
+      [
+        9,
+        49,
+        0,
+        2
+      ],
+      [
+        12,
+        48,
+        0,
+        2
+      ],
+      [
+        13,
+        49,
+        0,
+        2
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 6,
+      "1": 0,
+      "3": 0
+    },
+    "initial_missing_paths": 6,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "final_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_blockcayley_Z4xZ4_m4_max_c2.col"
+  },
+  {
+    "source": "../../../artifacts/k50_blockcayley_Z4xZ4_m4.col",
+    "n": 50,
+    "colour": 3,
+    "source_sha256_matrix": "641050295957984af26a50950627992b033d97d7c8dfb682220b0f0475a4babb",
+    "final_sha256_matrix": "cafdc4aea2adabeccae6fcd3d2025ad0901ae07a65a73cb7db260bcfdde3a7bf",
+    "steps": 4,
+    "steps_detail": [
+      [
+        21,
+        48,
+        0,
+        3
+      ],
+      [
+        22,
+        49,
+        0,
+        3
+      ],
+      [
+        28,
+        49,
+        0,
+        3
+      ],
+      [
+        31,
+        48,
+        0,
+        3
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 4,
+      "1": 0,
+      "2": 0
+    },
+    "initial_missing_paths": 4,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "final_root_profile": [
+      15,
+      11,
+      12,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_blockcayley_Z4xZ4_m4_max_c3.col"
+  },
+  {
+    "source": "../../../artifacts/k50_sanity_f2.col",
+    "n": 50,
+    "colour": 0,
+    "source_sha256_matrix": "5595608a6d361c49597640e85c47970076c83cc70817a6ab80396b449127cb53",
+    "final_sha256_matrix": "e6d7e941cdb499c7185bc4dff831da033e583cc9b00de74c02ae4f22e18c7d8b",
+    "steps": 7,
+    "steps_detail": [
+      [
+        0,
+        48,
+        1,
+        0
+      ],
+      [
+        1,
+        49,
+        1,
+        0
+      ],
+      [
+        2,
+        48,
+        1,
+        0
+      ],
+      [
+        3,
+        48,
+        1,
+        0
+      ],
+      [
+        11,
+        49,
+        1,
+        0
+      ],
+      [
+        12,
+        49,
+        1,
+        0
+      ],
+      [
+        15,
+        49,
+        1,
+        0
+      ]
+    ],
+    "old_colours_removed": {
+      "1": 7,
+      "2": 0,
+      "3": 0
+    },
+    "initial_missing_paths": 7,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      12,
+      15,
+      11,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_sanity_f2_max_c0.col"
+  },
+  {
+    "source": "../../../artifacts/k50_sanity_f2.col",
+    "n": 50,
+    "colour": 1,
+    "source_sha256_matrix": "5595608a6d361c49597640e85c47970076c83cc70817a6ab80396b449127cb53",
+    "final_sha256_matrix": "6269b7c52c9019fc45df5ad342be3c88fa058bb14b6100a9d5d2746ba1643785",
+    "steps": 5,
+    "steps_detail": [
+      [
+        13,
+        49,
+        0,
+        1
+      ],
+      [
+        30,
+        49,
+        3,
+        1
+      ],
+      [
+        34,
+        48,
+        2,
+        1
+      ],
+      [
+        46,
+        49,
+        2,
+        1
+      ],
+      [
+        47,
+        49,
+        2,
+        1
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 1,
+      "2": 3,
+      "3": 1
+    },
+    "initial_missing_paths": 5,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 33,
+          "path_capacity": 224,
+          "degree": 16
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 33,
+          "path_capacity": 233,
+          "degree": 16
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 34,
+          "path_capacity": 216,
+          "degree": 15
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 33,
+          "path_capacity": 220,
+          "degree": 16
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 33,
+          "path_capacity": 233,
+          "degree": 16
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 34,
+          "path_capacity": 216,
+          "degree": 15
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 33,
+          "path_capacity": 226,
+          "degree": 16
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 33,
+          "path_capacity": 224,
+          "degree": 16
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 34,
+          "path_capacity": 225,
+          "degree": 15
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 34,
+          "path_capacity": 219,
+          "degree": 15
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 33,
+          "path_capacity": 233,
+          "degree": 16
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 34,
+          "path_capacity": 222,
+          "degree": 15
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 34,
+          "path_capacity": 216,
+          "degree": 15
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 33,
+          "path_capacity": 227,
+          "degree": 16
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 38,
+          "path_capacity": 164,
+          "degree": 11
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 34,
+          "path_capacity": 220,
+          "degree": 15
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_sanity_f2_max_c1.col"
+  },
+  {
+    "source": "../../../artifacts/k50_sanity_f2.col",
+    "n": 50,
+    "colour": 2,
+    "source_sha256_matrix": "5595608a6d361c49597640e85c47970076c83cc70817a6ab80396b449127cb53",
+    "final_sha256_matrix": "a1da187971fd3ce7cb8912e072446e489338c96f7adef83afeb90d6111af47b5",
+    "steps": 5,
+    "steps_detail": [
+      [
+        32,
+        48,
+        1,
+        2
+      ],
+      [
+        33,
+        48,
+        1,
+        2
+      ],
+      [
+        35,
+        49,
+        1,
+        2
+      ],
+      [
+        41,
+        49,
+        1,
+        2
+      ],
+      [
+        45,
+        49,
+        1,
+        2
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 0,
+      "1": 5,
+      "3": 0
+    },
+    "initial_missing_paths": 5,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_sanity_f2_max_c2.col"
+  },
+  {
+    "source": "../../../artifacts/k50_sanity_f2.col",
+    "n": 50,
+    "colour": 3,
+    "source_sha256_matrix": "5595608a6d361c49597640e85c47970076c83cc70817a6ab80396b449127cb53",
+    "final_sha256_matrix": "32399321e2790f9e3a7b16fc3bce063cc5fa78ca3796f35bc2048dee1e98d31e",
+    "steps": 7,
+    "steps_detail": [
+      [
+        16,
+        48,
+        1,
+        3
+      ],
+      [
+        17,
+        48,
+        1,
+        3
+      ],
+      [
+        18,
+        48,
+        1,
+        3
+      ],
+      [
+        19,
+        48,
+        1,
+        3
+      ],
+      [
+        24,
+        49,
+        1,
+        3
+      ],
+      [
+        28,
+        49,
+        1,
+        3
+      ],
+      [
+        29,
+        49,
+        1,
+        3
+      ]
+    ],
+    "old_colours_removed": {
+      "0": 0,
+      "1": 7,
+      "2": 0
+    },
+    "initial_missing_paths": 7,
+    "final_missing_paths": 0,
+    "source_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "final_root_profile": [
+      11,
+      16,
+      11,
+      11
+    ],
+    "incidence": {
+      "minimum_c_degree": 11,
+      "maximum_c_degree": 16,
+      "cap": 16,
+      "global_min_degree_bound_valid": true,
+      "rows": [
+        {
+          "vertex": 0,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 1,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 2,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 3,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 4,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 5,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 6,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 7,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 8,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 9,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 10,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 11,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 12,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 13,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 14,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 15,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 16,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 17,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 18,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 19,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 20,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 21,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 22,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 23,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 24,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 25,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 26,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 27,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 28,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 29,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 30,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 31,
+          "nonneighbours": 37,
+          "path_capacity": 130,
+          "degree": 12
+        },
+        {
+          "vertex": 32,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 33,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 34,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 35,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 36,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 37,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 38,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 39,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 40,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 41,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 42,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 43,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 44,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 45,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 46,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 47,
+          "nonneighbours": 38,
+          "path_capacity": 115,
+          "degree": 11
+        },
+        {
+          "vertex": 48,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        },
+        {
+          "vertex": 49,
+          "nonneighbours": 33,
+          "path_capacity": 176,
+          "degree": 16
+        }
+      ]
+    },
+    "output": "artifact_outputs/k50_sanity_f2_max_c3.col"
+  },
+  {
+    "file": "../../../artifacts/k51_relax_m3_1defect_NOT_a_valid_colouring.col",
+    "n": 51,
+    "valid": false,
+    "triangles_first": [
+      [
+        48,
+        49,
+        50,
+        1
+      ]
+    ],
+    "note": "invalid near-colouring: not used for closure validation"
+  }
+]

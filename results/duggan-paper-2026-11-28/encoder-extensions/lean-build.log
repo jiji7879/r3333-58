@@ -1,0 +1,4 @@
+'K58.EncoderExtensions.legacy_atLeastCNF_not_native' does not depend on any axioms
+'K58.EncoderExtensions.satisfiable_nativeAtLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.EncoderExtensions.satisfiable_guardedAtLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.EncoderExtensions.satisfiable_supportFamily' depends on axioms: [propext, Classical.choice, Quot.sound]

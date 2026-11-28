@@ -1,0 +1,24 @@
+[
+  {
+    "n": 51,
+    "physical_variables": 5100,
+    "base_clauses": 92225,
+    "full_mcf_auxiliary_variables": 62475,
+    "full_mcf_extra_clauses": 188700,
+    "full_mcf_variables": 67575,
+    "full_mcf_total_clauses": 280925,
+    "long_obligation_clauses": 1275,
+    "long_obligation_clause_length": 50
+  },
+  {
+    "n": 58,
+    "physical_variables": 6612,
+    "base_clauses": 134995,
+    "full_mcf_auxiliary_variables": 92568,
+    "full_mcf_extra_clauses": 279357,
+    "full_mcf_variables": 99180,
+    "full_mcf_total_clauses": 414352,
+    "long_obligation_clauses": 1653,
+    "long_obligation_clause_length": 57
+  }
+]

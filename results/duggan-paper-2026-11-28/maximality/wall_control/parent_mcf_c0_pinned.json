@@ -1,0 +1,28 @@
+{
+  "parent": "wall_control/parent.cnf",
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "output": "wall_control/parent_mcf_c0_pinned.cnf",
+  "output_sha256": "fe942f823072d313bfd9b992611d05643128432cd8099a3e1f81d2739c1dd5d3",
+  "parent_variables": 19533,
+  "parent_clauses": 184335,
+  "mcf_colour": 0,
+  "order": 58,
+  "pinned_only": true,
+  "mcf_scope": "partial_unresolved_pinned_obligations",
+  "retained_obligations": 45,
+  "fresh_auxiliary_variables": 2520,
+  "output_variables": 22053,
+  "extra_clauses": 7605,
+  "output_clauses": 191940,
+  "static_physical_only_not_a_verdict": {
+    "physical_variables": 6612,
+    "physically_assigned_literals_after_limited_BCP": 1813,
+    "physical_BCP_rounds": 2,
+    "fixed_c_edges": 87,
+    "fixed_non_c_obligations": 309,
+    "forced_witness_present": 264,
+    "no_witness_possible": 0,
+    "unresolved_pinned_obligations": 45,
+    "edge_colour_unassigned": 1257
+  }
+}

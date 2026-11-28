@@ -1,0 +1,38 @@
+[
+  {
+    "conflict_budget": 20000,
+    "engine": "Cadical195 via python-sat",
+    "proof_logging": false,
+    "pysat_version": "1.9.dev22",
+    "scope": "single historical full_root rank 1300; one capped seed; no speedup or closure claim",
+    "search_and_bootstrap_process_cpu_seconds": 1.398088868,
+    "seed": 0,
+    "sha256": "fe9de879d99b320c57c7d90582842a532a045da9c3d90c8df5880d96498eb9af",
+    "stats": {
+      "conflicts": 20001,
+      "decisions": 53681,
+      "propagations": 4424839,
+      "restarts": 1350
+    },
+    "status": "OPEN",
+    "style": "naive"
+  },
+  {
+    "conflict_budget": 20000,
+    "engine": "Cadical195 via python-sat",
+    "proof_logging": false,
+    "pysat_version": "1.9.dev22",
+    "scope": "single historical full_root rank 1300; one capped seed; no speedup or closure claim",
+    "search_and_bootstrap_process_cpu_seconds": 1.458015812,
+    "seed": 0,
+    "sha256": "8a054217a84fd3b995cc371fc795b2422ea6eb7f60d0336cad2ed567b499a277",
+    "stats": {
+      "conflicts": 20001,
+      "decisions": 51735,
+      "propagations": 5382933,
+      "restarts": 1237
+    },
+    "status": "OPEN",
+    "style": "boundary"
+  }
+]

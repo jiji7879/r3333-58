@@ -1,0 +1,17 @@
+{
+  "round": 80,
+  "base_variables": 5100,
+  "base_clauses": 92225,
+  "active_unit_pins": 1195,
+  "unpinned_edges": 80,
+  "raw_drat_bytes": 21112,
+  "normalized_drat_bytes": 17856,
+  "raw_deletion_commands_removed": 814,
+  "addition_commands_preserved": 4470,
+  "solver_exit": 20,
+  "checker_exit": 0,
+  "strict_verified": true,
+  "wrong_parent_exit": 1,
+  "wrong_parent_rejected": true,
+  "scope": "only this frozen 1195-pin branch; not base K51 UNSAT"
+}

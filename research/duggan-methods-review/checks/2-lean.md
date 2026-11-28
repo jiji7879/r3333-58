@@ -1,0 +1,1 @@
+Ran LEAN_PATH="$PWD/lean:$LEAN_PATH" lean -j1 -o work/LinkSaturation.olean work/LinkSaturation.lean in the member directory. Both #print axioms outputs are [propext, Classical.choice, Quot.sound]. The file proves saturation for each representative template and explicitly does not prove K58.Classified.

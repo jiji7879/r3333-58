@@ -42,6 +42,9 @@ import K58.ArmLayer
 import K58.PlacementsIneq
 import K58.SixCycle
 import K58.PBRoot
+import K58.LinkSaturation
+import K58.FullVertexBudget
+import K58.EncoderExtensions
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -415,3 +418,14 @@ import K58.PBRoot
 #print axioms K58.pb_two_colour_card_le_five
 #print axioms K58.pb_card_le_five_of_avoids
 #print axioms K58.pb_root_blue_degree
+
+-- Duggan-paper method review, independently accepted finite artifacts.
+#print axioms K58.template_alternativeClosed_15
+#print axioms K58.template_alternativeClosed_16
+#print axioms k58_root_margin
+#print axioms k58_total_deficit_lower
+#print axioms k3_naive_phi
+#print axioms K58.EncoderExtensions.legacy_atLeastCNF_not_native
+#print axioms K58.EncoderExtensions.satisfiable_nativeAtLeast
+#print axioms K58.EncoderExtensions.satisfiable_guardedAtLeast
+#print axioms K58.EncoderExtensions.satisfiable_supportFamily

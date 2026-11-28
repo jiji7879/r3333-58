@@ -1,0 +1,184 @@
+{
+  "K58_arithmetic": {
+    "full_vertices_forced_by_58_minus_phi": 0,
+    "min_degree_moment": 180,
+    "min_margin_after_e_min_upper_120": 60,
+    "per_degree": [
+      {
+        "29d_minus_d2": 180,
+        "Caro_Wei_L": 53,
+        "d": 9,
+        "m": 48,
+        "minus_120": 60
+      },
+      {
+        "29d_minus_d2": 190,
+        "Caro_Wei_L": 51,
+        "d": 10,
+        "m": 47,
+        "minus_120": 70
+      },
+      {
+        "29d_minus_d2": 198,
+        "Caro_Wei_L": 48,
+        "d": 11,
+        "m": 46,
+        "minus_120": 78
+      },
+      {
+        "29d_minus_d2": 204,
+        "Caro_Wei_L": 45,
+        "d": 12,
+        "m": 45,
+        "minus_120": 84
+      },
+      {
+        "29d_minus_d2": 208,
+        "Caro_Wei_L": 43,
+        "d": 13,
+        "m": 44,
+        "minus_120": 88
+      },
+      {
+        "29d_minus_d2": 210,
+        "Caro_Wei_L": 41,
+        "d": 14,
+        "m": 43,
+        "minus_120": 90
+      },
+      {
+        "29d_minus_d2": 210,
+        "Caro_Wei_L": 38,
+        "d": 15,
+        "m": 42,
+        "minus_120": 90
+      },
+      {
+        "29d_minus_d2": 208,
+        "Caro_Wei_L": 36,
+        "d": 16,
+        "m": 41,
+        "minus_120": 88
+      }
+    ],
+    "phi_lower_bound_each_colour": 3480
+  },
+  "constructive_catalogue_bound": {
+    "components_checked": [
+      [
+        "k16_link_U_m5.col",
+        0,
+        16
+      ],
+      [
+        "k16_link_U_m5.col",
+        1,
+        16
+      ],
+      [
+        "k16_link_U_m5.col",
+        2,
+        16
+      ],
+      [
+        "k16_link_T_m5.col",
+        0,
+        16
+      ],
+      [
+        "k16_link_T_m5.col",
+        1,
+        16
+      ],
+      [
+        "k16_link_T_m5.col",
+        2,
+        16
+      ]
+    ],
+    "construction": "3 disjoint K16-link colour-0 Clebsch graphs",
+    "e_3_16_m_upper_for_41_to_48": 120,
+    "edges": 120,
+    "independence_at_most": 15,
+    "vertices": 48
+  },
+  "repository_artifact_checks": {
+    "k49_from_n48_m5.col": {
+      "corrected_pair_union_identities": 294,
+      "max_internal_H1_edges_in_pair_union": 178,
+      "minimum_H2_Caro_Wei_slack": 110,
+      "n": 49,
+      "pair_union_roots_where_paper_form_fails": 294,
+      "phi_lower_bounds_by_colour_using_e_min_le_120": [
+        1032,
+        1384,
+        1384,
+        1384
+      ],
+      "single_colour_identities": 196
+    },
+    "k50_blockcayley_Z4xZ4_m4.col": {
+      "corrected_pair_union_identities": 300,
+      "max_internal_H1_edges_in_pair_union": 178,
+      "minimum_H2_Caro_Wei_slack": 94,
+      "n": 50,
+      "pair_union_roots_where_paper_form_fails": 300,
+      "phi_lower_bounds_by_colour_using_e_min_le_120": [
+        1392,
+        1724,
+        1724,
+        1724
+      ],
+      "single_colour_identities": 200
+    },
+    "k50_sanity_f2.col": {
+      "corrected_pair_union_identities": 300,
+      "max_internal_H1_edges_in_pair_union": 178,
+      "minimum_H2_Caro_Wei_slack": 94,
+      "n": 50,
+      "pair_union_roots_where_paper_form_fails": 300,
+      "phi_lower_bounds_by_colour_using_e_min_le_120": [
+        1722,
+        1390,
+        1724,
+        1722
+      ],
+      "single_colour_identities": 200
+    },
+    "k50_z4z4_m6.col": {
+      "corrected_pair_union_identities": 300,
+      "max_internal_H1_edges_in_pair_union": 211,
+      "minimum_H2_Caro_Wei_slack": 76,
+      "n": 50,
+      "pair_union_roots_where_paper_form_fails": 300,
+      "phi_lower_bounds_by_colour_using_e_min_le_120": [
+        1720,
+        1384,
+        1716,
+        1722
+      ],
+      "single_colour_identities": 200
+    },
+    "n48_z4z4_f0.col": {
+      "corrected_pair_union_identities": 288,
+      "max_internal_H1_edges_in_pair_union": 165,
+      "minimum_H2_Caro_Wei_slack": 114,
+      "n": 48,
+      "pair_union_roots_where_paper_form_fails": 288,
+      "phi_lower_bounds_by_colour_using_e_min_le_120": [
+        720,
+        1056,
+        1056,
+        1056
+      ],
+      "single_colour_identities": 192
+    }
+  },
+  "small_graph_exhaustion": {
+    "K3_naive_phi": -3,
+    "graphs_orders_2_to_5": 1098,
+    "naive_identity_failures": 2474,
+    "root_identities": 5404,
+    "triangle_free_graphs": 438
+  }
+}

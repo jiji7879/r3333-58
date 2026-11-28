@@ -1,0 +1,10 @@
+{
+  "n": 10,
+  "physical_variables": 180,
+  "base_clauses": 795,
+  "mcf_variables": 540,
+  "mcf_auxiliary_variables": 360,
+  "mcf_extra_clauses": 1125,
+  "long_MCF_clauses": 45,
+  "long_MCF_clause_length": 9
+}

@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "scope": "encoding extension controls only; no UNSAT or wall claim",
+  "counters": {
+    "pysat_version": "1.9.dev25",
+    "exact_formulas": 52,
+    "exact_clauses": 668,
+    "positive_extensions": 1208,
+    "exhaustive_false_guard_rejections": 128,
+    "legacy_flip_all_mismatches": 28,
+    "legacy_flip_all_differs_from_native": true,
+    "legacy_example": {
+      "n": 3,
+      "bound": 2,
+      "native": [
+        [
+          1,
+          5
+        ],
+        [
+          -5,
+          6
+        ],
+        [
+          2,
+          -5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          -6
+        ]
+      ],
+      "legacy_flip_all": [
+        [
+          1,
+          -5
+        ],
+        [
+          5,
+          -6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          -6
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "real_candidate": {
+      "vertex": 2,
+      "needed": 14,
+      "candidate_count": 41,
+      "guard": 6614,
+      "clauses": 743,
+      "auxiliary_top": 6992,
+      "exact_lean_match": true
+    }
+  },
+  "support": {
+    "guard": 6614,
+    "selector_count": 112,
+    "first_selector": 6993,
+    "last_selector": 7104,
+    "emitted_clauses": 1793,
+    "full_learn_clause_count": 1793,
+    "emitted_sha256": "1dbd5c07225860d950d5f50874891873d00fbdd0d94e2480e40508409d3b7637",
+    "full_sha256": "1dbd5c07225860d950d5f50874891873d00fbdd0d94e2480e40508409d3b7637",
+    "contiguous_counter_support_clauses": 2536,
+    "contiguous_counter_support_sha256": "112685ff3df8cbc08d8bea31d5988774b61c19a854ea1b5ecfaead9eecb73e29",
+    "actual_equals_independent_regeneration": true,
+    "emitted_is_exact_subset_of_proved_full_family": true,
+    "joint_counter_support_extension_accepted": true,
+    "wrong_selector_rejected": true,
+    "false_guard_extension_accepted": true,
+    "invalid_true_guard_selector_rejections": 112
+  },
+  "real_case": {
+    "family": {
+      "profile": [
+        16,
+        16,
+        13,
+        12
+      ],
+      "kinds": [
+        "U",
+        "T",
+        "-",
+        "-"
+      ],
+      "arm": 0,
+      "mark_position": 0,
+      "marked_size": 15,
+      "marked_kind": "U",
+      "root_position": 0,
+      "indices": [
+        0,
+        0,
+        0
+      ]
+    },
+    "fixed_units": 438,
+    "fixed_sha256": "b59d15b076d894d0230a4d8e43e52593e3bea04d6f33dfd19a5675f66b0da470"
+  }
+}

@@ -1,0 +1,44 @@
+
+s VERIFIED
+
+c WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 16 0
+REJECTED proof receipt: warning present
+
+s VERIFIED
+STRICT EMPTY-ADDITION CHECK=PASS
+{"clauses_checked": 114, "solution": "exhaustive/solution_baseline_n5.sol", "verified_colouring": "exhaustive/solution_baseline_n5.sol.col", "triangles": 0, "maximal_colour": null, "missing_paths": null}
+{"clauses_checked": 795, "solution": "unpinned/solution_baseline_n10.sol", "verified_colouring": "unpinned/solution_baseline_n10.sol.col", "triangles": 0, "maximal_colour": null, "missing_paths": null}
+{"clauses_checked": 1920, "solution": "unpinned/solution_mcf_n10.sol", "verified_colouring": "unpinned/solution_mcf_n10.sol.col", "triangles": 0, "maximal_colour": 0, "missing_paths": 0}
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 50 vertices, 4 colours, no monochromatic triangle
+VALID: 40 vertices, 4 colours, no monochromatic triangle
+VALID: 40 vertices, 4 colours, no monochromatic triangle
+no counterexample found in requested scan
+no counterexample found in requested scan
+wall=0.52 user=0.50 sys=0.01 rss_kb=41456 exit=0
+wall=1.55 user=1.52 sys=0.02 rss_kb=90320 exit=0
+wall=0.51 user=0.50 sys=0.01 rss_kb=41232 exit=0
+wall_control/baseline_10k.log
+c conflicts:                 10000     20509.20    per second
+c decisions:                122355    250940.35    per second
+c propagations:            3375033         6.92 M  per second
+wall_control/mcf_c0_10k.log
+c conflicts:                 10003      6801.19    per second
+c decisions:                 72446     49257.12    per second
+c propagations:           22448916        15.26 M  per second
+wall_control/mcf_c0_pinned_10k.log
+c conflicts:                 10000     20846.67    per second
+c decisions:                 55692    116099.26    per second
+c propagations:            2892597         6.03 M  per second
+JSON CONTROL ASSERTIONS=PASS
+ALL REPRODUCTION CONTROLS COMPLETE; ALL WALL JOBS REMAIN OPEN AT CAP

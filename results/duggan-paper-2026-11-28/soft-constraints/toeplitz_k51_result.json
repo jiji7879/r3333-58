@@ -1,0 +1,13 @@
+{
+  "n": 51,
+  "k": 4,
+  "variables": 5300,
+  "clauses": 102775,
+  "conflict_cap": 50000,
+  "timeout": 15,
+  "solver_exit": 0,
+  "status": "UNKNOWN",
+  "scope": "literal Toeplitz zebra family only; not K51 base",
+  "no_family_exclusion": true,
+  "no_model": true
+}

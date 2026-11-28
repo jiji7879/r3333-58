@@ -6,11 +6,13 @@ Mixture
 Corollaries
 Arm
 Templates
+LinkSaturation
 Reduction
 ArmPinned
 CNF
 SequentialCounter
 AtLeast
+EncoderExtensions
 Blocked
 Main
 Plans
@@ -76,4 +78,5 @@ ArmLayer
 PlacementsIneq
 SixCycle
 PBRoot
+FullVertexBudget
 Check

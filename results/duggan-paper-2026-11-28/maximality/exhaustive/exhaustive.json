@@ -1,0 +1,75 @@
+{
+  "n": 5,
+  "good_colourings": 542952,
+  "maximal_by_colour": [
+    5886,
+    5886,
+    5886,
+    5886
+  ],
+  "distinct_root_stars": 256,
+  "distinct_root_profiles": 35,
+  "greedy_closures_checked": 5430,
+  "maximal_incidence_vertices_checked": 117720,
+  "maximal_incidence_violations": 0,
+  "global_existence_equivalence": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true
+  },
+  "counterexamples": {
+    "0": {
+      "root_stars_lost_under_same_star_MCF": 81,
+      "four_colour_root_stars_lost": 0,
+      "root_profiles_lost_under_same_profile_MCF": 15,
+      "lost_profiles_with_positive_selected_degree": 0
+    },
+    "1": {
+      "root_stars_lost_under_same_star_MCF": 81,
+      "four_colour_root_stars_lost": 0,
+      "root_profiles_lost_under_same_profile_MCF": 15,
+      "lost_profiles_with_positive_selected_degree": 0
+    },
+    "2": {
+      "root_stars_lost_under_same_star_MCF": 81,
+      "four_colour_root_stars_lost": 0,
+      "root_profiles_lost_under_same_profile_MCF": 15,
+      "lost_profiles_with_positive_selected_degree": 0
+    },
+    "3": {
+      "root_stars_lost_under_same_star_MCF": 81,
+      "four_colour_root_stars_lost": 0,
+      "root_profiles_lost_under_same_profile_MCF": 15,
+      "lost_profiles_with_positive_selected_degree": 0
+    }
+  },
+  "chosen_frozen_control": {
+    "colour": 0,
+    "star": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "source_good_colouring": [
+      1,
+      1,
+      2,
+      3,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "source_profile": [
+      0,
+      2,
+      1,
+      1
+    ],
+    "note": "same-star MCF excludes every completion by exhaustive enumeration"
+  }
+}

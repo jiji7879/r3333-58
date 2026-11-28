@@ -1,0 +1,56 @@
+{
+  "k50_control": {
+    "initial_core": 3,
+    "pins_released": 1,
+    "sat_round": 1,
+    "independent_model_defects": 0
+  },
+  "k51_core20": {
+    "assumption_unsat_rounds": 21,
+    "first_core": 321,
+    "first_released": 65,
+    "core_min": 3,
+    "core_max": 393,
+    "released_before_unknown": 790,
+    "active_at_unknown": 485,
+    "unknown_conflicts": 50003,
+    "rounded_wall_seconds": 1.66,
+    "status": "UNKNOWN_NOT_UNSAT",
+    "valid_k51_model_written": false
+  },
+  "k51_one_pin": {
+    "assumption_unsat_reports": 80,
+    "active_after": 1195,
+    "released": 80,
+    "all_reported_conflicts_zero": true,
+    "only_round80_independently_DRAT_replayed": true
+  },
+  "k51_literal_zebra": {
+    "definition": "x_(i,j),c iff z_(j-i),c (Toeplitz, not circulant)",
+    "variables": 5300,
+    "clauses": 102775,
+    "n4_models_sat_and_brute": 48,
+    "status": "UNKNOWN_NOT_UNSAT",
+    "conflict_cap": 50000,
+    "valid_k51_model_written": false,
+    "family_exclusion_proven": false
+  },
+  "round80_replay": {
+    "round": 80,
+    "base_variables": 5100,
+    "base_clauses": 92225,
+    "active_unit_pins": 1195,
+    "unpinned_edges": 80,
+    "raw_drat_bytes": 21112,
+    "normalized_drat_bytes": 17856,
+    "raw_deletion_commands_removed": 814,
+    "addition_commands_preserved": 4470,
+    "solver_exit": 20,
+    "checker_exit": 0,
+    "strict_verified": true,
+    "wrong_parent_exit": 1,
+    "wrong_parent_rejected": true,
+    "scope": "only this frozen 1195-pin branch; not base K51 UNSAT"
+  },
+  "artifact_sha256": "f9f5b5cb2070b1a92611e100a1c1b669ef12fe63d0fa41c34cd490055721b5dc"
+}

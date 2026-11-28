@@ -1,5 +1,24 @@
 # Hail mary 1: symmetry breaking on the hard cases — sound, and worth 3 %
 
+> **Withdrawn 2026-11-28 (Duggan method review, accepted `smwzxq4fl/m4`).**
+> `hm.py::lex_leader` is existentially vacuous: setting every fresh auxiliary
+> to true satisfies every added comparator clause for every physical colouring.
+> Independently, all 120 non-lex pairs in the 256-pair control were accepted and
+> all 7,404 case-7 additions have a positive fresh literal. Thus the formula did
+> not enforce either strict or non-strict lex order. The 3%/4% numbers below are
+> only solver-trajectory differences, and the conclusions about orbit redundancy
+> and cubes are unsupported. The satisfiable `probe3.py` control tested only half
+> of comparator correctness and cannot detect this defect. This differs from the
+> separate historical strict-lex overconstraint.
+>
+> A corrected, bidirectional stabilizer-lex encoding passed all 256 row pairs,
+> $3\times4096$ small-matrix controls and a strict DRAT control. On the same
+> case-7 bare formula, the corrected 12-pair matching cost about 1.3× the wall
+> time and the corrected 100-pair full rule 2.69×, with 4.75× the propagations;
+> every call remained OPEN. Dynamic SMS was not tested. See
+> `results/duggan-paper-2026-11-28/symmetry/` for the review and receipts.
+> The text below is retained unedited as the historical, superseded report.
+
 The cover's per-case CNF is bare `host(58)` plus pins (`gluing.host` + `units`),
 so it contains every vertex permutation the pin does not destroy. The question was
 whether a *sound* symmetry break could crack a hard case.

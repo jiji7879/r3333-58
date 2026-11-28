@@ -1,0 +1,9 @@
+{
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "tier": "first",
+  "variables": 19533,
+  "clauses": 184335,
+  "bytes": 3493016,
+  "sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "output": "wall_control/parent.cnf"
+}

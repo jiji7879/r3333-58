@@ -1,0 +1,20 @@
+COMMAND: drat-trim one_pin_round80.cnf one_pin_round80_additions.drat -i -U -W -t 60
+
+c turning on binary mode checking
+
+c parsing input formula with 5100 variables and 93420 clauses
+
+c finished parsing, read 17856 bytes from proof file
+
+c UNSAT via unit propagation on the input instance
+
+c 4 of 93420 clauses in core
+
+c 1 of 4471 lemmas in core using 4 resolution steps
+
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+
+s VERIFIED
+
+c verification time: 0.075 seconds
+EXIT: 0

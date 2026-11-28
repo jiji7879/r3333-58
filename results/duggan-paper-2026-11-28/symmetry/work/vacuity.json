@@ -1,0 +1,10 @@
+{
+  "source": "results/hailmary-lex/hm.py::lex_leader",
+  "source_sha256": "6898899fa92a4ffa5fea94b4336300b4bb3529eeee13c2a3ef6e589877a96f79",
+  "n4_comparator_clauses": 23,
+  "n4_every_clause_has_positive_fresh_aux": true,
+  "all_aux_true_extends_every_physical_assignment": true,
+  "case7_sha256": "19c3d42d13d7e7d279daf86f2109aedbde5903a79b6d75b87c49183f38a4f7c3",
+  "case7_added_clauses": 7404,
+  "case7_every_added_clause_has_positive_fresh_aux": true
+}

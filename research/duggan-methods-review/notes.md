@@ -1,0 +1,13 @@
+# Duggan methods review
+
+Baseline: dist/k58-massive-solver.zip SHA-256 cc78f1d9f6f7901615b264c9ceaa3319bd152cd4caccc381a74ed742538bdb6a at repository HEAD 203233c3cab65772e47fd1ea90751402d6ac43c1. Paper SHA-256 58665d3b71e1e5452a6afdd6d8087bfb7df99daf6566263addfc2f1a905109e8.
+
+1. Critical-link saturation (accepted Ultramath m1): every edge/alternative colour in the classified K15/K16 three-colour templates has a common-neighbour witness. Therefore any exact Gauthier–Brown generalisation whose completions are all good cannot retain a gray edge. The claim departs from the two-class classification but does not prove it. Independently replayed 1,800 witnesses and rebuilt pure-kernel representative theorems.
+
+2. Configurable-edge maximal normal form (coordinator): choose a set F of physical edges, no variable of which occurs in the non-host suffix, and one target colour c. Repeatedly recolour a non-c edge of F to c when no global two-edge c-path joins its endpoints. This preserves all non-host clauses with the same auxiliary assignment, preserves triangle freedom, and adds c-paths without deleting existing ones. The final colouring satisfies for every e=(u,v) in F: e is c or some w has uw and vw colour c. Tau with these constraints is therefore equisatisfiable with the original formula. The final assignment uses a witness variable equivalent to the conjunction of the two path edges. No DRAT implication is asserted.
+
+3. The K58 row builder enforces the suffix-disjointness condition mechanically. On row 06861a3df60c it uses 126 free internal edges of small arms 2 and 3 with target colour 0. Exhaustive K4 control: every good 4-colouring, every fixed-edge subset, every target colour, and the union of the other root arms; 807,936 runs passed. Tested augmentation preserves the ordinary CNF body byte-for-byte and adds 21,294 clauses and 7,056 variables.
+
+4. Matched massive-package pilot (one million conflicts, CaDiCaL 1.9.5): original and augmented both OPEN. Original: 2,322,342 decisions, 371,735,517 propagations, 63.300 CPU-s. Augmented: 2,253,100 decisions, 446,260,223 propagations, 63.666 CPU-s. No speedup or closure follows. The additional propagation workload rose by about 20.05%.
+
+5. Current assessment: the new normal form is sound and worth retaining as an encoding experiment, but has not shown solver benefit. Exact gray-edge compression of critical internal links is ruled out. Full-vertex counting, symmetry breaking, guarded counters, adaptive cubing and soft-constraint search remain under review; unreviewed member reports are not established results.

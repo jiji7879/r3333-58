@@ -1,0 +1,10 @@
+6d8ba1209c56038b8f7212716b870f950ad67b1c9d248b1af2cd789f2f8495ec  full_vertex_audit.py
+451ac94a79504d1eb497848618c6165abd567e3a7787e6d8790b150e8d097037  audit-results.json
+d7f10dba6acf0bdd302fc82850dc6ad6a781f07bb5d3632e8a872aca205e2074  FullVertexBudget.lean
+ac68c27f14424d7bbca26670be80b1984a0c7ec1da303a17c794952525e3bfc6  ../../../artifacts/k16_link_U_m5.col
+62d2df39bcfa159a0cfd082316ecec59a3c1f91a8bc267890e65c10d06510016  ../../../artifacts/k16_link_T_m5.col
+d2e59c7877b4c07fc8b8233c639a0525e873c5e7a44d1b7c44b2eae979681078  ../../../artifacts/k50_z4z4_m6.col
+67d0435c883311ea0c91201fd586d84c3009ba9ea20a0f137ba94ac044b8c252  ../../../artifacts/k50_blockcayley_Z4xZ4_m4.col
+8e62c74de3dc64882dcd3f681793a2639c9601550a1007117e9791924535cf01  ../../../artifacts/k50_sanity_f2.col
+b0ebfee6b9b404cc2baf481a6397b7cde3936719ff545c54d518157b61d4c29e  ../../../artifacts/n48_z4z4_f0.col
+7e6b486692278abf018df570734cd2fd712d431fc05c4f64344e79568ccad02d  ../../../artifacts/k49_from_n48_m5.col

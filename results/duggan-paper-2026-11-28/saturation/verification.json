@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "checked_obligations": 1800,
+  "templates": {
+    "16U": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "2": 240
+      }
+    },
+    "16T": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "2": 240
+      }
+    },
+    "15U": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "1": 30,
+        "2": 180
+      }
+    },
+    "15T": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "1": 30,
+        "2": 180
+      }
+    },
+    "16U-link": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "2": 240
+      }
+    },
+    "16T-link": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "2": 240
+      }
+    },
+    "15U-link": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "1": 30,
+        "2": 180
+      }
+    },
+    "15T-link": {
+      "diameter_by_colour": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      },
+      "common_neighbour_histogram": {
+        "1": 30,
+        "2": 180
+      }
+    }
+  }
+}

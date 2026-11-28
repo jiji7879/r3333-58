@@ -1,0 +1,462 @@
+{
+  "vacuity": {
+    "source": "results/hailmary-lex/hm.py::lex_leader",
+    "source_sha256": "6898899fa92a4ffa5fea94b4336300b4bb3529eeee13c2a3ef6e589877a96f79",
+    "n4_comparator_clauses": 23,
+    "n4_every_clause_has_positive_fresh_aux": true,
+    "all_aux_true_extends_every_physical_assignment": true,
+    "case7_sha256": "19c3d42d13d7e7d279daf86f2109aedbde5903a79b6d75b87c49183f38a4f7c3",
+    "case7_added_clauses": 7404,
+    "case7_every_added_clause_has_positive_fresh_aux": true
+  },
+  "validation": {
+    "two_witness_row_pairs_checked": 256,
+    "historical_comparator_nonlex_pairs_accepted": 120,
+    "historical_comparator_first_bad_pair": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "matrices_per_partition": 4096,
+    "integer_sbstar_checks": [
+      {
+        "cells": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "canonical_orbits": 276,
+        "accepted_matrices": 331
+      },
+      {
+        "cells": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "canonical_orbits": 1216,
+        "accepted_matrices": 1376
+      },
+      {
+        "cells": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "canonical_orbits": 816,
+        "accepted_matrices": 816
+      }
+    ]
+  },
+  "certificate": {
+    "solver_exit": 20,
+    "checker_exit": 0,
+    "checker_output": "c turning on binary mode checking\n\nc parsing input formula with 240 variables and 2360 clauses\n\nc finished parsing, read 31120 bytes from proof file\n\nc detected empty clause; start verification via backward checking\n\nc 132 of 2360 clauses in core                            \n\nc 130 of 1672 lemmas in core using 541 resolution steps\n\nc 0 RAT lemmas in core; 15 redundant literals in core lemmas\n\ns VERIFIED\n\nc verification time: 0.040 seconds",
+    "proof_bytes": 31120,
+    "variables": 240,
+    "clauses": 2360,
+    "lex_pairs": 15
+  },
+  "built": [
+    {
+      "case": 7,
+      "mode": "bare",
+      "path": "case7-bare.cnf",
+      "sha256": "3463a594b190c8b16de41143fbbae3ffb2e38b740ab3e9f40fb22d052a223498",
+      "variables": 6612,
+      "clauses": 135333,
+      "lex_pairs": 0,
+      "profile": [
+        16,
+        14,
+        14,
+        13
+      ],
+      "root_kinds": [
+        "T",
+        "-",
+        "-",
+        "-"
+      ],
+      "arm": 0,
+      "charge": 1,
+      "placements": [
+        0,
+        0,
+        0
+      ],
+      "signed_units": 338,
+      "negative_units": 41,
+      "exact_transpositions": 100,
+      "cells": [
+        [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57
+        ]
+      ],
+      "matching_factor": 4096,
+      "generated_group_order": 5309413982208000
+    },
+    {
+      "case": 7,
+      "mode": "historical",
+      "path": "case7-historical.cnf",
+      "sha256": "19c3d42d13d7e7d279daf86f2109aedbde5903a79b6d75b87c49183f38a4f7c3",
+      "variables": 8628,
+      "clauses": 142737,
+      "lex_pairs": 12,
+      "profile": [
+        16,
+        14,
+        14,
+        13
+      ],
+      "root_kinds": [
+        "T",
+        "-",
+        "-",
+        "-"
+      ],
+      "arm": 0,
+      "charge": 1,
+      "placements": [
+        0,
+        0,
+        0
+      ],
+      "signed_units": 338,
+      "negative_units": 41,
+      "exact_transpositions": 100,
+      "cells": [
+        [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57
+        ]
+      ],
+      "matching_factor": 4096,
+      "generated_group_order": 5309413982208000
+    },
+    {
+      "case": 7,
+      "mode": "matching",
+      "path": "case7-matching.cnf",
+      "sha256": "b42b1fe5ef6ad2b2a21f639efef5c381b7deed853dcb9acead4ac569fbfc3f9a",
+      "variables": 8628,
+      "clauses": 159513,
+      "lex_pairs": 12,
+      "profile": [
+        16,
+        14,
+        14,
+        13
+      ],
+      "root_kinds": [
+        "T",
+        "-",
+        "-",
+        "-"
+      ],
+      "arm": 0,
+      "charge": 1,
+      "placements": [
+        0,
+        0,
+        0
+      ],
+      "signed_units": 338,
+      "negative_units": 41,
+      "exact_transpositions": 100,
+      "cells": [
+        [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57
+        ]
+      ],
+      "matching_factor": 4096,
+      "generated_group_order": 5309413982208000
+    },
+    {
+      "case": 7,
+      "mode": "full",
+      "path": "case7-full.cnf",
+      "sha256": "af0afa5292e231af5161c673a133f84e50db20b7412cbfd91efb84d42da3c928",
+      "variables": 23412,
+      "clauses": 336833,
+      "lex_pairs": 100,
+      "profile": [
+        16,
+        14,
+        14,
+        13
+      ],
+      "root_kinds": [
+        "T",
+        "-",
+        "-",
+        "-"
+      ],
+      "arm": 0,
+      "charge": 1,
+      "placements": [
+        0,
+        0,
+        0
+      ],
+      "signed_units": 338,
+      "negative_units": 41,
+      "exact_transpositions": 100,
+      "cells": [
+        [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57
+        ]
+      ],
+      "matching_factor": 4096,
+      "generated_group_order": 5309413982208000
+    }
+  ],
+  "timings": [
+    {
+      "case": 7,
+      "mode": "bare",
+      "seed": 0,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 4.239133215975016,
+      "conflicts": 200001,
+      "propagations": 25747667,
+      "decisions": 2081745,
+      "variables": 6612,
+      "clauses": 135333,
+      "lex_pairs": 0
+    },
+    {
+      "case": 7,
+      "mode": "bare",
+      "seed": 1,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 4.329978112131357,
+      "conflicts": 200000,
+      "propagations": 22985921,
+      "decisions": 1908454,
+      "variables": 6612,
+      "clauses": 135333,
+      "lex_pairs": 0
+    },
+    {
+      "case": 7,
+      "mode": "historical",
+      "seed": 0,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 4.23927738587372,
+      "conflicts": 200000,
+      "propagations": 23946486,
+      "decisions": 1867384,
+      "variables": 8628,
+      "clauses": 142737,
+      "lex_pairs": 12
+    },
+    {
+      "case": 7,
+      "mode": "historical",
+      "seed": 1,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 4.506242242176086,
+      "conflicts": 200000,
+      "propagations": 24006010,
+      "decisions": 1896502,
+      "variables": 8628,
+      "clauses": 142737,
+      "lex_pairs": 12
+    },
+    {
+      "case": 7,
+      "mode": "matching",
+      "seed": 0,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 6.073617632966489,
+      "conflicts": 200001,
+      "propagations": 35960629,
+      "decisions": 2219120,
+      "variables": 8628,
+      "clauses": 159513,
+      "lex_pairs": 12
+    },
+    {
+      "case": 7,
+      "mode": "matching",
+      "seed": 1,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 6.355766547145322,
+      "conflicts": 200000,
+      "propagations": 34669169,
+      "decisions": 2239315,
+      "variables": 8628,
+      "clauses": 159513,
+      "lex_pairs": 12
+    },
+    {
+      "case": 7,
+      "mode": "full",
+      "seed": 0,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 12.488774741999805,
+      "conflicts": 200000,
+      "propagations": 113710925,
+      "decisions": 2091813,
+      "variables": 23412,
+      "clauses": 336833,
+      "lex_pairs": 100
+    },
+    {
+      "case": 7,
+      "mode": "full",
+      "seed": 1,
+      "status": "OPEN",
+      "returncode": 0,
+      "wall_seconds": 13.302647022996098,
+      "conflicts": 200004,
+      "propagations": 117906651,
+      "decisions": 2031610,
+      "variables": 23412,
+      "clauses": 336833,
+      "lex_pairs": 100
+    }
+  ]
+}

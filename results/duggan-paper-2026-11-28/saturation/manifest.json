@@ -1,0 +1,69 @@
+{
+  "format": "link-saturation-v1",
+  "templates": [
+    {
+      "key": "16U",
+      "path": "artifacts/k16_template_U_aut160_m4.col",
+      "sha256": "e1f7c1355b747a7b3198c73913e876d1a91db7886bfcca9fbb7d3a76a61692b4",
+      "order": 16,
+      "colours": 3,
+      "expected_witnesses": 240
+    },
+    {
+      "key": "16T",
+      "path": "artifacts/k16_template_T_aut32_m4.col",
+      "sha256": "05d8c19d1aab174f3ae72d8d44018cb1cda23e554b6abd65561ecaaa54e3c1be",
+      "order": 16,
+      "colours": 3,
+      "expected_witnesses": 240
+    },
+    {
+      "key": "15U",
+      "path": "artifacts/k15_template_Uminus_aut10_m4.col",
+      "sha256": "ca76faa3e3ac97015826081333f885876cc613fcf1d7313e01f40c8b9cdae8fb",
+      "order": 15,
+      "colours": 3,
+      "expected_witnesses": 210
+    },
+    {
+      "key": "15T",
+      "path": "artifacts/k15_template_Tminus_aut2_m4.col",
+      "sha256": "53c1722b4ab8e6cb1fb877bb9019ee8bb21a228ead993a082fea5411f4aa9207",
+      "order": 15,
+      "colours": 3,
+      "expected_witnesses": 210
+    },
+    {
+      "key": "16U-link",
+      "path": "artifacts/k16_link_U_m5.col",
+      "sha256": "ac68c27f14424d7bbca26670be80b1984a0c7ec1da303a17c794952525e3bfc6",
+      "order": 16,
+      "colours": 3,
+      "expected_witnesses": 240
+    },
+    {
+      "key": "16T-link",
+      "path": "artifacts/k16_link_T_m5.col",
+      "sha256": "62d2df39bcfa159a0cfd082316ecec59a3c1f91a8bc267890e65c10d06510016",
+      "order": 16,
+      "colours": 3,
+      "expected_witnesses": 240
+    },
+    {
+      "key": "15U-link",
+      "path": "artifacts/k15_link_Uminus_m5.col",
+      "sha256": "488031305ac8ea0075af4e242b8552a9051af081f7c1f0e940fa84c8aa9c7858",
+      "order": 15,
+      "colours": 3,
+      "expected_witnesses": 210
+    },
+    {
+      "key": "15T-link",
+      "path": "artifacts/k15_link_Tminus_m5.col",
+      "sha256": "eb8a9d49c0935e2bd3f677a50001b5d2c2742cee622be1a504ba2c2164360669",
+      "order": 15,
+      "colours": 3,
+      "expected_witnesses": 210
+    }
+  ]
+}

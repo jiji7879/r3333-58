@@ -1,14 +1,14 @@
 import K58.SequentialCounter
 
 /-!
-# The at-least encoding, exactly as PySAT emits it
+# An auxiliary-sign-renamed at-least encoding
 
-`CardEnc.atleast(lits, bound)` with the default encoding is the staggered
-sequential *at-most* counter applied to the negated literals: verified
-clause-for-clause against `SequentialCounter.counter` for every `n ≤ 9` and
-every bound.  This file records that identification and transports the
-constructor's adequacy lemma across the polarity flip, which is the direction
-`dense.marked_threshold` needs.
+The native `CardEnc.atleast(lits, bound)` applies the staggered sequential
+*at-most* counter to negated inputs while leaving counter-cell literals
+unchanged. This older file instead flips every literal, including counter
+cells. The formulas are related by auxiliary sign renaming, not syntactic
+identity. `K58.EncoderExtensions.nativeAtLeastCNF` is the native,
+hash-exact binding; this file retains and proves adequacy of the renamed form.
 
 Flip a literal's polarity.
 -/
@@ -50,7 +50,7 @@ theorem formulaSat_flip (v : Valuation) (F : CNF) :
   obtain ⟨c', hc', rfl⟩ := List.mem_map.mp hc
   exact clauseSat_flip v c' (h c' hc')
 
-/-- PySAT's `atleast` clause set: the at-most counter on the negations. -/
+/-- An auxiliary-sign-renamed at-least formula; not the native PySAT clause list. -/
 def atLeastCNF (x : Nat → Nat) (n bound top : Nat) : CNF :=
   flipCNF (counter x n (n - bound) top)
 

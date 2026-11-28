@@ -1,0 +1,4 @@
+{"event":"setup","input":"k50_corrupt_guide.col","cadical":"cadical-3.0.1-fa13863","n":50,"k":4,"variables":4900,"clauses":86975,"guide_defects":4,"conflict_cap":2000,"timeout_seconds":5,"deletion_rule":"ceil(percent/100 * current failed-core size), ties by edge then colour"}
+{"event":"round","round":0,"status":"UNSAT_ASSUMPTIONS","active_before":1225,"core_size":3,"removed":1,"active_after":1224,"unpinned_edges":1,"elapsed_seconds":6.8128e-05,"conflicts":0,"decisions":0,"removed_first_edge_colour":[0,1,2],"core_edges_first10":[[0,1,2],[0,10,2],[1,10,2]]}
+{"event":"round","round":1,"status":"SAT","active_edges":1224,"elapsed_seconds":0.000954605,"conflicts":0,"decisions":0,"model_defects":0}
+{"event":"final","status":"SAT","note":"independently re-check model file; no Ramsey claim from this driver"}

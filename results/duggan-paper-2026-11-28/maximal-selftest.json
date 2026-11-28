@@ -1,0 +1,8 @@
+{
+  "order": 4,
+  "good_colourings": 3156,
+  "fixed_assignment_subsets_per_model": 64,
+  "normalisation_runs": 807936,
+  "configurable_edges_processed": 183168,
+  "result": "PASS"
+}

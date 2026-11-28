@@ -1,0 +1,8 @@
+=== ORIGINAL ===
+{"origin": {"kind": "wall", "id": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06", "tier": "first"}, "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae", "variables": 19533, "clauses": 184335, "cuts": 0, "tables": 0, "depth": 0, "leaf_count": 1}
+{"counts": {"OPEN": 1}, "leaves": 1, "origin": {"id": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06", "kind": "wall", "tier": "first"}, "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae", "processed": 1, "status": "OPEN"}
+original_rc=0
+=== AUGMENTED ===
+{"origin": {"kind": "dimacs", "source_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8"}, "parent_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8", "variables": 26589, "clauses": 205629, "cuts": 0, "tables": 0, "depth": 0, "leaf_count": 1}
+{"counts": {"OPEN": 1}, "leaves": 1, "origin": {"kind": "dimacs", "source_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8"}, "parent_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8", "processed": 1, "status": "OPEN"}
+augmented_rc=0
