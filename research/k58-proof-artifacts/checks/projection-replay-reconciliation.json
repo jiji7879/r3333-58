@@ -1,0 +1,62 @@
+{
+  "status": "PASS scoped original-parent refutations",
+  "replays": {
+    "1294": {
+      "source_drat_bytes": 155381768,
+      "source_drat_sha256": "43ea5e256933ad232a7f1f9da5fd790ba538c0c8876696fe6a0c66c6b0fb3d14",
+      "normalized_additions_bytes": 78040124,
+      "parent_cnf_sha256": "f412890f03453fe16da8c735ccd97d875b339da603ed7987e02f81f842952312",
+      "clean_lrat_bytes": 318629024,
+      "clean_lrat_sha256": "7ce0bfd09038e62991ef719a65e2a2384f416d949d92bcab0f3dfd384bd20861",
+      "drat_user_cpu_s": 486.62,
+      "checker_scope": "fresh deletion-free RUP then independent LRAT, unrestricted parent"
+    },
+    "1295": {
+      "source_drat_bytes": 140972662,
+      "source_drat_sha256": "0bb3bbc7810d71a3af7b5b929cf456f49e33ac0d1b5854aa27e92adeae1233ab",
+      "normalized_additions_bytes": 70776472,
+      "parent_cnf_sha256": "f58026d4c2a25efaf04a4deac1320d25331217f01e7750d3af2789e9c8db4d9a",
+      "clean_lrat_bytes": 277172128,
+      "clean_lrat_sha256": "0a3085fd6c00c24c77bd7ee812cdbf6d2fb76978581bfb3f11fe4d49849c64f2",
+      "drat_user_cpu_s": 314.22,
+      "checker_scope": "fresh deletion-free RUP then independent LRAT, unrestricted parent"
+    },
+    "1296": {
+      "source_drat_bytes": 162346866,
+      "source_drat_sha256": "2ba44577aa9de328d164408b05f73863afe9fd9023b1a63eecbd08cdc0524ed9",
+      "normalized_additions_bytes": 81355626,
+      "parent_cnf_sha256": "9c2dcdcf0061eea1a4d70f6ddba3835cba110d35341c94b2ccd69474e48adcd4",
+      "clean_lrat_bytes": 338395996,
+      "clean_lrat_sha256": "353496ac6c32c0ca36324a6dc0e40f401238ab022ebd95cb329a34e4c4b50d44",
+      "drat_user_cpu_s": 466.84,
+      "checker_scope": "fresh deletion-free RUP then independent LRAT, unrestricted parent"
+    },
+    "1300": {
+      "source_drat_bytes": 128638536,
+      "source_drat_sha256": "045d15c2407a402f3b0bd04ce05b4b2f0351fb90ed8480a0e08a138aa774ef51",
+      "normalized_additions_bytes": 64627264,
+      "parent_cnf_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "clean_lrat_bytes": 257114650,
+      "clean_lrat_sha256": "6b0914dc5d884799d9c4fc1cb5673457445f7157bc1333237aac825708338e65",
+      "drat_user_cpu_s": 245.39,
+      "checker_scope": "fresh deletion-free RUP then independent LRAT, unrestricted parent"
+    },
+    "1297": {
+      "additions_bytes": 41393868,
+      "additions_sha256": "26609d9fd2747080c6a96669e7f07584dd2a912b62f1f0d86cdb867d4dd4e9df",
+      "original_parent_sha256": "d75196e6a5445f2035b84777720e99a0c10482fe591f4bb17139b12f744c61a6",
+      "lrat_bytes": 184004360,
+      "lrat_sha256": "f816b6de5e488372754776b7777c1ab55b15edff73342fcb5cb3113c87e36fe0",
+      "source_drat_bytes": 82519178,
+      "source_drat_sha256": "4895c87023ed5b313e2091fcf58064f95ebf6130aec8e708d043c3557e1172bc",
+      "drat_user_cpu_s": 139.388,
+      "checker_scope": "coordinator fresh deletion-free RUP then independent LRAT, unrestricted parent"
+    }
+  },
+  "source_drat_total_bytes": 669859010,
+  "compared_local_models": {
+    "1298": "35-vertex projection only; falsifies 1318 full-parent clauses",
+    "1299": "36-vertex projection only; falsifies 1287 full-parent clauses"
+  },
+  "nonclaim": "No previously unresolved row is closed. These five historical UNSAT parents do not change the Ramsey bound or establish superior performance."
+}

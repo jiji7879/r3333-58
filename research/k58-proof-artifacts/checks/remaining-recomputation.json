@@ -1,0 +1,319 @@
+{
+  "status": "PASS scoped comparison receipt and binding recomputation",
+  "projection_parent_and_binding_hashes": {
+    "1294": {
+      "parent_matches_ledger": true,
+      "projection_matches_binding": true
+    },
+    "1295": {
+      "parent_matches_ledger": true,
+      "projection_matches_binding": true
+    },
+    "1296": {
+      "parent_matches_ledger": true,
+      "projection_matches_binding": true
+    },
+    "1297": {
+      "parent_matches_ledger": true,
+      "projection_matches_binding": true
+    },
+    "1298": {
+      "parent_matches_ledger": true,
+      "projection_matches_binding": true
+    },
+    "1299": {
+      "parent_matches_ledger": true,
+      "projection_matches_binding": true
+    },
+    "1300": {
+      "parent_matches_ledger": true,
+      "projection_matches_binding": true
+    }
+  },
+  "projection_proof_sources": {
+    "1294": {
+      "source_sha256": "43ea5e256933ad232a7f1f9da5fd790ba538c0c8876696fe6a0c66c6b0fb3d14",
+      "source_bytes": 155381768,
+      "projection_query_sha256": "28dba9b6ff6d5839cd9c8b4ddcfa17e3626c40a0450f0f43d28d78cd61a772e3",
+      "original_parent_sha256": "f412890f03453fe16da8c735ccd97d875b339da603ed7987e02f81f842952312",
+      "scope": "local solver query, unrestricted-parent final refutation"
+    },
+    "1295": {
+      "source_sha256": "0bb3bbc7810d71a3af7b5b929cf456f49e33ac0d1b5854aa27e92adeae1233ab",
+      "source_bytes": 140972662,
+      "projection_query_sha256": "4c6d81d2885112c0c333a17c4033ca69f233118e7e61839483e346f1ef4b3815",
+      "original_parent_sha256": "f58026d4c2a25efaf04a4deac1320d25331217f01e7750d3af2789e9c8db4d9a",
+      "scope": "local solver query, unrestricted-parent final refutation"
+    },
+    "1296": {
+      "source_sha256": "2ba44577aa9de328d164408b05f73863afe9fd9023b1a63eecbd08cdc0524ed9",
+      "source_bytes": 162346866,
+      "projection_query_sha256": "ebfc5058ec54faec465b7f1e4b439b1e79ecf42c19bdd71b4ceeec0ac6c93f3b",
+      "original_parent_sha256": "9c2dcdcf0061eea1a4d70f6ddba3835cba110d35341c94b2ccd69474e48adcd4",
+      "scope": "local solver query, unrestricted-parent final refutation"
+    },
+    "1297": {
+      "source_sha256": "4895c87023ed5b313e2091fcf58064f95ebf6130aec8e708d043c3557e1172bc",
+      "source_bytes": 82519178,
+      "projection_query_sha256": "47bec565f235b1a91ec3273e603688598b5ab6a9c27abd7927ddc99df7b986ea",
+      "original_parent_sha256": "d75196e6a5445f2035b84777720e99a0c10482fe591f4bb17139b12f744c61a6",
+      "scope": "local solver query, unrestricted-parent final refutation"
+    },
+    "1300": {
+      "source_sha256": "045d15c2407a402f3b0bd04ce05b4b2f0351fb90ed8480a0e08a138aa774ef51",
+      "source_bytes": 128638536,
+      "projection_query_sha256": "4a794c02b99f57166a088da9bae0fd35ad5f37bfcadf107da8e54af30d765662",
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "scope": "local solver query, unrestricted-parent final refutation"
+    }
+  },
+  "comparison_streams": {
+    "A0": {
+      "source_sha256": "613089717130e9b0d63c64193c700be78a37d3513e5263876aec285af8dcc56f",
+      "source_bytes": 49933118,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 134966705,
+      "lrat_sha256": "f88737b535a2926877d755bf9eba74b409d8e80a67774348e65cfdaa913c32e2",
+      "lrat_matches_original_certificate": false,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 23.962321000000003
+      }
+    },
+    "A1": {
+      "source_sha256": "09cbc9d8014565fb8d3c1bfbc8c97e3a032ccbf9ddc67e9e499996db64524023",
+      "source_bytes": 55469910,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 150848396,
+      "lrat_sha256": "c9056e3cf15fc166bd7194c322825d2feb22ca0999da5429dd5933718f7d0fe7",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 28.29727
+      }
+    },
+    "B0": {
+      "source_sha256": "d06d3228590af32f730ac04172982e74c2b6a4094448a9bfefff67d1ef49b941",
+      "source_bytes": 53951356,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 145485354,
+      "lrat_sha256": "303f14d1117447ee373c59ad2d96ef156a79d1d34fd8014616498a0ecbfe0435",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 26.258061
+      }
+    },
+    "B1": {
+      "source_sha256": "9f588d2e1f8358c8d1ffac151bdc6b75c3bd21e509eb71fcde5cba45ce751109",
+      "source_bytes": 47612138,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 136695546,
+      "lrat_sha256": "5374bfd76b003c0608c1a3f6e52bf7ab7e8a01093a51eedf696ddeae36cfa29b",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 24.245996
+      }
+    },
+    "C0": {
+      "source_sha256": "dc63b418f867ed27e76cefc3079900373097e8302d3d96c8c24f1eb0c130bd48",
+      "source_bytes": 44850496,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 128010917,
+      "lrat_sha256": "8baca221c77c39a2f5ff368b68ef58678bc7fa9da7cfff74ebe55ceba5d3ce90",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 21.741644
+      }
+    },
+    "C1": {
+      "source_sha256": "4aee375e2b3d7ab1399fb8ed370b48adc7e3f423b4d72731ae4cbbaab1782ccd",
+      "source_bytes": 48611076,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 135280439,
+      "lrat_sha256": "4cd52c55f5aef7b77434428b3e61d9a92586d7879cecde065798b8223ca64782",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 23.984896999999997
+      }
+    },
+    "D0": {
+      "source_sha256": "63f55d24f6bfead78252736a6afbf7515b817103c9fa562a68ea93623b3903c9",
+      "source_bytes": 41320554,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 119331147,
+      "lrat_sha256": "daec5411bf547a221dbfe8019934515912ccc58d3f0034bf74cc2ee34369828d",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 20.062825
+      }
+    },
+    "D1": {
+      "source_sha256": "2287699f914685495f52d382fb4b3b479bebcd7a950cf401a68f3a4fc312665c",
+      "source_bytes": 46407458,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 132922493,
+      "lrat_sha256": "1f0ec38926b4eb1c206192f832bf8c14adcf1564bfec077d5833fab6b9a0a096",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 23.179085
+      }
+    },
+    "K0": {
+      "source_sha256": "ac301561eba68fb9c5d6b93f19a28a3ac71f11f8c0ea3d9afbb3df15d59bae5c",
+      "source_bytes": 81570944,
+      "original_parent_sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837",
+      "lrat_bytes": 135599166,
+      "lrat_sha256": "b535da936bd728ab541191263463d6e9c4c6cce74b97da0fa048f71c8d2914bf",
+      "lrat_matches_original_certificate": true,
+      "fresh_lrat_check": "PASS",
+      "full_binary_parse": "PASS",
+      "terminal_empty_clauses": 1,
+      "rat_hints": 0,
+      "strict_W_conversion": {
+        "rc": 80,
+        "accepted": false
+      },
+      "accepted_conversion": {
+        "no_w": true,
+        "warning_count": 0,
+        "cpu_s": 45.456479
+      }
+    }
+  },
+  "core_comparison": {
+    "old": {
+      "clauses": 5245,
+      "sha256": "1556ad5d6909b1ca57e27cd3f6ef67447f99510cd98b457052f4da7149a7b5ac"
+    },
+    "new_A0_and_K": {
+      "clauses": 5250,
+      "sha256": "5f4d62aa81757098093d988c9914ae35642d7aa9f77df4c7fef49b41043cf8e0"
+    },
+    "exact_literal_line_intersection": 4359,
+    "canonical_clause_intersection": 5094,
+    "exact_old_only": 886,
+    "canonical_old_only": 151,
+    "exact_A0_only": 891,
+    "canonical_A0_only": 156,
+    "explanation": "The old 1.9.5 and new 2.1.2 proofs have different backward cores; the 4,359 versus 5,094 values are exact-line versus literal-order-normalized intersections."
+  },
+  "performance_recomputation": {
+    "A": {
+      "conflicts": 1845186,
+      "receipt_cpu_s": 218.03295,
+      "raw_drat_bytes_log": 190090051
+    },
+    "B": {
+      "conflicts": 1897464,
+      "receipt_cpu_s": 194.824858,
+      "raw_drat_bytes_log": 191173690,
+      "percent": {
+        "conflicts": 2.833210310505274,
+        "receipt_cpu_s": -10.644304908959857,
+        "raw_drat_bytes_log": 0.5700661314463007
+      }
+    },
+    "C": {
+      "conflicts": 1752372,
+      "receipt_cpu_s": 205.27540899999997,
+      "raw_drat_bytes_log": 176859580,
+      "percent": {
+        "conflicts": -5.030062010008751,
+        "receipt_cpu_s": -5.851198637637123,
+        "raw_drat_bytes_log": -6.960107028431484
+      }
+    },
+    "D": {
+      "conflicts": 1680786,
+      "receipt_cpu_s": 200.611902,
+      "raw_drat_bytes_log": 167306123,
+      "percent": {
+        "conflicts": -8.90967089496668,
+        "receipt_cpu_s": -7.99009874424944,
+        "raw_drat_bytes_log": -11.985860322589946
+      }
+    },
+    "overhead_scope": "Two seeds, one historical rank-1300 row. Baseline solve+trim+selection is 196.492309 mixed CPU/wall seconds (not a cold wall estimate), versus 17.421048 measured CPU seconds saved on two repeated D solves; extraction and full checking are not fully priced. No amortized or cohort-wide win follows."
+  },
+  "not_a_second_full_replay": "Coordinator used members full native streams plus own prior A0/C0/D0/K0/P13000 replays; the other streams are receipt-and-byte audits here.",
+  "chief_metadata_defect": "A0 native trim is listed under convert_to_lrat_wall_s; do not sum these fields uniformly.",
+  "no_scope_expansion": "No unresolved wall profile, SAT extension, overall cohort speedup, or Ramsey-bound change follows."
+}

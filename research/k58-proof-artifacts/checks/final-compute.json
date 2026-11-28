@@ -1,0 +1,70 @@
+{
+  "status": "PASS scoped aggregate consistency",
+  "spoke_native_PASS": 8,
+  "spoke_no_helper_expected_FAIL": 8,
+  "mined_transfer_bindings": 7,
+  "mined_native_receipts_TOTAL_PASS_FAIL": [
+    148,
+    137,
+    11
+  ],
+  "comparison_SOURCE_LRAT_BYTES": [
+    419793932.0,
+    1084173458.0
+  ],
+  "projection_RAW_ADDITION_LRAT_BYTES": [
+    669859010,
+    336193354,
+    1375316158
+  ],
+  "projection_kinds_corrected": {
+    "1294": "TTT-",
+    "1295": "TTT-",
+    "1296": "TTT-",
+    "1297": "TTT-",
+    "1298": "TTU-",
+    "1299": "TTT-",
+    "1300": "TTT-"
+  },
+  "local_model_parent_falsifications": {
+    "1298": 1318,
+    "1299": 1287
+  },
+  "D_vs_A_percent": {
+    "conflicts": -8.90967089496668,
+    "receipt_cpu_s": -7.99009874424944,
+    "raw_drat_bytes_log": -11.985860322589946
+  },
+  "P13000_vs_A0": {
+    "conflicts": {
+      "A0": 875852.0,
+      "P13000": 1449682.0,
+      "P13000_minus_A0": 573830.0,
+      "P13000_over_A0": 1.6551677680704047
+    },
+    "solver_cpu_s": {
+      "A0": 108.300309,
+      "P13000": 217.800171,
+      "P13000_minus_A0": 109.49986200000001,
+      "P13000_over_A0": 2.0110761733837714
+    },
+    "native_proof_bytes": {
+      "A0": 90382454.0,
+      "P13000": 128638536.0,
+      "P13000_minus_A0": 38256082.0,
+      "P13000_over_A0": 1.423268901284756
+    }
+  },
+  "core_overlap_exact_vs_canonical": [
+    4359,
+    5094
+  ],
+  "ordinary_wall_cpu": {
+    "base": 21.502271,
+    "added": 25.948904,
+    "delta": 4.4466329999999985,
+    "delta_percent": 20.679829586372513
+  },
+  "not_a_full_replay": "Receipt reconciliation supplements directly executed native spot replays, projection reconstruction and source/hash recomputation; it does not independently repeat every already checked full stream.",
+  "scope": "No new wall closure, full-parent model for ranks 1298/1299, or end-to-end speedup."
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "proof": "P12970",
+  "original_parent_sha256": "d75196e6a5445f2035b84777720e99a0c10482fe591f4bb17139b12f744c61a6",
+  "additions_sha256": "26609d9fd2747080c6a96669e7f07584dd2a912b62f1f0d86cdb867d4dd4e9df",
+  "additions_bytes": 41393868,
+  "lrat_sha256": "f816b6de5e488372754776b7777c1ab55b15edff73342fcb5cb3113c87e36fe0",
+  "lrat_bytes": 184004360,
+  "gate": "drat-trim -i -W -U -C -L; no -w; then lrat_text | lrat-check",
+  "drat_tail": [
+    "c finished parsing, read 41393868 bytes from proof file",
+    "",
+    "c detected empty clause; start verification via backward checking",
+    "",
+    "c 5543 of 211564 clauses in core                            ",
+    "",
+    "c 613416 of 990219 lemmas in core using 51106940 resolution steps",
+    "",
+    "c 0 RAT lemmas in core; 0 redundant literals in core lemmas",
+    "c wrote optimized proof in LRAT format of 184004360 bytes",
+    "",
+    "s VERIFIED",
+    "",
+    "c verification time: 139.388 seconds"
+  ],
+  "lrat_log": [
+    "c expecting proof in stdin",
+    "c parsed a formula with 29942 variables and 211564 clauses",
+    "c VERIFIED",
+    "c allocated 1024 1428057 299420",
+    "c Added clauses = 824980.  Deleted clauses = 824604.  Max live clauses = 211564",
+    "c verification time = 5.23 secs"
+  ]
+}
