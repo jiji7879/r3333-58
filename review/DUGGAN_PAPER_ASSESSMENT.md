@@ -1,12 +1,12 @@
 # Duggan SAT+CAS methods for $R(3,3,3,3)$
 
-**Status.** Seven independent directions have been accepted after reproduction; the final deep-MCTS review is being completed. **No Ramsey bound, wall row or profile closed.** Everything below uses `dist/k58-massive-solver.zip` as the baseline, not the older stock solver alone.
+**Status.** All eight independent directions were accepted after reproduction; the swarm has ended. **No Ramsey bound, wall row or profile closed.** Everything below uses `dist/k58-massive-solver.zip` as the baseline, not the older stock solver alone.
 
 ## Baseline and sources
 
 * `k58-massive-solver.zip` SHA-256 `cc78f1d9f6f7901615b264c9ceaa3319bd152cd4caccc381a74ed742538bdb6a`, including unified stock/colour/square backends, bounded C&C, strict proof export and content-addressed artifacts.
 * Conor Duggan, [A SAT + Computer Algebra System Verification of the Ramsey Problems R(3,8) and R(3,9)](https://uwaterloo.ca/computational-mathematics/sites/default/files/uploads/documents/research_paper_conor_duggan.pdf), 2024. PDF SHA-256 `58665d3b71e1e5452a6afdd6d8087bfb7df99daf6566263addfc2f1a905109e8`.
-* Accepted reviews: `smwzxq4fl` members m1, m3, m5, m4, m7, m6 and m8. Evidence is collected in `results/duggan-paper-2026-11-28/`.
+* Accepted reviews: all eight directions of `smwzxq4fl`. Evidence is collected in `results/duggan-paper-2026-11-28/`.
 
 ## Outcome at a glance
 
@@ -18,7 +18,7 @@
 | static lex / SAT+CAS / SMS | exact template/stabilizer quotients, plus separate preferred/sorted experiments | The old `hailmary-lex` comparator was vacuous. A corrected stabilizer-lex encoding was much slower on its pilot. Dynamic SMS remains untested and needs frozen-stabilizer permutation witnesses. |
 | unit/zebra soft constraints | local/model searches and verified $K_{50}$ witnesses | Implementable for $K_{51}$ model finding. One corrupted $K_{50}$ guide was repaired, but both informative $K_{51}$ pilots returned UNKNOWN. Nonminimal cores drive bad deletion scales. |
 | certificate separation | strict DRAT replay, parent/model checks and content hashes | **Directly useful:** new pure-kernel native-counter and support-selector extension theorems. The old abstract at-least formula was only auxiliary-sign-equivalent, not syntactically native PySAT. Full-parent assembly remains open. |
-| AlphaMapleSAT / selective re-cubing | bounded greedy C&C and independently checked leaves | Upstream MCTS produced a valid four-leaf cover; all four leaves plus both descendants in the optional re-cubing control stayed OPEN at one million conflicts each. No improvement. |
+| AlphaMapleSAT / selective re-cubing | bounded greedy C&C and independently checked leaves | Duggan's pinned 2024 code is incompatible with the four-colour action layout. Current generic MCTS produced an exact five-leaf wall frontier, all OPEN, and lost end-to-end to greedy on the solvable control. |
 | maximal clique-free constraints | many implied local clauses, but no WLS normal form | A new configurable-edge normal form is sound and passed exhaustive small controls; its million-conflict wall pilot was neutral. Global/pinned MCF is different and generally does not preserve a frozen row. |
 
 ## 1. Guard only the boundary of a conditioned counter
@@ -117,7 +117,11 @@ hence $d_c(v)\ge4$ at $n=51$ or $58$ for that **one normalised colour only**. It
 
 ## 8. AlphaMapleSAT and selective re-cubing
 
-The upstream MCTS implementation generated a complete depth-2 binary cover against the same wall parent. Cubing cost 66.96 s. All four leaves stayed OPEN at one million conflicts each. Selectively re-cubing one child added a valid extra split, but both descendants also stayed OPEN at that cap: six million conflicts across the runs against one million unsplit. Separately, a completed control confirmed all eight greedy/MCTS leaf proofs with warning-fatal DRAT checking. MCTS solving used 12.79 CPU-s plus 102.18 s of cubing, versus 8.84 CPU-s for greedy and sub-second preparation. Neither experiment supports deployment. Selective refinement remains a sensible scheduler feature only after a demonstrably easier partition exists.
+Duggan's pinned 2024 cuber has an interface incompatibility, not just a tuning issue. Its prior array has $58\times57+1=3{,}307$ slots, while K58 needs $2\times6612+1=13{,}225$ signed physical-colour actions. Restricting its pool hit the expected `IndexError`; unrestricted prefix cubing emitted no depth-two cover in 420 seconds. Do not run that binary on this input.
+
+The current generic implementation generated a valid depth-2 wall cover in 66.96 s. All four leaves stayed OPEN at one million conflicts each; selective re-cubing produced two more, also OPEN. The exact remaining frontier has five leaves, not a closure. A completed control then compared identical depth-2 covers: full-rollout MCTS used 284,528 conflicts, 11.282 CPU-s of search and 306.456 s of cubing, versus greedy's 226,881 conflicts, 8.835 CPU-s and 0.720 s preparation. All eleven retained positive replays passed the second checker and the negative controls worked. This is useful proof protocol, but no end-to-end improvement and no support for deployment.
+
+See [MCTS assessment](../results/duggan-paper-2026-11-28/mcts/ASSESSMENT.md), [artifact index](../results/duggan-paper-2026-11-28/mcts/ARTIFACTS.md) and [measured summary](../results/duggan-paper-2026-11-28/mcts/summary.json).
 
 ## Recommended next steps
 

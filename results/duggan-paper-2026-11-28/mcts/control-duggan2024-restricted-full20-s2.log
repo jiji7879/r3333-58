@@ -1,0 +1,22 @@
+Solving the KS system of order  58  with  211713  constraints
+6612 variables will be considered for cubing
+Traceback (most recent call last):
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzxq4fl/m2/ams_tree.py", line 109, in <module>
+    main()
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzxq4fl/m2/ams_tree.py", line 89, in main
+    coach.nolearnMCTS()
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzxq4fl/m2/.scratch/AlphaCube2024/Coach.py", line 169, in nolearnMCTS
+    self.executeEpisode()
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzxq4fl/m2/.scratch/AlphaCube2024/Coach.py", line 129, in executeEpisode
+    board = game.getInitBoard()
+            ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzxq4fl/m2/.scratch/AlphaCube2024/ksgraph/KSGame.py", line 73, in getInitBoard
+    bd = self._make_representation()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzxq4fl/m2/.scratch/AlphaCube2024/ksgraph/KSGame.py", line 65, in _make_representation
+    board.calculate_march_metrics() # initialize the valid literals, prob, and march_var_score_dict
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzxq4fl/m2/.scratch/AlphaCube2024/ksgraph/KSLogicMode0.py", line 80, in calculate_march_metrics
+    prob[l] = march_pos_lit_score_dict[l]
+    ~~~~^^^
+IndexError: list assignment index out of range

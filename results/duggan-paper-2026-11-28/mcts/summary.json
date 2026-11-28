@@ -1,0 +1,74 @@
+{
+  "control": {
+    "case": "0f9ba81047f417888a4c5291b6529e2ebca30f08d0412361e6e86b53b859580d",
+    "full20_mcts": {
+      "conflicts": 284528,
+      "leaves": 4,
+      "search_cpu_s": 11.281778,
+      "search_elapsed_s": 11.33734068623744,
+      "status_counts": {
+        "CHECKED_UNSAT": 4
+      }
+    },
+    "full20_vs_greedy": {
+      "conflict_ratio": 1.2540847404586546,
+      "search_cpu_ratio": 1.2769070850157063
+    },
+    "greedy": {
+      "conflicts": 226881,
+      "leaves": 4,
+      "search_cpu_s": 8.835238,
+      "search_elapsed_s": 8.83715168805793,
+      "status_counts": {
+        "CHECKED_UNSAT": 4
+      }
+    },
+    "shallow_mcts": {
+      "conflicts": 309710,
+      "leaves": 4,
+      "search_cpu_s": 12.788141,
+      "search_elapsed_s": 12.801278215367347,
+      "status_counts": {
+        "CHECKED_UNSAT": 4
+      }
+    }
+  },
+  "cubing": {
+    "control_full20_mcts_s": 306.4564173449762,
+    "control_greedy_prepare_s": 0.72,
+    "control_shallow_mcts_s": 102.18298442382365,
+    "wall_selective_recube_s": 21.541846498847008,
+    "wall_shallow_mcts_s": 66.95670683705248
+  },
+  "schema": "duggan-alphamaplesat-k58-assessment/v1",
+  "wall": {
+    "greedy": {
+      "conflicts": 4000003,
+      "leaves": 4,
+      "search_cpu_s": 272.629,
+      "search_elapsed_s": 272.629,
+      "status_counts": {
+        "OPEN": 4
+      }
+    },
+    "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+    "selective_recube": {
+      "conflicts": 2000006,
+      "leaves": 2,
+      "search_cpu_s": 114.292352,
+      "search_elapsed_s": 114.36784332687967,
+      "status_counts": {
+        "OPEN": 2
+      }
+    },
+    "shallow_mcts": {
+      "conflicts": 4000002,
+      "leaves": 4,
+      "search_cpu_s": 237.20806399999998,
+      "search_elapsed_s": 237.71186830080114,
+      "status_counts": {
+        "OPEN": 4
+      }
+    }
+  }
+}

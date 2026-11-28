@@ -1,0 +1,3 @@
+PROVED #34. The argument was read only by the model that wrote it.
+  self: PASS: final synthesis rechecked against every accepted direction and all open limitations retained
+  compute: PASS: integrated Lean build and every listed reproduction/control complete

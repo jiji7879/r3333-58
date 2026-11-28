@@ -32,3 +32,10 @@
 29. CHECK #28 [model]: PASS: checked the closure, non-joint-maximality, star-covering and profile/colour-label scopes — checks/28-model.md
 30. CHECK #28 [compute]: PASS: complete reproduction passed exhaustive, artifact, strict-proof and matched wall controls — checks/28-compute.md
 - checkpoint after #30: progress
+31. PROVED: Duggan's pinned 2024 cuber has an incompatible prior/action layout for the four-colour K58 formula, and current generic MCTS loses to greedy end-to-end in the completed control while leaving an exact five-leaf OPEN wall frontier — ultramath:smwzxq4fl/m2
+32. CHECK #31 [model]: PASS: independently checked the prior/action dimensions, IndexError scope, exact frontier and end-to-end MCTS comparison — checks/31-model.md
+33. CHECK #31 [compute]: PASS: cover audits, totals, eleven second-checker replays, coordinator eight strict replays and negative controls all pass — checks/31-compute.md
+34. PROVED #1: The completed assessment identifies two actionable encoding/certificate transfers (#11, #24) and precise negative results (#7, #14, #18, #21, #28, #31), with no wall row, profile or Ramsey bound closed — checks/34-review.md
+35. CHECK #34 [self]: PASS: final synthesis rechecked against every accepted direction and all open limitations retained — checks/34-review.md
+36. CHECK #34 [compute]: PASS: integrated Lean build and every listed reproduction/control complete — checks/34-compute.md
+- checkpoint after #36: progress

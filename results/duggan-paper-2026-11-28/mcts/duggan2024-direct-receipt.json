@@ -1,0 +1,26 @@
+{
+  "control_case": "0f9ba81047f417888a4c5291b6529e2ebca30f08d0412361e6e86b53b859580d",
+  "direct_prefix_run": {
+    "candidate_policy": "original unmodified valid_cubing_lits over signed physical prefix 1..6612",
+    "cap_seconds": 420,
+    "cube_file_emitted": false,
+    "emitted_depth": 2,
+    "log": "results/control-duggan2024-full20-s2.log",
+    "log_sha256": "320f588369cbcd29c4f0fce11062e60c327ad79adf36d32e8b109d44c2f6019b",
+    "rollout_extra": 20,
+    "sims": 2,
+    "status": "OPEN_CUBING_TIMEOUT_NOT_A_SAT_OR_UNSAT_RESULT"
+  },
+  "restricted_pool_interface_control": {
+    "action_slots": 13225,
+    "candidate_pool_size": 900,
+    "log": "results/control-duggan2024-restricted-full20-s2.log",
+    "log_sha256": "a5e3aee3c167c7e4b0738c61524c70294db0f4236e1646f49f02f4c0edceca6a",
+    "max_literals": 6612,
+    "order": 58,
+    "prior_slots": 3307,
+    "result": "IndexError in KSLogicMode0.calculate_march_metrics; this is an interface incompatibility, not a Ramsey result"
+  },
+  "schema": "duggan-2024-direct-cubing-controls/v1",
+  "source_commit": "547eb661833d635a81255e444626e2dd6ac2b77a"
+}

@@ -10,6 +10,26 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-28 (Duggan paper methods reviewed with k58-massive-solver as baseline).**
+All eight directions of `smwzxq4fl` were independently accepted; no Ramsey bound,
+wall row or profile closed. The most useful transfers are the native guarded-counter
+and support-selector Lean extension theorems and a semantics-preserving
+conditional-counter encoding: leave Sinz recurrence clauses unguarded and guard
+only overflow clauses. A new configurable-edge maximal-colour normal form passed
+807,936 small controls but was neutral at one million conflicts on the sampled
+wall row. Proven dead ends: preferred-full-vertex catalogues at $K_{58}$ (deficit
+at least 3,480, so no full vertex guaranteed), exact gray-edge generalisations of
+critical links (all singleton), the old `hailmary-lex` comparator (vacuous), and
+Duggan's pinned 2024 MCTS cuber (incompatible prior/action layout). Current MCTS,
+corrected full static lex, full/pinned MCF and direct soft-constraint pilots all
+failed to show material gains. `results/hailmary-lex/README.md` now carries the
+withdrawal. New pure-kernel `LinkSaturation`, `FullVertexBudget` and
+`EncoderExtensions` modules are registered in `lean/K58/Check.lean`; full
+`lean/build.sh` passes. See [the main assessment](review/DUGGAN_PAPER_ASSESSMENT.md)
+and [its checked proof record](research/duggan-methods-review/proof.md).
+The recommended next step is one exact-parent Lean/DIMACS semantic assembly,
+then one small boundary-counter A/B, not a production sweep.
+
 **Updated 2026-11-28 (massive unified frontend; no new closure).**
 A separate `dist/k58-massive-solver.zip` now unifies bounded stock,
 colour and square-plus-colour jobs. Both earlier archives are unchanged.
