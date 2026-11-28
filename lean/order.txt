@@ -3,6 +3,8 @@ ConfigurableMaximal
 TwoColour
 ThreeColour
 DegreeCap
+CAT58
+Attachment
 Mixture
 Corollaries
 Arm

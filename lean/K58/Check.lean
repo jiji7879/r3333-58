@@ -1,4 +1,5 @@
 import K58.Arm
+import K58.Attachment
 import K58.PhysicalBridge
 import K58.Corollaries
 import K58.ExchangeResidue
@@ -457,3 +458,11 @@ import K58.TicketPremises
 #print axioms targetUnit_satisfiable_of_expanded
 #print axioms targetBase_satisfiable_of_realizesKey
 #print axioms targetParent_satisfiable_of_expanded_ready
+
+-- CAT58 and exact attachment bounds; not a wall/profile closure.
+#print axioms K58.card_biUnion_ge_union_bound
+#print axioms K58.exists_pair_large_inter
+#print axioms K58.cat58
+#print axioms K58.card_le_five_of_two_colours
+#print axioms K58.attachment_bound
+#print axioms K58.attachment_colour_ne
