@@ -1,0 +1,247 @@
+{
+  "checks": [
+    {
+      "minor": false,
+      "n": 16,
+      "kind": "U",
+      "count": 96,
+      "exact_ordered_palettes_arm_marked": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "same_set_different_order_palettes_arm_marked": [],
+      "different_set_palettes_arm_marked": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "minor": false,
+      "n": 16,
+      "kind": "T",
+      "count": 112,
+      "exact_ordered_palettes_arm_marked": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "same_set_different_order_palettes_arm_marked": [],
+      "different_set_palettes_arm_marked": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "minor": true,
+      "n": 15,
+      "kind": "U",
+      "count": 71,
+      "exact_ordered_palettes_arm_marked": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "same_set_different_order_palettes_arm_marked": [],
+      "different_set_palettes_arm_marked": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "minor": true,
+      "n": 15,
+      "kind": "T",
+      "count": 83,
+      "exact_ordered_palettes_arm_marked": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "same_set_different_order_palettes_arm_marked": [],
+      "different_set_palettes_arm_marked": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    }
+  ],
+  "interpretation": "Four (arm,marked) palettes share K60's colour-2 ordered masks. The other eight differ as sets and need an explicit colour transport. The retained (0,1) palette matches.",
+  "target_112_equals_allowed_supports_16_T_arm0_marked1_ordered": true,
+  "target_112_equals_upstream_full_T_ordered": true,
+  "target_size_counts": {
+    "4": 96,
+    "5": 16
+  }
+}

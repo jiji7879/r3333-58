@@ -1,0 +1,134 @@
+{
+  "actual": {
+    "encoding_sizes": [
+      {
+        "encodings": {
+          "cardnetwrk": {
+            "aux": 383,
+            "clauses": 575,
+            "literals": 1339,
+            "total_aux": 1532,
+            "total_clauses": 2300,
+            "total_literals": 5356
+          },
+          "kmtotalizer": {
+            "aux": 109,
+            "clauses": 287,
+            "literals": 837,
+            "total_aux": 436,
+            "total_clauses": 1148,
+            "total_literals": 3348
+          },
+          "seqcounter": {
+            "aux": 200,
+            "clauses": 390,
+            "literals": 970,
+            "total_aux": 800,
+            "total_clauses": 1560,
+            "total_literals": 3880
+          },
+          "totalizer": {
+            "aux": 148,
+            "clauses": 584,
+            "literals": 1602,
+            "total_aux": 592,
+            "total_clauses": 2336,
+            "total_literals": 6408
+          }
+        },
+        "k": 10,
+        "multiplicity": 4,
+        "n": 30
+      },
+      {
+        "encodings": {
+          "cardnetwrk": {
+            "aux": 989,
+            "clauses": 1484,
+            "literals": 3460,
+            "total_aux": 26703,
+            "total_clauses": 40068,
+            "total_literals": 93420
+          },
+          "kmtotalizer": {
+            "aux": 163,
+            "clauses": 474,
+            "literals": 1411,
+            "total_aux": 4401,
+            "total_clauses": 12798,
+            "total_literals": 38097
+          },
+          "seqcounter": {
+            "aux": 378,
+            "clauses": 743,
+            "literals": 1850,
+            "total_aux": 10206,
+            "total_clauses": 20061,
+            "total_literals": 49950
+          },
+          "totalizer": {
+            "aux": 223,
+            "clauses": 1044,
+            "literals": 2907,
+            "total_aux": 6021,
+            "total_clauses": 28188,
+            "total_literals": 78489
+          }
+        },
+        "k": 14,
+        "multiplicity": 27,
+        "n": 41
+      }
+    ],
+    "final_shapes": [
+      {
+        "k": 6,
+        "n": 15
+      },
+      {
+        "k": 6,
+        "n": 31
+      }
+    ],
+    "host_fixed_extra": [
+      134995,
+      438,
+      48902
+    ],
+    "kmtotalizer_minus_sinz_savings_unsigned": {
+      "aux": 6169,
+      "clauses": 7675,
+      "literals": 12385
+    },
+    "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "sender_shapes": [
+      {
+        "k": 10,
+        "multiplicity": 4,
+        "n": 30
+      },
+      {
+        "k": 14,
+        "multiplicity": 27,
+        "n": 41
+      }
+    ],
+    "sender_totals": {
+      "kmtotalizer": {
+        "aux": 4837,
+        "clauses": 13946,
+        "literals": 41445
+      },
+      "seqcounter": {
+        "aux": 11006,
+        "clauses": 21621,
+        "literals": 53830
+      }
+    }
+  },
+  "toy_controls": {
+    "projected_assignment_checks": 6152,
+    "scope": "n=1..7, every k and every guard/input assignment, both encoders",
+    "unguarded_violation_rejected": true
+  }
+}

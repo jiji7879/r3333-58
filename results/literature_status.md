@@ -62,11 +62,11 @@ same recursion, and the natural question is whether a *non-uniform* twist of it
   Integers 20 (2020) #A54: assuming R_4(3) = 51, R_r(3) <= r!(e - 5/8) + 1 for all
   r >= 4, i.e. asymptotically ~2.09 r!, against the unconditional ~2.55 r!.
 
-## Post-survey development (2026): the upper bound has moved
+## Post-survey development (2026): a claimed upper bound of 60
 
 DS1.18 (April 2026) records 62. A preprint posted after it claims a better bound:
 
-* M. Stojanović (repository owner `milostatarevic`), *An upper bound of 60 for the
+* M. Tatarevic (repository owner `milostatarevic`), *An upper bound of 60 for the
   Ramsey number R(3,3,3,3)*, arXiv:2610.36648 (v1 27 Oct 2026, v2 6 Nov 2026).
   Abstract: "We improve the upper bound on the classical Ramsey number R(3,3,3,3)
   from 62 to 60. The proof is based on a global incidence count, classifications of
@@ -85,3 +85,13 @@ on this problem: split on the colour-degree profile of a vertex (the 47 profiles
 summing to 50 with entries <= 16 for n = 51; six surviving profiles for n = 60), use
 classifications of the mono-triangle-free 3-colourings of K_15 and K_16, then kill each
 case by SAT. Any serious attempt on the lower bound should read it for encodings.
+
+## Follow-up review: other methods and concrete experiments
+
+See [`literature-next-2026-11-28/README.md`](literature-next-2026-11-28/README.md)
+for the checked prioritized proposals and their primary citations. Important narrow
+correction to follow-up work: the literal Toeplitz/Z-SC construction is already
+excluded at K46 by Schur's theorem (S(4)=44), not merely UNKNOWN in SAT. That
+exclusion says nothing about unrestricted K51, just as the preprint's claimed
+R_4(3) <= 60 does not establish R_4(3) <= 58 or independently verify its large
+SAT boundary in this repository.

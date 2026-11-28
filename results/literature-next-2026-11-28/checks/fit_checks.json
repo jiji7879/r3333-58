@@ -1,0 +1,205 @@
+{
+  "scope": "physical calibration only; no K58 search and no unsatisfiability evidence",
+  "results": [
+    {
+      "file": "n48_z4z4_f0.col",
+      "n": 48,
+      "all_vertices_have_a_critical_color": true,
+      "critical_vertices_by_color": [
+        48,
+        0,
+        0,
+        0
+      ],
+      "same_degree_attaching_pairs_ge3": 768,
+      "same_degree_attaching_pairs_3_to_14": 720,
+      "example_pair_3_to_14": {
+        "color": 0,
+        "u": 0,
+        "v": 2,
+        "degree": 15,
+        "attachment": 6,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 2,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "example_pair_selected_for_max_min_other_criticality": {
+        "color": 0,
+        "u": 0,
+        "v": 27,
+        "degree": 15,
+        "attachment": 15,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 3,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "pairs_with_two_other_critical_colours_at_both_endpoints": 0,
+      "example_with_two_other_critical_at_both_endpoints": null,
+      "max_attachment_over_eligible_pairs": 15
+    },
+    {
+      "file": "k49_from_n48_m5.col",
+      "n": 49,
+      "all_vertices_have_a_critical_color": false,
+      "critical_vertices_by_color": [
+        48,
+        0,
+        0,
+        0
+      ],
+      "same_degree_attaching_pairs_ge3": 516,
+      "same_degree_attaching_pairs_3_to_14": 468,
+      "example_pair_3_to_14": {
+        "color": 0,
+        "u": 0,
+        "v": 2,
+        "degree": 16,
+        "attachment": 7,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 2,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "example_pair_selected_for_max_min_other_criticality": {
+        "color": 0,
+        "u": 0,
+        "v": 27,
+        "degree": 16,
+        "attachment": 16,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 3,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "pairs_with_two_other_critical_colours_at_both_endpoints": 0,
+      "example_with_two_other_critical_at_both_endpoints": null,
+      "max_attachment_over_eligible_pairs": 16
+    },
+    {
+      "file": "k50_z4z4_m6.col",
+      "n": 50,
+      "all_vertices_have_a_critical_color": true,
+      "critical_vertices_by_color": [
+        0,
+        48,
+        2,
+        1
+      ],
+      "same_degree_attaching_pairs_ge3": 480,
+      "same_degree_attaching_pairs_3_to_14": 448,
+      "example_pair_3_to_14": {
+        "color": 1,
+        "u": 0,
+        "v": 2,
+        "degree": 16,
+        "attachment": 6,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 0,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "example_pair_selected_for_max_min_other_criticality": {
+        "color": 1,
+        "u": 0,
+        "v": 22,
+        "degree": 16,
+        "attachment": 16,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 2,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "pairs_with_two_other_critical_colours_at_both_endpoints": 0,
+      "example_with_two_other_critical_at_both_endpoints": null,
+      "max_attachment_over_eligible_pairs": 16
+    },
+    {
+      "file": "k50_blockcayley_Z4xZ4_m4.col",
+      "n": 50,
+      "all_vertices_have_a_critical_color": false,
+      "critical_vertices_by_color": [
+        48,
+        0,
+        0,
+        0
+      ],
+      "same_degree_attaching_pairs_ge3": 464,
+      "same_degree_attaching_pairs_3_to_14": 428,
+      "example_pair_3_to_14": {
+        "color": 0,
+        "u": 0,
+        "v": 1,
+        "degree": 15,
+        "attachment": 6,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 3,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "example_pair_selected_for_max_min_other_criticality": {
+        "color": 0,
+        "u": 8,
+        "v": 32,
+        "degree": 16,
+        "attachment": 16,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 3,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "pairs_with_two_other_critical_colours_at_both_endpoints": 0,
+      "example_with_two_other_critical_at_both_endpoints": null,
+      "max_attachment_over_eligible_pairs": 16
+    },
+    {
+      "file": "k50_sanity_f2.col",
+      "n": 50,
+      "all_vertices_have_a_critical_color": false,
+      "critical_vertices_by_color": [
+        0,
+        48,
+        0,
+        0
+      ],
+      "same_degree_attaching_pairs_ge3": 424,
+      "same_degree_attaching_pairs_3_to_14": 380,
+      "example_pair_3_to_14": {
+        "color": 1,
+        "u": 0,
+        "v": 1,
+        "degree": 16,
+        "attachment": 6,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 2,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "example_pair_selected_for_max_min_other_criticality": {
+        "color": 1,
+        "u": 0,
+        "v": 17,
+        "degree": 16,
+        "attachment": 16,
+        "other_critical_at_u": 0,
+        "other_critical_at_v": 0,
+        "edge_color": 2,
+        "edge_degree_at_u": 11,
+        "edge_degree_at_v": 11
+      },
+      "pairs_with_two_other_critical_colours_at_both_endpoints": 0,
+      "example_with_two_other_critical_at_both_endpoints": null,
+      "max_attachment_over_eligible_pairs": 16
+    }
+  ]
+}

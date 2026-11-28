@@ -1,0 +1,7 @@
+
+c parsing input formula with 180 variables and 2340 clauses
+
+c finished parsing
+
+c detected empty clause; start verification via backward checking
+s TIMEOUT

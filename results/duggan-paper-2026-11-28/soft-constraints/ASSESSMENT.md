@@ -96,6 +96,17 @@ At K51, CaDiCaL hit the 50,000-conflict cap in 1.02 s wall / 0.98 s CPU, **UNKNO
 
 A structural caution: literal $j-i$ stripes are Toeplitz constraints. Replacing them by cyclic distance $\min(j-i,51-(j-i))$ would instead force a circulant colouring, to which existing Cayley/Cayley-family exclusions could apply. Those are different families; the latter closure cannot be used to reject the literal formula tested here.
 
+## Correction from the later literature review
+
+The literal Z-SC/Toeplitz family is mathematically excluded at **K46 and larger**
+by $S(4)=44$. A Schur triple with $a+b\le45$ is precisely a triangle on
+$0,a,a+b$, also when $a=b$. Therefore the four-leaf Z-SC follow-up below is
+unnecessary and should not be run. This excludes only the literal striped family,
+not general K51 and not a different block/Cayley family. The exact proof,
+reproduced Schur controls and the STRICT-normalized replay limitation are in
+[`../literature-next-2026-11-28/README.md`](../literature-next-2026-11-28/README.md).
+The earlier K51 run remains an UNKNOWN observation, not an impossibility proof.
+
 ## Applicability and next experiments
 
 * **K51 model finding:** potentially useful as a cheap instance generator, but not yet shown to help. Do not launch a production sweep from these results.

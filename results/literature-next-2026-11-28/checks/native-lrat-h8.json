@@ -1,0 +1,29 @@
+{
+  "query_sha256": "e8cc97847a6cab9c277933d2dd0d6112c79b061bebb5af221d57df5d6d6a2229",
+  "expected_query_sha256": "e8cc97847a6cab9c277933d2dd0d6112c79b061bebb5af221d57df5d6d6a2229",
+  "baseline_drat": {
+    "conflicts": 49226,
+    "decisions": 307381,
+    "propagations": 12350047,
+    "restarts": 3189,
+    "process_seconds": 1.58
+  },
+  "direct_lrat": {
+    "conflicts": 49226,
+    "decisions": 307381,
+    "propagations": 12350047,
+    "restarts": 3189,
+    "process_seconds": 1.83
+  },
+  "same_deterministic_counters": true,
+  "direct_lrat_bytes": 14594230,
+  "baseline_drat_bytes": 9529642,
+  "process_time_ratio": 1.1582278481012658,
+  "byte_ratio": 1.5314562708651596,
+  "solver_exit": 20,
+  "independent_lrat_replay": "NOT RUN: no local LRAT checker was installed",
+  "scope": "One already solved H=8 child; no wall search or closure claim",
+  "solver_binary_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+  "baseline_drat_sha256": "55a3963489aad6bab8f2c3069f29045a94d88768f2529c242506f7f23c678eb2",
+  "direct_lrat_sha256": "05f0d7f11d28e0a784cab3a1a737960fdc8bc5414cc246242d743bb668bd7b34"
+}

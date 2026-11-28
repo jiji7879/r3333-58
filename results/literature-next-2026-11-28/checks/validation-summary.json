@@ -1,0 +1,73 @@
+{
+  "archive_policy": "only text sources and receipts committed; large CNFs, DRAT and native archives are not committed",
+  "cat58": {
+    "high_overlap_preserved": true,
+    "physical_controls_match": true,
+    "proof_reviewed": "one critical colour has >=15 vertices; five 16-sets or six 15-sets force 60>58"
+  },
+  "field49": {
+    "class_sizes": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "monochromatic_triangles_by_colour": [
+      490,
+      490,
+      490,
+      490
+    ]
+  },
+  "kmt": {
+    "expected_clauses": 176660,
+    "expected_variables": 13364,
+    "projected_assignment_checks": 6152,
+    "receipt_byte_identical": true
+  },
+  "native_lrat_capability": {
+    "byte_ratio": 1.5314562708651596,
+    "direct_vars_clauses_preserved": true,
+    "independent_replay_run": false,
+    "process_time_ratio": 1.1582278481012658,
+    "source_receipt": "native-lrat-h8.json"
+  },
+  "schema": "k58-literature-coordinator-checks/v1",
+  "schur_toeplitz": {
+    "checker": "tools/color-resolved-wallcc/bin/drat-trim, default DRAT mode",
+    "cnf_sha256": "33b572b0d94e1acaf016036977de87a3c58ad94f749c5041b242d170960aacb4",
+    "core_RAT_lemmas": 0,
+    "core_clauses": 1924,
+    "core_lemmas": 570302,
+    "default_drat_verified": true,
+    "final_empty_clause": true,
+    "full_ascii_read_totals": {
+      "deletions_removed_for_alternate_run": 714789
+    },
+    "log": "schur-default.log",
+    "n44_model": {
+      "all_176_variables_assigned": true,
+      "class_sizes": [
+        12,
+        13,
+        10,
+        9
+      ],
+      "clauses_checked": 2245,
+      "schur_triples": "none"
+    },
+    "normalized_warning_fatal_run": {
+      "log": "schur-normalized-timeout.log",
+      "result": "s TIMEOUT at 60s",
+      "verified": false
+    },
+    "proof_bytes": 77510575,
+    "proof_sha256": "9f0bfe060a0dfa43f7bcff8a2452ce9caa1a27f17344b45c4535cd2f7b31fee6",
+    "scope": "local Toeplitz family exclusion only; not unrestricted K51 or a strict-normalized replay"
+  },
+  "symmetry": {
+    "full_cnf_aux_fixed_symmetries": [],
+    "group": "S9 \u00d7 S6 on {38..46} \u00d7 {52..57}",
+    "regenerated_byte_identical": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "answers": {
+    "True": 12544
+  },
+  "base_clauses": 5212,
+  "catalogue_size": 112,
+  "cpu_seconds": 1.9421555799999999,
+  "first_nonsat": [],
+  "negative_control": {
+    "answer": false,
+    "pins": 16
+  },
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "queries": 12544,
+  "schema": "bounded-two-sender-shared-arm/v1",
+  "scope": "Induced host/frozen-unit CNF on {0,18,19} union arm 1..16 only; no counters, other arms, final floors, cubes, or ChainReady. SAT is local feasibility only; no row or Ramsey inference.",
+  "senders": [
+    18,
+    19
+  ],
+  "solver_stats": {
+    "conflicts": 0,
+    "decisions": 35851240,
+    "propagations": 36537852,
+    "restarts": 0
+  },
+  "support_color": 1,
+  "target_vertices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "wall_seconds": 1.9425319719593972
+}

@@ -1,0 +1,44 @@
+{
+  "field": "F_7[i]/(i^2+1)",
+  "primitive_element": [
+    1,
+    2
+  ],
+  "primitive_power_24": [
+    6,
+    0
+  ],
+  "primitive_power_16": [
+    4,
+    0
+  ],
+  "minus_one_log_mod_4": 0,
+  "class_sizes": [
+    12,
+    12,
+    12,
+    12
+  ],
+  "monochromatic_triangles_by_colour": [
+    490,
+    490,
+    490,
+    490
+  ],
+  "first_monochromatic_triangle": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    0
+  ],
+  "seed_is_good": false
+}
