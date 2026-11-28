@@ -1,0 +1,215 @@
+== 1. regenerate the exact retained parent and cube (hash-checked)
+{
+  "header": "p cnf 19533 184335",
+  "parent_bytes": 3493016,
+  "parent_cube_match": true,
+  "parent_cube_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+  "parent_match": true,
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae"
+}
+== 2. generate bounded one-colour lex-leader clauses (NOT stock SMS)
+{
+  "caps": {
+    "cpu": 60.0,
+    "free_rows": 3,
+    "length": 12,
+    "total": 900
+  },
+  "cpu_seconds": 0.135,
+  "stats": {
+    "certificates": 765,
+    "deadline_hit": false,
+    "duplicate": 0,
+    "empty_reduced": 0,
+    "length_histogram": {
+      "2": 51,
+      "4": 102,
+      "6": 204,
+      "8": 408
+    },
+    "per_perm": {
+      "38-39": 15,
+      "38-40": 15,
+      "38-41": 15,
+      "38-42": 15,
+      "38-43": 15,
+      "38-44": 15,
+      "38-45": 15,
+      "38-46": 15,
+      "39-40": 15,
+      "39-41": 15,
+      "39-42": 15,
+      "39-43": 15,
+      "39-44": 15,
+      "39-45": 15,
+      "39-46": 15,
+      "40-41": 15,
+      "40-42": 15,
+      "40-43": 15,
+      "40-44": 15,
+      "40-45": 15,
+      "40-46": 15,
+      "41-42": 15,
+      "41-43": 15,
+      "41-44": 15,
+      "41-45": 15,
+      "41-46": 15,
+      "42-43": 15,
+      "42-44": 15,
+      "42-45": 15,
+      "42-46": 15,
+      "43-44": 15,
+      "43-45": 15,
+      "43-46": 15,
+      "44-45": 15,
+      "44-46": 15,
+      "45-46": 15,
+      "52-53": 15,
+      "52-54": 15,
+      "52-55": 15,
+      "52-56": 15,
+      "52-57": 15,
+      "53-54": 15,
+      "53-55": 15,
+      "53-56": 15,
+      "53-57": 15,
+      "54-55": 15,
+      "54-56": 15,
+      "54-57": 15,
+      "55-56": 15,
+      "55-57": 15,
+      "56-57": 15
+    },
+    "too_long": 0,
+    "vacuous": 0
+  }
+}
+emitted 765 empty-reduced distinct 0
+== 3. independent verification, and build augmented.cnf
+{
+  "augmented_closure_size": 1865,
+  "augmented_sha256": "d5e315250d226c88e47330b760a0f04d587d38c366dbf7e7b06419bf23f6903e",
+  "clauses": 765,
+  "clauses_satisfied_by_parent_closure": 0,
+  "lengths": {
+    "2": 51,
+    "4": 102,
+    "6": 204,
+    "8": 408
+  },
+  "status": "PASS"
+}
+== 4. record the SMS-shaped whole-formula bijection and round-trip check
+{
+  "bijection": {
+    "aux": "6613..19533 unchanged",
+    "checked_bijection_on_1..19533": true,
+    "colour0": "old 4r+1 -> new r+1 for r = 0..1652",
+    "other_colours": "old 4r+1+c -> new 1654+3r+c for c = 1..3"
+  },
+  "clause_images_in_first_1653_variables": true,
+  "clauses": 765,
+  "clauses_reindexed_sha256": "e2f2d30fa1b81b78a64a81b268c4a7e6e8c3a709ba1e8499dc88a7f6e3bcb06d",
+  "parent_cube": {
+    "bytes": 3493031,
+    "sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8"
+  },
+  "parent_cube_reindexed": {
+    "bytes": 3495217,
+    "sha256": "56853172f15d21a0d75522fe6c5c3804eb9472a27014ccbdcfb3d09d14c6fef5"
+  },
+  "round_trip_byte_identical": true
+}
+== 5. toy controls (complete rule check, orbit survival, negative controls)
+{
+  "T1_rule_mismatches_over_1024_words": 0,
+  "T2_violations_at_orbit_minima": 0,
+  "T3_invariant_set": {
+    "empty_orbits": 0,
+    "models_in_set": 542952,
+    "orbits": 273960,
+    "representatives_per_orbit": {
+      "1": 220752,
+      "2": 53208
+    }
+  },
+  "T4a_noninvariant_early_edge": {
+    "empty_orbits": 108174,
+    "models_in_set": 135738,
+    "orbits": 122577,
+    "representatives_per_orbit": {
+      "0": 108174,
+      "1": 9093,
+      "2": 5310
+    }
+  },
+  "T4b_noninvariant_late_edge": {
+    "empty_orbits": 0,
+    "models_in_set": 135738,
+    "orbits": 122577,
+    "representatives_per_orbit": {
+      "1": 117267,
+      "2": 5310
+    }
+  },
+  "T5_single_sign_flip": {
+    "empty_orbits": 151383,
+    "models_in_set": 542952,
+    "orbits": 273960,
+    "representatives_per_orbit": {
+      "0": 151383,
+      "1": 9093,
+      "2": 113484
+    }
+  },
+  "generated_clauses": 7,
+  "lengths": {
+    "2": 1,
+    "4": 2,
+    "6": 4
+  },
+  "models_invariant": 542952,
+  "models_with_colour_0_3_equal_0": 135738,
+  "models_with_colour_0_4_equal_0": 135738,
+  "sample_clauses": [
+    [
+      -3,
+      4
+    ],
+    [
+      -6,
+      3,
+      4,
+      7
+    ],
+    [
+      -6,
+      -4,
+      -3,
+      7
+    ],
+    [
+      -8,
+      3,
+      4,
+      6,
+      7,
+      9
+    ]
+  ]
+}
+== 6. matched A/B, both run orders (200000 conflicts, jobs=1)
+== 7. corrupted same-size control (trajectory control, not a sound instance)
+corrupted clauses: 765 sha256: 9e4c6e15c89ed4a463d701fd2bf1f8c5071e6f94758585ada7a357cac35e3a57
+== 8. summary
+{
+  "cpu_ratio_baseline_over_corrupted": 1.2742,
+  "cpu_ratio_baseline_over_sms": 1.2926,
+  "decision_ratio_sms_over_baseline": 1.4414,
+  "propagation_ratio_sms_over_baseline": 0.5962,
+  "total_solver_cpu_s": 41.208
+}
+pipeline_wall_s=77.59
+pipeline_user_s=77.11
+pipeline_sys_s=0.53
+pipeline_maxrss_kb=198528

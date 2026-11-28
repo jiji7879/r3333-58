@@ -1,0 +1,77 @@
+{
+  "T1_rule_mismatches_over_1024_words": 0,
+  "T2_violations_at_orbit_minima": 0,
+  "T3_invariant_set": {
+    "empty_orbits": 0,
+    "models_in_set": 542952,
+    "orbits": 273960,
+    "representatives_per_orbit": {
+      "1": 220752,
+      "2": 53208
+    }
+  },
+  "T4a_noninvariant_early_edge": {
+    "empty_orbits": 108174,
+    "models_in_set": 135738,
+    "orbits": 122577,
+    "representatives_per_orbit": {
+      "0": 108174,
+      "1": 9093,
+      "2": 5310
+    }
+  },
+  "T4b_noninvariant_late_edge": {
+    "empty_orbits": 0,
+    "models_in_set": 135738,
+    "orbits": 122577,
+    "representatives_per_orbit": {
+      "1": 117267,
+      "2": 5310
+    }
+  },
+  "T5_single_sign_flip": {
+    "empty_orbits": 151383,
+    "models_in_set": 542952,
+    "orbits": 273960,
+    "representatives_per_orbit": {
+      "0": 151383,
+      "1": 9093,
+      "2": 113484
+    }
+  },
+  "generated_clauses": 7,
+  "lengths": {
+    "2": 1,
+    "4": 2,
+    "6": 4
+  },
+  "models_invariant": 542952,
+  "models_with_colour_0_3_equal_0": 135738,
+  "models_with_colour_0_4_equal_0": 135738,
+  "sample_clauses": [
+    [
+      -3,
+      4
+    ],
+    [
+      -6,
+      3,
+      4,
+      7
+    ],
+    [
+      -6,
+      -4,
+      -3,
+      7
+    ],
+    [
+      -8,
+      3,
+      4,
+      6,
+      7,
+      9
+    ]
+  ]
+}

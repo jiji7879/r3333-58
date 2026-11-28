@@ -49,6 +49,9 @@ import K58.FullVertexBudget
 import K58.EncoderExtensions
 import K58.ConfigurableMaximal
 import K58.TargetParent
+import K58.SenderReady
+import K58.SupportCatalogue
+import K58.SupportTransport
 import K58.TicketPremises
 
 #print axioms K58.sum_w_eq_sum_H
@@ -466,3 +469,21 @@ import K58.TicketPremises
 #print axioms K58.card_le_five_of_two_colours
 #print axioms K58.attachment_bound
 #print axioms K58.attachment_colour_ne
+
+-- Finite support catalogue, conditional physical transport, and exact emitted readiness.
+#print axioms K58.SupportCatalogue.catalogue_iff
+#print axioms K58.SupportCatalogue.p4_complete
+#print axioms K58.SupportCatalogue.c5_complete
+#print axioms K58.SupportCatalogue.control_indep_not_member
+#print axioms K58.SupportTransport.support_mask_mem
+#print axioms K58.SupportTransport.support_mask_mem_of_deg
+#print axioms K58.SupportTransport.emittedSupportStep_ready_shape
+#print axioms K58.SupportTransport.sender18_ready
+#print axioms K58.SenderReady.supportAudit_eq
+#print axioms K58.SenderReady.supportShapeAudit_eq
+#print axioms K58.SenderReady.exists_extension_iff
+#print axioms K58.SenderReady.sender_family_ready
+#print axioms K58.SenderReady.sender18_ready
+#print axioms K58.SenderReady.counter_semantics_not_shape
+#print axioms K58.SenderReady.counter_then_support_unsatisfiable
+#print axioms K58.SenderReady.coordinate_order_matters

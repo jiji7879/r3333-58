@@ -1,0 +1,5 @@
+[H8] A 2.49s/9529642B  A' 2.66s/15358198B  B 1.80s/6503105B (+2nd checker 2.66s)  controls ok
+[N14] A 0.64s/2308201B  A' 0.75s/5727659B  B 0.34s/2494126B (+2nd checker 1.05s)  controls ok
+[R11] A 0.12s/6707B  A' 0.13s/1105650B  B 0.03s/520186B (+2nd checker 0.16s)  controls ok
+[H7] A 1.75s/7114766B  A' 1.85s/9484053B  B 1.18s/4056058B (+2nd checker 1.75s)  controls ok
+receipt: results/next-directions-2026-11-28/lrat/coordinator-fresh-receipt.json

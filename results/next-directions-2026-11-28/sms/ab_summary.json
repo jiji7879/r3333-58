@@ -1,0 +1,224 @@
+{
+  "arms": {
+    "baseline": {
+      "conflicts": [
+        200000,
+        200000
+      ],
+      "decisions": [
+        751001,
+        751001
+      ],
+      "geomean_solve_cpu_s": 8.433,
+      "peak_rss_kb": [
+        70272,
+        70132
+      ],
+      "propagations": [
+        69573821,
+        69573821
+      ],
+      "restarts": [
+        10633,
+        10633
+      ],
+      "solve_cpu_s": [
+        8.392,
+        8.475
+      ],
+      "statuses": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ]
+    },
+    "corrupted": {
+      "conflicts": [
+        200003,
+        200003
+      ],
+      "decisions": [
+        1142940,
+        1142940
+      ],
+      "geomean_solve_cpu_s": 6.502,
+      "peak_rss_kb": [
+        69796,
+        69852
+      ],
+      "propagations": [
+        49655914,
+        49655914
+      ],
+      "restarts": [
+        10266,
+        10266
+      ],
+      "solve_cpu_s": [
+        6.497,
+        6.508
+      ],
+      "statuses": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ]
+    },
+    "sms": {
+      "conflicts": [
+        200000,
+        200000
+      ],
+      "decisions": [
+        1082485,
+        1082485
+      ],
+      "geomean_solve_cpu_s": 6.674,
+      "peak_rss_kb": [
+        69992,
+        70032
+      ],
+      "propagations": [
+        41482509,
+        41482509
+      ],
+      "restarts": [
+        11609,
+        11609
+      ],
+      "solve_cpu_s": [
+        6.688,
+        6.661
+      ],
+      "statuses": [
+        "UNKNOWN",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "cpu_ratio_baseline_over_corrupted": 1.297,
+  "cpu_ratio_baseline_over_sms": 1.2636,
+  "decision_ratio_sms_over_baseline": 1.4414,
+  "determinism": "identical conflict/decision/propagation/restart counts across run orders",
+  "note": "Every arm returned UNKNOWN at the conflict cap. OPEN is not UNSAT. The corrupted arm is a trajectory control, not a sound instance.",
+  "propagation_ratio_sms_over_baseline": 0.5962,
+  "runs": [
+    {
+      "arm": "baseline",
+      "conflict_cap": 200000,
+      "input": "parent_cube.cnf",
+      "peak_rss_kb": 70272,
+      "prep_cpu_s": 0.118,
+      "solve_cpu_s": 8.392,
+      "solver": "pysat Cadical195 (CaDiCaL 1.9.5)",
+      "stats": {
+        "conflicts": 200000,
+        "decisions": 751001,
+        "propagations": 69573821,
+        "restarts": 10633
+      },
+      "status": "UNKNOWN",
+      "total_cpu_s": 8.513,
+      "wall_s": 8.69
+    },
+    {
+      "arm": "sms",
+      "conflict_cap": 200000,
+      "input": "augmented.cnf",
+      "peak_rss_kb": 69992,
+      "prep_cpu_s": 0.125,
+      "solve_cpu_s": 6.688,
+      "solver": "pysat Cadical195 (CaDiCaL 1.9.5)",
+      "stats": {
+        "conflicts": 200000,
+        "decisions": 1082485,
+        "propagations": 41482509,
+        "restarts": 11609
+      },
+      "status": "UNKNOWN",
+      "total_cpu_s": 6.816,
+      "wall_s": 7.591
+    },
+    {
+      "arm": "sms",
+      "conflict_cap": 200000,
+      "input": "augmented.cnf",
+      "peak_rss_kb": 70032,
+      "prep_cpu_s": 0.123,
+      "solve_cpu_s": 6.661,
+      "solver": "pysat Cadical195 (CaDiCaL 1.9.5)",
+      "stats": {
+        "conflicts": 200000,
+        "decisions": 1082485,
+        "propagations": 41482509,
+        "restarts": 11609
+      },
+      "status": "UNKNOWN",
+      "total_cpu_s": 6.787,
+      "wall_s": 7.866
+    },
+    {
+      "arm": "baseline",
+      "conflict_cap": 200000,
+      "input": "parent_cube.cnf",
+      "peak_rss_kb": 70132,
+      "prep_cpu_s": 0.121,
+      "solve_cpu_s": 8.475,
+      "solver": "pysat Cadical195 (CaDiCaL 1.9.5)",
+      "stats": {
+        "conflicts": 200000,
+        "decisions": 751001,
+        "propagations": 69573821,
+        "restarts": 10633
+      },
+      "status": "UNKNOWN",
+      "total_cpu_s": 8.6,
+      "wall_s": 10.141
+    },
+    {
+      "arm": "corrupted",
+      "conflict_cap": 200000,
+      "input": "corrupted.cnf",
+      "peak_rss_kb": 69796,
+      "prep_cpu_s": 0.12,
+      "solve_cpu_s": 6.497,
+      "solver": "pysat Cadical195 (CaDiCaL 1.9.5)",
+      "stats": {
+        "conflicts": 200003,
+        "decisions": 1142940,
+        "propagations": 49655914,
+        "restarts": 10266
+      },
+      "status": "UNKNOWN",
+      "total_cpu_s": 6.62,
+      "wall_s": 6.654
+    },
+    {
+      "arm": "corrupted",
+      "conflict_cap": 200000,
+      "input": "corrupted.cnf",
+      "peak_rss_kb": 69852,
+      "prep_cpu_s": 0.122,
+      "solve_cpu_s": 6.508,
+      "solver": "pysat Cadical195 (CaDiCaL 1.9.5)",
+      "stats": {
+        "conflicts": 200003,
+        "decisions": 1142940,
+        "propagations": 49655914,
+        "restarts": 10266
+      },
+      "status": "UNKNOWN",
+      "total_cpu_s": 6.632,
+      "wall_s": 6.683
+    }
+  ],
+  "toolchain": {
+    "conflict_cap": 200000,
+    "jobs": 1,
+    "pysat": "1.9.dev22",
+    "pysolvers_sha256": "cda792186335cb628804eaf73f2c6008699d7c983188053ffa5c9c118a6be3b3",
+    "python": "3.12.14",
+    "seed": "not exposed by pysat Cadical195; arms matched on build, cap and run order",
+    "solver_class": "pysat.solvers.Cadical195 (CaDiCaL 1.9.5)",
+    "solvers_module_sha256": "510cdf8e099aa0b219facc05deb1cf96482ca3f19ab30aad117bee94b817a38a"
+  },
+  "total_solver_cpu_s": 43.221
+}

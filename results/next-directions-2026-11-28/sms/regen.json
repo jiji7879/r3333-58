@@ -1,0 +1,38 @@
+{
+  "charge": 7,
+  "clauses": 184335,
+  "cube": [
+    -1413,
+    1014
+  ],
+  "declared_recipe": [
+    "tables",
+    "total_critical",
+    "full_root"
+  ],
+  "fixed_units": 438,
+  "header": "p cnf 19533 184335",
+  "negative_units": 42,
+  "parent_bytes": 3493016,
+  "parent_cube_match": true,
+  "parent_cube_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+  "parent_cube_sha256_expected": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+  "parent_match": true,
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "parent_sha256_expected": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "positive_units": 396,
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "recipe": {
+    "full_root": false,
+    "tables": true,
+    "total_critical": true
+  },
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "suffix_clauses_excluding_units": 0,
+  "vars": 19533
+}

@@ -1,0 +1,80 @@
+{
+  "emitted_support_events": 15,
+  "guards": [
+    11965,
+    12456,
+    12947,
+    13438,
+    13929,
+    14420,
+    14911,
+    15402,
+    15893,
+    16384,
+    16875,
+    17366,
+    17857,
+    18348,
+    18839
+  ],
+  "oldTops": [
+    12343,
+    12834,
+    13325,
+    13816,
+    14307,
+    14798,
+    15289,
+    15780,
+    16271,
+    16762,
+    17253,
+    17744,
+    18235,
+    18726,
+    19217
+  ],
+  "n_and_k_all_16_112": true,
+  "atoms_all_16_distinct": true,
+  "first_atoms": [
+    294,
+    514,
+    730,
+    942,
+    1150,
+    1354,
+    1554,
+    1750,
+    1942,
+    2130,
+    2314,
+    2494,
+    2670,
+    2842,
+    3010,
+    3174
+  ],
+  "first_atom_hashes_are_16": true,
+  "atoms_prefix_of_previous_counter": true,
+  "counters_total": 31,
+  "counter_shape_counts": {
+    "30_10": 4,
+    "41_14": 27
+  },
+  "native_events": [
+    {
+      "oldTop": 19329,
+      "n": 15,
+      "bound": 6,
+      "newTop": 19383
+    },
+    {
+      "oldTop": 19383,
+      "n": 31,
+      "bound": 6,
+      "newTop": 19533
+    }
+  ],
+  "distinct_atom_sets": 15
+}
+exit=0

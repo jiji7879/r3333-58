@@ -1,0 +1,45 @@
+{
+  "template_T16_named_coords_matches_frozen_gluing": true,
+  "target_source_len": 112,
+  "target_source_4": 96,
+  "target_source_5": 16,
+  "target_is_sorted_unique": true,
+  "frozen_p4c5_equals_target_ordered": true,
+  "frozen_p4c5_equals_target_as_sets": true,
+  "p4c5_counts": {
+    "4": 96,
+    "5": 16
+  },
+  "indep_only_counts": {
+    "4": 120,
+    "5": 16
+  },
+  "indep_only_equals_target": false,
+  "indep_equals_p4c5": false,
+  "negative_controls": {
+    "T16_marked0_path2": {
+      "count": 112,
+      "equals_target": true,
+      "intersection_size": 112
+    },
+    "U16_marked1_path2": {
+      "count": 672,
+      "equals_target": false,
+      "intersection_size": 96
+    },
+    "T16_marked1_path3": {
+      "count": 672,
+      "equals_target": false,
+      "intersection_size": 112
+    },
+    "T15_marked1_path2": {
+      "count": 492,
+      "equals_target": false,
+      "intersection_size": 83
+    }
+  },
+  "single_bit_control_mask_0_2_4_6_vs_0_2_4_7_in_target": [
+    true,
+    true
+  ]
+}

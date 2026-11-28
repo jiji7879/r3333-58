@@ -1,0 +1,2456 @@
+{
+  "cases": {
+    "H7": {
+      "armA_drat": {
+        "bytes": 7114766,
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a.drat"
+        ],
+        "cpu_s": 1.15,
+        "cpu_sys_s": 0.02,
+        "cpu_user_s": 1.13,
+        "elaboration": {
+          "elaborate": {
+            "bytes": 9484053,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab.lrat"
+            ],
+            "cpu_s": 0.86,
+            "cpu_sys_s": 0.02,
+            "cpu_user_s": 0.84,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elaborate.log",
+            "maxrss_kb": 82840.0,
+            "rc": 0,
+            "sha256": "571a191a9f1924b93d0fb1040dcd2ca6423a9493f8bfd2fca50e70ebd7d7fe48",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elaborate.err",
+            "wall_s": 0.87
+          },
+          "retained_bytes": 9484053,
+          "strict_chain_cpu_s": 0.9,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab.lrat"
+            ],
+            "cpu_s": 0.04,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.04,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-strict.log",
+            "maxrss_kb": 20868.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-strict.err",
+            "wall_s": 0.05
+          },
+          "total_cpu_s": 2.05,
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.05,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.05,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trim.log",
+            "maxrss_kb": 22024.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trim.err",
+            "wall_s": 0.06
+          },
+          "trimmed_bytes": 4078280,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.03,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.03,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trim-replay-relax.log",
+            "maxrss_kb": 16736.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trim-replay-relax.err",
+            "wall_s": 0.04
+          },
+          "trimmed_sha256": "56169154e5185fd5df0b3fdac62fd1b18e9c3e11da7bc10d3341832ee22edd93",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.0,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.0,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trim-replay.log",
+            "maxrss_kb": 10740.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trim-replay.err",
+            "wall_s": 0.01
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-elab-trimmed.lrat' after reading 533276 bytes: deleted clause '184189' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 0.94,
+          "trimmed_variant_cpu_s": 2.09,
+          "trimmed_variant_retained_bytes": 4078280
+        },
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 43480.0,
+        "rc": 20,
+        "sha256": "1831a7b7ddaeaf822f87b13621e9275739cbfb4fd4c3b9e95e4b78a9fb6b854e",
+        "stats": {
+          "conflicts": 23143,
+          "decisions": 64576,
+          "propagations": 10376030,
+          "restarts": 571
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-solve.err",
+        "total_cpu_s": 1.94,
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a.drat",
+            "-c"
+          ],
+          "cpu_s": 0.79,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 0.77,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-verify.log",
+          "maxrss_kb": 82840.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a-verify.err",
+          "wall_s": 0.8
+        },
+        "wall_s": 1.17
+      },
+      "armB_native_lrat": {
+        "ascii": {
+          "bytes": 9461506,
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "-a",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.lrat",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.04,
+          "cpu_sys_s": 0.0,
+          "cpu_user_s": 0.04,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-ascii.log",
+          "maxrss_kb": 17780.0,
+          "rc": 20,
+          "sha256": "69678d022b34959832549b4354e1b3bd1838903a25083cec208d0824b5171192",
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-ascii.err",
+          "wall_s": 0.05
+        },
+        "ascii_structure": {
+          "addition_lines": 22086,
+          "ascii_bytes": 9461506,
+          "deletion_ids": 220452,
+          "deletion_lines": 14179,
+          "hint_steps": 876012
+        },
+        "bytes": 9728618,
+        "check": {
+          "replays": {
+            "forward": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "-S",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.03,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.03,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim-replay-forward.log",
+              "maxrss_kb": 10868.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim-replay-forward.err",
+              "wall_s": 0.03
+            },
+            "replay": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.03,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.03,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim-replay.log",
+              "maxrss_kb": 17008.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim-replay.err",
+              "wall_s": 0.03
+            },
+            "rup": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "--rup",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b.lrat"
+              ],
+              "cpu_s": 0.06,
+              "cpu_sys_s": 0.01,
+              "cpu_user_s": 0.05,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim-rup-only.log",
+              "maxrss_kb": 35700.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim-rup-only.err",
+              "wall_s": 0.06
+            }
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.lrat"
+            ],
+            "cpu_s": 0.06,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.05,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim.log",
+            "maxrss_kb": 37284.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim.err",
+            "wall_s": 0.06
+          },
+          "trimmed_bytes": 4056058,
+          "trimmed_sha256": "224dc08dc43111075921313dfbaa31a9a2af436a750fc36336f201c12250fdfa"
+        },
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--lrat",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b.lrat"
+        ],
+        "cpu_s": 1.21,
+        "cpu_sys_s": 0.02,
+        "cpu_user_s": 1.19,
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 45644.0,
+        "rc": 20,
+        "retained_bytes": 4056058,
+        "second_checker": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.6,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 0.58,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-pycheck.log",
+          "maxrss_kb": 77720.0,
+          "rc": 20,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-pycheck.err",
+          "wall_s": 0.61
+        },
+        "sha256": "1575f8bff14b2c14752735bb23e264d5ecd2463b5f8e43d5caa607396b1ff8e5",
+        "stats": {
+          "conflicts": 23143,
+          "decisions": 64576,
+          "propagations": 10376030,
+          "restarts": 571
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-solve.err",
+        "total_cpu_s": 1.3,
+        "total_cpu_s_with_second_checker": 1.9,
+        "trim_ratio": 0.4169,
+        "wall_s": 1.21
+      },
+      "armC_retained": {
+        "elaboration": {
+          "elaborate": {
+            "bytes": 9484053,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/retained.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab.lrat"
+            ],
+            "cpu_s": 0.91,
+            "cpu_sys_s": 0.02,
+            "cpu_user_s": 0.89,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elaborate.log",
+            "maxrss_kb": 82840.0,
+            "rc": 0,
+            "sha256": "571a191a9f1924b93d0fb1040dcd2ca6423a9493f8bfd2fca50e70ebd7d7fe48",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elaborate.err",
+            "wall_s": 0.93
+          },
+          "retained_bytes": 9484053,
+          "strict_chain_cpu_s": 0.96,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab.lrat"
+            ],
+            "cpu_s": 0.05,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.05,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-strict.log",
+            "maxrss_kb": 20876.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-strict.err",
+            "wall_s": 0.05
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.05,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.05,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trim.log",
+            "maxrss_kb": 22028.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trim.err",
+            "wall_s": 0.06
+          },
+          "trimmed_bytes": 4078280,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.03,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.03,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trim-replay-relax.log",
+            "maxrss_kb": 16740.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trim-replay-relax.err",
+            "wall_s": 0.04
+          },
+          "trimmed_sha256": "56169154e5185fd5df0b3fdac62fd1b18e9c3e11da7bc10d3341832ee22edd93",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trim-replay.log",
+            "maxrss_kb": 10740.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trim-replay.err",
+            "wall_s": 0.01
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-elab-trimmed.lrat' after reading 533276 bytes: deleted clause '184189' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 0.99,
+          "trimmed_variant_retained_bytes": 4078280
+        },
+        "fresh_drat_matches_retained": true,
+        "retained_drat": {
+          "bytes": 7114766,
+          "sha256": "1831a7b7ddaeaf822f87b13621e9275739cbfb4fd4c3b9e95e4b78a9fb6b854e"
+        },
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/retained.drat",
+            "-c"
+          ],
+          "cpu_s": 0.79,
+          "cpu_sys_s": 0.01,
+          "cpu_user_s": 0.78,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-verify-retained.log",
+          "maxrss_kb": 82840.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/c-verify-retained.err",
+          "wall_s": 0.81
+        }
+      },
+      "comparison": {
+        "A_elab_retained_bytes": 9484053,
+        "A_elab_total_cpu_s": 2.05,
+        "A_elab_trimmed_variant_bytes": 4078280,
+        "A_elab_trimmed_variant_cpu_s": 2.09,
+        "A_elab_trimmed_variant_needs_relax": true,
+        "A_retained_bytes": 7114766,
+        "A_total_cpu_s": 1.94,
+        "B_retained_bytes": 4056058,
+        "B_total_cpu_s": 1.3,
+        "B_total_cpu_s_with_second_checker": 1.9,
+        "B_trimmed_structure": {
+          "addition_lines": 22086,
+          "ascii_bytes": 9461506,
+          "deletion_ids": 220452,
+          "deletion_lines": 14179,
+          "hint_steps": 876012
+        },
+        "counters": {
+          "conflicts": 23143,
+          "decisions": 64576,
+          "propagations": 10376030,
+          "restarts": 571
+        },
+        "cpu_ratio_B_over_A": 0.6701,
+        "cpu_ratio_B_over_A_elab": 0.6341,
+        "retained_ratio_B_over_A": 0.5701
+      },
+      "controls": {
+        "altered_antecedent_detail": {
+          "line": 2,
+          "new_hint": 1,
+          "old_hint": 135043
+        },
+        "altered_antecedent_id": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.01,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "altered_antecedent_id_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.15,
+          "rc": 1,
+          "reason": "REJECTED: line 2: antecedent 1 is absent or deleted",
+          "rejected": true
+        },
+        "ascii_positive": {
+          "cpu_s": 0.04,
+          "rc": 20,
+          "verified": true
+        },
+        "drat_is_not_lrat": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/a.drat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "missing_empty_clause": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.02,
+          "rc": 0,
+          "reason": "c WARNING no empty clause added in input CNF nor input proof",
+          "rejected": true
+        },
+        "missing_empty_clause_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.61,
+          "rc": 1,
+          "reason": "REJECTED: no verified empty clause: the proof does not refute the formula",
+          "rejected": true
+        },
+        "mutated_unused_clause": {
+          "clause_id": 1,
+          "cpu_s": 0.03,
+          "expected": "verifies: the clause is outside the derivation core",
+          "still_verifies": true
+        },
+        "mutated_used_clause": {
+          "clause_id": 512,
+          "clauses_used_by_proof": 4661,
+          "of_clauses": 184188
+        },
+        "mutated_used_cnf_literal": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.02,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "mutated_used_cnf_literal_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.2,
+          "rc": 1,
+          "reason": "REJECTED: line 10735: antecedent 512 is satisfied under the current assignment",
+          "rejected": true
+        },
+        "satisfiable_formula": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "satisfiable_formula_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.02,
+          "rc": 1,
+          "reason": "REJECTED: line 1: deletion of absent id 4",
+          "rejected": true
+        },
+        "truncated_trimmed": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed-truncated.lrat"
+          ],
+          "cpu_s": 0.02,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_lrattrim": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-0404-word-search/H8-word0.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b.lrat"
+          ],
+          "cpu_s": 0.04,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-0404-word-search/H8-word0.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.15,
+          "rc": 1,
+          "reason": "REJECTED: line 1356: hints for 184866 do not yield a conflict (not RUP)",
+          "rejected": true
+        }
+      },
+      "describe": "K58 0404 word-search child H=7, word 0",
+      "input": {
+        "bytes": 3490919,
+        "expected_sha256": "2286ae68e1419cdbc751e1804ec9ca79b05874b759b75ed9c6cd3ebe1a31225f",
+        "header": "p cnf 19425 184188",
+        "match": true,
+        "sha256": "2286ae68e1419cdbc751e1804ec9ca79b05874b759b75ed9c6cd3ebe1a31225f"
+      },
+      "source": ".scratch/k58-0404-word-search/H7-word0.cnf"
+    },
+    "H8": {
+      "armA_drat": {
+        "bytes": 9529642,
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a.drat"
+        ],
+        "cpu_s": 1.77,
+        "cpu_sys_s": 0.03,
+        "cpu_user_s": 1.74,
+        "elaboration": {
+          "elaborate": {
+            "bytes": 15358198,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab.lrat"
+            ],
+            "cpu_s": 1.19,
+            "cpu_sys_s": 0.03,
+            "cpu_user_s": 1.16,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elaborate.log",
+            "maxrss_kb": 86168.0,
+            "rc": 0,
+            "sha256": "51f7c69e02f7444b74025fcab7354813e1d6e021114dd186288c416df90dbabd",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elaborate.err",
+            "wall_s": 1.29
+          },
+          "retained_bytes": 15358198,
+          "strict_chain_cpu_s": 1.26,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.07,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-strict.log",
+            "maxrss_kb": 24888.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-strict.err",
+            "wall_s": 0.08
+          },
+          "total_cpu_s": 3.03,
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.09,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.08,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trim.log",
+            "maxrss_kb": 26424.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trim.err",
+            "wall_s": 0.09
+          },
+          "trimmed_bytes": 6547420,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.05,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.05,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trim-replay-relax.log",
+            "maxrss_kb": 20696.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trim-replay-relax.err",
+            "wall_s": 0.06
+          },
+          "trimmed_sha256": "ff2d3a8caec9198e7135f1b73eb0d59b85017321d2ae12acc67c7189cd99fa00",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trim-replay.log",
+            "maxrss_kb": 10740.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trim-replay.err",
+            "wall_s": 0.01
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-elab-trimmed.lrat' after reading 521621 bytes: deleted clause '184189' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 1.33,
+          "trimmed_variant_cpu_s": 3.1,
+          "trimmed_variant_retained_bytes": 6547420
+        },
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 41948.0,
+        "rc": 20,
+        "sha256": "55a3963489aad6bab8f2c3069f29045a94d88768f2529c242506f7f23c678eb2",
+        "stats": {
+          "conflicts": 49226,
+          "decisions": 307381,
+          "propagations": 12350047,
+          "restarts": 3189
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-solve.err",
+        "total_cpu_s": 2.84,
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a.drat",
+            "-c"
+          ],
+          "cpu_s": 1.07,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 1.05,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-verify.log",
+          "maxrss_kb": 86232.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a-verify.err",
+          "wall_s": 1.13
+        },
+        "wall_s": 1.82
+      },
+      "armB_native_lrat": {
+        "ascii": {
+          "bytes": 15310402,
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "-a",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.lrat",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.08,
+          "cpu_sys_s": 0.0,
+          "cpu_user_s": 0.08,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-ascii.log",
+          "maxrss_kb": 21964.0,
+          "rc": 20,
+          "sha256": "66f2a12a1ae098341f7cb501dead8ff29304e10aaa16a9746f8f7c56a7e07388",
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-ascii.err",
+          "wall_s": 0.08
+        },
+        "ascii_structure": {
+          "addition_lines": 32106,
+          "ascii_bytes": 15310402,
+          "deletion_ids": 239040,
+          "deletion_lines": 22747,
+          "hint_steps": 1482249
+        },
+        "bytes": 14594230,
+        "check": {
+          "replays": {
+            "forward": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "-S",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.05,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.05,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim-replay-forward.log",
+              "maxrss_kb": 10996.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim-replay-forward.err",
+              "wall_s": 0.05
+            },
+            "replay": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.05,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.05,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim-replay.log",
+              "maxrss_kb": 21072.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim-replay.err",
+              "wall_s": 0.05
+            },
+            "rup": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "--rup",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b.lrat"
+              ],
+              "cpu_s": 0.07,
+              "cpu_sys_s": 0.01,
+              "cpu_user_s": 0.06,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim-rup-only.log",
+              "maxrss_kb": 43812.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim-rup-only.err",
+              "wall_s": 0.08
+            }
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.lrat"
+            ],
+            "cpu_s": 0.09,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.08,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim.log",
+            "maxrss_kb": 45652.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim.err",
+            "wall_s": 0.09
+          },
+          "trimmed_bytes": 6503105,
+          "trimmed_sha256": "ae25a7a40dfe91ceb1111c2012adf3a7290b86b2bd49b534f3e61a1deaaf41d4"
+        },
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--lrat",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b.lrat"
+        ],
+        "cpu_s": 1.86,
+        "cpu_sys_s": 0.04,
+        "cpu_user_s": 1.82,
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 45604.0,
+        "rc": 20,
+        "retained_bytes": 6503105,
+        "second_checker": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.91,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 0.89,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-pycheck.log",
+          "maxrss_kb": 77360.0,
+          "rc": 20,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-pycheck.err",
+          "wall_s": 0.93
+        },
+        "sha256": "05f0d7f11d28e0a784cab3a1a737960fdc8bc5414cc246242d743bb668bd7b34",
+        "stats": {
+          "conflicts": 49226,
+          "decisions": 307381,
+          "propagations": 12350047,
+          "restarts": 3189
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-solve.err",
+        "total_cpu_s": 2.0,
+        "total_cpu_s_with_second_checker": 2.91,
+        "trim_ratio": 0.4456,
+        "wall_s": 1.87
+      },
+      "armC_retained": {
+        "elaboration": {
+          "elaborate": {
+            "bytes": 15358198,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/retained.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab.lrat"
+            ],
+            "cpu_s": 1.09,
+            "cpu_sys_s": 0.03,
+            "cpu_user_s": 1.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elaborate.log",
+            "maxrss_kb": 86168.0,
+            "rc": 0,
+            "sha256": "51f7c69e02f7444b74025fcab7354813e1d6e021114dd186288c416df90dbabd",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elaborate.err",
+            "wall_s": 1.1
+          },
+          "retained_bytes": 15358198,
+          "strict_chain_cpu_s": 1.16,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.07,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-strict.log",
+            "maxrss_kb": 24888.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-strict.err",
+            "wall_s": 0.08
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.08,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.08,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trim.log",
+            "maxrss_kb": 26428.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trim.err",
+            "wall_s": 0.09
+          },
+          "trimmed_bytes": 6547420,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.04,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.04,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trim-replay-relax.log",
+            "maxrss_kb": 20696.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trim-replay-relax.err",
+            "wall_s": 0.05
+          },
+          "trimmed_sha256": "ff2d3a8caec9198e7135f1b73eb0d59b85017321d2ae12acc67c7189cd99fa00",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trim-replay.log",
+            "maxrss_kb": 10740.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trim-replay.err",
+            "wall_s": 0.01
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-elab-trimmed.lrat' after reading 521621 bytes: deleted clause '184189' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 1.21,
+          "trimmed_variant_retained_bytes": 6547420
+        },
+        "fresh_drat_matches_retained": true,
+        "retained_drat": {
+          "bytes": 9529642,
+          "sha256": "55a3963489aad6bab8f2c3069f29045a94d88768f2529c242506f7f23c678eb2"
+        },
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/retained.drat",
+            "-c"
+          ],
+          "cpu_s": 0.98,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 0.96,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-verify-retained.log",
+          "maxrss_kb": 86168.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/c-verify-retained.err",
+          "wall_s": 0.98
+        }
+      },
+      "comparison": {
+        "A_elab_retained_bytes": 15358198,
+        "A_elab_total_cpu_s": 3.03,
+        "A_elab_trimmed_variant_bytes": 6547420,
+        "A_elab_trimmed_variant_cpu_s": 3.1,
+        "A_elab_trimmed_variant_needs_relax": true,
+        "A_retained_bytes": 9529642,
+        "A_total_cpu_s": 2.84,
+        "B_retained_bytes": 6503105,
+        "B_total_cpu_s": 2.0,
+        "B_total_cpu_s_with_second_checker": 2.91,
+        "B_trimmed_structure": {
+          "addition_lines": 32106,
+          "ascii_bytes": 15310402,
+          "deletion_ids": 239040,
+          "deletion_lines": 22747,
+          "hint_steps": 1482249
+        },
+        "counters": {
+          "conflicts": 49226,
+          "decisions": 307381,
+          "propagations": 12350047,
+          "restarts": 3189
+        },
+        "cpu_ratio_B_over_A": 0.7042,
+        "cpu_ratio_B_over_A_elab": 0.6601,
+        "retained_ratio_B_over_A": 0.6824
+      },
+      "controls": {
+        "altered_antecedent_detail": {
+          "line": 2,
+          "new_hint": 1,
+          "old_hint": 135043
+        },
+        "altered_antecedent_id": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.01,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "altered_antecedent_id_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.15,
+          "rc": 1,
+          "reason": "REJECTED: line 2: antecedent 1 is absent or deleted",
+          "rejected": true
+        },
+        "ascii_positive": {
+          "cpu_s": 0.07,
+          "rc": 20,
+          "verified": true
+        },
+        "drat_is_not_lrat": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/a.drat"
+          ],
+          "cpu_s": 0.01,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "missing_empty_clause": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.04,
+          "rc": 0,
+          "reason": "c WARNING no empty clause added in input CNF nor input proof",
+          "rejected": true
+        },
+        "missing_empty_clause_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.93,
+          "rc": 1,
+          "reason": "REJECTED: no verified empty clause: the proof does not refute the formula",
+          "rejected": true
+        },
+        "mutated_unused_clause": {
+          "clause_id": 1,
+          "cpu_s": 0.05,
+          "expected": "verifies: the clause is outside the derivation core",
+          "still_verifies": true
+        },
+        "mutated_used_clause": {
+          "clause_id": 512,
+          "clauses_used_by_proof": 9217,
+          "of_clauses": 184188
+        },
+        "mutated_used_cnf_literal": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.03,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "mutated_used_cnf_literal_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.17,
+          "rc": 1,
+          "reason": "REJECTED: line 12216: antecedent 185372 is satisfied under the current assignment",
+          "rejected": true
+        },
+        "satisfiable_formula": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "satisfiable_formula_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.03,
+          "rc": 1,
+          "reason": "REJECTED: line 1: deletion of absent id 4",
+          "rejected": true
+        },
+        "truncated_trimmed": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed-truncated.lrat"
+          ],
+          "cpu_s": 0.02,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_lrattrim": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-0404-word-search/H7-word0.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b.lrat"
+          ],
+          "cpu_s": 0.05,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-0404-word-search/H7-word0.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.15,
+          "rc": 1,
+          "reason": "REJECTED: line 1640: hints for 185008 do not yield a conflict (not RUP)",
+          "rejected": true
+        }
+      },
+      "describe": "K58 0404 word-search child H=8, word 0",
+      "input": {
+        "bytes": 3490919,
+        "expected_sha256": "e8cc97847a6cab9c277933d2dd0d6112c79b061bebb5af221d57df5d6d6a2229",
+        "header": "p cnf 19425 184188",
+        "match": true,
+        "sha256": "e8cc97847a6cab9c277933d2dd0d6112c79b061bebb5af221d57df5d6d6a2229"
+      },
+      "source": ".scratch/k58-0404-word-search/H8-word0.cnf"
+    },
+    "N14": {
+      "armA_drat": {
+        "bytes": 2308201,
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a.drat"
+        ],
+        "cpu_s": 0.22,
+        "cpu_sys_s": 0.04,
+        "cpu_user_s": 0.18,
+        "elaboration": {
+          "elaborate": {
+            "bytes": 5727659,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab.lrat"
+            ],
+            "cpu_s": 0.56,
+            "cpu_sys_s": 0.03,
+            "cpu_user_s": 0.53,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elaborate.log",
+            "maxrss_kb": 113988.0,
+            "rc": 0,
+            "sha256": "fbbb42c7d8e1b3fb5b68700e063624051220997bd15ba49fe668f173220bc63f",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elaborate.err",
+            "wall_s": 0.57
+          },
+          "retained_bytes": 5727659,
+          "strict_chain_cpu_s": 0.63,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-strict.log",
+            "maxrss_kb": 41584.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-strict.err",
+            "wall_s": 0.08
+          },
+          "total_cpu_s": 0.85,
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.07,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trim.log",
+            "maxrss_kb": 41588.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trim.err",
+            "wall_s": 0.08
+          },
+          "trimmed_bytes": 2782308,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.06,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trim-replay-relax.log",
+            "maxrss_kb": 41716.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trim-replay-relax.err",
+            "wall_s": 0.07
+          },
+          "trimmed_sha256": "63b7aee872465f943819830408c5058a3491457c97018b47a919f2b0db615fc3",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.06,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trim-replay.log",
+            "maxrss_kb": 41584.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trim-replay.err",
+            "wall_s": 0.07
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-elab-trimmed.lrat' after reading 2494053 bytes: deleted clause '834107' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 0.69,
+          "trimmed_variant_cpu_s": 0.91,
+          "trimmed_variant_retained_bytes": 2782308
+        },
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 139736.0,
+        "rc": 20,
+        "sha256": "b490208c0fda75ea03071c4244c93831df5ab44b7b991c978aaa792618b83098",
+        "stats": {
+          "propagations": 31469
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-solve.err",
+        "total_cpu_s": 0.74,
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a.drat",
+            "-c"
+          ],
+          "cpu_s": 0.52,
+          "cpu_sys_s": 0.03,
+          "cpu_user_s": 0.49,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-verify.log",
+          "maxrss_kb": 114012.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a-verify.err",
+          "wall_s": 0.53
+        },
+        "wall_s": 0.22
+      },
+      "armB_native_lrat": {
+        "ascii": {
+          "bytes": 5727801,
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "-a",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.lrat",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.08,
+          "cpu_sys_s": 0.01,
+          "cpu_user_s": 0.07,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-ascii.log",
+          "maxrss_kb": 41588.0,
+          "rc": 20,
+          "sha256": "5a24a700a6f0a1e5c77a58581d6777d39541ca726ed912e031beac9ea2da5fd7",
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-ascii.err",
+          "wall_s": 0.08
+        },
+        "ascii_structure": {
+          "addition_lines": 3,
+          "ascii_bytes": 5727801,
+          "deletion_ids": 834112,
+          "deletion_lines": 4,
+          "hint_steps": 7
+        },
+        "bytes": 2393381,
+        "check": {
+          "replays": {
+            "forward": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "-S",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.08,
+              "cpu_sys_s": 0.01,
+              "cpu_user_s": 0.07,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim-replay-forward.log",
+              "maxrss_kb": 41588.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim-replay-forward.err",
+              "wall_s": 0.08
+            },
+            "replay": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.06,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.06,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim-replay.log",
+              "maxrss_kb": 41588.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim-replay.err",
+              "wall_s": 0.07
+            },
+            "rup": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "--rup",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b.lrat"
+              ],
+              "cpu_s": 0.06,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.06,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim-rup-only.log",
+              "maxrss_kb": 44404.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim-rup-only.err",
+              "wall_s": 0.07
+            }
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim.log",
+            "maxrss_kb": 49140.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim.err",
+            "wall_s": 0.07
+          },
+          "trimmed_bytes": 2494126,
+          "trimmed_sha256": "f6f2290c5e65307bc22c364e501f130f8720bb5482c6b4f1ad2fcf52914e629d"
+        },
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--lrat",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b.lrat"
+        ],
+        "cpu_s": 0.23,
+        "cpu_sys_s": 0.04,
+        "cpu_user_s": 0.19,
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 144408.0,
+        "rc": 20,
+        "retained_bytes": 2494126,
+        "second_checker": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.77,
+          "cpu_sys_s": 0.1,
+          "cpu_user_s": 0.67,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-pycheck.log",
+          "maxrss_kb": 329268.0,
+          "rc": 20,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-pycheck.err",
+          "wall_s": 0.81
+        },
+        "sha256": "ec62dbf1b040f362689d8c2f77d4745f9df605086e15722eaeebcc2841833c31",
+        "stats": {
+          "propagations": 31469
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-solve.err",
+        "total_cpu_s": 0.36,
+        "total_cpu_s_with_second_checker": 1.13,
+        "trim_ratio": 1.0421,
+        "wall_s": 0.23
+      },
+      "armC_retained": {
+        "elaboration": {
+          "elaborate": {
+            "bytes": 5727659,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/retained.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab.lrat"
+            ],
+            "cpu_s": 0.57,
+            "cpu_sys_s": 0.03,
+            "cpu_user_s": 0.54,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elaborate.log",
+            "maxrss_kb": 114012.0,
+            "rc": 0,
+            "sha256": "fbbb42c7d8e1b3fb5b68700e063624051220997bd15ba49fe668f173220bc63f",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elaborate.err",
+            "wall_s": 0.58
+          },
+          "retained_bytes": 5727659,
+          "strict_chain_cpu_s": 0.64,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.07,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-strict.log",
+            "maxrss_kb": 41588.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-strict.err",
+            "wall_s": 0.07
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trim.log",
+            "maxrss_kb": 41588.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trim.err",
+            "wall_s": 0.08
+          },
+          "trimmed_bytes": 2782308,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.06,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trim-replay-relax.log",
+            "maxrss_kb": 41716.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trim-replay-relax.err",
+            "wall_s": 0.07
+          },
+          "trimmed_sha256": "63b7aee872465f943819830408c5058a3491457c97018b47a919f2b0db615fc3",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.07,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.06,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trim-replay.log",
+            "maxrss_kb": 41652.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trim-replay.err",
+            "wall_s": 0.07
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-elab-trimmed.lrat' after reading 2494053 bytes: deleted clause '834107' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 0.7,
+          "trimmed_variant_retained_bytes": 2782308
+        },
+        "fresh_drat_matches_retained": false,
+        "retained_drat": {
+          "bytes": 2306594,
+          "sha256": "aedbe85c3e47eae3176fe995434b5b314431844d5b0d7d7271863a937c7f3b94"
+        },
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/retained.drat",
+            "-c"
+          ],
+          "cpu_s": 0.55,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 0.53,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-verify-retained.log",
+          "maxrss_kb": 114012.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/c-verify-retained.err",
+          "wall_s": 0.56
+        }
+      },
+      "comparison": {
+        "A_elab_retained_bytes": 5727659,
+        "A_elab_total_cpu_s": 0.85,
+        "A_elab_trimmed_variant_bytes": 2782308,
+        "A_elab_trimmed_variant_cpu_s": 0.91,
+        "A_elab_trimmed_variant_needs_relax": true,
+        "A_retained_bytes": 2308201,
+        "A_total_cpu_s": 0.74,
+        "B_retained_bytes": 2494126,
+        "B_total_cpu_s": 0.36,
+        "B_total_cpu_s_with_second_checker": 1.13,
+        "B_trimmed_structure": {
+          "addition_lines": 3,
+          "ascii_bytes": 5727801,
+          "deletion_ids": 834112,
+          "deletion_lines": 4,
+          "hint_steps": 7
+        },
+        "counters": {
+          "propagations": 31469
+        },
+        "cpu_ratio_B_over_A": 0.4865,
+        "cpu_ratio_B_over_A_elab": 0.4235,
+        "retained_ratio_B_over_A": 1.0805
+      },
+      "controls": {
+        "altered_antecedent_detail": {
+          "line": 2,
+          "new_hint": 1,
+          "old_hint": 135190
+        },
+        "altered_antecedent_id": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.07,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "altered_antecedent_id_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.74,
+          "rc": 1,
+          "reason": "REJECTED: line 2: antecedent 1 is absent or deleted",
+          "rejected": true
+        },
+        "ascii_positive": {
+          "cpu_s": 0.07,
+          "rc": 20,
+          "verified": true
+        },
+        "drat_is_not_lrat": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/a.drat"
+          ],
+          "cpu_s": 0.06,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "missing_empty_clause": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.07,
+          "rc": 0,
+          "reason": "c WARNING no empty clause added in input CNF nor input proof",
+          "rejected": true
+        },
+        "missing_empty_clause_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.73,
+          "rc": 1,
+          "reason": "REJECTED: no verified empty clause: the proof does not refute the formula",
+          "rejected": true
+        },
+        "mutated_unused_clause": {
+          "clause_id": 1,
+          "cpu_s": 0.07,
+          "expected": "verifies: the clause is outside the derivation core",
+          "still_verifies": true
+        },
+        "mutated_used_clause": {
+          "clause_id": 135190,
+          "clauses_used_by_proof": 5,
+          "of_clauses": 834106
+        },
+        "mutated_used_cnf_literal": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.07,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "mutated_used_cnf_literal_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.75,
+          "rc": 1,
+          "reason": "REJECTED: line 2: antecedent 809110 is satisfied under the current assignment",
+          "rejected": true
+        },
+        "satisfiable_formula": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "satisfiable_formula_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.12,
+          "rc": 1,
+          "reason": "REJECTED: line 1: deletion of absent id 4",
+          "rejected": true
+        },
+        "truncated_trimmed": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed-truncated.lrat"
+          ],
+          "cpu_s": 0.06,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_lrattrim": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/results/cc-reciprocal-0404-2026-11-25/continuation/nodes/n018.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b.lrat"
+          ],
+          "cpu_s": 0.07,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/results/cc-reciprocal-0404-2026-11-25/continuation/nodes/n018.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.73,
+          "rc": 1,
+          "reason": "REJECTED: line 4: antecedent 834107 is satisfied under the current assignment",
+          "rejected": true
+        }
+      },
+      "describe": "reciprocal-0404 continuation leaf n014, 305513 vars / 834106 clauses",
+      "input": {
+        "bytes": 21735294,
+        "expected_sha256": "92be6247f37ba4d7da27df7195f03ad7cfc204d9dca0914009500e48af39e679",
+        "header": "p cnf 305513 834106",
+        "match": true,
+        "sha256": "92be6247f37ba4d7da27df7195f03ad7cfc204d9dca0914009500e48af39e679"
+      },
+      "source": "results/cc-reciprocal-0404-2026-11-25/continuation/nodes/n014.cnf"
+    },
+    "R11": {
+      "armA_drat": {
+        "bytes": 6707,
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a.drat"
+        ],
+        "cpu_s": 0.03,
+        "cpu_sys_s": 0.0,
+        "cpu_user_s": 0.03,
+        "elaboration": {
+          "elaborate": {
+            "bytes": 1105650,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab.lrat"
+            ],
+            "cpu_s": 0.12,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.11,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elaborate.log",
+            "maxrss_kb": 70424.0,
+            "rc": 0,
+            "sha256": "7663aecffd5a00aef37ddb00d72f0a8daca23a980582612b8c5aec8719a3c6b3",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elaborate.err",
+            "wall_s": 0.13
+          },
+          "retained_bytes": 1105650,
+          "strict_chain_cpu_s": 0.13,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-strict.log",
+            "maxrss_kb": 10228.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-strict.err",
+            "wall_s": 0.01
+          },
+          "total_cpu_s": 0.16,
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trim.log",
+            "maxrss_kb": 10228.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trim.err",
+            "wall_s": 0.01
+          },
+          "trimmed_bytes": 517866,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trim-replay-relax.log",
+            "maxrss_kb": 10288.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trim-replay-relax.err",
+            "wall_s": 0.01
+          },
+          "trimmed_sha256": "74458d1724c341650c3070f5f85e82cf862fcc5d55f9e1fe36089fdda3166794",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trim-replay.log",
+            "maxrss_kb": 10228.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trim-replay.err",
+            "wall_s": 0.01
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-elab-trimmed.lrat' after reading 513093 bytes: deleted clause '173820' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 0.14,
+          "trimmed_variant_cpu_s": 0.17,
+          "trimmed_variant_retained_bytes": 517866
+        },
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 24908.0,
+        "rc": 20,
+        "sha256": "1e605f06553a1152d358bccf16f49dcb7a4102da7ccb9d3adade9a2f662d3007",
+        "stats": {
+          "conflicts": 1,
+          "propagations": 1741
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-solve.err",
+        "total_cpu_s": 0.15,
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a.drat",
+            "-c"
+          ],
+          "cpu_s": 0.12,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 0.1,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-verify.log",
+          "maxrss_kb": 70424.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a-verify.err",
+          "wall_s": 0.12
+        },
+        "wall_s": 0.03
+      },
+      "armB_native_lrat": {
+        "ascii": {
+          "bytes": 1123090,
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "-a",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.lrat",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.01,
+          "cpu_sys_s": 0.0,
+          "cpu_user_s": 0.01,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-ascii.log",
+          "maxrss_kb": 10584.0,
+          "rc": 20,
+          "sha256": "bac69a67800170e74f324f900c2cb00ecd9d1adf1ae84353b60216e3c8f8fd24",
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-ascii.err",
+          "wall_s": 0.01
+        },
+        "ascii_structure": {
+          "addition_lines": 309,
+          "ascii_bytes": 1123090,
+          "deletion_ids": 174437,
+          "deletion_lines": 310,
+          "hint_steps": 1005
+        },
+        "bytes": 24969,
+        "check": {
+          "replays": {
+            "forward": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "-S",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.01,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.01,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim-replay-forward.log",
+              "maxrss_kb": 10228.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim-replay-forward.err",
+              "wall_s": 0.01
+            },
+            "replay": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.lrat"
+              ],
+              "cpu_s": 0.0,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.0,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim-replay.log",
+              "maxrss_kb": 10384.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim-replay.err",
+              "wall_s": 0.01
+            },
+            "rup": {
+              "cmd": [
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+                "--rup",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+                "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b.lrat"
+              ],
+              "cpu_s": 0.0,
+              "cpu_sys_s": 0.0,
+              "cpu_user_s": 0.0,
+              "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim-rup-only.log",
+              "maxrss_kb": 10100.0,
+              "rc": 20,
+              "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim-rup-only.err",
+              "wall_s": 0.01
+            }
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim.log",
+            "maxrss_kb": 10612.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim.err",
+            "wall_s": 0.01
+          },
+          "trimmed_bytes": 520186,
+          "trimmed_sha256": "54d594fcdcea71819052c185dcf4fe9f938d19bbc634b0fb68197b6c72536a93"
+        },
+        "cmd": [
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/cadical-2.1.2",
+          "--seed=0",
+          "--lrat",
+          "--binary=true",
+          "-c",
+          "50000",
+          "-t",
+          "20",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+          "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b.lrat"
+        ],
+        "cpu_s": 0.03,
+        "cpu_sys_s": 0.0,
+        "cpu_user_s": 0.03,
+        "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-solve.log",
+        "log_tail": "c --- [ shutting down ] ------------------------------------------------------\nc \nc exit 20",
+        "maxrss_kb": 25224.0,
+        "rc": 20,
+        "retained_bytes": 520186,
+        "second_checker": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.15,
+          "cpu_sys_s": 0.02,
+          "cpu_user_s": 0.13,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-pycheck.log",
+          "maxrss_kb": 70320.0,
+          "rc": 20,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-pycheck.err",
+          "wall_s": 0.16
+        },
+        "sha256": "5280cc4c972f33b3861ce798ae710388a0e22e49fdeb5f934c657132eebb134e",
+        "stats": {
+          "conflicts": 1,
+          "propagations": 1741
+        },
+        "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-solve.err",
+        "total_cpu_s": 0.04,
+        "total_cpu_s_with_second_checker": 0.19,
+        "trim_ratio": 20.8333,
+        "wall_s": 0.04
+      },
+      "armC_retained": {
+        "elaboration": {
+          "elaborate": {
+            "bytes": 1105650,
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/retained.drat",
+              "-L",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab.lrat"
+            ],
+            "cpu_s": 0.12,
+            "cpu_sys_s": 0.01,
+            "cpu_user_s": 0.11,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elaborate.log",
+            "maxrss_kb": 70808.0,
+            "rc": 0,
+            "sha256": "35dcbc4433c9bfdf753dacf738291a122d7d01e3d57d1f6fe74ceb33c3e03f92",
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elaborate.err",
+            "wall_s": 0.13
+          },
+          "retained_bytes": 1105650,
+          "strict_chain_cpu_s": 0.13,
+          "strict_check": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-strict.log",
+            "maxrss_kb": 10228.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-strict.err",
+            "wall_s": 0.01
+          },
+          "trim": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab.lrat",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trim.log",
+            "maxrss_kb": 10228.0,
+            "rc": 20,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trim.err",
+            "wall_s": 0.01
+          },
+          "trimmed_bytes": 536379,
+          "trimmed_relaxed_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "--relax",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.01,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.01,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trim-replay-relax.log",
+            "maxrss_kb": 10356.0,
+            "rc": 20,
+            "relaxed": true,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trim-replay-relax.err",
+            "wall_s": 0.01
+          },
+          "trimmed_sha256": "4009c30cc52d8d962dc15d7792287b88e3145d3528e4d85895c60d208f8ad445",
+          "trimmed_strict_replay": {
+            "cmd": [
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+              "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trimmed.lrat"
+            ],
+            "cpu_s": 0.0,
+            "cpu_sys_s": 0.0,
+            "cpu_user_s": 0.0,
+            "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trim-replay.log",
+            "maxrss_kb": 10228.0,
+            "rc": 1,
+            "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trim-replay.err",
+            "wall_s": 0.01
+          },
+          "trimmed_strict_replay_error": "lrat-trim: parse error in '/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-elab-trimmed.lrat' after reading 513093 bytes: deleted clause '173820' at byte 2 is neither an original clause nor has been added (use '--relax' to ignore such deletions)",
+          "trimmed_strict_replay_ok": false,
+          "trimmed_variant_chain_cpu_s": 0.14,
+          "trimmed_variant_retained_bytes": 536379
+        },
+        "fresh_drat_matches_retained": false,
+        "retained_drat": {
+          "bytes": 214311,
+          "sha256": "d195712e4f07f7ad522dd3b4513b665ab5f8c339974f25db53aa959095506244"
+        },
+        "verify": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/tools/color-resolved-wallcc/bin/drat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/retained.drat",
+            "-c"
+          ],
+          "cpu_s": 0.12,
+          "cpu_sys_s": 0.01,
+          "cpu_user_s": 0.11,
+          "log": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-verify-retained.log",
+          "maxrss_kb": 70808.0,
+          "rc": 0,
+          "stderr": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/c-verify-retained.err",
+          "wall_s": 0.13
+        }
+      },
+      "comparison": {
+        "A_elab_retained_bytes": 1105650,
+        "A_elab_total_cpu_s": 0.16,
+        "A_elab_trimmed_variant_bytes": 517866,
+        "A_elab_trimmed_variant_cpu_s": 0.17,
+        "A_elab_trimmed_variant_needs_relax": true,
+        "A_retained_bytes": 6707,
+        "A_total_cpu_s": 0.15,
+        "B_retained_bytes": 520186,
+        "B_total_cpu_s": 0.04,
+        "B_total_cpu_s_with_second_checker": 0.19,
+        "B_trimmed_structure": {
+          "addition_lines": 309,
+          "ascii_bytes": 1123090,
+          "deletion_ids": 174437,
+          "deletion_lines": 310,
+          "hint_steps": 1005
+        },
+        "counters": {
+          "conflicts": 1,
+          "propagations": 1741
+        },
+        "cpu_ratio_B_over_A": 0.2667,
+        "cpu_ratio_B_over_A_elab": 0.25,
+        "retained_ratio_B_over_A": 77.5587
+      },
+      "controls": {
+        "altered_antecedent_detail": {
+          "line": 2,
+          "new_hint": 1,
+          "old_hint": 135058
+        },
+        "altered_antecedent_id": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "altered_antecedent_id_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed-mutated-hint.lrat"
+          ],
+          "cpu_s": 0.14,
+          "rc": 1,
+          "reason": "REJECTED: line 2: antecedent 1 is absent or deleted",
+          "rejected": true
+        },
+        "ascii_positive": {
+          "cpu_s": 0.01,
+          "rc": 20,
+          "verified": true
+        },
+        "drat_is_not_lrat": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/a.drat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "missing_empty_clause": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.01,
+          "rc": 0,
+          "reason": "c WARNING no empty clause added in input CNF nor input proof",
+          "rejected": true
+        },
+        "missing_empty_clause_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed-noempty.lrat"
+          ],
+          "cpu_s": 0.15,
+          "rc": 1,
+          "reason": "REJECTED: no verified empty clause: the proof does not refute the formula",
+          "rejected": true
+        },
+        "mutated_unused_clause": {
+          "clause_id": 1,
+          "cpu_s": 0.01,
+          "expected": "verifies: the clause is outside the derivation core",
+          "still_verifies": true
+        },
+        "mutated_used_clause": {
+          "clause_id": 6126,
+          "clauses_used_by_proof": 408,
+          "of_clauses": 173819
+        },
+        "mutated_used_cnf_literal": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.01,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "mutated_used_cnf_literal_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input-mutated-used.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.14,
+          "rc": 1,
+          "reason": "REJECTED: line 206: antecedent 6126 is satisfied under the current assignment",
+          "rejected": true
+        },
+        "satisfiable_formula": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.lrat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "satisfiable_formula_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/sat.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.02,
+          "rc": 1,
+          "reason": "REJECTED: line 1: deletion of absent id 4",
+          "rejected": true
+        },
+        "truncated_trimmed": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/input.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed-truncated.lrat"
+          ],
+          "cpu_s": 0.01,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_lrattrim": {
+          "cmd": [
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/results/wall-cc-35-2026-11-26/certified-leaf-3d443146-r11/original-parent.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b.lrat"
+          ],
+          "cpu_s": 0.0,
+          "rc": 1,
+          "reason": "",
+          "rejected": true
+        },
+        "wrong_cnf_same_shape_pycheck": {
+          "cmd": [
+            "/opt/math/bin/python3",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/lrat_rup_check.py",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/results/wall-cc-35-2026-11-26/certified-leaf-3d443146-r11/original-parent.cnf",
+            "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trimmed.ascii.lrat"
+          ],
+          "cpu_s": 0.14,
+          "rc": 1,
+          "reason": "REJECTED: line 594: antecedent 173818 is absent or deleted",
+          "rejected": true
+        }
+      },
+      "describe": "certified wall leaf, profile (15,15,14,13), cube [4262,4645]",
+      "input": {
+        "bytes": 3323889,
+        "expected_sha256": "b3a5bded030682e02472bc1f95147efaade87c01ab88772a98967194b3e48f41",
+        "header": "p cnf 18497 173819",
+        "match": true,
+        "sha256": "b3a5bded030682e02472bc1f95147efaade87c01ab88772a98967194b3e48f41"
+      },
+      "source": "results/wall-cc-35-2026-11-26/certified-leaf-3d443146-r11/leaf.cnf"
+    }
+  },
+  "checker_selftest": {
+    "check": {
+      "rc": 0,
+      "summary": "passed 20 checking tests in 'test/check/run.sh'"
+    },
+    "fail": {
+      "rc": 0,
+      "summary": "passed 9 tests in 'test/fail/run.sh'"
+    },
+    "parse": {
+      "rc": 0,
+      "summary": "passed 90 parsing tests in 'test/parse/run.sh' (26 CNFs, 40 LRATs, 24 LRITs)"
+    },
+    "regr": {
+      "rc": 0,
+      "summary": "passed 1 regression tests in 'test/regr/run.sh'"
+    },
+    "trim": {
+      "rc": 0,
+      "summary": "passed 39 trimming tests in 'test/trim/run.sh'"
+    },
+    "usage": {
+      "rc": 0,
+      "summary": "passed 69 usage tests in 'test/usage/run.sh'"
+    }
+  },
+  "pins": {
+    "cadical": {
+      "path": "tools/color-resolved-wallcc/bin/cadical-2.1.2",
+      "sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "version": "2.1.2"
+    },
+    "drat_trim": {
+      "path": "tools/color-resolved-wallcc/bin/drat-trim",
+      "sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce"
+    },
+    "lrat_trim": {
+      "build": "gcc -Wall -O3 -DNDEBUG",
+      "build_cmd": "./configure && make (from the tarball above)",
+      "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/tools/lrat-trim-423194927df747528d5b7364806b5b77b2660c12/lrat-trim",
+      "sha256": "f1eb1a4486274c35f4accf7bc13b595cfdbcf2d7c9aa6b46fb281f19d0d52895",
+      "source_commit": "423194927df747528d5b7364806b5b77b2660c12",
+      "source_tarball_sha256": "e71af67672133ed0c6a0885fc2b1959682430fdd5fa8456ea692505d18f6cdd3",
+      "source_url": "https://codeload.github.com/arminbiere/lrat-trim/tar.gz/423194927df747528d5b7364806b5b77b2660c12",
+      "version": "0.2.1-rc3"
+    },
+    "second_checker": {
+      "path": ".ultramath/smx06hpp8/m5/lrat_rup_check.py",
+      "role": "second independent implementation, not a trusted checker",
+      "semantics": "RUP-only LRAT, from scratch, unverified code",
+      "sha256": "f0eb3f5d419f23b9843fcc5a5aba8f5b512db2a4dbfd8a9b469d7e11df4771b2"
+    },
+    "solver_args": {
+      "conflicts": 50000,
+      "seed": 0,
+      "wall": 20
+    },
+    "toolchain": {
+      "gcc": "gcc (conda-forge gcc 16.2.0-7) 16.2.0",
+      "python": "3.12.14"
+    }
+  },
+  "scope": "certificate-pipeline comparison on already closed inputs only; no wall search, no OPEN parent, no bound change"
+}
