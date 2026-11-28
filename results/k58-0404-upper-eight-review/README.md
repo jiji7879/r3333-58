@@ -34,6 +34,8 @@ Each nine-subset of the eleven opportunities is consequently forbidden. The resu
 
 The two included 38- and 40-vertex models are induced-subgraph witnesses only. They are not models of the 58-vertex row.
 
+All four scoped audits were accepted after the inventory report retracted its interpretation of RAT extension variables as a query mismatch. Its manifest and final corrected scope are in `.ultramath/smwzyl4uc/m1/REPORT.md`.
+
 ## Essential scope warnings
 
 1. **Two unrelated statistics are called H here.** This certificate's `H` counts colour-0 spokes from a particular mark to 16 sites. Other project records count high/contact sites, or use the root ticket statistic `H(r)`. The row's separately reported `H >= 11` figures are different quantities and **do not contradict this certificate's `H <= 8`**. They must never be composed as if they were the same statistic.

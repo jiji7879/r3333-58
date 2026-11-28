@@ -129,6 +129,7 @@
     "negative_controls": ".scratch/k58-0404-upper-eight/negative-controls/results.json",
     "normalized_drat": ".scratch/k58-0404-upper-eight/run/normalized-rat-strict.json",
     "package_replay": ".scratch/k58-0404-upper-eight/run/replay.log",
+    "corrected_inventory_audit": ".ultramath/smwzyl4uc/m1/REPORT.md",
     "pipeline_audit": ".ultramath/smwzyl4uc/m3/FINDINGS.md",
     "utility_audit": ".ultramath/smwzyl4uc/m4/REPORT.md"
   },
