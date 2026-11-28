@@ -14,12 +14,14 @@ profile `(16,16,14,11)`, charge 7. Its cube is `[-1413,1014]`, in that order:
 1413 is negative and 1014 is positive. There was no wall sweep and no solver
 experiment on another row.
 
-Six directions in Ultramath `smx01fwza` are accepted for bounded components.
+Seven directions in Ultramath `smx01fwza` are accepted for bounded components.
 The residual reconstruction, per-edge semantics, cube-sensitive adversarial
-proof gate, raw/residual benchmark, and physical base/unit bridge were all
-recomputed by the coordinator. The first package submission was **not** accepted:
-a consistently rehashed MCF mutant passed its original receipt-only load gate.
-It was repaired independently before integration. Stock production defaults,
+proof gate, raw/residual benchmark, physical base/unit bridge and final opt-in
+package were all checked by the coordinator. The first package submission was
+**not** accepted: a consistently rehashed MCF mutant passed its original
+receipt-only load gate. The coordinator repaired it, tested that repair, and
+the member resubmitted a hardened archive. Its fresh-extraction 21-check suite
+matched the submitted delivery receipt exactly. Stock production defaults,
 `finalise`, ledgers and the massive baseline archive were not modified.
 
 ## Exact query identities
@@ -161,6 +163,18 @@ toy strict and CAS replay, ten primitive tests (807,936 K4 normalisations),
 wrong input/sign/arm/colour/hash rejection, both rehashed-query tampering
 controls, and the actual stock wallcc **20/20** suite. The package's OPEN files
 record `python_sat_version: 1.9.dev22` and contain no proof/model artifact.
+
+The separately resubmitted 32,270-byte archive
+`e83c7d6ffac762a93c80e0dc6d760944731359ac6acea2621e98b0e6c734b744`
+was also extracted into a fresh copied package and independently passed the
+member's 21-check suite; the fresh result is exactly equal to its delivery
+receipt. This adds certification-payload tamper, valid-deletion and
+truncated-CAS-with-valid-splice controls. See
+`package-validation/archive-final-summary.json` and
+`package-validation/archive-verification.json`. The archive itself is not
+committed. The coordinator's source-only variant and the member's delivery
+overlay are two checked implementations of the same raw-only experiment, not
+two independent bounded solver results.
 
 This is the requested opt-in solving capability, not deployment of global MCF.
 Arm-3-BCP is checked mathematically and benchmarked but excluded from this

@@ -1,0 +1,16 @@
+{
+  "archive": ".ultramath/smx01fwza/m7/implementation/k58-mcf-overlay.zip",
+  "archive_bytes": 32270,
+  "archive_committed_to_git": false,
+  "archive_sha256": "e83c7d6ffac762a93c80e0dc6d760944731359ac6acea2621e98b0e6c734b744",
+  "baseline_run": ".scratch/arm3-hard-leaf",
+  "checks": 21,
+  "fresh_package": ".scratch/mcf-m7-final-review/k58-solver",
+  "fresh_stock_wallcc": "20/20 checks passed",
+  "fresh_summary_equals_submitted_delivery_receipt": true,
+  "fresh_target_scope": "one-conflict OPEN interface only; no performance result, UNSAT result, or physical closure",
+  "physical_closure": false,
+  "result": "PASS",
+  "schema": "k58-mcf-archive-independent-replay/v1",
+  "target_unsat": false
+}

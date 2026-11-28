@@ -1,0 +1,39 @@
+{
+  "cross_stream_truncated_cas_rejected": true,
+  "deleted_final_empty_proof_rejected": true,
+  "final_empty_clause_required": true,
+  "full_byte_read": true,
+  "malformed_rejected": true,
+  "naive_cross_stream_join_would_parse": true,
+  "normalization": {
+    "commands": {
+      "a": {
+        "bytes": 20,
+        "commands": 7,
+        "literals": 6
+      },
+      "d": {
+        "bytes": 0,
+        "commands": 0,
+        "literals": 0
+      }
+    },
+    "complete_parse": true,
+    "empty_additions": 1,
+    "input_bytes": 20,
+    "input_sha256": "1216594c05a1e7261bf1793fe07c0358bfaadd92ceb74829f26f5161f6bcd5de",
+    "output_bytes": 20,
+    "output_sha256": "1216594c05a1e7261bf1793fe07c0358bfaadd92ceb74829f26f5161f6bcd5de",
+    "schema": "k58-mcf-deletion-only-normalization/v1",
+    "transformation": "drop d commands; copy a commands byte-for-byte including order"
+  },
+  "plan_cas_strict_accepted": true,
+  "plan_deletion_preserved_normalized_additions": true,
+  "plan_deletion_strict_accepted": true,
+  "sat_model_revalidated": true,
+  "scope": "toy CNF proof interface only",
+  "solver": "UNSAT",
+  "status": "PASS",
+  "stock_finalise_admission": false,
+  "strict_accepted": true
+}
