@@ -35,3 +35,24 @@ each — both launched, results appended here when they land.
 None of this changes the position: the row is one of 11,585, one of them closing would be
 a single row, and the structural statement that would close all of them (no vertex with
 two colour-degrees <= 14) remains unwritten.
+
+## The continuations came back negative
+
+**Square-spoke panel, all 14 rows, 2M conflicts each: 0 of 14 closed.** Every row returned
+`OPEN_AT_CONFLICT_CAP`, at 114-227 s CPU per row (median 191 s) and a median of 10,468
+conflicts/s. That is the complete panel the updated solver ships - two rows per wall
+profile, the audited ordinary first-tier walls - and none of them is decided at 2M
+conflicts, with the square cuts in place.
+
+**Colour engine, same row, leaves at 600 s / 5M conflicts each: 2 of 2 still OPEN.** The
+parent derivation still verifies (`PASS_RUP_DERIVATION`), the split is still into two
+depth-1 cubes, and both cubes survive 10x the leaf budget of the first run.
+
+So on this evidence the wall is not a budget problem and not an encoding problem at the
+level these two engines operate: the square-spoke cuts shave ~4 %, the colour engine
+decomposes correctly but its parts are as hard as the whole, and the panel - which was
+chosen by the people who built the square engine as the rows most likely to fall - is
+14 for 14 open.
+
+The honest reading: a per-row search is not going to cover 11,585 rows, and the next thing
+worth doing is the structural statement, not a bigger cap.
