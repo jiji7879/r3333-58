@@ -1,0 +1,9 @@
+import ConfigurableMaximal
+
+#print axioms K58.ConfigurableMaximal.triangleFree_recolour
+#print axioms K58.ConfigurableMaximal.preservesColour_normalise
+#print axioms K58.ConfigurableMaximal.normalAt_normalise
+#print axioms K58.ConfigurableMaximal.normalise_suffix
+#print axioms K58.ConfigurableMaximal.normalForm_equisatisfiable
+#print axioms K58.ConfigurableMaximal.witnessBinding_iff
+#print axioms K58.ConfigurableMaximal.fresh_witness_disjunction

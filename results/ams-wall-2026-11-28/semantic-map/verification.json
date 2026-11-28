@@ -1,0 +1,17 @@
+{
+  "actual_counter_streams_checked": 33,
+  "contiguous_suffix_blocks_checked": 48,
+  "fresh_allocated_variables_checked": 12921,
+  "frozen_unit_positions_checked": 438,
+  "mcf_disjoint_physical_variables_checked": 504,
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "proof_checks": 0,
+  "rup_cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+  "scope": "DIMACS/manifest consistency and encoding semantics only; no SAT/UNSAT or physical-row conclusion.",
+  "selector_implications_checked": 26880,
+  "selector_main_disjunctions_checked": 15,
+  "solver_queries": 0,
+  "status": "PASS",
+  "strict_parent_clause_lines": 184335,
+  "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+}

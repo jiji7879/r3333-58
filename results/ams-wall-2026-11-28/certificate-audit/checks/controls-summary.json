@@ -1,0 +1,177 @@
+{
+  "cas_derivation_as_refutation_rejected": "truncated proof or no final added empty clause",
+  "negative_controls_reject": true,
+  "positive_passes": true,
+  "proof_sha256": "3e4e9f77bca08894020507c1045ab0265224efab4dbb739de33855a98aa26d5c",
+  "query_sha256": {
+    "k5": "9777c3f26ee788b44c93167eeb0d675e8aeebf02d13080f29a31d885a08e4fe8",
+    "k6": "0765846f080908765797ac29ac42f795afd6c7e89bf4d1966239a7d831d8076e"
+  },
+  "renormalization": {
+    "additions_preserved": 25,
+    "deletions_removed": 0,
+    "final_added_empty_clause": true,
+    "input_bytes_accounted": 94,
+    "output_bytes": 94
+  },
+  "renormalization_byte_identical": true,
+  "results": [
+    {
+      "checker_sha256": "55f05cf7e62dfba2b841495557cda5f445d7fa204bc5b8a75e06dec424d72949",
+      "clean": true,
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/bin/drat-trim-own",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-proof.drat",
+        "-i",
+        "-U",
+        "-t",
+        "30"
+      ],
+      "exact_verified_lines": 1,
+      "label": "positive",
+      "launcher_timeout": false,
+      "log": "positive-primary.log",
+      "passed": true,
+      "proof_file_bytes": 94,
+      "proof_read_byte_counts": [
+        94
+      ],
+      "proof_sha256": "3e4e9f77bca08894020507c1045ab0265224efab4dbb739de33855a98aa26d5c",
+      "query_sha256": "0765846f080908765797ac29ac42f795afd6c7e89bf4d1966239a7d831d8076e",
+      "returncode": 0,
+      "strict_whole_proof_bytes": true
+    },
+    {
+      "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+      "clean": true,
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/bin/drat-trim-massive",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-proof.drat",
+        "-i",
+        "-U",
+        "-t",
+        "30"
+      ],
+      "exact_verified_lines": 1,
+      "label": "positive",
+      "launcher_timeout": false,
+      "log": "positive-second.log",
+      "passed": true,
+      "proof_file_bytes": 94,
+      "proof_read_byte_counts": [
+        94
+      ],
+      "proof_sha256": "3e4e9f77bca08894020507c1045ab0265224efab4dbb739de33855a98aa26d5c",
+      "query_sha256": "0765846f080908765797ac29ac42f795afd6c7e89bf4d1966239a7d831d8076e",
+      "returncode": 0,
+      "strict_whole_proof_bytes": true
+    },
+    {
+      "checker_sha256": "55f05cf7e62dfba2b841495557cda5f445d7fa204bc5b8a75e06dec424d72949",
+      "clean": false,
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/bin/drat-trim-own",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k5-query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-proof.drat",
+        "-i",
+        "-U",
+        "-t",
+        "30"
+      ],
+      "exact_verified_lines": 0,
+      "label": "wrong-query",
+      "launcher_timeout": false,
+      "log": "wrong-query-primary.log",
+      "passed": false,
+      "proof_file_bytes": 94,
+      "proof_read_byte_counts": [
+        94
+      ],
+      "proof_sha256": "3e4e9f77bca08894020507c1045ab0265224efab4dbb739de33855a98aa26d5c",
+      "query_sha256": "9777c3f26ee788b44c93167eeb0d675e8aeebf02d13080f29a31d885a08e4fe8",
+      "returncode": 1,
+      "strict_whole_proof_bytes": true
+    },
+    {
+      "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+      "clean": false,
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/bin/drat-trim-massive",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k5-query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-proof.drat",
+        "-i",
+        "-U",
+        "-t",
+        "30"
+      ],
+      "exact_verified_lines": 0,
+      "label": "wrong-query",
+      "launcher_timeout": false,
+      "log": "wrong-query-second.log",
+      "passed": false,
+      "proof_file_bytes": 94,
+      "proof_read_byte_counts": [
+        94
+      ],
+      "proof_sha256": "3e4e9f77bca08894020507c1045ab0265224efab4dbb739de33855a98aa26d5c",
+      "query_sha256": "9777c3f26ee788b44c93167eeb0d675e8aeebf02d13080f29a31d885a08e4fe8",
+      "returncode": 1,
+      "strict_whole_proof_bytes": true
+    },
+    {
+      "checker_sha256": "55f05cf7e62dfba2b841495557cda5f445d7fa204bc5b8a75e06dec424d72949",
+      "clean": true,
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/bin/drat-trim-own",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/checks/controls/k6-truncated.drat",
+        "-i",
+        "-U",
+        "-t",
+        "30"
+      ],
+      "exact_verified_lines": 1,
+      "label": "truncated",
+      "launcher_timeout": false,
+      "log": "truncated-primary.log",
+      "passed": false,
+      "proof_file_bytes": 93,
+      "proof_read_byte_counts": [
+        94
+      ],
+      "proof_sha256": "9e7dbd2aaaf9aaf8de3b5e7ca1e644e44934fa571d2ffc0e652532d8d4b959a4",
+      "query_sha256": "0765846f080908765797ac29ac42f795afd6c7e89bf4d1966239a7d831d8076e",
+      "returncode": 0,
+      "strict_whole_proof_bytes": false
+    },
+    {
+      "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+      "clean": true,
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/bin/drat-trim-massive",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/inputs/controls/k6-query.cnf",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m5/checks/controls/k6-truncated.drat",
+        "-i",
+        "-U",
+        "-t",
+        "30"
+      ],
+      "exact_verified_lines": 1,
+      "label": "truncated",
+      "launcher_timeout": false,
+      "log": "truncated-second.log",
+      "passed": false,
+      "proof_file_bytes": 93,
+      "proof_read_byte_counts": [
+        94
+      ],
+      "proof_sha256": "9e7dbd2aaaf9aaf8de3b5e7ca1e644e44934fa571d2ffc0e652532d8d4b959a4",
+      "query_sha256": "0765846f080908765797ac29ac42f795afd6c7e89bf4d1966239a7d831d8076e",
+      "returncode": 0,
+      "strict_whole_proof_bytes": false
+    }
+  ],
+  "truncation_false_verified_status_rejected": true
+}

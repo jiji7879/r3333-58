@@ -1,0 +1,9 @@
+{
+  "all_open": true,
+  "boundary_over_naive_cpu_ratio_by_seed": {
+    "0": 1.1342193738492183,
+    "1": 1.3012616928723248
+  },
+  "note": "Requested-cap pairing; internal summary's exact-conflict equality test was too strict for CaDiCaL's 1/5-conflict overshoot.",
+  "superseded_by": "results/analysis.json"
+}

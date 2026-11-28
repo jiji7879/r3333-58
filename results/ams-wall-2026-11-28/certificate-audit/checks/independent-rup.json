@@ -1,0 +1,14 @@
+{
+  "additions_checked": 5445,
+  "additions_total": 5445,
+  "all_additions_rup": true,
+  "cas_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+  "deletions_ignored": 5130,
+  "derivation_not_refutation": true,
+  "empty_additions": 0,
+  "non_rup": [],
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "schema": "k58-independent-forward-rup/v1",
+  "toy_non_rup_control_rejected": true,
+  "toy_positive_rup_control": true
+}

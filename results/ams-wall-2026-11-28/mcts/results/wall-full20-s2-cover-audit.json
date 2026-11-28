@@ -1,0 +1,25 @@
+{
+  "cube_sha256": "67a63d62a4ff5b751df2fe031cbc7ddfe3e4ee141993bded4ccabf33601d3148",
+  "cubes": [
+    [
+      -1413,
+      -1014
+    ],
+    [
+      -1413,
+      1014
+    ],
+    [
+      1413,
+      -1417
+    ],
+    [
+      1413,
+      1417
+    ]
+  ],
+  "depth": 2,
+  "leaves": 4,
+  "schema": "ams-k58-cover-audit/v1",
+  "valid_full_binary_cover": true
+}

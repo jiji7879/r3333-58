@@ -1,0 +1,29 @@
+{"driver_wall_seconds": 64.79130705189891, "policy": "naive-split", "search_process_cpu_seconds": 64.24028367499999, "seed": 0, "sequence": 1, "stats": {"conflicts": 1000005, "decisions": 2623910, "propagations": 342074608, "restarts": 28268}, "status": "OPEN"}
+{"driver_wall_seconds": 76.21371879987419, "policy": "boundary", "search_process_cpu_seconds": 75.218270992, "seed": 0, "sequence": 2, "stats": {"conflicts": 1000000, "decisions": 2177421, "propagations": 359034750, "restarts": 31301}, "status": "OPEN"}
+{"driver_wall_seconds": 63.34370156703517, "policy": "naive", "search_process_cpu_seconds": 63.093132329, "seed": 0, "sequence": 3, "stats": {"conflicts": 1000005, "decisions": 2623910, "propagations": 342074608, "restarts": 28268}, "status": "OPEN"}
+{"driver_wall_seconds": 51.54041276383214, "policy": "naive", "search_process_cpu_seconds": 51.076027584, "seed": 1, "sequence": 4, "stats": {"conflicts": 1000001, "decisions": 4193481, "propagations": 231932582, "restarts": 33857}, "status": "OPEN"}
+{"driver_wall_seconds": 78.37889608298428, "policy": "boundary", "search_process_cpu_seconds": 77.87228638799999, "seed": 1, "sequence": 5, "stats": {"conflicts": 1000000, "decisions": 2151654, "propagations": 375269534, "restarts": 30948}, "status": "OPEN"}
+{"driver_wall_seconds": 52.554434658028185, "policy": "naive-split", "search_process_cpu_seconds": 51.280176083, "seed": 1, "sequence": 6, "stats": {"conflicts": 1000001, "decisions": 4193481, "propagations": 231932582, "restarts": 33857}, "status": "OPEN"}
+	Command being timed: "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python -B src/benchmark_stage2.py"
+	User time (seconds): 382.75
+	System time (seconds): 0.91
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:26.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 133508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 525957
+	Voluntary context switches: 378
+	Involuntary context switches: 28947
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

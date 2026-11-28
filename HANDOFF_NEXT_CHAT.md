@@ -10,6 +10,29 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-28 (bounded MCTS/counter/maximality follow-up: arm 3 gains and exact-parent conditional assembly).**
+All eight directions of `smwzzs8qs` were accepted after independent replay.
+MCTS remains negative: direct two-sim "full rollout" reaches only root depth 1
+and reproduces shallow cubes; selective hybrid selection loses cap-normalised
+cost comparison and all wall leaves stay OPEN. Conditional Sinz guarding is
+equivalent and much stronger locally, but unconditional recurrence raises
+propagation and CPU 1.333× geometric mean at two seeds. Configurable maximal-
+colour finally gives a **positive encoding result**: arm 3 alone (45 safe edges,
++7,605 clauses/+2,520 witnesses) gives 399.1M vs 838.4M propagations and
+120.766 s versus 222.721 s CPU at 2M conflicts on the exact parent, with OPEN
+non-closure. Coordinator replay at 1M gives 48.027 s versus 65.614 s, both OPEN.
+BCP residual form removes 465 parent-satisfied clauses without changing search
+trajectories. This is fixed-budget throughput, not UNSAT or a wall sweep.
+`targetParent_satisfiable_of_ready` is now kernel-checked with explicit physical
+premises; all 3,493,016 parent bytes match exactly. The remaining obligations
+are physical base/unit realization, candidate criticality, 112-support
+membership, adjusted guard-set equalities and `ChainReady`. Newly added
+`ConfigurableMaximal`, `SemanticAssembly`, `TargetSuffix`, `TargetParent` and
+`TicketPremises` are in the integrated clean Lean build. Next bounded step:
+arm-3/BCP on one retained hard leaf, preserving proof scope. See
+[the complete proof report](research/ams-wall-followup/proof.md) and
+[its evidence index](results/ams-wall-2026-11-28/README.md).
+
 **Updated 2026-11-28 (Duggan paper methods reviewed with k58-massive-solver as baseline).**
 All eight directions of `smwzxq4fl` were independently accepted; no Ramsey bound,
 wall row or profile closed. The most useful transfers are the native guarded-counter

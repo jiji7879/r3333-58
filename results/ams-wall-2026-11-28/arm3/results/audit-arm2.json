@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "augmented_sha256": "0102b5b1d0dfae01ed1f1d6e69b48e738c4f1b8fae429f46f7e70d901c759538",
+  "arms": [
+    2
+  ],
+  "colour": 0,
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "host_clauses": 134995,
+  "changing_edges": 81,
+  "added_clauses": 13689,
+  "fresh_path_witness_variables": 4536,
+  "parent_body_prefix_byte_exact": true,
+  "all_134995_host_clauses_exact": true,
+  "all_nonhost_suffixes_avoid_changing_variables": true,
+  "all_tseitin_and_long_clauses_exact": true,
+  "negative_controls": [
+    "rejected one flipped witness sign",
+    "rejected one deleted suffix clause"
+  ],
+  "scope": "CNF schema and configurable-MCF reduction only; no proof, SAT/UNSAT status, or physical-row assembly."
+}

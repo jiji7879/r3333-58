@@ -1,0 +1,314 @@
+{
+  "control": {
+    "all_capped_probe_plus_final_conflicts": 470249,
+    "cas_sha256": "ce64dbfe40c45bc82c8aa742e3caba5e50b6200dec62648f414598f6f64da856",
+    "cover": {
+      "cube_sha256": "2410a437a0f302cb6eabc057b28a2d5f748a64b13f0ee79bac214e4459cb5c0e",
+      "depth": 2,
+      "leaves": 4,
+      "valid_full_binary_cover": true
+    },
+    "derived": {
+      "caveat": "component sums combine separately measured runs; one control instance, all policy and checking costs must be considered",
+      "final_conflict_reduction_vs_actual_two_sim": 0.08130832068709437,
+      "final_conflicts_vs_greedy": 1.2540847404586546,
+      "preparation_speedup_vs_actual_ten_sim": 3.1309843493864675
+    },
+    "fresh_final": {
+      "conflicts": 284528,
+      "leaves": 4,
+      "search_cpu_s": 12.881474999999996,
+      "search_elapsed_s_component_sum": 21.13367445510812,
+      "status": "4/4 CHECKED_UNSAT",
+      "strict_replay": "4/4 return 0, one s VERIFIED, no warnings/errors, zero RAT"
+    },
+    "new_preparation": {
+      "cached_actual_full20_two_sim_cubing_elapsed_s": 40.642755042994395,
+      "new_probe_conflicts": 185721,
+      "new_probe_cpu_s": 14.603323,
+      "new_probe_elapsed_s": 21.148764410521835,
+      "new_shortlist_cpu_s": 28.289409,
+      "new_shortlist_elapsed_s": 36.08709734794684,
+      "total_elapsed_s_component_sum": 97.87861680146307
+    },
+    "new_preparation_plus_final_search_elapsed_s": 119.01229125657119,
+    "old_actual_full20_ten_sim": {
+      "cubing_s": 306.4564173449762,
+      "final_conflicts": 284528,
+      "search_cpu_s": 11.281778,
+      "search_elapsed_s": 11.33734068623744,
+      "tree": "4937/4149"
+    },
+    "old_actual_full20_two_sim": {
+      "cubing_s": 40.642755042994395,
+      "final_conflicts": 309710,
+      "search_cpu_s": 12.788141,
+      "search_elapsed_s": 12.801278215367347,
+      "tree": "4793/4149"
+    },
+    "old_greedy": {
+      "final_conflicts": 226881,
+      "prepare_s": 0.72,
+      "search_cpu_s": 8.835238,
+      "search_elapsed_s": 8.83715168805793
+    },
+    "parent_sha256": "50a187c65b7a5a9c839a95053a7e1133bbf697aa3806790d87b83bd1e7a65530",
+    "selected_splits": {
+      "negative": 4937,
+      "positive": 4149
+    },
+    "two_simulation_scope": {
+      "configured_setting": "rollout-extra=20, sims=2",
+      "effective_mcts_expansion_depth_at_fresh_node_at_most": 1,
+      "reason": "simulation 1 initializes root Ps; simulation 2 expands root actions and initializes child Ps; no simulation remains to expand a child action",
+      "scope_note": "This is not evidence against deeper/higher-simulation MCTS. The actual new rollouts here are fresh capped CDCL conquest probes.",
+      "source": ".scratch/AlphaMapleSAT/alphamaplesat/MCTS.py getActionProb/search",
+      "source_sha256": "85c5aa9c442f0dad88032c29831c34c8e9334c72025ba3f00fc701869678a9e8"
+    },
+    "working_sha256": "356fd5ce1472e9ef078288032f7a1e3ceb885cc32af331abc766a6fea92bc269"
+  },
+  "hash_algorithm": "SHA-256 over whole files",
+  "input_sha256": {
+    "control_cas": "ce64dbfe40c45bc82c8aa742e3caba5e50b6200dec62648f414598f6f64da856",
+    "control_parent": "50a187c65b7a5a9c839a95053a7e1133bbf697aa3806790d87b83bd1e7a65530",
+    "control_working": "356fd5ce1472e9ef078288032f7a1e3ceb885cc32af331abc766a6fea92bc269",
+    "wall_cas": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+    "wall_parent": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "wall_working": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+  },
+  "no_proof_file_over_1GB": true,
+  "normalized_selection_diagnostic": {
+    "control-negative": {
+      "diagnostic_status": "post-hoc correction of cap-overshoot metric; not a replacement for raw frozen run",
+      "evaluations": [
+        {
+          "candidate_position": 0,
+          "key_without_order": [
+            2,
+            40000
+          ],
+          "normalized_conflicts_sum": 40000,
+          "open_children": 2,
+          "split": 4793
+        },
+        {
+          "candidate_position": 1,
+          "key_without_order": [
+            1,
+            23887
+          ],
+          "normalized_conflicts_sum": 23887,
+          "open_children": 1,
+          "split": 4937
+        },
+        {
+          "candidate_position": 2,
+          "key_without_order": [
+            2,
+            40000
+          ],
+          "normalized_conflicts_sum": 40000,
+          "open_children": 2,
+          "split": 4265
+        }
+      ],
+      "mcts_tie_break_used": false,
+      "normalization": "OPEN child cost = exactly 20000; decided child cost = conflicts_used",
+      "raw_frozen_selected_split": 4937,
+      "raw_probe_conflicts_total": 103895,
+      "selected_split": 4937,
+      "tied_candidates_at_best_key": [
+        4937
+      ]
+    },
+    "control-positive": {
+      "diagnostic_status": "post-hoc correction of cap-overshoot metric; not a replacement for raw frozen run",
+      "evaluations": [
+        {
+          "candidate_position": 0,
+          "key_without_order": [
+            1,
+            20511
+          ],
+          "normalized_conflicts_sum": 20511,
+          "open_children": 1,
+          "split": 4149
+        },
+        {
+          "candidate_position": 1,
+          "key_without_order": [
+            1,
+            21312
+          ],
+          "normalized_conflicts_sum": 21312,
+          "open_children": 1,
+          "split": 4551
+        },
+        {
+          "candidate_position": 2,
+          "key_without_order": [
+            2,
+            40000
+          ],
+          "normalized_conflicts_sum": 40000,
+          "open_children": 2,
+          "split": 3441
+        }
+      ],
+      "mcts_tie_break_used": false,
+      "normalization": "OPEN child cost = exactly 20000; decided child cost = conflicts_used",
+      "raw_frozen_selected_split": 4149,
+      "raw_probe_conflicts_total": 81826,
+      "selected_split": 4149,
+      "tied_candidates_at_best_key": [
+        4149
+      ]
+    },
+    "wall-positive": {
+      "diagnostic_status": "post-hoc correction of cap-overshoot metric; not a replacement for raw frozen run",
+      "evaluations": [
+        {
+          "candidate_position": 0,
+          "key_without_order": [
+            2,
+            40000
+          ],
+          "normalized_conflicts_sum": 40000,
+          "open_children": 2,
+          "split": 1426
+        },
+        {
+          "candidate_position": 1,
+          "key_without_order": [
+            2,
+            40000
+          ],
+          "normalized_conflicts_sum": 40000,
+          "open_children": 2,
+          "split": 2744
+        },
+        {
+          "candidate_position": 2,
+          "key_without_order": [
+            2,
+            40000
+          ],
+          "normalized_conflicts_sum": 40000,
+          "open_children": 2,
+          "split": 1222
+        }
+      ],
+      "mcts_tie_break_used": true,
+      "normalization": "OPEN child cost = exactly 20000; decided child cost = conflicts_used",
+      "raw_frozen_selected_split": 2744,
+      "raw_probe_conflicts_total": 120002,
+      "selected_split": 1426,
+      "tied_candidates_at_best_key": [
+        1426,
+        2744,
+        1222
+      ]
+    }
+  },
+  "resource_observations": {
+    "control_probe_plus_final_conflicts": 470249,
+    "measured_experimental_command_cpu_s_component_sum": 404.88,
+    "measured_experimental_command_elapsed_s_component_sum": 496.24,
+    "note": "Eight completed measured commands; static inspection/audits and one immediate missing-NumPy startup failure are excluded. Component sum, not one uninterrupted session.",
+    "wall_probe_plus_final_conflicts": 4120006
+  },
+  "schema": "k58-selective-cost-rollout-ab/v1",
+  "target_working_sha256": "b02bdad1b719a4f5e333437f407643c180c222e15b73bf60811dc2c1795cf6ec",
+  "wall": {
+    "cas_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+    "charge": 7,
+    "cubing": {
+      "full20_two_sim": {
+        "completed_cover": true,
+        "elapsed_s": 21.071283350000158,
+        "split": 1426
+      },
+      "shallow_ten_sim": {
+        "elapsed_s": 27.43661712598987,
+        "split": 1426
+      }
+    },
+    "matched_shallow_policy": {
+      "cover": {
+        "cube_sha256": "05e0b9c28c4ee1ed67a1497b382bedb6f5a325ac746387bcbb2dc57de86403f7",
+        "depth": 3,
+        "leaves": 6,
+        "valid_full_binary_cover": true
+      },
+      "final": {
+        "search_cpu_s": 153.414067,
+        "search_elapsed_s": 161.63184975204058,
+        "status": "2/2 OPEN at 1000000 conflicts"
+      },
+      "preparation_elapsed_s": 27.43661712598987,
+      "preparation_plus_final_elapsed_s": 189.06846687803045,
+      "split": 1426,
+      "whole_command_cpu_s_including_cubing_and_final": 172.25
+    },
+    "original_working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38",
+    "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "post_hoc_cap_normalization_selects": 1426,
+    "profile": [
+      16,
+      16,
+      14,
+      11
+    ],
+    "raw_frozen_cost_policy": {
+      "all_six_probe_children": "OPEN",
+      "candidate_order_mcts_first": [
+        1426,
+        2744,
+        1222
+      ],
+      "cover": {
+        "cube_sha256": "1e1be8651a05725447fbf2855794c4bda96af80a164af4d5207fba2bf9573666",
+        "depth": 3,
+        "leaves": 6,
+        "valid_full_binary_cover": true
+      },
+      "final": {
+        "search_cpu_s": 131.044341,
+        "search_elapsed_s": 156.37793983193114,
+        "status": "2/2 OPEN at 1000000 conflicts"
+      },
+      "preparation_elapsed_s_component_sum": 45.2779082627967,
+      "preparation_plus_final_elapsed_s": 201.65584809472784,
+      "probe_conflicts": 120002,
+      "selected_split_only_by_cap_overshoot": 2744,
+      "shortlist_bcp_order": [
+        2744,
+        1222,
+        1426
+      ],
+      "whole_command_cpu_s_including_cubing_and_final": 159.49999999999997
+    },
+    "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+    "semantic_scope": "ordinary-parent CNF performance only; no per-leaf wall proof and no physical-colouring result",
+    "single_run_mixed_timing": {
+      "interpretation": "no repeatable speedup established; all outcomes capped OPEN",
+      "raw_end_to_end_elapsed_ratio_over_shallow": 1.0665757829665885,
+      "raw_final_cpu_ratio_over_shallow": 0.8541872565049723,
+      "raw_whole_cpu_ratio_over_shallow": 0.9259796806966617
+    },
+    "subtree_prefix": [
+      1413,
+      -1417
+    ],
+    "target_working_sha256": "b02bdad1b719a4f5e333437f407643c180c222e15b73bf60811dc2c1795cf6ec",
+    "two_simulation_scope": {
+      "configured_setting": "rollout-extra=20, sims=2",
+      "effective_mcts_expansion_depth_at_fresh_node_at_most": 1,
+      "reason": "simulation 1 initializes root Ps; simulation 2 expands root actions and initializes child Ps; no simulation remains to expand a child action",
+      "scope_note": "This is not evidence against deeper/higher-simulation MCTS. The actual new rollouts here are fresh capped CDCL conquest probes.",
+      "source": ".scratch/AlphaMapleSAT/alphamaplesat/MCTS.py getActionProb/search",
+      "source_sha256": "85c5aa9c442f0dad88032c29831c34c8e9334c72025ba3f00fc701869678a9e8"
+    },
+    "upstream_commit": "215224bb04c46b8c220f413a4c3e64962741812b"
+  }
+}

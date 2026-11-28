@@ -1,0 +1,439 @@
+{
+  "schema": "k58-maximal-colour-normal-form-pilot/v1",
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "arms": [
+    3
+  ],
+  "colour": 0,
+  "ordinary_parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "ordinary_parent_bytes": 3493016,
+  "augmented_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+  "augmented_path": "results/mcf-arm3.cnf",
+  "original_variables": 19533,
+  "augmented_variables": 22053,
+  "original_clauses": 184335,
+  "added_clauses": 7605,
+  "configurable_edges": 45,
+  "rules": [
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        47,
+        52
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        47,
+        53
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        47,
+        54
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        47,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        47,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        47,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        48,
+        52
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        48,
+        53
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        48,
+        54
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        48,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        48,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        48,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        49,
+        52
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        49,
+        53
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        49,
+        54
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        49,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        49,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        49,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        50,
+        52
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        50,
+        53
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        50,
+        54
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        50,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        50,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        50,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        51,
+        52
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        51,
+        53
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        51,
+        54
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        51,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        51,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        51,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        52,
+        53
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        52,
+        54
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        52,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        52,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        52,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        53,
+        54
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        53,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        53,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        53,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        54,
+        55
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        54,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        54,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        55,
+        56
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        55,
+        57
+      ],
+      "witness_variables": 56
+    },
+    {
+      "arm": 3,
+      "colour": 0,
+      "edge": [
+        56,
+        57
+      ],
+      "witness_variables": 56
+    }
+  ],
+  "semantic_invariants": [
+    "fixed unit/threshold/support suffix contains no configurable-edge variable",
+    "only internal edges of root arm a are recoloured, and only to c != a",
+    "root profiles, cross edges and every sender-degree candidate are unchanged",
+    "each recolouring has no global c-path, so no c-triangle is created",
+    "other colour classes only lose edges, so they remain triangle-free",
+    "a non-c configurable edge keeps any existing global c-path during later steps"
+  ],
+  "scope": "research augmentation: equi-satisfiability follows from the separate finite/normal-form argument, NOT from DRAT consequence; no original-row closure is asserted by a timeout or by this builder"
+}

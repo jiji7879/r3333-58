@@ -1,0 +1,9 @@
+{
+  "cpu_ratio_boundary_over_naive_by_seed": {
+    "0": null,
+    "1": null
+  },
+  "favourable_bounded_throughput_preregistered": false,
+  "geometric_mean_ratio": null,
+  "scope": "CNF-only bounded performance; no physical colouring or UNSAT certification"
+}

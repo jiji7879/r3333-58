@@ -1,0 +1,48 @@
+{
+  "bootstrap_process_cpu_seconds": 0.054244868,
+  "charge": 7,
+  "children_system_cpu_delta_seconds": 0.210035,
+  "children_user_cpu_delta_seconds": 69.60007,
+  "command": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+    "-B",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m4/src/benchmark_ab.py",
+    "--worker",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m4/inputs/parent.cnf",
+    "--seed",
+    "0",
+    "--cap",
+    "1000000"
+  ],
+  "conflict_budget": 1000000,
+  "driver_wall_seconds": 100.21918965294026,
+  "engine": "CaDiCaL195 via python-sat",
+  "maxrss_kib": 119128,
+  "parse_process_cpu_seconds": 0.027261327000000002,
+  "policy": "parent",
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "proof_logging": false,
+  "pysat_version": "1.9.dev22",
+  "query_bytes": 3493016,
+  "query_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "returncode": 0,
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "search_process_cpu_seconds": 69.682928229,
+  "seed": 0,
+  "sequence": 1,
+  "stats": {
+    "conflicts": 1000000,
+    "decisions": 2322342,
+    "propagations": 371735517,
+    "restarts": 31300
+  },
+  "status": "OPEN",
+  "total_process_cpu_seconds": 69.764434424,
+  "wall_seconds": 100.14581854711287,
+  "wall_timeout_seconds": 240
+}

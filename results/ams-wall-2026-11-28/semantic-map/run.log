@@ -1,0 +1,258 @@
+{
+  "charge": 7,
+  "checks": {
+    "configurable_mcf_suffix_disjointness": true,
+    "copied_generator_suffix_identity": true,
+    "fixed_unit_provenance_reconstruction": true,
+    "fresh_allocation_total_and_disjoint": true,
+    "ordered_native_sinz_identity_for_every_actual_counter": true,
+    "parent_strict_whole_byte_reconstruction": true,
+    "proof_replays": 0,
+    "row_identity": true,
+    "sat_or_unsat_verdicts": 0,
+    "solver_calls": 0,
+    "support_catalogue_direct_graph_identity": true,
+    "working_parent_prefix_and_315_clause_suffix": true
+  },
+  "conditional_counter_map": {
+    "guard_occurrences_removable_by_boundary_encoding": 21203,
+    "guard_occurrences_retained_by_boundary_encoding": 418,
+    "naive_guarded_clauses": 21621,
+    "note": "Encoding inventory only; no wall A/B or parent UNSAT claim.",
+    "overflow_clauses": 418,
+    "recurrence_clauses": 21203
+  },
+  "configurable_mcf": {
+    "added_clauses_for_augmentation": 21294,
+    "arms": [
+      2,
+      3
+    ],
+    "auxiliary_variables_for_augmentation": 7056,
+    "configurable_edges": 126,
+    "excluded_fixed_edges": 20,
+    "formula": "126*(56*3+1) clauses and 126*56 fresh conjunction witnesses",
+    "scope": "Exact configurability premise only. The safe-recolouring normal form is equisatisfiability, not DRAT implication; no new performance run or full/pinned MCF extension is claimed.",
+    "suffix_disjoint_variables": 504,
+    "target_colour": 0,
+    "witnesses_per_edge": 56
+  },
+  "family": {
+    "arm": 1,
+    "mark_position": 0,
+    "marked_kind": "T",
+    "marked_size": 15,
+    "profile": [
+      16,
+      16,
+      14,
+      11
+    ],
+    "root_kinds": [
+      "T",
+      "U",
+      "-",
+      "-"
+    ],
+    "root_position": 7
+  },
+  "floor_parameters": [
+    {
+      "available_guards": 15,
+      "guards": [
+        11965,
+        12456,
+        12947,
+        13438,
+        13929,
+        14420,
+        14911,
+        15402,
+        15893,
+        16384,
+        16875,
+        17366,
+        17857,
+        18348,
+        18839
+      ],
+      "kind": "marked_floor",
+      "minimum_after_automatic": 6
+    },
+    {
+      "available_guards": 31,
+      "guards": [
+        6613,
+        6814,
+        7193,
+        7394,
+        7773,
+        8152,
+        8531,
+        8732,
+        9111,
+        9490,
+        9869,
+        10248,
+        10449,
+        10828,
+        11207,
+        11586,
+        11965,
+        12456,
+        12947,
+        13438,
+        13929,
+        14420,
+        14911,
+        15402,
+        15893,
+        16384,
+        16875,
+        17366,
+        17857,
+        18348,
+        18839
+      ],
+      "kind": "total_critical_floor",
+      "minimum_after_automatic": 6
+    },
+    {
+      "available_guards": 31,
+      "guards": [
+        6613,
+        6814,
+        7193,
+        7394,
+        7773,
+        8152,
+        8531,
+        8732,
+        9111,
+        9490,
+        9869,
+        10248,
+        10449,
+        10828,
+        11207,
+        11586,
+        11965,
+        12456,
+        12947,
+        13438,
+        13929,
+        14420,
+        14911,
+        15402,
+        15893,
+        16384,
+        16875,
+        17366,
+        17857,
+        18348,
+        18839
+      ],
+      "kind": "full_root_floor",
+      "minimum_after_automatic": -1
+    }
+  ],
+  "hashes": {
+    "actual_support_catalogue_sha256": "92d8b66e939cee9a5cccdebcf802e67452d87e961d19a9ac339262d10f78f4d8",
+    "frozen_units_manifest_sha256": "326623198aaab6bf9b427f303c8d3a5b06fc7d70b2b36a3e64a9259be3a09938",
+    "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "plan_sha256": "683969b82a6459befa58d75321fc1873dc26b63d01c5a9c64b8bfa0e46c1c29e",
+    "row_json_sha256": "6d65bc1d4d9ff633d3af460c62cda7e8ddc51cd485f99d3f8b78aca3db84376a",
+    "rup_cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+    "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+  },
+  "marked_vertices_by_marked_template_index": [
+    33,
+    47,
+    48,
+    49,
+    34,
+    35,
+    1,
+    0,
+    3,
+    50,
+    36,
+    7,
+    37,
+    12,
+    51
+  ],
+  "placement": [
+    0,
+    0,
+    0
+  ],
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "recipe": {
+    "full_root": false,
+    "tables": true,
+    "total_critical": true
+  },
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "schema": "k58-exact-parent-semantic-clause-map/v1",
+  "semantic_scope": {
+    "completed_here": "Exact emitted Boolean families, native counter stream, support catalogue contents and row-specific fresh allocation.",
+    "no_inference": "No SAT/UNSAT verdict, profile exclusion, row closure, Ramsey bound, or proof from OPEN status.",
+    "not_completed_here": [
+      "Physical realization of every frozen unit",
+      "criticality-to-guard premises and inside-root degree threshold 14",
+      "marked/total floor guard selection from w(r)<=H(r)",
+      "criticality-to-membership in this exact P4/C5 catalogue",
+      "Lean list equality and DIMACS byte serialization assembly",
+      "ordinary leaf or parent UNSAT certificates"
+    ],
+    "ordinary_parent": "Relaxation of the physical semantic row: a CNF refutation would exclude the physical row only after the extension obligations are proved; a model or timeout does not establish a physical colouring."
+  },
+  "sender_counts": {
+    "automatic_pinned_senders": 1,
+    "emitted_guards": 31,
+    "impossible_candidate_senders": 0,
+    "selector_supports": 1680,
+    "sender_counters": 31,
+    "skipped_noncritical": 25
+  },
+  "sizes": {
+    "auxiliary_variables": 12921,
+    "clauses": 184335,
+    "frozen_unit_clauses": 438,
+    "host_clauses": 134995,
+    "host_exactly_one_clauses": 11571,
+    "host_triangle_clauses": 123424,
+    "physical_variables": 6612,
+    "threshold_support_clauses": 48902,
+    "variables": 19533,
+    "working_extra_clauses": 315
+  },
+  "support_catalogue": {
+    "count": 112,
+    "kind": "T",
+    "marked_color": 1,
+    "palette": [
+      2,
+      3
+    ],
+    "shapes": {
+      "C5": 16,
+      "P4": 96
+    },
+    "size": 16,
+    "target_arm": 0,
+    "tested_path_cycle_color": 2
+  },
+  "unit_source_label_occurrences": {
+    "classified_root_template": 240,
+    "marked_neighbourhood": 56,
+    "marked_template": 105,
+    "root_profile": 57
+  }
+}

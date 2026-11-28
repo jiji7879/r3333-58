@@ -1,0 +1,228 @@
+{
+  "baseline_comparison_at_same_conflict_cap": {
+    "greedy_plan": {
+      "conflicts_used_total": 4000003,
+      "cubes": [
+        [
+          -1413,
+          -2206
+        ],
+        [
+          -1413,
+          2206
+        ],
+        [
+          1413,
+          -1426
+        ],
+        [
+          1413,
+          1426
+        ]
+      ],
+      "search_elapsed_s_total": 272.629,
+      "status_counts": {
+        "OPEN": 4
+      }
+    },
+    "interpretation": "All three searches are budget-limited OPEN. Identical current/shallow cubes and equal conflict budgets show no decomposition or conflict reduction. Fresh CPU/elapsed differences are not a speedup claim on a shared VM.",
+    "shallow_mcts": {
+      "conflicts_used_total": 4000002,
+      "cubing_s10_elapsed_s": 66.95670683705248,
+      "cubing_s2_elapsed_s": 28.2094868759159,
+      "same_cube_set_as_current": true,
+      "search_cpu_s_total": 237.20806399999998,
+      "search_elapsed_s_total": 237.71186830080114,
+      "status_counts": {
+        "OPEN": 4
+      }
+    }
+  },
+  "cubing": {
+    "configuration": {
+      "cpuct": 10.0,
+      "depth": 2,
+      "limit_top_3": true,
+      "rollout_extra": 20,
+      "sims": 2,
+      "varpen": 0.0
+    },
+    "cover_audit_sha256": "0fa1d1a0413037c4e063c78452f7d05e98a47c16eb15a735a0ad2088fbde20cc",
+    "cover_emitted": true,
+    "cube_sha256": "67a63d62a4ff5b751df2fe031cbc7ddfe3e4ee141993bded4ccabf33601d3148",
+    "cubes": [
+      [
+        -1413,
+        -1014
+      ],
+      [
+        -1413,
+        1014
+      ],
+      [
+        1413,
+        -1417
+      ],
+      [
+        1413,
+        1417
+      ]
+    ],
+    "elapsed_s": 27.458808250026777,
+    "leaves": 4,
+    "log_sha256": "d76fffd6e03e726125ecfbf987bce26f876ab9e407e1a0b473a46b24f7d1e0cd",
+    "metadata_sha256": "67f0130ae40413c5a05dc2d88a083156f9667238dc4f583746a09a98293b25da",
+    "same_bytes_as_prior_shallow_s2": true,
+    "same_set_as_prior_shallow_s10": true,
+    "timeout_cap_seconds": 1200
+  },
+  "fresh_leaves": {
+    "budget_per_leaf": {
+      "conflicts": 1000000,
+      "proof": "eager",
+      "seconds": 180
+    },
+    "conflicts_used_total": 4000002,
+    "per_leaf": [
+      {
+        "budget": {
+          "conflicts": 1000000,
+          "proof": "eager",
+          "seconds": 180
+        },
+        "cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+        "conflicts_used": 1000000,
+        "cpu_s": 70.175114,
+        "cube": [
+          -1413,
+          -1014
+        ],
+        "elapsed_s": 98.43613633606583,
+        "index": 3,
+        "label": "wall-full20-s2",
+        "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+        "query_parent_sha256": "03e5037d80e5025c7c5291db17794f28528d3dfc5481c51ce13f3e75e24d5083",
+        "query_working_sha256": "1ffc1eb44b7876b84cf720afc99336d8b6d4b3cc3fa73b7bc6e348d14de5e1a8",
+        "status": "OPEN",
+        "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+      },
+      {
+        "budget": {
+          "conflicts": 1000000,
+          "proof": "eager",
+          "seconds": 180
+        },
+        "cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+        "conflicts_used": 1000000,
+        "cpu_s": 73.167126,
+        "cube": [
+          -1413,
+          1014
+        ],
+        "elapsed_s": 106.04977728798985,
+        "index": 2,
+        "label": "wall-full20-s2",
+        "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+        "query_parent_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+        "query_working_sha256": "72ee6940d74f920e941622f340fc7a0cd6db6f31be0059a88f602af952d640b6",
+        "status": "OPEN",
+        "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+      },
+      {
+        "budget": {
+          "conflicts": 1000000,
+          "proof": "eager",
+          "seconds": 180
+        },
+        "cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+        "conflicts_used": 1000000,
+        "cpu_s": 58.610721000000005,
+        "cube": [
+          1413,
+          -1417
+        ],
+        "elapsed_s": 69.8263682089746,
+        "index": 1,
+        "label": "wall-full20-s2",
+        "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+        "query_parent_sha256": "0063e5efb96a3b9ea5f47ea038898dc5d34ac6cc661297ea5f9323599a9b565d",
+        "query_working_sha256": "b02bdad1b719a4f5e333437f407643c180c222e15b73bf60811dc2c1795cf6ec",
+        "status": "OPEN",
+        "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+      },
+      {
+        "budget": {
+          "conflicts": 1000000,
+          "proof": "eager",
+          "seconds": 180
+        },
+        "cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+        "conflicts_used": 1000002,
+        "cpu_s": 58.419787,
+        "cube": [
+          1413,
+          1417
+        ],
+        "elapsed_s": 66.77632377995178,
+        "index": 0,
+        "label": "wall-full20-s2",
+        "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+        "query_parent_sha256": "211d409efef1ad3310d6eafc852def19b5ac920ceb95e0bb7324c09cb644ee1b",
+        "query_working_sha256": "a9bfe21761f9792cc119573b6fd11bc51a7e8e7f44d3d77864017b835843c6da",
+        "status": "OPEN",
+        "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+      }
+    ],
+    "proofs_produced": 0,
+    "receipts_sha256": "f39fedaffc117492e32b5c578dfb77553f4f42911a224eb5371f77f9ef6a9438",
+    "sat_claims": 0,
+    "search_cpu_s_total": 260.372748,
+    "search_elapsed_s_total": 341.08860561298206,
+    "status_counts": {
+      "OPEN": 4
+    },
+    "unsat_claims": 0
+  },
+  "not_established": [
+    "No faster or easier wall decomposition: all new and baseline leaves exhausted the conflict cap.",
+    "No per-leaf or parent CNF UNSAT certificate was obtained; no checker was run because no UNSAT proof existed.",
+    "No SAT result or model was obtained.",
+    "No inference about the exact selective five-leaf refinement beyond its disjoint prior status.",
+    "No physical-colouring row closure, profile exclusion, Lemma L, or Ramsey bound. The first-tier parent remains a relaxation whose full semantic assembly is unfinished."
+  ],
+  "schema": "k58-wall-current-generic-full20-s2/v1",
+  "scope": "CNF decomposition and capped CNF performance only; no physical-colouring inference",
+  "structural_negative_result": {
+    "actual_log_evidence": "WARNING:MCTS:NO EXPLORATION!!!!",
+    "statement": "At a fresh root, two simulations cannot reach the configured 20-step MCTS horizon: simulation 1 initializes Ps and returns; simulation 2 evaluates only the two immediate children of one selected literal. The root choice uses Bsa argmax and has only the literal and its complement with nonzero visits.",
+    "toy_control": "actual current MCTS.py reached exactly depth 1 for terminal horizons 2 and 22 and chose identically",
+    "toy_control_sha256": "9bfda059fd042b90c751863ca4589281f4df2746366b6f9415286618fc184749",
+    "wall_consequence": "rollout_extra=20 did not alter root 1413 or either observed second split; full20-s2 cube bytes equal shallow-s2"
+  },
+  "target": {
+    "candidate_pool_literals": 896,
+    "candidate_pool_sha256": "723e017372164e731ffbe150c0884a7698b851e3ea63a115d08e49290ad56a85",
+    "cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+    "charge": 7,
+    "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "profile": [
+      16,
+      16,
+      14,
+      11
+    ],
+    "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+    "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+  },
+  "tools": {
+    "adapter_sha256": "8f557c42165777597fed46b6a10bafb4f165b757c45c50845afe0e3f733b682a",
+    "baseline_worker": "CaDiCaL 1.9.5 / python-sat 1.9.dev22; same bytes as k58-massive-solver color-resolved-wallcc worker",
+    "baseline_worker_sha256": "5c4ef6727936fc30bd1b60074fd77ca110569a8117f163fdbc95168069645ff9",
+    "current_generic_commit": "215224bb04c46b8c220f413a4c3e64962741812b",
+    "current_generic_tree": "c95924b49d2f46800bf4d9b62ae197fbf8e5023c",
+    "drat_trim_baseline_sha256": "a9571deb08430a3d7f7a72074440f53e2ad48196dced50b146835052a18e9066",
+    "k58_massive_solver_zip_sha256": "cc78f1d9f6f7901615b264c9ceaa3319bd152cd4caccc381a74ed742538bdb6a",
+    "leaf_harness_sha256": "85df92ec3d7ec007eafa3fff81e201754c94ce8a87413107f903adf7990b0aa7",
+    "mcts_source_sha256": "85c5aa9c442f0dad88032c29831c34c8e9334c72025ba3f00fc701869678a9e8"
+  }
+}

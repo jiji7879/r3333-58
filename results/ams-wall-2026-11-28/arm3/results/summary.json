@@ -1,0 +1,447 @@
+{
+  "schema": "m6-configurable-mcf-arm3/v1",
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "charge": 7,
+  "query_sha256": {
+    "inputs/parent.cnf": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+    "inputs/working.cnf": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38",
+    "results/mcf-arm2.cnf": "0102b5b1d0dfae01ed1f1d6e69b48e738c4f1b8fae429f46f7e70d901c759538",
+    "results/mcf-arm2_3-bcp.cnf": "a43f5cac1f30300715610ff9c087167663888096a30924344eaa904aab5f81b9",
+    "results/mcf-arm2_3.cnf": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8",
+    "results/mcf-arm3-bcp.cnf": "31108fb9204b9e615a6396bb6239019f04307e083786db3d2b8e181f82e38daa",
+    "results/mcf-arm3.cnf": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2"
+  },
+  "prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+  "proofs": [],
+  "certification": "NONE: every solver run reached its conflict cap and is OPEN; no SAT/UNSAT or physical-colouring conclusion.",
+  "runs": [
+    {
+      "label": "parent",
+      "path": "inputs/parent.cnf",
+      "cnf_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "nv": 19533,
+      "clauses": 184335,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 31300,
+        "conflicts": 1000000,
+        "decisions": 2322342,
+        "propagations": 371735517
+      },
+      "solve_wall_seconds": 67.38489927607588,
+      "solve_cpu_seconds": 61.971058241,
+      "parse_wall_seconds": 0.025074112927541137,
+      "parse_cpu_seconds": 0.024975894999999998,
+      "maxrss_kib_after": 121716,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-1m.jsonl"
+    },
+    {
+      "label": "arm2",
+      "path": "results/mcf-arm2.cnf",
+      "cnf_sha256": "0102b5b1d0dfae01ed1f1d6e69b48e738c4f1b8fae429f46f7e70d901c759538",
+      "nv": 24069,
+      "clauses": 198024,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 30346,
+        "conflicts": 1000000,
+        "decisions": 2105744,
+        "propagations": 409810221
+      },
+      "solve_wall_seconds": 80.47990317898802,
+      "solve_cpu_seconds": 67.03285741000002,
+      "parse_wall_seconds": 0.031207835068926215,
+      "parse_cpu_seconds": 0.03107354599999468,
+      "maxrss_kib_after": 142396,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-1m.jsonl"
+    },
+    {
+      "label": "arm3",
+      "path": "results/mcf-arm3.cnf",
+      "cnf_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+      "nv": 22053,
+      "clauses": 191940,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 36892,
+        "conflicts": 1000000,
+        "decisions": 3745976,
+        "propagations": 262186194
+      },
+      "solve_wall_seconds": 74.26367703592405,
+      "solve_cpu_seconds": 51.82769220499998,
+      "parse_wall_seconds": 0.03973017306998372,
+      "parse_cpu_seconds": 0.030831913999975313,
+      "maxrss_kib_after": 142792,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-1m.jsonl"
+    },
+    {
+      "label": "union",
+      "path": "results/mcf-arm2_3.cnf",
+      "cnf_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8",
+      "nv": 26589,
+      "clauses": 205629,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 31644,
+        "conflicts": 1000000,
+        "decisions": 2253100,
+        "propagations": 446260223
+      },
+      "solve_wall_seconds": 101.74166112486273,
+      "solve_cpu_seconds": 69.610543485,
+      "parse_wall_seconds": 0.06233020196668804,
+      "parse_cpu_seconds": 0.03611419499998192,
+      "maxrss_kib_after": 142792,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-1m.jsonl"
+    },
+    {
+      "label": "union-bcp",
+      "path": "results/mcf-arm2_3-bcp.cnf",
+      "cnf_sha256": "a43f5cac1f30300715610ff9c087167663888096a30924344eaa904aab5f81b9",
+      "nv": 26589,
+      "clauses": 204453,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 31644,
+        "conflicts": 1000000,
+        "decisions": 2253100,
+        "propagations": 446260223
+      },
+      "solve_wall_seconds": 81.303870633943,
+      "solve_cpu_seconds": 68.485197419,
+      "parse_wall_seconds": 0.06916679907590151,
+      "parse_cpu_seconds": 0.03623268699999471,
+      "maxrss_kib_after": 142792,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-1m.jsonl"
+    },
+    {
+      "label": "arm3",
+      "path": "results/mcf-arm3.cnf",
+      "cnf_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+      "nv": 22053,
+      "clauses": 191940,
+      "conflict_cap": 2000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 94614,
+        "conflicts": 2000000,
+        "decisions": 8996881,
+        "propagations": 399144507
+      },
+      "solve_wall_seconds": 142.26401920081116,
+      "solve_cpu_seconds": 120.765661874,
+      "parse_wall_seconds": 0.06159634003415704,
+      "parse_cpu_seconds": 0.030362262999999994,
+      "maxrss_kib_after": 150404,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-2m.jsonl"
+    },
+    {
+      "label": "parent",
+      "path": "inputs/parent.cnf",
+      "cnf_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "nv": 19533,
+      "clauses": 184335,
+      "conflict_cap": 2000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 102515,
+        "conflicts": 2000000,
+        "decisions": 5463922,
+        "propagations": 838419903
+      },
+      "solve_wall_seconds": 225.69952143193223,
+      "solve_cpu_seconds": 222.720745024,
+      "parse_wall_seconds": 0.03359390492551029,
+      "parse_cpu_seconds": 0.03326211799999612,
+      "maxrss_kib_after": 150404,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-2m.jsonl"
+    },
+    {
+      "label": "arm3-bcp",
+      "path": "results/mcf-arm3-bcp.cnf",
+      "cnf_sha256": "31108fb9204b9e615a6396bb6239019f04307e083786db3d2b8e181f82e38daa",
+      "nv": 22053,
+      "clauses": 191475,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 36892,
+        "conflicts": 1000000,
+        "decisions": 3745976,
+        "propagations": 262186194
+      },
+      "solve_wall_seconds": 50.78095937008038,
+      "solve_cpu_seconds": 50.492316963,
+      "parse_wall_seconds": 0.03200054704211652,
+      "parse_cpu_seconds": 0.031988681000000005,
+      "maxrss_kib_after": 132996,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-arm3-bcp-1m.jsonl"
+    },
+    {
+      "label": "arm3-bcp",
+      "path": "results/mcf-arm3-bcp.cnf",
+      "cnf_sha256": "31108fb9204b9e615a6396bb6239019f04307e083786db3d2b8e181f82e38daa",
+      "nv": 22053,
+      "clauses": 191475,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 36892,
+        "conflicts": 1000000,
+        "decisions": 3745976,
+        "propagations": 262186194
+      },
+      "solve_wall_seconds": 54.20334430714138,
+      "solve_cpu_seconds": 53.549066373,
+      "parse_wall_seconds": 0.03091157111339271,
+      "parse_cpu_seconds": 0.030810090000000005,
+      "maxrss_kib_after": 133312,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-repeat-1m.jsonl"
+    },
+    {
+      "label": "parent",
+      "path": "inputs/parent.cnf",
+      "cnf_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "nv": 19533,
+      "clauses": 184335,
+      "conflict_cap": 1000000,
+      "answer": null,
+      "status": "OPEN",
+      "conflicts_and_other_stats": {
+        "restarts": 31300,
+        "conflicts": 1000000,
+        "decisions": 2322342,
+        "propagations": 371735517
+      },
+      "solve_wall_seconds": 70.8735326367896,
+      "solve_cpu_seconds": 70.07289978899999,
+      "parse_wall_seconds": 0.0343446780461818,
+      "parse_cpu_seconds": 0.03424978199999629,
+      "maxrss_kib_after": 133312,
+      "note": "OPEN means cap reached. An API UNSAT status is not a certificate.",
+      "receipt_file": "results/cadical-repeat-1m.jsonl"
+    }
+  ],
+  "comparisons": [
+    {
+      "cap": 1000000,
+      "variant": "arm3",
+      "baseline": "parent",
+      "cpu_reduction_percent": 16.36790838160834,
+      "wall_reduction_percent": -10.208188828280074,
+      "propagation_reduction_percent": 29.469694982091255,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ]
+    },
+    {
+      "cap": 2000000,
+      "variant": "arm3",
+      "baseline": "parent",
+      "cpu_reduction_percent": 45.77709325595759,
+      "wall_reduction_percent": 36.96751402119567,
+      "propagation_reduction_percent": 52.39324524957036,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ]
+    },
+    {
+      "cap": 1000000,
+      "variant": "arm3-bcp",
+      "baseline": "parent",
+      "cpu_reduction_percent": 23.580918537345717,
+      "wall_reduction_percent": 23.521034876417225,
+      "propagation_reduction_percent": 29.469694982091255,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ]
+    },
+    {
+      "cap": 1000000,
+      "variant": "union-bcp",
+      "baseline": "union",
+      "identical_search_stats": true,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ]
+    },
+    {
+      "cap": 1000000,
+      "variant": "arm3-bcp",
+      "baseline": "arm3",
+      "identical_search_stats": true,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ]
+    }
+  ],
+  "controls": {
+    "results/audit-arm2.json": {
+      "result": "PASS",
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "augmented_sha256": "0102b5b1d0dfae01ed1f1d6e69b48e738c4f1b8fae429f46f7e70d901c759538",
+      "arms": [
+        2
+      ],
+      "colour": 0,
+      "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+      "profile": [
+        16,
+        16,
+        14,
+        11
+      ],
+      "host_clauses": 134995,
+      "changing_edges": 81,
+      "added_clauses": 13689,
+      "fresh_path_witness_variables": 4536,
+      "parent_body_prefix_byte_exact": true,
+      "all_134995_host_clauses_exact": true,
+      "all_nonhost_suffixes_avoid_changing_variables": true,
+      "all_tseitin_and_long_clauses_exact": true,
+      "negative_controls": [
+        "rejected one flipped witness sign",
+        "rejected one deleted suffix clause"
+      ],
+      "scope": "CNF schema and configurable-MCF reduction only; no proof, SAT/UNSAT status, or physical-row assembly."
+    },
+    "results/audit-arm3.json": {
+      "result": "PASS",
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "augmented_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+      "arms": [
+        3
+      ],
+      "colour": 0,
+      "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+      "profile": [
+        16,
+        16,
+        14,
+        11
+      ],
+      "host_clauses": 134995,
+      "changing_edges": 45,
+      "added_clauses": 7605,
+      "fresh_path_witness_variables": 2520,
+      "parent_body_prefix_byte_exact": true,
+      "all_134995_host_clauses_exact": true,
+      "all_nonhost_suffixes_avoid_changing_variables": true,
+      "all_tseitin_and_long_clauses_exact": true,
+      "negative_controls": [
+        "rejected one flipped witness sign",
+        "rejected one deleted suffix clause"
+      ],
+      "scope": "CNF schema and configurable-MCF reduction only; no proof, SAT/UNSAT status, or physical-row assembly."
+    },
+    "results/audit-arm2_3.json": {
+      "result": "PASS",
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "augmented_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8",
+      "arms": [
+        2,
+        3
+      ],
+      "colour": 0,
+      "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+      "profile": [
+        16,
+        16,
+        14,
+        11
+      ],
+      "host_clauses": 134995,
+      "changing_edges": 126,
+      "added_clauses": 21294,
+      "fresh_path_witness_variables": 7056,
+      "parent_body_prefix_byte_exact": true,
+      "all_134995_host_clauses_exact": true,
+      "all_nonhost_suffixes_avoid_changing_variables": true,
+      "all_tseitin_and_long_clauses_exact": true,
+      "negative_controls": [
+        "rejected one flipped witness sign",
+        "rejected one deleted suffix clause"
+      ],
+      "scope": "CNF schema and configurable-MCF reduction only; no proof, SAT/UNSAT status, or physical-row assembly."
+    },
+    "results/verify-bcp-arm3.json": {
+      "result": "PASS",
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "augmented_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+      "simplified_sha256": "31108fb9204b9e615a6396bb6239019f04307e083786db3d2b8e181f82e38daa",
+      "independent_algorithm": "repeated complete-clause scans to fixpoint",
+      "full_scan_passes": 3,
+      "parent_bcp_units": 1813,
+      "parent_bcp_units_sha256": "9d773ef00ac64b36bb7d764f323208534c635ea7a29ee7bb959e48f81e6edabd",
+      "satisfied_suffix_clauses": 465,
+      "residual_suffix_clauses": 7140,
+      "used_fresh_variables": 2520,
+      "all_residuals_and_renaming_exact": true,
+      "negative_controls": [
+        "rejected flipped residual sign",
+        "rejected deleted residual clause"
+      ],
+      "scope": "Parent-clause BCP equivalence only; not a DRAT certificate or physical colouring result."
+    },
+    "results/verify-bcp-arm2_3.json": {
+      "result": "PASS",
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "augmented_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8",
+      "simplified_sha256": "a43f5cac1f30300715610ff9c087167663888096a30924344eaa904aab5f81b9",
+      "independent_algorithm": "repeated complete-clause scans to fixpoint",
+      "full_scan_passes": 3,
+      "parent_bcp_units": 1813,
+      "parent_bcp_units_sha256": "9d773ef00ac64b36bb7d764f323208534c635ea7a29ee7bb959e48f81e6edabd",
+      "satisfied_suffix_clauses": 1176,
+      "residual_suffix_clauses": 20118,
+      "used_fresh_variables": 7056,
+      "all_residuals_and_renaming_exact": true,
+      "negative_controls": [
+        "rejected flipped residual sign",
+        "rejected deleted residual clause"
+      ],
+      "scope": "Parent-clause BCP equivalence only; not a DRAT certificate or physical colouring result."
+    }
+  },
+  "reproduction": {
+    "command": "bash reproduce.sh",
+    "optional_solver_replay": "bash reproduce.sh --solve",
+    "repo_head": "bb0544cfdc508c5e33de0855604ce90ee37978c8",
+    "baseline_zip_sha256": "cc78f1d9f6f7901615b264c9ceaa3319bd152cd4caccc381a74ed742538bdb6a"
+  }
+}

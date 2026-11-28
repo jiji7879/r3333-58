@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "augmented_sha256": "1bb7a7823b0ceac16d303de15c204b28b11d4354ec17fcf60dba7678754ff9d2",
+  "simplified_sha256": "31108fb9204b9e615a6396bb6239019f04307e083786db3d2b8e181f82e38daa",
+  "independent_algorithm": "repeated complete-clause scans to fixpoint",
+  "full_scan_passes": 3,
+  "parent_bcp_units": 1813,
+  "parent_bcp_units_sha256": "9d773ef00ac64b36bb7d764f323208534c635ea7a29ee7bb959e48f81e6edabd",
+  "satisfied_suffix_clauses": 465,
+  "residual_suffix_clauses": 7140,
+  "used_fresh_variables": 2520,
+  "all_residuals_and_renaming_exact": true,
+  "negative_controls": [
+    "rejected flipped residual sign",
+    "rejected deleted residual clause"
+  ],
+  "scope": "Parent-clause BCP equivalence only; not a DRAT certificate or physical colouring result."
+}

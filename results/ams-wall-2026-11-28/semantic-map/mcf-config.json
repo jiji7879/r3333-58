@@ -1,0 +1,2005 @@
+{
+  "configurable": [
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        38
+      ],
+      "edge_id": 1357,
+      "physical_variables": [
+        5429,
+        5430,
+        5431,
+        5432
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        39
+      ],
+      "edge_id": 1358,
+      "physical_variables": [
+        5433,
+        5434,
+        5435,
+        5436
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        40
+      ],
+      "edge_id": 1359,
+      "physical_variables": [
+        5437,
+        5438,
+        5439,
+        5440
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        41
+      ],
+      "edge_id": 1360,
+      "physical_variables": [
+        5441,
+        5442,
+        5443,
+        5444
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        42
+      ],
+      "edge_id": 1361,
+      "physical_variables": [
+        5445,
+        5446,
+        5447,
+        5448
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        43
+      ],
+      "edge_id": 1362,
+      "physical_variables": [
+        5449,
+        5450,
+        5451,
+        5452
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        44
+      ],
+      "edge_id": 1363,
+      "physical_variables": [
+        5453,
+        5454,
+        5455,
+        5456
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        45
+      ],
+      "edge_id": 1364,
+      "physical_variables": [
+        5457,
+        5458,
+        5459,
+        5460
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        46
+      ],
+      "edge_id": 1365,
+      "physical_variables": [
+        5461,
+        5462,
+        5463,
+        5464
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        38
+      ],
+      "edge_id": 1380,
+      "physical_variables": [
+        5521,
+        5522,
+        5523,
+        5524
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        39
+      ],
+      "edge_id": 1381,
+      "physical_variables": [
+        5525,
+        5526,
+        5527,
+        5528
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        40
+      ],
+      "edge_id": 1382,
+      "physical_variables": [
+        5529,
+        5530,
+        5531,
+        5532
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        41
+      ],
+      "edge_id": 1383,
+      "physical_variables": [
+        5533,
+        5534,
+        5535,
+        5536
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        42
+      ],
+      "edge_id": 1384,
+      "physical_variables": [
+        5537,
+        5538,
+        5539,
+        5540
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        43
+      ],
+      "edge_id": 1385,
+      "physical_variables": [
+        5541,
+        5542,
+        5543,
+        5544
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        44
+      ],
+      "edge_id": 1386,
+      "physical_variables": [
+        5545,
+        5546,
+        5547,
+        5548
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        45
+      ],
+      "edge_id": 1387,
+      "physical_variables": [
+        5549,
+        5550,
+        5551,
+        5552
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        46
+      ],
+      "edge_id": 1388,
+      "physical_variables": [
+        5553,
+        5554,
+        5555,
+        5556
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        38
+      ],
+      "edge_id": 1402,
+      "physical_variables": [
+        5609,
+        5610,
+        5611,
+        5612
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        39
+      ],
+      "edge_id": 1403,
+      "physical_variables": [
+        5613,
+        5614,
+        5615,
+        5616
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        40
+      ],
+      "edge_id": 1404,
+      "physical_variables": [
+        5617,
+        5618,
+        5619,
+        5620
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        41
+      ],
+      "edge_id": 1405,
+      "physical_variables": [
+        5621,
+        5622,
+        5623,
+        5624
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        42
+      ],
+      "edge_id": 1406,
+      "physical_variables": [
+        5625,
+        5626,
+        5627,
+        5628
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        43
+      ],
+      "edge_id": 1407,
+      "physical_variables": [
+        5629,
+        5630,
+        5631,
+        5632
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        44
+      ],
+      "edge_id": 1408,
+      "physical_variables": [
+        5633,
+        5634,
+        5635,
+        5636
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        45
+      ],
+      "edge_id": 1409,
+      "physical_variables": [
+        5637,
+        5638,
+        5639,
+        5640
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        46
+      ],
+      "edge_id": 1410,
+      "physical_variables": [
+        5641,
+        5642,
+        5643,
+        5644
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        38
+      ],
+      "edge_id": 1423,
+      "physical_variables": [
+        5693,
+        5694,
+        5695,
+        5696
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        39
+      ],
+      "edge_id": 1424,
+      "physical_variables": [
+        5697,
+        5698,
+        5699,
+        5700
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        40
+      ],
+      "edge_id": 1425,
+      "physical_variables": [
+        5701,
+        5702,
+        5703,
+        5704
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        41
+      ],
+      "edge_id": 1426,
+      "physical_variables": [
+        5705,
+        5706,
+        5707,
+        5708
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        42
+      ],
+      "edge_id": 1427,
+      "physical_variables": [
+        5709,
+        5710,
+        5711,
+        5712
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        43
+      ],
+      "edge_id": 1428,
+      "physical_variables": [
+        5713,
+        5714,
+        5715,
+        5716
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        44
+      ],
+      "edge_id": 1429,
+      "physical_variables": [
+        5717,
+        5718,
+        5719,
+        5720
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        45
+      ],
+      "edge_id": 1430,
+      "physical_variables": [
+        5721,
+        5722,
+        5723,
+        5724
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        46
+      ],
+      "edge_id": 1431,
+      "physical_variables": [
+        5725,
+        5726,
+        5727,
+        5728
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        38
+      ],
+      "edge_id": 1443,
+      "physical_variables": [
+        5773,
+        5774,
+        5775,
+        5776
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        39
+      ],
+      "edge_id": 1444,
+      "physical_variables": [
+        5777,
+        5778,
+        5779,
+        5780
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        40
+      ],
+      "edge_id": 1445,
+      "physical_variables": [
+        5781,
+        5782,
+        5783,
+        5784
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        41
+      ],
+      "edge_id": 1446,
+      "physical_variables": [
+        5785,
+        5786,
+        5787,
+        5788
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        42
+      ],
+      "edge_id": 1447,
+      "physical_variables": [
+        5789,
+        5790,
+        5791,
+        5792
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        43
+      ],
+      "edge_id": 1448,
+      "physical_variables": [
+        5793,
+        5794,
+        5795,
+        5796
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        44
+      ],
+      "edge_id": 1449,
+      "physical_variables": [
+        5797,
+        5798,
+        5799,
+        5800
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        45
+      ],
+      "edge_id": 1450,
+      "physical_variables": [
+        5801,
+        5802,
+        5803,
+        5804
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        37,
+        46
+      ],
+      "edge_id": 1451,
+      "physical_variables": [
+        5805,
+        5806,
+        5807,
+        5808
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        39
+      ],
+      "edge_id": 1463,
+      "physical_variables": [
+        5853,
+        5854,
+        5855,
+        5856
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        40
+      ],
+      "edge_id": 1464,
+      "physical_variables": [
+        5857,
+        5858,
+        5859,
+        5860
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        41
+      ],
+      "edge_id": 1465,
+      "physical_variables": [
+        5861,
+        5862,
+        5863,
+        5864
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        42
+      ],
+      "edge_id": 1466,
+      "physical_variables": [
+        5865,
+        5866,
+        5867,
+        5868
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        43
+      ],
+      "edge_id": 1467,
+      "physical_variables": [
+        5869,
+        5870,
+        5871,
+        5872
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        44
+      ],
+      "edge_id": 1468,
+      "physical_variables": [
+        5873,
+        5874,
+        5875,
+        5876
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        45
+      ],
+      "edge_id": 1469,
+      "physical_variables": [
+        5877,
+        5878,
+        5879,
+        5880
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        38,
+        46
+      ],
+      "edge_id": 1470,
+      "physical_variables": [
+        5881,
+        5882,
+        5883,
+        5884
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        39,
+        40
+      ],
+      "edge_id": 1482,
+      "physical_variables": [
+        5929,
+        5930,
+        5931,
+        5932
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        39,
+        41
+      ],
+      "edge_id": 1483,
+      "physical_variables": [
+        5933,
+        5934,
+        5935,
+        5936
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        39,
+        42
+      ],
+      "edge_id": 1484,
+      "physical_variables": [
+        5937,
+        5938,
+        5939,
+        5940
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        39,
+        43
+      ],
+      "edge_id": 1485,
+      "physical_variables": [
+        5941,
+        5942,
+        5943,
+        5944
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        39,
+        44
+      ],
+      "edge_id": 1486,
+      "physical_variables": [
+        5945,
+        5946,
+        5947,
+        5948
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        39,
+        45
+      ],
+      "edge_id": 1487,
+      "physical_variables": [
+        5949,
+        5950,
+        5951,
+        5952
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        39,
+        46
+      ],
+      "edge_id": 1488,
+      "physical_variables": [
+        5953,
+        5954,
+        5955,
+        5956
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        40,
+        41
+      ],
+      "edge_id": 1500,
+      "physical_variables": [
+        6001,
+        6002,
+        6003,
+        6004
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        40,
+        42
+      ],
+      "edge_id": 1501,
+      "physical_variables": [
+        6005,
+        6006,
+        6007,
+        6008
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        40,
+        43
+      ],
+      "edge_id": 1502,
+      "physical_variables": [
+        6009,
+        6010,
+        6011,
+        6012
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        40,
+        44
+      ],
+      "edge_id": 1503,
+      "physical_variables": [
+        6013,
+        6014,
+        6015,
+        6016
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        40,
+        45
+      ],
+      "edge_id": 1504,
+      "physical_variables": [
+        6017,
+        6018,
+        6019,
+        6020
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        40,
+        46
+      ],
+      "edge_id": 1505,
+      "physical_variables": [
+        6021,
+        6022,
+        6023,
+        6024
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        41,
+        42
+      ],
+      "edge_id": 1517,
+      "physical_variables": [
+        6069,
+        6070,
+        6071,
+        6072
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        41,
+        43
+      ],
+      "edge_id": 1518,
+      "physical_variables": [
+        6073,
+        6074,
+        6075,
+        6076
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        41,
+        44
+      ],
+      "edge_id": 1519,
+      "physical_variables": [
+        6077,
+        6078,
+        6079,
+        6080
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        41,
+        45
+      ],
+      "edge_id": 1520,
+      "physical_variables": [
+        6081,
+        6082,
+        6083,
+        6084
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        41,
+        46
+      ],
+      "edge_id": 1521,
+      "physical_variables": [
+        6085,
+        6086,
+        6087,
+        6088
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        42,
+        43
+      ],
+      "edge_id": 1533,
+      "physical_variables": [
+        6133,
+        6134,
+        6135,
+        6136
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        42,
+        44
+      ],
+      "edge_id": 1534,
+      "physical_variables": [
+        6137,
+        6138,
+        6139,
+        6140
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        42,
+        45
+      ],
+      "edge_id": 1535,
+      "physical_variables": [
+        6141,
+        6142,
+        6143,
+        6144
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        42,
+        46
+      ],
+      "edge_id": 1536,
+      "physical_variables": [
+        6145,
+        6146,
+        6147,
+        6148
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        43,
+        44
+      ],
+      "edge_id": 1548,
+      "physical_variables": [
+        6193,
+        6194,
+        6195,
+        6196
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        43,
+        45
+      ],
+      "edge_id": 1549,
+      "physical_variables": [
+        6197,
+        6198,
+        6199,
+        6200
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        43,
+        46
+      ],
+      "edge_id": 1550,
+      "physical_variables": [
+        6201,
+        6202,
+        6203,
+        6204
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        44,
+        45
+      ],
+      "edge_id": 1562,
+      "physical_variables": [
+        6249,
+        6250,
+        6251,
+        6252
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        44,
+        46
+      ],
+      "edge_id": 1563,
+      "physical_variables": [
+        6253,
+        6254,
+        6255,
+        6256
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        45,
+        46
+      ],
+      "edge_id": 1575,
+      "physical_variables": [
+        6301,
+        6302,
+        6303,
+        6304
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        52
+      ],
+      "edge_id": 1602,
+      "physical_variables": [
+        6409,
+        6410,
+        6411,
+        6412
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        53
+      ],
+      "edge_id": 1603,
+      "physical_variables": [
+        6413,
+        6414,
+        6415,
+        6416
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        54
+      ],
+      "edge_id": 1604,
+      "physical_variables": [
+        6417,
+        6418,
+        6419,
+        6420
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        55
+      ],
+      "edge_id": 1605,
+      "physical_variables": [
+        6421,
+        6422,
+        6423,
+        6424
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        56
+      ],
+      "edge_id": 1606,
+      "physical_variables": [
+        6425,
+        6426,
+        6427,
+        6428
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        57
+      ],
+      "edge_id": 1607,
+      "physical_variables": [
+        6429,
+        6430,
+        6431,
+        6432
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        52
+      ],
+      "edge_id": 1611,
+      "physical_variables": [
+        6445,
+        6446,
+        6447,
+        6448
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        53
+      ],
+      "edge_id": 1612,
+      "physical_variables": [
+        6449,
+        6450,
+        6451,
+        6452
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        54
+      ],
+      "edge_id": 1613,
+      "physical_variables": [
+        6453,
+        6454,
+        6455,
+        6456
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        55
+      ],
+      "edge_id": 1614,
+      "physical_variables": [
+        6457,
+        6458,
+        6459,
+        6460
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        56
+      ],
+      "edge_id": 1615,
+      "physical_variables": [
+        6461,
+        6462,
+        6463,
+        6464
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        57
+      ],
+      "edge_id": 1616,
+      "physical_variables": [
+        6465,
+        6466,
+        6467,
+        6468
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        52
+      ],
+      "edge_id": 1619,
+      "physical_variables": [
+        6477,
+        6478,
+        6479,
+        6480
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        53
+      ],
+      "edge_id": 1620,
+      "physical_variables": [
+        6481,
+        6482,
+        6483,
+        6484
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        54
+      ],
+      "edge_id": 1621,
+      "physical_variables": [
+        6485,
+        6486,
+        6487,
+        6488
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        55
+      ],
+      "edge_id": 1622,
+      "physical_variables": [
+        6489,
+        6490,
+        6491,
+        6492
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        56
+      ],
+      "edge_id": 1623,
+      "physical_variables": [
+        6493,
+        6494,
+        6495,
+        6496
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        57
+      ],
+      "edge_id": 1624,
+      "physical_variables": [
+        6497,
+        6498,
+        6499,
+        6500
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        50,
+        52
+      ],
+      "edge_id": 1626,
+      "physical_variables": [
+        6505,
+        6506,
+        6507,
+        6508
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        50,
+        53
+      ],
+      "edge_id": 1627,
+      "physical_variables": [
+        6509,
+        6510,
+        6511,
+        6512
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        50,
+        54
+      ],
+      "edge_id": 1628,
+      "physical_variables": [
+        6513,
+        6514,
+        6515,
+        6516
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        50,
+        55
+      ],
+      "edge_id": 1629,
+      "physical_variables": [
+        6517,
+        6518,
+        6519,
+        6520
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        50,
+        56
+      ],
+      "edge_id": 1630,
+      "physical_variables": [
+        6521,
+        6522,
+        6523,
+        6524
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        50,
+        57
+      ],
+      "edge_id": 1631,
+      "physical_variables": [
+        6525,
+        6526,
+        6527,
+        6528
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        51,
+        52
+      ],
+      "edge_id": 1632,
+      "physical_variables": [
+        6529,
+        6530,
+        6531,
+        6532
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        51,
+        53
+      ],
+      "edge_id": 1633,
+      "physical_variables": [
+        6533,
+        6534,
+        6535,
+        6536
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        51,
+        54
+      ],
+      "edge_id": 1634,
+      "physical_variables": [
+        6537,
+        6538,
+        6539,
+        6540
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        51,
+        55
+      ],
+      "edge_id": 1635,
+      "physical_variables": [
+        6541,
+        6542,
+        6543,
+        6544
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        51,
+        56
+      ],
+      "edge_id": 1636,
+      "physical_variables": [
+        6545,
+        6546,
+        6547,
+        6548
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        51,
+        57
+      ],
+      "edge_id": 1637,
+      "physical_variables": [
+        6549,
+        6550,
+        6551,
+        6552
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        52,
+        53
+      ],
+      "edge_id": 1638,
+      "physical_variables": [
+        6553,
+        6554,
+        6555,
+        6556
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        52,
+        54
+      ],
+      "edge_id": 1639,
+      "physical_variables": [
+        6557,
+        6558,
+        6559,
+        6560
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        52,
+        55
+      ],
+      "edge_id": 1640,
+      "physical_variables": [
+        6561,
+        6562,
+        6563,
+        6564
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        52,
+        56
+      ],
+      "edge_id": 1641,
+      "physical_variables": [
+        6565,
+        6566,
+        6567,
+        6568
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        52,
+        57
+      ],
+      "edge_id": 1642,
+      "physical_variables": [
+        6569,
+        6570,
+        6571,
+        6572
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        53,
+        54
+      ],
+      "edge_id": 1643,
+      "physical_variables": [
+        6573,
+        6574,
+        6575,
+        6576
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        53,
+        55
+      ],
+      "edge_id": 1644,
+      "physical_variables": [
+        6577,
+        6578,
+        6579,
+        6580
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        53,
+        56
+      ],
+      "edge_id": 1645,
+      "physical_variables": [
+        6581,
+        6582,
+        6583,
+        6584
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        53,
+        57
+      ],
+      "edge_id": 1646,
+      "physical_variables": [
+        6585,
+        6586,
+        6587,
+        6588
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        54,
+        55
+      ],
+      "edge_id": 1647,
+      "physical_variables": [
+        6589,
+        6590,
+        6591,
+        6592
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        54,
+        56
+      ],
+      "edge_id": 1648,
+      "physical_variables": [
+        6593,
+        6594,
+        6595,
+        6596
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        54,
+        57
+      ],
+      "edge_id": 1649,
+      "physical_variables": [
+        6597,
+        6598,
+        6599,
+        6600
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        55,
+        56
+      ],
+      "edge_id": 1650,
+      "physical_variables": [
+        6601,
+        6602,
+        6603,
+        6604
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        55,
+        57
+      ],
+      "edge_id": 1651,
+      "physical_variables": [
+        6605,
+        6606,
+        6607,
+        6608
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        56,
+        57
+      ],
+      "edge_id": 1652,
+      "physical_variables": [
+        6609,
+        6610,
+        6611,
+        6612
+      ]
+    }
+  ],
+  "excluded_fixed": [
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        34
+      ],
+      "edge_id": 1353,
+      "fixed_unit_literals": [
+        5416
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        35
+      ],
+      "edge_id": 1354,
+      "fixed_unit_literals": [
+        5420
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        36
+      ],
+      "edge_id": 1355,
+      "fixed_unit_literals": [
+        5421
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        33,
+        37
+      ],
+      "edge_id": 1356,
+      "fixed_unit_literals": [
+        5425
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        35
+      ],
+      "edge_id": 1377,
+      "fixed_unit_literals": [
+        5509
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        36
+      ],
+      "edge_id": 1378,
+      "fixed_unit_literals": [
+        5516
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        34,
+        37
+      ],
+      "edge_id": 1379,
+      "fixed_unit_literals": [
+        5517
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        36
+      ],
+      "edge_id": 1400,
+      "fixed_unit_literals": [
+        5601
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        35,
+        37
+      ],
+      "edge_id": 1401,
+      "fixed_unit_literals": [
+        5608
+      ]
+    },
+    {
+      "arm": 2,
+      "edge": [
+        36,
+        37
+      ],
+      "edge_id": 1422,
+      "fixed_unit_literals": [
+        5692
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        48
+      ],
+      "edge_id": 1598,
+      "fixed_unit_literals": [
+        6395
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        49
+      ],
+      "edge_id": 1599,
+      "fixed_unit_literals": [
+        6399
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        50
+      ],
+      "edge_id": 1600,
+      "fixed_unit_literals": [
+        6401
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        47,
+        51
+      ],
+      "edge_id": 1601,
+      "fixed_unit_literals": [
+        6405
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        49
+      ],
+      "edge_id": 1608,
+      "fixed_unit_literals": [
+        6433
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        50
+      ],
+      "edge_id": 1609,
+      "fixed_unit_literals": [
+        6439
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        48,
+        51
+      ],
+      "edge_id": 1610,
+      "fixed_unit_literals": [
+        6441
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        50
+      ],
+      "edge_id": 1617,
+      "fixed_unit_literals": [
+        6469
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        49,
+        51
+      ],
+      "edge_id": 1618,
+      "fixed_unit_literals": [
+        6475
+      ]
+    },
+    {
+      "arm": 3,
+      "edge": [
+        50,
+        51
+      ],
+      "edge_id": 1625,
+      "fixed_unit_literals": [
+        6503
+      ]
+    }
+  ],
+  "summary": {
+    "added_clauses_for_augmentation": 21294,
+    "arms": [
+      2,
+      3
+    ],
+    "auxiliary_variables_for_augmentation": 7056,
+    "configurable_edges": 126,
+    "excluded_fixed_edges": 20,
+    "formula": "126*(56*3+1) clauses and 126*56 fresh conjunction witnesses",
+    "scope": "Exact configurability premise only. The safe-recolouring normal form is equisatisfiability, not DRAT implication; no new performance run or full/pinned MCF extension is claimed.",
+    "suffix_disjoint_variables": 504,
+    "target_colour": 0,
+    "witnesses_per_edge": 56
+  }
+}

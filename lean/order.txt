@@ -1,4 +1,5 @@
 Basic
+ConfigurableMaximal
 TwoColour
 ThreeColour
 DegreeCap
@@ -13,6 +14,7 @@ CNF
 SequentialCounter
 AtLeast
 EncoderExtensions
+SemanticAssembly
 Blocked
 Main
 Plans
@@ -79,4 +81,7 @@ PlacementsIneq
 SixCycle
 PBRoot
 FullVertexBudget
+TargetSuffix
+TargetParent
+TicketPremises
 Check

@@ -45,6 +45,9 @@ import K58.PBRoot
 import K58.LinkSaturation
 import K58.FullVertexBudget
 import K58.EncoderExtensions
+import K58.ConfigurableMaximal
+import K58.TargetParent
+import K58.TicketPremises
 
 #print axioms K58.sum_w_eq_sum_H
 #print axioms K58.exists_root
@@ -429,3 +432,18 @@ import K58.EncoderExtensions
 #print axioms K58.EncoderExtensions.satisfiable_nativeAtLeast
 #print axioms K58.EncoderExtensions.satisfiable_guardedAtLeast
 #print axioms K58.EncoderExtensions.satisfiable_supportFamily
+
+-- Pure-kernel configurable maximal-colour normal form.
+#print axioms K58.ConfigurableMaximal.triangleFree_recolour
+#print axioms K58.ConfigurableMaximal.normalAt_normalise
+#print axioms K58.ConfigurableMaximal.normalise_suffix
+#print axioms K58.ConfigurableMaximal.normalForm_equisatisfiable
+#print axioms K58.ConfigurableMaximal.witnessBinding_iff
+#print axioms K58.ConfigurableMaximal.fresh_witness_disjunction
+
+-- Exact parent conditional semantic assembly and physical ticket premise.
+#print axioms K58.SemanticAssembly.satisfiable_emittedSupportFamily
+#print axioms K58.SemanticAssembly.chain_extend
+#print axioms targetParent_satisfiable_of_ready
+#print axioms K58.SemanticAssembly.seven_critical_senders_of_16_16_14_11
+#print axioms K58.SemanticAssembly.six_of_adjusted_guard_count

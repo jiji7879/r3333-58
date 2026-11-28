@@ -1,0 +1,10364 @@
+[
+  {
+    "clause": 134996,
+    "color": 1,
+    "edge": [
+      17,
+      57
+    ],
+    "literal": -3490,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 57
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 134997,
+    "color": 1,
+    "edge": [
+      17,
+      56
+    ],
+    "literal": -3486,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 56
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 134998,
+    "color": 1,
+    "edge": [
+      17,
+      55
+    ],
+    "literal": -3482,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 55
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 134999,
+    "color": 1,
+    "edge": [
+      17,
+      54
+    ],
+    "literal": -3478,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 54
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135000,
+    "color": 1,
+    "edge": [
+      17,
+      53
+    ],
+    "literal": -3474,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 53
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135001,
+    "color": 1,
+    "edge": [
+      17,
+      52
+    ],
+    "literal": -3470,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 52
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135002,
+    "color": 1,
+    "edge": [
+      17,
+      46
+    ],
+    "literal": -3446,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 46
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135003,
+    "color": 1,
+    "edge": [
+      17,
+      45
+    ],
+    "literal": -3442,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 45
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135004,
+    "color": 1,
+    "edge": [
+      17,
+      44
+    ],
+    "literal": -3438,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 44
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135005,
+    "color": 1,
+    "edge": [
+      17,
+      43
+    ],
+    "literal": -3434,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 43
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135006,
+    "color": 1,
+    "edge": [
+      17,
+      42
+    ],
+    "literal": -3430,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 42
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135007,
+    "color": 1,
+    "edge": [
+      17,
+      41
+    ],
+    "literal": -3426,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 41
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135008,
+    "color": 1,
+    "edge": [
+      17,
+      40
+    ],
+    "literal": -3422,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 40
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135009,
+    "color": 1,
+    "edge": [
+      17,
+      39
+    ],
+    "literal": -3418,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 39
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135010,
+    "color": 1,
+    "edge": [
+      17,
+      38
+    ],
+    "literal": -3414,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 38
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135011,
+    "color": 1,
+    "edge": [
+      17,
+      32
+    ],
+    "literal": -3390,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 32
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135012,
+    "color": 1,
+    "edge": [
+      17,
+      31
+    ],
+    "literal": -3386,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 31
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135013,
+    "color": 1,
+    "edge": [
+      17,
+      30
+    ],
+    "literal": -3382,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 30
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135014,
+    "color": 1,
+    "edge": [
+      17,
+      29
+    ],
+    "literal": -3378,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 29
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135015,
+    "color": 1,
+    "edge": [
+      17,
+      28
+    ],
+    "literal": -3374,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 28
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135016,
+    "color": 1,
+    "edge": [
+      17,
+      27
+    ],
+    "literal": -3370,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 27
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135017,
+    "color": 1,
+    "edge": [
+      17,
+      26
+    ],
+    "literal": -3366,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 26
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135018,
+    "color": 1,
+    "edge": [
+      17,
+      25
+    ],
+    "literal": -3362,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 25
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135019,
+    "color": 1,
+    "edge": [
+      17,
+      24
+    ],
+    "literal": -3358,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 24
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135020,
+    "color": 1,
+    "edge": [
+      17,
+      23
+    ],
+    "literal": -3354,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 23
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135021,
+    "color": 1,
+    "edge": [
+      17,
+      22
+    ],
+    "literal": -3350,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 22
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135022,
+    "color": 1,
+    "edge": [
+      17,
+      21
+    ],
+    "literal": -3346,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 21
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135023,
+    "color": 1,
+    "edge": [
+      17,
+      20
+    ],
+    "literal": -3342,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 20
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135024,
+    "color": 1,
+    "edge": [
+      17,
+      19
+    ],
+    "literal": -3338,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 19
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135025,
+    "color": 1,
+    "edge": [
+      17,
+      18
+    ],
+    "literal": -3334,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 18
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135026,
+    "color": 1,
+    "edge": [
+      16,
+      17
+    ],
+    "literal": -3170,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 16
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135027,
+    "color": 1,
+    "edge": [
+      15,
+      17
+    ],
+    "literal": -3006,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 15
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135028,
+    "color": 1,
+    "edge": [
+      14,
+      17
+    ],
+    "literal": -2838,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 14
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135029,
+    "color": 1,
+    "edge": [
+      13,
+      17
+    ],
+    "literal": -2666,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 13
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135030,
+    "color": 1,
+    "edge": [
+      11,
+      17
+    ],
+    "literal": -2310,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 11
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135031,
+    "color": 1,
+    "edge": [
+      10,
+      17
+    ],
+    "literal": -2126,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 10
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135032,
+    "color": 1,
+    "edge": [
+      9,
+      17
+    ],
+    "literal": -1938,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 9
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135033,
+    "color": 1,
+    "edge": [
+      8,
+      17
+    ],
+    "literal": -1746,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 8
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135034,
+    "color": 1,
+    "edge": [
+      6,
+      17
+    ],
+    "literal": -1350,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 6
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135035,
+    "color": 1,
+    "edge": [
+      5,
+      17
+    ],
+    "literal": -1146,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 5
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135036,
+    "color": 1,
+    "edge": [
+      4,
+      17
+    ],
+    "literal": -938,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 4
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135037,
+    "color": 1,
+    "edge": [
+      2,
+      17
+    ],
+    "literal": -510,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": false,
+        "q": 17,
+        "vertex": 2
+      }
+    ],
+    "value": false
+  },
+  {
+    "clause": 135038,
+    "color": 0,
+    "edge": [
+      0,
+      1
+    ],
+    "literal": 1,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 1
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          7
+        ],
+        "vertices": [
+          1,
+          0
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135039,
+    "color": 0,
+    "edge": [
+      0,
+      2
+    ],
+    "literal": 5,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 2
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135040,
+    "color": 0,
+    "edge": [
+      0,
+      3
+    ],
+    "literal": 9,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 3
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          7,
+          8
+        ],
+        "vertices": [
+          0,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135041,
+    "color": 0,
+    "edge": [
+      0,
+      4
+    ],
+    "literal": 13,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 4
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135042,
+    "color": 0,
+    "edge": [
+      0,
+      5
+    ],
+    "literal": 17,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 5
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135043,
+    "color": 0,
+    "edge": [
+      0,
+      6
+    ],
+    "literal": 21,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 6
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135044,
+    "color": 0,
+    "edge": [
+      0,
+      7
+    ],
+    "literal": 25,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 7
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          7,
+          11
+        ],
+        "vertices": [
+          0,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135045,
+    "color": 0,
+    "edge": [
+      0,
+      8
+    ],
+    "literal": 29,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 8
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135046,
+    "color": 0,
+    "edge": [
+      0,
+      9
+    ],
+    "literal": 33,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 9
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135047,
+    "color": 0,
+    "edge": [
+      0,
+      10
+    ],
+    "literal": 37,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 10
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135048,
+    "color": 0,
+    "edge": [
+      0,
+      11
+    ],
+    "literal": 41,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 11
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135049,
+    "color": 0,
+    "edge": [
+      0,
+      12
+    ],
+    "literal": 45,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 12
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          7,
+          13
+        ],
+        "vertices": [
+          0,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135050,
+    "color": 0,
+    "edge": [
+      0,
+      13
+    ],
+    "literal": 49,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 13
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135051,
+    "color": 0,
+    "edge": [
+      0,
+      14
+    ],
+    "literal": 53,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 14
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135052,
+    "color": 0,
+    "edge": [
+      0,
+      15
+    ],
+    "literal": 57,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 15
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135053,
+    "color": 0,
+    "edge": [
+      0,
+      16
+    ],
+    "literal": 61,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 0,
+        "vertex": 16
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135054,
+    "color": 1,
+    "edge": [
+      0,
+      17
+    ],
+    "literal": 66,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 17
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135055,
+    "color": 1,
+    "edge": [
+      0,
+      18
+    ],
+    "literal": 70,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 18
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135056,
+    "color": 1,
+    "edge": [
+      0,
+      19
+    ],
+    "literal": 74,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 19
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135057,
+    "color": 1,
+    "edge": [
+      0,
+      20
+    ],
+    "literal": 78,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 20
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135058,
+    "color": 1,
+    "edge": [
+      0,
+      21
+    ],
+    "literal": 82,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 21
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135059,
+    "color": 1,
+    "edge": [
+      0,
+      22
+    ],
+    "literal": 86,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 22
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135060,
+    "color": 1,
+    "edge": [
+      0,
+      23
+    ],
+    "literal": 90,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 23
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135061,
+    "color": 1,
+    "edge": [
+      0,
+      24
+    ],
+    "literal": 94,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 24
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135062,
+    "color": 1,
+    "edge": [
+      0,
+      25
+    ],
+    "literal": 98,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 25
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135063,
+    "color": 1,
+    "edge": [
+      0,
+      26
+    ],
+    "literal": 102,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 26
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135064,
+    "color": 1,
+    "edge": [
+      0,
+      27
+    ],
+    "literal": 106,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 27
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135065,
+    "color": 1,
+    "edge": [
+      0,
+      28
+    ],
+    "literal": 110,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 28
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135066,
+    "color": 1,
+    "edge": [
+      0,
+      29
+    ],
+    "literal": 114,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 29
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135067,
+    "color": 1,
+    "edge": [
+      0,
+      30
+    ],
+    "literal": 118,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 30
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135068,
+    "color": 1,
+    "edge": [
+      0,
+      31
+    ],
+    "literal": 122,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 31
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135069,
+    "color": 1,
+    "edge": [
+      0,
+      32
+    ],
+    "literal": 126,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 1,
+        "vertex": 32
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135070,
+    "color": 2,
+    "edge": [
+      0,
+      33
+    ],
+    "literal": 131,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 33
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          7
+        ],
+        "vertices": [
+          33,
+          0
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135071,
+    "color": 2,
+    "edge": [
+      0,
+      34
+    ],
+    "literal": 135,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 34
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          7
+        ],
+        "vertices": [
+          34,
+          0
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135072,
+    "color": 2,
+    "edge": [
+      0,
+      35
+    ],
+    "literal": 139,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 35
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          7
+        ],
+        "vertices": [
+          35,
+          0
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135073,
+    "color": 2,
+    "edge": [
+      0,
+      36
+    ],
+    "literal": 143,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 36
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          7,
+          10
+        ],
+        "vertices": [
+          0,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135074,
+    "color": 2,
+    "edge": [
+      0,
+      37
+    ],
+    "literal": 147,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 37
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          7,
+          12
+        ],
+        "vertices": [
+          0,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135075,
+    "color": 2,
+    "edge": [
+      0,
+      38
+    ],
+    "literal": 151,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 38
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135076,
+    "color": 2,
+    "edge": [
+      0,
+      39
+    ],
+    "literal": 155,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 39
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135077,
+    "color": 2,
+    "edge": [
+      0,
+      40
+    ],
+    "literal": 159,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 40
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135078,
+    "color": 2,
+    "edge": [
+      0,
+      41
+    ],
+    "literal": 163,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 41
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135079,
+    "color": 2,
+    "edge": [
+      0,
+      42
+    ],
+    "literal": 167,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 42
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135080,
+    "color": 2,
+    "edge": [
+      0,
+      43
+    ],
+    "literal": 171,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 43
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135081,
+    "color": 2,
+    "edge": [
+      0,
+      44
+    ],
+    "literal": 175,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 44
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135082,
+    "color": 2,
+    "edge": [
+      0,
+      45
+    ],
+    "literal": 179,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 45
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135083,
+    "color": 2,
+    "edge": [
+      0,
+      46
+    ],
+    "literal": 183,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 2,
+        "vertex": 46
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135084,
+    "color": 3,
+    "edge": [
+      0,
+      47
+    ],
+    "literal": 188,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 47
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          7
+        ],
+        "vertices": [
+          47,
+          0
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135085,
+    "color": 3,
+    "edge": [
+      0,
+      48
+    ],
+    "literal": 192,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 48
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          7
+        ],
+        "vertices": [
+          48,
+          0
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135086,
+    "color": 3,
+    "edge": [
+      0,
+      49
+    ],
+    "literal": 196,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 49
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          7
+        ],
+        "vertices": [
+          49,
+          0
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135087,
+    "color": 3,
+    "edge": [
+      0,
+      50
+    ],
+    "literal": 200,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 50
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          7,
+          9
+        ],
+        "vertices": [
+          0,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135088,
+    "color": 3,
+    "edge": [
+      0,
+      51
+    ],
+    "literal": 204,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 51
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          7,
+          14
+        ],
+        "vertices": [
+          0,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135089,
+    "color": 3,
+    "edge": [
+      0,
+      52
+    ],
+    "literal": 208,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 52
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135090,
+    "color": 3,
+    "edge": [
+      0,
+      53
+    ],
+    "literal": 212,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 53
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135091,
+    "color": 3,
+    "edge": [
+      0,
+      54
+    ],
+    "literal": 216,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 54
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135092,
+    "color": 3,
+    "edge": [
+      0,
+      55
+    ],
+    "literal": 220,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 55
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135093,
+    "color": 3,
+    "edge": [
+      0,
+      56
+    ],
+    "literal": 224,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 56
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135094,
+    "color": 3,
+    "edge": [
+      0,
+      57
+    ],
+    "literal": 228,
+    "provenance": [
+      {
+        "family": "root_profile",
+        "root_arm": 3,
+        "vertex": 57
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135095,
+    "color": 1,
+    "edge": [
+      1,
+      2
+    ],
+    "literal": 230,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          1
+        ],
+        "vertices": [
+          1,
+          2
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135096,
+    "color": 2,
+    "edge": [
+      1,
+      3
+    ],
+    "literal": 235,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          2
+        ],
+        "vertices": [
+          1,
+          3
+        ]
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          8
+        ],
+        "vertices": [
+          1,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135097,
+    "color": 2,
+    "edge": [
+      1,
+      4
+    ],
+    "literal": 239,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          3
+        ],
+        "vertices": [
+          1,
+          4
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135098,
+    "color": 3,
+    "edge": [
+      1,
+      5
+    ],
+    "literal": 244,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          4
+        ],
+        "vertices": [
+          1,
+          5
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135099,
+    "color": 3,
+    "edge": [
+      1,
+      6
+    ],
+    "literal": 248,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          5
+        ],
+        "vertices": [
+          1,
+          6
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135100,
+    "color": 3,
+    "edge": [
+      1,
+      7
+    ],
+    "literal": 252,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          6
+        ],
+        "vertices": [
+          1,
+          7
+        ]
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          11
+        ],
+        "vertices": [
+          1,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135101,
+    "color": 2,
+    "edge": [
+      1,
+      8
+    ],
+    "literal": 255,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          7
+        ],
+        "vertices": [
+          1,
+          8
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135102,
+    "color": 1,
+    "edge": [
+      1,
+      9
+    ],
+    "literal": 258,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          8
+        ],
+        "vertices": [
+          1,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135103,
+    "color": 3,
+    "edge": [
+      1,
+      10
+    ],
+    "literal": 264,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          9
+        ],
+        "vertices": [
+          1,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135104,
+    "color": 1,
+    "edge": [
+      1,
+      11
+    ],
+    "literal": 266,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          10
+        ],
+        "vertices": [
+          1,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135105,
+    "color": 2,
+    "edge": [
+      1,
+      12
+    ],
+    "literal": 271,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          11
+        ],
+        "vertices": [
+          1,
+          12
+        ]
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          13
+        ],
+        "vertices": [
+          1,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135106,
+    "color": 1,
+    "edge": [
+      1,
+      13
+    ],
+    "literal": 274,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          12
+        ],
+        "vertices": [
+          1,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135107,
+    "color": 2,
+    "edge": [
+      1,
+      14
+    ],
+    "literal": 279,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          13
+        ],
+        "vertices": [
+          1,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135108,
+    "color": 3,
+    "edge": [
+      1,
+      15
+    ],
+    "literal": 284,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          14
+        ],
+        "vertices": [
+          1,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135109,
+    "color": 1,
+    "edge": [
+      1,
+      16
+    ],
+    "literal": 286,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          0,
+          15
+        ],
+        "vertices": [
+          1,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135110,
+    "color": 1,
+    "edge": [
+      1,
+      17
+    ],
+    "literal": 290,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 1
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135111,
+    "color": 3,
+    "edge": [
+      1,
+      33
+    ],
+    "literal": 356,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          6
+        ],
+        "vertices": [
+          33,
+          1
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135112,
+    "color": 2,
+    "edge": [
+      1,
+      34
+    ],
+    "literal": 359,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          6
+        ],
+        "vertices": [
+          34,
+          1
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135113,
+    "color": 2,
+    "edge": [
+      1,
+      35
+    ],
+    "literal": 363,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          6
+        ],
+        "vertices": [
+          35,
+          1
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135114,
+    "color": 0,
+    "edge": [
+      1,
+      36
+    ],
+    "literal": 365,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          10
+        ],
+        "vertices": [
+          1,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135115,
+    "color": 0,
+    "edge": [
+      1,
+      37
+    ],
+    "literal": 369,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          12
+        ],
+        "vertices": [
+          1,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135116,
+    "color": 3,
+    "edge": [
+      1,
+      47
+    ],
+    "literal": 412,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          6
+        ],
+        "vertices": [
+          47,
+          1
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135117,
+    "color": 2,
+    "edge": [
+      1,
+      48
+    ],
+    "literal": 415,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          6
+        ],
+        "vertices": [
+          48,
+          1
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135118,
+    "color": 3,
+    "edge": [
+      1,
+      49
+    ],
+    "literal": 420,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          6
+        ],
+        "vertices": [
+          49,
+          1
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135119,
+    "color": 0,
+    "edge": [
+      1,
+      50
+    ],
+    "literal": 421,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          9
+        ],
+        "vertices": [
+          1,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135120,
+    "color": 0,
+    "edge": [
+      1,
+      51
+    ],
+    "literal": 425,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          6,
+          14
+        ],
+        "vertices": [
+          1,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135121,
+    "color": 2,
+    "edge": [
+      2,
+      3
+    ],
+    "literal": 455,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          2
+        ],
+        "vertices": [
+          2,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135122,
+    "color": 2,
+    "edge": [
+      2,
+      4
+    ],
+    "literal": 459,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          3
+        ],
+        "vertices": [
+          2,
+          4
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135123,
+    "color": 3,
+    "edge": [
+      2,
+      5
+    ],
+    "literal": 464,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          4
+        ],
+        "vertices": [
+          2,
+          5
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135124,
+    "color": 2,
+    "edge": [
+      2,
+      6
+    ],
+    "literal": 467,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          5
+        ],
+        "vertices": [
+          2,
+          6
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135125,
+    "color": 3,
+    "edge": [
+      2,
+      7
+    ],
+    "literal": 472,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          6
+        ],
+        "vertices": [
+          2,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135126,
+    "color": 3,
+    "edge": [
+      2,
+      8
+    ],
+    "literal": 476,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          7
+        ],
+        "vertices": [
+          2,
+          8
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135127,
+    "color": 3,
+    "edge": [
+      2,
+      9
+    ],
+    "literal": 480,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          8
+        ],
+        "vertices": [
+          2,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135128,
+    "color": 1,
+    "edge": [
+      2,
+      10
+    ],
+    "literal": 482,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          9
+        ],
+        "vertices": [
+          2,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135129,
+    "color": 2,
+    "edge": [
+      2,
+      11
+    ],
+    "literal": 487,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          10
+        ],
+        "vertices": [
+          2,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135130,
+    "color": 1,
+    "edge": [
+      2,
+      12
+    ],
+    "literal": 490,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          11
+        ],
+        "vertices": [
+          2,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135131,
+    "color": 3,
+    "edge": [
+      2,
+      13
+    ],
+    "literal": 496,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          12
+        ],
+        "vertices": [
+          2,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135132,
+    "color": 1,
+    "edge": [
+      2,
+      14
+    ],
+    "literal": 498,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          13
+        ],
+        "vertices": [
+          2,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135133,
+    "color": 1,
+    "edge": [
+      2,
+      15
+    ],
+    "literal": 502,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          14
+        ],
+        "vertices": [
+          2,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135134,
+    "color": 2,
+    "edge": [
+      2,
+      16
+    ],
+    "literal": 507,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          1,
+          15
+        ],
+        "vertices": [
+          2,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135135,
+    "color": 1,
+    "edge": [
+      3,
+      4
+    ],
+    "literal": 674,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          3
+        ],
+        "vertices": [
+          3,
+          4
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135136,
+    "color": 3,
+    "edge": [
+      3,
+      5
+    ],
+    "literal": 680,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          4
+        ],
+        "vertices": [
+          3,
+          5
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135137,
+    "color": 3,
+    "edge": [
+      3,
+      6
+    ],
+    "literal": 684,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          5
+        ],
+        "vertices": [
+          3,
+          6
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135138,
+    "color": 2,
+    "edge": [
+      3,
+      7
+    ],
+    "literal": 687,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          6
+        ],
+        "vertices": [
+          3,
+          7
+        ]
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          8,
+          11
+        ],
+        "vertices": [
+          3,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135139,
+    "color": 3,
+    "edge": [
+      3,
+      8
+    ],
+    "literal": 692,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          7
+        ],
+        "vertices": [
+          3,
+          8
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135140,
+    "color": 1,
+    "edge": [
+      3,
+      9
+    ],
+    "literal": 694,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          8
+        ],
+        "vertices": [
+          3,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135141,
+    "color": 2,
+    "edge": [
+      3,
+      10
+    ],
+    "literal": 699,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          9
+        ],
+        "vertices": [
+          3,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135142,
+    "color": 1,
+    "edge": [
+      3,
+      11
+    ],
+    "literal": 702,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          10
+        ],
+        "vertices": [
+          3,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135143,
+    "color": 3,
+    "edge": [
+      3,
+      12
+    ],
+    "literal": 708,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          11
+        ],
+        "vertices": [
+          3,
+          12
+        ]
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          8,
+          13
+        ],
+        "vertices": [
+          3,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135144,
+    "color": 2,
+    "edge": [
+      3,
+      13
+    ],
+    "literal": 711,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          12
+        ],
+        "vertices": [
+          3,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135145,
+    "color": 1,
+    "edge": [
+      3,
+      14
+    ],
+    "literal": 714,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          13
+        ],
+        "vertices": [
+          3,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135146,
+    "color": 1,
+    "edge": [
+      3,
+      15
+    ],
+    "literal": 718,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          14
+        ],
+        "vertices": [
+          3,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135147,
+    "color": 3,
+    "edge": [
+      3,
+      16
+    ],
+    "literal": 724,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          2,
+          15
+        ],
+        "vertices": [
+          3,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135148,
+    "color": 1,
+    "edge": [
+      3,
+      17
+    ],
+    "literal": 726,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 3
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135149,
+    "color": 0,
+    "edge": [
+      3,
+      33
+    ],
+    "literal": 789,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          8
+        ],
+        "vertices": [
+          33,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135150,
+    "color": 0,
+    "edge": [
+      3,
+      34
+    ],
+    "literal": 793,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          8
+        ],
+        "vertices": [
+          34,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135151,
+    "color": 3,
+    "edge": [
+      3,
+      35
+    ],
+    "literal": 800,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          8
+        ],
+        "vertices": [
+          35,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135152,
+    "color": 2,
+    "edge": [
+      3,
+      36
+    ],
+    "literal": 803,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          8,
+          10
+        ],
+        "vertices": [
+          3,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135153,
+    "color": 2,
+    "edge": [
+      3,
+      37
+    ],
+    "literal": 807,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          8,
+          12
+        ],
+        "vertices": [
+          3,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135154,
+    "color": 3,
+    "edge": [
+      3,
+      47
+    ],
+    "literal": 848,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          8
+        ],
+        "vertices": [
+          47,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135155,
+    "color": 0,
+    "edge": [
+      3,
+      48
+    ],
+    "literal": 849,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          8
+        ],
+        "vertices": [
+          48,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135156,
+    "color": 2,
+    "edge": [
+      3,
+      49
+    ],
+    "literal": 855,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          8
+        ],
+        "vertices": [
+          49,
+          3
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135157,
+    "color": 0,
+    "edge": [
+      3,
+      50
+    ],
+    "literal": 857,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          8,
+          9
+        ],
+        "vertices": [
+          3,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135158,
+    "color": 3,
+    "edge": [
+      3,
+      51
+    ],
+    "literal": 864,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          8,
+          14
+        ],
+        "vertices": [
+          3,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135159,
+    "color": 2,
+    "edge": [
+      4,
+      5
+    ],
+    "literal": 891,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          4
+        ],
+        "vertices": [
+          4,
+          5
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135160,
+    "color": 3,
+    "edge": [
+      4,
+      6
+    ],
+    "literal": 896,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          5
+        ],
+        "vertices": [
+          4,
+          6
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135161,
+    "color": 3,
+    "edge": [
+      4,
+      7
+    ],
+    "literal": 900,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          6
+        ],
+        "vertices": [
+          4,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135162,
+    "color": 3,
+    "edge": [
+      4,
+      8
+    ],
+    "literal": 904,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          7
+        ],
+        "vertices": [
+          4,
+          8
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135163,
+    "color": 2,
+    "edge": [
+      4,
+      9
+    ],
+    "literal": 907,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          8
+        ],
+        "vertices": [
+          4,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135164,
+    "color": 1,
+    "edge": [
+      4,
+      10
+    ],
+    "literal": 910,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          9
+        ],
+        "vertices": [
+          4,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135165,
+    "color": 3,
+    "edge": [
+      4,
+      11
+    ],
+    "literal": 916,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          10
+        ],
+        "vertices": [
+          4,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135166,
+    "color": 1,
+    "edge": [
+      4,
+      12
+    ],
+    "literal": 918,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          11
+        ],
+        "vertices": [
+          4,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135167,
+    "color": 1,
+    "edge": [
+      4,
+      13
+    ],
+    "literal": 922,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          12
+        ],
+        "vertices": [
+          4,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135168,
+    "color": 3,
+    "edge": [
+      4,
+      14
+    ],
+    "literal": 928,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          13
+        ],
+        "vertices": [
+          4,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135169,
+    "color": 2,
+    "edge": [
+      4,
+      15
+    ],
+    "literal": 931,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          14
+        ],
+        "vertices": [
+          4,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135170,
+    "color": 1,
+    "edge": [
+      4,
+      16
+    ],
+    "literal": 934,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          3,
+          15
+        ],
+        "vertices": [
+          4,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135171,
+    "color": 1,
+    "edge": [
+      5,
+      6
+    ],
+    "literal": 1102,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          5
+        ],
+        "vertices": [
+          5,
+          6
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135172,
+    "color": 2,
+    "edge": [
+      5,
+      7
+    ],
+    "literal": 1107,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          6
+        ],
+        "vertices": [
+          5,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135173,
+    "color": 2,
+    "edge": [
+      5,
+      8
+    ],
+    "literal": 1111,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          7
+        ],
+        "vertices": [
+          5,
+          8
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135174,
+    "color": 1,
+    "edge": [
+      5,
+      9
+    ],
+    "literal": 1114,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          8
+        ],
+        "vertices": [
+          5,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135175,
+    "color": 2,
+    "edge": [
+      5,
+      10
+    ],
+    "literal": 1119,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          9
+        ],
+        "vertices": [
+          5,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135176,
+    "color": 3,
+    "edge": [
+      5,
+      11
+    ],
+    "literal": 1124,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          10
+        ],
+        "vertices": [
+          5,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135177,
+    "color": 1,
+    "edge": [
+      5,
+      12
+    ],
+    "literal": 1126,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          11
+        ],
+        "vertices": [
+          5,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135178,
+    "color": 1,
+    "edge": [
+      5,
+      13
+    ],
+    "literal": 1130,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          12
+        ],
+        "vertices": [
+          5,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135179,
+    "color": 3,
+    "edge": [
+      5,
+      14
+    ],
+    "literal": 1136,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          13
+        ],
+        "vertices": [
+          5,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135180,
+    "color": 1,
+    "edge": [
+      5,
+      15
+    ],
+    "literal": 1138,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          14
+        ],
+        "vertices": [
+          5,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135181,
+    "color": 2,
+    "edge": [
+      5,
+      16
+    ],
+    "literal": 1143,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          4,
+          15
+        ],
+        "vertices": [
+          5,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135182,
+    "color": 2,
+    "edge": [
+      6,
+      7
+    ],
+    "literal": 1311,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          6
+        ],
+        "vertices": [
+          6,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135183,
+    "color": 2,
+    "edge": [
+      6,
+      8
+    ],
+    "literal": 1315,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          7
+        ],
+        "vertices": [
+          6,
+          8
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135184,
+    "color": 3,
+    "edge": [
+      6,
+      9
+    ],
+    "literal": 1320,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          8
+        ],
+        "vertices": [
+          6,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135185,
+    "color": 1,
+    "edge": [
+      6,
+      10
+    ],
+    "literal": 1322,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          9
+        ],
+        "vertices": [
+          6,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135186,
+    "color": 1,
+    "edge": [
+      6,
+      11
+    ],
+    "literal": 1326,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          10
+        ],
+        "vertices": [
+          6,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135187,
+    "color": 2,
+    "edge": [
+      6,
+      12
+    ],
+    "literal": 1331,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          11
+        ],
+        "vertices": [
+          6,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135188,
+    "color": 3,
+    "edge": [
+      6,
+      13
+    ],
+    "literal": 1336,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          12
+        ],
+        "vertices": [
+          6,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135189,
+    "color": 1,
+    "edge": [
+      6,
+      14
+    ],
+    "literal": 1338,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          13
+        ],
+        "vertices": [
+          6,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135190,
+    "color": 2,
+    "edge": [
+      6,
+      15
+    ],
+    "literal": 1343,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          14
+        ],
+        "vertices": [
+          6,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135191,
+    "color": 1,
+    "edge": [
+      6,
+      16
+    ],
+    "literal": 1346,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          5,
+          15
+        ],
+        "vertices": [
+          6,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135192,
+    "color": 1,
+    "edge": [
+      7,
+      8
+    ],
+    "literal": 1514,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          7
+        ],
+        "vertices": [
+          7,
+          8
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135193,
+    "color": 2,
+    "edge": [
+      7,
+      9
+    ],
+    "literal": 1519,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          8
+        ],
+        "vertices": [
+          7,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135194,
+    "color": 1,
+    "edge": [
+      7,
+      10
+    ],
+    "literal": 1522,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          9
+        ],
+        "vertices": [
+          7,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135195,
+    "color": 1,
+    "edge": [
+      7,
+      11
+    ],
+    "literal": 1526,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          10
+        ],
+        "vertices": [
+          7,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135196,
+    "color": 3,
+    "edge": [
+      7,
+      12
+    ],
+    "literal": 1532,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          11
+        ],
+        "vertices": [
+          7,
+          12
+        ]
+      },
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          11,
+          13
+        ],
+        "vertices": [
+          7,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135197,
+    "color": 1,
+    "edge": [
+      7,
+      13
+    ],
+    "literal": 1534,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          12
+        ],
+        "vertices": [
+          7,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135198,
+    "color": 2,
+    "edge": [
+      7,
+      14
+    ],
+    "literal": 1539,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          13
+        ],
+        "vertices": [
+          7,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135199,
+    "color": 1,
+    "edge": [
+      7,
+      15
+    ],
+    "literal": 1542,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          14
+        ],
+        "vertices": [
+          7,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135200,
+    "color": 3,
+    "edge": [
+      7,
+      16
+    ],
+    "literal": 1548,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          6,
+          15
+        ],
+        "vertices": [
+          7,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135201,
+    "color": 1,
+    "edge": [
+      7,
+      17
+    ],
+    "literal": 1550,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 7
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135202,
+    "color": 2,
+    "edge": [
+      7,
+      33
+    ],
+    "literal": 1615,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          11
+        ],
+        "vertices": [
+          33,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135203,
+    "color": 0,
+    "edge": [
+      7,
+      34
+    ],
+    "literal": 1617,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          11
+        ],
+        "vertices": [
+          34,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135204,
+    "color": 2,
+    "edge": [
+      7,
+      35
+    ],
+    "literal": 1623,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          11
+        ],
+        "vertices": [
+          35,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135205,
+    "color": 0,
+    "edge": [
+      7,
+      36
+    ],
+    "literal": 1625,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          10,
+          11
+        ],
+        "vertices": [
+          36,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135206,
+    "color": 3,
+    "edge": [
+      7,
+      37
+    ],
+    "literal": 1632,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          11,
+          12
+        ],
+        "vertices": [
+          7,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135207,
+    "color": 0,
+    "edge": [
+      7,
+      47
+    ],
+    "literal": 1669,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          11
+        ],
+        "vertices": [
+          47,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135208,
+    "color": 3,
+    "edge": [
+      7,
+      48
+    ],
+    "literal": 1676,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          11
+        ],
+        "vertices": [
+          48,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135209,
+    "color": 0,
+    "edge": [
+      7,
+      49
+    ],
+    "literal": 1677,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          11
+        ],
+        "vertices": [
+          49,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135210,
+    "color": 2,
+    "edge": [
+      7,
+      50
+    ],
+    "literal": 1683,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          9,
+          11
+        ],
+        "vertices": [
+          50,
+          7
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135211,
+    "color": 3,
+    "edge": [
+      7,
+      51
+    ],
+    "literal": 1688,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          11,
+          14
+        ],
+        "vertices": [
+          7,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135212,
+    "color": 1,
+    "edge": [
+      8,
+      9
+    ],
+    "literal": 1714,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          8
+        ],
+        "vertices": [
+          8,
+          9
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135213,
+    "color": 3,
+    "edge": [
+      8,
+      10
+    ],
+    "literal": 1720,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          9
+        ],
+        "vertices": [
+          8,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135214,
+    "color": 2,
+    "edge": [
+      8,
+      11
+    ],
+    "literal": 1723,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          10
+        ],
+        "vertices": [
+          8,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135215,
+    "color": 1,
+    "edge": [
+      8,
+      12
+    ],
+    "literal": 1726,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          11
+        ],
+        "vertices": [
+          8,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135216,
+    "color": 2,
+    "edge": [
+      8,
+      13
+    ],
+    "literal": 1731,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          12
+        ],
+        "vertices": [
+          8,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135217,
+    "color": 1,
+    "edge": [
+      8,
+      14
+    ],
+    "literal": 1734,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          13
+        ],
+        "vertices": [
+          8,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135218,
+    "color": 3,
+    "edge": [
+      8,
+      15
+    ],
+    "literal": 1740,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          14
+        ],
+        "vertices": [
+          8,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135219,
+    "color": 1,
+    "edge": [
+      8,
+      16
+    ],
+    "literal": 1742,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          7,
+          15
+        ],
+        "vertices": [
+          8,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135220,
+    "color": 1,
+    "edge": [
+      9,
+      10
+    ],
+    "literal": 1910,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          8,
+          9
+        ],
+        "vertices": [
+          9,
+          10
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135221,
+    "color": 2,
+    "edge": [
+      9,
+      11
+    ],
+    "literal": 1915,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          8,
+          10
+        ],
+        "vertices": [
+          9,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135222,
+    "color": 2,
+    "edge": [
+      9,
+      12
+    ],
+    "literal": 1919,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          8,
+          11
+        ],
+        "vertices": [
+          9,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135223,
+    "color": 2,
+    "edge": [
+      9,
+      13
+    ],
+    "literal": 1923,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          8,
+          12
+        ],
+        "vertices": [
+          9,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135224,
+    "color": 3,
+    "edge": [
+      9,
+      14
+    ],
+    "literal": 1928,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          8,
+          13
+        ],
+        "vertices": [
+          9,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135225,
+    "color": 3,
+    "edge": [
+      9,
+      15
+    ],
+    "literal": 1932,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          8,
+          14
+        ],
+        "vertices": [
+          9,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135226,
+    "color": 3,
+    "edge": [
+      9,
+      16
+    ],
+    "literal": 1936,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          8,
+          15
+        ],
+        "vertices": [
+          9,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135227,
+    "color": 2,
+    "edge": [
+      10,
+      11
+    ],
+    "literal": 2103,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          9,
+          10
+        ],
+        "vertices": [
+          10,
+          11
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135228,
+    "color": 2,
+    "edge": [
+      10,
+      12
+    ],
+    "literal": 2107,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          9,
+          11
+        ],
+        "vertices": [
+          10,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135229,
+    "color": 3,
+    "edge": [
+      10,
+      13
+    ],
+    "literal": 2112,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          9,
+          12
+        ],
+        "vertices": [
+          10,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135230,
+    "color": 3,
+    "edge": [
+      10,
+      14
+    ],
+    "literal": 2116,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          9,
+          13
+        ],
+        "vertices": [
+          10,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135231,
+    "color": 2,
+    "edge": [
+      10,
+      15
+    ],
+    "literal": 2119,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          9,
+          14
+        ],
+        "vertices": [
+          10,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135232,
+    "color": 3,
+    "edge": [
+      10,
+      16
+    ],
+    "literal": 2124,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          9,
+          15
+        ],
+        "vertices": [
+          10,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135233,
+    "color": 1,
+    "edge": [
+      11,
+      12
+    ],
+    "literal": 2290,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          10,
+          11
+        ],
+        "vertices": [
+          11,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135234,
+    "color": 3,
+    "edge": [
+      11,
+      13
+    ],
+    "literal": 2296,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          10,
+          12
+        ],
+        "vertices": [
+          11,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135235,
+    "color": 2,
+    "edge": [
+      11,
+      14
+    ],
+    "literal": 2299,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          10,
+          13
+        ],
+        "vertices": [
+          11,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135236,
+    "color": 3,
+    "edge": [
+      11,
+      15
+    ],
+    "literal": 2304,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          10,
+          14
+        ],
+        "vertices": [
+          11,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135237,
+    "color": 3,
+    "edge": [
+      11,
+      16
+    ],
+    "literal": 2308,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          10,
+          15
+        ],
+        "vertices": [
+          11,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135238,
+    "color": 3,
+    "edge": [
+      12,
+      13
+    ],
+    "literal": 2476,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          11,
+          12
+        ],
+        "vertices": [
+          12,
+          13
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135239,
+    "color": 3,
+    "edge": [
+      12,
+      14
+    ],
+    "literal": 2480,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          11,
+          13
+        ],
+        "vertices": [
+          12,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135240,
+    "color": 3,
+    "edge": [
+      12,
+      15
+    ],
+    "literal": 2484,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          11,
+          14
+        ],
+        "vertices": [
+          12,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135241,
+    "color": 2,
+    "edge": [
+      12,
+      16
+    ],
+    "literal": 2487,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          11,
+          15
+        ],
+        "vertices": [
+          12,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135242,
+    "color": 1,
+    "edge": [
+      12,
+      17
+    ],
+    "literal": 2490,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 12
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135243,
+    "color": 2,
+    "edge": [
+      12,
+      33
+    ],
+    "literal": 2555,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          13
+        ],
+        "vertices": [
+          33,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135244,
+    "color": 3,
+    "edge": [
+      12,
+      34
+    ],
+    "literal": 2560,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          13
+        ],
+        "vertices": [
+          34,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135245,
+    "color": 0,
+    "edge": [
+      12,
+      35
+    ],
+    "literal": 2561,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          13
+        ],
+        "vertices": [
+          35,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135246,
+    "color": 2,
+    "edge": [
+      12,
+      36
+    ],
+    "literal": 2567,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          10,
+          13
+        ],
+        "vertices": [
+          36,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135247,
+    "color": 0,
+    "edge": [
+      12,
+      37
+    ],
+    "literal": 2569,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          12,
+          13
+        ],
+        "vertices": [
+          37,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135248,
+    "color": 0,
+    "edge": [
+      12,
+      47
+    ],
+    "literal": 2609,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          13
+        ],
+        "vertices": [
+          47,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135249,
+    "color": 0,
+    "edge": [
+      12,
+      48
+    ],
+    "literal": 2613,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          13
+        ],
+        "vertices": [
+          48,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135250,
+    "color": 3,
+    "edge": [
+      12,
+      49
+    ],
+    "literal": 2620,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          13
+        ],
+        "vertices": [
+          49,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135251,
+    "color": 3,
+    "edge": [
+      12,
+      50
+    ],
+    "literal": 2624,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          9,
+          13
+        ],
+        "vertices": [
+          50,
+          12
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135252,
+    "color": 2,
+    "edge": [
+      12,
+      51
+    ],
+    "literal": 2627,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          13,
+          14
+        ],
+        "vertices": [
+          12,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135253,
+    "color": 1,
+    "edge": [
+      13,
+      14
+    ],
+    "literal": 2654,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          12,
+          13
+        ],
+        "vertices": [
+          13,
+          14
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135254,
+    "color": 2,
+    "edge": [
+      13,
+      15
+    ],
+    "literal": 2659,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          12,
+          14
+        ],
+        "vertices": [
+          13,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135255,
+    "color": 2,
+    "edge": [
+      13,
+      16
+    ],
+    "literal": 2663,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          12,
+          15
+        ],
+        "vertices": [
+          13,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135256,
+    "color": 2,
+    "edge": [
+      14,
+      15
+    ],
+    "literal": 2831,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          13,
+          14
+        ],
+        "vertices": [
+          14,
+          15
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135257,
+    "color": 2,
+    "edge": [
+      14,
+      16
+    ],
+    "literal": 2835,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          13,
+          15
+        ],
+        "vertices": [
+          14,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135258,
+    "color": 1,
+    "edge": [
+      15,
+      16
+    ],
+    "literal": 3002,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 0,
+        "kind": "T",
+        "template_indices": [
+          14,
+          15
+        ],
+        "vertices": [
+          15,
+          16
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135259,
+    "color": 0,
+    "edge": [
+      17,
+      18
+    ],
+    "literal": 3333,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          1
+        ],
+        "vertices": [
+          17,
+          18
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135260,
+    "color": 2,
+    "edge": [
+      17,
+      19
+    ],
+    "literal": 3339,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          2
+        ],
+        "vertices": [
+          17,
+          19
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135261,
+    "color": 2,
+    "edge": [
+      17,
+      20
+    ],
+    "literal": 3343,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          3
+        ],
+        "vertices": [
+          17,
+          20
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135262,
+    "color": 3,
+    "edge": [
+      17,
+      21
+    ],
+    "literal": 3348,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          4
+        ],
+        "vertices": [
+          17,
+          21
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135263,
+    "color": 3,
+    "edge": [
+      17,
+      22
+    ],
+    "literal": 3352,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          5
+        ],
+        "vertices": [
+          17,
+          22
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135264,
+    "color": 3,
+    "edge": [
+      17,
+      23
+    ],
+    "literal": 3356,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          6
+        ],
+        "vertices": [
+          17,
+          23
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135265,
+    "color": 2,
+    "edge": [
+      17,
+      24
+    ],
+    "literal": 3359,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          7
+        ],
+        "vertices": [
+          17,
+          24
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135266,
+    "color": 0,
+    "edge": [
+      17,
+      25
+    ],
+    "literal": 3361,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          8
+        ],
+        "vertices": [
+          17,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135267,
+    "color": 3,
+    "edge": [
+      17,
+      26
+    ],
+    "literal": 3368,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          9
+        ],
+        "vertices": [
+          17,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135268,
+    "color": 0,
+    "edge": [
+      17,
+      27
+    ],
+    "literal": 3369,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          10
+        ],
+        "vertices": [
+          17,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135269,
+    "color": 2,
+    "edge": [
+      17,
+      28
+    ],
+    "literal": 3375,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          11
+        ],
+        "vertices": [
+          17,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135270,
+    "color": 0,
+    "edge": [
+      17,
+      29
+    ],
+    "literal": 3377,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          12
+        ],
+        "vertices": [
+          17,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135271,
+    "color": 2,
+    "edge": [
+      17,
+      30
+    ],
+    "literal": 3383,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          13
+        ],
+        "vertices": [
+          17,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135272,
+    "color": 3,
+    "edge": [
+      17,
+      31
+    ],
+    "literal": 3388,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          14
+        ],
+        "vertices": [
+          17,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135273,
+    "color": 0,
+    "edge": [
+      17,
+      32
+    ],
+    "literal": 3389,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          0,
+          15
+        ],
+        "vertices": [
+          17,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135274,
+    "color": 1,
+    "edge": [
+      17,
+      33
+    ],
+    "literal": 3394,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 33
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135275,
+    "color": 1,
+    "edge": [
+      17,
+      34
+    ],
+    "literal": 3398,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 34
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135276,
+    "color": 1,
+    "edge": [
+      17,
+      35
+    ],
+    "literal": 3402,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 35
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135277,
+    "color": 1,
+    "edge": [
+      17,
+      36
+    ],
+    "literal": 3406,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 36
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135278,
+    "color": 1,
+    "edge": [
+      17,
+      37
+    ],
+    "literal": 3410,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 37
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135279,
+    "color": 1,
+    "edge": [
+      17,
+      47
+    ],
+    "literal": 3450,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 47
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135280,
+    "color": 1,
+    "edge": [
+      17,
+      48
+    ],
+    "literal": 3454,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 48
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135281,
+    "color": 1,
+    "edge": [
+      17,
+      49
+    ],
+    "literal": 3458,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 49
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135282,
+    "color": 1,
+    "edge": [
+      17,
+      50
+    ],
+    "literal": 3462,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 50
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135283,
+    "color": 1,
+    "edge": [
+      17,
+      51
+    ],
+    "literal": 3466,
+    "provenance": [
+      {
+        "family": "marked_neighbourhood",
+        "in_marked_template": true,
+        "q": 17,
+        "vertex": 51
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135284,
+    "color": 2,
+    "edge": [
+      18,
+      19
+    ],
+    "literal": 3495,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          2
+        ],
+        "vertices": [
+          18,
+          19
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135285,
+    "color": 2,
+    "edge": [
+      18,
+      20
+    ],
+    "literal": 3499,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          3
+        ],
+        "vertices": [
+          18,
+          20
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135286,
+    "color": 3,
+    "edge": [
+      18,
+      21
+    ],
+    "literal": 3504,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          4
+        ],
+        "vertices": [
+          18,
+          21
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135287,
+    "color": 3,
+    "edge": [
+      18,
+      22
+    ],
+    "literal": 3508,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          5
+        ],
+        "vertices": [
+          18,
+          22
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135288,
+    "color": 2,
+    "edge": [
+      18,
+      23
+    ],
+    "literal": 3511,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          6
+        ],
+        "vertices": [
+          18,
+          23
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135289,
+    "color": 3,
+    "edge": [
+      18,
+      24
+    ],
+    "literal": 3516,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          7
+        ],
+        "vertices": [
+          18,
+          24
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135290,
+    "color": 3,
+    "edge": [
+      18,
+      25
+    ],
+    "literal": 3520,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          8
+        ],
+        "vertices": [
+          18,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135291,
+    "color": 0,
+    "edge": [
+      18,
+      26
+    ],
+    "literal": 3521,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          9
+        ],
+        "vertices": [
+          18,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135292,
+    "color": 2,
+    "edge": [
+      18,
+      27
+    ],
+    "literal": 3527,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          10
+        ],
+        "vertices": [
+          18,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135293,
+    "color": 0,
+    "edge": [
+      18,
+      28
+    ],
+    "literal": 3529,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          11
+        ],
+        "vertices": [
+          18,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135294,
+    "color": 2,
+    "edge": [
+      18,
+      29
+    ],
+    "literal": 3535,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          12
+        ],
+        "vertices": [
+          18,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135295,
+    "color": 0,
+    "edge": [
+      18,
+      30
+    ],
+    "literal": 3537,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          13
+        ],
+        "vertices": [
+          18,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135296,
+    "color": 0,
+    "edge": [
+      18,
+      31
+    ],
+    "literal": 3541,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          14
+        ],
+        "vertices": [
+          18,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135297,
+    "color": 3,
+    "edge": [
+      18,
+      32
+    ],
+    "literal": 3548,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          1,
+          15
+        ],
+        "vertices": [
+          18,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135298,
+    "color": 0,
+    "edge": [
+      19,
+      20
+    ],
+    "literal": 3649,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          3
+        ],
+        "vertices": [
+          19,
+          20
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135299,
+    "color": 3,
+    "edge": [
+      19,
+      21
+    ],
+    "literal": 3656,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          4
+        ],
+        "vertices": [
+          19,
+          21
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135300,
+    "color": 2,
+    "edge": [
+      19,
+      22
+    ],
+    "literal": 3659,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          5
+        ],
+        "vertices": [
+          19,
+          22
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135301,
+    "color": 3,
+    "edge": [
+      19,
+      23
+    ],
+    "literal": 3664,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          6
+        ],
+        "vertices": [
+          19,
+          23
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135302,
+    "color": 3,
+    "edge": [
+      19,
+      24
+    ],
+    "literal": 3668,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          7
+        ],
+        "vertices": [
+          19,
+          24
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135303,
+    "color": 0,
+    "edge": [
+      19,
+      25
+    ],
+    "literal": 3669,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          8
+        ],
+        "vertices": [
+          19,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135304,
+    "color": 2,
+    "edge": [
+      19,
+      26
+    ],
+    "literal": 3675,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          9
+        ],
+        "vertices": [
+          19,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135305,
+    "color": 0,
+    "edge": [
+      19,
+      27
+    ],
+    "literal": 3677,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          10
+        ],
+        "vertices": [
+          19,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135306,
+    "color": 3,
+    "edge": [
+      19,
+      28
+    ],
+    "literal": 3684,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          11
+        ],
+        "vertices": [
+          19,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135307,
+    "color": 3,
+    "edge": [
+      19,
+      29
+    ],
+    "literal": 3688,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          12
+        ],
+        "vertices": [
+          19,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135308,
+    "color": 0,
+    "edge": [
+      19,
+      30
+    ],
+    "literal": 3689,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          13
+        ],
+        "vertices": [
+          19,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135309,
+    "color": 0,
+    "edge": [
+      19,
+      31
+    ],
+    "literal": 3693,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          14
+        ],
+        "vertices": [
+          19,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135310,
+    "color": 2,
+    "edge": [
+      19,
+      32
+    ],
+    "literal": 3699,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          2,
+          15
+        ],
+        "vertices": [
+          19,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135311,
+    "color": 2,
+    "edge": [
+      20,
+      21
+    ],
+    "literal": 3803,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          4
+        ],
+        "vertices": [
+          20,
+          21
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135312,
+    "color": 3,
+    "edge": [
+      20,
+      22
+    ],
+    "literal": 3808,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          5
+        ],
+        "vertices": [
+          20,
+          22
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135313,
+    "color": 3,
+    "edge": [
+      20,
+      23
+    ],
+    "literal": 3812,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          6
+        ],
+        "vertices": [
+          20,
+          23
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135314,
+    "color": 3,
+    "edge": [
+      20,
+      24
+    ],
+    "literal": 3816,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          7
+        ],
+        "vertices": [
+          20,
+          24
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135315,
+    "color": 2,
+    "edge": [
+      20,
+      25
+    ],
+    "literal": 3819,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          8
+        ],
+        "vertices": [
+          20,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135316,
+    "color": 0,
+    "edge": [
+      20,
+      26
+    ],
+    "literal": 3821,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          9
+        ],
+        "vertices": [
+          20,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135317,
+    "color": 3,
+    "edge": [
+      20,
+      27
+    ],
+    "literal": 3828,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          10
+        ],
+        "vertices": [
+          20,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135318,
+    "color": 0,
+    "edge": [
+      20,
+      28
+    ],
+    "literal": 3829,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          11
+        ],
+        "vertices": [
+          20,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135319,
+    "color": 0,
+    "edge": [
+      20,
+      29
+    ],
+    "literal": 3833,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          12
+        ],
+        "vertices": [
+          20,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135320,
+    "color": 3,
+    "edge": [
+      20,
+      30
+    ],
+    "literal": 3840,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          13
+        ],
+        "vertices": [
+          20,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135321,
+    "color": 2,
+    "edge": [
+      20,
+      31
+    ],
+    "literal": 3843,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          14
+        ],
+        "vertices": [
+          20,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135322,
+    "color": 0,
+    "edge": [
+      20,
+      32
+    ],
+    "literal": 3845,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          3,
+          15
+        ],
+        "vertices": [
+          20,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135323,
+    "color": 0,
+    "edge": [
+      21,
+      22
+    ],
+    "literal": 3949,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          5
+        ],
+        "vertices": [
+          21,
+          22
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135324,
+    "color": 2,
+    "edge": [
+      21,
+      23
+    ],
+    "literal": 3955,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          6
+        ],
+        "vertices": [
+          21,
+          23
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135325,
+    "color": 2,
+    "edge": [
+      21,
+      24
+    ],
+    "literal": 3959,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          7
+        ],
+        "vertices": [
+          21,
+          24
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135326,
+    "color": 0,
+    "edge": [
+      21,
+      25
+    ],
+    "literal": 3961,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          8
+        ],
+        "vertices": [
+          21,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135327,
+    "color": 2,
+    "edge": [
+      21,
+      26
+    ],
+    "literal": 3967,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          9
+        ],
+        "vertices": [
+          21,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135328,
+    "color": 3,
+    "edge": [
+      21,
+      27
+    ],
+    "literal": 3972,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          10
+        ],
+        "vertices": [
+          21,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135329,
+    "color": 0,
+    "edge": [
+      21,
+      28
+    ],
+    "literal": 3973,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          11
+        ],
+        "vertices": [
+          21,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135330,
+    "color": 0,
+    "edge": [
+      21,
+      29
+    ],
+    "literal": 3977,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          12
+        ],
+        "vertices": [
+          21,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135331,
+    "color": 3,
+    "edge": [
+      21,
+      30
+    ],
+    "literal": 3984,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          13
+        ],
+        "vertices": [
+          21,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135332,
+    "color": 0,
+    "edge": [
+      21,
+      31
+    ],
+    "literal": 3985,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          14
+        ],
+        "vertices": [
+          21,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135333,
+    "color": 2,
+    "edge": [
+      21,
+      32
+    ],
+    "literal": 3991,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          4,
+          15
+        ],
+        "vertices": [
+          21,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135334,
+    "color": 2,
+    "edge": [
+      22,
+      23
+    ],
+    "literal": 4095,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          6
+        ],
+        "vertices": [
+          22,
+          23
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135335,
+    "color": 2,
+    "edge": [
+      22,
+      24
+    ],
+    "literal": 4099,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          7
+        ],
+        "vertices": [
+          22,
+          24
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135336,
+    "color": 2,
+    "edge": [
+      22,
+      25
+    ],
+    "literal": 4103,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          8
+        ],
+        "vertices": [
+          22,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135337,
+    "color": 0,
+    "edge": [
+      22,
+      26
+    ],
+    "literal": 4105,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          9
+        ],
+        "vertices": [
+          22,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135338,
+    "color": 0,
+    "edge": [
+      22,
+      27
+    ],
+    "literal": 4109,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          10
+        ],
+        "vertices": [
+          22,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135339,
+    "color": 3,
+    "edge": [
+      22,
+      28
+    ],
+    "literal": 4116,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          11
+        ],
+        "vertices": [
+          22,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135340,
+    "color": 3,
+    "edge": [
+      22,
+      29
+    ],
+    "literal": 4120,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          12
+        ],
+        "vertices": [
+          22,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135341,
+    "color": 0,
+    "edge": [
+      22,
+      30
+    ],
+    "literal": 4121,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          13
+        ],
+        "vertices": [
+          22,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135342,
+    "color": 2,
+    "edge": [
+      22,
+      31
+    ],
+    "literal": 4127,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          14
+        ],
+        "vertices": [
+          22,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135343,
+    "color": 0,
+    "edge": [
+      22,
+      32
+    ],
+    "literal": 4129,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          5,
+          15
+        ],
+        "vertices": [
+          22,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135344,
+    "color": 0,
+    "edge": [
+      23,
+      24
+    ],
+    "literal": 4233,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          7
+        ],
+        "vertices": [
+          23,
+          24
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135345,
+    "color": 3,
+    "edge": [
+      23,
+      25
+    ],
+    "literal": 4240,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          8
+        ],
+        "vertices": [
+          23,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135346,
+    "color": 0,
+    "edge": [
+      23,
+      26
+    ],
+    "literal": 4241,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          9
+        ],
+        "vertices": [
+          23,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135347,
+    "color": 0,
+    "edge": [
+      23,
+      27
+    ],
+    "literal": 4245,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          10
+        ],
+        "vertices": [
+          23,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135348,
+    "color": 2,
+    "edge": [
+      23,
+      28
+    ],
+    "literal": 4251,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          11
+        ],
+        "vertices": [
+          23,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135349,
+    "color": 0,
+    "edge": [
+      23,
+      29
+    ],
+    "literal": 4253,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          12
+        ],
+        "vertices": [
+          23,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135350,
+    "color": 2,
+    "edge": [
+      23,
+      30
+    ],
+    "literal": 4259,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          13
+        ],
+        "vertices": [
+          23,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135351,
+    "color": 0,
+    "edge": [
+      23,
+      31
+    ],
+    "literal": 4261,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          14
+        ],
+        "vertices": [
+          23,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135352,
+    "color": 3,
+    "edge": [
+      23,
+      32
+    ],
+    "literal": 4268,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          6,
+          15
+        ],
+        "vertices": [
+          23,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135353,
+    "color": 0,
+    "edge": [
+      24,
+      25
+    ],
+    "literal": 4369,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          8
+        ],
+        "vertices": [
+          24,
+          25
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135354,
+    "color": 3,
+    "edge": [
+      24,
+      26
+    ],
+    "literal": 4376,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          9
+        ],
+        "vertices": [
+          24,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135355,
+    "color": 2,
+    "edge": [
+      24,
+      27
+    ],
+    "literal": 4379,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          10
+        ],
+        "vertices": [
+          24,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135356,
+    "color": 0,
+    "edge": [
+      24,
+      28
+    ],
+    "literal": 4381,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          11
+        ],
+        "vertices": [
+          24,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135357,
+    "color": 2,
+    "edge": [
+      24,
+      29
+    ],
+    "literal": 4387,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          12
+        ],
+        "vertices": [
+          24,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135358,
+    "color": 0,
+    "edge": [
+      24,
+      30
+    ],
+    "literal": 4389,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          13
+        ],
+        "vertices": [
+          24,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135359,
+    "color": 3,
+    "edge": [
+      24,
+      31
+    ],
+    "literal": 4396,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          14
+        ],
+        "vertices": [
+          24,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135360,
+    "color": 0,
+    "edge": [
+      24,
+      32
+    ],
+    "literal": 4397,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          7,
+          15
+        ],
+        "vertices": [
+          24,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135361,
+    "color": 0,
+    "edge": [
+      25,
+      26
+    ],
+    "literal": 4501,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          8,
+          9
+        ],
+        "vertices": [
+          25,
+          26
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135362,
+    "color": 2,
+    "edge": [
+      25,
+      27
+    ],
+    "literal": 4507,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          8,
+          10
+        ],
+        "vertices": [
+          25,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135363,
+    "color": 2,
+    "edge": [
+      25,
+      28
+    ],
+    "literal": 4511,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          8,
+          11
+        ],
+        "vertices": [
+          25,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135364,
+    "color": 3,
+    "edge": [
+      25,
+      29
+    ],
+    "literal": 4516,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          8,
+          12
+        ],
+        "vertices": [
+          25,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135365,
+    "color": 3,
+    "edge": [
+      25,
+      30
+    ],
+    "literal": 4520,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          8,
+          13
+        ],
+        "vertices": [
+          25,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135366,
+    "color": 3,
+    "edge": [
+      25,
+      31
+    ],
+    "literal": 4524,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          8,
+          14
+        ],
+        "vertices": [
+          25,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135367,
+    "color": 2,
+    "edge": [
+      25,
+      32
+    ],
+    "literal": 4527,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          8,
+          15
+        ],
+        "vertices": [
+          25,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135368,
+    "color": 2,
+    "edge": [
+      26,
+      27
+    ],
+    "literal": 4631,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          9,
+          10
+        ],
+        "vertices": [
+          26,
+          27
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135369,
+    "color": 2,
+    "edge": [
+      26,
+      28
+    ],
+    "literal": 4635,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          9,
+          11
+        ],
+        "vertices": [
+          26,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135370,
+    "color": 3,
+    "edge": [
+      26,
+      29
+    ],
+    "literal": 4640,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          9,
+          12
+        ],
+        "vertices": [
+          26,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135371,
+    "color": 3,
+    "edge": [
+      26,
+      30
+    ],
+    "literal": 4644,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          9,
+          13
+        ],
+        "vertices": [
+          26,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135372,
+    "color": 2,
+    "edge": [
+      26,
+      31
+    ],
+    "literal": 4647,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          9,
+          14
+        ],
+        "vertices": [
+          26,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135373,
+    "color": 3,
+    "edge": [
+      26,
+      32
+    ],
+    "literal": 4652,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          9,
+          15
+        ],
+        "vertices": [
+          26,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135374,
+    "color": 0,
+    "edge": [
+      27,
+      28
+    ],
+    "literal": 4753,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          10,
+          11
+        ],
+        "vertices": [
+          27,
+          28
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135375,
+    "color": 3,
+    "edge": [
+      27,
+      29
+    ],
+    "literal": 4760,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          10,
+          12
+        ],
+        "vertices": [
+          27,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135376,
+    "color": 2,
+    "edge": [
+      27,
+      30
+    ],
+    "literal": 4763,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          10,
+          13
+        ],
+        "vertices": [
+          27,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135377,
+    "color": 3,
+    "edge": [
+      27,
+      31
+    ],
+    "literal": 4768,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          10,
+          14
+        ],
+        "vertices": [
+          27,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135378,
+    "color": 3,
+    "edge": [
+      27,
+      32
+    ],
+    "literal": 4772,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          10,
+          15
+        ],
+        "vertices": [
+          27,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135379,
+    "color": 2,
+    "edge": [
+      28,
+      29
+    ],
+    "literal": 4875,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          11,
+          12
+        ],
+        "vertices": [
+          28,
+          29
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135380,
+    "color": 3,
+    "edge": [
+      28,
+      30
+    ],
+    "literal": 4880,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          11,
+          13
+        ],
+        "vertices": [
+          28,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135381,
+    "color": 3,
+    "edge": [
+      28,
+      31
+    ],
+    "literal": 4884,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          11,
+          14
+        ],
+        "vertices": [
+          28,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135382,
+    "color": 3,
+    "edge": [
+      28,
+      32
+    ],
+    "literal": 4888,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          11,
+          15
+        ],
+        "vertices": [
+          28,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135383,
+    "color": 0,
+    "edge": [
+      29,
+      30
+    ],
+    "literal": 4989,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          12,
+          13
+        ],
+        "vertices": [
+          29,
+          30
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135384,
+    "color": 2,
+    "edge": [
+      29,
+      31
+    ],
+    "literal": 4995,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          12,
+          14
+        ],
+        "vertices": [
+          29,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135385,
+    "color": 2,
+    "edge": [
+      29,
+      32
+    ],
+    "literal": 4999,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          12,
+          15
+        ],
+        "vertices": [
+          29,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135386,
+    "color": 2,
+    "edge": [
+      30,
+      31
+    ],
+    "literal": 5103,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          13,
+          14
+        ],
+        "vertices": [
+          30,
+          31
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135387,
+    "color": 2,
+    "edge": [
+      30,
+      32
+    ],
+    "literal": 5107,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          13,
+          15
+        ],
+        "vertices": [
+          30,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135388,
+    "color": 0,
+    "edge": [
+      31,
+      32
+    ],
+    "literal": 5209,
+    "provenance": [
+      {
+        "family": "classified_root_template",
+        "forbidden_color": 1,
+        "kind": "U",
+        "template_indices": [
+          14,
+          15
+        ],
+        "vertices": [
+          31,
+          32
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135389,
+    "color": 3,
+    "edge": [
+      33,
+      34
+    ],
+    "literal": 5416,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          4
+        ],
+        "vertices": [
+          33,
+          34
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135390,
+    "color": 3,
+    "edge": [
+      33,
+      35
+    ],
+    "literal": 5420,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          5
+        ],
+        "vertices": [
+          33,
+          35
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135391,
+    "color": 0,
+    "edge": [
+      33,
+      36
+    ],
+    "literal": 5421,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          10
+        ],
+        "vertices": [
+          33,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135392,
+    "color": 0,
+    "edge": [
+      33,
+      37
+    ],
+    "literal": 5425,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          12
+        ],
+        "vertices": [
+          33,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135393,
+    "color": 0,
+    "edge": [
+      33,
+      47
+    ],
+    "literal": 5465,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          1
+        ],
+        "vertices": [
+          33,
+          47
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135394,
+    "color": 2,
+    "edge": [
+      33,
+      48
+    ],
+    "literal": 5471,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          2
+        ],
+        "vertices": [
+          33,
+          48
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135395,
+    "color": 2,
+    "edge": [
+      33,
+      49
+    ],
+    "literal": 5475,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          3
+        ],
+        "vertices": [
+          33,
+          49
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135396,
+    "color": 3,
+    "edge": [
+      33,
+      50
+    ],
+    "literal": 5480,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          9
+        ],
+        "vertices": [
+          33,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135397,
+    "color": 3,
+    "edge": [
+      33,
+      51
+    ],
+    "literal": 5484,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          0,
+          14
+        ],
+        "vertices": [
+          33,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135398,
+    "color": 0,
+    "edge": [
+      34,
+      35
+    ],
+    "literal": 5509,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          5
+        ],
+        "vertices": [
+          34,
+          35
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135399,
+    "color": 3,
+    "edge": [
+      34,
+      36
+    ],
+    "literal": 5516,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          10
+        ],
+        "vertices": [
+          34,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135400,
+    "color": 0,
+    "edge": [
+      34,
+      37
+    ],
+    "literal": 5517,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          12
+        ],
+        "vertices": [
+          34,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135401,
+    "color": 3,
+    "edge": [
+      34,
+      47
+    ],
+    "literal": 5560,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          4
+        ],
+        "vertices": [
+          47,
+          34
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135402,
+    "color": 3,
+    "edge": [
+      34,
+      48
+    ],
+    "literal": 5564,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          4
+        ],
+        "vertices": [
+          48,
+          34
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135403,
+    "color": 2,
+    "edge": [
+      34,
+      49
+    ],
+    "literal": 5567,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          4
+        ],
+        "vertices": [
+          49,
+          34
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135404,
+    "color": 2,
+    "edge": [
+      34,
+      50
+    ],
+    "literal": 5571,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          9
+        ],
+        "vertices": [
+          34,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135405,
+    "color": 0,
+    "edge": [
+      34,
+      51
+    ],
+    "literal": 5573,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          4,
+          14
+        ],
+        "vertices": [
+          34,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135406,
+    "color": 0,
+    "edge": [
+      35,
+      36
+    ],
+    "literal": 5601,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          10
+        ],
+        "vertices": [
+          35,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135407,
+    "color": 3,
+    "edge": [
+      35,
+      37
+    ],
+    "literal": 5608,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          12
+        ],
+        "vertices": [
+          35,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135408,
+    "color": 2,
+    "edge": [
+      35,
+      47
+    ],
+    "literal": 5647,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          5
+        ],
+        "vertices": [
+          47,
+          35
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135409,
+    "color": 3,
+    "edge": [
+      35,
+      48
+    ],
+    "literal": 5652,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          5
+        ],
+        "vertices": [
+          48,
+          35
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135410,
+    "color": 3,
+    "edge": [
+      35,
+      49
+    ],
+    "literal": 5656,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          5
+        ],
+        "vertices": [
+          49,
+          35
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135411,
+    "color": 0,
+    "edge": [
+      35,
+      50
+    ],
+    "literal": 5657,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          9
+        ],
+        "vertices": [
+          35,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135412,
+    "color": 2,
+    "edge": [
+      35,
+      51
+    ],
+    "literal": 5663,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          5,
+          14
+        ],
+        "vertices": [
+          35,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135413,
+    "color": 3,
+    "edge": [
+      36,
+      37
+    ],
+    "literal": 5692,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          10,
+          12
+        ],
+        "vertices": [
+          36,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135414,
+    "color": 2,
+    "edge": [
+      36,
+      47
+    ],
+    "literal": 5731,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          10
+        ],
+        "vertices": [
+          47,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135415,
+    "color": 0,
+    "edge": [
+      36,
+      48
+    ],
+    "literal": 5733,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          10
+        ],
+        "vertices": [
+          48,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135416,
+    "color": 3,
+    "edge": [
+      36,
+      49
+    ],
+    "literal": 5740,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          10
+        ],
+        "vertices": [
+          49,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135417,
+    "color": 2,
+    "edge": [
+      36,
+      50
+    ],
+    "literal": 5743,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          9,
+          10
+        ],
+        "vertices": [
+          50,
+          36
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135418,
+    "color": 3,
+    "edge": [
+      36,
+      51
+    ],
+    "literal": 5748,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          10,
+          14
+        ],
+        "vertices": [
+          36,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135419,
+    "color": 3,
+    "edge": [
+      37,
+      47
+    ],
+    "literal": 5812,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          12
+        ],
+        "vertices": [
+          47,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135420,
+    "color": 2,
+    "edge": [
+      37,
+      48
+    ],
+    "literal": 5815,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          12
+        ],
+        "vertices": [
+          48,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135421,
+    "color": 0,
+    "edge": [
+      37,
+      49
+    ],
+    "literal": 5817,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          12
+        ],
+        "vertices": [
+          49,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135422,
+    "color": 3,
+    "edge": [
+      37,
+      50
+    ],
+    "literal": 5824,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          9,
+          12
+        ],
+        "vertices": [
+          50,
+          37
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135423,
+    "color": 2,
+    "edge": [
+      37,
+      51
+    ],
+    "literal": 5827,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          12,
+          14
+        ],
+        "vertices": [
+          37,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135424,
+    "color": 2,
+    "edge": [
+      47,
+      48
+    ],
+    "literal": 6395,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          2
+        ],
+        "vertices": [
+          47,
+          48
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135425,
+    "color": 2,
+    "edge": [
+      47,
+      49
+    ],
+    "literal": 6399,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          3
+        ],
+        "vertices": [
+          47,
+          49
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135426,
+    "color": 0,
+    "edge": [
+      47,
+      50
+    ],
+    "literal": 6401,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          9
+        ],
+        "vertices": [
+          47,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135427,
+    "color": 0,
+    "edge": [
+      47,
+      51
+    ],
+    "literal": 6405,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          1,
+          14
+        ],
+        "vertices": [
+          47,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135428,
+    "color": 0,
+    "edge": [
+      48,
+      49
+    ],
+    "literal": 6433,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          3
+        ],
+        "vertices": [
+          48,
+          49
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135429,
+    "color": 2,
+    "edge": [
+      48,
+      50
+    ],
+    "literal": 6439,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          9
+        ],
+        "vertices": [
+          48,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135430,
+    "color": 0,
+    "edge": [
+      48,
+      51
+    ],
+    "literal": 6441,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          2,
+          14
+        ],
+        "vertices": [
+          48,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135431,
+    "color": 0,
+    "edge": [
+      49,
+      50
+    ],
+    "literal": 6469,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          9
+        ],
+        "vertices": [
+          49,
+          50
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135432,
+    "color": 2,
+    "edge": [
+      49,
+      51
+    ],
+    "literal": 6475,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          3,
+          14
+        ],
+        "vertices": [
+          49,
+          51
+        ]
+      }
+    ],
+    "value": true
+  },
+  {
+    "clause": 135433,
+    "color": 2,
+    "edge": [
+      50,
+      51
+    ],
+    "literal": 6503,
+    "provenance": [
+      {
+        "family": "marked_template",
+        "forbidden_color": 1,
+        "kind": "T",
+        "template_indices": [
+          9,
+          14
+        ],
+        "vertices": [
+          50,
+          51
+        ]
+      }
+    ],
+    "value": true
+  }
+]

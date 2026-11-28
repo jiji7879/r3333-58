@@ -1,0 +1,38 @@
+{"driver_wall_seconds": 100.21918965294026, "policy": "parent", "search_process_cpu_seconds": 69.682928229, "seed": 0, "sequence": 1, "stats": {"conflicts": 1000000, "decisions": 2322342, "propagations": 371735517, "restarts": 31300}, "status": "OPEN"}
+{"driver_wall_seconds": 87.7847359450534, "policy": "naive", "search_process_cpu_seconds": 61.064110083, "seed": 0, "sequence": 2, "stats": {"conflicts": 1000005, "decisions": 2623910, "propagations": 342074608, "restarts": 28268}, "status": "OPEN"}
+{"driver_wall_seconds": 83.72045617201366, "policy": "boundary", "search_process_cpu_seconds": 69.260096703, "seed": 0, "sequence": 3, "stats": {"conflicts": 1000000, "decisions": 2177421, "propagations": 359034750, "restarts": 31301}, "status": "OPEN"}
+{"driver_wall_seconds": 81.36102927988395, "policy": "boundary", "search_process_cpu_seconds": 73.38621440899999, "seed": 1, "sequence": 4, "stats": {"conflicts": 1000000, "decisions": 2151654, "propagations": 375269534, "restarts": 30948}, "status": "OPEN"}
+{"driver_wall_seconds": 68.36465092608705, "policy": "naive", "search_process_cpu_seconds": 56.396199789, "seed": 1, "sequence": 5, "stats": {"conflicts": 1000001, "decisions": 4193481, "propagations": 231932582, "restarts": 33857}, "status": "OPEN"}
+{"driver_wall_seconds": 77.82526100194082, "policy": "parent", "search_process_cpu_seconds": 75.40393195300001, "seed": 1, "sequence": 6, "stats": {"conflicts": 1000000, "decisions": 2347077, "propagations": 347132518, "restarts": 31613}, "status": "OPEN"}
+{
+  "cpu_ratio_boundary_over_naive_by_seed": {
+    "0": null,
+    "1": null
+  },
+  "favourable_bounded_throughput_preregistered": false,
+  "geometric_mean_ratio": null,
+  "scope": "CNF-only bounded performance; no physical colouring or UNSAT certification"
+}
+	Command being timed: "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python -B src/benchmark_ab.py --cap 1000000 --timeout 240"
+	User time (seconds): 405.02
+	System time (seconds): 1.03
+	Percent of CPU this job got: 81%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:19.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 133180
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 546517
+	Voluntary context switches: 338
+	Involuntary context switches: 73937
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

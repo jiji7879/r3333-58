@@ -1,0 +1,1 @@
+Ran analyze_results.py: byte-identical summary with 8 final and 18 probe query comparisons, 12 proof hashes, 3 covers, cap normalization and all totals. sha256sum -c SHA256SUMS passes 217 entries. Four control strict proofs total 284528, wall final 2+2 OPEN. Hybrid prep+search 119.012s versus 9.557s greedy and 53.444s two-sim. No other row was run and no proof exceeds 1GB.

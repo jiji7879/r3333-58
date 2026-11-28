@@ -1,0 +1,133 @@
+{
+  "control-negative": {
+    "diagnostic_status": "post-hoc correction of cap-overshoot metric; not a replacement for raw frozen run",
+    "evaluations": [
+      {
+        "candidate_position": 0,
+        "key_without_order": [
+          2,
+          40000
+        ],
+        "normalized_conflicts_sum": 40000,
+        "open_children": 2,
+        "split": 4793
+      },
+      {
+        "candidate_position": 1,
+        "key_without_order": [
+          1,
+          23887
+        ],
+        "normalized_conflicts_sum": 23887,
+        "open_children": 1,
+        "split": 4937
+      },
+      {
+        "candidate_position": 2,
+        "key_without_order": [
+          2,
+          40000
+        ],
+        "normalized_conflicts_sum": 40000,
+        "open_children": 2,
+        "split": 4265
+      }
+    ],
+    "mcts_tie_break_used": false,
+    "normalization": "OPEN child cost = exactly 20000; decided child cost = conflicts_used",
+    "raw_frozen_selected_split": 4937,
+    "raw_probe_conflicts_total": 103895,
+    "selected_split": 4937,
+    "tied_candidates_at_best_key": [
+      4937
+    ]
+  },
+  "control-positive": {
+    "diagnostic_status": "post-hoc correction of cap-overshoot metric; not a replacement for raw frozen run",
+    "evaluations": [
+      {
+        "candidate_position": 0,
+        "key_without_order": [
+          1,
+          20511
+        ],
+        "normalized_conflicts_sum": 20511,
+        "open_children": 1,
+        "split": 4149
+      },
+      {
+        "candidate_position": 1,
+        "key_without_order": [
+          1,
+          21312
+        ],
+        "normalized_conflicts_sum": 21312,
+        "open_children": 1,
+        "split": 4551
+      },
+      {
+        "candidate_position": 2,
+        "key_without_order": [
+          2,
+          40000
+        ],
+        "normalized_conflicts_sum": 40000,
+        "open_children": 2,
+        "split": 3441
+      }
+    ],
+    "mcts_tie_break_used": false,
+    "normalization": "OPEN child cost = exactly 20000; decided child cost = conflicts_used",
+    "raw_frozen_selected_split": 4149,
+    "raw_probe_conflicts_total": 81826,
+    "selected_split": 4149,
+    "tied_candidates_at_best_key": [
+      4149
+    ]
+  },
+  "wall-positive": {
+    "diagnostic_status": "post-hoc correction of cap-overshoot metric; not a replacement for raw frozen run",
+    "evaluations": [
+      {
+        "candidate_position": 0,
+        "key_without_order": [
+          2,
+          40000
+        ],
+        "normalized_conflicts_sum": 40000,
+        "open_children": 2,
+        "split": 1426
+      },
+      {
+        "candidate_position": 1,
+        "key_without_order": [
+          2,
+          40000
+        ],
+        "normalized_conflicts_sum": 40000,
+        "open_children": 2,
+        "split": 2744
+      },
+      {
+        "candidate_position": 2,
+        "key_without_order": [
+          2,
+          40000
+        ],
+        "normalized_conflicts_sum": 40000,
+        "open_children": 2,
+        "split": 1222
+      }
+    ],
+    "mcts_tie_break_used": true,
+    "normalization": "OPEN child cost = exactly 20000; decided child cost = conflicts_used",
+    "raw_frozen_selected_split": 2744,
+    "raw_probe_conflicts_total": 120002,
+    "selected_split": 1426,
+    "tied_candidates_at_best_key": [
+      1426,
+      2744,
+      1222
+    ]
+  }
+}

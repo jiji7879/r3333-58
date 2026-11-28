@@ -1,0 +1,28 @@
+{
+  "repo_head": "bb0544cfdc508c5e33de0855604ce90ee37978c8",
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "arms": [
+    2,
+    3
+  ],
+  "colour": 0,
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "working_sha256": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38",
+  "rup_cas_prefix_sha256": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+  "augmented_sha256": "8615e01a066ee43098451312857574f446961eab0e29c1f1e076b21672577fc8",
+  "augmented_metadata_sha256": "45e5203eb3d85996e2e1c3cdc73ac6e556edc9c649cbec3ff3ce0b7bfb92c6e0",
+  "parent_header": "p cnf 19533 184335",
+  "augmented_header": "p cnf 26589 205629",
+  "exact_parent_body_prefix": true,
+  "augmentation_body_clause_count": 21294,
+  "configurable_edges": 126,
+  "witness_variables_per_edge": 56,
+  "new_witness_variables": 7056,
+  "status": "PASS: identity/counts only; no SAT/UNSAT query or proof run"
+}

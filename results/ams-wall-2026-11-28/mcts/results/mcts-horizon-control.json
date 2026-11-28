@@ -1,0 +1,51 @@
+{
+  "meaning": "actual MCTS.py control flow on a toy nonterminal game; no CNF verdict",
+  "pass": true,
+  "runs": [
+    {
+      "expanded_depths": [
+        1,
+        1
+      ],
+      "max_depth_reached": 1,
+      "nonzero_root_actions": [
+        1,
+        3
+      ],
+      "root_visit_count": 1,
+      "selected_actions": [
+        1
+      ],
+      "terminal_depth": 2,
+      "terminal_test_depths": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "expanded_depths": [
+        1,
+        1
+      ],
+      "max_depth_reached": 1,
+      "nonzero_root_actions": [
+        1,
+        3
+      ],
+      "root_visit_count": 1,
+      "selected_actions": [
+        1
+      ],
+      "terminal_depth": 22,
+      "terminal_test_depths": [
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "schema": "ams-mcts-two-simulation-root-control/v1",
+  "source": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m3/.scratch/AlphaMapleSAT/alphamaplesat/MCTS.py",
+  "source_sha256": "85c5aa9c442f0dad88032c29831c34c8e9334c72025ba3f00fc701869678a9e8"
+}

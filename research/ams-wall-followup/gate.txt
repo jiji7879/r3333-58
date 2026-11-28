@@ -1,0 +1,3 @@
+PROVED #26. The argument was read only by the model that wrote it.
+  self: PASS: final synthesis checked against every accepted result and all remaining physical obligations
+  compute: PASS: all independent artifacts, solver statistics, hashes and final integrated Lean build pass

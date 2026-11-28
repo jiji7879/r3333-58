@@ -1,0 +1,49 @@
+{
+  "bootstrap_process_cpu_seconds": 0.060168289,
+  "charge": 7,
+  "children_system_cpu_delta_seconds": 0.19917000000000007,
+  "children_user_cpu_delta_seconds": 51.22398800000002,
+  "command": [
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/shared-learning-pilot/K58_shared_learning/.venv/bin/python",
+    "-B",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m4/src/benchmark_ab.py",
+    "--worker",
+    "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzzs8qs/m4/results/wall-two5-naive-split.cnf",
+    "--seed",
+    "1",
+    "--cap",
+    "1000000"
+  ],
+  "conflict_budget": 1000000,
+  "driver_wall_seconds": 52.554434658028185,
+  "engine": "CaDiCaL195 via python-sat",
+  "maxrss_kib": 133408,
+  "parse_process_cpu_seconds": 0.031739524000000005,
+  "policy": "naive-split",
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "proof_logging": false,
+  "pysat_version": "1.9.dev22",
+  "query_bytes": 3612488,
+  "query_sha256": "02fc6b42b7edb93aa7647b5bbcc384a1a1328b64e6d1a1afba96657fdbe00f5d",
+  "returncode": 0,
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "search_process_cpu_seconds": 51.280176083,
+  "seed": 1,
+  "sequence": 6,
+  "stage": "clause-order-control",
+  "stats": {
+    "conflicts": 1000001,
+    "decisions": 4193481,
+    "propagations": 231932582,
+    "restarts": 33857
+  },
+  "status": "OPEN",
+  "total_process_cpu_seconds": 51.37208389600001,
+  "wall_seconds": 52.50612375698984,
+  "wall_timeout_seconds": 240
+}

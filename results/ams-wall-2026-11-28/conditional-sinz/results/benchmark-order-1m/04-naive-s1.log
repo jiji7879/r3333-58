@@ -1,0 +1,3 @@
+{"bootstrap_process_cpu_seconds": 0.05917112, "conflict_budget": 1000000, "engine": "CaDiCaL195 via python-sat", "maxrss_kib": 133508, "parse_process_cpu_seconds": 0.03130621, "proof_logging": false, "pysat_version": "1.9.dev22", "search_process_cpu_seconds": 51.076027584, "seed": 1, "stats": {"conflicts": 1000001, "decisions": 4193481, "propagations": 231932582, "restarts": 33857}, "status": "OPEN", "total_process_cpu_seconds": 51.166504914, "wall_seconds": 51.49383228691295}
+
+[stderr]

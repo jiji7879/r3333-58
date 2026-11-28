@@ -1,0 +1,24 @@
+{
+  "added_literals": {
+    "boundary": 12713,
+    "naive": 17273,
+    "removed_guard_occurrences": 4560
+  },
+  "boundary_backprop": 460,
+  "boundary_backprop_rate": 1.0,
+  "boundary_sha256": "fa8be04c4d10d38f803a0db34109732ee551ea1c85d4e834d369d5a73bd25cdc",
+  "counter_gadgets": 93,
+  "exhaustive_gadgets": 4,
+  "naive_backprop": 8,
+  "naive_backprop_rate": 0.017391304347826087,
+  "naive_sha256": "bac8c106d698a0734ca8dbec535b0ccc212d8329f5cd79b49e25f6071420d05b",
+  "parent_body_preserved": true,
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "per_clause_mismatches": 0,
+  "recurrence_clauses_unguarded": 4560,
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "sat_assignment_checks": 7104,
+  "selector_clauses": 93,
+  "unsound_projection_results": 0,
+  "violating_gadget_assignments": 460
+}

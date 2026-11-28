@@ -1,0 +1,24 @@
+{
+  "all_statuses": "OPEN",
+  "determinism_controls": {
+    "0": {
+      "boundary_repeated_operation_counts_identical": true,
+      "naive_repeated_operation_counts_identical": true,
+      "naive_vs_naive_split_operation_counts_identical": true
+    },
+    "1": {
+      "boundary_repeated_operation_counts_identical": true,
+      "naive_repeated_operation_counts_identical": true,
+      "naive_vs_naive_split_operation_counts_identical": true
+    }
+  },
+  "guard_only_cpu_ratios": [
+    1.170889458903063,
+    1.5185651129972544
+  ],
+  "guard_only_geomean": 1.3334436184055267,
+  "guard_only_normalized_cpu_ratios": [
+    1.1708953133503575,
+    1.5185666315623672
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "all_statuses": "OPEN",
+  "conflict_cap_overshoot_explanation": "CaDiCaL195 reports 1000000, 1000001 or 1000005 after the same requested 1000000-conflict budget; ratios use requested-cap pairing and normalized values are also recorded.",
+  "determinism_controls": {
+    "0": {
+      "boundary_repeated_operation_counts_identical": true,
+      "naive_repeated_operation_counts_identical": true,
+      "naive_vs_naive_split_operation_counts_identical": true
+    },
+    "1": {
+      "boundary_repeated_operation_counts_identical": true,
+      "naive_repeated_operation_counts_identical": true,
+      "naive_vs_naive_split_operation_counts_identical": true
+    }
+  },
+  "favourable_bounded_throughput_preregistered": false,
+  "guard_only_geometric_mean_cpu_ratio": 1.3334436184055267,
+  "guard_only_geometric_mean_normalized_cpu_ratio": 1.333447618733715,
+  "negative_conclusion_scope": "At two seeds and one million requested conflicts on this exact parent, removing recurrence guards reduced decisions but increased CPU in both controlled pairs and did not produce a verdict. This is bounded evidence against unconditional recurrence activation here, not a universal theorem or a standalone timeout claim.",
+  "number_of_solver_calls": 12,
+  "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "query_sha256": {
+    "boundary": "fa8be04c4d10d38f803a0db34109732ee551ea1c85d4e834d369d5a73bd25cdc",
+    "naive": "bac8c106d698a0734ca8dbec535b0ccc212d8329f5cd79b49e25f6071420d05b",
+    "naive-split": "02fc6b42b7edb93aa7647b5bbcc384a1a1328b64e6d1a1afba96657fdbe00f5d",
+    "parent": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae"
+  },
+  "rUP_CAS_prefix_sha256_unused_no_proof_generated": "dd5d54003af3959c52ac3fde604ababda980d1a90277248332eb1fbd55aaf4c3",
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "scope": "CNF performance only. No leaf/parent proof was produced or checked. No physical colouring, semantic row, profile, or Ramsey conclusion.",
+  "stage1": {
+    "boundary_vs_naive": [
+      {
+        "control": "naive",
+        "cpu_ratio_percent_change": 13.421937384921833,
+        "cpu_ratio_variant_over_control": 1.1342193738492183,
+        "normalized_cpu_per_1e6_conflicts": {
+          "boundary": 69.260096703,
+          "naive": 61.06380476397619
+        },
+        "normalized_cpu_ratio": 1.1342250449460876,
+        "search_cpu_seconds": {
+          "boundary": 69.260096703,
+          "naive": 61.064110083
+        },
+        "seed": 0,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 0.9999950000249999,
+          "decisions": 0.8298382947585855,
+          "propagations": 1.0495802424481622,
+          "restarts": 1.1072944672421112
+        },
+        "stats": {
+          "boundary": {
+            "conflicts": 1000000,
+            "decisions": 2177421,
+            "propagations": 359034750,
+            "restarts": 31301
+          },
+          "naive": {
+            "conflicts": 1000005,
+            "decisions": 2623910,
+            "propagations": 342074608,
+            "restarts": 28268
+          }
+        },
+        "status": {
+          "boundary": "OPEN",
+          "naive": "OPEN"
+        },
+        "variant": "boundary"
+      },
+      {
+        "control": "naive",
+        "cpu_ratio_percent_change": 30.126169287232486,
+        "cpu_ratio_variant_over_control": 1.3012616928723248,
+        "normalized_cpu_per_1e6_conflicts": {
+          "boundary": 73.38621440899999,
+          "naive": 56.3961433928566
+        },
+        "normalized_cpu_ratio": 1.301262994134018,
+        "search_cpu_seconds": {
+          "boundary": 73.38621440899999,
+          "naive": 56.396199789
+        },
+        "seed": 1,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 0.999999000001,
+          "decisions": 0.5130949681183723,
+          "propagations": 1.6180112805366864,
+          "restarts": 0.9140798062439082
+        },
+        "stats": {
+          "boundary": {
+            "conflicts": 1000000,
+            "decisions": 2151654,
+            "propagations": 375269534,
+            "restarts": 30948
+          },
+          "naive": {
+            "conflicts": 1000001,
+            "decisions": 4193481,
+            "propagations": 231932582,
+            "restarts": 33857
+          }
+        },
+        "status": {
+          "boundary": "OPEN",
+          "naive": "OPEN"
+        },
+        "variant": "boundary"
+      }
+    ],
+    "boundary_vs_parent_context": [
+      {
+        "control": "parent",
+        "cpu_ratio_percent_change": -0.6067935673002123,
+        "cpu_ratio_variant_over_control": 0.9939320643269979,
+        "normalized_cpu_per_1e6_conflicts": {
+          "boundary": 69.260096703,
+          "parent": 69.682928229
+        },
+        "normalized_cpu_ratio": 0.9939320643269979,
+        "search_cpu_seconds": {
+          "boundary": 69.260096703,
+          "parent": 69.682928229
+        },
+        "seed": 0,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 1.0,
+          "decisions": 0.937597046429854,
+          "propagations": 0.9658338619282375,
+          "restarts": 1.000031948881789
+        },
+        "stats": {
+          "boundary": {
+            "conflicts": 1000000,
+            "decisions": 2177421,
+            "propagations": 359034750,
+            "restarts": 31301
+          },
+          "parent": {
+            "conflicts": 1000000,
+            "decisions": 2322342,
+            "propagations": 371735517,
+            "restarts": 31300
+          }
+        },
+        "status": {
+          "boundary": "OPEN",
+          "parent": "OPEN"
+        },
+        "variant": "boundary"
+      },
+      {
+        "control": "parent",
+        "cpu_ratio_percent_change": -2.675878421376865,
+        "cpu_ratio_variant_over_control": 0.9732412157862314,
+        "normalized_cpu_per_1e6_conflicts": {
+          "boundary": 73.38621440899999,
+          "parent": 75.40393195300001
+        },
+        "normalized_cpu_ratio": 0.9732412157862314,
+        "search_cpu_seconds": {
+          "boundary": 73.38621440899999,
+          "parent": 75.40393195300001
+        },
+        "seed": 1,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 1.0,
+          "decisions": 0.916737712482377,
+          "propagations": 1.08105554663133,
+          "restarts": 0.9789643501091323
+        },
+        "stats": {
+          "boundary": {
+            "conflicts": 1000000,
+            "decisions": 2151654,
+            "propagations": 375269534,
+            "restarts": 30948
+          },
+          "parent": {
+            "conflicts": 1000000,
+            "decisions": 2347077,
+            "propagations": 347132518,
+            "restarts": 31613
+          }
+        },
+        "status": {
+          "boundary": "OPEN",
+          "parent": "OPEN"
+        },
+        "variant": "boundary"
+      }
+    ],
+    "naive_vs_parent_context": [
+      {
+        "control": "parent",
+        "cpu_ratio_percent_change": -12.3686222221831,
+        "cpu_ratio_variant_over_control": 0.876313777778169,
+        "normalized_cpu_per_1e6_conflicts": {
+          "naive": 61.06380476397619,
+          "parent": 69.682928229
+        },
+        "normalized_cpu_ratio": 0.8763093962311879,
+        "search_cpu_seconds": {
+          "naive": 61.064110083,
+          "parent": 69.682928229
+        },
+        "seed": 0,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 1.000005,
+          "decisions": 1.129855120391398,
+          "propagations": 0.9202096446436675,
+          "restarts": 0.9031309904153355
+        },
+        "stats": {
+          "naive": {
+            "conflicts": 1000005,
+            "decisions": 2623910,
+            "propagations": 342074608,
+            "restarts": 28268
+          },
+          "parent": {
+            "conflicts": 1000000,
+            "decisions": 2322342,
+            "propagations": 371735517,
+            "restarts": 31300
+          }
+        },
+        "status": {
+          "naive": "OPEN",
+          "parent": "OPEN"
+        },
+        "variant": "naive"
+      },
+      {
+        "control": "parent",
+        "cpu_ratio_percent_change": -25.207879313041282,
+        "cpu_ratio_variant_over_control": 0.7479212068695872,
+        "normalized_cpu_per_1e6_conflicts": {
+          "naive": 56.3961433928566,
+          "parent": 75.40393195300001
+        },
+        "normalized_cpu_ratio": 0.7479204589491282,
+        "search_cpu_seconds": {
+          "naive": 56.396199789,
+          "parent": 75.40393195300001
+        },
+        "seed": 1,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 1.000001,
+          "decisions": 1.7866823287007627,
+          "propagations": 0.6681384484987949,
+          "restarts": 1.0709834561730933
+        },
+        "stats": {
+          "naive": {
+            "conflicts": 1000001,
+            "decisions": 4193481,
+            "propagations": 231932582,
+            "restarts": 33857
+          },
+          "parent": {
+            "conflicts": 1000000,
+            "decisions": 2347077,
+            "propagations": 347132518,
+            "restarts": 31613
+          }
+        },
+        "status": {
+          "naive": "OPEN",
+          "parent": "OPEN"
+        },
+        "variant": "naive"
+      }
+    ]
+  },
+  "stage2": {
+    "guard_only_boundary_vs_naive_split": [
+      {
+        "control": "naive-split",
+        "cpu_ratio_percent_change": 17.088945890306295,
+        "cpu_ratio_variant_over_control": 1.170889458903063,
+        "normalized_cpu_per_1e6_conflicts": {
+          "boundary": 75.218270992,
+          "naive-split": 64.23996247518761
+        },
+        "normalized_cpu_ratio": 1.1708953133503575,
+        "search_cpu_seconds": {
+          "boundary": 75.218270992,
+          "naive-split": 64.24028367499999
+        },
+        "seed": 0,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 0.9999950000249999,
+          "decisions": 0.8298382947585855,
+          "propagations": 1.0495802424481622,
+          "restarts": 1.1072944672421112
+        },
+        "stats": {
+          "boundary": {
+            "conflicts": 1000000,
+            "decisions": 2177421,
+            "propagations": 359034750,
+            "restarts": 31301
+          },
+          "naive-split": {
+            "conflicts": 1000005,
+            "decisions": 2623910,
+            "propagations": 342074608,
+            "restarts": 28268
+          }
+        },
+        "status": {
+          "boundary": "OPEN",
+          "naive-split": "OPEN"
+        },
+        "variant": "boundary"
+      },
+      {
+        "control": "naive-split",
+        "cpu_ratio_percent_change": 51.85651129972544,
+        "cpu_ratio_variant_over_control": 1.5185651129972544,
+        "normalized_cpu_per_1e6_conflicts": {
+          "boundary": 77.87228638799999,
+          "naive-split": 51.2801248028752
+        },
+        "normalized_cpu_ratio": 1.5185666315623672,
+        "search_cpu_seconds": {
+          "boundary": 77.87228638799999,
+          "naive-split": 51.280176083
+        },
+        "seed": 1,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 0.999999000001,
+          "decisions": 0.5130949681183723,
+          "propagations": 1.6180112805366864,
+          "restarts": 0.9140798062439082
+        },
+        "stats": {
+          "boundary": {
+            "conflicts": 1000000,
+            "decisions": 2151654,
+            "propagations": 375269534,
+            "restarts": 30948
+          },
+          "naive-split": {
+            "conflicts": 1000001,
+            "decisions": 4193481,
+            "propagations": 231932582,
+            "restarts": 33857
+          }
+        },
+        "status": {
+          "boundary": "OPEN",
+          "naive-split": "OPEN"
+        },
+        "variant": "boundary"
+      }
+    ],
+    "order_only_naive_vs_naive_split": [
+      {
+        "control": "naive-split",
+        "cpu_ratio_percent_change": -1.7857196145078968,
+        "cpu_ratio_variant_over_control": 0.982142803854921,
+        "normalized_cpu_per_1e6_conflicts": {
+          "naive": 63.09281686491567,
+          "naive-split": 64.23996247518761
+        },
+        "normalized_cpu_ratio": 0.9821428038549209,
+        "search_cpu_seconds": {
+          "naive": 63.093132329,
+          "naive-split": 64.24028367499999
+        },
+        "seed": 0,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 1.0,
+          "decisions": 1.0,
+          "propagations": 1.0,
+          "restarts": 1.0
+        },
+        "stats": {
+          "naive": {
+            "conflicts": 1000005,
+            "decisions": 2623910,
+            "propagations": 342074608,
+            "restarts": 28268
+          },
+          "naive-split": {
+            "conflicts": 1000005,
+            "decisions": 2623910,
+            "propagations": 342074608,
+            "restarts": 28268
+          }
+        },
+        "status": {
+          "naive": "OPEN",
+          "naive-split": "OPEN"
+        },
+        "variant": "naive"
+      },
+      {
+        "control": "naive-split",
+        "cpu_ratio_percent_change": -0.398104130277499,
+        "cpu_ratio_variant_over_control": 0.996018958697225,
+        "normalized_cpu_per_1e6_conflicts": {
+          "naive": 51.075976508023494,
+          "naive-split": 51.2801248028752
+        },
+        "normalized_cpu_ratio": 0.9960189586972249,
+        "search_cpu_seconds": {
+          "naive": 51.076027584,
+          "naive-split": 51.280176083
+        },
+        "seed": 1,
+        "stat_ratios_variant_over_control": {
+          "conflicts": 1.0,
+          "decisions": 1.0,
+          "propagations": 1.0,
+          "restarts": 1.0
+        },
+        "stats": {
+          "naive": {
+            "conflicts": 1000001,
+            "decisions": 4193481,
+            "propagations": 231932582,
+            "restarts": 33857
+          },
+          "naive-split": {
+            "conflicts": 1000001,
+            "decisions": 4193481,
+            "propagations": 231932582,
+            "restarts": 33857
+          }
+        },
+        "status": {
+          "naive": "OPEN",
+          "naive-split": "OPEN"
+        },
+        "variant": "naive"
+      }
+    ]
+  },
+  "working_sha256_unused_in_this_encoding_test": "39d669585242b4fe6447908f0812906e62077ae0a5403837e6470516e623cf38"
+}
