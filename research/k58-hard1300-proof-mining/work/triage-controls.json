@@ -1,0 +1,19 @@
+{
+  "version": "1.9.dev22",
+  "controls": [
+    {
+      "control": "unit-satisfiable",
+      "conflict_budget": 0,
+      "result": true,
+      "passed": true
+    },
+    {
+      "control": "unit-conflicting-cube",
+      "conflict_budget": 0,
+      "result": false,
+      "passed": true
+    }
+  ],
+  "native_candidate_acceptances": "8/8 in four clause instances across both exact parents",
+  "native_vs_triage_boundary": "PySAT cap-zero filtering is only a candidate filter. Native false-cube RUP certificates exist for these four examples. Every other candidate remains ungeneralised; no SAT is inferred from PySAT None or a timeout."
+}

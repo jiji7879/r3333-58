@@ -1,0 +1,3047 @@
+{
+  "rank": 1297,
+  "parent": {
+    "path": ".scratch/hard1300-proof-mining/rank1297-run/parent.cnf",
+    "bytes": 4058468,
+    "sha256": "d75196e6a5445f2035b84777720e99a0c10482fe591f4bb17139b12f744c61a6"
+  },
+  "core": {
+    "path": ".scratch/hard1300-proof-mining/rank1297-core.cnf",
+    "bytes": 98396,
+    "sha256": "202f8109b143b9d6747bf89caa51367199084ba5955c5345a8fb5e1f00250b3b"
+  },
+  "core_lemmas": {
+    "path": ".scratch/hard1300-proof-mining/rank1297-core-lemmas.drat",
+    "bytes": 99634032,
+    "sha256": "4345066c1ca686746365cc49ea55f52a017c0033cc4efce6f4640961309cfef1"
+  },
+  "core_clause_count": 5219,
+  "lemma_additions": 519764,
+  "physical_additions": 519764,
+  "addition_widths": {
+    "1": 12,
+    "2": 3557,
+    "3": 2613,
+    "4": 7429,
+    "5": 12038,
+    "6": 15901,
+    "7": 18855,
+    "8": 21108,
+    "9": 22677,
+    "10": 23462,
+    "11": 23932,
+    "12": 23893,
+    "13": 23936,
+    "14": 23604,
+    "15": 22967,
+    "16": 22092,
+    "17": 21616,
+    "18": 20612,
+    "19": 19459,
+    "20": 18412,
+    "21": 17445,
+    "22": 16239,
+    "23": 15178,
+    "24": 13833,
+    "25": 12862,
+    "26": 11367,
+    "27": 10311,
+    "28": 9449,
+    "29": 8219,
+    "30": 7248,
+    "31": 6560,
+    "32": 5776,
+    "33": 5058,
+    "34": 4476,
+    "35": 3850,
+    "36": 3371,
+    "37": 2988,
+    "38": 2456,
+    "39": 2280,
+    "40": 1898,
+    "41": 1628,
+    "42": 1381,
+    "43": 1256,
+    "44": 994,
+    "45": 868,
+    "46": 726,
+    "47": 635,
+    "48": 546,
+    "49": 458,
+    "50": 399,
+    "51": 306,
+    "52": 262,
+    "53": 208,
+    "54": 191,
+    "55": 157,
+    "56": 121,
+    "57": 111,
+    "58": 85,
+    "59": 72,
+    "60": 61,
+    "61": 54,
+    "62": 39,
+    "63": 27,
+    "64": 31,
+    "65": 16,
+    "66": 22,
+    "67": 18,
+    "68": 14,
+    "69": 6,
+    "70": 4,
+    "71": 11,
+    "72": 6,
+    "73": 3,
+    "74": 1,
+    "75": 1,
+    "78": 2,
+    "79": 1,
+    "82": 1,
+    "84": 1,
+    "87": 1,
+    "89": 1
+  },
+  "physical_short_additions": 13611,
+  "explicit_short_repetitions": 3,
+  "subsumed_short_additions": 0,
+  "nonsubsumed_short_physical": 13608,
+  "fixed_units": 503,
+  "candidate_excerpt": [
+    {
+      "line": 1,
+      "literals": [
+        -3561,
+        3428,
+        -4667,
+        4414
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            36
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -3561
+        },
+        {
+          "edge": [
+            17,
+            41
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3428
+        },
+        {
+          "edge": [
+            26,
+            36
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -4667
+        },
+        {
+          "edge": [
+            24,
+            36
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4414
+        }
+      ],
+      "vertices": [
+        17,
+        18,
+        24,
+        26,
+        36,
+        41
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 2,
+      "literals": [
+        -4558,
+        4565,
+        4529,
+        4567
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            25,
+            40
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4558
+        },
+        {
+          "edge": [
+            25,
+            42
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4565
+        },
+        {
+          "edge": [
+            25,
+            33
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4529
+        },
+        {
+          "edge": [
+            25,
+            42
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4567
+        }
+      ],
+      "vertices": [
+        25,
+        33,
+        40,
+        42
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 3,
+      "literals": [
+        -4883,
+        5102,
+        5104,
+        3544
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            28,
+            31
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -4883
+        },
+        {
+          "edge": [
+            30,
+            31
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 5102
+        },
+        {
+          "edge": [
+            30,
+            31
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 5104
+        },
+        {
+          "edge": [
+            18,
+            31
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3544
+        }
+      ],
+      "vertices": [
+        18,
+        28,
+        30,
+        31
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 4,
+      "literals": [
+        -4422,
+        4435,
+        -4417
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            24,
+            38
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4422
+        },
+        {
+          "edge": [
+            24,
+            41
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4435
+        },
+        {
+          "edge": [
+            24,
+            37
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -4417
+        }
+      ],
+      "vertices": [
+        24,
+        37,
+        38,
+        41
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 7,
+      "literals": [
+        -4673,
+        4794,
+        4154
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            26,
+            38
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -4673
+        },
+        {
+          "edge": [
+            27,
+            38
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4794
+        },
+        {
+          "edge": [
+            22,
+            38
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4154
+        }
+      ],
+      "vertices": [
+        22,
+        26,
+        27,
+        38
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 8,
+      "literals": [
+        -4418,
+        -4147,
+        4403,
+        4427
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            24,
+            37
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4418
+        },
+        {
+          "edge": [
+            22,
+            36
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -4147
+        },
+        {
+          "edge": [
+            24,
+            33
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4403
+        },
+        {
+          "edge": [
+            24,
+            39
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4427
+        }
+      ],
+      "vertices": [
+        22,
+        24,
+        33,
+        36,
+        37,
+        39
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 10,
+      "literals": [
+        -4141,
+        -4150,
+        4159,
+        4147
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            22,
+            35
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -4141
+        },
+        {
+          "edge": [
+            22,
+            37
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4150
+        },
+        {
+          "edge": [
+            22,
+            39
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4159
+        },
+        {
+          "edge": [
+            22,
+            36
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4147
+        }
+      ],
+      "vertices": [
+        22,
+        35,
+        36,
+        37,
+        39
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 11,
+      "literals": [
+        -5741,
+        -4413,
+        -4411,
+        4470
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            36,
+            50
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -5741
+        },
+        {
+          "edge": [
+            24,
+            36
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -4413
+        },
+        {
+          "edge": [
+            24,
+            35
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -4411
+        },
+        {
+          "edge": [
+            24,
+            50
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4470
+        }
+      ],
+      "vertices": [
+        24,
+        35,
+        36,
+        50
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 12,
+      "literals": [
+        -4316,
+        4295,
+        4279,
+        4278
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            23,
+            44
+          ],
+          "color": 3,
+          "sign": "-",
+          "literal": -4316
+        },
+        {
+          "edge": [
+            23,
+            39
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4295
+        },
+        {
+          "edge": [
+            23,
+            35
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4279
+        },
+        {
+          "edge": [
+            23,
+            35
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4278
+        }
+      ],
+      "vertices": [
+        23,
+        35,
+        39,
+        44
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 13,
+      "literals": [
+        -4450,
+        -4417,
+        4431
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            24,
+            45
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4450
+        },
+        {
+          "edge": [
+            24,
+            37
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -4417
+        },
+        {
+          "edge": [
+            24,
+            40
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4431
+        }
+      ],
+      "vertices": [
+        24,
+        37,
+        40,
+        45
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 14,
+      "literals": [
+        -3245,
+        -3282,
+        3279
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            36
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -3245
+        },
+        {
+          "edge": [
+            16,
+            45
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -3282
+        },
+        {
+          "edge": [
+            16,
+            44
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3279
+        }
+      ],
+      "vertices": [
+        16,
+        36,
+        44,
+        45
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 15,
+      "literals": [
+        -4822,
+        4803,
+        4779,
+        4787
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            27,
+            45
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4822
+        },
+        {
+          "edge": [
+            27,
+            40
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4803
+        },
+        {
+          "edge": [
+            27,
+            34
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4779
+        },
+        {
+          "edge": [
+            27,
+            36
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4787
+        }
+      ],
+      "vertices": [
+        27,
+        34,
+        36,
+        40,
+        45
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 16,
+      "literals": [
+        -3239,
+        5006,
+        5008,
+        4274
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            34
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -3239
+        },
+        {
+          "edge": [
+            29,
+            34
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 5006
+        },
+        {
+          "edge": [
+            29,
+            34
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 5008
+        },
+        {
+          "edge": [
+            23,
+            34
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4274
+        }
+      ],
+      "vertices": [
+        16,
+        23,
+        29,
+        34
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 17,
+      "literals": [
+        -4781,
+        4278,
+        -4003
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            27,
+            35
+          ],
+          "color": 0,
+          "sign": "-",
+          "literal": -4781
+        },
+        {
+          "edge": [
+            23,
+            35
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4278
+        },
+        {
+          "edge": [
+            21,
+            35
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -4003
+        }
+      ],
+      "vertices": [
+        21,
+        23,
+        27,
+        35
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 18,
+      "literals": [
+        -4682,
+        4661,
+        4663,
+        4653
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            26,
+            40
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4682
+        },
+        {
+          "edge": [
+            26,
+            35
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4661
+        },
+        {
+          "edge": [
+            26,
+            35
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4663
+        },
+        {
+          "edge": [
+            26,
+            33
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4653
+        }
+      ],
+      "vertices": [
+        26,
+        33,
+        35,
+        40
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 19,
+      "literals": [
+        -3871,
+        3722,
+        4550
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            20,
+            38
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -3871
+        },
+        {
+          "edge": [
+            19,
+            38
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3722
+        },
+        {
+          "edge": [
+            25,
+            38
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4550
+        }
+      ],
+      "vertices": [
+        19,
+        20,
+        25,
+        38
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 20,
+      "literals": [
+        -3722,
+        -5103,
+        -3247
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            38
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -3722
+        },
+        {
+          "edge": [
+            30,
+            31
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -5103
+        },
+        {
+          "edge": [
+            16,
+            36
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -3247
+        }
+      ],
+      "vertices": [
+        16,
+        19,
+        30,
+        31,
+        36,
+        38
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 21,
+      "literals": [
+        -4539,
+        3858,
+        3557,
+        3857
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            25,
+            35
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -4539
+        },
+        {
+          "edge": [
+            20,
+            35
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3858
+        },
+        {
+          "edge": [
+            18,
+            35
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3557
+        },
+        {
+          "edge": [
+            20,
+            35
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3857
+        }
+      ],
+      "vertices": [
+        18,
+        20,
+        25,
+        35
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 22,
+      "literals": [
+        -4442,
+        4451,
+        4421,
+        4449
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            24,
+            43
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4442
+        },
+        {
+          "edge": [
+            24,
+            45
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4451
+        },
+        {
+          "edge": [
+            24,
+            38
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4421
+        },
+        {
+          "edge": [
+            24,
+            45
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4449
+        }
+      ],
+      "vertices": [
+        24,
+        38,
+        43,
+        45
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 23,
+      "literals": [
+        -3262,
+        -3711,
+        3404,
+        3267
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            40
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -3262
+        },
+        {
+          "edge": [
+            19,
+            35
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -3711
+        },
+        {
+          "edge": [
+            17,
+            35
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3404
+        },
+        {
+          "edge": [
+            16,
+            41
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3267
+        }
+      ],
+      "vertices": [
+        16,
+        17,
+        19,
+        35,
+        40,
+        41
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 25,
+      "literals": [
+        -3270,
+        -3228,
+        3247
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            42
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -3270
+        },
+        {
+          "edge": [
+            16,
+            31
+          ],
+          "color": 3,
+          "sign": "-",
+          "literal": -3228
+        },
+        {
+          "edge": [
+            16,
+            36
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3247
+        }
+      ],
+      "vertices": [
+        16,
+        31,
+        36,
+        42
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 26,
+      "literals": [
+        -4134,
+        4163,
+        -4156,
+        4131
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            22,
+            33
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4134
+        },
+        {
+          "edge": [
+            22,
+            40
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4163
+        },
+        {
+          "edge": [
+            22,
+            38
+          ],
+          "color": 3,
+          "sign": "-",
+          "literal": -4156
+        },
+        {
+          "edge": [
+            22,
+            32
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4131
+        }
+      ],
+      "vertices": [
+        22,
+        32,
+        33,
+        38,
+        40
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 27,
+      "literals": [
+        -4522,
+        -5147,
+        4529
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            25,
+            31
+          ],
+          "color": 1,
+          "sign": "-",
+          "literal": -4522
+        },
+        {
+          "edge": [
+            30,
+            42
+          ],
+          "color": 2,
+          "sign": "-",
+          "literal": -5147
+        },
+        {
+          "edge": [
+            25,
+            33
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4529
+        }
+      ],
+      "vertices": [
+        25,
+        30,
+        31,
+        33,
+        42
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 28,
+      "literals": [
+        3233,
+        3234
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            33
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3233
+        },
+        {
+          "edge": [
+            16,
+            33
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3234
+        }
+      ],
+      "vertices": [
+        16,
+        33
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 32,
+      "literals": [
+        3261,
+        3264,
+        3262
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            40
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3261
+        },
+        {
+          "edge": [
+            16,
+            40
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3264
+        },
+        {
+          "edge": [
+            16,
+            40
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3262
+        }
+      ],
+      "vertices": [
+        16,
+        40
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 35,
+      "literals": [
+        3288,
+        3286,
+        3285
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            46
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3288
+        },
+        {
+          "edge": [
+            16,
+            46
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3286
+        },
+        {
+          "edge": [
+            16,
+            46
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3285
+        }
+      ],
+      "vertices": [
+        16,
+        46
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 38,
+      "literals": [
+        3291,
+        3289,
+        3290
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            47
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3291
+        },
+        {
+          "edge": [
+            16,
+            47
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3289
+        },
+        {
+          "edge": [
+            16,
+            47
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3290
+        }
+      ],
+      "vertices": [
+        16,
+        47
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 41,
+      "literals": [
+        3298,
+        3297,
+        3299
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            49
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3298
+        },
+        {
+          "edge": [
+            16,
+            49
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3297
+        },
+        {
+          "edge": [
+            16,
+            49
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3299
+        }
+      ],
+      "vertices": [
+        16,
+        49
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 44,
+      "literals": [
+        3301,
+        3302,
+        3304
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            16,
+            50
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3301
+        },
+        {
+          "edge": [
+            16,
+            50
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3302
+        },
+        {
+          "edge": [
+            16,
+            50
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3304
+        }
+      ],
+      "vertices": [
+        16,
+        50
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 47,
+      "literals": [
+        3387,
+        3385,
+        3388
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            17,
+            31
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3387
+        },
+        {
+          "edge": [
+            17,
+            31
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3385
+        },
+        {
+          "edge": [
+            17,
+            31
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3388
+        }
+      ],
+      "vertices": [
+        17,
+        31
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 50,
+      "literals": [
+        3391,
+        3392,
+        3389
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            17,
+            32
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3391
+        },
+        {
+          "edge": [
+            17,
+            32
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3392
+        },
+        {
+          "edge": [
+            17,
+            32
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3389
+        }
+      ],
+      "vertices": [
+        17,
+        32
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 53,
+      "literals": [
+        3401,
+        3403,
+        3404
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            17,
+            35
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3401
+        },
+        {
+          "edge": [
+            17,
+            35
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3403
+        },
+        {
+          "edge": [
+            17,
+            35
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3404
+        }
+      ],
+      "vertices": [
+        17,
+        35
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 56,
+      "literals": [
+        3408,
+        3407,
+        3405
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            17,
+            36
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3408
+        },
+        {
+          "edge": [
+            17,
+            36
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3407
+        },
+        {
+          "edge": [
+            17,
+            36
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3405
+        }
+      ],
+      "vertices": [
+        17,
+        36
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 59,
+      "literals": [
+        3411,
+        3409,
+        3412
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            17,
+            37
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3411
+        },
+        {
+          "edge": [
+            17,
+            37
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3409
+        },
+        {
+          "edge": [
+            17,
+            37
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3412
+        }
+      ],
+      "vertices": [
+        17,
+        37
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 62,
+      "literals": [
+        3425,
+        3428,
+        3427
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            17,
+            41
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3425
+        },
+        {
+          "edge": [
+            17,
+            41
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3428
+        },
+        {
+          "edge": [
+            17,
+            41
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3427
+        }
+      ],
+      "vertices": [
+        17,
+        41
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 65,
+      "literals": [
+        3544,
+        3541,
+        3543
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            31
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3544
+        },
+        {
+          "edge": [
+            18,
+            31
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3541
+        },
+        {
+          "edge": [
+            18,
+            31
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3543
+        }
+      ],
+      "vertices": [
+        18,
+        31
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 68,
+      "literals": [
+        3546,
+        3547,
+        3545
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            32
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3546
+        },
+        {
+          "edge": [
+            18,
+            32
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3547
+        },
+        {
+          "edge": [
+            18,
+            32
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3545
+        }
+      ],
+      "vertices": [
+        18,
+        32
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 71,
+      "literals": [
+        3559,
+        3560,
+        3557
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            35
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3559
+        },
+        {
+          "edge": [
+            18,
+            35
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3560
+        },
+        {
+          "edge": [
+            18,
+            35
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3557
+        }
+      ],
+      "vertices": [
+        18,
+        35
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 74,
+      "literals": [
+        3561,
+        3563
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            36
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3561
+        },
+        {
+          "edge": [
+            18,
+            36
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3563
+        }
+      ],
+      "vertices": [
+        18,
+        36
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 78,
+      "literals": [
+        3581,
+        3583
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            41
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3581
+        },
+        {
+          "edge": [
+            18,
+            41
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3583
+        }
+      ],
+      "vertices": [
+        18,
+        41
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 82,
+      "literals": [
+        3585,
+        3587
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            42
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3585
+        },
+        {
+          "edge": [
+            18,
+            42
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3587
+        }
+      ],
+      "vertices": [
+        18,
+        42
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 86,
+      "literals": [
+        3597,
+        3599,
+        3600
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            18,
+            45
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3597
+        },
+        {
+          "edge": [
+            18,
+            45
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3599
+        },
+        {
+          "edge": [
+            18,
+            45
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3600
+        }
+      ],
+      "vertices": [
+        18,
+        45
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 89,
+      "literals": [
+        3703,
+        3702,
+        3701
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            33
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3703
+        },
+        {
+          "edge": [
+            19,
+            33
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3702
+        },
+        {
+          "edge": [
+            19,
+            33
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3701
+        }
+      ],
+      "vertices": [
+        19,
+        33
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 92,
+      "literals": [
+        3723,
+        3722,
+        3721
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            38
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3723
+        },
+        {
+          "edge": [
+            19,
+            38
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3722
+        },
+        {
+          "edge": [
+            19,
+            38
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3721
+        }
+      ],
+      "vertices": [
+        19,
+        38
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 95,
+      "literals": [
+        3732,
+        3730,
+        3729
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            40
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3732
+        },
+        {
+          "edge": [
+            19,
+            40
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3730
+        },
+        {
+          "edge": [
+            19,
+            40
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3729
+        }
+      ],
+      "vertices": [
+        19,
+        40
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 98,
+      "literals": [
+        3741,
+        3744,
+        3742
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            43
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3741
+        },
+        {
+          "edge": [
+            19,
+            43
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3744
+        },
+        {
+          "edge": [
+            19,
+            43
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3742
+        }
+      ],
+      "vertices": [
+        19,
+        43
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 101,
+      "literals": [
+        3753,
+        3755,
+        3754
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            46
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3753
+        },
+        {
+          "edge": [
+            19,
+            46
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3755
+        },
+        {
+          "edge": [
+            19,
+            46
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3754
+        }
+      ],
+      "vertices": [
+        19,
+        46
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 104,
+      "literals": [
+        3757,
+        3759,
+        3758
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            47
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3757
+        },
+        {
+          "edge": [
+            19,
+            47
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3759
+        },
+        {
+          "edge": [
+            19,
+            47
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3758
+        }
+      ],
+      "vertices": [
+        19,
+        47
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 107,
+      "literals": [
+        3765,
+        3766
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            19,
+            49
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3765
+        },
+        {
+          "edge": [
+            19,
+            49
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3766
+        }
+      ],
+      "vertices": [
+        19,
+        49
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 111,
+      "literals": [
+        3849,
+        3852,
+        3850
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            20,
+            33
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3849
+        },
+        {
+          "edge": [
+            20,
+            33
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3852
+        },
+        {
+          "edge": [
+            20,
+            33
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3850
+        }
+      ],
+      "vertices": [
+        20,
+        33
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 114,
+      "literals": [
+        3877,
+        3878,
+        3880
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            20,
+            40
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3877
+        },
+        {
+          "edge": [
+            20,
+            40
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3878
+        },
+        {
+          "edge": [
+            20,
+            40
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 3880
+        }
+      ],
+      "vertices": [
+        20,
+        40
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 117,
+      "literals": [
+        3890,
+        3891,
+        3889
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            20,
+            43
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3890
+        },
+        {
+          "edge": [
+            20,
+            43
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3891
+        },
+        {
+          "edge": [
+            20,
+            43
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3889
+        }
+      ],
+      "vertices": [
+        20,
+        43
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 120,
+      "literals": [
+        3907,
+        3906,
+        3905
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            20,
+            47
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3907
+        },
+        {
+          "edge": [
+            20,
+            47
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3906
+        },
+        {
+          "edge": [
+            20,
+            47
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3905
+        }
+      ],
+      "vertices": [
+        20,
+        47
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 123,
+      "literals": [
+        3911,
+        3910,
+        3909
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            20,
+            48
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 3911
+        },
+        {
+          "edge": [
+            20,
+            48
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3910
+        },
+        {
+          "edge": [
+            20,
+            48
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3909
+        }
+      ],
+      "vertices": [
+        20,
+        48
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 126,
+      "literals": [
+        3917,
+        3918
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            20,
+            50
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 3917
+        },
+        {
+          "edge": [
+            20,
+            50
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 3918
+        }
+      ],
+      "vertices": [
+        20,
+        50
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 130,
+      "literals": [
+        4001,
+        4003
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            21,
+            35
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4001
+        },
+        {
+          "edge": [
+            21,
+            35
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4003
+        }
+      ],
+      "vertices": [
+        21,
+        35
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 134,
+      "literals": [
+        4006,
+        4005,
+        4007
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            21,
+            36
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4006
+        },
+        {
+          "edge": [
+            21,
+            36
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4005
+        },
+        {
+          "edge": [
+            21,
+            36
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4007
+        }
+      ],
+      "vertices": [
+        21,
+        36
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 137,
+      "literals": [
+        4017,
+        4020,
+        4019
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            21,
+            39
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4017
+        },
+        {
+          "edge": [
+            21,
+            39
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 4020
+        },
+        {
+          "edge": [
+            21,
+            39
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4019
+        }
+      ],
+      "vertices": [
+        21,
+        39
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 140,
+      "literals": [
+        4028,
+        4027,
+        4025
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            21,
+            41
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 4028
+        },
+        {
+          "edge": [
+            21,
+            41
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4027
+        },
+        {
+          "edge": [
+            21,
+            41
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4025
+        }
+      ],
+      "vertices": [
+        21,
+        41
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 143,
+      "literals": [
+        4029,
+        4031
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            21,
+            42
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4029
+        },
+        {
+          "edge": [
+            21,
+            42
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4031
+        }
+      ],
+      "vertices": [
+        21,
+        42
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 147,
+      "literals": [
+        4041,
+        4043,
+        4044
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            21,
+            45
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4041
+        },
+        {
+          "edge": [
+            21,
+            45
+          ],
+          "color": 2,
+          "sign": "+",
+          "literal": 4043
+        },
+        {
+          "edge": [
+            21,
+            45
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 4044
+        }
+      ],
+      "vertices": [
+        21,
+        45
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 150,
+      "literals": [
+        4133,
+        4136,
+        4134
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            22,
+            33
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4133
+        },
+        {
+          "edge": [
+            22,
+            33
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 4136
+        },
+        {
+          "edge": [
+            22,
+            33
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4134
+        }
+      ],
+      "vertices": [
+        22,
+        33
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 153,
+      "literals": [
+        4154,
+        4156,
+        4153
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            22,
+            38
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4154
+        },
+        {
+          "edge": [
+            22,
+            38
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 4156
+        },
+        {
+          "edge": [
+            22,
+            38
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4153
+        }
+      ],
+      "vertices": [
+        22,
+        38
+      ],
+      "prior_D_exact_match": null
+    },
+    {
+      "line": 156,
+      "literals": [
+        4186,
+        4185,
+        4188
+      ],
+      "is_explicit_parent_clause": false,
+      "subsumed_by_parent": false,
+      "decoded_roles": [
+        {
+          "edge": [
+            22,
+            46
+          ],
+          "color": 1,
+          "sign": "+",
+          "literal": 4186
+        },
+        {
+          "edge": [
+            22,
+            46
+          ],
+          "color": 0,
+          "sign": "+",
+          "literal": 4185
+        },
+        {
+          "edge": [
+            22,
+            46
+          ],
+          "color": 3,
+          "sign": "+",
+          "literal": 4188
+        }
+      ],
+      "vertices": [
+        22,
+        46
+      ],
+      "prior_D_exact_match": null
+    }
+  ],
+  "scope": "Case-local backward core inventory; decoding and filtering alone never proves a destination transfer",
+  "shared_with_other_rank_count": 2346
+}

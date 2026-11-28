@@ -1,0 +1,60 @@
+{
+  "1297": {
+    "artifact_sha256": "b07d4032b8676d3c66671e83a9c75d24ae1fd76b4b2b872a49ebeae11a56cb59",
+    "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+    "checker_tail": "gnores deletion of (pseudo) unit clause [0] 6250 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6350 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6355 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6358 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6363 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6395 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6399 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6402 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6434 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6438 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6471 0\n\rc finished parsing, read 78825635 bytes from proof file\n\rc detected empty clause; start verification via backward checking\n\rc 5219 of 211564 clauses in core                            \n\rc 519765 of 1133934 lemmas in core using 30057587 resolution steps\n\rc 0 RAT lemmas in core; 516912 redundant literals in core lemmas\n\rs VERIFIED\n\rc verification time: 29.760 seconds\n",
+    "conflicts_used": 771786,
+    "elapsed_s": 66.863,
+    "native_policy": "default",
+    "parent": {
+      "bytes": 4058468,
+      "path": ".scratch/hard1300-proof-mining/rank1297-run/parent.cnf",
+      "sha256": "d75196e6a5445f2035b84777720e99a0c10482fe591f4bb17139b12f744c61a6"
+    },
+    "plan_sha256": "c8501c0439999c42c6ecae98926d694fd14236da7d499bdf32f438e4ad9b7869",
+    "raw_drat": {
+      "bytes": 78825635,
+      "path": ".scratch/hard1300-proof-mining/rank1297-run/leaves/r/leaf.drat",
+      "sha256": "b07d4032b8676d3c66671e83a9c75d24ae1fd76b4b2b872a49ebeae11a56cb59"
+    },
+    "solver": "CaDiCaL 2.1.2 standalone (default)",
+    "solver_cpu_s": 36.94,
+    "solver_exit": 20,
+    "solver_wall_s": 37.03796420409344,
+    "status": "CHECKED_UNSAT",
+    "whole_drat": {
+      "bytes": 39514788,
+      "path": ".scratch/hard1300-proof-mining/rank1297-whole.drat",
+      "sha256": "f17ffa5093858f59ffa56b2d43ca9e082bfe106c50a07cde95e5896af4ca78b4"
+    }
+  },
+  "1300": {
+    "artifact_sha256": "9798683a7f8b3e5ee7c77b86c005bd64aa4357490be350bafd71ea0e76ee9e89",
+    "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+    "checker_tail": "gnores deletion of (pseudo) unit clause [0] 6250 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6350 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6355 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6359 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6362 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6395 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6398 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6403 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6434 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6438 0\n\rc WARNING: backward mode ignores deletion of (pseudo) unit clause [0] 6471 0\n\rc finished parsing, read 90382454 bytes from proof file\n\rc detected empty clause; start verification via backward checking\n\rc 5250 of 211564 clauses in core                            \n\rc 585677 of 1205060 lemmas in core using 35184823 resolution steps\n\rc 0 RAT lemmas in core; 636743 redundant literals in core lemmas\n\rs VERIFIED\n\rc verification time: 37.980 seconds\n",
+    "conflicts_used": 875852,
+    "elapsed_s": 80.587,
+    "native_policy": "default",
+    "parent": {
+      "bytes": 4061359,
+      "path": ".scratch/hard1300-proof-mining/rank1300-run/parent.cnf",
+      "sha256": "56ad3dc529f1b855e65fa3f3f5363e8275930a7cb6ea5b04dc01a112535b0837"
+    },
+    "plan_sha256": "ee0c223cb34ed3d8cba19fbfdf54fbd6d947a885fc2956e4a88bba4d502ca8b9",
+    "raw_drat": {
+      "bytes": 90382454,
+      "path": ".scratch/hard1300-proof-mining/rank1300-run/leaves/r/leaf.drat",
+      "sha256": "9798683a7f8b3e5ee7c77b86c005bd64aa4357490be350bafd71ea0e76ee9e89"
+    },
+    "solver": "CaDiCaL 2.1.2 standalone (default)",
+    "solver_cpu_s": 42.46,
+    "solver_exit": 20,
+    "solver_wall_s": 42.53296058787964,
+    "status": "CHECKED_UNSAT",
+    "whole_drat": {
+      "bytes": 45245027,
+      "path": ".scratch/hard1300-proof-mining/rank1300-whole.drat",
+      "sha256": "676d59d759fb7d1cb63c881c561e0bcc87590565d4d8373b03f07d2ec1020043"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "reports": {
+    "1297": {
+      "rank": 1297,
+      "shared_candidates": 2346,
+      "up_refuted": 2346,
+      "up_unresolved": 0,
+      "cpu_seconds": 13.473972268,
+      "remaining": [],
+      "scope": "PySAT conflicts=0 only filters direct UP consequences. None means UP-unresolved, never SAT or implication-failure; the solver proof is not used as the native certificate."
+    },
+    "1300": {
+      "rank": 1300,
+      "shared_candidates": 2346,
+      "up_refuted": 2346,
+      "up_unresolved": 0,
+      "cpu_seconds": 5.646467198,
+      "remaining": [],
+      "scope": "PySAT conflicts=0 only filters direct UP consequences. None means UP-unresolved, never SAT or implication-failure; the solver proof is not used as the native certificate."
+    }
+  },
+  "up_unresolved_both": 0,
+  "indices_both": [],
+  "excerpt": [],
+  "pysat_version": "1.9.dev22",
+  "scope": "Complete propagation triage of all 2,346 shared short clauses per parent. Native DRAT proofs of the event, parent and already hard cases were separately verified. This filter is not a proof of any unresolved candidate, nor a model/eligibility claim."
+}

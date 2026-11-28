@@ -1,0 +1,60 @@
+{
+  "1297": {
+    "proof_core_clause_count": 5186,
+    "check": "s VERIFIED, 0 RAT, no WARNING/ERROR, rc=0",
+    "normalisation": {
+      "input": ".scratch/hard1300-proof-mining/rank1297-core-lemmas.drat",
+      "output": ".scratch/hard1300-proof-mining/rank1297-core-additions.drat",
+      "input_bytes": 99634032,
+      "output_bytes": 49244603,
+      "input_sha256": "4345066c1ca686746365cc49ea55f52a017c0033cc4efce6f4640961309cfef1",
+      "output_sha256": "63253f9730b1dd43528c980d53166074f09282a0c31b1a66e3b0a69c788628c6",
+      "commands": {
+        "a": {
+          "lines": 519765,
+          "literals": 9153956,
+          "bytes": 49244603
+        },
+        "d": {
+          "lines": 524646,
+          "literals": 9168447,
+          "bytes": 50389429
+        }
+      },
+      "empty_additions": 1,
+      "bytes_accounted": 99634032,
+      "complete_parse": true,
+      "transformation": "text: drop d records; copy a records byte-for-byte; preserve comment and whitespace lines"
+    },
+    "strict_log_sha256": "50040cd333c8e40e1e61acde8c2a94943c8a1b8e668b4c477acf6b992c56fb2b"
+  },
+  "1300": {
+    "proof_core_clause_count": 5204,
+    "check": "s VERIFIED, 0 RAT, no WARNING/ERROR, rc=0",
+    "normalisation": {
+      "input": ".scratch/hard1300-proof-mining/rank1300-core-lemmas.drat",
+      "output": ".scratch/hard1300-proof-mining/rank1300-core-additions.drat",
+      "input_bytes": 121695451,
+      "output_bytes": 60208825,
+      "input_sha256": "8daee6903cb536f1dc9e022a00b8fcba406760569d4776fbae45d31ab0a7d09b",
+      "output_sha256": "9a3bc3338d19977db85dd9c5904520901d911170da715a41c6ead3944c73f061",
+      "commands": {
+        "a": {
+          "lines": 585677,
+          "literals": 11251066,
+          "bytes": 60208825
+        },
+        "d": {
+          "lines": 590610,
+          "literals": 11265720,
+          "bytes": 61486626
+        }
+      },
+      "empty_additions": 1,
+      "bytes_accounted": 121695451,
+      "complete_parse": true,
+      "transformation": "text: drop d records; copy a records byte-for-byte; preserve comment and whitespace lines"
+    },
+    "strict_log_sha256": "32362188968679045cf4e4503bcce10082593398565066cedde11e281471c02f"
+  }
+}

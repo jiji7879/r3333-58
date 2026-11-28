@@ -1,0 +1,3 @@
+PROVED #4. The argument was read only by the model that wrote it.
+  self: PASS: compared the complete claim to the cohort definition and every native/reduced-core receipt; failed checker/mining routes and raw-versus-normalized scopes are separately retained, with no extrapolation beyond the two hard cases.
+  compute: PASS: actual standard-library/input regeneration, native DRAT and strict reduced-proof replay, semantic clause-set comparison, exact native clause instances and complete shared-candidate filter reproduce the finite analysis in the gate claim.
