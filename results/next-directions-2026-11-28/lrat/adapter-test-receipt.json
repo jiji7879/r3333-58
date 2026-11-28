@@ -1,0 +1,12 @@
+{
+  "checks": "PASS",
+  "children_cpu_seconds_of_all_controls": 4.857844,
+  "elapsed_wall_seconds_of_all_controls": 4.937374,
+  "input_sha256": "e8cc97847a6cab9c277933d2dd0d6112c79b061bebb5af221d57df5d6d6a2229",
+  "native_processing_cpu_seconds": 1.989737,
+  "scope": "one closed case plus bad hash, wrong expected outcome, capped OPEN and collision controls; no speedup theorem",
+  "solver_conflicts": 49226,
+  "total_cpu_seconds_including_second_checker": 2.986642,
+  "trimmed_bytes": 6503105,
+  "trimmed_sha256": "ae25a7a40dfe91ceb1111c2012adf3a7290b86b2bd49b534f3e61a1deaaf41d4"
+}
