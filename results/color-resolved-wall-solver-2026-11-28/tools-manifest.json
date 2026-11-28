@@ -1,0 +1,254 @@
+{
+  "status": "PASS",
+  "fork_base_commit": "f0832793fa22ea77736d801d3c5c4b7ecee680a3",
+  "file_count": 48,
+  "total_bytes": 3281940,
+  "supplied_engine_asset": {
+    "cadical-2.1.2": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+    "kissat": "b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f",
+    "drat-trim": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce"
+  },
+  "native_control": "four checks PASS with no warning suppression; deletion commands normalized before warnings-fatal RUP checking",
+  "files": [
+    {
+      "path": "COLOR.md",
+      "bytes": 6479,
+      "sha256": "ef81f8dac0774ba77ffd0794c04b288016b167b76c707a5d821205604269cc2f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6456,
+      "sha256": "f07d6faeb20b0e74188416b486b1eafc74764a2eb7f524809e5c022eca88a64a"
+    },
+    {
+      "path": "bcp.py",
+      "bytes": 5869,
+      "sha256": "19e966095701a7385a431e726a925822059920a12bf0e5a51ed88334d630a365"
+    },
+    {
+      "path": "bin/cadical-2.1.2",
+      "bytes": 1163416,
+      "sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b"
+    },
+    {
+      "path": "bin/drat-trim",
+      "bytes": 56224,
+      "sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce"
+    },
+    {
+      "path": "bin/kissat",
+      "bytes": 571688,
+      "sha256": "b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f"
+    },
+    {
+      "path": "cadical_leaf.py",
+      "bytes": 1545,
+      "sha256": "5c4ef6727936fc30bd1b60074fd77ca110569a8117f163fdbc95168069645ff9"
+    },
+    {
+      "path": "campaign.py",
+      "bytes": 14263,
+      "sha256": "7439e9ce1eff7bcd4cb87f96fcda651d2e263bac053050daf65a2bcadec59309"
+    },
+    {
+      "path": "check_trace.py",
+      "bytes": 7071,
+      "sha256": "15e04949fd083c2fb08c7772195e723aadf19920d9fd226bb48d1f1396421260"
+    },
+    {
+      "path": "color_cache/SHA256SUMS",
+      "bytes": 1119,
+      "sha256": "ea52340663bea07fdc514207b945d9a48cf98e83b94f17bf54003442a402a4f0"
+    },
+    {
+      "path": "color_cache/benchmarks/0.batch.json",
+      "bytes": 7521,
+      "sha256": "0eeb5a2b2a188954ccb4b2f07f5f2fc2dd4035496f260a7c9106bce3a3839249"
+    },
+    {
+      "path": "color_cache/benchmarks/15533.batch.json",
+      "bytes": 8108,
+      "sha256": "60f4131cca490819ea0a74d891cd78f36be1be4c324cb39eaf566bb6a872c6aa"
+    },
+    {
+      "path": "color_cache/benchmarks/370.batch.json",
+      "bytes": 7945,
+      "sha256": "0ad3f5a9b671d29e95cdbdb63382b615c5b122792bb2019f150c100c2b690c20"
+    },
+    {
+      "path": "color_cache/benchmarks/762.batch.json",
+      "bytes": 6769,
+      "sha256": "60eb4dac8b82b11e31cca6abe15a7fbb4e4cc7a35548a84fa5ba8fc3fc74d5c0"
+    },
+    {
+      "path": "color_cache/benchmarks/bench.json",
+      "bytes": 22331,
+      "sha256": "76441ca058f365bedd70a1c1503c5d366f873bb1326913603135b0fc07baa45b"
+    },
+    {
+      "path": "color_cache/benchmarks/gap1.batch.json",
+      "bytes": 7877,
+      "sha256": "c67fb0186c4e5d3967b29b78d5e631b2ec2a41576b8ee70966d916a052635a35"
+    },
+    {
+      "path": "color_cache/benchmarks/gap2.batch.json",
+      "bytes": 7472,
+      "sha256": "7d610df958a63826a370b8f01ce079a6c5d5b82c156019f3f4c1edf2b0bbc029"
+    },
+    {
+      "path": "color_cache/full-wall.json.gz",
+      "bytes": 484859,
+      "sha256": "a0a6e29a4389dd7e36aabc3d2e75a31487280d1abe2144ee732841c522aaba8f"
+    },
+    {
+      "path": "color_cache/local-proofs.json.gz",
+      "bytes": 69178,
+      "sha256": "939d960307cc44f31301980435b5fcab843e0be35d4ea75d71217241e80e74c4"
+    },
+    {
+      "path": "color_pivot.py",
+      "bytes": 23636,
+      "sha256": "35cb38a9ce73ccc743cccb29ea34d8bcafda4bfc74999060c342998d38bc9a33"
+    },
+    {
+      "path": "color_selftest.py",
+      "bytes": 6641,
+      "sha256": "160bbac980593c91a3d534d918b3019f208c5b1f5992c6edfce199d0773173ca"
+    },
+    {
+      "path": "cubing.py",
+      "bytes": 3428,
+      "sha256": "bab2b7aa1fa65b212b7093548676ce59fb759b664f0e17fa634b167954e47357"
+    },
+    {
+      "path": "data/branch53-no-hit.drat",
+      "bytes": 169,
+      "sha256": "ff983a8b25478dbd81c0533e57fb4eaf5031777bfc7034660fd851a26af7772e"
+    },
+    {
+      "path": "data/wall.jsonl.gz",
+      "bytes": 563106,
+      "sha256": "8d91ebc7d9fe6623bb04f6a0846953827a90265453c9dbcd51e3d1acf0c8bafd"
+    },
+    {
+      "path": "engine_conformance.py",
+      "bytes": 14701,
+      "sha256": "1303cfecad803a2b2fdc198ec596296da165303e832d7d4e860ce01f80c1aa1b"
+    },
+    {
+      "path": "entcap.py",
+      "bytes": 10815,
+      "sha256": "20aed308ff950c709e6209a67fd286f0e62a56c2df5c27467addd9e4715bf07d"
+    },
+    {
+      "path": "export_drat.py",
+      "bytes": 5111,
+      "sha256": "889aba895b9a4f64ebf3cc5887127b5d7dca664e04a28bcb3a890aebb894db56"
+    },
+    {
+      "path": "frozen/LICENSE",
+      "bytes": 1065,
+      "sha256": "ba514ab42431876994530f3bf3489087d4008c19ef9382451c55ee14b67459d0"
+    },
+    {
+      "path": "frozen/anchor_cuts.py",
+      "bytes": 3716,
+      "sha256": "c4259138b2a40af11da9076b831beba4ef959f9ea40eda6d1e858aa6b30b841b"
+    },
+    {
+      "path": "frozen/audit_campaign.py",
+      "bytes": 5454,
+      "sha256": "8168f31ebe26131e84b19a41b80a5fe2c1a3ffa57b6c14bc2ccca20cfe19b726"
+    },
+    {
+      "path": "frozen/charge_plan.py",
+      "bytes": 2653,
+      "sha256": "261928527ed10e1cee15a10c2fb359306973f0e7de5feabad56f544b49e69946"
+    },
+    {
+      "path": "frozen/cover_evidence.py",
+      "bytes": 21969,
+      "sha256": "11911dba40470b7108dc77ddc216ccd22d1619d2840122c8dcebdd4c0e632cd5"
+    },
+    {
+      "path": "frozen/dense.py",
+      "bytes": 8518,
+      "sha256": "89ca02b7f1b5bb4d81b76d89e328c147a264abefdaac62857478544ba45300d8"
+    },
+    {
+      "path": "frozen/gluing.py",
+      "bytes": 16110,
+      "sha256": "ca534d9d5dca23f2b29e9180db633114a1c45743b22fdf8262c7793e85227b48"
+    },
+    {
+      "path": "frozen/joint_plan.py",
+      "bytes": 5085,
+      "sha256": "2398ae8d57490c7afcd7c708c9208c2450fdf7495ca0b5da25464f59865bbca7"
+    },
+    {
+      "path": "frozen/matched_anchor.py",
+      "bytes": 5085,
+      "sha256": "a521d2934ba3f47cc64b57ee81a6096b3123f3c248aa7bde0bb36610002fc27a"
+    },
+    {
+      "path": "frozen/palette_quotient.py",
+      "bytes": 4734,
+      "sha256": "1725f2f4d6fd4a541dbb42bb4a72f97e2af08e277c4716510a7f2337900f1d5a"
+    },
+    {
+      "path": "frozen/support_tables.py",
+      "bytes": 2223,
+      "sha256": "e6ec67eadef8a0023386cd792bfca61e3400257e29960cfb2f38a9f31e0829ab"
+    },
+    {
+      "path": "helpers/README.md",
+      "bytes": 1188,
+      "sha256": "d7343ecb3391159a8f6d161832e2fbe6e6574264f3c6ee80b75b5012118431a0"
+    },
+    {
+      "path": "helpers/strip_binary_drat.py",
+      "bytes": 2452,
+      "sha256": "9fd5f0da7c63def924de92a4f77ff9afe961e308ecf09bcf4e7caaf743be8578"
+    },
+    {
+      "path": "leafcert.py",
+      "bytes": 18280,
+      "sha256": "0def7f048062d58f50d8e08d1cc7c19aba712769e5e9e6de11d2425042bdb6e1"
+    },
+    {
+      "path": "leafcert_selftest.py",
+      "bytes": 8278,
+      "sha256": "cfe69a50725ae63d69473fd676267c833bfaf8ae4f33d4a5b0373494a7fcab07"
+    },
+    {
+      "path": "pentagons.py",
+      "bytes": 5405,
+      "sha256": "a4a4cfe8f082cfe1a696c0340c8025e43d2397657ec0dffdeb33e3721e01a413"
+    },
+    {
+      "path": "problem.py",
+      "bytes": 5160,
+      "sha256": "d44cda214fd3468bcc60d5c6af673a7f9bc71c5bdeff7d384871b754c1b620d9"
+    },
+    {
+      "path": "rootreduce.py",
+      "bytes": 7814,
+      "sha256": "b2320a4513e9d2c931ef41bc193227bbb6c7433c165747bb0cf7fcb7a98d5320"
+    },
+    {
+      "path": "selftest.py",
+      "bytes": 8497,
+      "sha256": "006f09ae9fac63cde9a4da8bd860f25daee647be3394eb39868cbbba2b6c02eb"
+    },
+    {
+      "path": "tools/drat-trim",
+      "bytes": 56224,
+      "sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce"
+    },
+    {
+      "path": "wallcc.py",
+      "bytes": 8233,
+      "sha256": "d8b4e91be29e5e57551b8556347dfc584f2319f3a49a1445cf8e118ae2f3593d"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "kind": "exact_minimum",
+    "color": 0,
+    "minimum": 1,
+    "cube": [
+      509,
+      -18462
+    ],
+    "rc": 0,
+    "timed": false,
+    "cnf_sha256": "392e849bb46ef35a223af933094aef444417693309f1c2829f299c5398bd59bc",
+    "cnf_bytes": 3328787,
+    "wall_s": 7.880507397931069,
+    "child_cpu_s": 7.834873,
+    "partial_drat_bytes": 34774882,
+    "scope": "one exact/above-minimum leaf, not a full parent decision",
+    "status": "OPEN"
+  },
+  {
+    "kind": "above_minimum",
+    "color": 0,
+    "minimum": 1,
+    "cube": [
+      509,
+      18462
+    ],
+    "rc": 0,
+    "timed": false,
+    "cnf_sha256": "b56337eaaff30e7d3d828289c97c2470bc2b14fa3b9910827c2a68066dd13723",
+    "cnf_bytes": 3328786,
+    "wall_s": 8.630237706936896,
+    "child_cpu_s": 8.592013999999999,
+    "partial_drat_bytes": 31986411,
+    "scope": "one exact/above-minimum leaf, not a full parent decision",
+    "status": "OPEN"
+  },
+  {
+    "kind": "exact_minimum",
+    "color": 2,
+    "minimum": 3,
+    "cube": [
+      511,
+      -18466
+    ],
+    "rc": 0,
+    "timed": false,
+    "cnf_sha256": "833e2c5d2fa00dc63ccab6d860b81a9459beb2bdfd7b87cbdc3e5d53b2ad3500",
+    "cnf_bytes": 3328787,
+    "wall_s": 8.48255175887607,
+    "child_cpu_s": 8.408991,
+    "partial_drat_bytes": 33473054,
+    "scope": "one exact/above-minimum leaf, not a full parent decision",
+    "status": "OPEN"
+  },
+  {
+    "kind": "above_minimum",
+    "color": 2,
+    "minimum": 3,
+    "cube": [
+      511,
+      18466
+    ],
+    "rc": 0,
+    "timed": false,
+    "cnf_sha256": "d434c6e5ee184df47688ae2f05cf1dff91ec5f2bcd6803a70dd0a33d28947f8b",
+    "cnf_bytes": 3328786,
+    "wall_s": 8.379777010064572,
+    "child_cpu_s": 8.323830000000003,
+    "partial_drat_bytes": 33008259,
+    "scope": "one exact/above-minimum leaf, not a full parent decision",
+    "status": "OPEN"
+  },
+  {
+    "kind": "exact_minimum",
+    "color": 3,
+    "minimum": 3,
+    "cube": [
+      512,
+      -18466
+    ],
+    "rc": 0,
+    "timed": false,
+    "cnf_sha256": "b27bf8fb99ab2427b275cefafa48c9ae746b07d6b8ade1c04ed106d199e8f81e",
+    "cnf_bytes": 3328787,
+    "wall_s": 8.233782065100968,
+    "child_cpu_s": 8.19332,
+    "partial_drat_bytes": 36142211,
+    "scope": "one exact/above-minimum leaf, not a full parent decision",
+    "status": "OPEN"
+  },
+  {
+    "kind": "above_minimum",
+    "color": 3,
+    "minimum": 3,
+    "cube": [
+      512,
+      18466
+    ],
+    "rc": 0,
+    "timed": false,
+    "cnf_sha256": "3658aa8044fc2c1a747a1c0d6e9a469d87bc0081adf54df56f21d8c511688a44",
+    "cnf_bytes": 3328786,
+    "wall_s": 8.584848194150254,
+    "child_cpu_s": 8.497050999999999,
+    "partial_drat_bytes": 35893284,
+    "scope": "one exact/above-minimum leaf, not a full parent decision",
+    "status": "OPEN"
+  }
+]

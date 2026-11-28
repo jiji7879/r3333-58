@@ -88,3 +88,37 @@ then passed all six native derivations.  It checked 510 network input words,
 all 2,914 row-0 physical local words against all 36 targets, and obtained native
 rejection after deleting the 122-step target derivation block.  One additional
 non-benchmark binding also passed native transport/replay.  No full row closed.
+
+## Native engines and proof warnings
+
+The package also carries the exact supplied CaDiCaL 2.1.2 executable as
+`bin/cadical-2.1.2`, SHA-256
+`a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b`.
+Kissat 4.0.4 remains `bin/kissat`, SHA-256
+`b77de62fb1945d2ffab165b1f05e25c9e8ae7fc43de3a4fb8346fc2c9954097f`.
+The ordinary inherited wallcc worker continues to use its documented
+CaDiCaL 1.9.5/python-sat backend; adding clauses does not silently change it.
+For a direct native control on exactly the exported formula, use an explicit
+engine and budget, for example:
+
+```sh
+"$PWD/bin/cadical-2.1.2" --seed=0 -c 2000000 --stats \
+  /NEW/color.cnf /NEW/search.drat
+# or:
+"$PWD/bin/kissat" --seed=0 --conflicts=2000000 \
+  /NEW/color.cnf /NEW/search.drat
+```
+
+Solver exit 0 or a conflict cap is **OPEN**, not unsatisfiable. A terminal
+UNSAT is accepted only after `drat-trim` succeeds on the exact input (and, for a
+cover, the cover and its composition are checked). A SAT answer needs an
+independently checked model. If the raw proof produces backward-deletion
+warnings, do not use `-w` to hide them. Instead remove only deletion records
+with [helpers/strip_binary_drat.py](helpers/strip_binary_drat.py), and then run
+`drat-trim` warnings-fatally as shown in that helper's README. These optional
+binaries and helpers let the certifying lead and cross-check use different
+engines without grafting new clauses into the native solver code itself.
+
+The matched full-row experiments remained OPEN, so none of these commands is a
+recommended promise of solving the wall. Do not make Glucose-style reducer mode
+a default merely because it was supplied in an archive.

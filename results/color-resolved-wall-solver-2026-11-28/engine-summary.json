@@ -1,0 +1,102 @@
+{
+  "all_main_trials_capped_open": true,
+  "evidence_limit": "These bounded trials neither prove nor disprove ordinary-wall UNSAT and do not establish a full-row speedup. Tiny controls certify only runner/verifier semantics, not wall cases.",
+  "experiment_execution": "PASS",
+  "individual_results": "runs/*-s0-c*.json",
+  "input_identity_checks": "PASS",
+  "native_miter_replays": "PASS",
+  "ordinary_wall_status": "OPEN",
+  "partial_wall_proofs_retained": 0,
+  "recommendation": {
+    "cross_check": "Kissat 4.0.4 with the same input bytes, seed, cap and proof logging.",
+    "encoding": "Use the audited color extension for structured branch work, not as a claimed full-row accelerator. No vertex projection was tested or recommended.",
+    "lead": "CaDiCaL 2.1.2 on exact exported CNFs, seed 0, binary DRAT enabled; use caps for diagnosis and replay every terminal UNSAT.",
+    "next": "An exhaustive physical-pivot/exact-minimum/above-minimum split with independently checked leaf proofs and a composed parent proof is the next meaningful gate; another capped full-row status cannot close the wall.",
+    "not_default": "CaDiCaL 1.9.5 --reduceglucose: no ordinary-wall completion here or in its supplied 40,000-conflict panel, hence no evidence to prefer that modified policy."
+  },
+  "selection": "Frozen panel row 0 plus audited unequal-minimum representative gap2; both original and full color exports; seed 0; four supplied engines; fixed caps fixed before each stage.",
+  "smoke_open_cap_tests": 4,
+  "suite_totals": {
+    "200000": {
+      "cpu_s": 112.085739,
+      "partial_proofs_retained": 0,
+      "status_counts": {
+        "OPEN": 16
+      },
+      "trials": 16,
+      "verified_wall_closures": 0,
+      "wall_s_sum_sequential": 112.57505437196232
+    },
+    "2000000": {
+      "cpu_s": 988.151492,
+      "partial_proofs_retained": 0,
+      "status_counts": {
+        "OPEN": 8
+      },
+      "trials": 8,
+      "verified_wall_closures": 0,
+      "wall_s_sum_sequential": 991.9269951512106
+    }
+  },
+  "terminal_controls": "PASS",
+  "terminal_wall_proofs": 0,
+  "total_main_cpu_min": 18.337287183333334,
+  "total_main_cpu_s": 1100.237231,
+  "total_main_trials": 24,
+  "total_verified_wall_closures": 0,
+  "trials_file": "reports/trials.tsv",
+  "two_million_descriptive_engine_totals": [
+    {
+      "cpu_s_by_variant": {
+        "color": 84.69429199999999,
+        "original": 143.197586
+      },
+      "cpu_s_original_plus_color": 227.891878,
+      "engine": "cadical212",
+      "interpretation": "Descriptive capped-run measurement only; not a closure rate, speedup estimate, or cohort law.",
+      "status": [
+        "OPEN"
+      ],
+      "variants": 2
+    },
+    {
+      "cpu_s_by_variant": {
+        "color": 154.368654,
+        "original": 159.061709
+      },
+      "cpu_s_original_plus_color": 313.430363,
+      "engine": "cadical195stock",
+      "interpretation": "Descriptive capped-run measurement only; not a closure rate, speedup estimate, or cohort law.",
+      "status": [
+        "OPEN"
+      ],
+      "variants": 2
+    },
+    {
+      "cpu_s_by_variant": {
+        "color": 143.629096,
+        "original": 136.8204
+      },
+      "cpu_s_original_plus_color": 280.449496,
+      "engine": "cadical195glucose",
+      "interpretation": "Descriptive capped-run measurement only; not a closure rate, speedup estimate, or cohort law.",
+      "status": [
+        "OPEN"
+      ],
+      "variants": 2
+    },
+    {
+      "cpu_s_by_variant": {
+        "color": 82.41712,
+        "original": 83.962635
+      },
+      "cpu_s_original_plus_color": 166.379755,
+      "engine": "kissat404",
+      "interpretation": "Descriptive capped-run measurement only; not a closure rate, speedup estimate, or cohort law.",
+      "status": [
+        "OPEN"
+      ],
+      "variants": 2
+    }
+  ]
+}

@@ -1,0 +1,851 @@
+{
+  "schema": 1,
+  "overall": "IMPLEMENTATION_PASS_WALL_OPEN",
+  "candidate_root": "color-resolved-wallcc",
+  "pristine_clone_root": "original-wallcc",
+  "wall_outcome": {
+    "ordinary_full_rows_closed": 0,
+    "m4_wall_leaves_closed": 0,
+    "baseline_smoke": "OPEN",
+    "color_smoke": "OPEN",
+    "claim": "No wall SAT/UNSAT result and no speedup claim; all m4 searches were capped OPEN. Native target derivations are not parent refutations."
+  },
+  "implementation": {
+    "modified_common_files": [
+      "campaign.py",
+      "export_drat.py",
+      "wallcc.py"
+    ],
+    "added_files": [
+      "COLOR.md",
+      "color_cache/SHA256SUMS",
+      "color_cache/benchmarks/0.batch.json",
+      "color_cache/benchmarks/15533.batch.json",
+      "color_cache/benchmarks/370.batch.json",
+      "color_cache/benchmarks/762.batch.json",
+      "color_cache/benchmarks/bench.json",
+      "color_cache/benchmarks/gap1.batch.json",
+      "color_cache/benchmarks/gap2.batch.json",
+      "color_cache/full-wall.json.gz",
+      "color_cache/local-proofs.json.gz",
+      "color_pivot.py",
+      "color_selftest.py"
+    ],
+    "candidate_manifest": "results/candidate-manifest.json",
+    "upstream_identity_status": "PASS",
+    "upstream_identity": "results/upstream-source-identity.json",
+    "baseline_off_identity": {
+      "status": "PASS",
+      "files": [
+        {
+          "file": "plan.json",
+          "bytes": 530,
+          "sha256": "63d65de6a1df653efd243c170e064aa382cc1466262da1831aec580d4c564363",
+          "byte_identical": true
+        },
+        {
+          "file": "parent.cnf",
+          "bytes": 3323477,
+          "sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+          "byte_identical": true
+        },
+        {
+          "file": "working.cnf",
+          "bytes": 3328580,
+          "sha256": "8586a2833c51e67b81195fd78367bc8b375fe3bb19fa2b046a9f10f8ea5576f6",
+          "byte_identical": true
+        },
+        {
+          "file": "cas.drat",
+          "bytes": 109908,
+          "sha256": "44f441ca498d42db379655a0f5e21c8c58c6656f5fd0532357c77b89a9323abd",
+          "byte_identical": true
+        }
+      ]
+    }
+  },
+  "benchmark_identities": [
+    {
+      "name": "0",
+      "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+      "status": "PASS",
+      "native_derivation": "PASS_RUP_DERIVATION",
+      "receipt_sha256": "cce53e3b7b1b6c3f3f913f2b4ffb67f16c83fef150750b146a82de059f9b9a59",
+      "derivation_artifacts": {
+        "proof_bytes": 4453,
+        "proof_sha256": "8f13b890d68d7d66700e358b2519f8868c9f541c8290bf92ef0722d3dc101448",
+        "query_bytes": 3330188,
+        "query_sha256": "eb0739a46d30b2ace18f112bcf700c50af6c4401d30e8d9ffb08860828886ce4",
+        "scope": "original parent + functional counter definitions |- escape + color clauses"
+      },
+      "formulas": {
+        "color": {
+          "auxiliary_interval": [
+            18388,
+            18477
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3328755,
+          "body_sha256": "d0b76ed2a68421f465158238468406e5ae027706bf94385daa0e880e2b47c119",
+          "bytes": 3328774,
+          "clauses": 173900,
+          "clauses_added": 306,
+          "header": "p cnf 18477 173900",
+          "sha256": "66cde0ddb0556a76a73244981976aff09d9928788a9dbf59f1a56779049efa50",
+          "variables": 18477
+        },
+        "counter": {
+          "auxiliary_interval": [
+            18388,
+            18477
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3328041,
+          "body_sha256": "984fbf8d2156ed3992c482dd41ed8650e54d24732689171d3e56f8bd93b285d6",
+          "bytes": 3328060,
+          "clauses": 173864,
+          "clauses_added": 270,
+          "header": "p cnf 18477 173864",
+          "sha256": "b6e1c057fe23dcf7b62f8ee008684c84e9bc689fe37b51c6bcb0c9c2308de501",
+          "variables": 18477
+        },
+        "escape": {
+          "auxiliary_interval": [
+            18388,
+            18477
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3328396,
+          "body_sha256": "dcc4edc01b6a55270bc5f5deb766c6a7690406e8875e44b8794d9491f0206ddd",
+          "bytes": 3328415,
+          "clauses": 173879,
+          "clauses_added": 285,
+          "header": "p cnf 18477 173879",
+          "sha256": "b325bd5cdd88adb135e73e54c066e0afe6412e5b50a73faa1930e195d1fb5c35",
+          "variables": 18477
+        },
+        "original": {
+          "auxiliary_variables": 0,
+          "body_bytes": 3323458,
+          "body_sha256": "e4e70af05562062a32630680c2fdd927edd15e322faf799aa4d37ea2ad97d7fc",
+          "bytes": 3323477,
+          "clauses": 173594,
+          "clauses_added": 0,
+          "header": "p cnf 18387 173594",
+          "sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+          "variables": 18387
+        }
+      },
+      "auxiliary_counter": {
+        "first": 18388,
+        "last": 18477,
+        "definitions": 270
+      },
+      "escape_clause_count": 15,
+      "color_clause_count": 21
+    },
+    {
+      "name": "15533",
+      "row": "0404c3a224626a202cbfa4355bb0b19513ec815d182050440c580208861f2296",
+      "status": "PASS",
+      "native_derivation": "PASS_RUP_DERIVATION",
+      "receipt_sha256": "5fe07862b22767dc681f4edb978034eb4bf9e69580a200c2ffbeccc5f49a0c77",
+      "derivation_artifacts": {
+        "proof_bytes": 8884,
+        "proof_sha256": "d340b2dbcf80546890477a471718331e6a6926868abdef1d640975175e0ecf59",
+        "query_bytes": 3495809,
+        "query_sha256": "8bd9eb5f3440414716541d64ee0c63ea56a71e18fc80b998326115c2cebb27ff",
+        "scope": "original parent + functional counter definitions |- escape + color clauses"
+      },
+      "formulas": {
+        "color": {
+          "auxiliary_interval": [
+            19426,
+            19535
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3494220,
+          "body_sha256": "7b6a9666618206dc7c5c89a8b1924b22f02eeb2989e83bd35b2ed9c9614c2634",
+          "bytes": 3494239,
+          "clauses": 184483,
+          "clauses_added": 366,
+          "header": "p cnf 19535 184483",
+          "sha256": "ed59b471af53bfb5015c1581386267aa0e8da3f9d757134113cd4f06a3116df4",
+          "variables": 19535
+        },
+        "counter": {
+          "auxiliary_interval": [
+            19426,
+            19535
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3493415,
+          "body_sha256": "82121f10f94b6ef9015adc1107cfd273d75fed8211c7f00cf6ff5f4e67cf9c06",
+          "bytes": 3493434,
+          "clauses": 184447,
+          "clauses_added": 330,
+          "header": "p cnf 19535 184447",
+          "sha256": "55c270c4d1f769b03c6fbdb1235f13333c2034c1a9954177f0bbcae85ae9ccba",
+          "variables": 19535
+        },
+        "escape": {
+          "auxiliary_interval": [
+            19426,
+            19535
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3493990,
+          "body_sha256": "4a2b3b38d1cd1c50a0eebfbfef1b0531d998b0046ffb90a3c77a067aaec7a507",
+          "bytes": 3494009,
+          "clauses": 184470,
+          "clauses_added": 353,
+          "header": "p cnf 19535 184470",
+          "sha256": "1713ba828ece0894e0f41e173e0b68eedb0c7020d47ac92547f07cbf83daec81",
+          "variables": 19535
+        },
+        "original": {
+          "auxiliary_variables": 0,
+          "body_bytes": 3487802,
+          "body_sha256": "7072f93455bf3d8cbebdc92ac922ccd28acd655a1c78e078fa1dd5eb98128fa9",
+          "bytes": 3487821,
+          "clauses": 184117,
+          "clauses_added": 0,
+          "header": "p cnf 19425 184117",
+          "sha256": "a062b827b34fa73ccd610b2a932e007e48ba217d85c7dea00f9a1a73dbdb62fe",
+          "variables": 19425
+        }
+      },
+      "auxiliary_counter": {
+        "first": 19426,
+        "last": 19535,
+        "definitions": 330
+      },
+      "escape_clause_count": 23,
+      "color_clause_count": 13
+    },
+    {
+      "name": "370",
+      "row": "001f3cc0e142f72fe1d046019a6e9dc90d9e310336c393eec00e0339b5944f85",
+      "status": "PASS",
+      "native_derivation": "PASS_RUP_DERIVATION",
+      "receipt_sha256": "4d107f0bf6ead25eb9d35b138007bdcdb598e9c50298c8846e4ac150a1011ce9",
+      "derivation_artifacts": {
+        "proof_bytes": 4882,
+        "proof_sha256": "123df5fbb5b8b34887e2d132ee06fbb342e810ea6e94b32593d709dfaf5fbda6",
+        "query_bytes": 3361467,
+        "query_sha256": "9120a799431639afebd91906393cc999a0a41461312c9b68b433b0465a60fb70",
+        "scope": "original parent + functional counter definitions |- escape + color clauses"
+      },
+      "formulas": {
+        "color": {
+          "auxiliary_interval": [
+            18814,
+            18923
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3359878,
+          "body_sha256": "cbb38c7d7780f6999968c2a06d1cc8b0f73d11ef2a83b5e02952b28379aef11c",
+          "bytes": 3359897,
+          "clauses": 175911,
+          "clauses_added": 366,
+          "header": "p cnf 18923 175911",
+          "sha256": "52c68f644586219c4418de6014452f0716d89b53d72a0272a359659dbc56e30a",
+          "variables": 18923
+        },
+        "counter": {
+          "auxiliary_interval": [
+            18814,
+            18923
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3359187,
+          "body_sha256": "5cb9285240b7b71ccde1ddfc252b636856de02e8208df06f1e248c838061797c",
+          "bytes": 3359206,
+          "clauses": 175875,
+          "clauses_added": 330,
+          "header": "p cnf 18923 175875",
+          "sha256": "c970d9e04d5ee1e9f98a5b40fc5e851e735abc03c6517db1737b34ede3946b49",
+          "variables": 18923
+        },
+        "escape": {
+          "auxiliary_interval": [
+            18814,
+            18923
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3359669,
+          "body_sha256": "0fed3df069c94baa084f0986b2d26b637b98bac971f80e81ab16982a8fe884f9",
+          "bytes": 3359688,
+          "clauses": 175898,
+          "clauses_added": 353,
+          "header": "p cnf 18923 175898",
+          "sha256": "4667be6c1cb6d56603f34a36c820837b5cc0aedb8f64b3b8c9aa1a097524ee76",
+          "variables": 18923
+        },
+        "original": {
+          "auxiliary_variables": 0,
+          "body_bytes": 3353610,
+          "body_sha256": "35ca968ea99f4e874cb1f8bfcad314384fbdfcfb0e03bf4b0b0b215f30fcfe10",
+          "bytes": 3353629,
+          "clauses": 175545,
+          "clauses_added": 0,
+          "header": "p cnf 18813 175545",
+          "sha256": "d7b1b7cd9d08d92b08410846d3e0a813c0d3082ee8771b407fa8343d4ced2dc6",
+          "variables": 18813
+        }
+      },
+      "auxiliary_counter": {
+        "first": 18814,
+        "last": 18923,
+        "definitions": 330
+      },
+      "escape_clause_count": 23,
+      "color_clause_count": 13
+    },
+    {
+      "name": "762",
+      "row": "0037e99c93e2805815ec95d0e10a380f28e271a889d086748aa8a354419903c8",
+      "status": "PASS",
+      "native_derivation": "PASS_RUP_DERIVATION",
+      "receipt_sha256": "64bb9b2c023f3324460e72f24735fc420658914417cc3f856105b2aece70ffaa",
+      "derivation_artifacts": {
+        "proof_bytes": 4460,
+        "proof_sha256": "64eb9eca777b5ad2f4f0c2a7ad7b813fcc0ebf7d17cdf72f371ac3d729a4fe47",
+        "query_bytes": 3351208,
+        "query_sha256": "71048ae8c897f2643e909e74ab7ef3bc28a4d6001e341bf302ff43116278d91e",
+        "scope": "original parent + functional counter definitions |- escape + color clauses"
+      },
+      "formulas": {
+        "color": {
+          "auxiliary_interval": [
+            18632,
+            18721
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3349967,
+          "body_sha256": "661ebad3f893f2dc614e2624d02bd727bbab16cb8ea8ccd61cf762895e206436",
+          "bytes": 3349986,
+          "clauses": 175493,
+          "clauses_added": 299,
+          "header": "p cnf 18721 175493",
+          "sha256": "7fd4ec42be3016f66a21a2251645ace6a54267a5376e800ce6d208f2dacce61b",
+          "variables": 18721
+        },
+        "counter": {
+          "auxiliary_interval": [
+            18632,
+            18721
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3349418,
+          "body_sha256": "99cc2372450c1a4acdeaeb8a6fda089bf5f017c1963032b3bd1b4fce132ca9d6",
+          "bytes": 3349437,
+          "clauses": 175464,
+          "clauses_added": 270,
+          "header": "p cnf 18721 175464",
+          "sha256": "64a23e18f920df0cdb57ff403e689c7408f737787b115ca943f207a44a874360",
+          "variables": 18721
+        },
+        "escape": {
+          "auxiliary_interval": [
+            18632,
+            18721
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3349758,
+          "body_sha256": "4f6a829f5e380d22192126b4ec7467f5f03362a5e3f5985ad183d895050dd81a",
+          "bytes": 3349777,
+          "clauses": 175480,
+          "clauses_added": 286,
+          "header": "p cnf 18721 175480",
+          "sha256": "55cd8ae71f387ec7b1c76ca39aa37da08a0399cf16d0bd872c6cb6bb2bb916fd",
+          "variables": 18721
+        },
+        "original": {
+          "auxiliary_variables": 0,
+          "body_bytes": 3344863,
+          "body_sha256": "ab1e6cf61b92a85bdc83767773deae9bf69c83892206a0878f51fea8480cda11",
+          "bytes": 3344882,
+          "clauses": 175194,
+          "clauses_added": 0,
+          "header": "p cnf 18631 175194",
+          "sha256": "d8c1dac0cb6823b58b38f207a6a2643cead96865022bb948c65e665823fe4815",
+          "variables": 18631
+        }
+      },
+      "auxiliary_counter": {
+        "first": 18632,
+        "last": 18721,
+        "definitions": 270
+      },
+      "escape_clause_count": 16,
+      "color_clause_count": 13
+    },
+    {
+      "name": "gap1",
+      "row": "0020e92a31516d5e31a12ad88453e746a7b50015119f454d04233992ab438487",
+      "status": "PASS",
+      "native_derivation": "PASS_RUP_DERIVATION",
+      "receipt_sha256": "255bc98f1d49bfa56943532bf7c7df23771899cdd7f51cc5cd88a78911ccd7a3",
+      "derivation_artifacts": {
+        "proof_bytes": 10665,
+        "proof_sha256": "21057cd483cc288b8428c980989944c90aec0464781e242099b27ba7bf656718",
+        "query_bytes": 3329737,
+        "query_sha256": "254e3affdb6a1dd26a855fc01eb20663257a02492dc1c0d69ccf6becfab9b6ee",
+        "scope": "original parent + functional counter definitions |- escape + color clauses"
+      },
+      "formulas": {
+        "color": {
+          "auxiliary_interval": [
+            18498,
+            18607
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3328504,
+          "body_sha256": "7981a431b7904a2f7d02d72e365fcc969747bf0837c6786529725c32cbba0e98",
+          "bytes": 3328523,
+          "clauses": 174176,
+          "clauses_added": 359,
+          "header": "p cnf 18607 174176",
+          "sha256": "18f0b90c1a442b19f03fdd7404d8c76f4c8586ce0e9a58dafb2c8b60431e73c7",
+          "variables": 18607
+        },
+        "counter": {
+          "auxiliary_interval": [
+            18498,
+            18607
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3327862,
+          "body_sha256": "418e31c28680199ec6b66b562c1affddf492fb08e298e340d41b41e90de3b442",
+          "bytes": 3327881,
+          "clauses": 174147,
+          "clauses_added": 330,
+          "header": "p cnf 18607 174147",
+          "sha256": "00961a4c129b231971485bccf055c03494a9ef8702f87078dab6122d65185b5b",
+          "variables": 18607
+        },
+        "escape": {
+          "auxiliary_interval": [
+            18498,
+            18607
+          ],
+          "auxiliary_variables": 110,
+          "body_bytes": 3328291,
+          "body_sha256": "8b37113de4d92af1814377e1c401390db05b53e6dc95487f2a9325ecb7559b61",
+          "bytes": 3328310,
+          "clauses": 174164,
+          "clauses_added": 347,
+          "header": "p cnf 18607 174164",
+          "sha256": "6ad2698d5eb4318baf99d0dd52248f8a09e3304fbe06723dec24285e11cf669f",
+          "variables": 18607
+        },
+        "original": {
+          "auxiliary_variables": 0,
+          "body_bytes": 3322241,
+          "body_sha256": "430e8e6133ae709014c03daf1341caf3f8b4e25f748fd933eef721fe1764d0e3",
+          "bytes": 3322260,
+          "clauses": 173817,
+          "clauses_added": 0,
+          "header": "p cnf 18497 173817",
+          "sha256": "9c141776b9e66be96f9db8b7d32a9fcb5f4737559dbb37e0e87ead18c8330b8d",
+          "variables": 18497
+        }
+      },
+      "auxiliary_counter": {
+        "first": 18498,
+        "last": 18607,
+        "definitions": 330
+      },
+      "escape_clause_count": 17,
+      "color_clause_count": 12
+    },
+    {
+      "name": "gap2",
+      "row": "0040977b8cff2c896fb448046a8a2abe6c6faf6e7e2b8644f8fbb9c4bc107a29",
+      "status": "PASS",
+      "native_derivation": "PASS_RUP_DERIVATION",
+      "receipt_sha256": "04e0720ccdfe039a1d59a3eca2dd176e06a22a83430916134ec94eb5c008522f",
+      "derivation_artifacts": {
+        "proof_bytes": 1940,
+        "proof_sha256": "1d5aee6113dc94d77809053183d79d4ce310c371a82dd01d4cbe5e0d939ebd9a",
+        "query_bytes": 3354029,
+        "query_sha256": "285f82f2a55ed15f376b25ae6c6fbc45c5b41a9e0cb5dbfbbc76950ca7a37ff9",
+        "scope": "original parent + functional counter definitions |- escape + color clauses"
+      },
+      "formulas": {
+        "color": {
+          "auxiliary_interval": [
+            18704,
+            18793
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3353228,
+          "body_sha256": "d972478348254691a887b628465171f7d4e8469e724b318d5267ff9ffaf81b9e",
+          "bytes": 3353247,
+          "clauses": 175618,
+          "clauses_added": 295,
+          "header": "p cnf 18793 175618",
+          "sha256": "ce69e196ae302f0cb00d3ee4c7d3114f401c21ba4633e1616438a20b43fb091d",
+          "variables": 18793
+        },
+        "counter": {
+          "auxiliary_interval": [
+            18704,
+            18793
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3352811,
+          "body_sha256": "1d056d851ac86d0864816f0beb3f8ff3bc04764df42e5df108089df5b1ef5d9d",
+          "bytes": 3352830,
+          "clauses": 175593,
+          "clauses_added": 270,
+          "header": "p cnf 18793 175593",
+          "sha256": "05b99a035e200b275c712524adddd3079ba34059a14e0ac68791488c23bbb70f",
+          "variables": 18793
+        },
+        "escape": {
+          "auxiliary_interval": [
+            18704,
+            18793
+          ],
+          "auxiliary_variables": 90,
+          "body_bytes": 3352811,
+          "body_sha256": "1d056d851ac86d0864816f0beb3f8ff3bc04764df42e5df108089df5b1ef5d9d",
+          "bytes": 3352830,
+          "clauses": 175593,
+          "clauses_added": 270,
+          "header": "p cnf 18793 175593",
+          "sha256": "05b99a035e200b275c712524adddd3079ba34059a14e0ac68791488c23bbb70f",
+          "variables": 18793
+        },
+        "original": {
+          "auxiliary_variables": 0,
+          "body_bytes": 3348256,
+          "body_sha256": "b8aa431f3249e98372e27c00b9be081f18b2a60a3176c8501afb662336f52c4b",
+          "bytes": 3348275,
+          "clauses": 175323,
+          "clauses_added": 0,
+          "header": "p cnf 18703 175323",
+          "sha256": "a50a3648a16ce937bf2bacd5d809089c26380e3b05de2baf16d1dbdf062cb930",
+          "variables": 18703
+        }
+      },
+      "auxiliary_counter": {
+        "first": 18704,
+        "last": 18793,
+        "definitions": 270
+      },
+      "escape_clause_count": 0,
+      "color_clause_count": 25
+    }
+  ],
+  "controls": {
+    "inherited_selftest": {
+      "status": "PASS",
+      "output": "results/original-selftest.stdout.txt"
+    },
+    "color_selftest": {
+      "status": "PASS",
+      "counter": {
+        "status": "PASS",
+        "comparator_assignments": 4,
+        "network_assignments": 510
+      },
+      "local_words": {
+        "status": "PASS",
+        "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+        "physical_words": 2914,
+        "targets_checked_per_word": 36,
+        "above_minimum_alternative": "T_(m+1) checked true on every above-minimum word"
+      },
+      "tampering": {
+        "status": "PASS",
+        "checker_exit": 1,
+        "query_sha256": "eb0739a46d30b2ace18f112bcf700c50af6c4401d30e8d9ffb08860828886ce4",
+        "tampered_proof_sha256": "08786b324dd392489755463bab0e842aac29a8a945ad77e6c44ec51f0c404063",
+        "omitted_derivation_steps": 122,
+        "expected_rejection": true,
+        "log_tail": "\rc parsing input formula with 18513 variables and 173996 clauses\n\rc finished parsing\n\rc start forward verification\n\rc RUP check failed\nc failed at proof line 74 (modulo deletion errors)\n\ns NOT VERIFIED\n\rc verification time: 0.116 seconds\n"
+      },
+      "output": "runs/color-selftest-v4/selftest.json"
+    },
+    "row0_independent_native_replay": {
+      "status": "PASS",
+      "checker_exit": 0,
+      "stdout": "results/row0-independent-replay.stdout.txt",
+      "stderr_bytes": 0
+    },
+    "cli_negative_controls": [
+      {
+        "name": "null_pivot",
+        "status": "PASS",
+        "exit": 1,
+        "expected_message": "no archived marked-spoke pivot",
+        "stdout": "",
+        "stderr": "wallcc: this frozen row has no archived marked-spoke pivot; use --pivot-color off\n"
+      },
+      {
+        "name": "retry_tier",
+        "status": "PASS",
+        "exit": 1,
+        "expected_message": "audited only for --tier first",
+        "stdout": "",
+        "stderr": "wallcc: color-pivot augmentation is audited only for --tier first\n"
+      },
+      {
+        "name": "external_cnf",
+        "status": "PASS",
+        "exit": 1,
+        "expected_message": "needs --row",
+        "stdout": "",
+        "stderr": "wallcc: DIMACS input has its own recipe; pivot-color/CAS/retry augmentation needs --row\n"
+      },
+      {
+        "name": "open_export",
+        "status": "PASS",
+        "exit": 1,
+        "expected_message": "has no checked refutation",
+        "stdout": "",
+        "stderr": "wallcc: leaf r0 has no checked refutation\n"
+      }
+    ]
+  },
+  "searches": {
+    "baseline_depth1_100_conflicts": {
+      "plan": {
+        "origin": {
+          "id": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+          "kind": "wall",
+          "tier": "first"
+        },
+        "parent_sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+        "variables": 18387,
+        "clauses": 173594,
+        "split_limit": 6612,
+        "splits": {
+          "r": 286
+        },
+        "leaf_count": 2,
+        "cuts": 189
+      },
+      "run_status": "OPEN",
+      "counts": {
+        "OPEN": 2
+      },
+      "leaves": [
+        {
+          "node": "r0",
+          "status": "OPEN",
+          "cube": [
+            -286
+          ],
+          "budget": {
+            "check_seconds": 300,
+            "conflicts": 100,
+            "proof": "deferred",
+            "seconds": 5
+          },
+          "elapsed_s": 0.154
+        },
+        {
+          "node": "r1",
+          "status": "OPEN",
+          "cube": [
+            286
+          ],
+          "budget": {
+            "check_seconds": 300,
+            "conflicts": 100,
+            "proof": "deferred",
+            "seconds": 5
+          },
+          "elapsed_s": 0.147
+        }
+      ]
+    },
+    "color_depth1_100_conflicts": {
+      "plan": {
+        "origin": {
+          "color_receipt_sha256": "cce53e3b7b1b6c3f3f913f2b4ffb67f16c83fef150750b146a82de059f9b9a59",
+          "id": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+          "kind": "wall-color",
+          "original_parent_sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+          "tier": "first",
+          "variant": "color"
+        },
+        "parent_sha256": "66cde0ddb0556a76a73244981976aff09d9928788a9dbf59f1a56779049efa50",
+        "variables": 18477,
+        "clauses": 173900,
+        "split_limit": 6612,
+        "splits": {
+          "r": 286
+        },
+        "leaf_count": 2,
+        "cuts": 189
+      },
+      "run_status": "OPEN",
+      "counts": {
+        "OPEN": 2
+      },
+      "leaves": [
+        {
+          "node": "r0",
+          "status": "OPEN",
+          "cube": [
+            -286
+          ],
+          "budget": {
+            "check_seconds": 120,
+            "conflicts": 100,
+            "proof": "deferred",
+            "seconds": 5
+          },
+          "elapsed_s": 0.151
+        },
+        {
+          "node": "r1",
+          "status": "OPEN",
+          "cube": [
+            286
+          ],
+          "budget": {
+            "check_seconds": 120,
+            "conflicts": 100,
+            "proof": "deferred",
+            "seconds": 5
+          },
+          "elapsed_s": 0.149
+        }
+      ],
+      "verify_status": "OPEN",
+      "verify_counts": {
+        "OPEN": 2
+      },
+      "color_derivation": {
+        "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+        "original_parent_sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+        "selected_parent_sha256": "66cde0ddb0556a76a73244981976aff09d9928788a9dbf59f1a56779049efa50",
+        "status": "PASS_RUP_DERIVATION"
+      },
+      "closure_scope": "aux_extended_parent_with_native_original_plus_counter_derivation"
+    },
+    "nonbenchmark_prepare": {
+      "plan": {
+        "cas": "pentagon",
+        "cas_proof_sha256": "0a7a70afe47ce947742593568f3026332fca89f941296f8282566cd502c8a12a",
+        "clauses": 174183,
+        "cuts": 357,
+        "depth": 0,
+        "leaf_count": 1,
+        "lookahead": 12,
+        "origin": {
+          "color_receipt_sha256": "977e8f952fd0c4993c455b1b77eaad9817ef24a2e532e69aaaf885c1e31fce4e",
+          "id": "000483e5a20684441c72fe3434f2cc468edebe9ec8fe625973e01b10fe628e37",
+          "kind": "wall-color",
+          "original_parent_sha256": "63221205cd01d7f785fd01609ed233ed6222e656465d92b2a5e60f908e5226f0",
+          "tier": "first",
+          "variant": "color"
+        },
+        "parent_sha256": "a6f484efa766a9c0bf17cb201d0cf7fde240b4cd52c8e824d36e4c4bc47e2211",
+        "schema": 1,
+        "split_limit": 6612,
+        "splits": {},
+        "tables": 17,
+        "variables": 18607,
+        "working_sha256": "3982dfbc447f783064955bdf269654ed99c8ec354627bb5d58106e9165a02acc"
+      },
+      "verify": {
+        "closure_scope": "aux_extended_parent_with_native_original_plus_counter_derivation",
+        "color_derivation": {
+          "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+          "original_parent_sha256": "63221205cd01d7f785fd01609ed233ed6222e656465d92b2a5e60f908e5226f0",
+          "selected_parent_sha256": "a6f484efa766a9c0bf17cb201d0cf7fde240b4cd52c8e824d36e4c4bc47e2211",
+          "status": "PASS_RUP_DERIVATION"
+        },
+        "counts": {
+          "MISSING": 1
+        },
+        "leaves": 1,
+        "origin": {
+          "color_receipt_sha256": "977e8f952fd0c4993c455b1b77eaad9817ef24a2e532e69aaaf885c1e31fce4e",
+          "id": "000483e5a20684441c72fe3434f2cc468edebe9ec8fe625973e01b10fe628e37",
+          "kind": "wall-color",
+          "original_parent_sha256": "63221205cd01d7f785fd01609ed233ed6222e656465d92b2a5e60f908e5226f0",
+          "tier": "first",
+          "variant": "color"
+        },
+        "parent_sha256": "a6f484efa766a9c0bf17cb201d0cf7fde240b4cd52c8e824d36e4c4bc47e2211",
+        "processed": 1,
+        "status": "OPEN"
+      },
+      "original_parent_sha256": "63221205cd01d7f785fd01609ed233ed6222e656465d92b2a5e60f908e5226f0",
+      "selected_parent_sha256": "a6f484efa766a9c0bf17cb201d0cf7fde240b4cd52c8e824d36e4c4bc47e2211",
+      "native_derivation": "PASS_RUP_DERIVATION",
+      "solver_attempt": "NOT_RUN",
+      "wall_status": "OPEN_MISSING_LEAF_CERTIFICATE"
+    }
+  },
+  "development_receipts_not_hidden": [
+    {
+      "directory": "runs/color-selftest",
+      "status": "FAIL",
+      "interpretation": "Deleted line was redundant in the valid proof; native acceptance was correct. Final control removes the full target-derivation block and is rejected."
+    },
+    {
+      "directory": "runs/color-selftest-v2",
+      "status": "FAIL",
+      "interpretation": "Deleted line was redundant in the valid proof; native acceptance was correct. Final control removes the full target-derivation block and is rejected."
+    },
+    {
+      "directory": "runs/color-selftest-v3",
+      "status": "FAIL",
+      "interpretation": "Deleted line was redundant in the valid proof; native acceptance was correct. Final control removes the full target-derivation block and is rejected."
+    }
+  ],
+  "commands": {
+    "python": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58/.venv/bin/python",
+    "checker": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smwzopt3q/m4/color-resolved-wallcc/bin/drat-trim",
+    "checker_sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce",
+    "four_variants": "$PY color-resolved-wallcc/wallcc.py color-export --row 00032f347903 --out runs/row0-export --checker $CHECK --check-seconds 120",
+    "color_selftest": "$PY color-resolved-wallcc/color_selftest.py --checker $CHECK --out runs/color-selftest-v4",
+    "inherited_selftest": "$PY color-resolved-wallcc/selftest.py",
+    "color_smoke": "$PY color-resolved-wallcc/wallcc.py run --row 00032f347903 --tier first --cas pentagon --pivot-color color --depth 1 --out runs/color-row0-depth1 --jobs 1 --seconds 5 --conflicts 100 --checker $CHECK --check-seconds 120",
+    "nonbenchmark_prepare": "$PY color-resolved-wallcc/wallcc.py prepare --row 000483e5a206 --tier first --pivot-color color --depth 0 --checker $CHECK --check-seconds 120 --out runs/nonbenchmark-color"
+  },
+  "retained_row0_gzip_variants": [
+    {
+      "variant": "original",
+      "raw_sha256": "160f9fb6c60638443c50d79e4fcaa64e6cdb6460db32fc61406d269a938bec00",
+      "raw_bytes": 3323477,
+      "gzip_file": "runs/row0-export/original.cnf.gz",
+      "gzip_sha256": "de43df0a4d7e4398003912e80dc72c97c829023a5a834c9725c87a8bd0d6b180",
+      "gzip_bytes": 837995
+    },
+    {
+      "variant": "counter",
+      "raw_sha256": "b6e1c057fe23dcf7b62f8ee008684c84e9bc689fe37b51c6bcb0c9c2308de501",
+      "raw_bytes": 3328060,
+      "gzip_file": "runs/row0-export/counter.cnf.gz",
+      "gzip_sha256": "736691428b18d6e65aa6fd03544e1bf6e0758166593687c67e93e4a9cf45d830",
+      "gzip_bytes": 839180
+    },
+    {
+      "variant": "escape",
+      "raw_sha256": "b325bd5cdd88adb135e73e54c066e0afe6412e5b50a73faa1930e195d1fb5c35",
+      "raw_bytes": 3328415,
+      "gzip_file": "runs/row0-export/escape.cnf.gz",
+      "gzip_sha256": "34e6f82daaee63b6d6be3723f2c366f500d0af7c958fa210143e4de68dbdb1f1",
+      "gzip_bytes": 839258
+    },
+    {
+      "variant": "color",
+      "raw_sha256": "66cde0ddb0556a76a73244981976aff09d9928788a9dbf59f1a56779049efa50",
+      "raw_bytes": 3328774,
+      "gzip_file": "runs/row0-export/color.cnf.gz",
+      "gzip_sha256": "f6e8020a2f30cf1d3a4a1c8e6d0491e83ab2bd53e276dfcf5d5350c4883ceb8d",
+      "gzip_bytes": 839346
+    }
+  ],
+  "proof_scope": "For augmented runs, verify/export checks the exact aux-extended parent and separately replays the RUP derivation from original+functional counter definitions. No direct original-only parent DRAT was claimed or produced."
+}

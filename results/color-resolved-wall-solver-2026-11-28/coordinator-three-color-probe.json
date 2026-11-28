@@ -1,0 +1,74 @@
+[
+  {
+    "case": "color-pivot-0",
+    "model_checked": null,
+    "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "pivot_literal": 509,
+    "cube_literal": 509,
+    "cube_pivot_color": 0,
+    "command": [
+      "kissat",
+      "--seed=0",
+      "--conflicts=40000",
+      "--time=20",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/pivot-probe/color-pivot-0/input.cnf",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/pivot-probe/color-pivot-0/partial.drat"
+    ],
+    "solver_rc": 0,
+    "solver_timeout": false,
+    "status": "OPEN",
+    "wall_s": 2.0692262249067426,
+    "child_cpu_s": 2.020581,
+    "cnf_sha256": "b3b6766b03f61dba0b4b850107c9defe46b3d919716629a81ca0aad1c4ace8b0",
+    "cnf_bytes": 3328780,
+    "partial_drat_bytes": 9180721
+  },
+  {
+    "case": "color-pivot-2",
+    "model_checked": null,
+    "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "pivot_literal": 509,
+    "cube_literal": 511,
+    "cube_pivot_color": 2,
+    "command": [
+      "kissat",
+      "--seed=0",
+      "--conflicts=40000",
+      "--time=20",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/pivot-probe/color-pivot-2/input.cnf",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/pivot-probe/color-pivot-2/partial.drat"
+    ],
+    "solver_rc": 0,
+    "solver_timeout": false,
+    "status": "OPEN",
+    "wall_s": 2.0176583470311016,
+    "child_cpu_s": 1.990849,
+    "cnf_sha256": "f2d9fb641bf1ee158f87b97f54198fc74d5a7595b273faacbd852b0fe9c37b1b",
+    "cnf_bytes": 3328780,
+    "partial_drat_bytes": 7486608
+  },
+  {
+    "case": "color-pivot-3",
+    "model_checked": null,
+    "row": "00032f347903758c89e2187f30f0e1c07aecb21bd27c149fb43aef0ccdb60f0d",
+    "pivot_literal": 509,
+    "cube_literal": 512,
+    "cube_pivot_color": 3,
+    "command": [
+      "kissat",
+      "--seed=0",
+      "--conflicts=40000",
+      "--time=20",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/pivot-probe/color-pivot-3/input.cnf",
+      "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/pivot-probe/color-pivot-3/partial.drat"
+    ],
+    "solver_rc": 0,
+    "solver_timeout": false,
+    "status": "OPEN",
+    "wall_s": 2.0169073331635445,
+    "child_cpu_s": 2.0038240000000003,
+    "cnf_sha256": "03fc80190e4be0da102d9e16d5a0b7324acc884146ded4f28a40dd22b5193487",
+    "cnf_bytes": 3328780,
+    "partial_drat_bytes": 7475630
+  }
+]

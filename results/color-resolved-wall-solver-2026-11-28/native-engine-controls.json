@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "controls": 4,
+  "raw_deletion_warnings_suppressed": false,
+  "scope": "tiny native-proof controls; no full wall-row verdict",
+  "results": [
+    {
+      "engine": "cadical212",
+      "case": "sat",
+      "solver_rc": 10,
+      "raw_proof_sha256": "f03357b3cb2ec03bd35bfce5fe1a9ca0858dae9e88b8fc3cbfd2e58346717f99",
+      "verification": "PASS checked model (-1,2)"
+    },
+    {
+      "engine": "kissat404",
+      "case": "sat",
+      "solver_rc": 10,
+      "raw_proof_sha256": "f03357b3cb2ec03bd35bfce5fe1a9ca0858dae9e88b8fc3cbfd2e58346717f99",
+      "verification": "PASS checked model (-1,2)"
+    },
+    {
+      "engine": "cadical212",
+      "case": "unsat",
+      "solver_rc": 20,
+      "raw_proof_sha256": "166cd621308aa74427a60f29bb76087621beac31f0981bd2bce1b440db4d1af8",
+      "checked_proof": "deletion-free DRAT",
+      "proof_sha256": "738a89357823d7615f58d911779210e0b3dbb307205771d7660c8b96aeb6803c",
+      "normalization": {
+        "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/native-engines/unsat-cadical212.drat",
+        "output": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/native-engines/unsat-cadical212-clean.drat",
+        "input_bytes": 8,
+        "output_bytes": 5,
+        "input_sha256": "166cd621308aa74427a60f29bb76087621beac31f0981bd2bce1b440db4d1af8",
+        "output_sha256": "738a89357823d7615f58d911779210e0b3dbb307205771d7660c8b96aeb6803c",
+        "commands": {
+          "a": {
+            "commands": 2,
+            "literals": 1,
+            "bytes": 5
+          },
+          "d": {
+            "commands": 1,
+            "literals": 1,
+            "bytes": 3
+          }
+        },
+        "empty_additions": 1,
+        "bytes_accounted": 8,
+        "complete_parse": true,
+        "transformation": "drop d commands; copy a commands byte-for-byte"
+      },
+      "verification": "PASS warnings-fatal RUP; raw deletion warnings not suppressed"
+    },
+    {
+      "engine": "kissat404",
+      "case": "unsat",
+      "solver_rc": 20,
+      "raw_proof_sha256": "738a89357823d7615f58d911779210e0b3dbb307205771d7660c8b96aeb6803c",
+      "checked_proof": "deletion-free DRAT",
+      "proof_sha256": "738a89357823d7615f58d911779210e0b3dbb307205771d7660c8b96aeb6803c",
+      "normalization": {
+        "input": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/native-engines/unsat-kissat404.drat",
+        "output": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/wall-color-eval/native-engines/unsat-kissat404-clean.drat",
+        "input_bytes": 5,
+        "output_bytes": 5,
+        "input_sha256": "738a89357823d7615f58d911779210e0b3dbb307205771d7660c8b96aeb6803c",
+        "output_sha256": "738a89357823d7615f58d911779210e0b3dbb307205771d7660c8b96aeb6803c",
+        "commands": {
+          "a": {
+            "commands": 2,
+            "literals": 1,
+            "bytes": 5
+          },
+          "d": {
+            "commands": 0,
+            "literals": 0,
+            "bytes": 0
+          }
+        },
+        "empty_additions": 1,
+        "bytes_accounted": 5,
+        "complete_parse": true,
+        "transformation": "drop d commands; copy a commands byte-for-byte"
+      },
+      "verification": "PASS warnings-fatal RUP; raw deletion warnings not suppressed"
+    }
+  ]
+}
