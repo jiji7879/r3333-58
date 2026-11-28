@@ -1,0 +1,5 @@
+'K58.CountBridge.card_trueIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.CountBridge.exists_neighbour_finset_of_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.CountBridge.deg_ge_of_emitted_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.CountBridge.sender_pinned_of_count_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+elapsed=1.58 cpu=1.17+0.40 rssKiB=3404040

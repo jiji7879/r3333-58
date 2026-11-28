@@ -1,0 +1,9 @@
+'K58.EmittedBridge.named_of_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.EmittedBridge.named_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.EmittedBridge.named_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.EmittedBridge.hclass_classified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.EmittedBridge.sender_pinned_of_count_of_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.EmittedBridge.emitted_sender_step_ready_of_count_of_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+m4-snippet elapsed=1.96 cpu=1.28+0.67 rssKiB=3383500

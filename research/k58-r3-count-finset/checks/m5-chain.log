@@ -1,0 +1,20 @@
+.ultramath/smx0gue0b/m5/ChainAggregation.lean:163:34: warning: Variable name `hg` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hg
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.ultramath/smx0gue0b/m5/ChainAggregation.lean:200:30: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.mem_cons, List.not_mem_nil, or_false] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'K58.ChainAgg.chainReady_cons' does not depend on any axioms
+'K58.ChainAgg.emittedSupportStep_ready_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.ChainAgg.senderStep_ready_of_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.ChainAgg.chainReady_counter_sender_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.ChainAgg.chainReady_of_forall_ready' does not depend on any axioms
+'K58.ChainAgg.pointwise_ready_not_chainReady' depends on axioms: [propext, Quot.sound]
+m5-chain elapsed=1.72 max_rss_KiB=3370440

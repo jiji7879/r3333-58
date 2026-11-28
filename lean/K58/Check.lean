@@ -53,6 +53,8 @@ import K58.SenderReady
 import K58.SupportCatalogue
 import K58.SupportTransport
 import K58.EmittedBridge
+import K58.ClassifiedBridge
+import K58.CountedSenderReady
 import K58.TargetUnits
 import K58.TicketPremises
 
@@ -490,7 +492,9 @@ import K58.TicketPremises
 #print axioms K58.SenderReady.counter_then_support_unsatisfiable
 #print axioms K58.SenderReady.coordinate_order_matters
 
--- Emitted coordinate/physical bridge and retained key units. Counter-to-finset, key bookkeeping, external classification and ChainReady remain separate.
+-- All-sender counter decoding, physical neighbour extraction and classification are
+-- proved at the physical valuation.  Guard-to-count soundness at arbitrary sequential
+-- models, exact key bookkeeping and ChainReady remain separate.
 #print axioms K58.EmittedBridge.rowAtoms_val
 #print axioms K58.EmittedBridge.rowAtomsList_val
 #print axioms K58.EmittedBridge.realized_rowAtoms
@@ -499,6 +503,15 @@ import K58.TicketPremises
 #print axioms K58.EmittedBridge.sender_pinned_of_count
 #print axioms K58.EmittedBridge.triangle_free_third_ne
 #print axioms K58.EmittedBridge.deg_ge_of_counted
+#print axioms K58.EmittedBridge.named_of_classified
+#print axioms K58.EmittedBridge.hclass_classified
+#print axioms K58.EmittedBridge.sender_pinned_of_count_of_classification
+#print axioms K58.EmittedBridge.emitted_sender_step_ready_of_count_of_classification
+#print axioms K58.R3Counter.emittedCounterList_decode
+#print axioms K58.R3Counter.counter_inputs_audit
+#print axioms K58.R3Counter.exists_neighbour_finset_emitted
+#print axioms K58.R3Counter.emitted_sender_step_ready_of_counter_count
+#print axioms K58.R3Counter.emitted_sender_step_ready_of_emitted_count_classified
 #print axioms K58.TargetUnits.arm0_block_units
 #print axioms K58.TargetUnits.arm0_root_units
 #print axioms K58.TargetUnits.arm1_root_units

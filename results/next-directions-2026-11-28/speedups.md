@@ -17,7 +17,11 @@ Coordinator checks: **24/24** full controls, **native default regression passed*
 The smaller standalone adapter in `tools/lrat_pipeline/native_solve.py` trims LRAT and replays two independent unverified implementations before retaining it. Existing `finalise` was **not** changed to accept LRAT as DRAT.
 
 ### 2. Exact physical/emitted bridge
-`lean/K58/EmittedBridge.lean` and `TargetUnits.lean` now establish the arm-label coordinate order, its physical valuation, and the root/T16 units that the support transport needs. The whole root Lean build passed in 19.67 s; all checked axioms stay within the allowed foundational set. This is genuine progress on the semantic gate. It is **not** the final guard-exhaustiveness or `ChainReady` argument. Remaining obligations are the count-to-finset bridge, key bookkeeping, classification and sequential assembly: [bridge](bridge/README.md).
+`lean/K58/EmittedBridge.lean` and `TargetUnits.lean` establish the arm-label coordinate order, its physical valuation, and the root/T16 units that the support transport needs.
+
+The former R3 gap is now closed for all fifteen senders at the physical valuation. `CounterNeighbours*.lean` audits every emitted counter input and constructs the genuine physical neighbour finset from its true count. `ClassifiedBridge.lean` converts the colour-relabelled critical-template classification to the required literal-colour form. `CountedSenderReady.lean` assembles count-driven support readiness with neither the old neighbour-set bundle nor a separate `hclass`. The root build exited **0 in 281.39 s**, maximum RSS **6,782,744 KiB**, and all reported axiom dependencies remain within `propext`, `Classical.choice`, `Quot.sound`. See the [R3 report](r3/README.md) and [proof ledger](../../research/k58-r3-count-finset/proof.md).
+
+This is local physical-bridge progress, **not** `ChainReady` or a changed Ramsey interval. Reverse counter soundness at all sequential counter models, exact step transport, R2 bookkeeping and the final counters remain open.
 
 ### 3. Admission and reuse gates
 A separate [admission utility](admission/RESULTS.md) passes its 26 adversarial tests and reproduces all six published verdicts. It can reject cap-as-UNSAT, unpinning, ignored options, seed artefacts, hidden regressions and unsound controls. It judges receipt structure and cost arithmetic only; it does **not** replace proof/model verification.
@@ -32,7 +36,7 @@ The exact K15 clause family was also measured and is **not** a speedup: lower de
 
 3. **Try a small fixed set of alternative seeds before escalating the cap, as a controlled experiment.** A closed H8 instance that misses at seed 1 (60,002 conflicts and OPEN) closes at seed 3 (14,492). This is a measured *case*, not a seed portfolio policy or proof of cheaper coverage. Other seeds are worse elsewhere. Any seed retry needs a normal retry budget, verified artifact on success, original status on every attempt, and independently preserved search counters. Escalating cap without testing seeds would spend more CPU for no established advantage.
 
-4. **Prefer finishing the physical bridge over further tuning.** The substantial remaining obstacle is to transform the emitted 41-bit count into an explicit `Finset` of 14 physical colour-1 neighbours, plus the small `expandKey` / `ColourUnit.ofEdge` bookkeeping bridges, the applicable classification and the final chain. That is more useful for the campaign than changing another solver phase.
+4. **Continue the physical/semantic bridge over further tuning.** The all-sender finite-neighbour step is proved. The next obstacle is reverse soundness of the guarded sequential counter at each compatible model, followed by the small `expandKey` / `ColourUnit.ofEdge` bookkeeping, exact step transport and final chain. That is more useful for the campaign than changing another solver phase.
 
 ## Do not re-run as expected improvements
 

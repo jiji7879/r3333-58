@@ -1,0 +1,17 @@
+k= 0 sender=18 oldTop=11964 newTop=12343 OK
+k= 1 sender=19 oldTop=12455 newTop=12834 OK
+k= 2 sender=20 oldTop=12946 newTop=13325 OK
+k= 3 sender=21 oldTop=13437 newTop=13816 OK
+k= 4 sender=22 oldTop=13928 newTop=14307 OK
+k= 5 sender=23 oldTop=14419 newTop=14798 OK
+k= 6 sender=24 oldTop=14910 newTop=15289 OK
+k= 7 sender=25 oldTop=15401 newTop=15780 OK
+k= 8 sender=26 oldTop=15892 newTop=16271 OK
+k= 9 sender=27 oldTop=16383 newTop=16762 OK
+k=10 sender=28 oldTop=16874 newTop=17253 OK
+k=11 sender=29 oldTop=17365 newTop=17744 OK
+k=12 sender=30 oldTop=17856 newTop=18235 OK
+k=13 sender=31 oldTop=18347 newTop=18726 OK
+k=14 sender=32 oldTop=18838 newTop=19217 OK
+ALL CHECKS PASS: True
+wrote counter_literals.txt (the transcription used by R3Counter.lean)

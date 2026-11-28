@@ -88,6 +88,12 @@ SenderReady
 SupportCatalogue
 SupportTransport
 EmittedBridge
+ClassifiedBridge
+CounterNeighbours
+CounterNeighboursAudit0
+CounterNeighboursAudit1
+CounterNeighboursAudit2
+CountedSenderReady
 TargetUnits
 TargetParent
 PhysicalBridge

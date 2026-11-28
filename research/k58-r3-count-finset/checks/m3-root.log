@@ -1,0 +1,10 @@
+'K58.R3Root.wit_arm_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.wit_arm_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.wit_hroot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.wit_hcoord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.wit_atom_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.wit_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.wit_root_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.wit_deg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Root.r3_root_bundle_satisfiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+m3-root elapsed=2.53 max_rss_KiB=3395048

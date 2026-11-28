@@ -1,0 +1,151 @@
+emitted_sender_step_ready_of_count : ∀ (G : EdgeCol (Fin 58) 4),
+  TriangleFree G →
+    ∀ (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+      p one = 1 →
+        ∀ (k : Fin 15) (q r : Fin 58),
+          q ≠ r →
+            G.col q r = 1 →
+              e ⟨18 + ↑k, ⋯⟩ = q →
+                ∀ (W : Finset (Fin 58)),
+                  (∀ x ∈ W, x ≠ q ∧ G.col q x = 1) →
+                    r ∉ W →
+                      14 ≤ W.card →
+                        (∀ (n : ℕ),
+                            n = 15 ∨ n = 16 →
+                              ∀ (C : EdgeCol (Fin n) 3),
+                                TriangleFree C →
+                                  ∃ t e, ∀ (i j : Fin n), i ≠ j → C.col i j = (template n t).col (e i) (e j)) →
+                          ∀ (er : ↥(arm G r 0) ≃ Fin 16),
+                            (∀ (x y : ↥(arm G r 0)),
+                                x ≠ y → G.col ↑x ↑y = Fin.succAbove 0 ((template 16 true).col (er x) (er y))) →
+                              (∀ (j : Fin 16), e ⟨1 + ↑j, ⋯⟩ = ↑(er.symm j)) →
+                                ∀ (hb : VarsBelow (catalogueCNF (rowGuard k) (rowAtoms k) (rowSel k)) (rowNewTop k)),
+                                  (senderStep (rowOldTop k) (rowGuard k) (rowNewTop k) (rowAtoms k) (rowSel k) ⋯ ⋯ ⋯ ⋯ ⋯
+                                        hb).ready
+                                    (realizedValuation G e p)
+emitted_step_ready_of_count_gen : ∀ (G : EdgeCol (Fin 58) 4),
+  TriangleFree G →
+    ∀ (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+      p one = 1 →
+        ∀ (k : Fin 15) (q r : Fin 58),
+          q ≠ r →
+            G.col q r = 1 →
+              e (senderK k) = q →
+                e rootV = r →
+                  ∀ (atoms : ℕ → ℕ) (mate : Fin 41 → Fin 58),
+                    Function.Injective mate →
+                      (∀ (i : Fin 41),
+                          realizedValuation G e p (atoms ↑i) = decide (G.col (e (senderK k)) (e (mate i)) = p one)) →
+                        (∀ (i : Fin 41), mate i ≠ senderK k) →
+                          (∀ (i : Fin 41), mate i ≠ rootV) →
+                            14 ≤ prefixCount (fun i => realizedValuation G e p (atoms i)) 41 →
+                              ∀ (er : ↥(arm G r 0) ≃ Fin 16),
+                                (∀ (x y : ↥(arm G r 0)),
+                                    x ≠ y → G.col ↑x ↑y = Fin.succAbove 0 ((template 16 true).col (er x) (er y))) →
+                                  (∀ (j : Fin 16), e ⟨1 + ↑j, ⋯⟩ = ↑(er.symm j)) →
+                                    ∀
+                                      (hb :
+                                        VarsBelow (catalogueCNF (rowGuard k) (rowAtoms k) (rowSel k)) (rowNewTop k)),
+                                      (senderStep (rowOldTop k) (rowGuard k) (rowNewTop k) (rowAtoms k) (rowSel k) ⋯ ⋯ ⋯
+                                            ⋯ ⋯ hb).ready
+                                        (realizedValuation G e p)
+emitted_step18_ready_of_count : ∀ (G : EdgeCol (Fin 58) 4),
+  TriangleFree G →
+    ∀ (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+      p one = 1 →
+        ∀ (q r : Fin 58),
+          q ≠ r →
+            G.col q r = 1 →
+              e sender18V = q →
+                e rootV = r →
+                  14 ≤ prefixCount (fun i => realizedValuation G e p (counterAtoms18 i)) 41 →
+                    ∀ (er : ↥(arm G r 0) ≃ Fin 16),
+                      (∀ (x y : ↥(arm G r 0)),
+                          x ≠ y → G.col ↑x ↑y = Fin.succAbove 0 ((template 16 true).col (er x) (er y))) →
+                        (∀ (j : Fin 16), e ⟨1 + ↑j, ⋯⟩ = ↑(er.symm j)) →
+                          ∀ (hb : VarsBelow (catalogueCNF (rowGuard 0) (rowAtoms 0) (rowSel 0)) (rowNewTop 0)),
+                            (senderStep (rowOldTop 0) (rowGuard 0) (rowNewTop 0) (rowAtoms 0) (rowSel 0) ⋯ ⋯ ⋯ ⋯ ⋯
+                                  hb).ready
+                              (realizedValuation G e p)
+emitted_step18_ready_of_guardcount : ∀ (G : EdgeCol (Fin 58) 4),
+  TriangleFree G →
+    ∀ (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+      p one = 1 →
+        ∀ (q r : Fin 58),
+          q ≠ r →
+            G.col q r = 1 →
+              e sender18V = q →
+                e rootV = r →
+                  (realizedValuation G e p 11965 = true →
+                      14 ≤ prefixCount (fun i => realizedValuation G e p (counterAtoms18 i)) 41) →
+                    ∀ (er : ↥(arm G r 0) ≃ Fin 16),
+                      (∀ (x y : ↥(arm G r 0)),
+                          x ≠ y → G.col ↑x ↑y = Fin.succAbove 0 ((template 16 true).col (er x) (er y))) →
+                        (∀ (j : Fin 16), e ⟨1 + ↑j, ⋯⟩ = ↑(er.symm j)) →
+                          ∀ (hb : VarsBelow (catalogueCNF (rowGuard 0) (rowAtoms 0) (rowSel 0)) (rowNewTop 0)),
+                            (senderStep (rowOldTop 0) (rowGuard 0) (rowNewTop 0) (rowAtoms 0) (rowSel 0) ⋯ ⋯ ⋯ ⋯ ⋯
+                                  hb).ready
+                              (realizedValuation G e p)
+emitted_step_ready_of_guardcount_gen : ∀ (G : EdgeCol (Fin 58) 4),
+  TriangleFree G →
+    ∀ (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+      p one = 1 →
+        ∀ (k : Fin 15) (q r : Fin 58),
+          q ≠ r →
+            G.col q r = 1 →
+              e (senderK k) = q →
+                e rootV = r →
+                  ∀ (atoms : ℕ → ℕ) (mate : Fin 41 → Fin 58),
+                    Function.Injective mate →
+                      (∀ (i : Fin 41),
+                          realizedValuation G e p (atoms ↑i) = decide (G.col (e (senderK k)) (e (mate i)) = p one)) →
+                        (∀ (i : Fin 41), mate i ≠ senderK k) →
+                          (∀ (i : Fin 41), mate i ≠ rootV) →
+                            (realizedValuation G e p (rowGuard k) = true →
+                                14 ≤ prefixCount (fun i => realizedValuation G e p (atoms i)) 41) →
+                              ∀ (er : ↥(arm G r 0) ≃ Fin 16),
+                                (∀ (x y : ↥(arm G r 0)),
+                                    x ≠ y → G.col ↑x ↑y = Fin.succAbove 0 ((template 16 true).col (er x) (er y))) →
+                                  (∀ (j : Fin 16), e ⟨1 + ↑j, ⋯⟩ = ↑(er.symm j)) →
+                                    ∀
+                                      (hb :
+                                        VarsBelow (catalogueCNF (rowGuard k) (rowAtoms k) (rowSel k)) (rowNewTop k)),
+                                      (senderStep (rowOldTop k) (rowGuard k) (rowNewTop k) (rowAtoms k) (rowSel k) ⋯ ⋯ ⋯
+                                            ⋯ ⋯ hb).ready
+                                        (realizedValuation G e p)
+finset_of_count : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  p one = 1 →
+    ∀ (atoms : ℕ → ℕ) (sender : Fin 58) (mate : Fin 41 → Fin 58),
+      Function.Injective mate →
+        (∀ (i : Fin 41), realizedValuation G e p (atoms ↑i) = decide (G.col (e sender) (e (mate i)) = p one)) →
+          (∀ (i : Fin 41), mate i ≠ sender) →
+            (∀ (i : Fin 41), mate i ≠ rootV) →
+              ∀ (r : Fin 58),
+                e rootV = r →
+                  ∃ W,
+                    (∀ x ∈ W, x ≠ e sender ∧ G.col (e sender) x = 1) ∧
+                      r ∉ W ∧ W.card = prefixCount (fun i => realizedValuation G e p (atoms i)) 41
+'K58.R3Count.prefixCount_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.critical_arm_pinned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.mate18_injective' depends on axioms: [propext, Quot.sound]
+'K58.R3Count.mate18_ne_sender' depends on axioms: [propext, Quot.sound]
+'K58.R3Count.mate18_ne_root' depends on axioms: [propext, Quot.sound]
+'K58.R3Count.counterAtoms18_lt' depends on axioms: [propext]
+'K58.R3Count.counterAtoms18_ge' depends on axioms: [propext]
+'K58.R3Count.realized_counterAtoms18' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.col_of_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.counterList18_nodup' does not depend on any axioms
+'K58.R3Count.finset_of_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.W_of_count18' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.deg15_of_count18' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.sender_pinned_of_count18' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.finset_of_count_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.hval_of_hostVar_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.hval_of_hostVar_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.deg15_of_count_gen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.sender_pinned_of_count_gen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.emitted_step_ready_of_count_gen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.emitted_step18_ready_of_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.emitted_step_ready_of_guardcount_gen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Count.emitted_step18_ready_of_guardcount' depends on axioms: [propext, Classical.choice, Quot.sound]
+elapsed=6.55 cpu=2.79+0.69 rssKiB=3431500

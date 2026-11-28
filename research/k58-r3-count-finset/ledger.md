@@ -1,0 +1,23 @@
+1. OPEN [goal]: Construct the physical neighbour Finset from emitted true counts for every retained sender, or establish precise smaller compiled components and the exact remaining all-sender gap — problem.md
+2. OPEN: Instantiate the real existing order-15 and order-16 classification in the sender readiness chain without duplicating or assuming a new classification statement — notes.md
+3. PROVED: A Boolean prefixCount equals the cardinality of the filtered bounded index Finset, and injective compatible endpoint decoding constructs the physical neighbour Finset as in #1's generic component — work/R3Prototype.lean
+4. CHECK #3 [lean]: PASS Focused Lean 4.33.1 compilation of the generic cardinality and physical neighbour lemmas reports only standard axioms; this does not instantiate any emitted sender or settle goal #1 — checks/prototype.log
+5. PROVED #2: The real existing critical_arm_pinned removes the extra classification premise for counted critical sender arms as required by #2 — work/R3Prototype.lean
+6. CHECK #5 [lean]: PASS Focused Lean compilation confirmed sender_pinned_of_count_classified uses actual classified_15/16 palette machinery with only standard axioms — checks/prototype.log
+- checkpoint after #6: progress
+7. PROVED [case]: The emitted sender-18 counter count produces the neighbour Finset and support-step readiness with actual classification, including the exact root label identification #3 — ultramath:smx0gue0b/m6
+8. CHECK #7 [model]: PASS Independently read the exact theorem boundary and recompiled R3Count18.lean and its axiom output; confirmed that other senders' decoders and guard-to-count soundness remain hypotheses rather than smuggled conclusions — checks/m6-independent.log
+9. OPEN: Audit all fifteen emitted counter inputs against the decoded 41-atom families and instantiate count-driven physical readiness for every sender — notes.md
+10. OPEN: At valuations produced by sequential counter clauses, derive true guard to the old-input count and transfer physical readiness through their preservation bounds; this is beyond bare physical count-to-Finset conversion — notes.md
+11. PROVED #9: Every retained sender's exact emitted inputs are audited and have injective physical root-avoiding colour-1 neighbour decoding as required by goal #1 — lean/K58/CounterNeighboursAudit2.lean
+12. CHECK #11 [lean]: PASS The production root build compiled every input audit and the all-sender physical bridge; 501 checked axiom output lines use only allowed standard axioms — checks/root-build.log
+13. PROVED #1: For every k : Fin 15 the actual emitted count constructs the physical neighbour finset and proves support readiness at the physical valuation with imported classification, settling #1 using #11 and #5 while leaving arbitrary sequential models to #10 — checks/13-proof.md
+14. CHECK #13 [model]: PASS Read the exact all-sender source and every premise independently; no W bundle, no ChainReady inference, no guard-to-count premise dropped and no new Ramsey bound — checks/13-model.md
+15. CHECK #13 [lean]: PASS Root Lean build exit 0 in 281.39 seconds; all 15 input audits and counted readiness declaration use only standard axioms with no sorryAx or native_decide — checks/13-lean.md
+16. CHECK #13 [compute]: PASS Independent source-coded integer decoder reproduced all 15 rows of 41 exact IDs and allocation links; small cardinality and duplicate controls use no unsupported finite claim — checks/13-compute.md
+- checkpoint after #16: progress
+17. RETRACT #13: Replace the completed goal statement with the same theorem but without citing a later optional sequential obligation as if it were a proof dependency; no repair to Lean or mathematics
+18. PROVED #1: For every k : Fin 15 the actual emitted count constructs the physical neighbour finset and proves support readiness at the physical valuation with imported classification, using the all-sender audited decoder #11 and literal-colour classification #5 — checks/17-proof.md
+19. CHECK #18 [model]: PASS Independently read the exact statement and lemma chain; it contains no W existence assumption, no guard/CNF-to-count implication and no ChainReady conclusion — checks/17-model.md
+20. CHECK #18 [lean]: PASS Root Lean build exit 0 in 281.39 seconds; all exact input audits and all-sender counted-readiness axioms are confined to standard axioms — checks/17-lean.md
+21. CHECK #18 [compute]: PASS Independent numerical decoder matched all 15 rows of 41 exact atom IDs and allocation links to the checked literal table — checks/17-compute.md

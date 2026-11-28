@@ -14,6 +14,7 @@ artifacts and preserves them as bounded results, not as accepted solutions.
 
 | experiment | established result | caveat |
 |---|---|---|
+| [R3: counter to physical neighbours](r3/README.md) | All fifteen exact counter-input sets are audited. Each 41-atom `prefixCount` constructs a root-excluding physical colour-1 neighbour finset; literal-colour classification and support readiness follow at the physical valuation. Root Lean build: exit 0 in 281.39 s. | Genuine mathematical R3 progress, not `ChainReady`: reverse counter soundness at arbitrary sequential models, R2 bookkeeping, final counters and the Ramsey interval remain unresolved. |
 | [Support catalogue and readiness](support/readiness.md) | Exact 112-entry finite semantics; production-ready equivalence for all 15 sender steps; physical-to-coded transport from real neighbour sets. Full Lean build and standard axiom checks pass. | Physical `PinnedArm`, exact emitted-order identification, physical criticality and guard=`Sends` remain open. Not `ChainReady`. |
 | [CAT58 and attachment bounds](CAT58.md) | `K58.cat58`, the packing lemma and exact natural-subtraction attachment bound are proved. | A structural existence theorem, not an attachment cover or wall exclusion. Generic $k\le14$ is false/unavailable here. |
 | [Native LRAT](lrat/README.md) | Four already closed CNFs regenerate and replay through ordinary DRAT and native LRAT. Two independent LRAT implementations accept, with corruption controls. | Neither checker is formally verified. CakeML/Boost/Isabelle prerequisites are not supplied. Timings are limited to those CNFs; some LRAT files are larger. |
@@ -34,11 +35,11 @@ changed. No proof binaries, large formulas, archives, compiled Lean outputs,
 or measured solver-proof artifacts are committed. The scratch member
 rehearsals are separated from the member's original reports and timings.
 
-The precise remaining structural step is to turn the emitted counter's true
-atoms into a finite set of physical colour-1 neighbours, then complete the key
-bookkeeping, applicable classification and final guard chain. The emitted
-coordinate identities are now proved; the other completed experiments do not
-supply the remaining sequential argument.
+The all-sender count-to-neighbour bridge and literal-colour classification are
+now proved at the physical valuation; see [R3](r3/README.md). The next structural
+obligations are reverse guarded-counter soundness at every compatible sequential
+model, exact key/palette bookkeeping, the final two counter bounds and the
+sequential guard chain. Those later obligations are not consequences of R3.
 
 ## Latest speedup review and integration
 

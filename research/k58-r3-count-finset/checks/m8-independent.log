@@ -1,0 +1,173 @@
+'K58.PrefixFinset.prefixCount_eq_card_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.card_image_trueIdxFin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_image_trueIdxFin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_image_trueIdxFin_41' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.example_41_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.prefixCount_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.card_image_trueIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_image_trueIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.notMem_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.realized_hostVar_eq_true_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_neighbour_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_neighbour_finset_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_W_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.counterAtoms18_endpoints' depends on axioms: [propext]
+'K58.PrefixFinset.counterAtoms18_eq_far' depends on axioms: [propext]
+'K58.PrefixFinset.sender18_exists_W' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.sender18_exists_W_root0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.far18Nat_ne_of' depends on axioms: [propext, Quot.sound]
+'K58.PrefixFinset.sender18_exists_W_of_label' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.sender18_deg_ge_of_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.card_image_trueIdx_fails_without_inj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.duplicate_atoms_do_not_give_fourteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.counterList18_far' depends on axioms: [propext]
+'K58.PrefixFinset.far18Nat_label_audit' does not depend on any axioms
+'K58.PrefixFinset.far18Nat_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+m8 elapsed=3.56 cpu=2.39+0.75 rssKiB=3382856
+trueIdx : (ℕ → Bool) → ℕ → Finset ℕ
+@mem_trueIdx : ∀ {b : ℕ → Bool} {n i : ℕ}, i ∈ trueIdx b n ↔ i < n ∧ b i = true
+prefixCount_eq_card : ∀ (b : ℕ → Bool) (n : ℕ), prefixCount b n = (trueIdx b n).card
+@le_card_trueIdx : ∀ {b : ℕ → Bool} {n bound : ℕ}, bound ≤ prefixCount b n → bound ≤ (trueIdx b n).card
+@le_card_trueIdx_41 : ∀ {b : ℕ → Bool}, 14 ≤ prefixCount b 41 → 14 ≤ (trueIdx b 41).card
+@le_prefixCount_of_le_card : ∀ {b : ℕ → Bool} {n bound : ℕ}, bound ≤ (trueIdx b n).card → bound ≤ prefixCount b n
+@card_image_trueIdx : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n : ℕ} (u : ℕ → α),
+  Set.InjOn u ↑(trueIdx b n) → (Finset.image u (trueIdx b n)).card = prefixCount b n
+@card_image_trueIdx_of_injective : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n : ℕ} (u : ℕ → α),
+  Function.Injective u → (Finset.image u (trueIdx b n)).card = prefixCount b n
+@mem_image_trueIdx : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n : ℕ} (u : ℕ → α) (y : α),
+  y ∈ Finset.image u (trueIdx b n) ↔ ∃ i < n, b i = true ∧ u i = y
+@notMem_image : ∀ {α : Type u_1} {β : Type u_2} [inst : DecidableEq β] {s : Finset α} {u : α → β} {r : β},
+  (∀ i ∈ s, u i ≠ r) → r ∉ Finset.image u s
+@exists_image_trueIdx : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n bound : ℕ} (u : ℕ → α),
+  Set.InjOn u ↑(trueIdx b n) →
+    bound ≤ prefixCount b n →
+      ∃ W,
+        W = Finset.image u (trueIdx b n) ∧
+          W.card = prefixCount b n ∧
+            bound ≤ W.card ∧ (∀ y ∈ W, ∃ i < n, b i = true ∧ u i = y) ∧ ∀ i < n, b i = true → u i ∈ W
+trueIdxFin : (ℕ → Bool) → (n : ℕ) → Finset (Fin n)
+prefixCount_eq_card_fin : ∀ (b : ℕ → Bool) (n : ℕ), prefixCount b n = (trueIdxFin b n).card
+prefixCount_eq_card_fin_41 : ∀ (b : ℕ → Bool), prefixCount b 41 = (trueIdxFin b 41).card
+@card_image_trueIdxFin : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n : ℕ} (u : Fin n → α),
+  Set.InjOn u ↑(trueIdxFin b n) → (Finset.image u (trueIdxFin b n)).card = prefixCount b n
+@card_image_trueIdxFin_of_injective : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n : ℕ} (u : Fin n → α),
+  Function.Injective u → (Finset.image u (trueIdxFin b n)).card = prefixCount b n
+@mem_image_trueIdxFin : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n : ℕ} (u : Fin n → α) (y : α),
+  y ∈ Finset.image u (trueIdxFin b n) ↔ ∃ i, b ↑i = true ∧ u i = y
+@exists_image_trueIdxFin : ∀ {α : Type u_1} [inst : DecidableEq α] {b : ℕ → Bool} {n bound : ℕ} (u : Fin n → α),
+  Set.InjOn u ↑(trueIdxFin b n) →
+    bound ≤ prefixCount b n →
+      ∃ W,
+        W = Finset.image u (trueIdxFin b n) ∧
+          W.card = prefixCount b n ∧
+            bound ≤ W.card ∧ (∀ y ∈ W, ∃ i, b ↑i = true ∧ u i = y) ∧ ∀ (i : Fin n), b ↑i = true → u i ∈ W
+@exists_image_trueIdxFin_41 : ∀ {α : Type u_1} [DecidableEq α] {b : ℕ → Bool} (u : Fin 41 → α),
+  Set.InjOn u ↑(trueIdxFin b 41) →
+    14 ≤ prefixCount b 41 → ∃ W, W.card = prefixCount b 41 ∧ 14 ≤ W.card ∧ ∀ y ∈ W, ∃ i, b ↑i = true ∧ u i = y
+example_41_14 : ∃ W,
+  W.card = 14 ∧ 14 ≤ W.card ∧ (∀ y ∈ W, ∃ i, ↑i < 14 ∧ far18 ↑i = y) ∧ ∀ (i : Fin 41), ↑i < 14 → far18 ↑i ∈ W
+@realized_hostVar_eq_true_iff : ∀ {G : EdgeCol (Fin 58) 4} {e : Equiv.Perm (Fin 58)} {p : Equiv.Perm (Fin 4)}
+  {u v : Fin 58}, u ≠ v → ∀ (c : Fin 4), realizedValuation G e p (hostVar (↑u) (↑v) c) = true ↔ G.col (e u) (e v) = p c
+@exists_neighbour_finset : ∀ {G : EdgeCol (Fin 58) 4} {e : Equiv.Perm (Fin 58)} {p : Equiv.Perm (Fin 4)},
+  p EmittedBridge.one = 1 →
+    ∀ {x : ℕ → ℕ} {u : ℕ → Fin 58} {w r : Fin 58} {n bound : ℕ},
+      (∀ i < n, x i = hostVar (↑(u i)) (↑w) EmittedBridge.one) →
+        (∀ i < n, u i ≠ w) →
+          (∀ i < n, ∀ j < n, u i = u j → i = j) →
+            (∀ i < n, u i ≠ r) →
+              bound ≤ prefixCount (fun i => realizedValuation G e p (x i)) n →
+                ∃ W,
+                  W.card = prefixCount (fun i => realizedValuation G e p (x i)) n ∧
+                    bound ≤ W.card ∧ (∀ y ∈ W, y ≠ e w ∧ G.col (e w) y = 1) ∧ e r ∉ W
+@exists_neighbour_finset_fin : ∀ {G : EdgeCol (Fin 58) 4} {e : Equiv.Perm (Fin 58)} {p : Equiv.Perm (Fin 4)},
+  p EmittedBridge.one = 1 →
+    ∀ {n bound : ℕ} {x : Fin n → ℕ} {u : Fin n → Fin 58} {w r : Fin 58},
+      (∀ (i : Fin n), x i = hostVar (↑(u i)) (↑w) EmittedBridge.one) →
+        (∀ (i : Fin n), u i ≠ w) →
+          Function.Injective u →
+            (∀ (i : Fin n), u i ≠ r) →
+              bound ≤ prefixCount (fun k => if h : k < n then realizedValuation G e p (x ⟨k, h⟩) else false) n →
+                ∃ W,
+                  W.card = prefixCount (fun k => if h : k < n then realizedValuation G e p (x ⟨k, h⟩) else false) n ∧
+                    bound ≤ W.card ∧ (∀ y ∈ W, y ≠ e w ∧ G.col (e w) y = 1) ∧ e r ∉ W
+@exists_W_inputs : ∀ {G : EdgeCol (Fin 58) 4} {e : Equiv.Perm (Fin 58)} {p : Equiv.Perm (Fin 4)},
+  p EmittedBridge.one = 1 →
+    ∀ {x : ℕ → ℕ} {u : ℕ → Fin 58} {w r : Fin 58} {n bound : ℕ},
+      (∀ i < n, x i = hostVar (↑(u i)) (↑w) EmittedBridge.one) →
+        (∀ i < n, u i ≠ w) →
+          (∀ i < n, ∀ j < n, u i = u j → i = j) →
+            (∀ i < n, u i ≠ r) →
+              bound ≤ prefixCount (fun i => realizedValuation G e p (x i)) n →
+                ∀ (q : Fin 58),
+                  q = e w →
+                    ∃ W,
+                      (∀ y ∈ W, y ≠ q ∧ G.col q y = 1) ∧
+                        e r ∉ W ∧ bound ≤ W.card ∧ W.card = prefixCount (fun i => realizedValuation G e p (x i)) n
+far18Nat : ℕ → ℕ
+far18 : ℕ → Fin 58
+@far18Nat_lt : ∀ {i : ℕ}, i < 41 → far18Nat i < 58
+@far18_val : ∀ {i : ℕ}, i < 41 → ↑(far18 i) = far18Nat i
+@far18Nat_inj : ∀ {i j : ℕ}, i < 41 → j < 41 → far18Nat i = far18Nat j → i = j
+@far18_inj : ∀ {i j : ℕ}, i < 41 → j < 41 → far18 i = far18 j → i = j
+@far18Nat_ne_eighteen : ∀ {i : ℕ}, i < 41 → far18Nat i ≠ 18
+far18Nat_ne_zero : ∀ (i : ℕ), far18Nat i ≠ 0
+@far18Nat_ne_arm1 : ∀ {i s : ℕ}, i < 41 → s < 16 → far18Nat i ≠ 17 + s
+counterAtoms18_endpoints : counterAtoms18 0 = 294 ∧ counterAtoms18 16 = 3550 ∧ counterAtoms18 40 = 3646
+counterAtoms18_eq_far : ∀ (i : Fin 41), counterAtoms18 ↑i = hostVar (far18Nat ↑i) 18 EmittedBridge.one
+counterList18_far : counterList18 = List.map (fun i => hostVar (far18Nat ↑i) 18 EmittedBridge.one) (List.finRange 41)
+far18Nat_label_audit : List.map (fun i => far18Nat ↑i) (List.finRange 41) = List.range' 1 16 ++ List.range' 33 25
+far18Nat_range : ∀ i < 41, 1 ≤ far18Nat i ∧ far18Nat i ≤ 16 ∨ 33 ≤ far18Nat i ∧ far18Nat i ≤ 57
+sender18_exists_W : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  p EmittedBridge.one = 1 →
+    ∀ (r : Fin 58),
+      (∀ i < 41, far18Nat i ≠ ↑r) →
+        14 ≤ prefixCount (fun j => realizedValuation G e p (counterAtoms18 j)) 41 →
+          ∃ W,
+            (∀ y ∈ W, y ≠ e ⟨18, ⋯⟩ ∧ G.col (e ⟨18, ⋯⟩) y = 1) ∧
+              e r ∉ W ∧ 14 ≤ W.card ∧ W.card = prefixCount (fun j => realizedValuation G e p (counterAtoms18 j)) 41
+sender18_exists_W_root0 : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  p EmittedBridge.one = 1 →
+    14 ≤ prefixCount (fun j => realizedValuation G e p (counterAtoms18 j)) 41 →
+      ∃ W,
+        (∀ y ∈ W, y ≠ e ⟨18, ⋯⟩ ∧ G.col (e ⟨18, ⋯⟩) y = 1) ∧
+          e ⟨0, ⋯⟩ ∉ W ∧ 14 ≤ W.card ∧ W.card = prefixCount (fun j => realizedValuation G e p (counterAtoms18 j)) 41
+sender18_exists_W_of_label : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  p EmittedBridge.one = 1 →
+    ∀ (rn : ℕ) (hrn : rn < 58),
+      rn = 0 ∨ 17 ≤ rn ∧ rn ≤ 32 →
+        14 ≤ prefixCount (fun j => realizedValuation G e p (counterAtoms18 j)) 41 →
+          ∃ W,
+            (∀ y ∈ W, y ≠ e ⟨18, ⋯⟩ ∧ G.col (e ⟨18, ⋯⟩) y = 1) ∧
+              e ⟨rn, hrn⟩ ∉ W ∧
+                14 ≤ W.card ∧ W.card = prefixCount (fun j => realizedValuation G e p (counterAtoms18 j)) 41
+sender18_deg_ge_of_prefixCount : ∀ (G : EdgeCol (Fin 58) 4) (e : Equiv.Perm (Fin 58)) (p : Equiv.Perm (Fin 4)),
+  p EmittedBridge.one = 1 →
+    e ⟨18, ⋯⟩ ≠ e ⟨0, ⋯⟩ →
+      G.col (e ⟨18, ⋯⟩) (e ⟨0, ⋯⟩) = 1 →
+        14 ≤ prefixCount (fun j => realizedValuation G e p (counterAtoms18 j)) 41 → 15 ≤ deg G (e ⟨18, ⋯⟩) 1
+card_image_trueIdx_fails_without_inj : ∃ b u n, (Finset.image u (trueIdx b n)).card ≠ prefixCount b n
+duplicate_atoms_do_not_give_fourteen : ∃ b u, 14 ≤ prefixCount b 41 ∧ (Finset.image u (trueIdx b 41)).card < 14
+'K58.PrefixFinset.prefixCount_eq_card_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.card_image_trueIdxFin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_image_trueIdxFin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_image_trueIdxFin_41' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.example_41_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.prefixCount_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.card_image_trueIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.mem_image_trueIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_image_trueIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.realized_hostVar_eq_true_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_neighbour_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_neighbour_finset_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.exists_W_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.counterList18_far' depends on axioms: [propext]
+'K58.PrefixFinset.far18Nat_label_audit' does not depend on any axioms
+'K58.PrefixFinset.counterAtoms18_endpoints' depends on axioms: [propext]
+'K58.PrefixFinset.counterAtoms18_eq_far' depends on axioms: [propext]
+'K58.PrefixFinset.sender18_exists_W' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.sender18_exists_W_root0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.sender18_exists_W_of_label' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.sender18_deg_ge_of_prefixCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.card_image_trueIdx_fails_without_inj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.PrefixFinset.duplicate_atoms_do_not_give_fourteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+m8-audit elapsed=2.24 cpu=1.31+0.71 rssKiB=3331372

@@ -1,0 +1,6 @@
+'K58.R3Counter.zero_oldTop' does not depend on any axioms
+'K58.R3Counter.counterList_zero_eq' depends on axioms: [propext]
+'K58.R3Counter.emittedCounterList_zero_eq' does not depend on any axioms
+'K58.R3Counter.counter_inputs_zero_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3Counter.emitted_sender_step_ready_of_emitted_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+m7-final elapsed=1.71 max_rss_KiB=3349736

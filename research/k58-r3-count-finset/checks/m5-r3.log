@@ -1,0 +1,19 @@
+.ultramath/smx0gue0b/m5/R3.lean:112:14: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'K58.R3.colour_one_of_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.atomVertex_ne_sender' depends on axioms: [propext, Quot.sound]
+'K58.R3.atomVertex_ne_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.physical_neighbours_of_true_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.physical_neighbours_of_prefixCount_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.deg_ge_fifteen_of_true_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.emitted_sender18_step_ready_of_true_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.labelVertex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.atomVertex_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterAtoms18_arm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.counterAtoms18_far' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.prefixCount_eq_card_filter_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.card_filter_fin_eq_card_filter_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.card_trueIdx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'K58.R3.card_atomNeighbours' depends on axioms: [propext, Classical.choice, Quot.sound]
+m5-r3 elapsed=2.30 max_rss_KiB=3417112
