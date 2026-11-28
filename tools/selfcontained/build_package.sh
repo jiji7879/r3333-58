@@ -19,7 +19,10 @@ python3 "$REPO/tools/patch_run_cover_timeout.py" "$PKG/k58/run_cover.py" --secon
 # hash where doctor reads it. The example's certificates predate the patched
 # runner; what is re-pinned is the code that regenerates their inputs.
 cp "$KISSAT" "$PKG/bin/kissat"; cp "$DRAT" "$PKG/bin/drat-trim"; chmod +x "$PKG/bin"/*
-cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,verify_parallel.py,retry_status.py,find_unpublished.py,manifest_parallel.py,cover_evidence_full_root.patch} "$PKG/tools/"
+cp "$REPO"/tools/{pin_manifest.py,lean_certify.py,import_historical.py,retry_status.py,find_unpublished.py,manifest_parallel.py,cover_evidence_full_root.patch} "$PKG/tools/"
+# verify_parallel.py comes from tools/selfcontained, which is the copy the package is built
+# from; taking the repo-root one shipped a version without --only.
+cp "$HERE/verify_parallel.py" "$HERE/manifest_parallel.py" "$PKG/tools/"
 cp "$HERE/k58.sh" "$HERE/k58-batch.sh" "$HERE/patch_batch_only_small.py" "$HERE/README.md" "$PKG/"
 # The tested single-row wall driver, optional entrance projection and proof tools.
 cp -a "$HERE/wallcc" "$PKG/"

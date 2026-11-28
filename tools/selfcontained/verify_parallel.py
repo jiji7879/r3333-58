@@ -67,6 +67,8 @@ def main():
     p.add_argument("--checker", required=True)
     p.add_argument("--workers", type=int, default=os.cpu_count() or 4)
     p.add_argument("--limit", type=int)
+    p.add_argument("--only", type=Path, metavar="PATH",
+                   help="verify only the case ids listed in PATH, one per line")
     p.add_argument("--quiet", action="store_true")
     a = p.parse_args()
     bundle = Path(a.bundle).resolve()
@@ -75,6 +77,13 @@ def main():
 
     ledger = {r["id"]: r for r in ce.records(bundle / "case-ledger.jsonl.gz")}
     markers = sorted(Path(a.evidence).glob("[0-9a-f][0-9a-f]/*/verified.json"))
+    if a.only:
+        wanted = {line.strip() for line in a.only.read_text().splitlines()
+                  if line.strip() and not line.lstrip().startswith("#")}
+        markers = [m for m in markers if m.parent.name in wanted]
+        missing = wanted - {m.parent.name for m in markers}
+        if missing:
+            print(f"  {len(missing)} requested id(s) have no verified.json", file=sys.stderr)
     if a.limit:
         markers = markers[:a.limit]
     cases = [(m.parent, ledger.get(m.parent.name)) for m in markers]

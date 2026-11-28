@@ -9,6 +9,8 @@
 #   ./k58.sh uniform ...         search the seven fully sending uniform children
 #   ./k58.sh profile-fast ...    run the optimized (15,14,14,14) search
 #   ./k58.sh finalise   build a manifest and replay every certificate
+#   ./k58.sh replay     replay certificates against an existing release
+#                       (--only IDS.txt replays just those, --out FILE names the log)
 #   ./k58.sh status     how far along, how much disk
 #   ./k58.sh watch      is the run alive? per-worker elapsed times and counters
 #   ./k58.sh smoke      end-to-end self test incl. rejecting a bad certificate
@@ -155,8 +157,11 @@ cmd_wallcc_smoke() {
 cmd_finalise() {
   need_venv
   local rel="$ROOT/release" workers=${WORKERS:-$(nproc 2>/dev/null || echo 4)}
+  local only="" skip_verify=0
   while [ $# -gt 0 ]; do case "$1" in
     --release) rel=$2; shift 2;; --workers) workers=$2; shift 2;;
+    --only) only=$2; shift 2;;
+    --skip-verify) skip_verify=1; shift;;
     *) die "unknown option $1";;
   esac; done
   [ -d "$EV" ] || die "no evidence at $EV; run ./k58.sh run first"
@@ -180,12 +185,40 @@ cmd_finalise() {
   $PY "$BUNDLE/cover_evidence.py" --ledger "$BUNDLE/case-ledger.jsonl.gz" \
      --root "$EV" verify "$rel" --manifest-sha256 "$sha" > "$rel.coverage.json" \
      || die "manifest/coverage check failed: see $rel.coverage.json"
+  if [ "$skip_verify" = 1 ]; then
+    echo "2/2 replay SKIPPED (--skip-verify): the manifest and coverage only"
+    echo "replay the whole evidence later with: ./k58.sh replay --release $rel"
+    return 0
+  fi
   echo "2/2 replaying certificates with $workers workers"
+  local extra=()
+  [ -n "$only" ] && extra=(--only "$only")
   $PY "$ROOT/tools/verify_parallel.py" --bundle "$BUNDLE" --evidence "$EV" \
-     --checker "$ROOT/bin/drat-trim" --workers "$workers" | tee "$rel.verify.json"
+     --checker "$ROOT/bin/drat-trim" --workers "$workers" "${extra[@]}" | tee "$rel.verify.json"
   echo
   echo "quote the manifest hash together with this line:"
   cat "$rel.verify.json"
+}
+
+cmd_replay() {
+  need_venv
+  local rel="$ROOT/release" workers=${WORKERS:-$(nproc 2>/dev/null || echo 4)} only="" out=""
+  while [ $# -gt 0 ]; do case "$1" in
+    --release) rel=$2; shift 2;; --workers) workers=$2; shift 2;;
+    --only) only=$2; shift 2;; --out) out=$2; shift 2;;
+    *) die "unknown option $1";;
+  esac; done
+  [ -d "$EV" ] || die "no evidence at $EV; run ./k58.sh run first"
+  [ -n "$out" ] || { if [ -n "$only" ]; then out="$rel.verify-$(basename "$only" .txt).json"; else out="$rel.verify.json"; fi; }
+  local extra=()
+  [ -n "$only" ] && extra=(--only "$only")
+  if [ -n "$only" ]; then echo "replaying the ids in $only with $workers workers"
+  else echo "replaying the whole evidence with $workers workers"; fi
+  $PY "$ROOT/tools/verify_parallel.py" --bundle "$BUNDLE" --evidence "$EV" \
+     --checker "$ROOT/bin/drat-trim" --workers "$workers" "${extra[@]}" | tee "$out"
+  echo
+  echo "quote this line with the manifest hash:"
+  tail -1 "$out"
 }
 
 cmd_watch() {
@@ -321,6 +354,7 @@ case "${1:-}" in
   status) cmd_status ;;
   watch) shift; cmd_watch "$@" ;;
   smoke) shift; cmd_smoke "$@" ;;
+  replay) shift; cmd_replay "$@" ;;
   version) echo "$K58_VERSION" ;;
   retrystatus) shift; cmd_retrystatus "$@" ;;
   unpublished) shift; cmd_unpublished "$@" ;;

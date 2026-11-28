@@ -218,3 +218,20 @@ directory stays on the conservative side.
 optional hypothesis-scoped entrance projection. Existing `run_cover.py` recipes
 and completed ledger cases are unchanged. The initial wall pilot remained OPEN;
 this is an integration feature, not a claimed wall or bound result.
+
+## Finalising without replaying everything (version 2026-11-28)
+
+`finish` replays every certificate, which after a big run is hours. When only a handful of
+cases changed, split it:
+
+    ./k58.sh finalise --release release --workers 24 --skip-verify   # manifest + coverage
+    ./k58.sh replay --release release --only eight.txt               # just those ids
+
+`--skip-verify` builds `release/manifest.json` and `release/cases.jsonl.gz` (that step
+re-derives every CNF, so it is minutes, not hours) and runs the coverage check, then stops.
+`replay --only IDS` writes `release.verify-<name>.json` with the line for those ids. The
+release claim is then the earlier full replay line plus this one, and both name the same
+manifest hash.
+
+`replay` with no `--only` does the full replay into `release.verify.json`, so the same
+subcommand covers both cases.
