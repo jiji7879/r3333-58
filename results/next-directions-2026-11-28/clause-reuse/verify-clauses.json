@@ -1,0 +1,71 @@
+{
+  "control_validated": true,
+  "measurement": "child CPU = resource.getrusage(RUSAGE_CHILDREN) delta; wall = time.monotonic()",
+  "note": "The retained 120 s-capped records in verify-clauses-with-invalid-cpu-field.json stored driver time.process_time() as solver_cpu_seconds; that field is void and no accurate historic CPU can be recovered from those records. These reruns use a 20 s wall cap and correct child accounting.",
+  "records": [
+    {
+      "checker_child_cpu_seconds": 0.035422999999999996,
+      "checker_returncode": 0,
+      "cnf_sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58",
+      "control": true,
+      "ok": true,
+      "proof_bytes": 8,
+      "s_verified_lines": 1,
+      "solver_child_cpu_seconds": 0.001143,
+      "solver_returncode": 20,
+      "solver_wall_seconds": 0.0017123199068009853
+    },
+    {
+      "checker_child_cpu_seconds": 1.3351059999999983,
+      "checker_returncode": 1,
+      "children_maxrss_kib": 64468,
+      "clause": [
+        -11586,
+        -3229,
+        -3221,
+        -3213,
+        -3205
+      ],
+      "index": 1,
+      "proof_bytes": 48835030,
+      "proof_sha256": "d7bce618cde42f0d9e208deef8f4cd85fa799c1230760eea5b55ee451c36027c",
+      "query_sha256": "1b7b1f62a16ef3718090a310a7de26c4e5711bfd6fd1ed22a48d28c01a94d5bd",
+      "refuted": false,
+      "s_verified_lines": 0,
+      "solver_child_cpu_seconds": 19.977171000000002,
+      "solver_child_system_cpu_seconds": 0.066,
+      "solver_child_user_cpu_seconds": 19.911171000000003,
+      "solver_returncode": 0,
+      "solver_wall_seconds": 20.00462121516466,
+      "status": "OPEN_unknown_at_cap",
+      "up_refuted_at_base": false,
+      "wall_cap_seconds": 20
+    },
+    {
+      "checker_child_cpu_seconds": 1.1610529999999972,
+      "checker_returncode": 1,
+      "children_maxrss_kib": 134612,
+      "clause": [
+        -9111,
+        -1977,
+        -1973,
+        -1965,
+        -1953
+      ],
+      "index": 2,
+      "proof_bytes": 51178328,
+      "proof_sha256": "398da586e915ae1528b326e7d06738195108f90528dd5dda1773daf7a2b693f8",
+      "query_sha256": "dfadecbda7c35e162828f252938f7dba297ea252952b1da8323cd53ee1a07f52",
+      "refuted": false,
+      "s_verified_lines": 0,
+      "solver_child_cpu_seconds": 19.991028,
+      "solver_child_system_cpu_seconds": 0.05899600000000001,
+      "solver_child_user_cpu_seconds": 19.932032,
+      "solver_returncode": 0,
+      "solver_wall_seconds": 20.0049601579085,
+      "status": "OPEN_unknown_at_cap",
+      "up_refuted_at_base": false,
+      "wall_cap_seconds": 20
+    }
+  ]
+}

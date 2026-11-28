@@ -59,6 +59,22 @@ Missing inputs cause an explicit SKIP, not success. It checks the exact raw and
 trimmed proof identities, capped OPEN, wrong expected outcome, bad input hash,
 and output-path collision, removing temporary proofs after replay. Its compact
 receipt is `results/next-directions-2026-11-28/lrat/adapter-test-receipt.json`.
-A test retained 6,503,105 bytes from 14,594,230 native bytes; 1.990 native CPU
-seconds became 2.987 seconds including the additional Python verification.
+A test retained 6,503,105 bytes from 14,594,230 native bytes; 1.910 native CPU
+seconds became 2.902 seconds including the additional Python verification.
 Those are one-case measurements, not a blanket search or pipeline speedup.
+
+### Avoiding duplicate internal proof checking (explicit option)
+
+The default `--internal-checkproof 3` preserves CaDiCaL's internal proof
+checking. With `--internal-checkproof 0`, the adapter instead asks CaDiCaL not
+to connect its optional internal proof checker. This does **not** disable the
+adapter's external checks: `lrat-trim` and the Python RUP checker are still
+mandatory, and no proof is retained unless all reject/accept conditions pass.
+
+The exact implementation is visible in pinned upstream
+[`src/proof.cpp`](https://github.com/arminbiere/cadical/blob/rel-2.1.2/src/proof.cpp):
+`Internal::check` connects a `LratChecker` only when `opts.checkproof > 1`.
+The option is a valid explicit value for CaDiCaL 2.1.2, not an implicit change
+to production defaults. Any adoption claim must compare internal-checkproof 3
+and 0 on the same exact input, retain full search counters, and include the
+external replay cost rather than claiming a free speedup from a solver flag.

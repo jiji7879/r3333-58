@@ -1,0 +1,509 @@
+{
+  "certificate": {
+    "checker_exit": 20,
+    "checker_sha256": "f1eb1a4486274c35f4accf7bc13b595cfdbcf2d7c9aa6b46fb281f19d0d52895",
+    "cost_basis": "single_checker",
+    "cross_check": {
+      "checker_sha256": "f0eb3f5d419f23b9843fcc5a5aba8f5b512db2a4dbfd8a9b469d7e11df4771b2",
+      "status": "VERIFIED_UNSAT"
+    },
+    "relax_used": false,
+    "status": "VERIFIED_UNSAT",
+    "verified_line": {
+      "found": true,
+      "log_sha256": "d96cbd9664901c03aa5cf5a605b4cad3d4d306000965db9a1c2c3cce0eca9b21",
+      "per_case": [
+        {
+          "case": "H7",
+          "found": true,
+          "line": "s VERIFIED",
+          "log_sha256": "d96cbd9664901c03aa5cf5a605b4cad3d4d306000965db9a1c2c3cce0eca9b21",
+          "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H7/b-trim-replay.log"
+        },
+        {
+          "case": "H8",
+          "found": true,
+          "line": "s VERIFIED",
+          "log_sha256": "b07eca9ad12b613fc2507bf65c1d6ffc2db1051e75e7ab499f05741310701144",
+          "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/H8/b-trim-replay.log"
+        },
+        {
+          "case": "N14",
+          "found": true,
+          "line": "s VERIFIED",
+          "log_sha256": "7e85181662620f70c0c50f5e8a3bc977f62d4cccc1d4c1f26752b52375a5a921",
+          "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/N14/b-trim-replay.log"
+        },
+        {
+          "case": "R11",
+          "found": true,
+          "line": "s VERIFIED",
+          "log_sha256": "93c57e2fae317524dc72db146968bc52339ba2fa616f9fef739ec38464d1ef43",
+          "path": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.ultramath/smx06hpp8/m5/.scratch/runs/R11/b-trim-replay.log"
+        }
+      ]
+    }
+  },
+  "claim": {
+    "class": "certificate",
+    "closure_claimed": true,
+    "id": "lrat-native-certificate-single_checker",
+    "scope": "certificate-pipeline comparison on already closed inputs only; no wall search, no OPEN parent, no bound change",
+    "statement": "on the pinned already-closed CNFs, native CaDiCaL LRAT checked by the pinned lrat-trim costs less CPU/bytes than the incumbent DRAT + drat-trim route at trust=single_checker; the search trajectory is identical, so this is not a CDCL speedup"
+  },
+  "controls": [
+    {
+      "accepted_cases": [],
+      "id": "altered_antecedent_id",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "altered_antecedent_id_pycheck",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "drat_is_not_lrat",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "missing_empty_clause",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "missing_empty_clause_pycheck",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "mutated_used_cnf_literal",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "mutated_used_cnf_literal_pycheck",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "satisfiable_formula",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "satisfiable_formula_pycheck",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "truncated_trimmed",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "wrong_cnf_same_shape_lrattrim",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    },
+    {
+      "accepted_cases": [],
+      "id": "wrong_cnf_same_shape_pycheck",
+      "rejected_cases": [
+        "H7",
+        "H8",
+        "N14",
+        "R11"
+      ],
+      "role": "unsound_control",
+      "semantics_rejected": true
+    }
+  ],
+  "pins": {
+    "checkers": [
+      {
+        "id": "drat-trim",
+        "sha256": "48891f3f9dfccbbebfc6a21fa9e6daa6b674900a3f65b16a0b0f7f21d8a03bce"
+      },
+      {
+        "id": "lrat-trim",
+        "sha256": "f1eb1a4486274c35f4accf7bc13b595cfdbcf2d7c9aa6b46fb281f19d0d52895",
+        "version": "0.2.1-rc3"
+      },
+      {
+        "id": "lrat_rup_check.py",
+        "sha256": "f0eb3f5d419f23b9843fcc5a5aba8f5b512db2a4dbfd8a9b469d7e11df4771b2",
+        "trust": "unverified-source"
+      }
+    ],
+    "inputs": {
+      "H7": {
+        "baseline": {
+          "bytes": 3490919,
+          "sha256": "2286ae68e1419cdbc751e1804ec9ca79b05874b759b75ed9c6cd3ebe1a31225f"
+        },
+        "treatment": {
+          "bytes": 3490919,
+          "sha256": "2286ae68e1419cdbc751e1804ec9ca79b05874b759b75ed9c6cd3ebe1a31225f"
+        }
+      },
+      "H8": {
+        "baseline": {
+          "bytes": 3490919,
+          "sha256": "e8cc97847a6cab9c277933d2dd0d6112c79b061bebb5af221d57df5d6d6a2229"
+        },
+        "treatment": {
+          "bytes": 3490919,
+          "sha256": "e8cc97847a6cab9c277933d2dd0d6112c79b061bebb5af221d57df5d6d6a2229"
+        }
+      },
+      "N14": {
+        "baseline": {
+          "bytes": 21735294,
+          "sha256": "92be6247f37ba4d7da27df7195f03ad7cfc204d9dca0914009500e48af39e679"
+        },
+        "treatment": {
+          "bytes": 21735294,
+          "sha256": "92be6247f37ba4d7da27df7195f03ad7cfc204d9dca0914009500e48af39e679"
+        }
+      },
+      "R11": {
+        "baseline": {
+          "bytes": 3323889,
+          "sha256": "b3a5bded030682e02472bc1f95147efaade87c01ab88772a98967194b3e48f41"
+        },
+        "treatment": {
+          "bytes": 3323889,
+          "sha256": "b3a5bded030682e02472bc1f95147efaade87c01ab88772a98967194b3e48f41"
+        }
+      }
+    },
+    "solver": {
+      "id": "cadical",
+      "sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "version": "2.1.2"
+    }
+  },
+  "prereg": {
+    "caps": [
+      50000
+    ],
+    "cases": [
+      "H7",
+      "H8",
+      "N14",
+      "R11"
+    ],
+    "declared_arms": [
+      "baseline",
+      "treatment"
+    ],
+    "declared_exclusions": [
+      "N14",
+      "R11"
+    ],
+    "margin": 0.1,
+    "max_runs": 8,
+    "orders": [
+      "AB"
+    ],
+    "primary_metric": "composite_cpu_s",
+    "registered_before_run": null,
+    "seeds": [
+      0
+    ]
+  },
+  "provenance": {
+    "adapter": "adapters.py lrat",
+    "source": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/results/next-directions-2026-11-28/lrat/receipt.json",
+    "source_sha256": "1312217b20861ea06c311c0d06541065a018cc0a0cd35873d1f3b9cba79b7600",
+    "warnings": [
+      "preregistration is not recorded in the published receipt"
+    ]
+  },
+  "runs": [
+    {
+      "arm": "baseline",
+      "cap": 50000,
+      "case": "H7",
+      "counters": {
+        "conflicts": 23143,
+        "decisions": 64576,
+        "propagations": 10376030,
+        "restarts": 571
+      },
+      "metric_valid": {
+        "retained_bytes": true
+      },
+      "metrics": {
+        "check_cpu_s": 0.79,
+        "maxrss_kb": 82840.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 7114766,
+        "retained_bytes": 7114766,
+        "search_cpu_s": 1.15
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "arm": "treatment",
+      "cap": 50000,
+      "case": "H7",
+      "counters": {
+        "conflicts": 23143,
+        "decisions": 64576,
+        "propagations": 10376030,
+        "restarts": 571
+      },
+      "metric_valid": {
+        "retained_bytes": true
+      },
+      "metrics": {
+        "check_cpu_s": 0.09000000000000008,
+        "maxrss_kb": 45644.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 4056058,
+        "retained_bytes": 4056058,
+        "search_cpu_s": 1.21
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "arm": "baseline",
+      "cap": 50000,
+      "case": "H8",
+      "counters": {
+        "conflicts": 49226,
+        "decisions": 307381,
+        "propagations": 12350047,
+        "restarts": 3189
+      },
+      "metric_valid": {
+        "retained_bytes": true
+      },
+      "metrics": {
+        "check_cpu_s": 1.0699999999999998,
+        "maxrss_kb": 86232.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 9529642,
+        "retained_bytes": 9529642,
+        "search_cpu_s": 1.77
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "arm": "treatment",
+      "cap": 50000,
+      "case": "H8",
+      "counters": {
+        "conflicts": 49226,
+        "decisions": 307381,
+        "propagations": 12350047,
+        "restarts": 3189
+      },
+      "metric_valid": {
+        "retained_bytes": true
+      },
+      "metrics": {
+        "check_cpu_s": 0.1399999999999999,
+        "maxrss_kb": 45604.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 6503105,
+        "retained_bytes": 6503105,
+        "search_cpu_s": 1.86
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "arm": "baseline",
+      "cap": 50000,
+      "case": "N14",
+      "counters": {
+        "propagations": 31469
+      },
+      "metric_valid": {
+        "retained_bytes": false
+      },
+      "metrics": {
+        "check_cpu_s": 0.52,
+        "maxrss_kb": 139736.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 2308201,
+        "retained_bytes": 2308201,
+        "search_cpu_s": 0.22
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "arm": "treatment",
+      "cap": 50000,
+      "case": "N14",
+      "counters": {
+        "propagations": 31469
+      },
+      "metric_valid": {
+        "retained_bytes": false
+      },
+      "metrics": {
+        "check_cpu_s": 0.12999999999999998,
+        "maxrss_kb": 144408.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 2494126,
+        "retained_bytes": 2494126,
+        "search_cpu_s": 0.23
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "arm": "baseline",
+      "cap": 50000,
+      "case": "R11",
+      "counters": {
+        "conflicts": 1,
+        "propagations": 1741
+      },
+      "metric_valid": {
+        "retained_bytes": false
+      },
+      "metrics": {
+        "check_cpu_s": 0.12,
+        "maxrss_kb": 70424.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 6707,
+        "retained_bytes": 6707,
+        "search_cpu_s": 0.03
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    },
+    {
+      "arm": "treatment",
+      "cap": 50000,
+      "case": "R11",
+      "counters": {
+        "conflicts": 1,
+        "propagations": 1741
+      },
+      "metric_valid": {
+        "retained_bytes": false
+      },
+      "metrics": {
+        "check_cpu_s": 0.010000000000000002,
+        "maxrss_kb": 25224.0,
+        "prep_cpu_s": 0.0,
+        "proof_bytes": 520186,
+        "retained_bytes": 520186,
+        "search_cpu_s": 0.03
+      },
+      "order": "AB",
+      "seed": 0,
+      "solver_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+      "status": "VERIFIED_UNSAT"
+    }
+  ],
+  "schema": 1,
+  "transform": {
+    "binding": "none",
+    "declared_delta": "proof format only: native CaDiCaL --lrat + lrat-trim vs DRAT + drat-trim on byte-identical CNFs; no clause, option or search change",
+    "derivation": null,
+    "kind": "certificate_format"
+  }
+}

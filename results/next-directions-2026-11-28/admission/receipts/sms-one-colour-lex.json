@@ -1,0 +1,106 @@
+{
+  "aggregate": {
+    "baseline_order_spread": 0.010105757931844872,
+    "cases": [
+      "parent-cube"
+    ],
+    "excluded_cells": [],
+    "geomean_ratio": 0.7948755356285737,
+    "margin": 0.1,
+    "max_ratio": 0.8005875440658049,
+    "min_ratio": 0.7892042810609585,
+    "pairs": 2,
+    "per_cell": [
+      {
+        "cap": 200000,
+        "case": "parent-cube",
+        "order": "AB",
+        "ratio": 0.8005875440658049,
+        "seed": 0
+      },
+      {
+        "cap": 200000,
+        "case": "parent-cube",
+        "order": "BA",
+        "ratio": 0.7892042810609585,
+        "seed": 0
+      }
+    ],
+    "primary_metric": "composite_cpu_s"
+  },
+  "blocking": [
+    "R6_control",
+    "R7_semantics",
+    "R8_cost",
+    "R2_pins",
+    "R4_comparability"
+  ],
+  "checks": [
+    {
+      "detail": "schema 1, claim class encoding",
+      "rule": "R1_schema",
+      "status": "pass"
+    },
+    {
+      "detail": "pins.inputs.parent-cube/baseline.sha256 is not a sha256 hex digest; pins.inputs.parent-cube/treatment.sha256 is not a sha256 hex digest; pins.solver.sha256 missing (solver not binary-pinned)",
+      "rule": "R2_pins",
+      "status": "incomplete"
+    },
+    {
+      "detail": "registered_before_run=None",
+      "rule": "R3_prereg",
+      "status": "pass",
+      "waived": true
+    },
+    {
+      "detail": "case parent-cube: inputs not hash-pinned (baseline=None, treatment=None)",
+      "rule": "R4_comparability",
+      "status": "incomplete"
+    },
+    {
+      "detail": "statuses ['UNKNOWN']",
+      "rule": "R5_status",
+      "status": "pass"
+    },
+    {
+      "detail": "control 'corrupted-one-colour-clauses' was not rejected by the semantics check; control 'corrupted-one-colour-clauses' shows an apparent gain 0.7710 <= 1 - margin/2: the measured effect is not attributable to the declared mechanism",
+      "rule": "R6_control",
+      "status": "fail"
+    },
+    {
+      "detail": "derivation status 'fail'",
+      "rule": "R7_semantics",
+      "status": "fail"
+    },
+    {
+      "detail": "2 usable composite_cpu_s pairs < 4",
+      "rule": "R8_cost",
+      "status": "fail"
+    },
+    {
+      "detail": "order-replicate spread 0.0101 <= margin/2",
+      "rule": "R9_quality",
+      "status": "pass"
+    },
+    {
+      "detail": "1 distinct case(s): ['parent-cube'] (single-case evidence: opt-in limited)",
+      "rule": "R11_generality",
+      "status": "pass"
+    }
+  ],
+  "claim": {
+    "class": "encoding",
+    "id": "sms-one-colour-lex",
+    "scope": "CNF-only bounded performance on the retained parent+cube at a conflict cap; UNKNOWN is not UNSAT; no physical model-set invariance, colouring or bound claim",
+    "statement": "adding 765 one-colour lex-leader clauses to the retained parent+cube lowers search CPU at a matched 200000-conflict budget; all runs UNKNOWN, none closed"
+  },
+  "decision": "REJECT",
+  "default_eligible": false,
+  "exit_code": 2,
+  "mode": "audit",
+  "opt_in_eligible": false,
+  "policy_version": "k58-admission-1",
+  "record_sha256": "6dc0c6b3603a12f040049790a53127901f922255a4cd3278ed887ce09f190de8",
+  "required_scope": "Opt-in experimental override only, on the pinned inputs ['parent-cube'], licensed metric composite_cpu_s. Production defaults, ledger states, frozen coverage and the accepted interval 51 <= R_4(3) <= 62 are unchanged. A capped OPEN/UNKNOWN run is not UNSAT. The licensed statement is exactly: adding 765 one-colour lex-leader clauses to the retained parent+cube lowers search CPU at a matched 200000-conflict budget; all runs UNKNOWN, none closed",
+  "trust_level": "cross_checked"
+}

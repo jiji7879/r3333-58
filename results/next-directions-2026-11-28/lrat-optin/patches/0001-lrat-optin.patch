@@ -1,0 +1,487 @@
+Opt-in native LRAT for the wallcc leaf engine (direction 4 of smx0er1f6).
+
+Apply with:  patch -p1 --batch --forward -i 0001-lrat-optin.patch
+             (from the repository root; touches only tools/color-resolved-wallcc/)
+
+Default behaviour is unchanged: without --lrat-trim nothing in the new module
+runs, leaves stay binary DRAT, and the joined cas.drat+leaf DRAT replay is the
+same code path as before.  With --lrat-trim PATH (and --engine native) the leaf
+engine emits native binary LRAT, the leaf is checked by that exact checker
+against the exact bytes the solver read, and one extra per-run premise is
+established first: every clause appended to the parent is a RUP consequence of
+the parent.  Fail-closed: a missing/unexecutable/mismatched checker, a failed
+premise, a checker exit other than 20, or an artifact that does not parse as a
+complete refutation make the leaf CHECK_FAILED or abort the run; OPEN is never
+evidence.
+--- a/tools/color-resolved-wallcc/native_leaf.py
++++ b/tools/color-resolved-wallcc/native_leaf.py
+@@ -1,10 +1,17 @@
+-"""Bounded standalone CaDiCaL with ordinary DIMACS cube units and binary DRAT."""
++"""Bounded standalone CaDiCaL with ordinary DIMACS cube units and binary DRAT.
++
++Opt-in only: when the caller supplies an explicit ``--lrat-trim`` checker path,
++the proof format of this engine becomes native binary LRAT (``--lrat``).  The
++search is untouched: same seed, same conflict cap, same options, same input
++bytes.  The input file is always materialised in LRAT mode so that the checker
++can be handed exactly the bytes the solver read, and that hash is recorded.
++"""
+ import json
+ import subprocess
+ from pathlib import Path
+ from time import monotonic
+ 
+-from problem import extend_dimacs, require
++from problem import extend_dimacs, file_hash, require
+ 
+ BINARY = Path(__file__).resolve().parent / "bin/cadical-2.1.2"
+ SEARCH_ONLY_FLAGS = (
+@@ -15,17 +22,21 @@
+ 
+ def solve(parent, temp, cube, args, traced):
+     started = monotonic()
++    lrat = getattr(args, "lrat_trim", None) is not None
++    proof = temp / ("leaf.lrat" if lrat else "leaf.drat")
+     query = parent
+-    if cube:
++    if cube or lrat:
+         query = temp / "native.cnf"
+         extend_dimacs(parent, query, [(lit,) for lit in cube])
+     policy = getattr(args, "native_policy", "default")
+     require(policy in ("default", "search-only"), f"unknown native policy {policy}")
+     options = SEARCH_ONLY_FLAGS if policy == "search-only" else ()
+-    command = [str(BINARY), "--seed=0", "--binary=true", "-c", str(args.conflicts),
+-               *options, str(query)]
++    command = [str(BINARY), "--seed=0", "--binary=true", "-c", str(args.conflicts)]
++    if lrat:
++        command.append("--lrat")
++    command.extend([*options, str(query)])
+     if traced:
+-        command.append(str(temp / "leaf.drat"))
++        command.append(str(proof))
+     remaining = args.seconds - (monotonic() - started)
+     if remaining <= 0:
+         return {"status": "OPEN", "reason": "wall-time limit"}
+@@ -44,7 +55,9 @@
+     require(marker in lines, "native CaDiCaL output and exit code disagree")
+     result = {"status": status, "status_line": marker, "solver_exit": run.returncode,
+               "conflicts_used": 0, "native_policy": policy,
+-              "solver_wall_s": monotonic() - started}
++              "solver_wall_s": monotonic() - started,
++              "query_sha256": file_hash(query),
++              "proof_name": proof.name if traced else None}
+     for line in lines:
+         if line.startswith("c conflicts:"):
+             result["conflicts_used"] = int(line.split()[2])
+--- a/tools/color-resolved-wallcc/campaign.py
++++ b/tools/color-resolved-wallcc/campaign.py
+@@ -19,6 +19,8 @@
+ from problem import (PHYSICAL, ROOT, check_model, digest, extend_dimacs, file_hash,
+                      json_bytes, lookup, read_dimacs, require, row_formula)
+ from cover_evidence import atomic_json
++from lrat_optin import (cut_derivation_check, lrat_requested, replay_lrat,
++                        require_lrat_checker)
+ 
+ SCHEMA = 1
+ 
+@@ -191,7 +193,9 @@
+     if getattr(args, "engine", "pysat") == "native":
+         from native_leaf import solve
+         result = solve(out / "working.cnf", temp, cube, args, traced)
+-        result["solver"] = f"CaDiCaL 2.1.2 standalone ({getattr(args, 'native_policy', 'default')})"
++        policy = getattr(args, "native_policy", "default")
++        result["solver"] = (f"CaDiCaL 2.1.2 standalone ({policy})"
++                            + (" +native LRAT" if lrat_requested(args) else ""))
+         return result
+     command = [sys.executable, str(ROOT / "cadical_leaf.py"), str(out / "working.cnf"),
+                str(temp), str(args.conflicts), "trace" if traced else "search", *map(str, cube)]
+@@ -217,7 +221,9 @@
+ def validate_artifact(folder, receipt):
+     status = receipt["status"]
+     require(status in ("CHECKED_UNSAT", "CHECKED_SAT"), "unexpected evidence status")
+-    path = folder / ("leaf.drat" if status == "CHECKED_UNSAT" else "model.json")
++    # Older receipts name no artifact and always mean leaf.drat.
++    name = receipt.get("artifact_name", "leaf.drat") if status == "CHECKED_UNSAT" else "model.json"
++    path = folder / name
+     require(file_hash(path) == receipt["artifact_sha256"], f"damaged evidence at {folder.name}")
+     return path
+ 
+@@ -232,6 +238,9 @@
+         from native_leaf import BINARY
+         budget.update(engine='native', native_policy=getattr(args, 'native_policy', 'default'),
+                       native_sha256=file_hash(BINARY))
++    lrat = lrat_requested(args)
++    if lrat:
++        budget["lrat_trim_sha256"] = args.lrat_trim_sha256
+     with lock(folder / ".lock"):
+         receipt_path = folder / "receipt.json"
+         if receipt_path.exists():
+@@ -263,20 +272,30 @@
+                 check_model(clauses, cube, json.loads(artifact.read_bytes()), nv)
+                 rec["status"] = "CHECKED_SAT"
+             elif result["status"] == "UNSAT":
+-                artifact = temp / "leaf.drat"
+-                passed, log = replay(out, temp, cube, artifact, checker, args.check_seconds)
++                artifact = temp / (result.get("proof_name") or "leaf.drat")
++                if lrat:
++                    # Leaf-only LRAT check against the solver's own input bytes;
++                    # the cut premise was established once, in execute().
++                    passed, log = replay_lrat(out, temp, cube, artifact, args.lrat_trim,
++                                              args.check_seconds, result["query_sha256"])
++                    rec["query_sha256"] = result["query_sha256"]
++                    rec["lrat_checker_sha256"] = args.lrat_trim_sha256
++                    rec["cut_derivation_sha256"] = digest(json_bytes(args.cut_derivation))
++                else:
++                    passed, log = replay(out, temp, cube, artifact, checker, args.check_seconds)
+                 rec["status"] = "CHECKED_UNSAT" if passed else "CHECK_FAILED"
+                 rec["checker_log"] = log
+                 rec["checker_sha256"] = args.checker_sha256
+             if rec["status"] in ("CHECKED_UNSAT", "CHECKED_SAT", "CHECK_FAILED"):
+                 rec["artifact_sha256"] = file_hash(artifact)
++                rec["artifact_name"] = artifact.name
+                 artifact.replace(folder / artifact.name)
+         rec["elapsed_s"] = round(monotonic() - started, 3)
+         atomic_json(receipt_path, rec)
+         return rec["status"]
+ 
+ 
+-def audit_one(out, item, plan_id, nv, clauses, checker, seconds):
++def audit_one(out, item, plan_id, nv, clauses, checker, args):
+     node, cube = item
+     folder = out / "leaves" / node
+     path = folder / "receipt.json"
+@@ -291,8 +310,20 @@
+     if status == "CHECKED_SAT":
+         check_model(clauses, cube, json.loads(artifact.read_bytes()), nv)
+         return "VERIFIED_SAT"
++    seconds = args.check_seconds
+     with TemporaryDirectory(prefix="wallcc-replay-") as temp:
+-        passed, log = replay(out, Path(temp), cube, artifact, checker, seconds)
++        if "lrat_trim_sha256" in rec.get("budget", {}):
++            # Each receipt is audited by the route it was produced with; an LRAT
++            # receipt is never replayed as DRAT or under a different checker.
++            require(args.cut_derivation is not None and args.lrat_trim_sha256
++                    == rec["budget"]["lrat_trim_sha256"],
++                    f"the receipt at {node} was checked by a different LRAT checker; pass the same --lrat-trim")
++            require(rec.get("cut_derivation_sha256") == digest(json_bytes(args.cut_derivation)),
++                    f"the CAS cut-derivation premise at {node} is not the recorded one")
++            passed, log = replay_lrat(out, Path(temp), cube, artifact, args.lrat_trim,
++                                      seconds, rec["query_sha256"], full_structure=True)
++        else:
++            passed, log = replay(out, Path(temp), cube, artifact, checker, seconds)
+     require(passed, f"invalid proof at {node}: {log}")
+     return "VERIFIED_UNSAT"
+ 
+@@ -303,13 +334,27 @@
+     require(checker.is_file() and os.access(checker, os.X_OK),
+             f"missing executable checker {checker}; run setup.sh")
+     args.checker_sha256 = file_hash(checker)
++    # Opt-in LRAT arm.  It is evidence-only and never a default: without an
++    # explicit --lrat-trim path nothing below runs.  The checker is fingerprinted
++    # (and optionally pinned) and the one premise a leaf-only LRAT check needs --
++    # that every cut appended to the parent is a RUP consequence of the parent --
++    # is established once here, before any leaf is solved or replayed.
++    args.cut_derivation = None
++    if lrat_requested(args):
++        args.lrat_trim, args.lrat_trim_sha256 = require_lrat_checker(
++            args.lrat_trim, getattr(args, "lrat_trim_sha256", None))
++        if not verify:
++            require(getattr(args, "engine", "pysat") == "native",
++                    "--lrat-trim requires --engine native; the PySAT arm emits DRAT only")
++        with TemporaryDirectory(prefix="wallcc-cas-premise-") as name:
++            args.cut_derivation = cut_derivation_check(out, Path(name), checker, args.check_seconds)
+     color_check = None
+     if verify and plan["origin"]["kind"] in ("wall-color", "wall-color-square"):
+         from color_pivot import verify_saved
+         color_check = verify_saved(out, checker, args.check_seconds)
+     if verify:
+         def task(item):
+-            return audit_one(out, item, plan_id, plan["variables"], clauses, checker, args.check_seconds)
++            return audit_one(out, item, plan_id, plan["variables"], clauses, checker, args)
+     else:
+         leaves = [item for i, item in enumerate(leaves) if i % args.shards == args.shard]
+         def task(item):
+@@ -345,4 +390,9 @@
+         result["closure_scope"] = ("square_aux_extended_with_native_colour_derivation_and_local_K15_rules"
+                                     if plan["origin"]["kind"] == "wall-color-square"
+                                     else "aux_extended_parent_with_native_original_plus_counter_derivation")
+-    return result
++    if lrat_requested(args) and args.cut_derivation is not None:
++        result["lrat"] = {"checker_sha256": args.lrat_trim_sha256,
++                          "cut_derivation": {key: args.cut_derivation[key] for key in
++                                             ("status", "cuts", "parent_sha256",
++                                              "working_sha256", "cas_sha256")}}
++    return result
+\ No newline at end of file
+--- a/tools/color-resolved-wallcc/wallcc.py
++++ b/tools/color-resolved-wallcc/wallcc.py
+@@ -63,6 +63,12 @@
+                              help="opt into the bundled native CaDiCaL 2.1.2 engine")
+             cmd.add_argument("--native-policy", choices=("default", "search-only"), default="default",
+                              help="native engine policy; default never changes existing PySAT behaviour")
++            cmd.add_argument("--lrat-trim", type=Path,
++                             help="opt in: write native CaDiCaL LRAT leaf proofs and check them with "
++                                  "exactly this lrat-trim build (requires --engine native); binary DRAT "
++                                  "stays the default and its replay is unchanged")
++            cmd.add_argument("--lrat-trim-sha256",
++                             help="opt in: require exactly this SHA-256 for the --lrat-trim binary")
+         if name == "prepare":
+             cmd.add_argument("--checker", type=Path, default=ROOT / "tools/drat-trim")
+             cmd.add_argument("--check-seconds", type=positive, default=120)
+@@ -77,6 +83,11 @@
+             cmd.add_argument("--shard", type=int, default=0, help="zero-based cube shard")
+             cmd.add_argument("--again", action="store_true", help="retry OPEN cubes at identical limits")
+         if name == "verify":
++            cmd.add_argument("--lrat-trim", type=Path,
++                             help="re-audit LRAT receipts with exactly this lrat-trim build; a run "
++                                  "directory that holds LRAT leaves cannot be audited without it")
++            cmd.add_argument("--lrat-trim-sha256",
++                             help="require exactly this SHA-256 for the --lrat-trim binary")
+             cmd.add_argument("--expect-sha256", help="require this parent formula hash")
+     return p
+ 
+@@ -84,6 +95,11 @@
+ def main():
+     args = parser().parse_args()
+     require(version("python-sat") == "1.9.dev22", "requires python-sat==1.9.dev22; run setup.sh")
++    require(getattr(args, "lrat_trim_sha256", None) is None or getattr(args, "lrat_trim", None) is not None,
++            "--lrat-trim-sha256 requires --lrat-trim")
++    require(getattr(args, "lrat_trim", None) is None or args.cmd not in ("run", "resume")
++            or args.engine == "native",
++            "--lrat-trim requires --engine native; the PySAT arm emits DRAT only")
+     if args.cmd == "rows":
+         if args.profile:
+             result = [r for r in roster().values()
+--- /dev/null
++++ b/tools/color-resolved-wallcc/lrat_optin.py
+@@ -0,0 +1,231 @@
++"""Opt-in native LRAT for the cube-and-conquer leaf engine.
++
++Scope
++-----
++This module is only imported by ``campaign.execute`` when the operator passes an
++explicit ``--lrat-trim PATH``.  Without that flag the incumbent path (binary
++DRAT leaf proof, joined with ``cas.drat`` and replayed by drat-trim against
++``parent + cube``) is byte-for-byte unchanged.  Nothing here is downloaded,
++nothing is looked up on ``PATH``, and no claim is made that the supplied checker
++is verified.  ``lrat-trim`` is a third-party checker; the receipt records its
++SHA-256 and the operator may pin it with ``--lrat-trim-sha256``.
++
++Why the leaf check alone is not enough
++--------------------------------------
++The production leaf proof refutes ``working.cnf + cube`` where
++``working.cnf = parent.cnf + cuts``.  The incumbent replay does not need any
++statement about the cuts: ``cas.drat`` derives them inside the joined DRAT trace
++that drat-trim checks against ``parent.cnf + cube``.  An LRAT leaf proof is
++checked against ``working.cnf + cube`` only, so the implication
++``parent + cube |- bottom`` gains one extra premise:
++
++  (P) every clause of ``working.cnf`` outside ``parent.cnf`` is a RUP
++      consequence of ``parent.cnf``.
++
++``cut_derivation_check`` establishes (P) once per run with the production
++drat-trim and the construction already used by ``selftest.audit_wall``: a fresh
++flag per cut, the clause ``flags...`` and, for every literal ``v`` of cut ``i``,
++the clause ``-flag_i -v``.  Any model of ``parent.cnf`` extends to a model of
++that formula iff it falsifies at least one cut, so a refutation proves (P) for
++all cuts at once.  Its trace is the run's own ``cas.drat`` plus unit
++``-flag_i`` steps and the empty clause, so it is checked in forward, RUP-only
++mode against the parent bytes.
++
++Failure policy: every deviation raises (no status is guessed), an OPEN or
++UNKNOWN solver result is never turned into a certificate, and a checker that
++does not print its exact success line makes the leaf ``CHECK_FAILED``.
++"""
++
++import os
++import re
++import subprocess
++from pathlib import Path
++
++from problem import (digest, encode_clauses, extend_dimacs, file_hash,
++                     read_dimacs, require)
++from anchor_cuts import binary_prefix
++
++LRAT_FLAG = "--lrat-trim"
++SUCCESS = "s VERIFIED"
++
++
++def lrat_requested(args):
++    """True only when the operator supplied an explicit checker path."""
++    return getattr(args, "lrat_trim", None) is not None
++
++
++def require_lrat_checker(path, pinned=None):
++    """Fail closed unless the supplied checker is a real, optionally pinned binary."""
++    path = Path(path)
++    require(path.is_file() and os.access(path, os.X_OK),
++            f"missing executable LRAT checker {path}; supply a reviewed lrat-trim build")
++    sha = file_hash(path)
++    if pinned is not None:
++        require(sha == pinned, f"LRAT checker hash {sha} does not match the pinned review hash {pinned}")
++    return path.resolve(), sha
++
++
++# --------------------------------------------------------------- binary LRAT
++def binary_lrat_structure(path):
++    """Parse a binary LRAT file written by CaDiCaL (``--lrat --binary=true``).
++
++    The layout is the one CaDiCaL 2.1.2 actually emits: every line is tagged
++    ``a`` (addition: unsigned clause id, signed literals, 0, unsigned hints, 0)
++    or ``d`` (deletion: unsigned clause ids, 0), with the usual little-endian
++    base-128 varints and ``2*|lit| + (lit < 0)`` literal encoding.
++
++    The point of parsing the whole file is that the checker's acceptance is
++    only as good as the artifact: this requires the file to be well formed to
++    its last byte and its last addition to be the empty clause, so a truncated
++    or append-only artifact cannot pass as a refutation.  Raises ValueError.
++    """
++    data = Path(path).read_bytes()
++    end = len(data)
++    at = 0
++    additions = deletions = 0
++    last_is_empty = False
++    hints_above_id = 0
++    max_id = 0
++
++    def unsigned():
++        nonlocal at
++        value = shift = 0
++        while True:
++            if at >= end:
++                raise ValueError("truncated integer")
++            byte = data[at]
++            at += 1
++            value |= (byte & 127) << shift
++            if byte < 128:
++                return value
++            shift += 7
++
++    while at < end:
++        tag = data[at]
++        if tag == 0x64:                                  # 'd'
++            at += 1
++            deletions += 1
++            while True:
++                if unsigned() == 0:
++                    break
++            last_is_empty = False
++        elif tag == 0x61:                                # 'a'
++            at += 1
++            cid = unsigned()
++            literals = 0
++            while True:
++                encoded = unsigned()
++                if encoded == 0:
++                    break
++                literals += 1
++            while True:
++                hint = unsigned()
++                if hint == 0:
++                    break
++                if hint > cid:
++                    hints_above_id += 1
++            additions += 1
++            last_is_empty = literals == 0
++            max_id = max(max_id, cid)
++        else:
++            raise ValueError(f"unexpected tag {tag!r} at byte {at}")
++    if additions == 0:
++        raise ValueError("no LRAT addition in the artifact")
++    return {"bytes": end, "additions": additions, "deletions": deletions,
++            "last_is_empty_add": last_is_empty, "max_id": max_id,
++            "hints_above_id": hints_above_id}
++
++
++# ------------------------------------------------------------ leaf replay
++def replay_lrat(run_dir, temp, cube, proof, checker, seconds, query_sha256,
++                full_structure=False):
++    """Check one leaf LRAT proof against exactly the bytes the solver read.
++
++    ``query_sha256`` is the hash the solver recorded for its own input file, so
++    rebuilding ``working.cnf + cube`` here and comparing hashes rules out a
++    check against a different formula with the same shape.  Returns
++    ``(passed, log)``; it never raises for a bad proof.
++
++    ``full_structure`` adds ``binary_lrat_structure``: a whole-file parse that
++    requires the artifact to be well formed to its last byte and to end with the
++    empty clause.  It costs about 1.5 s of Python on a 15 MB proof, which on the
++    measured case is more than the checker saving, so it is used by the audit
++    path (``wallcc verify``) and not per leaf in ``run``/``resume``.  Without it
++    the evidence that the whole artifact was parsed is the checker's own
++    "parsed original proof with N added and M deleted clauses" line.
++    """
++    formula = temp / "lrat-check.cnf"
++    extend_dimacs(run_dir / "working.cnf", formula, [(lit,) for lit in cube])
++    if file_hash(formula) != query_sha256:
++        return False, "the formula offered to the LRAT checker is not the solver's own input"
++    structure = None
++    if full_structure:
++        try:
++            structure = binary_lrat_structure(proof)
++        except (OSError, ValueError) as exc:
++            return False, f"malformed LRAT artifact: {exc}"
++    command = [str(checker), str(formula), str(proof)]
++    try:
++        run = subprocess.run(command, capture_output=True, timeout=seconds + 2)
++    except subprocess.TimeoutExpired:
++        return False, "LRAT checker wall-time limit"
++    log = (run.stdout + run.stderr).decode(errors="replace")
++    messages = log.splitlines()
++    if run.returncode != 20 or SUCCESS not in messages:
++        return False, log[-1600:]
++    parsed = re.search(r"parsed original proof with (\d+) added and (\d+) deleted", log)
++    if parsed is None or int(parsed.group(1)) == 0:
++        return False, "the checker did not report parsing the whole LRAT artifact\n" + log[-1200:]
++    if structure is not None:
++        if not structure["last_is_empty_add"]:
++            return False, "LRAT artifact does not end with the empty clause\n" + log[-1200:]
++        if structure["hints_above_id"]:
++            return False, "LRAT artifact uses a clause id before it is introduced\n" + log[-1200:]
++    return True, log[-1600:]
++
++
++# -------------------------------------------------- cut (CAS) derivation check
++def cut_derivation_check(out, temp, checker, seconds):
++    """Prove every cut of ``working.cnf`` is a RUP consequence of ``parent.cnf``.
++
++    One check per run, not per leaf.  Uses the production drat-trim binary with
++    forward, RUP-only checking (``-f -U``) and forces binary proof parsing.
++    Returns a small receipt that the leaf receipts bind by hash.
++    """
++    parent_bytes = (out / "parent.cnf").read_bytes()
++    nv, base = read_dimacs(parent_bytes)
++    _, working = read_dimacs((out / "working.cnf").read_bytes())
++    require(working[:len(base)] == base, "the working CNF is not the parent plus appended cuts")
++    cuts = working[len(base):]
++    receipt = {"parent_sha256": digest(parent_bytes),
++               "working_sha256": file_hash(out / "working.cnf"),
++               "cas_sha256": file_hash(out / "cas.drat"),
++               "checker_sha256": file_hash(checker),
++               "cuts": len(cuts)}
++    if not cuts:
++        return dict(receipt, status="VACUOUS_NO_CUTS")
++    seconds = max(1, int(seconds))
++    flags = [nv + i + 1 for i in range(len(cuts))]
++    select = [flags] + [[-flag, -literal] for flag, cut in zip(flags, cuts) for literal in cut]
++    formula = temp / "cut-derivation.cnf"
++    formula.write_bytes(f"p cnf {nv + len(cuts)} {len(base) + len(select)}\n".encode()
++                        + parent_bytes.split(b"\n", 1)[1] + encode_clauses(select))
++    trace = temp / "cut-derivation.drat"
++    trace.write_bytes((out / "cas.drat").read_bytes()
++                      + binary_prefix([[-flag] for flag in flags] + [[]]))
++    command = [str(checker), str(formula), str(trace), "-f", "-U", "-i", "-t", str(seconds)]
++    try:
++        run = subprocess.run(command, capture_output=True, timeout=seconds + 2)
++    except subprocess.TimeoutExpired:
++        raise RuntimeError("the CAS cut-derivation check exceeded its wall-time limit")
++    log = (run.stdout + run.stderr).decode(errors="replace")
++    require(run.returncode == 0 and SUCCESS in log.splitlines(),
++            "CAS cuts are not derived from the parent formula: " + log[-1200:])
++    consumed = re.search(r"finished parsing, read (\d+) bytes from proof file", log)
++    require(consumed is not None and int(consumed.group(1)) == trace.stat().st_size,
++            "the CAS checker accepted a prefix without consuming the complete trace")
++    # The receipt below is deterministic -- it holds no timing, log tail or path,
++    # so a fresh check in `wallcc verify` reconstructs it byte for byte and the
++    # hash recorded in each leaf receipt really does pin the premise.
++    return dict(receipt, status="PASS_CUT_DERIVATION", formula_sha256=file_hash(formula),
++                trace_sha256=file_hash(trace))

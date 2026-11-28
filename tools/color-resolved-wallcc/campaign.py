@@ -19,6 +19,8 @@ from pentagons import compile_cas, marked_variables
 from problem import (PHYSICAL, ROOT, check_model, digest, extend_dimacs, file_hash,
                      json_bytes, lookup, read_dimacs, require, row_formula)
 from cover_evidence import atomic_json
+from lrat_optin import (cut_derivation_check, lrat_requested, replay_lrat,
+                        require_lrat_checker)
 
 SCHEMA = 1
 
@@ -191,7 +193,9 @@ def probe(out, temp, cube, args, traced):
     if getattr(args, "engine", "pysat") == "native":
         from native_leaf import solve
         result = solve(out / "working.cnf", temp, cube, args, traced)
-        result["solver"] = f"CaDiCaL 2.1.2 standalone ({getattr(args, 'native_policy', 'default')})"
+        policy = getattr(args, "native_policy", "default")
+        result["solver"] = (f"CaDiCaL 2.1.2 standalone ({policy})"
+                            + (" +native LRAT" if lrat_requested(args) else ""))
         return result
     command = [sys.executable, str(ROOT / "cadical_leaf.py"), str(out / "working.cnf"),
                str(temp), str(args.conflicts), "trace" if traced else "search", *map(str, cube)]
@@ -217,7 +221,9 @@ def check_binding(receipt, plan_id, node, cube):
 def validate_artifact(folder, receipt):
     status = receipt["status"]
     require(status in ("CHECKED_UNSAT", "CHECKED_SAT"), "unexpected evidence status")
-    path = folder / ("leaf.drat" if status == "CHECKED_UNSAT" else "model.json")
+    # Older receipts name no artifact and always mean leaf.drat.
+    name = receipt.get("artifact_name", "leaf.drat") if status == "CHECKED_UNSAT" else "model.json"
+    path = folder / name
     require(file_hash(path) == receipt["artifact_sha256"], f"damaged evidence at {folder.name}")
     return path
 
@@ -232,6 +238,9 @@ def conquer_one(out, item, plan_id, nv, clauses, checker, args):
         from native_leaf import BINARY
         budget.update(engine='native', native_policy=getattr(args, 'native_policy', 'default'),
                       native_sha256=file_hash(BINARY))
+    lrat = lrat_requested(args)
+    if lrat:
+        budget["lrat_trim_sha256"] = args.lrat_trim_sha256
     with lock(folder / ".lock"):
         receipt_path = folder / "receipt.json"
         if receipt_path.exists():
@@ -263,20 +272,30 @@ def conquer_one(out, item, plan_id, nv, clauses, checker, args):
                 check_model(clauses, cube, json.loads(artifact.read_bytes()), nv)
                 rec["status"] = "CHECKED_SAT"
             elif result["status"] == "UNSAT":
-                artifact = temp / "leaf.drat"
-                passed, log = replay(out, temp, cube, artifact, checker, args.check_seconds)
+                artifact = temp / (result.get("proof_name") or "leaf.drat")
+                if lrat:
+                    # Leaf-only LRAT check against the solver's own input bytes;
+                    # the cut premise was established once, in execute().
+                    passed, log = replay_lrat(out, temp, cube, artifact, args.lrat_trim,
+                                              args.check_seconds, result["query_sha256"])
+                    rec["query_sha256"] = result["query_sha256"]
+                    rec["lrat_checker_sha256"] = args.lrat_trim_sha256
+                    rec["cut_derivation_sha256"] = digest(json_bytes(args.cut_derivation))
+                else:
+                    passed, log = replay(out, temp, cube, artifact, checker, args.check_seconds)
                 rec["status"] = "CHECKED_UNSAT" if passed else "CHECK_FAILED"
                 rec["checker_log"] = log
                 rec["checker_sha256"] = args.checker_sha256
             if rec["status"] in ("CHECKED_UNSAT", "CHECKED_SAT", "CHECK_FAILED"):
                 rec["artifact_sha256"] = file_hash(artifact)
+                rec["artifact_name"] = artifact.name
                 artifact.replace(folder / artifact.name)
         rec["elapsed_s"] = round(monotonic() - started, 3)
         atomic_json(receipt_path, rec)
         return rec["status"]
 
 
-def audit_one(out, item, plan_id, nv, clauses, checker, seconds):
+def audit_one(out, item, plan_id, nv, clauses, checker, args):
     node, cube = item
     folder = out / "leaves" / node
     path = folder / "receipt.json"
@@ -291,8 +310,20 @@ def audit_one(out, item, plan_id, nv, clauses, checker, seconds):
     if status == "CHECKED_SAT":
         check_model(clauses, cube, json.loads(artifact.read_bytes()), nv)
         return "VERIFIED_SAT"
+    seconds = args.check_seconds
     with TemporaryDirectory(prefix="wallcc-replay-") as temp:
-        passed, log = replay(out, Path(temp), cube, artifact, checker, seconds)
+        if "lrat_trim_sha256" in rec.get("budget", {}):
+            # Each receipt is audited by the route it was produced with; an LRAT
+            # receipt is never replayed as DRAT or under a different checker.
+            require(args.cut_derivation is not None and args.lrat_trim_sha256
+                    == rec["budget"]["lrat_trim_sha256"],
+                    f"the receipt at {node} was checked by a different LRAT checker; pass the same --lrat-trim")
+            require(rec.get("cut_derivation_sha256") == digest(json_bytes(args.cut_derivation)),
+                    f"the CAS cut-derivation premise at {node} is not the recorded one")
+            passed, log = replay_lrat(out, Path(temp), cube, artifact, args.lrat_trim,
+                                      seconds, rec["query_sha256"], full_structure=True)
+        else:
+            passed, log = replay(out, Path(temp), cube, artifact, checker, seconds)
     require(passed, f"invalid proof at {node}: {log}")
     return "VERIFIED_UNSAT"
 
@@ -303,13 +334,27 @@ def execute(out, args, verify):
     require(checker.is_file() and os.access(checker, os.X_OK),
             f"missing executable checker {checker}; run setup.sh")
     args.checker_sha256 = file_hash(checker)
+    # Opt-in LRAT arm.  It is evidence-only and never a default: without an
+    # explicit --lrat-trim path nothing below runs.  The checker is fingerprinted
+    # (and optionally pinned) and the one premise a leaf-only LRAT check needs --
+    # that every cut appended to the parent is a RUP consequence of the parent --
+    # is established once here, before any leaf is solved or replayed.
+    args.cut_derivation = None
+    if lrat_requested(args):
+        args.lrat_trim, args.lrat_trim_sha256 = require_lrat_checker(
+            args.lrat_trim, getattr(args, "lrat_trim_sha256", None))
+        if not verify:
+            require(getattr(args, "engine", "pysat") == "native",
+                    "--lrat-trim requires --engine native; the PySAT arm emits DRAT only")
+        with TemporaryDirectory(prefix="wallcc-cas-premise-") as name:
+            args.cut_derivation = cut_derivation_check(out, Path(name), checker, args.check_seconds)
     color_check = None
     if verify and plan["origin"]["kind"] in ("wall-color", "wall-color-square"):
         from color_pivot import verify_saved
         color_check = verify_saved(out, checker, args.check_seconds)
     if verify:
         def task(item):
-            return audit_one(out, item, plan_id, plan["variables"], clauses, checker, args.check_seconds)
+            return audit_one(out, item, plan_id, plan["variables"], clauses, checker, args)
     else:
         leaves = [item for i, item in enumerate(leaves) if i % args.shards == args.shard]
         def task(item):
@@ -345,4 +390,9 @@ def execute(out, args, verify):
         result["closure_scope"] = ("square_aux_extended_with_native_colour_derivation_and_local_K15_rules"
                                     if plan["origin"]["kind"] == "wall-color-square"
                                     else "aux_extended_parent_with_native_original_plus_counter_derivation")
+    if lrat_requested(args) and args.cut_derivation is not None:
+        result["lrat"] = {"checker_sha256": args.lrat_trim_sha256,
+                          "cut_derivation": {key: args.cut_derivation[key] for key in
+                                             ("status", "cuts", "parent_sha256",
+                                              "working_sha256", "cas_sha256")}}
     return result

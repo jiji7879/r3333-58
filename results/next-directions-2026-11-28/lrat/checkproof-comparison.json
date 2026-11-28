@@ -1,0 +1,211 @@
+{
+  "both_checker_implementations_unverified": true,
+  "cadical_binary_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+  "cap_conflicts": 50000,
+  "cap_solver_seconds": 20,
+  "cases": [
+    "H8",
+    "H7"
+  ],
+  "cells": [
+    {
+      "artifact_bytes": 6503105,
+      "baseline": {
+        "arm": 3,
+        "order": 0
+      },
+      "case": "H8",
+      "native_cpu_s": {
+        "baseline": 1.909555,
+        "treatment": 1.886065
+      },
+      "raw_proof_identical": true,
+      "raw_proof_sha256": "05f0d7f11d28e0a784cab3a1a737960fdc8bc5414cc246242d743bb668bd7b34",
+      "search_counters": {
+        "conflicts": 49226,
+        "decisions": 307381,
+        "propagations": 12350047,
+        "restarts": 3189
+      },
+      "solver_cpu_s": {
+        "baseline": 1.710401,
+        "treatment": 1.691151
+      },
+      "solver_ratio": 0.9887453293116644,
+      "treatment": {
+        "arm": 0,
+        "order": 1
+      },
+      "trimmed_proof_identical": true,
+      "trimmed_proof_sha256": "ae25a7a40dfe91ceb1111c2012adf3a7290b86b2bd49b534f3e61a1deaaf41d4",
+      "whole_cpu_s": {
+        "baseline": 2.892819,
+        "treatment": 2.876665
+      },
+      "whole_ratio": 0.9944158276062208
+    },
+    {
+      "artifact_bytes": 6503105,
+      "baseline": {
+        "arm": 3,
+        "order": 1
+      },
+      "case": "H8",
+      "native_cpu_s": {
+        "baseline": 1.861372,
+        "treatment": 1.908596
+      },
+      "raw_proof_identical": true,
+      "raw_proof_sha256": "05f0d7f11d28e0a784cab3a1a737960fdc8bc5414cc246242d743bb668bd7b34",
+      "search_counters": {
+        "conflicts": 49226,
+        "decisions": 307381,
+        "propagations": 12350047,
+        "restarts": 3189
+      },
+      "solver_cpu_s": {
+        "baseline": 1.66601,
+        "treatment": 1.710685
+      },
+      "solver_ratio": 1.026815565332741,
+      "treatment": {
+        "arm": 0,
+        "order": 0
+      },
+      "trimmed_proof_identical": true,
+      "trimmed_proof_sha256": "ae25a7a40dfe91ceb1111c2012adf3a7290b86b2bd49b534f3e61a1deaaf41d4",
+      "whole_cpu_s": {
+        "baseline": 2.847658,
+        "treatment": 2.884235
+      },
+      "whole_ratio": 1.0128445901860406
+    },
+    {
+      "artifact_bytes": 4056058,
+      "baseline": {
+        "arm": 3,
+        "order": 0
+      },
+      "case": "H7",
+      "native_cpu_s": {
+        "baseline": 1.284089,
+        "treatment": 1.242956
+      },
+      "raw_proof_identical": true,
+      "raw_proof_sha256": "1575f8bff14b2c14752735bb23e264d5ecd2463b5f8e43d5caa607396b1ff8e5",
+      "search_counters": {
+        "conflicts": 23143,
+        "decisions": 64576,
+        "propagations": 10376030,
+        "restarts": 571
+      },
+      "solver_cpu_s": {
+        "baseline": 1.144914,
+        "treatment": 1.103739
+      },
+      "solver_ratio": 0.964036600128918,
+      "treatment": {
+        "arm": 0,
+        "order": 1
+      },
+      "trimmed_proof_identical": true,
+      "trimmed_proof_sha256": "224dc08dc43111075921313dfbaa31a9a2af436a750fc36336f201c12250fdfa",
+      "whole_cpu_s": {
+        "baseline": 1.917225,
+        "treatment": 1.876877
+      },
+      "whole_ratio": 0.9789550000651984
+    },
+    {
+      "artifact_bytes": 4056058,
+      "baseline": {
+        "arm": 3,
+        "order": 1
+      },
+      "case": "H7",
+      "native_cpu_s": {
+        "baseline": 1.244511,
+        "treatment": 1.269698
+      },
+      "raw_proof_identical": true,
+      "raw_proof_sha256": "1575f8bff14b2c14752735bb23e264d5ecd2463b5f8e43d5caa607396b1ff8e5",
+      "search_counters": {
+        "conflicts": 23143,
+        "decisions": 64576,
+        "propagations": 10376030,
+        "restarts": 571
+      },
+      "solver_cpu_s": {
+        "baseline": 1.105694,
+        "treatment": 1.128635
+      },
+      "solver_ratio": 1.020748055067677,
+      "treatment": {
+        "arm": 0,
+        "order": 0
+      },
+      "trimmed_proof_identical": true,
+      "trimmed_proof_sha256": "224dc08dc43111075921313dfbaa31a9a2af436a750fc36336f201c12250fdfa",
+      "whole_cpu_s": {
+        "baseline": 1.881765,
+        "treatment": 1.900425
+      },
+      "whole_ratio": 1.0099162222700497
+    }
+  ],
+  "cpu_geomean_treatment_over_baseline": 0.999763421212554,
+  "decision": "REJECT any speedup claim: the direction is order-dependent with a regression in each case; keep prior behaviour by default",
+  "external_replay_mandatory": true,
+  "lrat_trim_sha256": "f1eb1a4486274c35f4accf7bc13b595cfdbcf2d7c9aa6b46fb281f19d0d52895",
+  "protocol": {
+    "preregistration": {
+      "arms": [
+        3,
+        0
+      ],
+      "cap_conflicts": 50000,
+      "cap_wall_seconds": 20,
+      "cases": [
+        "H8",
+        "H7"
+      ],
+      "created_before_first_run": true,
+      "external_replay_is_mandatory": true,
+      "metrics": [
+        "solver child CPU",
+        "native pipeline CPU excluding mandatory second checker",
+        "total including mandatory second checker"
+      ],
+      "orders": [
+        "3-then-0",
+        "0-then-3"
+      ],
+      "same_search_counters_required": [
+        "conflicts",
+        "decisions",
+        "propagations",
+        "restarts"
+      ],
+      "scope": "standalone exact-CNF certificate processing only; no CDCL speedup or wall/profile inference",
+      "seeds": [
+        0
+      ],
+      "source": "CaDiCadL rel-2.1.2 Internal::check connects LratChecker only when checkproof > 1 (src/proof.cpp)"
+    }
+  },
+  "python_rup_source_sha256": "f0eb3f5d419f23b9843fcc5a5aba8f5b512db2a4dbfd8a9b469d7e11df4771b2",
+  "raw_and_trimmed_proofs_identical_in_all_four_comparisons": true,
+  "scope": "four ordered comparisons of internal-checkproof=3 versus 0, on two already closed hash-pinned CNFs; no search or wall inference",
+  "search_counters_identical_in_all_four_comparisons": true,
+  "seeds": [
+    0
+  ],
+  "solver_ratios": [
+    0.9887453293116644,
+    1.026815565332741,
+    0.964036600128918,
+    1.020748055067677
+  ],
+  "source_option_semantics": "https://github.com/arminbiere/cadical/blob/rel-2.1.2/src/proof.cpp, Internal::check attaches LratChecker if and only if checkproof > 1",
+  "validations": "every run passed raw trim, backward replay, forward replay and independent Python RUP replay"
+}

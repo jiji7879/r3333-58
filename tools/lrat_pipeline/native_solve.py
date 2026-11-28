@@ -133,13 +133,19 @@ def solve(args):
     require(not out.exists(), f"refusing to reuse output directory {out}; choose a fresh one")
     out.mkdir(parents=True)
     install = formula_report_path(out)
-    solver_cmd = [cadical, "--seed=0", "--lrat", "--binary=true",
+    internal_checkproof = getattr(args, "internal_checkproof", 3)
+    require(internal_checkproof in (0, 3), "internal_checkproof must be 0 or 3")
+    solver_cmd = [cadical, "--seed=0", f"--checkproof={internal_checkproof}",
+                  "--lrat", "--binary=true",
                   "-c", str(args.conflicts), "-t", str(args.seconds), str(cnf)]
     receipt = {
         "scope": "standalone exact-CNF certificate processing; no wall/profile or Ramsey-bound inference",
         "input": {"path": str(cnf), "expected_sha256": args.expect_sha256,
                   "sha256": input_hash, "bytes": cnf.stat().st_size},
-        "cadical": {"path": cadical, "sha256": cadical_hash, "version": "2.1.2", "seed": 0},
+        "cadical": {"path": cadical, "sha256": cadical_hash, "version": "2.1.2", "seed": 0,
+                  "internal_checkproof": internal_checkproof,
+                  "checkproof_source": "https://github.com/arminbiere/cadical/blob/rel-2.1.2/src/proof.cpp",
+                  "external_replay_required": True},
         "limits": {"conflicts": args.conflicts, "solver_seconds": args.seconds,
                    "check_seconds": args.check_seconds},
         "expected_outcome": args.expected_outcome,
@@ -241,6 +247,9 @@ def main(argv=None):
     p.add_argument("--checker", required=True, type=Path,
                    help="reviewed lrat-trim binary (its recorded source hash is checked)")
     p.add_argument("--cadical", type=Path, default=CADICAL)
+    p.add_argument("--internal-checkproof", type=int, choices=(0, 3), default=3,
+                   help="0 disables CaDiCaL's internal proof checking only when "
+                        "independent external replay is mandatory; default 3 preserves prior behavior")
     p.add_argument("--conflicts", type=positive, default=50000)
     p.add_argument("--seconds", type=positive, default=20)
     p.add_argument("--check-seconds", type=positive, default=60)

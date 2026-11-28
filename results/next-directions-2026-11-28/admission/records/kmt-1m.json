@@ -1,0 +1,171 @@
+{
+  "claim": {
+    "class": "encoding",
+    "closure_claimed": false,
+    "id": "kmt-sender-only-benchmark_1m",
+    "scope": "CNF-only bounded performance on parent+cube; OPEN is not UNSAT; no physical colouring, ChainReady or bound is claimed",
+    "statement": "sender-only KMT encoding reduces search CPU against the stock encoding on the retained parent+cube at a matched 1000000-conflict budget; all runs are OPEN"
+  },
+  "controls": [],
+  "pins": {
+    "checkers": [],
+    "cube": {
+      "appended_as_units": true,
+      "baseline_cube_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+      "literals": [
+        -1413,
+        1014
+      ],
+      "treatment_cube_sha256": "fdb46b2f8cddc74053809a8106801a327af32cc0ef191247b8980a0200779afd"
+    },
+    "inputs": {
+      "parent-cube": {
+        "baseline": {
+          "bytes": 3493016,
+          "sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae"
+        },
+        "treatment": {
+          "bytes": 3339511,
+          "sha256": "6e71fc07c907f7947a35565d04c3459cf90ac05dc5c4789ffe1cd27f078b6441"
+        }
+      }
+    },
+    "solver": {
+      "id": "pysat Cadical195",
+      "sha256": null,
+      "version": ""
+    }
+  },
+  "prereg": {
+    "caps": [
+      1000000
+    ],
+    "cases": [
+      "parent-cube"
+    ],
+    "declared_arms": [
+      "baseline",
+      "treatment",
+      "stock",
+      "kmt"
+    ],
+    "declared_exclusions": [],
+    "margin": 0.1,
+    "max_runs": 4,
+    "orders": [
+      "AB",
+      "BA"
+    ],
+    "primary_metric": "composite_cpu_s",
+    "registered_before_run": null,
+    "seeds": [
+      0,
+      1
+    ]
+  },
+  "provenance": {
+    "adapter": "adapters.py kmt",
+    "source": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/results/next-directions-2026-11-28/kmt/receipt.json",
+    "source_sha256": "4fdd1b01b62c006afaf1ad47a2d978d63f1f2d0c5acb5ddbffb8cf685ab5a0bc",
+    "warnings": [
+      "solver binary is not hash-pinned (PySAT binding records only a version string)",
+      "no unsound/trajectory control arm in this experiment",
+      "order is confounded with seed: each seed is measured in one order only"
+    ]
+  },
+  "runs": [
+    {
+      "arm": "baseline",
+      "cap": 1000000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 1000000,
+        "decisions": 2318963,
+        "propagations": 381196308,
+        "restarts": 33143
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 116516.0,
+        "prep_cpu_s": 0.081084933,
+        "search_cpu_s": 61.172025986
+      },
+      "order": "AB",
+      "seed": 0,
+      "status": "OPEN"
+    },
+    {
+      "arm": "treatment",
+      "cap": 1000000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 1000002,
+        "decisions": 2105737,
+        "propagations": 395209230,
+        "restarts": 32356
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 99296.0,
+        "prep_cpu_s": 0.074439947,
+        "search_cpu_s": 63.896602056000006
+      },
+      "order": "AB",
+      "seed": 0,
+      "status": "OPEN"
+    },
+    {
+      "arm": "treatment",
+      "cap": 1000000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 1000003,
+        "decisions": 2124252,
+        "propagations": 396050662,
+        "restarts": 32618
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 108776.0,
+        "prep_cpu_s": 0.079767425,
+        "search_cpu_s": 67.553746414
+      },
+      "order": "BA",
+      "seed": 1,
+      "status": "OPEN"
+    },
+    {
+      "arm": "baseline",
+      "cap": 1000000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 1000000,
+        "decisions": 4314184,
+        "propagations": 261551338,
+        "restarts": 36281
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 126716.0,
+        "prep_cpu_s": 0.08360810299999999,
+        "search_cpu_s": 46.307760407
+      },
+      "order": "BA",
+      "seed": 1,
+      "status": "OPEN"
+    }
+  ],
+  "schema": 1,
+  "transform": {
+    "binding": "budget_hash",
+    "declared_delta": "sender AtLeast(30,10)/AtLeast(41,14) gadgets replaced by totalizers; 13364 vars / 176660 clauses vs 19533 / 184335",
+    "derivation": {
+      "kind": "in-receipt semantic controls (gadget semantics, root BCP, preservation)",
+      "receipt_sha256": "4fdd1b01b62c006afaf1ad47a2d978d63f1f2d0c5acb5ddbffb8cf685ab5a0bc",
+      "relax_used": false,
+      "source": "same receipt; not independently replayed by this gate",
+      "status": "pass"
+    },
+    "kind": "encoding"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "engine": "Minisat22 via python-sat (independent of the CaDiCaL measurement)",
+  "engine_clause_checks": 11991,
+  "forced_vars": 1865,
+  "host": {
+    "bytes": 3493031,
+    "clauses": 184337,
+    "sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+    "vars": 19533
+  },
+  "prefix": {
+    "additions": 13416,
+    "bytes": 698340,
+    "clause_additions": 11991,
+    "clause_additions_checked": 11991,
+    "deletions": 78410,
+    "format": "binary",
+    "sha256": "f44f28351e82a702ed38463971abf1af7c45715dcdcb8df1867b9b12664adbbb",
+    "trailing_empty_clause": false,
+    "unit_additions": 1425
+  },
+  "problems": [],
+  "reduced": {
+    "bytes": 2172405,
+    "clauses": 119343,
+    "sha256": "c3239878e979c078647665713b29d0f8e88050e73f7ba30755eee5ed30c41142",
+    "vars": 19533
+  },
+  "scope": "verifies a partial DRAT prefix against its host with a second solver's propagation; a prefix is not a refutation; the checker is not verified",
+  "verdict": "prefix-checked"
+}

@@ -87,6 +87,8 @@ TargetSuffix
 SenderReady
 SupportCatalogue
 SupportTransport
+EmittedBridge
+TargetUnits
 TargetParent
 PhysicalBridge
 TicketPremises

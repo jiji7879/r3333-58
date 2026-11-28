@@ -63,6 +63,12 @@ def parser():
                              help="opt into the bundled native CaDiCaL 2.1.2 engine")
             cmd.add_argument("--native-policy", choices=("default", "search-only"), default="default",
                              help="native engine policy; default never changes existing PySAT behaviour")
+            cmd.add_argument("--lrat-trim", type=Path,
+                             help="opt in: write native CaDiCaL LRAT leaf proofs and check them with "
+                                  "exactly this lrat-trim build (requires --engine native); binary DRAT "
+                                  "stays the default and its replay is unchanged")
+            cmd.add_argument("--lrat-trim-sha256",
+                             help="opt in: require exactly this SHA-256 for the --lrat-trim binary")
         if name == "prepare":
             cmd.add_argument("--checker", type=Path, default=ROOT / "tools/drat-trim")
             cmd.add_argument("--check-seconds", type=positive, default=120)
@@ -77,6 +83,11 @@ def parser():
             cmd.add_argument("--shard", type=int, default=0, help="zero-based cube shard")
             cmd.add_argument("--again", action="store_true", help="retry OPEN cubes at identical limits")
         if name == "verify":
+            cmd.add_argument("--lrat-trim", type=Path,
+                             help="re-audit LRAT receipts with exactly this lrat-trim build; a run "
+                                  "directory that holds LRAT leaves cannot be audited without it")
+            cmd.add_argument("--lrat-trim-sha256",
+                             help="require exactly this SHA-256 for the --lrat-trim binary")
             cmd.add_argument("--expect-sha256", help="require this parent formula hash")
     return p
 
@@ -84,6 +95,11 @@ def parser():
 def main():
     args = parser().parse_args()
     require(version("python-sat") == "1.9.dev22", "requires python-sat==1.9.dev22; run setup.sh")
+    require(getattr(args, "lrat_trim_sha256", None) is None or getattr(args, "lrat_trim", None) is not None,
+            "--lrat-trim-sha256 requires --lrat-trim")
+    require(getattr(args, "lrat_trim", None) is None or args.cmd not in ("run", "resume")
+            or args.engine == "native",
+            "--lrat-trim requires --engine native; the PySAT arm emits DRAT only")
     if args.cmd == "rows":
         if args.profile:
             result = [r for r in roster().values()

@@ -1,0 +1,110 @@
+[
+  {
+    "blocking": [
+      "R8_cost"
+    ],
+    "candidate": "lrat-cpu-cross",
+    "decision": "REJECT",
+    "expected": "REJECT",
+    "geomean_ratio": 1.1803448144422901,
+    "max_ratio": 1.527027027027027,
+    "metric": "composite_cpu_s",
+    "min_ratio": 0.979381443298969,
+    "ok": true,
+    "pairs": 4,
+    "receipt": "results/next-directions-2026-11-28/admission/receipts/lrat-cpu-cross.json",
+    "source": "lrat/receipt.json",
+    "trust": "cross_checked"
+  },
+  {
+    "blocking": [],
+    "candidate": "lrat-cpu-single",
+    "decision": "OPT_IN_EVIDENCE_BACKED",
+    "expected": "OPT_IN_EVIDENCE_BACKED",
+    "geomean_ratio": 0.4974199480674243,
+    "max_ratio": 0.7042253521126761,
+    "metric": "composite_cpu_s",
+    "min_ratio": 0.26666666666666666,
+    "ok": true,
+    "pairs": 4,
+    "receipt": "results/next-directions-2026-11-28/admission/receipts/lrat-cpu-single.json",
+    "source": "lrat/receipt.json",
+    "trust": "single_checker"
+  },
+  {
+    "blocking": [],
+    "candidate": "lrat-bytes-cross",
+    "decision": "OPT_IN_SINGLE_CASE",
+    "expected": "OPT_IN_SINGLE_CASE",
+    "geomean_ratio": 0.6237260144225084,
+    "max_ratio": 0.6824081114484678,
+    "metric": "retained_bytes",
+    "min_ratio": 0.5700901477293843,
+    "ok": true,
+    "pairs": 2,
+    "receipt": "results/next-directions-2026-11-28/admission/receipts/lrat-bytes-cross.json",
+    "source": "lrat/receipt.json",
+    "trust": "cross_checked"
+  },
+  {
+    "blocking": [
+      "R8_cost",
+      "R2_pins",
+      "R6_control",
+      "R9_quality"
+    ],
+    "candidate": "kmt-100k",
+    "decision": "REJECT",
+    "expected": "REJECT",
+    "geomean_ratio": 1.2504448061836217,
+    "max_ratio": 1.3757678225990602,
+    "metric": "composite_cpu_s",
+    "min_ratio": 1.1365378573527511,
+    "ok": true,
+    "pairs": 2,
+    "receipt": "results/next-directions-2026-11-28/admission/receipts/kmt-100k.json",
+    "source": "kmt/receipt.json",
+    "trust": "cross_checked"
+  },
+  {
+    "blocking": [
+      "R8_cost",
+      "R2_pins",
+      "R6_control",
+      "R9_quality"
+    ],
+    "candidate": "kmt-1m",
+    "decision": "REJECT",
+    "expected": "REJECT",
+    "geomean_ratio": 1.2339285727521767,
+    "max_ratio": 1.4578900345313395,
+    "metric": "composite_cpu_s",
+    "min_ratio": 1.0443721313615262,
+    "ok": true,
+    "pairs": 2,
+    "receipt": "results/next-directions-2026-11-28/admission/receipts/kmt-1m.json",
+    "source": "kmt/receipt.json",
+    "trust": "cross_checked"
+  },
+  {
+    "blocking": [
+      "R6_control",
+      "R7_semantics",
+      "R8_cost",
+      "R2_pins",
+      "R4_comparability"
+    ],
+    "candidate": "sms-one-colour-lex",
+    "decision": "REJECT",
+    "expected": "REJECT",
+    "geomean_ratio": 0.7948755356285737,
+    "max_ratio": 0.8005875440658049,
+    "metric": "composite_cpu_s",
+    "min_ratio": 0.7892042810609585,
+    "ok": true,
+    "pairs": 2,
+    "receipt": "results/next-directions-2026-11-28/admission/receipts/sms-one-colour-lex.json",
+    "source": "sms",
+    "trust": "cross_checked"
+  }
+]

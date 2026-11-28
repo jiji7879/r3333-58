@@ -1,0 +1,17 @@
+{
+  "aug_bytes": 3523381,
+  "aug_sha256": "603f8de8f9a20924efac885e9436b9968e36fe201c5e66ffeea5538309936ba2",
+  "base_bytes": 3493031,
+  "base_sha256": "8791f627a2e567785018d46b1a6fa15ced009fc0490b3bab4f218108182460a8",
+  "batch_sha256": "48294797c6504ad367d9c5dfb3b8483503f69f4cd844c88513a2282f41d8bc3c",
+  "clauses_appended": 960,
+  "cube": [
+    -1413,
+    1014
+  ],
+  "distinct_guards": 31,
+  "local_proof_sha256": "4ca7a5d302ceadc4afb5d8d54e4f9c3d5613f48cf08681fe0461a05acb6085d7",
+  "meta_decoded_spoke_literals_exact": 960,
+  "row": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "rules": 960
+}

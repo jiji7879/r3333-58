@@ -1,0 +1,117 @@
+{
+  "aggregate": {
+    "baseline_order_spread": 0.0,
+    "cases": [
+      "H7",
+      "H8",
+      "N14",
+      "R11"
+    ],
+    "excluded_cells": [],
+    "geomean_ratio": 0.4974199480674243,
+    "margin": 0.1,
+    "max_ratio": 0.7042253521126761,
+    "min_ratio": 0.26666666666666666,
+    "pairs": 4,
+    "per_cell": [
+      {
+        "cap": 50000,
+        "case": "H7",
+        "order": "AB",
+        "ratio": 0.6701030927835052,
+        "seed": 0
+      },
+      {
+        "cap": 50000,
+        "case": "H8",
+        "order": "AB",
+        "ratio": 0.7042253521126761,
+        "seed": 0
+      },
+      {
+        "cap": 50000,
+        "case": "N14",
+        "order": "AB",
+        "ratio": 0.48648648648648646,
+        "seed": 0
+      },
+      {
+        "cap": 50000,
+        "case": "R11",
+        "order": "AB",
+        "ratio": 0.26666666666666666,
+        "seed": 0
+      }
+    ],
+    "primary_metric": "composite_cpu_s"
+  },
+  "blocking": [],
+  "checks": [
+    {
+      "detail": "schema 1, claim class certificate",
+      "rule": "R1_schema",
+      "status": "pass"
+    },
+    {
+      "detail": "inputs 4, checker hashes pinned, trust=single_checker",
+      "rule": "R2_pins",
+      "status": "pass"
+    },
+    {
+      "detail": "registered_before_run=None",
+      "rule": "R3_prereg",
+      "status": "pass",
+      "waived": true
+    },
+    {
+      "detail": "4 paired cells, caps [50000], transform certificate_format",
+      "rule": "R4_comparability",
+      "status": "pass"
+    },
+    {
+      "detail": "statuses ['VERIFIED_UNSAT']",
+      "rule": "R5_status",
+      "status": "pass"
+    },
+    {
+      "detail": "12 unsound control(s) rejected, none mimics the gain",
+      "rule": "R6_control",
+      "status": "pass"
+    },
+    {
+      "detail": "transform certificate_format premise satisfied",
+      "rule": "R7_semantics",
+      "status": "pass"
+    },
+    {
+      "detail": "composite_cpu_s geomean 0.4974 <= 1 - 0.10 over 4 paired cells",
+      "rule": "R8_cost",
+      "status": "pass"
+    },
+    {
+      "detail": "no order replicates; single-cell measurement",
+      "rule": "R9_quality",
+      "status": "pass"
+    },
+    {
+      "detail": "4 distinct case(s): ['H7', 'H8', 'N14', 'R11']",
+      "rule": "R11_generality",
+      "status": "pass"
+    }
+  ],
+  "claim": {
+    "class": "certificate",
+    "id": "lrat-native-certificate-single_checker",
+    "scope": "certificate-pipeline comparison on already closed inputs only; no wall search, no OPEN parent, no bound change",
+    "statement": "on the pinned already-closed CNFs, native CaDiCaL LRAT checked by the pinned lrat-trim costs less CPU/bytes than the incumbent DRAT + drat-trim route at trust=single_checker; the search trajectory is identical, so this is not a CDCL speedup"
+  },
+  "decision": "OPT_IN_EVIDENCE_BACKED",
+  "default_eligible": false,
+  "exit_code": 0,
+  "mode": "audit",
+  "opt_in_eligible": true,
+  "policy_version": "k58-admission-1",
+  "record_sha256": "7a04c6619bcdef03adc71393d617cf7a21edf39159634be93faa8efaaea22f9d",
+  "required_scope": "Opt-in experimental override only, on the pinned inputs ['H7', 'H8', 'N14', 'R11'], licensed metric composite_cpu_s. Production defaults, ledger states, frozen coverage and the accepted interval 51 <= R_4(3) <= 62 are unchanged. A capped OPEN/UNKNOWN run is not UNSAT. The licensed statement is exactly: on the pinned already-closed CNFs, native CaDiCaL LRAT checked by the pinned lrat-trim costs less CPU/bytes than the incumbent DRAT + drat-trim route at trust=single_checker; the search trajectory is identical, so this is not a CDCL speedup",
+  "trust_level": "single_checker"
+}

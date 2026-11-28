@@ -34,7 +34,23 @@ changed. No proof binaries, large formulas, archives, compiled Lean outputs,
 or measured solver-proof artifacts are committed. The scratch member
 rehearsals are separated from the member's original reports and timings.
 
-The precise remaining structural step for support is to identify the emitted
-atoms with actual T16-pinned coordinates and to derive physical guards and
-criticality, then propagate through the sequential chain. The other completed
-experiments do not supply that missing step.
+The precise remaining structural step is to turn the emitted counter's true
+atoms into a finite set of physical colour-1 neighbours, then complete the key
+bookkeeping, applicable classification and final guard chain. The emitted
+coordinate identities are now proved; the other completed experiments do not
+supply the remaining sequential argument.
+
+## Latest speedup review and integration
+
+The native C&C engine now has an explicit `--lrat-trim` opt-in with exact solver
+input hashes, checked CAS premises and checker-bound receipts. All 24 acceptance
+checks and the unchanged native regression passed; DRAT remains the default.
+Measured checker cost falls on H8, but raw LRAT is larger, leaf memory higher,
+and this is not a general CDCL-search speedup. `finalise` remains untouched.
+
+Accepted physical/emitted bridge lemmas are integrated and build cleanly.
+Accepted admission tooling, preprocessing proof composition, backend memory
+trade-offs, and the measured K15 negative result are separated rather than
+presented as one solver improvement. For command examples, exact trade-offs,
+raw hashes, and remaining `ChainReady` obligations, see
+[the speedup and integration review](speedups.md).

@@ -52,6 +52,8 @@ import K58.TargetParent
 import K58.SenderReady
 import K58.SupportCatalogue
 import K58.SupportTransport
+import K58.EmittedBridge
+import K58.TargetUnits
 import K58.TicketPremises
 
 #print axioms K58.sum_w_eq_sum_H
@@ -487,3 +489,19 @@ import K58.TicketPremises
 #print axioms K58.SenderReady.counter_semantics_not_shape
 #print axioms K58.SenderReady.counter_then_support_unsatisfiable
 #print axioms K58.SenderReady.coordinate_order_matters
+
+-- Emitted coordinate/physical bridge and retained key units. Counter-to-finset, key bookkeeping, external classification and ChainReady remain separate.
+#print axioms K58.EmittedBridge.rowAtoms_val
+#print axioms K58.EmittedBridge.rowAtomsList_val
+#print axioms K58.EmittedBridge.realized_rowAtoms
+#print axioms K58.EmittedBridge.emitted_mask_of_pinned
+#print axioms K58.EmittedBridge.emitted_sender_step_ready_of_count
+#print axioms K58.EmittedBridge.sender_pinned_of_count
+#print axioms K58.EmittedBridge.triangle_free_third_ne
+#print axioms K58.EmittedBridge.deg_ge_of_counted
+#print axioms K58.TargetUnits.arm0_block_units
+#print axioms K58.TargetUnits.arm0_root_units
+#print axioms K58.TargetUnits.arm1_root_units
+#print axioms K58.TargetUnits.targetUnitCNF_mem
+#print axioms K58.TargetUnits.hroot_of_unit_mem
+#print axioms K58.TargetUnits.root_edge_colour_of_unit_mem

@@ -1,0 +1,2 @@
+# A unified patch is a data artifact, not a source file to whitespace-normalise.
+results/next-directions-2026-11-28/lrat-optin/patches/*.patch whitespace=-blank-at-eol

@@ -1,0 +1,75 @@
+{
+  "caps": [
+    100000
+  ],
+  "comparisons": [
+    {
+      "base": "host",
+      "cap": 100000,
+      "conflict_ratio": 0.999990000099999,
+      "propagation_ratio": 1.0330343715276815,
+      "rss_ratio": 0.8897945604258505,
+      "search_cpu_ratio": 0.9767750597466698,
+      "seed": 0,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ],
+      "total_cpu_ratio": 0.9679807825738217,
+      "variant": "reduced"
+    },
+    {
+      "base": "host",
+      "cap": 100000,
+      "conflict_ratio": 0.999980000399992,
+      "propagation_ratio": 1.4746115974927223,
+      "rss_ratio": 0.8678699764569824,
+      "search_cpu_ratio": 1.1621379652268402,
+      "seed": 1,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ],
+      "total_cpu_ratio": 1.1477265804507575,
+      "variant": "reduced"
+    },
+    {
+      "base": "host",
+      "cap": 100000,
+      "conflict_ratio": 1.0,
+      "propagation_ratio": 0.5509330100125784,
+      "rss_ratio": 0.8842734900722772,
+      "search_cpu_ratio": 0.7088427169552941,
+      "seed": 2,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ],
+      "total_cpu_ratio": 0.7074811224477248,
+      "variant": "reduced"
+    },
+    {
+      "base": "host",
+      "cap": 100000,
+      "conflict_ratio": 1.0,
+      "propagation_ratio": 1.0428270362982865,
+      "rss_ratio": 0.8680948419301164,
+      "search_cpu_ratio": 0.9571979114345518,
+      "seed": 3,
+      "statuses": [
+        "OPEN",
+        "OPEN"
+      ],
+      "total_cpu_ratio": 0.9504223138029131,
+      "variant": "reduced"
+    }
+  ],
+  "scope": "capped CNF-only A/B on one constant host; OPEN is not UNSAT; no physical colouring, cover or bound is claimed",
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "total_cpu_geomean": 0.9296814462696512
+}

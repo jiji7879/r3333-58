@@ -1,0 +1,105 @@
+{
+  "aggregate": {
+    "baseline_order_spread": 0.0,
+    "cases": [
+      "parent-cube"
+    ],
+    "excluded_cells": [],
+    "geomean_ratio": 1.2339285727521767,
+    "margin": 0.1,
+    "max_ratio": 1.4578900345313395,
+    "min_ratio": 1.0443721313615262,
+    "pairs": 2,
+    "per_cell": [
+      {
+        "cap": 1000000,
+        "case": "parent-cube",
+        "order": "AB",
+        "ratio": 1.0443721313615262,
+        "seed": 0
+      },
+      {
+        "cap": 1000000,
+        "case": "parent-cube",
+        "order": "BA",
+        "ratio": 1.4578900345313395,
+        "seed": 1
+      }
+    ],
+    "primary_metric": "composite_cpu_s"
+  },
+  "blocking": [
+    "R8_cost",
+    "R2_pins",
+    "R6_control",
+    "R9_quality"
+  ],
+  "checks": [
+    {
+      "detail": "schema 1, claim class encoding",
+      "rule": "R1_schema",
+      "status": "pass"
+    },
+    {
+      "detail": "pins.solver.sha256 missing (solver not binary-pinned)",
+      "rule": "R2_pins",
+      "status": "incomplete"
+    },
+    {
+      "detail": "registered_before_run=None",
+      "rule": "R3_prereg",
+      "status": "pass",
+      "waived": true
+    },
+    {
+      "detail": "2 paired cells, caps [1000000], transform encoding",
+      "rule": "R4_comparability",
+      "status": "pass"
+    },
+    {
+      "detail": "statuses ['OPEN']",
+      "rule": "R5_status",
+      "status": "pass"
+    },
+    {
+      "detail": "no unsound_control designated for a mechanism claim",
+      "rule": "R6_control",
+      "status": "incomplete"
+    },
+    {
+      "detail": "transform encoding premise satisfied",
+      "rule": "R7_semantics",
+      "status": "pass"
+    },
+    {
+      "detail": "2 usable composite_cpu_s pairs < 4; geomean ratio 1.2339 > 1 - margin (0.9000); worst cell ratio 1.4579 > 1.0: a regression is hidden in the mean; 2 cell(s) regress: [(\"('parent-cube', 0, 'AB', 1000000)\", 1.0444), (\"('parent-cube', 1, 'BA', 1000000)\", 1.4579)]; per-seed spread 0.4135 > margin 0.1000: sign not stable across seeds",
+      "rule": "R8_cost",
+      "status": "fail"
+    },
+    {
+      "detail": "no order replication (A/B and B/A) for 2 baseline cell(s), e.g. [\"('parent-cube', 0, 1000000)\", \"('parent-cube', 1, 1000000)\"]",
+      "rule": "R9_quality",
+      "status": "incomplete"
+    },
+    {
+      "detail": "1 distinct case(s): ['parent-cube'] (single-case evidence: opt-in limited)",
+      "rule": "R11_generality",
+      "status": "pass"
+    }
+  ],
+  "claim": {
+    "class": "encoding",
+    "id": "kmt-sender-only-benchmark_1m",
+    "scope": "CNF-only bounded performance on parent+cube; OPEN is not UNSAT; no physical colouring, ChainReady or bound is claimed",
+    "statement": "sender-only KMT encoding reduces search CPU against the stock encoding on the retained parent+cube at a matched 1000000-conflict budget; all runs are OPEN"
+  },
+  "decision": "REJECT",
+  "default_eligible": false,
+  "exit_code": 2,
+  "mode": "audit",
+  "opt_in_eligible": false,
+  "policy_version": "k58-admission-1",
+  "record_sha256": "610fa9dd6f965bd2c09a0d4987a5c3c6f0db81c5c9d4dad25adf7a4c7d7d285a",
+  "required_scope": "Opt-in experimental override only, on the pinned inputs ['parent-cube'], licensed metric composite_cpu_s. Production defaults, ledger states, frozen coverage and the accepted interval 51 <= R_4(3) <= 62 are unchanged. A capped OPEN/UNKNOWN run is not UNSAT. The licensed statement is exactly: sender-only KMT encoding reduces search CPU against the stock encoding on the retained parent+cube at a matched 1000000-conflict budget; all runs are OPEN",
+  "trust_level": "cross_checked"
+}

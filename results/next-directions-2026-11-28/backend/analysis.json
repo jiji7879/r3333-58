@@ -1,0 +1,635 @@
+{
+  "P2_props_per_conflict": {
+    "cap_is_portable": false,
+    "kissat_over_pysat": 2.036850271401322,
+    "values": {
+      "cad212": 296.9716542518207,
+      "kis404": 573.8063711173547,
+      "py195": 281.71259280761205
+    }
+  },
+  "P3_proof_overhead": {
+    "cad212": {
+      "plain_process_cpu": 3.434,
+      "ratio": 1.0408659010790282,
+      "trace_process_cpu": 3.574333504305383
+    },
+    "kis404": {
+      "plain_process_cpu": 4.323,
+      "ratio": 1.0006871180579153,
+      "trace_process_cpu": 4.325970411364368
+    },
+    "py195": {
+      "plain_process_cpu": 3.589,
+      "ratio": 1.0459231882757163,
+      "trace_process_cpu": 3.753818322721546
+    }
+  },
+  "R1_caseB_certificate": {
+    "cad212": {
+      "runs": [
+        {
+          "conflicts": 49226,
+          "drat_cpu": 0.991,
+          "proof_bytes": 9529642,
+          "solver_cpu": 1.72,
+          "verdict": "UNSAT",
+          "verified": true,
+          "whole_proof_read": true
+        },
+        {
+          "conflicts": 49226,
+          "drat_cpu": 1.003,
+          "proof_bytes": 9529642,
+          "solver_cpu": 1.74,
+          "verdict": "UNSAT",
+          "verified": true,
+          "whole_proof_read": true
+        }
+      ],
+      "total_certificate_cpu_gm": 2.7269530615689006
+    },
+    "kis404": {
+      "runs": [
+        {
+          "conflicts": 17319,
+          "drat_cpu": 1.369,
+          "proof_bytes": 5453359,
+          "solver_cpu": 1.3,
+          "verdict": "UNSAT",
+          "verified": true,
+          "whole_proof_read": true
+        },
+        {
+          "conflicts": 17319,
+          "drat_cpu": 1.352,
+          "proof_bytes": 5453359,
+          "solver_cpu": 1.3,
+          "verdict": "UNSAT",
+          "verified": true,
+          "whole_proof_read": true
+        }
+      ],
+      "total_certificate_cpu_gm": 2.66048642169059
+    },
+    "py195": {
+      "runs": [
+        {
+          "conflicts": 32316,
+          "drat_cpu": 0.857,
+          "proof_bytes": 8645007,
+          "solver_cpu": 1.371,
+          "verdict": "UNSAT",
+          "verified": true,
+          "whole_proof_read": true
+        },
+        {
+          "conflicts": 32316,
+          "drat_cpu": 0.877,
+          "proof_bytes": 8645007,
+          "solver_cpu": 1.459,
+          "verdict": "UNSAT",
+          "verified": true,
+          "whole_proof_read": true
+        }
+      ],
+      "total_certificate_cpu_gm": 2.2813609972996383
+    }
+  },
+  "R3_reproducibility": {
+    "cad212": {
+      "A-cube-open": {
+        "counters": [
+          [
+            100000,
+            538733,
+            34592993
+          ],
+          [
+            100000,
+            538733,
+            34592993
+          ]
+        ],
+        "identical": true
+      },
+      "B-h8-closed": {
+        "counters": [
+          [
+            49226,
+            307381,
+            12350047
+          ],
+          [
+            49226,
+            307381,
+            12350047
+          ]
+        ],
+        "identical": true
+      }
+    },
+    "kis404": {
+      "A-cube-open": {
+        "counters": [
+          [
+            100002,
+            646485,
+            56924520
+          ],
+          [
+            100002,
+            646485,
+            56924520
+          ]
+        ],
+        "identical": true
+      },
+      "B-h8-closed": {
+        "counters": [
+          [
+            17319,
+            188029,
+            16627468
+          ],
+          [
+            17319,
+            188029,
+            16627468
+          ]
+        ],
+        "identical": true
+      }
+    },
+    "py195": {
+      "A-cube-open": {
+        "counters": [
+          [
+            100001,
+            529694,
+            32489100
+          ],
+          [
+            100001,
+            529694,
+            32489100
+          ]
+        ],
+        "identical": true
+      },
+      "B-h8-closed": {
+        "counters": [
+          [
+            32316,
+            121539,
+            11186676
+          ],
+          [
+            32316,
+            121539,
+            11186676
+          ]
+        ],
+        "identical": true
+      }
+    }
+  },
+  "caseA_matched_100k": {
+    "cad212": {
+      "conflicts": [
+        100000,
+        100000,
+        100000
+      ],
+      "decisions_per_conflict": 6.087115771957241,
+      "process_cpu_gm": 3.4104936835937187,
+      "process_cpu_ratio_to_py195": 0.9394820572511583,
+      "proof_bytes": [
+        14089649,
+        14089649,
+        14185695
+      ],
+      "props_per_conflict": 296.9716542518207,
+      "rss_gm": 50.919390792464704,
+      "runs": 3,
+      "solver_cpu_gm": 3.4089768546892936,
+      "solver_cpu_ratio_to_py195": 0.9561102378238622
+    },
+    "kis404": {
+      "conflicts": [
+        100002,
+        100002,
+        100001
+      ],
+      "decisions_per_conflict": 6.570162055882394,
+      "process_cpu_gm": 4.2944173566575055,
+      "process_cpu_ratio_to_py195": 1.1829747911089505,
+      "proof_bytes": [
+        17005332,
+        17005332,
+        16486789
+      ],
+      "props_per_conflict": 573.8063711173547,
+      "rss_gm": 52.999999999999986,
+      "runs": 3,
+      "solver_cpu_gm": 4.2930813925583315,
+      "solver_cpu_ratio_to_py195": 1.2040736109985286
+    },
+    "py195": {
+      "conflicts": [
+        100001,
+        100001,
+        100002
+      ],
+      "decisions_per_conflict": 6.019961624393151,
+      "process_cpu_gm": 3.630185012338099,
+      "proof_bytes": [
+        0,
+        0,
+        0
+      ],
+      "props_per_conflict": 281.71259280761205,
+      "rss_gm": 87.69999999999999,
+      "runs": 3,
+      "solver_cpu_gm": 3.565464231873759
+    }
+  },
+  "phase1_rules": {
+    "cad212": {
+      "R1_certificate_better": false,
+      "R2_no_open_regression": true,
+      "R3_reproducible": true,
+      "admitted": false
+    },
+    "kis404": {
+      "R1_certificate_better": false,
+      "R2_no_open_regression": false,
+      "R3_reproducible": true,
+      "admitted": false
+    }
+  },
+  "phase1_runs": 24,
+  "phase2": {
+    "C1_keeps_up": true,
+    "C2_cost_not_worse": false,
+    "C3_closes_something_new": false,
+    "closed_by_incumbent": [
+      "H7",
+      "H8"
+    ],
+    "closed_by_kissat": [
+      "H7",
+      "H8"
+    ],
+    "incumbent_closed_certificate_cpu_gm": 1.9973432354004657,
+    "kissat_admitted_as_closure_engine": false,
+    "kissat_over_incumbent_certificate_cpu": 1.3342993824872253,
+    "per_case": {
+      "H1": {
+        "kis404": {
+          "certificate_cpu": null,
+          "conflicts": 100001,
+          "process_cpu": 5.056,
+          "proof_bytes": 18178710,
+          "solver_cpu": 5.05,
+          "verdict": "OPEN"
+        },
+        "py195": {
+          "certificate_cpu": null,
+          "conflicts": 100000,
+          "process_cpu": 4.715,
+          "proof_bytes": 0,
+          "solver_cpu": 4.652,
+          "verdict": "OPEN"
+        }
+      },
+      "H2": {
+        "kis404": {
+          "certificate_cpu": null,
+          "conflicts": 100000,
+          "process_cpu": 4.86,
+          "proof_bytes": 17232871,
+          "solver_cpu": 4.86,
+          "verdict": "OPEN"
+        },
+        "py195": {
+          "certificate_cpu": null,
+          "conflicts": 100005,
+          "process_cpu": 4.748,
+          "proof_bytes": 0,
+          "solver_cpu": 4.678,
+          "verdict": "OPEN"
+        }
+      },
+      "H3": {
+        "kis404": {
+          "certificate_cpu": null,
+          "conflicts": 100000,
+          "process_cpu": 4.916,
+          "proof_bytes": 15897858,
+          "solver_cpu": 4.91,
+          "verdict": "OPEN"
+        },
+        "py195": {
+          "certificate_cpu": null,
+          "conflicts": 100002,
+          "process_cpu": 3.355,
+          "proof_bytes": 0,
+          "solver_cpu": 3.281,
+          "verdict": "OPEN"
+        }
+      },
+      "H4": {
+        "kis404": {
+          "certificate_cpu": null,
+          "conflicts": 100003,
+          "process_cpu": 4.981,
+          "proof_bytes": 14478629,
+          "solver_cpu": 4.98,
+          "verdict": "OPEN"
+        },
+        "py195": {
+          "certificate_cpu": null,
+          "conflicts": 100007,
+          "process_cpu": 3.209,
+          "proof_bytes": 0,
+          "solver_cpu": 3.142,
+          "verdict": "OPEN"
+        }
+      },
+      "H5": {
+        "kis404": {
+          "certificate_cpu": null,
+          "conflicts": 100001,
+          "process_cpu": 4.859,
+          "proof_bytes": 15737519,
+          "solver_cpu": 4.86,
+          "verdict": "OPEN"
+        },
+        "py195": {
+          "certificate_cpu": null,
+          "conflicts": 100000,
+          "process_cpu": 4.546,
+          "proof_bytes": 0,
+          "solver_cpu": 4.469,
+          "verdict": "OPEN"
+        }
+      },
+      "H6": {
+        "kis404": {
+          "certificate_cpu": null,
+          "conflicts": 100000,
+          "process_cpu": 5.143,
+          "proof_bytes": 12817256,
+          "solver_cpu": 5.14,
+          "verdict": "OPEN"
+        },
+        "py195": {
+          "certificate_cpu": null,
+          "conflicts": 100002,
+          "process_cpu": 3.27,
+          "proof_bytes": 0,
+          "solver_cpu": 3.204,
+          "verdict": "OPEN"
+        }
+      },
+      "H7": {
+        "kis404": {
+          "certificate_cpu": 2.952,
+          "conflicts": 26853,
+          "process_cpu": 1.696,
+          "proof_bytes": 6097087,
+          "solver_cpu": 1.69,
+          "verdict": "UNSAT"
+        },
+        "py195": {
+          "certificate_cpu": 1.73,
+          "conflicts": 19433,
+          "process_cpu": 1.078,
+          "proof_bytes": 6788182,
+          "solver_cpu": 1.011,
+          "verdict": "UNSAT"
+        }
+      },
+      "H8": {
+        "kis404": {
+          "certificate_cpu": 2.406,
+          "conflicts": 17319,
+          "process_cpu": 1.326,
+          "proof_bytes": 5453359,
+          "solver_cpu": 1.32,
+          "verdict": "UNSAT"
+        },
+        "py195": {
+          "certificate_cpu": 2.306,
+          "conflicts": 32316,
+          "process_cpu": 1.478,
+          "proof_bytes": 8645007,
+          "solver_cpu": 1.41,
+          "verdict": "UNSAT"
+        }
+      }
+    }
+  },
+  "phase2_runs": 20,
+  "phase3": {
+    "S1_cpu_replicates": true,
+    "S2_rss_replicates": true,
+    "S3_drift_controls_hold": true,
+    "cases_within_1.10": 6,
+    "cpu_ratio_geomean_cad_over_incumbent": 0.9345492010600172,
+    "drift_controls_identical": [
+      true,
+      true
+    ],
+    "native_advantage_replicates": true,
+    "per_case": {
+      "H1": {
+        "cad_conflicts": 100000,
+        "cad_process_cpu": 4.406,
+        "cad_rss_mib": 46.9,
+        "cpu_ratio_cad_over_incumbent": 0.9344644750795333,
+        "incumbent_process_cpu": 4.715,
+        "incumbent_rss_mib": 89.2
+      },
+      "H2": {
+        "cad_conflicts": 100001,
+        "cad_process_cpu": 4.45,
+        "cad_rss_mib": 51.7,
+        "cpu_ratio_cad_over_incumbent": 0.9372367312552654,
+        "incumbent_process_cpu": 4.748,
+        "incumbent_rss_mib": 89.9
+      },
+      "H3": {
+        "cad_conflicts": 100002,
+        "cad_process_cpu": 2.905,
+        "cad_rss_mib": 52.1,
+        "cpu_ratio_cad_over_incumbent": 0.8658718330849478,
+        "drift_control": {
+          "conflicts": 100002,
+          "decisions": 676934,
+          "process_cpu": 3.086,
+          "propagations": 18896645,
+          "reproduces_phase2_counters": true
+        },
+        "incumbent_process_cpu": 3.355,
+        "incumbent_rss_mib": 88.9
+      },
+      "H4": {
+        "cad_conflicts": 100002,
+        "cad_process_cpu": 3.401,
+        "cad_rss_mib": 52.1,
+        "cpu_ratio_cad_over_incumbent": 1.0598317232782797,
+        "incumbent_process_cpu": 3.209,
+        "incumbent_rss_mib": 89.9
+      },
+      "H5": {
+        "cad_conflicts": 100000,
+        "cad_process_cpu": 4.117,
+        "cad_rss_mib": 52.2,
+        "cpu_ratio_cad_over_incumbent": 0.905631324241091,
+        "incumbent_process_cpu": 4.546,
+        "incumbent_rss_mib": 88.2
+      },
+      "H6": {
+        "cad_conflicts": 100002,
+        "cad_process_cpu": 2.993,
+        "cad_rss_mib": 52.2,
+        "cpu_ratio_cad_over_incumbent": 0.9152905198776758,
+        "drift_control": {
+          "conflicts": 100002,
+          "decisions": 693893,
+          "process_cpu": 3.22,
+          "propagations": 22166416,
+          "reproduces_phase2_counters": true
+        },
+        "incumbent_process_cpu": 3.27,
+        "incumbent_rss_mib": 88.9
+      }
+    },
+    "rss_lower_on": 6
+  },
+  "phase3_runs": 8,
+  "phase4": {
+    "comparisons": [
+      {
+        "between_engine_mean_ratio": 1.2614031567683253,
+        "case": "H7",
+        "engine_gap_magnitude": 1.2614031567683253,
+        "incumbent_seed_spread": 1.2262131425924974,
+        "kissat_seed_spread": 1.1024466540051392,
+        "seed_spread_exceeds_engine_gap": false
+      },
+      {
+        "between_engine_mean_ratio": 0.6507273308319623,
+        "case": "H8",
+        "engine_gap_magnitude": 1.5367419695150788,
+        "incumbent_seed_spread": 2.5999861992823625,
+        "kissat_seed_spread": 1.115480108551302,
+        "seed_spread_exceeds_engine_gap": true
+      }
+    ],
+    "note": "descriptive only: cannot change the Phase 1-3 verdicts; a cap-OPEN is never an UNSAT",
+    "per_case_engine": {
+      "H7/kis404": {
+        "fails_to_close_at_cap": [],
+        "per_seed_conflicts": {
+          "0": [
+            true,
+            26853
+          ],
+          "1": [
+            true,
+            27837
+          ],
+          "2": [
+            true,
+            29604
+          ],
+          "3": [
+            true,
+            28869
+          ]
+        },
+        "seeds_closed": 4,
+        "seeds_run": 4,
+        "spread_max_over_min": 1.1024466540051392
+      },
+      "H7/py195": {
+        "fails_to_close_at_cap": [],
+        "per_seed_conflicts": {
+          "0": [
+            true,
+            19433
+          ],
+          "1": [
+            true,
+            23783
+          ],
+          "2": [
+            true,
+            23829
+          ],
+          "3": [
+            true,
+            22667
+          ]
+        },
+        "seeds_closed": 4,
+        "seeds_run": 4,
+        "spread_max_over_min": 1.2262131425924974
+      },
+      "H8/kis404": {
+        "fails_to_close_at_cap": [],
+        "per_seed_conflicts": {
+          "0": [
+            true,
+            17319
+          ],
+          "1": [
+            true,
+            19319
+          ],
+          "2": [
+            true,
+            18595
+          ],
+          "3": [
+            true,
+            18071
+          ]
+        },
+        "seeds_closed": 4,
+        "seeds_run": 4,
+        "spread_max_over_min": 1.115480108551302
+      },
+      "H8/py195": {
+        "fails_to_close_at_cap": [
+          1
+        ],
+        "per_seed_conflicts": {
+          "0": [
+            true,
+            32316
+          ],
+          "1": [
+            false,
+            60002
+          ],
+          "2": [
+            true,
+            37679
+          ],
+          "3": [
+            true,
+            14492
+          ]
+        },
+        "seeds_closed": 3,
+        "seeds_run": 4,
+        "spread_max_over_min": 2.5999861992823625
+      }
+    },
+    "seed_retry_preferred": true
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "claim": {
+    "class": "encoding",
+    "closure_claimed": false,
+    "id": "sms-one-colour-lex",
+    "scope": "CNF-only bounded performance on the retained parent+cube at a conflict cap; UNKNOWN is not UNSAT; no physical model-set invariance, colouring or bound claim",
+    "statement": "adding 765 one-colour lex-leader clauses to the retained parent+cube lowers search CPU at a matched 200000-conflict budget; all runs UNKNOWN, none closed"
+  },
+  "controls": [
+    {
+      "apparent_ratio": 0.7710186173366537,
+      "detail": "same 765 clauses with one negated literal; unsound instance, run only as a trajectory control",
+      "id": "corrupted-one-colour-clauses",
+      "role": "unsound_control",
+      "semantics_rejected": false
+    }
+  ],
+  "pins": {
+    "checkers": [],
+    "inputs": {
+      "parent-cube": {
+        "baseline": {
+          "bytes": null,
+          "sha256": null
+        },
+        "treatment": {
+          "bytes": null,
+          "sha256": null
+        }
+      }
+    },
+    "solver": {
+      "id": "pysat Cadical195 (CaDiCaL 1.9.5)",
+      "sha256": null,
+      "version": "pysat Cadical195 (CaDiCaL 1.9.5)"
+    }
+  },
+  "prereg": {
+    "caps": [
+      200000
+    ],
+    "cases": [
+      "parent-cube"
+    ],
+    "declared_arms": [
+      "baseline",
+      "treatment",
+      "corrupted"
+    ],
+    "declared_exclusions": [],
+    "margin": 0.1,
+    "max_runs": 6,
+    "orders": [
+      "AB",
+      "BA"
+    ],
+    "primary_metric": "composite_cpu_s",
+    "registered_before_run": null,
+    "seeds": [
+      0
+    ]
+  },
+  "provenance": {
+    "adapter": "adapters.py sms",
+    "means": {
+      "baseline": 8.433,
+      "control": 6.502,
+      "treatment": 6.674
+    },
+    "source": "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/results/next-directions-2026-11-28/sms",
+    "source_sha256": "a18cd4b6238ad2668662b24e2afda86a527b5afa5f1ec2c0838514288e78d85e",
+    "warnings": [
+      "no input CNF hash in ab_summary/ab_runs",
+      "no solver binary hash",
+      "solver seed is not recorded",
+      "the experiment's own summary reports an equally large effect for the unsound corrupted control"
+    ]
+  },
+  "runs": [
+    {
+      "arm": "baseline",
+      "cap": 200000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 200000,
+        "decisions": 751001,
+        "propagations": 69573821,
+        "restarts": 10633
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 70272.0,
+        "prep_cpu_s": 0.118,
+        "search_cpu_s": 8.392
+      },
+      "order": "AB",
+      "seed": 0,
+      "status": "UNKNOWN",
+      "variant": "parent_cube.cnf"
+    },
+    {
+      "arm": "treatment",
+      "cap": 200000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 200000,
+        "decisions": 1082485,
+        "propagations": 41482509,
+        "restarts": 11609
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 69992.0,
+        "prep_cpu_s": 0.125,
+        "search_cpu_s": 6.688
+      },
+      "order": "AB",
+      "seed": 0,
+      "status": "UNKNOWN",
+      "variant": "augmented.cnf"
+    },
+    {
+      "arm": "treatment",
+      "cap": 200000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 200000,
+        "decisions": 1082485,
+        "propagations": 41482509,
+        "restarts": 11609
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 70032.0,
+        "prep_cpu_s": 0.123,
+        "search_cpu_s": 6.661
+      },
+      "order": "BA",
+      "seed": 0,
+      "status": "UNKNOWN",
+      "variant": "augmented.cnf"
+    },
+    {
+      "arm": "baseline",
+      "cap": 200000,
+      "case": "parent-cube",
+      "counters": {
+        "conflicts": 200000,
+        "decisions": 751001,
+        "propagations": 69573821,
+        "restarts": 10633
+      },
+      "metrics": {
+        "check_cpu_s": 0.0,
+        "maxrss_kb": 70132.0,
+        "prep_cpu_s": 0.121,
+        "search_cpu_s": 8.475
+      },
+      "order": "BA",
+      "seed": 0,
+      "status": "UNKNOWN",
+      "variant": "parent_cube.cnf"
+    }
+  ],
+  "schema": 1,
+  "transform": {
+    "binding": "budget_hash",
+    "declared_delta": "765 one-colour lex-leader clauses appended (non-contiguous variable reindexing)",
+    "derivation": {
+      "kind": "lex-leader enumeration over one colour",
+      "receipt_sha256": "71183cce948248febeceeb1962c33543f1f32136e3ec02db56469d650a00f737",
+      "relax_used": false,
+      "source": "gen_receipt.json; physical model-set invariance is unproved",
+      "status": "fail"
+    },
+    "kind": "encoding"
+  }
+}

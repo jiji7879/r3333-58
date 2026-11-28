@@ -1,0 +1,73 @@
+# admission gate verification log
+date: 2026-11-28T13:00:57Z
+python: Python 3.12.14
+repo HEAD: 1c4d7f2
+
+## tests
+ok   clean 2-case 2-seed 2-order gain: OPT_IN_EVIDENCE_BACKED (want OPT_IN_EVIDENCE_BACKED)
+ok   single-case gain is limited, not general: OPT_IN_SINGLE_CASE (want OPT_IN_SINGLE_CASE)
+ok   no order replication: INCOMPLETE (want INCOMPLETE)
+ok   cap-as-UNSAT: REJECT (want REJECT)
+ok   encoding claim with identical input bytes: INCOMPLETE (want INCOMPLETE)
+ok   solver binary not pinned: INCOMPLETE (want INCOMPLETE)
+ok   unsound control mimics the gain: REJECT (want REJECT)
+ok   added clauses without a derivation: REJECT (want REJECT)
+ok   one regressing cell hidden by the mean: REJECT (want REJECT)
+ok   seeds disagree in sign: REJECT (want REJECT)
+ok   pre-registration unrecorded (admission): INCOMPLETE (want INCOMPLETE)
+ok   undeclared excluded metric cell: INCOMPLETE (want INCOMPLETE)
+ok   declared excluded cell limits the claim: OPT_IN_SINGLE_CASE (want OPT_IN_SINGLE_CASE)
+ok   certificate with relaxed check: INCOMPLETE (want INCOMPLETE)
+ok   certificate whose cross-check is the same binary: INCOMPLETE (want INCOMPLETE)
+ok   certificate cost basis mismatch: INCOMPLETE (want INCOMPLETE)
+ok   clean certificate at cross-checked trust: OPT_IN_EVIDENCE_BACKED (want OPT_IN_EVIDENCE_BACKED)
+ok   conflicts alone as the primary metric: REJECT (want REJECT)
+ok   option arm whose counters never move: INCOMPLETE (want INCOMPLETE)
+ok   seeds that do not diverge at the evaluation cap: INCOMPLETE (want INCOMPLETE)
+ok   solver swapped without declaring engine class: INCOMPLETE (want INCOMPLETE)
+ok   closure claimed with no certificate block: REJECT (want REJECT)
+ok   engine panel with one pinned binary per arm: OPT_IN_EVIDENCE_BACKED (want OPT_IN_EVIDENCE_BACKED)
+ok   engine panel mixing two binaries in one arm: INCOMPLETE (want INCOMPLETE)
+ok   audit mode waives prereg only: OPT_IN_EVIDENCE_BACKED
+ok   verdict is deterministic
+
+26/26 passed
+
+## audit
+ok   lrat-cpu-cross         REJECT                   metric=composite_cpu_s geomean=1.1803 worst=1.5270 blocking=R8_cost
+         H7 seed 0 AB cap   50000 ratio 0.9794
+         H8 seed 0 AB cap   50000 ratio 1.0246
+        N14 seed 0 AB cap   50000 ratio 1.5270
+        R11 seed 0 AB cap   50000 ratio 1.2667
+ok   lrat-cpu-single        OPT_IN_EVIDENCE_BACKED   metric=composite_cpu_s geomean=0.4974 worst=0.7042 blocking=-
+         H7 seed 0 AB cap   50000 ratio 0.6701
+         H8 seed 0 AB cap   50000 ratio 0.7042
+        N14 seed 0 AB cap   50000 ratio 0.4865
+        R11 seed 0 AB cap   50000 ratio 0.2667
+ok   lrat-bytes-cross       OPT_IN_SINGLE_CASE       metric=retained_bytes geomean=0.6237 worst=0.6824 blocking=-
+         H7 seed 0 AB cap   50000 ratio 0.5701
+         H8 seed 0 AB cap   50000 ratio 0.6824
+     excluded cell: N14/baseline/retained_bytes
+     excluded cell: N14/treatment/retained_bytes
+     excluded cell: R11/baseline/retained_bytes
+     excluded cell: R11/treatment/retained_bytes
+ok   kmt-100k               REJECT                   metric=composite_cpu_s geomean=1.2504 worst=1.3758 blocking=R8_cost,R2_pins,R6_control,R9_quality
+     parent-cube seed 0 AB cap  100000 ratio 1.1365
+     parent-cube seed 1 BA cap  100000 ratio 1.3758
+ok   kmt-1m                 REJECT                   metric=composite_cpu_s geomean=1.2339 worst=1.4579 blocking=R8_cost,R2_pins,R6_control,R9_quality
+     parent-cube seed 0 AB cap 1000000 ratio 1.0444
+     parent-cube seed 1 BA cap 1000000 ratio 1.4579
+ok   sms-one-colour-lex     REJECT                   metric=composite_cpu_s geomean=0.7949 worst=0.8006 blocking=R6_control,R7_semantics,R8_cost,R2_pins,R4_comparability
+     parent-cube seed 0 AB cap  200000 ratio 0.8006
+     parent-cube seed 0 BA cap  200000 ratio 0.7892
+
+6/6 decisions reproduced; summary in receipts/audit-summary.json
+
+## file hashes
+eb6081d91bbca2b132079e0d6eeb481c7e9f32b870b47f64f645980a174c0b73  gate.py
+d9e9d6a082ebc4917bb796b91a968a7ba1e751573a6b93f493c4d2b355ee420f  adapters.py
+b630cbb070114f6af2c388102bbbdea33063a2dbc766a7f8a3bc2153ad1cae7e  run_audit.py
+8f908bba435437065e6b62a02010b0c31e6e99cee20945b49fd0cf1d0c0f2f4b  tests/test_gate.py
+04eb6219067d7f476a101017c12b9ef75af3d863fd565e8398292d661c77db55  POLICY.md
+40510be3fc1cbbe42c291cb3de941984113621624a4389bb5551ee7da76aadde  RESULTS.md
+17ab4e5582865532728f3f15a452c08fa530df614bfe916eaaa09f849de498a7  INTEGRATION.md
