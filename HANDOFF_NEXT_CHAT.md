@@ -10,6 +10,27 @@ dated block at its top says which numbers to ignore.
 
 `R(3,3,3,3) ∈ [51, 62]` (Radziszowski DS1.18). **Nothing has moved the bound.**
 
+**Updated 2026-11-28 (a self-contained modified solver archive).**
+Copied `dist/k58-solver.zip` to a separate **49,739,924-byte**
+`dist/k58-updated-solver.zip`; the stock archive and production paths are
+unchanged. Its new commands are `square` (K15 verification, export and bounded
+spoke solving), `color-wallcc` (optional physical-colour pivot), and `armcap`
+(historical paired/transversal/two5/joint-support tools). They are explicitly
+optional, not a new default search policy or a production-speedup theorem.
+Strengthened and auxiliary-extended results keep their separate proof ceilings;
+there is no production wall or Ramsey closure.
+
+The clean archive passed offline-wheel setup, five stock example replays, the
+deep modified smoke (all fourteen ordinary parents, K15 strict proof/models/
+RUP, colour-pivot native derivations and controls), strict bundled-Kissat
+false-cube certification plus truncated-proof rejection, and stock smoke
+(three sample certificates/three replays/zero failures). One proof-checker bug
+was fixed by deletion-stripping rather than `-w`; the stock CNF is rebound to
+its named historical rank before certification. Rebuilding preserves all 644
+member hashes and original binary executable bits. Build scripts and complete
+limits are in [tools/selfcontained/updated-solver/README.md](tools/selfcontained/updated-solver/README.md),
+and test details are in [VALIDATION.md](tools/selfcontained/updated-solver/VALIDATION.md).
+
 **Updated 2026-11-27 (K15 square/matching spokes on the ordinary wall).**
 The shared K15 matching formula and its normalization are now exhaustively
 checked, including all 144 pairs of labelled valid K5 pins and the exact
