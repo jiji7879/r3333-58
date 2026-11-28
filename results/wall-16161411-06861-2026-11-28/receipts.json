@@ -1,0 +1,318 @@
+{
+  "experiments": {
+    "arm2-ca2": {
+      "cas": "off",
+      "clauses": 186495,
+      "cuts": 0,
+      "origin": {
+        "kind": "dimacs",
+        "source_sha256": "72690a9a9de8fea1e802f0ef35509cf4ffb466b2d546f6ce97cf65fed7e27a0c"
+      },
+      "parent_sha256": "72690a9a9de8fea1e802f0ef35509cf4ffb466b2d546f6ce97cf65fed7e27a0c",
+      "receipt": {
+        "budget": {
+          "check_seconds": 240,
+          "conflicts": 500000,
+          "native_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+          "proof": "eager",
+          "seconds": 180
+        },
+        "conflicts_used": 500003,
+        "cube": [],
+        "elapsed_s": 27.953,
+        "node": "r",
+        "plan_sha256": "4776e8140d55c27b73e21930669113e253d67413b36dea85541c55e473ade9a3",
+        "reason": "conflict limit",
+        "solver": "CaDiCaL 2.1.2 standalone",
+        "solver_cpu_s": 27.89,
+        "solver_rss_mib": 81.13,
+        "solver_wall_s": 27.946635666070506,
+        "status": "OPEN"
+      },
+      "variables": 19533,
+      "working_sha256": "72690a9a9de8fea1e802f0ef35509cf4ffb466b2d546f6ce97cf65fed7e27a0c"
+    },
+    "plain-ca2": {
+      "cas": "off",
+      "clauses": 184335,
+      "cuts": 0,
+      "origin": {
+        "id": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+        "kind": "wall",
+        "tier": "first"
+      },
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "receipt": {
+        "budget": {
+          "check_seconds": 240,
+          "conflicts": 500000,
+          "native_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+          "proof": "eager",
+          "seconds": 180
+        },
+        "conflicts_used": 500001,
+        "cube": [],
+        "elapsed_s": 50.614,
+        "node": "r",
+        "plan_sha256": "d20da92ad61b2a25131e827678bedd56d375422881b5e39026aca05e1ca6a492",
+        "reason": "conflict limit",
+        "solver": "CaDiCaL 2.1.2 standalone",
+        "solver_cpu_s": 50.26,
+        "solver_rss_mib": 129.31,
+        "solver_wall_s": 50.60425160289742,
+        "status": "OPEN"
+      },
+      "variables": 19533,
+      "working_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae"
+    },
+    "retry-plain": {
+      "cas": "off",
+      "clauses": 203203,
+      "cuts": 0,
+      "origin": {
+        "id": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+        "kind": "wall",
+        "tier": "retry"
+      },
+      "parent_sha256": "2e104948dc6199fe0420121c35c1e9486dc1c21124ed507856d3b16d30b3a3aa",
+      "receipt": {
+        "budget": {
+          "check_seconds": 240,
+          "conflicts": 500000,
+          "native_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+          "proof": "eager",
+          "seconds": 180
+        },
+        "conflicts_used": 500000,
+        "cube": [],
+        "elapsed_s": 29.577,
+        "node": "r",
+        "plan_sha256": "a016ebd078c3362e2efa3d160c1ed153aa0c38306514b61c589d32c65bb90ea7",
+        "reason": "conflict limit",
+        "solver": "CaDiCaL 2.1.2 standalone",
+        "solver_cpu_s": 29.53,
+        "solver_rss_mib": 137.48,
+        "solver_wall_s": 29.569578049937263,
+        "status": "OPEN"
+      },
+      "variables": 29179,
+      "working_sha256": "2e104948dc6199fe0420121c35c1e9486dc1c21124ed507856d3b16d30b3a3aa"
+    },
+    "square-ca2": {
+      "cas": "proof-square",
+      "clauses": 184335,
+      "cuts": 2,
+      "origin": {
+        "id": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+        "kind": "wall",
+        "tier": "first"
+      },
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "receipt": {
+        "budget": {
+          "check_seconds": 240,
+          "conflicts": 500000,
+          "native_sha256": "a4a6dc61458f4fbb86cd4084e0249b0e93aae239816d58c3fb707a0a0bc7e48b",
+          "proof": "eager",
+          "seconds": 180
+        },
+        "conflicts_used": 500000,
+        "cube": [],
+        "elapsed_s": 28.661,
+        "node": "r",
+        "plan_sha256": "b7416e10a33ae75b394aaa7fe0a92acd0e6e0501c09a1af4a2007bc351461a85",
+        "reason": "conflict limit",
+        "solver": "CaDiCaL 2.1.2 standalone",
+        "solver_cpu_s": 28.61,
+        "solver_rss_mib": 129.34,
+        "solver_wall_s": 28.653675124049187,
+        "status": "OPEN"
+      },
+      "variables": 19533,
+      "working_sha256": "7bb3fd907f4dd832adc08c4ce193315faaf2d0e02df2692d829e8b65269313a5"
+    }
+  },
+  "full315_caution": "300 RUP clauses independently verified. 15 others not RUP and no RAT witness found by the independent unit-seeded checker. All 15 individual negation queries reached 200,000-conflict caps UNKNOWN: this does NOT decide implication. Do not use full 315 as unconditional without a valid prefix.",
+  "implication_certificates": {
+    "arm-implied-3060": {
+      "case": "arm-implied-3060",
+      "checker_exit": 0,
+      "checker_flags": [
+        "-I",
+        "-U",
+        "-f",
+        "-W"
+      ],
+      "exact_verified_lines": 1,
+      "file_sha256": "36862081f7e19653af2e83fbe72e17f948a3fdb992972f8ae9aa7d579aed7dc6",
+      "input_clauses": 3060,
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "proof_bytes": 143822,
+      "proof_sha256": "36862081f7e19653af2e83fbe72e17f948a3fdb992972f8ae9aa7d579aed7dc6",
+      "query_bytes": 3768418,
+      "query_sha256": "e0a1c92f9acacf9f7b4caaa465c4f7551b41b53476bd5d1200d93b065fac5511",
+      "rat_clauses_in_core": 0,
+      "selector_units": 3060,
+      "warnings": []
+    },
+    "pentagon-300": {
+      "case": "pentagon-300",
+      "checker_exit": 0,
+      "checker_flags": [
+        "-I",
+        "-U",
+        "-f",
+        "-W"
+      ],
+      "exact_verified_lines": 1,
+      "file_sha256": "32dfb14f5d2df1f1fbb51f1823f2de41240f7f9287f572e188db15ccb98ce8e3",
+      "input_clauses": 300,
+      "parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "proof_bytes": 12302,
+      "proof_sha256": "32dfb14f5d2df1f1fbb51f1823f2de41240f7f9287f572e188db15ccb98ce8e3",
+      "query_bytes": 3515818,
+      "query_sha256": "8603826ab5b819a1ba0e871e759bb7e0e316b0eb975e078ebc132e503943f99a",
+      "rat_clauses_in_core": 0,
+      "repair": "Dropped terminal DIMACS zeros from input clauses before constructing miter/proof; the repaired query parses completely and contains no embedded empty clauses.",
+      "selector_units": 300,
+      "warnings": []
+    }
+  },
+  "negative_search": {
+    "attempts": 15,
+    "conflict_cap_per_attempt": 200000,
+    "outcomes": [
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN",
+      "OPEN"
+    ],
+    "rows_closed": 0,
+    "sat_models": 0
+  },
+  "note": "All run statuses remain OPEN/UNKNOWN, never UNSAT or proof of a model. The option-policy numbers compare unchanged parent clauses; arm2 uses 2,160 RUP-derived clauses and requires original-parent composition if a completed proof is ever produced.",
+  "original_parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+  "policy_comparisons": {
+    "arm2-search-only-120": {
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-candidate-smoke/k58-solver/color-resolved-wallcc/bin/cadical-2.1.2",
+        "--seed=0",
+        "-t",
+        "120",
+        "--elim=false",
+        "--probe=false",
+        "--vivify=false",
+        "--subsume=false",
+        "--ternary=false",
+        "--block=false",
+        "--stabilize=false",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-row-16161411/arm2-2160.cnf",
+        ".scratch/k58-row-16161411/arm2-search-only-120/proof.drat"
+      ],
+      "conflicts": 2487689,
+      "original_parent_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "policy_options": [
+        "--elim=false",
+        "--probe=false",
+        "--vivify=false",
+        "--subsume=false",
+        "--ternary=false",
+        "--block=false",
+        "--stabilize=false"
+      ],
+      "proof_retained": false,
+      "query_sha256": "72690a9a9de8fea1e802f0ef35509cf4ffb466b2d546f6ce97cf65fed7e27a0c",
+      "solver_exit": 0,
+      "status": "UNKNOWN",
+      "unknown_marker_present": true,
+      "verified_closed": false,
+      "wall_seconds": 120.00640382594429
+    },
+    "policy-default-120": {
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-candidate-smoke/k58-solver/color-resolved-wallcc/bin/cadical-2.1.2",
+        "--seed=0",
+        "-t",
+        "120",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-row-16161411/plain-ca2/parent.cnf",
+        ".scratch/k58-row-16161411/policy-default-120/proof.drat"
+      ],
+      "conflicts": 1566787,
+      "exact_status_lines": [],
+      "label": "default",
+      "query_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "solver_exit": 0,
+      "status": "UNKNOWN",
+      "unknown_marker_present": true,
+      "wall_seconds": 120.01777925807983
+    },
+    "policy-search-only-120": {
+      "command": [
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-candidate-smoke/k58-solver/color-resolved-wallcc/bin/cadical-2.1.2",
+        "--seed=0",
+        "-t",
+        "120",
+        "--elim=false",
+        "--probe=false",
+        "--vivify=false",
+        "--subsume=false",
+        "--ternary=false",
+        "--block=false",
+        "--stabilize=false",
+        "/workspace/nucleus/work/projects/p-764e12eeb9f34762ad544edb924f4680/repo/.scratch/k58-row-16161411/plain-ca2/parent.cnf",
+        ".scratch/k58-row-16161411/policy-search-only-120/proof.drat"
+      ],
+      "conflicts": 2586173,
+      "exact_status_lines": [],
+      "label": "search-only",
+      "query_sha256": "90d06e3254f64986032a66f619ba6e7ae273d89850a7d245b7992e0b860f56ae",
+      "solver_exit": 0,
+      "status": "UNKNOWN",
+      "unknown_marker_present": true,
+      "wall_seconds": 120.00859014107846
+    }
+  },
+  "profile": [
+    16,
+    16,
+    14,
+    11
+  ],
+  "row_id": "06861a3df60c08e409dd61965819af321f109e9b82bfd3bc5d05b2645362ec06",
+  "scope": "One frozen K58 first-tier whole-row attempt and small, exact bounded improvements; no Ramsey bound, profile, ledger or cohort change.",
+  "scratch_dir": ".scratch/k58-row-16161411",
+  "square_batch": {
+    "clauses": [
+      [
+        509,
+        1349,
+        1937,
+        2665
+      ],
+      [
+        937,
+        1145,
+        2309,
+        2837
+      ]
+    ],
+    "proof_sha256": "924b17003b80eb8b0726ae56813a439603d1638d1d7391aba43b2c400d5004e5",
+    "query_sha256": "31a678d60b8626c5103d2a773aef55159f86a6572a2dc1fed578a4ed4d987662",
+    "rows_attempted": "square-ca2",
+    "status": "VERIFIED_CLAUSES"
+  },
+  "status": "OPEN",
+  "swarm": "smwzxbril",
+  "swarm_acceptances": 3
+}
